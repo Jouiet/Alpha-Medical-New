@@ -9,7 +9,7 @@ import { Toaster } from '@/components/ui/sonner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'PhysioWellness - Professional Physiotherapy & Wellness Equipment',
+  title: 'Alpha Medical Care - Professional Physiotherapy & Wellness Equipment',
   description: 'Discover premium physiotherapy and wellness products for pain relief, rehabilitation, and recovery. Quality medical equipment for your health needs.',
 };
 

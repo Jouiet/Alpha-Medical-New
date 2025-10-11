@@ -146,7 +146,7 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-green-600" />
                   </div>
                   <h3 className="mb-2 font-semibold text-slate-900">Email</h3>
-                  <p className="mb-1 text-slate-600">contact@physiowellness.com</p>
+                  <p className="mb-1 text-slate-600">contact@alphamedicalcare.com</p>
                   <p className="text-sm text-slate-500">We'll respond within 24 hours</p>
                 </CardContent>
               </Card>

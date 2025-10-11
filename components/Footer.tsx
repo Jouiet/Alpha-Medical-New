@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -7,11 +8,18 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="mb-4 flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-teal-400">
-                <span className="text-xl font-bold text-white">P</span>
+            <div className="mb-4 flex items-center space-x-3">
+              <Image
+                src="/logo.svg"
+                alt="Alpha Medical Care Logo"
+                width={35}
+                height={42}
+                className="h-10 w-auto"
+              />
+              <div className="flex flex-col">
+                <span className="text-base font-bold text-blue-600 leading-tight">ALPHA</span>
+                <span className="text-[9px] font-light text-blue-600 tracking-widest">MEDICAL CARE</span>
               </div>
-              <span className="text-lg font-semibold text-slate-900">PhysioWellness</span>
             </div>
             <p className="mb-4 text-sm text-slate-600">
               Your trusted partner for professional physiotherapy and wellness equipment. Quality products for recovery and well-being.
@@ -101,7 +109,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2 text-slate-600">
                 <Mail className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                <span>contact@physiowellness.com</span>
+                <span>contact@alphamedicalcare.com</span>
               </li>
               <li className="flex items-start gap-2 text-slate-600">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
@@ -114,7 +122,7 @@ export default function Footer() {
         <div className="mt-8 border-t pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-slate-600">
-              © 2025 PhysioWellness. All rights reserved.
+              © 2025 Alpha Medical Care. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-slate-600">
               <img src="https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Secure Payment" className="h-6" />

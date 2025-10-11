@@ -271,7 +271,7 @@ export default function Home() {
               Start Your Recovery Journey Today
             </h2>
             <p className="mb-8 text-lg text-blue-50">
-              Join thousands of satisfied customers who trust PhysioWellness for their health and recovery needs. Professional equipment, expert support, guaranteed results.
+              Join thousands of satisfied customers who trust Alpha Medical Care for their health and recovery needs. Professional equipment, expert support, guaranteed results.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button size="lg" variant="secondary" asChild>

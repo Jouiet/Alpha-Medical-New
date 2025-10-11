@@ -21,7 +21,7 @@ export default function ProductSchema({ product }: ProductSchemaProps) {
     image: product.image,
     brand: {
       '@type': 'Brand',
-      name: product.brand || 'PhysioWellness'
+      name: product.brand || 'Alpha Medical Care'
     },
     offers: {
       '@type': 'Offer',

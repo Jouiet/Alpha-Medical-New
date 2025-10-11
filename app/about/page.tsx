@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="relative bg-gradient-to-br from-blue-50 to-teal-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge className="mb-4 bg-blue-600">About PhysioWellness</Badge>
+            <Badge className="mb-4 bg-blue-600">About Alpha Medical Care</Badge>
             <h1 className="mb-6 text-4xl font-bold text-slate-900 md:text-5xl">
               Your Trusted Partner in Health & Recovery
             </h1>
@@ -27,7 +27,7 @@ export default function AboutPage() {
             <div>
               <h2 className="mb-6 text-3xl font-bold text-slate-900">Our Mission</h2>
               <p className="mb-4 text-lg text-slate-600">
-                At PhysioWellness, we believe that everyone deserves access to high-quality rehabilitation and wellness equipment. Our mission is to bridge the gap between professional healthcare and home care by offering medical-grade devices that are both effective and accessible.
+                At Alpha Medical Care, we believe that everyone deserves access to high-quality rehabilitation and wellness equipment. Our mission is to bridge the gap between professional healthcare and home care by offering medical-grade devices that are both effective and accessible.
               </p>
               <p className="mb-6 text-lg text-slate-600">
                 We work closely with physical therapists, doctors, and healthcare professionals to curate a selection of products that meet the highest standards of quality and effectiveness.
@@ -61,7 +61,7 @@ export default function AboutPage() {
       <section className="bg-slate-50 py-16">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-slate-900">Why Choose PhysioWellness</h2>
+            <h2 className="mb-4 text-3xl font-bold text-slate-900">Why Choose Alpha Medical Care</h2>
             <p className="text-lg text-slate-600">
               We're more than just a store – we're your partners in health and recovery
             </p>

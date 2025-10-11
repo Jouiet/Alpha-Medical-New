@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShoppingCart, Menu, Search, User, Heart } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
 import { Button } from '@/components/ui/button';
@@ -15,13 +16,18 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-teal-400">
-                <span className="text-xl font-bold text-white">P</span>
+            <Link href="/" className="flex items-center space-x-3">
+              <Image
+                src="/logo.svg"
+                alt="Alpha Medical Care Logo"
+                width={40}
+                height={48}
+                className="h-12 w-auto"
+              />
+              <div className="hidden flex-col sm:flex">
+                <span className="text-lg font-bold text-blue-600 leading-tight">ALPHA</span>
+                <span className="text-[10px] font-light text-blue-600 tracking-widest">MEDICAL CARE</span>
               </div>
-              <span className="hidden text-lg font-semibold text-slate-900 sm:inline-block">
-                PhysioWellness
-              </span>
             </Link>
 
             <nav className="hidden lg:flex lg:gap-6">
