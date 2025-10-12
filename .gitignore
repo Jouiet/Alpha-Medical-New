@@ -1,0 +1,17 @@
+# Shopify API Tokens & Credentials
+*.sh
+.env
+.env.local
+*.token
+*_TOKEN.md
+credentials.json
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
