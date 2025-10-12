@@ -4,7 +4,7 @@
 **URL:** https://alphamedical.shop
 **Analyste:** Claude Code
 **Méthode:** Inspection directe site live + Chrome DevTools + Vérification Admin Shopify
-**Mise à jour:** 12 octobre 2025 23:40 (MAJ MAJEURE - 3 collections créées + Documentation complétée)
+**Mise à jour:** 12 octobre 2025 23:45 (MAJ - Plan 9 nouvelles pages + NO delivery Morocco)
 
 ---
 
@@ -133,6 +133,19 @@
 - ❌ Copyright: "My Store" au lieu de "Alpha Medical Care"
 - **Action requise:** Créer 3 menus + configurer theme (15 min)
 - **Guide:** MANUAL_FOOTER_CONFIG.md
+
+**9 Pages additionnelles à créer:**
+1. Warranty & Guarantee
+2. Product Registration
+3. Help Center
+4. Customer Reviews
+5. Blog / Wellness Hub
+6. How to Use / Videos
+7. Medical Disclaimer
+8. Gift Cards
+9. Refer a Friend
+
+**IMPORTANT:** Clarifier "NO delivery to Morocco" dans page Shipping
 
 ---
 
@@ -418,7 +431,8 @@ TOTAL: 2 pages uniquement
 3. **⏳ Shipping / Livraison**
    - Page existe dans admin: /pages/shipping-delivery
    - Contenu prêt: CONTENT_SHIPPING.html (3 tiers, international)
-   - Action requise: Copy-paste (2 min)
+   - **⚠️ À MODIFIER:** Clarifier "NO delivery to Morocco" dans contenu
+   - Action requise: Copy-paste + modifier restriction Maroc (3 min)
 
 4. **⏳ Returns / Retours**
    - Page existe dans admin: /pages/returns-exchanges
@@ -624,13 +638,71 @@ Le site est techniquement fonctionnel pour vendre MAIS manque TOUS les élément
    - ✅ Therapy & Wellness → https://alphamedical.shop/collections/therapy-wellness
    - ⏳ Ajouter au menu principal (voir MANUAL_FOOTER_CONFIG.md)
 
-### PRIORITÉ 3 - OPTIMISATION (Futur)
+### PRIORITÉ 3 - PAGES ADDITIONNELLES (9 nouvelles pages)
 
-8. **❌ CRÉER PAGES ADDITIONNELLES**
+8. **⏳ CRÉER 9 PAGES SUPPLÉMENTAIRES**
+
+   **Pages de confiance et support:**
+   - **Warranty & Guarantee** → /pages/warranty-guarantee
+     - Politique de garantie produits
+     - Conditions de remplacement
+     - Durée de garantie par type de produit
+
+   - **Product Registration** → /pages/product-registration
+     - Formulaire d'enregistrement produit
+     - Avantages de l'enregistrement
+     - Extension de garantie
+
+   - **Help Center** → /pages/help-center
+     - Hub central d'aide
+     - Guides d'utilisation
+     - FAQ organisées par catégorie
+     - Liens vers ressources
+
+   - **Customer Reviews** → /pages/reviews
+     - Témoignages clients vérifiés
+     - Success stories
+     - Avant/après (si applicable)
+
+   **Pages de contenu:**
+   - **Blog / Wellness Hub** → /blogs/wellness-hub
+     - Articles santé et bien-être
+     - Conseils d'utilisation produits
+     - Guides de récupération
+     - SEO content
+
+   - **How to Use / Videos** → /pages/how-to-use
+     - Guides vidéo d'utilisation
+     - Liens YouTube
+     - Instructions par produit
+     - Tips d'experts
+
+   - **Medical Disclaimer** → /pages/medical-disclaimer
+     - Avertissement médical complet
+     - Limitations d'utilisation
+     - Recommandations consultation médicale
+     - Responsabilité légale
+
+   **Pages commerciales:**
+   - **Gift Cards** → /products/gift-card
+     - Cartes cadeaux configurées
+     - Montants variables
+     - Personnalisation message
+
+   - **Refer a Friend** → /pages/refer-a-friend
+     - Programme de parrainage
+     - Récompenses référent/référé
+     - Instructions de partage
+
+   **IMPORTANT:** Pas de livraison au Maroc - À clarifier dans page Shipping
+
+### PRIORITÉ 4 - OPTIMISATION (Futur)
+
+9. **❌ PAGES TRACKING & GUIDES**
    - Track Order (page tracking)
    - Size Guide (tableau mesures)
 
-9. **❌ OPTIMISER PRODUITS**
+10. **❌ OPTIMISER PRODUITS**
    - Raccourcir titres (max 60 caractères)
    - Ajouter descriptions détaillées
    - Activer reviews Loox
@@ -655,6 +727,22 @@ Le site est techniquement fonctionnel pour vendre MAIS manque TOUS les élément
 | **Privacy Policy** | `/policies/privacy-policy` | ✅ LIVE | Complète et à jour |
 | **Cart** | `/cart` | ✅ LIVE | Fonctionnel |
 | **Checkout** | `/checkout/*` | ⏳ Non testé | Accessible via cart |
+
+### 9 Nouvelles pages à créer (Priorité 3):
+
+| Page | URL | Statut | Notes |
+|------|-----|--------|-------|
+| **Warranty & Guarantee** | `/pages/warranty-guarantee` | ❌ À créer | Politique de garantie produits |
+| **Product Registration** | `/pages/product-registration` | ❌ À créer | Formulaire d'enregistrement |
+| **Help Center** | `/pages/help-center` | ❌ À créer | Hub central d'aide |
+| **Customer Reviews** | `/pages/reviews` | ❌ À créer | Témoignages clients |
+| **Blog / Wellness Hub** | `/blogs/wellness-hub` | ❌ À créer | Articles santé SEO |
+| **How to Use / Videos** | `/pages/how-to-use` | ❌ À créer | Guides vidéo YouTube |
+| **Medical Disclaimer** | `/pages/medical-disclaimer` | ❌ À créer | Avertissement médical |
+| **Gift Cards** | `/products/gift-card` | ❌ À créer | Cartes cadeaux Shopify |
+| **Refer a Friend** | `/pages/refer-a-friend` | ❌ À créer | Programme de parrainage |
+
+**⚠️ IMPORTANT:** Ajouter "NO delivery to Morocco" dans page Shipping
 
 ---
 
@@ -768,9 +856,11 @@ Le site a progressé de **20%** à **65%** de professionnalisme. Les fondations 
 
 **Analyste:** Claude Code
 **Date initiale:** 12 octobre 2025
-**Mise à jour:** 12 octobre 2025 23:40
+**Mise à jour:** 12 octobre 2025 23:45
 **Durée session totale:** ~3 heures
 **Pages créées/complétées:** 2 (About Us, Contact)
 **Collections créées:** 3 (Pain Relief & Recovery, Posture & Support, Therapy & Wellness)
 **Fichiers créés:** 11 (8 HTML + 3 docs)
+**Nouvelles pages planifiées:** 9 pages additionnelles (Warranty, Registration, Help Center, Reviews, Blog, How-to, Disclaimer, Gift Cards, Refer a Friend)
 **Progress:** 20% → 65% professionnalisme
+**Note importante:** NO delivery to Morocco (à clarifier dans Shipping)
