@@ -3,30 +3,67 @@
 **Date:** 12 octobre 2025
 **URL:** https://alphamedical.shop
 **Analyste:** Claude Code
-**Méthode:** Inspection directe du site live + Chrome DevTools
+**Méthode:** Inspection directe site live + Chrome DevTools + Vérification Admin Shopify
+**Mise à jour:** 12 octobre 2025 20:51 (corrections factuelles après vérification admin)
+
+---
+
+## 📋 MÉTHODOLOGIE ET LIMITES
+
+### ✅ VÉRIFIÉ FACTUELLEMENT:
+1. **Frontend public (Site live):**
+   - Inspection Chrome DevTools
+   - Navigation manuelle pages
+   - Tests fonctionnels (cart, formulaires)
+   - Structure DOM complète
+
+2. **Admin Shopify (Vérifié 20:50):**
+   - Liste pages existantes
+   - Statut publication
+   - Apps installées (liste)
+
+### ❌ NON VÉRIFIÉ:
+- Configuration interne apps (Klaviyo, Tidio, Loox, ReConvert)
+- Checkout complet (paiement non testé)
+- Product pages individuelles (détails)
+- Performance réelle (metrics précis)
+- Collections admin (existence/config)
+
+### ⚠️ CORRECTIONS APPORTÉES:
+- **Page À Propos:** Cause corrigée (n'existe pas vs mal publiée)
+- **Page Contact:** Statut précisé (template défaut vs personnalisé)
 
 ---
 
 ## 🚨 PROBLÈMES CRITIQUES IDENTIFIÉS
 
-### 1. ❌ PAGE "À PROPOS" - 404 NOT FOUND
+### 1. ❌ PAGE "À PROPOS" - INEXISTANTE (VÉRIFIÉ ADMIN)
 **URL testée:** https://alphamedical.shop/pages/a-propos
 **Résultat:** Page Not Found
 **Statut:** ÉCHEC CRITIQUE
 
-**Preuve factuelle:**
+**Preuve factuelle (Site):**
 ```
 RootWebArea "404 Not Found – My Store"
 heading "Page not found" level="1"
 ```
 
+**Preuve factuelle (Admin Shopify - Vérifié 12 oct 20:50):**
+```
+Pages existantes dans admin:
+1. "Your privacy choices" - Visible
+2. "Contact" - Visible
+TOTAL: 2 pages uniquement
+```
+
 **Impact:**
-- Navigation "À Propos" créée dans admin mais page INEXISTANTE sur le site
+- Page N'EXISTE PAS dans admin Shopify
+- Les tentatives de création automatisée ont ÉCHOUÉ
 - Perte de confiance client
 - SEO négatif
 - Navigation brisée
 
-**Cause probable:** La page a été créée dans l'admin Shopify mais n'a PAS été correctement publiée ou le slug est incorrect.
+**Cause vérifiée:** La page n'a JAMAIS été créée ou sauvegardée dans l'admin. Les scripts JavaScript de création ont échoué silencieusement.
 
 ---
 
@@ -77,10 +114,10 @@ heading "Page not found" level="1"
 
 ---
 
-### 2. PAGE CONTACT ✅
+### 2. PAGE CONTACT ⚠️ PARTIELLEMENT FONCTIONNEL
 **URL:** https://alphamedical.shop/pages/contact
 
-**Contenu vérifié:**
+**Contenu vérifié (Site - 12 oct 20:51):**
 ```
 heading "Contact" level="1"
 heading "Contact form" level="2"
@@ -91,11 +128,20 @@ textbox "Comment" multiline
 button "Send"
 ```
 
-**Statut:** FONCTIONNEL
-- Formulaire complet
-- Champs requis marqués
-- Button submit présent
-- PAS de contenu personnalisé Alpha Medical Care (adresse, horaires, etc.)
+**Statut:** Template Shopify par défaut SANS personnalisation
+- ✅ Formulaire complet et fonctionnel
+- ✅ Champs requis marqués
+- ✅ Button submit présent
+- ❌ ZÉRO contenu Alpha Medical Care
+
+**Contenu manquant:**
+- Email: support@alphamedical.shop
+- Horaires: Lundi-Vendredi, 9h-18h
+- Mention chat Tidio
+- Adresse/téléphone entreprise
+- Informations de contact personnalisées
+
+**Cause:** Les tentatives de création de contenu personnalisé via JavaScript ont échoué. Seul le template par défaut existe.
 
 ---
 
@@ -390,11 +436,21 @@ Le site est techniquement fonctionnel pour vendre MAIS manque TOUS les élément
 
 ### PRIORITÉ 1 - CRITIQUE (Urgent)
 
-1. **✅ FIXER PAGE À PROPOS**
-   - Vérifier dans admin Shopify: Pages → À Propos
-   - Vérifier publication status
-   - Vérifier slug URL
-   - Republier si nécessaire
+1. **❌ CRÉER PAGE À PROPOS (N'EXISTE PAS)**
+   - Aller: https://admin.shopify.com/store/azffej-as/pages/new
+   - Titre: "À Propos"
+   - Slug: "a-propos"
+   - Contenu: Mission, valeurs, présentation Alpha Medical Care
+   - Visibilité: Visible
+   - Méthode: MANUELLE via interface admin (automation échouée)
+
+1b. **❌ COMPLÉTER PAGE CONTACT (CONTENU MANQUANT)**
+   - Éditer: https://admin.shopify.com/store/azffej-as/pages/[contact-id]
+   - Ajouter AVANT formulaire:
+     - Email: support@alphamedical.shop
+     - Horaires: Lundi-Vendredi, 9h-18h
+     - Mention: "Chat Tidio disponible en bas à droite"
+   - Méthode: MANUELLE via interface admin
 
 2. **✅ CHANGER BRANDING**
    - Nom: "My Store" → "Alpha Medical Care"
@@ -502,14 +558,21 @@ Le site est techniquement fonctionnel pour vendre MAIS manque TOUS les élément
 **Verdict:**
 Le site peut TECHNIQUEMENT vendre mais aura un taux de conversion TRÈS FAIBLE (<1%) car il manque TOUS les éléments de confiance, de crédibilité et de conversion.
 
-**Priorité absolue:**
-1. Fixer page À Propos (10 min)
-2. Changer branding My Store → Alpha Medical Care (5 min)
-3. Créer pages essentielles: Shipping, Returns, FAQ (2h)
-4. Activer apps Tidio + Loox (30 min)
-5. Enrichir homepage avec 3+ sections (3h)
+**CONSTAT AUTOMATION:**
+- ❌ Tentatives création pages via JavaScript: ÉCHOUÉES
+- ❌ Page À Propos: N'existe pas (automation non fonctionnelle)
+- ❌ Page Contact personnalisée: N'existe pas (template défaut seulement)
+- ✅ Apps installées: OUI (mais non configurées/visibles)
 
-**Temps estimé pour site professionnel:** 6-8 heures de travail manuel
+**Priorité absolue (MANUEL REQUIS):**
+1. **CRÉER** page À Propos manuellement (15 min)
+2. **COMPLÉTER** page Contact avec contenu Alpha Medical (10 min)
+3. Changer branding My Store → Alpha Medical Care (5 min)
+4. Créer pages essentielles: Shipping, Returns, FAQ (2h)
+5. Activer apps Tidio + Loox (30 min)
+6. Enrichir homepage avec 3+ sections (3h)
+
+**Temps estimé pour site professionnel:** 6-8 heures de travail MANUEL
 
 ---
 
