@@ -67,20 +67,25 @@ TOTAL: 2 pages uniquement
 
 ---
 
-### 2. ❌ BRANDING INCOMPLET
+### 2. ⚠️ BRANDING PARTIELLEMENT COMPLÉTÉ
 
-**Nom du site:** "My Store" (pas changé)
+**Logo:** ✅ PRÉSENT (Vérifié 12 oct 20:52)
+- Image: Alpha Medical Care logo visible
+- Position: Header haut gauche
+- Fond: Blanc sur bleu marine
+- Fichier: `shopify://shop_images/Alpha_Medical_Logo.png`
+- Largeur: 110px
+
+**Nom du site:** ❌ "My Store" (DOM/SEO pas changé)
 **Preuve:**
-- Header: `heading "My Store" level="1"`
+- Header H1: `heading "My Store" level="1"` (caché visuellement par logo)
 - Footer: `link "My Store"`
-- Title tags: "404 Not Found – My Store", "Contact – My Store", etc.
-
-**Logo:** ABSENT (comme documenté)
+- Title tags: "Contact – My Store", etc.
 
 **Impact:**
-- ZÉRO identité de marque Alpha Medical Care
-- Apparence générique
-- Perte de reconnaissance marque
+- ✅ Identité visuelle Alpha Medical Care OK
+- ❌ SEO et metadata encore "My Store"
+- ⚠️ Branding incomplet (logo OK, textes non)
 
 ---
 
