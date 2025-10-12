@@ -4,12 +4,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ShoppingCart, Menu, Search, User, Heart } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
+import { useWishlist } from '@/contexts/WishlistContext';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import SearchDialog from './SearchDialog';
 
 export default function Header() {
   const { cartCount } = useCart();
+  const { wishlistCount } = useWishlist();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
@@ -65,7 +69,12 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hidden md:inline-flex"
+              onClick={() => setSearchOpen(true)}
+            >
               <Search className="h-5 w-5" />
             </Button>
 
@@ -75,9 +84,16 @@ export default function Header() {
               </Button>
             </Link>
 
-            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
-              <Heart className="h-5 w-5" />
-            </Button>
+            <Link href="/account/wishlist">
+              <Button variant="ghost" size="icon" className="relative hidden md:inline-flex">
+                <Heart className="h-5 w-5" />
+                {wishlistCount > 0 && (
+                  <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-600 text-xs font-bold text-white">
+                    {wishlistCount}
+                  </span>
+                )}
+              </Button>
+            </Link>
 
             <Link href="/cart">
               <Button variant="ghost" size="icon" className="relative">
@@ -138,6 +154,7 @@ export default function Header() {
           </div>
         )}
       </div>
+      <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </header>
   );
 }

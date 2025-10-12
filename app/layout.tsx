@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { CartProvider } from '@/contexts/CartContext';
+import { WishlistProvider } from '@/contexts/WishlistContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/sonner';
@@ -22,12 +23,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CartProvider>
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-          <Toaster />
+          <WishlistProvider>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+            <Toaster />
+          </WishlistProvider>
         </CartProvider>
       </body>
     </html>

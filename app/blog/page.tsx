@@ -1,93 +1,89 @@
-import { supabase } from '@/lib/supabase';
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 
-async function getBlogPosts() {
-  const { data: posts } = await supabase
-    .from('blog_posts')
-    .select('*')
-    .eq('published', true)
-    .order('published_at', { ascending: false });
+const blogPosts = [
+  {
+    id: 1,
+    title: 'How to Relieve Lower Back Pain: A Comprehensive Guide',
+    slug: 'how-to-relieve-lower-back-pain',
+    excerpt: 'Discover effective methods and exercises to alleviate lower back pain and improve your quality of life. Learn from expert physiotherapists about stretching, strengthening exercises, and the best medical devices for back support.',
+    image: 'https://images.pexels.com/photos/6823567/pexels-photo-6823567.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Pain Management',
+    author: 'Dr. Sarah Johnson',
+    date: 'March 15, 2025',
+    readTime: '8 min read'
+  },
+  {
+    id: 2,
+    title: 'The Benefits of Pressotherapy for Athletic Recovery',
+    slug: 'benefits-of-pressotherapy-athletic-recovery',
+    excerpt: 'Learn how pressotherapy boots can accelerate muscle recovery, reduce inflammation, and improve athletic performance. Discover why professional athletes use this technology and how you can benefit from it at home.',
+    image: 'https://images.pexels.com/photos/8172765/pexels-photo-8172765.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Recovery',
+    author: 'Michael Chen',
+    date: 'March 12, 2025',
+    readTime: '6 min read'
+  },
+  {
+    id: 3,
+    title: 'Understanding Cervical Traction Therapy',
+    slug: 'understanding-cervical-traction-therapy',
+    excerpt: 'A detailed look at how cervical traction devices work and who can benefit from this non-invasive treatment approach. Learn about the science behind neck traction and how to use it safely for maximum relief.',
+    image: 'https://images.pexels.com/photos/6823574/pexels-photo-6823574.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Treatment',
+    author: 'Dr. Emily Roberts',
+    date: 'March 10, 2025',
+    readTime: '7 min read'
+  },
+  {
+    id: 4,
+    title: '5 Essential Exercises for Posture Correction',
+    slug: '5-essential-exercises-posture-correction',
+    excerpt: 'Simple yet effective exercises you can do at home to improve your posture and reduce neck and shoulder pain. Includes step-by-step instructions with photos and tips from certified physiotherapists.',
+    image: 'https://images.pexels.com/photos/6111619/pexels-photo-6111619.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Exercise',
+    author: 'Dr. James Wilson',
+    date: 'March 8, 2025',
+    readTime: '5 min read'
+  },
+  {
+    id: 5,
+    title: 'The Science Behind LED Light Therapy for Skin',
+    slug: 'science-behind-led-light-therapy-skin',
+    excerpt: 'Explore how different wavelengths of LED light can rejuvenate skin, reduce wrinkles, and promote healing. Backed by scientific research and dermatologist recommendations for home use.',
+    image: 'https://images.pexels.com/photos/3865618/pexels-photo-3865618.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Wellness',
+    author: 'Dr. Lisa Anderson',
+    date: 'March 5, 2025',
+    readTime: '9 min read'
+  },
+  {
+    id: 6,
+    title: 'Knee Rehabilitation: From Injury to Full Recovery',
+    slug: 'knee-rehabilitation-injury-to-recovery',
+    excerpt: 'A step-by-step guide to knee rehabilitation, including exercises, equipment, and expert tips for optimal recovery. Learn about different stages of recovery and when to progress to the next level.',
+    image: 'https://images.pexels.com/photos/6823581/pexels-photo-6823581.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Rehabilitation',
+    author: 'Dr. Mark Thompson',
+    date: 'March 3, 2025',
+    readTime: '10 min read'
+  }
+];
 
-  return posts || [];
-}
+const categories = ['All', 'Pain Management', 'Recovery', 'Treatment', 'Exercise', 'Wellness', 'Rehabilitation'];
 
-export default async function BlogPage() {
-  const posts = await getBlogPosts();
+export default function BlogPage() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const staticPosts = [
-    {
-      id: 1,
-      title: 'How to Relieve Lower Back Pain: A Comprehensive Guide',
-      slug: 'how-to-relieve-lower-back-pain',
-      excerpt: 'Discover effective methods and exercises to alleviate lower back pain and improve your quality of life. Learn from expert physiotherapists.',
-      image: 'https://images.pexels.com/photos/6823567/pexels-photo-6823567.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Pain Management',
-      author: 'Dr. Sarah Johnson',
-      date: 'March 15, 2025',
-      readTime: '8 min read'
-    },
-    {
-      id: 2,
-      title: 'The Benefits of Pressotherapy for Athletic Recovery',
-      slug: 'benefits-of-pressotherapy-athletic-recovery',
-      excerpt: 'Learn how pressotherapy boots can accelerate muscle recovery, reduce inflammation, and improve athletic performance.',
-      image: 'https://images.pexels.com/photos/8172765/pexels-photo-8172765.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Recovery',
-      author: 'Michael Chen',
-      date: 'March 12, 2025',
-      readTime: '6 min read'
-    },
-    {
-      id: 3,
-      title: 'Understanding Cervical Traction Therapy',
-      slug: 'understanding-cervical-traction-therapy',
-      excerpt: 'A detailed look at how cervical traction devices work and who can benefit from this non-invasive treatment approach.',
-      image: 'https://images.pexels.com/photos/6823574/pexels-photo-6823574.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Treatment',
-      author: 'Dr. Emily Roberts',
-      date: 'March 10, 2025',
-      readTime: '7 min read'
-    },
-    {
-      id: 4,
-      title: '5 Essential Exercises for Posture Correction',
-      slug: '5-essential-exercises-posture-correction',
-      excerpt: 'Simple yet effective exercises you can do at home to improve your posture and reduce neck and shoulder pain.',
-      image: 'https://images.pexels.com/photos/6111619/pexels-photo-6111619.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Exercise',
-      author: 'Dr. James Wilson',
-      date: 'March 8, 2025',
-      readTime: '5 min read'
-    },
-    {
-      id: 5,
-      title: 'The Science Behind LED Light Therapy for Skin',
-      slug: 'science-behind-led-light-therapy-skin',
-      excerpt: 'Explore how different wavelengths of LED light can rejuvenate skin, reduce wrinkles, and promote healing.',
-      image: 'https://images.pexels.com/photos/3865618/pexels-photo-3865618.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Wellness',
-      author: 'Dr. Lisa Anderson',
-      date: 'March 5, 2025',
-      readTime: '9 min read'
-    },
-    {
-      id: 6,
-      title: 'Knee Rehabilitation: From Injury to Full Recovery',
-      slug: 'knee-rehabilitation-injury-to-recovery',
-      excerpt: 'A step-by-step guide to knee rehabilitation, including exercises, equipment, and expert tips for optimal recovery.',
-      image: 'https://images.pexels.com/photos/6823581/pexels-photo-6823581.jpeg?auto=compress&cs=tinysrgb&w=800',
-      category: 'Rehabilitation',
-      author: 'Dr. Mark Thompson',
-      date: 'March 3, 2025',
-      readTime: '10 min read'
-    }
-  ];
-
-  const categories = ['All', 'Pain Management', 'Recovery', 'Treatment', 'Exercise', 'Wellness', 'Rehabilitation'];
+  const filteredPosts = selectedCategory === 'All'
+    ? blogPosts
+    : blogPosts.filter(post => post.category === selectedCategory);
 
   return (
     <div className="flex flex-col">
@@ -110,47 +106,55 @@ export default async function BlogPage() {
             {categories.map((category) => (
               <Button
                 key={category}
-                variant={category === 'All' ? 'default' : 'outline'}
+                variant={category === selectedCategory ? 'default' : 'outline'}
                 size="sm"
+                onClick={() => setSelectedCategory(category)}
               >
                 {category}
               </Button>
             ))}
           </div>
 
+          <div className="mb-6 text-center text-sm text-slate-600">
+            Showing {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'}
+          </div>
+
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {(posts.length > 0 ? posts : staticPosts).map((post) => (
+            {filteredPosts.map((post) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
                 <Card className="group h-full overflow-hidden transition-all hover:shadow-lg">
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
-                      src={post.featured_image || post.image}
+                      src={post.image}
                       alt={post.title}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <Badge className="absolute left-4 top-4 bg-blue-600">
-                      Health Tips
+                      {post.category}
                     </Badge>
                   </div>
                   <CardContent className="p-6">
                     <div className="mb-3 flex items-center gap-4 text-sm text-slate-500">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
-                        <span>{post.published_at ? new Date(post.published_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : post.date}</span>
+                        <span>{post.date}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="h-4 w-4" />
-                        <span>{post.readTime || '5 min read'}</span>
+                        <span>{post.readTime}</span>
                       </div>
                     </div>
                     <h3 className="mb-3 text-xl font-bold text-slate-900 line-clamp-2">
                       {post.title}
                     </h3>
                     <p className="mb-4 text-slate-600 line-clamp-3">{post.excerpt}</p>
-                    <Button variant="ghost" size="sm" className="group-hover:text-blue-600">
-                      Read More
-                      <ArrowRight className="ml-1 h-4 w-4" />
-                    </Button>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-slate-500">By {post.author}</span>
+                      <Button variant="ghost" size="sm" className="group-hover:text-blue-600">
+                        Read More
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </Link>
@@ -166,7 +170,7 @@ export default async function BlogPage() {
             <p className="mb-6 text-blue-50">
               Get the latest health tips, product updates, and exclusive offers delivered to your inbox.
             </p>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2 sm:flex-row">
               <input
                 type="email"
                 placeholder="Enter your email"
