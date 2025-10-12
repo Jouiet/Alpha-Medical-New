@@ -68,7 +68,7 @@
       "settings": {
         "title": "🔥 Our Bestsellers",
         "heading_size": "h2",
-        "description": "Discover our most popular medical support products trusted by thousands",
+        "description": "<p>Discover our most popular medical support products trusted by thousands</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
