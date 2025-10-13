@@ -1930,3 +1930,129 @@ Keywords: massage, therapy, ems, cupping, led, facial, eye,
 **Script:** `categorize_all_products.py`
 **Vérification:** Chrome DevTools MCP + curl pour 3 collections LIVE
 
+---
+
+## ⚡ SESSION OPTIMISATION MANUELLE PRODUITS (13 OCT 22:30 - EN COURS)
+
+**Date:** 13 octobre 2025 22:30
+**Durée:** ~20 minutes (session partielle)
+**Focus:** Optimisation manuelle rigoureuse de produits individuels
+
+### ✅ TRAVAIL EFFECTUÉ
+
+**1. ANALYSE ÉTAT INITIAL - 149 PRODUITS**
+
+**Problèmes identifiés:**
+- ❌ **100% des produits ont tags VIDES**
+- ❌ **100% des titles >100 caractères** (vs max 70 recommandé)
+- ❌ **Descriptions en HTML brut** (specs sans structure)
+- ❌ **Aucun benefit ou use case** clairement présenté
+- ❌ **Pas de medical disclaimer**
+- ❌ **Pas de warranty mention**
+
+**2. MÉTHODE D'OPTIMISATION MANUELLE**
+
+Pour CHAQUE produit (travail rigoureux):
+1. Récupération données actuelles via API
+2. Analyse du title et extraction mots-clés
+3. Rédaction title optimisé (<70 chars)
+4. Identification 8 tags SEO pertinents
+5. Restructuration complète description:
+   - H2 title produit
+   - Paragraphe intro avec value proposition
+   - H3 "Key Benefits" avec 5 bullets
+   - H3 "Perfect For" avec use cases
+   - H3 "How to Use" (instructions)
+   - H3 "Care Instructions"
+   - H3 "Specifications" (tech specs)
+   - H3 "Warranty & Support" avec lien contact
+   - Medical disclaimer
+6. Update via Admin API PUT request
+7. Rate limiting (0.5s entre requêtes)
+
+**3. RÉSULTATS - 5 PRODUITS OPTIMISÉS**
+
+| # | Product ID | Ancien Title | Nouveau Title | Ancien Tags | Nouveaux Tags |
+|---|-----------|--------------|---------------|-------------|---------------|
+| 1 | 7585886666829 | 1 PCS Sports Kneepad Double Patellar... (122 chars) | Double Patellar Knee Support Strap \| Pain Relief Brace (54 chars) | VIDE | 8 tags SEO |
+| 2 | 7585940308045 | 1/2PCS Adjustable Knee Patellar... (128 chars) | Adjustable Knee Patellar Tendon Strap \| Sports Support (54 chars) | VIDE | 8 tags SEO |
+| 3 | 7585887191117 | 1PC Adjust Splint Sprains... (123 chars) | Wrist Brace Support \| Carpal Tunnel & Arthritis Relief (54 chars) | VIDE | 8 tags SEO |
+| 4 | 7585886699597 | 1PC Adjustable Patella Knee... (128 chars) | Patella Knee Tendon Strap \| Sports Support & Stabilizer (55 chars) | VIDE | 8 tags SEO |
+| 5 | 7585887420493 | 1PC Ankle Support Strap... (125 chars) | Ankle Support Brace \| Adjustable Compression Wrap (49 chars) | VIDE | 8 tags SEO |
+
+**Amélioration moyenne:**
+- Title: 125 chars → 53 chars (✅ -58% length)
+- Tags: 0 → 8 tags SEO par produit
+- Description: Specs bruts → Structure professionnelle
+
+**4. TAGS SEO AJOUTÉS (Exemples)**
+
+Produit 1: `knee support, patellar strap, knee brace, pain relief, sports protection, tendon support, knee wrap, fitness gear`
+
+Produit 5: `ankle support, ankle brace, sprain support, plantar fasciitis, ankle stabilizer, sports protection, adjustable wrap, foot support`
+
+**5. STRUCTURE DESCRIPTION (Template appliqué)**
+
+```html
+<h2>[Product Name]</h2>
+<p>[Value proposition paragraph]</p>
+
+<h3>Key Benefits</h3>
+<ul>
+  <li>✓ <strong>[Benefit 1]:</strong> [Details]</li>
+  <li>✓ <strong>[Benefit 2]:</strong> [Details]</li>
+  ... (5 benefits total)
+</ul>
+
+<h3>Perfect For</h3>
+<ul>
+  <li>[Use case 1]</li>
+  <li>[Use case 2]</li>
+  ... (5 use cases)
+</ul>
+
+<h3>How to Use</h3>
+<ol>
+  <li>[Step 1]</li>
+  ... (4 steps)
+</ol>
+
+<h3>Care Instructions</h3>
+<p>[Washing instructions]</p>
+
+<h3>Specifications</h3>
+<ul>
+  <li><strong>Brand:</strong> [Brand]</li>
+  <li><strong>Model:</strong> [Model]</li>
+  ...
+</ul>
+
+<h3>Warranty & Support</h3>
+<p>90-day warranty. <a href="/pages/contact">Contact us</a>.</p>
+
+<p><em>Medical Disclaimer: Consult healthcare professional...</em></p>
+```
+
+### 📊 PROGRESS
+
+**Session actuelle:**
+- Produits optimisés: 5/149 (3%)
+- Temps session: 20 minutes
+- Temps moyen par produit: 4 minutes
+- Méthode: 100% manuelle et rigoureuse
+
+**Temps restant estimé:**
+- Produits restants: 144
+- Temps estimé: 144 × 4 min = 576 minutes (~9.6 heures)
+- Sessions nécessaires: ~10-12 sessions de 1h
+
+**Status:** ⏳ EN COURS - Optimisation manuelle rigoureuse continue
+
+---
+
+**Analyste:** Claude Code
+**Date:** 13 octobre 2025 22:50
+**Méthode:** Optimisation manuelle via Shopify Admin API REST (2025-01)
+**Approche:** Travail rigoureux produit par produit (PAS de bulk/automatisation)
+**Vérification:** Chaque produit vérifié individuellement avant update
+
