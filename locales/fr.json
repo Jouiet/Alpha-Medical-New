@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -537,6 +546,22 @@
       "send_on_label": "Envoyer le (facultatif)",
       "expanded": "Formulaire de destinataire de carte-cadeau agrandi",
       "collapsed": "Formulaire de destinataire de carte-cadeau réduit"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "payment": {
+        "business_customer_with_bank_account_vaulting_payment_label": "Enregistrez ce mode de paiement lors du paiement et autorisez %{company} à débiter votre compte pour les futurs achats que vous approuvez pour ce point de vente, jusqu'à votre annulation. Tous les contacts associés à ce point de vente peuvent utiliser ce mode de paiement.",
+        "new_bank_account_disclaimer": "En complétant votre commande, vous autorisez %{shop_name} à débiter le compte ci-dessous via ACH pour le montant et à l'heure indiqués.",
+        "bank_account_disclaimer": "Le traitement des paiements ACH peut prendre jusqu'à 4 jours ouvrables."
+      }
+    }
+  },
+  "customer_accounts": {
+    "payment_methods": {
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "En ajoutant un mode de paiement, vous autorisez le débit de votre carte ou de votre compte bancaire pour les futurs achats que vous approuvez, jusqu'à ce que vous annuliez."
+      }
     }
   }
 }
