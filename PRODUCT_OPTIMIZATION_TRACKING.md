@@ -267,18 +267,18 @@ Pour CHAQUE produit:
 **Total produits:** 149
 **Catégorisés:** 149/149 (100%) ✅
 **Collections assignées:** 149/149 (100%) ✅
-**Optimisés:** 64/149 (43%) ⏳
-**Progress global:** 76% (catégorisation + 43% optimisation)
+**Optimisés:** 106/149 (71%) ⏳
+**Progress global:** 85% (catégorisation + 71% optimisation)
 
 **Par collection Shopify:**
-- Pain Relief & Recovery: 71 produits (35 optimisés - 49%)
-- Posture & Support: 30 produits (9 optimisés - 30%)
-- Therapy & Wellness: 48 produits (20 optimisés - 42%)
+- Pain Relief & Recovery: 71 produits (47 optimisés - 66%)
+- Posture & Support: 30 produits (20 optimisés - 67%)
+- Therapy & Wellness: 48 produits (39 optimisés - 81%)
 
 **Tâches par produit:**
-- ⏳ Titles: 64/149 optimisés (raccourcis à max 70 chars)
-- ⏳ Descriptions: 64/149 optimisées (structure + bullets)
-- ⏳ Tags: 64/149 complétés (8 tags SEO par produit)
+- ⏳ Titles: 106/149 optimisés (raccourcis à max 70 chars)
+- ⏳ Descriptions: 106/149 optimisées (structure + bullets)
+- ⏳ Tags: 106/149 complétés (8 tags SEO par produit)
 - ✅ Collections: 149/149 assignées
 
 **Produits optimisés (30):**
@@ -476,3 +476,62 @@ Pour CHAQUE produit:
   70. ✅ 7585939980365 - Hinged Knee Brace Meniscus Arthritis (72 chars)
 - Temps restant estimé: ~3.1 heures pour 85 produits restants
 - Progress global: 76% (33% catégorisation + 43% optimisation)
+
+**14 oct 2025 03:30** - ✅ BATCH 11-15 TERMINÉ - 106/149 PRODUITS (71%) 🎯
+- Travail effectué: 42 produits supplémentaires optimisés (71-120, skip produits déjà faits)
+- Progress: 64/149 → 106/149 (43% → 71%)
+- Sessions: Batches 11, 12, 13, 14, 15 (total 42 produits)
+- 🎯 **MILESTONE: Plus de 100 produits optimisés!**
+- Catégories couvertes:
+  * Pain Relief & Recovery: 12 produits supplémentaires (knee braces, NEENCA, leg correctors, heated pads)
+  * Posture & Support: 11 produits (back braces, posture correctors, orthopedic supports)
+  * Therapy & Wellness: 16 produits (neck/shoulder massagers, leg massagers, traction devices, rehabilitation gloves)
+  * Beauty & Wellness: 3 produits (LED masks - 7 color, red light therapy, eye massagers)
+- Temps session: ~105 minutes pour 42 produits
+- Rythme: ~2.5 minutes par produit (maintenu)
+- Qualité: Structure complète 8-sections maintenue
+- Produits batch 11-15 (71-120):
+  71. ✅ 7586409021517 - Hinged Knee Brace Post-Op ROM
+  73. ✅ 7585887486029 - Hinged ROM Elbow Brace Post-Op
+  74. ✅ 7585887846477 - ROM Elbow Brace Post-Surgery
+  75. ✅ 7586409611341 - Hip Fixation Brace Femoral Thigh
+  76. ✅ 7586398732365 - EMS Smart Hip Trainer Vibrator
+  77. ✅ 7586410463309 - Smart Hip Trainer EMS Vibration
+  78. ✅ 7585940176973 - Lower Back Support Belt Work
+  79. ✅ 7585887223885 - Inflatable Neck Collar Cervical Traction
+  80. ✅ 7585887256653 - Intelligent Massage Gloves Hand Rehab
+  82. ✅ 7586399256653 - Knee Joint Booster Mountaineering
+  83. ✅ 7586410725453 - Spring Knee Booster Elderly Climbing
+  84. ✅ 7585886634061 - Knee Power Booster Spring-Loaded
+  85. ✅ 7585940078669 - Knee Stabilizer Brace Aluminum Alloy
+  86. ✅ 7585940013133 - Orthopedic Knee Brace Open Patella
+  88. ✅ 7586399125581 - Leg Air Compression Massager Heat
+  89. ✅ 7586410627149 - Air Compression Leg Massager 3 Modes
+  90. ✅ 7585887289421 - Lower Back Brace 6 Stays Anti-Skid
+  91. ✅ 7586408792141 - Lumbar Traction Massager Electric
+  94. ✅ 7585887584333 - Magnetic Posture Corrector Shoulder
+  95. ✅ 7585939849293 - Neck Traction Device Heating Inflatable
+  96. ✅ 7586408890445 - Nano Steam Eye Massager Acupressure
+  97. ✅ 7585886961741 - Adjustable Cervical Collar Neck Brace
+  98. ✅ 7586410233933 - Neck LED Lift Mask Anti-Wrinkle
+  99. ✅ 7586409218125 - Neck Massage Machine 4-Head Heating
+  100. ✅ 7585939521613 - Neck Stretcher Inflatable Air Cervical
+  102. ✅ 7585939914829 - NEENCA Hinged Knee Brace Side Stabilizers
+  103. ✅ 7585939587149 - NEENCA OA Unloader Knee Brace Arthritis
+  104. ✅ 7585939816525 - OA Unloader Brace NEENCA Arthritis
+  105. ✅ 7585940340813 - Electric Heating Knee Pads Pain Relief
+  106. ✅ 7586399354957 - Electric Neck Massager Shoulder Vibration
+  107. ✅ 7586410790989 - Shoulder Vibration Massager Electric Neck
+  108. ✅ 7586408988749 - O/X-Type Leg Corrector Adjustable
+  111. ✅ 7586410692685 - Cervical Spine Massager EMS Lymphatic
+  112. ✅ 7586399158349 - Posture Corrector Back Brace Women Men
+  113. ✅ 7586410659917 - Back Support Brace Adjustable Posture
+  114. ✅ 7585887322189 - Posture Corrector Adjustable Shoulder
+  115. ✅ 7586409939021 - Professional 7-Color LED Mask Facial
+  116. ✅ 7585886732365 - Rehabilitation Robot Gloves Stroke
+  117. ✅ 7586409971789 - Red Light Therapy Face Mask 3-Wavelength
+  118. ✅ 7585940209741 - Robot Rehabilitation Gloves Stroke
+  119. ✅ 7586399617101 - Eye Massager with Heat & Music Migraine
+  120. ✅ 7586410856525 - Heat & Music Eye Massager Migraine
+- Temps restant estimé: ~1.8 heures pour 43 produits restants
+- Progress global: 85% (33% catégorisation + 71% optimisation)
