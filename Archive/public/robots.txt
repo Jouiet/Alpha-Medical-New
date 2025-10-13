@@ -1,0 +1,15 @@
+# robots.txt for Alpha Medical Care
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /cart/
+
+# Sitemap location
+Sitemap: https://alphamedicalcare.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

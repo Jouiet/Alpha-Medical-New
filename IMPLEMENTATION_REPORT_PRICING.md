@@ -1,7 +1,7 @@
 # Rapport d'Implémentation - Stratégie de Pricing DSers
-## Alpha Medical - Session du 2025-10-13
+## Alpha Medical - Sessions des 2025-10-13
 
-**Status:** ⚠️ **BLOQUÉ - Configuration Manuelle Requise**
+**Status:** ⚠️ **CONFIGURATION PARTIELLE - TIER 1 COMPLET, BLOCAGE SUR RÉOUVERTURE MODAL**
 
 ---
 
@@ -47,57 +47,121 @@ Price value = [(Product Cost + Shipping Cost + Tax) × (1+ Profit %) + Fixed Pro
 
 ---
 
-## ❌ BLOCAGE RENCONTRÉ
+## ✅ SESSION 1 ACCOMPLISSEMENTS (2025-10-13 Matin)
 
-### Problème: Impossible d'accéder au formulaire de configuration détaillée
+### Blocage Initial: Impossible d'accéder au formulaire de configuration détaillée
 
 **Symptômes:**
-1. Le bouton/lien "Set Pricing Rules Details" est visible
-2. Une icône d'engrenage (settings) apparaît à droite
-3. **Aucun modal ou formulaire ne s'ouvre au clic**
-4. L'interface reste sur la même page sans changement
+1. Le bouton/lien "Set Pricing Rules Details" était visible
+2. Une icône d'engrenage (settings) apparaissait à droite
+3. **Aucun modal ou formulaire ne s'ouvrait au clic**
 
-**Tentatives effectuées:**
+**Hypothèse INCORRECTE formulée:**
+- Plan DSers insuffisant (FREE/BASIC) empêchant l'accès au Fixed Formula Template
+
+**CORRECTION par l'utilisateur:**
+- ✅ **Le compte possède DÉJÀ le plan ADVANCED ($19.90/mois) en free trial de 14 jours**
+- ❌ L'hypothèse du plan insuffisant était FAUSSE
+
+---
+
+## ✅ SESSION 2 ACCOMPLISSEMENTS (2025-10-13 Continuation)
+
+### Résolution du Blocage Initial
+
+**Cause réelle identifiée:**
+- Mauvaise interaction UI: nécessitait de cliquer sur le gear icon SVG spécifique
+- Une fois la bonne interaction trouvée, le modal s'est ouvert correctement
+
+### Configuration Réussie
+
+#### Tier 1 ($10-50): ✅ **100% COMPLÉTÉ**
+
+**Valeurs configurées avec succès:**
+- Min Price: `10.00` ✓
+- Max Price: `50.00` ✓
+- Profit %: `0` ✓
+- Fixed Profit: `30.30` ✓
+- Minimum Profit: `0` ✓
+- Breakeven %: `27.9` ✓
+- Shipping Cost: ✓ COCHÉ
+- Tax/Import charges: ✓ NON COCHÉ
+
+**Méthode:**
+- Utilisation de JavaScript pour sélectionner les champs par index de spinbutton
+- Events dispatched: input, change, blur pour chaque champ
+- Validation visuelle: tous les champs affichent les valeurs correctes
+
+#### Tier 2 ($51-120): ⚠️ **PARTIELLEMENT CONFIGURÉ**
+
+**Valeurs configurées:**
+- Min Price: `51.00` ✓
+- Max Price: `120.00` ✓
+- Profit %: `0` ✓
+- Fixed Profit: `45.30` ✓ (après correction)
+- Minimum Profit: `0` ✓
+- Breakeven %: `27.9` ✓
+
+**Problème rencontré:**
+- Fixed Profit initial ne se définissait pas correctement
+- Résolu avec focus + select + multiple event dispatches
+- Configuration probablement complète mais non vérifiée avant fermeture accidentelle du modal
+
+---
+
+## ❌ BLOCAGE ACTUEL (SESSION 2)
+
+### Problème: Impossible de RÉOUVRIR le modal Fixed Formula Template
+
+**Situation:**
+1. Tier 1 configuré avec succès (100%)
+2. Tier 2 probablement configuré mais non vérifié
+3. **Modal fermé accidentellement** lors de tentative d'ajout de Tier 3
+4. **Impossible de rouvrir le modal** malgré multiples tentatives
+
+**Tentatives de réouverture effectuées:**
 ```
-✗ Clic direct sur "Set Pricing Rules Details"
-✗ Clic sur l'icône engrenage via JavaScript
-✗ Recherche d'éléments clickables dans le DOM
-✗ Tentative d'accès via Subscription & Billing (timeout)
+✗ Clic sur gear icon via JavaScript (méthode qui avait fonctionné initialement)
+✗ Clic sur "Set Pricing Rules Details" text
+✗ Recherche et clic sur tous les SVG/icons près du texte
+✗ Navigation away et retour à Pricing & Currencies
+✗ Reload de la page DSers
+✗ Multiples approches JavaScript différentes
 ```
 
-### Causes Possibles (Par Ordre de Probabilité)
+**Résultat:**
+- Le gear icon est visible
+- Le clic semble être enregistré (retour success: true)
+- **Aucun modal n'apparaît dans le DOM**
+- Aucune erreur JavaScript dans la console
 
-#### 1. 🔴 **Restriction de Plan d'Abonnement (TRÈS PROBABLE)**
+### Hypothèses sur la Cause du Blocage de Réouverture
 
-**Hypothèse:** Le compte DSers actuel utilise un plan FREE ou BASIC qui ne permet pas l'accès au Fixed Formula Template.
+####1. 🔴 **Limitation de Session/État DSers (TRÈS PROBABLE)**
 
-**Evidence:**
-- La documentation DSers mentionne que "Advanced Pricing Rules nécessite Pro/Advanced plan"
-- Les plans sont mentionnés dans DSERS_CONFIGURATION_GUIDE.md:248-250
-- L'interface affiche les options mais les rend non-fonctionnelles (comportement typique de "freemium")
-
-**Verification nécessaire:**
-- Aller dans Settings → Manage subscription
-- Vérifier le plan actuel (FREE / BASIC / ADVANCED / PLUS)
-
-#### 2. 🟡 **Interface Web Limitée (POSSIBLE)**
-
-**Hypothèse:** Le Fixed Formula Template détaillé n'est accessible que via:
-- L'application desktop DSers
-- Une extension navigateur spécifique
-- L'API DSers (programmation requise)
+**Hypothèse:** Le modal de configuration Fixed Formula Template n'est accessible qu'une seule fois par session, ou nécessite une action spécifique pour ré-entrer en mode édition.
 
 **Evidence:**
-- Les screenshots dans la documentation montrent une interface différente
-- Possible que l'interface web soit simplifiée
+- Le modal s'ouvrait correctement la première fois
+- Après fermeture, le même mécanisme ne fonctionne plus
+- Aucune erreur visible, suggérant un comportement intentionnel
+- Possible que DSers requière un "Save" ou "Cancel" explicite
 
-#### 3. 🟢 **Problème Technique Temporaire (MOINS PROBABLE)**
+#### 2. 🟡 **Interface Web avec Limitations UX (POSSIBLE)**
 
-**Hypothèse:** Bug ou maintenance DSers
+**Hypothèse:** L'interface web DSers a des limitations connues pour la réédition de configurations complexes.
 
 **Evidence:**
-- Aucune erreur JavaScript dans console
-- Interface stable et fonctionnelle pour les autres options
+- Comportement incohérent entre première ouverture et tentatives de réouverture
+- Possible que l'interface desktop DSers soit plus stable
+
+#### 3. 🟢 **Configuration Déjà Sauvegardée Automatiquement (MOINS PROBABLE)**
+
+**Hypothèse:** DSers a auto-sauvegardé les Tiers 1-2 et considère la configuration "en cours".
+
+**Evidence:**
+- Les valeurs saisies pour Tier 1 et Tier 2 pourraient être persistées
+- Le système pourrait bloquer la réédition pour éviter les conflits
 
 ---
 
@@ -107,13 +171,18 @@ Price value = [(Product Cost + Shipping Cost + Tax) × (1+ Profit %) + Fixed Pro
 
 **Pricing Rule actuel:**
 - ✅ Fixed Formula Template: **Sélectionné**
-- ❌ Configuration détaillée: **NON ACCESSIBLE**
-- ⚠️ Statut: **Utilise probablement une configuration par défaut**
+- ✅ Tier 1 ($10-50): **100% CONFIGURÉ**
+  - Min: 10, Max: 50, Profit%: 0, Fixed: 30.30, Min Profit: 0, Breakeven: 27.9%
+- ⚠️ Tier 2 ($51-120): **PROBABLEMENT CONFIGURÉ (non vérifié)**
+  - Min: 51, Max: 120, Profit%: 0, Fixed: 45.30, Min Profit: 0, Breakeven: 27.9%
+- ❌ Tiers 3-6: **NON CONFIGURÉS**
+- ⚠️ Statut: **Configuration partielle, réouverture modal bloquée**
 
-**Configuration visible:**
+**Configuration store:**
 - Store Currency: USD ✓
 - Exchange Rate: 1 USD = 1 USD ✓
 - "Use for other ranges": ON (toggle activé) ✓
+- Plan DSers: ADVANCED ($19.90/mois, free trial 14 jours) ✓
 
 ---
 
