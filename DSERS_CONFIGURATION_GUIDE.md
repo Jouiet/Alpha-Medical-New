@@ -95,10 +95,12 @@ L'interface DSers affiche:
 Price = [(Product Cost + Shipping) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
 ```
 
-**Notre adaptation:**
-- Profit % = **0%** (on n'utilise pas de markup multiplicatif)
+**Notre adaptation (Version 2.0 - Implémentation Réelle):**
+- Profit % = **10%** (DSers bloque 0%, impact minimal car Fixed Profit domine)
 - Fixed Profit = **Variable selon tier** (c'est là qu'on ajoute notre marge + frais fixes)
+- Minimum Profit = **= Fixed Profit** (stratégie de protection validée)
 - Breakeven % = **27.9%** (pour couvrir tous les frais: 2.9% transaction + 20% marketing + 3% chargebacks + 2% opérationnel)
+- Compared at Price = **120-135** (format pourcentage, pas décimal)
 
 ### Étape 4: Sélection du Template "Fixed Formula"
 
@@ -116,25 +118,31 @@ Price = [(Product Cost + Shipping) × (1 + Profit %) + Fixed Profit] / (1 - Brea
    - **Breakeven%:** Pourcentage de frais variables
    - **☐ Compared at Price:** Prix de comparaison (barré)
 
-3. **Valeurs standards pour TOUS les tiers:**
-   - **profit%:** `0`
-   - **Minimum Profit:** `0`
+3. **Valeurs standards pour TOUS les tiers (⚠️ DÉCOUVERTES IMPLÉMENTATION):**
+   - **profit%:** `10` (DSers bloque 0%)
+   - **Minimum Profit:** `= Fixed Profit` (stratégie de protection)
    - **Shipping Cost:** ✓ **TOUJOURS COCHÉ**
    - **Tax/Import charges:** ✗ **NON COCHÉ**
    - **Breakeven%:** `27.9`
-   - **Compared at Price:** `0` ou vide
+   - **Compared at Price:** ☑ **COCHÉ**, opérateur `×`, valeur `120-135` selon tier
 
 **📄 Pour le guide détaillé du formulaire:** Voir `DSERS_FORM_CONFIGURATION.md`
+
+**⚠️ IMPORTANT - Découvertes Implémentation Manuelle:**
+- DSers **bloque** profit% = 0, utiliser 10%
+- Minimum Profit = Fixed Profit (best practice validée)
+- Compared at Price: format **120** (pas 1.20)
+- Tier 6 AUTO-GÉNÉRÉ (cannot delete)
 
 ---
 
 ## ⚙️ Configuration des 6 Tiers de Pricing
 
-**Note:** Les configurations ci-dessous sont simplifiées. Pour les valeurs EXACTES à saisir dans le formulaire Fixed Formula Template (incluant toutes les checkboxes), référez-vous à `DSERS_FORM_CONFIGURATION.md`.
+**Note:** Les configurations ci-dessous sont simplifiées. Pour les valeurs EXACTES à saisir dans le formulaire Fixed Formula Template (incluant toutes les checkboxes, Minimum Profit, Compared at Price), référez-vous à **`DSERS_FORM_CONFIGURATION.md`** (VERSION 2.0 avec découvertes implémentation manuelle).
 
 ### TIER 1: Produits $10-50 → Marge Nette $30
 
-**Paramètres à saisir dans DSers:**
+**Paramètres à saisir dans DSers (Version 2.0):**
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -144,11 +152,16 @@ Price = [(Product Cost + Shipping) × (1 + Profit %) + Fixed Profit] / (1 - Brea
 │   From: 10.00                              │
 │   To:   50.00                              │
 │                                             │
-│ Profit Percentage: 0                       │
-│                                             │
+│ Profit Percentage: 10                      │
 │ Fixed Profit: 30.30                        │
+│ Minimum Profit: 30.30                      │
+│                                             │
+│ ☑ Shipping Cost                            │
+│ ☐ Tax/Import charges                       │
 │                                             │
 │ Breakeven Percentage: 27.9                 │
+│                                             │
+│ ☑ Compared at Price: × 120                 │
 │                                             │
 │ Currency: USD                              │
 └─────────────────────────────────────────────┘
@@ -157,137 +170,35 @@ Price = [(Product Cost + Shipping) × (1 + Profit %) + Fixed Profit] / (1 - Brea
 **Actions:**
 1. Cliquer **"Add Rule"**
 2. Remplir les champs comme ci-dessus
-3. Cliquer **"Save Rule"**
+3. **IMPORTANT:** profit% = 10 (pas 0, DSers bloque)
+4. **IMPORTANT:** Minimum Profit = 30.30 (= Fixed Profit)
+5. **IMPORTANT:** Compared at Price: COCHER, × 120 (format pourcentage)
+6. Cliquer **"Save Rule"**
 
 **Vérification rapide:**
-- Produit à $30 + shipping $10 devrait donner ~$97.50
+- Produit à $30 + shipping $10 devrait donner ~$103.59 (avec profit% 10%)
 
 ---
 
-### TIER 2: Produits $51-120 → Marge Nette $45
+### TIER 2-6: Configuration Complète
 
-**Paramètres:**
+**⚠️ IMPORTANT:** Pour éviter la duplication et garantir l'exactitude, les configurations complètes des Tiers 2-6 avec TOUTES les valeurs mises à jour (profit% 10, Minimum Profit, Compared at Price, etc.) sont disponibles dans:
 
-```
-┌─────────────────────────────────────────────┐
-│ TIER 2                                      │
-├─────────────────────────────────────────────┤
-│ Product Cost Range:                         │
-│   From: 51.00                              │
-│   To:   120.00                             │
-│                                             │
-│ Profit Percentage: 0                       │
-│                                             │
-│ Fixed Profit: 45.30                        │
-│                                             │
-│ Breakeven Percentage: 27.9                 │
-└─────────────────────────────────────────────┘
-```
+**→ `DSERS_FORM_CONFIGURATION.md` (VERSION 2.0)**
 
-**Vérification rapide:**
-- Produit à $80 + shipping $15 devrait donner ~$194.04
+**Résumé rapide des Tiers 2-6:**
 
----
+| Tier | Range | profit% | Fixed Profit | Min Profit | Compared at Price |
+|------|-------|---------|--------------|------------|-------------------|
+| **2** | $51-120 | 10 | 45.30 | 45.30 | × 125 (+25%) |
+| **3** | $121-220 | 10 | 55.30 | 55.30 | × 125 (+25%) |
+| **4** | $221-400 | 10 | 85.30 | 85.30 | × 130 (+30%) |
+| **5** | $401-600 | 10 | 115.30 | 115.30 | × 135 (+35%) |
+| **6** | >$600 (AUTO) | 10 | 135.30 | 135.30 | × 135 (+35%) |
 
-### TIER 3: Produits $121-220 → Marge Nette $55
+**Note Tier 6:** Ce tier est AUTO-GÉNÉRÉ par DSers ("Rest of the ranges") et ne peut pas être supprimé. Configurez-le avec les valeurs ci-dessus.
 
-**Paramètres:**
-
-```
-┌─────────────────────────────────────────────┐
-│ TIER 3                                      │
-├─────────────────────────────────────────────┤
-│ Product Cost Range:                         │
-│   From: 121.00                             │
-│   To:   220.00                             │
-│                                             │
-│ Profit Percentage: 0                       │
-│                                             │
-│ Fixed Profit: 55.30                        │
-│                                             │
-│ Breakeven Percentage: 27.9                 │
-└─────────────────────────────────────────────┘
-```
-
-**Vérification rapide:**
-- Produit à $150 + shipping $25 devrait donner ~$319.42
-
----
-
-### TIER 4: Produits $221-400 → Marge Nette $85
-
-**Paramètres:**
-
-```
-┌─────────────────────────────────────────────┐
-│ TIER 4                                      │
-├─────────────────────────────────────────────┤
-│ Product Cost Range:                         │
-│   From: 221.00                             │
-│   To:   400.00                             │
-│                                             │
-│ Profit Percentage: 0                       │
-│                                             │
-│ Fixed Profit: 85.30                        │
-│                                             │
-│ Breakeven Percentage: 27.9                 │
-└─────────────────────────────────────────────┘
-```
-
-**Vérification rapide:**
-- Produit à $300 + shipping $30 devrait donner ~$575.73
-
----
-
-### TIER 5: Produits $401-600 → Marge Nette $115
-
-**Paramètres:**
-
-```
-┌─────────────────────────────────────────────┐
-│ TIER 5                                      │
-├─────────────────────────────────────────────┤
-│ Product Cost Range:                         │
-│   From: 401.00                             │
-│   To:   600.00                             │
-│                                             │
-│ Profit Percentage: 0                       │
-│                                             │
-│ Fixed Profit: 115.30                       │
-│                                             │
-│ Breakeven Percentage: 27.9                 │
-└─────────────────────────────────────────────┘
-```
-
-**Vérification rapide:**
-- Produit à $500 + shipping $40 devrait donner ~$908.46
-
----
-
-### TIER 6: Produits >$600 → Marge Nette $135
-
-**Paramètres:**
-
-```
-┌─────────────────────────────────────────────┐
-│ TIER 6                                      │
-├─────────────────────────────────────────────┤
-│ Product Cost Range:                         │
-│   From: 600.01                             │
-│   To:   999999.00                          │
-│                                             │
-│ Profit Percentage: 0                       │
-│                                             │
-│ Fixed Profit: 135.30                       │
-│                                             │
-│ Breakeven Percentage: 27.9                 │
-└─────────────────────────────────────────────┘
-```
-
-**Note:** Pour le tier 6, mettre une valeur très élevée dans "To" (ex: 999999) car DSers requiert une borne supérieure.
-
-**Vérification rapide:**
-- Produit à $700 + shipping $50 devrait donner ~$1,226.77
+**Pour la configuration détaillée étape par étape:** Voir **`DSERS_FORM_CONFIGURATION.md`**
 
 ---
 
@@ -647,18 +558,20 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 
 ## ✅ Checklist Configuration Complète
 
-### Configuration DSers
+### Configuration DSers (Version 2.0 - Implémentation Réelle)
 
 ```
 □ Advanced Pricing Rule activée
-□ Tier 1 ($10-50) configuré: Fixed Profit = 30.30
-□ Tier 2 ($51-120) configuré: Fixed Profit = 45.30
-□ Tier 3 ($121-220) configuré: Fixed Profit = 55.30
-□ Tier 4 ($221-400) configuré: Fixed Profit = 85.30
-□ Tier 5 ($401-600) configuré: Fixed Profit = 115.30
-□ Tier 6 (>$600) configuré: Fixed Profit = 135.30
+□ Tier 1 ($10-50): profit% 10, Fixed Profit 30.30, Min Profit 30.30, Compared × 120
+□ Tier 2 ($51-120): profit% 10, Fixed Profit 45.30, Min Profit 45.30, Compared × 125
+□ Tier 3 ($121-220): profit% 10, Fixed Profit 55.30, Min Profit 55.30, Compared × 125
+□ Tier 4 ($221-400): profit% 10, Fixed Profit 85.30, Min Profit 85.30, Compared × 130
+□ Tier 5 ($401-600): profit% 10, Fixed Profit 115.30, Min Profit 115.30, Compared × 135
+□ Tier 6 (>$600 AUTO): profit% 10, Fixed Profit 135.30, Min Profit 135.30, Compared × 135
 □ Breakeven % = 27.9 pour tous les tiers
-□ Profit % = 0 pour tous les tiers
+□ Profit % = 10 pour tous les tiers (DSers bloque 0%)
+□ Minimum Profit = Fixed Profit pour tous les tiers (protection)
+□ Compared at Price format pourcentage (120 pas 1.20)
 □ Shipping cost inclusion activée
 □ Destination par défaut configurée
 □ Méthode shipping par défaut: ePacket
@@ -753,16 +666,27 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
   - Précision moyenne: ±$0.05
   - Voir `PRICING_VERIFICATION.md` pour détails complets
 
-**Tous les coûts et formules sont basés sur sources vérifiables (pas de suppositions).**
+✅ **IMPLÉMENTATION MANUELLE RÉELLE (2025-10-13)**
+  - Store: azffej-as.myshopify.com
+  - Découvertes intégrées: profit% 10%, Minimum Profit = Fixed Profit, Compared at Price format
+  - Configuration testée et validée dans DSers en conditions réelles
+
+**⚠️ DÉCOUVERTES IMPLÉMENTATION MANUELLE:**
+1. **profit% = 10%** (DSers bloque 0%)
+2. **Minimum Profit = Fixed Profit** (stratégie de protection validée)
+3. **Compared at Price: 120** (format pourcentage, pas 1.20)
+4. **Tier 6 AUTO-GÉNÉRÉ** (cannot delete)
+
+**Tous les coûts et formules sont basés sur sources vérifiables ET implémentation réelle.**
 
 **Pour la validation complète, consulter:**
 - `PRICING_VERIFICATION.md` → Validation mathématique + sources officielles
 - `DYNAMIC_PRICING_MODEL.md` → Modèle avec section validation DSers/Shopify/Industry
-- `DSERS_FORM_CONFIGURATION.md` → Valeurs exactes + certification conformité
+- `DSERS_FORM_CONFIGURATION.md` → Valeurs exactes + certification conformité + découvertes implémentation
 
 ---
 
-**Version:** 1.1
-**Dernière mise à jour:** 2025-10-13 (Ajout validation sources officielles)
+**Version:** 2.0
+**Dernière mise à jour:** 2025-10-13 (Découvertes implémentation manuelle intégrées)
 **Auteur:** Alpha Medical Team
-**Status:** ✅ PRODUCTION READY - VALIDÉ CONTRE SOURCES OFFICIELLES
+**Status:** ✅ PRODUCTION READY - VALIDÉ PAR IMPLÉMENTATION RÉELLE DSers

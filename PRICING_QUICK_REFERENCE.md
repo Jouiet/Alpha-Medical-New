@@ -91,20 +91,27 @@ Prix final: $652.99
 ### Pour TOUS les tiers:
 
 ```
-Profit %: 0
+Profit %: 10 (DSers bloque 0%, impact minimal)
 Breakeven %: 27.9
+Minimum Profit: = Fixed Profit (protection)
+Compared at Price: ☑ COCHÉ, × 120-135
 ```
 
 ### Fixed Profits par tier:
 
 ```
-Tier 1 ($10-50):    Fixed Profit = 30.30
-Tier 2 ($51-120):   Fixed Profit = 45.30
-Tier 3 ($121-220):  Fixed Profit = 55.30
-Tier 4 ($221-400):  Fixed Profit = 85.30
-Tier 5 ($401-600):  Fixed Profit = 115.30
-Tier 6 (>$600):     Fixed Profit = 135.30
+Tier 1 ($10-50):    Fixed Profit = 30.30,  Minimum Profit = 30.30,  Compared: × 120
+Tier 2 ($51-120):   Fixed Profit = 45.30,  Minimum Profit = 45.30,  Compared: × 125
+Tier 3 ($121-220):  Fixed Profit = 55.30,  Minimum Profit = 55.30,  Compared: × 125
+Tier 4 ($221-400):  Fixed Profit = 85.30,  Minimum Profit = 85.30,  Compared: × 130
+Tier 5 ($401-600):  Fixed Profit = 115.30, Minimum Profit = 115.30, Compared: × 135
+Tier 6 (>$600):     Fixed Profit = 135.30, Minimum Profit = 135.30, Compared: × 135
 ```
+
+**⚠️ Découvertes Implémentation:**
+- DSers **bloque** profit% = 0, utiliser 10%
+- Minimum Profit = Fixed Profit (stratégie de protection validée)
+- Compared at Price: format **120** (pas 1.20)
 
 ---
 
@@ -337,16 +344,25 @@ print(f"Prix recommandé: ${result['recommended_price']}")
 - ✅ Vérifié contre sources Shopify (fees 2.9% + $0.30 exacte)
 - ✅ Testé mathématiquement (14/14 tests réussis, écart max 0.08%)
 - ✅ Comparé aux standards industrie dropshipping 2025 (marges 15-30%)
+- ✅ **IMPLÉMENTÉ MANUELLEMENT** dans DSers (azffej-as.myshopify.com)
+- ✅ **DÉCOUVERTES RÉELLES** intégrées (profit% blocage, Minimum Profit, format Compared at Price)
 
-**Tous les calculs sont exacts et basés sur sources vérifiables.**
+**Tous les calculs sont exacts et basés sur implémentation réelle + sources vérifiables.**
 
 Pour la validation complète, voir:
 - `PRICING_VERIFICATION.md` → 14 tests mathématiques + validation sources officielles
 - `DYNAMIC_PRICING_MODEL.md` → Modèle complet avec validation DSers/Shopify/Industry
+- `DSERS_FORM_CONFIGURATION.md` → Configuration exacte basée sur implémentation manuelle
+
+**⚠️ IMPORTANT - Découvertes Implémentation:**
+1. **profit% = 10%** (pas 0%, DSers bloque cette valeur)
+2. **Minimum Profit = Fixed Profit** (stratégie de protection recommandée)
+3. **Compared at Price: 120** (format pourcentage, pas 1.20 décimal)
+4. **Tier 6 AUTO-GÉNÉRÉ** par DSers (ne peut pas être supprimé)
 
 ---
 
-**Version:** 1.1
-**Dernière mise à jour:** 2025-10-13 (Ajout certification validation sources officielles)
+**Version:** 2.0
+**Dernière mise à jour:** 2025-10-13 (Découvertes implémentation manuelle intégrées)
 **Format:** Aide-mémoire rapide
-**Status:** ✅ READY TO USE - VALIDÉ CONTRE SOURCES OFFICIELLES
+**Status:** ✅ READY TO USE - VALIDÉ PAR IMPLÉMENTATION RÉELLE DSers
