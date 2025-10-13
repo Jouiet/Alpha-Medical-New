@@ -51,21 +51,21 @@
           "type": "link_list",
           "settings": {
             "heading": "SHOP",
-            "menu": "footer"
+            "menu": "footer-shop"
           }
         },
         "link_list_83Nt9B": {
           "type": "link_list",
           "settings": {
             "heading": "BRAND",
-            "menu": "footer"
+            "menu": "footer-brand"
           }
         },
         "link_list_UWX4CN": {
           "type": "link_list",
           "settings": {
             "heading": "CONNECT",
-            "menu": "footer"
+            "menu": "footer-connect"
           }
         }
       },
