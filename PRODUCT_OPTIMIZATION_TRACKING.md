@@ -267,18 +267,18 @@ Pour CHAQUE produit:
 **Total produits:** 149
 **Catégorisés:** 149/149 (100%) ✅
 **Collections assignées:** 149/149 (100%) ✅
-**Optimisés:** 30/149 (20%) ⏳
-**Progress global:** 53% (catégorisation + 20% optimisation)
+**Optimisés:** 46/149 (31%) ⏳
+**Progress global:** 64% (catégorisation + 31% optimisation)
 
 **Par collection Shopify:**
-- Pain Relief & Recovery: 71 produits (15 optimisés)
-- Posture & Support: 30 produits (5 optimisés)
-- Therapy & Wellness: 48 produits (10 optimisés)
+- Pain Relief & Recovery: 71 produits (20 optimisés)
+- Posture & Support: 30 produits (8 optimisés)
+- Therapy & Wellness: 48 produits (18 optimisés)
 
 **Tâches par produit:**
-- ⏳ Titles: 30/149 optimisés (raccourcis à max 70 chars)
-- ⏳ Descriptions: 30/149 optimisées (structure + bullets)
-- ⏳ Tags: 30/149 complétés (8 tags SEO par produit)
+- ⏳ Titles: 46/149 optimisés (raccourcis à max 70 chars)
+- ⏳ Descriptions: 46/149 optimisées (structure + bullets)
+- ⏳ Tags: 46/149 complétés (8 tags SEO par produit)
 - ✅ Collections: 149/149 assignées
 
 **Produits optimisés (30):**
@@ -411,3 +411,34 @@ Pour CHAQUE produit:
   31. ✅ 7586409742413 - Automatic Abdominal Massager (63 chars)
 - Temps restant estimé: ~4.6 heures pour 119 produits restants
 - Progress global: 53% (33% catégorisation + 20% optimisation)
+
+**14 oct 2025 00:15** - ✅ BATCH 7-8 TERMINÉ - 46/149 PRODUITS (31%)
+- Travail effectué: 16 produits supplémentaires optimisés (32-50, skip 34/37/38)
+- Progress: 30/149 → 46/149 (20% → 31%)
+- Sessions: Batches 7-8 (8 produits chacun)
+- Catégories couvertes:
+  * Posture & Support: 3 back braces (scoliosis, clavicle)
+  * Pain Relief: 3 neck traction, 2 knee/ankle braces
+  * Therapy & Wellness: 10 EMS/massage devices (abdominal, hip, leg, lymphatic, gua sha)
+- Temps session: ~40 minutes pour 16 produits
+- Rythme: ~2.5 minutes par produit (maintenu)
+- Qualité: Structure complète 8-sections sur tous
+- Produits batch 7-8:
+  32. ✅ 7585886830669 - Back Brace Posture Corrector Scoliosis (60 chars)
+  33. ✅ 7585886994509 - Clavicle Spine Back Brace (56 chars)
+  35. ✅ 7585887027277 - Cervical Neck Traction Inflatable (54 chars)
+  36. ✅ 7585939718221 - Cervical Neck Traction Hanging Device (60 chars)
+  39. ✅ 7585940242509 - Double Strap Knee Brace Patella (48 chars)
+  40. ✅ 7585887649869 - Drop Foot Brace AFO Inflatable Airbag (53 chars)
+  41. ✅ 7586409381965 - Electric Airbag Eye Massager (50 chars)
+  42. ✅ 7586408857677 - Electric Ankle Brace Hot Compress (55 chars)
+  43. ✅ 7586398863437 - EMS Abdominal Trainer Belt (59 chars)
+  44. ✅ 7586410528845 - EMS Abdominal Belt USB Rechargeable (50 chars)
+  45. ✅ 7586410397773 - EMS Hip Trainer Butt Lift (47 chars)
+  46. ✅ 7586410168397 - Electric Foot & Hand Massager (56 chars)
+  47. ✅ 7586398535757 - Electric Leg Massager Air Compression (54 chars)
+  48. ✅ 7586399453261 - Lymphatic Drainage Machine EMS (61 chars)
+  49. ✅ 7586410823757 - Lymphatic Drainage Brush EMS (57 chars)
+  50. ✅ 7586399027277 - Electric Gua Sha Board (57 chars)
+- Temps restant estimé: ~3.7 heures pour 103 produits restants
+- Progress global: 64% (33% catégorisation + 31% optimisation)
