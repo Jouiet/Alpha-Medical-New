@@ -3,8 +3,8 @@
 
 **Date de création:** 14 octobre 2025
 **Dernière mise à jour:** 14 octobre 2025 (Session 11 - Analytics & Blog Images)
-**Version:** 1.12.2
-**Statut global:** 13/14 actions définies complétées (92.86%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3 ✅ COMPLETE (10/10 articles written, 4 published + Blog nav link, all product links verified, featured images documented) | Phase 4: 1/4 Analytics (Microsoft Clarity ✅)
+**Version:** 1.12.3
+**Statut global:** 13/14 actions définies complétées (92.86%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3 ✅ COMPLETE (10/10 articles written, 4 published + Blog nav link, all product links verified, featured images documented) | Phase 4: 2/4 Analytics (Microsoft Clarity ✅, GA4 via Conversios ✅)
 
 ---
 
@@ -108,7 +108,7 @@ node --version
 | 3.2 | Breadcrumbs UI | P2 | ✅ | 14-10-2025 | 14-10-2025 | Live | Navigation breadcrumbs on product & collection pages |
 | 3.3 | Blog SEO Content Hub | P2 | ✅ | 14-10-2025 | 14-10-2025 | 10/10 COMPLETE ✅ | Infrastructure ✅ + Blog nav link ✅ + Articles 1-4 published ✅ + Articles 5-10 written (need manual Shopify pub) ✅ |
 | 4.1 | Quiz Produit | P2 | ❌ | - | - | CANCELLED | User requested removal |
-| 4.2 | Analytics Setup | P1 | ⚠️ PARTIEL | 14-10-2025 | 14-10-2025 | Partial | Microsoft Clarity ✅ implemented (ID: tq8qoek7ai) | GA4, GTM, FB Pixel ⏳ |
+| 4.2 | Analytics Setup | P1 | ⚠️ PARTIEL | 14-10-2025 | 14-10-2025 | 2/4 Complete | Microsoft Clarity ✅ (theme.liquid) | GA4 ✅ (Conversios app) | GTM, FB Pixel ⏳ |
 | 4.3 | A/B Testing | P2 | ❌ | - | - | CANCELLED | User requested removal |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
@@ -3185,11 +3185,11 @@ Cost: $0 mais time-intensive
 
 **ID:** 4.2
 **Priorité:** P1 - HAUTE
-**Statut:** ⚠️ PARTIEL (1/4 outils implémentés)
-**Effort:** 6 heures (1.5h complété, 4.5h restant)
+**Statut:** ⚠️ PARTIEL (2/4 outils implémentés)
+**Effort:** 6 heures (3h complété, 3h restant)
 **Impact:** Data-driven decisions
 **Date début:** 14 octobre 2025 (Session 11)
-**Date fin partiel:** 14 octobre 2025 (Clarity implemented)
+**Date fin partiel:** 14 octobre 2025 (Clarity + GA4 verified active)
 
 #### Tools à Implémenter
 
@@ -3200,19 +3200,27 @@ Cost: $0 mais time-intensive
    - Placement: Avant </head> tag
    - Features: Session recordings, heatmaps, scroll maps
    - Async loading pour performance
-   - Status: Committed to Git, awaiting push to Shopify
+   - Status: ✅ Pushed to GitHub (commit 88b1b5c), live on Shopify
 
-⏳ 2. Google Analytics 4 (GA4) - AWAITING MEASUREMENT ID
-   - Format requis: G-XXXXXXXXXX
-   - Placement: theme.liquid avant </head>
+✅ 2. Google Analytics 4 (GA4) - IMPLÉMENTÉ VIA CONVERSIOS APP
+   - Méthode: Conversios Custom Pixels Tracking app
+   - Implementation: App-based custom pixel (not theme.liquid)
+   - Script source: https://storage.googleapis.com/shopify_app_assets_storage/pixelScript.js
+   - Shop: azffej-as.myshopify.com
+   - App origin: app.conversios.io
+   - Status: ✅ Active and tracking via Conversios system
+   - Contact: info@conversios.io for app-specific support
+   - Note: No manual theme.liquid implementation needed
 
 ⏳ 3. Google Tag Manager (GTM) - AWAITING CONTAINER ID
    - Format requis: GTM-XXXXXXX
    - Placement: theme.liquid après <body> tag
+   - Status: Pending account ID
 
 ⏳ 4. Facebook Pixel - AWAITING PIXEL ID
    - Format requis: Numeric ID
    - Placement: theme.liquid avant </head>
+   - Status: Pending account ID
 
 ✅ 5. Google Search Console (déjà fait)
    - Verified and active
@@ -3231,18 +3239,39 @@ Cost: $0 mais time-intensive
 </script>
 ```
 
+**Implementation Details (Google Analytics 4 via Conversios):**
+
+```javascript
+/* BEGIN:GA4 APP Custom Pixels Tracking by Conversios System
+   For assistance contact info@conversios.io */
+window.cov_analytics = analytics;
+window.cov_init = init;
+window.cov_api = api;
+window.cov_browser = browser;
+
+// Create and load the main tracking script
+var custom_script = document.createElement('script');
+custom_script.src = 'https://storage.googleapis.com/shopify_app_assets_storage/pixelScript.js?shop=azffej-as.myshopify.com&appOrigin=app.conversios.io&_=' + Date.now();
+custom_script.async = false;
+document.head.appendChild(custom_script);
+/* END:GA4 APP Custom Pixels Tracking by Conversios System */
+```
+
 **Session 11 Progress:**
-- ✅ Microsoft Clarity tracking code implemented
+- ✅ Microsoft Clarity tracking code implemented in theme.liquid
 - ✅ Async loading ensures no performance impact
 - ✅ Proper Liquid commenting for maintainability
-- ⏳ Awaiting additional account IDs for GA4, GTM, FB Pixel
+- ✅ Pushed to GitHub (commits: 88b1b5c, 00b26d9, c72bd58)
+- ✅ Verified GA4 already active via Conversios Custom Pixels app
+- ✅ 2/4 analytics tools now operational (Clarity + GA4)
+- ⏳ Awaiting GTM and FB Pixel account IDs for remaining tools
 
 **Next Steps:**
-1. Obtain Google Analytics 4 Measurement ID (G-XXXXXXXXXX)
-2. Obtain Google Tag Manager Container ID (GTM-XXXXXXX)
-3. Obtain Facebook Pixel ID (numeric)
-4. Implement remaining 3 analytics tools in theme.liquid
-5. Verify all tracking codes fire correctly after deployment
+1. ✅ ~~Obtain Google Analytics 4 Measurement ID~~ - Already active via Conversios
+2. Obtain Google Tag Manager Container ID (GTM-XXXXXXX) for manual implementation
+3. Obtain Facebook Pixel ID (numeric) for manual implementation
+4. Implement GTM and FB Pixel in theme.liquid once IDs provided
+5. Verify all tracking codes fire correctly (Clarity ✅, GA4 ✅, GTM ⏳, FB ⏳)
 
 (Détails complets disponibles sur demande)
 
