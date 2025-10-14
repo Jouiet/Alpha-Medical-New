@@ -12,36 +12,113 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-0": {
+        "slide-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/hero-slide-1.svg",
             "image_overlay_opacity": 10,
-            "heading": "Browse our latest products",
+            "heading": "Professional Medical Support Equipment",
             "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Shop all",
+            "subheading": "Quality orthopedic braces, therapy devices & recovery tools",
+            "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
             "show_text_box": true,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-2.svg",
+            "image_overlay_opacity": 10,
+            "heading": "Pain Relief & Recovery Solutions",
+            "heading_size": "h1",
+            "subheading": "Trusted by thousands for effective pain management",
+            "button_label": "Explore Collection",
+            "link": "shopify://collections/pain-relief-recovery",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-3.svg",
+            "image_overlay_opacity": 10,
+            "heading": "Posture Correction & Support",
+            "heading_size": "h1",
+            "subheading": "Ergonomic braces for better posture and spine health",
+            "button_label": "View Products",
+            "link": "shopify://collections/posture-support",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-4.svg",
+            "image_overlay_opacity": 10,
+            "heading": "Advanced Therapy & Wellness",
+            "heading_size": "h1",
+            "subheading": "LED therapy, massage devices & recovery equipment",
+            "button_label": "Discover More",
+            "link": "shopify://collections/therapy-wellness",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-5": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-5.svg",
+            "image_overlay_opacity": 10,
+            "heading": "Trusted by Thousands Worldwide",
+            "heading_size": "h1",
+            "subheading": "4.8★ Rating | Free Shipping Over $50 | 30-Day Returns",
+            "button_label": "Shop All Products",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
             "color_scheme": "scheme-2"
           }
         }
       },
       "block_order": [
-        "slide-0"
+        "slide-1",
+        "slide-2",
+        "slide-3",
+        "slide-4",
+        "slide-5"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "accessibility_info": "Alpha Medical Care product showcase"
       }
     },
     "featured-collection-0": {
