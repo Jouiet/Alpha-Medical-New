@@ -270,7 +270,7 @@
             "image": "shopify://shop_images/hero-slide-15.png",
             "image_overlay_opacity": 10,
             "heading": "Medical-Grade Quality",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subheading": "FDA-approved materials | Professional recommendations",
             "button_label": "Shop All",
             "link": "shopify://collections/all",
