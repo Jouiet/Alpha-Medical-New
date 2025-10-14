@@ -1,5 +1,38 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
+{% render 'breadcrumbs' %}
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ article.title | json }},
+  {% if article.image %}
+  "image": {{ article.image | image_url: width: 1200 | prepend: "https:" | json }},
+  {% endif %}
+  "author": {
+    "@type": "Organization",
+    "name": "Alpha Medical Care"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alpha Medical Care",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://{{ shop.domain }}/cdn/shop/files/logo.png"
+    }
+  },
+  "datePublished": "{{ article.published_at | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ article.updated_at | date: '%Y-%m-%d' }}",
+  "description": {{ article.excerpt_or_content | strip_html | truncatewords: 30 | json }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ request.origin | append: article.url | json }}
+  }
+}
+</script>
+
 <article class="article-template">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
