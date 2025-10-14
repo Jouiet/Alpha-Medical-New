@@ -22,9 +22,20 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if page_description %}
-      <meta name="description" content="{% if page_description %}{{ page_description | escape }}{% else %}Professional medical support equipment & orthopedic braces. Shop knee braces, posture correctors, therapy devices. Fast shipping, 30-day guarantee. Expert care.{% endif %}">
-    {% endif %}
+    {%- liquid
+      if page_description
+        assign meta_description = page_description
+      elsif request.page_type == 'index'
+        assign meta_description = "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials."
+      elsif request.page_type == 'collection'
+        assign meta_description = collection.description | default: "Browse our " | append: collection.title | append: " collection - Quality medical devices & orthopedic supports."
+      elsif request.page_type == 'product'
+        assign meta_description = product.description | strip_html | truncatewords: 30
+      else
+        assign meta_description = shop.description | default: "Alpha Medical Care - Professional medical support equipment"
+      endif
+    -%}
+    <meta name="description" content="{{ meta_description | escape }}">
 
     {% render 'meta-tags' %}
 
