@@ -3,8 +3,8 @@
 
 **Date de création:** 14 octobre 2025
 **Dernière mise à jour:** 14 octobre 2025
-**Version:** 1.2.2
-**Statut global:** 9/61 actions complétées (14.8%) - Phase 1 ✅ | Phase 2: 3/7 ✅
+**Version:** 1.2.3
+**Statut global:** 10/61 actions complétées (16.4%) - Phase 1 ✅ | Phase 2: 4/7 ✅
 
 ---
 
@@ -103,6 +103,7 @@ node --version
 | 2.1 | Système de reviews | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Loox activated, 15 reviews visible |
 | 2.2 | Upsell/Cross-Sell | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Collection-based recommendations, 4 products |
 | 2.3 | Trust Elements | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | 4 trust badges below buy buttons |
+| 2.4 | Urgency/Scarcity | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | ETHICAL: Real inventory only, fake tactics refused |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ---
@@ -1695,11 +1696,42 @@ shopify theme push --live
 
 **ID:** 2.4
 **Priorité:** P1 - HAUTE
-**Statut:** ⏳ À FAIRE
-**Effort:** 3 heures
-**Impact:** Conversion +18%
+**Statut:** ✅ TERMINÉ (ETHICAL IMPLEMENTATION)
+**Effort:** 3 heures (complété: 1 heure - real inventory only)
+**Impact:** Conversion +18% (estimated for ethical approach)
+**Date:** 14 octobre 2025
+**Commits:** 1394e73
 
-#### Problème Actuel
+**⚠️ CRITICAL ETHICAL DECISION:**
+- **IMPLEMENTED:** Real inventory-based stock status badge only
+- **REFUSED:** Fake view counters, simulated purchase popups, manipulative scarcity
+- **RATIONALE:** Consumer protection compliance, brand trust, FTC guidelines adherence
+
+#### ✅ IMPLÉMENTATION RÉELLE (Ethical Version)
+
+**Fichiers créés:**
+- `snippets/product-low-stock-badge.liquid` - Real inventory status badge (3 states)
+
+**Fichiers modifiés:**
+- `sections/main-product.liquid` - Added inventory_status block type
+- `templates/product.json` - Integrated inventory_status after price block
+
+**Fonctionnalités implémentées:**
+1. **Red low-stock badge** - "Only X left in stock!" (when inventory ≤ 10)
+2. **Green in-stock badge** - "In stock" (when inventory > 10)
+3. **Gray out-of-stock badge** - "Out of stock" (when inventory = 0)
+
+**Test validation:**
+- URL: https://alphamedical.shop/products/knee-immobilizer-brace-post-surgery-orthopedic-support
+- Result: Badge displays "Only 5 left in stock!" correctly
+- Inventory data source: Real `variant.inventory_quantity` from Shopify
+
+**Fonctionnalités NON implémentées (refusées pour raisons éthiques/légales):**
+- ❌ Composant 2: View Counter (simulated) - fake metrics
+- ❌ Composant 3: Recent Purchase Popup - fake purchase notifications
+- ❌ Composant 4: Promo Timer - unless real promotion exists
+
+#### Problème Actuel (ORIGINAL SPECIFICATIONS - NOT ALL IMPLEMENTED)
 
 ```
 Page produit: Aucun trigger d'urgence
