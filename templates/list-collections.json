@@ -3,47 +3,303 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide": {
+        "slide-1": {
           "type": "slide",
           "settings": {
-            "heading": "Collections",
-            "heading_size": "h0",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": true,
-            "text_alignment": "left",
+            "image": "shopify://shop_images/hero-slide-1.png",
             "image_overlay_opacity": 10,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "left"
+            "heading": "Professional Medical Support Equipment",
+            "heading_size": "h2",
+            "subheading": "Quality orthopedic braces, therapy devices & recovery tools",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-2.png",
+            "image_overlay_opacity": 10,
+            "heading": "Pain Relief & Recovery Solutions",
+            "heading_size": "h2",
+            "subheading": "Trusted by thousands for effective pain management",
+            "button_label": "Explore Collection",
+            "link": "shopify://collections/pain-relief-recovery",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-3.png",
+            "image_overlay_opacity": 10,
+            "heading": "Posture Correction & Support",
+            "heading_size": "h2",
+            "subheading": "Ergonomic braces for better posture and spine health",
+            "button_label": "View Products",
+            "link": "shopify://collections/posture-support",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-4.png",
+            "image_overlay_opacity": 10,
+            "heading": "Advanced Therapy & Wellness",
+            "heading_size": "h2",
+            "subheading": "LED therapy, massage devices & recovery equipment",
+            "button_label": "Discover More",
+            "link": "shopify://collections/therapy-wellness",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-5": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-5.png",
+            "image_overlay_opacity": 10,
+            "heading": "Orthopedic Braces & Supports",
+            "heading_size": "h2",
+            "subheading": "Professional-grade knee, ankle, wrist & back braces",
+            "button_label": "Browse Braces",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-6.png",
+            "image_overlay_opacity": 10,
+            "heading": "LED Light Therapy Devices",
+            "heading_size": "h2",
+            "subheading": "7-color photon therapy for skin rejuvenation & anti-aging",
+            "button_label": "See Devices",
+            "link": "shopify://collections/therapy-wellness",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-7.png",
+            "image_overlay_opacity": 10,
+            "heading": "Compression & Recovery Gear",
+            "heading_size": "h2",
+            "subheading": "Athletic support for sports, gym & injury prevention",
+            "button_label": "Shop Sports",
+            "link": "shopify://collections/pain-relief-recovery",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-8.png",
+            "image_overlay_opacity": 10,
+            "heading": "Cervical & Neck Support",
+            "heading_size": "h2",
+            "subheading": "Traction devices, collars & posture correctors",
+            "button_label": "View Neck Care",
+            "link": "shopify://collections/posture-support",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-9.png",
+            "image_overlay_opacity": 10,
+            "heading": "Massage & Relaxation",
+            "heading_size": "h2",
+            "subheading": "Electric massagers, cupping therapy & EMS devices",
+            "button_label": "Relax Now",
+            "link": "shopify://collections/therapy-wellness",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-10": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-10.png",
+            "image_overlay_opacity": 10,
+            "heading": "Home Physical Therapy",
+            "heading_size": "h2",
+            "subheading": "Professional rehab equipment for home use",
+            "button_label": "Start Recovery",
+            "link": "shopify://collections/pain-relief-recovery",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-11": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-11.png",
+            "image_overlay_opacity": 10,
+            "heading": "Beauty & Anti-Aging",
+            "heading_size": "h2",
+            "subheading": "Face masks, eye massagers & skin care devices",
+            "button_label": "Look Younger",
+            "link": "shopify://collections/therapy-wellness",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-12": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-12.png",
+            "image_overlay_opacity": 10,
+            "heading": "Joint & Muscle Support",
+            "heading_size": "h2",
+            "subheading": "Targeted relief for knees, shoulders, elbows & more",
+            "button_label": "Find Relief",
+            "link": "shopify://collections/pain-relief-recovery",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-13": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-13.png",
+            "image_overlay_opacity": 10,
+            "heading": "Posture Improvement Tools",
+            "heading_size": "h2",
+            "subheading": "Correct slouching, reduce back pain, improve alignment",
+            "button_label": "Stand Tall",
+            "link": "shopify://collections/posture-support",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-14": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-14.png",
+            "image_overlay_opacity": 10,
+            "heading": "4.8★ Rated by Thousands",
+            "heading_size": "h2",
+            "subheading": "Free Shipping Over $50 | 30-Day Returns | Expert Support",
+            "button_label": "Shop Bestsellers",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide-15": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-slide-15.png",
+            "image_overlay_opacity": 10,
+            "heading": "Medical-Grade Quality",
+            "heading_size": "h2",
+            "subheading": "FDA-approved materials | Professional recommendations",
+            "button_label": "Shop All",
+            "link": "shopify://collections/all",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
           }
         }
       },
       "block_order": [
-        "slide"
+        "slide-1",
+        "slide-2",
+        "slide-3",
+        "slide-4",
+        "slide-5",
+        "slide-6",
+        "slide-7",
+        "slide-8",
+        "slide-9",
+        "slide-10",
+        "slide-11",
+        "slide-12",
+        "slide-13",
+        "slide-14",
+        "slide-15"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "small",
-        "slider_visual": "counter",
-        "auto_rotate": false,
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "rich-text-0": {
-      "type": "rich-text",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 60
+        "accessibility_info": "Alpha Medical Care product showcase"
       }
     },
     "main": {
@@ -55,23 +311,10 @@
         "columns_desktop": 4,
         "columns_mobile": "2"
       }
-    },
-    "rich-text-1": {
-      "type": "rich-text",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
     "slideshow",
-    "rich-text-0",
-    "main",
-    "rich-text-1"
+    "main"
   ]
 }
