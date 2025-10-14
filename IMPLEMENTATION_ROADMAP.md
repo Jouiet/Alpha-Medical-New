@@ -3,8 +3,8 @@
 
 **Date de création:** 14 octobre 2025
 **Dernière mise à jour:** 14 octobre 2025
-**Version:** 1.2.3
-**Statut global:** 10/61 actions complétées (16.4%) - Phase 1 ✅ | Phase 2: 4/7 ✅
+**Version:** 1.2.4
+**Statut global:** 11/61 actions complétées (18.0%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3: 1/? 🔄
 
 ---
 
@@ -104,6 +104,7 @@ node --version
 | 2.2 | Upsell/Cross-Sell | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Collection-based recommendations, 4 products |
 | 2.3 | Trust Elements | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | 4 trust badges below buy buttons |
 | 2.4 | Urgency/Scarcity | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | ETHICAL: Real inventory only, fake tactics refused |
+| 3.1 | FAQ Schema | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | Already implemented, 10 questions verified |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ---
@@ -2122,9 +2123,17 @@ shopify theme push --live
 
 **ID:** 3.1
 **Priorité:** P1 - HAUTE
-**Statut:** ⏳ À FAIRE
-**Effort:** 2 heures
+**Statut:** ✅ TERMINÉ (Already Implemented)
+**Effort:** 2 heures (0 heures - déjà complété)
 **Impact:** Rich Snippets +40%
+**Date:** 14 octobre 2025 (verification)
+**Fichier:** templates/page.faq.liquid
+
+**✅ VÉRIFICATION:**
+- FAQ schema déjà présent dans le template
+- 10 questions avec réponses structurées
+- JSON-LD valide vérifié en live
+- URL: https://alphamedical.shop/pages/faq
 
 #### Problème Actuel
 
