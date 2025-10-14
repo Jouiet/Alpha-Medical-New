@@ -3,8 +3,8 @@
 
 **Date de création:** 14 octobre 2025
 **Dernière mise à jour:** 14 octobre 2025
-**Version:** 1.1.0
-**Statut global:** 6/61 actions complétées (9.8%) - Phase 1 ✅
+**Version:** 1.2.0
+**Statut global:** 7/61 actions complétées (11.5%) - Phase 1 ✅ | Phase 2: 1/7 ✅
 
 ---
 
@@ -100,7 +100,7 @@ node --version
 | 1.4 | Section Black Friday | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Renamed to Special Offers |
 | 1.5 | Sécurité .env | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Verified .gitignore |
 | 1.6 | Claims non vérifiés | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | 4 claims removed |
-| 2.1 | Système de reviews | P0 | ⏳ | - | - | - | - |
+| 2.1 | Système de reviews | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Loox activated, 15 reviews visible |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ---
@@ -936,9 +936,11 @@ shopify theme push --live
 
 **ID:** 2.1
 **Priorité:** P0 - CRITIQUE
-**Statut:** ⏳ À FAIRE
-**Effort:** 4 heures
+**Statut:** ✅ TERMINÉ
+**Effort:** 1 heure (complété)
 **Impact:** Conversion +35%
+**Date:** 14 octobre 2025
+**Commits:** a2c4dec
 
 #### Problème Actuel
 
