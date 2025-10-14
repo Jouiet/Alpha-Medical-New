@@ -23,7 +23,7 @@
     </title>
 
     {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
+      <meta name="description" content="{% if page_description %}{{ page_description | escape }}{% else %}Professional medical support equipment & orthopedic braces. Shop knee braces, posture correctors, therapy devices. Fast shipping, 30-day guarantee. Expert care.{% endif %}">
     {% endif %}
 
     {% render 'meta-tags' %}
