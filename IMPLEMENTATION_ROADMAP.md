@@ -3,8 +3,8 @@
 
 **Date de création:** 14 octobre 2025
 **Dernière mise à jour:** 14 octobre 2025
-**Version:** 1.2.0
-**Statut global:** 7/61 actions complétées (11.5%) - Phase 1 ✅ | Phase 2: 1/7 ✅
+**Version:** 1.2.1
+**Statut global:** 8/61 actions complétées (13.1%) - Phase 1 ✅ | Phase 2: 2/7 ✅
 
 ---
 
@@ -101,6 +101,7 @@ node --version
 | 1.5 | Sécurité .env | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Verified .gitignore |
 | 1.6 | Claims non vérifiés | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | 4 claims removed |
 | 2.1 | Système de reviews | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Loox activated, 15 reviews visible |
+| 2.2 | Upsell/Cross-Sell | P0 | ✅ | 14-10-2025 | 14-10-2025 | Live | Collection-based recommendations, 4 products |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ---
@@ -1186,7 +1187,9 @@ shopify theme push --live
 
 **ID:** 2.2
 **Priorité:** P0 - CRITIQUE
-**Statut:** ⏳ À FAIRE
+**Statut:** ✅ TERMINÉ
+**Date:** 14-10-2025
+**Commit:** 26e1160
 **Effort:** 3 heures
 **Impact:** AOV +25%
 
