@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/hero-slide-1.svg",
             "image_overlay_opacity": 10,
             "heading": "Professional Medical Support Equipment",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subheading": "Quality orthopedic braces, therapy devices & recovery tools",
             "button_label": "Shop Now",
             "link": "shopify://collections/all",
