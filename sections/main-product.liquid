@@ -557,6 +557,8 @@
                 -%}
               {%- when 'trust_badges' -%}
                 {% render 'product-trust-badges' %}
+              {%- when 'inventory_status' -%}
+                {% render 'product-low-stock-badge', product: product %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -1021,6 +1023,11 @@
     {
       "type": "trust_badges",
       "name": "Trust badges",
+      "limit": 1
+    },
+    {
+      "type": "inventory_status",
+      "name": "Inventory status",
       "limit": 1
     },
     {

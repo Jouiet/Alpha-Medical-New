@@ -1,0 +1,68 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign inventory_qty = current_variant.inventory_quantity
+  assign low_stock_threshold = 10
+-%}
+
+{% if inventory_qty > 0 and inventory_qty <= low_stock_threshold %}
+  <div class="product-low-stock-badge">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="8" cy="8" r="7" fill="#ff6b6b"/>
+      <path d="M8 4v5M8 11v1" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span>Only {{ inventory_qty }} left in stock!</span>
+  </div>
+{% elsif inventory_qty > low_stock_threshold %}
+  <div class="product-stock-badge product-stock-badge--available">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="8" cy="8" r="7" fill="#00a86b"/>
+      <path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>In stock</span>
+  </div>
+{% elsif inventory_qty == 0 %}
+  <div class="product-stock-badge product-stock-badge--unavailable">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="8" cy="8" r="7" fill="#adb5bd"/>
+      <path d="M5 5l6 6M11 5l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span>Out of stock</span>
+  </div>
+{% endif %}
+
+<style>
+.product-low-stock-badge,
+.product-stock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.product-low-stock-badge {
+  background: #fff5f5;
+  color: #c92a2a;
+  border: 1px solid #ffe0e0;
+}
+
+.product-stock-badge--available {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #d1fae5;
+}
+
+.product-stock-badge--unavailable {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #e9ecef;
+}
+
+.product-low-stock-badge svg,
+.product-stock-badge svg {
+  flex-shrink: 0;
+}
+</style>

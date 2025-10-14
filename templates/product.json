@@ -31,6 +31,10 @@
           "type": "price",
           "settings": {}
         },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -69,6 +73,7 @@
         "title",
         "rating",
         "price",
+        "inventory_status",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
