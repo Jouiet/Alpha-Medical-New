@@ -2,6 +2,22 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+  .seo-h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+{%- endstyle -%}
+
+<h1 class="seo-h1">{{ section.settings.seo_h1 | default: "Professional Medical Support Equipment & Orthopedic Braces - Alpha Medical Care" }}</h1>
+
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
@@ -382,6 +398,17 @@
       "label": "t:sections.slideshow.settings.accessibility.label",
       "info": "t:sections.slideshow.settings.accessibility.info",
       "default": "t:sections.slideshow.settings.accessibility.default"
+    },
+    {
+      "type": "header",
+      "content": "SEO Settings"
+    },
+    {
+      "type": "text",
+      "id": "seo_h1",
+      "label": "SEO H1 (hidden, for search engines)",
+      "default": "Professional Medical Support Equipment & Orthopedic Braces - Alpha Medical Care",
+      "info": "This H1 is visually hidden but visible to search engines. Only appears on homepage."
     }
   ],
   "blocks": [
