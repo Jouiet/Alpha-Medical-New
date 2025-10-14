@@ -1,0 +1,108 @@
+{%- unless template == 'index' or template == 'cart' or template == 'list-collections' -%}
+  <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="/">Home</a>
+      </li>
+
+      {%- if request.page_type == 'collection' -%}
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__separator">/</span>
+          <span class="breadcrumbs__current">{{ collection.title }}</span>
+        </li>
+
+      {%- elsif request.page_type == 'product' -%}
+        {%- if collection -%}
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__separator">/</span>
+            <a class="breadcrumbs__link" href="{{ collection.url }}">{{ collection.title }}</a>
+          </li>
+        {%- endif -%}
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__separator">/</span>
+          <span class="breadcrumbs__current">{{ product.title | truncate: 50 }}</span>
+        </li>
+
+      {%- elsif request.page_type == 'page' -%}
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__separator">/</span>
+          <span class="breadcrumbs__current">{{ page.title }}</span>
+        </li>
+
+      {%- elsif request.page_type == 'article' -%}
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__separator">/</span>
+          <a class="breadcrumbs__link" href="{{ blog.url }}">{{ blog.title }}</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__separator">/</span>
+          <span class="breadcrumbs__current">{{ article.title | truncate: 50 }}</span>
+        </li>
+
+      {%- elsif request.page_type == 'blog' -%}
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__separator">/</span>
+          <span class="breadcrumbs__current">{{ blog.title }}</span>
+        </li>
+      {%- endif -%}
+    </ol>
+  </nav>
+{%- endunless -%}
+
+<style>
+.breadcrumbs {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__link {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbs__link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.breadcrumbs__separator {
+  margin: 0 10px;
+  color: #999;
+}
+
+.breadcrumbs__current {
+  color: #333;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 749px) {
+  .breadcrumbs {
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+
+  .breadcrumbs__list {
+    font-size: 13px;
+  }
+
+  .breadcrumbs__separator {
+    margin: 0 6px;
+  }
+}
+</style>
