@@ -3,8 +3,8 @@
 
 **Date de création:** 14 octobre 2025
 **Dernière mise à jour:** 14 octobre 2025
-**Version:** 1.2.4
-**Statut global:** 11/61 actions complétées (18.0%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3: 1/? 🔄
+**Version:** 1.2.5
+**Statut global:** 12/61 actions complétées (19.7%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3: 2/? 🔄
 
 ---
 
@@ -105,6 +105,7 @@ node --version
 | 2.3 | Trust Elements | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | 4 trust badges below buy buttons |
 | 2.4 | Urgency/Scarcity | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | ETHICAL: Real inventory only, fake tactics refused |
 | 3.1 | FAQ Schema | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | Already implemented, 10 questions verified |
+| 3.2 | Breadcrumbs UI | P2 | ✅ | 14-10-2025 | 14-10-2025 | Live | Navigation breadcrumbs on product & collection pages |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ---
@@ -2337,9 +2338,17 @@ shopify theme push --live
 
 **ID:** 3.2
 **Priorité:** P2 - MOYENNE
-**Statut:** ⏳ À FAIRE
-**Effort:** 1 heure
+**Statut:** ✅ TERMINÉ
+**Effort:** 1 heure (complété)
 **Impact:** UX +10%, SEO +5%
+**Date:** 14 octobre 2025
+**Commits:** 05dea9c
+
+**✅ IMPLÉMENTATION:**
+- Créé snippets/breadcrumbs.liquid avec styles responsive
+- Intégré dans sections/main-product.liquid et main-collection-product-grid.liquid
+- Breadcrumbs affichés: Home / [Collection] / Product Title
+- Testé sur https://alphamedical.shop/products/knee-immobilizer-brace-post-surgery-orthopedic-support
 
 #### Problème Actuel
 
