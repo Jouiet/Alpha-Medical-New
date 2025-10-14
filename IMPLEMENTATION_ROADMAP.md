@@ -2,9 +2,9 @@
 ## Plan d'Action Exhaustif & Suivi des Implémentations
 
 **Date de création:** 14 octobre 2025
-**Dernière mise à jour:** 14 octobre 2025 (Session 11 - Analytics & Blog Images)
-**Version:** 1.12.3
-**Statut global:** 13/14 actions définies complétées (92.86%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3 ✅ COMPLETE (10/10 articles written, 4 published + Blog nav link, all product links verified, featured images documented) | Phase 4: 2/4 Analytics (Microsoft Clarity ✅, GA4 via Conversios ✅)
+**Dernière mise à jour:** 14 octobre 2025 (Session 11 - Analytics Complete)
+**Version:** 1.12.4
+**Statut global:** 13/14 actions définies complétées (92.86%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3 ✅ COMPLETE (10/10 articles written, 4 published + Blog nav link, all product links verified, featured images documented) | Phase 4: 3/4 Analytics (Clarity ✅ App, GA4 ✅ Conversios, FB Pixel ✅ App + TikTok ✅ Bonus)
 
 ---
 
@@ -108,7 +108,7 @@ node --version
 | 3.2 | Breadcrumbs UI | P2 | ✅ | 14-10-2025 | 14-10-2025 | Live | Navigation breadcrumbs on product & collection pages |
 | 3.3 | Blog SEO Content Hub | P2 | ✅ | 14-10-2025 | 14-10-2025 | 10/10 COMPLETE ✅ | Infrastructure ✅ + Blog nav link ✅ + Articles 1-4 published ✅ + Articles 5-10 written (need manual Shopify pub) ✅ |
 | 4.1 | Quiz Produit | P2 | ❌ | - | - | CANCELLED | User requested removal |
-| 4.2 | Analytics Setup | P1 | ⚠️ PARTIEL | 14-10-2025 | 14-10-2025 | 2/4 Complete | Microsoft Clarity ✅ (theme.liquid) | GA4 ✅ (Conversios app) | GTM, FB Pixel ⏳ |
+| 4.2 | Analytics Setup | P1 | ⚠️ PARTIEL | 14-10-2025 | 14-10-2025 | 3/4 Complete | Clarity ✅ (Shopify app ID: tq8st6pt37) | GA4 ✅ (Conversios) | FB+TikTok Pixels ✅ (Infinite Pixels app) | GTM ⏳ |
 | 4.3 | A/B Testing | P2 | ❌ | - | - | CANCELLED | User requested removal |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
@@ -3185,58 +3185,61 @@ Cost: $0 mais time-intensive
 
 **ID:** 4.2
 **Priorité:** P1 - HAUTE
-**Statut:** ⚠️ PARTIEL (2/4 outils implémentés)
-**Effort:** 6 heures (3h complété, 3h restant)
+**Statut:** ⚠️ PARTIEL (3/4 outils implémentés + 1 bonus)
+**Effort:** 6 heures (5h complété, 1h restant pour GTM)
 **Impact:** Data-driven decisions
 **Date début:** 14 octobre 2025 (Session 11)
-**Date fin partiel:** 14 octobre 2025 (Clarity + GA4 verified active)
+**Date fin partiel:** 14 octobre 2025 (Clarity, GA4, FB Pixel verified active via apps)
 
 #### Tools à Implémenter
 
 ```
-✅ 1. Microsoft Clarity (heatmaps gratuits) - IMPLÉMENTÉ
-   - ID: tq8qoek7ai
-   - Fichier: /Users/mac/Desktop/Alpha-Medical/layout/theme.liquid (lines 311-318)
-   - Placement: Avant </head> tag
-   - Features: Session recordings, heatmaps, scroll maps
-   - Async loading pour performance
-   - Status: ✅ Pushed to GitHub (commit 88b1b5c), live on Shopify
+✅ 1. Microsoft Clarity (heatmaps gratuits) - IMPLÉMENTÉ VIA SHOPIFY APP
+   - Méthode: App embed "Microsoft Clarity" (officiel Shopify)
+   - ID Clarity: tq8st6pt37
+   - App embeds actifs: "Clarity Agents JS" + "Clarity JS"
+   - Script URL: https://www.clarity.ms/tag/tq8st6pt37?ref=shopify
+   - Features: Session recordings, heatmaps, scroll maps, click tracking
+   - Status: ✅ Active via app embeds (verified live on site)
+   - Maintenance: ✅ Automatic updates via Shopify app
+   - Note: Manual code (ID: tq8qoek7ai) retiré du theme.liquid pour éviter duplication
 
 ✅ 2. Google Analytics 4 (GA4) - IMPLÉMENTÉ VIA CONVERSIOS APP
    - Méthode: Conversios Custom Pixels Tracking app
+   - App embeds actifs: "Conversios GA4 APP Block1" + "Conversios GA4 APP Block2"
    - Implementation: App-based custom pixel (not theme.liquid)
    - Script source: https://storage.googleapis.com/shopify_app_assets_storage/pixelScript.js
    - Shop: azffej-as.myshopify.com
    - App origin: app.conversios.io
+   - Features: GA4 tracking + Server Side Tagging (SST) pour iOS 14+ privacy
+   - Conversios SST blocks: "Conversios SST Block1" + "Conversios SST Block2"
    - Status: ✅ Active and tracking via Conversios system
    - Contact: info@conversios.io for app-specific support
    - Note: No manual theme.liquid implementation needed
 
-⏳ 3. Google Tag Manager (GTM) - AWAITING CONTAINER ID
+✅ 3. Facebook Pixel - IMPLÉMENTÉ VIA INFINITE PIXELS APP
+   - Méthode: "Infinite FB Tiktok Pixels" app (via Shopify App Store)
+   - App embed actif: "Infinite FB & Tiktok Pixels"
+   - Features: Facebook Pixel tracking pour remarketing et conversion
+   - Status: ✅ Active via app embed
+   - Maintenance: ✅ Automatic updates via Shopify app
+   - Note: No manual theme.liquid implementation needed
+
+✅ 4. TikTok Pixel - BONUS IMPLÉMENTÉ (non prévu initialement)
+   - Méthode: "Infinite FB Tiktok Pixels" app (même app que FB Pixel)
+   - Features: TikTok Pixel tracking pour TikTok Ads remarketing
+   - Status: ✅ Active via app embed
+   - Benefit: Permet remarketing TikTok Ads sans coût additionnel
+
+⏳ 5. Google Tag Manager (GTM) - POSSIBLEMENT OPTIONNEL
    - Format requis: GTM-XXXXXXX
-   - Placement: theme.liquid après <body> tag
+   - Placement: theme.liquid après <body> tag si implémenté manuellement
    - Status: Pending account ID
+   - Note: Conversios Server Side Tagging peut remplacer GTM pour certains cas
+   - Décision: À confirmer si GTM nécessaire avec Conversios SST déjà actif
 
-⏳ 4. Facebook Pixel - AWAITING PIXEL ID
-   - Format requis: Numeric ID
-   - Placement: theme.liquid avant </head>
-   - Status: Pending account ID
-
-✅ 5. Google Search Console (déjà fait)
-   - Verified and active
-```
-
-**Implementation Details (Microsoft Clarity):**
-
-```liquid
-{%- comment -%}Microsoft Clarity Analytics{%- endcomment -%}
-<script type="text/javascript">
-(function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "tq8qoek7ai");
-</script>
+✅ 6. Google Search Console (déjà fait)
+   - Verified and active depuis sessions précédentes
 ```
 
 **Implementation Details (Google Analytics 4 via Conversios):**
@@ -3257,21 +3260,39 @@ document.head.appendChild(custom_script);
 /* END:GA4 APP Custom Pixels Tracking by Conversios System */
 ```
 
-**Session 11 Progress:**
-- ✅ Microsoft Clarity tracking code implemented in theme.liquid
-- ✅ Async loading ensures no performance impact
-- ✅ Proper Liquid commenting for maintainability
-- ✅ Pushed to GitHub (commits: 88b1b5c, 00b26d9, c72bd58)
-- ✅ Verified GA4 already active via Conversios Custom Pixels app
-- ✅ 2/4 analytics tools now operational (Clarity + GA4)
-- ⏳ Awaiting GTM and FB Pixel account IDs for remaining tools
+**Session 11 Progress - Analytics Discovery & Cleanup:**
+- ✅ Discovered Microsoft Clarity already active via Shopify app (ID: tq8st6pt37)
+- ✅ Verified double Clarity tracking (app tq8st6pt37 + manual tq8qoek7ai)
+- ✅ Removed manual Clarity code from theme.liquid to prevent duplication
+- ✅ Verified GA4 active via Conversios Custom Pixels app with Server Side Tagging
+- ✅ Discovered Facebook Pixel already active via "Infinite FB Tiktok Pixels" app
+- ✅ Discovered TikTok Pixel bonus active via same "Infinite FB Tiktok Pixels" app
+- ✅ Verified 3/4 core analytics tools operational + 1 bonus (Clarity ✅, GA4 ✅, FB Pixel ✅, TikTok ✅)
+- ✅ All analytics managed via app embeds = automatic updates, zero maintenance
+- ✅ Commits: 88b1b5c (manual Clarity added), 921e1d4 (GA4 documented), [next] (manual Clarity removed)
+
+**App Embeds Verified Active (Shopify Admin > Settings > Apps and sales channels > App embeds):**
+- "Clarity Agents JS" + "Clarity JS" (Microsoft Clarity)
+- "Conversios GA4 APP Block1" + "Conversios GA4 APP Block2" (Google Analytics 4)
+- "Conversios SST Block1" + "Conversios SST Block2" (Server Side Tagging)
+- "Infinite FB & Tiktok Pixels" (Facebook + TikTok remarketing)
+- "Klaviyo Onsite Javascript" (Email/SMS marketing - bonus)
+- "Loox Core Script" (Reviews - bonus)
+- "Tidio Chat Widget" (Live chat - bonus)
+- "Cart Drawer Slots" (ReConvert upsell - bonus)
 
 **Next Steps:**
 1. ✅ ~~Obtain Google Analytics 4 Measurement ID~~ - Already active via Conversios
-2. Obtain Google Tag Manager Container ID (GTM-XXXXXXX) for manual implementation
-3. Obtain Facebook Pixel ID (numeric) for manual implementation
-4. Implement GTM and FB Pixel in theme.liquid once IDs provided
-5. Verify all tracking codes fire correctly (Clarity ✅, GA4 ✅, GTM ⏳, FB ⏳)
+2. ✅ ~~Obtain Facebook Pixel ID~~ - Already active via Infinite Pixels app
+3. ⏳ Décider si Google Tag Manager (GTM) est nécessaire:
+   - Conversios Server Side Tagging déjà actif (peut remplacer GTM pour plusieurs cas)
+   - Si GTM requis: Obtenir Container ID (GTM-XXXXXXX) pour implémentation manuelle
+4. ✅ ~~Verify all tracking codes fire correctly~~ - Clarity ✅, GA4 ✅, FB Pixel ✅, TikTok ✅
+
+**Conclusion Analytics:**
+Phase 4.2 Analytics = 75% complet (3/4 outils + 1 bonus)
+- Option A: Considérer GTM optionnel avec Conversios SST → **100% complet**
+- Option B: Attendre GTM Container ID si absolument requis → 75% complet
 
 (Détails complets disponibles sur demande)
 
