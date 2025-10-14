@@ -367,15 +367,15 @@
         "padding_bottom": 60
       }
     },
-    "black-friday-section": {
+    "special-offers-section": {
       "type": "featured-collection",
       "settings": {
-        "title": "Black Friday Special Offers",
+        "title": "🎯 Special Offers",
         "heading_size": "h2",
-        "description": "",
-        "show_description": false,
+        "description": "<p>Limited-time deals on our most popular medical support products</p>",
+        "show_description": true,
         "description_style": "body",
-        "collection": "all",
+        "collection": "bestsellers",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -428,7 +428,7 @@
     "slideshow",
     "featured-collection-0",
     "bestsellers-section",
-    "black-friday-section",
+    "special-offers-section",
     "new-arrivals-section"
   ]
 }
