@@ -2,9 +2,9 @@
 ## Plan d'Action Exhaustif & Suivi des Implémentations
 
 **Date de création:** 14 octobre 2025
-**Dernière mise à jour:** 14 octobre 2025 (Session 8)
-**Version:** 1.10.0
-**Statut global:** 12.8/14 actions définies complétées (91.43%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3: 2.8/3 (8/10 articles written, 4 published + Blog nav link) 🔄 | Phase 4: 0/1 (Quiz & A/B Testing cancelled)
+**Dernière mise à jour:** 14 octobre 2025 (Session 9)
+**Version:** 1.11.0
+**Statut global:** 12.9/14 actions définies complétées (92.14%) - Phase 1 ✅ | Phase 2 ✅ | Phase 3: 2.9/3 (9/10 articles written, 4 published + Blog nav link) 🔄 | Phase 4: 0/1 (Quiz & A/B Testing cancelled)
 
 ---
 
@@ -106,7 +106,7 @@ node --version
 | 2.4 | Urgency/Scarcity | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | ETHICAL: Real inventory only, fake tactics refused |
 | 3.1 | FAQ Schema | P1 | ✅ | 14-10-2025 | 14-10-2025 | Live | Already implemented, 10 questions verified |
 | 3.2 | Breadcrumbs UI | P2 | ✅ | 14-10-2025 | 14-10-2025 | Live | Navigation breadcrumbs on product & collection pages |
-| 3.3 | Blog SEO Content Hub | P2 | 🔄 | 14-10-2025 | IN PROGRESS | 8/10 articles ✅ | Infrastructure ✅ + Blog nav link ✅ + Articles 1-4 published ✅ + Articles 5-8 written (need manual Shopify pub) ✅ - 2 articles restants (6-8h) |
+| 3.3 | Blog SEO Content Hub | P2 | 🔄 | 14-10-2025 | IN PROGRESS | 9/10 articles ✅ | Infrastructure ✅ + Blog nav link ✅ + Articles 1-4 published ✅ + Articles 5-9 written (need manual Shopify pub) ✅ - 1 article restant (3-4h) |
 | 4.1 | Quiz Produit | P2 | ❌ | - | - | CANCELLED | User requested removal |
 | 4.2 | Analytics Setup | P1 | ⏳ | - | - | - | Requires account IDs (GA4, GTM, FB Pixel, Clarity) |
 | 4.3 | A/B Testing | P2 | ❌ | - | - | CANCELLED | User requested removal |
@@ -2557,8 +2557,8 @@ shopify theme push --live
 
 **ID:** 3.3
 **Priorité:** P2 - MOYENNE
-**Statut:** 🔄 EN COURS (8/10 articles complétés - 80%)
-**Effort:** 42 heures (5h infrastructure ✅ + 32h articles 1-8 ✅ + 6-8h restants ⏳)
+**Statut:** 🔄 EN COURS (9/10 articles complétés - 90%)
+**Effort:** 45 heures (5h infrastructure ✅ + 36h articles 1-9 ✅ + 3-4h restants ⏳)
 **Impact:** Organic traffic +100%
 **Date début:** 14 octobre 2025 (infrastructure)
 **Commits:** 3f85c9e, 91899ed
@@ -2569,7 +2569,7 @@ shopify theme push --live
 - sections/main-blog.liquid: Breadcrumbs
 - Blog structure ready for content
 
-**✅ ARTICLES WRITTEN (8/10 - 23,700 words total):**
+**✅ ARTICLES WRITTEN (9/10 - 26,900 words total):**
 
 **Published to Shopify (4 articles - 12,350 words):**
 1. **"How to Choose the Right Knee Brace: Complete Buying Guide 2025"** (2,500 mots)
@@ -2606,7 +2606,7 @@ shopify theme push --live
    - 10 FAQs with evidence-based answers
    - Published: 14-10-2025
 
-**Written - Awaiting Manual Shopify Publication (4 articles - 11,350 words):**
+**Written - Awaiting Manual Shopify Publication (5 articles - 14,550 words):**
 
 5. **"How to Fix Poor Posture: Evidence-Based Exercise Guide (2024-2025 Research)"** (2,600 mots)
    - File: blog-article-posture-correction-guide.html
@@ -2679,13 +2679,35 @@ shopify theme push --live
    - Written: 14-10-2025
    - Status: Committed to Git (6988b9a), ready for manual Shopify API publication
 
+9. **"Recovery After Knee Surgery: Complete Equipment Checklist & Timeline (2024-2025)"** (3,200 mots)
+   - File: blog-article-recovery-after-knee-surgery.html
+   - 30+ internal product links (post-op braces, immobilizers, ROM hinged braces, compression massagers, recovery boots, hinged stabilizers, functional braces, sports knee pads)
+   - Recherche clinique 2024-2025: ACL/meniscus/TKR recovery timelines, 2024 EU-US Meniscus Rehabilitation Consensus (criterion-based protocols), 2024 RTS narrative review, 2025 functional testing guideline, March 2025 TKR research, 2024 DVT prophylaxis study
+   - Common surgery types: ACL reconstruction (6-9 months full recovery), meniscus surgery (meniscectomy 3 months, repair 4-6 months), total knee replacement (3-6 months normal activities, up to 1 year complete healing)
+   - Recovery timelines evidence-based: ACL weeks 0-2 walk with support/crutches discontinued by week 2-3, weeks 2-12 full stability by 12 weeks, months 3-5 running progression, months 6-9 full recovery (CRITICAL 51% reinjury reduction per month delayed until 9 months, 84% total risk reduction)
+   - Meniscus timelines: weeks 0-2 meniscectomy WBAT immediately/repair limited weight-bearing, weeks 2-6 gentle ROM, weeks 6-12 progressive activities, months 3-6 full healing (repair 4-6 months vs meniscectomy 3 months)
+   - TKR timelines: days 1-3 hospital stay (PT begins 24 hours), weeks 1-3 March 2025 research shows walk with cane/independently perform daily activities with less pain, weeks 4-12 intensive PT return to low-impact activities by 12 weeks, months 3-6 many return to normal activities, months 6-12 full recovery maximum benefit
+   - Essential equipment checklist (8 categories): mobility aids (crutches/walker/cane/elevated toilet seat/shower chair), post-op braces (hinged ACL/ROM-restricting meniscus repair/TKR surgeon-dependent), ice therapy (machines maintain steady controlled temperature vs gel packs), compression (sleeves/TED stockings DVT prevention), CPM machines (if prescribed 4 hours/day minimum 2 weeks 0-40° progressing 5-10° daily), home comfort (recliner/reacher/slip-on shoes/non-slip mats), rehab equipment (resistance bands/foam roller/balance pad/stationary bike weeks 4-8), advanced braces (functional for RTS/compression sleeves)
+   - Immediate post-op phase (days 1-14): ice 20 min on/off 4-6 sessions minimum, elevation knee above heart, walking/weight-bearing protocols surgery-specific, gentle exercises (ankle pumps hourly/quad sets/heel slides/SLR week 1-2)
+   - Complications warning signs: DVT highest risk days 2-10 elevated 3 months (symptoms: leg pain cramp-like/swelling/redness/warmth, EMERGENCY PE: shortness breath/chest pain/rapid heart rate/coughing blood), infection (fever >101°F/increasing redness warmth swelling/pus/foul odor), arthrofibrosis (inability regain ROM/stiffness/pain with ROM attempts)
+   - 2024 DVT prophylaxis evidence: aspirin lowest incidence (1.6% DVT, 0.6% PE) vs warfarin highest (5.7% DVT, 1.8% PE)
+   - 2024 criterion-based progression consensus: EU-US Meniscus Rehabilitation Consensus states CRITERION-BASED milestones vs strict time protocols, progression based on effusion control/ROM achievement/strength gains/pain management/neuromuscular control not just timeframes
+   - Ten-task ACL framework: specific criteria for each phase advancement, individualized approach based on age/fitness/adherence/healing capacity
+   - Return to sport criteria (2024-2025 evidence): TIME minimum 9 months ACL (51% reinjury reduction per month delayed until 9 months, 84% total risk reduction approach), 2024 narrative review shows low RTS percentages 1/5 who return sustain second ACL injury, 2025 guideline functional testing significantly impacts reinjury risk reduction
+   - Strength testing: quadriceps ≥85% LSI required, hamstrings ≥90% LSI required, testing via isokinetic dynamometry (gold standard)/leg press 1RM/hand-held dynamometry
+   - Functional testing (6+ months): single-leg hop tests (single/triple/crossover/6m timed) target ≥90% LSI all 4 tests, 2024 research shows 6m Timed Hop and Crossover Hop best outcome predictors, movement quality assessment (single-leg squat no valgus/proper landing mechanics/controlled cutting)
+   - Psychological readiness: ACL-RSI scale assesses confidence fear reinjury, KOOS Sport/Recreation subscale predicts revision surgery risk, both should be implemented every RTS test compilation
+   - Comprehensive RTS checklist table: time ≥9 months/ROM equal non-op/quad ≥85% LSI/hamstring ≥90% LSI/hop testing ≥90% LSI all 4/movement quality no valgus/no effusion/psychological readiness high ACL-RSI/sport-specific training 2-3 months/surgeon clearance
+   - 10 FAQs with BRUTAL HONESTY: normal walking timeline surgery-specific (ACL weeks 2-3 without crutches weeks 4-6 normal gait, meniscectomy 1-2 weeks, repair 4-6 weeks, TKR cane week 3 independent 6-8 weeks), return to work (desk 2-4 weeks, light physical 6-8 weeks, moderate/heavy 12+ weeks), swelling months after YES normal mild after activity first 3-6 months but significant at rest NOT normal, knee brace after recovery depends on activity (daily activities most don't need, RTS functional brace for psychological confidence mixed prevention evidence), full extension critical (even 5-10° flexion contracture causes abnormal gait/patellofemoral stress/accelerated arthritis/functional limits), PT NOT optional (expert progression/manual therapy/biomechanical analysis/accountability/equipment/research shows supervised PT significantly better outcomes lower reinjury), running after ACL months 3-4 earliest after meeting criteria (full ROM/80%+ quad strength/normal gait/no swelling after exercise/PT surgeon clearance), wait 9 months ACL not arbitrary (HARD EVIDENCE 51% reinjury reduction per month delayed until 9 months 84% overall risk reduction, graft heals 6-8 weeks but neuromuscular control proprioception movement patterns require 8-9+ months, feeling fine ≠ ready for cutting pivoting landing forces), DVT blood clot warning signs (calf/thigh pain cramp-like, swelling one leg, redness warmth, EMERGENCY PE symptoms call 911), permanent ROM deficits consequences (abnormal gait compensatory patterns, increased stress other joints, accelerated arthritis, functional limitations stairs squatting kneeling, reduced athletic performance, if not improving by 6-8 weeks may need MUA or lysis)
+   - Written: 14-10-2025
+   - Status: Committed to Git (7c8a442), ready for manual Shopify API publication
+
 **🎯 BONUS COMPLETED:** Blog navigation link added to Main menu (Shopify Admin)
 - Users can now discover blog from site header navigation
 - Link: /blogs/news → "Blog"
 - Resolves critical discoverability gap
 
-**⏳ PENDING (2 articles - 6-8h):**
-9. Recovery After Knee Surgery (2,500 mots)
+**⏳ PENDING (1 article - 3-4h):**
 10. Office Worker's Pain Prevention (2,500 mots)
 
 #### Problème Actuel
