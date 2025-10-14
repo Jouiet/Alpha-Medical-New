@@ -20,14 +20,24 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  assign use_fallback = false
+  assign fallback_products = blank
+
+  if product.collections.size > 0
+    assign primary_collection = product.collections.first
+    assign all_collection_products = primary_collection.products
+    assign fallback_products = all_collection_products | where_exp: "item", "item.id != product.id"
+    if fallback_products.size > 0
+      assign use_fallback = true
+    endif
+  endif
+-%}
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <product-recommendations
-    class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-    data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
-    data-section-id="{{ section.id }}"
-    data-product-id="{{ product.id }}"
-  >
-    {% if recommendations.performed and recommendations.products_count > 0 %}
+  {%- if use_fallback -%}
+    {%- comment -%}Direct render: Collection-based recommendations{%- endcomment -%}
+    <div class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
@@ -36,10 +46,10 @@
         role="list"
       >
         {% assign skip_card_product_styles = false %}
-        {% for recommendation in recommendations.products %}
+        {% for related_product in fallback_products limit: section.settings.products_to_show %}
           <li class="grid__item">
             {% render 'card-product',
-              card_product: recommendation,
+              card_product: related_product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
               show_secondary_image: section.settings.show_secondary_image,
@@ -51,15 +61,16 @@
           {%- assign skip_card_product_styles = true -%}
         {% endfor %}
       </ul>
-    {% elsif recommendations.performed and recommendations.products_count == 0 %}
-      {%- comment -%}Fallback: Show products from same collection when API returns nothing{%- endcomment -%}
-      {%- assign fallback_products = blank -%}
-      {%- if product.collections.size > 0 -%}
-        {%- assign primary_collection = product.collections.first -%}
-        {%- assign fallback_products = primary_collection.products | where_exp: "item", "item.id != product.id" | slice: 0, section.settings.products_to_show -%}
-      {%- endif -%}
-
-      {%- if fallback_products.size > 0 -%}
+    </div>
+  {%- else -%}
+    {%- comment -%}Fallback to Shopify native recommendations API{%- endcomment -%}
+    <product-recommendations
+      class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
+      data-section-id="{{ section.id }}"
+      data-product-id="{{ product.id }}"
+    >
+      {% if recommendations.performed and recommendations.products_count > 0 %}
         <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.heading }}
         </h2>
@@ -68,10 +79,10 @@
           role="list"
         >
           {% assign skip_card_product_styles = false %}
-          {% for fallback_product in fallback_products %}
+          {% for recommendation in recommendations.products %}
             <li class="grid__item">
               {% render 'card-product',
-                card_product: fallback_product,
+                card_product: recommendation,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
                 show_secondary_image: section.settings.show_secondary_image,
@@ -83,9 +94,9 @@
             {%- assign skip_card_product_styles = true -%}
           {% endfor %}
         </ul>
-      {%- endif -%}
-    {% endif %}
-  </product-recommendations>
+      {% endif %}
+    </product-recommendations>
+  {%- endif -%}
   {% if section.settings.image_shape == 'arch' %}
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
