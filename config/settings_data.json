@@ -167,6 +167,36 @@
         "type": "shopify://apps/conversios-google-analytics-4/blocks/app-embed-body/a5ed6aee-249e-497f-93bc-8eb285acecca",
         "disabled": false,
         "settings": {}
+      },
+      "11472260868519512057": {
+        "type": "shopify://apps/conversios-server-side-tagging/blocks/app-embed/17c89d6a-cc93-4a0d-8653-84e0d248403e",
+        "disabled": false,
+        "settings": {}
+      },
+      "6876071678445956735": {
+        "type": "shopify://apps/conversios-server-side-tagging/blocks/app-embed-body/17c89d6a-cc93-4a0d-8653-84e0d248403e",
+        "disabled": false,
+        "settings": {}
+      },
+      "8774941748004189772": {
+        "type": "shopify://apps/reconvert/blocks/cart-drawer/72c64c30-2f7c-4a71-ae4c-efd1d5d1d2e2",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "6143736321357441667": {
+        "type": "shopify://apps/tidio-live-chat-chatbots/blocks/app-embed/1002274d-fb18-4939-98f6-5f05a8deeadc",
+        "disabled": false,
+        "settings": {}
+      },
+      "643381569867433295": {
+        "type": "shopify://apps/infinite-fb-tiktok-pixels/blocks/app-embed/66ae554b-dfd3-49ce-89e3-201f6854e21d",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
