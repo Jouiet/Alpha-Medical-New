@@ -555,6 +555,8 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+              {%- when 'trust_badges' -%}
+                {% render 'product-trust-badges' %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -1015,6 +1017,11 @@
           "default": "t:sections.main-product.blocks.share.settings.text.default"
         }
       ]
+    },
+    {
+      "type": "trust_badges",
+      "name": "Trust badges",
+      "limit": 1
     },
     {
       "type": "custom_liquid",
