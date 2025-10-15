@@ -23,6 +23,14 @@
   </div>
 </div>
 
+{%- comment -%}
+  FAQ Schema - JSON-LD for Google Rich Results
+  Only renders on FAQ page (handle: 'faq')
+{%- endcomment -%}
+{%- if page.handle == 'faq' -%}
+  {% render 'schema-faq' %}
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.main-page.name",

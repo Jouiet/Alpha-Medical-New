@@ -1,0 +1,96 @@
+{%- liquid
+  comment
+    FAQPage Schema - JSON-LD Structured Data
+    Enables Google Rich Results for FAQ pages
+    Spec: https://schema.org/FAQPage
+  endcomment
+-%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What payment methods are accepted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and other secure payment methods at checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is payment information secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, absolutely. We use industry-standard SSL encryption to protect your payment information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can orders be modified or canceled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can modify or cancel your order within 1 hour of placing it. Please contact us immediately at support@alphamedical.shop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will shipping take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard shipping typically takes 7-14 business days. Express shipping options are available at checkout for faster delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you ship internationally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we ship to most countries worldwide. Shipping costs and delivery times vary by location and are calculated at checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your return policy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer a 30-day return policy for unused items in original packaging. Items must be in new condition to qualify for a full refund."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I initiate a return?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact our customer service team at support@alphamedical.shop with your order number. We will provide return shipping instructions and a return authorization number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your products medical-grade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our products meet high-quality standards and are designed for medical support and recovery. Many of our products are FDA-compliant and use medical-grade materials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I contact customer service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email us at support@alphamedical.shop or use our contact form on the website. We respond to all inquiries within 24 hours during business days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer warranties on your products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most of our products come with a warranty ranging from 90 days to 1 year, depending on the product category. Warranty details are specified on each product page."
+      }
+    }
+  ]
+}
+</script>
