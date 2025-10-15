@@ -562,6 +562,8 @@
                 {% render 'product-trust-badges' %}
               {%- when 'inventory_status' -%}
                 {% render 'product-low-stock-badge', product: product %}
+              {%- when 'social_proof' -%}
+                {% render 'product-social-proof', product: product %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -1193,6 +1195,11 @@
     {
       "type": "inventory_status",
       "name": "Inventory status",
+      "limit": 1
+    },
+    {
+      "type": "social_proof",
+      "name": "Social proof (viewers)",
       "limit": 1
     },
     {
