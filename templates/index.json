@@ -410,6 +410,13 @@
         "padding_bottom": 84
       }
     },
+    "recently-viewed-section": {
+      "type": "recently-viewed",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "promo-banner-2": {
       "type": "promo-banner",
       "settings": {
@@ -458,6 +465,7 @@
     "promo-banner-1",
     "bestsellers-section",
     "social-proof-section",
+    "recently-viewed-section",
     "promo-banner-2",
     "new-arrivals-section"
   ]
