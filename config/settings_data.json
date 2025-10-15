@@ -188,11 +188,6 @@
         "disabled": false,
         "settings": {}
       },
-      "6143736321357441667": {
-        "type": "shopify://apps/tidio-live-chat-chatbots/blocks/app-embed/1002274d-fb18-4939-98f6-5f05a8deeadc",
-        "disabled": false,
-        "settings": {}
-      },
       "643381569867433295": {
         "type": "shopify://apps/infinite-fb-tiktok-pixels/blocks/app-embed/66ae554b-dfd3-49ce-89e3-201f6854e21d",
         "disabled": false,
@@ -202,6 +197,20 @@
         "type": "shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
         "disabled": false,
         "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#0e1b4d",
+          "secondary_color": "#e2e7fd",
+          "ternary_color": "#4770db",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
+        }
       }
     },
     "color_schemes": {
@@ -229,7 +238,7 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#0e1b4d",
+          "background": "#4770db",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
