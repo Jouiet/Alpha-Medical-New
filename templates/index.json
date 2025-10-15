@@ -359,7 +359,7 @@
         "proof-1": {
           "type": "proof_item",
           "settings": {
-            "icon": "⭐",
+            "icon": "users",
             "stat": "10,000+",
             "label": "Happy Customers",
             "description": "<p>Trusted by thousands worldwide</p>"
@@ -368,7 +368,7 @@
         "proof-2": {
           "type": "proof_item",
           "settings": {
-            "icon": "🚚",
+            "icon": "truck",
             "stat": "Free Shipping",
             "label": "On Orders $50+",
             "description": "<p>Fast delivery to your door</p>"
@@ -377,7 +377,7 @@
         "proof-3": {
           "type": "proof_item",
           "settings": {
-            "icon": "✅",
+            "icon": "shield-check",
             "stat": "30 Days",
             "label": "Money Back",
             "description": "<p>100% satisfaction guarantee</p>"
@@ -386,7 +386,7 @@
         "proof-4": {
           "type": "proof_item",
           "settings": {
-            "icon": "💪",
+            "icon": "award",
             "stat": "100%",
             "label": "Quality Guaranteed",
             "description": "<p>Professional medical equipment</p>"
