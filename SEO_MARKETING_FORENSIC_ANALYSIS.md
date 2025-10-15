@@ -601,8 +601,21 @@ All descriptions include:
   * GraphQL API for product creation
   * REST API for variant pricing updates
   * REST API for collection creation and product assignment
-  * No inventory management (inventory_policy: continue)
+  * Inventory management: tracked (999 units, continue policy)
   * Manual bundles (not dynamic app-based)
+- **Post-deployment fixes applied** (@ 21:18-21:30):
+  * **Issue 1 - 404 Errors**: Bundles not published to Online Store channel
+    - Fix: Used publishablePublish mutation to publish all 5 bundles + collection
+    - Result: All URLs now accessible ✅
+  * **Issue 2 - "Sold Out" Status**: Inventory tracking disabled, quantity 0
+    - Fix: Enabled inventory tracking + set 999 units at Shop location (ID: 76344000589)
+    - Maintained inventory_policy: "continue" for unlimited selling
+    - Result: All bundles show "In stock" with active Add to cart buttons ✅
+  * **Verification**: Storefront tested @ 21:35 - all bundles fully functional
+  * **Technical notes**:
+    - Location: Shop location used (not fulfillment service to avoid conflicts)
+    - Cache delay: 2-5 minutes after API changes
+    - Final config: tracked=true, available=999, policy=continue, management=shopify
 - Expected impact:
   * **AOV increase**: +20% (baseline $110 → target $132)
   * **Conversion rate**: +5-8% (bundle perceived value)
