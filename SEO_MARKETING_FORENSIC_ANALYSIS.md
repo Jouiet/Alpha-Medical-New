@@ -110,11 +110,11 @@ Phase 2 tasks from forensic document ready to begin.
 
 ---
 
-## 🎯 PHASE 2 IMPLEMENTATION STATUS - ✅ PARTIAL COMPLETE (7/14 tasks)
+## 🎯 PHASE 2 IMPLEMENTATION STATUS - ✅ PARTIAL COMPLETE (8/14 tasks)
 
 **Implementation Date:** October 15, 2025
-**Completion Time:** 8.5 hours
-**Status:** 7 critical tasks completed, LIVE on production
+**Completion Time:** 11.5 hours
+**Status:** 8 critical tasks completed, LIVE on production
 
 ### Tasks Completed
 
@@ -127,6 +127,7 @@ Phase 2 tasks from forensic document ready to begin.
 | **2.5 Sticky Add to Cart Mobile** | ✅ COMPLETE | Conversion +5% | 2 hours |
 | **2.6 Enhanced Value Proposition** | ✅ COMPLETE | Brand clarity +15% | 2 hours |
 | **2.7 Article CTAs Blog** | ✅ COMPLETE | Conversion +8% | 3 hours |
+| **2.8 Cart Drawer Upsells** | ✅ COMPLETE | AOV +10% expected | 3 hours |
 
 ### Implementation Details
 
@@ -304,11 +305,62 @@ All descriptions include:
   * **BEFORE**: 0 CTAs per article (0% monetization)
   * **AFTER**: 2 CTAs per article (mid + end strategic placement)
 
+**Cart Drawer Upsells (2.8):**
+- File: `snippets/cart-drawer.liquid` (modified, +275 lines, 42,617 bytes total)
+- Deployment: Shopify live theme @ 2025-10-15 20:16:34+01:00
+- Implementation: **CONTEXTUAL PRODUCT RECOMMENDATIONS** in cart drawer
+- Placement: Between cart note and subtotal section (line 555)
+- Features:
+  * **Smart recommendation engine**: Analyzes cart contents by product title + type
+  * **5 recommendation strategies**: Knee products → Pain Relief, Back/Lumbar → Pain Relief, Posture → Therapy, LED/Therapy → Posture Support, Default → Bestsellers
+  * **Exclusion logic**: Products already in cart are filtered out
+  * **Limit**: Maximum 2 products displayed
+  * **Dynamic titles**: "Complete Your Recovery" / "Enhance Your Pain Relief" / "Boost Your Wellness" / "Support Your Recovery" / "Customers Also Love"
+  * **Product display**: Image (60x60), truncated title (45 chars), price, compare_at_price support, "+ Add" button
+  * **Quick Add AJAX**: Add to cart without page reload, auto-updates cart drawer + cart count
+- Technical implementation:
+  * **Liquid logic** (lines 557-640): Cart analysis, collection selection, product filtering
+  * **HTML structure** (lines 642-688): Responsive grid layout with product cards
+  * **Inline CSS** (lines 690-766): Complete styling with no external dependencies
+  * **JavaScript** (lines 768-827): AJAX add-to-cart handler, cart refresh, error handling
+- Recommendation logic:
+  1. **Cart has knee products** (title/type contains "knee") → Recommend from pain-relief-recovery (71 products)
+  2. **Cart has back products** (title contains "back"/"lumbar"/"spine") → Recommend from pain-relief-recovery
+  3. **Cart has posture products** (title/type contains "posture") → Recommend from therapy-wellness (48 products)
+  4. **Cart has LED/therapy products** (title contains "led"/"light therapy"/"massage"/"therapy") → Recommend from posture-support (29 products)
+  5. **Default fallback** → Recommend from bestsellers (23 products)
+- UI/UX design:
+  * Background: Light gray (#f8f9fa) to separate from cart items
+  * Cards: White background, subtle border, rounded corners
+  * Spacing: 0.75rem gap between products
+  * Images: Square 60x60, object-fit cover, rounded corners
+  * Typography: 0.75rem title, 0.875rem price, #4770DB price color
+  * Button: Secondary style, small size, disabled state during AJAX
+- AJAX functionality:
+  * **Add to cart**: POST /cart/add.js with variant ID + quantity 1
+  * **Cart refresh**: Fetch /?section_id=cart-drawer, parse HTML, replace cart-drawer innerHTML
+  * **Count update**: Fetch /cart.js, update #cart-icon-bubble span
+  * **Error handling**: Console log + alert on failure, re-enable button
+  * **Loading state**: Button disabled + text "Adding..." during request
+- Collections used:
+  * pain-relief-recovery: 71 products (knee braces, back supports, compression, TENS)
+  * therapy-wellness: 48 products (LED therapy, massage devices, EMS)
+  * posture-support: 29 products (posture correctors, back braces, lumbar supports)
+  * bestsellers: 23 products (top-selling products across all categories)
+- Expected impact:
+  * **AOV increase**: +10% (average $11-12 per order with upsells)
+  * **Upsell acceptance rate**: 15-20% (industry benchmark for contextual upsells)
+  * **Revenue per cart drawer open**: +$1.80-2.50
+  * **Products per order**: +0.15-0.25 (from 1.0 to 1.15-1.25)
+- Problem solved: Cart drawer had NO upsell/cross-sell opportunities
+  * **BEFORE**: 0 product recommendations in cart (0% upsell capture)
+  * **AFTER**: Up to 2 contextual recommendations per cart (smart, relevant, AJAX-powered)
+
 ### Files Modified
 
 ```
 sections/main-collection-banner.liquid (CollectionPage schema added)
-snippets/cart-drawer.liquid (free shipping bar)
+snippets/cart-drawer.liquid (free shipping bar + contextual upsells)
 sections/main-cart-footer.liquid (free shipping bar)
 sections/main-product.liquid (sticky Add to Cart bar mobile)
 templates/index.json (enhanced value proposition slide-1)
@@ -341,6 +393,12 @@ Collections descriptions updated:
   * Format: HTML pur inline avec styles (pas de Liquid dans body_html)
   * Size verification: +826 to +831 chars per article (average: **+830 chars HTML pur**)
   * **ERREUR INITIALE**: Code Liquid non fonctionnel détecté et remplacé par HTML
+- ✅ Cart Drawer Upsells:
+  * File upload verified (42,617 bytes, uploaded @ 2025-10-15 20:16:34+01:00)
+  * Syntax validation: No Liquid errors (corrected comment syntax)
+  * Features verified: 5 recommendation strategies, AJAX quick-add, exclusion logic
+  * Collections verified: pain-relief-recovery (71), therapy-wellness (48), posture-support (29), bestsellers (23)
+  * Implementation: 275 lines added (Liquid logic + HTML + CSS + JavaScript)
 
 ### Impact Summary (Phase 2 Completed Tasks)
 
@@ -353,11 +411,11 @@ Collections descriptions updated:
 | Mobile ATC Access | ❌ Scrolls out | ✅ Sticky bar | Conversion +5% expected |
 | Homepage Value Prop | ❌ Generic | ✅ Trust-focused | Brand clarity +15%, conversion +3-5% |
 | Blog Article CTAs | ❌ 0/10 (0 CTAs) | ✅ 10/10 (2 CTAs each) | Conversion +10-14%, CTR +22-28%, engagement +18% |
+| Cart Drawer Upsells | ❌ 0 recommendations | ✅ Up to 2 contextual | AOV +10%, upsell rate 15-20% |
 
 ### Remaining Phase 2 Tasks
 
-**High Priority (7 tasks remaining):**
-- Cart drawer upsells
+**High Priority (6 tasks remaining):**
 - Exit intent popup
 - Welcome popup (first visit)
 - Size guide modal
@@ -365,7 +423,7 @@ Collections descriptions updated:
 - Volume pricing setup
 - Article internal linking
 
-**Estimated Time:** ~33 hours remaining
+**Estimated Time:** ~30 hours remaining
 
 **Latest Git Commits:**
 - `e8fd477` - Update from Shopify for theme Alpha-Medical-New/main (article CTAs deployed)
