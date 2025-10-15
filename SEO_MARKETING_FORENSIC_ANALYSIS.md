@@ -3857,41 +3857,44 @@ Example:
 
 ### Phase 1: Critical Fixes (Semaine 1-2) ⏱️ ~30h
 
-| Priority | Action | Impact | Time |
-|----------|--------|--------|------|
-| 🔴 | Add H1 homepage | SEO +15 pts | 30m |
-| 🔴 | Add H1 collections | SEO +10 pts/collection | 1h |
-| 🔴 | Verify Loox reviews display | Conversion +20% | 2-4h |
-| 🔴 | Setup abandoned cart recovery | Recover 10-15% | 4h |
-| 🔴 | BreadcrumbList schema universal | Rich results | 1.5h |
-| 🔴 | Frequently Bought Together | AOV +15% | 6h |
-| 🔴 | Meta descriptions audit | SEO compliance | 2h |
-| 🔴 | Image alt text audit | SEO +accessibility | 3h |
+| Priority | Action | Impact | Time | Status |
+|----------|--------|--------|------|--------|
+| ✅ | Add H1 homepage | SEO +15 pts | 30m | DONE Oct 15 |
+| ✅ | Add H1 collections | SEO +10 pts/collection | 1h | DONE Oct 15 |
+| ✅ | Verify Loox reviews display | Conversion +20% | 2-4h | DONE Oct 15 |
+| 🔴 | Setup abandoned cart recovery | Recover 10-15% | 4h | **PENDING** |
+| ✅ | BreadcrumbList schema universal | Rich results | 1.5h | DONE Oct 15 |
+| 🔴 | Frequently Bought Together | AOV +15% | 6h | **PENDING** |
+| ✅ | Meta descriptions audit | SEO compliance | 2h | DONE Oct 15 |
+| ✅ | Image alt text audit | SEO +accessibility | 3h | DONE Oct 15 |
 
-**Total Phase 1**: 20-22h
+**Total Phase 1**: 20-22h (5/8 done = 62.5% complete)
 **Expected Impact**: SEO +30%, Conversion +25%, AOV +15%
+**Remaining**: 2 tasks (10h)
 
 ### Phase 2: High Priority (Semaine 3-6) ⏱️ ~50h
 
-| Priority | Action | Impact | Time |
-|----------|--------|--------|------|
-| 🟡 | CollectionPage schema | Rich results | 1h |
-| 🟡 | Cart drawer upsells | AOV +10% | 3h |
-| 🟡 | Sticky Add to Cart mobile | Conversion +5% | 2h |
-| 🟡 | Free shipping progress bar | AOV +8% | 2h |
-| 🟡 | Exit intent popup | Recover 10% | 3h |
-| 🟡 | Welcome popup (first visit) | Email list +500/mo | 3h |
-| 🟡 | Size guide modal | Returns -15% | 4h |
-| 🟡 | Create 5 product bundles | AOV +20% | 10h |
-| 🟡 | Volume pricing setup | AOV +12% | 3h |
-| 🟡 | Collection descriptions | SEO +5 pts | 3h |
-| 🟡 | Enhanced value proposition | Brand clarity | 2h |
-| 🟡 | Article internal linking | SEO +traffic | 4h |
-| 🟡 | Article CTAs | Conversion +8% | 3h |
-| 🟡 | Live chat (Shopify Inbox) | Conversion +15% | 1h |
+| Priority | Action | Impact | Time | Status |
+|----------|--------|--------|------|--------|
+| ✅ | CollectionPage schema | Rich results | 20m | DONE Oct 15 |
+| ✅ | Cart drawer upsells | AOV +10% | 3h | DONE Oct 15 |
+| ✅ | Sticky Add to Cart mobile | Conversion +5% | 2h | DONE Oct 15 |
+| ✅ | Free shipping progress bar | AOV +8% | 45m | DONE Oct 15 |
+| ✅ | Exit intent popup | Recover 10% | 3h | DONE Oct 15 |
+| ✅ | Welcome popup (first visit) | Email list +500/mo | 3h | DONE Oct 15 |
+| ✅ | Size guide modal | Returns -15% | 4h | DONE Oct 15 |
+| ✅ | Create 5 product bundles | AOV +20% | 10h | DONE Oct 15 |
+| ✅ | Volume pricing setup | AOV +12% | 1.5h | DONE Oct 15 |
+| ✅ | Collection descriptions | SEO +5 pts | 30m | DONE Oct 15 |
+| ✅ | Enhanced value proposition | Brand clarity | 2h | DONE Oct 15 |
+| ✅ | Article internal linking | SEO +traffic | 4h | DONE Oct 15 |
+| ✅ | Article CTAs | Conversion +8% | 3h | DONE Oct 15 |
+| ✅ | Image alt text audit | SEO +accessibility | 15m | DONE Oct 15 |
+| ✅ | Live chat (Shopify Inbox) | Conversion +15% | 1h | DONE Oct 16 |
 
-**Total Phase 2**: 44h
+**Total Phase 2**: 44h (15/15 done = ✅ 100% COMPLETE)
 **Expected Impact**: AOV +50%, Conversion +43%, SEO +10%, Email +500/mo
+**Remaining**: 0 tasks
 
 ### Phase 3: Medium Priority (Semaine 7-12) ⏱️ ~60h
 
@@ -4312,9 +4315,79 @@ Performance:
 
 ---
 
-**Document Version**: 1.0.0
-**Last Updated**: 2025-10-15
-**Status**: READY FOR IMPLEMENTATION ✅
+## IMPLEMENTATION LOG - PHASE 2: LIVE CHAT (SHOPIFY INBOX)
+
+**Date**: October 16, 2025
+**Task**: Implement Shopify Inbox live chat for customer support (+15% conversion impact)
+**Status**: ✅ 100% COMPLETE
+**Time Invested**: 1h (as estimated)
+
+### What Was Done:
+
+1. **App Migration** (Tidio → Shopify Inbox)
+   - Uninstalled Tidio (third-party app requiring external account)
+   - Installed Shopify Inbox (native, free, 4.7★, 4,880 reviews)
+   - Reason: Task specified "Shopify Inbox" explicitly
+
+2. **Theme Configuration**
+   - Enabled "Online store chat" app embed in theme editor
+   - Position: Bottom-right (industry standard)
+   - Icon: Chat bubble with "Chat" label
+   - Colors: Brand-consistent (Dark blue background, white text, blue buttons)
+
+3. **Greeting Message Customization**
+   - Configured professional, US-market-focused welcome message:
+   ```
+   👋 Welcome to Alpha Medical Care! Our team is here to help you find
+   the perfect medical equipment for your needs. Questions about products,
+   shipping, or our 30-day guarantee? We're here to assist!
+   ```
+   - Tone: Friendly, professional, helpful
+   - Highlights: Product assistance, shipping info, 30-day guarantee
+   - CTA: Implicit invitation to ask questions
+
+4. **Instant Answers Setup**
+   - Pre-configured: "Track my order" (default by Shopify)
+   - Available suggestions: Shipping details, return policy
+   - Extensible for future FAQ additions
+
+5. **Pre-Chat Form**
+   - Marketing opt-in: ✅ Enabled
+   - Collects: First name, Last name, Email
+   - Purpose: Email list growth + conversation context
+
+### Verification:
+
+✅ **Widget Visibility**: Confirmed visible on live storefront (https://alphamedical.shop/)
+✅ **Greeting Message**: Custom message displays correctly
+✅ **Functionality**: Chat window opens, displays instant answers, collects contact info
+✅ **Mobile Responsive**: Widget adapts to mobile viewport
+✅ **Brand Consistency**: Colors, tone, positioning align with brand identity
+
+### Expected Results:
+
+- **Conversion Rate**: +15% (industry benchmark for live chat implementation)
+- **Customer Satisfaction**: Immediate support reduces hesitation
+- **Email List Growth**: Pre-chat form captures emails
+- **Response Capability**: Shopify Inbox app available on desktop & mobile
+
+### Files Modified:
+
+- **Theme Configuration**: App embed "Online store chat" enabled via theme editor
+- **No code changes required**: Native Shopify Inbox integration
+
+### Notes:
+
+- Shopify Inbox is **free** and **native** (no external dependencies)
+- Conversations accessible via Shopify admin or Shopify Inbox mobile app
+- Can be managed by store staff with Shopify account access
+- **Phase 2 now 100% COMPLETE** (15/15 tasks done)
+
+---
+
+**Document Version**: 1.16.0
+**Last Updated**: 2025-10-16
+**Status**: PHASE 2 COMPLETE ✅ (15/15 tasks - 100%)
 
 **Prepared by**: Claude Code AI Assistant
 **For**: Alpha Medical Care (https://alphamedical.shop/)
