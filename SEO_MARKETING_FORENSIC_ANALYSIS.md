@@ -3476,7 +3476,7 @@ Example:
 | Priority | Action | Impact | Time |
 |----------|--------|--------|------|
 | ✅ | FAQ schema | Rich results | 3h |
-| 🔵 | Article schema (blog) | Rich results | 2h |
+| ✅ | Article schema (blog) | Rich results | 2h |
 | 🔵 | Product descriptions audit | SEO quality | 2h |
 | 🔵 | Keyword research + integration | SEO +traffic | 8h |
 | 🔵 | Recently viewed products | Engagement | 3h |
