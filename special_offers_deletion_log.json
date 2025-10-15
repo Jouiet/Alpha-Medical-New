@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-10-15T04:35:00",
+  "action": "collection_delete",
+  "collection_id": "gid://shopify/Collection/295136034893",
+  "collection_handle": "special-offers",
+  "collection_title": "Special Offers",
+  "deleted_collection_id": "gid://shopify/Collection/295136034893",
+  "status": "success"
+}
