@@ -1,4 +1,77 @@
 {%- unless template == 'index' or template == 'cart' or template == 'list-collections' -%}
+  {%- liquid
+    assign shop_url = shop.secure_url
+    assign position = 1
+  -%}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": "Home",
+        "item": "{{ shop_url }}"
+      }
+      {%- assign position = position | plus: 1 -%}
+      {%- if request.page_type == 'collection' -%}
+      ,{
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": {{ collection.title | json }},
+        "item": "{{ shop_url }}{{ collection.url }}"
+      }
+      {%- elsif request.page_type == 'product' -%}
+        {%- if collection -%}
+        ,{
+          "@type": "ListItem",
+          "position": {{ position }},
+          "name": {{ collection.title | json }},
+          "item": "{{ shop_url }}{{ collection.url }}"
+        }
+        {%- assign position = position | plus: 1 -%}
+        {%- endif -%}
+        ,{
+          "@type": "ListItem",
+          "position": {{ position }},
+          "name": {{ product.title | json }},
+          "item": "{{ shop_url }}{{ product.url }}"
+        }
+      {%- elsif request.page_type == 'page' -%}
+      ,{
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": {{ page.title | json }},
+        "item": "{{ shop_url }}{{ page.url }}"
+      }
+      {%- elsif request.page_type == 'article' -%}
+      ,{
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": {{ blog.title | json }},
+        "item": "{{ shop_url }}{{ blog.url }}"
+      }
+        {%- assign position = position | plus: 1 -%}
+      ,{
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": {{ article.title | json }},
+        "item": "{{ shop_url }}{{ article.url }}"
+      }
+      {%- elsif request.page_type == 'blog' -%}
+      ,{
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": {{ blog.title | json }},
+        "item": "{{ shop_url }}{{ blog.url }}"
+      }
+      {%- endif -%}
+    ]
+  }
+  </script>
+
   <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
     <ol class="breadcrumbs__list">
       <li class="breadcrumbs__item">
