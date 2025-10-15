@@ -35,6 +35,10 @@
           "type": "inventory_status",
           "settings": {}
         },
+        "social_proof": {
+          "type": "social_proof",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -78,6 +82,7 @@
         "rating",
         "price",
         "inventory_status",
+        "social_proof",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
