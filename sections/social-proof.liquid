@@ -122,10 +122,11 @@
     margin-bottom: 4rem;
     position: relative;
     display: inline-block;
-    background: linear-gradient(135deg, var(--color-foreground) 0%, rgba(var(--color-base-accent-1), 0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1a202c;
+    font-weight: 800;
+    text-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.08),
+      0 1px 3px rgba(0, 0, 0, 0.12);
   }
 
   .social-proof__heading::after {
@@ -153,7 +154,7 @@
 
   /* Grid Layout */
   .social-proof__grid {
-    gap: 3rem;
+    gap: 4.5rem;
     position: relative;
     z-index: 1;
     max-width: 1400px;
