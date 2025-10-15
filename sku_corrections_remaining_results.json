@@ -1,0 +1,392 @@
+{
+  "timestamp": "2025-10-15T03:22:44.521130",
+  "start_index": 234,
+  "summary": {
+    "total_processed": 95,
+    "successful": 95,
+    "failed": 0,
+    "success_rate": "100.0%"
+  },
+  "results": [
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168481841229",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333271117",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168481873997",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333303885",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168481906765",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333336653",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168481939533",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333369421",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168481972301",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333402189",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482005069",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333434957",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482037837",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333467725",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482070605",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333500493",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482103373",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333533261",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482136141",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333566029",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482168909",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333598797",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482201677",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333631565",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482234445",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333664333",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482267213",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333697101",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482299981",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333729869",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482332749",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333762637",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482365517",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333795405",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482398285",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333828173",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482431053",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333860941",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482463821",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333893709",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482496589",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333926477",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482529357",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333959245",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482562125",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168333992013",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482594893",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334024781",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482627661",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334057549",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482660429",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334090317",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482693197",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334123085",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482725965",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334155853",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482758733",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334188621",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482791501",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334221389",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482824269",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334254157",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482857037",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334286925",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482889805",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334319693",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482922573",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334352461",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482955341",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334385229",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168482988109",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334417997",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483020877",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334450765",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483053645",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334483533",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483086413",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334516301",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483119181",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334549069",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483151949",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334581837",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483184717",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334614605",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483217485",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168331927629",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168480464973",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334647373",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168480530509",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334680141",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168480563277",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168334712909",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168480596045",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168336416845",
+      "status": "success"
+    },
+    {
+      "variant_id": "gid://shopify/ProductVariant/42168483250253",
+      "status": "success"
+    }
+  ]
+}
