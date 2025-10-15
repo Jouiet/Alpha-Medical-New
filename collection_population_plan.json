@@ -1,0 +1,652 @@
+{
+  "new_arrivals": {
+    "products": [
+      {
+        "id": "gid://shopify/Product/7585887289421",
+        "title": "Lower Back Brace | 6 Stays Anti-Skid Lumbar Support",
+        "price": 57.69,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886797901",
+        "title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+        "price": 58.67,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586408857677",
+        "title": "Electric Ankle Brace | Hot Compress & Vibration Massage",
+        "price": 60.78,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585940045901",
+        "title": "Sports Knee Pads | Pressurized Elastic Support Gym",
+        "price": 62.74,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887158349",
+        "title": "Leg Recovery Boots | 6 Chambers Air Compression Massager",
+        "price": 65.21,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887584333",
+        "title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+        "price": 69.78,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886634061",
+        "title": "Knee Power Booster | Spring-Loaded Rebound Support",
+        "price": 76.79,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886896205",
+        "title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+        "price": 79.1,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409906253",
+        "title": "Foreverlily Smart Knee Massager | Vibration & Air Pressure",
+        "price": 90.5,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939816525",
+        "title": "OA Unloader Brace | NEENCA Arthritis Pain Support",
+        "price": 94.54,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410037325",
+        "title": "Foot Massager with Heat | Shiatsu Deep Kneading Machine",
+        "price": 106.48,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586408988749",
+        "title": "O/X-Type Leg Corrector | Adjustable Leg Straightener",
+        "price": 146.63,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887486029",
+        "title": "Hinged ROM Elbow Brace | Post-Op Adjustable Stabilizer",
+        "price": 168.51,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887191117",
+        "title": "Wrist Brace Support | Carpal Tunnel & Arthritis Relief",
+        "price": 192.29,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939652685",
+        "title": "Compression Knee Support | Arthritis & Joint Pain Relief",
+        "price": 197.61,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886666829",
+        "title": "Double Patellar Knee Support Strap | Pain Relief Brace",
+        "price": 201.14,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939947597",
+        "title": "Sports Compression Knee Pads | Gym Volleyball Support",
+        "price": 209.43,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409087053",
+        "title": "EMS V-Face Lifting Device | 6 Modes Microcurrent Massager",
+        "price": 59.14,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410561613",
+        "title": "Electric Gua Sha Board | Vibration Massage & Hot Compress",
+        "price": 69.33,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939619917",
+        "title": "Anti-Cellulite Massager | Infrared 3D Roller Body Slimming Device",
+        "price": 73.77,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586398634061",
+        "title": "EMS Abdominal Toning Belt | Muscle Stimulator & Body Shaping",
+        "price": 77.8,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586398863437",
+        "title": "EMS Abdominal Trainer Belt | Muscle Stimulator & Body Toner",
+        "price": 78.85,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886732365",
+        "title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+        "price": 86.68,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410332237",
+        "title": "Anti-Aging LED Eye Mask | Photon Therapy for Dark Circles",
+        "price": 91.36,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409840717",
+        "title": "7 Color LED Mask | PDT Skin Rejuvenation",
+        "price": 95.71,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585940209741",
+        "title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "price": 111.11,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409807949",
+        "title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
+        "price": 145.03,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586408923213",
+        "title": "4-in-1 Cavitation Body Slimming Machine | 40K Ultrasound",
+        "price": 193.41,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939554381",
+        "title": "Neck Suspension Stretcher | Cervical Traction Belt",
+        "price": 58.38,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586399191117",
+        "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
+        "price": 62.45,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409218125",
+        "title": "Neck Massage Machine | 4-Head Heating Protection",
+        "price": 66.48,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409873485",
+        "title": "LED Facial Mask with Neck | 7 Colors Photon Anti-Aging",
+        "price": 76.0,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409414733",
+        "title": "Wireless LED Face & Neck Mask | 7-Color Phototherapy",
+        "price": 98.76,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586408792141",
+        "title": "Lumbar Traction Massager | Electric Waist Protection",
+        "price": 116.34,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886994509",
+        "title": "Clavicle Spine Back Brace | Adjustable Posture Corrector",
+        "price": 199.45,
+        "collections": [
+          "Posture & Support"
+        ]
+      }
+    ],
+    "collection_id": "gid://shopify/Collection/295064764493",
+    "count": 35
+  },
+  "bestsellers": {
+    "products": [
+      {
+        "id": "gid://shopify/Product/7585887322189",
+        "title": "Posture Corrector | Adjustable Shoulder Support Brace",
+        "price": 57.75,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887060045",
+        "title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+        "price": 59.81,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887125581",
+        "title": "Knee Booster with Spring Support | Running & Cycling",
+        "price": 63.08,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410758221",
+        "title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "price": 69.24,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887387725",
+        "title": "Lumbar Support Belt | Disc Herniation & Pain Relief Brace",
+        "price": 76.86,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939882061",
+        "title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+        "price": 85.23,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939587149",
+        "title": "NEENCA OA Unloader Knee Brace | Arthritis Pain Relief",
+        "price": 99.22,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585940144205",
+        "title": "ROM Hinged Knee Immobilizer | Leg Brace Orthopedic",
+        "price": 147.12,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585940308045",
+        "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
+        "price": 190.32,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887092813",
+        "title": "Basketball Knee Pad | Honeycomb Shock Protection",
+        "price": 198.72,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887518797",
+        "title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
+        "price": 208.35,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409152589",
+        "title": "Face Lifting Device | Red Light Skin Rejuvenation & V-Face",
+        "price": 64.47,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409119821",
+        "title": "7 Color LED Face Mask | Red Light Therapy",
+        "price": 72.97,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586398601293",
+        "title": "EMS Hip Muscle Stimulator | 39 Levels Buttock Shaping",
+        "price": 78.14,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410856525",
+        "title": "Heat & Music Eye Massager | Migraine Eye Fatigue Relief",
+        "price": 80.32,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410496077",
+        "title": "EMS Buttocks Trainer | Hip Lift & Firming Massage Machine",
+        "price": 91.99,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586399125581",
+        "title": "Leg Air Compression Massager | Heat Therapy 3 Modes",
+        "price": 116.43,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409381965",
+        "title": "Electric Airbag Eye Massager | Heated Hot Compress",
+        "price": 172.66,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410266701",
+        "title": "Vibration Shoulder Steamer | Heated Belt Massager",
+        "price": 59.6,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586415575117",
+        "title": "Portable Neck Massager | Smart Shoulder Cervical Relief",
+        "price": 62.9,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939718221",
+        "title": "Cervical Neck Traction Hanging Device | Soft Stretching Belt",
+        "price": 71.64,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410004557",
+        "title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+        "price": 106.71,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410299469",
+        "title": "LED Face & Neck Mask | Red Light + Infrared Therapy",
+        "price": 142.82,
+        "collections": [
+          "Posture & Support"
+        ]
+      }
+    ],
+    "collection_id": "gid://shopify/Collection/295064666189",
+    "count": 23
+  },
+  "verification": {
+    "new_arrivals_count": 35,
+    "bestsellers_count": 23,
+    "special_offers_count": 20,
+    "total_unique": 78,
+    "overlap_count": 0,
+    "no_duplicates": true
+  },
+  "special_offers": {
+    "products": [
+      {
+        "id": "gid://shopify/Product/7585940013133",
+        "title": "Orthopedic Knee Brace | Adjustable Open Patella Support",
+        "price": 58.21,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585940078669",
+        "title": "Knee Stabilizer Brace | Aluminum Alloy Support",
+        "price": 60.91,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886830669",
+        "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+        "price": 64.94,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887354957",
+        "title": "Shoulder Posture Corrector | Back Support Brace",
+        "price": 71.78,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409054285",
+        "title": "Electric Lumbar Massager | Heated Vibration Back Brace",
+        "price": 80.93,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410659917",
+        "title": "Back Support Brace | Adjustable Posture Corrector",
+        "price": 93.47,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586399354957",
+        "title": "Electric Neck Massager | Shoulder Vibration Cervical",
+        "price": 139.74,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585887846477",
+        "title": "ROM Elbow Brace | Post-Surgery Adjustable Stabilizer",
+        "price": 168.51,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585886765133",
+        "title": "Full Leg Compression Sleeve | Unisex Knee Support",
+        "price": 195.98,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410725453",
+        "title": "Spring Knee Booster | Elderly Climbing Power Support",
+        "price": 205.33,
+        "collections": [
+          "Pain Relief & Recovery"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586398535757",
+        "title": "Electric Leg Massager | Air Compression & Heat Therapy",
+        "price": 67.17,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410365005",
+        "title": "Electric Hip Trainer | 39 Gears Buttock Massage Machine",
+        "price": 74.8,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410528845",
+        "title": "EMS Abdominal Belt | USB Rechargeable Muscle Toner",
+        "price": 78.85,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409349197",
+        "title": "7 Color LED Silicone Face Mask | Home Beauty Device",
+        "price": 90.94,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586410594381",
+        "title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "price": 105.68,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409513037",
+        "title": "Smart Facial Massager | V-Line Face Lifting Device",
+        "price": 173.24,
+        "collections": [
+          "Therapy & Wellness"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7585939750989",
+        "title": "5-in-1 Smart Cupping Therapy Set | 12-Level Control",
+        "price": 59.69,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409185357",
+        "title": "7 Color LED Vibrating Neck & Face Massager",
+        "price": 68.5,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409316429",
+        "title": "Foreverlily 7 Color LED Mask | Face & Neck Skin Rejuvenation",
+        "price": 83.4,
+        "collections": [
+          "Posture & Support"
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/7586409742413",
+        "title": "Automatic Abdominal Massager | Electric Belly Flattening Device",
+        "price": 117.93,
+        "collections": [
+          "Posture & Support"
+        ]
+      }
+    ],
+    "collection_id": "gid://shopify/Collection/295136034893",
+    "count": 20
+  }
+}

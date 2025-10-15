@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-10-15 02:39:30",
+  "operations": [
+    {
+      "collection": "New Arrivals",
+      "collection_id": "gid://shopify/Collection/295064764493",
+      "products_added": 35,
+      "success": true
+    },
+    {
+      "collection": "Bestsellers",
+      "collection_id": "gid://shopify/Collection/295064666189",
+      "products_added": 23,
+      "success": true
+    },
+    {
+      "collection": "Special Offers",
+      "collection_id": "gid://shopify/Collection/295136034893",
+      "products_added": 20,
+      "success": true
+    }
+  ],
+  "total_products_added": 78,
+  "all_successful": true
+}
