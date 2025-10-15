@@ -1,0 +1,1419 @@
+{
+  "timestamp": "2025-10-15T03:35:00",
+  "summary": {
+    "total_products_analyzed": 78,
+    "acceptable": 78,
+    "violations": 0,
+    "violation_types": {
+      "multiple_main_collections": 0,
+      "multiple_promo_collections": 0
+    }
+  },
+  "violations": [],
+  "acceptable": [
+    {
+      "product_id": "gid://shopify/Product/7586408923213",
+      "product_title": "4-in-1 Cavitation Body Slimming Machine | 40K Ultrasound",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939750989",
+      "product_title": "5-in-1 Smart Cupping Therapy Set | 12-Level Control",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409119821",
+      "product_title": "7 Color LED Face Mask | Red Light Therapy",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409807949",
+      "product_title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409840717",
+      "product_title": "7 Color LED Mask | PDT Skin Rejuvenation",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409349197",
+      "product_title": "7 Color LED Silicone Face Mask | Home Beauty Device",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409185357",
+      "product_title": "7 Color LED Vibrating Neck & Face Massager",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585940308045",
+      "product_title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887518797",
+      "product_title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410332237",
+      "product_title": "Anti-Aging LED Eye Mask | Photon Therapy for Dark Circles",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939619917",
+      "product_title": "Anti-Cellulite Massager | Infrared 3D Roller Body Slimming Device",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409742413",
+      "product_title": "Automatic Abdominal Massager | Electric Belly Flattening Device",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886830669",
+      "product_title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410659917",
+      "product_title": "Back Support Brace | Adjustable Posture Corrector",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887092813",
+      "product_title": "Basketball Knee Pad | Honeycomb Shock Protection",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939718221",
+      "product_title": "Cervical Neck Traction Hanging Device | Soft Stretching Belt",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586399191117",
+      "product_title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886994509",
+      "product_title": "Clavicle Spine Back Brace | Adjustable Posture Corrector",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939652685",
+      "product_title": "Compression Knee Support | Arthritis & Joint Pain Relief",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886666829",
+      "product_title": "Double Patellar Knee Support Strap | Pain Relief Brace",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410528845",
+      "product_title": "EMS Abdominal Belt | USB Rechargeable Muscle Toner",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586398634061",
+      "product_title": "EMS Abdominal Toning Belt | Muscle Stimulator & Body Shaping",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586398863437",
+      "product_title": "EMS Abdominal Trainer Belt | Muscle Stimulator & Body Toner",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410594381",
+      "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410496077",
+      "product_title": "EMS Buttocks Trainer | Hip Lift & Firming Massage Machine",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586398601293",
+      "product_title": "EMS Hip Muscle Stimulator | 39 Levels Buttock Shaping",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409087053",
+      "product_title": "EMS V-Face Lifting Device | 6 Modes Microcurrent Massager",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409381965",
+      "product_title": "Electric Airbag Eye Massager | Heated Hot Compress",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586408857677",
+      "product_title": "Electric Ankle Brace | Hot Compress & Vibration Massage",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410561613",
+      "product_title": "Electric Gua Sha Board | Vibration Massage & Hot Compress",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410365005",
+      "product_title": "Electric Hip Trainer | 39 Gears Buttock Massage Machine",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586398535757",
+      "product_title": "Electric Leg Massager | Air Compression & Heat Therapy",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409054285",
+      "product_title": "Electric Lumbar Massager | Heated Vibration Back Brace",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586399354957",
+      "product_title": "Electric Neck Massager | Shoulder Vibration Cervical",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409152589",
+      "product_title": "Face Lifting Device | Red Light Skin Rejuvenation & V-Face",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410037325",
+      "product_title": "Foot Massager with Heat | Shiatsu Deep Kneading Machine",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409316429",
+      "product_title": "Foreverlily 7 Color LED Mask | Face & Neck Skin Rejuvenation",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409906253",
+      "product_title": "Foreverlily Smart Knee Massager | Vibration & Air Pressure",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886765133",
+      "product_title": "Full Leg Compression Sleeve | Unisex Knee Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410856525",
+      "product_title": "Heat & Music Eye Massager | Migraine Eye Fatigue Relief",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410004557",
+      "product_title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886896205",
+      "product_title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887060045",
+      "product_title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886797901",
+      "product_title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939882061",
+      "product_title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887486029",
+      "product_title": "Hinged ROM Elbow Brace | Post-Op Adjustable Stabilizer",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887125581",
+      "product_title": "Knee Booster with Spring Support | Running & Cycling",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886634061",
+      "product_title": "Knee Power Booster | Spring-Loaded Rebound Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585940078669",
+      "product_title": "Knee Stabilizer Brace | Aluminum Alloy Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410299469",
+      "product_title": "LED Face & Neck Mask | Red Light + Infrared Therapy",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409873485",
+      "product_title": "LED Facial Mask with Neck | 7 Colors Photon Anti-Aging",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586399125581",
+      "product_title": "Leg Air Compression Massager | Heat Therapy 3 Modes",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887158349",
+      "product_title": "Leg Recovery Boots | 6 Chambers Air Compression Massager",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887289421",
+      "product_title": "Lower Back Brace | 6 Stays Anti-Skid Lumbar Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887387725",
+      "product_title": "Lumbar Support Belt | Disc Herniation & Pain Relief Brace",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586408792141",
+      "product_title": "Lumbar Traction Massager | Electric Waist Protection",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887584333",
+      "product_title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939587149",
+      "product_title": "NEENCA OA Unloader Knee Brace | Arthritis Pain Relief",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409218125",
+      "product_title": "Neck Massage Machine | 4-Head Heating Protection",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939554381",
+      "product_title": "Neck Suspension Stretcher | Cervical Traction Belt",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586408988749",
+      "product_title": "O/X-Type Leg Corrector | Adjustable Leg Straightener",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939816525",
+      "product_title": "OA Unloader Brace | NEENCA Arthritis Pain Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585940013133",
+      "product_title": "Orthopedic Knee Brace | Adjustable Open Patella Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586415575117",
+      "product_title": "Portable Neck Massager | Smart Shoulder Cervical Relief",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887322189",
+      "product_title": "Posture Corrector | Adjustable Shoulder Support Brace",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887846477",
+      "product_title": "ROM Elbow Brace | Post-Surgery Adjustable Stabilizer",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585940144205",
+      "product_title": "ROM Hinged Knee Immobilizer | Leg Brace Orthopedic",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410758221",
+      "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585886732365",
+      "product_title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585940209741",
+      "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887354957",
+      "product_title": "Shoulder Posture Corrector | Back Support Brace",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409513037",
+      "product_title": "Smart Facial Massager | V-Line Face Lifting Device",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060504653",
+          "collection_title": "Therapy & Wellness",
+          "collection_handle": "therapy-wellness"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585939947597",
+      "product_title": "Sports Compression Knee Pads | Gym Volleyball Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585940045901",
+      "product_title": "Sports Knee Pads | Pressurized Elastic Support Gym",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410725453",
+      "product_title": "Spring Knee Booster | Elderly Climbing Power Support",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295136034893",
+          "collection_title": "Special Offers",
+          "collection_handle": "special-offers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586410266701",
+      "product_title": "Vibration Shoulder Steamer | Heated Belt Massager",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064666189",
+          "collection_title": "Bestsellers",
+          "collection_handle": "bestsellers"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7586409414733",
+      "product_title": "Wireless LED Face & Neck Mask | 7-Color Phototherapy",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060471885",
+          "collection_title": "Posture & Support",
+          "collection_handle": "posture-support"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    },
+    {
+      "product_id": "gid://shopify/Product/7585887191117",
+      "product_title": "Wrist Brace Support | Carpal Tunnel & Arthritis Relief",
+      "main_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295060439117",
+          "collection_title": "Pain Relief & Recovery",
+          "collection_handle": "pain-relief-recovery"
+        }
+      ],
+      "promo_collections": [
+        {
+          "collection_id": "gid://shopify/Collection/295064764493",
+          "collection_title": "New Arrivals",
+          "collection_handle": "new-arrivals"
+        }
+      ]
+    }
+  ]
+}

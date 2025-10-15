@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-10-15T04:15:00",
+  "summary": {
+    "bestsellers_count": 23,
+    "special_offers_count": 20,
+    "overlap_count": 0,
+    "only_bestsellers": 23,
+    "only_special_offers": 20
+  },
+  "overlap": [],
+  "all_bestsellers": [
+    {
+      "title": "Portable Neck Massager | Smart Shoulder Cervical Relief",
+      "handle": "portable-neck-massager-smart-shoulder-cervical-relief"
+    },
+    {
+      "title": "Heat & Music Eye Massager | Migraine Eye Fatigue Relief",
+      "handle": "heat-music-eye-massager-migraine-eye-fatigue-relief"
+    },
+    {
+      "title": "Rehabilitation Robot Gloves | Mirror Training Device",
+      "handle": "rehabilitation-robot-gloves-mirror-training-device"
+    },
+    {
+      "title": "EMS Buttocks Trainer | Hip Lift & Firming Massage Machine",
+      "handle": "ems-buttocks-trainer-hip-lift-firming-massage-machine"
+    },
+    {
+      "title": "LED Face & Neck Mask | Red Light + Infrared Therapy",
+      "handle": "led-face-neck-mask-red-light-infrared-therapy"
+    },
+    {
+      "title": "Vibration Shoulder Steamer | Heated Belt Massager",
+      "handle": "vibration-shoulder-steamer-heated-belt-massager"
+    },
+    {
+      "title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+      "handle": "hello-face-red-light-therapy-mask-face-neck-infrared-led"
+    },
+    {
+      "title": "Electric Airbag Eye Massager | Heated Hot Compress",
+      "handle": "electric-airbag-eye-massager-heated-hot-compress"
+    },
+    {
+      "title": "Face Lifting Device | Red Light Skin Rejuvenation & V-Face",
+      "handle": "face-lifting-device-red-light-skin-rejuvenation-v-face"
+    },
+    {
+      "title": "7 Color LED Face Mask | Red Light Therapy",
+      "handle": "7-color-led-face-mask-red-light-therapy"
+    },
+    {
+      "title": "Leg Air Compression Massager | Heat Therapy 3 Modes",
+      "handle": "leg-air-compression-massager-heat-therapy-3-modes"
+    },
+    {
+      "title": "EMS Hip Muscle Stimulator | 39 Levels Buttock Shaping",
+      "handle": "ems-hip-muscle-stimulator-39-levels-buttock-shaping"
+    },
+    {
+      "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
+      "handle": "adjustable-knee-patellar-tendon-strap-sports-support"
+    },
+    {
+      "title": "ROM Hinged Knee Immobilizer | Leg Brace Orthopedic",
+      "handle": "rom-hinged-knee-immobilizer-leg-brace-orthopedic"
+    },
+    {
+      "title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+      "handle": "hinged-knee-support-locking-stabilizers-for-acl-pcl"
+    },
+    {
+      "title": "Cervical Neck Traction Hanging Device | Soft Stretching Belt",
+      "handle": "cervical-neck-traction-hanging-device-soft-stretching-belt"
+    },
+    {
+      "title": "NEENCA OA Unloader Knee Brace | Arthritis Pain Relief",
+      "handle": "neenca-oa-unloader-knee-brace-arthritis-pain-relief"
+    },
+    {
+      "title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
+      "handle": "adjustable-wrist-support-brace-fitness-pain-relief"
+    },
+    {
+      "title": "Lumbar Support Belt | Disc Herniation & Pain Relief Brace",
+      "handle": "lumbar-support-belt-disc-herniation-pain-relief-brace"
+    },
+    {
+      "title": "Posture Corrector | Adjustable Shoulder Support Brace",
+      "handle": "posture-corrector-adjustable-shoulder-support-brace"
+    },
+    {
+      "title": "Knee Booster with Spring Support | Running & Cycling",
+      "handle": "knee-booster-with-spring-support-running-cycling"
+    },
+    {
+      "title": "Basketball Knee Pad | Honeycomb Shock Protection",
+      "handle": "basketball-knee-pad-honeycomb-shock-protection"
+    },
+    {
+      "title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+      "handle": "hinged-knee-brace-dial-stabilizers-for-pain-arthritis"
+    }
+  ],
+  "all_special_offers": [
+    {
+      "title": "Spring Knee Booster | Elderly Climbing Power Support",
+      "handle": "spring-knee-booster-elderly-climbing-power-support"
+    },
+    {
+      "title": "Back Support Brace | Adjustable Posture Corrector",
+      "handle": "back-support-brace-adjustable-posture-corrector"
+    },
+    {
+      "title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+      "handle": "ems-body-sculptor-wireless-butt-trainer-29-levels"
+    },
+    {
+      "title": "EMS Abdominal Belt | USB Rechargeable Muscle Toner",
+      "handle": "ems-abdominal-belt-usb-rechargeable-muscle-toner"
+    },
+    {
+      "title": "Electric Hip Trainer | 39 Gears Buttock Massage Machine",
+      "handle": "electric-hip-trainer-39-gears-buttock-massage-machine"
+    },
+    {
+      "title": "Automatic Abdominal Massager | Electric Belly Flattening Device",
+      "handle": "automatic-abdominal-massager-electric-belly-flattening-device"
+    },
+    {
+      "title": "Smart Facial Massager | V-Line Face Lifting Device",
+      "handle": "smart-facial-massager-v-line-face-lifting-device"
+    },
+    {
+      "title": "7 Color LED Silicone Face Mask | Home Beauty Device",
+      "handle": "7-color-led-silicone-face-mask-home-beauty-device"
+    },
+    {
+      "title": "Foreverlily 7 Color LED Mask | Face & Neck Skin Rejuvenation",
+      "handle": "foreverlily-7-color-led-mask-face-neck-skin-rejuvenation"
+    },
+    {
+      "title": "7 Color LED Vibrating Neck & Face Massager",
+      "handle": "7-color-led-vibrating-neck-face-massager"
+    },
+    {
+      "title": "Electric Lumbar Massager | Heated Vibration Back Brace",
+      "handle": "electric-lumbar-massager-heated-vibration-back-brace"
+    },
+    {
+      "title": "Electric Neck Massager | Shoulder Vibration Cervical",
+      "handle": "electric-neck-massager-shoulder-vibration-cervical"
+    },
+    {
+      "title": "Electric Leg Massager | Air Compression & Heat Therapy",
+      "handle": "electric-leg-massager-air-compression-heat-therapy"
+    },
+    {
+      "title": "Knee Stabilizer Brace | Aluminum Alloy Support",
+      "handle": "knee-stabilizer-brace-aluminum-alloy-support"
+    },
+    {
+      "title": "Orthopedic Knee Brace | Adjustable Open Patella Support",
+      "handle": "orthopedic-knee-brace-adjustable-open-patella-support"
+    },
+    {
+      "title": "5-in-1 Smart Cupping Therapy Set | 12-Level Control",
+      "handle": "5-in-1-smart-cupping-therapy-set-12-level-control"
+    },
+    {
+      "title": "ROM Elbow Brace | Post-Surgery Adjustable Stabilizer",
+      "handle": "rom-elbow-brace-post-surgery-adjustable-stabilizer"
+    },
+    {
+      "title": "Shoulder Posture Corrector | Back Support Brace",
+      "handle": "shoulder-posture-corrector-back-support-brace"
+    },
+    {
+      "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+      "handle": "back-brace-posture-corrector-scoliosis-hunchback-support"
+    },
+    {
+      "title": "Full Leg Compression Sleeve | Unisex Knee Support",
+      "handle": "full-leg-compression-sleeve-unisex-knee-support"
+    }
+  ]
+}

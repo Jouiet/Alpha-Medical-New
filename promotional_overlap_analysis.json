@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-15T03:40:00",
+  "summary": {
+    "bestsellers_count": 23,
+    "special_offers_count": 20,
+    "new_arrivals_count": 35,
+    "overlap_bestsellers_special": 0,
+    "overlap_bestsellers_new": 0,
+    "overlap_special_new": 0,
+    "total_violations": 0
+  },
+  "overlaps": {
+    "bestsellers_special_offers": [],
+    "bestsellers_new_arrivals": [],
+    "special_offers_new_arrivals": []
+  }
+}

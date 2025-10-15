@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-10-15T04:10:00",
+  "summary": {
+    "total_collections": 7,
+    "published": 6,
+    "unpublished": 1
+  },
+  "collections": [
+    {
+      "id": "gid://shopify/Collection/295006928973",
+      "title": "Home page",
+      "handle": "frontpage",
+      "published_on_storefront": true,
+      "total_publications": 5
+    },
+    {
+      "id": "gid://shopify/Collection/295060439117",
+      "title": "Pain Relief & Recovery",
+      "handle": "pain-relief-recovery",
+      "published_on_storefront": true,
+      "total_publications": 4
+    },
+    {
+      "id": "gid://shopify/Collection/295060471885",
+      "title": "Posture & Support",
+      "handle": "posture-support",
+      "published_on_storefront": true,
+      "total_publications": 4
+    },
+    {
+      "id": "gid://shopify/Collection/295060504653",
+      "title": "Therapy & Wellness",
+      "handle": "therapy-wellness",
+      "published_on_storefront": true,
+      "total_publications": 4
+    },
+    {
+      "id": "gid://shopify/Collection/295064666189",
+      "title": "Bestsellers",
+      "handle": "bestsellers",
+      "published_on_storefront": true,
+      "total_publications": 4
+    },
+    {
+      "id": "gid://shopify/Collection/295064764493",
+      "title": "New Arrivals",
+      "handle": "new-arrivals",
+      "published_on_storefront": true,
+      "total_publications": 3
+    },
+    {
+      "id": "gid://shopify/Collection/295136034893",
+      "title": "Special Offers",
+      "handle": "special-offers",
+      "published_on_storefront": false,
+      "total_publications": 0
+    }
+  ]
+}

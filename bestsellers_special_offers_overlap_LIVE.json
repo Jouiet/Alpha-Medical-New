@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-10-15T04:00:00",
+  "source": "FRESH_API_DATA",
+  "summary": {
+    "bestsellers_count": 23,
+    "special_offers_count": 20,
+    "overlap_count": 0,
+    "overlap_percentage": "0.0%"
+  },
+  "overlap_products": []
+}
