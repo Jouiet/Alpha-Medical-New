@@ -66,6 +66,10 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "bundler_bundler_target_element_k4Rh48": {
+          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
         }
       },
       "block_order": [
@@ -79,7 +83,8 @@
         "buy_buttons",
         "trust_badges",
         "description",
-        "share"
+        "share",
+        "bundler_bundler_target_element_k4Rh48"
       ],
       "settings": {
         "enable_sticky_info": true,
