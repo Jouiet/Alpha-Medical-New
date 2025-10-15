@@ -1,0 +1,595 @@
+{% comment %}
+  Size Guide Modal - Product sizing information for orthopedic and medical equipment
+
+  Features:
+  - Multiple size charts (knee braces, back supports, compression wear)
+  - Measurement instructions
+  - Accessible dialog with ARIA labels
+  - ESC key to close
+  - Click outside to close
+  - Responsive design
+
+  Usage:
+  {% render 'size-guide-modal', product: product %}
+{% endcomment %}
+
+{%- comment -%} Only show if product has variants (e.g., sizes) {%- endcomment -%}
+{%- unless product.has_only_default_variant -%}
+  {%- comment -%} Check if product has size options {%- endcomment -%}
+  {%- assign has_size_option = false -%}
+  {%- for option in product.options_with_values -%}
+    {%- assign option_name_downcase = option.name | downcase -%}
+    {%- if option_name_downcase contains 'size' or option_name_downcase contains 'taille' -%}
+      {%- assign has_size_option = true -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if has_size_option -%}
+    <div class="size-guide-trigger-container">
+      <button
+        type="button"
+        class="size-guide-trigger"
+        onclick="document.getElementById('size-guide-modal').showModal()"
+        aria-label="Open size guide"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+          <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+          <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+        <span>Size Guide</span>
+      </button>
+    </div>
+
+    <dialog class="size-guide-modal" id="size-guide-modal" aria-labelledby="size-guide-title" aria-modal="true">
+      <div class="size-guide-modal__overlay" onclick="document.getElementById('size-guide-modal').close()"></div>
+      <div class="size-guide-modal__content">
+        <div class="size-guide-modal__header">
+          <h2 id="size-guide-title" class="size-guide-modal__title">Size Guide</h2>
+          <button
+            type="button"
+            class="size-guide-modal__close"
+            onclick="document.getElementById('size-guide-modal').close()"
+            aria-label="Close size guide"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <div class="size-guide-modal__body">
+          {%- comment -%} Check for custom size chart metafield {%- endcomment -%}
+          {%- if product.metafields.custom.size_chart -%}
+            <div class="size-guide-modal__custom">
+              {{ product.metafields.custom.size_chart }}
+            </div>
+          {%- else -%}
+            {%- comment -%} Default size charts by product type {%- endcomment -%}
+
+            {%- comment -%} Determine product category from product type or title {%- endcomment -%}
+            {%- assign product_type_downcase = product.type | downcase -%}
+            {%- assign product_title_downcase = product.title | downcase -%}
+
+            {%- if product_title_downcase contains 'knee' or product_type_downcase contains 'knee' or product_title_downcase contains 'genou' -%}
+              {%- comment -%} Knee Braces Size Chart {%- endcomment -%}
+              <div class="size-guide-modal__section">
+                <h3 class="size-guide-modal__section-title">Knee Braces & Supports</h3>
+                <p class="size-guide-modal__description">Measure the circumference around the center of your knee while standing.</p>
+
+                <div class="size-guide-modal__table-wrapper">
+                  <table class="size-guide-modal__table">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Knee Circumference</th>
+                        <th>Recommended For</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>S</strong></td>
+                        <td>30-35 cm (12-14")</td>
+                        <td>Petite frames</td>
+                      </tr>
+                      <tr>
+                        <td><strong>M</strong></td>
+                        <td>35-40 cm (14-16")</td>
+                        <td>Average build</td>
+                      </tr>
+                      <tr>
+                        <td><strong>L</strong></td>
+                        <td>40-45 cm (16-18")</td>
+                        <td>Larger frames</td>
+                      </tr>
+                      <tr>
+                        <td><strong>XL</strong></td>
+                        <td>45-50 cm (18-20")</td>
+                        <td>Extra support</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            {%- elsif product_title_downcase contains 'back' or product_type_downcase contains 'back' or product_title_downcase contains 'posture' or product_title_downcase contains 'dos' -%}
+              {%- comment -%} Back Supports Size Chart {%- endcomment -%}
+              <div class="size-guide-modal__section">
+                <h3 class="size-guide-modal__section-title">Back Supports & Posture Correctors</h3>
+                <p class="size-guide-modal__description">Measure your waist circumference at belly button level.</p>
+
+                <div class="size-guide-modal__table-wrapper">
+                  <table class="size-guide-modal__table">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Waist Circumference</th>
+                        <th>Clothing Size</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>S</strong></td>
+                        <td>60-75 cm (24-30")</td>
+                        <td>XS-S</td>
+                      </tr>
+                      <tr>
+                        <td><strong>M</strong></td>
+                        <td>75-90 cm (30-36")</td>
+                        <td>M-L</td>
+                      </tr>
+                      <tr>
+                        <td><strong>L</strong></td>
+                        <td>90-105 cm (36-42")</td>
+                        <td>XL-XXL</td>
+                      </tr>
+                      <tr>
+                        <td><strong>XL</strong></td>
+                        <td>105-120 cm (42-48")</td>
+                        <td>3XL+</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            {%- elsif product_title_downcase contains 'compression' or product_title_downcase contains 'sleeve' or product_title_downcase contains 'manchon' -%}
+              {%- comment -%} Compression Sleeves Size Chart {%- endcomment -%}
+              <div class="size-guide-modal__section">
+                <h3 class="size-guide-modal__section-title">Compression Sleeves & Wraps</h3>
+                <p class="size-guide-modal__description">Measure the circumference at the widest part of the target area.</p>
+
+                <div class="size-guide-modal__table-wrapper">
+                  <table class="size-guide-modal__table">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Circumference</th>
+                        <th>Compression Level</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>S</strong></td>
+                        <td>20-25 cm (8-10")</td>
+                        <td>15-20 mmHg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>M</strong></td>
+                        <td>25-30 cm (10-12")</td>
+                        <td>15-20 mmHg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>L</strong></td>
+                        <td>30-35 cm (12-14")</td>
+                        <td>15-20 mmHg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>XL</strong></td>
+                        <td>35-40 cm (14-16")</td>
+                        <td>15-20 mmHg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            {%- else -%}
+              {%- comment -%} Generic Size Chart {%- endcomment -%}
+              <div class="size-guide-modal__section">
+                <h3 class="size-guide-modal__section-title">General Sizing Guide</h3>
+                <p class="size-guide-modal__description">Please measure carefully for best fit. If between sizes, we recommend sizing up.</p>
+
+                <div class="size-guide-modal__table-wrapper">
+                  <table class="size-guide-modal__table">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Measurement Range</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>S</strong></td>
+                        <td>Small (check product description)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>M</strong></td>
+                        <td>Medium (check product description)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>L</strong></td>
+                        <td>Large (check product description)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>XL</strong></td>
+                        <td>Extra Large (check product description)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            {%- endif -%}
+
+            {%- comment -%} Measurement Instructions {%- endcomment -%}
+            <div class="size-guide-modal__section size-guide-modal__instructions">
+              <h3 class="size-guide-modal__section-title">How to Measure</h3>
+              <ol class="size-guide-modal__list">
+                <li><strong>Use a flexible tape measure</strong> - A soft measuring tape gives the most accurate results.</li>
+                <li><strong>Measure directly on skin</strong> - For best accuracy, measure without clothing if possible.</li>
+                <li><strong>Keep tape level</strong> - Ensure the tape measure is parallel to the floor.</li>
+                <li><strong>Don't pull too tight</strong> - The tape should be snug but not compressing your skin.</li>
+                <li><strong>Measure twice</strong> - Take two measurements to confirm accuracy.</li>
+              </ol>
+
+              <div class="size-guide-modal__tip">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <p><strong>Between sizes?</strong> We recommend choosing the larger size for comfort and better circulation.</p>
+              </div>
+            </div>
+
+            {%- comment -%} Contact Support {%- endcomment -%}
+            <div class="size-guide-modal__footer">
+              <p class="size-guide-modal__footer-text">
+                Still unsure about sizing?
+                <a href="{{ pages['contact'].url | default: '/pages/contact' }}" class="size-guide-modal__footer-link">Contact our support team</a>
+                for personalized assistance.
+              </p>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </dialog>
+
+    <style>
+      .size-guide-trigger-container {
+        margin: 0.75rem 0 1rem;
+      }
+
+      .size-guide-trigger {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        background: transparent;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        color: #4770DB;
+        font-size: 0.875rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .size-guide-trigger:hover {
+        border-color: #4770DB;
+        background: rgba(71, 112, 219, 0.05);
+      }
+
+      .size-guide-trigger svg {
+        flex-shrink: 0;
+      }
+
+      /* Modal */
+      .size-guide-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10002;
+        border: none;
+        padding: 0;
+        background: transparent;
+        max-width: none;
+        max-height: none;
+      }
+
+      .size-guide-modal[open] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .size-guide-modal::backdrop {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+      }
+
+      .size-guide-modal__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      .size-guide-modal__content {
+        position: relative;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        max-width: 700px;
+        width: 90%;
+        max-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        animation: size-guide-slide-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        z-index: 1;
+      }
+
+      @keyframes size-guide-slide-in {
+        from {
+          opacity: 0;
+          transform: scale(0.95) translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+
+      /* Header */
+      .size-guide-modal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .size-guide-modal__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #212529;
+        margin: 0;
+      }
+
+      .size-guide-modal__close {
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        line-height: 1;
+        color: #6c757d;
+        cursor: pointer;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+      }
+
+      .size-guide-modal__close:hover {
+        background: #f8f9fa;
+        color: #212529;
+      }
+
+      /* Body */
+      .size-guide-modal__body {
+        padding: 2rem;
+        overflow-y: auto;
+        flex: 1;
+      }
+
+      .size-guide-modal__section {
+        margin-bottom: 2rem;
+      }
+
+      .size-guide-modal__section:last-child {
+        margin-bottom: 0;
+      }
+
+      .size-guide-modal__section-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #212529;
+        margin: 0 0 0.75rem;
+      }
+
+      .size-guide-modal__description {
+        font-size: 0.875rem;
+        color: #6c757d;
+        margin: 0 0 1rem;
+      }
+
+      /* Table */
+      .size-guide-modal__table-wrapper {
+        overflow-x: auto;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+      }
+
+      .size-guide-modal__table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+      }
+
+      .size-guide-modal__table thead {
+        background: #f8f9fa;
+      }
+
+      .size-guide-modal__table th {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        font-weight: 600;
+        color: #212529;
+        border-bottom: 2px solid #e9ecef;
+      }
+
+      .size-guide-modal__table td {
+        padding: 0.75rem 1rem;
+        color: #495057;
+        border-bottom: 1px solid #f8f9fa;
+      }
+
+      .size-guide-modal__table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .size-guide-modal__table tbody tr:hover {
+        background: #f8f9fa;
+      }
+
+      /* Instructions */
+      .size-guide-modal__list {
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+      }
+
+      .size-guide-modal__list li {
+        padding: 0.5rem 0;
+        color: #495057;
+        line-height: 1.6;
+      }
+
+      .size-guide-modal__tip {
+        display: flex;
+        gap: 0.75rem;
+        align-items: flex-start;
+        padding: 1rem;
+        background: #e7f3ff;
+        border-left: 3px solid #4770DB;
+        border-radius: 6px;
+        margin-top: 1rem;
+      }
+
+      .size-guide-modal__tip svg {
+        flex-shrink: 0;
+        color: #4770DB;
+        margin-top: 0.125rem;
+      }
+
+      .size-guide-modal__tip p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: #212529;
+        line-height: 1.5;
+      }
+
+      /* Footer */
+      .size-guide-modal__footer {
+        padding: 1.25rem;
+        background: #f8f9fa;
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+      }
+
+      .size-guide-modal__footer-text {
+        margin: 0;
+        font-size: 0.875rem;
+        color: #495057;
+      }
+
+      .size-guide-modal__footer-link {
+        color: #4770DB;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .size-guide-modal__footer-link:hover {
+        color: #3a5bb8;
+        text-decoration: underline;
+      }
+
+      /* Mobile responsive */
+      @media (max-width: 768px) {
+        .size-guide-modal__content {
+          max-width: 95%;
+          max-height: 90vh;
+        }
+
+        .size-guide-modal__header {
+          padding: 1rem 1.5rem;
+        }
+
+        .size-guide-modal__title {
+          font-size: 1.25rem;
+        }
+
+        .size-guide-modal__body {
+          padding: 1.5rem;
+        }
+
+        .size-guide-modal__table {
+          font-size: 0.8125rem;
+        }
+
+        .size-guide-modal__table th,
+        .size-guide-modal__table td {
+          padding: 0.5rem 0.75rem;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        const modal = document.getElementById('size-guide-modal');
+        if (!modal) return;
+
+        // ESC key to close
+        modal.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            modal.close();
+          }
+        });
+
+        // Track modal open event
+        modal.addEventListener('close', function() {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'size_guide_closed', {
+              event_category: 'engagement',
+              event_label: 'size_guide_modal'
+            });
+          }
+        });
+
+        // Track modal open
+        const trigger = document.querySelector('.size-guide-trigger');
+        if (trigger) {
+          trigger.addEventListener('click', function() {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'size_guide_opened', {
+                event_category: 'engagement',
+                event_label: 'size_guide_modal',
+                product_id: document.querySelector('[data-product-id]')?.dataset.productId
+              });
+            }
+          });
+        }
+      })();
+    </script>
+  {%- endif -%}
+{%- endunless -%}
