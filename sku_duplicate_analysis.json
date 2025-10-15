@@ -1,0 +1,2627 @@
+{
+  "summary": {
+    "total_products": 148,
+    "total_variants": 897,
+    "variants_with_sku": 897,
+    "variants_without_sku": 0,
+    "unique_skus": 726,
+    "duplicate_skus": 157,
+    "total_duplicate_occurrences": 328
+  },
+  "duplication_levels": {
+    "3": 14,
+    "2": 143
+  },
+  "duplicate_skus": {
+    "14:193;5:4182": [
+      {
+        "product_id": "gid://shopify/Product/7585886502989",
+        "product_title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
+        "variant_id": "gid://shopify/ProductVariant/42165764980813",
+        "variant_title": "black / XXL",
+        "price": "80.07"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939914829",
+        "product_title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+        "variant_id": "gid://shopify/ProductVariant/42166333112397",
+        "variant_title": "black / XXL",
+        "price": "173.74"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940406349",
+        "product_title": "Shoulder & Back Posture Corrector | Camel Strap Brace",
+        "variant_id": "gid://shopify/ProductVariant/42166336651341",
+        "variant_title": "black / XXL",
+        "price": "63.20"
+      }
+    ],
+    "14:193;5:4183": [
+      {
+        "product_id": "gid://shopify/Product/7585886502989",
+        "product_title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
+        "variant_id": "gid://shopify/ProductVariant/42165765013581",
+        "variant_title": "black / XXXL",
+        "price": "80.46"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939914829",
+        "product_title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+        "variant_id": "gid://shopify/ProductVariant/42166333079629",
+        "variant_title": "black / XXXL",
+        "price": "163.83"
+      }
+    ],
+    "14:193;5:361385": [
+      {
+        "product_id": "gid://shopify/Product/7585886502989",
+        "product_title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
+        "variant_id": "gid://shopify/ProductVariant/42165765046349",
+        "variant_title": "black / L",
+        "price": "80.21"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939914829",
+        "product_title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+        "variant_id": "gid://shopify/ProductVariant/42166332981325",
+        "variant_title": "black / L",
+        "price": "160.62"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940406349",
+        "product_title": "Shoulder & Back Posture Corrector | Camel Strap Brace",
+        "variant_id": "gid://shopify/ProductVariant/42166336684109",
+        "variant_title": "black / L",
+        "price": "62.35"
+      }
+    ],
+    "14:193;5:100014065": [
+      {
+        "product_id": "gid://shopify/Product/7585886502989",
+        "product_title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
+        "variant_id": "gid://shopify/ProductVariant/42165765079117",
+        "variant_title": "black / XL",
+        "price": "79.97"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939914829",
+        "product_title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+        "variant_id": "gid://shopify/ProductVariant/42166332948557",
+        "variant_title": "black / XL",
+        "price": "161.45"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940406349",
+        "product_title": "Shoulder & Back Posture Corrector | Camel Strap Brace",
+        "variant_id": "gid://shopify/ProductVariant/42166336716877",
+        "variant_title": "black / XL",
+        "price": "62.79"
+      }
+    ],
+    "14:193;5:100014064": [
+      {
+        "product_id": "gid://shopify/Product/7585886502989",
+        "product_title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
+        "variant_id": "gid://shopify/ProductVariant/42165765374029",
+        "variant_title": "black / S",
+        "price": "79.97"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939914829",
+        "product_title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+        "variant_id": "gid://shopify/ProductVariant/42166333046861",
+        "variant_title": "black / S",
+        "price": "160.01"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940406349",
+        "product_title": "Shoulder & Back Posture Corrector | Camel Strap Brace",
+        "variant_id": "gid://shopify/ProductVariant/42166336585805",
+        "variant_title": "black / S",
+        "price": "61.05"
+      }
+    ],
+    "14:193;5:361386": [
+      {
+        "product_id": "gid://shopify/Product/7585886502989",
+        "product_title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
+        "variant_id": "gid://shopify/ProductVariant/42165765406797",
+        "variant_title": "black / M",
+        "price": "79.60"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939914829",
+        "product_title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+        "variant_id": "gid://shopify/ProductVariant/42166333014093",
+        "variant_title": "black / M",
+        "price": "159.97"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940406349",
+        "product_title": "Shoulder & Back Posture Corrector | Camel Strap Brace",
+        "variant_id": "gid://shopify/ProductVariant/42166336618573",
+        "variant_title": "black / M",
+        "price": "61.72"
+      }
+    ],
+    "14:193": [
+      {
+        "product_id": "gid://shopify/Product/7585886601293",
+        "product_title": "Dynamic Knee Support with Spring | Adjustable Joint Cushion",
+        "variant_id": "gid://shopify/ProductVariant/42165765832781",
+        "variant_title": "black",
+        "price": "64.77"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940242509",
+        "product_title": "Double Strap Knee Brace | Patella Tendon Support",
+        "variant_id": "gid://shopify/ProductVariant/42166336127053",
+        "variant_title": "black",
+        "price": "199.69"
+      }
+    ],
+    "14:201441572#full set;491:201452307#S": [
+      {
+        "product_id": "gid://shopify/Product/7585886732365",
+        "product_title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+        "variant_id": "gid://shopify/ProductVariant/42165766324301",
+        "variant_title": "full set / S",
+        "price": "143.93"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770911821",
+        "variant_title": "full set / S",
+        "price": "167.69"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335471693",
+        "variant_title": "full set 1 / S",
+        "price": "174.43"
+      }
+    ],
+    "14:201441572#full set;491:200000312#L": [
+      {
+        "product_id": "gid://shopify/Product/7585886732365",
+        "product_title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+        "variant_id": "gid://shopify/ProductVariant/42165766389837",
+        "variant_title": "full set / L",
+        "price": "143.93"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770977357",
+        "variant_title": "full set / L",
+        "price": "167.69"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335537229",
+        "variant_title": "full set 1 / L",
+        "price": "174.43"
+      }
+    ],
+    "14:201441572#full set;491:201452308#M": [
+      {
+        "product_id": "gid://shopify/Product/7585886732365",
+        "product_title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+        "variant_id": "gid://shopify/ProductVariant/42165766422605",
+        "variant_title": "full set / M",
+        "price": "143.93"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165771010125",
+        "variant_title": "full set / M",
+        "price": "167.69"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335504461",
+        "variant_title": "full set 1 / M",
+        "price": "174.43"
+      }
+    ],
+    "14:201441572#full set;491:200000314#XXL": [
+      {
+        "product_id": "gid://shopify/Product/7585886732365",
+        "product_title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+        "variant_id": "gid://shopify/ProductVariant/42165766619213",
+        "variant_title": "full set / XXL",
+        "price": "143.93"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165771075661",
+        "variant_title": "full set / XXL",
+        "price": "167.69"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335602765",
+        "variant_title": "full set 1 / XXL",
+        "price": "174.43"
+      }
+    ],
+    "14:201441572#full set;491:200000313#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585886732365",
+        "product_title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+        "variant_id": "gid://shopify/ProductVariant/42165766651981",
+        "variant_title": "full set / XL",
+        "price": "143.93"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165771141197",
+        "variant_title": "full set / XL",
+        "price": "167.69"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335569997",
+        "variant_title": "full set 1 / XL",
+        "price": "174.43"
+      }
+    ],
+    "14:10#L": [
+      {
+        "product_id": "gid://shopify/Product/7585886797901",
+        "product_title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165767012429",
+        "variant_title": "L",
+        "price": "58.73"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940111437",
+        "product_title": "Hinged Knee Brace | Meniscus & Ligament Support",
+        "variant_id": "gid://shopify/ProductVariant/42166334521421",
+        "variant_title": "L",
+        "price": "62.45"
+      }
+    ],
+    "14:200002984#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585886797901",
+        "product_title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165767045197",
+        "variant_title": "XL",
+        "price": "59.91"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940111437",
+        "product_title": "Hinged Knee Brace | Meniscus & Ligament Support",
+        "variant_id": "gid://shopify/ProductVariant/42166334488653",
+        "variant_title": "XL",
+        "price": "80.18"
+      }
+    ],
+    "14:29#S": [
+      {
+        "product_id": "gid://shopify/Product/7585886797901",
+        "product_title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165767077965",
+        "variant_title": "S",
+        "price": "58.67"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940111437",
+        "product_title": "Hinged Knee Brace | Meniscus & Ligament Support",
+        "variant_id": "gid://shopify/ProductVariant/42166334455885",
+        "variant_title": "S",
+        "price": "81.05"
+      }
+    ],
+    "14:366#M": [
+      {
+        "product_id": "gid://shopify/Product/7585886797901",
+        "product_title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165767110733",
+        "variant_title": "M",
+        "price": "58.73"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940111437",
+        "product_title": "Hinged Knee Brace | Meniscus & Ligament Support",
+        "variant_id": "gid://shopify/ProductVariant/42166334423117",
+        "variant_title": "M",
+        "price": "61.54"
+      }
+    ],
+    "14:29#M": [
+      {
+        "product_id": "gid://shopify/Product/7585886896205",
+        "product_title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+        "variant_id": "gid://shopify/ProductVariant/42165767405645",
+        "variant_title": "M",
+        "price": "79.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887060045",
+        "product_title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165768749133",
+        "variant_title": "M",
+        "price": "59.81"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939882061",
+        "product_title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+        "variant_id": "gid://shopify/ProductVariant/42166332751949",
+        "variant_title": "M",
+        "price": "85.31"
+      }
+    ],
+    "14:366#L": [
+      {
+        "product_id": "gid://shopify/Product/7585886896205",
+        "product_title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+        "variant_id": "gid://shopify/ProductVariant/42165767438413",
+        "variant_title": "L",
+        "price": "79.10"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887060045",
+        "product_title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165768781901",
+        "variant_title": "L",
+        "price": "59.81"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939882061",
+        "product_title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+        "variant_id": "gid://shopify/ProductVariant/42166332784717",
+        "variant_title": "L",
+        "price": "85.23"
+      }
+    ],
+    "14:10#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585886896205",
+        "product_title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+        "variant_id": "gid://shopify/ProductVariant/42165767471181",
+        "variant_title": "XL",
+        "price": "79.53"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887060045",
+        "product_title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165768847437",
+        "variant_title": "XL",
+        "price": "59.81"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939882061",
+        "product_title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+        "variant_id": "gid://shopify/ProductVariant/42166332817485",
+        "variant_title": "XL",
+        "price": "86.33"
+      }
+    ],
+    "14:200002984#XXL": [
+      {
+        "product_id": "gid://shopify/Product/7585886896205",
+        "product_title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+        "variant_id": "gid://shopify/ProductVariant/42165767503949",
+        "variant_title": "XXL",
+        "price": "79.83"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939882061",
+        "product_title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+        "variant_id": "gid://shopify/ProductVariant/42166332850253",
+        "variant_title": "XXL",
+        "price": "86.13"
+      }
+    ],
+    "14:496#3XL": [
+      {
+        "product_id": "gid://shopify/Product/7585886896205",
+        "product_title": "Hinged Knee Brace | Adjustable Support with Side Stabilizers",
+        "variant_id": "gid://shopify/ProductVariant/42165767536717",
+        "variant_title": "3XL",
+        "price": "80.58"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887060045",
+        "product_title": "Hinged Knee Brace | Dial Stabilizers for Pain & Arthritis",
+        "variant_id": "gid://shopify/ProductVariant/42165768814669",
+        "variant_title": "3XL",
+        "price": "59.81"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585939882061",
+        "product_title": "Hinged Knee Support | Locking Stabilizers for ACL/PCL",
+        "variant_id": "gid://shopify/ProductVariant/42166332719181",
+        "variant_title": "3XL",
+        "price": "86.39"
+      }
+    ],
+    "14:201452310#right hands;491:201452307#S": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770387533",
+        "variant_title": "right hands / S",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335406157",
+        "variant_title": "right hands 1 / S",
+        "price": "139.34"
+      }
+    ],
+    "14:201452310#right hands;491:200000312#L": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770420301",
+        "variant_title": "right hands / L",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335635533",
+        "variant_title": "right hands 1 / L",
+        "price": "139.34"
+      }
+    ],
+    "14:201452310#right hands;491:201452308#M": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770453069",
+        "variant_title": "right hands / M",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335438925",
+        "variant_title": "right hands 1 / M",
+        "price": "139.34"
+      }
+    ],
+    "14:201452310#right hands;491:200000314#XXL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770485837",
+        "variant_title": "right hands / XXL",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335701069",
+        "variant_title": "right hands 1 / XXL",
+        "price": "139.34"
+      }
+    ],
+    "14:201452310#right hands;491:200000313#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770518605",
+        "variant_title": "right hands / XL",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335668301",
+        "variant_title": "right hands 1 / XL",
+        "price": "139.34"
+      }
+    ],
+    "14:200211869#Left hands;491:201452308#M": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770551373",
+        "variant_title": "Left hands / M",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335766605",
+        "variant_title": "Left hands 1 / M",
+        "price": "139.34"
+      }
+    ],
+    "14:200211869#Left hands;491:201452307#S": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770584141",
+        "variant_title": "Left hands / S",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335733837",
+        "variant_title": "Left hands 1 / S",
+        "price": "139.34"
+      }
+    ],
+    "14:200004889#Left hands;491:201452308#M": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770616909",
+        "variant_title": "Left hands 1 / M",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335373389",
+        "variant_title": "Left hands / M",
+        "price": "111.11"
+      }
+    ],
+    "14:200004889#Left hands;491:201452307#S": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770649677",
+        "variant_title": "Left hands 1 / S",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335340621",
+        "variant_title": "Left hands / S",
+        "price": "111.11"
+      }
+    ],
+    "14:200006158#right hands;491:200000314#XXL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770682445",
+        "variant_title": "right hands 1 / XXL",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335012941",
+        "variant_title": "right hands / XXL",
+        "price": "111.11"
+      }
+    ],
+    "14:200006158#right hands;491:200000313#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770715213",
+        "variant_title": "right hands 1 / XL",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166334980173",
+        "variant_title": "right hands / XL",
+        "price": "111.11"
+      }
+    ],
+    "14:200006158#right hands;491:200000312#L": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770747981",
+        "variant_title": "right hands 1 / L",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335078477",
+        "variant_title": "right hands / L",
+        "price": "111.11"
+      }
+    ],
+    "14:200006158#right hands;491:201452308#M": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770780749",
+        "variant_title": "right hands 1 / M",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335045709",
+        "variant_title": "right hands / M",
+        "price": "111.11"
+      }
+    ],
+    "14:200006158#right hands;491:201452307#S": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770813517",
+        "variant_title": "right hands 1 / S",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335111245",
+        "variant_title": "right hands / S",
+        "price": "111.11"
+      }
+    ],
+    "14:200211869#Left hands;491:200000313#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770846285",
+        "variant_title": "Left hands / XL",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335832141",
+        "variant_title": "Left hands 1 / XL",
+        "price": "139.34"
+      }
+    ],
+    "14:200211869#Left hands;491:200000312#L": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770879053",
+        "variant_title": "Left hands / L",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335799373",
+        "variant_title": "Left hands 1 / L",
+        "price": "139.34"
+      }
+    ],
+    "14:200211869#Left hands;491:200000314#XXL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165770944589",
+        "variant_title": "Left hands / XXL",
+        "price": "105.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335864909",
+        "variant_title": "Left hands 1 / XXL",
+        "price": "139.34"
+      }
+    ],
+    "14:200004889#Left hands;491:200000314#XXL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165771042893",
+        "variant_title": "Left hands 1 / XXL",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335209549",
+        "variant_title": "Left hands / XXL",
+        "price": "111.11"
+      }
+    ],
+    "14:200004889#Left hands;491:200000313#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165771108429",
+        "variant_title": "Left hands 1 / XL",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335307853",
+        "variant_title": "Left hands / XL",
+        "price": "111.11"
+      }
+    ],
+    "14:200004889#Left hands;491:200000312#L": [
+      {
+        "product_id": "gid://shopify/Product/7585887256653",
+        "product_title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+        "variant_id": "gid://shopify/ProductVariant/42165771173965",
+        "variant_title": "Left hands 1 / L",
+        "price": "100.75"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585940209741",
+        "product_title": "Robot Rehabilitation Gloves | Stroke Intelligent Massage",
+        "variant_id": "gid://shopify/ProductVariant/42166335275085",
+        "variant_title": "Left hands / L",
+        "price": "111.11"
+      }
+    ],
+    "14:193;491:201452307#S": [
+      {
+        "product_id": "gid://shopify/Product/7585887354957",
+        "product_title": "Shoulder Posture Corrector | Back Support Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165772484685",
+        "variant_title": "black / S",
+        "price": "71.91"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887584333",
+        "product_title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165774745677",
+        "variant_title": "black / S",
+        "price": "69.78"
+      }
+    ],
+    "14:193;491:201452308#M": [
+      {
+        "product_id": "gid://shopify/Product/7585887354957",
+        "product_title": "Shoulder Posture Corrector | Back Support Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165772517453",
+        "variant_title": "black / M",
+        "price": "71.78"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887584333",
+        "product_title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165774712909",
+        "variant_title": "black / M",
+        "price": "69.78"
+      }
+    ],
+    "14:193;491:200000312#L": [
+      {
+        "product_id": "gid://shopify/Product/7585887354957",
+        "product_title": "Shoulder Posture Corrector | Back Support Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165772550221",
+        "variant_title": "black / L",
+        "price": "72.80"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887584333",
+        "product_title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165774680141",
+        "variant_title": "black / L",
+        "price": "69.78"
+      }
+    ],
+    "14:193;491:200000313#XL": [
+      {
+        "product_id": "gid://shopify/Product/7585887354957",
+        "product_title": "Shoulder Posture Corrector | Back Support Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165772582989",
+        "variant_title": "black / XL",
+        "price": "74.14"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887584333",
+        "product_title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165774647373",
+        "variant_title": "black / XL",
+        "price": "69.78"
+      }
+    ],
+    "14:193;491:4182": [
+      {
+        "product_id": "gid://shopify/Product/7585887354957",
+        "product_title": "Shoulder Posture Corrector | Back Support Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165772615757",
+        "variant_title": "black / XXL",
+        "price": "74.46"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887584333",
+        "product_title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+        "variant_id": "gid://shopify/ProductVariant/42165774614605",
+        "variant_title": "black / XXL",
+        "price": "69.78"
+      }
+    ],
+    "14:193#Left;200007763:201336100": [
+      {
+        "product_id": "gid://shopify/Product/7585887486029",
+        "product_title": "Hinged ROM Elbow Brace | Post-Op Adjustable Stabilizer",
+        "variant_id": "gid://shopify/ProductVariant/42165774024781",
+        "variant_title": "Left / CHINA",
+        "price": "168.51"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887846477",
+        "product_title": "ROM Elbow Brace | Post-Surgery Adjustable Stabilizer",
+        "variant_id": "gid://shopify/ProductVariant/42165776154701",
+        "variant_title": "Left / CHINA",
+        "price": "168.51"
+      }
+    ],
+    "14:200211869#Right;200007763:201336100": [
+      {
+        "product_id": "gid://shopify/Product/7585887486029",
+        "product_title": "Hinged ROM Elbow Brace | Post-Op Adjustable Stabilizer",
+        "variant_id": "gid://shopify/ProductVariant/42165774057549",
+        "variant_title": "Right / CHINA",
+        "price": "168.51"
+      },
+      {
+        "product_id": "gid://shopify/Product/7585887846477",
+        "product_title": "ROM Elbow Brace | Post-Surgery Adjustable Stabilizer",
+        "variant_id": "gid://shopify/ProductVariant/42165776187469",
+        "variant_title": "Right / CHINA",
+        "price": "168.51"
+      }
+    ],
+    "1005007295615815-Upgradeds": [
+      {
+        "product_id": "gid://shopify/Product/7585939456077",
+        "product_title": "Smart Neck Massager | Portable Shoulder Pain Relief",
+        "variant_id": "gid://shopify/ProductVariant/42166330654797",
+        "variant_title": "Upgradeds",
+        "price": "77.27"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586415575117",
+        "product_title": "Portable Neck Massager | Smart Shoulder Cervical Relief",
+        "variant_id": "gid://shopify/ProductVariant/42168504320077",
+        "variant_title": "Upgradeds",
+        "price": "77.27"
+      }
+    ],
+    "1005007295615815-Basic": [
+      {
+        "product_id": "gid://shopify/Product/7585939456077",
+        "product_title": "Smart Neck Massager | Portable Shoulder Pain Relief",
+        "variant_id": "gid://shopify/ProductVariant/42166330687565",
+        "variant_title": "Basic",
+        "price": "62.90"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586415575117",
+        "product_title": "Portable Neck Massager | Smart Shoulder Cervical Relief",
+        "variant_id": "gid://shopify/ProductVariant/42168504352845",
+        "variant_title": "Basic",
+        "price": "62.90"
+      }
+    ],
+    "1005009204842470-Black-Battery Version": [
+      {
+        "product_id": "gid://shopify/Product/7586398732365",
+        "product_title": "EMS Smart Hip Trainer | Vibrator Muscle Stimulator",
+        "variant_id": "gid://shopify/ProductVariant/42168329404493",
+        "variant_title": "Black / Battery Version",
+        "price": "211.32"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410463309",
+        "product_title": "Smart Hip Trainer | EMS Vibration Muscle Stimulator",
+        "variant_id": "gid://shopify/ProductVariant/42168479350861",
+        "variant_title": "Black / Battery Version",
+        "price": "211.32"
+      }
+    ],
+    "1005009204842470-Orange-Battery Version": [
+      {
+        "product_id": "gid://shopify/Product/7586398732365",
+        "product_title": "EMS Smart Hip Trainer | Vibrator Muscle Stimulator",
+        "variant_id": "gid://shopify/ProductVariant/42168329437261",
+        "variant_title": "Orange / Battery Version",
+        "price": "210.40"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410463309",
+        "product_title": "Smart Hip Trainer | EMS Vibration Muscle Stimulator",
+        "variant_id": "gid://shopify/ProductVariant/42168479383629",
+        "variant_title": "Orange / Battery Version",
+        "price": "210.40"
+      }
+    ],
+    "1005008582353668-black": [
+      {
+        "product_id": "gid://shopify/Product/7586398797901",
+        "product_title": "EMS Hip Trainer | Peach Buttocks Shaping & Muscle Lifting",
+        "variant_id": "gid://shopify/ProductVariant/42168330354765",
+        "variant_title": "black",
+        "price": "91.99"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410496077",
+        "product_title": "EMS Buttocks Trainer | Hip Lift & Firming Massage Machine",
+        "variant_id": "gid://shopify/ProductVariant/42168479449165",
+        "variant_title": "black",
+        "price": "91.99"
+      }
+    ],
+    "1005009540723841-United States-One Sets": [
+      {
+        "product_id": "gid://shopify/Product/7586398863437",
+        "product_title": "EMS Abdominal Trainer Belt | Muscle Stimulator & Body Toner",
+        "variant_id": "gid://shopify/ProductVariant/42168330027085",
+        "variant_title": "United States / One Sets",
+        "price": "78.85"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410528845",
+        "product_title": "EMS Abdominal Belt | USB Rechargeable Muscle Toner",
+        "variant_id": "gid://shopify/ProductVariant/42168479514701",
+        "variant_title": "United States / One Sets",
+        "price": "78.85"
+      }
+    ],
+    "1005009817944604-United States-WHITE": [
+      {
+        "product_id": "gid://shopify/Product/7586399027277",
+        "product_title": "Electric Gua Sha Board | Vibration & Hot Compress Massage",
+        "variant_id": "gid://shopify/ProductVariant/42168330387533",
+        "variant_title": "United States / WHITE",
+        "price": "69.33"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410561613",
+        "product_title": "Electric Gua Sha Board | Vibration Massage & Hot Compress",
+        "variant_id": "gid://shopify/ProductVariant/42168479580237",
+        "variant_title": "United States / WHITE",
+        "price": "69.33"
+      }
+    ],
+    "1005009817944604-United States-green": [
+      {
+        "product_id": "gid://shopify/Product/7586399027277",
+        "product_title": "Electric Gua Sha Board | Vibration & Hot Compress Massage",
+        "variant_id": "gid://shopify/ProductVariant/42168330420301",
+        "variant_title": "United States / green",
+        "price": "69.33"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410561613",
+        "product_title": "Electric Gua Sha Board | Vibration Massage & Hot Compress",
+        "variant_id": "gid://shopify/ProductVariant/42168479613005",
+        "variant_title": "United States / green",
+        "price": "69.33"
+      }
+    ],
+    "1005009786163970-A1-GERMANY": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330551373",
+        "variant_title": "A1 / GERMANY",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479678541",
+        "variant_title": "A1 / GERMANY",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-B1-GERMANY": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330584141",
+        "variant_title": "B1 / GERMANY",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479711309",
+        "variant_title": "B1 / GERMANY",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-D1-United States": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330616909",
+        "variant_title": "D1 / United States",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479744077",
+        "variant_title": "D1 / United States",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-F1-United States": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330649677",
+        "variant_title": "F1 / United States",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479776845",
+        "variant_title": "F1 / United States",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-B1-United States": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330682445",
+        "variant_title": "B1 / United States",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479809613",
+        "variant_title": "B1 / United States",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-C1-United States": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330715213",
+        "variant_title": "C1 / United States",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479842381",
+        "variant_title": "C1 / United States",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-F1-GERMANY": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330747981",
+        "variant_title": "F1 / GERMANY",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479875149",
+        "variant_title": "F1 / GERMANY",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-A1-United States": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330780749",
+        "variant_title": "A1 / United States",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479907917",
+        "variant_title": "A1 / United States",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-C1-GERMANY": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330813517",
+        "variant_title": "C1 / GERMANY",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479940685",
+        "variant_title": "C1 / GERMANY",
+        "price": "105.68"
+      }
+    ],
+    "1005009786163970-D1-GERMANY": [
+      {
+        "product_id": "gid://shopify/Product/7586399060045",
+        "product_title": "Wireless EMS Body Sculptor | Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168330846285",
+        "variant_title": "D1 / GERMANY",
+        "price": "105.68"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410594381",
+        "product_title": "EMS Body Sculptor | Wireless Butt Trainer 29 Levels",
+        "variant_id": "gid://shopify/ProductVariant/42168479973453",
+        "variant_title": "D1 / GERMANY",
+        "price": "105.68"
+      }
+    ],
+    "1005008844616409-United States": [
+      {
+        "product_id": "gid://shopify/Product/7586399125581",
+        "product_title": "Leg Air Compression Massager | Heat Therapy 3 Modes",
+        "variant_id": "gid://shopify/ProductVariant/42168330518605",
+        "variant_title": "United States",
+        "price": "116.43"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410627149",
+        "product_title": "Air Compression Leg Massager | 3 Modes Heat Therapy",
+        "variant_id": "gid://shopify/ProductVariant/42168480071757",
+        "variant_title": "United States",
+        "price": "116.43"
+      }
+    ],
+    "1005010001483416-black-M": [
+      {
+        "product_id": "gid://shopify/Product/7586399158349",
+        "product_title": "Posture Corrector | Adjustable Back Brace for Women Men",
+        "variant_id": "gid://shopify/ProductVariant/42168330944589",
+        "variant_title": "black / M",
+        "price": "93.47"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410659917",
+        "product_title": "Back Support Brace | Adjustable Posture Corrector",
+        "variant_id": "gid://shopify/ProductVariant/42168480104525",
+        "variant_title": "black / M",
+        "price": "93.47"
+      }
+    ],
+    "1005010001483416-black-S": [
+      {
+        "product_id": "gid://shopify/Product/7586399158349",
+        "product_title": "Posture Corrector | Adjustable Back Brace for Women Men",
+        "variant_id": "gid://shopify/ProductVariant/42168330977357",
+        "variant_title": "black / S",
+        "price": "93.47"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410659917",
+        "product_title": "Back Support Brace | Adjustable Posture Corrector",
+        "variant_id": "gid://shopify/ProductVariant/42168480137293",
+        "variant_title": "black / S",
+        "price": "93.47"
+      }
+    ],
+    "1005010001483416-black-L": [
+      {
+        "product_id": "gid://shopify/Product/7586399158349",
+        "product_title": "Posture Corrector | Adjustable Back Brace for Women Men",
+        "variant_id": "gid://shopify/ProductVariant/42168331010125",
+        "variant_title": "black / L",
+        "price": "95.36"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410659917",
+        "product_title": "Back Support Brace | Adjustable Posture Corrector",
+        "variant_id": "gid://shopify/ProductVariant/42168480170061",
+        "variant_title": "black / L",
+        "price": "95.36"
+      }
+    ],
+    "1005007987584891-Black-1pc": [
+      {
+        "product_id": "gid://shopify/Product/7586399256653",
+        "product_title": "Knee Joint Booster | Mountaineering Sports Support",
+        "variant_id": "gid://shopify/ProductVariant/42168331206733",
+        "variant_title": "Black-1pc",
+        "price": "205.33"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410725453",
+        "product_title": "Spring Knee Booster | Elderly Climbing Power Support",
+        "variant_id": "gid://shopify/ProductVariant/42168480333901",
+        "variant_title": "Black-1pc",
+        "price": "205.33"
+      }
+    ],
+    "1005007987584891-Black-2pcs": [
+      {
+        "product_id": "gid://shopify/Product/7586399256653",
+        "product_title": "Knee Joint Booster | Mountaineering Sports Support",
+        "variant_id": "gid://shopify/ProductVariant/42168331239501",
+        "variant_title": "Black-2pcs",
+        "price": "215.23"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410725453",
+        "product_title": "Spring Knee Booster | Elderly Climbing Power Support",
+        "variant_id": "gid://shopify/ProductVariant/42168480366669",
+        "variant_title": "Black-2pcs",
+        "price": "215.23"
+      }
+    ],
+    "1005007422886676-plug In Right M-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332025933",
+        "variant_title": "plug In Right M / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480628813",
+        "variant_title": "plug In Right M / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right M-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332058701",
+        "variant_title": "plug In Right M / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480661581",
+        "variant_title": "plug In Right M / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right M-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332091469",
+        "variant_title": "plug In Right M / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480694349",
+        "variant_title": "plug In Right M / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right M-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332124237",
+        "variant_title": "plug In Right M / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480727117",
+        "variant_title": "plug In Right M / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right L-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332157005",
+        "variant_title": "plug In Right L / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480759885",
+        "variant_title": "plug In Right L / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right L-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332189773",
+        "variant_title": "plug In Right L / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480792653",
+        "variant_title": "plug In Right L / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right L-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332222541",
+        "variant_title": "plug In Right L / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480825421",
+        "variant_title": "plug In Right L / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right L-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332255309",
+        "variant_title": "plug In Right L / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480858189",
+        "variant_title": "plug In Right L / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XXL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332288077",
+        "variant_title": "plug In Left XXL / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480890957",
+        "variant_title": "plug In Left XXL / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XXL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332320845",
+        "variant_title": "plug In Left XXL / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480923725",
+        "variant_title": "plug In Left XXL / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XXL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332353613",
+        "variant_title": "plug In Left XXL / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480956493",
+        "variant_title": "plug In Left XXL / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XXL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332386381",
+        "variant_title": "plug In Left XXL / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168480989261",
+        "variant_title": "plug In Left XXL / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right S-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332419149",
+        "variant_title": "plug In Right S / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481022029",
+        "variant_title": "plug In Right S / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right S-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332451917",
+        "variant_title": "plug In Right S / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481054797",
+        "variant_title": "plug In Right S / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right S-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332484685",
+        "variant_title": "plug In Right S / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481087565",
+        "variant_title": "plug In Right S / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right S-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332517453",
+        "variant_title": "plug In Right S / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481120333",
+        "variant_title": "plug In Right S / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-Charging Left S-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332550221",
+        "variant_title": "Charging Left S / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481153101",
+        "variant_title": "Charging Left S / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left S-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332582989",
+        "variant_title": "Charging Left S / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481185869",
+        "variant_title": "Charging Left S / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left S-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332615757",
+        "variant_title": "Charging Left S / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481218637",
+        "variant_title": "Charging Left S / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left S-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332648525",
+        "variant_title": "Charging Left S / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481251405",
+        "variant_title": "Charging Left S / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left M-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332681293",
+        "variant_title": "Charging Left M / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481284173",
+        "variant_title": "Charging Left M / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left M-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332714061",
+        "variant_title": "Charging Left M / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481316941",
+        "variant_title": "Charging Left M / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left M-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332746829",
+        "variant_title": "Charging Left M / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481349709",
+        "variant_title": "Charging Left M / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left M-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332779597",
+        "variant_title": "Charging Left M / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481382477",
+        "variant_title": "Charging Left M / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-plug In Right XL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332812365",
+        "variant_title": "plug In Right XL / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481415245",
+        "variant_title": "plug In Right XL / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332845133",
+        "variant_title": "plug In Right XL / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481448013",
+        "variant_title": "plug In Right XL / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332877901",
+        "variant_title": "plug In Right XL / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481480781",
+        "variant_title": "plug In Right XL / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332910669",
+        "variant_title": "plug In Right XL / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481513549",
+        "variant_title": "plug In Right XL / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XXL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332943437",
+        "variant_title": "plug In Right XXL / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481546317",
+        "variant_title": "plug In Right XXL / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XXL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168332976205",
+        "variant_title": "plug In Right XXL / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481579085",
+        "variant_title": "plug In Right XXL / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XXL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333008973",
+        "variant_title": "plug In Right XXL / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481611853",
+        "variant_title": "plug In Right XXL / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Right XXL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333041741",
+        "variant_title": "plug In Right XXL / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481644621",
+        "variant_title": "plug In Right XXL / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left L-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333074509",
+        "variant_title": "plug In Left L / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481677389",
+        "variant_title": "plug In Left L / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left L-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333107277",
+        "variant_title": "plug In Left L / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481710157",
+        "variant_title": "plug In Left L / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left L-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333140045",
+        "variant_title": "plug In Left L / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481742925",
+        "variant_title": "plug In Left L / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left L-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333172813",
+        "variant_title": "plug In Left L / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481775693",
+        "variant_title": "plug In Left L / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333205581",
+        "variant_title": "plug In Left XL / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481808461",
+        "variant_title": "plug In Left XL / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333238349",
+        "variant_title": "plug In Left XL / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481841229",
+        "variant_title": "plug In Left XL / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333271117",
+        "variant_title": "plug In Left XL / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481873997",
+        "variant_title": "plug In Left XL / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left XL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333303885",
+        "variant_title": "plug In Left XL / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481906765",
+        "variant_title": "plug In Left XL / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left S-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333336653",
+        "variant_title": "plug In Left S / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481939533",
+        "variant_title": "plug In Left S / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left S-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333369421",
+        "variant_title": "plug In Left S / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168481972301",
+        "variant_title": "plug In Left S / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left S-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333402189",
+        "variant_title": "plug In Left S / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482005069",
+        "variant_title": "plug In Left S / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left S-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333434957",
+        "variant_title": "plug In Left S / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482037837",
+        "variant_title": "plug In Left S / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left M-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333467725",
+        "variant_title": "plug In Left M / AU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482070605",
+        "variant_title": "plug In Left M / AU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left M-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333500493",
+        "variant_title": "plug In Left M / UK plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482103373",
+        "variant_title": "plug In Left M / UK plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left M-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333533261",
+        "variant_title": "plug In Left M / US plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482136141",
+        "variant_title": "plug In Left M / US plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-plug In Left M-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333566029",
+        "variant_title": "plug In Left M / EU plug",
+        "price": "69.24"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482168909",
+        "variant_title": "plug In Left M / EU plug",
+        "price": "69.24"
+      }
+    ],
+    "1005007422886676-Charging Left  XXL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333598797",
+        "variant_title": "Charging Left  XXL / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482201677",
+        "variant_title": "Charging Left  XXL / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left  XXL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333631565",
+        "variant_title": "Charging Left  XXL / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482234445",
+        "variant_title": "Charging Left  XXL / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left  XXL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333664333",
+        "variant_title": "Charging Left  XXL / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482267213",
+        "variant_title": "Charging Left  XXL / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left  XXL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333697101",
+        "variant_title": "Charging Left  XXL / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482299981",
+        "variant_title": "Charging Left  XXL / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right S-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333729869",
+        "variant_title": "Charging right S / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482332749",
+        "variant_title": "Charging right S / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right S-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333762637",
+        "variant_title": "Charging right S / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482365517",
+        "variant_title": "Charging right S / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right S-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333795405",
+        "variant_title": "Charging right S / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482398285",
+        "variant_title": "Charging right S / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right S-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333828173",
+        "variant_title": "Charging right S / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482431053",
+        "variant_title": "Charging right S / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left L-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333860941",
+        "variant_title": "Charging Left L / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482463821",
+        "variant_title": "Charging Left L / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left L-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333893709",
+        "variant_title": "Charging Left L / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482496589",
+        "variant_title": "Charging Left L / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left L-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333926477",
+        "variant_title": "Charging Left L / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482529357",
+        "variant_title": "Charging Left L / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left L-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333959245",
+        "variant_title": "Charging Left L / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482562125",
+        "variant_title": "Charging Left L / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left XL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168333992013",
+        "variant_title": "Charging Left XL / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482594893",
+        "variant_title": "Charging Left XL / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left XL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334024781",
+        "variant_title": "Charging Left XL / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482627661",
+        "variant_title": "Charging Left XL / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left XL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334057549",
+        "variant_title": "Charging Left XL / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482660429",
+        "variant_title": "Charging Left XL / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging Left XL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334090317",
+        "variant_title": "Charging Left XL / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482693197",
+        "variant_title": "Charging Left XL / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334123085",
+        "variant_title": "Charging right XL / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482725965",
+        "variant_title": "Charging right XL / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334155853",
+        "variant_title": "Charging right XL / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482758733",
+        "variant_title": "Charging right XL / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334188621",
+        "variant_title": "Charging right XL / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482791501",
+        "variant_title": "Charging right XL / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334221389",
+        "variant_title": "Charging right XL / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482824269",
+        "variant_title": "Charging right XL / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XXL-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334254157",
+        "variant_title": "Charging right XXL / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482857037",
+        "variant_title": "Charging right XXL / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XXL-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334286925",
+        "variant_title": "Charging right XXL / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482889805",
+        "variant_title": "Charging right XXL / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XXL-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334319693",
+        "variant_title": "Charging right XXL / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482922573",
+        "variant_title": "Charging right XXL / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right XXL-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334352461",
+        "variant_title": "Charging right XXL / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482955341",
+        "variant_title": "Charging right XXL / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right M-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334385229",
+        "variant_title": "Charging right M / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168482988109",
+        "variant_title": "Charging right M / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right M-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334417997",
+        "variant_title": "Charging right M / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483020877",
+        "variant_title": "Charging right M / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right M-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334450765",
+        "variant_title": "Charging right M / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483053645",
+        "variant_title": "Charging right M / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right M-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334483533",
+        "variant_title": "Charging right M / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483086413",
+        "variant_title": "Charging right M / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right L-AU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334516301",
+        "variant_title": "Charging right L / AU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483119181",
+        "variant_title": "Charging right L / AU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right L-UK plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334549069",
+        "variant_title": "Charging right L / UK plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483151949",
+        "variant_title": "Charging right L / UK plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right L-US plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334581837",
+        "variant_title": "Charging right L / US plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483184717",
+        "variant_title": "Charging right L / US plug",
+        "price": "233.08"
+      }
+    ],
+    "1005007422886676-Charging right L-EU plug": [
+      {
+        "product_id": "gid://shopify/Product/7586399322189",
+        "product_title": "Robot Rehabilitation Gloves | Mirror Training for Stroke",
+        "variant_id": "gid://shopify/ProductVariant/42168334614605",
+        "variant_title": "Charging right L / EU plug",
+        "price": "233.08"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410758221",
+        "product_title": "Rehabilitation Robot Gloves | Mirror Training Device",
+        "variant_id": "gid://shopify/ProductVariant/42168483217485",
+        "variant_title": "Charging right L / EU plug",
+        "price": "233.08"
+      }
+    ],
+    "1005010073816648-Black 1Pcs": [
+      {
+        "product_id": "gid://shopify/Product/7586399354957",
+        "product_title": "Electric Neck Massager | Shoulder Vibration Cervical",
+        "variant_id": "gid://shopify/ProductVariant/42168331927629",
+        "variant_title": "Black 1Pcs",
+        "price": "139.74"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410790989",
+        "product_title": "Shoulder Vibration Massager | Electric Neck Cervical",
+        "variant_id": "gid://shopify/ProductVariant/42168480464973",
+        "variant_title": "Black 1Pcs",
+        "price": "139.74"
+      }
+    ],
+    "1005009511644889-United States-New Purple Set-USB Cable": [
+      {
+        "product_id": "gid://shopify/Product/7586399453261",
+        "product_title": "Lymphatic Drainage Machine | EMS Anti-Cellulite Massage Brush",
+        "variant_id": "gid://shopify/ProductVariant/42168334647373",
+        "variant_title": "United States / New Purple Set / USB Cable",
+        "price": "79.02"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410823757",
+        "product_title": "Lymphatic Drainage Brush | Electric EMS Body Massage Tool",
+        "variant_id": "gid://shopify/ProductVariant/42168480530509",
+        "variant_title": "United States / New Purple Set / USB Cable",
+        "price": "79.02"
+      }
+    ],
+    "1005009511644889-United States-Purple Set-USB Cable": [
+      {
+        "product_id": "gid://shopify/Product/7586399453261",
+        "product_title": "Lymphatic Drainage Machine | EMS Anti-Cellulite Massage Brush",
+        "variant_id": "gid://shopify/ProductVariant/42168334680141",
+        "variant_title": "United States / Purple Set / USB Cable",
+        "price": "82.20"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410823757",
+        "product_title": "Lymphatic Drainage Brush | Electric EMS Body Massage Tool",
+        "variant_id": "gid://shopify/ProductVariant/42168480563277",
+        "variant_title": "United States / Purple Set / USB Cable",
+        "price": "82.20"
+      }
+    ],
+    "1005009511644889-United States-White Set-USB Cable": [
+      {
+        "product_id": "gid://shopify/Product/7586399453261",
+        "product_title": "Lymphatic Drainage Machine | EMS Anti-Cellulite Massage Brush",
+        "variant_id": "gid://shopify/ProductVariant/42168334712909",
+        "variant_title": "United States / White Set / USB Cable",
+        "price": "78.82"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410823757",
+        "product_title": "Lymphatic Drainage Brush | Electric EMS Body Massage Tool",
+        "variant_id": "gid://shopify/ProductVariant/42168480596045",
+        "variant_title": "United States / White Set / USB Cable",
+        "price": "78.82"
+      }
+    ],
+    "1005009587971139-WHITE": [
+      {
+        "product_id": "gid://shopify/Product/7586399617101",
+        "product_title": "Eye Massager with Heat & Music | Migraine Eye Strain",
+        "variant_id": "gid://shopify/ProductVariant/42168336416845",
+        "variant_title": "WHITE",
+        "price": "80.32"
+      },
+      {
+        "product_id": "gid://shopify/Product/7586410856525",
+        "product_title": "Heat & Music Eye Massager | Migraine Eye Fatigue Relief",
+        "variant_id": "gid://shopify/ProductVariant/42168483250253",
+        "variant_title": "WHITE",
+        "price": "80.32"
+      }
+    ]
+  }
+}

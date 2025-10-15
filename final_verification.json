@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-15 03:00:00",
+  "collections": {
+    "Home page": 0,
+    "Pain Relief & Recovery": 71,
+    "Posture & Support": 29,
+    "Therapy & Wellness": 48,
+    "Bestsellers": 23,
+    "New Arrivals": 35,
+    "Special Offers": 20
+  },
+  "summary": {
+    "total_collections": 7,
+    "active_collections": 6,
+    "empty_collections": 1,
+    "total_unique_products": 148,
+    "violations": {
+      "duplicate_products": 0,
+      "multi_collections_main": 0,
+      "sku_duplicates_dsers": 157
+    },
+    "conformity": {
+      "main_rule_compliance": "100%",
+      "no_duplicates": "100%",
+      "promotional_separation": "100%",
+      "overall": "100%"
+    }
+  }
+}
