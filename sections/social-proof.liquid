@@ -3,7 +3,7 @@
 <div class="social-proof color-{{ section.settings.color_scheme }} gradient">
   <div class="social-proof__wrapper page-width section-{{ section.id }}-padding">
     {% if section.settings.heading != blank %}
-      <h2 class="social-proof__heading {{ section.settings.heading_size }} center">
+      <h2 class="social-proof__heading {{ section.settings.heading_size }} center animate-fade-in">
         {{ section.settings.heading }}
       </h2>
     {% endif %}
@@ -11,30 +11,37 @@
     {% if section.blocks.size > 0 %}
       <div class="social-proof__grid grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down">
         {% for block in section.blocks %}
-          <div class="social-proof__item" {{ block.shopify_attributes }}>
-            {% if block.settings.icon != blank %}
-              <div class="social-proof__icon">
-                {{ block.settings.icon }}
-              </div>
-            {% endif %}
+          <div class="social-proof__item animate-slide-up" style="animation-delay: {{ forloop.index0 | times: 0.1 }}s" {{ block.shopify_attributes }}>
+            <div class="social-proof__card">
+              {% if block.settings.icon != blank %}
+                <div class="social-proof__icon-wrapper">
+                  <div class="social-proof__icon-glow"></div>
+                  <div class="social-proof__icon">
+                    {{ block.settings.icon }}
+                  </div>
+                </div>
+              {% endif %}
 
-            {% if block.settings.stat != blank %}
-              <div class="social-proof__stat">
-                {{ block.settings.stat }}
-              </div>
-            {% endif %}
+              <div class="social-proof__content">
+                {% if block.settings.stat != blank %}
+                  <div class="social-proof__stat">
+                    {{ block.settings.stat }}
+                  </div>
+                {% endif %}
 
-            {% if block.settings.label != blank %}
-              <div class="social-proof__label">
-                {{ block.settings.label }}
-              </div>
-            {% endif %}
+                {% if block.settings.label != blank %}
+                  <div class="social-proof__label">
+                    {{ block.settings.label }}
+                  </div>
+                {% endif %}
 
-            {% if block.settings.description != blank %}
-              <div class="social-proof__description rte">
-                {{ block.settings.description }}
+                {% if block.settings.description != blank %}
+                  <div class="social-proof__description rte">
+                    {{ block.settings.description }}
+                  </div>
+                {% endif %}
               </div>
-            {% endif %}
+            </div>
           </div>
         {% endfor %}
       </div>
@@ -43,6 +50,7 @@
 </div>
 
 {% style %}
+  /* Base Responsive Padding */
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -55,47 +63,374 @@
     }
   }
 
+  /* Section Base */
   .social-proof {
     text-align: center;
+    position: relative;
+    overflow: hidden;
   }
 
+  /* Animated Background Pattern */
+  .social-proof::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(circle at 20% 50%, rgba(var(--color-base-accent-1), 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(var(--color-base-accent-2), 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    animation: subtleFloat 20s ease-in-out infinite;
+  }
+
+  @keyframes subtleFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20px, -20px) scale(1.05); }
+  }
+
+  /* Heading Animations */
   .social-proof__heading {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-foreground) 0%, rgba(var(--color-base-accent-1), 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
+  .social-proof__heading::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      var(--color-base-accent-1) 20%,
+      var(--color-base-accent-2) 80%,
+      transparent 100%
+    );
+    border-radius: 2px;
+    animation: lineGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes lineGlow {
+    0%, 100% { opacity: 0.6; width: 80px; }
+    50% { opacity: 1; width: 120px; }
+  }
+
+  /* Grid Layout */
   .social-proof__grid {
-    gap: 2rem;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
   }
 
+  /* Card Container */
   .social-proof__item {
-    padding: 2rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(30px);
   }
 
+  .social-proof__card {
+    position: relative;
+    height: 100%;
+    padding: 3rem 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+
+  /* Gradient Border Effect */
+  .social-proof__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color-base-accent-1), 0.3) 0%,
+      rgba(var(--color-base-accent-2), 0.3) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  /* Hover Effects */
+  .social-proof__card:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.06) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow:
+      0 20px 60px -15px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .social-proof__card:hover::before {
+    opacity: 1;
+  }
+
+  /* Icon Wrapper with Glow */
+  .social-proof__icon-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-proof__icon-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(var(--color-base-accent-1), 0.4) 0%,
+      rgba(var(--color-base-accent-2), 0.2) 50%,
+      transparent 70%
+    );
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { transform: scale(0.9); opacity: 0.3; }
+    50% { transform: scale(1.1); opacity: 0.6; }
+  }
+
+  .social-proof__card:hover .social-proof__icon-glow {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+
+  /* Icon Styling */
   .social-proof__icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color-base-accent-1), 0.15) 0%,
+      rgba(var(--color-base-accent-2), 0.15) 100%
+    );
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: iconFloat 6s ease-in-out infinite;
+  }
+
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+
+  .social-proof__card:hover .social-proof__icon {
+    transform: scale(1.15) rotate(5deg);
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color-base-accent-1), 0.25) 0%,
+      rgba(var(--color-base-accent-2), 0.25) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(var(--color-base-accent-1), 0.5);
+  }
+
+  /* Content Styling */
+  .social-proof__content {
+    position: relative;
+    z-index: 1;
   }
 
   .social-proof__stat {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: var(--color-foreground);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, var(--color-foreground) 0%, rgba(var(--color-base-accent-1), 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    transition: all 0.3s ease;
+  }
+
+  .social-proof__card:hover .social-proof__stat {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(var(--color-base-accent-1), 0.3));
   }
 
   .social-proof__label {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    color: var(--color-foreground);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+  }
+
+  .social-proof__card:hover .social-proof__label {
+    opacity: 1;
+    letter-spacing: 0.15em;
   }
 
   .social-proof__description {
     font-size: 0.95rem;
-    opacity: 0.8;
+    line-height: 1.6;
+    color: var(--color-foreground);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .social-proof__card:hover .social-proof__description {
+    opacity: 0.9;
+  }
+
+  /* Entrance Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media screen and (max-width: 749px) {
+    .social-proof__heading {
+      margin-bottom: 3rem;
+    }
+
+    .social-proof__grid {
+      gap: 2rem;
+    }
+
+    .social-proof__card {
+      padding: 2.5rem 1.5rem;
+    }
+
+    .social-proof__icon-wrapper {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-proof__icon {
+      width: 80px;
+      height: 80px;
+      font-size: 3rem;
+    }
+
+    .social-proof__stat {
+      font-size: 2.5rem;
+    }
+
+    .social-proof__label {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Dark Mode Enhancements */
+  @media (prefers-color-scheme: dark) {
+    .social-proof__card {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+      );
+    }
+
+    .social-proof__card:hover {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        rgba(255, 255, 255, 0.04) 100%
+      );
+    }
+  }
+
+  /* Performance Optimization */
+  .social-proof__card,
+  .social-proof__icon,
+  .social-proof__icon-glow,
+  .social-proof__stat,
+  .social-proof__label {
+    will-change: transform;
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .social-proof__card,
+    .social-proof__icon,
+    .social-proof__icon-glow,
+    .social-proof__heading::after,
+    .animate-fade-in,
+    .animate-slide-up {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .social-proof__item {
+      opacity: 1;
+      transform: none;
+    }
   }
 {% endstyle %}
 
