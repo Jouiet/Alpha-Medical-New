@@ -252,17 +252,23 @@ All descriptions include:
   * 10 blog articles updated via REST API (mid-article CTAs inserted)
 - Deployment:
   * Snippet + Template: Shopify live theme @ 2025-10-15 19:24:41+01:00
-  * Article updates: Shopify Admin @ 2025-10-15 19:32:00+01:00 (10/10 success)
+  * Article updates INITIAL: @ 19:32:00 (10/10 - Liquid code, NON FONCTIONNEL)
+  * **Article updates CORRECTED**: @ 19:40:00 (10/10 - HTML pur, FONCTIONNEL) ✅
 - Implementation: **DUAL CTA SYSTEM** (mid-article + end-article)
 - Articles covered: 10/10 blog articles (100% coverage, **2 CTAs per article**)
+- **ERREUR CRITIQUE DÉTECTÉE ET CORRIGÉE**:
+  * **Problème initial**: Code Liquid inséré dans body_html (non exécuté par Shopify)
+  * **Conséquence**: CTAs mid-article invisibles (code Liquid affiché comme texte)
+  * **Correction**: Remplacement par HTML pur inline avec styles
+  * **Résultat**: CTAs maintenant VISIBLES et fonctionnels
 - CTA Placement Strategy:
-  * **Mid-article CTA**: Inserted at 50% content mark (style: "highlight", blue gradient)
-  * **End-article CTA**: Rendered after content via template (style: "default", gray gradient)
+  * **Mid-article CTA**: HTML pur inséré at 50% content mark (style: "highlight", blue gradient)
+  * **End-article CTA**: Rendered after content via Liquid template (style: "default", gray gradient)
 - System features:
   * Smart keyword detection from article titles (case-insensitive)
   * 6 specialized CTAs + 1 default fallback
   * Automatic end-CTA rendering via Liquid template
-  * Manual mid-CTA insertion via REST API (rigorous, article-by-article)
+  * Manual mid-CTA insertion via REST API (HTML pur, rigorous, article-by-article)
 - CTA Snippet features:
   * Customizable: title, text, URL, button text, style variant
   * 3 style variants: default, highlight, minimal
@@ -279,12 +285,14 @@ All descriptions include:
   6. "surgery" / "recovery" → Pain Relief collection (1 article)
   7. DEFAULT → All products (1 article fallback)
 - Article updates (manual, via REST API):
-  * 10/10 articles updated successfully (100% success rate)
-  * Mid-CTA inserted at paragraph midpoint (~50% content)
-  * Average insertion: +320 characters per article (Liquid snippet code)
-  * 0 failures, 0 regressions, 0 duplications
+  * **INITIAL UPDATE (défectueux)**: 10/10 articles avec code Liquid (+320 chars)
+  * **CORRECTION APPLIQUÉE**: 10/10 articles avec HTML pur (+830 chars)
+  * Mid-CTA format: HTML inline avec tous styles (pas de dépendances CSS externes)
+  * Average insertion finale: **+830 characters per article** (HTML pur complet)
+  * 0 failures après correction, 0 regressions, 0 duplications
   * Rate-limited: 0.5s delay between updates
-  * Update log: /tmp/mid_cta_update_log.json (verification available)
+  * Correction log: /tmp/html_correction_log.json
+  * **TRANSPARENCE**: Erreur détectée par utilisateur, corrigée immédiatement
 - Expected impact (DUAL CTA vs single):
   * Blog conversion rate: +10-14% (mid-article captures early engagement)
   * Click-through to products: +22-28% (2 touchpoints vs 1)
@@ -328,9 +336,11 @@ Collections descriptions updated:
 - ✅ Article CTAs:
   * Snippet upload verified (3,703 bytes, checksum verified)
   * Section upload verified (19,271 bytes, checksum verified)
-  * 10 articles updated via REST API (100% success, 0 failures)
-  * Mid-CTA verification: All articles contain Liquid render with style="highlight"
-  * Size verification: +312 to +327 chars per article (average: +320 chars)
+  * **CORRECTION**: 10 articles updated via REST API (100% success)
+  * Mid-CTA verification: All articles contain HTML `<div class="article-cta article-cta--highlight">`
+  * Format: HTML pur inline avec styles (pas de Liquid dans body_html)
+  * Size verification: +826 to +831 chars per article (average: **+830 chars HTML pur**)
+  * **ERREUR INITIALE**: Code Liquid non fonctionnel détecté et remplacé par HTML
 
 ### Impact Summary (Phase 2 Completed Tasks)
 
