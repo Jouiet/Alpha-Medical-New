@@ -1,0 +1,510 @@
+{% comment %}
+  Welcome Popup - Captures first-time visitors with 10% discount offer
+
+  Features:
+  - Time-based trigger (10 seconds after page load)
+  - First-visit detection (localStorage)
+  - Frequency control (shows once, can be closed for 7 days)
+  - Email capture form with discount code reveal
+  - Responsive design
+  - Accessible (ARIA labels, ESC key close)
+
+  Usage:
+  {% render 'welcome-popup' %}
+{% endcomment %}
+
+<dialog class="welcome-popup" id="welcome-popup" aria-labelledby="welcome-popup-title" aria-modal="true">
+  <div class="welcome-popup__overlay" onclick="document.getElementById('welcome-popup').close()"></div>
+  <div class="welcome-popup__content">
+    <button
+      type="button"
+      class="welcome-popup__close"
+      onclick="document.getElementById('welcome-popup').close()"
+      aria-label="Close popup"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+
+    <div class="welcome-popup__header">
+      <h2 id="welcome-popup-title" class="welcome-popup__title">Welcome to Alpha Medical Care!</h2>
+      <p class="welcome-popup__subtitle">Join 10,000+ customers who trust us for quality medical equipment</p>
+    </div>
+
+    <div class="welcome-popup__offer">
+      <div class="welcome-popup__discount">
+        <span class="welcome-popup__discount-value">10% OFF</span>
+        <span class="welcome-popup__discount-text">Your First Order</span>
+      </div>
+    </div>
+
+    <div class="welcome-popup__form-container">
+      <form class="welcome-popup__form" id="welcome-popup-form">
+        <div class="welcome-popup__form-group">
+          <label for="welcome-email" class="visually-hidden">Email address</label>
+          <input
+            type="email"
+            id="welcome-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+            class="welcome-popup__input"
+          >
+        </div>
+        <button type="submit" class="welcome-popup__button button button--primary">
+          Get My 10% OFF
+        </button>
+      </form>
+
+      <div class="welcome-popup__success" id="welcome-popup-success" style="display: none;">
+        <div class="welcome-popup__success-icon">✓</div>
+        <h3 class="welcome-popup__success-title">Welcome Aboard!</h3>
+        <p class="welcome-popup__success-text">Your discount code:</p>
+        <div class="welcome-popup__code">
+          <code>WELCOME10</code>
+        </div>
+        <p class="welcome-popup__success-subtitle">Use this code at checkout to get 10% off your first order!</p>
+        <button
+          type="button"
+          class="welcome-popup__button button button--primary"
+          onclick="document.getElementById('welcome-popup').close()"
+        >
+          Start Shopping
+        </button>
+      </div>
+    </div>
+
+    <p class="welcome-popup__terms">
+      <small>*Minimum purchase $75. First-time customers only. One-time use.</small>
+    </p>
+  </div>
+</dialog>
+
+<style>
+  .welcome-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: none;
+    max-height: none;
+  }
+
+  .welcome-popup[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome-popup::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+  }
+
+  .welcome-popup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .welcome-popup__content {
+    position: relative;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    max-width: 520px;
+    width: 90%;
+    padding: 2.5rem 2rem;
+    animation: welcome-popup-scale-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 1;
+  }
+
+  @keyframes welcome-popup-scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .welcome-popup__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .welcome-popup__close:hover {
+    background: #f8f9fa;
+    color: #212529;
+  }
+
+  .welcome-popup__header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .welcome-popup__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+
+  .welcome-popup__subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0;
+  }
+
+  .welcome-popup__offer {
+    margin-bottom: 1.5rem;
+  }
+
+  .welcome-popup__discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #4770DB 0%, #6a8eec 100%);
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  .welcome-popup__discount-value {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .welcome-popup__discount-text {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .welcome-popup__form-container {
+    position: relative;
+  }
+
+  .welcome-popup__form {
+    margin-bottom: 1rem;
+  }
+
+  .welcome-popup__form-group {
+    margin-bottom: 1rem;
+  }
+
+  .welcome-popup__input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+  }
+
+  .welcome-popup__input:focus {
+    outline: none;
+    border-color: #4770DB;
+    box-shadow: 0 0 0 3px rgba(71, 112, 219, 0.1);
+  }
+
+  .welcome-popup__button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #4770DB;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .welcome-popup__button:hover {
+    background: #3a5bb8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(71, 112, 219, 0.3);
+  }
+
+  .welcome-popup__button:active {
+    transform: translateY(0);
+  }
+
+  .welcome-popup__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .welcome-popup__success {
+    text-align: center;
+  }
+
+  .welcome-popup__success-icon {
+    font-size: 4rem;
+    color: #198754;
+    margin-bottom: 1rem;
+    animation: welcome-success-bounce 0.6s ease;
+  }
+
+  @keyframes welcome-success-bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  .welcome-popup__success-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 0.5rem;
+  }
+
+  .welcome-popup__success-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0 0 1rem;
+  }
+
+  .welcome-popup__code {
+    background: #f8f9fa;
+    border: 2px dashed #4770DB;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 0 0 1rem;
+  }
+
+  .welcome-popup__code code {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4770DB;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+  }
+
+  .welcome-popup__success-subtitle {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin: 0 0 1.5rem;
+  }
+
+  .welcome-popup__terms {
+    text-align: center;
+    color: #6c757d;
+    margin: 0;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .welcome-popup__content {
+      padding: 2rem 1.5rem;
+    }
+
+    .welcome-popup__title {
+      font-size: 1.5rem;
+    }
+
+    .welcome-popup__discount-value {
+      font-size: 2.5rem;
+    }
+
+    .welcome-popup__code code {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Hide visually but keep accessible */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
+
+<script>
+  (function() {
+    const popup = document.getElementById('welcome-popup');
+    const form = document.getElementById('welcome-popup-form');
+    const formContainer = form.parentElement;
+    const successContainer = document.getElementById('welcome-popup-success');
+
+    if (!popup || !form) return;
+
+    // Configuration
+    const STORAGE_KEY_SHOWN = 'alpha_welcome_shown';
+    const STORAGE_KEY_CLOSED = 'alpha_welcome_closed';
+    const DELAY_MS = 10000; // 10 seconds
+    const SUPPRESS_DAYS = 7;
+
+    // Check if popup should be shown
+    function shouldShowPopup() {
+      try {
+        // Check if already shown
+        const hasShown = localStorage.getItem(STORAGE_KEY_SHOWN);
+        if (hasShown) {
+          // Check if closed and within suppression period
+          const closedAt = localStorage.getItem(STORAGE_KEY_CLOSED);
+          if (closedAt) {
+            const closedTimestamp = parseInt(closedAt, 10);
+            const daysSinceClosed = (Date.now() - closedTimestamp) / (1000 * 60 * 60 * 24);
+            if (daysSinceClosed < SUPPRESS_DAYS) {
+              return false;
+            }
+          } else {
+            // Shown but never closed - don't show again
+            return false;
+          }
+        }
+        return true;
+      } catch (e) {
+        console.error('Welcome popup storage error:', e);
+        return false;
+      }
+    }
+
+    // Mark popup as shown
+    function markAsShown() {
+      try {
+        localStorage.setItem(STORAGE_KEY_SHOWN, 'true');
+      } catch (e) {
+        console.error('Welcome popup storage error:', e);
+      }
+    }
+
+    // Mark popup as closed
+    function markAsClosed() {
+      try {
+        localStorage.setItem(STORAGE_KEY_CLOSED, Date.now().toString());
+      } catch (e) {
+        console.error('Welcome popup storage error:', e);
+      }
+    }
+
+    // Show popup
+    function showPopup() {
+      if (!shouldShowPopup()) return;
+
+      popup.showModal();
+      markAsShown();
+
+      // Track event (if analytics available)
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'welcome_popup_shown', {
+          event_category: 'engagement',
+          event_label: 'first_visit'
+        });
+      }
+    }
+
+    // Schedule popup display
+    setTimeout(showPopup, DELAY_MS);
+
+    // Handle close event
+    popup.addEventListener('close', function() {
+      markAsClosed();
+
+      // Track close event
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'welcome_popup_closed', {
+          event_category: 'engagement',
+          event_label: 'dismissed'
+        });
+      }
+    });
+
+    // ESC key to close
+    popup.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        popup.close();
+      }
+    });
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById('welcome-email').value;
+      const button = form.querySelector('button[type="submit"]');
+      const originalText = button.textContent;
+
+      // Disable button during submission
+      button.disabled = true;
+      button.textContent = 'Processing...';
+
+      // Submit to Shopify Customer API
+      fetch('/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'form_type': 'customer',
+          'utf8': '✓',
+          'contact[email]': email,
+          'contact[tags]': 'welcome,newsletter,discount-welcome10'
+        })
+      })
+      .then(response => {
+        if (response.ok || response.redirected) {
+          // Success - show code
+          formContainer.querySelector('.welcome-popup__form').style.display = 'none';
+          successContainer.style.display = 'block';
+
+          // Track conversion
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'welcome_popup_conversion', {
+              event_category: 'conversion',
+              event_label: 'email_captured',
+              value: 1
+            });
+          }
+        } else {
+          throw new Error('Submission failed');
+        }
+      })
+      .catch(error => {
+        console.error('Welcome popup form error:', error);
+        button.disabled = false;
+        button.textContent = originalText;
+        alert('Unable to process your request. Please try again.');
+      });
+    });
+  })();
+</script>
