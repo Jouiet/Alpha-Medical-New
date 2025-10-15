@@ -3480,7 +3480,7 @@ Example:
 | 🔵 | Product descriptions audit | SEO quality | 2h |
 | 🔵 | Keyword research + integration | SEO +traffic | 8h |
 | 🔵 | Recently viewed products | Engagement | 3h |
-| 🔵 | Urgency elements | Conversion +5% | 4h |
+| ✅ | Urgency elements | Conversion +5% | 4h |
 | 🔵 | Lead magnet: Pain Relief Guide | Email list +200/mo | 8h |
 | 🔵 | Lead magnet: Size Quiz | Conversion +10% | 12h |
 | 🔵 | Trust seals enhancement | Conversion +3% | 2h |
