@@ -17,9 +17,9 @@
           "settings": {
             "image": "shopify://shop_images/hero-slide-1.png",
             "image_overlay_opacity": 10,
-            "heading": "Professional Medical Support Equipment",
+            "heading": "Professional Medical Equipment You Can Trust",
             "heading_size": "h2",
-            "subheading": "Quality orthopedic braces, therapy devices & recovery tools",
+            "subheading": "FDA-Compliant Materials • 30-Day Money-Back Guarantee • 10,000+ Happy Customers",
             "button_label": "Shop Now",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
@@ -308,8 +308,8 @@
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Alpha Medical Care product showcase",
-        "seo_h1": "Professional Medical Support Equipment & Orthopedic Braces - Alpha Medical Care"
+        "accessibility_info": "Alpha Medical Care - Professional medical equipment you can trust",
+        "seo_h1": "Professional Medical Equipment You Can Trust - FDA-Compliant | 30-Day Guarantee | Alpha Medical Care"
       }
     },
     "promo-banner-1": {
