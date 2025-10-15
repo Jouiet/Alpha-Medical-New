@@ -1,0 +1,157 @@
+{%- comment -%}
+  Recently Viewed Products - Display Container
+  Displays recently viewed products section
+  Usage: {% render 'recently-viewed-display' %}
+{%- endcomment -%}
+
+<div data-recently-viewed class="page-width section-{{ section.id }}-padding" style="display: none;">
+  {%- comment -%} Content will be dynamically inserted by JavaScript {%- endcomment -%}
+</div>
+
+<style>
+.recently-viewed {
+  margin: 60px 0;
+}
+
+.recently-viewed__header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.recently-viewed__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #121212;
+  margin: 0;
+}
+
+.recently-viewed__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.recently-viewed__card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.recently-viewed__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #4770DB;
+}
+
+.recently-viewed__image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background: #f9fafb;
+}
+
+.recently-viewed__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recently-viewed__card:hover .recently-viewed__image {
+  transform: scale(1.05);
+}
+
+.recently-viewed__content {
+  padding: 16px;
+}
+
+.recently-viewed__product-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #121212;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.recently-viewed__price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4770DB;
+  display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 989px) {
+  .recently-viewed__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .recently-viewed__title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .recently-viewed {
+    margin: 40px 0;
+  }
+
+  .recently-viewed__header {
+    margin-bottom: 24px;
+  }
+
+  .recently-viewed__title {
+    font-size: 22px;
+  }
+
+  .recently-viewed__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .recently-viewed__content {
+    padding: 12px;
+  }
+
+  .recently-viewed__product-title {
+    font-size: 14px;
+  }
+
+  .recently-viewed__price {
+    font-size: 15px;
+  }
+}
+</style>
+
+<script>
+  // Render recently viewed products when script loads
+  (function() {
+    function renderRecentlyViewed() {
+      if (typeof window.recentlyViewed !== 'undefined') {
+        window.recentlyViewed.render();
+      } else {
+        setTimeout(renderRecentlyViewed, 100);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', renderRecentlyViewed);
+    } else {
+      renderRecentlyViewed();
+    }
+  })();
+</script>

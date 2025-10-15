@@ -1,0 +1,33 @@
+{%- comment -%}
+  Recently Viewed Products - Initialization
+  Adds current product to recently viewed list
+  Usage: {% render 'recently-viewed-init' %}
+{%- endcomment -%}
+
+{%- if product -%}
+<script>
+  (function() {
+    // Wait for RecentlyViewedProducts to be available
+    function initRecentlyViewed() {
+      if (typeof window.recentlyViewed !== 'undefined') {
+        window.recentlyViewed.addProduct({
+          id: '{{ product.id }}',
+          url: '{{ product.url }}',
+          title: {{ product.title | json }},
+          image: '{{ product.featured_image | image_url: width: 300 }}',
+          price: '{{ product.price | money }}'
+        });
+      } else {
+        // Retry after a short delay if not yet loaded
+        setTimeout(initRecentlyViewed, 100);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initRecentlyViewed);
+    } else {
+      initRecentlyViewed();
+    }
+  })();
+</script>
+{%- endif -%}

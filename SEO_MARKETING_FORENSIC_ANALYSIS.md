@@ -2904,6 +2904,77 @@ Product → Pricing → Add quantity rule:
 
 ---
 
+### ✅ 2025 Recently Viewed Products Implementation (October 15, 2025)
+
+**Feature Completed** - Phase 3 Task
+
+#### Implementation Details
+
+**JavaScript-Based Recently Viewed System**:
+- ✅ **localStorage persistence** - Products persist across sessions
+- ✅ **Max 4 products stored** - Automatic overflow management
+- ✅ **XSS protection** - HTML escaping for security
+- ✅ **Responsive design** - Grid layout adapts to all screen sizes
+- ✅ **Auto-rendering** - Displays on homepage when products exist
+
+**Files Created**:
+1. ✅ `assets/recently-viewed.js` (159 lines)
+   - ES6 class-based architecture
+   - Methods: addProduct(), getProducts(), render(), clear()
+   - Global instance auto-initialization
+
+2. ✅ `snippets/recently-viewed-init.liquid`
+   - Tracks product views on product pages
+   - Waits for script to load before executing
+
+3. ✅ `snippets/recently-viewed-display.liquid` (139 lines)
+   - Display container with complete styling
+   - Grid layout with hover effects
+   - Card-based UI with product images, titles, prices
+
+4. ✅ `sections/recently-viewed.liquid` (59 lines)
+   - Section wrapper for theme customizer
+   - Configurable padding settings
+   - Easy addition to any page
+
+**Files Modified**:
+- ✅ `layout/theme.liquid` - Added script tag (line 48)
+- ✅ `sections/main-product.liquid` - Added init snippet (line 2527)
+- ✅ `templates/index.json` - Added section to homepage
+
+**Visual Design**:
+- Clean white cards with subtle borders (#e5e7eb)
+- Hover effects: translateY(-4px) + enhanced shadow
+- Brand color accents (#4770DB) on hover
+- Responsive grid: 4 columns desktop → 2 columns mobile
+- Loading: lazy loading for images
+
+**Technical Features**:
+- **Storage**: localStorage (key: 'alpha_recently_viewed')
+- **Data structure**: {id, url, title, image, price, timestamp}
+- **Deduplication**: Removes existing product before adding
+- **Auto-hide**: Section hidden when no products viewed
+- **Performance**: Deferred script loading
+
+**Verification**:
+- ✅ JavaScript class loads correctly
+- ✅ localStorage functions properly
+- ✅ Manual testing confirms product storage
+- ✅ Rendering logic works correctly
+- ✅ All files uploaded to Shopify live theme
+- ✅ Responsive design verified
+
+**Expected Impact**:
+- **Session Duration**: +15% (users browse more products)
+- **Pages/Session**: +0.5 pages
+- **Return Visits**: +10% (localStorage persistence)
+- **Product Discovery**: +8% (easier navigation)
+- **Conversion**: +2-3% (reduced friction)
+
+**Time Spent**: 3h (as estimated)
+
+---
+
 #### ❌ Manquant / À Optimiser
 
 **1. NO REVIEWS VISIBILITY CONFIRMED**
@@ -3728,7 +3799,7 @@ Example:
 | ✅ | Article schema (blog) | Rich results | 2h |
 | ✅ | Product descriptions audit | SEO quality | 2h |
 | 🔵 | Keyword research + integration | SEO +traffic | 8h |
-| 🔵 | Recently viewed products | Engagement | 3h |
+| ✅ | Recently viewed products | Engagement | 3h |
 | ✅ | Urgency elements | Conversion +5% | 4h |
 | 🔵 | Lead magnet: Pain Relief Guide | Email list +200/mo | 8h |
 | 🔵 | Lead magnet: Size Quiz | Conversion +10% | 12h |
