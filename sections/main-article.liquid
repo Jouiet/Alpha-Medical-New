@@ -104,6 +104,56 @@
           {{ article.content }}
         </div>
 
+        {%- comment -%} Context-Aware Article CTA {%- endcomment -%}
+        {%- liquid
+          assign title_lower = article.title | downcase
+          assign cta_title = "Ready to Experience Relief?"
+          assign cta_text = "Explore our range of professional medical support equipment designed to help you feel better faster."
+          assign cta_url = "/collections/all"
+          assign cta_button = "Shop Now"
+
+          if title_lower contains 'knee brace' or title_lower contains 'knee pain'
+            assign cta_title = "Find Your Perfect Knee Brace"
+            assign cta_text = "Browse our selection of professional-grade knee braces designed for pain relief, injury recovery, and athletic support."
+            assign cta_url = "/collections/pain-relief-recovery"
+            assign cta_button = "Browse Knee Braces"
+          elsif title_lower contains 'led face mask' or title_lower contains 'face mask'
+            assign cta_title = "Discover LED Light Therapy Devices"
+            assign cta_text = "Experience professional-grade LED therapy for skin rejuvenation, anti-aging, and overall wellness at home."
+            assign cta_url = "/collections/therapy-wellness"
+            assign cta_button = "Shop LED Therapy"
+          elsif title_lower contains 'posture' or title_lower contains 'office worker' or title_lower contains 'ergonomic'
+            assign cta_title = "Improve Your Posture Today"
+            assign cta_text = "Discover our range of posture correctors, back supports, and ergonomic braces designed to reduce pain and improve alignment."
+            assign cta_url = "/collections/posture-support"
+            assign cta_button = "Shop Posture Solutions"
+          elsif title_lower contains 'led light therapy' or title_lower contains 'light therapy'
+            assign cta_title = "Experience LED Light Therapy"
+            assign cta_text = "Explore our collection of FDA-compliant LED therapy devices for skin care, pain relief, and muscle recovery."
+            assign cta_url = "/collections/therapy-wellness"
+            assign cta_button = "Browse Therapy Devices"
+          elsif title_lower contains 'back pain' or title_lower contains 'cervical' or title_lower contains 'neck'
+            assign cta_title = "Find Relief from Back & Neck Pain"
+            assign cta_text = "Discover professional back supports, cervical traction devices, and pain relief solutions trusted by thousands."
+            assign cta_url = "/collections/pain-relief-recovery"
+            assign cta_button = "Shop Pain Relief"
+          elsif title_lower contains 'surgery' or title_lower contains 'recovery'
+            assign cta_title = "Your Recovery Equipment Checklist"
+            assign cta_text = "Get everything you need for a smooth recovery with our medical-grade braces, supports, and therapy devices."
+            assign cta_url = "/collections/pain-relief-recovery"
+            assign cta_button = "Shop Recovery Tools"
+          endif
+        -%}
+
+        <div class="page-width page-width--narrow">
+          {% render 'article-cta',
+            cta_title: cta_title,
+            cta_text: cta_text,
+            cta_url: cta_url,
+            cta_button_text: cta_button
+          %}
+        </div>
+
       {%- when 'share' -%}
         <div
           class="article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
