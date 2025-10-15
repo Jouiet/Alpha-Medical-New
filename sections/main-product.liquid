@@ -814,6 +814,168 @@
   </div>
 </product-info>
 
+{%- comment -%} Sticky Add to Cart Bar - Mobile Only {%- endcomment -%}
+<div class="sticky-atc-bar" data-sticky-atc data-section-id="{{ section.id }}">
+  <div class="sticky-atc-bar__content">
+    <div class="sticky-atc-bar__info">
+      <span class="sticky-atc-bar__title">{{ product.title | truncate: 35 }}</span>
+      <span class="sticky-atc-bar__price">
+        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+          <s class="sticky-atc-bar__compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money }}</s>
+          <span class="sticky-atc-bar__sale-price">{{ product.selected_or_first_available_variant.price | money }}</span>
+        {%- else -%}
+          {{ product.selected_or_first_available_variant.price | money }}
+        {%- endif -%}
+      </span>
+    </div>
+    <button type="button" class="sticky-atc-bar__button button button--primary" data-sticky-atc-button>
+      {{ 'products.product.add_to_cart' | t }}
+    </button>
+  </div>
+</div>
+
+<style>
+.sticky-atc-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e5e5e5;
+  padding: 12px 16px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  display: none;
+}
+
+@media screen and (max-width: 749px) {
+  .sticky-atc-bar {
+    display: block;
+  }
+}
+
+.sticky-atc-bar.is-visible {
+  transform: translateY(0);
+}
+
+.sticky-atc-bar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.sticky-atc-bar__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.sticky-atc-bar__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sticky-atc-bar__price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4770DB;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sticky-atc-bar__compare-price {
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
+}
+
+.sticky-atc-bar__sale-price {
+  color: #dc3545;
+}
+
+.sticky-atc-bar__button {
+  flex-shrink: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.sticky-atc-bar__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+</style>
+
+<script>
+(function() {
+  if (window.innerWidth >= 750) return;
+
+  const stickyBar = document.querySelector('[data-sticky-atc]');
+  if (!stickyBar) return;
+
+  const sectionId = stickyBar.dataset.sectionId;
+  const mainButton = document.getElementById('ProductSubmitButton-' + sectionId);
+  const stickyButton = stickyBar.querySelector('[data-sticky-atc-button]');
+
+  if (!mainButton || !stickyButton) return;
+
+  // Sync sticky button state with main button
+  const syncButtonState = () => {
+    if (mainButton.disabled) {
+      stickyButton.disabled = true;
+      stickyButton.textContent = mainButton.querySelector('span').textContent;
+    } else {
+      stickyButton.disabled = false;
+      stickyButton.textContent = mainButton.querySelector('span').textContent;
+    }
+  };
+
+  // Initial sync
+  syncButtonState();
+
+  // Watch for main button changes (variant selection)
+  const observer = new MutationObserver(syncButtonState);
+  observer.observe(mainButton, { attributes: true, childList: true, subtree: true });
+
+  // Click handler: trigger main button
+  stickyButton.addEventListener('click', () => {
+    if (!mainButton.disabled) {
+      mainButton.click();
+    }
+  });
+
+  // Intersection Observer: show sticky when main button is out of viewport
+  const intersectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        stickyBar.classList.remove('is-visible');
+      } else {
+        stickyBar.classList.add('is-visible');
+      }
+    });
+  }, {
+    threshold: 0,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  intersectionObserver.observe(mainButton);
+})();
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
