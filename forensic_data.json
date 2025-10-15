@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "total_products": 149,
+    "total_products": 148,
     "total_collections": 6,
-    "analysis_date": "2025-10-15 01:39:52"
+    "analysis_date": "2025-10-15 01:55:30"
   },
   "products": [
     {
@@ -282,13 +282,6 @@
       },
       "collections": {
         "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295006928973",
-              "title": "Home page",
-              "handle": "frontpage"
-            }
-          },
           {
             "node": {
               "id": "gid://shopify/Collection/295060439117",
@@ -1955,13 +1948,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -2706,13 +2692,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -3026,13 +3005,6 @@
               "id": "gid://shopify/Collection/295060471885",
               "title": "Posture & Support",
               "handle": "posture-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -3385,13 +3357,6 @@
               "id": "gid://shopify/Collection/295060439117",
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -5833,13 +5798,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -6343,13 +6301,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -6510,13 +6461,6 @@
               "id": "gid://shopify/Collection/295060439117",
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -6990,13 +6934,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -7469,13 +7406,6 @@
               "id": "gid://shopify/Collection/295060471885",
               "title": "Posture & Support",
               "handle": "posture-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -8373,13 +8303,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -8899,13 +8822,6 @@
               "title": "Posture & Support",
               "handle": "posture-support"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -9087,20 +9003,6 @@
               "title": "Posture & Support",
               "handle": "posture-support"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -9231,13 +9133,6 @@
               "id": "gid://shopify/Collection/295060471885",
               "title": "Posture & Support",
               "handle": "posture-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -12235,13 +12130,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -14997,13 +14885,6 @@
               "title": "Posture & Support",
               "handle": "posture-support"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -17323,20 +17204,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -17497,20 +17364,6 @@
               "id": "gid://shopify/Collection/295060439117",
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -18237,20 +18090,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -18572,13 +18411,6 @@
               "id": "gid://shopify/Collection/295060471885",
               "title": "Posture & Support",
               "handle": "posture-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -19233,13 +19065,6 @@
               "id": "gid://shopify/Collection/295060504653",
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -20137,20 +19962,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -20423,13 +20234,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -20678,13 +20482,6 @@
               "title": "Posture & Support",
               "handle": "posture-support"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -20836,20 +20633,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -20981,20 +20764,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -21125,13 +20894,6 @@
               "id": "gid://shopify/Collection/295060504653",
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -22615,20 +22377,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -23823,13 +23571,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -24232,20 +23973,6 @@
               "id": "gid://shopify/Collection/295060471885",
               "title": "Posture & Support",
               "handle": "posture-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064666189",
-              "title": "Bestsellers",
-              "handle": "bestsellers"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
             }
           }
         ]
@@ -25136,13 +24863,6 @@
               "title": "Therapy & Wellness",
               "handle": "therapy-wellness"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -25294,13 +25014,6 @@
               "title": "Pain Relief & Recovery",
               "handle": "pain-relief-recovery"
             }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
           }
         ]
       },
@@ -25374,154 +25087,6 @@
               "id": "gid://shopify/ProductImage/34023110705229",
               "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sa54bf619bf0343ba9479be2749661acdv_1bd72f0b-131a-4a37-a2b0-d09d32bd73a4.webp?v=1760382513",
               "altText": "Back Support Brace - Adjustable Posture Corrector - View 10 | Alpha Medical Care"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "gid://shopify/Product/7586410692685",
-      "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-      "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1",
-      "description": "Portable Cervical Spine Massager - EMS Neck Acupoints Lymphatic Advanced portable cervical spine massager combining EMS (Electrical Muscle Stimulation), acupressure, lymphatic drainage, and heat therapy for comprehensive neck care. Targets cervical acupoints while promoting lymph flow to reduce pain, tension, and swelling in the neck region. Key Benefits ✓ EMS Therapy: Electrical pulses stimulate cervical muscles and acupoints to release tension and improve circulation ✓ Lymphatic Drainage: Specialized massage pattern promotes lymph flow to reduce neck swelling and toxin accumulation ✓ Acupoint Targeting: Stimulates traditional Chinese medicine acupoints (Fengchi GB20, Jianjing GB21) for holistic relief ✓ Cervical Spine Care: Relieves pressure on C1-C7 vertebrae and surrounding soft tissues ✓ Portable Design: Compact, wireless device allows treatment anywhere - office, travel, home ✓ Heat Function: Infrared warming enhances muscle relaxation and therapeutic effectiveness Perfect For Chronic neck pain and cervical stiffness Lymphatic congestion in neck area (swollen lymph nodes) Tech neck from computer/phone use Cervical muscle tension and trigger points Headaches originating from neck issues Poor neck circulation causing stiffness Desk workers needing convenient neck therapy Post-workout neck recovery How to Use Charge device fully via USB before first use Position device on back of neck with electrode pads contacting skin on both sides of cervical spine Ensure good contact - clean neck area first for best conductivity Select mode: Lymphatic drainage, EMS massage, Acupoint stimulation, or Combined Adjust intensity (1-9 levels) - start low, increase gradually Optional: Activate heat function for enhanced relaxation Use for 10-15 minutes per session, 2-3 times daily Device auto shuts off after preset time for safety Care Instructions Wipe electrode pads with damp cloth after each use to remove skin oils. Clean device body with soft, dry cloth. Do not submerge in water - not waterproof. Recharge when battery indicator shows low. Store in protective case. Replace electrode pads if adhesion weakens or conductivity decreases (typically every 30-50 uses). Sizing Guide Universal Size: Adjustable to fit neck circumferences 11-18\" (28-46cm) Weight: Ultra-lightweight (3-4 oz) for comfortable extended wear Suitable for adults - flexible design accommodates most neck sizes Specifications Technology: EMS pulse + lymphatic drainage + acupoint stimulation + infrared heat Modes: 4-6 therapy programs Intensity: 9 adjustable levels Heat Range: 95-104°F (35-40°C) Power: Rechargeable battery (500mAh, USB charging) Runtime: 3-5 sessions per charge Timer: 10/15 minute auto shut-off Material: Medical-grade silicone electrodes, ABS housing Warranty & Support 90-day warranty. Replacement electrode pads available separately. Contact us for usage questions or technical support. Medical Disclaimer: This EMS massager is for wellness and muscle relaxation. Contraindications: pacemakers, implanted medical devices, pregnancy, epilepsy, cancer, thrombosis, acute neck injury, skin conditions. Do not use on throat, carotid arteries, or open wounds. Not for children. Consult physician before use if you have medical conditions. Discontinue if pain increases or adverse reactions occur. Not a medical device or treatment.",
-      "descriptionHtml": "<h2>Portable Cervical Spine Massager - EMS Neck Acupoints Lymphatic</h2>\n\n<p>Advanced portable cervical spine massager combining EMS (Electrical Muscle Stimulation), acupressure, lymphatic drainage, and heat therapy for comprehensive neck care. Targets cervical acupoints while promoting lymph flow to reduce pain, tension, and swelling in the neck region.</p>\n\n<h3>Key Benefits</h3>\n<ul>\n<li>✓ <strong>EMS Therapy:</strong> Electrical pulses stimulate cervical muscles and acupoints to release tension and improve circulation</li>\n<li>✓ <strong>Lymphatic Drainage:</strong> Specialized massage pattern promotes lymph flow to reduce neck swelling and toxin accumulation</li>\n<li>✓ <strong>Acupoint Targeting:</strong> Stimulates traditional Chinese medicine acupoints (Fengchi GB20, Jianjing GB21) for holistic relief</li>\n<li>✓ <strong>Cervical Spine Care:</strong> Relieves pressure on C1-C7 vertebrae and surrounding soft tissues</li>\n<li>✓ <strong>Portable Design:</strong> Compact, wireless device allows treatment anywhere - office, travel, home</li>\n<li>✓ <strong>Heat Function:</strong> Infrared warming enhances muscle relaxation and therapeutic effectiveness</li>\n</ul>\n\n<h3>Perfect For</h3>\n<ul>\n<li>Chronic neck pain and cervical stiffness</li>\n<li>Lymphatic congestion in neck area (swollen lymph nodes)</li>\n<li>Tech neck from computer/phone use</li>\n<li>Cervical muscle tension and trigger points</li>\n<li>Headaches originating from neck issues</li>\n<li>Poor neck circulation causing stiffness</li>\n<li>Desk workers needing convenient neck therapy</li>\n<li>Post-workout neck recovery</li>\n</ul>\n\n<h3>How to Use</h3>\n<ol>\n<li>Charge device fully via USB before first use</li>\n<li>Position device on back of neck with electrode pads contacting skin on both sides of cervical spine</li>\n<li>Ensure good contact - clean neck area first for best conductivity</li>\n<li>Select mode: Lymphatic drainage, EMS massage, Acupoint stimulation, or Combined</li>\n<li>Adjust intensity (1-9 levels) - start low, increase gradually</li>\n<li>Optional: Activate heat function for enhanced relaxation</li>\n<li>Use for 10-15 minutes per session, 2-3 times daily</li>\n<li>Device auto shuts off after preset time for safety</li>\n</ol>\n\n<h3>Care Instructions</h3>\n<p>Wipe electrode pads with damp cloth after each use to remove skin oils. Clean device body with soft, dry cloth. Do not submerge in water - not waterproof. Recharge when battery indicator shows low. Store in protective case. Replace electrode pads if adhesion weakens or conductivity decreases (typically every 30-50 uses).</p>\n\n<h3>Sizing Guide</h3>\n<ul>\n<li>\n<strong>Universal Size:</strong> Adjustable to fit neck circumferences 11-18\" (28-46cm)</li>\n<li>\n<strong>Weight:</strong> Ultra-lightweight (3-4 oz) for comfortable extended wear</li>\n<li>Suitable for adults - flexible design accommodates most neck sizes</li>\n</ul>\n\n<h3>Specifications</h3>\n<ul>\n<li>\n<strong>Technology:</strong> EMS pulse + lymphatic drainage + acupoint stimulation + infrared heat</li>\n<li>\n<strong>Modes:</strong> 4-6 therapy programs</li>\n<li>\n<strong>Intensity:</strong> 9 adjustable levels</li>\n<li>\n<strong>Heat Range:</strong> 95-104°F (35-40°C)</li>\n<li>\n<strong>Power:</strong> Rechargeable battery (500mAh, USB charging)</li>\n<li>\n<strong>Runtime:</strong> 3-5 sessions per charge</li>\n<li>\n<strong>Timer:</strong> 10/15 minute auto shut-off</li>\n<li>\n<strong>Material:</strong> Medical-grade silicone electrodes, ABS housing</li>\n</ul>\n\n<h3>Warranty &amp; Support</h3>\n<p>90-day warranty. Replacement electrode pads available separately. <a href=\"/pages/contact\">Contact us</a> for usage questions or technical support.</p>\n\n<p><em>Medical Disclaimer: This EMS massager is for wellness and muscle relaxation. Contraindications: pacemakers, implanted medical devices, pregnancy, epilepsy, cancer, thrombosis, acute neck injury, skin conditions. Do not use on throat, carotid arteries, or open wounds. Not for children. Consult physician before use if you have medical conditions. Discontinue if pain increases or adverse reactions occur. Not a medical device or treatment.</em></p>",
-      "productType": "",
-      "vendor": "My StoreAlpha Medical Care",
-      "tags": [
-        "cervical massage",
-        "cervical spine massager",
-        "EMS neck massager",
-        "lymphatic drainage",
-        "lymphvital",
-        "neck acupoints",
-        "neck pain relief",
-        "portable massager"
-      ],
-      "status": "ACTIVE",
-      "createdAt": "2025-10-13T19:08:30Z",
-      "updatedAt": "2025-10-14T21:43:53Z",
-      "priceRangeV2": {
-        "minVariantPrice": {
-          "amount": "62.45",
-          "currencyCode": "USD"
-        },
-        "maxVariantPrice": {
-          "amount": "69.17",
-          "currencyCode": "USD"
-        }
-      },
-      "variants": {
-        "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/ProductVariant/42168480235597",
-              "title": "Battery model",
-              "price": "62.45",
-              "compareAtPrice": "74.94",
-              "sku": "1005005096573902-Battery model",
-              "inventoryQuantity": 6593
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductVariant/42168480268365",
-              "title": "USB charging models",
-              "price": "69.17",
-              "compareAtPrice": "83.00",
-              "sku": "1005005096573902-USB charging models",
-              "inventoryQuantity": 6571
-            }
-          }
-        ]
-      },
-      "collections": {
-        "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295060471885",
-              "title": "Posture & Support",
-              "handle": "posture-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Collection/295064764493",
-              "title": "New Arrivals",
-              "handle": "new-arrivals"
-            }
-          }
-        ]
-      },
-      "images": {
-        "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110770765",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sfc92c9b47cb44e5ab1469f1a71177626V_daf11018-fc13-40b1-ba69-5e5afc145224.webp?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110803533",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S11a0ec54246b4ae28c8cd0d66e8e2e97G_bd6a1565-a1c4-4dda-a258-d3efc5c1118f.webp?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - Detail View | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110836301",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sb1a149dbff5c4d60910497d8deffb404P_1140f91b-2b71-4bfe-a261-823db124c735.webp?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - In Use | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110869069",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S1655686b34a44c9598a11501262d0a61n_b7bccfab-713f-4aae-9b40-df13bba71d2d.webp?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - Side View | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110901837",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S723a6e8b0c7d4429b02ccb41a6bf498fD_621df081-e929-406b-a4cf-5d919367397c.webp?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - Back View | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110934605",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S492ed3c07a4345d792fcbbea33bc7ba9q_99a7bfd0-9f6a-4684-acee-13a1fd7d9b41.webp?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - Close-Up | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023110967373",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sfc92c9b47cb44e5ab1469f1a71177626V_6e2501b5-c487-414e-80f7-61f84a28db0d.jpg?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - Features | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023111000141",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S11a0ec54246b4ae28c8cd0d66e8e2e97G_413b17f7-2ab0-46f2-b2a0-6db9ca9caaf9.jpg?v=1760382514",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - View 8 | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023111032909",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sb1a149dbff5c4d60910497d8deffb404P_dfaac796-56fc-4ff1-b281-7f9be4420944.jpg?v=1760382513",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - View 9 | Alpha Medical Care"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/ProductImage/34023111065677",
-              "url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S1655686b34a44c9598a11501262d0a61n_62660c67-a701-48fa-ac02-01e3c1b63770.jpg?v=1760382514",
-              "altText": "Cervical Spine Massager - EMS Neck Lymphatic Drainage - View 10 | Alpha Medical Care"
             }
           }
         ]
@@ -27151,15 +26716,7 @@
       "handle": "frontpage",
       "description": "",
       "products": {
-        "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585886502989",
-              "title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
-              "handle": "sports-knee-pads-meniscus-tear-injury-recovery"
-            }
-          }
-        ]
+        "edges": []
       }
     },
     {
@@ -27681,13 +27238,6 @@
               "id": "gid://shopify/Product/7586415575117",
               "title": "Portable Neck Massager | Smart Shoulder Cervical Relief",
               "handle": "portable-neck-massager-smart-shoulder-cervical-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410692685",
-              "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-              "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1"
             }
           },
           {
@@ -28241,71 +27791,7 @@
       "handle": "bestsellers",
       "description": "",
       "products": {
-        "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410430541",
-              "title": "8 Mode EMS Neck Massager | Remote Control & Pain Relief",
-              "handle": "8-mode-ems-neck-massager-remote-control-pain-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410201165",
-              "title": "2-in-1 LED Face & Body Mask | 7 Colors + Heating",
-              "handle": "2-in-1-led-face-body-mask-7-colors-heating"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409807949",
-              "title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
-              "handle": "7-color-led-light-therapy-face-mask-anti-aging"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409775181",
-              "title": "Adjustable Back Brace Posture Corrector | Spine Support",
-              "handle": "adjustable-back-brace-posture-corrector-spine-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409578573",
-              "title": "6D Smart Eye Massager | Vibration & Heat Therapy",
-              "handle": "6d-smart-eye-massager-vibration-heat-therapy"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409119821",
-              "title": "7 Color LED Face Mask | Red Light Therapy",
-              "handle": "7-color-led-face-mask-red-light-therapy"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586408955981",
-              "title": "Adjustable Knee Brace | Orthopedic Leg Support & Pain Relief",
-              "handle": "adjustable-knee-brace-orthopedic-leg-support-pain-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586408923213",
-              "title": "4-in-1 Cavitation Body Slimming Machine | 40K Ultrasound",
-              "handle": "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585939750989",
-              "title": "5-in-1 Smart Cupping Therapy Set | 12-Level Control",
-              "handle": "5-in-1-smart-cupping-therapy-set-12-level-control"
-            }
-          }
-        ]
+        "edges": []
       }
     },
     {
@@ -28314,610 +27800,19 @@
       "handle": "new-arrivals",
       "description": "",
       "products": {
-        "edges": [
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410692685",
-              "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-              "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410659917",
-              "title": "Back Support Brace | Adjustable Posture Corrector",
-              "handle": "back-support-brace-adjustable-posture-corrector"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410627149",
-              "title": "Air Compression Leg Massager | 3 Modes Heat Therapy",
-              "handle": "air-compression-leg-massager-3-modes-heat-therapy"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410430541",
-              "title": "8 Mode EMS Neck Massager | Remote Control & Pain Relief",
-              "handle": "8-mode-ems-neck-massager-remote-control-pain-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410332237",
-              "title": "Anti-Aging LED Eye Mask | Photon Therapy for Dark Circles",
-              "handle": "anti-aging-led-eye-mask-photon-therapy-for-dark-circles"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586410201165",
-              "title": "2-in-1 LED Face & Body Mask | 7 Colors + Heating",
-              "handle": "2-in-1-led-face-body-mask-7-colors-heating"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409840717",
-              "title": "7 Color LED Mask | PDT Skin Rejuvenation",
-              "handle": "7-color-led-mask-pdt-skin-rejuvenation"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409807949",
-              "title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
-              "handle": "7-color-led-light-therapy-face-mask-anti-aging"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409775181",
-              "title": "Adjustable Back Brace Posture Corrector | Spine Support",
-              "handle": "adjustable-back-brace-posture-corrector-spine-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409742413",
-              "title": "Automatic Abdominal Massager | Electric Belly Flattening Device",
-              "handle": "automatic-abdominal-massager-electric-belly-flattening-device"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409644109",
-              "title": "7 Color LED + Nano Spray | Anti-Aging Facial Device",
-              "handle": "7-color-led-nano-spray-anti-aging-facial-device"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409578573",
-              "title": "6D Smart Eye Massager | Vibration & Heat Therapy",
-              "handle": "6d-smart-eye-massager-vibration-heat-therapy"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409349197",
-              "title": "7 Color LED Silicone Face Mask | Home Beauty Device",
-              "handle": "7-color-led-silicone-face-mask-home-beauty-device"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409185357",
-              "title": "7 Color LED Vibrating Neck & Face Massager",
-              "handle": "7-color-led-vibrating-neck-face-massager"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586409119821",
-              "title": "7 Color LED Face Mask | Red Light Therapy",
-              "handle": "7-color-led-face-mask-red-light-therapy"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586408955981",
-              "title": "Adjustable Knee Brace | Orthopedic Leg Support & Pain Relief",
-              "handle": "adjustable-knee-brace-orthopedic-leg-support-pain-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586408923213",
-              "title": "4-in-1 Cavitation Body Slimming Machine | 40K Ultrasound",
-              "handle": "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7586399191117",
-              "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-              "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585940308045",
-              "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
-              "handle": "adjustable-knee-patellar-tendon-strap-sports-support"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585939783757",
-              "title": "Air Neck Stretcher | Cervical Traction Device for Home Use",
-              "handle": "air-neck-stretcher-cervical-traction-device-for-home-use"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585939750989",
-              "title": "5-in-1 Smart Cupping Therapy Set | 12-Level Control",
-              "handle": "5-in-1-smart-cupping-therapy-set-12-level-control"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585939718221",
-              "title": "Cervical Neck Traction Hanging Device | Soft Stretching Belt",
-              "handle": "cervical-neck-traction-hanging-device-soft-stretching-belt"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585939619917",
-              "title": "Anti-Cellulite Massager | Infrared 3D Roller Body Slimming Device",
-              "handle": "anti-cellulite-massager-infrared-3d-roller-body-slimming-device"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585939423309",
-              "title": "Adjustable Neck Support | Cervical Posture Corrector",
-              "handle": "adjustable-neck-support-cervical-posture-corrector"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585887617101",
-              "title": "AFO Drop Foot Brace | Ankle Foot Orthosis for Men & Women",
-              "handle": "afo-drop-foot-brace-ankle-foot-orthosis-for-men-women"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585887551565",
-              "title": "AOLIKES Ankle Brace | Lace-Up Stabilizer for Sprained Foot",
-              "handle": "aolikes-ankle-brace-lace-up-stabilizer-for-sprained-foot"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585887518797",
-              "title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
-              "handle": "adjustable-wrist-support-brace-fitness-pain-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585887420493",
-              "title": "Ankle Support Brace | Adjustable Compression Wrap",
-              "handle": "ankle-support-brace-adjustable-compression-wrap"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585887092813",
-              "title": "Basketball Knee Pad | Honeycomb Shock Protection",
-              "handle": "basketball-knee-pad-honeycomb-shock-protection"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585887027277",
-              "title": "Cervical Neck Traction Device | Inflatable Home Relief",
-              "handle": "cervical-neck-traction-device-inflatable-home-relief"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585886961741",
-              "title": "Adjustable Cervical Collar | Neck Brace Orthosis",
-              "handle": "adjustable-cervical-collar-neck-brace-orthosis"
-            }
-          },
-          {
-            "node": {
-              "id": "gid://shopify/Product/7585886830669",
-              "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
-              "handle": "back-brace-posture-corrector-scoliosis-hunchback-support"
-            }
-          }
-        ]
+        "edges": []
       }
     }
   ],
   "duplicates": {
-    "exact_title_duplicates": {
-      "Cervical Spine Massager | EMS Neck Lymphatic Drainage": [
-        {
-          "id": "gid://shopify/Product/7586399191117",
-          "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-          "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage"
-        },
-        {
-          "id": "gid://shopify/Product/7586410692685",
-          "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-          "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1"
-        }
-      ]
-    },
-    "similar_title_duplicates": {
-      "cervical spine massager | ems neck lymphatic drainage": [
-        {
-          "id": "gid://shopify/Product/7586399191117",
-          "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-          "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage"
-        },
-        {
-          "id": "gid://shopify/Product/7586410692685",
-          "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-          "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1"
-        }
-      ]
-    },
+    "exact_title_duplicates": {},
+    "similar_title_duplicates": {},
     "handle_duplicates": {},
-    "sku_duplicates_count": 159
+    "sku_duplicates_count": 157
   },
   "multi_collection_analysis": {
-    "count": 33,
-    "products": [
-      {
-        "id": "gid://shopify/Product/7585886502989",
-        "title": "Sports Knee Pads | Meniscus Tear Injury Recovery",
-        "handle": "sports-knee-pads-meniscus-tear-injury-recovery",
-        "collections": [
-          "Home page",
-          "Pain Relief & Recovery"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585886830669",
-        "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
-        "handle": "back-brace-posture-corrector-scoliosis-hunchback-support",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585886961741",
-        "title": "Adjustable Cervical Collar | Neck Brace Orthosis",
-        "handle": "adjustable-cervical-collar-neck-brace-orthosis",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585887027277",
-        "title": "Cervical Neck Traction Device | Inflatable Home Relief",
-        "handle": "cervical-neck-traction-device-inflatable-home-relief",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585887092813",
-        "title": "Basketball Knee Pad | Honeycomb Shock Protection",
-        "handle": "basketball-knee-pad-honeycomb-shock-protection",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585887420493",
-        "title": "Ankle Support Brace | Adjustable Compression Wrap",
-        "handle": "ankle-support-brace-adjustable-compression-wrap",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585887518797",
-        "title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
-        "handle": "adjustable-wrist-support-brace-fitness-pain-relief",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585887551565",
-        "title": "AOLIKES Ankle Brace | Lace-Up Stabilizer for Sprained Foot",
-        "handle": "aolikes-ankle-brace-lace-up-stabilizer-for-sprained-foot",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585887617101",
-        "title": "AFO Drop Foot Brace | Ankle Foot Orthosis for Men & Women",
-        "handle": "afo-drop-foot-brace-ankle-foot-orthosis-for-men-women",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585939423309",
-        "title": "Adjustable Neck Support | Cervical Posture Corrector",
-        "handle": "adjustable-neck-support-cervical-posture-corrector",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585939619917",
-        "title": "Anti-Cellulite Massager | Infrared 3D Roller Body Slimming Device",
-        "handle": "anti-cellulite-massager-infrared-3d-roller-body-slimming-device",
-        "collections": [
-          "Therapy & Wellness",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585939718221",
-        "title": "Cervical Neck Traction Hanging Device | Soft Stretching Belt",
-        "handle": "cervical-neck-traction-hanging-device-soft-stretching-belt",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585939750989",
-        "title": "5-in-1 Smart Cupping Therapy Set | 12-Level Control",
-        "handle": "5-in-1-smart-cupping-therapy-set-12-level-control",
-        "collections": [
-          "Posture & Support",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7585939783757",
-        "title": "Air Neck Stretcher | Cervical Traction Device for Home Use",
-        "handle": "air-neck-stretcher-cervical-traction-device-for-home-use",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7585940308045",
-        "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
-        "handle": "adjustable-knee-patellar-tendon-strap-sports-support",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586399191117",
-        "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-        "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586408923213",
-        "title": "4-in-1 Cavitation Body Slimming Machine | 40K Ultrasound",
-        "handle": "4-in-1-cavitation-body-slimming-machine-40k-ultrasound",
-        "collections": [
-          "Therapy & Wellness",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586408955981",
-        "title": "Adjustable Knee Brace | Orthopedic Leg Support & Pain Relief",
-        "handle": "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
-        "collections": [
-          "Pain Relief & Recovery",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586409119821",
-        "title": "7 Color LED Face Mask | Red Light Therapy",
-        "handle": "7-color-led-face-mask-red-light-therapy",
-        "collections": [
-          "Therapy & Wellness",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586409185357",
-        "title": "7 Color LED Vibrating Neck & Face Massager",
-        "handle": "7-color-led-vibrating-neck-face-massager",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586409349197",
-        "title": "7 Color LED Silicone Face Mask | Home Beauty Device",
-        "handle": "7-color-led-silicone-face-mask-home-beauty-device",
-        "collections": [
-          "Therapy & Wellness",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586409578573",
-        "title": "6D Smart Eye Massager | Vibration & Heat Therapy",
-        "handle": "6d-smart-eye-massager-vibration-heat-therapy",
-        "collections": [
-          "Therapy & Wellness",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586409644109",
-        "title": "7 Color LED + Nano Spray | Anti-Aging Facial Device",
-        "handle": "7-color-led-nano-spray-anti-aging-facial-device",
-        "collections": [
-          "Therapy & Wellness",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586409742413",
-        "title": "Automatic Abdominal Massager | Electric Belly Flattening Device",
-        "handle": "automatic-abdominal-massager-electric-belly-flattening-device",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586409775181",
-        "title": "Adjustable Back Brace Posture Corrector | Spine Support",
-        "handle": "adjustable-back-brace-posture-corrector-spine-support",
-        "collections": [
-          "Pain Relief & Recovery",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586409807949",
-        "title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
-        "handle": "7-color-led-light-therapy-face-mask-anti-aging",
-        "collections": [
-          "Therapy & Wellness",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586409840717",
-        "title": "7 Color LED Mask | PDT Skin Rejuvenation",
-        "handle": "7-color-led-mask-pdt-skin-rejuvenation",
-        "collections": [
-          "Therapy & Wellness",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586410201165",
-        "title": "2-in-1 LED Face & Body Mask | 7 Colors + Heating",
-        "handle": "2-in-1-led-face-body-mask-7-colors-heating",
-        "collections": [
-          "Therapy & Wellness",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586410332237",
-        "title": "Anti-Aging LED Eye Mask | Photon Therapy for Dark Circles",
-        "handle": "anti-aging-led-eye-mask-photon-therapy-for-dark-circles",
-        "collections": [
-          "Therapy & Wellness",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586410430541",
-        "title": "8 Mode EMS Neck Massager | Remote Control & Pain Relief",
-        "handle": "8-mode-ems-neck-massager-remote-control-pain-relief",
-        "collections": [
-          "Posture & Support",
-          "Bestsellers",
-          "New Arrivals"
-        ],
-        "collection_count": 3
-      },
-      {
-        "id": "gid://shopify/Product/7586410627149",
-        "title": "Air Compression Leg Massager | 3 Modes Heat Therapy",
-        "handle": "air-compression-leg-massager-3-modes-heat-therapy",
-        "collections": [
-          "Therapy & Wellness",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586410659917",
-        "title": "Back Support Brace | Adjustable Posture Corrector",
-        "handle": "back-support-brace-adjustable-posture-corrector",
-        "collections": [
-          "Pain Relief & Recovery",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      },
-      {
-        "id": "gid://shopify/Product/7586410692685",
-        "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-        "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1",
-        "collections": [
-          "Posture & Support",
-          "New Arrivals"
-        ],
-        "collection_count": 2
-      }
-    ]
+    "count": 0,
+    "products": []
   },
   "price_matrix": [
     {
@@ -28928,11 +27823,9 @@
       "max_price": 229.55,
       "price_range": 0.0,
       "collections": [
-        "Therapy & Wellness",
-        "Bestsellers",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "EU PLUG (220-240V)",
@@ -28951,11 +27844,9 @@
       "max_price": 193.41,
       "price_range": 0.0,
       "collections": [
-        "Therapy & Wellness",
-        "Bestsellers",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "US or EU plug / spain",
@@ -28980,11 +27871,9 @@
       "max_price": 70.94,
       "price_range": 11.25,
       "collections": [
-        "Posture & Support",
-        "Bestsellers",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "guashayi6dang-red",
@@ -29033,11 +27922,9 @@
       "max_price": 94.17,
       "price_range": 6.1299999999999955,
       "collections": [
-        "Therapy & Wellness",
-        "Bestsellers",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "With Box",
@@ -29062,10 +27949,9 @@
       "max_price": 115.32,
       "price_range": 16.039999999999992,
       "collections": [
-        "Therapy & Wellness",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "white US Plug / United States",
@@ -29090,11 +27976,9 @@
       "max_price": 74.08,
       "price_range": 1.1099999999999994,
       "collections": [
-        "Therapy & Wellness",
-        "Bestsellers",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "US PLUG / Mexico",
@@ -29119,11 +28003,9 @@
       "max_price": 145.03,
       "price_range": 0.0,
       "collections": [
-        "Therapy & Wellness",
-        "Bestsellers",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "United States / WHITE",
@@ -29142,10 +28024,9 @@
       "max_price": 95.71,
       "price_range": 0.0,
       "collections": [
-        "Therapy & Wellness",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "white US Plug / United States",
@@ -29164,10 +28045,9 @@
       "max_price": 90.94,
       "price_range": 0.0,
       "collections": [
-        "Therapy & Wellness",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "WHITE / United States",
@@ -29186,10 +28066,9 @@
       "max_price": 68.77,
       "price_range": 0.269999999999996,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "black / United States",
@@ -29214,11 +28093,9 @@
       "max_price": 143.2,
       "price_range": 26.429999999999993,
       "collections": [
-        "Posture & Support",
-        "Bestsellers",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Black XL",
@@ -29243,10 +28120,9 @@
       "max_price": 92.52,
       "price_range": 0.0,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Left / L",
@@ -29307,10 +28183,9 @@
       "max_price": 59.78,
       "price_range": 1.1899999999999977,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Black / L",
@@ -29347,11 +28222,9 @@
       "max_price": 109.55,
       "price_range": 12.25,
       "collections": [
-        "Pain Relief & Recovery",
-        "Bestsellers",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "1Pcs / Small",
@@ -29382,10 +28255,9 @@
       "max_price": 163.23,
       "price_range": 0.0,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "GRAY / Universal",
@@ -29404,11 +28276,9 @@
       "max_price": 166.73,
       "price_range": 0.0,
       "collections": [
-        "Pain Relief & Recovery",
-        "Bestsellers",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 3,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "L Size For Left Leg",
@@ -29445,10 +28315,9 @@
       "max_price": 192.98,
       "price_range": 2.6599999999999966,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "B / CN",
@@ -29485,10 +28354,9 @@
       "max_price": 205.24,
       "price_range": 0.0,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "1pcs",
@@ -29507,10 +28375,9 @@
       "max_price": 208.65,
       "price_range": 0.30000000000001137,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Left Hand / L",
@@ -29547,10 +28414,9 @@
       "max_price": 116.43,
       "price_range": 0.0,
       "collections": [
-        "Therapy & Wellness",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "United States",
@@ -29569,10 +28435,9 @@
       "max_price": 106.71,
       "price_range": 0.0,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "gray",
@@ -29591,10 +28456,9 @@
       "max_price": 66.34,
       "price_range": 0.0,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Black / M",
@@ -29655,10 +28519,9 @@
       "max_price": 91.75,
       "price_range": 0.39000000000000057,
       "collections": [
-        "Therapy & Wellness",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Black",
@@ -29683,10 +28546,9 @@
       "max_price": 76.17,
       "price_range": 2.4000000000000057,
       "collections": [
-        "Therapy & Wellness",
-        "New Arrivals"
+        "Therapy & Wellness"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "White / EU Plug / CHINA",
@@ -29711,10 +28573,9 @@
       "max_price": 117.93,
       "price_range": 0.0,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "White / United States",
@@ -29733,10 +28594,9 @@
       "max_price": 67.32,
       "price_range": 2.3799999999999955,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "black / S-Belly 70-85cm",
@@ -29779,10 +28639,9 @@
       "max_price": 95.36,
       "price_range": 1.8900000000000006,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "black / M",
@@ -29813,10 +28672,9 @@
       "max_price": 199.75,
       "price_range": 1.0300000000000011,
       "collections": [
-        "Pain Relief & Recovery",
-        "New Arrivals"
+        "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "BLACK / M",
@@ -29865,10 +28723,9 @@
       "max_price": 209.68,
       "price_range": 1.3900000000000148,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Coffee",
@@ -29911,10 +28768,9 @@
       "max_price": 71.64,
       "price_range": 0.0,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "black / CHINA",
@@ -29933,38 +28789,9 @@
       "max_price": 69.17,
       "price_range": 6.719999999999999,
       "collections": [
-        "Posture & Support",
-        "New Arrivals"
+        "Posture & Support"
       ],
-      "collection_count": 2,
-      "variant_prices": [
-        {
-          "variant_title": "Battery model",
-          "price": 62.45,
-          "compare_at_price": 74.94,
-          "sku": "1005005096573902-Battery model"
-        },
-        {
-          "variant_title": "USB charging models",
-          "price": 69.17,
-          "compare_at_price": 83.0,
-          "sku": "1005005096573902-USB charging models"
-        }
-      ],
-      "variant_count": 2
-    },
-    {
-      "product_id": "gid://shopify/Product/7586410692685",
-      "product_title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-      "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1",
-      "min_price": 62.45,
-      "max_price": 69.17,
-      "price_range": 6.719999999999999,
-      "collections": [
-        "Posture & Support",
-        "New Arrivals"
-      ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Battery model",
@@ -35593,10 +34420,9 @@
       "max_price": 81.1,
       "price_range": 3.1599999999999966,
       "collections": [
-        "Home page",
         "Pain Relief & Recovery"
       ],
-      "collection_count": 2,
+      "collection_count": 1,
       "variant_prices": [
         {
           "variant_title": "Dark Grey / L",
@@ -36592,25 +35418,5 @@
       "variant_count": 2
     }
   ],
-  "cleanup_recommendations": [
-    {
-      "normalized_title": "cervical spine massager | ems neck lymphatic drainage",
-      "duplicate_count": 2,
-      "keep": {
-        "id": "gid://shopify/Product/7586399191117",
-        "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-        "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage",
-        "price": 62.45
-      },
-      "delete": [
-        {
-          "id": "gid://shopify/Product/7586410692685",
-          "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
-          "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage-1",
-          "price": 62.45,
-          "price_difference": 0.0
-        }
-      ]
-    }
-  ]
+  "cleanup_recommendations": []
 }
