@@ -1,0 +1,271 @@
+{{ 'component-social-proof.css' | asset_url | stylesheet_tag }}
+
+<div class="social-proof color-{{ section.settings.color_scheme }} gradient">
+  <div class="social-proof__wrapper page-width section-{{ section.id }}-padding">
+    {% if section.settings.heading != blank %}
+      <h2 class="social-proof__heading {{ section.settings.heading_size }} center">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div class="social-proof__grid grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down">
+        {% for block in section.blocks %}
+          <div class="social-proof__item" {{ block.shopify_attributes }}>
+            {% if block.settings.icon != blank %}
+              <div class="social-proof__icon">
+                {{ block.settings.icon }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.stat != blank %}
+              <div class="social-proof__stat">
+                {{ block.settings.stat }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.label != blank %}
+              <div class="social-proof__label">
+                {{ block.settings.label }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.description != blank %}
+              <div class="social-proof__description rte">
+                {{ block.settings.description }}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% style %}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .social-proof {
+    text-align: center;
+  }
+
+  .social-proof__heading {
+    margin-bottom: 3rem;
+  }
+
+  .social-proof__grid {
+    gap: 2rem;
+  }
+
+  .social-proof__item {
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+  }
+
+  .social-proof__icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-proof__stat {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-foreground);
+  }
+
+  .social-proof__label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .social-proof__description {
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Social Proof",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Trusted by Thousands"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "Small"
+        },
+        {
+          "value": "h1",
+          "label": "Medium"
+        },
+        {
+          "value": "h0",
+          "label": "Large"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        }
+      ],
+      "default": "2",
+      "label": "Number of columns on mobile"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "scheme-1",
+          "label": "Scheme 1"
+        },
+        {
+          "value": "scheme-2",
+          "label": "Scheme 2"
+        },
+        {
+          "value": "scheme-3",
+          "label": "Scheme 3"
+        }
+      ],
+      "default": "scheme-1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "proof_item",
+      "name": "Proof Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (emoji)",
+          "default": "⭐"
+        },
+        {
+          "type": "text",
+          "id": "stat",
+          "label": "Statistic",
+          "default": "10,000+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Happy Customers"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Proof",
+      "blocks": [
+        {
+          "type": "proof_item",
+          "settings": {
+            "icon": "⭐",
+            "stat": "10,000+",
+            "label": "Happy Customers"
+          }
+        },
+        {
+          "type": "proof_item",
+          "settings": {
+            "icon": "🚚",
+            "stat": "Free Shipping",
+            "label": "On Orders $50+"
+          }
+        },
+        {
+          "type": "proof_item",
+          "settings": {
+            "icon": "✅",
+            "stat": "30 Days",
+            "label": "Money Back Guarantee"
+          }
+        },
+        {
+          "type": "proof_item",
+          "settings": {
+            "icon": "💪",
+            "stat": "100%",
+            "label": "Quality Guaranteed"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

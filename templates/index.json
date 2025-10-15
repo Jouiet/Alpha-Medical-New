@@ -311,30 +311,16 @@
         "accessibility_info": "Alpha Medical Care product showcase"
       }
     },
-    "featured-collection-0": {
-      "type": "featured-collection",
+    "promo-banner-1": {
+      "type": "promo-banner",
       "settings": {
-        "collection": "pain-relief-recovery",
-        "products_to_show": 4,
-        "title": "Pain Relief & Recovery",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "heading": "🎉 New Offers Every Week!",
+        "heading_size": "h1",
+        "subheading": "<p><strong>Stay tuned for our latest promotions and exclusive deals.</strong></p><p>We constantly update our offers to bring you the best prices on medical equipment.</p>",
+        "button_label": "View All Products",
+        "button_link": "shopify://collections/all",
+        "button_style_secondary": false,
+        "color_scheme": "scheme-2",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -367,32 +353,74 @@
         "padding_bottom": 60
       }
     },
-    "special-offers-section": {
-      "type": "featured-collection",
+    "social-proof-section": {
+      "type": "social-proof",
+      "blocks": {
+        "proof-1": {
+          "type": "proof_item",
+          "settings": {
+            "icon": "⭐",
+            "stat": "10,000+",
+            "label": "Happy Customers",
+            "description": "<p>Trusted by thousands worldwide</p>"
+          }
+        },
+        "proof-2": {
+          "type": "proof_item",
+          "settings": {
+            "icon": "🚚",
+            "stat": "Free Shipping",
+            "label": "On Orders $50+",
+            "description": "<p>Fast delivery to your door</p>"
+          }
+        },
+        "proof-3": {
+          "type": "proof_item",
+          "settings": {
+            "icon": "✅",
+            "stat": "30 Days",
+            "label": "Money Back",
+            "description": "<p>100% satisfaction guarantee</p>"
+          }
+        },
+        "proof-4": {
+          "type": "proof_item",
+          "settings": {
+            "icon": "💪",
+            "stat": "100%",
+            "label": "Quality Guaranteed",
+            "description": "<p>Professional medical equipment</p>"
+          }
+        }
+      },
+      "block_order": [
+        "proof-1",
+        "proof-2",
+        "proof-3",
+        "proof-4"
+      ],
       "settings": {
-        "title": "🎯 Special Offers",
-        "heading_size": "h2",
-        "description": "<p>Limited-time deals on our most popular medical support products</p>",
-        "show_description": true,
-        "description_style": "body",
-        "collection": "bestsellers",
-        "products_to_show": 8,
+        "heading": "Why Choose Alpha Medical Care?",
+        "heading_size": "h1",
         "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "promo-banner-2": {
+      "type": "promo-banner",
+      "settings": {
+        "heading": "💝 Special Promotions",
+        "heading_size": "h1",
+        "subheading": "<p><strong>Check back regularly for limited-time offers!</strong></p><p>Get notified about flash sales, seasonal promotions, and exclusive discounts on premium medical equipment.</p>",
+        "button_label": "Browse Bestsellers",
+        "button_link": "shopify://collections/bestsellers",
+        "button_style_secondary": false,
+        "color_scheme": "scheme-2",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "new-arrivals-section": {
@@ -426,9 +454,10 @@
   },
   "order": [
     "slideshow",
-    "featured-collection-0",
+    "promo-banner-1",
     "bestsellers-section",
-    "special-offers-section",
+    "social-proof-section",
+    "promo-banner-2",
     "new-arrivals-section"
   ]
 }
