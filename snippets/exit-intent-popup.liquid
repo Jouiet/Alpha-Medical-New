@@ -1,0 +1,439 @@
+{% comment %}
+  Exit Intent Popup - Captures abandoning visitors with 15% discount offer
+
+  Features:
+  - Mouse leave detection (desktop)
+  - Scroll-based trigger (mobile, 50% page scroll)
+  - Email capture form
+  - Cookie-based frequency control (shows once per 7 days)
+  - Session-based suppression (once per session)
+  - Responsive design
+  - Accessible (ARIA labels, ESC key close)
+
+  Usage:
+  {% render 'exit-intent-popup' %}
+{% endcomment %}
+
+<dialog class="exit-popup" id="exit-intent-popup" aria-labelledby="exit-popup-title" aria-modal="true">
+  <div class="exit-popup__overlay" onclick="document.getElementById('exit-intent-popup').close()"></div>
+  <div class="exit-popup__content">
+    <button
+      type="button"
+      class="exit-popup__close"
+      onclick="document.getElementById('exit-intent-popup').close()"
+      aria-label="Close popup"
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+
+    <div class="exit-popup__header">
+      <h2 id="exit-popup-title" class="exit-popup__title">Wait! Don't Leave Empty-Handed</h2>
+      <p class="exit-popup__subtitle">Join 10,000+ customers who trust our medical equipment</p>
+    </div>
+
+    <div class="exit-popup__offer">
+      <div class="exit-popup__discount">
+        <span class="exit-popup__discount-value">15% OFF</span>
+        <span class="exit-popup__discount-text">Your First Order</span>
+      </div>
+    </div>
+
+    <form class="exit-popup__form" id="exit-intent-form">
+      <div class="exit-popup__form-group">
+        <label for="exit-email" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="exit-email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          autocomplete="email"
+          class="exit-popup__input"
+        >
+      </div>
+      <button type="submit" class="exit-popup__button button button--primary">
+        Claim My 15% OFF
+      </button>
+    </form>
+
+    <p class="exit-popup__terms">
+      <small>*Code will be sent to your email. Minimum purchase $50. One-time use only.</small>
+    </p>
+
+    <p class="exit-popup__privacy">
+      <small>We respect your privacy. Unsubscribe anytime.</small>
+    </p>
+  </div>
+</dialog>
+
+<style>
+  .exit-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: none;
+    max-height: none;
+  }
+
+  .exit-popup[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .exit-popup::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+  }
+
+  .exit-popup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .exit-popup__content {
+    position: relative;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    padding: 2.5rem 2rem;
+    animation: exit-popup-slide-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 1;
+  }
+
+  @keyframes exit-popup-slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .exit-popup__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .exit-popup__close:hover {
+    background: #f8f9fa;
+    color: #212529;
+  }
+
+  .exit-popup__header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .exit-popup__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #212529;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+
+  .exit-popup__subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0;
+  }
+
+  .exit-popup__offer {
+    margin-bottom: 1.5rem;
+  }
+
+  .exit-popup__discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #4770DB 0%, #6a8eec 100%);
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  .exit-popup__discount-value {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .exit-popup__discount-text {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .exit-popup__form {
+    margin-bottom: 1rem;
+  }
+
+  .exit-popup__form-group {
+    margin-bottom: 1rem;
+  }
+
+  .exit-popup__input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+  }
+
+  .exit-popup__input:focus {
+    outline: none;
+    border-color: #4770DB;
+    box-shadow: 0 0 0 3px rgba(71, 112, 219, 0.1);
+  }
+
+  .exit-popup__button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #4770DB;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .exit-popup__button:hover {
+    background: #3a5bb8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(71, 112, 219, 0.3);
+  }
+
+  .exit-popup__button:active {
+    transform: translateY(0);
+  }
+
+  .exit-popup__terms {
+    text-align: center;
+    color: #6c757d;
+    margin: 0 0 0.5rem;
+  }
+
+  .exit-popup__privacy {
+    text-align: center;
+    color: #adb5bd;
+    margin: 0;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .exit-popup__content {
+      padding: 2rem 1.5rem;
+    }
+
+    .exit-popup__title {
+      font-size: 1.5rem;
+    }
+
+    .exit-popup__discount-value {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* Hide visually but keep accessible */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
+
+<script>
+  (function() {
+    const popup = document.getElementById('exit-intent-popup');
+    const form = document.getElementById('exit-intent-form');
+
+    if (!popup || !form) return;
+
+    // Configuration
+    const COOKIE_NAME = 'exit_intent_shown';
+    const COOKIE_DAYS = 7;
+    const SESSION_KEY = 'exit_intent_session_shown';
+    const MOBILE_SCROLL_THRESHOLD = 50; // percentage
+
+    // Check if already shown
+    function hasBeenShown() {
+      // Check session storage (once per session)
+      if (sessionStorage.getItem(SESSION_KEY)) {
+        return true;
+      }
+
+      // Check cookie (once per 7 days)
+      const cookies = document.cookie.split(';');
+      for (let cookie of cookies) {
+        if (cookie.trim().startsWith(COOKIE_NAME + '=')) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+
+    // Set cookie and session marker
+    function markAsShown() {
+      // Set session marker
+      sessionStorage.setItem(SESSION_KEY, 'true');
+
+      // Set cookie
+      const date = new Date();
+      date.setTime(date.getTime() + (COOKIE_DAYS * 24 * 60 * 60 * 1000));
+      document.cookie = `${COOKIE_NAME}=true; expires=${date.toUTCString()}; path=/; SameSite=Lax`;
+    }
+
+    // Show popup
+    function showPopup() {
+      if (hasBeenShown()) return;
+
+      popup.showModal();
+      markAsShown();
+
+      // Track event (if analytics available)
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'exit_intent_popup_shown', {
+          event_category: 'engagement',
+          event_label: 'exit_intent'
+        });
+      }
+    }
+
+    // Desktop: Mouse leave detection
+    let mouseLeft = false;
+    document.addEventListener('mouseleave', function(e) {
+      if (e.clientY <= 0 && !mouseLeft) {
+        mouseLeft = true;
+        showPopup();
+      }
+    });
+
+    // Mobile: Scroll-based trigger (50% page scroll)
+    let scrollTriggered = false;
+    function checkScroll() {
+      if (scrollTriggered) return;
+
+      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+      if (scrollPercent >= MOBILE_SCROLL_THRESHOLD && window.innerWidth <= 768) {
+        scrollTriggered = true;
+        showPopup();
+      }
+    }
+
+    window.addEventListener('scroll', checkScroll, { passive: true });
+
+    // ESC key to close
+    popup.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        popup.close();
+      }
+    });
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById('exit-email').value;
+      const button = form.querySelector('button[type="submit"]');
+      const originalText = button.textContent;
+
+      // Disable button during submission
+      button.disabled = true;
+      button.textContent = 'Sending...';
+
+      // Submit to Shopify Customer API
+      fetch('/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'form_type': 'customer',
+          'utf8': '✓',
+          'contact[email]': email,
+          'contact[tags]': 'exit-intent,newsletter,discount-15'
+        })
+      })
+      .then(response => {
+        if (response.ok || response.redirected) {
+          // Success
+          popup.innerHTML = `
+            <div class="exit-popup__overlay" onclick="document.getElementById('exit-intent-popup').close()"></div>
+            <div class="exit-popup__content" style="text-align: center; padding: 3rem 2rem;">
+              <div style="font-size: 3rem; margin-bottom: 1rem;">✓</div>
+              <h2 style="margin-bottom: 1rem; color: #212529;">Check Your Email!</h2>
+              <p style="color: #6c757d; margin-bottom: 1.5rem;">
+                Your 15% discount code has been sent to:<br>
+                <strong>${email}</strong>
+              </p>
+              <button
+                onclick="document.getElementById('exit-intent-popup').close()"
+                class="exit-popup__button button button--primary"
+                style="max-width: 200px; margin: 0 auto;"
+              >
+                Continue Shopping
+              </button>
+            </div>
+          `;
+
+          // Track conversion
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'exit_intent_conversion', {
+              event_category: 'conversion',
+              event_label: 'email_captured'
+            });
+          }
+        } else {
+          throw new Error('Submission failed');
+        }
+      })
+      .catch(error => {
+        console.error('Exit intent form error:', error);
+        button.disabled = false;
+        button.textContent = originalText;
+        alert('Unable to process your request. Please try again.');
+      });
+    });
+  })();
+</script>

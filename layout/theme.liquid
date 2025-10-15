@@ -383,5 +383,8 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {%- comment -%}Exit Intent Popup - Capture abandoning visitors{%- endcomment -%}
+    {%- render 'exit-intent-popup' -%}
   </body>
 </html>
