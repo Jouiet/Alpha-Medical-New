@@ -308,7 +308,8 @@
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Alpha Medical Care product showcase"
+        "accessibility_info": "Alpha Medical Care product showcase",
+        "seo_h1": "Professional Medical Support Equipment & Orthopedic Braces - Alpha Medical Care"
       }
     },
     "promo-banner-1": {
@@ -330,7 +331,7 @@
       "settings": {
         "collection": "bestsellers",
         "products_to_show": 8,
-        "title": "\ud83d\udd25 Our Bestsellers",
+        "title": "🔥 Our Bestsellers",
         "heading_size": "h2",
         "description": "<p>Discover our most popular medical support products</p>",
         "show_description": true,
@@ -401,12 +402,12 @@
       ],
       "settings": {
         "heading": "Why Choose Alpha Medical Care?",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 72,
+        "padding_bottom": 84
       }
     },
     "promo-banner-2": {
@@ -426,18 +427,18 @@
     "new-arrivals-section": {
       "type": "featured-collection",
       "settings": {
+        "collection": "new-arrivals",
+        "products_to_show": 25,
         "title": "New Arrivals",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "new-arrivals",
-        "products_to_show": 25,
         "columns_desktop": 4,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
