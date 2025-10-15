@@ -9,6 +9,26 @@
   }
 {%- endstyle -%}
 
+{%- if collection -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ collection.title | json }},
+  "description": {{ collection.description | default: collection.title | strip_html | json }},
+  "url": "{{ shop.secure_url }}{{ collection.url }}",
+  "numberOfItems": {{ collection.all_products_count }},
+  "inLanguage": "en-US",
+  "image": {% if collection.image %}{{ collection.image | image_url: width: 1200 | prepend: "https:" | json }}{% else %}{{ shop.brand.logo | image_url: width: 1200 | prepend: "https:" | json }}{% endif %},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    "url": {{ shop.secure_url | json }}
+  }
+}
+</script>
+{%- endif -%}
+
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">

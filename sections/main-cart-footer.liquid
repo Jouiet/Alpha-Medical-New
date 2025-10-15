@@ -37,6 +37,33 @@
         </cart-note>
       {%- endif -%}
 
+      {%- liquid
+        assign free_shipping_threshold = 5000
+        assign cart_total = cart.total_price
+        assign remaining_for_free_shipping = free_shipping_threshold | minus: cart_total
+        assign progress_percentage = cart_total | times: 100 | divided_by: free_shipping_threshold
+        if progress_percentage > 100
+          assign progress_percentage = 100
+        endif
+      -%}
+
+      {%- if cart != empty -%}
+        <div class="cart__free-shipping" style="margin-bottom: 2rem; padding: 1.25rem; background: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
+          {%- if remaining_for_free_shipping > 0 -%}
+            <p style="margin: 0 0 0.75rem; font-size: 0.9375rem; text-align: center; color: #212529;">
+              <strong>Add {{ remaining_for_free_shipping | money }} more to get FREE SHIPPING!</strong>
+            </p>
+          {%- else -%}
+            <p style="margin: 0 0 0.75rem; font-size: 0.9375rem; text-align: center; color: #198754;">
+              ✓ <strong>You've unlocked FREE SHIPPING!</strong>
+            </p>
+          {%- endif -%}
+          <div style="height: 10px; background: #e9ecef; border-radius: 10px; overflow: hidden;">
+            <div style="height: 100%; background: linear-gradient(90deg, #4770DB 0%, #6a8eec 100%); width: {{ progress_percentage }}%; transition: width 0.3s ease; border-radius: 10px;"></div>
+          </div>
+        </div>
+      {%- endif -%}
+
       <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}

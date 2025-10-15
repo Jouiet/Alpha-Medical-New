@@ -74,6 +74,63 @@
           </span>
         </button>
       </div>
+
+      {%- liquid
+        assign free_shipping_threshold = 5000
+        assign cart_total = cart.total_price
+        assign remaining_for_free_shipping = free_shipping_threshold | minus: cart_total
+        assign progress_percentage = cart_total | times: 100 | divided_by: free_shipping_threshold
+        if progress_percentage > 100
+          assign progress_percentage = 100
+        endif
+      -%}
+
+      {%- if cart != empty -%}
+        <div class="cart-drawer__free-shipping">
+          {%- if remaining_for_free_shipping > 0 -%}
+            <p class="cart-drawer__shipping-text">
+              <strong>Add {{ remaining_for_free_shipping | money }} more to get FREE SHIPPING!</strong>
+            </p>
+          {%- else -%}
+            <p class="cart-drawer__shipping-text cart-drawer__shipping-text--success">
+              ✓ <strong>You've unlocked FREE SHIPPING!</strong>
+            </p>
+          {%- endif -%}
+          <div class="cart-drawer__progress-bar">
+            <div class="cart-drawer__progress-fill" style="width: {{ progress_percentage }}%;"></div>
+          </div>
+        </div>
+      {%- endif -%}
+
+      <style>
+        .cart-drawer__free-shipping {
+          padding: 1rem 1.5rem;
+          background: #f8f9fa;
+          border-bottom: 1px solid #e9ecef;
+        }
+        .cart-drawer__shipping-text {
+          margin: 0 0 0.75rem;
+          font-size: 0.875rem;
+          text-align: center;
+          color: #212529;
+        }
+        .cart-drawer__shipping-text--success {
+          color: #198754;
+        }
+        .cart-drawer__progress-bar {
+          height: 8px;
+          background: #e9ecef;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        .cart-drawer__progress-fill {
+          height: 100%;
+          background: linear-gradient(90deg, #4770DB 0%, #6a8eec 100%);
+          transition: width 0.3s ease;
+          border-radius: 10px;
+        }
+      </style>
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
