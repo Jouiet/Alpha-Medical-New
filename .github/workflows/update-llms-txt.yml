@@ -1,0 +1,75 @@
+name: Update llms.txt
+
+on:
+  push:
+    paths:
+      - '**.md'
+      - 'generate_llms_txt.py'
+      - 'generate_llms_full.py'
+  workflow_dispatch:
+
+jobs:
+  update-llms-txt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Generate llms.txt
+        run: |
+          python3 generate_llms_txt.py
+          echo "✅ llms.txt generated"
+
+      - name: Generate llms-full.txt
+        run: |
+          python3 generate_llms_full.py
+          echo "✅ llms-full.txt generated"
+
+      - name: Validate llms.txt files
+        run: |
+          python3 validate_llms_txt.py
+          echo "✅ Validation complete"
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet llms.txt llms-full.txt; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in llms.txt files"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in llms.txt files"
+          fi
+
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add llms.txt llms-full.txt
+          git commit -m "docs: auto-update llms.txt files [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        run: |
+          echo "## llms.txt Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [[ "${{ steps.check_changes.outputs.changed }}" == "true" ]]; then
+            echo "✅ llms.txt files updated and committed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No changes detected - llms.txt files are up to date" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### File Sizes" >> $GITHUB_STEP_SUMMARY
+          echo "- llms.txt: $(du -h llms.txt | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          echo "- llms-full.txt: $(du -h llms-full.txt | cut -f1)" >> $GITHUB_STEP_SUMMARY
