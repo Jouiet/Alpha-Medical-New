@@ -6738,6 +6738,10 @@ Shopify migrated abandoned checkout emails to a new Marketing Automations system
 
 4. **Third-Party App Limitations:**
    - ❌ Bundler App: No public API for bundle configuration
+     - JavaScript API verified (https://bundler.app/javascript-api-documentation)
+     - Available methods: getBundles(), refresh(), checkout() - frontend interaction only
+     - NOT available: Create bundle, assign products, set discounts, configure settings
+     - Conclusion: Frontend API for widget interaction, not backend configuration
    - ❌ ReConvert App: No public API for upsell configuration
    - Root Cause: Apps designed for manual UI configuration only
 
