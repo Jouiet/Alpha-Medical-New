@@ -238,18 +238,18 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#4770db",
+          "background": "#0e1b4d",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#0e1b4d",
+          "button_label": "#4770db",
           "secondary_button_label": "#ffffff",
           "shadow": "#0e1b4d"
         }
       },
       "scheme-4": {
         "settings": {
-          "background": "#0e1b4d",
+          "background": "#4770db",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
