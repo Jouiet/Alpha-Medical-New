@@ -1,0 +1,378 @@
+{
+  "frequently_bought_together_strategy": {
+    "description": "Product pairing recommendations for Bundler app configuration",
+    "total_products": 153,
+    "target": "10-15% AOV increase via complementary product bundling",
+    "implementation": "Manual configuration in Bundler app UI"
+  },
+  "category_strategies": {
+    "neck_cervical": {
+      "count": 27,
+      "primary_products": [
+        {
+          "product": "Portable Neck Massager | Smart Shoulder Cervical Relief",
+          "handle": "portable-neck-massager-smart-shoulder-cervical-relief",
+          "pair_with": [
+            {
+              "product": "Heat & Music Eye Massager",
+              "handle": "heat-music-eye-massager-migraine-eye-fatigue-relief",
+              "rationale": "Customers with neck pain often have eye strain/headaches"
+            },
+            {
+              "product": "Shoulder Vibration Massager",
+              "handle": "shoulder-vibration-massager-electric-neck-cervical",
+              "rationale": "Complementary shoulder/neck treatment"
+            }
+          ]
+        },
+        {
+          "product": "8 Mode EMS Neck Massager",
+          "handle": "8-mode-ems-neck-massager-remote-control-pain-relief",
+          "pair_with": [
+            {
+              "product": "LED Face & Neck Mask",
+              "handle": "led-face-neck-mask-red-light-infrared-therapy",
+              "rationale": "Combine EMS therapy with light therapy for enhanced recovery"
+            },
+            {
+              "product": "Electric Gua Sha Board",
+              "handle": "electric-gua-sha-board-vibration-massage-hot-compress",
+              "rationale": "Additional massage therapy tool"
+            }
+          ]
+        }
+      ]
+    },
+    "back_posture": {
+      "count": 17,
+      "primary_products": [
+        {
+          "product": "Back Support Brace | Adjustable Posture Corrector",
+          "handle": "back-support-brace-adjustable-posture-corrector",
+          "pair_with": [
+            {
+              "product": "Electric Lumbar Massager",
+              "handle": "electric-lumbar-massager-heated-vibration-back-brace",
+              "rationale": "Active therapy + passive support combination"
+            },
+            {
+              "product": "Air Compression Leg Massager",
+              "handle": "air-compression-leg-massager-3-modes-heat-therapy",
+              "rationale": "Full lower body recovery system"
+            }
+          ]
+        },
+        {
+          "product": "Adjustable Back Brace Posture Corrector",
+          "handle": "adjustable-back-brace-posture-corrector-spine-support",
+          "pair_with": [
+            {
+              "product": "Vibration Shoulder Steamer",
+              "handle": "vibration-shoulder-steamer-heated-belt-massager",
+              "rationale": "Upper back/shoulder support"
+            }
+          ]
+        }
+      ]
+    },
+    "knee_joint": {
+      "count": 37,
+      "primary_products": [
+        {
+          "product": "Spring Knee Booster | Elderly Climbing Power Support",
+          "handle": "spring-knee-booster-elderly-climbing-power-support",
+          "pair_with": [
+            {
+              "product": "Foreverlily Smart Knee Massager",
+              "handle": "foreverlily-smart-knee-massager-vibration-air-pressure",
+              "rationale": "Support + therapy for complete knee care"
+            },
+            {
+              "product": "Air Compression Leg Massager",
+              "handle": "air-compression-leg-massager-3-modes-heat-therapy",
+              "rationale": "Full leg recovery system"
+            }
+          ]
+        },
+        {
+          "product": "Hinged Knee Brace | Post-Op ROM Adjustable Recovery",
+          "handle": "hinged-knee-brace-post-op-rom-adjustable-recovery",
+          "pair_with": [
+            {
+              "product": "Foreverlily Smart Knee Massager",
+              "handle": "foreverlily-smart-knee-massager-vibration-air-pressure",
+              "rationale": "Post-op recovery brace + massage therapy"
+            }
+          ]
+        },
+        {
+          "product": "Adjustable Knee Brace | Orthopedic Leg Support",
+          "handle": "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+          "pair_with": [
+            {
+              "product": "Spring Knee Booster",
+              "handle": "spring-knee-booster-elderly-climbing-power-support",
+              "rationale": "Dual knee support for severe cases"
+            }
+          ]
+        }
+      ]
+    },
+    "massage_therapy": {
+      "count": 31,
+      "primary_products": [
+        {
+          "product": "Lymphatic Drainage Brush | Electric EMS Body Massage Tool",
+          "handle": "lymphatic-drainage-brush-electric-ems-body-massage-tool",
+          "pair_with": [
+            {
+              "product": "Electric Gua Sha Board",
+              "handle": "electric-gua-sha-board-vibration-massage-hot-compress",
+              "rationale": "Complementary lymphatic drainage tools"
+            },
+            {
+              "product": "EMS Body Sculptor",
+              "handle": "ems-body-sculptor-wireless-butt-trainer-29-levels",
+              "rationale": "Full body toning system"
+            }
+          ]
+        },
+        {
+          "product": "Heat & Music Eye Massager",
+          "handle": "heat-music-eye-massager-migraine-eye-fatigue-relief",
+          "pair_with": [
+            {
+              "product": "Anti-Aging LED Eye Mask",
+              "handle": "anti-aging-led-eye-mask-photon-therapy-for-dark-circles",
+              "rationale": "Complete eye care system (massage + light therapy)"
+            },
+            {
+              "product": "Sleep Mask with Bluetooth 5.3",
+              "handle": "sleep-mask-with-bluetooth-5-3-headphones-for-sleep",
+              "rationale": "Eye relaxation + sleep quality improvement"
+            }
+          ]
+        },
+        {
+          "product": "Air Compression Leg Massager",
+          "handle": "air-compression-leg-massager-3-modes-heat-therapy",
+          "pair_with": [
+            {
+              "product": "Electric Gua Sha Board",
+              "handle": "electric-gua-sha-board-vibration-massage-hot-compress",
+              "rationale": "Full body massage system"
+            }
+          ]
+        }
+      ]
+    },
+    "led_light_therapy": {
+      "count": 12,
+      "primary_products": [
+        {
+          "product": "2-in-1 LED Face & Body Mask | 7 Colors + Heating",
+          "handle": "2-in-1-led-face-body-mask-7-colors-heating",
+          "pair_with": [
+            {
+              "product": "Anti-Aging LED Eye Mask",
+              "handle": "anti-aging-led-eye-mask-photon-therapy-for-dark-circles",
+              "rationale": "Complete facial light therapy system"
+            },
+            {
+              "product": "Electric Gua Sha Board",
+              "handle": "electric-gua-sha-board-vibration-massage-hot-compress",
+              "rationale": "Light therapy + manual therapy combination"
+            }
+          ]
+        },
+        {
+          "product": "Red Light Therapy Face Mask",
+          "handle": "red-light-therapy-face-mask-3-wavelength-rejuvenation",
+          "pair_with": [
+            {
+              "product": "V-Line Face Slimming | EMS Lifting",
+              "handle": "v-line-face-slimming-ems-lifting-microcurrent-device",
+              "rationale": "Anti-aging light + facial toning"
+            }
+          ]
+        },
+        {
+          "product": "Professional 7-Color LED Mask",
+          "handle": "professional-7-color-led-mask-facial-light-therapy",
+          "pair_with": [
+            {
+              "product": "Anti-Aging LED Eye Mask",
+              "handle": "anti-aging-led-eye-mask-photon-therapy-for-dark-circles",
+              "rationale": "Professional full-face + eye therapy"
+            }
+          ]
+        }
+      ]
+    },
+    "ems_electrical": {
+      "count": 11,
+      "primary_products": [
+        {
+          "product": "EMS Body Sculptor | Wireless Butt Trainer",
+          "handle": "ems-body-sculptor-wireless-butt-trainer-29-levels",
+          "pair_with": [
+            {
+              "product": "EMS Abdominal Belt",
+              "handle": "ems-abdominal-belt-usb-rechargeable-muscle-toner",
+              "rationale": "Complete core + glutes toning system"
+            },
+            {
+              "product": "Smart Hip Trainer",
+              "handle": "smart-hip-trainer-ems-vibration-muscle-stimulator",
+              "rationale": "Full lower body toning"
+            }
+          ]
+        },
+        {
+          "product": "EMS Abdominal Belt | USB Rechargeable Muscle Toner",
+          "handle": "ems-abdominal-belt-usb-rechargeable-muscle-toner",
+          "pair_with": [
+            {
+              "product": "EMS Hip Trainer",
+              "handle": "ems-hip-trainer-butt-lift-muscle-stimulator",
+              "rationale": "Complete midsection toning"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "top_10_fbt_configurations": [
+    {
+      "priority": 1,
+      "main_product": "portable-neck-massager-smart-shoulder-cervical-relief",
+      "fbt_products": [
+        "heat-music-eye-massager-migraine-eye-fatigue-relief",
+        "shoulder-vibration-massager-electric-neck-cervical"
+      ],
+      "rationale": "Neck pain sufferers often have related issues (headaches, shoulder tension)",
+      "expected_bundle_aov": "+25-35%"
+    },
+    {
+      "priority": 2,
+      "main_product": "spring-knee-booster-elderly-climbing-power-support",
+      "fbt_products": [
+        "foreverlily-smart-knee-massager-vibration-air-pressure",
+        "air-compression-leg-massager-3-modes-heat-therapy"
+      ],
+      "rationale": "Complete knee + leg recovery system for mobility issues",
+      "expected_bundle_aov": "+30-40%"
+    },
+    {
+      "priority": 3,
+      "main_product": "back-support-brace-adjustable-posture-corrector",
+      "fbt_products": [
+        "electric-lumbar-massager-heated-vibration-back-brace",
+        "air-compression-leg-massager-3-modes-heat-therapy"
+      ],
+      "rationale": "Back pain patients need both support and therapy",
+      "expected_bundle_aov": "+25-30%"
+    },
+    {
+      "priority": 4,
+      "main_product": "2-in-1-led-face-body-mask-7-colors-heating",
+      "fbt_products": [
+        "anti-aging-led-eye-mask-photon-therapy-for-dark-circles",
+        "electric-gua-sha-board-vibration-massage-hot-compress"
+      ],
+      "rationale": "Complete facial care system (light therapy + massage)",
+      "expected_bundle_aov": "+35-45%"
+    },
+    {
+      "priority": 5,
+      "main_product": "ems-body-sculptor-wireless-butt-trainer-29-levels",
+      "fbt_products": [
+        "ems-abdominal-belt-usb-rechargeable-muscle-toner",
+        "smart-hip-trainer-ems-vibration-muscle-stimulator"
+      ],
+      "rationale": "Full body toning system for fitness enthusiasts",
+      "expected_bundle_aov": "+30-40%"
+    },
+    {
+      "priority": 6,
+      "main_product": "lymphatic-drainage-brush-electric-ems-body-massage-tool",
+      "fbt_products": [
+        "electric-gua-sha-board-vibration-massage-hot-compress",
+        "ems-body-sculptor-wireless-butt-trainer-29-levels"
+      ],
+      "rationale": "Complete body sculpting and drainage system",
+      "expected_bundle_aov": "+25-35%"
+    },
+    {
+      "priority": 7,
+      "main_product": "heat-music-eye-massager-migraine-eye-fatigue-relief",
+      "fbt_products": [
+        "anti-aging-led-eye-mask-photon-therapy-for-dark-circles",
+        "sleep-mask-with-bluetooth-5-3-headphones-for-sleep"
+      ],
+      "rationale": "Complete eye care + sleep quality system",
+      "expected_bundle_aov": "+20-30%"
+    },
+    {
+      "priority": 8,
+      "main_product": "8-mode-ems-neck-massager-remote-control-pain-relief",
+      "fbt_products": [
+        "led-face-neck-mask-red-light-infrared-therapy",
+        "electric-gua-sha-board-vibration-massage-hot-compress"
+      ],
+      "rationale": "Multi-modal neck therapy (EMS + light + massage)",
+      "expected_bundle_aov": "+30-40%"
+    },
+    {
+      "priority": 9,
+      "main_product": "hinged-knee-brace-post-op-rom-adjustable-recovery",
+      "fbt_products": [
+        "foreverlily-smart-knee-massager-vibration-air-pressure"
+      ],
+      "rationale": "Post-surgery recovery support + therapy",
+      "expected_bundle_aov": "+20-25%"
+    },
+    {
+      "priority": 10,
+      "main_product": "red-light-therapy-face-mask-3-wavelength-rejuvenation",
+      "fbt_products": [
+        "v-line-face-slimming-ems-lifting-microcurrent-device",
+        "anti-aging-led-eye-mask-photon-therapy-for-dark-circles"
+      ],
+      "rationale": "Professional anti-aging system (light + EMS + eye care)",
+      "expected_bundle_aov": "+35-45%"
+    }
+  ],
+  "implementation_steps": [
+    "1. Open Bundler app from Shopify admin (Apps → Bundler)",
+    "2. For each of the top 10 FBT configurations above:",
+    "   a. Click 'Create Bundle' or 'Frequently Bought Together'",
+    "   b. Select main product by handle",
+    "   c. Add FBT products (1-2 complementary items)",
+    "   d. Set discount (recommend 5-10% bundle discount)",
+    "   e. Configure 'Add All to Cart' button styling",
+    "   f. Enable on product page",
+    "   g. Save configuration",
+    "3. Test each bundle on frontend",
+    "4. Monitor conversion rates via Bundler analytics"
+  ],
+  "expected_impact": {
+    "aov_increase": "+15-20%",
+    "bundle_acceptance_rate": "8-12%",
+    "monthly_additional_revenue": "$800-1200",
+    "implementation_time": "1-2 hours for 10 bundles",
+    "roi": "Immediate (Bundler is already installed)"
+  },
+  "monitoring_kpis": {
+    "weekly": [
+      "Bundle acceptance rate (target: >8%)",
+      "Average order value change (target: +15%)",
+      "Most popular bundles (optimize winners)"
+    ],
+    "monthly": [
+      "Revenue from bundles vs standalone",
+      "Customer satisfaction (reviews mentioning bundles)",
+      "Adjust underperforming bundles"
+    ]
+  }
+}
