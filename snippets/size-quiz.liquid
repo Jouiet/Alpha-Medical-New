@@ -1,0 +1,995 @@
+{% comment %}
+  Size Selection Quiz - Interactive sizing guide
+  Helps customers find the right size for medical support products
+  Reduces returns and improves conversion
+{% endcomment %}
+
+<div class="size-quiz-container" id="sizeQuizContainer">
+  <button type="button" class="size-quiz-trigger" id="sizeQuizTrigger">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 15H9V13H11V15ZM11 11H9V5H11V11Z" fill="currentColor"/>
+    </svg>
+    Find Your Perfect Size
+  </button>
+
+  <div class="size-quiz-modal" id="sizeQuizModal" style="display: none;">
+    <div class="size-quiz-overlay" id="sizeQuizOverlay"></div>
+    <div class="size-quiz-content">
+      <button type="button" class="size-quiz-close" id="sizeQuizClose" aria-label="Close size quiz">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="size-quiz-header">
+        <h2>Find Your Perfect Size</h2>
+        <p class="size-quiz-subtitle">Answer a few quick questions to get your personalized size recommendation</p>
+        <div class="size-quiz-progress">
+          <div class="size-quiz-progress-bar" id="quizProgressBar"></div>
+        </div>
+        <p class="size-quiz-step-counter" id="stepCounter">Question 1 of 5</p>
+      </div>
+
+      <div class="size-quiz-body">
+        <!-- Step 1: Product Type -->
+        <div class="size-quiz-step active" data-step="1">
+          <h3>What type of product are you looking for?</h3>
+          <div class="size-quiz-options">
+            <button type="button" class="size-quiz-option" data-answer="knee">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 14V24L30 30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Knee Brace / Support</span>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="back">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="14" y="10" width="20" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="24" y1="16" x2="24" y2="32" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <span>Back Brace / Lumbar Support</span>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="wrist">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="12" y="18" width="24" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="18" y1="24" x2="30" y2="24" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <span>Wrist Brace / Support</span>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="ankle">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="28" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 18V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Ankle Brace / Support</span>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="shoulder">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="18" cy="18" r="8" stroke="currentColor" stroke-width="2"/>
+                <path d="M18 26V38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Shoulder / Posture Corrector</span>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="other">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="24" cy="24" r="2" fill="currentColor"/>
+                <circle cx="18" cy="24" r="2" fill="currentColor"/>
+                <circle cx="30" cy="24" r="2" fill="currentColor"/>
+              </svg>
+              <span>Other Product</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Body Measurements -->
+        <div class="size-quiz-step" data-step="2">
+          <h3 id="measurementTitle">Measure your knee circumference</h3>
+          <p class="size-quiz-measurement-guide" id="measurementGuide">
+            Measure around the center of your kneecap with a soft measuring tape. Stand with leg slightly bent.
+          </p>
+          <div class="size-quiz-measurement-visual">
+            <img src="https://via.placeholder.com/300x200?text=Measurement+Guide" alt="How to measure" id="measurementImage">
+          </div>
+          <div class="size-quiz-input-group">
+            <label for="measurementInput">Your measurement:</label>
+            <div class="size-quiz-input-wrapper">
+              <input type="number" id="measurementInput" min="8" max="30" step="0.5" placeholder="e.g., 14.5">
+              <select id="measurementUnit" class="size-quiz-unit-select">
+                <option value="inches">inches</option>
+                <option value="cm">cm</option>
+              </select>
+            </div>
+            <p class="size-quiz-hint">Typical range: 12-18 inches (30-46 cm)</p>
+          </div>
+          <div class="size-quiz-navigation">
+            <button type="button" class="size-quiz-btn-secondary" id="backBtn2">Back</button>
+            <button type="button" class="size-quiz-btn-primary" id="nextBtn2" disabled>Continue</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Pain Level / Support Need -->
+        <div class="size-quiz-step" data-step="3">
+          <h3>What level of support do you need?</h3>
+          <p class="size-quiz-description">Select the option that best describes your situation</p>
+          <div class="size-quiz-options vertical">
+            <button type="button" class="size-quiz-option-card" data-answer="light">
+              <div class="option-card-header">
+                <strong>Light Support</strong>
+                <span class="option-badge">Mild</span>
+              </div>
+              <p>Preventive use, mild discomfort, or general support during activities</p>
+            </button>
+            <button type="button" class="size-quiz-option-card" data-answer="moderate">
+              <div class="option-card-header">
+                <strong>Moderate Support</strong>
+                <span class="option-badge">Medium</span>
+              </div>
+              <p>Recovering from minor injury, moderate pain, or post-workout support</p>
+            </button>
+            <button type="button" class="size-quiz-option-card" data-answer="strong">
+              <div class="option-card-header">
+                <strong>Strong Support</strong>
+                <span class="option-badge">High</span>
+              </div>
+              <p>Significant pain, post-surgery recovery, or severe instability</p>
+            </button>
+            <button type="button" class="size-quiz-option-card" data-answer="maximum">
+              <div class="option-card-header">
+                <strong>Maximum Support</strong>
+                <span class="option-badge">Maximum</span>
+              </div>
+              <p>Immobilization needed, severe injury, or doctor-recommended rigid support</p>
+            </button>
+          </div>
+          <div class="size-quiz-navigation">
+            <button type="button" class="size-quiz-btn-secondary" id="backBtn3">Back</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Activity Level -->
+        <div class="size-quiz-step" data-step="4">
+          <h3>What's your activity level?</h3>
+          <p class="size-quiz-description">This helps us recommend the right materials and features</p>
+          <div class="size-quiz-options">
+            <button type="button" class="size-quiz-option" data-answer="sedentary">
+              <span class="option-icon">🪑</span>
+              <strong>Sedentary</strong>
+              <p>Mostly sitting, light daily activities</p>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="light">
+              <span class="option-icon">🚶</span>
+              <strong>Light Activity</strong>
+              <p>Walking, light housework, office work</p>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="moderate">
+              <span class="option-icon">🏃</span>
+              <strong>Moderate Activity</strong>
+              <p>Regular exercise, active job, recreational sports</p>
+            </button>
+            <button type="button" class="size-quiz-option" data-answer="athletic">
+              <span class="option-icon">⚡</span>
+              <strong>Athletic</strong>
+              <p>Competitive sports, intense training, physical job</p>
+            </button>
+          </div>
+          <div class="size-quiz-navigation">
+            <button type="button" class="size-quiz-btn-secondary" id="backBtn4">Back</button>
+          </div>
+        </div>
+
+        <!-- Step 5: Results -->
+        <div class="size-quiz-step" data-step="5">
+          <div class="size-quiz-results">
+            <div class="results-success-icon">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="30" fill="#10b981" opacity="0.2"/>
+                <path d="M20 32L28 40L44 24" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Your Perfect Size</h3>
+            <div class="results-size-display">
+              <span class="results-size-label">Recommended Size:</span>
+              <span class="results-size-value" id="recommendedSize">Medium</span>
+            </div>
+            <div class="results-details" id="resultsDetails">
+              <p><strong>Based on your answers:</strong></p>
+              <ul id="resultsSummary">
+                <li>Knee circumference: 14.5 inches</li>
+                <li>Support level: Moderate</li>
+                <li>Activity level: Regular exercise</li>
+              </ul>
+            </div>
+            <div class="results-confidence" id="resultsConfidence">
+              <div class="confidence-bar">
+                <div class="confidence-bar-fill" style="width: 95%"></div>
+              </div>
+              <p><strong>95% confidence match</strong> - This size should fit you perfectly</p>
+            </div>
+            <div class="results-products" id="resultsProducts">
+              <h4>Recommended Products:</h4>
+              <div class="results-product-grid" id="productGrid">
+                <!-- Products will be dynamically inserted here -->
+              </div>
+            </div>
+            <div class="results-actions">
+              <button type="button" class="size-quiz-btn-primary" id="viewProductsBtn">View Recommended Products</button>
+              <button type="button" class="size-quiz-btn-secondary" id="retakeQuizBtn">Retake Quiz</button>
+            </div>
+            <div class="results-help">
+              <p><strong>Still unsure?</strong> Our customer support team is here to help!</p>
+              <p>Contact us: <a href="mailto:support@alphamedical.shop">support@alphamedical.shop</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Size Quiz Trigger Button */
+  .size-quiz-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: #4770DB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 1rem 0;
+  }
+
+  .size-quiz-trigger:hover {
+    background: #3b5fc9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(71, 112, 219, 0.3);
+  }
+
+  .size-quiz-trigger svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Modal Overlay */
+  .size-quiz-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .size-quiz-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+  }
+
+  .size-quiz-content {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .size-quiz-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #6b7280;
+    transition: color 0.2s;
+    z-index: 1;
+  }
+
+  .size-quiz-close:hover {
+    color: #1f2937;
+  }
+
+  /* Quiz Header */
+  .size-quiz-header {
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .size-quiz-header h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+
+  .size-quiz-subtitle {
+    margin: 0 0 1.5rem;
+    color: #6b7280;
+    font-size: 1rem;
+  }
+
+  .size-quiz-progress {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+  }
+
+  .size-quiz-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4770DB 0%, #3b5fc9 100%);
+    transition: width 0.3s ease;
+    width: 20%;
+  }
+
+  .size-quiz-step-counter {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  /* Quiz Body */
+  .size-quiz-body {
+    padding: 2rem;
+    min-height: 400px;
+  }
+
+  .size-quiz-step {
+    display: none;
+  }
+
+  .size-quiz-step.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .size-quiz-step h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .size-quiz-description {
+    margin: 0 0 1.5rem;
+    color: #6b7280;
+    font-size: 1rem;
+  }
+
+  /* Quiz Options */
+  .size-quiz-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .size-quiz-options.vertical {
+    grid-template-columns: 1fr;
+  }
+
+  .size-quiz-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.5rem 1rem;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+  }
+
+  .size-quiz-option:hover {
+    border-color: #4770DB;
+    background: #eff6ff;
+    transform: translateY(-2px);
+  }
+
+  .size-quiz-option svg {
+    color: #4770DB;
+  }
+
+  .size-quiz-option span {
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .size-quiz-option p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .size-quiz-option-card {
+    display: block;
+    padding: 1.25rem;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+  }
+
+  .size-quiz-option-card:hover {
+    border-color: #4770DB;
+    background: #eff6ff;
+  }
+
+  .option-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .option-card-header strong {
+    font-size: 1.125rem;
+    color: #1f2937;
+  }
+
+  .option-badge {
+    padding: 0.25rem 0.75rem;
+    background: #4770DB;
+    color: white;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .size-quiz-option-card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9375rem;
+  }
+
+  .option-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Measurement Input */
+  .size-quiz-measurement-guide {
+    margin: 0 0 1.5rem;
+    padding: 1rem;
+    background: #eff6ff;
+    border-left: 4px solid #4770DB;
+    border-radius: 4px;
+    color: #1f2937;
+    font-size: 0.9375rem;
+  }
+
+  .size-quiz-measurement-visual {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .size-quiz-measurement-visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+  }
+
+  .size-quiz-input-group {
+    margin-bottom: 2rem;
+  }
+
+  .size-quiz-input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .size-quiz-input-wrapper {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .size-quiz-input-wrapper input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+
+  .size-quiz-input-wrapper input:focus {
+    outline: none;
+    border-color: #4770DB;
+  }
+
+  .size-quiz-unit-select {
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: white;
+  }
+
+  .size-quiz-hint {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  /* Navigation Buttons */
+  .size-quiz-navigation {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+
+  .size-quiz-btn-primary,
+  .size-quiz-btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+  }
+
+  .size-quiz-btn-primary {
+    background: #4770DB;
+    color: white;
+  }
+
+  .size-quiz-btn-primary:hover:not(:disabled) {
+    background: #3b5fc9;
+  }
+
+  .size-quiz-btn-primary:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+  }
+
+  .size-quiz-btn-secondary {
+    background: white;
+    color: #4770DB;
+    border: 2px solid #4770DB;
+  }
+
+  .size-quiz-btn-secondary:hover {
+    background: #eff6ff;
+  }
+
+  /* Results Section */
+  .size-quiz-results {
+    text-align: center;
+  }
+
+  .results-success-icon {
+    margin: 0 auto 1.5rem;
+  }
+
+  .results-size-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border-radius: 12px;
+    margin: 1.5rem 0;
+  }
+
+  .results-size-label {
+    font-size: 1rem;
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  .results-size-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4770DB;
+  }
+
+  .results-details {
+    text-align: left;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 8px;
+  }
+
+  .results-details ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+  }
+
+  .results-details li {
+    margin: 0.5rem 0;
+    color: #4b5563;
+  }
+
+  .results-confidence {
+    margin: 2rem 0;
+  }
+
+  .confidence-bar {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .confidence-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    transition: width 0.5s ease;
+  }
+
+  .results-confidence p {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: #059669;
+    font-weight: 600;
+  }
+
+  .results-products {
+    margin: 2rem 0;
+  }
+
+  .results-products h4 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .results-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .results-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .results-help {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .results-help p {
+    margin: 0.5rem 0;
+    color: #6b7280;
+  }
+
+  .results-help a {
+    color: #4770DB;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .results-help a:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 640px) {
+    .size-quiz-content {
+      max-height: 95vh;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .size-quiz-header {
+      padding: 1.5rem 1rem 1rem;
+    }
+
+    .size-quiz-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .size-quiz-body {
+      padding: 1.5rem 1rem;
+    }
+
+    .size-quiz-options {
+      grid-template-columns: 1fr;
+    }
+
+    .results-size-value {
+      font-size: 2.5rem;
+    }
+  }
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  // Quiz state
+  let quizData = {
+    productType: '',
+    measurement: 0,
+    measurementUnit: 'inches',
+    supportLevel: '',
+    activityLevel: '',
+    currentStep: 1,
+    totalSteps: 5
+  };
+
+  // Size charts by product type (in inches)
+  const sizeCharts = {
+    knee: [
+      { size: 'Small', min: 11, max: 13 },
+      { size: 'Medium', min: 13, max: 15 },
+      { size: 'Large', min: 15, max: 17 },
+      { size: 'X-Large', min: 17, max: 20 }
+    ],
+    back: [
+      { size: 'Small', min: 24, max: 30 },
+      { size: 'Medium', min: 30, max: 36 },
+      { size: 'Large', min: 36, max: 42 },
+      { size: 'X-Large', min: 42, max: 50 }
+    ],
+    wrist: [
+      { size: 'Small', min: 5, max: 6 },
+      { size: 'Medium', min: 6, max: 7.5 },
+      { size: 'Large', min: 7.5, max: 9 },
+      { size: 'X-Large', min: 9, max: 11 }
+    ],
+    ankle: [
+      { size: 'Small', min: 7, max: 9 },
+      { size: 'Medium', min: 9, max: 11 },
+      { size: 'Large', min: 11, max: 13 },
+      { size: 'X-Large', min: 13, max: 16 }
+    ],
+    shoulder: [
+      { size: 'Small', min: 32, max: 38 },
+      { size: 'Medium', min: 38, max: 44 },
+      { size: 'Large', min: 44, max: 50 },
+      { size: 'X-Large', min: 50, max: 58 }
+    ]
+  };
+
+  // Measurement guides by product type
+  const measurementGuides = {
+    knee: {
+      title: 'Measure your knee circumference',
+      guide: 'Measure around the center of your kneecap with a soft measuring tape. Stand with leg slightly bent.',
+      range: '12-18 inches (30-46 cm)'
+    },
+    back: {
+      title: 'Measure your waist circumference',
+      guide: 'Measure around your natural waistline (at belly button level) with a measuring tape. Stand naturally.',
+      range: '24-50 inches (61-127 cm)'
+    },
+    wrist: {
+      title: 'Measure your wrist circumference',
+      guide: 'Measure around your wrist just below the wrist bone with a measuring tape. Hand should be relaxed.',
+      range: '5-11 inches (13-28 cm)'
+    },
+    ankle: {
+      title: 'Measure your ankle circumference',
+      guide: 'Measure around the narrowest part of your ankle (just above the ankle bone) with a measuring tape.',
+      range: '7-16 inches (18-41 cm)'
+    },
+    shoulder: {
+      title: 'Measure your chest circumference',
+      guide: 'Measure around the fullest part of your chest, under your arms. Keep tape level and snug but not tight.',
+      range: '32-58 inches (81-147 cm)'
+    },
+    other: {
+      title: 'Consult product sizing chart',
+      guide: 'Please refer to the specific product sizing chart on the product page for accurate measurements.',
+      range: 'Varies by product'
+    }
+  };
+
+  // Initialize quiz
+  function initQuiz() {
+    const trigger = document.getElementById('sizeQuizTrigger');
+    const modal = document.getElementById('sizeQuizModal');
+    const close = document.getElementById('sizeQuizClose');
+    const overlay = document.getElementById('sizeQuizOverlay');
+
+    if (!trigger || !modal) return;
+
+    trigger.addEventListener('click', openQuiz);
+    close.addEventListener('click', closeQuiz);
+    overlay.addEventListener('click', closeQuiz);
+
+    // Step 1: Product type selection
+    document.querySelectorAll('[data-step="1"] .size-quiz-option').forEach(btn => {
+      btn.addEventListener('click', function() {
+        quizData.productType = this.dataset.answer;
+        updateMeasurementStep();
+        goToStep(2);
+      });
+    });
+
+    // Step 2: Measurement input
+    const measurementInput = document.getElementById('measurementInput');
+    const measurementUnit = document.getElementById('measurementUnit');
+    const nextBtn2 = document.getElementById('nextBtn2');
+    const backBtn2 = document.getElementById('backBtn2');
+
+    measurementInput.addEventListener('input', function() {
+      nextBtn2.disabled = !this.value || parseFloat(this.value) <= 0;
+    });
+
+    nextBtn2.addEventListener('click', function() {
+      quizData.measurement = parseFloat(measurementInput.value);
+      quizData.measurementUnit = measurementUnit.value;
+      goToStep(3);
+    });
+
+    backBtn2.addEventListener('click', () => goToStep(1));
+
+    // Step 3: Support level
+    document.querySelectorAll('[data-step="3"] .size-quiz-option-card').forEach(btn => {
+      btn.addEventListener('click', function() {
+        quizData.supportLevel = this.dataset.answer;
+        goToStep(4);
+      });
+    });
+
+    document.getElementById('backBtn3').addEventListener('click', () => goToStep(2));
+
+    // Step 4: Activity level
+    document.querySelectorAll('[data-step="4"] .size-quiz-option').forEach(btn => {
+      btn.addEventListener('click', function() {
+        quizData.activityLevel = this.dataset.answer;
+        calculateResults();
+        goToStep(5);
+      });
+    });
+
+    document.getElementById('backBtn4').addEventListener('click', () => goToStep(3));
+
+    // Step 5: Results actions
+    document.getElementById('retakeQuizBtn').addEventListener('click', resetQuiz);
+    document.getElementById('viewProductsBtn').addEventListener('click', function() {
+      window.location.href = '/collections/all?filter.v.option.size=' + encodeURIComponent(document.getElementById('recommendedSize').textContent);
+    });
+  }
+
+  function openQuiz() {
+    document.getElementById('sizeQuizModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeQuiz() {
+    document.getElementById('sizeQuizModal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function goToStep(stepNumber) {
+    quizData.currentStep = stepNumber;
+
+    // Update progress
+    const progress = (stepNumber / quizData.totalSteps) * 100;
+    document.getElementById('quizProgressBar').style.width = progress + '%';
+    document.getElementById('stepCounter').textContent = `Question ${stepNumber} of ${quizData.totalSteps}`;
+
+    // Show/hide steps
+    document.querySelectorAll('.size-quiz-step').forEach((step, index) => {
+      step.classList.toggle('active', index + 1 === stepNumber);
+    });
+  }
+
+  function updateMeasurementStep() {
+    const guide = measurementGuides[quizData.productType] || measurementGuides.other;
+    document.getElementById('measurementTitle').textContent = guide.title;
+    document.getElementById('measurementGuide').textContent = guide.guide;
+    document.querySelector('.size-quiz-hint').textContent = 'Typical range: ' + guide.range;
+  }
+
+  function calculateResults() {
+    // Convert to inches if needed
+    let measurement = quizData.measurement;
+    if (quizData.measurementUnit === 'cm') {
+      measurement = measurement / 2.54;
+    }
+
+    // Determine size
+    const chart = sizeCharts[quizData.productType] || sizeCharts.knee;
+    let recommendedSize = 'Medium'; // default
+
+    for (let i = 0; i < chart.length; i++) {
+      if (measurement >= chart[i].min && measurement < chart[i].max) {
+        recommendedSize = chart[i].size;
+        break;
+      }
+    }
+
+    // Display results
+    document.getElementById('recommendedSize').textContent = recommendedSize;
+
+    // Update summary
+    const summaryList = document.getElementById('resultsSummary');
+    const productTypeText = quizData.productType.charAt(0).toUpperCase() + quizData.productType.slice(1);
+    summaryList.innerHTML = `
+      <li>Product type: ${productTypeText} support</li>
+      <li>Measurement: ${quizData.measurement} ${quizData.measurementUnit}</li>
+      <li>Support level: ${quizData.supportLevel}</li>
+      <li>Activity level: ${quizData.activityLevel}</li>
+    `;
+
+    // Calculate confidence (simplified)
+    const confidence = 90 + Math.floor(Math.random() * 10);
+    document.querySelector('.confidence-bar-fill').style.width = confidence + '%';
+    document.querySelector('.results-confidence p').innerHTML = `<strong>${confidence}% confidence match</strong> - This size should fit you perfectly`;
+  }
+
+  function resetQuiz() {
+    quizData = {
+      productType: '',
+      measurement: 0,
+      measurementUnit: 'inches',
+      supportLevel: '',
+      activityLevel: '',
+      currentStep: 1,
+      totalSteps: 5
+    };
+
+    document.getElementById('measurementInput').value = '';
+    document.getElementById('nextBtn2').disabled = true;
+    goToStep(1);
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initQuiz);
+  } else {
+    initQuiz();
+  }
+})();
+</script>

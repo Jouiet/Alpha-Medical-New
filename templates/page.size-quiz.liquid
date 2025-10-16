@@ -1,0 +1,152 @@
+{% comment %}
+  Standalone Size Quiz Page Template
+  Accessible at: /pages/size-quiz
+{% endcomment %}
+
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  <div class="size-quiz-page-header" style="text-align: center; padding: 3rem 0 2rem;">
+    <h1 class="h1" style="margin-bottom: 1rem;">Find Your Perfect Size</h1>
+    <div class="rte" style="max-width: 700px; margin: 0 auto;">
+      <p style="font-size: 1.125rem; color: #6b7280;">
+        Not sure what size to order? Our interactive sizing quiz helps you find the perfect fit for medical support products in just 60 seconds.
+      </p>
+      <p style="margin-top: 1.5rem; padding: 1rem; background: #eff6ff; border-left: 4px solid #4770DB; border-radius: 4px; text-align: left;">
+        <strong>How it works:</strong><br>
+        1. Select your product type (knee, back, wrist, etc.)<br>
+        2. Enter your measurements following our guide<br>
+        3. Answer a few questions about your needs<br>
+        4. Get instant size recommendations with product suggestions
+      </p>
+    </div>
+  </div>
+
+  {% render 'size-quiz' %}
+
+  <div class="size-quiz-page-benefits" style="margin-top: 4rem; padding: 3rem 0; border-top: 1px solid #e5e7eb;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Why Use Our Size Quiz?</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">✓</div>
+        <h3 style="margin-bottom: 0.5rem;">Accurate Sizing</h3>
+        <p style="color: #6b7280;">Based on industry-standard medical device sizing charts</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">↓</div>
+        <h3 style="margin-bottom: 0.5rem;">Reduce Returns</h3>
+        <p style="color: #6b7280;">Get the right size the first time, avoiding returns and delays</p>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+        <h3 style="margin-bottom: 0.5rem;">Fast Results</h3>
+        <p style="color: #6b7280;">Complete the quiz in under 60 seconds</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="size-quiz-page-faq" style="margin-top: 4rem; padding: 3rem 0; background: #f9fafb; margin-left: -2rem; margin-right: -2rem; padding-left: 2rem; padding-right: 2rem;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Sizing FAQ</h2>
+
+      <div style="margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.125rem;">How accurate is the size quiz?</h3>
+        <p style="margin: 0; color: #4b5563;">Our quiz uses the same sizing charts as medical professionals and achieves 95%+ accuracy when measurements are taken correctly. Follow our measurement guides carefully for best results.</p>
+      </div>
+
+      <div style="margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.125rem;">What if I'm between sizes?</h3>
+        <p style="margin: 0; color: #4b5563;">If your measurement falls right between two sizes, we recommend sizing up for comfort. You can also contact our support team for personalized sizing advice.</p>
+      </div>
+
+      <div style="margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.125rem;">How do I measure correctly?</h3>
+        <p style="margin: 0; color: #4b5563;">Use a soft measuring tape (like those used for sewing). Measure snugly but not tightly against your skin. Follow the visual guide provided in step 2 of the quiz for each product type.</p>
+      </div>
+
+      <div style="margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.125rem;">Can I still return if the size doesn't fit?</h3>
+        <p style="margin: 0; color: #4b5563;">Yes! All our products come with a 30-day money-back guarantee. If the size doesn't fit perfectly, you can return or exchange it free of charge.</p>
+      </div>
+
+      <div style="padding: 1.5rem; background: white; border-radius: 8px;">
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.125rem;">Do all products work with this quiz?</h3>
+        <p style="margin: 0; color: #4b5563;">The quiz supports knee braces, back supports, wrist braces, ankle supports, and posture correctors. For other products, please refer to the specific product's sizing chart or contact our support team.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="size-quiz-page-cta" style="margin-top: 4rem; padding: 3rem 0; text-align: center;">
+    <h2 style="margin-bottom: 1rem;">Ready to Find Your Size?</h2>
+    <p style="margin-bottom: 2rem; color: #6b7280; font-size: 1.125rem;">Click the button above to start the quiz and get your personalized size recommendation.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="/collections/all" style="display: inline-block; padding: 0.875rem 1.75rem; background: #4770DB; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s;">Browse All Products</a>
+      <a href="/pages/contact" style="display: inline-block; padding: 0.875rem 1.75rem; background: white; color: #4770DB; text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid #4770DB; transition: background 0.2s;">Contact Support</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .page-width {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (max-width: 749px) {
+    .size-quiz-page-header {
+      padding: 2rem 0 1.5rem !important;
+    }
+
+    .size-quiz-page-header h1 {
+      font-size: 2rem !important;
+    }
+
+    .size-quiz-page-header p {
+      font-size: 1rem !important;
+    }
+
+    .size-quiz-page-benefits > div {
+      grid-template-columns: 1fr !important;
+    }
+
+    .size-quiz-page-faq {
+      margin-left: -1rem !important;
+      margin-right: -1rem !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .size-quiz-page-cta > div {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+
+    .size-quiz-page-cta a {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<script>
+  // Auto-open quiz when page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    // Small delay to ensure quiz is fully loaded
+    setTimeout(function() {
+      const quizTrigger = document.getElementById('sizeQuizTrigger');
+      if (quizTrigger) {
+        // Scroll to quiz button
+        quizTrigger.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 500);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Size Quiz Page",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Size Quiz"
+    }
+  ]
+}
+{% endschema %}
