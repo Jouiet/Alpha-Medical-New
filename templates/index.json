@@ -316,7 +316,7 @@
       "type": "promo-banner",
       "settings": {
         "heading": "🎉 New Offers Every Week!",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "subheading": "<p><strong>Stay tuned for our latest promotions and exclusive deals.</strong></p><p>We constantly update our offers to bring you the best prices on medical equipment.</p>",
         "button_label": "View All Products",
         "button_link": "shopify://collections/all",
@@ -339,7 +339,7 @@
         "title_tgXC6A": {
           "type": "title",
           "settings": {
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "price_RyPKmy": {
