@@ -50,8 +50,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/S2f3d77e6ceb243f8ad89048219d34966f_8d83fb7a-3366-49f6-a435-e0881bfa683e.webp",
-        "height": "adapt",
+        "image": "shopify://shop_images/S2a5606295eb84f9f8184bb8cbab63707L_16c75e3e-f0c0-4450-8a0e-72907e5b0c98.webp",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
