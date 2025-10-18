@@ -401,7 +401,7 @@
       "settings": {
         "collection": "bestsellers",
         "products_to_show": 8,
-        "title": "🔥 Our Bestsellers",
+        "title": "Our Bestsellers",
         "heading_size": "h2",
         "description": "<p>Discover our most popular medical support products</p>",
         "show_description": true,
