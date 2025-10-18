@@ -326,6 +326,76 @@
         "padding_bottom": 60
       }
     },
+    "featured_product_Bg4gTw": {
+      "type": "featured-product",
+      "blocks": {
+        "text_WLegAh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_tgXC6A": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_RyPKmy": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_Cb7W7e": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_gwXTaa": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_XKNEzG": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_Q8fEpE": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_WLegAh",
+        "title_tgXC6A",
+        "price_RyPKmy",
+        "variant_picker_Cb7W7e",
+        "quantity_selector_gwXTaa",
+        "buy_buttons_XKNEzG",
+        "share_Q8fEpE"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "bestsellers-section": {
       "type": "featured-collection",
       "settings": {
@@ -463,6 +533,7 @@
   "order": [
     "slideshow",
     "promo-banner-1",
+    "featured_product_Bg4gTw",
     "bestsellers-section",
     "social-proof-section",
     "recently-viewed-section",
