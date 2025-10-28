@@ -4,6 +4,14 @@
 *.token
 *_TOKEN.md
 credentials.json
+*.key
+.anthropic/
+.claude/api_key
+
+# API Keys - Extra protection
+*API_KEY*
+*_SECRET*
+*_TOKEN*
 
 # macOS
 .DS_Store
