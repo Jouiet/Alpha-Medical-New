@@ -57,18 +57,16 @@
       const existing = localStorage.getItem(STORAGE_KEY);
       let items = existing ? JSON.parse(existing) : [];
 
-      // Only seed if empty or has less than 4 products
+      // Replace with 4 diverse products if empty or incomplete
       if (items.length < 4) {
-        console.log('[RecentlyViewed Seed] Seeding with', (4 - items.length), 'diverse products');
+        console.log('[RecentlyViewed Seed] Replacing with 4 diverse products for wider lead targeting');
 
-        // Add seed products that don't already exist
-        const existingIds = items.map(item => item.id);
-        const toAdd = SEED_PRODUCTS.filter(product => !existingIds.includes(product.id));
-
-        items = [...items, ...toAdd].slice(0, 4);
+        // REPLACE entirely with seed products (not merge)
+        items = SEED_PRODUCTS;
 
         localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-        console.log('[RecentlyViewed Seed] Seeded successfully -', items.length, 'products');
+        console.log('[RecentlyViewed Seed] Seeded successfully - 4 diverse products:',
+          'Massage/Therapy, Neck/Posture, Hand/Recovery, Beauty/Anti-aging');
       } else {
         console.log('[RecentlyViewed Seed] Already has', items.length, 'products - no seeding needed');
       }
