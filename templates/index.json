@@ -231,9 +231,6 @@
       },
       "block_order": [
         "slide-1",
-        "slide-3",
-        "slide-4",
-        "slide-5",
         "slide-6",
         "slide-8",
         "slide-11",
@@ -241,7 +238,10 @@
         "slide-12",
         "slide-13",
         "slide-14",
-        "slide-15"
+        "slide-15",
+        "slide-3",
+        "slide-4",
+        "slide-5"
       ],
       "settings": {
         "layout": "full_bleed",
