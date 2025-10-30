@@ -30,24 +30,6 @@
             "color_scheme": "scheme-2"
           }
         },
-        "slide-2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/hero-slide-2.png",
-            "image_overlay_opacity": 10,
-            "heading": "Pain Relief & Recovery Solutions",
-            "heading_size": "h2",
-            "subheading": "Effective pain management & injury recovery tools",
-            "button_label": "Explore Collection",
-            "link": "shopify://collections/pain-relief-recovery",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        },
         "slide-3": {
           "type": "slide",
           "settings": {
@@ -120,24 +102,6 @@
             "color_scheme": "scheme-2"
           }
         },
-        "slide-7": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/hero-slide-7.png",
-            "image_overlay_opacity": 10,
-            "heading": "Compression & Recovery Gear",
-            "heading_size": "h2",
-            "subheading": "Athletic support for sports, gym & injury prevention",
-            "button_label": "Shop Sports",
-            "link": "shopify://collections/pain-relief-recovery",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        },
         "slide-8": {
           "type": "slide",
           "settings": {
@@ -166,24 +130,6 @@
             "subheading": "Electric massagers, cupping therapy & EMS devices",
             "button_label": "Relax Now",
             "link": "shopify://collections/therapy-wellness",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
-          }
-        },
-        "slide-10": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/hero-slide-10.png",
-            "image_overlay_opacity": 10,
-            "heading": "Home Physical Therapy",
-            "heading_size": "h2",
-            "subheading": "Professional rehab equipment for home use",
-            "button_label": "Start Recovery",
-            "link": "shopify://collections/pain-relief-recovery",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-center",
@@ -285,15 +231,12 @@
       },
       "block_order": [
         "slide-1",
-        "slide-2",
         "slide-3",
         "slide-4",
         "slide-5",
         "slide-6",
-        "slide-7",
         "slide-8",
         "slide-9",
-        "slide-10",
         "slide-11",
         "slide-12",
         "slide-13",
@@ -382,7 +325,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "portable-neck-massager-smart-shoulder-cervical-relief",
+        "product": "smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "small",
@@ -406,7 +349,7 @@
         "description": "<p>Discover our most popular medical support products</p>",
         "show_description": true,
         "description_style": "body",
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
