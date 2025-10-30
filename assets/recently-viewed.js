@@ -64,19 +64,61 @@ class RecentlyViewedProducts {
   }
 
   /**
-   * Render recently viewed products
+   * Validate if product URL exists
+   * @param {string} url - Product URL
+   * @returns {Promise<boolean>} True if product exists
    */
-  render() {
+  async validateProduct(url) {
+    try {
+      const response = await fetch(url, { method: 'HEAD' });
+      return response.ok;
+    } catch (error) {
+      console.warn('[RecentlyViewed] Error validating product:', url, error);
+      return false;
+    }
+  }
+
+  /**
+   * Render recently viewed products (with validation)
+   */
+  async render() {
     const container = document.querySelector(this.containerSelector);
     if (!container) {
       return;
     }
 
-    const items = this.getProducts();
+    let items = this.getProducts();
 
-    // Don't render if no products or on product page for same product
+    // Don't render if no products
     if (items.length === 0) {
       container.style.display = 'none';
+      return;
+    }
+
+    // Validate all products in parallel
+    const validationPromises = items.map(item =>
+      this.validateProduct(item.url).then(isValid => ({ item, isValid }))
+    );
+
+    const validationResults = await Promise.all(validationPromises);
+
+    // Filter only valid products
+    const validItems = validationResults
+      .filter(result => result.isValid)
+      .map(result => result.item);
+
+    // Remove invalid products from localStorage
+    const invalidCount = items.length - validItems.length;
+    if (invalidCount > 0) {
+      console.log('[RecentlyViewed] Removed', invalidCount, 'invalid product(s) from localStorage');
+      localStorage.setItem(this.storageKey, JSON.stringify(validItems));
+      items = validItems;
+    }
+
+    // Don't render if no valid products
+    if (items.length === 0) {
+      container.style.display = 'none';
+      console.log('[RecentlyViewed] No valid products to display');
       return;
     }
 
@@ -95,7 +137,7 @@ class RecentlyViewedProducts {
     container.innerHTML = html;
     container.style.display = 'block';
 
-    console.log('[RecentlyViewed] Rendered', items.length, 'products');
+    console.log('[RecentlyViewed] Rendered', items.length, 'valid product(s)');
   }
 
   /**
