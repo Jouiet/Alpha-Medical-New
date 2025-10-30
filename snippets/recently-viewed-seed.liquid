@@ -46,40 +46,33 @@
 
   const STORAGE_KEY = 'alpha_recently_viewed';
 
-  function initRecentlyViewed() {
-    try {
-      // Check if localStorage is available
-      if (typeof localStorage === 'undefined') {
-        console.log('[RecentlyViewed Seed] localStorage not available');
-        return;
-      }
-
-      const existing = localStorage.getItem(STORAGE_KEY);
-      let items = existing ? JSON.parse(existing) : [];
-
-      // Replace with 4 diverse products if empty or incomplete
-      if (items.length < 4) {
-        console.log('[RecentlyViewed Seed] Replacing with 4 diverse products for wider lead targeting');
-
-        // REPLACE entirely with seed products (not merge)
-        items = SEED_PRODUCTS;
-
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-        console.log('[RecentlyViewed Seed] Seeded successfully - 4 diverse products:',
-          'Massage/Therapy, Neck/Posture, Hand/Recovery, Beauty/Anti-aging');
-      } else {
-        console.log('[RecentlyViewed Seed] Already has', items.length, 'products - no seeding needed');
-      }
-    } catch (error) {
-      console.error('[RecentlyViewed Seed] Error:', error);
+  // Run IMMEDIATELY (not on DOMContentLoaded) to ensure localStorage is seeded
+  // before render() is called
+  try {
+    // Check if localStorage is available
+    if (typeof localStorage === 'undefined') {
+      console.log('[RecentlyViewed Seed] localStorage not available');
+      return;
     }
-  }
 
-  // Run on page load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initRecentlyViewed);
-  } else {
-    initRecentlyViewed();
+    const existing = localStorage.getItem(STORAGE_KEY);
+    let items = existing ? JSON.parse(existing) : [];
+
+    // Replace with 4 diverse products if empty or incomplete
+    if (items.length < 4) {
+      console.log('[RecentlyViewed Seed] Replacing with 4 diverse products for wider lead targeting');
+
+      // REPLACE entirely with seed products (not merge)
+      items = SEED_PRODUCTS;
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+      console.log('[RecentlyViewed Seed] Seeded successfully - 4 diverse products:',
+        'Massage/Therapy, Neck/Posture, Hand/Recovery, Beauty/Anti-aging');
+    } else {
+      console.log('[RecentlyViewed Seed] Already has', items.length, 'products - no seeding needed');
+    }
+  } catch (error) {
+    console.error('[RecentlyViewed Seed] Error:', error);
   }
 })();
 </script>
