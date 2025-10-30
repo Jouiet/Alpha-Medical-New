@@ -1,0 +1,87 @@
+{%- comment -%}
+  Recently Viewed - Seed with diverse products
+  Pre-populates localStorage with 4 diverse products for new visitors
+  Usage: {% render 'recently-viewed-seed' %}
+{%- endcomment -%}
+
+<script>
+(function() {
+  'use strict';
+
+  // Seed products - 4 diverse categories for wider lead targeting
+  const SEED_PRODUCTS = [
+    {
+      id: '7602188550221',
+      url: '/products/smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care',
+      title: 'Smart Electric Vacuum Cupping Device Body Scraping Massager Heating Suction Cup Device Physical Fatigue Relief Health Care',
+      image: 'https://www.alphamedical.shop/cdn/shop/files/Sd85c6010a70447f9ae7d739f5eb679adr.webp?v=1761851126&width=300',
+      price: '$61.89',
+      timestamp: Date.now() - 86400000 // 1 day ago
+    },
+    {
+      id: '7602148245581',
+      url: '/products/adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support',
+      title: 'Adjustable Cervical Collar Spine Thoracic Orthosis Head Chest Neck Fixed Brace Posture Corrector Support',
+      image: 'https://www.alphamedical.shop/cdn/shop/files/S2ba5cc0a2c344b3bb1e24dd7e05ac52eU.webp?v=1761853283&width=300',
+      price: '$99.83',
+      timestamp: Date.now() - 172800000 // 2 days ago
+    },
+    {
+      id: '7597488038989',
+      url: '/products/rehabilitation-robot-gloves-mirror-training-device',
+      title: 'Rehabilitation Robot Gloves | Mirror Training Device',
+      image: 'https://www.alphamedical.shop/cdn/shop/files/S10b80d8cddad4cf4a87fe913dec88a53H.webp?v=1761426667&width=300',
+      price: '$70.05',
+      timestamp: Date.now() - 259200000 // 3 days ago
+    },
+    {
+      id: '7597489840205',
+      url: '/products/hello-face-red-light-therapy-mask-face-neck-infrared-led',
+      title: 'Hello Face Red Light Therapy Mask | Face & Neck Infrared LED',
+      image: 'https://www.alphamedical.shop/cdn/shop/files/S70cf01d1b5424893ab1a43cc2963dd49E.webp?v=1761427281&width=300',
+      price: '$106.71',
+      timestamp: Date.now() - 345600000 // 4 days ago
+    }
+  ];
+
+  const STORAGE_KEY = 'alpha_recently_viewed';
+
+  function initRecentlyViewed() {
+    try {
+      // Check if localStorage is available
+      if (typeof localStorage === 'undefined') {
+        console.log('[RecentlyViewed Seed] localStorage not available');
+        return;
+      }
+
+      const existing = localStorage.getItem(STORAGE_KEY);
+      let items = existing ? JSON.parse(existing) : [];
+
+      // Only seed if empty or has less than 4 products
+      if (items.length < 4) {
+        console.log('[RecentlyViewed Seed] Seeding with', (4 - items.length), 'diverse products');
+
+        // Add seed products that don't already exist
+        const existingIds = items.map(item => item.id);
+        const toAdd = SEED_PRODUCTS.filter(product => !existingIds.includes(product.id));
+
+        items = [...items, ...toAdd].slice(0, 4);
+
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+        console.log('[RecentlyViewed Seed] Seeded successfully -', items.length, 'products');
+      } else {
+        console.log('[RecentlyViewed Seed] Already has', items.length, 'products - no seeding needed');
+      }
+    } catch (error) {
+      console.error('[RecentlyViewed Seed] Error:', error);
+    }
+  }
+
+  // Run on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRecentlyViewed);
+  } else {
+    initRecentlyViewed();
+  }
+})();
+</script>
