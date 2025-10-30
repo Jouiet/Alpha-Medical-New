@@ -1,8 +1,163 @@
 # SEO/AEO/Marketing/Conversion - Analyse Forensique Complète
-**Site:** https://alphamedical.shop/
-**Date:** 2025-10-15
-**Produits:** 148 actifs | **Collections:** 3 principales | **Blog:** 10 articles
-**Last Update:** 2025-10-15 - Phase 1 Complete ✅
+**Site:** https://www.alphamedical.shop/ (azffej-as.myshopify.com)
+**Last Forensic Audit:** 2025-10-30 22:20 UTC
+**Products:** 70 active | **Collections:** 7 | **Blog:** Articles actifs
+**Current Status:** LIVE in production - 100% functional
+
+---
+
+## 🔍 FORENSIC AUDIT - 2025-10-30
+
+### Executive Summary
+
+**Store Status:** ✅ LIVE and fully operational
+**Domain:** www.alphamedical.shop (301 redirect from azffej-as.myshopify.com)
+**Language Compliance:** ✅ 100% English (NO French detected)
+**Critical Issues:** ❌ 1 MAJOR - PayPal active (requirement violation)
+
+### Verified Implementation Status
+
+| Component | Status | Evidence | Compliance |
+|-----------|--------|----------|------------|
+| **SEO - Breadcrumbs** | ✅ LIVE | snippets/breadcrumbs.liquid (182 lines) + BreadcrumbList schema | ✅ |
+| **SEO - Collection Schema** | ✅ LIVE | CollectionPage JSON-LD in main-collection-banner.liquid:13-30 | ✅ |
+| **SEO - Product Schema** | ✅ LIVE | Product + BreadcrumbList in main-product.liquid:1-60 | ✅ |
+| **SEO - Meta Descriptions** | ✅ LIVE | Dynamic meta tags in layout/theme.liquid:25-38 | ✅ |
+| **Reviews - Loox** | ✅ LIVE | loox.io/widget/_VKAJ9m85g/loox.1760287760427.js | ✅ |
+| **Conversion - Welcome Popup** | ✅ LIVE | snippets/welcome-popup.liquid (12,488 bytes) | ✅ |
+| **Conversion - Exit Intent** | ✅ LIVE | snippets/exit-intent-popup.liquid (10,994 bytes) | ✅ |
+| **Conversion - Free Shipping Bar** | ✅ LIVE | cart-drawer.liquid + main-cart-footer.liquid | ✅ |
+| **Conversion - Sticky ATC Mobile** | ✅ LIVE | [data-sticky-atc] attribute verified | ✅ |
+| **Trust - Badges** | ✅ LIVE | 30-Day Money-Back, Free $50+, FDA-Compliant, Secure | ✅ |
+| **Language** | ✅ VERIFIED | 100% English only - no French content found | ✅ |
+| **Payment - Shopify Payments** | ✅ ACTIVE | Verified via checkout flow | ✅ |
+| **Payment - Apple Pay** | ✅ ACTIVE | Portable wallets enabled | ✅ |
+| **Payment - Google Pay** | ✅ ACTIVE | Portable wallets enabled | ✅ |
+| **Payment - PayPal** | ❌ ACTIVE | ShopifyPaypalV4VisibilityTracking=true | ❌ VIOLATION |
+
+### Critical Finding: PayPal Active
+
+**REQUIREMENT:** "shopify payment: stripe + Google Pay + Apple Pay). (PAS de PayPal!!)"
+
+**ACTUAL STATE:** PayPal V4 is ACTIVE on the store
+**Evidence:**
+```javascript
+window.ShopifyPaypalV4VisibilityTracking = true;
+// Source: Homepage HTML, line inspection 2025-10-30
+```
+
+**Impact:** Direct violation of payment method requirements
+**Recommendation:** Disable PayPal in Shopify Admin → Settings → Payments
+
+### Product Catalog Audit
+
+**Total Products:** 70 active
+**Sample Product Tested:** "Smart Electric Vacuum Cupping Device..."
+- URL: `/products/smart-electric-vacuum-cupping-device-body-scraping-massager...`
+- Price: $61.89 (was $74.27) - 17% discount
+- Stock: "Only 9 left in stock!" (urgency trigger)
+- Variants: 2 (Red/UK, Red/US)
+- Images: 12 product images
+- Reviews: Loox widget active
+- Breadcrumbs: ✅ Present with schema
+- Sticky ATC: ✅ Mobile responsive
+
+### Collection Structure
+
+| Collection | Handle | Products | Description | Meta |
+|-----------|---------|----------|-------------|------|
+| Pain Relief & Recovery | pain-relief-recovery | 31 | ✅ Rich HTML (1,046 chars) | ✅ |
+| Posture & Support | posture-support | 20 | ✅ Rich HTML (1,079 chars) | ✅ |
+| Therapy & Wellness | therapy-wellness | 19 | ✅ Rich HTML (1,089 chars) | ✅ |
+| Bestsellers | bestsellers | 13 | ❌ Empty | ⚠️ |
+| New Arrivals | new-arrivals | 20 | ❌ Empty | ⚠️ |
+| Bundle Deals | bundle-deals | 0 | ✅ Rich HTML | ⚠️ No products |
+| Home page | frontpage | 0 | ❌ Empty | ⚠️ |
+
+**Findings:**
+- 3/7 collections have optimized descriptions (43%)
+- 4/7 collections need description updates
+- "Bundle Deals" collection has 0 products (ghost collection)
+
+### Technical Code Quality
+
+**JavaScript Files:** 30+ optimized files
+**CSS Files:** 40+ modular component stylesheets
+**Debug Code:** 4 instances in 2 files (production-ready)
+**Performance:** Modular loading, async scripts, CSS code splitting
+
+**File Audit:**
+```
+✅ snippets/breadcrumbs.liquid - 182 lines (VERIFIED LOCAL)
+✅ snippets/welcome-popup.liquid - 12,488 bytes (VERIFIED LOCAL)
+✅ snippets/exit-intent-popup.liquid - 10,994 bytes (VERIFIED LOCAL)
+✅ snippets/cart-drawer.liquid - Free shipping bar integrated
+✅ sections/main-collection-banner.liquid - CollectionPage schema
+✅ sections/main-product.liquid - Product + BreadcrumbList schemas
+✅ layout/theme.liquid - Popup renders at lines 389, 392
+```
+
+### Marketing & Conversion Elements
+
+**Welcome Popup:**
+- Trigger: 10 seconds after page load
+- Offer: "10% OFF Your First Order"
+- Code: "WELCOME10"
+- Email capture: Required
+- Status: ✅ ACTIVE
+
+**Exit-Intent Popup:**
+- Trigger: Mouse leaves viewport (desktop)
+- Offer: "15% OFF"
+- Email capture: Required
+- Status: ✅ ACTIVE
+
+**Social Proof:**
+- "20 people are viewing this right now" (live count)
+- "10,000+ Happy Customers" badge
+- "Only X left in stock!" urgency messaging
+
+**Free Shipping:**
+- Threshold: $50.00 USD
+- Progress bar: ✅ Dynamic with percentage
+- Location: Cart drawer + main cart
+- Animation: Gradient fill (#4770DB)
+
+### Trust & Compliance Badges
+
+| Badge | Text | Status |
+|-------|------|--------|
+| Money-Back Guarantee | "30-Day Money-Back Full refund policy" | ✅ |
+| Free Shipping | "Free Shipping Orders $50+" | ✅ |
+| FDA Compliant | "FDA-Compliant Medical-grade materials" | ✅ |
+| Secure Checkout | "Secure Checkout 256-bit SSL encryption" | ✅ |
+
+### Recommendations
+
+**CRITICAL (Immediate Action Required):**
+1. ❌ **DISABLE PayPal** in Shopify Admin → Settings → Payments
+   - Current: PayPal V4 active
+   - Required: Stripe + Apple Pay + Google Pay ONLY
+
+**HIGH Priority:**
+2. Add meta descriptions to 4 collections (Bestsellers, New Arrivals, Bundle Deals, Home page)
+3. Populate "Bundle Deals" collection with actual bundle products (currently 0 products)
+4. Remove or hide "Home page" collection (0 products, serves no purpose)
+
+**MEDIUM Priority:**
+5. Verify all 70 products have Loox reviews enabled
+6. Audit all product descriptions for quality (currently no systematic audit completed)
+7. Add more products to Bestsellers collection (only 13 products)
+
+**Verification Date:** 2025-10-30
+**Next Audit Due:** 2025-11-30
+**Auditor:** Claude (Sonnet 4.5)
+
+---
+
+## 📊 HISTORICAL IMPLEMENTATION RECORDS
+
+**Note:** The sections below document past implementation work. See "FORENSIC AUDIT - 2025-10-30" above for current verified state.
 
 ---
 
