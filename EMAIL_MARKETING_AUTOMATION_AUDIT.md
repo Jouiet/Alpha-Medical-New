@@ -108,7 +108,7 @@ grep "facebook.*tracking" = 0 résultats
 | **Back in Stock** | ⚠️ INCONNU | +10% on restock | 🔵 LOW | 2h |
 | **Price Drop Alert** | ⚠️ INCONNU | +5% conversion | 🔵 LOW | 2h |
 
-**⚠️ STATUS FLOWS:** Impossible de vérifier via front-end. Nécessite accès Klaviyo dashboard.
+**⚠️ STATUS FLOWS:** Vérifiable via chrome-devtools-mcp (screenshots). Nécessite accès Klaviyo dashboard pour configuration.
 
 ### Segments Klaviyo Recommandés
 
@@ -181,36 +181,62 @@ grep "facebook.*tracking" = 0 résultats
 **Temps:** 2-3 heures  
 **Priorité:** 🔴 **HIGH**
 
-### 3. ⚠️ KLAVIYO FLOWS - STATUT INCONNU
+### 3. ⚠️ SHOPIFY FLOW & KLAVIYO - CONFIGURATION REQUISE
 
-**Problème:** Impossible de vérifier depuis front-end quels flows sont actifs
+**Apps Installés (Verified via GraphQL):**
+- ✅ Shopify Flow (App ID: 1602671) - INSTALLED
+- ✅ Shopify Email (App ID: 2755583) - INSTALLED
+- ✅ Klaviyo (App ID: 123074) - INSTALLED
+
+**Statut Flows:** ⚠️ UNKNOWN - Requires manual verification via chrome-devtools-mcp
+
+**GUIDES DE CONFIGURATION DISPONIBLES:**
+- 📄 `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md` (1,149 lines)
+  * Step-by-step Flow configuration manual
+  * Adapted from proven MyDealz implementation
+  * Includes 14 documented automation failures (cross-origin limitations)
+  * **CRITICAL:** Manual UI configuration is MANDATORY
+
+- 📄 `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md` (690 lines)
+  * Implementation checklist & progress tracker
+  * Welcome Series, Weekly Digest, New Arrivals flows
+  * Testing & verification procedures
 
 **Action Requise:**
-1. Login Klaviyo dashboard: https://www.klaviyo.com/
-2. Vérifier section "Flows"
-3. Identifier flows manquants (voir tableau recommandations ci-dessus)
-4. Implémenter flows critiques prioritaires
+1. **Shopify Flow:** Follow SHOPIFY_FLOW_CONFIGURATION_GUIDE.md
+   - Configure Welcome Series (3 emails over 5 days)
+   - Configure Weekly Health Tips & Featured Products
+   - Configure New Product Arrival Alerts
 
-**Flows MUST-HAVE (si absents):**
-- Abandoned Cart (récupère 10-15% carts)
-- Welcome Series (convertit 5-8% nouveaux inscrits)
-- Post-Purchase (augmente repeat rate 20-30%)
+2. **Klaviyo:** Login dashboard https://www.klaviyo.com/ (Company ID: WTx7Jb)
+   - Vérifier flows actifs
+   - Implémenter flows manquants (Abandoned Cart, Post-Purchase)
+
+**Flows MUST-HAVE:**
+- Welcome Series (Shopify Flow or Klaviyo) - convertit 5-8% nouveaux inscrits
+- Abandoned Cart (Klaviyo) - récupère 10-15% carts
+- Post-Purchase (Klaviyo) - augmente repeat rate 20-30%
 
 **Priorité:** 🔴 **HIGH**
 
-### 4. ❌ DSERS - NON DÉTECTÉ
+### 4. ✅ DSERS - INSTALLÉE (CORRECTION)
 
-**Recherche Effectuée:**
+**Recherche Initiale (INCORRECTE):**
 ```bash
-grep -r "dsers" /Users/mac/Desktop/Alpha-Medical/ = 0 résultats
-curl homepage | grep "dsers" = 0 résultats
+grep -r "dsers" = 0 résultats (front-end only)
 ```
 
-**Status:** Dsers app n'est PAS installée ou utilisée
+**Recherche GraphQL (CORRECTE):**
+```graphql
+appInstallations { app { title, handle, id } }
+```
 
-**Question:** Utilisez-vous Dsers pour fulfillment/dropshipping?
-- Si OUI: Installation nécessaire
-- Si NON: Ignorer cette section
+**Status:** ✅ DSers-AliExpress Dropshipping INSTALLED
+- App Handle: `dsers-1`
+- App ID: 2358292
+- Detected via GraphQL Admin API (NOT visible in front-end)
+
+**Conclusion:** Dsers est installée et utilisée pour le dropshipping/fulfillment
 
 ---
 
