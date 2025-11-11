@@ -179,6 +179,7 @@ When assisting with this project:
 - [SESSION_2025-11-11_PART3_SUMMARY](SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_SUMMARY](SESSION_2025-11-11_SUMMARY.md): Project documentation
 - [SESSION_SUMMARY](SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
+- [TRACKING_ANALYTICS_GAPS_2025](TRACKING_ANALYTICS_GAPS_2025.md): 1. Shopify Apps → "Google & YouTube" (official) 2. Connect Google account 3. Auto-creates GA4 property + GTM container
 
 ---
 
