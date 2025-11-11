@@ -16,7 +16,7 @@
     {%- endunless -%}
 
     <title>
-      {%- if request.page_type == 'index' and page_title == blank -%}
+      {%- if request.page_type == 'index' -%}
         Professional Medical Equipment You Can Trust - FDA-Compliant | 30-Day Guarantee | {{ shop.name }}
       {%- elsif page_title -%}
         {{ page_title }}
