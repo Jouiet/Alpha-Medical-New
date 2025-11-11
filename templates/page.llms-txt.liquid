@@ -1,0 +1,176 @@
+# Alpha Medical Care
+
+> Professional medical support equipment & orthopedic braces e-commerce platform. Shopify-based store specializing in pain relief, posture support, and therapy wellness products with advanced SEO, automation, and conversion optimization.
+
+## Project Overview
+
+Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equipment e-commerce platform built on Shopify, featuring 75 active products across 6 main collections, with integrated marketing automation, dynamic pricing, and SEO optimization.
+
+**Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
+
+**Last Updated:** October 31, 2025
+
+## Core Documentation
+
+### SEO & Marketing
+
+- [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
+- [SEO_AUDIT_RECOMMENDATIONS](SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
+- [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
+
+### Pricing & Product Management
+
+- [DSERS_CONFIGURATION_GUIDE](DSERS_CONFIGURATION_GUIDE.md): Ce guide vous accompagne dans la configuration EXACTE des règles de pricing dynamique dans DSers pour atteindre les marges nettes définies dans le ...
+- [DSERS_FORM_CONFIGURATION](DSERS_FORM_CONFIGURATION.md): ┌──────────────────────────────────────────────────────────────────────────────┐ │ Product Cost Range(USD): [10.00] - [50.00] │
+- [DYNAMIC_PRICING_MODEL](DYNAMIC_PRICING_MODEL.md): Ce document définit le modèle de pricing dynamique pour Alpha Medical, garantissant des marges nettes prédéfinies après déduction de TOUS les coûts...
+- [IMPLEMENTATION_REPORT_PRICING](IMPLEMENTATION_REPORT_PRICING.md): Price value = [(Product Cost + Shipping Cost + Tax) × (1+ Profit %) + Fixed Profit] / (1 - Breakeven %)
+- [PRICING_QUICK_REFERENCE](PRICING_QUICK_REFERENCE.md): Prix: $25 Shipping: $12 Tier: 1 (car $25 entre $10-50) Fixed Profit: $30.30
+- [PRICING_VERIFICATION](PRICING_VERIFICATION.md): Price = [(Product Cost + Shipping Cost) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
+- [PRODUCT_OPTIMIZATION_TRACKING](PRODUCT_OPTIMIZATION_TRACKING.md): Project documentation
+- [README_PRICING](README_PRICING.md): Project documentation
+
+### Email Marketing & Automation
+
+- [ABANDONED_CART_RECOVERY_CONFIG](ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ '{{' }} shop.name {{ '}}' }}" Option B: "You left something behind at {{ '{{' }} shop.name {{ '}}' }}"
+- [CHAT_INSTANT_ANSWERS](CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
+- [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
+- [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
+- [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
+
+### Content & Blog
+
+- [BLOG_IMAGES_ASSIGNMENT](BLOG_IMAGES_ASSIGNMENT.md): Project documentation
+- [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
+- [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
+- [PAIN_RELIEF_GUIDE_IMPLEMENTATION](PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
+- [ULTIMATE_PAIN_RELIEF_GUIDE](ULTIMATE_PAIN_RELIEF_GUIDE.md): Pain is your body's alarm system - a complex warning signal that something needs attention. Understanding the type of pain you're experiencing is t...
+
+### Implementation & Configuration
+
+- [IMPLEMENTATION_ROADMAP](IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
+- [MANUAL_FOOTER_CONFIG](MANUAL_FOOTER_CONFIG.md): 1. Go to Shopify Admin → Settings → Store details 2. Change "Store name" from "My Store" to "Alpha Medical Care"
+- [PHASE_3_IMPLEMENTATION_LOG](PHASE_3_IMPLEMENTATION_LOG.md): Project documentation
+- [SHOPIFY_CONFIGURATION_COMPLETE](SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
+
+### Forensic Analysis & Reports
+
+- [COLLECTION_OVERLAP_VERIFICATION_REPORT](COLLECTION_OVERLAP_VERIFICATION_REPORT.md): 1. verifyduplicatessimple.py - Vérification générale doublons 2. checkpromotionalduplicates.py - Vérification règle collections promotionnelles
+- [STATUS_REPORT_PAGES](STATUS_REPORT_PAGES.md): Project documentation
+
+## Theme Structure
+
+### Liquid Templates
+
+- `/sections/`: Shopify theme sections (slideshow, product grids, collection banners, etc.)
+- `/snippets/`: Reusable Liquid components (breadcrumbs, social proof, trust badges, schema markup)
+- `/layout/`: Base theme layout files (theme.liquid with meta tags and structured data)
+- `/templates/`: Page templates (product, collection, article, page templates)
+
+### Configuration Files
+
+- `/config/`: Theme settings and configuration JSON files
+- `/locales/`: Multi-language translation files
+
+## Automation Scripts
+
+All Python scripts located in project root for Shopify API automation:
+
+- `configure_klaviyo.py`: Klaviyo integration setup
+- `configure_shopify_email.py`: Shopify email automation configuration
+- `configure_reconvert.py`: ReConvert upsell/cross-sell setup
+- `configure_fbt_bundles.py`: Frequently Bought Together bundle configuration
+- `create_blog_article_*.py`: Automated blog post creation and publishing
+- `create_pain_relief_guide_page.py`: Custom page creation for content hubs
+- `optimize_seo.py`: Bulk SEO optimization for products and collections
+
+## HTML Content Templates
+
+Pre-written HTML content for Shopify pages (all `.html` files in root):
+
+- `CONTENT_FAQ.html`, `CONTENT_HELP_CENTER.html`, `CONTENT_HOW_TO_USE.html`
+- `CONTENT_SHIPPING.html`, `CONTENT_RETURNS.html`, `CONTENT_WARRANTY.html`
+- `CONTENT_MEDICAL_DISCLAIMER.html`, `CONTENT_CUSTOMER_REVIEWS.html`
+
+## Key Features
+
+### SEO & Structured Data
+- BreadcrumbList schema implementation
+- Product schema with reviews and ratings
+- FAQ schema markup
+- Meta descriptions for all collections
+- H1 tag optimization across all page types
+
+### Conversion Optimization
+- Loox social proof reviews system
+- Trust badges and security seals
+- Urgency and scarcity indicators (ethical, inventory-based only)
+- Collection-based product recommendations
+- Abandoned cart recovery (Klaviyo + Shopify Email)
+
+### Analytics Integration
+- Microsoft Clarity (app: tq8st6pt37)
+- Google Analytics 4 (via Conversios + SST)
+- Facebook Pixel + TikTok Pixel (via Infinite app)
+- Server-side tracking (SST) enabled
+
+## Product Collections
+
+1. **Pain Relief & Recovery**: Pain management devices and recovery equipment (31 products)
+2. **Posture & Support**: Orthopedic posture correctors and back support braces (20 products)
+3. **Therapy & Wellness**: Professional therapy devices and wellness equipment (19 products)
+4. **Bestsellers**: Most popular medical support products (16 products)
+5. **New Arrivals**: Latest additions to product catalog (20 products)
+6. **Bundle Deals**: Special product bundles and combination offers (0 products)
+
+## Development Workflow
+
+### Git Repository
+- **Repo**: https://github.com/Jouiet/Alpha-Medical-New.git
+- **Current Branch**: main
+- **Shopify CLI**: Used for theme development and deployment
+
+### Deployment Process
+```bash
+# Development testing
+shopify theme dev
+
+# Preview deployment
+shopify theme push --unpublished
+
+# Production deployment
+shopify theme push --live
+```
+
+### Environment Variables
+- `.env.admin`: Shopify Admin API access token (gitignored)
+- `.env`: General environment configuration (gitignored)
+
+## AI Model Guidance
+
+When assisting with this project:
+
+1. **SEO**: Always check SEO_MARKETING_FORENSIC_ANALYSIS.md for current implementation status before suggesting changes
+2. **Pricing**: Use DYNAMIC_PRICING_MODEL.md for all pricing calculations - 6-tier system with specific formulas
+3. **Email Automation**: Reference Klaviyo implementation docs for flow configuration and timing
+4. **Code Changes**: Follow Liquid best practices, maintain existing schema markup patterns
+5. **Content Creation**: Align with Content Calendar Q1 2026 for blog topics and SEO strategy
+6. **Product Data**: All product operations should respect the pricing tiers and DSers integration
+7. **Testing**: Always recommend preview deployment before live push
+8. **Analytics**: Verify tracking implementation before changes (Clarity, GA4, FB/TikTok pixels)
+
+## Store Statistics (Live Data - October 31, 2025)
+
+- **Total Products**: 75 active products
+- **Collections**: 6 custom collections
+- **Blog Articles**: 14 published articles
+- **Average Load Time**: ~1.07s (TTFB: 0.81s)
+- **SEO Compliance**: 100% (meta tags, schemas, breadcrumbs)
+
+---
+
+**For AI Models**: This is a production Shopify store. Always prioritize data integrity, test changes in preview mode, and maintain existing SEO implementations. The site has active customers and should be treated as a live e-commerce platform.
+
+**Store URL**: https://alphamedical.shop/
+**Admin Access**: https://azffej-as.myshopify.com/admin
+**Last Site Audit**: October 31, 2025
+**llms.txt Last Updated**: {{ 'now' | date: "%B %d, %Y" }}
