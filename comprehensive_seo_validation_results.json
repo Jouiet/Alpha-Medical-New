@@ -1,0 +1,149 @@
+{
+  "timestamp": "2025-11-11T08:58:18.136699",
+  "store_url": "https://www.alphamedical.shop",
+  "api_version": "2025-10",
+  "results": {
+    "meta_tags": {
+      "title": {
+        "value": "Alpha Medical Care",
+        "length": 18,
+        "optimal": false,
+        "status": "\u26a0\ufe0f FAIL"
+      },
+      "description": {
+        "value": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. F",
+        "length": 236,
+        "optimal": false,
+        "status": "\u26a0\ufe0f FAIL"
+      },
+      "og_tags": {
+        "complete": false,
+        "tags": {
+          "og:site_name": "Alpha Medical Care",
+          "og:title": "Alpha Medical Care",
+          "og:description": "Alpha Medical Care",
+          "og:image": null,
+          "og:url": "https://www.alphamedical.shop/",
+          "og:type": "website"
+        },
+        "missing": [
+          "og:image"
+        ],
+        "status": "\u274c FAIL"
+      },
+      "twitter_cards": {
+        "complete": false,
+        "tags": {
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Alpha Medical Care",
+          "twitter:description": "Alpha Medical Care",
+          "twitter:image": null
+        },
+        "missing": [
+          "twitter:image"
+        ],
+        "status": "\u274c FAIL"
+      }
+    },
+    "schemas": {
+      "found": [
+        "Organization",
+        "WebSite",
+        "ProductGroup"
+      ],
+      "required": {
+        "Organization": true,
+        "BreadcrumbList": false,
+        "Product": true,
+        "WebSite": true
+      },
+      "complete": false,
+      "missing": [
+        "BreadcrumbList"
+      ],
+      "status": "\u26a0\ufe0f PARTIAL"
+    },
+    "ai_crawlers": {
+      "mentioned": {
+        "GPTBot": true,
+        "ChatGPT-User": true,
+        "Claude-Web": true,
+        "Google-Extended": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Applebot-Extended": true,
+        "Cohere-AI": true
+      },
+      "allowed": [
+        "GPTBot",
+        "ChatGPT-User",
+        "Claude-Web",
+        "Google-Extended",
+        "PerplexityBot",
+        "CCBot",
+        "Applebot-Extended",
+        "Cohere-AI"
+      ],
+      "count_allowed": 8,
+      "count_total": 8,
+      "llms_txt_reference": true,
+      "status": "\u2705 PASS"
+    },
+    "sitemap": {
+      "accessible": true,
+      "sub_sitemaps": 4,
+      "urls": 0,
+      "size_bytes": 805,
+      "status": "\u2705 PASS"
+    },
+    "ssl_https": {
+      "redirect_301": true,
+      "hsts_enabled": true,
+      "hsts_header": "max-age=7889238",
+      "ssl_valid": true,
+      "status": "\u2705 PASS"
+    },
+    "products": {
+      "total_active": 83,
+      "with_metafields": 83,
+      "compliance_rate": 100.0,
+      "status": "\u2705 PASS"
+    },
+    "collections": {
+      "total": 6,
+      "with_descriptions": 6,
+      "empty_collections": [],
+      "count_empty": 0,
+      "status": "\u2705 PASS"
+    },
+    "technical": {
+      "llms_txt_page": {
+        "accessible": true,
+        "status": "\u2705 PASS"
+      },
+      "robots_txt": {
+        "accessible": true,
+        "status": "\u2705 PASS"
+      }
+    },
+    "summary": {
+      "categories": {
+        "Meta Tags (Title)": false,
+        "Meta Tags (Description)": false,
+        "Open Graph Complete": false,
+        "Twitter Cards Complete": false,
+        "Schemas Present": false,
+        "AI Crawlers (\u22656)": true,
+        "Sitemap Accessible": true,
+        "SSL/HTTPS Perfect": true,
+        "Products Metafields (100%)": true,
+        "Collections Descriptions (\u226575%)": true,
+        "llms.txt Page": true
+      },
+      "passed": 6,
+      "total": 11,
+      "score": 54.54545454545454,
+      "grade": "F"
+    }
+  }
+}
