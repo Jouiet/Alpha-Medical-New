@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-11-11T08:26:08.049292",
+  "store_url": "https://www.alphamedical.shop",
+  "results": {
+    "meta_tags": {},
+    "og_tags": {
+      "tags": {
+        "og:site_name": "Alpha Medical Care",
+        "og:title": "Alpha Medical Care",
+        "og:description": "Alpha Medical Care",
+        "og:image": null,
+        "og:url": "https://www.alphamedical.shop/",
+        "og:type": "website"
+      },
+      "complete": false,
+      "missing": [
+        "og:image"
+      ]
+    },
+    "twitter_cards": {
+      "tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Alpha Medical Care",
+        "twitter:description": "Alpha Medical Care",
+        "twitter:image": null
+      },
+      "complete": false,
+      "missing": [
+        "twitter:image"
+      ]
+    },
+    "schemas": {
+      "found": [
+        "Organization",
+        "WebSite",
+        "ProductGroup"
+      ],
+      "required": {
+        "Organization": true,
+        "BreadcrumbList": false,
+        "Product": true,
+        "FAQPage": false
+      },
+      "complete": false,
+      "missing": [
+        "BreadcrumbList",
+        "FAQPage"
+      ]
+    },
+    "ai_crawlers": {
+      "mentioned": {
+        "GPTBot": true,
+        "Claude-Web": true,
+        "PerplexityBot": true
+      },
+      "allowed": [
+        "GPTBot",
+        "Claude-Web",
+        "PerplexityBot"
+      ],
+      "disallowed": [],
+      "llms_txt_reference": true
+    },
+    "sitemap": {
+      "accessible": true,
+      "sub_sitemaps": 4,
+      "urls": 0,
+      "size_bytes": 805
+    },
+    "ssl_https": {
+      "redirect_301": true,
+      "hsts_enabled": true,
+      "hsts_header": "max-age=7889238",
+      "ssl_valid": true
+    },
+    "homepage_meta": {
+      "title": "Alpha Medical Care",
+      "title_length": 18,
+      "description": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
+      "description_length": 236,
+      "title_optimal": false,
+      "description_optimal": false
+    }
+  },
+  "summary": {
+    "Homepage Meta Tags": false,
+    "Open Graph Tags": false,
+    "Twitter Cards": false,
+    "Structured Data Schemas": false,
+    "AI Crawlers Enabled": true,
+    "Sitemap Accessible": true,
+    "SSL/HTTPS Perfect": true
+  },
+  "overall_score": 42.857142857142854
+}

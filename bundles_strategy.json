@@ -1,0 +1,497 @@
+{
+  "timestamp": "2025-11-11T08:29:03.288828",
+  "personas": {
+    "pain-relief-recovery": {
+      "name": "Pain Relief & Recovery",
+      "product_count": 30
+    },
+    "posture-support": {
+      "name": "Posture & Support",
+      "product_count": 18
+    },
+    "therapy-wellness": {
+      "name": "Therapy & Wellness",
+      "product_count": 17
+    }
+  },
+  "bundle_candidates_count": 9,
+  "final_bundles": [
+    {
+      "name": "Therapy & Wellness Bundle #3",
+      "persona": "Therapy & Wellness",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7586410070093",
+          "title": "V-Line Face Slimming | EMS Lifting Microcurrent Device",
+          "handle": "v-line-face-slimming-ems-lifting-microcurrent-device",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "91.71"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586409447501",
+          "title": "Head & Eye Massager | Heat, Fatigue & Stress Relief",
+          "handle": "head-eye-massager-heat-fatigue-stress-relief",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "95.64"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586409676877",
+          "title": "Stomach Massager | Bian Shi Hot Compress Abdominal",
+          "handle": "stomach-massager-bian-shi-hot-compress-abdominal",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "100.79"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586410004557",
+          "title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+          "handle": "hello-face-red-light-therapy-mask-face-neck-infrared-led",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "106.71"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 394.85,
+      "suggested_bundle_price": 335.6225
+    },
+    {
+      "name": "Posture & Support Bundle #3",
+      "persona": "Posture & Support",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886601293",
+          "title": "Dynamic Knee Support with Spring | Adjustable Joint Cushion",
+          "handle": "dynamic-knee-support-with-spring-adjustable-joint-cushion",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "76.71"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887387725",
+          "title": "Lumbar Support Belt | Disc Herniation & Pain Relief Brace",
+          "handle": "lumbar-support-belt-disc-herniation-pain-relief-brace",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "78.27"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586399158349",
+          "title": "Posture Corrector | Adjustable Back Brace for Women Men",
+          "handle": "posture-corrector-adjustable-back-brace-for-women-men",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "96.88"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7602148245581",
+          "title": "Adjustable Cervical Collar Spine Thoracic Orthosis Head Chest Neck Fixed Brace Posture Corrector Support",
+          "handle": "adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "102.14"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 354.0,
+      "suggested_bundle_price": 300.9
+    },
+    {
+      "name": "Therapy & Wellness Bundle #2",
+      "persona": "Therapy & Wellness",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7586399027277",
+          "title": "Electric Gua Sha Board | Vibration & Hot Compress Massage",
+          "handle": "electric-gua-sha-board-vibration-hot-compress-massage",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "80.69"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586398437453",
+          "title": "EMS Hip Trainer | 3 Modes Buttock Lifting Massage",
+          "handle": "ems-hip-trainer-3-modes-buttock-lifting-massage",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "80.97"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586409480269",
+          "title": "Foreverlily LED Face & Neck Mask | 7 Colors 3D Flexible",
+          "handle": "foreverlily-led-face-neck-mask-7-colors-3d-flexible",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "82.26"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586409873485",
+          "title": "LED Facial Mask with Neck | 7 Colors Photon Anti-Aging",
+          "handle": "led-facial-mask-with-neck-7-colors-photon-anti-aging",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "83.13"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 327.05,
+      "suggested_bundle_price": 277.9925
+    },
+    {
+      "name": "Therapy & Wellness Bundle #1",
+      "persona": "Therapy & Wellness",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7586409185357",
+          "title": "7 Color LED Vibrating Neck & Face Massager",
+          "handle": "7-color-led-vibrating-neck-face-massager",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "67.11"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586398634061",
+          "title": "EMS Abdominal Toning Belt | Muscle Stimulator & Body Shaping",
+          "handle": "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "76.03"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586410135629",
+          "title": "EMS Red Light Eye Massager | Dark Circles & Wrinkle Reduction",
+          "handle": "ems-red-light-eye-massager-dark-circles-wrinkle-reduction",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "76.86"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586410233933",
+          "title": "Neck LED Lift Mask | Anti-Wrinkle Skin Tightening",
+          "handle": "neck-led-lift-mask-anti-wrinkle-skin-tightening",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "80.65"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 300.65,
+      "suggested_bundle_price": 255.55249999999998
+    },
+    {
+      "name": "Posture & Support Bundle #2",
+      "persona": "Posture & Support",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585887453261",
+          "title": "Kids Posture Corrector | Adjustable Back Support for Children",
+          "handle": "kids-posture-corrector-adjustable-back-support-for-children",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "62.59"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585939849293",
+          "title": "Neck Traction Device | Heating Inflatable Cervical",
+          "handle": "neck-traction-device-heating-inflatable-cervical",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "71.47"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585886830669",
+          "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+          "handle": "back-brace-posture-corrector-scoliosis-hunchback-support",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "71.94"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887584333",
+          "title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+          "handle": "magnetic-posture-corrector-shoulder-orthopedic-brace",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "74.62"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 280.62,
+      "suggested_bundle_price": 238.527
+    },
+    {
+      "name": "Pain Relief & Recovery Bundle #3",
+      "persona": "Pain Relief & Recovery",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7586408857677",
+          "title": "Electric Ankle Brace | Hot Compress & Vibration Massage",
+          "handle": "electric-ankle-brace-hot-compress-vibration-massage",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "56.64"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887518797",
+          "title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
+          "handle": "adjustable-wrist-support-brace-fitness-pain-relief",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "59.55"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7586410266701",
+          "title": "Vibration Shoulder Steamer | Heated Belt Massager",
+          "handle": "vibration-shoulder-steamer-heated-belt-massager",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "61.13"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585940045901",
+          "title": "Sports Knee Pads | Pressurized Elastic Support Gym",
+          "handle": "sports-knee-pads-pressurized-elastic-support-gym",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "61.45"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 238.77,
+      "suggested_bundle_price": 202.9545
+    },
+    {
+      "name": "Posture & Support Bundle #1",
+      "persona": "Posture & Support",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585887223885",
+          "title": "Inflatable Neck Collar | Cervical Traction Pillow",
+          "handle": "inflatable-neck-collar-cervical-traction-pillow",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "49.26"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887322189",
+          "title": "Posture Corrector | Adjustable Shoulder Support Brace",
+          "handle": "posture-corrector-adjustable-shoulder-support-brace",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "56.41"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887289421",
+          "title": "Lower Back Brace | 6 Stays Anti-Skid Lumbar Support",
+          "handle": "lower-back-brace-6-stays-anti-skid-lumbar-support",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "57.69"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887027277",
+          "title": "Cervical Neck Traction Device | Inflatable Home Relief",
+          "handle": "cervical-neck-traction-device-inflatable-home-relief",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "60.31"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 223.67,
+      "suggested_bundle_price": 190.1195
+    },
+    {
+      "name": "Pain Relief & Recovery Bundle #2",
+      "persona": "Pain Relief & Recovery",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886568525",
+          "title": "Tourmaline Magnetic Knee Pads | Self-Heating Support",
+          "handle": "tourmaline-magnetic-knee-pads-self-heating-support",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "52.99"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887092813",
+          "title": "Basketball Knee Pad | Honeycomb Shock Protection",
+          "handle": "basketball-knee-pad-honeycomb-shock-protection",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "55.05"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585886699597",
+          "title": "Patella Knee Tendon Strap | Sports Support & Stabilizer",
+          "handle": "patella-knee-tendon-strap-sports-support-stabilizer",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "55.08"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585886666829",
+          "title": "Double Patellar Knee Support Strap | Pain Relief Brace",
+          "handle": "double-patellar-knee-support-strap-pain-relief-brace",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "56.37"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 219.49,
+      "suggested_bundle_price": 186.5665
+    },
+    {
+      "name": "Pain Relief & Recovery Bundle #1",
+      "persona": "Pain Relief & Recovery",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886928973",
+          "title": "Silicone Patellar Tendon Strap | Knee Pain Relief",
+          "handle": "silicone-patellar-tendon-strap-knee-pain-relief",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "45.08"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585886765133",
+          "title": "Full Leg Compression Sleeve | Unisex Knee Support",
+          "handle": "full-leg-compression-sleeve-unisex-knee-support",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "46.62"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585940308045",
+          "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
+          "handle": "adjustable-knee-patellar-tendon-strap-sports-support",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "50.44"
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/Product/7585887191117",
+          "title": "Wrist Brace Support | Carpal Tunnel & Arthritis Relief",
+          "handle": "wrist-brace-support-carpal-tunnel-arthritis-relief",
+          "status": "ACTIVE",
+          "priceRangeV2": {
+            "minVariantPrice": {
+              "amount": "51.34"
+            }
+          }
+        }
+      ],
+      "product_count": 4,
+      "total_price": 193.48,
+      "suggested_bundle_price": 164.458
+    }
+  ]
+}
