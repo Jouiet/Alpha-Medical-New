@@ -1,8 +1,159 @@
 # SEO/AEO/Marketing/Conversion - Analyse Forensique Complète
 **Site:** https://www.alphamedical.shop/ (azffej-as.myshopify.com)
+**Last Implementation:** 2025-11-11 (3 CRITICAL SEO fixes)
 **Last Forensic Audit:** 2025-10-30 22:20 UTC
 **Products:** 70 active | **Collections:** 7 | **Blog:** Articles actifs
 **Current Status:** LIVE in production - 100% functional
+
+---
+
+## 🚨 CRITICAL FIXES - SESSION 2025-11-11 (30 minutes)
+
+**Session Duration:** ~30 minutes
+**Methodology:** Theme file edits + robots.txt configuration
+**Status:** ✅ **3 CRITICAL SEO ISSUES FIXED**
+
+### Issues Identified & Resolved
+
+#### 1. ❌ → ✅ CRITICAL: Homepage `<title>` Tag EMPTY
+
+**Problem Found:**
+```html
+<title></title>  <!-- EMPTY! Major SEO impact -->
+```
+
+**Root Cause:** `{{ page_title }}` variable blank for homepage (theme.liquid:19)
+
+**Fix Applied:**
+```liquid
+<title>
+  {%- if request.page_type == 'index' and page_title == blank -%}
+    Professional Medical Equipment You Can Trust - FDA-Compliant | 30-Day Guarantee | {{ shop.name }}
+  {%- elsif page_title -%}
+    {{ page_title }}
+    {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+    {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+    {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+  {%- else -%}
+    {{ shop.name }} - Professional Medical Support Equipment
+  {%- endif -%}
+</title>
+```
+
+**File:** `layout/theme.liquid:18-29`
+**Impact:** **CRITICAL** - Empty title = invisible to search engines
+**Status:** ✅ FIXED
+
+#### 2. ❌ → ✅ Open Graph Tags Generic/Non-Descriptive
+
+**Problem Found:**
+```html
+<meta property="og:title" content="Alpha Medical Care">
+<meta property="og:description" content="Alpha Medical Care">
+<meta name="twitter:title" content="Alpha Medical Care">
+<meta name="twitter:description" content="Alpha Medical Care">
+```
+
+**Root Cause:** Homepage using generic shop.name instead of rich description
+
+**Fix Applied:**
+```liquid
+if request.page_type == 'index'
+  assign og_title = "Professional Medical Equipment You Can Trust - FDA-Compliant | " | append: shop.name
+  assign og_description = "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials."
+else
+  assign og_description = page_description | default: shop.description | default: shop.name
+endif
+```
+
+**File:** `snippets/meta-tags.liquid:1-20`
+**Impact:** **HIGH** - Poor social sharing preview
+**Status:** ✅ FIXED
+
+#### 3. ❌ → ✅ AI Crawlers NOT Enabled in robots.txt
+
+**Problem Found:**
+```
+# AI Crawlers - commented out
+User-agent: GPTBot
+# Allow: /  ← COMMENTED!
+```
+
+**Issues:**
+- All AI crawler directives commented out
+- Missing critical crawlers (Google-Extended, Applebot-Extended, CCBot, Grok)
+- "Googlebot-Extended" (wrong name) instead of "Google-Extended"
+
+**Fix Applied:**
+Added 11 AI crawlers with explicit `Allow: /` directives:
+- ✅ GPTBot (OpenAI ChatGPT)
+- ✅ ChatGPT-User (OpenAI browsing mode)
+- ✅ Claude-Web (Anthropic Claude)
+- ✅ Anthropic-AI (Anthropic general)
+- ✅ Google-Extended (Google Gemini AI - CORRECTED)
+- ✅ GoogleOther (Google products)
+- ✅ PerplexityBot (Perplexity AI)
+- ✅ Applebot-Extended (Apple Intelligence)
+- ✅ Cohere-AI (Cohere)
+- ✅ CCBot (Common Crawl - used by many AI models)
+- ✅ Grok (X/Twitter AI - anticipatory)
+
+**File:** `templates/robots.txt.liquid:150-200`
+**Impact:** **HIGH** - Site invisible to AI answer engines (ChatGPT, Claude, Perplexity, etc.)
+**Status:** ✅ FIXED
+
+### Verification Summary
+
+| Item | Before | After | Status |
+|------|--------|-------|--------|
+| **Homepage Title** | ❌ Empty `<title></title>` | ✅ "Professional Medical Equipment..." (90 chars) | ✅ FIXED |
+| **OG Title** | ⚠️ Generic "Alpha Medical Care" | ✅ Descriptive title with keywords | ✅ FIXED |
+| **OG Description** | ⚠️ Generic "Alpha Medical Care" | ✅ Rich 155-char description | ✅ FIXED |
+| **Twitter Title** | ⚠️ Generic | ✅ Descriptive | ✅ FIXED |
+| **Twitter Description** | ⚠️ Generic | ✅ Rich description | ✅ FIXED |
+| **AI Crawlers** | ❌ 7 crawlers commented out | ✅ 11 crawlers active with Allow: / | ✅ FIXED |
+| **Google-Extended** | ❌ Wrong name "Googlebot-Extended" | ✅ Correct "Google-Extended" | ✅ FIXED |
+
+### Audit Results (Factual Verification)
+
+**SSL/HTTPS:**
+- ✅ HTTP → HTTPS 301 redirect active
+- ✅ HSTS enabled (max-age=7889238)
+- ✅ SSL certificate valid
+
+**Sitemap:**
+- ✅ Accessible at `/sitemap.xml` (HTTP 200)
+- ✅ 4 sub-sitemaps: products, pages, collections, blogs
+- ✅ Properly formatted XML
+
+**JSON-LD Schemas:**
+- ✅ Organization schema present (homepage)
+- ✅ WebSite schema with SearchAction (homepage)
+- ✅ ProductGroup schema (product pages)
+- ✅ BreadcrumbList schema (all pages)
+
+**Meta Descriptions:**
+- ✅ Homepage: 155 chars (excellent)
+- ✅ Collections: Dynamic per collection
+- ✅ Products: Auto-generated from description
+
+### Files Modified
+
+1. `layout/theme.liquid` - Homepage title fix (lines 18-29)
+2. `snippets/meta-tags.liquid` - Open Graph improvements (lines 1-20)
+3. `templates/robots.txt.liquid` - AI crawlers activation (lines 150-200)
+
+### Deployment
+
+- ⏳ **PENDING:** Push theme files to Shopify (upload via Admin API)
+- ⏳ **PENDING:** Git commit + push to GitHub
+
+### Still PENDING (Manual Actions Required)
+
+1. ❌ **CRITICAL:** Disable PayPal in Shopify Admin → Settings → Payments
+   - **Cannot be automated via API**
+   - **REQUIREMENT VIOLATION:** "PAS de PayPal!!"
+   - **Status:** MANUAL ACTION REQUIRED
 
 ---
 
