@@ -176,6 +176,7 @@ When assisting with this project:
 - [RAPPORT_FINAL_COMPLET](RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](RAPPORT_THEME_ANALYSE.md): Project documentation
 - [ROBOTS_TXT_DEPLOYMENT](ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
+- [SESSION_2025-11-11_SUMMARY](SESSION_2025-11-11_SUMMARY.md): Project documentation
 - [SESSION_SUMMARY](SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
 
 ---
