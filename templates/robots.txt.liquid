@@ -147,16 +147,57 @@ Crawl-delay: 10
 User-agent: Pinterest
 Crawl-delay: 1
 
-# AI Crawlers - Allow with guidance
+# AI Crawlers & Answer Engines (AEO - Answer Engine Optimization)
+# Updated: 2025-11-11
+# Purpose: Allow AI search engines to crawl and index content for answer engines
+#
+# Supported AI Crawlers:
+# - GPTBot (OpenAI ChatGPT)
+# - ChatGPT-User (OpenAI browsing mode)
+# - Claude-Web (Anthropic Claude)
+# - Anthropic-AI (Anthropic general)
+# - Google-Extended (Google Gemini AI - for AI training, Sept 2023)
+# - GoogleOther (Google products crawler)
+# - PerplexityBot (Perplexity AI)
+# - Applebot-Extended (Apple Intelligence)
+# - Cohere-AI (Cohere AI)
+# - CCBot (Common Crawl - used by many AI models)
+# - Grok (X/Twitter AI - anticipatory, no official crawler yet as of April 2025)
+
 User-agent: GPTBot
+Allow: /
+
 User-agent: ChatGPT-User
-User-agent: anthropic-ai
+Allow: /
+
 User-agent: Claude-Web
-User-agent: cohere-ai
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
 User-agent: PerplexityBot
-User-agent: Googlebot-Extended
-# Allow: /
-# See llms.txt for structured documentation
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Grok
+Allow: /
+
+# See llms.txt for structured LLM-friendly documentation
 
 # Sitemap location
 Sitemap: https://alphamedical.shop/sitemap.xml

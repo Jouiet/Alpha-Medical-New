@@ -16,10 +16,16 @@
     {%- endunless -%}
 
     <title>
-      {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- if request.page_type == 'index' and page_title == blank -%}
+        Professional Medical Equipment You Can Trust - FDA-Compliant | 30-Day Guarantee | {{ shop.name }}
+      {%- elsif page_title -%}
+        {{ page_title }}
+        {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+        {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+        {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- else -%}
+        {{ shop.name }} - Professional Medical Support Equipment
+      {%- endif -%}
     </title>
 
     {%- liquid
