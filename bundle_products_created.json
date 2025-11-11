@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-11-11T08:40:57.978718",
+  "created_count": 10,
+  "failed_count": 0,
+  "collection_id": "gid://shopify/Collection/295163035725",
+  "created_bundles": [
+    {
+      "name": "Active Athlete & Sports Enthusiast",
+      "id": "gid://shopify/Product/7620850876493",
+      "handle": "bundle-active-athlete-and-sports-enthusiast"
+    },
+    {
+      "name": "Office Worker with Chronic Pain",
+      "id": "gid://shopify/Product/7620850909261",
+      "handle": "bundle-office-worker-with-chronic-pain"
+    },
+    {
+      "name": "Elderly / Mobility Support",
+      "id": "gid://shopify/Product/7620850942029",
+      "handle": "bundle-elderly-mobility-support"
+    },
+    {
+      "name": "Post-Injury / Post-Surgery Recovery",
+      "id": "gid://shopify/Product/7620850974797",
+      "handle": "bundle-post-injury-post-surgery-recovery"
+    },
+    {
+      "name": "Beauty & Wellness Enthusiast",
+      "id": "gid://shopify/Product/7620851007565",
+      "handle": "bundle-beauty-and-wellness-enthusiast"
+    },
+    {
+      "name": "Comprehensive Therapy User",
+      "id": "gid://shopify/Product/7620851040333",
+      "handle": "bundle-comprehensive-therapy-user"
+    },
+    {
+      "name": "Foot Care & Bunion Relief",
+      "id": "gid://shopify/Product/7620851073101",
+      "handle": "bundle-foot-care-and-bunion-relief"
+    },
+    {
+      "name": "Active Athlete - Knee Support Kit",
+      "id": "gid://shopify/Product/7620851105869",
+      "handle": "bundle-active-athlete-knee-support-kit"
+    },
+    {
+      "name": "Office Worker - Back & Neck Relief Kit",
+      "id": "gid://shopify/Product/7620851138637",
+      "handle": "bundle-office-worker-back-and-neck-relief-kit"
+    },
+    {
+      "name": "Beauty & Wellness - Premium Facial Therapy Kit",
+      "id": "gid://shopify/Product/7620851171405",
+      "handle": "bundle-beauty-and-wellness-premium-facial-therapy-kit"
+    }
+  ],
+  "failed_bundles": []
+}

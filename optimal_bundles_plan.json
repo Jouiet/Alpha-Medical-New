@@ -1,0 +1,268 @@
+{
+  "timestamp": "2025-11-11T08:38:03.454278",
+  "total_bundles": 10,
+  "unique_products_used": 36,
+  "collection_id": "gid://shopify/Collection/295163035725",
+  "bundles": [
+    {
+      "persona_key": "athlete_active",
+      "name": "Active Athlete & Sports Enthusiast",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886928973",
+          "title": "Silicone Patellar Tendon Strap | Knee Pain Relief",
+          "price": 45.08
+        },
+        {
+          "id": "gid://shopify/Product/7586410266701",
+          "title": "Vibration Shoulder Steamer | Heated Belt Massager",
+          "price": 61.13
+        },
+        {
+          "id": "gid://shopify/Product/7585886601293",
+          "title": "Dynamic Knee Support with Spring | Adjustable Joint Cushion",
+          "price": 76.71
+        },
+        {
+          "id": "gid://shopify/Product/7586399158349",
+          "title": "Posture Corrector | Adjustable Back Brace for Women Men",
+          "price": 96.88
+        }
+      ],
+      "total_price": 279.8,
+      "bundle_price": 237.83
+    },
+    {
+      "persona_key": "office_chronic_pain",
+      "name": "Office Worker with Chronic Pain",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886765133",
+          "title": "Full Leg Compression Sleeve | Unisex Knee Support",
+          "price": 46.62
+        },
+        {
+          "id": "gid://shopify/Product/7585887453261",
+          "title": "Kids Posture Corrector | Adjustable Back Support for Children",
+          "price": 62.59
+        },
+        {
+          "id": "gid://shopify/Product/7586410233933",
+          "title": "Neck LED Lift Mask | Anti-Wrinkle Skin Tightening",
+          "price": 80.65
+        },
+        {
+          "id": "gid://shopify/Product/7602146705485",
+          "title": "Adjustable Hunchback Orthotic Brace Back Waist Posture Corrector Back Support Corset Shoulder Spine Brace Neck Stretcher",
+          "price": 109.14
+        }
+      ],
+      "total_price": 299.0,
+      "bundle_price": 254.15
+    },
+    {
+      "persona_key": "elderly_mobility",
+      "name": "Elderly / Mobility Support",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585887223885",
+          "title": "Inflatable Neck Collar | Cervical Traction Pillow",
+          "price": 49.26
+        },
+        {
+          "id": "gid://shopify/Product/7585940045901",
+          "title": "Sports Knee Pads | Pressurized Elastic Support Gym",
+          "price": 61.45
+        },
+        {
+          "id": "gid://shopify/Product/7586410135629",
+          "title": "EMS Red Light Eye Massager | Dark Circles & Wrinkle Reduction",
+          "price": 76.86
+        },
+        {
+          "id": "gid://shopify/Product/7586409676877",
+          "title": "Stomach Massager | Bian Shi Hot Compress Abdominal",
+          "price": 100.79
+        }
+      ],
+      "total_price": 288.36,
+      "bundle_price": 245.106
+    },
+    {
+      "persona_key": "post_injury_recovery",
+      "name": "Post-Injury / Post-Surgery Recovery",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585940308045",
+          "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
+          "price": 50.44
+        },
+        {
+          "id": "gid://shopify/Product/7586410168397",
+          "title": "Electric Foot & Hand Massager | Vibration & Heat Therapy",
+          "price": 67.39
+        },
+        {
+          "id": "gid://shopify/Product/7586409054285",
+          "title": "Electric Lumbar Massager | Heated Vibration Back Brace",
+          "price": 80.93
+        },
+        {
+          "id": "gid://shopify/Product/7586408890445",
+          "title": "Nano Steam Eye Massager | Warm Spa Acupressure Mask",
+          "price": 122.36
+        }
+      ],
+      "total_price": 321.12,
+      "bundle_price": 272.952
+    },
+    {
+      "persona_key": "beauty_wellness",
+      "name": "Beauty & Wellness Enthusiast",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585887191117",
+          "title": "Wrist Brace Support | Carpal Tunnel & Arthritis Relief",
+          "price": 51.34
+        },
+        {
+          "id": "gid://shopify/Product/7593555984461",
+          "title": "Electric Heating Leg Massager Wireless Rechargeable Air Compression Leg Calf Massage For Relief Relax Leg Muscles Health Care",
+          "price": 73.08
+        },
+        {
+          "id": "gid://shopify/Product/7586410004557",
+          "title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+          "price": 106.71
+        }
+      ],
+      "total_price": 231.13,
+      "bundle_price": 196.4605
+    },
+    {
+      "persona_key": "comprehensive_therapy",
+      "name": "Comprehensive Therapy User",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886568525",
+          "title": "Tourmaline Magnetic Knee Pads | Self-Heating Support",
+          "price": 52.99
+        },
+        {
+          "id": "gid://shopify/Product/7586409185357",
+          "title": "7 Color LED Vibrating Neck & Face Massager",
+          "price": 67.11
+        },
+        {
+          "id": "gid://shopify/Product/7585886863437",
+          "title": "VELPEAU Wrist Splint | Carpal Tunnel Pain Relief",
+          "price": 80.89
+        },
+        {
+          "id": "gid://shopify/Product/7585887256653",
+          "title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+          "price": 121.38
+        }
+      ],
+      "total_price": 322.37,
+      "bundle_price": 274.0145
+    },
+    {
+      "persona_key": "foot_bunion_care",
+      "name": "Foot Care & Bunion Relief",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886666829",
+          "title": "Double Patellar Knee Support Strap | Pain Relief Brace",
+          "price": 56.37
+        },
+        {
+          "id": "gid://shopify/Product/7585886830669",
+          "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+          "price": 71.94
+        },
+        {
+          "id": "gid://shopify/Product/7586409447501",
+          "title": "Head & Eye Massager | Heat, Fatigue & Stress Relief",
+          "price": 95.64
+        }
+      ],
+      "total_price": 223.95,
+      "bundle_price": 190.3575
+    },
+    {
+      "persona_key": "athlete_active_knee",
+      "name": "Active Athlete - Knee Support Kit",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7585886797901",
+          "title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+          "price": 65.65
+        },
+        {
+          "id": "gid://shopify/Product/7586409906253",
+          "title": "Foreverlily Smart Knee Massager | Vibration & Air Pressure",
+          "price": 94.42
+        },
+        {
+          "id": "gid://shopify/Product/7585939914829",
+          "title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+          "price": 159.97
+        }
+      ],
+      "total_price": 320.04,
+      "bundle_price": 272.034
+    },
+    {
+      "persona_key": "office_back_neck",
+      "name": "Office Worker - Back & Neck Relief Kit",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7586409218125",
+          "title": "Neck Massage Machine | 4-Head Heating Protection",
+          "price": 72.96
+        },
+        {
+          "id": "gid://shopify/Product/7586409480269",
+          "title": "Foreverlily LED Face & Neck Mask | 7 Colors 3D Flexible",
+          "price": 82.26
+        },
+        {
+          "id": "gid://shopify/Product/7586409873485",
+          "title": "LED Facial Mask with Neck | 7 Colors Photon Anti-Aging",
+          "price": 83.13
+        }
+      ],
+      "total_price": 238.35,
+      "bundle_price": 202.5975
+    },
+    {
+      "persona_key": "beauty_facial_premium",
+      "name": "Beauty & Wellness - Premium Facial Therapy Kit",
+      "products": [
+        {
+          "id": "gid://shopify/Product/7586409152589",
+          "title": "Face Lifting Device | Red Light Skin Rejuvenation & V-Face",
+          "price": 60.48
+        },
+        {
+          "id": "gid://shopify/Product/7586410070093",
+          "title": "V-Line Face Slimming | EMS Lifting Microcurrent Device",
+          "price": 91.71
+        },
+        {
+          "id": "gid://shopify/Product/7586409939021",
+          "title": "Professional 7-Color LED Mask | Facial Light Therapy",
+          "price": 146.12
+        },
+        {
+          "id": "gid://shopify/Product/7586409807949",
+          "title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
+          "price": 147.59
+        }
+      ],
+      "total_price": 445.9,
+      "bundle_price": 379.015
+    }
+  ]
+}
