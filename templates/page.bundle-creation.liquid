@@ -1,0 +1,1310 @@
+{% comment %}
+  CUSTOM BUNDLE BUILDER - Creation Page
+  Template: page.bundle-creation.liquid
+
+  Allows customers to submit bundle proposals by entering product URLs
+  - Validates only internal product URLs (alphamedical.shop/products/*)
+  - Tracks identical submissions
+  - Creates bundle when 10 identical proposals received
+{% endcomment %}
+
+<div class="bundle-creation-page page-width">
+  <div class="bundle-creation-hero">
+    <h1 class="bundle-creation-title">{{ page.title | default: "Create Your Own Bundle" }}</h1>
+    <p class="bundle-creation-subtitle">
+      Propose your perfect product combination! When 10 customers propose the same bundle, we'll make it real with a 15% discount.
+    </p>
+  </div>
+
+  {%- comment -%} How It Works Section {%- endcomment -%}
+  <section class="bundle-how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Propose Your Bundle</h3>
+        <p>Add 2-5 product URLs from our shop</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Track Votes</h3>
+        <p>See how many customers proposed the same combination</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Bundle Goes Live!</h3>
+        <p>At 10 votes, we create it with 15% OFF</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Get Notified</h3>
+        <p>All 10 proposers receive an email when bundle is live</p>
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} Bundle Creation Form {%- endcomment -%}
+  <section class="bundle-creation-form-section">
+    <div class="form-container">
+
+      {%- comment -%} Customer Login Check {%- endcomment -%}
+      {% if customer %}
+
+        <div class="customer-status">
+          <p>✅ Logged in as <strong>{{ customer.email }}</strong></p>
+          <p class="submission-counter">
+            <span id="submissions-remaining">Loading...</span>
+          </p>
+        </div>
+
+        <form id="bundle-proposal-form" class="bundle-form" data-customer-id="{{ customer.id }}">
+
+          <div class="form-header">
+            <h2>Build Your Bundle</h2>
+            <p>Enter 2-5 product URLs from our shop (alphamedical.shop/products/...)</p>
+          </div>
+
+          {%- comment -%} Product URL Inputs (Dynamic) {%- endcomment -%}
+          <div id="product-urls-container" class="product-urls-container">
+            <div class="product-url-input-group" data-index="1">
+              <label for="product-url-1">Product #1 URL <span class="required">*</span></label>
+              <input
+                type="url"
+                id="product-url-1"
+                name="product_url_1"
+                class="product-url-input"
+                placeholder="https://www.alphamedical.shop/products/your-product-handle"
+                required
+                pattern="https?://.*alphamedical\.shop/products/[a-z0-9\-]+"
+                data-index="1"
+              >
+              <div class="product-preview" id="preview-1"></div>
+              <div class="input-error" id="error-1"></div>
+            </div>
+
+            <div class="product-url-input-group" data-index="2">
+              <label for="product-url-2">Product #2 URL <span class="required">*</span></label>
+              <input
+                type="url"
+                id="product-url-2"
+                name="product_url_2"
+                class="product-url-input"
+                placeholder="https://www.alphamedical.shop/products/your-product-handle"
+                required
+                pattern="https?://.*alphamedical\.shop/products/[a-z0-9\-]+"
+                data-index="2"
+              >
+              <div class="product-preview" id="preview-2"></div>
+              <div class="input-error" id="error-2"></div>
+            </div>
+          </div>
+
+          {%- comment -%} Add/Remove Product Buttons {%- endcomment -%}
+          <div class="form-actions-container">
+            <button
+              type="button"
+              id="add-product-btn"
+              class="button button--secondary"
+              disabled
+            >
+              + Add Another Product (Max 5)
+            </button>
+            <p class="helper-text">You can add 2-5 products to your bundle proposal</p>
+          </div>
+
+          {%- comment -%} Bundle Summary {%- endcomment -%}
+          <div id="bundle-summary" class="bundle-summary" style="display: none;">
+            <h3>Bundle Summary</h3>
+            <div id="summary-products"></div>
+            <div class="pricing-summary">
+              <div class="pricing-row">
+                <span>Total Regular Price:</span>
+                <span id="total-price">$0.00</span>
+              </div>
+              <div class="pricing-row bundle-price">
+                <span>Bundle Price (15% OFF):</span>
+                <span id="bundle-price">$0.00</span>
+              </div>
+              <div class="pricing-row savings">
+                <span>Your Savings:</span>
+                <span id="savings">$0.00</span>
+              </div>
+            </div>
+          </div>
+
+          {%- comment -%} Terms & Conditions {%- endcomment -%}
+          <div class="form-terms">
+            <label class="checkbox-label">
+              <input type="checkbox" id="terms-accept" required>
+              <span>I understand that bundles are created only when 10 customers propose identical combinations. I can submit up to 3 proposals per month.</span>
+            </label>
+          </div>
+
+          {%- comment -%} Submit Button {%- endcomment -%}
+          <div class="form-submit">
+            <button
+              type="submit"
+              id="submit-proposal-btn"
+              class="button button--primary button--full-width"
+              disabled
+            >
+              Submit Bundle Proposal
+            </button>
+            <p class="submit-note">We'll validate your products and notify you when your proposal is received</p>
+          </div>
+
+          {%- comment -%} Loading State {%- endcomment -%}
+          <div id="form-loading" class="form-loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Validating and submitting your proposal...</p>
+          </div>
+
+          {%- comment -%} Success/Error Messages {%- endcomment -%}
+          <div id="form-messages" class="form-messages"></div>
+
+        </form>
+
+      {% else %}
+
+        {%- comment -%} Not Logged In - Redirect to Login {%- endcomment -%}
+        <div class="login-required">
+          <div class="login-icon">🔒</div>
+          <h2>Login Required</h2>
+          <p>You must be logged in to submit bundle proposals.</p>
+          <a href="/account/login?return_url={{ page.url | url_encode }}" class="button button--primary">
+            Log In to Continue
+          </a>
+          <p class="register-link">
+            Don't have an account? <a href="/account/register?return_url={{ page.url | url_encode }}">Create one here</a>
+          </p>
+        </div>
+
+      {% endif %}
+    </div>
+  </section>
+
+  {%- comment -%} Trending Proposals Section {%- endcomment -%}
+  <section class="trending-proposals">
+    <h2>Trending Bundle Proposals</h2>
+    <p>Vote for existing proposals by submitting the same product combination!</p>
+    <div id="trending-proposals-list" class="proposals-grid">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <p>Loading trending proposals...</p>
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} FAQ Section {%- endcomment -%}
+  <section class="bundle-faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>What products can I include?</summary>
+        <p>You can only include products from our shop (URLs starting with alphamedical.shop/products/). External links are not accepted.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many proposals can I submit?</summary>
+        <p>You can submit up to 3 bundle proposals per month.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What happens when 10 customers propose the same bundle?</summary>
+        <p>We automatically create it as a real product with a 15% discount, and all 10 proposers receive an email notification!</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I propose the same bundle twice?</summary>
+        <p>No, each customer can only propose each unique product combination once.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if my proposal never reaches 10 votes?</summary>
+        <p>You can still purchase the products individually. Share your proposal with friends to help it reach 10 votes!</p>
+      </details>
+      <details class="faq-item">
+        <summary>What discount do bundles get?</summary>
+        <p>All community-created bundles receive a 15% discount off the total price of individual products.</p>
+      </details>
+    </div>
+  </section>
+
+</div>
+
+{%- comment -%} Inline Styles {%- endcomment -%}
+<style>
+.bundle-creation-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.bundle-creation-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.bundle-creation-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #4A90E2;
+}
+
+.bundle-creation-subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* How It Works */
+.bundle-how-it-works {
+  margin-bottom: 60px;
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.bundle-how-it-works h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: #4A90E2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 16px;
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.step p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Form Section */
+.bundle-creation-form-section {
+  margin-bottom: 60px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.customer-status {
+  background: #e8f5e9;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.customer-status p {
+  margin: 4px 0;
+}
+
+.submission-counter {
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+.form-header {
+  margin-bottom: 32px;
+}
+
+.form-header h2 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Product URL Inputs */
+.product-urls-container {
+  margin-bottom: 24px;
+}
+
+.product-url-input-group {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product-url-input-group:last-child {
+  border-bottom: none;
+}
+
+.product-url-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.required {
+  color: #d32f2f;
+}
+
+.product-url-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.product-url-input:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+.product-url-input.valid {
+  border-color: #4caf50;
+}
+
+.product-url-input.invalid {
+  border-color: #d32f2f;
+}
+
+.product-preview {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  display: none;
+}
+
+.product-preview.show {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-preview img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-preview .info h4 {
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.product-preview .info p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.input-error {
+  color: #d32f2f;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: none;
+}
+
+.input-error.show {
+  display: block;
+}
+
+.remove-product-btn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+.remove-product-btn:hover {
+  background: #b71c1c;
+}
+
+/* Form Actions */
+.form-actions-container {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.helper-text {
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+
+/* Bundle Summary */
+.bundle-summary {
+  background: #e3f2fd;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.bundle-summary h3 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#summary-products {
+  margin-bottom: 16px;
+}
+
+.summary-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.summary-product img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.summary-product .info {
+  flex: 1;
+}
+
+.summary-product h4 {
+  margin: 0 0 4px 0;
+  font-size: 0.9rem;
+}
+
+.summary-product .price {
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+.pricing-summary {
+  border-top: 2px solid #4A90E2;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.pricing-row.bundle-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+.pricing-row.savings {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Terms */
+.form-terms {
+  margin-bottom: 24px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  margin-top: 4px;
+}
+
+.checkbox-label span {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Submit */
+.form-submit {
+  margin-bottom: 24px;
+}
+
+.button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button--primary {
+  background: #4A90E2;
+  color: white;
+}
+
+.button--primary:hover:not(:disabled) {
+  background: #357abd;
+}
+
+.button--secondary {
+  background: white;
+  color: #4A90E2;
+  border: 2px solid #4A90E2;
+}
+
+.button--secondary:hover:not(:disabled) {
+  background: #4A90E2;
+  color: white;
+}
+
+.button--full-width {
+  width: 100%;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submit-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 12px;
+}
+
+/* Loading */
+.form-loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4A90E2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Messages */
+.form-messages {
+  margin-top: 24px;
+}
+
+.message {
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.message.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-left: 4px solid #4caf50;
+}
+
+.message.error {
+  background: #ffebee;
+  color: #c62828;
+  border-left: 4px solid #d32f2f;
+}
+
+.message.info {
+  background: #e3f2fd;
+  color: #1565c0;
+  border-left: 4px solid #4A90E2;
+}
+
+/* Login Required */
+.login-required {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.login-icon {
+  font-size: 4rem;
+  margin-bottom: 24px;
+}
+
+.login-required h2 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.login-required p {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.register-link {
+  font-size: 0.95rem;
+  margin-top: 16px;
+}
+
+.register-link a {
+  color: #4A90E2;
+  text-decoration: underline;
+}
+
+/* Trending Proposals */
+.trending-proposals {
+  margin-bottom: 60px;
+}
+
+.trending-proposals h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.trending-proposals > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.proposals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 40px;
+  grid-column: 1 / -1;
+}
+
+.proposal-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.proposal-card:hover {
+  border-color: #4A90E2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+.proposal-card h3 {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.proposal-card .products-list {
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.proposal-card .vote-progress {
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 24px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4A90E2, #7FCCC9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.875rem;
+  transition: width 0.3s;
+}
+
+.vote-text {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+}
+
+.proposal-card .vote-btn {
+  width: 100%;
+}
+
+/* FAQ */
+.bundle-faq {
+  margin-bottom: 40px;
+}
+
+.bundle-faq h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.faq-item summary {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.05rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: #4A90E2;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item p {
+  margin-top: 12px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bundle-creation-title {
+    font-size: 2rem;
+  }
+
+  .form-container {
+    padding: 24px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+{%- comment -%} JavaScript for Form Logic {%- endcomment -%}
+<script>
+// Bundle Creation Form Logic
+(function() {
+  'use strict';
+
+  const SHOP_DOMAIN = 'alphamedical.shop';
+  const MIN_PRODUCTS = 2;
+  const MAX_PRODUCTS = 5;
+  const MAX_SUBMISSIONS_PER_MONTH = 3;
+
+  let productCount = 2;
+  let validatedProducts = {};
+  let customerSubmissionsThisMonth = 0;
+
+  // DOM Elements
+  const form = document.getElementById('bundle-proposal-form');
+  const productUrlsContainer = document.getElementById('product-urls-container');
+  const addProductBtn = document.getElementById('add-product-btn');
+  const submitBtn = document.getElementById('submit-proposal-btn');
+  const bundleSummary = document.getElementById('bundle-summary');
+  const summaryProducts = document.getElementById('summary-products');
+  const totalPriceEl = document.getElementById('total-price');
+  const bundlePriceEl = document.getElementById('bundle-price');
+  const savingsEl = document.getElementById('savings');
+  const formLoading = document.getElementById('form-loading');
+  const formMessages = document.getElementById('form-messages');
+  const termsCheckbox = document.getElementById('terms-accept');
+  const submissionsRemaining = document.getElementById('submissions-remaining');
+
+  // Initialize
+  if (form) {
+    initializeForm();
+  }
+
+  function initializeForm() {
+    // Load customer submission count
+    loadCustomerSubmissionCount();
+
+    // Add event listeners
+    addProductBtn.addEventListener('click', addProductField);
+    form.addEventListener('submit', handleSubmit);
+    termsCheckbox.addEventListener('change', validateForm);
+
+    // Validate existing inputs on blur
+    document.querySelectorAll('.product-url-input').forEach(input => {
+      input.addEventListener('blur', () => validateProductUrl(input));
+      input.addEventListener('input', () => {
+        clearError(input.dataset.index);
+        validateForm();
+      });
+    });
+
+    // Load trending proposals
+    loadTrendingProposals();
+  }
+
+  function loadCustomerSubmissionCount() {
+    // TODO: Call backend API to get customer's submission count for current month
+    // For now, simulate with localStorage
+    const currentMonth = new Date().toISOString().slice(0, 7);
+    const storageKey = `bundle_submissions_${currentMonth}`;
+    customerSubmissionsThisMonth = parseInt(localStorage.getItem(storageKey) || '0');
+
+    const remaining = MAX_SUBMISSIONS_PER_MONTH - customerSubmissionsThisMonth;
+    submissionsRemaining.textContent = `${remaining}/${MAX_SUBMISSIONS_PER_MONTH} proposals remaining this month`;
+
+    if (remaining <= 0) {
+      submitBtn.disabled = true;
+      showMessage('You have reached your 3 proposals for this month. Next reset: ' + getNextMonthDate(), 'info');
+    }
+  }
+
+  function addProductField() {
+    if (productCount >= MAX_PRODUCTS) return;
+
+    productCount++;
+    const newField = createProductField(productCount);
+    productUrlsContainer.insertAdjacentHTML('beforeend', newField);
+
+    // Add event listeners to new field
+    const newInput = document.getElementById(`product-url-${productCount}`);
+    newInput.addEventListener('blur', () => validateProductUrl(newInput));
+    newInput.addEventListener('input', () => {
+      clearError(productCount);
+      validateForm();
+    });
+
+    // Add remove button
+    const removeBtn = document.createElement('button');
+    removeBtn.type = 'button';
+    removeBtn.className = 'remove-product-btn';
+    removeBtn.textContent = '× Remove';
+    removeBtn.onclick = () => removeProductField(productCount);
+    document.querySelector(`[data-index="${productCount}"]`).appendChild(removeBtn);
+
+    validateForm();
+  }
+
+  function createProductField(index) {
+    return `
+      <div class="product-url-input-group" data-index="${index}">
+        <label for="product-url-${index}">Product #${index} URL ${index <= MIN_PRODUCTS ? '<span class="required">*</span>' : ''}</label>
+        <input
+          type="url"
+          id="product-url-${index}"
+          name="product_url_${index}"
+          class="product-url-input"
+          placeholder="https://www.${SHOP_DOMAIN}/products/your-product-handle"
+          ${index <= MIN_PRODUCTS ? 'required' : ''}
+          pattern="https?://.*${SHOP_DOMAIN.replace('.', '\\.')}/products/[a-z0-9\\-]+"
+          data-index="${index}"
+        >
+        <div class="product-preview" id="preview-${index}"></div>
+        <div class="input-error" id="error-${index}"></div>
+      </div>
+    `;
+  }
+
+  function removeProductField(index) {
+    const field = document.querySelector(`[data-index="${index}"]`);
+    if (field) {
+      field.remove();
+      delete validatedProducts[index];
+      productCount--;
+      updateBundleSummary();
+      validateForm();
+    }
+  }
+
+  async function validateProductUrl(input) {
+    const index = input.dataset.index;
+    const url = input.value.trim();
+
+    if (!url) {
+      clearError(index);
+      clearPreview(index);
+      delete validatedProducts[index];
+      return;
+    }
+
+    // Validate URL format
+    if (!isValidProductUrl(url)) {
+      showError(index, 'Invalid URL. Must be a product from ' + SHOP_DOMAIN);
+      input.classList.add('invalid');
+      input.classList.remove('valid');
+      delete validatedProducts[index];
+      return;
+    }
+
+    // Extract product handle
+    const handle = extractProductHandle(url);
+    if (!handle) {
+      showError(index, 'Could not extract product handle from URL');
+      input.classList.add('invalid');
+      input.classList.remove('valid');
+      delete validatedProducts[index];
+      return;
+    }
+
+    // Check for duplicates
+    if (isDuplicateProduct(handle, index)) {
+      showError(index, 'This product is already in your bundle');
+      input.classList.add('invalid');
+      input.classList.remove('valid');
+      delete validatedProducts[index];
+      return;
+    }
+
+    // Fetch product data from Shopify
+    try {
+      const product = await fetchProductData(handle);
+
+      if (!product) {
+        showError(index, 'Product not found. Please check the URL.');
+        input.classList.add('invalid');
+        input.classList.remove('valid');
+        delete validatedProducts[index];
+        return;
+      }
+
+      // Valid product!
+      clearError(index);
+      input.classList.remove('invalid');
+      input.classList.add('valid');
+
+      validatedProducts[index] = product;
+      showProductPreview(index, product);
+      updateBundleSummary();
+      validateForm();
+
+    } catch (error) {
+      console.error('Error fetching product:', error);
+      showError(index, 'Error validating product. Please try again.');
+      input.classList.add('invalid');
+      input.classList.remove('valid');
+      delete validatedProducts[index];
+    }
+  }
+
+  function isValidProductUrl(url) {
+    const pattern = new RegExp(`https?://(www\\.)?${SHOP_DOMAIN.replace('.', '\\.')}/products/[a-z0-9\\-]+`, 'i');
+    return pattern.test(url);
+  }
+
+  function extractProductHandle(url) {
+    const match = url.match(/\/products\/([a-z0-9\-]+)/i);
+    return match ? match[1] : null;
+  }
+
+  function isDuplicateProduct(handle, currentIndex) {
+    return Object.entries(validatedProducts).some(([index, product]) => {
+      return index !== currentIndex.toString() && product.handle === handle;
+    });
+  }
+
+  async function fetchProductData(handle) {
+    try {
+      const response = await fetch(`/products/${handle}.js`);
+      if (!response.ok) return null;
+
+      const product = await response.json();
+      return {
+        id: product.id,
+        handle: product.handle,
+        title: product.title,
+        price: product.price / 100, // Convert cents to dollars
+        image: product.featured_image,
+        url: product.url
+      };
+    } catch (error) {
+      console.error('Error fetching product:', error);
+      return null;
+    }
+  }
+
+  function showProductPreview(index, product) {
+    const preview = document.getElementById(`preview-${index}`);
+    preview.innerHTML = `
+      <img src="${product.image}" alt="${product.title}">
+      <div class="info">
+        <h4>${product.title}</h4>
+        <p class="price">$${product.price.toFixed(2)}</p>
+      </div>
+    `;
+    preview.classList.add('show');
+  }
+
+  function clearPreview(index) {
+    const preview = document.getElementById(`preview-${index}`);
+    preview.innerHTML = '';
+    preview.classList.remove('show');
+  }
+
+  function showError(index, message) {
+    const errorEl = document.getElementById(`error-${index}`);
+    errorEl.textContent = message;
+    errorEl.classList.add('show');
+  }
+
+  function clearError(index) {
+    const errorEl = document.getElementById(`error-${index}`);
+    errorEl.textContent = '';
+    errorEl.classList.remove('show');
+  }
+
+  function updateBundleSummary() {
+    const productArray = Object.values(validatedProducts);
+
+    if (productArray.length < MIN_PRODUCTS) {
+      bundleSummary.style.display = 'none';
+      return;
+    }
+
+    bundleSummary.style.display = 'block';
+
+    // Update products list
+    summaryProducts.innerHTML = productArray.map(product => `
+      <div class="summary-product">
+        <img src="${product.image}" alt="${product.title}">
+        <div class="info">
+          <h4>${product.title}</h4>
+          <span class="price">$${product.price.toFixed(2)}</span>
+        </div>
+      </div>
+    `).join('');
+
+    // Calculate pricing
+    const totalPrice = productArray.reduce((sum, p) => sum + p.price, 0);
+    const bundlePrice = totalPrice * 0.85; // 15% discount
+    const savings = totalPrice - bundlePrice;
+
+    totalPriceEl.textContent = `$${totalPrice.toFixed(2)}`;
+    bundlePriceEl.textContent = `$${bundlePrice.toFixed(2)}`;
+    savingsEl.textContent = `$${savings.toFixed(2)}`;
+  }
+
+  function validateForm() {
+    const productArray = Object.values(validatedProducts);
+    const hasMinProducts = productArray.length >= MIN_PRODUCTS;
+    const termsAccepted = termsCheckbox.checked;
+    const hasSubmissionsLeft = customerSubmissionsThisMonth < MAX_SUBMISSIONS_PER_MONTH;
+
+    submitBtn.disabled = !(hasMinProducts && termsAccepted && hasSubmissionsLeft);
+    addProductBtn.disabled = productCount >= MAX_PRODUCTS || productArray.length < productCount;
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const productArray = Object.values(validatedProducts);
+
+    if (productArray.length < MIN_PRODUCTS) {
+      showMessage(`Please add at least ${MIN_PRODUCTS} products to your bundle.`, 'error');
+      return;
+    }
+
+    if (customerSubmissionsThisMonth >= MAX_SUBMISSIONS_PER_MONTH) {
+      showMessage('You have reached your monthly submission limit.', 'error');
+      return;
+    }
+
+    // Show loading
+    formLoading.style.display = 'block';
+    submitBtn.disabled = true;
+
+    // Prepare proposal data
+    const proposalData = {
+      customer_id: form.dataset.customerId,
+      products: productArray.map(p => ({
+        id: p.id,
+        handle: p.handle,
+        title: p.title,
+        price: p.price,
+        url: p.url
+      })),
+      total_value: productArray.reduce((sum, p) => sum + p.price, 0),
+      submitted_at: new Date().toISOString()
+    };
+
+    try {
+      // TODO: Send to backend API
+      // For MVP, simulate with localStorage
+      await submitProposal(proposalData);
+
+      // Update submission count
+      customerSubmissionsThisMonth++;
+      const currentMonth = new Date().toISOString().slice(0, 7);
+      localStorage.setItem(`bundle_submissions_${currentMonth}`, customerSubmissionsThisMonth);
+
+      // Show success
+      formLoading.style.display = 'none';
+      showMessage(`
+        <strong>✅ Proposal Submitted Successfully!</strong><br>
+        Your bundle proposal has been received. You'll be notified when it reaches 10 votes.<br>
+        <a href="/pages/my-proposals">View Your Proposals</a>
+      `, 'success');
+
+      // Reset form
+      form.reset();
+      validatedProducts = {};
+      updateBundleSummary();
+      loadCustomerSubmissionCount();
+
+    } catch (error) {
+      console.error('Submission error:', error);
+      formLoading.style.display = 'none';
+      submitBtn.disabled = false;
+      showMessage('Error submitting proposal. Please try again.', 'error');
+    }
+  }
+
+  async function submitProposal(data) {
+    // Simulate API call
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log('Proposal submitted:', data);
+        // Store in localStorage for demo
+        const proposals = JSON.parse(localStorage.getItem('bundle_proposals') || '[]');
+        proposals.push(data);
+        localStorage.setItem('bundle_proposals', JSON.stringify(proposals));
+        resolve();
+      }, 1500);
+    });
+  }
+
+  function showMessage(message, type) {
+    formMessages.innerHTML = `<div class="message ${type}">${message}</div>`;
+    formMessages.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function getNextMonthDate() {
+    const now = new Date();
+    const next = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+    return next.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  async function loadTrendingProposals() {
+    const container = document.getElementById('trending-proposals-list');
+
+    // TODO: Fetch from backend API
+    // For demo, use localStorage
+    setTimeout(() => {
+      const proposals = JSON.parse(localStorage.getItem('bundle_proposals') || '[]');
+
+      if (proposals.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: #666;">No proposals yet. Be the first to create one!</p>';
+        return;
+      }
+
+      // Group by identical product combinations
+      const grouped = groupIdenticalProposals(proposals);
+
+      container.innerHTML = grouped.map((group, index) => `
+        <div class="proposal-card">
+          <h3>Bundle Proposal #${index + 1}</h3>
+          <div class="products-list">
+            ${group.products.map(p => `• ${p.title}`).join('<br>')}
+          </div>
+          <div class="vote-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: ${(group.count / 10) * 100}%">
+                ${group.count}/10
+              </div>
+            </div>
+            <p class="vote-text">${10 - group.count} more votes needed!</p>
+          </div>
+          <button class="button button--secondary vote-btn" onclick="alert('Vote feature coming soon!')">
+            Vote for This Bundle
+          </button>
+        </div>
+      `).join('');
+    }, 1000);
+  }
+
+  function groupIdenticalProposals(proposals) {
+    const groups = {};
+
+    proposals.forEach(proposal => {
+      const key = proposal.products.map(p => p.id).sort().join('-');
+      if (!groups[key]) {
+        groups[key] = {
+          products: proposal.products,
+          count: 0
+        };
+      }
+      groups[key].count++;
+    });
+
+    return Object.values(groups).sort((a, b) => b.count - a.count);
+  }
+
+})();
+</script>

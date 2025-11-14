@@ -1,0 +1,249 @@
+{% comment %}
+  CUSTOM BUNDLE BUILDER - CTA Banner
+  Snippet: snippets/bundle-builder-cta-banner.liquid
+
+  Display prominent CTA banner promoting the Community Bundle Builder
+  Place this on homepage or collection pages
+
+  Usage:
+  {% render 'bundle-builder-cta-banner' %}
+{% endcomment %}
+
+<div class="bundle-builder-cta-banner">
+  <div class="banner-content page-width">
+    <div class="banner-text">
+      <h2 class="banner-title">
+        <span class="icon">💡</span>
+        Create Your Own Bundle
+      </h2>
+      <p class="banner-subtitle">
+        Propose your perfect product combination. When 10 customers agree, we'll create it with <strong>15% OFF!</strong>
+      </p>
+      <div class="banner-features">
+        <span class="feature">
+          <svg class="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          2-5 Products
+        </span>
+        <span class="feature">
+          <svg class="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Community Voting
+        </span>
+        <span class="feature">
+          <svg class="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          15% Discount
+        </span>
+      </div>
+    </div>
+    <div class="banner-cta">
+      <a href="/pages/bundle-creation" class="bundle-cta-button">
+        Build Your Bundle
+        <svg class="arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M7.5 15l5-5-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <p class="banner-note">Free to propose · No commitment</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.bundle-builder-cta-banner {
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  color: white;
+  padding: 32px 0;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bundle-builder-cta-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.bundle-builder-cta-banner .banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.bundle-builder-cta-banner .banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.bundle-builder-cta-banner .banner-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bundle-builder-cta-banner .icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.bundle-builder-cta-banner .banner-subtitle {
+  font-size: 1.125rem;
+  margin: 0 0 20px 0;
+  opacity: 0.95;
+}
+
+.bundle-builder-cta-banner .banner-subtitle strong {
+  font-weight: 700;
+  background: rgba(255,255,255,0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.bundle-builder-cta-banner .banner-features {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.bundle-builder-cta-banner .feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.bundle-builder-cta-banner .checkmark {
+  color: rgba(255,255,255,0.9);
+}
+
+.bundle-builder-cta-banner .banner-cta {
+  text-align: center;
+}
+
+.bundle-builder-cta-banner .bundle-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #4A90E2;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.bundle-builder-cta-banner .bundle-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background: #f8f8f8;
+}
+
+.bundle-builder-cta-banner .bundle-cta-button .arrow {
+  transition: transform 0.3s ease;
+}
+
+.bundle-builder-cta-banner .bundle-cta-button:hover .arrow {
+  transform: translateX(4px);
+}
+
+.bundle-builder-cta-banner .banner-note {
+  margin-top: 12px;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bundle-builder-cta-banner {
+    padding: 24px 0;
+  }
+
+  .bundle-builder-cta-banner .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .bundle-builder-cta-banner .banner-title {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .bundle-builder-cta-banner .banner-features {
+    justify-content: center;
+  }
+
+  .bundle-builder-cta-banner .bundle-cta-button {
+    font-size: 1rem;
+    padding: 14px 28px;
+  }
+}
+
+/* Animation on scroll (optional - requires Intersection Observer) */
+.bundle-builder-cta-banner.animate-in {
+  animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+<script>
+// Optional: Animate banner on scroll into view
+document.addEventListener('DOMContentLoaded', function() {
+  const banner = document.querySelector('.bundle-builder-cta-banner');
+
+  if (banner && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    observer.observe(banner);
+  }
+});
+</script>
