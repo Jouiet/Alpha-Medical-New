@@ -1,0 +1,318 @@
+{% comment %}
+  CTA BANNER - Bundle Creator
+  Prominent banner to drive traffic to bundle creation page
+
+  Usage: {% render 'bundle-creator-cta' %}
+{% endcomment %}
+
+<div class="bundle-creator-cta">
+  <div class="bundle-cta-container page-width">
+    <div class="bundle-cta-content">
+      <div class="bundle-cta-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 12L20 4L32 12M8 12V36L20 44M8 12L20 20M20 44L32 36V12M20 44V20M32 12L20 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="bundle-cta-text">
+        <h2 class="bundle-cta-title">Create Your Custom Bundle & Save 35%!</h2>
+        <p class="bundle-cta-desc">
+          Choose 3-4 products, get instant discount. When 10+ customers want your combo, we create it!
+          <strong>Two easy methods:</strong> Search products or paste URLs.
+        </p>
+      </div>
+
+      <div class="bundle-cta-action">
+        <a href="/pages/bundle-creator" class="bundle-cta-btn">
+          <span>Build Your Bundle</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <p class="bundle-cta-note">✨ Community-validated · Free to propose · 3-5 day review</p>
+      </div>
+    </div>
+
+    <div class="bundle-cta-badge">
+      <div class="badge-circle">
+        <span class="badge-value">35%</span>
+        <span class="badge-label">OFF</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ========================================================================
+   BUNDLE CREATOR CTA BANNER
+   ======================================================================== */
+
+.bundle-creator-cta {
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  padding: 40px 20px;
+  margin: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bundle-creator-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.bundle-creator-cta::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite 2s;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.bundle-cta-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.bundle-cta-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.bundle-cta-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.bundle-cta-icon svg {
+  color: white;
+  animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.bundle-cta-text {
+  flex: 1;
+}
+
+.bundle-cta-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bundle-cta-desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bundle-cta-desc strong {
+  font-weight: 600;
+  color: white;
+}
+
+.bundle-cta-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.bundle-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: white;
+  color: #4A90E2;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.bundle-cta-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  color: #357ABD;
+}
+
+.bundle-cta-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.bundle-cta-btn:hover svg {
+  transform: translateX(4px);
+}
+
+.bundle-cta-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-weight: 500;
+}
+
+.bundle-cta-badge {
+  flex-shrink: 0;
+}
+
+.badge-circle {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.badge-circle::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 3px dashed rgba(255, 255, 255, 0.5);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.badge-value {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.badge-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4A90E2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* ========================================================================
+   RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 989px) {
+  .bundle-cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bundle-cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bundle-cta-action {
+    align-items: center;
+  }
+
+  .bundle-cta-title {
+    font-size: 24px;
+  }
+
+  .badge-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .badge-value {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 749px) {
+  .bundle-creator-cta {
+    padding: 32px 16px;
+    margin: 40px 0;
+  }
+
+  .bundle-cta-title {
+    font-size: 22px;
+  }
+
+  .bundle-cta-desc {
+    font-size: 14px;
+  }
+
+  .bundle-cta-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .badge-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .badge-value {
+    font-size: 28px;
+  }
+
+  .badge-label {
+    font-size: 13px;
+  }
+}
+</style>
