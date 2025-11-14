@@ -79,7 +79,7 @@ class RecentlyViewedProducts {
   }
 
   /**
-   * Render recently viewed products (with validation)
+   * Render recently viewed products (without validation - direct display)
    */
   async render() {
     const container = document.querySelector(this.containerSelector);
@@ -92,33 +92,16 @@ class RecentlyViewedProducts {
     // Don't render if no products
     if (items.length === 0) {
       container.style.display = 'none';
+      console.log('[RecentlyViewed] No products to display');
       return;
     }
 
-    // Validate all products in parallel
-    const validationPromises = items.map(item =>
-      this.validateProduct(item.url).then(isValid => ({ item, isValid }))
-    );
+    // Filter out items with missing data
+    items = items.filter(item => item.url && item.image && item.title && item.price);
 
-    const validationResults = await Promise.all(validationPromises);
-
-    // Filter only valid products
-    const validItems = validationResults
-      .filter(result => result.isValid)
-      .map(result => result.item);
-
-    // Remove invalid products from localStorage
-    const invalidCount = items.length - validItems.length;
-    if (invalidCount > 0) {
-      console.log('[RecentlyViewed] Removed', invalidCount, 'invalid product(s) from localStorage');
-      localStorage.setItem(this.storageKey, JSON.stringify(validItems));
-      items = validItems;
-    }
-
-    // Don't render if no valid products
     if (items.length === 0) {
       container.style.display = 'none';
-      console.log('[RecentlyViewed] No valid products to display');
+      console.log('[RecentlyViewed] No valid product data');
       return;
     }
 
@@ -137,7 +120,7 @@ class RecentlyViewedProducts {
     container.innerHTML = html;
     container.style.display = 'block';
 
-    console.log('[RecentlyViewed] Rendered', items.length, 'valid product(s)');
+    console.log('[RecentlyViewed] Rendered', items.length, 'product(s)');
   }
 
   /**
@@ -146,14 +129,19 @@ class RecentlyViewedProducts {
    * @returns {string} HTML string
    */
   renderProductCard(item) {
+    // Clean image URL - ensure it's properly formatted
+    const imageUrl = item.image || '';
+    const escapedUrl = imageUrl.replace(/"/g, '&quot;');
+
     return `
       <a href="${item.url}" class="recently-viewed__card">
         <div class="recently-viewed__image-wrapper">
           <img
-            src="${item.image}"
+            src="${escapedUrl}"
             alt="${this.escapeHtml(item.title)}"
             class="recently-viewed__image"
             loading="lazy"
+            onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23f3f4f6%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%239ca3af%22 font-family=%22sans-serif%22 font-size=%2218%22 dy=%2210.5%22 font-weight=%22bold%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22%3EImage unavailable%3C/text%3E%3C/svg%3E';"
           />
         </div>
         <div class="recently-viewed__content">
