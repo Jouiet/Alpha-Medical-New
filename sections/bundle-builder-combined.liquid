@@ -1,0 +1,418 @@
+{% comment %}
+  BUNDLE BUILDER - Version Combinée (Recherche + URL Input)
+
+  Méthode 1: Recherche de produits (search)
+  Méthode 2: Copier/coller URL produit
+
+  Discount: 35% OFF | Min: 3 products | Max: 4 products | Max Value: $500
+{% endcomment %}
+
+<div class="bundle-builder-combined" data-section-id="{{ section.id }}">
+  <div class="page-width">
+
+    {%- comment -%} HERO SECTION {%- endcomment -%}
+    <div class="bundle-hero">
+      <h1 class="bundle-hero__title">{{ section.settings.title | default: "Build Your Perfect Bundle" }}</h1>
+      <p class="bundle-hero__subtitle">
+        {{ section.settings.subtitle | default: "Select 3-4 products and get 35% OFF. When 10+ customers request the same bundle, we'll create it!" }}
+      </p>
+
+      <div class="bundle-hero__stats">
+        <div class="stat">
+          <span class="stat-value">35%</span>
+          <span class="stat-label">Discount</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">10+</span>
+          <span class="stat-label">Votes Needed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">3-4</span>
+          <span class="stat-label">Products</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">$500</span>
+          <span class="stat-label">Max Value</span>
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} METHOD SELECTOR {%- endcomment -%}
+    <div class="method-selector">
+      <h2 class="method-selector__title">Choose Your Selection Method:</h2>
+      <div class="method-tabs">
+        <button
+          class="method-tab active"
+          data-method="search"
+          onclick="bundleBuilderCombined.switchMethod('search')"
+        >
+          <svg class="method-tab__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="method-tab__label">Search Products</span>
+          <span class="method-tab__desc">Browse & select</span>
+        </button>
+
+        <button
+          class="method-tab"
+          data-method="url"
+          onclick="bundleBuilderCombined.switchMethod('url')"
+        >
+          <svg class="method-tab__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.8333 9.16667L14.1667 5.83333M14.1667 5.83333H11.6667M14.1667 5.83333V8.33333M9.16667 3.33333H6.5C5.11929 3.33333 4 4.45262 4 5.83333V13.5C4 14.8807 5.11929 16 6.5 16H13.5C14.8807 16 16 14.8807 16 13.5V10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="method-tab__label">Paste URLs</span>
+          <span class="method-tab__desc">Quick & precise</span>
+        </button>
+      </div>
+    </div>
+
+    {%- comment -%} MAIN INTERFACE {%- endcomment -%}
+    <div class="bundle-main">
+
+      {%- comment -%} LEFT PANEL: INPUT METHODS {%- endcomment -%}
+      <div class="bundle-input-panel">
+
+        {%- comment -%} METHOD 1: SEARCH PRODUCTS {%- endcomment -%}
+        <div class="input-method active" data-method="search">
+          <div class="method-header">
+            <h3 class="method-title">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Method 1: Search Products
+            </h3>
+            <p class="method-instructions">
+              Type product name, category, or pain type (e.g., "knee support", "LED therapy", "posture")
+            </p>
+          </div>
+
+          <div class="search-box">
+            <input
+              type="text"
+              id="product-search-input"
+              class="search-input"
+              placeholder="Search: knee, ankle, posture, therapy..."
+              autocomplete="off"
+            >
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div id="search-results" class="search-results"></div>
+
+          <div class="method-help">
+            <p><strong>How to use:</strong></p>
+            <ol>
+              <li>Type product name or category</li>
+              <li>Click "+ Add" on products you want</li>
+              <li>Product appears in your bundle →</li>
+            </ol>
+          </div>
+        </div>
+
+        {%- comment -%} METHOD 2: URL INPUT {%- endcomment -%}
+        <div class="input-method" data-method="url">
+          <div class="method-header">
+            <h3 class="method-title">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <path d="M10.8333 9.16667L14.1667 5.83333M14.1667 5.83333H11.6667M14.1667 5.83333V8.33333M9.16667 3.33333H6.5C5.11929 3.33333 4 4.45262 4 5.83333V13.5C4 14.8807 5.11929 16 6.5 16H13.5C14.8807 16 16 13.5V10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Method 2: Paste Product URLs
+            </h3>
+            <p class="method-instructions">
+              Copy product URL from our shop (e.g., alphamedical.shop/products/knee-brace) and paste below
+            </p>
+          </div>
+
+          <div class="url-inputs">
+            <div class="url-input-group">
+              <label class="url-label">
+                <span class="url-label-number">Product #1</span>
+                <span class="url-label-status" id="url-status-1"></span>
+              </label>
+              <input
+                type="url"
+                class="url-input"
+                id="url-input-1"
+                placeholder="https://alphamedical.shop/products/..."
+                data-product-number="1"
+              >
+            </div>
+
+            <div class="url-input-group">
+              <label class="url-label">
+                <span class="url-label-number">Product #2</span>
+                <span class="url-label-status" id="url-status-2"></span>
+              </label>
+              <input
+                type="url"
+                class="url-input"
+                id="url-input-2"
+                placeholder="https://alphamedical.shop/products/..."
+                data-product-number="2"
+              >
+            </div>
+
+            <div class="url-input-group">
+              <label class="url-label">
+                <span class="url-label-number">Product #3</span>
+                <span class="url-label-status" id="url-status-3"></span>
+              </label>
+              <input
+                type="url"
+                class="url-input"
+                id="url-input-3"
+                placeholder="https://alphamedical.shop/products/..."
+                data-product-number="3"
+              >
+            </div>
+
+            <div class="url-input-group">
+              <label class="url-label">
+                <span class="url-label-number">Product #4 (Optional)</span>
+                <span class="url-label-status" id="url-status-4"></span>
+              </label>
+              <input
+                type="url"
+                class="url-input"
+                id="url-input-4"
+                placeholder="https://alphamedical.shop/products/..."
+                data-product-number="4"
+              >
+            </div>
+          </div>
+
+          <div class="method-help">
+            <p><strong>How to get product URLs:</strong></p>
+            <ol>
+              <li>Browse our <a href="/collections/all" target="_blank">product catalog</a></li>
+              <li>Open product page in new tab</li>
+              <li>Copy URL from address bar (Cmd+L → Cmd+C)</li>
+              <li>Paste into input fields above</li>
+            </ol>
+            <p class="method-note">
+              ✅ Only URLs from alphamedical.shop/products/* are accepted
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      {%- comment -%} RIGHT PANEL: SELECTED BUNDLE {%- endcomment -%}
+      <div class="bundle-selection-panel">
+        <h2 class="panel-title">Your Bundle (<span id="selected-count">0</span>/4)</h2>
+
+        {%- comment -%} Selected Products List {%- endcomment -%}
+        <div id="selected-products" class="selected-products">
+          <div class="empty-state">
+            <svg class="empty-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M8 12L20 4L32 12M8 12L8 36L20 44M8 12L20 20M20 44L32 36L32 12M20 44L20 20M32 12L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Select 3-4 products using search or URL method</p>
+          </div>
+        </div>
+
+        {%- comment -%} Price Summary {%- endcomment -%}
+        <div id="price-summary" class="price-summary" style="display: none;">
+          <div class="price-row">
+            <span>Total Regular Price:</span>
+            <span id="regular-price">$0.00</span>
+          </div>
+          <div class="price-row bundle-price-row">
+            <span>Bundle Price (35% OFF):</span>
+            <span id="bundle-price" class="bundle-price">$0.00</span>
+          </div>
+          <div class="price-row savings-row">
+            <span>You Save:</span>
+            <span id="savings" class="savings">$0.00</span>
+          </div>
+        </div>
+
+        {%- comment -%} Max Value Warning {%- endcomment -%}
+        <div id="max-value-warning" class="warning-message" style="display: none;">
+          <svg class="warning-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 6V10M10 14H10.01M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Bundle exceeds $500 maximum. Please remove a product.</span>
+        </div>
+
+        {%- comment -%} SUBMISSION FORM {%- endcomment -%}
+        <div id="submission-form-container" style="display: none;">
+          {% form 'contact', class: 'bundle-proposal-form' %}
+
+            {%- if form.posted_successfully? -%}
+              <div class="form-success">
+                <svg class="success-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Bundle Proposal Submitted!</h3>
+                <p>We'll notify you when {{ section.settings.threshold | default: 10 }}+ customers request this bundle.</p>
+              </div>
+            {%- elsif form.errors -%}
+              <div class="form-error">
+                <h3>Submission Error</h3>
+                <p>{{ form.errors | default_errors }}</p>
+              </div>
+            {%- endif -%}
+
+            <div class="form-group">
+              <label for="contact-email">
+                Your Email <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="contact-email"
+                name="contact[email]"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+              >
+              <p class="form-help">We'll notify you when your bundle is created</p>
+            </div>
+
+            <input type="hidden" name="contact[subject]" value="Bundle Proposal">
+            <input type="hidden" id="bundle-data-json" name="contact[body]" value="">
+            <input type="hidden" id="bundle-method" name="contact[method]" value="">
+
+            <div class="form-group commitment-group">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="commitment-checkbox"
+                  required
+                >
+                <span class="checkbox-text">
+                  I understand this is a proposal (not a purchase). If {{ section.settings.threshold | default: 10 }}+ customers request this bundle, you'll create it and notify me.
+                </span>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              id="submit-proposal-btn"
+              class="submit-button"
+              disabled
+            >
+              Submit Bundle Proposal
+            </button>
+
+            <p class="form-note">
+              Maximum {{ section.settings.monthly_limit | default: 3 }} proposals per month · 3-5 business day review
+            </p>
+
+          {% endform %}
+        </div>
+
+      </div>
+    </div>
+
+    {%- comment -%} HOW IT WORKS {%- endcomment -%}
+    <div class="how-it-works">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Choose Method</h3>
+          <p>Search products or paste URLs - whichever you prefer!</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Select 3-4 Products</h3>
+          <p>Pick products you want bundled together</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>See 35% Savings</h3>
+          <p>Automatic discount calculated in real-time</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Submit Proposal</h3>
+          <p>When {{ section.settings.threshold | default: 10 }}+ customers want it, we create it!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{%- comment -%} PRELOAD PRODUCTS DATA {%- endcomment -%}
+<script>
+  window.BUNDLE_BUILDER_PRODUCTS = [];
+  window.BUNDLE_BUILDER_CONFIG = {
+    minProducts: 3,
+    maxProducts: 4,
+    maxValue: 500,
+    discountPercent: 35,
+    threshold: {{ section.settings.threshold | default: 10 }},
+    monthlyLimit: {{ section.settings.monthly_limit | default: 3 }}
+  };
+</script>
+
+{% paginate collections.all.products by 250 %}
+  <script>
+    (function() {
+      const products = [
+        {% for product in collections.all.products %}
+          {
+            id: {{ product.id | json }},
+            handle: {{ product.handle | json }},
+            title: {{ product.title | json }},
+            price: {{ product.price | json }},
+            image: {{ product.featured_image | img_url: '200x200' | json }},
+            url: {{ product.url | json }},
+            productType: {{ product.type | json }},
+            vendor: {{ product.vendor | json }},
+            available: {{ product.available | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+      window.BUNDLE_BUILDER_PRODUCTS = window.BUNDLE_BUILDER_PRODUCTS.concat(products);
+    })();
+  </script>
+{% endpaginate %}
+
+{% schema %}
+{
+  "name": "Bundle Builder Combined",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Hero Title",
+      "default": "Build Your Perfect Bundle"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Hero Subtitle",
+      "default": "Select 3-4 products and get 35% OFF. When 10+ customers request the same bundle, we'll create it!"
+    },
+    {
+      "type": "range",
+      "id": "threshold",
+      "label": "Creation Threshold (votes)",
+      "min": 5,
+      "max": 20,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "monthly_limit",
+      "label": "Monthly Proposal Limit",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Builder Combined"
+    }
+  ]
+}
+{% endschema %}
