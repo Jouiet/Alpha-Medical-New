@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "bundle_builder": {
+      "type": "bundle-builder",
+      "settings": {
+        "title": "Build Your Perfect Bundle",
+        "subtitle": "Select 3-4 products and get 35% OFF. When 10+ customers request the same bundle, we'll create it!",
+        "threshold": 10,
+        "monthly_limit": 3
+      }
+    }
+  },
+  "order": [
+    "bundle_builder"
+  ]
+}

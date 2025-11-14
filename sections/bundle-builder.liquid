@@ -1,0 +1,330 @@
+{% comment %}
+  BUNDLE BUILDER - Community-Validated Bundle Creation
+
+  System: 100% Native Shopify (zero external apps)
+  Method: Product search (NOT URLs)
+  Discount: 35% fixed
+  Constraints: 3-4 products, $500 max
+  Threshold: 10+ identical proposals → bundle created
+
+  Integration: Shopify Contact Form → Gmail → Google Sheets → Apps Script
+{% endcomment %}
+
+<div class="bundle-builder-section" data-section-id="{{ section.id }}">
+  <div class="page-width">
+
+    {%- comment -%} HERO SECTION {%- endcomment -%}
+    <div class="bundle-builder-hero">
+      <h1 class="hero-title">{{ section.settings.title | default: "Build Your Perfect Bundle" }}</h1>
+      <p class="hero-subtitle">
+        {{ section.settings.subtitle | default: "Select 3-4 products and get 35% OFF. When 10+ customers request the same bundle, we'll create it!" }}
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">35%</span>
+          <span class="stat-label">Discount</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">10+</span>
+          <span class="stat-label">Requests Needed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">3-4</span>
+          <span class="stat-label">Products</span>
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} MAIN BUILDER INTERFACE {%- endcomment -%}
+    <div class="bundle-builder-main">
+
+      {%- comment -%} LEFT: PRODUCT SEARCH {%- endcomment -%}
+      <div class="builder-search-panel">
+        <h2 class="panel-title">Search Products</h2>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="product-search-input"
+            class="search-input"
+            placeholder="Search by name, type, or category..."
+            autocomplete="off"
+          >
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div id="search-results" class="search-results"></div>
+
+        <div class="search-help">
+          <p><strong>Tip:</strong> Search by product name, category, or pain type</p>
+        </div>
+      </div>
+
+      {%- comment -%} RIGHT: SELECTED PRODUCTS + FORM {%- endcomment -%}
+      <div class="builder-selection-panel">
+        <h2 class="panel-title">Your Bundle (<span id="selected-count">0</span>/4)</h2>
+
+        {%- comment -%} Selected Products List {%- endcomment -%}
+        <div id="selected-products" class="selected-products">
+          <div class="empty-state">
+            <svg class="empty-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M8 12L20 4L32 12M8 12L8 36L20 44M8 12L20 20M20 44L32 36L32 12M20 44L20 20M32 12L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Search and select 3-4 products to build your bundle</p>
+          </div>
+        </div>
+
+        {%- comment -%} Price Summary {%- endcomment -%}
+        <div id="price-summary" class="price-summary" style="display: none;">
+          <div class="price-row">
+            <span>Total Regular Price:</span>
+            <span id="regular-price">$0.00</span>
+          </div>
+          <div class="price-row bundle-price-row">
+            <span>Bundle Price (35% OFF):</span>
+            <span id="bundle-price" class="bundle-price">$0.00</span>
+          </div>
+          <div class="price-row savings-row">
+            <span>You Save:</span>
+            <span id="savings" class="savings">$0.00</span>
+          </div>
+        </div>
+
+        {%- comment -%} Max Value Warning {%- endcomment -%}
+        <div id="max-value-warning" class="warning-message" style="display: none;">
+          <svg class="warning-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 6V10M10 14H10.01M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Bundle exceeds $500 maximum. Please remove a product.</span>
+        </div>
+
+        {%- comment -%} SUBMISSION FORM {%- endcomment -%}
+        <div id="submission-form-container" style="display: none;">
+          {% form 'contact', class: 'bundle-proposal-form' %}
+
+            {%- if form.posted_successfully? -%}
+              <div class="form-success">
+                <svg class="success-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Proposal Submitted Successfully!</h3>
+                <p>We'll notify you when {{ section.settings.threshold | default: 10 }}+ customers request this bundle.</p>
+                <p>Check your email for confirmation details.</p>
+              </div>
+            {%- elsif form.errors -%}
+              <div class="form-error">
+                <svg class="error-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 8V12M12 16H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Submission Error</h3>
+                <p>{{ form.errors | default_errors }}</p>
+              </div>
+            {%- endif -%}
+
+            <div class="form-group">
+              <label for="contact-email">
+                Your Email <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="contact-email"
+                name="contact[email]"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+              >
+              <p class="form-help">We'll notify you when your bundle is created</p>
+            </div>
+
+            {%- comment -%} Hidden fields for bundle data {%- endcomment -%}
+            <input type="hidden" name="contact[subject]" value="Bundle Proposal">
+            <input type="hidden" id="bundle-data-json" name="contact[body]" value="">
+
+            <div class="form-group commitment-group">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="commitment-checkbox"
+                  name="contact[commitment]"
+                  value="yes"
+                  required
+                >
+                <span class="checkbox-text">
+                  I understand this is a proposal (not a purchase). If {{ section.settings.threshold | default: 10 }}+ customers request this bundle, you'll create it and notify me.
+                </span>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              id="submit-proposal-btn"
+              class="submit-button"
+              disabled
+            >
+              Submit Bundle Proposal
+            </button>
+
+            <p class="form-note">
+              Maximum {{ section.settings.monthly_limit | default: 3 }} proposals per month · 3-5 business day review
+            </p>
+
+          {% endform %}
+        </div>
+
+      </div>
+    </div>
+
+    {%- comment -%} HOW IT WORKS {%- endcomment -%}
+    <div class="how-it-works">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Search & Select</h3>
+          <p>Choose 3-4 products you want bundled together</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>See Your Savings</h3>
+          <p>Automatic 35% discount calculated in real-time</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Submit Proposal</h3>
+          <p>Enter your email and submit (not a purchase yet)</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>We Create It</h3>
+          <p>When {{ section.settings.threshold | default: 10 }}+ customers want the same bundle, we make it live</p>
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} FAQ {%- endcomment -%}
+    <div class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+
+        <details class="faq-item">
+          <summary>Why {{ section.settings.threshold | default: 10 }}+ requests?</summary>
+          <p>We create bundles based on proven customer demand. When {{ section.settings.threshold | default: 10 }}+ people request the same combination, we know it's worth creating!</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is this a purchase?</summary>
+          <p>No, this is a proposal. You're not buying anything yet. We'll notify you by email when the bundle is created, then you can purchase it.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How long until my bundle is created?</summary>
+          <p>It depends on how many other customers request the same combination. We review proposals every 3-5 business days.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why 3-4 products only?</summary>
+          <p>This constraint ensures bundles are practical to ship and use. Too few = not enough savings. Too many = logistics chaos.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What's the $500 limit?</summary>
+          <p>We cap bundles at $500 regular price to keep shipping and handling manageable. Most bundles are $150-350.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I submit multiple proposals?</summary>
+          <p>Yes! You can submit up to {{ section.settings.monthly_limit | default: 3 }} different bundle proposals per month.</p>
+        </details>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{%- comment -%} PRELOAD PRODUCTS DATA FOR SEARCH {%- endcomment -%}
+<script>
+  window.BUNDLE_BUILDER_PRODUCTS = [];
+  window.BUNDLE_BUILDER_CONFIG = {
+    minProducts: 3,
+    maxProducts: 4,
+    maxValue: 500,
+    discountPercent: 35,
+    threshold: {{ section.settings.threshold | default: 10 }},
+    monthlyLimit: {{ section.settings.monthly_limit | default: 3 }}
+  };
+</script>
+
+{%- comment -%} Fetch all products for search (paginated) {%- endcomment -%}
+{% paginate collections.all.products by 250 %}
+  <script>
+    (function() {
+      const products = [
+        {% for product in collections.all.products %}
+          {
+            id: {{ product.id | json }},
+            handle: {{ product.handle | json }},
+            title: {{ product.title | json }},
+            price: {{ product.price | json }},
+            compareAtPrice: {{ product.compare_at_price | default: product.price | json }},
+            image: {{ product.featured_image | img_url: '200x200' | json }},
+            url: {{ product.url | json }},
+            productType: {{ product.type | json }},
+            vendor: {{ product.vendor | json }},
+            available: {{ product.available | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+
+      window.BUNDLE_BUILDER_PRODUCTS = window.BUNDLE_BUILDER_PRODUCTS.concat(products);
+    })();
+  </script>
+{% endpaginate %}
+
+{% schema %}
+{
+  "name": "Bundle Builder",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Hero Title",
+      "default": "Build Your Perfect Bundle"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Hero Subtitle",
+      "default": "Select 3-4 products and get 35% OFF. When 10+ customers request the same bundle, we'll create it!"
+    },
+    {
+      "type": "range",
+      "id": "threshold",
+      "label": "Creation Threshold (customers)",
+      "min": 5,
+      "max": 20,
+      "step": 1,
+      "default": 10,
+      "info": "Number of identical proposals required to create bundle"
+    },
+    {
+      "type": "range",
+      "id": "monthly_limit",
+      "label": "Monthly Proposal Limit (per customer)",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Builder",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
