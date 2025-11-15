@@ -1,0 +1,277 @@
+{% comment %}
+  BUNDLES CTA BANNER - Dual CTAs for Homepage
+
+  Usage: {% render 'bundles-cta-banner' %}
+
+  Features:
+  - CTA 1: Shop 15 Bundles (35% OFF) → /pages/bundles
+  - CTA 2: Build Your Bundle → /pages/bundle-creator
+  - Responsive design
+  - Alpha Medical branding
+  - Animated gradient background
+
+  Date: 2025-11-15
+{% endcomment %}
+
+<style>
+.bundles-cta-banner {
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  padding: 60px 20px;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.bundles-cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse-gradient 8s ease-in-out infinite;
+}
+
+@keyframes pulse-gradient {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-10px, -10px);
+    opacity: 0.5;
+  }
+}
+
+.bundles-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.bundles-cta-header {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.bundles-cta-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.bundles-cta-header p {
+  font-size: 18px;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bundles-cta-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .bundles-cta-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+.bundle-cta-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.bundle-cta-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+.bundle-cta-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bundle-cta-card.primary .bundle-cta-icon {
+  animation-delay: 0s;
+}
+
+.bundle-cta-card.secondary .bundle-cta-icon {
+  animation-delay: 0.5s;
+}
+
+.bundle-cta-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2C3E50;
+  margin-bottom: 8px;
+}
+
+.bundle-cta-card .discount-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(255,107,107,0.3);
+}
+
+.bundle-cta-card .threshold-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(74,144,226,0.3);
+}
+
+.bundle-cta-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.bundle-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(74,144,226,0.3);
+}
+
+.bundle-cta-button:hover {
+  background: linear-gradient(135deg, #3a7bc8 0%, #6ab3b0 100%);
+  box-shadow: 0 6px 16px rgba(74,144,226,0.4);
+  transform: scale(1.05);
+}
+
+.bundle-cta-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.bundles-cta-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.bundles-cta-stats .stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bundles-cta-stats .stat strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .bundles-cta-header h2 {
+    font-size: 28px;
+  }
+
+  .bundles-cta-header p {
+    font-size: 16px;
+  }
+
+  .bundle-cta-card h3 {
+    font-size: 20px;
+  }
+}
+</style>
+
+<div class="bundles-cta-banner">
+  <div class="bundles-cta-container">
+    <div class="bundles-cta-header">
+      <h2>Complete Care Bundles</h2>
+      <p>Save more with curated medical equipment packages or create your own custom bundle</p>
+    </div>
+
+    <div class="bundles-cta-cards">
+      <!-- CTA 1: Shop 15 Bundles -->
+      <a href="/pages/bundles" class="bundle-cta-card primary">
+        <div class="bundle-cta-icon">🎁</div>
+        <h3>Shop Bundles</h3>
+        <span class="discount-badge">35% OFF ALL BUNDLES</span>
+        <p>Browse 15 expertly curated bundles designed for your specific needs. From office workers to athletes, chronic pain to post-surgery recovery.</p>
+        <span class="bundle-cta-button">
+          Shop Now
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </span>
+      </a>
+
+      <!-- CTA 2: Build Your Bundle -->
+      <a href="/pages/bundle-creator" class="bundle-cta-card secondary">
+        <div class="bundle-cta-icon">🛠️</div>
+        <h3>Build Your Bundle</h3>
+        <span class="threshold-badge">10+ VOTES = WE CREATE IT</span>
+        <p>Can't find the perfect bundle? Create your own! Select 3-4 products and get 35% OFF. When 10+ customers request the same bundle, we'll create it.</p>
+        <span class="bundle-cta-button">
+          Build Now
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </span>
+      </a>
+    </div>
+
+    <div class="bundles-cta-stats">
+      <div class="stat">
+        ✅ <strong>15</strong> Pre-Made Bundles
+      </div>
+      <div class="stat">
+        💰 <strong>35%</strong> Savings
+      </div>
+      <div class="stat">
+        🎯 <strong>8</strong> Patient Personas
+      </div>
+      <div class="stat">
+        🚚 <strong>Free</strong> Shipping
+      </div>
+    </div>
+  </div>
+</div>
