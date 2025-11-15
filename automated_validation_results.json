@@ -1,0 +1,131 @@
+{
+  "timestamp": "2025-11-15T14:31:16.554579Z",
+  "tests": [
+    {
+      "category": "Bundles",
+      "test": "Bundles collection exists",
+      "status": "PASS",
+      "details": "",
+      "expected": "Collection 296239169613",
+      "actual": "Collection found"
+    },
+    {
+      "category": "Bundles",
+      "test": "Bundles collection product count",
+      "status": "PASS",
+      "details": "",
+      "expected": "15 products",
+      "actual": "15 products"
+    },
+    {
+      "category": "Bundles",
+      "test": "All bundles have 35% discount",
+      "status": "PASS",
+      "details": "",
+      "expected": "35% on all bundles",
+      "actual": "35% on 15 bundles"
+    },
+    {
+      "category": "Compliance",
+      "test": "Draft products stay draft",
+      "status": "PASS",
+      "details": "5 draft products remain unpublished",
+      "expected": "All drafts unpublished",
+      "actual": "All drafts unpublished"
+    },
+    {
+      "category": "Compliance",
+      "test": "Site 100% English content",
+      "status": "PASS",
+      "details": "Analyzed 98 products, 0 French content",
+      "expected": "100% English",
+      "actual": "100% English"
+    },
+    {
+      "category": "Metafields",
+      "test": "Loyalty metafield definitions",
+      "status": "PASS",
+      "details": "All 6 loyalty metafield definitions exist",
+      "expected": "6 definitions",
+      "actual": "6 definitions"
+    },
+    {
+      "category": "Metafields",
+      "test": "Product SEO metafields populated",
+      "status": "PASS",
+      "details": "10/10 products have SEO metafields",
+      "expected": "\u226580%",
+      "actual": "100%"
+    },
+    {
+      "category": "SEO",
+      "test": "og:image tag present",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "category": "SEO",
+      "test": "twitter:image tag present",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "category": "SEO",
+      "test": "Organization schema present",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "category": "SEO",
+      "test": "Canonical tag present",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "category": "SEO",
+      "test": "AI crawlers enabled",
+      "status": "PASS",
+      "details": "All 7 AI crawlers enabled",
+      "expected": "7 crawlers",
+      "actual": "7 crawlers"
+    },
+    {
+      "category": "SEO",
+      "test": "Sitemap accessible",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "category": "SEO",
+      "test": "HTTP to HTTPS redirect",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "category": "SEO",
+      "test": "HSTS enabled",
+      "status": "PASS",
+      "details": "",
+      "expected": "",
+      "actual": ""
+    }
+  ],
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "warnings": 0
+  }
+}
