@@ -390,5 +390,10 @@
 
     {%- comment -%}Welcome Popup - Capture first-time visitors{%- endcomment -%}
     {%- render 'welcome-popup' -%}
+
+    {%- comment -%}Bundle Hover Images - Show product carousel on bundle cards{%- endcomment -%}
+    {%- if template.name == 'collection' and collection.handle == 'medical-equipment-bundles' -%}
+      {%- render 'bundle-hover-images' -%}
+    {%- endif -%}
   </body>
 </html>

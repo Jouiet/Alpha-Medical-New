@@ -1,0 +1,207 @@
+{%- comment -%}
+  Bundles Collection CTA Banner
+  Displays prominent call-to-action to Build Your Bundle page
+  Usage: {% render 'bundles-collection-cta' %}
+{%- endcomment -%}
+
+<style>
+.bundles-cta {
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  border-radius: 16px;
+  padding: 48px 32px;
+  margin: 40px auto;
+  max-width: 1200px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.bundles-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulse-cta 3s ease-in-out infinite;
+}
+
+@keyframes pulse-cta {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.bundles-cta__content {
+  position: relative;
+  z-index: 1;
+}
+
+.bundles-cta__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  animation: rotate-icon 10s linear infinite;
+}
+
+@keyframes rotate-icon {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.bundles-cta__icon svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+.bundles-cta__heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bundles-cta__text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 32px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.bundles-cta__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #4A90E2;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.bundles-cta__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  background: #f8f9fa;
+}
+
+.bundles-cta__button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.bundles-cta__button:hover svg {
+  transform: translateX(4px);
+}
+
+.bundles-cta__features {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.bundles-cta__feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bundles-cta__feature svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .bundles-cta {
+    padding: 32px 20px;
+    margin: 24px 16px;
+  }
+
+  .bundles-cta__heading {
+    font-size: 24px;
+  }
+
+  .bundles-cta__text {
+    font-size: 16px;
+  }
+
+  .bundles-cta__button {
+    font-size: 16px;
+    padding: 14px 32px;
+  }
+
+  .bundles-cta__features {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+</style>
+
+<div class="bundles-cta">
+  <div class="bundles-cta__content">
+    <div class="bundles-cta__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
+      </svg>
+    </div>
+
+    <h2 class="bundles-cta__heading">Can't Find the Perfect Bundle?</h2>
+    <p class="bundles-cta__text">
+      Create your own custom bundle and save <strong>35% OFF</strong> instantly! Choose 3-4 products that perfectly match your needs.
+    </p>
+
+    <a href="/pages/build-your-bundle" class="bundles-cta__button">
+      <span>Build Your Bundle</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+      </svg>
+    </a>
+
+    <div class="bundles-cta__features">
+      <div class="bundles-cta__feature">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+        </svg>
+        <span>35% Automatic Discount</span>
+      </div>
+      <div class="bundles-cta__feature">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+        </svg>
+        <span>3-4 Products</span>
+      </div>
+      <div class="bundles-cta__feature">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+        </svg>
+        <span>Free Shipping</span>
+      </div>
+    </div>
+  </div>
+</div>

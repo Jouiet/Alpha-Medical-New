@@ -1,0 +1,324 @@
+{%- comment -%}
+  Bundle Hover Images
+  Displays product images on hover for bundle products
+  Usage: Add to theme.liquid before </body>: {% render 'bundle-hover-images' %}
+{%- endcomment -%}
+
+<style>
+.bundle-card__hover-carousel {
+  position: absolute;
+  inset: 0;
+  background: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.bundle-card:hover .bundle-card__hover-carousel {
+  display: flex;
+}
+
+.bundle-card__hover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.bundle-card__hover-image.active {
+  opacity: 1;
+}
+
+.bundle-card__hover-indicator {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 11;
+}
+
+.bundle-card__hover-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.bundle-card__hover-dot.active {
+  background: white;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.bundle-card__hover-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(74, 144, 226, 0.95);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 11;
+  backdrop-filter: blur(10px);
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  // Bundle to Products mapping (14 bundles)
+  // Format: bundle_handle => [product_handles]
+  const BUNDLE_PRODUCTS_MAP = {
+    'office-worker-essential-kit': [
+      'posture-corrector-adjustable-shoulder-support-brace-1',
+      'cervical-neck-traction-device-inflatable-home-relief',
+      'wrist-brace-support-carpal-tunnel-arthritis-relief',
+      'head-eye-massager-heat-fatigue-stress-relief'
+    ],
+    'senior-mobility-support': [
+      'hinged-knee-brace-patella-stabilizer-for-arthritis',
+      'ankle-support-brace-adjustable-compression-wrap',
+      'back-brace-posture-corrector-scoliosis-hunchback-support',
+      'velpeau-neck-traction-spine-pressure-pain-relief'
+    ],
+    'chronic-pain-starter-kit': [
+      'tourmaline-magnetic-knee-pads-self-heating-support',
+      'lumbar-support-belt-disc-herniation-pain-relief',
+      'electric-foot-hand-massager-vibration-heat',
+      'stomach-massager-bian-shi-hot-compress'
+    ],
+    'active-athlete-knee-specialist': [
+      'sports-knee-pads-pressurized-elastic-support',
+      'adjustable-knee-patellar-tendon-strap-sports',
+      'double-patellar-knee-support-strap-pain-relief',
+      'dynamic-knee-support-with-spring-adjustable'
+    ],
+    'active-athlete-complete-protection': [
+      'neenca-hinged-knee-brace-side-stabilizers',
+      'drop-foot-brace-afo-inflatable-airbag-ankle',
+      'adjustable-wrist-support-brace-fitness-pain',
+      'basketball-knee-pad-honeycomb-shock-protection'
+    ],
+    'chronic-pain-relief-kit': [
+      'adjustable-knee-brace-arthritis-support',
+      'electric-lumbar-massager-heating-therapy',
+      'cervical-spine-massager-neck-traction',
+      'electric-ankle-brace-heating-compression'
+    ],
+    'office-worker-advanced-ergonomic': [
+      'magnetic-posture-corrector-back-support',
+      '7-color-led-vibrating-neck-face-massager',
+      'adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support',
+      'ems-red-light-eye-massager-heating'
+    ],
+    'rehab-stroke-recovery': [
+      'rehabilitation-robot-gloves-mirror-training-device',
+      'rehabilitation-robot-gloves-mirror-training-device',
+      'posture-corrector-adjustable-shoulder-support-brace-1',
+      'silicone-patellar-tendon-strap-sports'
+    ],
+    'beauty-wellness-led-complete': [
+      '7-color-led-light-therapy-face-mask-anti-aging',
+      'professional-7-color-led-mask-photon-therapy',
+      'v-line-face-slimming-lifting-device',
+      'face-lifting-device-electric-massager'
+    ],
+    'post-surgery-recovery-complete': [
+      'adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support',
+      'velpeau-neck-traction-spine-pressure-pain-relief',
+      'hinged-knee-brace-patella-stabilizer-for-arthritis',
+      'ankle-support-brace-adjustable-compression-wrap'
+    ],
+    'office-worker-premium-workspace': [
+      'led-facial-mask-with-neck-photon-therapy',
+      'neck-led-lift-mask-double-chin-reducer',
+      'electric-airbag-eye-massager-heat-compression',
+      'super-relax-eye-massager-vibration-heating'
+    ],
+    'chronic-pain-whole-body': [
+      'hello-face-red-light-therapy-mask-face-neck-infrared-led',
+      'foreverlily-smart-knee-massager-vibration-heat',
+      'electric-medical-cupping-therapy-set-vacuum',
+      'nano-steam-eye-massager-hot-compress'
+    ],
+    'senior-advanced-arthritis': [
+      'electric-vibration-massager-bunion-corrector',
+      'effective-bunion-corrector-airbag-traction-foot',
+      'electric-airbag-eye-massager-heat-compression',
+      'cervical-spine-massager-neck-traction'
+    ],
+    'ultimate-pain-management-system': [
+      'posture-corrector-adjustable-shoulder-support-brace-1',
+      'hip-fixation-brace-groin-support',
+      'ox-type-leg-corrector-bow-leg-straightening',
+      'silicone-patellar-tendon-strap-sports'
+    ]
+  };
+
+  class BundleHoverImages {
+    constructor() {
+      this.productCache = new Map();
+      this.init();
+    }
+
+    async init() {
+      // Wait for DOM to be ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => this.setupBundles());
+      } else {
+        this.setupBundles();
+      }
+    }
+
+    setupBundles() {
+      // Find all product cards
+      const productCards = document.querySelectorAll('.card-wrapper, .product-card, [class*="product-grid-item"]');
+
+      productCards.forEach(card => {
+        const link = card.querySelector('a[href*="/products/"]');
+        if (!link) return;
+
+        const productUrl = link.getAttribute('href');
+        const productHandle = productUrl.replace('/products/', '').split('?')[0];
+
+        // Check if this product is a bundle in our map
+        if (BUNDLE_PRODUCTS_MAP[productHandle]) {
+          this.enhanceBundleCard(card, productHandle);
+        }
+      });
+    }
+
+    async enhanceBundleCard(card, bundleHandle) {
+      const imageContainer = card.querySelector('.card__media, .media, .product-card__image-wrapper');
+      if (!imageContainer) return;
+
+      // Make imageContainer position relative for absolute positioning of carousel
+      imageContainer.style.position = 'relative';
+      imageContainer.classList.add('bundle-card');
+
+      // Create hover carousel container
+      const carousel = document.createElement('div');
+      carousel.className = 'bundle-card__hover-carousel';
+
+      // Add "Bundle" label
+      const label = document.createElement('div');
+      label.className = 'bundle-card__hover-label';
+      label.textContent = `${BUNDLE_PRODUCTS_MAP[bundleHandle].length} Products`;
+      carousel.appendChild(label);
+
+      // Fetch product images
+      const productHandles = BUNDLE_PRODUCTS_MAP[bundleHandle];
+      const images = [];
+
+      for (const handle of productHandles) {
+        const productData = await this.fetchProductData(handle);
+        if (productData && productData.featured_image) {
+          images.push(productData.featured_image);
+        }
+      }
+
+      if (images.length === 0) {
+        console.log(`[BundleHover] No images found for bundle: ${bundleHandle}`);
+        return;
+      }
+
+      // Create image elements
+      images.forEach((imageUrl, index) => {
+        const img = document.createElement('img');
+        img.src = imageUrl;
+        img.className = `bundle-card__hover-image ${index === 0 ? 'active' : ''}`;
+        img.alt = `Product ${index + 1}`;
+        img.loading = 'lazy';
+        carousel.appendChild(img);
+      });
+
+      // Create indicator dots
+      const indicator = document.createElement('div');
+      indicator.className = 'bundle-card__hover-indicator';
+
+      images.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = `bundle-card__hover-dot ${index === 0 ? 'active' : ''}`;
+        indicator.appendChild(dot);
+      });
+
+      carousel.appendChild(indicator);
+
+      // Add carousel to container
+      imageContainer.appendChild(carousel);
+
+      // Setup hover carousel rotation
+      this.setupCarousel(carousel, images.length);
+    }
+
+    setupCarousel(carousel, imageCount) {
+      let currentIndex = 0;
+      let interval;
+
+      const imageElements = carousel.querySelectorAll('.bundle-card__hover-image');
+      const dotElements = carousel.querySelectorAll('.bundle-card__hover-dot');
+
+      const showImage = (index) => {
+        imageElements.forEach((img, i) => {
+          img.classList.toggle('active', i === index);
+        });
+        dotElements.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+        });
+      };
+
+      const next = () => {
+        currentIndex = (currentIndex + 1) % imageCount;
+        showImage(currentIndex);
+      };
+
+      // Start carousel on hover
+      carousel.closest('.bundle-card').addEventListener('mouseenter', () => {
+        currentIndex = 0;
+        showImage(0);
+        interval = setInterval(next, 1500); // Change image every 1.5s
+      });
+
+      // Stop carousel on mouse leave
+      carousel.closest('.bundle-card').addEventListener('mouseleave', () => {
+        clearInterval(interval);
+      });
+    }
+
+    async fetchProductData(handle) {
+      // Check cache first
+      if (this.productCache.has(handle)) {
+        return this.productCache.get(handle);
+      }
+
+      try {
+        const response = await fetch(`/products/${handle}.js`);
+        if (!response.ok) {
+          console.warn(`[BundleHover] Product not found: ${handle}`);
+          return null;
+        }
+
+        const data = await response.json();
+        this.productCache.set(handle, data);
+        return data;
+      } catch (error) {
+        console.error(`[BundleHover] Error fetching product ${handle}:`, error);
+        return null;
+      }
+    }
+  }
+
+  // Initialize
+  window.BundleHoverImages = new BundleHoverImages();
+})();
+</script>
