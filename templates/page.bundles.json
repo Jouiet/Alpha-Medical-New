@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "bundles_collection": {
+      "type": "bundles-collection",
+      "settings": {
+        "hero_title": "Complete Care Bundles",
+        "hero_subtitle": "Curated medical equipment packages designed for your specific needs. Save 35% OFF on every bundle with free shipping.",
+        "show_why_bundles": true,
+        "show_faq": true,
+        "default_sort": "savings"
+      }
+    }
+  },
+  "order": [
+    "bundles_collection"
+  ]
+}
