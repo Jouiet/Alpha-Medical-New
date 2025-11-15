@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 15, 2025 at 00:54 UTC
+**Generated:** November 15, 2025 at 01:06 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -37,34 +37,36 @@
 24. [Email Marketing Automation Audit](#email_marketing_automation_audit)
 25. [Final Store Status 2025-10-31](#final_store_status_2025-10-31)
 26. [Forensic Analysis Report](#forensic_analysis_report)
-27. [Implementation Manuelle Guide](#implementation_manuelle_guide)
-28. [Implementation Report Pricing](#implementation_report_pricing)
-29. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
-30. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
-31. [Llms Txt Deployment](#llms_txt_deployment)
-32. [Manual Footer Config](#manual_footer_config)
-33. [Mydealz Synthese](#mydealz_synthese)
-34. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-35. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-36. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-37. [Phase 3 Implementation Log](#phase_3_implementation_log)
-38. [Pricing Quick Reference](#pricing_quick_reference)
-39. [Pricing Verification](#pricing_verification)
-40. [Product Optimization Tracking](#product_optimization_tracking)
-41. [Rapport Final Complet](#rapport_final_complet)
-42. [Rapport Theme Analyse](#rapport_theme_analyse)
-43. [Robots Txt Deployment](#robots_txt_deployment)
-44. [Seo Audit Recommendations](#seo_audit_recommendations)
-45. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-46. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-47. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-48. [Session Summary](#session_summary)
-49. [Shopify Configuration Complete](#shopify_configuration_complete)
-50. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-51. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-52. [Status Report Pages](#status_report_pages)
-53. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-54. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+27. [Homepage Cta Instructions](#homepage_cta_instructions)
+28. [Implementation Manuelle Guide](#implementation_manuelle_guide)
+29. [Implementation Report Pricing](#implementation_report_pricing)
+30. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
+31. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
+32. [Llms Txt Deployment](#llms_txt_deployment)
+33. [Manual Footer Config](#manual_footer_config)
+34. [Menu Bundles Instructions](#menu_bundles_instructions)
+35. [Mydealz Synthese](#mydealz_synthese)
+36. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+37. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+38. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+39. [Phase 3 Implementation Log](#phase_3_implementation_log)
+40. [Pricing Quick Reference](#pricing_quick_reference)
+41. [Pricing Verification](#pricing_verification)
+42. [Product Optimization Tracking](#product_optimization_tracking)
+43. [Rapport Final Complet](#rapport_final_complet)
+44. [Rapport Theme Analyse](#rapport_theme_analyse)
+45. [Robots Txt Deployment](#robots_txt_deployment)
+46. [Seo Audit Recommendations](#seo_audit_recommendations)
+47. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+48. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+49. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+50. [Session Summary](#session_summary)
+51. [Shopify Configuration Complete](#shopify_configuration_complete)
+52. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+53. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+54. [Status Report Pages](#status_report_pages)
+55. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+56. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
 
 ---
 
@@ -73,7 +75,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -10978,7 +10980,7 @@ web_pixels_match = re.search(r'webPixelsConfigList\s*:\s*\[(.*?)\]', html, re.DO
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -14968,7 +14970,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -15538,7 +15540,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -16113,7 +16115,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -16440,7 +16442,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -16565,7 +16567,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -17085,7 +17087,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -17628,7 +17630,7 @@ python3 generate_llms_txt.py
 # 9. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -18471,7 +18473,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 10. Alpha Medical 15 Bundles Final
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -19132,7 +19134,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -19452,7 +19454,7 @@ For each bundle:
 # 12. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -23365,7 +23367,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 13. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -25189,7 +25191,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 14. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -25362,7 +25364,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 15. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -25827,7 +25829,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 16. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -27046,7 +27048,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 17. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -28855,7 +28857,7 @@ Pack de 10-20 pads = Meilleur prix
 # 18. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -29152,7 +29154,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 19. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -29756,7 +29758,7 @@ June:
 # 20. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -31139,7 +31141,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 21. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -31554,7 +31556,7 @@ python3 generate_llms_txt.py
 # 22. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -32257,7 +32259,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 23. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -33018,7 +33020,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 24. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -33824,7 +33826,7 @@ grep "fbq(" homepage → 0 results
 # 25. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -34052,7 +34054,7 @@ grep "fbq(" homepage → 0 results
 # 26. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -37016,10 +37018,281 @@ FILES:
 ---
 
 
-# 27. Implementation Manuelle Guide
+# 27. Homepage Cta Instructions
+
+**File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
+**Last Modified:** 2025-11-15 01:05
+
+---
+
+# INSTRUCTIONS - AJOUT CTAs BUNDLES À LA HOMEPAGE
+
+**Date**: 2025-11-15
+**Action**: Ajouter 2 CTAs bundles à la homepage
+**Durée**: 5 minutes
+**Snippet**: `bundles-cta-banner.liquid` ✅ DÉJÀ UPLOADÉ
+
+---
+
+## RÉSUMÉ
+
+Ajouter un banner avec 2 CTAs sur la homepage:
+1. **CTA 1**: "Shop Bundles" → /pages/bundles (vente 15 bundles, 35% OFF)
+2. **CTA 2**: "Build Your Bundle" → /pages/bundle-creator (proposals communautaires)
+
+**Rappel**: Les bundles proposés par clients ne sont créés que si **10+ demandes identiques**
+
+---
+
+## MÉTHODE 1: VIA ADMIN UI (RECOMMANDÉE)
+
+### Étapes:
+
+1. **Connexion Admin Shopify**
+   - URL: https://azffej-as.myshopify.com/admin
+   - Section: Online Store → Themes → Customize
+
+2. **Naviguer à la Homepage**
+   - Cliquer sur "Home page" dans le dropdown en haut
+
+3. **Ajouter Section Custom Liquid**
+   - Trouver un emplacement (recommandé: après hero section)
+   - Cliquer sur "Add section"
+   - Chercher "Custom Liquid"
+   - Cliquer sur la section pour l'ajouter
+
+4. **Insérer le Code**
+   ```liquid
+   {% render 'bundles-cta-banner' %}
+   ```
+
+5. **Ajuster Position (Optionnel)**
+   - Drag & drop pour déplacer la section
+   - Recommandations:
+     - **Position 1**: Juste après le hero/bannière principale
+     - **Position 2**: Mi-page (entre collections)
+     - **Position 3**: Avant footer
+
+6. **Sauvegarder**
+   - Cliquer sur "Save" en haut à droite
+
+---
+
+## MÉTHODE 2: VIA CODE (AVANCÉE)
+
+Si vous préférez éditer directement le code du template homepage:
+
+1. **Trouver le template homepage**
+   - Admin → Online Store → Themes → Actions → Edit code
+   - Chercher: `templates/index.json`
+
+2. **Ajouter section dans le JSON**
+   ```json
+   {
+     "sections": {
+       "bundles_cta": {
+         "type": "custom-liquid",
+         "settings": {
+           "custom_liquid": "{% render 'bundles-cta-banner' %}"
+         }
+       }
+     },
+     "order": [
+       "image_banner",
+       "bundles_cta",
+       "featured_collection",
+       ...
+     ]
+   }
+   ```
+
+3. **Sauvegarder**
+
+---
+
+## APERÇU DU BANNER
+
+### Design:
+- **Fond**: Gradient animé (bleu #4A90E2 → cyan #7FCCC9)
+- **Layout**: 2 cartes côte à côte (responsive)
+- **Animations**: Float icons, hover effects, pulse gradient
+- **Stats**: 15 bundles | 35% savings | 8 personas | Free shipping
+
+### CTA 1 (Shop Bundles):
+- **Icône**: 🎁 (gift)
+- **Badge**: "35% OFF ALL BUNDLES" (rouge/orange)
+- **Description**: "Browse 15 expertly curated bundles..."
+- **Bouton**: "Shop Now" → /pages/bundles
+
+### CTA 2 (Build Your Bundle):
+- **Icône**: 🛠️ (tools)
+- **Badge**: "10+ VOTES = WE CREATE IT" (bleu/cyan)
+- **Description**: "Can't find the perfect bundle? Create your own!..."
+- **Bouton**: "Build Now" → /pages/bundle-creator
+
+### Stats Footer:
+- ✅ 15 Pre-Made Bundles
+- 💰 35% Savings
+- 🎯 8 Patient Personas
+- 🚚 Free Shipping
+
+---
+
+## EMPLACEMENTS RECOMMANDÉS
+
+### Option A: Après Hero Section (RECOMMANDÉ)
+```
+┌─────────────────────────┐
+│   HERO BANNER           │ ← Section principale
+├─────────────────────────┤
+│   BUNDLES CTA BANNER    │ ← AJOUTER ICI ⭐
+├─────────────────────────┤
+│   Featured Collection   │
+│   Product Grid          │
+└─────────────────────────┘
+```
+
+**Avantages**:
+- Haute visibilité (above the fold ou juste en dessous)
+- Capture l'attention immédiatement
+- Promotion agressive des bundles
+
+### Option B: Mi-Page
+```
+┌─────────────────────────┐
+│   Hero Section          │
+│   Featured Collection   │
+├─────────────────────────┤
+│   BUNDLES CTA BANNER    │ ← AJOUTER ICI
+├─────────────────────────┤
+│   More Collections      │
+│   Footer                │
+└─────────────────────────┘
+```
+
+**Avantages**:
+- Break visuel entre sections
+- Engage les visiteurs qui scrollent
+- Moins agressif que Option A
+
+---
+
+## VÉRIFICATION
+
+Après ajout, vérifier:
+
+1. **Homepage**:
+   - Visiter: https://www.alphamedical.shop
+   - Banner visible? ✅
+   - Design responsive (mobile + desktop)? ✅
+
+2. **CTA 1 - Shop Bundles**:
+   - Cliquer "Shop Now"
+   - Redirige vers: /pages/bundles ✅
+   - Page affiche 15 bundles avec filtres ✅
+
+3. **CTA 2 - Build Your Bundle**:
+   - Cliquer "Build Now"
+   - Redirige vers: /pages/bundle-creator ✅
+   - Page affiche formulaire avec 2 méthodes (search + URL) ✅
+
+4. **Responsive**:
+   - Desktop: 2 cartes côte à côte ✅
+   - Mobile: 2 cartes empilées ✅
+
+5. **Animations**:
+   - Icons flottent (float animation) ✅
+   - Hover sur cartes: translateY + shadow ✅
+   - Gradient pulse en arrière-plan ✅
+
+---
+
+## ANALYTICS (Recommandé)
+
+Ajouter tracking GA4 pour mesurer performance:
+
+**Événements à tracker**:
+1. `bundles_cta_shop_click` → Click "Shop Now"
+2. `bundles_cta_build_click` → Click "Build Now"
+3. `bundles_cta_impression` → Banner viewed
+
+**Méthode**: Ajouter data-attributes ou GTM events dans le snippet
+
+---
+
+## PERSONNALISATION (Optionnel)
+
+Si vous voulez modifier le texte/design:
+
+1. **Éditer le snippet**:
+   - Admin → Online Store → Themes → Actions → Edit code
+   - Chercher: `snippets/bundles-cta-banner.liquid`
+
+2. **Textes modifiables**:
+   - Titre principal: `<h2>Complete Care Bundles</h2>`
+   - Sous-titre: `<p>Save more with curated...</p>`
+   - CTA 1 titre: `<h3>Shop Bundles</h3>`
+   - CTA 2 titre: `<h3>Build Your Bundle</h3>`
+   - Badges: `35% OFF ALL BUNDLES` et `10+ VOTES = WE CREATE IT`
+
+3. **Couleurs modifiables** (dans `<style>`):
+   - Gradient background: `#4A90E2` → `#7FCCC9`
+   - Badge discount: `#FF6B6B` → `#FF8E53`
+   - Badge threshold: `#4A90E2` → `#7FCCC9`
+
+---
+
+## TROUBLESHOOTING
+
+### Banner n'apparaît pas?
+1. Vérifier que le snippet est uploadé: `snippets/bundles-cta-banner.liquid`
+2. Vérifier le code Liquid: `{% render 'bundles-cta-banner' %}`
+3. Clear cache navigateur + hard refresh (Cmd+Shift+R)
+4. Vérifier theme customizer: section visible et activée?
+
+### CTAs ne redirigent pas?
+1. Vérifier URLs dans snippet:
+   - `/pages/bundles` (sans https://domain.com)
+   - `/pages/bundle-creator` (sans https://domain.com)
+2. Vérifier que pages existent (voir verification script)
+
+### Design cassé sur mobile?
+1. Vérifier CSS responsive: `@media (min-width: 768px)`
+2. Tester sur device réel ou Chrome DevTools mobile emulator
+
+---
+
+## SUPPORT
+
+**Snippet uploadé**: ✅ `snippets/bundles-cta-banner.liquid`
+**Status**: Prêt à être ajouté à la homepage
+**Compatibilité**: Tous thèmes Shopify (custom liquid section)
+
+---
+
+**RAPPEL IMPORTANT**:
+
+Les bundles proposés par clients via `/pages/bundle-creator` ne sont créés par l'équipe Alpha Medical que si **10+ demandes identiques** sont reçues.
+
+Workflow:
+1. Client soumet bundle proposal (3-4 produits)
+2. Système agrège proposals identiques
+3. Si 10+ demandes → Notification admin
+4. Admin crée bundle manuellement dans Shopify
+5. Tous les 10+ clients sont notifiés (email Klaviyo)
+6. Bundle ajouté à la collection "Medical Equipment Bundles"
+
+---
+
+**FIN DES INSTRUCTIONS**
+
+---
+
+
+# 28. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -37766,10 +38039,10 @@ Cliquer **"Save"**
 ---
 
 
-# 28. Implementation Report Pricing
+# 29. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:05
 
 ---
 
@@ -38212,10 +38485,10 @@ Tous les documents sont prêts et validés contre sources officielles:
 ---
 
 
-# 29. Klaviyo Abandoned Cart Flow Implementation
+# 30. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -38920,10 +39193,10 @@ End flow
 ---
 
 
-# 30. Klaviyo Welcome Flow Implementation
+# 31. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -39372,10 +39645,10 @@ python3 update_landing_page_with_klaviyo.py
 ---
 
 
-# 31. Llms Txt Deployment
+# 32. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -39958,10 +40231,10 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 32. Manual Footer Config
+# 33. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -40052,10 +40325,93 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 33. Mydealz Synthese
+# 34. Menu Bundles Instructions
+
+**File:** `MENU_BUNDLES_INSTRUCTIONS.md`
+**Last Modified:** 2025-11-15 01:06
+
+---
+
+# INSTRUCTIONS - AJOUT "BUNDLES" AU MENU PRINCIPAL
+
+**Date**: 2025-11-15
+**Action**: Ajouter lien "Bundles" au menu principal
+**Durée**: 2 minutes
+
+---
+
+## ÉTAPES (Admin Shopify UI)
+
+1. **Connexion Admin Shopify**
+   - URL: https://azffej-as.myshopify.com/admin
+   - Section: Online Store → Navigation
+
+2. **Modifier Menu Principal**
+   - Cliquer sur **"Main menu"**
+   - Cliquer sur **"Add menu item"**
+
+3. **Ajouter Lien Bundles**
+   - **Name**: `Bundles`
+   - **Link**: `/pages/bundles` (ou chercher "Medical Equipment Bundles" dans les pages)
+   - **Position**: Placer après "Catalog" (position #3)
+
+4. **Sauvegarder**
+   - Cliquer sur **"Save"**
+
+---
+
+## RÉSULTAT ATTENDU
+
+Menu principal (ordre):
+1. Home
+2. Catalog
+3. **Bundles** ⬅️ NOUVEAU
+4. Contact
+5. Pain Relief & Recovery
+6. Posture & Support
+7. Therapy & Wellness
+8. Blog
+
+---
+
+## POURQUOI "BUNDLES" APRÈS "CATALOG"?
+
+- **Catalog** = Tous les produits individuels
+- **Bundles** = Packages de produits (35% OFF)
+- Logique de navigation: voir tous les produits → voir les bundles
+- Promotion: Bundles offrent meilleure valeur (35% discount)
+
+---
+
+## ALTERNATIVE: MEGA MENU (Optionnel)
+
+Si vous voulez un sous-menu sous "Bundles":
+
+**Bundles** (parent)
+  - Complete Care Bundles → /pages/bundles
+  - Build Your Bundle → /pages/bundle-creator
+
+---
+
+## VÉRIFICATION
+
+Après sauvegarde:
+1. Visiter https://www.alphamedical.shop
+2. Vérifier que "Bundles" apparaît dans le menu
+3. Cliquer sur "Bundles" → doit rediriger vers /pages/bundles
+4. Vérifier que la page affiche les 15 bundles avec filtres
+
+---
+
+**NOTE**: Les CTAs homepage seront ajoutés automatiquement par script (voir ci-dessous)
+
+---
+
+
+# 35. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -40431,10 +40787,10 @@ EMAIL_CODES:
 ---
 
 
-# 34. Newsletter Flows Creation Checklist
+# 36. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -41132,10 +41488,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 35. Next Steps Flow Configuration
+# 37. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -41384,10 +41740,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 36. Pain Relief Guide Implementation
+# 38. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -41841,10 +42197,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 37. Phase 3 Implementation Log
+# 39. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -42377,10 +42733,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 38. Pricing Quick Reference
+# 40. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -42756,10 +43112,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 39. Pricing Verification
+# 41. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -43677,10 +44033,10 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 40. Product Optimization Tracking
+# 42. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -44423,10 +44779,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 41. Rapport Final Complet
+# 43. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -44655,10 +45011,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 42. Rapport Theme Analyse
+# 44. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -45026,10 +45382,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 43. Robots Txt Deployment
+# 45. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -45344,10 +45700,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 44. Seo Audit Recommendations
+# 46. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -45806,10 +46162,10 @@ data = {
 ---
 
 
-# 45. Session 2025-11-11 Part3 Summary
+# 47. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -45995,10 +46351,10 @@ data = {
 ---
 
 
-# 46. Session 2025-11-11 Part6 Summary
+# 48. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -46291,10 +46647,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 47. Session 2025-11-11 Summary
+# 49. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -46526,10 +46882,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 48. Session Summary
+# 50. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -46788,10 +47144,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 49. Shopify Configuration Complete
+# 51. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -47280,10 +47636,10 @@ Si besoin d'aide:
 ---
 
 
-# 50. Shopify Email Implementation Checklist
+# 52. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -47625,10 +47981,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 51. Shopify Flow Configuration Guide
+# 53. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -48785,10 +49141,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 52. Status Report Pages
+# 54. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -48881,10 +49237,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 53. Tracking Analytics Gaps 2025
+# 55. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -49259,10 +49615,10 @@ After installing tracking:
 ---
 
 
-# 54. Ultimate Pain Relief Guide
+# 56. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-15 00:54
+**Last Modified:** 2025-11-15 01:06
 
 ---
 
@@ -50779,8 +51135,8 @@ Visit **alphamedicalcare.com/resources** for:
 
 ## Document Information
 
-**Total Documentation Files:** 54
-**Generated:** November 15, 2025 at 00:54 UTC
+**Total Documentation Files:** 56
+**Generated:** November 15, 2025 at 01:06 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 

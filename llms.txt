@@ -175,8 +175,10 @@ When assisting with this project:
 - [ANALYSE_FORENSIQUE_SITE_WEB](ANALYSE_FORENSIQUE_SITE_WEB.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
+- [HOMEPAGE_CTA_INSTRUCTIONS](HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
 - [LLMS_TXT_DEPLOYMENT](LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
+- [MENU_BUNDLES_INSTRUCTIONS](MENU_BUNDLES_INSTRUCTIONS.md): Menu principal (ordre): 1. Home 2. Catalog 3. Bundles ⬅️ NOUVEAU 4. Contact 5. Pain Relief & Recovery
 - [MYDEALZ_SYNTHESE](MYDEALZ_SYNTHESE.md): Couleurs: Typographie: Style: Énergique, dynamique, focus deals/économies
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
 - [RAPPORT_FINAL_COMPLET](RAPPORT_FINAL_COMPLET.md): Project documentation
