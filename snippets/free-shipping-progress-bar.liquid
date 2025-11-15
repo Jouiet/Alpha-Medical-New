@@ -1,0 +1,228 @@
+{% comment %}
+  Free Shipping Progress Bar
+  Threshold: $150 USD
+  Shows visual progress toward free shipping
+{% endcomment %}
+
+{%- liquid
+  assign free_shipping_threshold = 15000
+  assign cart_total = cart.total_price
+  assign remaining = free_shipping_threshold | minus: cart_total
+  assign progress_percentage = cart_total | times: 100 | divided_by: free_shipping_threshold
+
+  if progress_percentage > 100
+    assign progress_percentage = 100
+  endif
+-%}
+
+<div class="free-shipping-bar-wrapper" data-cart-total="{{ cart_total }}">
+  {% if cart_total >= free_shipping_threshold %}
+    {%- comment -%} Free shipping unlocked {%- endcomment -%}
+    <div class="free-shipping-message success">
+      <svg class="icon-checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+        <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="message-text">🎉 Congratulations! You've unlocked <strong>FREE SHIPPING</strong>!</span>
+    </div>
+  {% else %}
+    {%- comment -%} Show progress {%- endcomment -%}
+    <div class="free-shipping-message progress">
+      <span class="message-text">
+        {% if remaining > 0 %}
+          Add <strong>{{ remaining | money }}</strong> more for <strong>FREE SHIPPING</strong>! 🚚
+        {% endif %}
+      </span>
+    </div>
+
+    <div class="progress-bar-container">
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" style="width: {{ progress_percentage }}%">
+          <span class="progress-percentage">{{ progress_percentage }}%</span>
+        </div>
+      </div>
+
+      <div class="progress-labels">
+        <span class="label-start">$0</span>
+        <span class="label-end">$150</span>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  /* Free Shipping Progress Bar Styles */
+  .free-shipping-bar-wrapper {
+    margin: 16px 0;
+    padding: 16px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .free-shipping-message {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .free-shipping-message.success {
+    color: #28a745;
+    font-weight: 500;
+  }
+
+  .free-shipping-message.progress {
+    color: #495057;
+  }
+
+  .free-shipping-message strong {
+    font-weight: 700;
+    color: #4A90E2;
+  }
+
+  .free-shipping-message.success strong {
+    color: #28a745;
+  }
+
+  .icon-checkmark {
+    flex-shrink: 0;
+    color: #28a745;
+    animation: checkmark-pop 0.5s ease-out;
+  }
+
+  @keyframes checkmark-pop {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  /* Progress Bar */
+  .progress-bar-container {
+    margin-top: 12px;
+  }
+
+  .progress-bar-track {
+    position: relative;
+    height: 24px;
+    background: #dee2e6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .progress-bar-fill {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(90deg, #4A90E2 0%, #7FCCC9 100%);
+    border-radius: 12px;
+    transition: width 0.4s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3);
+  }
+
+  .progress-bar-fill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .progress-percentage {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    min-width: 35px;
+    text-align: right;
+  }
+
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 11px;
+    color: #6c757d;
+    font-weight: 500;
+  }
+
+  /* Mobile Optimization */
+  @media (max-width: 749px) {
+    .free-shipping-bar-wrapper {
+      margin: 12px 0;
+      padding: 12px;
+    }
+
+    .free-shipping-message {
+      font-size: 13px;
+    }
+
+    .progress-bar-track {
+      height: 20px;
+    }
+
+    .progress-percentage {
+      font-size: 11px;
+    }
+  }
+
+  /* Cart Drawer Specific */
+  .drawer .free-shipping-bar-wrapper {
+    margin: 12px 16px;
+  }
+
+  /* Animation on cart update */
+  .free-shipping-bar-wrapper[data-cart-updated] .progress-bar-fill {
+    animation: progress-pulse 0.6s ease-out;
+  }
+
+  @keyframes progress-pulse {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.1); }
+  }
+
+  /* Success celebration animation */
+  .free-shipping-message.success {
+    animation: success-bounce 0.8s ease-out;
+  }
+
+  @keyframes success-bounce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-4px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-2px); }
+  }
+</style>
+
+<script>
+  // Update progress bar on cart changes
+  document.addEventListener('DOMContentLoaded', function() {
+    const progressBar = document.querySelector('.free-shipping-bar-wrapper');
+
+    if (progressBar) {
+      // Listen for Shopify cart update events
+      document.addEventListener('cart:updated', function(event) {
+        progressBar.setAttribute('data-cart-updated', 'true');
+        setTimeout(() => {
+          progressBar.removeAttribute('data-cart-updated');
+        }, 600);
+      });
+    }
+  });
+</script>
