@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 15, 2025 at 03:18 UTC
+**Generated:** November 15, 2025 at 13:44 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -45,30 +45,32 @@
 32. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
 33. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
 34. [Llms Txt Deployment](#llms_txt_deployment)
-35. [Manual Footer Config](#manual_footer_config)
-36. [Menu Bundles Instructions](#menu_bundles_instructions)
-37. [Mydealz Synthese](#mydealz_synthese)
-38. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-39. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-40. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-41. [Phase 3 Implementation Log](#phase_3_implementation_log)
-42. [Pricing Quick Reference](#pricing_quick_reference)
-43. [Pricing Verification](#pricing_verification)
-44. [Product Optimization Tracking](#product_optimization_tracking)
-45. [Rapport Final Complet](#rapport_final_complet)
-46. [Rapport Theme Analyse](#rapport_theme_analyse)
-47. [Robots Txt Deployment](#robots_txt_deployment)
-48. [Seo Audit Recommendations](#seo_audit_recommendations)
-49. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-50. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-51. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-52. [Session Summary](#session_summary)
-53. [Shopify Configuration Complete](#shopify_configuration_complete)
-54. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-55. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-56. [Status Report Pages](#status_report_pages)
-57. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-58. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+35. [Loyalty System Architecture](#loyalty_system_architecture)
+36. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
+37. [Manual Footer Config](#manual_footer_config)
+38. [Menu Bundles Instructions](#menu_bundles_instructions)
+39. [Mydealz Synthese](#mydealz_synthese)
+40. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+41. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+42. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+43. [Phase 3 Implementation Log](#phase_3_implementation_log)
+44. [Pricing Quick Reference](#pricing_quick_reference)
+45. [Pricing Verification](#pricing_verification)
+46. [Product Optimization Tracking](#product_optimization_tracking)
+47. [Rapport Final Complet](#rapport_final_complet)
+48. [Rapport Theme Analyse](#rapport_theme_analyse)
+49. [Robots Txt Deployment](#robots_txt_deployment)
+50. [Seo Audit Recommendations](#seo_audit_recommendations)
+51. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+52. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+53. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+54. [Session Summary](#session_summary)
+55. [Shopify Configuration Complete](#shopify_configuration_complete)
+56. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+57. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+58. [Status Report Pages](#status_report_pages)
+59. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+60. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
 
 ---
 
@@ -77,7 +79,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -11691,7 +11693,7 @@ else → Bronze
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -15681,7 +15683,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -16251,7 +16253,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -16826,7 +16828,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -17153,7 +17155,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -17278,7 +17280,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -17798,7 +17800,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -18341,7 +18343,7 @@ python3 generate_llms_txt.py
 # 9. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -19184,7 +19186,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 10. Alpha Medical 15 Bundles Final
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -19845,7 +19847,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -20165,7 +20167,7 @@ For each bundle:
 # 12. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -24078,7 +24080,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 13. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -25902,7 +25904,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 14. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -26075,7 +26077,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 15. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -26981,7 +26983,7 @@ function markProposalsAsCreated(hash) {
 # 16. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -27446,7 +27448,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 17. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -28665,7 +28667,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 18. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -30474,7 +30476,7 @@ Pack de 10-20 pads = Meilleur prix
 # 19. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -30771,7 +30773,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 20. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -31375,7 +31377,7 @@ June:
 # 21. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -32758,7 +32760,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 22. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -33606,7 +33608,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 23. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -34021,7 +34023,7 @@ python3 generate_llms_txt.py
 # 24. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -34724,7 +34726,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 25. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -35485,7 +35487,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 26. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -36291,7 +36293,7 @@ grep "fbq(" homepage → 0 results
 # 27. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -36519,7 +36521,7 @@ grep "fbq(" homepage → 0 results
 # 28. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -39486,7 +39488,7 @@ FILES:
 # 29. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -39759,7 +39761,7 @@ Workflow AUTOMATIQUE:
 # 30. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -40509,7 +40511,7 @@ Cliquer **"Save"**
 # 31. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -40955,7 +40957,7 @@ Tous les documents sont prêts et validés contre sources officielles:
 # 32. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -41663,7 +41665,7 @@ End flow
 # 33. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -42115,7 +42117,7 @@ python3 update_landing_page_with_klaviyo.py
 # 34. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -42698,10 +42700,956 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 35. Manual Footer Config
+# 35. Loyalty System Architecture
+
+**File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
+**Last Modified:** 2025-11-15 13:44
+
+---
+
+# Loyalty System Architecture - Custom Build
+
+**Date:** 2025-11-15
+**Status:** In Development
+**Type:** Native Shopify (Metafields + Flow + Functions)
+
+---
+
+## 1. CUSTOMER METAFIELDS STRUCTURE
+
+### Namespace: `loyalty`
+
+**Metafield Definitions (via Shopify Admin API):**
+
+```json
+{
+  "metafields": [
+    {
+      "namespace": "loyalty",
+      "key": "points",
+      "type": "number_integer",
+      "description": "Total loyalty points balance",
+      "value": 0
+    },
+    {
+      "namespace": "loyalty",
+      "key": "tier",
+      "type": "single_line_text_field",
+      "description": "Customer tier: bronze, silver, gold",
+      "value": "bronze"
+    },
+    {
+      "namespace": "loyalty",
+      "key": "history",
+      "type": "json",
+      "description": "Points transaction history",
+      "value": "[]"
+    },
+    {
+      "namespace": "loyalty",
+      "key": "signup_bonus_claimed",
+      "type": "boolean",
+      "description": "Has customer claimed 50pt signup bonus",
+      "value": false
+    },
+    {
+      "namespace": "loyalty",
+      "key": "lifetime_points_earned",
+      "type": "number_integer",
+      "description": "Total points earned (including redeemed)",
+      "value": 0
+    },
+    {
+      "namespace": "loyalty",
+      "key": "lifetime_points_redeemed",
+      "type": "number_integer",
+      "description": "Total points redeemed",
+      "value": 0
+    }
+  ]
+}
+```
+
+---
+
+## 2. EARNING RULES
+
+### Rule 1: Signup Bonus (50 points)
+**Trigger:** Customer account created
+**Condition:** `loyalty.signup_bonus_claimed == false`
+**Action:**
+- Add 50 to `loyalty.points`
+- Set `loyalty.signup_bonus_claimed = true`
+- Add transaction to `loyalty.history`:
+  ```json
+  {
+    "date": "2025-11-15T14:30:00Z",
+    "action": "signup_bonus",
+    "points": 50,
+    "balance_after": 50
+  }
+  ```
+
+**Implementation:** Shopify Flow workflow
+
+---
+
+### Rule 2: Purchase Points (1 point per $1 spent)
+**Trigger:** Order paid (financial_status = "paid")
+**Calculation:** `Math.floor(order.total_price / 100)`
+**Action:**
+- Add points to `loyalty.points`
+- Add to `loyalty.lifetime_points_earned`
+- Add transaction to `loyalty.history`:
+  ```json
+  {
+    "date": "2025-11-15T15:45:00Z",
+    "action": "purchase",
+    "order_id": "#1234",
+    "order_total": 15000,
+    "points": 150,
+    "balance_after": 200
+  }
+  ```
+
+**Implementation:** Shopify Flow workflow + HTTP Request to script
+
+---
+
+### Rule 3: Product Review (100 points)
+**Trigger:** Product review submitted (Loox webhook)
+**Condition:** Review approved
+**Action:**
+- Add 100 to `loyalty.points`
+- Add transaction to `loyalty.history`:
+  ```json
+  {
+    "date": "2025-11-16T10:00:00Z",
+    "action": "review",
+    "product_id": 123456,
+    "points": 100,
+    "balance_after": 300
+  }
+  ```
+
+**Implementation:** Webhook receiver (Google Apps Script or Shopify Function)
+
+---
+
+### Rule 4: Referral (200 points)
+**Trigger:** Referred customer makes first purchase
+**Condition:** Order contains referral tag/discount code
+**Action:**
+- Add 200 to referrer `loyalty.points`
+- Add transaction to `loyalty.history`:
+  ```json
+  {
+    "date": "2025-11-17T12:00:00Z",
+    "action": "referral",
+    "referred_customer_id": 987654,
+    "points": 200,
+    "balance_after": 500
+  }
+  ```
+
+**Implementation:** Shopify Flow workflow (order tag detection)
+
+---
+
+## 3. TIER CALCULATION
+
+**Automatic tier assignment based on points:**
+
+```javascript
+function calculateTier(points) {
+  if (points >= 1501) return "gold";
+  if (points >= 501) return "silver";
+  return "bronze";
+}
+```
+
+**Tier Benefits:**
+- **Bronze (0-500):** Birthday reward, exclusive deals
+- **Silver (501-1500):** + Early access, free shipping
+- **Gold (1501+):** + VIP support, 2x points on purchases
+
+**Tier Upgrade Trigger:**
+- Automatically update `loyalty.tier` when points threshold crossed
+- Send email notification (Klaviyo or Shopify Email)
+
+---
+
+## 4. REDEMPTION SYSTEM
+
+### Redemption Tiers:
+```
+100 points = $5 OFF
+200 points = $12 OFF (bonus $2 value)
+500 points = $35 OFF (bonus $10 value)
+1000 points = $80 OFF (bonus $20 value)
+```
+
+### Mechanism: Auto-Generated Discount Codes
+
+**Workflow:**
+1. Customer clicks "Redeem 100 points" on account page
+2. HTTP Request to redemption script (Python/Apps Script)
+3. Script:
+   - Validates customer has sufficient points
+   - Deducts points from `loyalty.points`
+   - Creates Shopify discount code (Price Rule API):
+     ```json
+     {
+       "price_rule": {
+         "title": "LOYALTY100-CUSTOMER123",
+         "target_type": "line_item",
+         "target_selection": "all",
+         "allocation_method": "across",
+         "value_type": "fixed_amount",
+         "value": "-5.00",
+         "customer_selection": "prerequisite",
+         "prerequisite_customer_ids": [123],
+         "usage_limit": 1,
+         "starts_at": "2025-11-15T00:00:00Z"
+       }
+     }
+     ```
+   - Returns discount code to customer
+   - Adds redemption transaction to `loyalty.history`:
+     ```json
+     {
+       "date": "2025-11-18T14:00:00Z",
+       "action": "redemption",
+       "points": -100,
+       "discount_code": "LOYALTY100-CUSTOMER123",
+       "discount_value": 5.00,
+       "balance_after": 400
+     }
+     ```
+4. Display discount code on account page
+5. Send email with code (Klaviyo)
+
+---
+
+## 5. SHOPIFY API ENDPOINTS REQUIRED
+
+### Admin API (via Python Script or Apps Script):
+
+**Customer Metafields:**
+```graphql
+mutation CreateCustomerMetafield($input: CustomerInput!) {
+  customerUpdate(input: $input) {
+    customer {
+      id
+      metafields(first: 10) {
+        edges {
+          node {
+            namespace
+            key
+            value
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+**Price Rules (Discount Codes):**
+```bash
+POST /admin/api/2024-10/price_rules.json
+POST /admin/api/2024-10/price_rules/{price_rule_id}/discount_codes.json
+```
+
+**Customer Query:**
+```graphql
+query GetCustomerLoyalty($customerId: ID!) {
+  customer(id: $customerId) {
+    id
+    email
+    metafield(namespace: "loyalty", key: "points") { value }
+    metafield(namespace: "loyalty", key: "tier") { value }
+    metafield(namespace: "loyalty", key: "history") { value }
+  }
+}
+```
+
+---
+
+## 6. IMPLEMENTATION FILES
+
+### Python Scripts:
+1. `loyalty_manager.py` - Main API wrapper
+   - `add_points(customer_id, points, action, metadata)`
+   - `deduct_points(customer_id, points, action)`
+   - `get_balance(customer_id)`
+   - `get_history(customer_id)`
+   - `create_discount_code(customer_id, points_value)`
+
+2. `loyalty_setup.py` - One-time metafield definitions
+   - Create metafield definitions via Admin API
+
+3. `loyalty_webhooks.py` - Webhook handlers (Google Apps Script)
+   - Handle order paid webhook
+   - Handle customer created webhook
+   - Handle review submitted webhook (Loox)
+
+### Shopify Flow Workflows:
+1. `flow_signup_bonus.json` - 50 points on account creation
+2. `flow_purchase_points.json` - Points on order paid
+3. `flow_tier_upgrade.json` - Email notification on tier change
+
+### Liquid Templates (Updated):
+1. `snippets/loyalty-points-widget.liquid` - Read from metafields instead of `customer.total_spent`
+2. `snippets/loyalty-redemption-form.liquid` - Redemption UI with discount codes
+3. `snippets/loyalty-history.liquid` - Display transaction history
+
+---
+
+## 7. DEPLOYMENT PHASES
+
+### Phase 1: Setup (Day 1)
+- ✅ Create metafield definitions
+- ✅ Deploy `loyalty_manager.py` script
+- ✅ Test metafield read/write
+
+### Phase 2: Earning Rules (Day 2)
+- ✅ Shopify Flow: Signup bonus
+- ✅ Shopify Flow: Purchase points
+- ✅ Test earning rules with test customers
+
+### Phase 3: Redemption (Day 3)
+- ✅ Build redemption script (discount code generation)
+- ✅ Update UI with redemption form
+- ✅ Test redemption flow end-to-end
+
+### Phase 4: Advanced Features (Day 4)
+- ✅ Transaction history display
+- ✅ Tier upgrade emails (Klaviو)
+- ✅ Review & referral points (webhooks)
+
+### Phase 5: Testing & Launch (Day 5)
+- ✅ QA testing with test customers
+- ✅ Documentation for admin
+- ✅ Launch to production
+
+---
+
+## 8. SECURITY CONSIDERATIONS
+
+**API Key Management:**
+- Store Shopify Admin API token in environment variables
+- Never commit API keys to GitHub
+- Use `.env` file (add to `.gitignore`)
+
+**Redemption Validation:**
+- Always validate customer has sufficient points before deducting
+- Prevent negative balances
+- Rate limiting on redemption (1 per day max)
+
+**Webhook Verification:**
+- Verify webhook HMAC signature (Shopify security)
+- Reject unauthorized requests
+
+---
+
+## 9. COST ANALYSIS
+
+**Development Time:** 20-30 hours
+**Ongoing Costs:**
+- Shopify API calls: FREE (within rate limits)
+- Hosting script: $0 (Google Apps Script) or $5/month (Python server)
+- Email notifications: $0 (Shopify Email) or included in Klaviو
+
+**vs App Cost:**
+- Smile.io: $49-$599/month = $588-$7,188/year
+- Custom: $0-$60/year (hosting only)
+- **Savings:** $528-$7,128/year
+
+---
+
+## 10. TESTING PLAN
+
+**Test Scenarios:**
+1. New customer signup → Should receive 50 bonus points
+2. Customer makes $150 purchase → Should receive 150 points
+3. Customer redeems 100 points → Should receive $5 discount code
+4. Customer crosses 501 points → Should upgrade to Silver tier
+5. Transaction history → Should display all actions chronologically
+
+**Test Customers:**
+- Create 3 test customer accounts
+- Simulate full lifecycle (signup → purchase → redeem → tier upgrade)
+
+---
+
+**STATUS:** Phase 1 - Setup in progress
+**Next Step:** Create `loyalty_manager.py` script
+
+---
+
+
+# 36. Loyalty System Setup Guide
+
+**File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
+**Last Modified:** 2025-11-15 13:44
+
+---
+
+# Loyalty System - Complete Setup Guide
+
+**Date:** 2025-11-15
+**Status:** Ready for deployment (requires Shopify plan upgrade)
+**Estimated Setup Time:** 2-3 hours
+
+---
+
+## 🚨 PREREQUISITE: SHOPIFY PLAN UPGRADE REQUIRED
+
+**CRITICAL:** This loyalty system requires **Shopify Plan** ($79/month) or higher.
+
+**Why:** Customer API access (required for metafields) is NOT available on Basic plan.
+
+**Before proceeding:**
+1. Upgrade plan: Shopify Admin → Settings → Plan → Upgrade to Shopify
+2. Wait 5-10 minutes for API permissions to propagate
+3. Then proceed with setup below
+
+---
+
+## 📋 SETUP CHECKLIST
+
+- [ ] **Step 1:** Upgrade Shopify plan to Shopify ($79/month)
+- [ ] **Step 2:** Run `loyalty_setup.py` (create metafield definitions)
+- [ ] **Step 3:** Deploy `loyalty_webhooks.gs` to Google Apps Script
+- [ ] **Step 4:** Deploy `loyalty_redemption_api.gs` to Google Apps Script
+- [ ] **Step 5:** Configure Shopify webhooks
+- [ ] **Step 6:** Test with test customer
+- [ ] **Step 7:** Deploy to production (already done - widgets live)
+
+---
+
+## STEP 1: SHOPIFY PLAN UPGRADE
+
+### Upgrade Process
+
+1. Go to Shopify Admin: https://admin.shopify.com/store/azffej-as
+2. Settings → Plan & permissions
+3. Click "Change plan"
+4. Select "Shopify" ($79/month)
+5. Confirm upgrade
+6. Wait 5-10 minutes for API permissions
+
+### Verify Upgrade
+
+```bash
+python3 loyalty_manager.py balance loyalty.test@alphamedical.shop
+```
+
+**Expected output (BEFORE upgrade):**
+```
+❌ ACCESS_DENIED: Customer API not available on Basic plan
+```
+
+**Expected output (AFTER upgrade):**
+```
+✅ Customer found
+{
+  "success": true,
+  "points": 0,
+  "tier": "bronze",
+  ...
+}
+```
+
+---
+
+## STEP 2: CREATE CUSTOMER METAFIELD DEFINITIONS
+
+### Run Setup Script
+
+```bash
+cd /Users/mac/Desktop/Alpha-Medical
+python3 loyalty_setup.py
+```
+
+### Expected Output
+
+```
+============================================================
+LOYALTY SYSTEM METAFIELD SETUP
+============================================================
+Store: azffej-as.myshopify.com
+API Version: 2024-10
+
+✅ Created: loyalty.points (number_integer)
+✅ Created: loyalty.tier (single_line_text_field)
+✅ Created: loyalty.history (json)
+✅ Created: loyalty.signup_bonus_claimed (boolean)
+✅ Created: loyalty.lifetime_points_earned (number_integer)
+✅ Created: loyalty.lifetime_points_redeemed (number_integer)
+
+============================================================
+SETUP COMPLETE
+============================================================
+✅ Success: 6/6
+❌ Failed: 0/6
+
+🎉 All metafield definitions created successfully!
+```
+
+### Verify in Shopify Admin
+
+1. Go to: Settings → Custom Data → Customers
+2. You should see 6 metafield definitions under namespace "loyalty":
+   - `loyalty.points`
+   - `loyalty.tier`
+   - `loyalty.history`
+   - `loyalty.signup_bonus_claimed`
+   - `loyalty.lifetime_points_earned`
+   - `loyalty.lifetime_points_redeemed`
+
+---
+
+## STEP 3: DEPLOY WEBHOOKS HANDLER (Google Apps Script)
+
+### Create New Apps Script Project
+
+1. Go to: https://script.google.com
+2. Click "+ New project"
+3. Name: "Alpha Medical - Loyalty Webhooks"
+4. Copy entire contents of `loyalty_webhooks.gs`
+5. Paste into Apps Script editor
+6. Save (Ctrl+S)
+
+### Deploy as Web App
+
+1. Click "Deploy" → "New deployment"
+2. Type: "Web app"
+3. Description: "Loyalty webhooks handler"
+4. Execute as: "Me"
+5. Who has access: "Anyone"
+6. Click "Deploy"
+7. **COPY THE WEB APP URL** (format: `https://script.google.com/macros/s/.../exec`)
+
+### Test Deployment
+
+Run test function in Apps Script:
+1. Select function: `testSignupBonus`
+2. Click "Run"
+3. Check "Execution log" for:
+   ```
+   ✅ Added 50 points to customer...
+   ```
+
+---
+
+## STEP 4: DEPLOY REDEMPTION API (Google Apps Script)
+
+### Create Second Apps Script Project
+
+1. Go to: https://script.google.com
+2. Click "+ New project"
+3. Name: "Alpha Medical - Loyalty Redemption API"
+4. Copy entire contents of `loyalty_redemption_api.gs`
+5. Paste into Apps Script editor
+6. Save (Ctrl+S)
+
+### Deploy as Web App
+
+1. Click "Deploy" → "New deployment"
+2. Type: "Web app"
+3. Description: "Loyalty redemption API"
+4. Execute as: "Me"
+5. Who has access: "Anyone"
+6. Click "Deploy"
+7. **COPY THE WEB APP URL**
+
+### Update Frontend
+
+Edit `snippets/loyalty-redemption-form.liquid`:
+
+Find line ~75:
+```liquid
+const response = await fetch('/apps/loyalty/redeem', {
+```
+
+Replace with:
+```liquid
+const response = await fetch('PASTE_YOUR_APPS_SCRIPT_URL_HERE', {
+```
+
+---
+
+## STEP 5: CONFIGURE SHOPIFY WEBHOOKS
+
+### Webhook 1: Customer Create (Signup Bonus)
+
+1. Go to: Shopify Admin → Settings → Notifications → Webhooks
+2. Click "Create webhook"
+3. Event: "Customer creation"
+4. Format: "JSON"
+5. URL: `[YOUR_WEBHOOKS_HANDLER_URL]?topic=customers/create`
+6. API version: "2024-10"
+7. Click "Save"
+
+### Webhook 2: Order Paid (Purchase Points)
+
+1. Click "Create webhook"
+2. Event: "Order payment"
+3. Format: "JSON"
+4. URL: `[YOUR_WEBHOOKS_HANDLER_URL]?topic=orders/paid`
+5. API version: "2024-10"
+6. Click "Save"
+
+### Test Webhooks
+
+**Test Customer Create:**
+1. Create test customer in Shopify Admin
+2. Check Apps Script execution log
+3. Verify 50 points awarded
+
+**Test Order Paid:**
+1. Create test order ($150) for test customer
+2. Mark order as paid
+3. Check Apps Script execution log
+4. Verify 150 points awarded
+
+---
+
+## STEP 6: TEST COMPLETE FLOW
+
+### Test Scenario 1: New Customer Signup
+
+```bash
+# 1. Create test customer via API
+python3 -c "
+import requests
+import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv('.env.admin')
+
+url = 'https://azffej-as.myshopify.com/admin/api/2024-10/graphql.json'
+headers = {
+    'X-Shopify-Access-Token': os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN'),
+    'Content-Type': 'application/json'
+}
+
+mutation = '''
+mutation {
+  customerCreate(input: {
+    email: \"test.loyalty@example.com\"
+    firstName: \"Test\"
+    lastName: \"Loyalty\"
+  }) {
+    customer { id email }
+  }
+}
+'''
+
+response = requests.post(url, headers=headers, json={'query': mutation})
+print(json.dumps(response.json(), indent=2))
+"
+
+# 2. Check points balance
+python3 loyalty_manager.py balance test.loyalty@example.com
+
+# Expected: 50 points (signup bonus)
+```
+
+### Test Scenario 2: Purchase Points
+
+```bash
+# Award 150 points for $150 purchase
+python3 loyalty_manager.py add test.loyalty@example.com 150 purchase
+
+# Check balance
+python3 loyalty_manager.py balance test.loyalty@example.com
+
+# Expected: 200 points (50 signup + 150 purchase)
+```
+
+### Test Scenario 3: Tier Upgrade
+
+```bash
+# Add 350 more points (total = 550 → Silver tier)
+python3 loyalty_manager.py add test.loyalty@example.com 350 purchase
+
+# Check balance
+python3 loyalty_manager.py balance test.loyalty@example.com
+
+# Expected: 550 points, Silver tier
+```
+
+### Test Scenario 4: Redemption
+
+```bash
+# Redeem 100 points
+python3 loyalty_manager.py redeem test.loyalty@example.com 100
+
+# Expected output:
+# ✅ Redemption complete!
+# Code: LOYALTY100-XXXXXXX
+# Value: $5 OFF
+# New balance: 450 points
+```
+
+### Test Scenario 5: Transaction History
+
+```bash
+# Get history
+python3 loyalty_manager.py history test.loyalty@example.com
+
+# Expected: 4 transactions
+# 1. Signup bonus (+50)
+# 2. Purchase (+150)
+# 3. Purchase (+350)
+# 4. Redemption (-100)
+```
+
+---
+
+## STEP 7: PRODUCTION DEPLOYMENT (DONE)
+
+### Files Already Deployed
+
+✅ **Liquid Templates:**
+- `snippets/loyalty-points-widget.liquid` - Full dashboard
+- `snippets/loyalty-points-badge.liquid` - Cart drawer compact
+- `snippets/loyalty-redemption-form.liquid` - Redemption UI
+- `snippets/loyalty-history.liquid` - Transaction history
+- `sections/main-account.liquid` - Integration (lines 28-29)
+- `snippets/cart-drawer.liquid` - Integration (line 80)
+
+✅ **Python Scripts:**
+- `loyalty_setup.py` - One-time metafield setup
+- `loyalty_manager.py` - CLI management tool
+
+✅ **Google Apps Scripts:**
+- `loyalty_webhooks.gs` - Webhook handlers (needs deployment)
+- `loyalty_redemption_api.gs` - Redemption API (needs deployment)
+
+### Pages Live
+
+- Account page: https://www.alphamedical.shop/account
+  - Full loyalty dashboard
+  - Redemption form
+  - Transaction history
+
+- Cart drawer: (opens when adding to cart)
+  - Compact points badge
+  - Tier display
+
+---
+
+## 📊 EARNING RULES SUMMARY
+
+| Action | Points | Auto/Manual |
+|--------|--------|-------------|
+| Account signup | 50 | Auto (webhook) |
+| Purchase | 1 per $1 | Auto (webhook) |
+| Product review | 100 | Manual* |
+| Referral | 200 | Manual* |
+
+*Requires additional webhook setup (Loox integration for reviews, referral tracking)
+
+---
+
+## 💰 REDEMPTION TIERS
+
+| Points | Discount | Bonus | Total Value |
+|--------|----------|-------|-------------|
+| 100 | $5 | $0 | $5 |
+| 200 | $12 | **+$2** | $12 |
+| 500 | $35 | **+$10** | $35 |
+| 1000 | $80 | **+$20** | $80 |
+
+---
+
+## 🏆 TIER SYSTEM
+
+### Bronze (0-500 points)
+- Birthday reward
+- Exclusive deals
+
+### Silver (501-1,500 points)
+- All Bronze benefits
+- Early access to new products
+- Free shipping on all orders
+
+### Gold (1,501+ points)
+- All Silver benefits
+- VIP support (priority response)
+- 2x points on purchases
+
+---
+
+## 🔧 TROUBLESHOOTING
+
+### Issue: "Customer not found" error
+
+**Cause:** Customer API access denied (Basic plan)
+**Fix:** Upgrade to Shopify plan ($79/month)
+
+### Issue: Metafields not showing in Liquid
+
+**Cause:** Metafield definitions not created
+**Fix:** Run `python3 loyalty_setup.py`
+
+### Issue: Signup bonus not awarded
+
+**Cause:** Webhook not configured or failing
+**Fix:**
+1. Check webhook status in Shopify Admin
+2. Check Apps Script execution log for errors
+3. Verify webhook URL is correct
+
+### Issue: Points not updating
+
+**Cause:** Webhook handler error
+**Fix:**
+1. Check Apps Script execution log
+2. Verify Admin API token is valid
+3. Test manually: `python3 loyalty_manager.py add EMAIL POINTS ACTION`
+
+### Issue: Redemption button does nothing
+
+**Cause:** Apps Script URL not configured
+**Fix:** Update URL in `snippets/loyalty-redemption-form.liquid` (line 75)
+
+---
+
+## 📈 MONITORING & ANALYTICS
+
+### Check Loyalty Stats
+
+```bash
+# Get all loyalty data for customer
+python3 loyalty_manager.py balance customer@example.com
+
+# View transaction history
+python3 loyalty_manager.py history customer@example.com 50
+```
+
+### Apps Script Execution Log
+
+1. Go to: Apps Script project → Executions
+2. View real-time webhook processing
+3. Check for errors
+
+### Shopify Webhook Status
+
+1. Go to: Settings → Notifications → Webhooks
+2. Click on webhook
+3. View "Recent deliveries"
+4. Check response codes (200 = success)
+
+---
+
+## 🚀 NEXT STEPS (Optional Enhancements)
+
+### Email Notifications (Klaviyo)
+
+**Tier Upgrade Email:**
+- Trigger: When tier changes (silver/gold)
+- Template: Congratulations email
+- Integration: Add Klaviyo call to `loyalty_webhooks.gs`
+
+**Redemption Confirmation:**
+- Trigger: After successful redemption
+- Template: Discount code + instructions
+- Integration: Add to `loyalty_redemption_api.gs`
+
+### Product Review Points
+
+**Setup:**
+1. Install Loox app (if not already)
+2. Configure Loox webhook: https://YOUR_APPS_SCRIPT_URL?topic=reviews/create
+3. Update `loyalty_webhooks.gs` with review handler
+
+### Referral Points
+
+**Setup:**
+1. Create referral tracking (discount codes with tags)
+2. Configure Shopify Flow:
+   - Trigger: Order created with referral tag
+   - Action: HTTP request to loyalty_manager.py
+
+### Admin Dashboard
+
+**Features:**
+- Total loyalty program metrics
+- Points issued/redeemed
+- Tier distribution
+- Top customers
+
+**Implementation:** Google Sheets + Apps Script data aggregation
+
+---
+
+## 💰 COST ANALYSIS
+
+| Item | Cost | Frequency |
+|------|------|-----------|
+| Shopify Plan Upgrade | +$50 | Monthly |
+| Google Apps Script | $0 | Free tier |
+| Development Time | 0h | Already done |
+| **Total** | **$50/month** | **$600/year** |
+
+**vs App Alternative:**
+- Smile.io: $49-$599/month ($588-$7,188/year)
+- **Savings:** $538-$6,588/year with custom system
+
+**Additional Benefits of Shopify Plan:**
+- Professional reports
+- Staff accounts (5)
+- International domains
+- Better shipping rates
+
+---
+
+## ✅ VERIFICATION CHECKLIST
+
+After setup complete, verify:
+
+- [ ] Customer metafields visible in Shopify Admin
+- [ ] Signup bonus awarded to new customers (50 points)
+- [ ] Purchase points awarded on paid orders (1pt/$1)
+- [ ] Account page shows loyalty dashboard
+- [ ] Cart drawer shows points badge
+- [ ] Tier calculation accurate
+- [ ] Redemption creates discount codes
+- [ ] Discount codes work at checkout
+- [ ] Transaction history displays correctly
+- [ ] Webhooks processing successfully
+
+---
+
+## 📞 SUPPORT
+
+**Issues?** Check:
+1. This guide (troubleshooting section)
+2. Apps Script execution logs
+3. Shopify webhook delivery logs
+4. Test with CLI: `python3 loyalty_manager.py`
+
+**All files location:** `/Users/mac/Desktop/Alpha-Medical/`
+
+---
+
+**SETUP GUIDE VERSION:** 1.0
+**LAST UPDATED:** 2025-11-15
+**STATUS:** ✅ Ready for deployment (after plan upgrade)
+
+---
+
+
+# 37. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -42792,10 +43740,10 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 36. Menu Bundles Instructions
+# 38. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -42875,10 +43823,10 @@ Après sauvegarde:
 ---
 
 
-# 37. Mydealz Synthese
+# 39. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -43254,10 +44202,10 @@ EMAIL_CODES:
 ---
 
 
-# 38. Newsletter Flows Creation Checklist
+# 40. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -43955,10 +44903,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 39. Next Steps Flow Configuration
+# 41. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -44207,10 +45155,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 40. Pain Relief Guide Implementation
+# 42. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -44664,10 +45612,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 41. Phase 3 Implementation Log
+# 43. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -45200,10 +46148,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 42. Pricing Quick Reference
+# 44. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -45579,10 +46527,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 43. Pricing Verification
+# 45. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -46500,10 +47448,10 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 44. Product Optimization Tracking
+# 46. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -47246,10 +48194,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 45. Rapport Final Complet
+# 47. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -47478,10 +48426,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 46. Rapport Theme Analyse
+# 48. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -47849,10 +48797,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 47. Robots Txt Deployment
+# 49. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -48167,10 +49115,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 48. Seo Audit Recommendations
+# 50. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -48629,10 +49577,10 @@ data = {
 ---
 
 
-# 49. Session 2025-11-11 Part3 Summary
+# 51. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -48818,10 +49766,10 @@ data = {
 ---
 
 
-# 50. Session 2025-11-11 Part6 Summary
+# 52. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -49114,10 +50062,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 51. Session 2025-11-11 Summary
+# 53. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -49349,10 +50297,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 52. Session Summary
+# 54. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -49611,10 +50559,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 53. Shopify Configuration Complete
+# 55. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -50103,10 +51051,10 @@ Si besoin d'aide:
 ---
 
 
-# 54. Shopify Email Implementation Checklist
+# 56. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -50448,10 +51396,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 55. Shopify Flow Configuration Guide
+# 57. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -51608,10 +52556,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 56. Status Report Pages
+# 58. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -51704,10 +52652,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 57. Tracking Analytics Gaps 2025
+# 59. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -52082,10 +53030,10 @@ After installing tracking:
 ---
 
 
-# 58. Ultimate Pain Relief Guide
+# 60. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-15 03:18
+**Last Modified:** 2025-11-15 13:44
 
 ---
 
@@ -53602,8 +54550,8 @@ Visit **alphamedicalcare.com/resources** for:
 
 ## Document Information
 
-**Total Documentation Files:** 58
-**Generated:** November 15, 2025 at 03:18 UTC
+**Total Documentation Files:** 60
+**Generated:** November 15, 2025 at 13:44 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
