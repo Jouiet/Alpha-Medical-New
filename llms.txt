@@ -44,6 +44,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [BLOG_IMAGES_ASSIGNMENT](BLOG_IMAGES_ASSIGNMENT.md): Project documentation
 - [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
+- [CRITICAL_MANUAL_ACTIONS_GUIDE](CRITICAL_MANUAL_ACTIONS_GUIDE.md): 1. Go to Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings → Payments
 - [DEPLOYMENT_GUIDE_COMPLETE](DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
 - [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
 - [LOYALTY_SYSTEM_SETUP_GUIDE](LOYALTY_SYSTEM_SETUP_GUIDE.md): Project documentation
