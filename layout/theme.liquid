@@ -15,13 +15,13 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    <title>Professional Medical Equipment You Can Trust - FDA-Compliant | 30-Day Guarantee | {{ shop.name }}</title>
+    <title>Medical Equipment | FDA-Compliant | {{ shop.name }}</title>
 
     {%- liquid
       if page_description
         assign meta_description = page_description
       elsif request.page_type == 'index'
-        assign meta_description = "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials."
+        assign meta_description = "Professional medical support equipment & orthopedic braces. Knee braces, posture correctors, LED therapy. Free shipping $50+. FDA-compliant."
       elsif request.page_type == 'collection'
         assign meta_description = collection.description | default: "Browse our " | append: collection.title | append: " collection - Quality medical devices & orthopedic supports."
       elsif request.page_type == 'product'
