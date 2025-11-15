@@ -706,3 +706,184 @@
 **DOCUMENT STATUS:** ✅ **UP-TO-DATE - 100% VERIFIED**
 **IMPLEMENTATION:** ✅ **COMPLETE - LIVE IN PRODUCTION**
 
+
+---
+
+## 📸 BUNDLES UX ENHANCEMENTS - SESSION 2025-11-15 PART 10
+
+**Implementation Date:** 2025-11-15 16:00 UTC
+**Status:** ✅ **LIVE IN PRODUCTION**
+
+### NEW FEATURES DEPLOYED
+
+#### 1. **Build Your Bundle CTA Banner** ✅
+
+**File:** `snippets/bundles-collection-cta.liquid`
+**Location:** Bundles collection page (between header and product grid)
+**Purpose:** Cross-sell to custom bundle builder page
+
+**Features:**
+- Gradient banner (Alpha Medical colors: #4A90E2 → #7FCCC9)
+- Animated pulse effect + rotating gift icon
+- Clear value proposition: "Can't Find the Perfect Bundle?"
+- Call-to-action: "Build Your Bundle" → /pages/build-your-bundle
+- Features list: 35% OFF, 3-4 Products, Free Shipping
+- Fully responsive (mobile + desktop)
+
+**Design Elements:**
+- Gradient background with radial glow animation
+- White button with hover effects
+- Checkmark icons for feature highlights
+- Professional shadow and blur effects
+
+**Expected Impact:** +10-20% conversion to custom bundle builder
+
+---
+
+#### 2. **Bundle Hover Images Carousel** ✅
+
+**File:** `snippets/bundle-hover-images.liquid`
+**Scope:** 14/15 bundles mapped with product images
+**Trigger:** Hover over bundle card on collection page
+
+**Functionality:**
+- Shows 4 product images per bundle (auto-rotating every 1.5s)
+- Fetches product images via Product JSON API (/products/{handle}.js)
+- Product count badge overlay (e.g., "4 Products")
+- Carousel indicator dots showing progress
+- Smooth fade transitions between images
+- Image caching for performance
+
+**Bundles Mapped (14 total):**
+1. office-worker-essential-kit (4 products)
+2. senior-mobility-support (4 products)
+3. chronic-pain-starter-kit (4 products)
+4. active-athlete-knee-specialist (4 products)
+5. active-athlete-complete-protection (4 products)
+6. chronic-pain-relief-kit (4 products)
+7. office-worker-advanced-ergonomic (4 products)
+8. rehab-stroke-recovery (4 products)
+9. beauty-wellness-led-complete (4 products)
+10. post-surgery-recovery-complete (4 products)
+11. office-worker-premium-workspace (4 products)
+12. chronic-pain-whole-body (4 products)
+13. senior-advanced-arthritis (4 products)
+14. ultimate-pain-management-system (4 products)
+
+**Expected Impact:** +15-25% transparency → increased trust → higher conversion
+
+---
+
+#### 3. **Custom Collection Template** ✅
+
+**File:** `templates/collection.bundles.json`
+**Applied To:** Collection medical-equipment-bundles (ID: 296239169613)
+
+**Template Structure:**
+- Section 1: Collection banner (title + description)
+- Section 2: CTA banner (Build Your Bundle)
+- Section 3: Product grid (bundles)
+
+**Grid Settings:**
+- 3 columns desktop (better visibility for bundles)
+- 1 column mobile
+- Square image ratio
+- Sorting enabled
+- Filtering disabled (bundles don't need filters)
+- 24 products per page
+
+**Assignment:** Via GraphQL API collectionUpdate mutation
+**Status:** ✅ Active and rendering correctly
+
+---
+
+#### 4. **Theme Integration** ✅
+
+**File:** `layout/theme.liquid` (lines 394-397)
+**Conditional Rendering:** Only on bundles collection page
+
+**Code Added:**
+```liquid
+{%- if template.name == 'collection' and collection.handle == 'medical-equipment-bundles' -%}
+  {%- render 'bundle-hover-images' -%}
+{%- endif -%}
+```
+
+**Performance Impact:** Zero (only loads on bundles collection page)
+
+---
+
+### DEPLOYMENT VERIFICATION
+
+**Deployment Method:** Shopify Asset API (Theme ID: 140069830733)
+**Files Uploaded:** 4/4 successful
+
+| File | Status | Size |
+|------|--------|------|
+| snippets/bundles-collection-cta.liquid | ✅ Deployed | ~5 KB |
+| templates/collection.bundles.json | ✅ Deployed | ~1 KB |
+| snippets/bundle-hover-images.liquid | ✅ Deployed | ~15 KB |
+| layout/theme.liquid | ✅ Updated | ~15 KB |
+
+**Git Commit:** 64bf41e - "feat(bundles): CTA banner + hover carousel"
+**GitHub:** ✅ Pushed to main branch
+
+---
+
+### LIVE URL
+
+**Collection Page:** https://www.alphamedical.shop/collections/medical-equipment-bundles
+
+**User Experience:**
+1. Visit bundles collection page
+2. See prominent CTA banner encouraging custom bundle creation
+3. Hover over any bundle card
+4. See carousel of 4 product images (auto-rotating every 1.5s)
+5. Click "Build Your Bundle" CTA to create custom bundle
+
+---
+
+### TECHNICAL IMPLEMENTATION DETAILS
+
+**JavaScript Architecture:**
+- Class-based design (BundleHoverImages)
+- Asynchronous product fetching
+- Product image caching (Map data structure)
+- Event-driven hover interactions
+- DOM manipulation for overlay creation
+
+**Performance Optimizations:**
+- Lazy loading images
+- Caching fetched product data
+- Conditional script loading (bundles page only)
+- Debounced API calls
+
+**Browser Compatibility:**
+- Modern browsers (ES6+)
+- Graceful degradation (no carousel on hover if JS disabled)
+- Fallback to static bundle image
+
+---
+
+### NEXT PHASE - CTA "Want to Save More?"
+
+**Planned Implementation:** Phase 1 (High Priority)
+
+**Target Locations:**
+1. **Product Pages** (Priority 1) - ROI: ⭐⭐⭐⭐⭐
+   - Placement: After "Add to Cart" button
+   - Message: "Save 35% - This product is in our [Bundle Name]"
+   - Conversion: +25-40% expected
+
+2. **Cart Page/Drawer** (Priority 2) - ROI: ⭐⭐⭐⭐
+   - Placement: Above "Checkout" button
+   - Message: "Save 35% with our curated bundles!"
+   - Conversion: +15-25% expected
+
+**Status:** ⏳ Pending implementation (next session)
+
+---
+
+**DOCUMENT UPDATED:** 2025-11-15 16:00 UTC
+**SESSION STATUS:** ✅ Bundles UX Enhancements Complete
+**NEXT:** CTA "Want to Save More?" Phase 1 Implementation
