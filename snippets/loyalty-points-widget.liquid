@@ -8,11 +8,31 @@
   assign customer_points = 0
   assign customer_tier = 'bronze'
   assign next_tier_points = 500
+  assign customer_history = ''
+  assign lifetime_earned = 0
+  assign lifetime_redeemed = 0
 
   if customer
-    comment "Calculate points based on order history (1 point = $1 spent)"
-    assign total_spent = customer.total_spent | divided_by: 100
-    assign customer_points = total_spent | floor
+    comment "Read from loyalty metafields (requires Shopify plan or higher)"
+    assign points_metafield = customer.metafields.loyalty.points
+    assign tier_metafield = customer.metafields.loyalty.tier
+    assign history_metafield = customer.metafields.loyalty.history
+    assign lifetime_earned_metafield = customer.metafields.loyalty.lifetime_points_earned
+    assign lifetime_redeemed_metafield = customer.metafields.loyalty.lifetime_points_redeemed
+
+    if points_metafield != blank
+      comment "Metafields exist - use real loyalty data"
+      assign customer_points = points_metafield | default: 0
+      assign customer_tier = tier_metafield | default: 'bronze'
+      assign customer_history = history_metafield | default: '[]'
+      assign lifetime_earned = lifetime_earned_metafield | default: 0
+      assign lifetime_redeemed = lifetime_redeemed_metafield | default: 0
+    else
+      comment "Fallback: Calculate from total_spent (mockup mode)"
+      assign total_spent = customer.total_spent | divided_by: 100
+      assign customer_points = total_spent | floor
+      assign lifetime_earned = customer_points
+    endif
 
     comment "Determine tier based on points"
     if customer_points >= 1501
@@ -26,9 +46,9 @@
       assign next_tier_points = 501
     endif
 
-    comment "Calculate rewards available (100 points = $10 reward)"
+    comment "Calculate rewards available (100 points = $5)"
     assign rewards_available = customer_points | divided_by: 100
-    assign reward_value = rewards_available | times: 10
+    assign reward_value = rewards_available | times: 5
   endif
 -%}
 
@@ -116,19 +136,8 @@
       </div>
     {% endif %}
 
-    {%- comment -%} Rewards Available {%- endcomment -%}
-    {% if rewards_available > 0 %}
-      <div class="rewards-available">
-        <div class="reward-card">
-          <div class="reward-icon">🎁</div>
-          <div class="reward-details">
-            <div class="reward-count">{{ rewards_available }} Reward{% if rewards_available > 1 %}s{% endif %} Available</div>
-            <div class="reward-value">${{ reward_value }} in store credit</div>
-          </div>
-          <a href="/account" class="btn-claim">Claim</a>
-        </div>
-      </div>
-    {% endif %}
+    {%- comment -%} Redemption Section {%- endcomment -%}
+    {%- render 'loyalty-redemption-form' -%}
 
     {%- comment -%} How to Earn Points {%- endcomment -%}
     <div class="loyalty-earn">
@@ -191,6 +200,9 @@
         </div>
       </div>
     </div>
+
+    {%- comment -%} Transaction History {%- endcomment -%}
+    {%- render 'loyalty-history' -%}
 
   {% else %}
     {%- comment -%} Not logged in - CTA to join {%- endcomment -%}

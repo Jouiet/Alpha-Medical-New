@@ -1,0 +1,346 @@
+{% comment %}
+  Loyalty Redemption Form
+  Allows customers to redeem points for discount codes
+  Redemption tiers:
+  - 100 points = $5 OFF
+  - 200 points = $12 OFF (bonus $2)
+  - 500 points = $35 OFF (bonus $10)
+  - 1000 points = $80 OFF (bonus $20)
+{% endcomment %}
+
+{%- liquid
+  assign customer_points = 0
+
+  if customer
+    assign points_metafield = customer.metafields.loyalty.points
+
+    if points_metafield != blank
+      assign customer_points = points_metafield | default: 0
+    else
+      assign total_spent = customer.total_spent | divided_by: 100
+      assign customer_points = total_spent | floor
+    endif
+  endif
+-%}
+
+<div class="loyalty-redemption" data-points="{{ customer_points }}">
+  <h3 class="redemption-title">Redeem Your Points</h3>
+
+  {% if customer_points >= 100 %}
+    <div class="redemption-options">
+      {%- comment -%} 100 points = $5 {%- endcomment -%}
+      {% if customer_points >= 100 %}
+        <div class="redemption-card {% if customer_points < 100 %}disabled{% endif %}">
+          <div class="redemption-badge">Best Value</div>
+          <div class="redemption-points">100 Points</div>
+          <div class="redemption-value">$5 OFF</div>
+          <div class="redemption-savings">Regular Value</div>
+          <button class="btn-redeem" data-points="100" data-value="5" {% if customer_points < 100 %}disabled{% endif %}>
+            Redeem
+          </button>
+        </div>
+      {% endif %}
+
+      {%- comment -%} 200 points = $12 (bonus $2) {%- endcomment -%}
+      {% if customer_points >= 200 %}
+        <div class="redemption-card {% if customer_points < 200 %}disabled{% endif %}">
+          <div class="redemption-badge bonus">+$2 Bonus</div>
+          <div class="redemption-points">200 Points</div>
+          <div class="redemption-value">$12 OFF</div>
+          <div class="redemption-savings">Save $2 extra!</div>
+          <button class="btn-redeem" data-points="200" data-value="12" {% if customer_points < 200 %}disabled{% endif %}>
+            Redeem
+          </button>
+        </div>
+      {% endif %}
+
+      {%- comment -%} 500 points = $35 (bonus $10) {%- endcomment -%}
+      {% if customer_points >= 500 %}
+        <div class="redemption-card {% if customer_points < 500 %}disabled{% endif %}">
+          <div class="redemption-badge bonus">+$10 Bonus</div>
+          <div class="redemption-points">500 Points</div>
+          <div class="redemption-value">$35 OFF</div>
+          <div class="redemption-savings">Save $10 extra!</div>
+          <button class="btn-redeem" data-points="500" data-value="35" {% if customer_points < 500 %}disabled{% endif %}>
+            Redeem
+          </button>
+        </div>
+      {% endif %}
+
+      {%- comment -%} 1000 points = $80 (bonus $20) {%- endcomment -%}
+      {% if customer_points >= 1000 %}
+        <div class="redemption-card {% if customer_points < 1000 %}disabled{% endif %}">
+          <div class="redemption-badge bonus">+$20 Bonus</div>
+          <div class="redemption-points">1000 Points</div>
+          <div class="redemption-value">$80 OFF</div>
+          <div class="redemption-savings">Save $20 extra!</div>
+          <button class="btn-redeem" data-points="1000" data-value="80" {% if customer_points < 1000 %}disabled{% endif %}>
+            Redeem
+          </button>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="redemption-result" id="redemption-result"></div>
+
+  {% else %}
+    <div class="redemption-empty">
+      <div class="empty-icon">🎁</div>
+      <p class="empty-message">You need at least 100 points to redeem rewards.</p>
+      <p class="empty-current">Current balance: <strong>{{ customer_points }} points</strong></p>
+      <p class="empty-needed">{{ 100 | minus: customer_points }} more points needed!</p>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  /* Redemption Form Styles */
+  .loyalty-redemption {
+    margin: 24px 0;
+    padding: 24px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+  }
+
+  .redemption-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #212529;
+  }
+
+  .redemption-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .redemption-card {
+    position: relative;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #4A90E2;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+  .redemption-card:hover:not(.disabled) {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);
+  }
+
+  .redemption-card.disabled {
+    opacity: 0.5;
+    border-color: #dee2e6;
+  }
+
+  .redemption-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 4px 12px;
+    background: #4A90E2;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 12px;
+  }
+
+  .redemption-badge.bonus {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+  }
+
+  .redemption-points {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4A90E2;
+    margin: 12px 0 8px;
+  }
+
+  .redemption-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #212529;
+    margin: 8px 0;
+  }
+
+  .redemption-savings {
+    font-size: 12px;
+    color: #6c757d;
+    margin: 8px 0 16px;
+    min-height: 18px;
+  }
+
+  .btn-redeem {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4A90E2, #7FCCC9);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-redeem:hover:not(:disabled) {
+    transform: scale(1.05);
+  }
+
+  .btn-redeem:disabled {
+    background: #dee2e6;
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+
+  .redemption-result {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .redemption-result.success {
+    display: block;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+  }
+
+  .redemption-result.error {
+    display: block;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+  }
+
+  .redemption-code {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: monospace;
+    color: #4A90E2;
+    margin: 12px 0;
+    padding: 12px;
+    background: #fff;
+    border-radius: 8px;
+    border: 2px dashed #4A90E2;
+  }
+
+  /* Empty State */
+  .redemption-empty {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .empty-message {
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 8px;
+  }
+
+  .empty-current {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 4px;
+  }
+
+  .empty-needed {
+    font-size: 14px;
+    color: #4A90E2;
+    font-weight: 600;
+  }
+
+  /* Mobile */
+  @media (max-width: 749px) {
+    .redemption-options {
+      grid-template-columns: 1fr;
+    }
+
+    .redemption-value {
+      font-size: 28px;
+    }
+  }
+</style>
+
+<script>
+  // Redemption handling
+  document.addEventListener('DOMContentLoaded', function() {
+    const redeemButtons = document.querySelectorAll('.btn-redeem');
+    const resultDiv = document.getElementById('redemption-result');
+
+    redeemButtons.forEach(button => {
+      button.addEventListener('click', async function() {
+        const points = this.dataset.points;
+        const value = this.dataset.value;
+
+        // Disable button
+        this.disabled = true;
+        this.textContent = 'Processing...';
+
+        try {
+          // Call redemption API endpoint
+          const response = await fetch('/apps/loyalty/redeem', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              points: parseInt(points),
+              customer_email: '{{ customer.email }}'
+            })
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            // Show success message with discount code
+            resultDiv.className = 'redemption-result success';
+            resultDiv.innerHTML = `
+              <div style="text-align: center;">
+                <h4 style="margin: 0 0 8px;">🎉 Redemption Successful!</h4>
+                <p style="margin: 0 0 12px;">Your discount code:</p>
+                <div class="redemption-code">${result.code}</div>
+                <p style="margin: 12px 0 0; font-size: 13px;">
+                  Code copied to clipboard! Use it at checkout for $${value} OFF.
+                </p>
+              </div>
+            `;
+
+            // Copy code to clipboard
+            navigator.clipboard.writeText(result.code);
+
+            // Reload page after 3 seconds to show updated points
+            setTimeout(() => window.location.reload(), 3000);
+
+          } else {
+            // Show error
+            resultDiv.className = 'redemption-result error';
+            resultDiv.innerHTML = `
+              <p style="margin: 0;"><strong>Redemption Failed:</strong> ${result.error || 'Unknown error'}</p>
+            `;
+
+            // Re-enable button
+            this.disabled = false;
+            this.textContent = 'Redeem';
+          }
+
+        } catch (error) {
+          resultDiv.className = 'redemption-result error';
+          resultDiv.innerHTML = `
+            <p style="margin: 0;"><strong>Error:</strong> Failed to process redemption. Please try again.</p>
+          `;
+
+          this.disabled = false;
+          this.textContent = 'Redeem';
+        }
+      });
+    });
+  });
+</script>

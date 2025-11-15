@@ -9,8 +9,18 @@
   assign next_tier_points = 500
 
   if customer
-    assign total_spent = customer.total_spent | divided_by: 100
-    assign customer_points = total_spent | floor
+    comment "Read from loyalty metafields"
+    assign points_metafield = customer.metafields.loyalty.points
+    assign tier_metafield = customer.metafields.loyalty.tier
+
+    if points_metafield != blank
+      assign customer_points = points_metafield | default: 0
+      assign customer_tier = tier_metafield | default: 'bronze'
+    else
+      comment "Fallback: total_spent"
+      assign total_spent = customer.total_spent | divided_by: 100
+      assign customer_points = total_spent | floor
+    endif
 
     if customer_points >= 1501
       assign customer_tier = 'gold'
