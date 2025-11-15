@@ -309,8 +309,12 @@ function createBundleAuto(hash, productIds, productHandles) {
     recordBundleCreated(hash, bundleId, bundleTitle, bundleUrl, customerEmails);
 
     // 8. Mark proposals as bundle_created = TRUE
-    Logger.log('\nStep 8/8: Marking proposals as created...');
+    Logger.log('\nStep 8/9: Marking proposals as created...');
     markProposalsAsCreated(hash);
+
+    // 9. Send emails directly via Gmail (Apps Script MailApp)
+    Logger.log('\nStep 9/9: Sending email notifications...');
+    sendBundleCreatedEmails(bundleTitle, bundleUrl, bundlePrice, totalPrice.toFixed(2), customerEmails);
 
     Logger.log(`\n${'='.repeat(80)}`);
     Logger.log(`🎉 BUNDLE AUTO-CREATION COMPLETE`);
@@ -319,7 +323,7 @@ function createBundleAuto(hash, productIds, productHandles) {
     Logger.log(`💰 Price: $${bundlePrice} (was $${totalPrice.toFixed(2)})`);
     Logger.log(`📧 Notifications: ${customerEmails.length} customers`);
     Logger.log(`🔗 URL: ${bundleUrl}`);
-    Logger.log(`\nShopify Flow will auto-send email notifications to all customers.`);
+    Logger.log(`\n✅ Emails sent directly via Apps Script MailApp.`);
     Logger.log(`${'='.repeat(80)}\n`);
 
   } else {
@@ -484,6 +488,109 @@ function markProposalsAsCreated(hash) {
 }
 
 // ============================================================================
+// SEND EMAIL NOTIFICATIONS (Apps Script MailApp)
+// ============================================================================
+
+/**
+ * Send bundle creation emails directly via Gmail
+ *
+ * Note: Apps Script MailApp quotas:
+ * - Gmail free: 100 emails/day
+ * - Google Workspace: 1,500 emails/day
+ *
+ * If you need to send more emails, consider using external email service
+ * (SendGrid, Mailgun, etc.) via UrlFetchApp
+ */
+function sendBundleCreatedEmails(bundleTitle, bundleUrl, bundlePrice, compareAtPrice, customerEmails) {
+  const subject = '🎉 Your Custom Bundle is Ready - 35% OFF!';
+
+  // HTML email template
+  const htmlBody = `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <div style="background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%); padding: 30px; text-align: center;">
+        <h1 style="color: white; margin: 0;">🎉 Your Bundle is Ready!</h1>
+      </div>
+
+      <div style="padding: 40px 30px; background: #f9f9f9;">
+        <p style="font-size: 16px; line-height: 1.6;">Hi there,</p>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+          Great news! Your custom bundle proposal has been <strong>automatically created</strong>.
+        </p>
+
+        <p style="font-size: 16px; line-height: 1.6;">
+          You and <strong>9+ other customers</strong> requested this exact combination,
+          so we've made it official!
+        </p>
+
+        <div style="background: white; padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
+          <h2 style="margin: 0 0 10px 0;">${bundleTitle}</h2>
+          <div style="margin: 20px 0;">
+            <span style="text-decoration: line-through; color: #999; font-size: 18px;">
+              $${compareAtPrice}
+            </span>
+            <span style="font-size: 32px; font-weight: 700; color: #4A90E2; margin: 0 10px;">
+              $${bundlePrice}
+            </span>
+            <span style="background: #FF6B6B; color: white; padding: 6px 16px; border-radius: 20px; font-weight: 700;">
+              35% OFF
+            </span>
+          </div>
+          <a href="https://www.alphamedical.shop${bundleUrl}"
+             style="display: inline-block; margin-top: 20px; padding: 14px 32px; background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+            Shop This Bundle →
+          </a>
+        </div>
+
+        <p style="font-size: 14px; color: #666; line-height: 1.6;">
+          Thank you for being part of our community-driven product creation!
+          Your feedback helps us create bundles that truly serve our customers.
+        </p>
+
+        <p style="font-size: 14px; color: #666;">
+          Best regards,<br>
+          <strong>Alpha Medical Team</strong>
+        </p>
+      </div>
+
+      <div style="padding: 20px; text-align: center; background: #f0f0f0; font-size: 12px; color: #999;">
+        <p>Alpha Medical | Professional Medical Equipment</p>
+        <p>
+          <a href="https://www.alphamedical.shop" style="color: #4A90E2; text-decoration: none;">Visit our store</a>
+        </p>
+      </div>
+    </div>
+  `;
+
+  // Send email to each customer
+  let sentCount = 0;
+  let failedCount = 0;
+
+  customerEmails.forEach(function(email) {
+    try {
+      MailApp.sendEmail({
+        to: email,
+        subject: subject,
+        htmlBody: htmlBody,
+        name: 'Alpha Medical' // Sender name
+      });
+
+      Logger.log(`   ✅ Email sent to: ${email}`);
+      sentCount++;
+
+    } catch (err) {
+      Logger.log(`   ❌ Failed to send email to ${email}: ${err.toString()}`);
+      failedCount++;
+    }
+  });
+
+  Logger.log(`\n   📧 Email summary:`);
+  Logger.log(`      Sent: ${sentCount}`);
+  Logger.log(`      Failed: ${failedCount}`);
+  Logger.log(`      Total: ${customerEmails.length}`);
+}
+
+// ============================================================================
 // MANUAL TESTING FUNCTIONS
 // ============================================================================
 
@@ -576,13 +683,11 @@ function checkBundleStatus(hash) {
  *    - Action: Forward to → Apps Script email endpoint
  *    - Save filter
  *
- * 5. SHOPIFY FLOW SETUP:
- *    - Admin → Settings → Apps → Shopify Flow
- *    - Create workflow: "Bundle Auto-Creation Notifications"
- *    - Trigger: Product created
- *    - Condition: Product tags contains "auto-created"
- *    - Action: Loop through metafield auto_bundle.customer_emails
- *    - Send email to each customer with bundle details
+ * 5. EMAIL NOTIFICATIONS:
+ *    - Emails sent directly via Apps Script MailApp (Gmail)
+ *    - No Shopify Flow configuration needed
+ *    - Quotas: Gmail free (100/day), Google Workspace (1,500/day)
+ *    - Template included in sendBundleCreatedEmails() function
  *
  * 6. TESTING:
  *    - Run testAddProposal() function
