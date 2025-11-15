@@ -76,6 +76,7 @@
       </div>
 
       {%- if cart != empty -%}
+        {%- render 'cart-bundles-upsell' -%}
         {%- render 'free-shipping-progress-bar' -%}
         {%- render 'loyalty-points-badge' -%}
       {%- endif -%}
