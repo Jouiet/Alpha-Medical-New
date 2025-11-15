@@ -339,6 +339,26 @@
     }
   }
 
+  // HASH CALCULATION FOR GOOGLE SHEETS AUTO-CREATION
+  function calculateProposalHash(productIds) {
+    // Sort IDs numerically (ensures deterministic hash - same products = same hash)
+    const sorted = productIds.slice().sort((a, b) => a - b);
+
+    // Join with delimiter
+    const string = sorted.join('-');
+
+    // Simple hash function
+    let hash = 0;
+    for (let i = 0; i < string.length; i++) {
+      const char = string.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32bit integer
+    }
+
+    // Return hash with prefix
+    return `hash_${Math.abs(hash).toString(16).substring(0, 12)}`;
+  }
+
   // FORM VALIDATION
   function validateForm() {
     const isValid = selectedProducts.length >= CONFIG.minProducts &&
@@ -355,10 +375,28 @@
     const regularTotal = selectedProducts.reduce((s, p) => s + p.price, 0) / 100;
     const bundleTotal = regularTotal * (1 - CONFIG.discountPercent / 100);
 
+    // Extract product IDs and handles for Google Sheets processing
+    const productIds = selectedProducts.map(p => p.id);
+    const productHandles = selectedProducts.map(p => p.handle);
+
+    // Calculate hash (for proposal aggregation in Google Sheets)
+    const proposalHash = calculateProposalHash(productIds);
+
+    // Format for Google Sheets + Apps Script processing
+    // This JSON will be sent via Shopify Contact Form → Gmail → Google Sheets
     return JSON.stringify({
       timestamp: new Date().toISOString(),
       method: currentMethod,
-      products: selectedProducts.map(p => ({ id: p.id, handle: p.handle, title: p.title, price: p.price / 100, url: p.url })),
+      hash: proposalHash, // Unique hash for identical product combinations
+      product_ids: productIds, // Array of product IDs (for Apps Script)
+      product_handles: productHandles, // Array of product handles (for Apps Script)
+      products: selectedProducts.map(p => ({
+        id: p.id,
+        handle: p.handle,
+        title: p.title,
+        price: p.price / 100,
+        url: p.url
+      })),
       pricing: {
         regular_total: regularTotal.toFixed(2),
         bundle_total: bundleTotal.toFixed(2),
