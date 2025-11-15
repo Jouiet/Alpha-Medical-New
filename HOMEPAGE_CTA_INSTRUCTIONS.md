@@ -99,7 +99,7 @@ Si vous préférez éditer directement le code du template homepage:
 
 ### CTA 2 (Build Your Bundle):
 - **Icône**: 🛠️ (tools)
-- **Badge**: "10+ VOTES = WE CREATE IT" (bleu/cyan)
+- **Badge**: "10+ IDENTICAL PROPOSALS = AUTO-CREATED" (bleu/cyan)
 - **Description**: "Can't find the perfect bundle? Create your own!..."
 - **Bouton**: "Build Now" → /pages/bundle-creator
 
@@ -206,7 +206,7 @@ Si vous voulez modifier le texte/design:
    - Sous-titre: `<p>Save more with curated...</p>`
    - CTA 1 titre: `<h3>Shop Bundles</h3>`
    - CTA 2 titre: `<h3>Build Your Bundle</h3>`
-   - Badges: `35% OFF ALL BUNDLES` et `10+ VOTES = WE CREATE IT`
+   - Badges: `35% OFF ALL BUNDLES` et `10+ IDENTICAL PROPOSALS = AUTO-CREATED`
 
 3. **Couleurs modifiables** (dans `<style>`):
    - Gradient background: `#4A90E2` → `#7FCCC9`
@@ -245,15 +245,17 @@ Si vous voulez modifier le texte/design:
 
 **RAPPEL IMPORTANT**:
 
-Les bundles proposés par clients via `/pages/bundle-creator` ne sont créés par l'équipe Alpha Medical que si **10+ demandes identiques** sont reçues.
+Les bundles proposés par clients via `/pages/bundle-creator` sont **CRÉÉS AUTOMATIQUEMENT** quand **10+ propositions identiques** sont reçues.
 
-Workflow:
-1. Client soumet bundle proposal (3-4 produits)
-2. Système agrège proposals identiques
-3. Si 10+ demandes → Notification admin
-4. Admin crée bundle manuellement dans Shopify
-5. Tous les 10+ clients sont notifiés (email Klaviyo)
-6. Bundle ajouté à la collection "Medical Equipment Bundles"
+Workflow AUTOMATIQUE:
+1. Client soumet proposition (3-4 produits)
+2. Système agrège propositions IDENTIQUES
+3. 10+ propositions identiques → **CRÉATION AUTOMATIQUE du bundle** (instant)
+4. Tous les 10+ clients notifiés automatiquement via **Shopify Flow** (templates prédéfinis)
+5. Bundle automatiquement ajouté à la collection "Medical Equipment Bundles"
+6. Discount 35% appliqué automatiquement
+
+**PAS de notification admin, PAS de création manuelle - TOUT AUTOMATIQUE!**
 
 ---
 
