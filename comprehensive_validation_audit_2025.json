@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-11-15T16:05:20.252331Z",
+  "criteria": {
+    "Metafields Populated (Active Products)": {
+      "passed": true,
+      "details": "98/98 active products have metafields (100.0%)"
+    },
+    "Draft Products Remain Draft": {
+      "passed": true,
+      "details": "5 draft products confirmed (not published)"
+    },
+    "Structured Data Schemas Present": {
+      "passed": false,
+      "details": "Found: Organization, Product, WebSite. Missing: BreadcrumbList"
+    },
+    "Open Graph Tags Complete": {
+      "passed": true,
+      "details": "Present: 6/6. Missing: None"
+    },
+    "Twitter Cards Complete": {
+      "passed": true,
+      "details": "Present: 4/4. Missing: None"
+    },
+    "AI Crawlers Enabled": {
+      "passed": true,
+      "details": "Allowed: 6/6. Disallowed: None"
+    },
+    "Sitemap Accessible": {
+      "passed": true,
+      "details": "Sitemap accessible with 4 entries (products + collections + pages)"
+    },
+    "SSL/HTTPS Perfect": {
+      "passed": true,
+      "details": "301 redirect: \u2713, HSTS: \u2713 (max-age=7889238...)"
+    },
+    "Homepage Meta Tags Perfect": {
+      "passed": false,
+      "details": "Title: 100 chars (optimal: 50-60). Description: 236 chars (optimal: 150-160)"
+    },
+    "100% English Only": {
+      "passed": true,
+      "details": "98/98 products English. French detected: 0"
+    },
+    "Bundles Count (1 per persona)": {
+      "passed": true,
+      "details": "15 bundles (expected: 14-15 for 8 personas with tiers)"
+    },
+    "No Duplicate Bundles": {
+      "passed": true,
+      "details": "All bundles unique. Duplicates: 0"
+    }
+  },
+  "failures": [
+    "Structured Data Schemas Present: Found: Organization, Product, WebSite. Missing: BreadcrumbList",
+    "Homepage Meta Tags Perfect: Title: 100 chars (optimal: 50-60). Description: 236 chars (optimal: 150-160)"
+  ],
+  "warnings": [
+    "og:image tag exists but may be empty or default placeholder"
+  ],
+  "score": 10,
+  "total_checks": 12
+}
