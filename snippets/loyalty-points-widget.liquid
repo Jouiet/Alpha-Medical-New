@@ -1,0 +1,616 @@
+{% comment %}
+  Loyalty Points Widget - Gamified Rewards System
+  Shows points, tier status, and next rewards
+  Integration: Account page, Cart drawer, Product pages
+{% endcomment %}
+
+{%- liquid
+  assign customer_points = 0
+  assign customer_tier = 'bronze'
+  assign next_tier_points = 500
+
+  if customer
+    comment "Calculate points based on order history (1 point = $1 spent)"
+    assign total_spent = customer.total_spent | divided_by: 100
+    assign customer_points = total_spent | floor
+
+    comment "Determine tier based on points"
+    if customer_points >= 1501
+      assign customer_tier = 'gold'
+      assign next_tier_points = 0
+    elsif customer_points >= 501
+      assign customer_tier = 'silver'
+      assign next_tier_points = 1501
+    else
+      assign customer_tier = 'bronze'
+      assign next_tier_points = 501
+    endif
+
+    comment "Calculate rewards available (100 points = $10 reward)"
+    assign rewards_available = customer_points | divided_by: 100
+    assign reward_value = rewards_available | times: 10
+  endif
+-%}
+
+<div class="loyalty-widget" data-tier="{{ customer_tier }}" data-points="{{ customer_points }}">
+  {% if customer %}
+    {%- comment -%} Logged in - Show loyalty dashboard {%- endcomment -%}
+
+    <div class="loyalty-header">
+      <div class="loyalty-icon">
+        {% case customer_tier %}
+          {% when 'gold' %}
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" fill="url(#goldGradient)"/>
+              <path d="M16 8l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" fill="#fff"/>
+              <defs>
+                <linearGradient id="goldGradient" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0%" stop-color="#FFD700"/>
+                  <stop offset="100%" stop-color="#FFA500"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          {% when 'silver' %}
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" fill="url(#silverGradient)"/>
+              <path d="M16 8l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" fill="#fff"/>
+              <defs>
+                <linearGradient id="silverGradient" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0%" stop-color="#C0C0C0"/>
+                  <stop offset="100%" stop-color="#A8A8A8"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          {% else %}
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="14" fill="url(#bronzeGradient)"/>
+              <path d="M16 8l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" fill="#fff"/>
+              <defs>
+                <linearGradient id="bronzeGradient" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0%" stop-color="#CD7F32"/>
+                  <stop offset="100%" stop-color="#B87333"/>
+                </linearGradient>
+              </defs>
+            </svg>
+        {% endcase %}
+      </div>
+
+      <div class="loyalty-status">
+        <div class="tier-badge {{ customer_tier }}">
+          {{ customer_tier | upcase }} MEMBER
+        </div>
+        <div class="points-display">
+          <span class="points-number">{{ customer_points }}</span> Points
+        </div>
+      </div>
+    </div>
+
+    {%- comment -%} Tier Progress Bar {%- endcomment -%}
+    {% if next_tier_points > 0 %}
+      {%- assign points_to_next = next_tier_points | minus: customer_points -%}
+      {%- assign tier_progress = customer_points | times: 100 | divided_by: next_tier_points -%}
+
+      <div class="tier-progress-container">
+        <div class="progress-label">
+          {% if customer_tier == 'bronze' %}
+            <strong>{{ points_to_next }} points</strong> to Silver tier! 🥈
+          {% elsif customer_tier == 'silver' %}
+            <strong>{{ points_to_next }} points</strong> to Gold tier! 🥇
+          {% endif %}
+        </div>
+
+        <div class="tier-progress-bar">
+          <div class="tier-progress-fill {{ customer_tier }}" style="width: {{ tier_progress }}%">
+            <span class="tier-percentage">{{ tier_progress }}%</span>
+          </div>
+        </div>
+
+        <div class="tier-labels">
+          <span>{{ customer_tier | capitalize }}</span>
+          <span>{% if customer_tier == 'bronze' %}Silver{% else %}Gold{% endif %}</span>
+        </div>
+      </div>
+    {% else %}
+      <div class="tier-maxed">
+        🎉 <strong>You've reached the highest tier!</strong> Enjoy all benefits!
+      </div>
+    {% endif %}
+
+    {%- comment -%} Rewards Available {%- endcomment -%}
+    {% if rewards_available > 0 %}
+      <div class="rewards-available">
+        <div class="reward-card">
+          <div class="reward-icon">🎁</div>
+          <div class="reward-details">
+            <div class="reward-count">{{ rewards_available }} Reward{% if rewards_available > 1 %}s{% endif %} Available</div>
+            <div class="reward-value">${{ reward_value }} in store credit</div>
+          </div>
+          <a href="/account" class="btn-claim">Claim</a>
+        </div>
+      </div>
+    {% endif %}
+
+    {%- comment -%} How to Earn Points {%- endcomment -%}
+    <div class="loyalty-earn">
+      <h4 class="earn-title">Earn More Points:</h4>
+      <ul class="earn-list">
+        <li>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/>
+          </svg>
+          <span><strong>1 point</strong> for every $1 spent</span>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/>
+          </svg>
+          <span><strong>50 points</strong> for account creation</span>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/>
+          </svg>
+          <span><strong>100 points</strong> for product review</span>
+        </li>
+        <li>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/>
+          </svg>
+          <span><strong>200 points</strong> for referral</span>
+        </li>
+      </ul>
+    </div>
+
+    {%- comment -%} Tier Benefits {%- endcomment -%}
+    <div class="loyalty-benefits">
+      <h4 class="benefits-title">Your {{ customer_tier | capitalize }} Benefits:</h4>
+      <div class="benefits-grid">
+        <div class="benefit-item {% if customer_tier == 'bronze' or customer_tier == 'silver' or customer_tier == 'gold' %}active{% endif %}">
+          <div class="benefit-icon">🎂</div>
+          <div class="benefit-text">Birthday reward</div>
+        </div>
+        <div class="benefit-item {% if customer_tier == 'bronze' or customer_tier == 'silver' or customer_tier == 'gold' %}active{% endif %}">
+          <div class="benefit-icon">🎁</div>
+          <div class="benefit-text">Exclusive deals</div>
+        </div>
+        <div class="benefit-item {% if customer_tier == 'silver' or customer_tier == 'gold' %}active{% endif %}">
+          <div class="benefit-icon">⚡</div>
+          <div class="benefit-text">Early access</div>
+        </div>
+        <div class="benefit-item {% if customer_tier == 'silver' or customer_tier == 'gold' %}active{% endif %}">
+          <div class="benefit-icon">🚚</div>
+          <div class="benefit-text">Free shipping</div>
+        </div>
+        <div class="benefit-item {% if customer_tier == 'gold' %}active{% endif %}">
+          <div class="benefit-icon">👑</div>
+          <div class="benefit-text">VIP support</div>
+        </div>
+        <div class="benefit-item {% if customer_tier == 'gold' %}active{% endif %}">
+          <div class="benefit-icon">💎</div>
+          <div class="benefit-text">2x points</div>
+        </div>
+      </div>
+    </div>
+
+  {% else %}
+    {%- comment -%} Not logged in - CTA to join {%- endcomment -%}
+
+    <div class="loyalty-cta">
+      <div class="cta-icon">🌟</div>
+      <h3 class="cta-title">Join Our Rewards Program!</h3>
+      <p class="cta-description">
+        Earn points on every purchase and unlock exclusive rewards!
+      </p>
+
+      <div class="cta-features">
+        <div class="feature">✓ Earn 1 point per $1 spent</div>
+        <div class="feature">✓ Redeem 100 points = $10 off</div>
+        <div class="feature">✓ Birthday rewards & exclusive deals</div>
+        <div class="feature">✓ Free shipping for Silver+ members</div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="/account/register" class="btn-primary">Sign Up Free</a>
+        <a href="/account/login" class="btn-secondary">Log In</a>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  /* Loyalty Widget Styles */
+  .loyalty-widget {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+  }
+
+  /* Header */
+  .loyalty-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .loyalty-icon {
+    flex-shrink: 0;
+  }
+
+  .loyalty-status {
+    flex: 1;
+  }
+
+  .tier-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+
+  .tier-badge.bronze {
+    background: linear-gradient(135deg, #CD7F32, #B87333);
+    color: #fff;
+  }
+
+  .tier-badge.silver {
+    background: linear-gradient(135deg, #C0C0C0, #A8A8A8);
+    color: #fff;
+  }
+
+  .tier-badge.gold {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #fff;
+  }
+
+  .points-display {
+    font-size: 14px;
+    color: #495057;
+  }
+
+  .points-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4A90E2;
+  }
+
+  /* Tier Progress */
+  .tier-progress-container {
+    margin: 16px 0;
+  }
+
+  .progress-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #495057;
+  }
+
+  .tier-progress-bar {
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .tier-progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    transition: width 0.6s ease-out;
+    position: relative;
+  }
+
+  .tier-progress-fill.bronze {
+    background: linear-gradient(90deg, #CD7F32, #B87333);
+  }
+
+  .tier-progress-fill.silver {
+    background: linear-gradient(90deg, #C0C0C0, #A8A8A8);
+  }
+
+  .tier-progress-fill.gold {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+  }
+
+  .tier-progress-fill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+  }
+
+  .tier-percentage {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .tier-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 11px;
+    color: #6c757d;
+    font-weight: 600;
+  }
+
+  .tier-maxed {
+    text-align: center;
+    padding: 16px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #fff;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+
+  /* Rewards Available */
+  .rewards-available {
+    margin: 16px 0;
+  }
+
+  .reward-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+    border-radius: 12px;
+    color: #fff;
+  }
+
+  .reward-icon {
+    font-size: 32px;
+  }
+
+  .reward-details {
+    flex: 1;
+  }
+
+  .reward-count {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .reward-value {
+    font-size: 13px;
+    opacity: 0.9;
+  }
+
+  .btn-claim {
+    padding: 8px 20px;
+    background: #fff;
+    color: #4A90E2;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+
+  .btn-claim:hover {
+    transform: scale(1.05);
+  }
+
+  /* Earn Points */
+  .loyalty-earn {
+    margin: 20px 0;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+
+  .earn-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: #212529;
+  }
+
+  .earn-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .earn-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #495057;
+    margin-bottom: 8px;
+  }
+
+  .earn-list li svg {
+    color: #4A90E2;
+    flex-shrink: 0;
+  }
+
+  /* Benefits */
+  .loyalty-benefits {
+    margin: 20px 0;
+  }
+
+  .benefits-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: #212529;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background: #e9ecef;
+    border-radius: 8px;
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  .benefit-item.active {
+    opacity: 1;
+    background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+    color: #fff;
+  }
+
+  .benefit-icon {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  .benefit-text {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* CTA (Not logged in) */
+  .loyalty-cta {
+    text-align: center;
+  }
+
+  .cta-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+
+  .cta-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #212529;
+  }
+
+  .cta-description {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0 0 16px;
+  }
+
+  .cta-features {
+    margin: 16px 0;
+  }
+
+  .cta-features .feature {
+    font-size: 14px;
+    color: #495057;
+    margin-bottom: 8px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #4A90E2, #7FCCC9);
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background: #fff;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+  }
+
+  .btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Mobile */
+  @media (max-width: 749px) {
+    .loyalty-widget {
+      padding: 16px;
+    }
+
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+    }
+
+    .points-number {
+      font-size: 20px;
+    }
+  }
+
+  /* Animations */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+</style>
+
+<script>
+  // Loyalty widget interactions
+  document.addEventListener('DOMContentLoaded', function() {
+    const loyaltyWidget = document.querySelector('.loyalty-widget');
+
+    if (loyaltyWidget) {
+      // Animate on scroll into view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = 'fadeInUp 0.6s ease-out';
+          }
+        });
+      });
+
+      observer.observe(loyaltyWidget);
+    }
+  });
+
+  // CSS animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  `;
+  document.head.appendChild(style);
+</script>
