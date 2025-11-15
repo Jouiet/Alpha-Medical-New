@@ -8,12 +8,13 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 11, 2025
+**Last Updated:** November 15, 2025
 
 ## Core Documentation
 
 ### SEO & Marketing
 
+- [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [SEO_AUDIT_RECOMMENDATIONS](SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
@@ -41,6 +42,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Content & Blog
 
 - [BLOG_IMAGES_ASSIGNMENT](BLOG_IMAGES_ASSIGNMENT.md): Project documentation
+- [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
 - [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
 - [PAIN_RELIEF_GUIDE_IMPLEMENTATION](PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
@@ -166,8 +168,12 @@ When assisting with this project:
 
 - [ACTIONS_FINALES_5MIN](ACTIONS_FINALES_5MIN.md): 1. Cliquer sur "Theme settings" (icône ⚙️ en bas à gauche) 2. Cliquer sur "Header" → "Logo"
 - [ACTIONS_MANUELLES_REQUISES](ACTIONS_MANUELLES_REQUISES.md): Project documentation
+- [ALPHA_MEDICAL_15_BUNDLES_COMPLETE](ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md): Project documentation
+- [ALPHA_MEDICAL_15_BUNDLES_FINAL](ALPHA_MEDICAL_15_BUNDLES_FINAL.md): Project documentation
+- [ALPHA_MEDICAL_BUNDLE_STRATEGY](ALPHA_MEDICAL_BUNDLE_STRATEGY.md): Project documentation
 - [ANALYSE_FORENSIQUE_SITE](ANALYSE_FORENSIQUE_SITE.md): Project documentation
 - [ANALYSE_FORENSIQUE_SITE_WEB](ANALYSE_FORENSIQUE_SITE_WEB.md): Project documentation
+- [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [LLMS_TXT_DEPLOYMENT](LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
