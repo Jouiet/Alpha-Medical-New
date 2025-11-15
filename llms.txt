@@ -57,6 +57,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [NEXT_STEPS_FLOW_CONFIGURATION](NEXT_STEPS_FLOW_CONFIGURATION.md): claude mcp add chrome-devtools npx chrome-devtools-mcp@latest MCP servers require a CLI session restart to become active.
 - [PHASE_3_IMPLEMENTATION_LOG](PHASE_3_IMPLEMENTATION_LOG.md): Project documentation
 - [SHOPIFY_CONFIGURATION_COMPLETE](SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
+- [SHOPIFY_FLOW_SETUP](SHOPIFY_FLOW_SETUP.md): 1. Admin → Settings → Apps and sales channels 2. Find "Shopify Flow" → Open app 3. Click "Create workflow"
 
 ### Forensic Analysis & Reports
 
@@ -175,6 +176,7 @@ When assisting with this project:
 - [ANALYSE_FORENSIQUE_SITE_WEB](ANALYSE_FORENSIQUE_SITE_WEB.md): Project documentation
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
+- [DEPLOYMENT_STATUS](DEPLOYMENT_STATUS.md): cd bundle-api vercel login vercel deploy --prod After deployment, note the URL: https://bundle-api-xxxxx.vercel.app
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [HOMEPAGE_CTA_INSTRUCTIONS](HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
 - [LLMS_TXT_DEPLOYMENT](LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
@@ -184,6 +186,7 @@ When assisting with this project:
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
 - [RAPPORT_FINAL_COMPLET](RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](RAPPORT_THEME_ANALYSE.md): Project documentation
+- [README](bundle-api/README.md): 10+ propositions identiques = Création automatique du bundle 1. Login Vercel:
 - [ROBOTS_TXT_DEPLOYMENT](ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
 - [SESSION_2025-11-11_PART3_SUMMARY](SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_PART6_SUMMARY](SESSION_2025-11-11_PART6_SUMMARY.md): Project documentation
