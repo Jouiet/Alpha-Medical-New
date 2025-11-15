@@ -44,6 +44,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [BLOG_IMAGES_ASSIGNMENT](BLOG_IMAGES_ASSIGNMENT.md): Project documentation
 - [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
+- [DEPLOYMENT_GUIDE_COMPLETE](DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
 - [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
 - [PAIN_RELIEF_GUIDE_IMPLEMENTATION](PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
 - [SHOPIFY_FLOW_CONFIGURATION_GUIDE](SHOPIFY_FLOW_CONFIGURATION_GUIDE.md): Architecture: admin.shopify.com (Parent page) └── Iframe: apps.shopify.com (Cross-origin - DIFFERENT domain)
@@ -184,6 +185,7 @@ When assisting with this project:
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
 - [RAPPORT_FINAL_COMPLET](RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](RAPPORT_THEME_ANALYSE.md): Project documentation
+- [README](google-sheets-template/README.md): 1. Aller sur Google Sheets: https://sheets.google.com 2. Créer nouveau spreadsheet
 - [ROBOTS_TXT_DEPLOYMENT](ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
 - [SESSION_2025-11-11_PART3_SUMMARY](SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_PART6_SUMMARY](SESSION_2025-11-11_PART6_SUMMARY.md): Project documentation
