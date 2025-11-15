@@ -46,6 +46,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
 - [DEPLOYMENT_GUIDE_COMPLETE](DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
 - [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
+- [LOYALTY_SYSTEM_SETUP_GUIDE](LOYALTY_SYSTEM_SETUP_GUIDE.md): Project documentation
 - [PAIN_RELIEF_GUIDE_IMPLEMENTATION](PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
 - [SHOPIFY_FLOW_CONFIGURATION_GUIDE](SHOPIFY_FLOW_CONFIGURATION_GUIDE.md): Architecture: admin.shopify.com (Parent page) └── Iframe: apps.shopify.com (Cross-origin - DIFFERENT domain)
 - [ULTIMATE_PAIN_RELIEF_GUIDE](ULTIMATE_PAIN_RELIEF_GUIDE.md): Pain is your body's alarm system - a complex warning signal that something needs attention. Understanding the type of pain you're experiencing is t...
@@ -180,6 +181,7 @@ When assisting with this project:
 - [HOMEPAGE_CTA_INSTRUCTIONS](HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
 - [LLMS_TXT_DEPLOYMENT](LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
+- [LOYALTY_SYSTEM_ARCHITECTURE](LOYALTY_SYSTEM_ARCHITECTURE.md): Project documentation
 - [MENU_BUNDLES_INSTRUCTIONS](MENU_BUNDLES_INSTRUCTIONS.md): Menu principal (ordre): 1. Home 2. Catalog 3. Bundles ⬅️ NOUVEAU 4. Contact 5. Pain Relief & Recovery
 - [MYDEALZ_SYNTHESE](MYDEALZ_SYNTHESE.md): Couleurs: Typographie: Style: Énergique, dynamique, focus deals/économies
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
