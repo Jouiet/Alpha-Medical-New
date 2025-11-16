@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 15, 2025
+**Last Updated:** November 16, 2025
 
 ## Core Documentation
 
@@ -60,6 +60,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [NEXT_STEPS_FLOW_CONFIGURATION](NEXT_STEPS_FLOW_CONFIGURATION.md): claude mcp add chrome-devtools npx chrome-devtools-mcp@latest MCP servers require a CLI session restart to become active.
 - [PHASE_3_IMPLEMENTATION_LOG](PHASE_3_IMPLEMENTATION_LOG.md): Project documentation
 - [SHOPIFY_CONFIGURATION_COMPLETE](SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
+- [TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN](TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md): 1. ✅ Run python3 createsocialshareimage.py 2. ⏳ Manual upload to Shopify Theme Settings → Social media
 
 ### Forensic Analysis & Reports
 
