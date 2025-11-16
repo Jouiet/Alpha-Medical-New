@@ -1,0 +1,97 @@
+{
+  "total_bundles": 15,
+  "success_count": 15,
+  "failed_count": 0,
+  "results": [
+    {
+      "handle": "active-athlete-complete-protection",
+      "success": true,
+      "images_added": 6,
+      "total_images": 7
+    },
+    {
+      "handle": "active-athlete-knee-specialist",
+      "success": true,
+      "images_added": 5,
+      "total_images": 6
+    },
+    {
+      "handle": "beauty-wellness-led-complete",
+      "success": true,
+      "images_added": 5,
+      "total_images": 6
+    },
+    {
+      "handle": "chronic-pain-relief-kit",
+      "success": true,
+      "images_added": 6,
+      "total_images": 7
+    },
+    {
+      "handle": "chronic-pain-starter-kit",
+      "success": true,
+      "images_added": 4,
+      "total_images": 5
+    },
+    {
+      "handle": "chronic-pain-whole-body",
+      "success": true,
+      "images_added": 6,
+      "total_images": 7
+    },
+    {
+      "handle": "manual-labor-heavy-duty",
+      "success": true,
+      "images_added": 7,
+      "total_images": 8
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic",
+      "success": true,
+      "images_added": 6,
+      "total_images": 7
+    },
+    {
+      "handle": "office-worker-essential-kit",
+      "success": true,
+      "images_added": 5,
+      "total_images": 6
+    },
+    {
+      "handle": "office-worker-premium-workspace",
+      "success": true,
+      "images_added": 6,
+      "total_images": 7
+    },
+    {
+      "handle": "post-surgery-recovery-complete",
+      "success": true,
+      "images_added": 7,
+      "total_images": 8
+    },
+    {
+      "handle": "rehab-stroke-recovery",
+      "success": true,
+      "images_added": 6,
+      "total_images": 7
+    },
+    {
+      "handle": "senior-advanced-arthritis",
+      "success": true,
+      "images_added": 5,
+      "total_images": 6
+    },
+    {
+      "handle": "senior-mobility-support",
+      "success": true,
+      "images_added": 5,
+      "total_images": 6
+    },
+    {
+      "handle": "ultimate-pain-management-system",
+      "success": true,
+      "images_added": 8,
+      "total_images": 9
+    }
+  ]
+}

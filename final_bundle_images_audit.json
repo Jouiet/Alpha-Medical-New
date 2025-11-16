@@ -1,0 +1,102 @@
+{
+  "audit_date": "2025-11-16",
+  "total_bundles": 15,
+  "bundles_with_multiple_images": 15,
+  "bundles_with_single_image": 0,
+  "bundles_with_no_images": 0,
+  "success_rate": "100.0%",
+  "total_images": 102,
+  "average_images": 6.8,
+  "results": [
+    {
+      "handle": "active-athlete-complete-protection",
+      "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
+      "image_count": 7,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "active-athlete-knee-specialist",
+      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
+      "image_count": 6,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "beauty-wellness-led-complete",
+      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
+      "image_count": 6,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "chronic-pain-relief-kit",
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "image_count": 7,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "chronic-pain-starter-kit",
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "image_count": 5,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "chronic-pain-whole-body",
+      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
+      "image_count": 7,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "manual-labor-heavy-duty",
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "image_count": 8,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic",
+      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
+      "image_count": 7,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "office-worker-essential-kit",
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "image_count": 6,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "office-worker-premium-workspace",
+      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
+      "image_count": 7,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "post-surgery-recovery-complete",
+      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
+      "image_count": 8,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "rehab-stroke-recovery",
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "image_count": 7,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "senior-advanced-arthritis",
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "image_count": 6,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "senior-mobility-support",
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "image_count": 6,
+      "status": "multiple_images"
+    },
+    {
+      "handle": "ultimate-pain-management-system",
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "image_count": 9,
+      "status": "multiple_images"
+    }
+  ]
+}
