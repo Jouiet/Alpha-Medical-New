@@ -14,6 +14,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 ### SEO & Marketing
 
+- [CART_DRAWER_FORENSIC_ANALYSIS](CART_DRAWER_FORENSIC_ANALYSIS.md): <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}"> (ligne 20 du snippet)
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
