@@ -509,6 +509,14 @@
     const productHandle = stickyATC.dataset.productHandle;
     const productId = stickyATC.dataset.productId;
 
+    // Find header element (multiple selectors for different themes)
+    const headerElement =
+      document.querySelector('header.header') ||
+      document.querySelector('.shopify-section-header') ||
+      document.querySelector('#shopify-section-header') ||
+      document.querySelector('header') ||
+      document.querySelector('[data-section-type="header"]');
+
     // Find main add to cart button (try multiple selectors for different themes)
     const mainATCButton =
       document.querySelector('button[name="add"]') || // Dawn theme
@@ -519,6 +527,11 @@
 
     // If no main button found, show sticky always (as fallback)
     const hasMainButton = !!mainATCButton;
+    const hasHeader = !!headerElement;
+
+    // State flags
+    let isHeaderHidden = !hasHeader; // If no header found, consider it hidden (allow widget)
+    let isMainButtonHidden = false;
 
     // Elements
     const variantSelect = stickyATC.querySelector('[data-sticky-variant-select]');
@@ -540,44 +553,69 @@
       }
     }
 
-    // Intersection Observer - Show/Hide sticky bar
-    if (hasMainButton) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-            // Main button out of view - show sticky
-            stickyATC.classList.add('is-visible');
+    // Function to update widget visibility based on both conditions
+    function updateWidgetVisibility() {
+      if (isHeaderHidden && isMainButtonHidden) {
+        // Both header and main button out of view - show sticky
+        stickyATC.classList.add('is-visible');
 
-            // Track sticky bar view (only once)
-            if (!stickyATC.dataset.tracked) {
-              trackGA4Event('view_sticky_add_to_cart', {
-                'event_category': 'sticky_atc',
-                'product_handle': productHandle,
-                'product_id': productId
-              });
-              stickyATC.dataset.tracked = 'true';
-            }
-          } else {
-            // Main button in view - hide sticky
-            stickyATC.classList.remove('is-visible');
-          }
+        // Track sticky bar view (only once)
+        if (!stickyATC.dataset.tracked) {
+          trackGA4Event('view_sticky_add_to_cart', {
+            'event_category': 'sticky_atc',
+            'product_handle': productHandle,
+            'product_id': productId
+          });
+          stickyATC.dataset.tracked = 'true';
+        }
+      } else {
+        // Header or main button in view - hide sticky
+        stickyATC.classList.remove('is-visible');
+      }
+    }
+
+    // Intersection Observer for Header
+    if (hasHeader) {
+      const headerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          isHeaderHidden = !entry.isIntersecting;
+          updateWidgetVisibility();
+        });
+      }, {
+        threshold: 0,
+        rootMargin: '0px'
+      });
+
+      headerObserver.observe(headerElement);
+    }
+
+    // Intersection Observer for Main Add to Cart Button
+    if (hasMainButton) {
+      const buttonObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          isMainButtonHidden = !entry.isIntersecting;
+          updateWidgetVisibility();
         });
       }, {
         threshold: 0,
         rootMargin: '-100px 0px 0px 0px'
       });
 
-      observer.observe(mainATCButton);
+      buttonObserver.observe(mainATCButton);
     } else {
       // No main button found - show sticky after delay (fallback behavior)
+      // But still wait for header to disappear
       setTimeout(() => {
-        stickyATC.classList.add('is-visible');
-        trackGA4Event('view_sticky_add_to_cart', {
-          'event_category': 'sticky_atc',
-          'product_handle': productHandle,
-          'product_id': productId,
-          'fallback_mode': true
-        });
+        isMainButtonHidden = true;
+        updateWidgetVisibility();
+        if (isHeaderHidden && isMainButtonHidden) {
+          trackGA4Event('view_sticky_add_to_cart', {
+            'event_category': 'sticky_atc',
+            'product_handle': productHandle,
+            'product_id': productId,
+            'fallback_mode': true
+          });
+        }
       }, 1000);
     }
 
