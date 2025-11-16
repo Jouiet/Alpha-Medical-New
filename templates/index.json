@@ -199,7 +199,7 @@
             "image_overlay_opacity": 10,
             "heading": "Quality Medical Equipment",
             "heading_size": "h2",
-            "subheading": "Free Shipping Over $50 | 30-Day Returns | Expert Support",
+            "subheading": "Free Shipping Over $150 | 30-Day Returns | Expert Support",
             "button_label": "Shop Bestsellers",
             "link": "shopify://collections/all",
             "button_style_secondary": false,
@@ -384,7 +384,7 @@
           "settings": {
             "icon": "truck",
             "stat": "Free Shipping",
-            "label": "On Orders $50+",
+            "label": "On Orders $150+",
             "description": "<p>Fast delivery to your door</p>"
           }
         },

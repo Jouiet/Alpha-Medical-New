@@ -21,7 +21,7 @@
       if page_description
         assign meta_description = page_description
       elsif request.page_type == 'index'
-        assign meta_description = "Professional medical support equipment & orthopedic braces. Knee braces, posture correctors, LED therapy. Free shipping $50+. FDA-compliant."
+        assign meta_description = "Professional medical support equipment & orthopedic braces. Knee braces, posture correctors, LED therapy. Free shipping $150+. FDA-compliant."
       elsif request.page_type == 'collection'
         assign meta_description = collection.description | default: "Browse our " | append: collection.title | append: " collection - Quality medical devices & orthopedic supports."
       elsif request.page_type == 'product'

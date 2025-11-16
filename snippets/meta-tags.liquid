@@ -5,7 +5,7 @@
 
   if request.page_type == 'index'
     assign og_title = "Professional Medical Equipment You Can Trust - FDA-Compliant | " | append: shop.name
-    assign og_description = "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials."
+    assign og_description = "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials."
   else
     assign og_description = page_description | default: shop.description | default: shop.name
   endif
