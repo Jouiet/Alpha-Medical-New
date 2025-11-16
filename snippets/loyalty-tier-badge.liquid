@@ -1,0 +1,394 @@
+{% comment %}
+  LOYALTY TIER BADGE - Simplified Tag-Based System
+  Displays customer's loyalty tier and discount code
+
+  Usage:
+    {% render 'loyalty-tier-badge' %}
+
+  Dependencies:
+    - Customer tags: loyalty-bronze, loyalty-silver, loyalty-gold, loyalty-platinum
+    - Discount codes: LOYALTY10, LOYALTY15, LOYALTY25, LOYALTY50
+
+  Note: This is a SIMPLIFIED loyalty system using tags only (no metafields)
+{% endcomment %}
+
+{%- if customer -%}
+  {%- liquid
+    assign tier = 'bronze'
+    assign tier_name = 'Bronze'
+    assign discount_code = 'LOYALTY10'
+    assign discount_percent = '10'
+    assign next_tier = 'Silver'
+    assign next_spend = 500
+    assign current_spend = customer.total_spent | divided_by: 100.0
+    assign spend_to_next = 500
+
+    if customer.tags contains 'loyalty-platinum'
+      assign tier = 'platinum'
+      assign tier_name = 'Platinum'
+      assign discount_code = 'LOYALTY50'
+      assign discount_percent = '50'
+      assign next_tier = ''
+      assign spend_to_next = 0
+    elsif customer.tags contains 'loyalty-gold'
+      assign tier = 'gold'
+      assign tier_name = 'Gold'
+      assign discount_code = 'LOYALTY25'
+      assign discount_percent = '25'
+      assign next_tier = 'Platinum'
+      assign next_spend = 2500
+      assign spend_to_next = next_spend | minus: current_spend
+    elsif customer.tags contains 'loyalty-silver'
+      assign tier = 'silver'
+      assign tier_name = 'Silver'
+      assign discount_code = 'LOYALTY15'
+      assign discount_percent = '15'
+      assign next_tier = 'Gold'
+      assign next_spend = 1000
+      assign spend_to_next = next_spend | minus: current_spend
+    else
+      assign tier = 'bronze'
+      assign tier_name = 'Bronze'
+      assign discount_code = 'LOYALTY10'
+      assign discount_percent = '10'
+      assign next_tier = 'Silver'
+      assign next_spend = 500
+      assign spend_to_next = next_spend | minus: current_spend
+    endif
+  -%}
+
+  <div class="loyalty-tier-badge loyalty-tier-{{ tier }}">
+    <div class="loyalty-tier-badge__header">
+      <div class="loyalty-tier-badge__icon">
+        {%- case tier -%}
+          {%- when 'bronze' -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          {%- when 'silver' -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          {%- when 'gold' -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+              <path d="M4 22h16"/>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+            </svg>
+          {%- when 'platinum' -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+              <circle cx="12" cy="8" r="6"/>
+            </svg>
+        {%- endcase -%}
+      </div>
+      <div class="loyalty-tier-badge__info">
+        <h3 class="loyalty-tier-badge__title">{{ tier_name }} Member</h3>
+        <p class="loyalty-tier-badge__subtitle">Your exclusive discount code</p>
+      </div>
+    </div>
+
+    <div class="loyalty-tier-badge__code">
+      <div class="loyalty-tier-badge__code-label">Discount Code:</div>
+      <div class="loyalty-tier-badge__code-value">
+        <code id="loyalty-code-{{ tier }}">{{ discount_code }}</code>
+        <button class="loyalty-tier-badge__copy-btn" onclick="copyLoyaltyCode('{{ discount_code }}', '{{ tier }}')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>Copy</span>
+        </button>
+      </div>
+      <div class="loyalty-tier-badge__discount">Save {{ discount_percent }}% on your next order!</div>
+    </div>
+
+    {%- if next_tier != '' -%}
+      <div class="loyalty-tier-badge__progress">
+        <div class="loyalty-tier-badge__progress-header">
+          <span>Progress to {{ next_tier }}</span>
+          <span>${{ current_spend | round: 2 }} / ${{ next_spend }}</span>
+        </div>
+        <div class="loyalty-tier-badge__progress-bar">
+          {%- assign progress_percent = current_spend | divided_by: next_spend | times: 100 -%}
+          {%- if progress_percent > 100 -%}
+            {%- assign progress_percent = 100 -%}
+          {%- endif -%}
+          <div class="loyalty-tier-badge__progress-fill" style="width: {{ progress_percent }}%"></div>
+        </div>
+        <p class="loyalty-tier-badge__progress-text">
+          {%- if spend_to_next > 0 -%}
+            Spend ${{ spend_to_next | round: 2 }} more to unlock {{ next_tier }} tier!
+          {%- else -%}
+            You've reached {{ next_tier }} tier! It will be applied on your next order.
+          {%- endif -%}
+        </p>
+      </div>
+    {%- else -%}
+      <div class="loyalty-tier-badge__max-tier">
+        🎉 You've reached the highest tier! Enjoy 50% off all orders!
+      </div>
+    {%- endif -%}
+
+    <div class="loyalty-tier-badge__footer">
+      <a href="/pages/loyalty-program" class="loyalty-tier-badge__learn-more">
+        View All Tiers & Benefits →
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .loyalty-tier-badge {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border: 2px solid #e0e0e0;
+    }
+
+    .loyalty-tier-badge__header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .loyalty-tier-badge__icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .loyalty-tier-bronze .loyalty-tier-badge__icon {
+      background: linear-gradient(135deg, #CD7F32 0%, #B8733C 100%);
+      color: white;
+    }
+
+    .loyalty-tier-silver .loyalty-tier-badge__icon {
+      background: linear-gradient(135deg, #C0C0C0 0%, #A8A8A8 100%);
+      color: white;
+    }
+
+    .loyalty-tier-gold .loyalty-tier-badge__icon {
+      background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+      color: #333;
+    }
+
+    .loyalty-tier-platinum .loyalty-tier-badge__icon {
+      background: linear-gradient(135deg, #E5E4E2 0%, #B9B8B5 100%);
+      color: #333;
+    }
+
+    .loyalty-tier-badge__title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .loyalty-tier-badge__subtitle {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin: 4px 0 0 0;
+    }
+
+    .loyalty-tier-badge__code {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .loyalty-tier-badge__code-label {
+      font-size: 12px;
+      color: #7f8c8d;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .loyalty-tier-badge__code-value {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .loyalty-tier-badge__code-value code {
+      flex: 1;
+      background: white;
+      border: 2px dashed #4A90E2;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #4A90E2;
+      letter-spacing: 1px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .loyalty-tier-badge__copy-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #4A90E2;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .loyalty-tier-badge__copy-btn:hover {
+      background: #3a7bc8;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+    }
+
+    .loyalty-tier-badge__copy-btn.copied {
+      background: #27ae60;
+    }
+
+    .loyalty-tier-badge__discount {
+      font-size: 14px;
+      color: #27ae60;
+      font-weight: 600;
+    }
+
+    .loyalty-tier-badge__progress {
+      margin-bottom: 20px;
+    }
+
+    .loyalty-tier-badge__progress-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    .loyalty-tier-badge__progress-bar {
+      width: 100%;
+      height: 12px;
+      background: #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .loyalty-tier-badge__progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #4A90E2 0%, #7FCCC9 100%);
+      transition: width 0.3s ease;
+      border-radius: 6px;
+    }
+
+    .loyalty-tier-badge__progress-text {
+      font-size: 13px;
+      color: #7f8c8d;
+      margin: 0;
+    }
+
+    .loyalty-tier-badge__max-tier {
+      background: linear-gradient(135deg, #FFD700 0%, #FFC700 100%);
+      color: #333;
+      padding: 16px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .loyalty-tier-badge__footer {
+      text-align: center;
+    }
+
+    .loyalty-tier-badge__learn-more {
+      display: inline-block;
+      color: #4A90E2;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .loyalty-tier-badge__learn-more:hover {
+      color: #3a7bc8;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .loyalty-tier-badge {
+        padding: 16px;
+      }
+
+      .loyalty-tier-badge__header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .loyalty-tier-badge__title {
+        font-size: 18px;
+      }
+
+      .loyalty-tier-badge__code-value {
+        flex-direction: column;
+      }
+
+      .loyalty-tier-badge__code-value code {
+        width: 100%;
+        text-align: center;
+      }
+
+      .loyalty-tier-badge__copy-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <script>
+    function copyLoyaltyCode(code, tier) {
+      // Copy to clipboard
+      navigator.clipboard.writeText(code).then(function() {
+        // Visual feedback
+        const btn = document.querySelector('.loyalty-tier-badge__copy-btn');
+        const originalHTML = btn.innerHTML;
+
+        btn.classList.add('copied');
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>Copied!</span>';
+
+        // Reset after 2 seconds
+        setTimeout(function() {
+          btn.classList.remove('copied');
+          btn.innerHTML = originalHTML;
+        }, 2000);
+
+        // Track with GA4 if available
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'copy_loyalty_code', {
+            'event_category': 'loyalty',
+            'tier': tier,
+            'code': code
+          });
+        }
+      });
+    }
+  </script>
+{%- endif -%}
