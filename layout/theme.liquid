@@ -308,7 +308,11 @@
     {%- comment -%} Bundle Builder Assets {%- endcomment -%}
     {{ 'bundle-builder.css' | asset_url | stylesheet_tag }}
     {{ 'bundle-builder.js' | asset_url | script_tag }}
-  </head>
+  
+  {%- if template.name == 'product' -%}
+    <script src="{{ 'product-recommendations-matrix.js' | asset_url }}" defer></script>
+  {%- endif -%}
+</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
