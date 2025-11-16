@@ -75,13 +75,101 @@
         </button>
       </div>
 
-      {%- if cart != empty -%}
-        {%- render 'cart-bundles-upsell' -%}
-        {%- render 'free-shipping-progress-bar' -%}
-        {%- render 'loyalty-points-badge' -%}
-      {%- endif -%}
+      {%- comment -%}3-SECTION LAYOUT: Bundles (1/3) | Cart Items (1/3) | Upsells (1/3){%- endcomment -%}
+      <div class="cart-drawer__three-sections">
+
+        {%- comment -%}SECTION 1/3: EXPLORE BUNDLES{%- endcomment -%}
+        <div class="cart-section cart-section--bundles">
+          {%- if cart != empty -%}
+            {%- render 'cart-bundles-upsell' -%}
+            {%- render 'free-shipping-progress-bar' -%}
+            {%- render 'loyalty-points-badge' -%}
+          {%- endif -%}
+        </div>
+
+        {%- comment -%}SECTION 2/3: CART ITEMS (MES PRODUITS){%- endcomment -%}
+        <div class="cart-section cart-section--items">
 
       <style>
+        /* 3-SECTION LAYOUT: Equal 1/3 distribution */
+        .cart-drawer__three-sections {
+          display: flex;
+          flex-direction: column;
+          height: calc(100vh - 140px); /* Full height minus header/footer */
+          overflow: hidden;
+        }
+
+        .cart-section {
+          height: 33.33%; /* Each section takes exactly 1/3 */
+          overflow-y: auto; /* Allow scrolling within each section */
+          overflow-x: hidden;
+        }
+
+        .cart-section--bundles {
+          border-bottom: 2px solid #e9ecef;
+        }
+
+        .cart-section--items {
+          border-bottom: 2px solid #e9ecef;
+          background: #f8f9fa;
+        }
+
+        .cart-section--upsells {
+          background: #ffffff;
+        }
+
+        /* TEXT OPTIMIZATION: Better readability */
+
+        /* Section 1: Bundles - Larger text */
+        .cart-section--bundles {
+          font-size: 1.1rem;
+        }
+
+        /* Section 2: Cart Items - Optimized table text */
+        .cart-section--items .cart-item__name {
+          font-size: 1rem;
+          line-height: 1.4;
+        }
+
+        .cart-section--items .price {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        /* Section 3: Upsells - Optimized text sizes */
+        .cart-section--upsells .cart-drawer__upsells-title {
+          font-size: 1.2rem !important;
+          font-weight: 700;
+        }
+
+        .cart-section--upsells .cart-upsell-item__title {
+          font-size: 1rem !important;
+          line-height: 1.4;
+        }
+
+        .cart-section--upsells .cart-upsell-item__final-price {
+          font-size: 1.15rem !important;
+          font-weight: 700;
+        }
+
+        /* Optimize scrollbars */
+        .cart-section::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        .cart-section::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+
+        .cart-section::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 3px;
+        }
+
+        .cart-section::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
         .cart-drawer__free-shipping {
           padding: 1rem 1.5rem;
           background: #eff0f5;
@@ -510,28 +598,11 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
-      <div class="drawer__footer">
-        {%- if settings.show_cart_note -%}
-          <details id="Details-CartDrawer">
-            <summary>
-              <span class="summary__title">
-                {{ 'sections.cart.note' | t }}
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
-            </summary>
-            <cart-note class="cart__note field">
-              <label class="visually-hidden" for="CartDrawer-Note">{{ 'sections.cart.note' | t }}</label>
-              <textarea
-                id="CartDrawer-Note"
-                class="text-area text-area--resize-vertical field__input"
-                name="note"
-                placeholder="{{ 'sections.cart.note' | t }}"
-              >{{ cart.note }}</textarea>
-            </cart-note>
-          </details>
-        {%- endif -%}
+        </div>
+        {%- comment -%}END SECTION 2/3: CART ITEMS{%- endcomment -%}
 
-        {%- comment -%}Cart Drawer Upsells - Contextual Product Recommendations{%- endcomment -%}
+        {%- comment -%}SECTION 3/3: ENHANCE YOUR PAIN RELIEF (CONTEXTUAL UPSELLS){%- endcomment -%}
+        <div class="cart-section cart-section--upsells">
         {%- if cart != empty -%}
           {%- liquid
             # Analyze cart contents to determine recommendation strategy
@@ -806,7 +877,13 @@
             </script>
           {%- endif -%}
         {%- endif -%}
+        </div>
+        {%- comment -%}END SECTION 3/3: UPSELLS{%- endcomment -%}
 
+      </div>
+      {%- comment -%}END 3-SECTION LAYOUT{%- endcomment -%}
+
+      <div class="drawer__footer">
         <!-- Start blocks -->
         <!-- Subtotals -->
 
