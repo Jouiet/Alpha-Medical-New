@@ -97,27 +97,63 @@
         .cart-drawer__three-sections {
           display: flex;
           flex-direction: column;
-          height: calc(100vh - 140px); /* Full height minus header/footer */
+          height: calc(100vh - 140px);
           overflow: hidden;
+          background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%);
         }
 
         .cart-section {
-          height: 33.33%; /* Each section takes exactly 1/3 */
-          overflow-y: auto; /* Allow scrolling within each section */
+          height: 33.33%;
+          overflow-y: auto;
           overflow-x: hidden;
+          transition: all 0.3s ease;
+          position: relative;
         }
 
+        /* SECTION 1: Bundles - Premium gradient */
         .cart-section--bundles {
-          border-bottom: 2px solid #e9ecef;
+          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+          border-bottom: none;
+          padding: 8px;
+          box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05);
         }
 
+        .cart-section--bundles::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 5%;
+          right: 5%;
+          height: 3px;
+          background: linear-gradient(90deg, transparent, #4770DB, transparent);
+          opacity: 0.3;
+        }
+
+        /* SECTION 2: Cart Items - Clean white with subtle shadow */
         .cart-section--items {
-          border-bottom: 2px solid #e9ecef;
-          background: #f8f9fa;
+          background: #ffffff;
+          padding: 12px;
+          box-shadow:
+            inset 0 1px 0 rgba(71, 112, 219, 0.1),
+            inset 0 -1px 0 rgba(0,0,0,0.05);
         }
 
+        .cart-section--items::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 5%;
+          right: 5%;
+          height: 3px;
+          background: linear-gradient(90deg, transparent, #4770DB, transparent);
+          opacity: 0.3;
+        }
+
+        /* SECTION 3: Upsells - Light gradient */
         .cart-section--upsells {
-          background: #ffffff;
+          background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+          padding: 12px 8px;
+          box-shadow: inset 0 1px 0 rgba(71, 112, 219, 0.1);
         }
 
         /* TEXT OPTIMIZATION: Better readability */
@@ -143,7 +179,20 @@
         .cart-section-1-inline .free-shipping-bar-wrapper {
           margin: 8px 0 !important;
           padding: 10px !important;
-          border-radius: 6px !important;
+          border-radius: 8px !important;
+          background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+          box-shadow:
+            0 2px 8px rgba(71, 112, 219, 0.08),
+            inset 0 1px 0 rgba(255,255,255,0.8) !important;
+          border: 1px solid rgba(71, 112, 219, 0.1) !important;
+          transition: all 0.3s ease !important;
+        }
+
+        .cart-section-1-inline .free-shipping-bar-wrapper:hover {
+          box-shadow:
+            0 4px 12px rgba(71, 112, 219, 0.12),
+            inset 0 1px 0 rgba(255,255,255,0.8) !important;
+          transform: translateY(-1px);
         }
 
         .cart-section-1-inline .free-shipping-message {
@@ -169,7 +218,20 @@
         .cart-section-1-inline .loyalty-badge-compact {
           padding: 10px !important;
           margin: 8px 0 !important;
-          border-radius: 6px !important;
+          border-radius: 8px !important;
+          background: linear-gradient(135deg, #fff8e1 0%, #fffbf0 100%) !important;
+          box-shadow:
+            0 2px 8px rgba(255, 193, 7, 0.12),
+            inset 0 1px 0 rgba(255,255,255,0.8) !important;
+          border: 1px solid rgba(255, 193, 7, 0.2) !important;
+          transition: all 0.3s ease !important;
+        }
+
+        .cart-section-1-inline .loyalty-badge-compact:hover {
+          box-shadow:
+            0 4px 12px rgba(255, 193, 7, 0.18),
+            inset 0 1px 0 rgba(255,255,255,0.8) !important;
+          transform: translateY(-1px);
         }
 
         .cart-section-1-inline .loyalty-compact-header {
@@ -183,10 +245,23 @@
           font-size: 10px !important;
         }
 
-        /* SECTION 1: REDUCE BUNDLES HEIGHT ÷2 */
+        /* SECTION 1: PREMIUM BUNDLES CARD */
         .cart-section--bundles .cart-bundle-upsell {
           padding: 8px 10px !important;
           margin: 8px 0 !important;
+          border-radius: 10px !important;
+          box-shadow:
+            0 4px 12px rgba(71, 112, 219, 0.15),
+            inset 0 1px 0 rgba(255,255,255,0.2) !important;
+          transition: all 0.3s ease !important;
+          border: 1px solid rgba(255,255,255,0.2) !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell:hover {
+          box-shadow:
+            0 6px 16px rgba(71, 112, 219, 0.2),
+            inset 0 1px 0 rgba(255,255,255,0.2) !important;
+          transform: translateY(-2px);
         }
 
         .cart-section--bundles .cart-bundle-upsell__icon {
@@ -213,6 +288,13 @@
         .cart-section--bundles .cart-bundle-upsell__button {
           padding: 5px 12px !important;
           font-size: 11px !important;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+          transition: all 0.2s ease !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell__button:hover {
+          box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+          transform: translateY(-1px) scale(1.02);
         }
 
         /* Section 2: Cart Items - Optimized table text */
@@ -242,22 +324,26 @@
           font-weight: 700;
         }
 
-        /* Optimize scrollbars */
+        /* MODERN SCROLLBARS */
         .cart-section::-webkit-scrollbar {
-          width: 6px;
+          width: 8px;
         }
 
         .cart-section::-webkit-scrollbar-track {
-          background: #f1f1f1;
+          background: rgba(0,0,0,0.02);
+          border-radius: 10px;
         }
 
         .cart-section::-webkit-scrollbar-thumb {
-          background: #888;
-          border-radius: 3px;
+          background: linear-gradient(180deg, #4770DB 0%, #6a8eec 100%);
+          border-radius: 10px;
+          border: 2px solid rgba(255,255,255,0.3);
+          transition: all 0.3s ease;
         }
 
         .cart-section::-webkit-scrollbar-thumb:hover {
-          background: #555;
+          background: linear-gradient(180deg, #3557b8 0%, #4770DB 100%);
+          box-shadow: 0 0 6px rgba(71, 112, 219, 0.4);
         }
 
         .cart-drawer__free-shipping {
@@ -850,38 +936,73 @@
                 justify-content: space-between;
               }
 
-              /* CARD: Vertical layout (image top, info bottom) */
+              /* CARD: Premium vertical layout */
               .cart-upsell-item {
                 display: flex;
                 flex-direction: column;
                 gap: 0.5rem;
                 padding: 0.5rem;
-                background: #ffffff;
-                border-radius: 6px;
-                border: 1px solid #e9ecef;
-                width: 48%; /* 2 items = 48% + 48% + gap */
-                box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-                transition: box-shadow 0.2s;
+                background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
+                border-radius: 10px;
+                border: 1px solid rgba(71, 112, 219, 0.1);
+                width: 48%;
+                box-shadow:
+                  0 2px 8px rgba(71, 112, 219, 0.08),
+                  inset 0 1px 0 rgba(255,255,255,0.8);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+              }
+
+              .cart-upsell-item::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, #4770DB, transparent);
+                opacity: 0;
+                transition: opacity 0.3s ease;
               }
 
               .cart-upsell-item:hover {
-                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                box-shadow:
+                  0 6px 20px rgba(71, 112, 219, 0.15),
+                  inset 0 1px 0 rgba(255,255,255,0.8);
+                transform: translateY(-3px) scale(1.02);
+                border-color: rgba(71, 112, 219, 0.2);
               }
 
-              /* IMAGE: Full width, fixed height */
+              .cart-upsell-item:hover::before {
+                opacity: 1;
+              }
+
+              /* IMAGE: Full width with premium styling */
               .cart-upsell-item__image {
                 width: 100%;
                 height: 100px;
                 flex-shrink: 0;
                 overflow: hidden;
-                border-radius: 4px;
-                background: #f8f9fa;
+                border-radius: 8px;
+                background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+                transition: all 0.3s ease;
+              }
+
+              .cart-upsell-item:hover .cart-upsell-item__image {
+                box-shadow: inset 0 0 15px rgba(71, 112, 219, 0.08);
               }
 
               .cart-upsell-item__image img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transition: transform 0.3s ease;
+              }
+
+              .cart-upsell-item:hover .cart-upsell-item__image img {
+                transform: scale(1.05);
               }
 
               /* INFO: Compact vertical layout */
