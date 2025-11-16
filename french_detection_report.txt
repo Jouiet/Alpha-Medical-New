@@ -1,0 +1,5945 @@
+================================================================================
+FRENCH CONTENT DETECTION - FORENSIC AUDIT REPORT
+================================================================================
+
+Total files with French detected: 167
+
+❌ RESULT: FRENCH CONTENT DETECTED
+
+VIOLATIONS:
+--------------------------------------------------------------------------------
+
+VIOLATION #1: /Users/mac/Desktop/Alpha-Medical/layout/theme.liquid
+Total occurrences: 13
+
+  Line 114:
+    Content:         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+    French keywords: plus
+
+  Line 204:
+    Content:         --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
+    French keywords: plus
+
+  Line 222:
+    Content:         --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
+    French keywords: plus
+
+  Line 278:
+    Content:       {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 280:
+    Content:       {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 283:
+    Content:       {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 285:
+    Content:       {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 308:
+    Content:     {%- comment -%} Bundle Builder Assets {%- endcomment -%}
+    French keywords: comment
+
+  Line 318:
+    Content:     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+    French keywords: a
+
+  Line 320:
+    Content:     </a>
+    French keywords: a
+
+  Line 392:
+    Content:     {%- comment -%}Exit Intent Popup - Capture abandoning visitors{%- endcomment -%}
+    French keywords: comment
+
+  Line 395:
+    Content:     {%- comment -%}Welcome Popup - Capture first-time visitors{%- endcomment -%}
+    French keywords: comment
+
+  Line 398:
+    Content:     {%- comment -%}Bundle Hover Images - Show product carousel on bundle cards{%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #2: /Users/mac/Desktop/Alpha-Medical/layout/password.liquid
+Total occurrences: 8
+
+  Line 147:
+    Content:         --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
+    French keywords: plus
+
+  Line 165:
+    Content:         --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
+    French keywords: plus
+
+  Line 178:
+    Content:       {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 180:
+    Content:       {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 183:
+    Content:       {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 185:
+    Content:       {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 198:
+    Content:     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+    French keywords: a
+
+  Line 200:
+    Content:     </a>
+    French keywords: a
+
+
+VIOLATION #3: /Users/mac/Desktop/Alpha-Medical/sections/multirow.liquid
+Total occurrences: 2
+
+  Line 91:
+    Content:                 <a
+    French keywords: a
+
+  Line 100:
+    Content:                 </a>
+    French keywords: a
+
+
+VIOLATION #4: /Users/mac/Desktop/Alpha-Medical/sections/predictive-search.liquid
+Total occurrences: 36
+
+  Line 1:
+    Content: {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 4:
+    Content:     | plus: predictive_search.resources.collections.size
+    French keywords: plus
+
+  Line 5:
+    Content:     | plus: predictive_search.resources.pages.size
+    French keywords: plus
+
+  Line 6:
+    Content:     | plus: predictive_search.resources.articles.size
+    French keywords: articles, plus
+
+  Line 36:
+    Content:               <a href="{{ query.url }}" class="predictive-search__item link link--text" tabindex="-1">
+    French keywords: a
+
+  Line 45:
+    Content:               </a>
+    French keywords: a
+
+  Line 55:
+    Content:               <a href="{{ collection.url }}" class="predictive-search__item link link--text" tabindex="-1">
+    French keywords: a
+
+  Line 59:
+    Content:               </a>
+    French keywords: a
+
+  Line 65:
+    Content:     {%- if predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 -%}
+    French keywords: articles
+
+  Line 86:
+    Content:               <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
+    French keywords: a
+
+  Line 90:
+    Content:               </a>
+    French keywords: a
+
+  Line 93:
+    Content:           {%- for article in predictive_search.resources.articles -%}
+    French keywords: article, articles
+
+  Line 95:
+    Content:               id="predictive-search-option-article-desktop-{{ forloop.index }}"
+    French keywords: article
+
+  Line 100:
+    Content:               <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
+    French keywords: article, a
+
+  Line 102:
+    Content:                   <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
+    French keywords: article
+
+  Line 104:
+    Content:               </a>
+    French keywords: a
+
+  Line 114:
+    Content:       or predictive_search.resources.articles.size > 0
+    French keywords: articles
+
+  Line 139:
+    Content:                   <a
+    French keywords: a
+
+  Line 165:
+    Content:                   </a>
+    French keywords: a
+
+  Line 171:
+    Content:         {%- if predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 -%}
+    French keywords: articles
+
+  Line 192:
+    Content:                   <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
+    French keywords: a
+
+  Line 196:
+    Content:                   </a>
+    French keywords: a
+
+  Line 199:
+    Content:               {%- for article in predictive_search.resources.articles -%}
+    French keywords: article, articles
+
+  Line 201:
+    Content:                   id="predictive-search-option-article-mobile-{{ forloop.index }}"
+    French keywords: article
+
+  Line 206:
+    Content:                   <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
+    French keywords: article, a
+
+  Line 208:
+    Content:                       <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
+    French keywords: article
+
+  Line 210:
+    Content:                   </a>
+    French keywords: a
+
+  Line 243:
+    Content:       assign total_results = predictive_search.resources.products.size | plus: first_column_results_size
+    French keywords: plus
+
+  Line 249:
+    Content:           assign count = predictive_search.resources.queries.size | plus: predictive_search.resources.collections.size
+    French keywords: plus
+
+  Line 253:
+    Content:           assign count = predictive_search.resources.pages.size | plus: predictive_search.resources.articles.size
+    French keywords: articles, plus
+
+
+VIOLATION #5: /Users/mac/Desktop/Alpha-Medical/sections/main-addresses.liquid
+Total occurrences: 8
+
+  Line 22:
+    Content:     <a href="{{ routes.account_url }}">
+    French keywords: a
+
+  Line 24:
+    Content:     </a>
+    French keywords: a
+
+  Line 343:
+    Content:                 <a href="{{ paginate.previous.url }}" aria-label="{{ 'general.pagination.previous' | t }}">
+    French keywords: a
+
+  Line 347:
+    Content:                 </a>
+    French keywords: a
+
+  Line 354:
+    Content:                   <a href="{{ part.url }}" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
+    French keywords: a
+
+  Line 356:
+    Content:                   </a>
+    French keywords: a
+
+  Line 371:
+    Content:                 <a href="{{ paginate.next.url }}" aria-label="{{ 'general.pagination.next' | t }}">
+    French keywords: a
+
+  Line 375:
+    Content:                 </a>
+    French keywords: a
+
+
+VIOLATION #6: /Users/mac/Desktop/Alpha-Medical/sections/slideshow.liquid
+Total occurrences: 2
+
+  Line 191:
+    Content:                 <a
+    French keywords: a
+
+  Line 200:
+    Content:                 </a>
+    French keywords: a
+
+
+VIOLATION #7: /Users/mac/Desktop/Alpha-Medical/sections/collage.liquid
+Total occurrences: 1
+
+  Line 39:
+    Content:           {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
+    French keywords: plus
+
+
+VIOLATION #8: /Users/mac/Desktop/Alpha-Medical/sections/image-banner.liquid
+Total occurrences: 4
+
+  Line 139:
+    Content:                 <a
+    French keywords: a
+
+  Line 148:
+    Content:                 </a>
+    French keywords: a
+
+  Line 151:
+    Content:                 <a
+    French keywords: a
+
+  Line 160:
+    Content:                 </a>
+    French keywords: a
+
+
+VIOLATION #9: /Users/mac/Desktop/Alpha-Medical/sections/main-collection-banner.liquid
+Total occurrences: 2
+
+  Line 1:
+    Content: {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 21:
+    Content:   "inLanguage": "en-US",
+    French keywords: en
+
+
+VIOLATION #10: /Users/mac/Desktop/Alpha-Medical/sections/promo-banner.liquid
+Total occurrences: 2
+
+  Line 19:
+    Content:         <a href="{{ section.settings.button_link }}" class="button {% if section.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">
+    French keywords: a
+
+  Line 21:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #11: /Users/mac/Desktop/Alpha-Medical/sections/bundle-builder-combined.liquid
+Total occurrences: 24
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 4:
+    Content:   Méthode 1: Recherche de produits (search)
+    French keywords: produits, de
+
+  Line 5:
+    Content:   Méthode 2: Copier/coller URL produit
+    French keywords: produit
+
+  Line 13:
+    Content:     {%- comment -%} HERO SECTION {%- endcomment -%}
+    French keywords: comment
+
+  Line 40:
+    Content:     {%- comment -%} METHOD SELECTOR {%- endcomment -%}
+    French keywords: comment
+
+  Line 70:
+    Content:     {%- comment -%} MAIN INTERFACE {%- endcomment -%}
+    French keywords: comment
+
+  Line 73:
+    Content:       {%- comment -%} LEFT PANEL: INPUT METHODS {%- endcomment -%}
+    French keywords: comment
+
+  Line 76:
+    Content:         {%- comment -%} METHOD 1: SEARCH PRODUCTS {%- endcomment -%}
+    French keywords: comment
+
+  Line 115:
+    Content:         {%- comment -%} METHOD 2: URL INPUT {%- endcomment -%}
+    French keywords: comment
+
+  Line 190:
+    Content:               <li>Browse our <a href="/collections/all" target="_blank">product catalog</a></li>
+    French keywords: a, a
+
+  Line 195:
+    Content:             <p class="method-note">
+    French keywords: note
+
+  Line 203:
+    Content:       {%- comment -%} RIGHT PANEL: SELECTED BUNDLE {%- endcomment -%}
+    French keywords: comment
+
+  Line 207:
+    Content:         {%- comment -%} Selected Products List {%- endcomment -%}
+    French keywords: comment
+
+  Line 217:
+    Content:         {%- comment -%} Price Summary {%- endcomment -%}
+    French keywords: comment
+
+  Line 233:
+    Content:         {%- comment -%} Max Value Warning {%- endcomment -%}
+    French keywords: comment
+
+  Line 238:
+    Content:           <span>Bundle exceeds $500 maximum. Please remove a product.</span>
+    French keywords: a
+
+  Line 241:
+    Content:         {%- comment -%} SUBMISSION FORM {%- endcomment -%}
+    French keywords: comment
+
+  Line 287:
+    Content:                   I understand this is a proposal (not a purchase). If {{ section.settings.threshold | default: 10 }}+ customers request this bundle, you'll create it and notify me.
+    French keywords: a, a
+
+  Line 301:
+    Content:             <p class="form-note">
+    French keywords: note
+
+  Line 311:
+    Content:     {%- comment -%} HOW IT WORKS {%- endcomment -%}
+    French keywords: comment
+
+  Line 341:
+    Content: {%- comment -%} PRELOAD PRODUCTS DATA {%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #12: /Users/mac/Desktop/Alpha-Medical/sections/main-activate-account.liquid
+Total occurrences: 2
+
+  Line 38:
+    Content:               <a href="#{{ field }}">
+    French keywords: a
+
+  Line 41:
+    Content:               </a>
+    French keywords: a
+
+
+VIOLATION #13: /Users/mac/Desktop/Alpha-Medical/sections/pickup-availability.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}theme-check-disable UndefinedObject{% endcomment %}
+    French keywords: comment
+
+
+VIOLATION #14: /Users/mac/Desktop/Alpha-Medical/sections/collection-list.liquid
+Total occurrences: 6
+
+  Line 20:
+    Content:   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
+    French keywords: plus
+
+  Line 39:
+    Content:           <a
+    French keywords: a
+
+  Line 46:
+    Content:           </a>
+    French keywords: a
+
+  Line 73:
+    Content:             {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
+    French keywords: plus
+
+  Line 123:
+    Content:         <a
+    French keywords: a
+
+  Line 130:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #15: /Users/mac/Desktop/Alpha-Medical/sections/multicolumn.liquid
+Total occurrences: 10
+
+  Line 19:
+    Content:   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
+    French keywords: plus
+
+  Line 39:
+    Content:           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
+    French keywords: a
+
+  Line 41:
+    Content:           </a>
+    French keywords: a
+
+  Line 93:
+    Content:                       assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+    French keywords: plus
+
+  Line 94:
+    Content:                       assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+    French keywords: plus
+
+  Line 95:
+    Content:                       assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+    French keywords: plus
+
+  Line 129:
+    Content:                   <a
+    French keywords: a
+
+  Line 141:
+    Content:                   </a>
+    French keywords: a
+
+  Line 178:
+    Content:         <a
+    French keywords: a
+
+  Line 187:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #16: /Users/mac/Desktop/Alpha-Medical/sections/featured-blog.liquid
+Total occurrences: 21
+
+  Line 3:
+    Content: {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+    French keywords: article
+
+  Line 45:
+    Content:           <a
+    French keywords: a
+
+  Line 50:
+    Content:           </a>
+    French keywords: a
+
+  Line 58:
+    Content:         class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.blog_card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+    French keywords: article, articles
+
+  Line 62:
+    Content:           {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+    French keywords: article, articles
+
+  Line 65:
+    Content:               class="blog__post grid__item article slider__slide slider__slide--full-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    French keywords: article
+
+  Line 71:
+    Content:               {% render 'article-card',
+    French keywords: article
+
+  Line 73:
+    Content:                 article: article,
+    French keywords: article, article
+
+  Line 84:
+    Content:             {%- assign placeholder_image_index = forloop.index0 | modulo: 3 | plus: 1 -%}
+    French keywords: plus
+
+  Line 88:
+    Content:               class="blog__post grid__item article slider__slide slider__slide--full-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    French keywords: article
+
+  Line 94:
+    Content:               <div class="article-card-wrapper card-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    French keywords: article
+
+  Line 97:
+    Content:                     card article-card card--{{ settings.blog_card_style }}
+    French keywords: article
+
+  Line 108:
+    Content:                       <div class="article-card__image-wrapper card__media">
+    French keywords: article
+
+  Line 109:
+    Content:                         <div class="article-card__image media">
+    French keywords: article
+
+  Line 119:
+    Content:                         <p class="article-card__excerpt rte-width">
+    French keywords: article
+
+  Line 130:
+    Content:                       <p class="article-card__excerpt rte-width">
+    French keywords: article
+
+  Line 180:
+    Content:         <a
+    French keywords: a
+
+  Line 187:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #17: /Users/mac/Desktop/Alpha-Medical/sections/recently-viewed.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+
+VIOLATION #18: /Users/mac/Desktop/Alpha-Medical/sections/bundle-builder.liquid
+Total occurrences: 21
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 16:
+    Content:     {%- comment -%} HERO SECTION {%- endcomment -%}
+    French keywords: comment
+
+  Line 39:
+    Content:     {%- comment -%} MAIN BUILDER INTERFACE {%- endcomment -%}
+    French keywords: comment
+
+  Line 42:
+    Content:       {%- comment -%} LEFT: PRODUCT SEARCH {%- endcomment -%}
+    French keywords: comment
+
+  Line 66:
+    Content:       {%- comment -%} RIGHT: SELECTED PRODUCTS + FORM {%- endcomment -%}
+    French keywords: comment
+
+  Line 70:
+    Content:         {%- comment -%} Selected Products List {%- endcomment -%}
+    French keywords: comment
+
+  Line 80:
+    Content:         {%- comment -%} Price Summary {%- endcomment -%}
+    French keywords: comment
+
+  Line 96:
+    Content:         {%- comment -%} Max Value Warning {%- endcomment -%}
+    French keywords: comment
+
+  Line 101:
+    Content:           <span>Bundle exceeds $500 maximum. Please remove a product.</span>
+    French keywords: a
+
+  Line 104:
+    Content:         {%- comment -%} SUBMISSION FORM {%- endcomment -%}
+    French keywords: comment
+
+  Line 142:
+    Content:             {%- comment -%} Hidden fields for bundle data {%- endcomment -%}
+    French keywords: comment
+
+  Line 156:
+    Content:                   I understand this is a proposal (not a purchase). If {{ section.settings.threshold | default: 10 }}+ customers request this bundle, you'll create it and notify me.
+    French keywords: a, a
+
+  Line 170:
+    Content:             <p class="form-note">
+    French keywords: note
+
+  Line 180:
+    Content:     {%- comment -%} HOW IT WORKS {%- endcomment -%}
+    French keywords: comment
+
+  Line 197:
+    Content:           <p>Enter your email and submit (not a purchase yet)</p>
+    French keywords: a
+
+  Line 207:
+    Content:     {%- comment -%} FAQ {%- endcomment -%}
+    French keywords: comment
+
+  Line 218:
+    Content:           <summary>Is this a purchase?</summary>
+    French keywords: a
+
+  Line 219:
+    Content:           <p>No, this is a proposal. You're not buying anything yet. We'll notify you by email when the bundle is created, then you can purchase it.</p>
+    French keywords: a
+
+  Line 248:
+    Content: {%- comment -%} PRELOAD PRODUCTS DATA FOR SEARCH {%- endcomment -%}
+    French keywords: comment
+
+  Line 261:
+    Content: {%- comment -%} Fetch all products for search (paginated) {%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #19: /Users/mac/Desktop/Alpha-Medical/sections/featured-collection.liquid
+Total occurrences: 4
+
+  Line 49:
+    Content:   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
+    French keywords: plus
+
+  Line 50:
+    Content:   assign columns_desktop_int = section.settings.columns_desktop | plus: 0
+    French keywords: plus
+
+  Line 202:
+    Content:         <a
+    French keywords: a
+
+  Line 208:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #20: /Users/mac/Desktop/Alpha-Medical/sections/contact-form.liquid
+Total occurrences: 5
+
+  Line 47:
+    Content:             <a href="#ContactForm-email" class="link">
+    French keywords: a
+
+  Line 50:
+    Content:             </a>
+    French keywords: a
+
+  Line 120:
+    Content:           name="contact[{{ 'templates.contact.form.comment' | t }}]"
+    French keywords: comment
+
+  Line 121:
+    Content:           placeholder="{{ 'templates.contact.form.comment' | t }}"
+    French keywords: comment
+
+  Line 126:
+    Content:           {{- 'templates.contact.form.comment' | t -}}
+    French keywords: comment
+
+
+VIOLATION #21: /Users/mac/Desktop/Alpha-Medical/sections/main-password-footer.liquid
+Total occurrences: 20
+
+  Line 7:
+    Content:         <a href="{{ settings.social_twitter_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 12:
+    Content:         </a>
+    French keywords: a
+
+  Line 17:
+    Content:         <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 22:
+    Content:         </a>
+    French keywords: a
+
+  Line 27:
+    Content:         <a href="{{ settings.social_pinterest_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 32:
+    Content:         </a>
+    French keywords: a
+
+  Line 37:
+    Content:         <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 42:
+    Content:         </a>
+    French keywords: a
+
+  Line 47:
+    Content:         <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 52:
+    Content:         </a>
+    French keywords: a
+
+  Line 57:
+    Content:         <a href="{{ settings.social_tumblr_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 62:
+    Content:         </a>
+    French keywords: a
+
+  Line 67:
+    Content:         <a href="{{ settings.social_snapchat_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 72:
+    Content:         </a>
+    French keywords: a
+
+  Line 77:
+    Content:         <a href="{{ settings.social_youtube_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 82:
+    Content:         </a>
+    French keywords: a
+
+  Line 87:
+    Content:         <a href="{{ settings.social_vimeo_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 92:
+    Content:         </a>
+    French keywords: a
+
+  Line 97:
+    Content:     <a
+    French keywords: a
+
+  Line 106:
+    Content:     </a>
+    French keywords: a
+
+
+VIOLATION #22: /Users/mac/Desktop/Alpha-Medical/sections/main-search.liquid
+Total occurrences: 6
+
+  Line 286:
+    Content:                       {%- when 'article' -%}
+    French keywords: article
+
+  Line 287:
+    Content:                         {% render 'article-card',
+    French keywords: article
+
+  Line 288:
+    Content:                           article: item,
+    French keywords: article
+
+  Line 297:
+    Content:                         <div class="article-card-wrapper card-wrapper underline-links-hover">
+    French keywords: article
+
+  Line 305:
+    Content:                                   <a href="{{ item.url }}" class="full-unstyled-link">
+    French keywords: a
+
+  Line 307:
+    Content:                                   </a>
+    French keywords: a
+
+
+VIOLATION #23: /Users/mac/Desktop/Alpha-Medical/sections/header.liquid
+Total occurrences: 9
+
+  Line 85:
+    Content:     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+    French keywords: a
+
+  Line 154:
+    Content:       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+    French keywords: a
+
+  Line 177:
+    Content:       </a>
+    French keywords: a
+
+  Line 197:
+    Content:       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+    French keywords: a
+
+  Line 220:
+    Content:       </a>
+    French keywords: a
+
+  Line 253:
+    Content:         <a
+    French keywords: a
+
+  Line 278:
+    Content:         </a>
+    French keywords: a
+
+  Line 288:
+    Content:       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+    French keywords: a
+
+  Line 303:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #24: /Users/mac/Desktop/Alpha-Medical/sections/rich-text.liquid
+Total occurrences: 4
+
+  Line 66:
+    Content:                   <a
+    French keywords: a
+
+  Line 75:
+    Content:                   </a>
+    French keywords: a
+
+  Line 78:
+    Content:                   <a
+    French keywords: a
+
+  Line 87:
+    Content:                   </a>
+    French keywords: a
+
+
+VIOLATION #25: /Users/mac/Desktop/Alpha-Medical/sections/image-with-text.liquid
+Total occurrences: 2
+
+  Line 89:
+    Content:                     <a
+    French keywords: a
+
+  Line 99:
+    Content:                     </a>
+    French keywords: a
+
+
+VIOLATION #26: /Users/mac/Desktop/Alpha-Medical/sections/main-reset-password.liquid
+Total occurrences: 2
+
+  Line 39:
+    Content:               <a href="#{{ field }}">
+    French keywords: a
+
+  Line 42:
+    Content:               </a>
+    French keywords: a
+
+
+VIOLATION #27: /Users/mac/Desktop/Alpha-Medical/sections/main-cart-items.liquid
+Total occurrences: 25
+
+  Line 32:
+    Content:       <a href="{{ routes.all_products_collection_url }}" class="underlined-link">
+    French keywords: a
+
+  Line 34:
+    Content:       </a>
+    French keywords: a
+
+  Line 39:
+    Content:       <a href="{{ routes.all_products_collection_url }}" class="button">
+    French keywords: a
+
+  Line 41:
+    Content:       </a>
+    French keywords: a
+
+  Line 84:
+    Content:                     id="CartItem-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 91:
+    Content:                         {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
+    French keywords: comment, a
+
+  Line 92:
+    Content:                         <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
+    French keywords: a, a
+
+  Line 111:
+    Content:                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+    French keywords: a, a
+
+  Line 155:
+    Content:                                     <a href="{{ property.last }}" class="link" target="_blank">
+    French keywords: a
+
+  Line 157:
+    Content:                                     </a>
+    French keywords: a
+
+  Line 225:
+    Content:                           <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
+    French keywords: plus
+
+  Line 271:
+    Content:                                 id="Quantity-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 272:
+    Content:                                 data-index="{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 279:
+    Content:                                 name="plus"
+    French keywords: plus
+
+  Line 289:
+    Content:                                   {{- 'icon-plus.svg' | inline_asset_content -}}
+    French keywords: plus
+
+  Line 295:
+    Content:                             id="Remove-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 296:
+    Content:                             data-index="{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 302:
+    Content:                             <a
+    French keywords: a
+
+  Line 310:
+    Content:                             </a>
+    French keywords: a
+
+  Line 322:
+    Content:                                 {{ 'products.product.volume_pricing.note' | t }}
+    French keywords: note
+
+  Line 324:
+    Content:                                 {{ 'products.product.quantity.note' | t }}
+    French keywords: note
+
+  Line 398:
+    Content:                         <div class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}" role="alert">
+    French keywords: plus
+
+
+VIOLATION #28: /Users/mac/Desktop/Alpha-Medical/sections/main-order.liquid
+Total occurrences: 8
+
+  Line 20:
+    Content:     <a href="{{ routes.account_url }}">{{ 'customer.account.return' | t }}</a>
+    French keywords: a, a
+
+  Line 59:
+    Content:                     <a href="{{ line_item.url }}">{{ line_item.title | escape }}</a>
+    French keywords: a, a
+
+  Line 83:
+    Content:                                 <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+    French keywords: a, a
+
+  Line 115:
+    Content:                         <a href="{{ line_item.fulfillment.tracking_url }}">
+    French keywords: a
+
+  Line 117:
+    Content:                         </a>
+    French keywords: a
+
+
+VIOLATION #29: /Users/mac/Desktop/Alpha-Medical/sections/bundles-collection.liquid
+Total occurrences: 30
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 8:
+    Content:   {%- comment -%} Hero Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 39:
+    Content:           <a href="#bundles-grid" class="btn btn-primary">Browse Bundles</a>
+    French keywords: a, a
+
+  Line 40:
+    Content:           <a href="/pages/bundle-creator" class="btn btn-secondary">Build Your Own Bundle</a>
+    French keywords: a, a
+
+  Line 46:
+    Content:   {%- comment -%} Why Bundles Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 79:
+    Content:   {%- comment -%} Filters Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 84:
+    Content:       {%- comment -%} Persona Filter Tabs {%- endcomment -%}
+    French keywords: comment
+
+  Line 150:
+    Content:       {%- comment -%} Tier Filter Tabs {%- endcomment -%}
+    French keywords: comment
+
+  Line 192:
+    Content:       {%- comment -%} Sort Options {%- endcomment -%}
+    French keywords: comment
+
+  Line 210:
+    Content:   {%- comment -%} Bundles Grid {%- endcomment -%}
+    French keywords: comment
+
+  Line 215:
+    Content:         {%- comment -%} BUNDLE 1: Office Worker Essential Kit {%- endcomment -%}
+    French keywords: comment
+
+  Line 275:
+    Content:         {%- comment -%} BUNDLE 2: Senior Mobility Support {%- endcomment -%}
+    French keywords: comment
+
+  Line 335:
+    Content:         {%- comment -%} BUNDLE 3: Active Athlete Complete Protection {%- endcomment -%}
+    French keywords: comment
+
+  Line 396:
+    Content:         {%- comment -%} BUNDLE 4: Chronic Pain Relief Kit {%- endcomment -%}
+    French keywords: comment
+
+  Line 457:
+    Content:         {%- comment -%} Continue with bundles 5-15... For brevity, I'll add placeholders {%- endcomment -%}
+    French keywords: comment
+
+  Line 458:
+    Content:         {%- comment -%} In production, all 15 bundles would be here {%- endcomment -%}
+    French keywords: comment
+
+  Line 460:
+    Content:         {%- comment -%} BUNDLE 9: Chronic Pain Starter Kit {%- endcomment -%}
+    French keywords: comment
+
+  Line 519:
+    Content:         {%- comment -%} Add remaining bundles 5-8, 10-15 following same structure {%- endcomment -%}
+    French keywords: comment
+
+  Line 520:
+    Content:         {%- comment -%} For production deployment, include all 15 bundles {%- endcomment -%}
+    French keywords: comment
+
+  Line 524:
+    Content:       {%- comment -%} No Results Message {%- endcomment -%}
+    French keywords: comment
+
+  Line 534:
+    Content:   {%- comment -%} Custom Bundle CTA {%- endcomment -%}
+    French keywords: comment
+
+  Line 543:
+    Content:         <a href="/pages/bundle-creator" class="btn btn-white">Build Your Custom Bundle</a>
+    French keywords: a, a
+
+  Line 548:
+    Content:   {%- comment -%} FAQ Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 560:
+    Content:           <h3>Can I customize a bundle?</h3>
+    French keywords: a
+
+  Line 561:
+    Content:           <p>Pre-made bundles cannot be customized, but you can <a href="/pages/bundle-creator">build your own custom bundle</a> with 3-4 products and get the same 35% discount.</p>
+    French keywords: a, a
+
+  Line 570:
+    Content:           <h3>Can I return a bundle?</h3>
+    French keywords: a
+
+
+VIOLATION #30: /Users/mac/Desktop/Alpha-Medical/sections/main-blog.liquid
+Total occurrences: 11
+
+  Line 1:
+    Content: {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+    French keywords: article
+
+  Line 21:
+    Content: {%- paginate blog.articles by 6 -%}
+    French keywords: articles
+
+  Line 27:
+    Content:     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    French keywords: articles, articles
+
+  Line 28:
+    Content:       {%- for article in blog.articles -%}
+    French keywords: article, articles
+
+  Line 30:
+    Content:           class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    French keywords: article
+
+  Line 36:
+    Content:           {%- render 'article-card',
+    French keywords: article
+
+  Line 37:
+    Content:             article: article,
+    French keywords: article, article
+
+  Line 39:
+    Content:             media_aspect_ratio: article.image.aspect_ratio,
+    French keywords: article
+
+
+VIOLATION #31: /Users/mac/Desktop/Alpha-Medical/sections/main-page.liquid
+Total occurrences: 1
+
+  Line 26:
+    Content: {%- comment -%}
+    French keywords: comment
+
+
+VIOLATION #32: /Users/mac/Desktop/Alpha-Medical/sections/main-cart-footer.liquid
+Total occurrences: 9
+
+  Line 28:
+    Content:         <cart-note class="cart__note field">
+    French keywords: note
+
+  Line 29:
+    Content:           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
+    French keywords: note, note
+
+  Line 32:
+    Content:             name="note"
+    French keywords: note
+
+  Line 34:
+    Content:             id="Cart-note"
+    French keywords: note
+
+  Line 35:
+    Content:             placeholder="{{ 'sections.cart.note' | t }}"
+    French keywords: note
+
+  Line 36:
+    Content:           >{{ cart.note }}</textarea>
+    French keywords: note
+
+  Line 37:
+    Content:         </cart-note>
+    French keywords: note
+
+  Line 71:
+    Content:                 <small class="tax-note caption-large rte">
+    French keywords: note
+
+
+VIOLATION #33: /Users/mac/Desktop/Alpha-Medical/sections/main-login.liquid
+Total occurrences: 6
+
+  Line 65:
+    Content:       <a href="#login">
+    French keywords: a
+
+  Line 67:
+    Content:       </a>
+    French keywords: a
+
+  Line 143:
+    Content:         <a href="#recover">
+    French keywords: a
+
+  Line 145:
+    Content:         </a>
+    French keywords: a
+
+  Line 152:
+    Content:       <a href="{{ routes.account_register_url }}">
+    French keywords: a
+
+  Line 154:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #34: /Users/mac/Desktop/Alpha-Medical/sections/main-collection-product-grid.liquid
+Total occurrences: 1
+
+  Line 43:
+    Content:     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
+    French keywords: comment
+
+
+VIOLATION #35: /Users/mac/Desktop/Alpha-Medical/sections/main-register.liquid
+Total occurrences: 2
+
+  Line 35:
+    Content:               <a href="#RegisterForm-{{ field }}">
+    French keywords: a
+
+  Line 38:
+    Content:               </a>
+    French keywords: a
+
+
+VIOLATION #36: /Users/mac/Desktop/Alpha-Medical/sections/featured-product.liquid
+Total occurrences: 11
+
+  Line 48:
+    Content:   {% comment %} TODO: assign `product.selected_or_first_available_variant` to variable and replace usage to reduce verbosity {% endcomment %}
+    French keywords: comment
+
+  Line 127:
+    Content:                     <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
+    French keywords: note, note
+
+  Line 128:
+    Content:                       <span>{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 169:
+    Content:                     {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
+    French keywords: comment
+
+  Line 223:
+    Content:                         <button class="quantity__button" name="plus" type="button">
+    French keywords: plus
+
+  Line 228:
+    Content:                             {{- 'icon-plus.svg' | inline_asset_content -}}
+    French keywords: plus
+
+  Line 234:
+    Content:                         assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.min
+    French keywords: plus
+
+  Line 236:
+    Content:                           assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.increment
+    French keywords: plus
+
+  Line 453:
+    Content:             <a
+    French keywords: a
+
+  Line 463:
+    Content:             </a>
+    French keywords: a
+
+
+VIOLATION #37: /Users/mac/Desktop/Alpha-Medical/sections/main-article.liquid
+Total occurrences: 122
+
+  Line 5:
+    Content: <!-- Article Schema -->
+    French keywords: article
+
+  Line 9:
+    Content:   "@type": "Article",
+    French keywords: article
+
+  Line 10:
+    Content:   "headline": {{ article.title | json }},
+    French keywords: article
+
+  Line 11:
+    Content:   {% if article.image %}
+    French keywords: article
+
+  Line 12:
+    Content:   "image": {{ article.image | image_url: width: 1200 | prepend: "https:" | json }},
+    French keywords: article
+
+  Line 26:
+    Content:   "datePublished": "{{ article.published_at | date: '%Y-%m-%d' }}",
+    French keywords: article, y
+
+  Line 27:
+    Content:   "dateModified": "{{ article.updated_at | date: '%Y-%m-%d' }}",
+    French keywords: article, y
+
+  Line 28:
+    Content:   "description": {{ article.excerpt_or_content | strip_html | truncatewords: 30 | json }},
+    French keywords: article
+
+  Line 31:
+    Content:     "@id": {{ request.origin | append: article.url | json }}
+    French keywords: article
+
+  Line 36:
+    Content: <article class="article-template">
+    French keywords: article, article
+
+  Line 44:
+    Content:         {%- if article.image -%}
+    French keywords: article
+
+  Line 46:
+    Content:             class="article-template__hero-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    French keywords: article
+
+  Line 50:
+    Content:               class="article-template__hero-{{ block.settings.image_height }} media"
+    French keywords: article
+
+  Line 51:
+    Content:               {% if block.settings.image_height == 'adapt' and article.image %}
+    French keywords: article
+
+  Line 52:
+    Content:                 style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"
+    French keywords: article
+
+  Line 57:
+    Content:                   {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+    French keywords: article, article
+
+  Line 58:
+    Content:                   {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+    French keywords: article, article
+
+  Line 59:
+    Content:                   {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+    French keywords: article, article
+
+  Line 60:
+    Content:                   {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+    French keywords: article, article
+
+  Line 61:
+    Content:                   {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+    French keywords: article, article
+
+  Line 62:
+    Content:                   {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+    French keywords: article, article
+
+  Line 63:
+    Content:                   {{ article.image | image_url }} {{ article.image.width }}w
+    French keywords: article, article
+
+  Line 66:
+    Content:                 src="{{ article.image | image_url: width: 1100 }}"
+    French keywords: article
+
+  Line 69:
+    Content:                 width="{{ article.image.width }}"
+    French keywords: article
+
+  Line 70:
+    Content:                 height="{{ article.image.height }}"
+    French keywords: article
+
+  Line 71:
+    Content:                 alt="{{ article.image.alt | escape }}"
+    French keywords: article
+
+  Line 83:
+    Content:             class="article-template__title"
+    French keywords: article
+
+  Line 85:
+    Content:             {{ article.title | escape }}
+    French keywords: article
+
+  Line 89:
+    Content:               {{- article.published_at | time_tag: format: 'date' -}}
+    French keywords: article
+
+  Line 94:
+    Content:               <span>{{ article.author }}</span>
+    French keywords: article
+
+  Line 101:
+    Content:           class="article-template__content page-width page-width--narrow rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    French keywords: article
+
+  Line 104:
+    Content:           {{ article.content }}
+    French keywords: article
+
+  Line 107:
+    Content:         {%- comment -%} Context-Aware Article CTA {%- endcomment -%}
+    French keywords: article, comment
+
+  Line 109:
+    Content:           assign title_lower = article.title | downcase
+    French keywords: article
+
+  Line 142:
+    Content:             assign cta_text = "Get everything you need for a smooth recovery with our medical-grade braces, supports, and therapy devices."
+    French keywords: a
+
+  Line 149:
+    Content:           {% render 'article-cta',
+    French keywords: article
+
+  Line 159:
+    Content:           class="article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    French keywords: article
+
+  Line 162:
+    Content:           {% assign share_url = request.origin | append: article.url %}
+    French keywords: article
+
+  Line 168:
+    Content:   <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    French keywords: article
+
+  Line 169:
+    Content:     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
+    French keywords: article, a
+
+  Line 175:
+    Content:       {{ 'blogs.article.back_to_blog' | t: title: blog.title | escape }}
+    French keywords: article
+
+  Line 176:
+    Content:     </a>
+    French keywords: a
+
+  Line 179:
+    Content:     <div class="article-template__comment-wrapper background-secondary">
+    French keywords: article
+
+  Line 184:
+    Content:         {%- if article.comments_count > 0 -%}
+    French keywords: article
+
+  Line 185:
+    Content:           {%- assign anchorId = '#Comments-' | append: article.id -%}
+    French keywords: article
+
+  Line 187:
+    Content:           <h2 id="Comments-{{ article.id }}" tabindex="-1">
+    French keywords: article
+
+  Line 188:
+    Content:             {{ 'blogs.article.comments' | t: count: article.comments_count }}
+    French keywords: article, article
+
+  Line 190:
+    Content:           {% paginate article.comments by 5 %}
+    French keywords: article
+
+  Line 191:
+    Content:             <div class="article-template__comments">
+    French keywords: article
+
+  Line 192:
+    Content:               {%- if comment.status == 'pending' and comment.content -%}
+    French keywords: comment, comment
+
+  Line 193:
+    Content:                 <article id="{{ comment.id }}" class="article-template__comments-comment">
+    French keywords: article, article, comment, comment
+
+  Line 194:
+    Content:                   {{ comment.content }}
+    French keywords: comment
+
+  Line 196:
+    Content:                     <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span>
+    French keywords: comment
+
+  Line 198:
+    Content:                 </article>
+    French keywords: article
+
+  Line 201:
+    Content:               {%- for comment in article.comments -%}
+    French keywords: article, comment
+
+  Line 202:
+    Content:                 <article id="{{ comment.id }}" class="article-template__comments-comment">
+    French keywords: article, article, comment, comment
+
+  Line 203:
+    Content:                   {{ comment.content }}
+    French keywords: comment
+
+  Line 205:
+    Content:                     <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span
+    French keywords: comment
+
+  Line 207:
+    Content:                       {{- comment.created_at | time_tag: format: 'date' -}}
+    French keywords: comment
+
+  Line 210:
+    Content:                 </article>
+    French keywords: article
+
+  Line 216:
+    Content:         {% form 'new_comment', article %}
+    French keywords: article
+
+  Line 218:
+    Content:             assign post_message = 'blogs.article.success'
+    French keywords: article
+
+  Line 219:
+    Content:             if blog.moderated? and comment.status == 'unapproved'
+    French keywords: comment
+
+  Line 220:
+    Content:               assign post_message = 'blogs.article.success_moderated'
+    French keywords: article
+
+  Line 223:
+    Content:           <h2>{{ 'blogs.article.comment_form_title' | t }}</h2>
+    French keywords: article
+
+  Line 236:
+    Content:                   <a href="#CommentForm-{{ field }}" class="link">
+    French keywords: a
+
+  Line 238:
+    Content:                       {{ 'blogs.article.name' | t }}
+    French keywords: article
+
+  Line 240:
+    Content:                       {{ 'blogs.article.message' | t }}
+    French keywords: article
+
+  Line 245:
+    Content:                   </a>
+    French keywords: a
+
+  Line 262:
+    Content:               class="article-template__comments-fields"
+    French keywords: article
+
+  Line 265:
+    Content:             <div class="article-template__comment-fields">
+    French keywords: article
+
+  Line 269:
+    Content:                   name="comment[author]"
+    French keywords: comment
+
+  Line 280:
+    Content:                   placeholder="{{ 'blogs.article.name' | t }}"
+    French keywords: article
+
+  Line 283:
+    Content:                   {{- 'blogs.article.name' | t }}
+    French keywords: article
+
+  Line 292:
+    Content:                       {{- 'blogs.article.name' | t }}
+    French keywords: article
+
+  Line 301:
+    Content:                   name="comment[email]"
+    French keywords: comment
+
+  Line 314:
+    Content:                   placeholder="{{ 'blogs.article.email' | t }}"
+    French keywords: article
+
+  Line 317:
+    Content:                   {{- 'blogs.article.email' | t }}
+    French keywords: article
+
+  Line 326:
+    Content:                       {{- 'blogs.article.email' | t }}
+    French keywords: article
+
+  Line 336:
+    Content:                 name="comment[body]"
+    French keywords: comment
+
+  Line 345:
+    Content:                 placeholder="{{ 'blogs.article.message' | t }}"
+    French keywords: article
+
+  Line 348:
+    Content:                 {{- 'blogs.article.message' | t }}
+    French keywords: article
+
+  Line 358:
+    Content:                   {{- 'blogs.article.message' | t }}
+    French keywords: article
+
+  Line 365:
+    Content:             <p class="article-template__comment-warning caption">{{ 'blogs.article.moderated' | t }}</p>
+    French keywords: article, article
+
+  Line 367:
+    Content:           <input type="submit" class="button" value="{{ 'blogs.article.post' | t }}">
+    French keywords: article
+
+  Line 372:
+    Content: </article>
+    French keywords: article
+
+  Line 376:
+    Content:   "name": "t:sections.main-article.name",
+    French keywords: article
+
+  Line 385:
+    Content:       "name": "t:sections.main-article.blocks.featured_image.name",
+    French keywords: article
+
+  Line 394:
+    Content:               "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__1.label"
+    French keywords: article
+
+  Line 398:
+    Content:               "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__2.label"
+    French keywords: article
+
+  Line 402:
+    Content:               "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__3.label"
+    French keywords: article
+
+  Line 406:
+    Content:               "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__4.label"
+    French keywords: article
+
+  Line 410:
+    Content:           "label": "t:sections.main-article.blocks.featured_image.settings.image_height.label"
+    French keywords: article
+
+  Line 416:
+    Content:       "name": "t:sections.main-article.blocks.title.name",
+    French keywords: article
+
+  Line 423:
+    Content:           "label": "t:sections.main-article.blocks.title.settings.blog_show_date.label"
+    French keywords: article
+
+  Line 429:
+    Content:           "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
+    French keywords: article
+
+  Line 435:
+    Content:       "name": "t:sections.main-article.blocks.content.name",
+    French keywords: article
+
+  Line 440:
+    Content:       "name": "t:sections.main-article.blocks.share.name",
+    French keywords: article
+
+  Line 446:
+    Content:           "label": "t:sections.main-article.blocks.share.settings.text.label",
+    French keywords: article
+
+  Line 447:
+    Content:           "default": "t:sections.main-article.blocks.share.settings.text.default"
+    French keywords: article
+
+
+VIOLATION #38: /Users/mac/Desktop/Alpha-Medical/sections/cart-notification-product.liquid
+Total occurrences: 2
+
+  Line 36:
+    Content:                     <a href="{{ property.last }}" class="link" target="_blank">
+    French keywords: a
+
+  Line 38:
+    Content:                     </a>
+    French keywords: a
+
+
+VIOLATION #39: /Users/mac/Desktop/Alpha-Medical/sections/footer.liquid
+Total occurrences: 6
+
+  Line 1:
+    Content: {% comment %}theme-check-disable UndefinedObject{% endcomment %}
+    French keywords: comment
+
+  Line 94:
+    Content:                             <a
+    French keywords: a
+
+  Line 99:
+    Content:                             </a>
+    French keywords: a
+
+  Line 303:
+    Content:           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+    French keywords: y
+
+  Line 312:
+    Content:                     ><a href="{{ policy.url }}">{{ policy.title | escape }}</a></small
+    French keywords: a, a
+
+
+VIOLATION #40: /Users/mac/Desktop/Alpha-Medical/sections/smart-recommendations-section.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #41: /Users/mac/Desktop/Alpha-Medical/sections/main-404.liquid
+Total occurrences: 2
+
+  Line 20:
+    Content:   <a href="{{ routes.all_products_collection_url }}" class="button">
+    French keywords: a
+
+  Line 22:
+    Content:   </a>
+    French keywords: a
+
+
+VIOLATION #42: /Users/mac/Desktop/Alpha-Medical/sections/main-product.liquid
+Total occurrences: 18
+
+  Line 31:
+    Content:     "priceValidUntil": "{{ 'now' | date: '%s' | plus: 15552000 | date: '%Y-%m-%d' }}"
+    French keywords: plus, y
+
+  Line 174:
+    Content:                   <a href="{{ product.url }}" class="product__title">
+    French keywords: a
+
+  Line 178:
+    Content:                   </a>
+    French keywords: a
+
+  Line 190:
+    Content:                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
+    French keywords: note, note
+
+  Line 191:
+    Content:                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 308:
+    Content:                   {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
+    French keywords: comment
+
+  Line 362:
+    Content:                       <button class="quantity__button" name="plus" type="button">
+    French keywords: plus
+
+  Line 367:
+    Content:                           {{- 'icon-plus.svg' | inline_asset_content -}}
+    French keywords: plus
+
+  Line 373:
+    Content:                       assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.min
+    French keywords: plus
+
+  Line 375:
+    Content:                         assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.increment
+    French keywords: plus
+
+  Line 565:
+    Content:                 {% render 'product-low-stock-badge', product: product %}
+    French keywords: stock
+
+  Line 640:
+    Content:                             | plus: 0.0
+    French keywords: plus
+
+  Line 759:
+    Content:           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
+    French keywords: a
+
+  Line 762:
+    Content:           </a>
+    French keywords: a
+
+  Line 821:
+    Content: {%- comment -%} Sticky Add to Cart Bar - Mobile Only {%- endcomment -%}
+    French keywords: comment
+
+  Line 2527:
+    Content: {%- comment -%} Add current product to recently viewed {%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #43: /Users/mac/Desktop/Alpha-Medical/sections/related-products.liquid
+Total occurrences: 2
+
+  Line 39:
+    Content:     {%- comment -%}Direct render: Collection-based recommendations{%- endcomment -%}
+    French keywords: comment
+
+  Line 66:
+    Content:     {%- comment -%}Fallback to Shopify native recommendations API{%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #44: /Users/mac/Desktop/Alpha-Medical/sections/main-account.liquid
+Total occurrences: 13
+
+  Line 20:
+    Content:     <a href="{{ routes.account_logout_url }}">
+    French keywords: a
+
+  Line 25:
+    Content:     </a>
+    French keywords: a
+
+  Line 28:
+    Content:   {%- comment -%} Loyalty Points Widget - Gamified Rewards System {%- endcomment -%}
+    French keywords: comment
+
+  Line 61:
+    Content:                     <a
+    French keywords: a
+
+  Line 66:
+    Content:                     </a>
+    French keywords: a
+
+  Line 102:
+    Content:                     <a href="{{ paginate.previous.url }}" aria-label="{{ 'general.pagination.previous' | t }}">
+    French keywords: a
+
+  Line 106:
+    Content:                     </a>
+    French keywords: a
+
+  Line 113:
+    Content:                       <a href="{{ part.url }}" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
+    French keywords: a
+
+  Line 115:
+    Content:                       </a>
+    French keywords: a
+
+  Line 130:
+    Content:                     <a href="{{ paginate.next.url }}" aria-label="{{ 'general.pagination.next' | t }}">
+    French keywords: a
+
+  Line 134:
+    Content:                     </a>
+    French keywords: a
+
+  Line 149:
+    Content:       <a href="{{ routes.account_addresses_url }}">
+    French keywords: a
+
+  Line 151:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #45: /Users/mac/Desktop/Alpha-Medical/sections/announcement-bar.liquid
+Total occurrences: 4
+
+  Line 37:
+    Content:             <a
+    French keywords: a
+
+  Line 49:
+    Content:             </a>
+    French keywords: a
+
+  Line 97:
+    Content:                       <a
+    French keywords: a
+
+  Line 109:
+    Content:                       </a>
+    French keywords: a
+
+
+VIOLATION #46: /Users/mac/Desktop/Alpha-Medical/snippets/loyalty-history.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 23:
+    Content:       {%- comment -%} Transactions will be rendered by JavaScript {%- endcomment -%}
+    French keywords: comment
+
+  Line 187:
+    Content:       transactions.sort((a, b) => new Date(b.date) - new Date(a.date));
+    French keywords: a, a
+
+  Line 204:
+    Content:         const formattedDate = date.toLocaleDateString('en-US', {
+    French keywords: en
+
+
+VIOLATION #47: /Users/mac/Desktop/Alpha-Medical/snippets/header-dropdown-menu.liquid
+Total occurrences: 8
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a standard dropdown style menu for the header.
+    French keywords: a
+
+  Line 37:
+    Content:                       <a
+    French keywords: a
+
+  Line 46:
+    Content:                       </a>
+    French keywords: a
+
+  Line 62:
+    Content:                               <a
+    French keywords: a
+
+  Line 71:
+    Content:                               </a>
+    French keywords: a
+
+  Line 83:
+    Content:           <a
+    French keywords: a
+
+  Line 98:
+    Content:           </a>
+    French keywords: a
+
+
+VIOLATION #48: /Users/mac/Desktop/Alpha-Medical/snippets/loyalty-points-badge.liquid
+Total occurrences: 13
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 12:
+    Content:     comment "Read from loyalty metafields"
+    French keywords: comment
+
+  Line 20:
+    Content:       comment "Fallback: total_spent"
+    French keywords: comment
+
+  Line 42:
+    Content:     {%- comment -%} Logged in - Show compact dashboard {%- endcomment -%}
+    French keywords: comment
+
+  Line 58:
+    Content:     {%- comment -%} Mini progress to next tier {%- endcomment -%}
+    French keywords: comment
+
+  Line 75:
+    Content:     {%- comment -%} Rewards CTA {%- endcomment -%}
+    French keywords: comment
+
+  Line 77:
+    Content:       <a href="/account" class="rewards-cta-compact">
+    French keywords: a
+
+  Line 79:
+    Content:       </a>
+    French keywords: a
+
+  Line 81:
+    Content:       <a href="/account" class="rewards-cta-compact secondary">
+    French keywords: a
+
+  Line 83:
+    Content:       </a>
+    French keywords: a
+
+  Line 87:
+    Content:     {%- comment -%} Not logged in - CTA {%- endcomment -%}
+    French keywords: comment
+
+  Line 95:
+    Content:       <a href="/account/login" class="btn-join-compact">Join</a>
+    French keywords: a, a
+
+
+VIOLATION #49: /Users/mac/Desktop/Alpha-Medical/snippets/size-quiz.liquid
+Total occurrences: 15
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 26:
+    Content:         <p class="size-quiz-subtitle">Answer a few quick questions to get your personalized size recommendation</p>
+    French keywords: a
+
+  Line 47:
+    Content:                 <rect x="14" y="10" width="20" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+    French keywords: y
+
+  Line 54:
+    Content:                 <rect x="12" y="18" width="24" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+    French keywords: y
+
+  Line 75:
+    Content:                 <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+    French keywords: y
+
+  Line 89:
+    Content:             Measure around the center of your kneecap with a soft measuring tape. Stand with leg slightly bent.
+    French keywords: a
+
+  Line 221:
+    Content:               <p>Contact us: <a href="mailto:support@alphamedical.shop">support@alphamedical.shop</a></p>
+    French keywords: a, a
+
+  Line 290:
+    Content:     overflow-y: auto;
+    French keywords: y
+
+  Line 714:
+    Content:   .results-help a {
+    French keywords: a
+
+  Line 720:
+    Content:   .results-help a:hover {
+    French keywords: a
+
+  Line 806:
+    Content:       guide: 'Measure around the center of your kneecap with a soft measuring tape. Stand with leg slightly bent.',
+    French keywords: a
+
+  Line 811:
+    Content:       guide: 'Measure around your natural waistline (at belly button level) with a measuring tape. Stand naturally.',
+    French keywords: a
+
+  Line 816:
+    Content:       guide: 'Measure around your wrist just below the wrist bone with a measuring tape. Hand should be relaxed.',
+    French keywords: a
+
+  Line 821:
+    Content:       guide: 'Measure around the narrowest part of your ankle (just above the ankle bone) with a measuring tape.',
+    French keywords: a
+
+
+VIOLATION #50: /Users/mac/Desktop/Alpha-Medical/snippets/cart-drawer.liquid
+Total occurrences: 33
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 45:
+    Content:               <a href="{{ routes.all_products_collection_url }}" class="button">
+    French keywords: a
+
+  Line 47:
+    Content:               </a>
+    French keywords: a
+
+  Line 158:
+    Content:                         id="CartDrawer-Item-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 171:
+    Content:                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
+    French keywords: comment, a
+
+  Line 172:
+    Content:                             <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
+    French keywords: a, a
+
+  Line 189:
+    Content:                           <a href="{{ item.url }}" class="cart-item__name h4 break">
+    French keywords: a
+
+  Line 191:
+    Content:                           </a>
+    French keywords: a
+
+  Line 238:
+    Content:                                         <a
+    French keywords: a
+
+  Line 245:
+    Content:                                         </a>
+    French keywords: a
+
+  Line 356:
+    Content:                                     id="Drawer-quantity-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 357:
+    Content:                                     data-index="{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 364:
+    Content:                                     name="plus"
+    French keywords: plus
+
+  Line 378:
+    Content:                                       {{- 'icon-plus.svg' | inline_asset_content -}}
+    French keywords: plus
+
+  Line 384:
+    Content:                                 id="CartDrawer-Remove-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 385:
+    Content:                                 data-index="{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 413:
+    Content:                                     {{ 'products.product.volume_pricing.note' | t }}
+    French keywords: note
+
+  Line 415:
+    Content:                                     {{ 'products.product.quantity.note' | t }}
+    French keywords: note
+
+  Line 488:
+    Content:                               id="CartDrawer-LineItemError-{{ item.index | plus: 1 }}"
+    French keywords: plus
+
+  Line 518:
+    Content:                 {{ 'sections.cart.note' | t }}
+    French keywords: note
+
+  Line 522:
+    Content:             <cart-note class="cart__note field">
+    French keywords: note
+
+  Line 523:
+    Content:               <label class="visually-hidden" for="CartDrawer-Note">{{ 'sections.cart.note' | t }}</label>
+    French keywords: note, note
+
+  Line 525:
+    Content:                 id="CartDrawer-Note"
+    French keywords: note
+
+  Line 527:
+    Content:                 name="note"
+    French keywords: note
+
+  Line 528:
+    Content:                 placeholder="{{ 'sections.cart.note' | t }}"
+    French keywords: note
+
+  Line 529:
+    Content:               >{{ cart.note }}</textarea>
+    French keywords: note
+
+  Line 530:
+    Content:             </cart-note>
+    French keywords: note
+
+  Line 534:
+    Content:         {%- comment -%}Cart Drawer Upsells - Contextual Product Recommendations{%- endcomment -%}
+    French keywords: comment
+
+  Line 610:
+    Content:                 assign upsell_count = upsell_count | plus: 1
+    French keywords: plus
+
+  Line 833:
+    Content:           <small class="tax-note caption-large rte">
+    French keywords: note
+
+
+VIOLATION #51: /Users/mac/Desktop/Alpha-Medical/snippets/recently-viewed-display.liquid
+Total occurrences: 2
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 8:
+    Content:   {%- comment -%} Content will be dynamically inserted by JavaScript {%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #52: /Users/mac/Desktop/Alpha-Medical/snippets/product-bundle-smart-cta.liquid
+Total occurrences: 4
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 3:
+    Content:   Automatically detects if product is in a bundle and shows personalized CTA
+    French keywords: a
+
+  Line 194:
+    Content:         <a href="${bestBundle.url}" class="smart-bundle-cta__button">
+    French keywords: a
+
+  Line 196:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #53: /Users/mac/Desktop/Alpha-Medical/snippets/loading-spinner.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #54: /Users/mac/Desktop/Alpha-Medical/snippets/header-drawer.liquid
+Total occurrences: 28
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a header drawer menu for mobile and desktop.
+    French keywords: a
+
+  Line 56:
+    Content:                                   <a
+    French keywords: a
+
+  Line 65:
+    Content:                                   </a>
+    French keywords: a
+
+  Line 100:
+    Content:                                             <a
+    French keywords: a
+
+  Line 109:
+    Content:                                             </a>
+    French keywords: a
+
+  Line 123:
+    Content:                     <a
+    French keywords: a
+
+  Line 132:
+    Content:                     </a>
+    French keywords: a
+
+  Line 140:
+    Content:               <a
+    French keywords: a
+
+  Line 167:
+    Content:               </a>
+    French keywords: a
+
+  Line 201:
+    Content:                   <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 206:
+    Content:                   </a>
+    French keywords: a
+
+  Line 211:
+    Content:                   <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 216:
+    Content:                   </a>
+    French keywords: a
+
+  Line 221:
+    Content:                   <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 226:
+    Content:                   </a>
+    French keywords: a
+
+  Line 231:
+    Content:                   <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 236:
+    Content:                   </a>
+    French keywords: a
+
+  Line 241:
+    Content:                   <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 246:
+    Content:                   </a>
+    French keywords: a
+
+  Line 251:
+    Content:                   <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 256:
+    Content:                   </a>
+    French keywords: a
+
+  Line 261:
+    Content:                   <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 266:
+    Content:                   </a>
+    French keywords: a
+
+  Line 271:
+    Content:                   <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 276:
+    Content:                   </a>
+    French keywords: a
+
+  Line 281:
+    Content:                   <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
+    French keywords: a
+
+  Line 286:
+    Content:                   </a>
+    French keywords: a
+
+
+VIOLATION #55: /Users/mac/Desktop/Alpha-Medical/snippets/cart-notification.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 39:
+    Content:         <a
+    French keywords: a
+
+  Line 45:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #56: /Users/mac/Desktop/Alpha-Medical/snippets/quantity-input.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 40:
+    Content:   <button class="quantity__button" name="plus" type="button" data-target="increment-{{ variant.id }}">
+    French keywords: plus
+
+  Line 44:
+    Content:     <span class="svg-wrapper">{{ 'icon-plus.svg' | inline_asset_content }}</span>
+    French keywords: plus
+
+
+VIOLATION #57: /Users/mac/Desktop/Alpha-Medical/snippets/product-thumbnail.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 2:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 3:
+    Content:   Renders a product thumbnail with a modal-opener
+    French keywords: a, a
+
+  Line 13:
+    Content:   - xr_button: {Boolean} Renders the "View in your space" button (shopify-xr-button) if the media is a 3D Model
+    French keywords: a
+
+
+VIOLATION #58: /Users/mac/Desktop/Alpha-Medical/snippets/swatch.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a swatch component.
+    French keywords: a
+
+  Line 4:
+    Content:   - swatch: {Object} a swatch object
+    French keywords: a
+
+
+VIOLATION #59: /Users/mac/Desktop/Alpha-Medical/snippets/product-media-gallery.liquid
+Total occurrences: 9
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a product media gallery. Should be used with 'media-gallery.js'
+    French keywords: a
+
+  Line 7:
+    Content:   - variant_images: {Array} Product images associated with a variant
+    French keywords: a
+
+  Line 25:
+    Content:     assign media_count = media_count | minus: variant_images.size | plus: 1
+    French keywords: plus
+
+  Line 56:
+    Content:     <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
+    French keywords: a
+
+  Line 58:
+    Content:     </a>
+    French keywords: a
+
+  Line 104:
+    Content:               assign media_position = media_position | default: 0 | plus: 1
+    French keywords: plus
+
+  Line 222:
+    Content:             assign media_index = media_index | plus: 1
+    French keywords: plus
+
+  Line 266:
+    Content:               assign media_index = media_index | plus: 1
+    French keywords: plus
+
+
+VIOLATION #60: /Users/mac/Desktop/Alpha-Medical/snippets/article-card.liquid
+Total occurrences: 85
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders an article card for a given blog with settings to either show the image or not.
+    French keywords: article, a
+
+  Line 6:
+    Content:   - article: {Object} Article object
+    French keywords: article, article
+
+  Line 7:
+    Content:   - media_aspect_ratio: {String} The setting changes the aspect ratio of the article image, if shown
+    French keywords: article
+
+  Line 8:
+    Content:   - media_height: {String} The setting changes the height of the article image. Overrides media_aspect_ratio.
+    French keywords: article
+
+  Line 9:
+    Content:   - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+    French keywords: article
+
+  Line 10:
+    Content:   - show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+    French keywords: article
+
+  Line 11:
+    Content:   - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+    French keywords: article
+
+  Line 16:
+    Content:   {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+    French keywords: article, article, article
+
+  Line 19:
+    Content: {%- if article and article != empty -%}
+    French keywords: article, article
+
+  Line 26:
+    Content:   <div class="article-card-wrapper card-wrapper underline-links-hover">
+    French keywords: article
+
+  Line 27:
+    Content:     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
+    French keywords: article, article, article, comment
+
+  Line 30:
+    Content:         card article-card
+    French keywords: article
+
+  Line 32:
+    Content:         {% if media_height and media_height != 'adapt' %} article-card__image--{{ media_height }}{% endif %}
+    French keywords: article
+
+  Line 33:
+    Content:         {% if article.image and show_image %} card--media{% else %} card--text{% endif %}
+    French keywords: article
+
+  Line 35:
+    Content:         {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}
+    French keywords: article
+
+  Line 40:
+    Content:         class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %}"
+    French keywords: article
+
+  Line 43:
+    Content:         {%- if show_image == true and article.image -%}
+    French keywords: article
+
+  Line 44:
+    Content:           <div class="article-card__image-wrapper card__media">
+    French keywords: article
+
+  Line 46:
+    Content:               class="article-card__image media media--hover-effect"
+    French keywords: article
+
+  Line 48:
+    Content:                 style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"
+    French keywords: article
+
+  Line 51:
+    Content:               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 54:
+    Content:                   {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
+    French keywords: article, article
+
+  Line 55:
+    Content:                   {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
+    French keywords: article, article
+
+  Line 56:
+    Content:                   {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
+    French keywords: article, article
+
+  Line 57:
+    Content:                   {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
+    French keywords: article, article
+
+  Line 58:
+    Content:                   {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+    French keywords: article, article
+
+  Line 59:
+    Content:                   {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+    French keywords: article, article
+
+  Line 60:
+    Content:                   {{ article.image.src | image_url }} {{ article.image.src.width }}w
+    French keywords: article, article
+
+  Line 62:
+    Content:                 src="{{ article.image.src | image_url: width: 533 }}"
+    French keywords: article
+
+  Line 64:
+    Content:                 alt="{{ article.image.src.alt | escape }}"
+    French keywords: article
+
+  Line 69:
+    Content:                 width="{{ article.image.width }}"
+    French keywords: article
+
+  Line 70:
+    Content:                 height="{{ article.image.height }}"
+    French keywords: article
+
+  Line 72:
+    Content:               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 79:
+    Content:               <a href="{{ article.url }}" class="full-unstyled-link">
+    French keywords: article, a
+
+  Line 80:
+    Content:                 {{ article.title | truncate: 50 | escape }}
+    French keywords: article
+
+  Line 81:
+    Content:               </a>
+    French keywords: a
+
+  Line 83:
+    Content:             <div class="article-card__info caption-with-letter-spacing h5">
+    French keywords: article
+
+  Line 85:
+    Content:                 <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+    French keywords: article
+
+  Line 88:
+    Content:                 <span>{{ article.author }}</span>
+    French keywords: article
+
+  Line 92:
+    Content:               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+    French keywords: article, article
+
+  Line 93:
+    Content:                 <p class="article-card__excerpt rte-width">
+    French keywords: article
+
+  Line 94:
+    Content:                   {%- if article.excerpt.size > 0 -%}
+    French keywords: article
+
+  Line 95:
+    Content:                     {{ article.excerpt | strip_html | truncatewords: 30 }}
+    French keywords: article
+
+  Line 97:
+    Content:                     {{ article.content | strip_html | truncatewords: 30 }}
+    French keywords: article
+
+  Line 101:
+    Content:               <div class="article-card__footer">
+    French keywords: article
+
+  Line 102:
+    Content:                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+    French keywords: article
+
+  Line 103:
+    Content:                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+    French keywords: article, article
+
+  Line 110:
+    Content:               <span class="badge color-{{ settings.color_schemes | first }}">{{ 'blogs.article.blog' | t }}</span>
+    French keywords: article
+
+  Line 118:
+    Content:             <a href="{{ article.url }}" class="full-unstyled-link">
+    French keywords: article, a
+
+  Line 119:
+    Content:               {{ article.title | truncate: 50 | escape }}
+    French keywords: article
+
+  Line 120:
+    Content:             </a>
+    French keywords: a
+
+  Line 122:
+    Content:           <div class="article-card__info caption-with-letter-spacing h5">
+    French keywords: article
+
+  Line 124:
+    Content:               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+    French keywords: article
+
+  Line 127:
+    Content:               <span>{{ article.author }}</span>
+    French keywords: article
+
+  Line 131:
+    Content:             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+    French keywords: article, article
+
+  Line 132:
+    Content:               <p class="article-card__excerpt rte-width">
+    French keywords: article
+
+  Line 133:
+    Content:                 {%- if article.excerpt.size > 0 -%}
+    French keywords: article
+
+  Line 134:
+    Content:                   {{ article.excerpt | strip_html | truncatewords: 30 }}
+    French keywords: article
+
+  Line 136:
+    Content:                   {{ article.content | strip_html | truncatewords: 30 }}
+    French keywords: article
+
+  Line 140:
+    Content:             <div class="article-card__footer">
+    French keywords: article
+
+  Line 141:
+    Content:               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+    French keywords: article
+
+  Line 142:
+    Content:                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+    French keywords: article, article
+
+  Line 149:
+    Content:             <span class="badge color-{{ settings.color_schemes | first }}">{{ 'blogs.article.blog' | t }}</span>
+    French keywords: article
+
+
+VIOLATION #61: /Users/mac/Desktop/Alpha-Medical/snippets/free-shipping-progress-bar.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 20:
+    Content:     {%- comment -%} Free shipping unlocked {%- endcomment -%}
+    French keywords: comment
+
+  Line 29:
+    Content:     {%- comment -%} Show progress {%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #62: /Users/mac/Desktop/Alpha-Medical/snippets/product-social-proof.liquid
+Total occurrences: 4
+
+  Line 2:
+    Content:   comment
+    French keywords: comment
+
+  Line 8:
+    Content:   assign product_id_number = product.id | split: '/' | last | plus: 0
+    French keywords: plus
+
+  Line 11:
+    Content:   assign total_viewers = base_viewers | plus: variation
+    French keywords: plus
+
+  Line 13:
+    Content:   comment
+    French keywords: comment
+
+
+VIOLATION #63: /Users/mac/Desktop/Alpha-Medical/snippets/card-product.liquid
+Total occurrences: 35
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a product card
+    French keywords: a
+
+  Line 13:
+    Content:   - skip_styles: {Boolean} Don't include component styles. Useful when rendering multiple product cards in a loop. Default: false (optional)
+    French keywords: a
+
+  Line 16:
+    Content:   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
+    French keywords: a
+
+  Line 63:
+    Content:               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 84:
+    Content:               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 117:
+    Content:               <a
+    French keywords: a
+
+  Line 124:
+    Content:               </a>
+    French keywords: a
+
+  Line 154:
+    Content:             <a
+    French keywords: a
+
+  Line 161:
+    Content:             </a>
+    French keywords: a
+
+  Line 219:
+    Content:                   <button class="card__information-volume-pricing-note card__information-volume-pricing-note--button card__information-volume-pricing-note--button-{{ settings.card_text_alignment }} quantity-popover__info-button--icon-only button button button--tertiary medium-hide small-hide">
+    French keywords: note, note, note
+
+  Line 220:
+    Content:                     <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 222:
+    Content:                   <button class="card__information-volume-pricing-note card__information-volume-pricing-note--button card__information-volume-pricing-note--button-{{ settings.card_text_alignment }} quantity-popover__info-button--icon-with-label button button--tertiary large-up-hide">
+    French keywords: note, note, note
+
+  Line 223:
+    Content:                     <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 226:
+    Content:                 <div class="card__information-volume-pricing-note">
+    French keywords: note
+
+  Line 227:
+    Content:                   <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 383:
+    Content:                         {{- 'icon-plus.svg' | inline_asset_content -}}
+    French keywords: plus
+
+  Line 475:
+    Content:                               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 496:
+    Content:                               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+    French keywords: comment
+
+  Line 500:
+    Content:                         <a
+    French keywords: a
+
+  Line 510:
+    Content:                         </a>
+    French keywords: a
+
+  Line 513:
+    Content:                         <a href="{{ card_product.url }}" class="full-unstyled-link">
+    French keywords: a
+
+  Line 515:
+    Content:                         </a>
+    French keywords: a
+
+  Line 518:
+    Content:                           <div class="card__information-volume-pricing-note">
+    French keywords: note
+
+  Line 519:
+    Content:                             <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 526:
+    Content:                         <a href="{{ card_product.url }}" class="full-unstyled-link">
+    French keywords: a
+
+  Line 530:
+    Content:                         </a>
+    French keywords: a
+
+  Line 533:
+    Content:                           <div class="card__information-volume-pricing-note">
+    French keywords: note
+
+  Line 534:
+    Content:                             <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+    French keywords: note
+
+  Line 610:
+    Content:             <a role="link" aria-disabled="true" class="full-unstyled-link">
+    French keywords: a
+
+  Line 612:
+    Content:             </a>
+    French keywords: a
+
+
+VIOLATION #64: /Users/mac/Desktop/Alpha-Medical/snippets/loyalty-points-widget.liquid
+Total occurrences: 17
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 16:
+    Content:     comment "Read from loyalty metafields (requires Shopify plan or higher)"
+    French keywords: comment
+
+  Line 24:
+    Content:       comment "Metafields exist - use real loyalty data"
+    French keywords: comment
+
+  Line 31:
+    Content:       comment "Fallback: Calculate from total_spent (mockup mode)"
+    French keywords: comment
+
+  Line 37:
+    Content:     comment "Determine tier based on points"
+    French keywords: comment
+
+  Line 49:
+    Content:     comment "Calculate rewards available (100 points = $5)"
+    French keywords: comment
+
+  Line 57:
+    Content:     {%- comment -%} Logged in - Show loyalty dashboard {%- endcomment -%}
+    French keywords: comment
+
+  Line 108:
+    Content:     {%- comment -%} Tier Progress Bar {%- endcomment -%}
+    French keywords: comment
+
+  Line 139:
+    Content:     {%- comment -%} Redemption Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 142:
+    Content:     {%- comment -%} How to Earn Points {%- endcomment -%}
+    French keywords: comment
+
+  Line 173:
+    Content:     {%- comment -%} Tier Benefits {%- endcomment -%}
+    French keywords: comment
+
+  Line 204:
+    Content:     {%- comment -%} Transaction History {%- endcomment -%}
+    French keywords: comment
+
+  Line 208:
+    Content:     {%- comment -%} Not logged in - CTA to join {%- endcomment -%}
+    French keywords: comment
+
+  Line 225:
+    Content:         <a href="/account/register" class="btn-primary">Sign Up Free</a>
+    French keywords: a, a
+
+  Line 226:
+    Content:         <a href="/account/login" class="btn-secondary">Log In</a>
+    French keywords: a, a
+
+
+VIOLATION #65: /Users/mac/Desktop/Alpha-Medical/snippets/country-localization.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 98:
+    Content:               <a
+    French keywords: a
+
+  Line 119:
+    Content:               </a>
+    French keywords: a
+
+  Line 127:
+    Content:             <a
+    French keywords: a
+
+  Line 148:
+    Content:             </a>
+    French keywords: a
+
+
+VIOLATION #66: /Users/mac/Desktop/Alpha-Medical/snippets/bundle-creator-cta.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 26:
+    Content:         <a href="/pages/bundle-creator" class="bundle-cta-btn">
+    French keywords: a
+
+  Line 31:
+    Content:         </a>
+    French keywords: a
+
+  Line 32:
+    Content:         <p class="bundle-cta-note">✨ Community-validated · Free to propose · 3-5 day review</p>
+    French keywords: note
+
+  Line 188:
+    Content: .bundle-cta-note {
+    French keywords: note
+
+
+VIOLATION #67: /Users/mac/Desktop/Alpha-Medical/snippets/loyalty-redemption-form.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 31:
+    Content:       {%- comment -%} 100 points = $5 {%- endcomment -%}
+    French keywords: comment
+
+  Line 44:
+    Content:       {%- comment -%} 200 points = $12 (bonus $2) {%- endcomment -%}
+    French keywords: comment
+
+  Line 57:
+    Content:       {%- comment -%} 500 points = $35 (bonus $10) {%- endcomment -%}
+    French keywords: comment
+
+  Line 70:
+    Content:       {%- comment -%} 1000 points = $80 (bonus $20) {%- endcomment -%}
+    French keywords: comment
+
+
+VIOLATION #68: /Users/mac/Desktop/Alpha-Medical/snippets/language-localization.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 23:
+    Content:           <a
+    French keywords: a
+
+  Line 43:
+    Content:           </a>
+    French keywords: a
+
+
+VIOLATION #69: /Users/mac/Desktop/Alpha-Medical/snippets/exit-intent-popup.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #70: /Users/mac/Desktop/Alpha-Medical/snippets/product-trust-badges.liquid
+Total occurrences: 6
+
+  Line 2:
+    Content:   <a href="/pages/returns-exchanges" class="trust-badge trust-badge--primary trust-badge--clickable">
+    French keywords: a
+
+  Line 11:
+    Content:   </a>
+    French keywords: a
+
+  Line 13:
+    Content:   <a href="/pages/shipping-delivery" class="trust-badge trust-badge--info trust-badge--clickable">
+    French keywords: a
+
+  Line 21:
+    Content:   </a>
+    French keywords: a
+
+  Line 53:
+    Content:   <a href="/pages/warranty-guarantee" class="trust-badge trust-badge--warranty trust-badge--clickable">
+    French keywords: a
+
+  Line 61:
+    Content:   </a>
+    French keywords: a
+
+
+VIOLATION #71: /Users/mac/Desktop/Alpha-Medical/snippets/header-search.liquid
+Total occurrences: 2
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a header search modal. Should be used with 'header.liquid'
+    French keywords: a
+
+
+VIOLATION #72: /Users/mac/Desktop/Alpha-Medical/snippets/welcome-popup.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #73: /Users/mac/Desktop/Alpha-Medical/snippets/swatch-input.liquid
+Total occurrences: 2
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a swatch input component.
+    French keywords: a
+
+
+VIOLATION #74: /Users/mac/Desktop/Alpha-Medical/snippets/buy-buttons.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #75: /Users/mac/Desktop/Alpha-Medical/snippets/gift-card-recipient-form.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 50:
+    Content:                 <a href="#Recipient-{{ field }}-{{ section.id }}">
+    French keywords: a
+
+  Line 52:
+    Content:                 </a>
+    French keywords: a
+
+
+VIOLATION #76: /Users/mac/Desktop/Alpha-Medical/snippets/product-variant-options.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #77: /Users/mac/Desktop/Alpha-Medical/snippets/bundles-cta-banner.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 238:
+    Content:       <a href="/pages/bundles" class="bundle-cta-card primary">
+    French keywords: a
+
+  Line 247:
+    Content:       </a>
+    French keywords: a
+
+  Line 250:
+    Content:       <a href="/pages/bundle-creator" class="bundle-cta-card secondary">
+    French keywords: a
+
+  Line 259:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #78: /Users/mac/Desktop/Alpha-Medical/snippets/sticky-add-to-cart.liquid
+Total occurrences: 4
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 3:
+    Content:   Displays a fixed add-to-cart bar at the bottom of the screen when the main add-to-cart button is out of view
+    French keywords: a
+
+  Line 43:
+    Content:                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+    French keywords: y
+
+  Line 122:
+    Content:             class="sticky-atc__qty-btn sticky-atc__qty-plus"
+    French keywords: plus
+
+
+VIOLATION #79: /Users/mac/Desktop/Alpha-Medical/snippets/size-guide-modal.liquid
+Total occurrences: 18
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 16:
+    Content: {%- comment -%} Only show if product has variants (e.g., sizes) {%- endcomment -%}
+    French keywords: comment
+
+  Line 18:
+    Content:   {%- comment -%} Check if product has size options {%- endcomment -%}
+    French keywords: comment
+
+  Line 22:
+    Content:     {%- if option_name_downcase contains 'size' or option_name_downcase contains 'taille' -%}
+    French keywords: taille
+
+  Line 64:
+    Content:           {%- comment -%} Check for custom size chart metafield {%- endcomment -%}
+    French keywords: comment
+
+  Line 70:
+    Content:             {%- comment -%} Default size charts by product type {%- endcomment -%}
+    French keywords: comment
+
+  Line 72:
+    Content:             {%- comment -%} Determine product category from product type or title {%- endcomment -%}
+    French keywords: comment
+
+  Line 77:
+    Content:               {%- comment -%} Knee Braces Size Chart {%- endcomment -%}
+    French keywords: comment
+
+  Line 118:
+    Content:               {%- comment -%} Back Supports Size Chart {%- endcomment -%}
+    French keywords: comment
+
+  Line 159:
+    Content:               {%- comment -%} Compression Sleeves Size Chart {%- endcomment -%}
+    French keywords: comment
+
+  Line 200:
+    Content:               {%- comment -%} Generic Size Chart {%- endcomment -%}
+    French keywords: comment
+
+  Line 236:
+    Content:             {%- comment -%} Measurement Instructions {%- endcomment -%}
+    French keywords: comment
+
+  Line 240:
+    Content:                 <li><strong>Use a flexible tape measure</strong> - A soft measuring tape gives the most accurate results.</li>
+    French keywords: a, a
+
+  Line 257:
+    Content:             {%- comment -%} Contact Support {%- endcomment -%}
+    French keywords: comment
+
+  Line 261:
+    Content:                 <a href="{{ pages['contact'].url | default: '/pages/contact' }}" class="size-guide-modal__footer-link">Contact our support team</a>
+    French keywords: a, a
+
+  Line 400:
+    Content:         overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #80: /Users/mac/Desktop/Alpha-Medical/snippets/quick-order-list-row.liquid
+Total occurrences: 8
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 154:
+    Content:     {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
+    French keywords: comment
+
+  Line 202:
+    Content:                   {{ 'products.product.volume_pricing.note' | t }}
+    French keywords: note
+
+  Line 204:
+    Content:                   {{ 'products.product.quantity.note' | t }}
+    French keywords: note
+
+  Line 270:
+    Content:             {% comment %} TODO: Remove theme check {% endcomment %}
+    French keywords: comment
+
+  Line 304:
+    Content:               {{ 'products.product.volume_pricing.note' | t }}
+    French keywords: note
+
+  Line 306:
+    Content:               {{ 'products.product.quantity.note' | t }}
+    French keywords: note
+
+  Line 416:
+    Content:     {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
+    French keywords: comment
+
+
+VIOLATION #81: /Users/mac/Desktop/Alpha-Medical/snippets/product-media.liquid
+Total occurrences: 2
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 7:
+    Content:   - variant_image: {Boolean} Whether or not media is associated with a variant
+    French keywords: a
+
+
+VIOLATION #82: /Users/mac/Desktop/Alpha-Medical/snippets/quick-order-list.liquid
+Total occurrences: 13
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a list of product's variants
+    French keywords: a
+
+  Line 7:
+    Content:   - is_modal: {Boolean} Defines if this snippet lives in a modal (optional)
+    French keywords: a
+
+  Line 13:
+    Content: {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
+    French keywords: comment
+
+  Line 126:
+    Content:         {% comment %} Populated by JS {% endcomment %}
+    French keywords: comment
+
+  Line 136:
+    Content:               <a
+    French keywords: a
+
+  Line 141:
+    Content:               </a>
+    French keywords: a
+
+  Line 166:
+    Content:               {% comment %} Populated by JS {% endcomment %}
+    French keywords: comment
+
+  Line 178:
+    Content:                 {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
+    French keywords: comment
+
+  Line 185:
+    Content:             <small class="tax-note caption-large rte">
+    French keywords: note
+
+  Line 227:
+    Content:               <a
+    French keywords: a
+
+  Line 232:
+    Content:               </a>
+    French keywords: a
+
+  Line 258:
+    Content:               {% comment %} Populated by JS {% endcomment %}
+    French keywords: comment
+
+
+VIOLATION #83: /Users/mac/Desktop/Alpha-Medical/snippets/bundle-builder-cta-banner.liquid
+Total occurrences: 5
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 44:
+    Content:       <a href="/pages/bundle-creation" class="bundle-cta-button">
+    French keywords: a
+
+  Line 49:
+    Content:       </a>
+    French keywords: a
+
+  Line 50:
+    Content:       <p class="banner-note">Free to propose · No commitment</p>
+    French keywords: note
+
+  Line 179:
+    Content: .bundle-builder-cta-banner .banner-note {
+    French keywords: note
+
+
+VIOLATION #84: /Users/mac/Desktop/Alpha-Medical/snippets/meta-tags.liquid
+Total occurrences: 2
+
+  Line 15:
+    Content:   elsif request.page_type == 'article'
+    French keywords: article
+
+  Line 16:
+    Content:     assign og_type = 'article'
+    French keywords: article
+
+
+VIOLATION #85: /Users/mac/Desktop/Alpha-Medical/snippets/share-button.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #86: /Users/mac/Desktop/Alpha-Medical/snippets/breadcrumbs.liquid
+Total occurrences: 14
+
+  Line 18:
+    Content:       {%- assign position = position | plus: 1 -%}
+    French keywords: plus
+
+  Line 34:
+    Content:         {%- assign position = position | plus: 1 -%}
+    French keywords: plus
+
+  Line 49:
+    Content:       {%- elsif request.page_type == 'article' -%}
+    French keywords: article
+
+  Line 56:
+    Content:         {%- assign position = position | plus: 1 -%}
+    French keywords: plus
+
+  Line 60:
+    Content:         "name": {{ article.title | json }},
+    French keywords: article
+
+  Line 61:
+    Content:         "item": "{{ shop_url }}{{ article.url }}"
+    French keywords: article
+
+  Line 78:
+    Content:         <a class="breadcrumbs__link" href="/">Home</a>
+    French keywords: a, a
+
+  Line 91:
+    Content:             <a class="breadcrumbs__link" href="{{ collection.url }}">{{ collection.title }}</a>
+    French keywords: a, a
+
+  Line 105:
+    Content:       {%- elsif request.page_type == 'article' -%}
+    French keywords: article
+
+  Line 108:
+    Content:           <a class="breadcrumbs__link" href="{{ blog.url }}">{{ blog.title }}</a>
+    French keywords: a, a
+
+  Line 112:
+    Content:           <span class="breadcrumbs__current">{{ article.title | truncate: 50 }}</span>
+    French keywords: article
+
+
+VIOLATION #87: /Users/mac/Desktop/Alpha-Medical/snippets/product-variant-picker.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #88: /Users/mac/Desktop/Alpha-Medical/snippets/smart-recommendations.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 446:
+    Content:         <a href="/products/${product.handle}" class="rec-product-card__link" data-product-handle="${product.handle}">
+    French keywords: a
+
+  Line 459:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #89: /Users/mac/Desktop/Alpha-Medical/snippets/product-media-modal.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a product media modal. Also see 'product-media-gallery'
+    French keywords: a
+
+  Line 6:
+    Content:   - variant_images: {Array} Product images associated with a variant
+    French keywords: a
+
+
+VIOLATION #90: /Users/mac/Desktop/Alpha-Medical/snippets/price.liquid
+Total occurrences: 7
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a list of product's price (regular, sale)
+    French keywords: a
+
+  Line 6:
+    Content:   - placeholder: {Boolean} Renders a placeholder price (optional)
+    French keywords: a
+
+  Line 9:
+    Content:   - price_class: {String} Adds a price class to the price element (optional)
+    French keywords: a
+
+  Line 56:
+    Content:       {%- comment -%}
+    French keywords: comment
+
+  Line 59:
+    Content:           - div.price__sale: Displayed when a variant is a sale
+    French keywords: a, a
+
+
+VIOLATION #91: /Users/mac/Desktop/Alpha-Medical/snippets/quick-order-product-row.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 37:
+    Content:         <a href="{{ item.url }}" class="variant-item__name h4 break">{{ item.title | escape }}</a>
+    French keywords: a, a
+
+
+VIOLATION #92: /Users/mac/Desktop/Alpha-Medical/snippets/bundle-hover-images.liquid
+Total occurrences: 2
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 188:
+    Content:         const link = card.querySelector('a[href*="/products/"]');
+    French keywords: a
+
+
+VIOLATION #93: /Users/mac/Desktop/Alpha-Medical/snippets/bundles-collection-cta.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 179:
+    Content:     <a href="/pages/bundle-creator" class="bundles-cta__button">
+    French keywords: a
+
+  Line 184:
+    Content:     </a>
+    French keywords: a
+
+
+VIOLATION #94: /Users/mac/Desktop/Alpha-Medical/snippets/header-mega-menu.liquid
+Total occurrences: 8
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a megamenu for the header.
+    French keywords: a
+
+  Line 39:
+    Content:                       <a
+    French keywords: a
+
+  Line 48:
+    Content:                       </a>
+    French keywords: a
+
+  Line 53:
+    Content:                               <a
+    French keywords: a
+
+  Line 62:
+    Content:                               </a>
+    French keywords: a
+
+  Line 74:
+    Content:           <a
+    French keywords: a
+
+  Line 89:
+    Content:           </a>
+    French keywords: a
+
+
+VIOLATION #95: /Users/mac/Desktop/Alpha-Medical/snippets/loyalty-tier-badge.liquid
+Total occurrences: 6
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 12:
+    Content:   Note: This is a SIMPLIFIED loyalty system using tags only (no metafields)
+    French keywords: a, note
+
+  Line 101:
+    Content:             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+    French keywords: y
+
+  Line 138:
+    Content:       <a href="/pages/loyalty-program" class="loyalty-tier-badge__learn-more">
+    French keywords: a
+
+  Line 140:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #96: /Users/mac/Desktop/Alpha-Medical/snippets/icon-with-text.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+
+VIOLATION #97: /Users/mac/Desktop/Alpha-Medical/snippets/recently-viewed-init.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+
+VIOLATION #98: /Users/mac/Desktop/Alpha-Medical/snippets/facets.liquid
+Total occurrences: 43
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 44:
+    Content:           {% comment %} Heading is the first tabbable element on filter type horizontal {% endcomment %}
+    French keywords: comment
+
+  Line 56:
+    Content:             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
+    French keywords: comment
+
+  Line 70:
+    Content:                     <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
+    French keywords: a
+
+  Line 72:
+    Content:                     </a>
+    French keywords: a
+
+  Line 78:
+    Content:                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 86:
+    Content:                       </a>
+    French keywords: a
+
+  Line 94:
+    Content:                         <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 102:
+    Content:                         </a>
+    French keywords: a
+
+  Line 111:
+    Content:             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
+    French keywords: comment
+
+  Line 114:
+    Content:                 assign total_active_values = total_active_values | plus: filter.active_values.size
+    French keywords: plus
+
+  Line 174:
+    Content:                             <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+    French keywords: a
+
+  Line 176:
+    Content:                             </a>
+    French keywords: a
+
+  Line 324:
+    Content:                             <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+    French keywords: a
+
+  Line 326:
+    Content:                             </a>
+    French keywords: a
+
+  Line 338:
+    Content:           {% comment %} Pills after filtes on filter type horizontal {% endcomment %}
+    French keywords: comment
+
+  Line 344:
+    Content:                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 352:
+    Content:                     </a>
+    French keywords: a
+
+  Line 360:
+    Content:                       <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 368:
+    Content:                       </a>
+    French keywords: a
+
+  Line 374:
+    Content:                 <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
+    French keywords: a
+
+  Line 376:
+    Content:                 </a>
+    French keywords: a
+
+  Line 387:
+    Content:           {% comment %} Sorting and product count are the last elements when filter type is horizontal {% endcomment %}
+    French keywords: comment
+
+  Line 441:
+    Content:   {% comment %}  Drawer and mobile filter {% endcomment %}
+    French keywords: comment
+
+  Line 650:
+    Content:                               <a href="{{ filter.url_to_remove }}" class="mobile-facets__clear underlined-link">
+    French keywords: a
+
+  Line 652:
+    Content:                               </a>
+    French keywords: a
+
+  Line 701:
+    Content:                               <a href="{{ filter.url_to_remove }}" class="mobile-facets__clear underlined-link">
+    French keywords: a
+
+  Line 703:
+    Content:                               </a>
+    French keywords: a
+
+  Line 757:
+    Content:                   <a href="{{ results_url }}" class="mobile-facets__clear underlined-link">
+    French keywords: a
+
+  Line 759:
+    Content:                   </a>
+    French keywords: a
+
+  Line 789:
+    Content:           <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 797:
+    Content:           </a>
+    French keywords: a
+
+  Line 806:
+    Content:             <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 814:
+    Content:             </a>
+    French keywords: a
+
+  Line 820:
+    Content:       <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
+    French keywords: a
+
+  Line 822:
+    Content:       </a>
+    French keywords: a
+
+  Line 825:
+    Content:   {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order {% endcomment %}
+    French keywords: comment
+
+  Line 898:
+    Content:                 <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 906:
+    Content:                 </a>
+    French keywords: a
+
+  Line 915:
+    Content:                   <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
+    French keywords: a
+
+  Line 923:
+    Content:                   </a>
+    French keywords: a
+
+  Line 929:
+    Content:             <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
+    French keywords: a
+
+  Line 931:
+    Content:             </a>
+    French keywords: a
+
+
+VIOLATION #99: /Users/mac/Desktop/Alpha-Medical/snippets/recently-viewed-seed.liquid
+Total occurrences: 1
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+
+VIOLATION #100: /Users/mac/Desktop/Alpha-Medical/snippets/pagination.liquid
+Total occurrences: 10
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a set of links for paginated results. Must be used within paginate tags.
+    French keywords: a
+
+  Line 22:
+    Content:             <a
+    French keywords: a
+
+  Line 30:
+    Content:             </a>
+    French keywords: a
+
+  Line 37:
+    Content:               <a
+    French keywords: a
+
+  Line 43:
+    Content:               </a>
+    French keywords: a
+
+  Line 46:
+    Content:                 <a
+    French keywords: a
+
+  Line 54:
+    Content:                 </a>
+    French keywords: a
+
+  Line 64:
+    Content:             <a
+    French keywords: a
+
+  Line 72:
+    Content:             </a>
+    French keywords: a
+
+
+VIOLATION #101: /Users/mac/Desktop/Alpha-Medical/snippets/card-collection.liquid
+Total occurrences: 8
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a collection card
+    French keywords: a
+
+  Line 87:
+    Content:               <a
+    French keywords: a
+
+  Line 105:
+    Content:               </a>
+    French keywords: a
+
+  Line 123:
+    Content:             <a
+    French keywords: a
+
+  Line 141:
+    Content:             </a>
+    French keywords: a
+
+  Line 158:
+    Content:             <a role="link" aria-disabled="true" class="full-unstyled-link">
+    French keywords: a
+
+  Line 163:
+    Content:             </a>
+    French keywords: a
+
+
+VIOLATION #102: /Users/mac/Desktop/Alpha-Medical/snippets/schema-faq.liquid
+Total occurrences: 8
+
+  Line 2:
+    Content:   comment
+    French keywords: comment
+
+  Line 59:
+    Content:         "text": "We offer a 30-day return policy for unused items in original packaging. Items must be in new condition to qualify for a full refund."
+    French keywords: a, a
+
+  Line 64:
+    Content:       "name": "How do I initiate a return?",
+    French keywords: a
+
+  Line 67:
+    Content:         "text": "Contact our customer service team at support@alphamedical.shop with your order number. We will provide return shipping instructions and a return authorization number."
+    French keywords: service, a
+
+  Line 80:
+    Content:       "name": "How do I contact customer service?",
+    French keywords: service
+
+  Line 91:
+    Content:         "text": "Yes, most of our products come with a warranty ranging from 90 days to 1 year, depending on the product category. Warranty details are specified on each product page."
+    French keywords: a
+
+
+VIOLATION #103: /Users/mac/Desktop/Alpha-Medical/snippets/product-low-stock-badge.liquid
+Total occurrences: 15
+
+  Line 8:
+    Content:   <div class="product-low-stock-badge">
+    French keywords: stock
+
+  Line 13:
+    Content:     <span>Only {{ inventory_qty }} left in stock!</span>
+    French keywords: stock
+
+  Line 16:
+    Content:   <div class="product-stock-badge product-stock-badge--available">
+    French keywords: stock, stock
+
+  Line 21:
+    Content:     <span>In stock</span>
+    French keywords: stock
+
+  Line 24:
+    Content:   <div class="product-stock-badge product-stock-badge--unavailable">
+    French keywords: stock, stock
+
+  Line 29:
+    Content:     <span>Out of stock</span>
+    French keywords: stock
+
+  Line 34:
+    Content: .product-low-stock-badge,
+    French keywords: stock
+
+  Line 35:
+    Content: .product-stock-badge {
+    French keywords: stock
+
+  Line 46:
+    Content: .product-low-stock-badge {
+    French keywords: stock
+
+  Line 52:
+    Content: .product-stock-badge--available {
+    French keywords: stock
+
+  Line 58:
+    Content: .product-stock-badge--unavailable {
+    French keywords: stock
+
+  Line 64:
+    Content: .product-low-stock-badge svg,
+    French keywords: stock
+
+  Line 65:
+    Content: .product-stock-badge svg {
+    French keywords: stock
+
+
+VIOLATION #104: /Users/mac/Desktop/Alpha-Medical/snippets/social-icons.liquid
+Total occurrences: 20
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 4:
+    Content:   - class: {String} a class to be added to the <ul> element (optional).
+    French keywords: a
+
+  Line 15:
+    Content:       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 20:
+    Content:       </a>
+    French keywords: a
+
+  Line 25:
+    Content:       <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 30:
+    Content:       </a>
+    French keywords: a
+
+  Line 35:
+    Content:       <a href="{{ settings.social_youtube_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 40:
+    Content:       </a>
+    French keywords: a
+
+  Line 45:
+    Content:       <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 50:
+    Content:       </a>
+    French keywords: a
+
+  Line 55:
+    Content:       <a href="{{ settings.social_twitter_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 60:
+    Content:       </a>
+    French keywords: a
+
+  Line 65:
+    Content:       <a href="{{ settings.social_pinterest_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 70:
+    Content:       </a>
+    French keywords: a
+
+  Line 75:
+    Content:       <a href="{{ settings.social_snapchat_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 80:
+    Content:       </a>
+    French keywords: a
+
+  Line 85:
+    Content:       <a href="{{ settings.social_tumblr_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 90:
+    Content:       </a>
+    French keywords: a
+
+  Line 95:
+    Content:       <a href="{{ settings.social_vimeo_link }}" class="link list-social__link">
+    French keywords: a
+
+  Line 100:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #105: /Users/mac/Desktop/Alpha-Medical/snippets/subscription-widget.liquid
+Total occurrences: 4
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 19:
+    Content:   Note: Only displays if product has selling plans enabled
+    French keywords: note
+
+  Line 167:
+    Content:           <a href="/tools/recurring/portal" class="subscription-widget__portal-link">
+    French keywords: a
+
+  Line 169:
+    Content:           </a>
+    French keywords: a
+
+
+VIOLATION #106: /Users/mac/Desktop/Alpha-Medical/snippets/product-bundle-cta.liquid
+Total occurrences: 11
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 3:
+    Content:   Displays smart CTA if current product is part of a bundle
+    French keywords: a
+
+  Line 10:
+    Content: {%- comment -%} Check all bundles to see if this product is included {%- endcomment -%}
+    French keywords: comment
+
+  Line 12:
+    Content: {%- comment -%} Bundle 1: Office Worker Essential Kit {%- endcomment -%}
+    French keywords: comment
+
+  Line 17:
+    Content: {%- comment -%} Bundle 2: Senior Mobility Support {%- endcomment -%}
+    French keywords: comment
+
+  Line 22:
+    Content: {%- comment -%} Bundle 3: Chronic Pain Starter Kit {%- endcomment -%}
+    French keywords: comment
+
+  Line 27:
+    Content: {%- comment -%} Bundle 4: Active Athlete Knee Specialist {%- endcomment -%}
+    French keywords: comment
+
+  Line 32:
+    Content: {%- comment -%} Bundle 5: Active Athlete Complete Protection {%- endcomment -%}
+    French keywords: comment
+
+  Line 37:
+    Content: {%- comment -%} Add more bundles as needed {%- endcomment -%}
+    French keywords: comment
+
+  Line 160:
+    Content:   <a href="/products/{{ bundle_handle }}" class="product-bundle-cta__button">
+    French keywords: a
+
+  Line 162:
+    Content:   </a>
+    French keywords: a
+
+
+VIOLATION #107: /Users/mac/Desktop/Alpha-Medical/snippets/article-cta.liquid
+Total occurrences: 37
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 2:
+    Content:   Renders a call-to-action block within blog articles.
+    French keywords: articles, a
+
+  Line 12:
+    Content:   {% render 'article-cta',
+    French keywords: article
+
+  Line 28:
+    Content: <div class="article-cta article-cta--{{ style }}" role="region" aria-label="Product recommendation">
+    French keywords: article, article
+
+  Line 29:
+    Content:   <div class="article-cta__container">
+    French keywords: article
+
+  Line 30:
+    Content:     <div class="article-cta__content">
+    French keywords: article
+
+  Line 31:
+    Content:       <h3 class="article-cta__title">{{ title }}</h3>
+    French keywords: article
+
+  Line 33:
+    Content:         <p class="article-cta__text">{{ text }}</p>
+    French keywords: article
+
+  Line 35:
+    Content:       <a href="{{ url }}" class="article-cta__button button button--primary">
+    French keywords: article, a
+
+  Line 37:
+    Content:       </a>
+    French keywords: a
+
+  Line 43:
+    Content: .article-cta {
+    French keywords: article
+
+  Line 48:
+    Content: .article-cta__container {
+    French keywords: article
+
+  Line 57:
+    Content: .article-cta__container:hover {
+    French keywords: article
+
+  Line 62:
+    Content: .article-cta__content {
+    French keywords: article
+
+  Line 68:
+    Content: .article-cta__title {
+    French keywords: article
+
+  Line 76:
+    Content: .article-cta__text {
+    French keywords: article
+
+  Line 83:
+    Content: .article-cta__button {
+    French keywords: article
+
+  Line 92:
+    Content: .article-cta__button:hover {
+    French keywords: article
+
+  Line 98:
+    Content: .article-cta--highlight .article-cta__container {
+    French keywords: article, article
+
+  Line 103:
+    Content: .article-cta--highlight .article-cta__title {
+    French keywords: article, article
+
+  Line 107:
+    Content: .article-cta--highlight .article-cta__text {
+    French keywords: article, article
+
+  Line 111:
+    Content: .article-cta--highlight .article-cta__button {
+    French keywords: article, article
+
+  Line 116:
+    Content: .article-cta--highlight .article-cta__button:hover {
+    French keywords: article, article
+
+  Line 122:
+    Content: .article-cta--minimal .article-cta__container {
+    French keywords: article, article
+
+  Line 131:
+    Content:   .article-cta__container {
+    French keywords: article
+
+  Line 135:
+    Content:   .article-cta__title {
+    French keywords: article
+
+  Line 139:
+    Content:   .article-cta__text {
+    French keywords: article
+
+  Line 143:
+    Content:   .article-cta__button {
+    French keywords: article
+
+
+VIOLATION #108: /Users/mac/Desktop/Alpha-Medical/snippets/cart-bundles-upsell.liquid
+Total occurrences: 3
+
+  Line 1:
+    Content: {%- comment -%}
+    French keywords: comment
+
+  Line 104:
+    Content:   <a href="/collections/medical-equipment-bundles" class="cart-bundle-upsell__button">
+    French keywords: a
+
+  Line 106:
+    Content:   </a>
+    French keywords: a
+
+
+VIOLATION #109: /Users/mac/Desktop/Alpha-Medical/templates/page.bundle-creation.liquid
+Total occurrences: 38
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 15:
+    Content:       Propose your perfect product combination! When 10 customers propose the same bundle, we'll make it real with a 15% discount.
+    French keywords: a
+
+  Line 19:
+    Content:   {%- comment -%} How It Works Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 46:
+    Content:   {%- comment -%} Bundle Creation Form {%- endcomment -%}
+    French keywords: comment
+
+  Line 50:
+    Content:       {%- comment -%} Customer Login Check {%- endcomment -%}
+    French keywords: comment
+
+  Line 67:
+    Content:           {%- comment -%} Product URL Inputs (Dynamic) {%- endcomment -%}
+    French keywords: comment
+
+  Line 78:
+    Content:                 pattern="https?://.*alphamedical\.shop/products/[a-z0-9\-]+"
+    French keywords: a
+
+  Line 94:
+    Content:                 pattern="https?://.*alphamedical\.shop/products/[a-z0-9\-]+"
+    French keywords: a
+
+  Line 102:
+    Content:           {%- comment -%} Add/Remove Product Buttons {%- endcomment -%}
+    French keywords: comment
+
+  Line 115:
+    Content:           {%- comment -%} Bundle Summary {%- endcomment -%}
+    French keywords: comment
+
+  Line 135:
+    Content:           {%- comment -%} Terms & Conditions {%- endcomment -%}
+    French keywords: comment
+
+  Line 143:
+    Content:           {%- comment -%} Submit Button {%- endcomment -%}
+    French keywords: comment
+
+  Line 153:
+    Content:             <p class="submit-note">We'll validate your products and notify you when your proposal is received</p>
+    French keywords: note
+
+  Line 156:
+    Content:           {%- comment -%} Loading State {%- endcomment -%}
+    French keywords: comment
+
+  Line 162:
+    Content:           {%- comment -%} Success/Error Messages {%- endcomment -%}
+    French keywords: comment
+
+  Line 169:
+    Content:         {%- comment -%} Not Logged In - Redirect to Login {%- endcomment -%}
+    French keywords: comment
+
+  Line 174:
+    Content:           <a href="/account/login?return_url={{ page.url | url_encode }}" class="button button--primary">
+    French keywords: a
+
+  Line 176:
+    Content:           </a>
+    French keywords: a
+
+  Line 178:
+    Content:             Don't have an account? <a href="/account/register?return_url={{ page.url | url_encode }}">Create one here</a>
+    French keywords: a, a
+
+  Line 186:
+    Content:   {%- comment -%} Trending Proposals Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 198:
+    Content:   {%- comment -%} FAQ Section {%- endcomment -%}
+    French keywords: comment
+
+  Line 212:
+    Content:         <p>We automatically create it as a real product with a 15% discount, and all 10 proposers receive an email notification!</p>
+    French keywords: a, a
+
+  Line 224:
+    Content:         <p>All community-created bundles receive a 15% discount off the total price of individual products.</p>
+    French keywords: a
+
+  Line 231:
+    Content: {%- comment -%} Inline Styles {%- endcomment -%}
+    French keywords: comment
+
+  Line 609:
+    Content: .submit-note {
+    French keywords: note
+
+  Line 692:
+    Content: .register-link a {
+    French keywords: a
+
+  Line 857:
+    Content: {%- comment -%} JavaScript for Form Logic {%- endcomment -%}
+    French keywords: comment
+
+  Line 967:
+    Content:           pattern="https?://.*${SHOP_DOMAIN.replace('.', '\\.')}/products/[a-z0-9\\-]+"
+    French keywords: a
+
+  Line 1000:
+    Content:       showError(index, 'Invalid URL. Must be a product from ' + SHOP_DOMAIN);
+    French keywords: a
+
+  Line 1058:
+    Content:     const pattern = new RegExp(`https?://(www\\.)?${SHOP_DOMAIN.replace('.', '\\.')}/products/[a-z0-9\\-]+`, 'i');
+    French keywords: a
+
+  Line 1063:
+    Content:     const match = url.match(/\/products\/([a-z0-9\-]+)/i);
+    French keywords: a
+
+  Line 1212:
+    Content:         <a href="/pages/my-proposals">View Your Proposals</a>
+    French keywords: a, a
+
+  Line 1251:
+    Content:     return next.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    French keywords: en
+
+  Line 1306:
+    Content:     return Object.values(groups).sort((a, b) => b.count - a.count);
+    French keywords: a, a
+
+
+VIOLATION #110: /Users/mac/Desktop/Alpha-Medical/templates/page.shipping-delivery.liquid
+Total occurrences: 1
+
+  Line 35:
+    Content:         "text": "You will receive a tracking number via email once your order ships. Use this number on the carrier website or contact our support team for tracking assistance."
+    French keywords: a
+
+
+VIOLATION #111: /Users/mac/Desktop/Alpha-Medical/templates/page.faq.liquid
+Total occurrences: 9
+
+  Line 27:
+    Content:         "text": "You can modify or cancel your order within 1 hour of placing it by contacting our customer service team immediately."
+    French keywords: service
+
+  Line 51:
+    Content:         "text": "We offer a 30-day money-back guarantee. If you are not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange."
+    French keywords: a, a
+
+  Line 56:
+    Content:       "name": "How do I start a return?",
+    French keywords: a
+
+  Line 59:
+    Content:         "text": "To start a return, contact our customer service team with your order number. We will provide you with a return authorization and shipping instructions."
+    French keywords: service, a, a
+
+  Line 67:
+    Content:         "text": "Yes, all our products come with a manufacturer warranty. Warranty periods vary by product, typically ranging from 90 days to 1 year."
+    French keywords: a
+
+  Line 83:
+    Content:         "text": "Our medical support devices comply with FDA regulations where applicable. Please consult with a healthcare professional before using any medical device."
+    French keywords: a
+
+
+VIOLATION #112: /Users/mac/Desktop/Alpha-Medical/templates/page.returns-exchanges.liquid
+Total occurrences: 6
+
+  Line 11:
+    Content:         "text": "We offer a hassle-free 30-day return policy for unused items in original packaging. Items must be returned within 30 days of delivery for a full refund or exchange."
+    French keywords: a, a
+
+  Line 16:
+    Content:       "name": "How do I start a return?",
+    French keywords: a
+
+  Line 19:
+    Content:         "text": "Contact our customer service team at support@alphamedical.shop with your order number. We will provide return instructions and a prepaid shipping label if applicable."
+    French keywords: service, a
+
+  Line 40:
+    Content:       "name": "Can I exchange an item for a different size or color?",
+    French keywords: a
+
+
+VIOLATION #113: /Users/mac/Desktop/Alpha-Medical/templates/robots.txt.liquid
+Total occurrences: 3
+
+  Line 9:
+    Content: Disallow: /a/downloads/-/*
+    French keywords: a
+
+  Line 68:
+    Content: Disallow: /a/downloads/-/*
+    French keywords: a
+
+  Line 107:
+    Content: Disallow: /a/downloads/-/*
+    French keywords: a
+
+
+VIOLATION #114: /Users/mac/Desktop/Alpha-Medical/templates/article.json
+Total occurrences: 1
+
+  Line 4:
+    Content:       "type": "main-article",
+    French keywords: article
+
+
+VIOLATION #115: /Users/mac/Desktop/Alpha-Medical/templates/gift_card.liquid
+Total occurrences: 9
+
+  Line 95:
+    Content:       {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 97:
+    Content:       {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 100:
+    Content:       {% comment %}theme-check-disable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 102:
+    Content:       {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    French keywords: comment
+
+  Line 123:
+    Content:         {%- assign gift_card_expiration_date = gift_card.expires_on | date: '%B %e, %Y' -%}
+    French keywords: y
+
+  Line 153:
+    Content:         <a href="{{ gift_card.pass_url }}" class="gift_card__apple-wallet no-print">
+    French keywords: a
+
+  Line 161:
+    Content:         </a>
+    French keywords: a
+
+  Line 172:
+    Content:         <a
+    French keywords: a
+
+  Line 180:
+    Content:         </a>
+    French keywords: a
+
+
+VIOLATION #116: /Users/mac/Desktop/Alpha-Medical/templates/page.size-quiz.liquid
+Total occurrences: 9
+
+  Line 1:
+    Content: {% comment %}
+    French keywords: comment
+
+  Line 17:
+    Content:         3. Answer a few questions about your needs<br>
+    French keywords: a
+
+  Line 62:
+    Content:         <p style="margin: 0; color: #4b5563;">Use a soft measuring tape (like those used for sewing). Measure snugly but not tightly against your skin. Follow the visual guide provided in step 2 of the quiz for each product type.</p>
+    French keywords: a
+
+  Line 67:
+    Content:         <p style="margin: 0; color: #4b5563;">Yes! All our products come with a 30-day money-back guarantee. If the size doesn't fit perfectly, you can return or exchange it free of charge.</p>
+    French keywords: a
+
+  Line 81:
+    Content:       <a href="/collections/all" style="display: inline-block; padding: 0.875rem 1.75rem; background: #4770DB; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s;">Browse All Products</a>
+    French keywords: a, a
+
+  Line 82:
+    Content:       <a href="/pages/contact" style="display: inline-block; padding: 0.875rem 1.75rem; background: white; color: #4770DB; text-decoration: none; border-radius: 6px; font-weight: 600; border: 2px solid #4770DB; transition: background 0.2s;">Contact Support</a>
+    French keywords: a, a
+
+  Line 122:
+    Content:     .size-quiz-page-cta a {
+    French keywords: a
+
+
+VIOLATION #117: /Users/mac/Desktop/Alpha-Medical/templates/page.llms-txt.liquid
+Total occurrences: 28
+
+  Line 7:
+    Content: Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equipment e-commerce platform built on Shopify, featuring 75 active products across 6 main collections, with integrated marketing automation, dynamic pricing, and SEO optimization.
+    French keywords: a
+
+  Line 23:
+    Content: - [DSERS_CONFIGURATION_GUIDE](DSERS_CONFIGURATION_GUIDE.md): Ce guide vous accompagne dans la configuration EXACTE des règles de pricing dynamique dans DSers pour atteindre les marges nettes définies dans le ...
+    French keywords: pour, dans, dans, dans, de, des, le, la, les, ce
+
+  Line 25:
+    Content: - [DYNAMIC_PRICING_MODEL](DYNAMIC_PRICING_MODEL.md): Ce document définit le modèle de pricing dynamique pour Alpha Medical, garantissant des marges nettes prédéfinies après déduction de TOUS les coûts...
+    French keywords: tous, pour, tous, de, de, des, le, les, ce
+
+  Line 27:
+    Content: - [PRICING_QUICK_REFERENCE](PRICING_QUICK_REFERENCE.md): Prix: $25 Shipping: $12 Tier: 1 (car $25 entre $10-50) Fixed Profit: $30.30
+    French keywords: prix, car
+
+  Line 34:
+    Content: - [ABANDONED_CART_RECOVERY_CONFIG](ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ '{{' }} shop.name {{ '}}' }}" Option B: "You left something behind at {{ '{{' }} shop.name {{ '}}' }}"
+    French keywords: a
+
+  Line 46:
+    Content: - [ULTIMATE_PAIN_RELIEF_GUIDE](ULTIMATE_PAIN_RELIEF_GUIDE.md): Pain is your body's alarm system - a complex warning signal that something needs attention. Understanding the type of pain you're experiencing is t...
+    French keywords: a
+
+  Line 50:
+    Content: - [IMPLEMENTATION_ROADMAP](IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
+    French keywords: en
+
+  Line 67:
+    Content: - `/templates/`: Page templates (product, collection, article, page templates)
+    French keywords: article
+
+  Line 165:
+    Content: - **Blog Articles**: 14 published articles
+    French keywords: articles, articles
+
+
+VIOLATION #118: /Users/mac/Desktop/Alpha-Medical/templates/collection.json
+Total occurrences: 1
+
+  Line 33:
+    Content:             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+    French keywords: a
+
+
+VIOLATION #119: /Users/mac/Desktop/Alpha-Medical/templates/page.about-us.liquid
+Total occurrences: 2
+
+  Line 11:
+    Content:         "text": "Alpha Medical Care is a leading provider of professional-grade medical support equipment and orthopedic braces. We specialize in pain relief, posture correction, and therapeutic devices for home recovery and daily support."
+    French keywords: a
+
+  Line 19:
+    Content:         "text": "Alpha Medical Care was founded in 2025 with a mission to make high-quality medical support products accessible to everyone. We combine medical expertise with innovative design."
+    French keywords: a
+
+
+VIOLATION #120: /Users/mac/Desktop/Alpha-Medical/templates/index.json
+Total occurrences: 3
+
+  Line 263:
+    Content:         "subheading": "<p><strong>Stay tuned for our latest promotions and exclusive deals.</strong></p><p>We constantly update our offers to bring you the best prices on medical equipment.</p>",
+    French keywords: promotions
+
+  Line 436:
+    Content:         "heading": "💝 Special Promotions",
+    French keywords: promotions
+
+  Line 438:
+    Content:         "subheading": "<p><strong>Check back regularly for limited-time offers!</strong></p><p>Get notified about flash sales, seasonal promotions, and exclusive discounts on premium medical equipment.</p>",
+    French keywords: promotions
+
+
+VIOLATION #121: /Users/mac/Desktop/Alpha-Medical/templates/page.warranty-guarantee.liquid
+Total occurrences: 6
+
+  Line 11:
+    Content:         "text": "All products come with a 90-day manufacturer warranty covering defects in materials and workmanship. Extended 1-year warranty is available for purchase."
+    French keywords: a
+
+  Line 24:
+    Content:       "name": "How do I file a warranty claim?",
+    French keywords: a
+
+  Line 27:
+    Content:         "text": "Contact us at support@alphamedical.shop with your order number and photos of the defect. We will review your claim within 24-48 hours and arrange a replacement or refund."
+    French keywords: a
+
+  Line 32:
+    Content:       "name": "Is there a satisfaction guarantee?",
+    French keywords: a
+
+  Line 35:
+    Content:         "text": "Yes, we offer a 30-day money-back satisfaction guarantee. If you are not completely satisfied with your purchase, return it within 30 days for a full refund."
+    French keywords: a, a
+
+
+VIOLATION #122: /Users/mac/Desktop/Alpha-Medical/templates/customers/account.json
+Total occurrences: 2
+
+  Line 28:
+    Content:         "custom_liquid": "<div class=\"subscription-portal-link\" style=\"margin: 20px 0; padding: 16px; background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%); border-radius: 8px; text-align: center;\">\n  <h3 style=\"color: white; margin: 0 0 8px 0; font-size: 18px;\">Manage Your Subscriptions</h3>\n  <p style=\"color: white; margin: 0 0 12px 0; font-size: 14px;\">Pause, skip, or update your subscription anytime</p>\n  <a href=\"/tools/recurring/portal\" style=\"display: inline-block; background: white; color: #4A90E2; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;\">\n    View My Subscriptions \u2192\n  </a>\n</div>"
+    French keywords: a, a
+
+
+VIOLATION #123: /Users/mac/Desktop/Alpha-Medical/assets/section-main-product.css
+Total occurrences: 3
+
+  Line 238:
+    Content: a.product__text {
+    French keywords: a
+
+  Line 257:
+    Content: .product__title > a {
+    French keywords: a
+
+  Line 1473:
+    Content: .recipient-form ul a {
+    French keywords: a
+
+
+VIOLATION #124: /Users/mac/Desktop/Alpha-Medical/assets/component-complementary-products.css
+Total occurrences: 3
+
+  Line 101:
+    Content: .complementary-products-contains-quick-add .underline-links-hover:hover a {
+    French keywords: a
+
+  Line 105:
+    Content: .complementary-products-contains-quick-add .card__heading:hover a {
+    French keywords: a
+
+  Line 123:
+    Content: .complementary-products__container .quick-add__submit .icon-plus {
+    French keywords: plus
+
+
+VIOLATION #125: /Users/mac/Desktop/Alpha-Medical/assets/bundle-builder-combined.js
+Total occurrences: 8
+
+  Line 132:
+    Content:           ${!product.available ? '<span class="result-badge unavailable">Out of Stock</span>' : ''}
+    French keywords: stock
+
+  Line 157:
+    Content:     const urlPattern = /^https?:\/\/(www\.)?alphamedical\.shop\/products\/[a-z0-9\-]+\/?$/i;
+    French keywords: a
+
+  Line 179:
+    Content:       const handle = url.match(/\/products\/([a-z0-9\-]+)/i)?.[1];
+    French keywords: a
+
+  Line 207:
+    Content:         statusEl.textContent = '❌ Out of stock';
+    French keywords: stock
+
+  Line 301:
+    Content:           <h3 class="selected-product-title"><a href="${p.url}">${escapeHtml(p.title)}</a></h3>
+    French keywords: a, a
+
+  Line 345:
+    Content:     const sorted = productIds.slice().sort((a, b) => a - b);
+    French keywords: a, a
+
+
+VIOLATION #126: /Users/mac/Desktop/Alpha-Medical/assets/bundles-collection.js
+Total occurrences: 6
+
+  Line 149:
+    Content:     cards.sort((a, b) => {
+    French keywords: a
+
+  Line 153:
+    Content:           return parseFloat(b.dataset.savings) - parseFloat(a.dataset.savings);
+    French keywords: a
+
+  Line 157:
+    Content:           return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+    French keywords: a
+
+  Line 161:
+    Content:           return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+    French keywords: a
+
+  Line 165:
+    Content:           return parseInt(b.dataset.products) - parseInt(a.dataset.products);
+    French keywords: a
+
+  Line 169:
+    Content:           return parseFloat(b.dataset.savings) - parseFloat(a.dataset.savings);
+    French keywords: a
+
+
+VIOLATION #127: /Users/mac/Desktop/Alpha-Medical/assets/bundle-builder-combined.css
+Total occurrences: 5
+
+  Line 273:
+    Content: .method-note {
+    French keywords: note
+
+  Line 315:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 559:
+    Content: .selected-product-title a {
+    French keywords: a
+
+  Line 565:
+    Content: .selected-product-title a:hover {
+    French keywords: a
+
+  Line 742:
+    Content: .form-note {
+    French keywords: note
+
+
+VIOLATION #128: /Users/mac/Desktop/Alpha-Medical/assets/component-cart-drawer.css
+Total occurrences: 1
+
+  Line 320:
+    Content: .cart-drawer .tax-note {
+    French keywords: note
+
+
+VIOLATION #129: /Users/mac/Desktop/Alpha-Medical/assets/component-facets.css
+Total occurrences: 10
+
+  Line 13:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 280:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 665:
+    Content: a.active-facets__button:focus-visible {
+    French keywords: a
+
+  Line 672:
+    Content:   a.active-facets__button:focus-visible {
+    French keywords: a
+
+  Line 676:
+    Content: a.active-facets__button.focused {
+    French keywords: a
+
+  Line 681:
+    Content: a.active-facets__button:focus-visible .active-facets__button-inner {
+    French keywords: a
+
+  Line 687:
+    Content: a.active-facets__button.focused .active-facets__button-inner {
+    French keywords: a
+
+  Line 775:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 932:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 992:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #130: /Users/mac/Desktop/Alpha-Medical/assets/section-featured-blog.css
+Total occurrences: 8
+
+  Line 6:
+    Content:   .grid--1-col-desktop .article-card .card__content {
+    French keywords: article
+
+  Line 15:
+    Content: .blog__posts.articles-wrapper {
+    French keywords: articles
+
+  Line 20:
+    Content:   .blog__posts.articles-wrapper {
+    French keywords: articles
+
+  Line 25:
+    Content: .blog__posts.articles-wrapper .article {
+    French keywords: article, articles
+
+  Line 30:
+    Content:   .blog__post.article {
+    French keywords: article
+
+  Line 56:
+    Content:     .blog__posts .article + .article {
+    French keywords: article, article
+
+
+VIOLATION #131: /Users/mac/Desktop/Alpha-Medical/assets/bundle-builder.js
+Total occurrences: 4
+
+  Line 167:
+    Content:             ${!product.available ? '<span class="result-badge unavailable">Out of Stock</span>' : ''}
+    French keywords: stock
+
+  Line 207:
+    Content:       alert('This product is currently out of stock');
+    French keywords: stock
+
+  Line 280:
+    Content:             <a href="${product.url}" target="_blank" rel="noopener">${escapeHtml(product.title)}</a>
+    French keywords: a, a
+
+
+VIOLATION #132: /Users/mac/Desktop/Alpha-Medical/assets/cart.js
+Total occurrences: 5
+
+  Line 209:
+    Content:             trapFocus(cartDrawerWrapper.querySelector('.drawer__inner-empty'), cartDrawerWrapper.querySelector('a'));
+    French keywords: a
+
+  Line 276:
+    Content: if (!customElements.get('cart-note')) {
+    French keywords: note
+
+  Line 278:
+    Content:     'cart-note',
+    French keywords: note
+
+  Line 286:
+    Content:             const body = JSON.stringify({ note: event.target.value });
+    French keywords: note
+
+  Line 288:
+    Content:               .then(() => CartPerformance.measureFromEvent('note-update:user-action', event));
+    French keywords: note
+
+
+VIOLATION #133: /Users/mac/Desktop/Alpha-Medical/assets/component-menu-drawer.css
+Total occurrences: 3
+
+  Line 83:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 94:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 149:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #134: /Users/mac/Desktop/Alpha-Medical/assets/localization-form.js
+Total occurrences: 3
+
+  Line 38:
+    Content:         this.querySelectorAll('a').forEach((item) => item.addEventListener('click', this.onItemClick.bind(this)));
+    French keywords: a
+
+  Line 55:
+    Content:         const focusableItems = Array.from(this.querySelectorAll('a')).filter(
+    French keywords: a
+
+  Line 151:
+    Content:         const allCountries = this.querySelectorAll('a');
+    French keywords: a
+
+
+VIOLATION #135: /Users/mac/Desktop/Alpha-Medical/assets/section-image-banner.css
+Total occurrences: 6
+
+  Line 479:
+    Content:   .banner:not(.slideshow) .rte a,
+    French keywords: a
+
+  Line 480:
+    Content:   .banner:not(.slideshow) .inline-richtext a:hover,
+    French keywords: a
+
+  Line 481:
+    Content:   .banner:not(.slideshow) .rte a:hover {
+    French keywords: a
+
+  Line 487:
+    Content:   .banner--desktop-transparent .rte a,
+    French keywords: a
+
+  Line 488:
+    Content:   .banner--desktop-transparent .inline-richtext a:hover,
+    French keywords: a
+
+  Line 489:
+    Content:   .banner--desktop-transparent .rte a:hover {
+    French keywords: a
+
+
+VIOLATION #136: /Users/mac/Desktop/Alpha-Medical/assets/quick-add.css
+Total occurrences: 8
+
+  Line 66:
+    Content:     overflow-y: auto;
+    French keywords: y
+
+  Line 95:
+    Content: .quick-add-modal__content-info--bulk .card__information-volume-pricing-note {
+    French keywords: note
+
+  Line 110:
+    Content:   .quick-add-modal__content-info--bulk .card__information-volume-pricing-note {
+    French keywords: note
+
+  Line 117:
+    Content:     overflow-y: initial;
+    French keywords: y
+
+  Line 143:
+    Content: .quick-add-modal__content-info--bulk-details > a:hover {
+    French keywords: a
+
+  Line 216:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 342:
+    Content: quick-add-modal .product__title > a {
+    French keywords: a
+
+  Line 347:
+    Content: quick-add-modal .product__title > a:hover {
+    French keywords: a
+
+
+VIOLATION #137: /Users/mac/Desktop/Alpha-Medical/assets/template-giftcard.css
+Total occurrences: 2
+
+  Line 8:
+    Content: a:empty,
+    French keywords: a
+
+  Line 13:
+    Content: article:empty,
+    French keywords: article
+
+
+VIOLATION #138: /Users/mac/Desktop/Alpha-Medical/assets/component-predictive-search.css
+Total occurrences: 1
+
+  Line 15:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #139: /Users/mac/Desktop/Alpha-Medical/assets/component-pickup-availability.css
+Total occurrences: 1
+
+  Line 47:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #140: /Users/mac/Desktop/Alpha-Medical/assets/product-info.js
+Total occurrences: 2
+
+  Line 197:
+    Content:           this.querySelector(`#Volume-Note-${this.dataset.section}`)?.classList.remove('hidden');
+    French keywords: note
+
+  Line 236:
+    Content:         const selectors = ['price', 'Inventory', 'Sku', 'Price-Per-Item', 'Volume-Note', 'Volume', 'Quantity-Rules']
+    French keywords: note
+
+
+VIOLATION #141: /Users/mac/Desktop/Alpha-Medical/assets/bundles-collection.css
+Total occurrences: 2
+
+  Line 800:
+    Content: .faq-item a {
+    French keywords: a
+
+  Line 805:
+    Content: .faq-item a:hover {
+    French keywords: a
+
+
+VIOLATION #142: /Users/mac/Desktop/Alpha-Medical/assets/global.js
+Total occurrences: 4
+
+  Line 4:
+    Content:       "summary, a[href], button:enabled, [tabindex]:not([tabindex^='-']), [draggable], area, input:not([type=hidden]):enabled, select:enabled, textarea:enabled, object, iframe"
+    French keywords: a
+
+  Line 249:
+    Content:     if (event.target.name === 'plus') {
+    French keywords: plus
+
+  Line 274:
+    Content:       const buttonPlus = this.querySelector(".quantity__button[name='plus']");
+    French keywords: plus
+
+  Line 998:
+    Content:       const linkElements = item.querySelectorAll('a');
+    French keywords: a
+
+
+VIOLATION #143: /Users/mac/Desktop/Alpha-Medical/assets/bundle-builder.css
+Total occurrences: 7
+
+  Line 67:
+    Content:   --am-font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+    French keywords: sans
+
+  Line 68:
+    Content:   --am-font-body: 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+    French keywords: sans, sans
+
+  Line 231:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+  Line 455:
+    Content: .selected-product-title a {
+    French keywords: a
+
+  Line 461:
+    Content: .selected-product-title a:hover {
+    French keywords: a
+
+  Line 709:
+    Content: .form-note {
+    French keywords: note
+
+
+VIOLATION #144: /Users/mac/Desktop/Alpha-Medical/assets/component-article-card.css
+Total occurrences: 34
+
+  Line 2:
+    Content:   .articles-wrapper .article {
+    French keywords: article, articles
+
+  Line 7:
+    Content: .article {
+    French keywords: article
+
+  Line 12:
+    Content: .article.grid__item {
+    French keywords: article
+
+  Line 16:
+    Content: .grid--peek .article-card {
+    French keywords: article
+
+  Line 20:
+    Content: .article-card__image-wrapper > a {
+    French keywords: article, a
+
+  Line 24:
+    Content: .article-card__title {
+    French keywords: article
+
+  Line 29:
+    Content: .article-card__title a:after {
+    French keywords: article, a
+
+  Line 41:
+    Content: .article-card__link.link {
+    French keywords: article
+
+  Line 45:
+    Content: .article-card__link {
+    French keywords: article
+
+  Line 49:
+    Content: .article-card .card__heading {
+    French keywords: article
+
+  Line 53:
+    Content: .blog-articles .article-card .card__information,
+    French keywords: article, articles
+
+  Line 54:
+    Content: .blog__posts .article-card .card__information {
+    French keywords: article
+
+  Line 59:
+    Content: .article-card__info {
+    French keywords: article
+
+  Line 63:
+    Content: .article-card__footer {
+    French keywords: article
+
+  Line 68:
+    Content: .article-card__footer:not(:last-child) {
+    French keywords: article
+
+  Line 72:
+    Content: .article-card__footer:last-child {
+    French keywords: article
+
+  Line 76:
+    Content: .article-card__excerpt {
+    French keywords: article
+
+  Line 81:
+    Content: .article-card__link:not(:only-child) {
+    French keywords: article
+
+  Line 86:
+    Content:   .article-card__link:not(:only-child) {
+    French keywords: article
+
+  Line 91:
+    Content: .article-card__image--small .ratio::before {
+    French keywords: article
+
+  Line 95:
+    Content: .article-card__image--medium .ratio::before {
+    French keywords: article
+
+  Line 99:
+    Content: .article-card__image--large .ratio::before {
+    French keywords: article
+
+  Line 104:
+    Content:   .article-card__image--small .ratio::before {
+    French keywords: article
+
+  Line 108:
+    Content:   .article-card__image--medium .ratio::before {
+    French keywords: article
+
+  Line 112:
+    Content:   .article-card__image--large .ratio::before {
+    French keywords: article
+
+  Line 118:
+    Content:   .article-card__image--small .ratio::before {
+    French keywords: article
+
+  Line 122:
+    Content:   .article-card__image--medium .ratio::before {
+    French keywords: article
+
+  Line 126:
+    Content:   .article-card__image--large .ratio::before {
+    French keywords: article
+
+  Line 133:
+    Content:   .articles-wrapper.grid {
+    French keywords: articles
+
+  Line 138:
+    Content:     .articles-wrapper.grid {
+    French keywords: articles
+
+
+VIOLATION #145: /Users/mac/Desktop/Alpha-Medical/assets/search-form.js
+Total occurrences: 1
+
+  Line 32:
+    Content:     return !document.querySelector('[aria-selected="true"] a');
+    French keywords: a
+
+
+VIOLATION #146: /Users/mac/Desktop/Alpha-Medical/assets/component-image-with-text.css
+Total occurrences: 2
+
+  Line 343:
+    Content: .image-with-text__content > .image-with-text__text:empty ~ a {
+    French keywords: a
+
+  Line 405:
+    Content:   note: consider removing from this stylesheet if multirow-specific styles increase signficantly
+    French keywords: note
+
+
+VIOLATION #147: /Users/mac/Desktop/Alpha-Medical/assets/section-collection-list.css
+Total occurrences: 1
+
+  Line 48:
+    Content:   .collection-list__item a:hover {
+    French keywords: a
+
+
+VIOLATION #148: /Users/mac/Desktop/Alpha-Medical/assets/predictive-search.js
+Total occurrences: 2
+
+  Line 50:
+    Content:     if (!this.getQuery().length || this.querySelector('[aria-selected="true"] a')) event.preventDefault();
+    French keywords: a
+
+  Line 165:
+    Content:     const selectedOption = this.querySelector('[aria-selected="true"] a, button[aria-selected="true"]');
+    French keywords: a
+
+
+VIOLATION #149: /Users/mac/Desktop/Alpha-Medical/assets/component-localization-form.css
+Total occurrences: 1
+
+  Line 143:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #150: /Users/mac/Desktop/Alpha-Medical/assets/recently-viewed.js
+Total occurrences: 3
+
+  Line 137:
+    Content:       <a href="${item.url}" class="recently-viewed__card">
+    French keywords: a
+
+  Line 144:
+    Content:             onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23f3f4f6%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%239ca3af%22 font-family=%22sans-serif%22 font-size=%2218%22 dy=%2210.5%22 font-weight=%22bold%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22%3EImage unavailable%3C/text%3E%3C/svg%3E';"
+    French keywords: y
+
+  Line 151:
+    Content:       </a>
+    French keywords: a
+
+
+VIOLATION #151: /Users/mac/Desktop/Alpha-Medical/assets/section-password.css
+Total occurrences: 2
+
+  Line 180:
+    Content: .password__footer-text a {
+    French keywords: a
+
+  Line 213:
+    Content: .password__footer-caption a {
+    French keywords: a
+
+
+VIOLATION #152: /Users/mac/Desktop/Alpha-Medical/assets/quick-order-list.css
+Total occurrences: 2
+
+  Line 649:
+    Content:   quick-order-list .tax-note {
+    French keywords: note
+
+  Line 654:
+    Content: quick-order-list .tax-note {
+    French keywords: note
+
+
+VIOLATION #153: /Users/mac/Desktop/Alpha-Medical/assets/section-rich-text.css
+Total occurrences: 1
+
+  Line 57:
+    Content: .rich-text__blocks > * + a {
+    French keywords: a
+
+
+VIOLATION #154: /Users/mac/Desktop/Alpha-Medical/assets/section-blog-post.css
+Total occurrences: 42
+
+  Line 1:
+    Content: .article-template > *:first-child:not(.article-template__hero-container) {
+    French keywords: article, article
+
+  Line 6:
+    Content:   .article-template > *:first-child:not(.article-template__hero-container) {
+    French keywords: article, article
+
+  Line 11:
+    Content: .article-template__hero-container {
+    French keywords: article
+
+  Line 16:
+    Content: .article-template__hero-small {
+    French keywords: article
+
+  Line 20:
+    Content: .article-template__hero-medium {
+    French keywords: article
+
+  Line 24:
+    Content: .article-template__hero-large {
+    French keywords: article
+
+  Line 29:
+    Content:   .article-template__hero-small {
+    French keywords: article
+
+  Line 33:
+    Content:   .article-template__hero-medium {
+    French keywords: article
+
+  Line 37:
+    Content:   .article-template__hero-large {
+    French keywords: article
+
+  Line 43:
+    Content:   .article-template__hero-small {
+    French keywords: article
+
+  Line 47:
+    Content:   .article-template__hero-medium {
+    French keywords: article
+
+  Line 51:
+    Content:   .article-template__hero-large {
+    French keywords: article
+
+  Line 56:
+    Content: .article-template header {
+    French keywords: article
+
+  Line 63:
+    Content:   .article-template header {
+    French keywords: article
+
+  Line 68:
+    Content: .article-template__title {
+    French keywords: article
+
+  Line 72:
+    Content: .article-template__title:not(:only-child) {
+    French keywords: article
+
+  Line 76:
+    Content: .article-template__link {
+    French keywords: article
+
+  Line 84:
+    Content: .article-template__link .icon-wrap {
+    French keywords: article
+
+  Line 90:
+    Content: .article-template__content {
+    French keywords: article
+
+  Line 95:
+    Content: .article-template__social-sharing {
+    French keywords: article
+
+  Line 99:
+    Content: .article-template__social-sharing + header,
+    French keywords: article
+
+  Line 100:
+    Content: .article-template__social-sharing + .article-template__content {
+    French keywords: article, article
+
+  Line 104:
+    Content: .article-template__comment-wrapper {
+    French keywords: article
+
+  Line 110:
+    Content:   .article-template__comment-wrapper {
+    French keywords: article
+
+  Line 116:
+    Content: .article-template__comment-wrapper h2 {
+    French keywords: article
+
+  Line 120:
+    Content: .article-template__comments {
+    French keywords: article
+
+  Line 125:
+    Content:   .article-template__comments {
+    French keywords: article
+
+  Line 130:
+    Content: .article-template__comments-fields {
+    French keywords: article
+
+  Line 134:
+    Content: .article-template__comments-comment {
+    French keywords: article, comment
+
+  Line 142:
+    Content:   .article-template__comments-comment {
+    French keywords: article, comment
+
+  Line 147:
+    Content: .article-template__comments-comment p {
+    French keywords: article, comment
+
+  Line 151:
+    Content: .article-template__comment-fields > * {
+    French keywords: article
+
+  Line 156:
+    Content:   .article-template__comment-fields {
+    French keywords: article
+
+  Line 163:
+    Content: .article-template__comment-warning {
+    French keywords: article
+
+  Line 168:
+    Content:   .article-template__comments .pagination-wrapper {
+    French keywords: article
+
+  Line 173:
+    Content: .article-template__back:last-child {
+    French keywords: article
+
+
+VIOLATION #155: /Users/mac/Desktop/Alpha-Medical/assets/facets.js
+Total occurrences: 1
+
+  Line 349:
+    Content:     const facetLink = this.querySelector('a');
+    French keywords: a
+
+
+VIOLATION #156: /Users/mac/Desktop/Alpha-Medical/assets/customer.css
+Total occurrences: 10
+
+  Line 35:
+    Content: .customer ul a {
+    French keywords: a
+
+  Line 332:
+    Content: .login a {
+    French keywords: a
+
+  Line 338:
+    Content: .login a[href='#recover'] {
+    French keywords: a
+
+  Line 343:
+    Content: .login .field + a {
+    French keywords: a
+
+  Line 461:
+    Content: .account h1 + a {
+    French keywords: a
+
+  Line 466:
+    Content: .account a .svg-wrapper {
+    French keywords: a
+
+  Line 484:
+    Content: .account table td:first-of-type a {
+    French keywords: a
+
+  Line 492:
+    Content: .account table td:first-of-type a:hover {
+    French keywords: a
+
+  Line 561:
+    Content: .order .fulfillment a {
+    French keywords: a
+
+  Line 597:
+    Content: .order table a {
+    French keywords: a
+
+
+VIOLATION #157: /Users/mac/Desktop/Alpha-Medical/assets/component-pagination.css
+Total occurrences: 1
+
+  Line 38:
+    Content: a.pagination__item:hover::after {
+    French keywords: a
+
+
+VIOLATION #158: /Users/mac/Desktop/Alpha-Medical/assets/component-volume-pricing.css
+Total occurrences: 3
+
+  Line 22:
+    Content: div.volume-pricing-note {
+    French keywords: note
+
+  Line 26:
+    Content: .product--no-media .volume-pricing-note {
+    French keywords: note
+
+  Line 34:
+    Content: .volume-pricing-note span,
+    French keywords: note
+
+
+VIOLATION #159: /Users/mac/Desktop/Alpha-Medical/assets/component-card.css
+Total occurrences: 31
+
+  Line 146:
+    Content: .card-information .card__information-volume-pricing-note {
+    French keywords: note
+
+  Line 152:
+    Content: .card__information-volume-pricing-note--button,
+    French keywords: note
+
+  Line 153:
+    Content: .card__information-volume-pricing-note--button.quantity-popover__info-button--icon-with-label {
+    French keywords: note
+
+  Line 163:
+    Content: .card__information-volume-pricing-note--button:hover {
+    French keywords: note
+
+  Line 167:
+    Content: .card__information-volume-pricing-note--button + .global-settings-popup.quantity-popover__info {
+    French keywords: note
+
+  Line 175:
+    Content: .card__information-volume-pricing-note--button + .global-settings-popup.quantity-popover__info span:first-of-type {
+    French keywords: note
+
+  Line 179:
+    Content: .card__information-volume-pricing-note--button-right + .global-settings-popup.quantity-popover__info {
+    French keywords: note
+
+  Line 184:
+    Content: .card__information-volume-pricing-note--button-center + .global-settings-popup.quantity-popover__info {
+    French keywords: note
+
+  Line 189:
+    Content: .card__information-volume-pricing-note--button + .global-settings-popup.quantity-popover__info .quantity__rules {
+    French keywords: note
+
+  Line 202:
+    Content:   .grid--6-col-desktop .card__information-volume-pricing-note--button + .global-settings-popup.quantity-popover__info {
+    French keywords: note
+
+  Line 210:
+    Content:     .card__information-volume-pricing-note--button
+    French keywords: note
+
+  Line 223:
+    Content:     .card__information-volume-pricing-note--button
+    French keywords: note
+
+  Line 227:
+    Content:     .card__information-volume-pricing-note--button
+    French keywords: note
+
+  Line 235:
+    Content:     .card__information-volume-pricing-note--button
+    French keywords: note
+
+  Line 242:
+    Content:     .card__information-volume-pricing-note--button
+    French keywords: note
+
+  Line 321:
+    Content:   + *:not(.rating):not(.card__information-volume-pricing-note) {
+    French keywords: note
+
+  Line 341:
+    Content: .card--standard.card--text a::after,
+    French keywords: a
+
+  Line 342:
+    Content: .card--card .card__heading a::after {
+    French keywords: a
+
+  Line 349:
+    Content: .card__heading a::after {
+    French keywords: a
+
+  Line 359:
+    Content: .card__heading a:after {
+    French keywords: a
+
+  Line 363:
+    Content: .card__heading a:focus:after {
+    French keywords: a
+
+  Line 368:
+    Content: .card__heading a:focus-visible:after {
+    French keywords: a
+
+  Line 373:
+    Content: .card__heading a:focus:not(:focus-visible):after {
+    French keywords: a
+
+  Line 378:
+    Content: .card__heading a:focus {
+    French keywords: a
+
+  Line 404:
+    Content:   .underline-links-hover:hover a {
+    French keywords: a
+
+  Line 413:
+    Content: .card--standard.card--text.article-card > .card__content .card__information,
+    French keywords: article
+
+  Line 492:
+    Content:   + quantity-popover:not(.rating):not(.card__information-volume-pricing-note),
+    French keywords: note
+
+  Line 493:
+    Content: .card-information .card__information-volume-pricing-note.card__information-volume-pricing-note--button {
+    French keywords: note, note
+
+  Line 497:
+    Content: .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
+    French keywords: note
+
+  Line 505:
+    Content: .card-article-info {
+    French keywords: article
+
+
+VIOLATION #160: /Users/mac/Desktop/Alpha-Medical/assets/component-slideshow.css
+Total occurrences: 1
+
+  Line 12:
+    Content:   overflow-y: hidden;
+    French keywords: y
+
+
+VIOLATION #161: /Users/mac/Desktop/Alpha-Medical/assets/template-collection.css
+Total occurrences: 1
+
+  Line 97:
+    Content: .collection__view-all a:not(.link) {
+    French keywords: a
+
+
+VIOLATION #162: /Users/mac/Desktop/Alpha-Medical/assets/component-mega-menu.css
+Total occurrences: 1
+
+  Line 11:
+    Content:   overflow-y: auto;
+    French keywords: y
+
+
+VIOLATION #163: /Users/mac/Desktop/Alpha-Medical/assets/base.css
+Total occurrences: 20
+
+  Line 39:
+    Content: .article-card-wrapper .card,
+    French keywords: article
+
+  Line 40:
+    Content: .contains-card--article {
+    French keywords: article
+
+  Line 468:
+    Content: a:empty,
+    French keywords: a
+
+  Line 473:
+    Content: article:empty,
+    French keywords: article
+
+  Line 485:
+    Content: .customer a {
+    French keywords: a
+
+  Line 521:
+    Content: a:not([href]) {
+    French keywords: a
+
+  Line 594:
+    Content: .customer a,
+    French keywords: a
+
+  Line 595:
+    Content: .inline-richtext a {
+    French keywords: a
+
+  Line 602:
+    Content: .customer a {
+    French keywords: a
+
+  Line 606:
+    Content: .inline-richtext a,
+    French keywords: a
+
+  Line 607:
+    Content: .rte.inline-richtext a {
+    French keywords: a
+
+  Line 612:
+    Content: .customer a:hover,
+    French keywords: a
+
+  Line 613:
+    Content: .inline-richtext a:hover {
+    French keywords: a
+
+  Line 848:
+    Content: .title-wrapper-with-link a {
+    French keywords: a
+
+  Line 2398:
+    Content:   .header--middle-center a.header__heading-link {
+    French keywords: a
+
+  Line 3177:
+    Content: .rte a {
+    French keywords: a
+
+  Line 3184:
+    Content: .rte a:hover {
+    French keywords: a
+
+  Line 3358:
+    Content:     transform: translate(-50%, -50%) scale(1.05); /* Apply a specialized transform to the video play button. */
+    French keywords: a
+
+  Line 3369:
+    Content:   .animate--hover-3d-lift .blog-articles .article:hover,
+    French keywords: article, articles
+
+
+VIOLATION #164: /Users/mac/Desktop/Alpha-Medical/assets/recipient-form.js
+Total occurrences: 5
+
+  Line 131:
+    Content:         const a = document.createElement('a');
+    French keywords: a, a
+
+  Line 132:
+    Content:         a.setAttribute('href', target);
+    French keywords: a
+
+  Line 133:
+    Content:         a.innerText = message;
+    French keywords: a
+
+  Line 134:
+    Content:         li.appendChild(a);
+    French keywords: a
+
+
+VIOLATION #165: /Users/mac/Desktop/Alpha-Medical/assets/section-footer.css
+Total occurrences: 6
+
+  Line 225:
+    Content:     On a small screen we want all the items to be centered
+    French keywords: a
+
+  Line 339:
+    Content: .copyright__content a {
+    French keywords: a
+
+  Line 350:
+    Content:   .copyright__content a:hover {
+    French keywords: a
+
+  Line 449:
+    Content: .copyright__content a {
+    French keywords: a
+
+  Line 469:
+    Content: .policies li a {
+    French keywords: a
+
+  Line 475:
+    Content:   .policies li a {
+    French keywords: a
+
+
+VIOLATION #166: /Users/mac/Desktop/Alpha-Medical/assets/section-main-blog.css
+Total occurrences: 31
+
+  Line 1:
+    Content: .blog-articles {
+    French keywords: articles
+
+  Line 8:
+    Content: .blog-articles .card-wrapper {
+    French keywords: articles
+
+  Line 13:
+    Content:   .blog-articles {
+    French keywords: articles
+
+  Line 19:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1),
+    French keywords: articles
+
+  Line 20:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child {
+    French keywords: articles
+
+  Line 25:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .card,
+    French keywords: articles
+
+  Line 26:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .card {
+    French keywords: articles
+
+  Line 30:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--small .ratio::before,
+    French keywords: article, articles
+
+  Line 31:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--small .ratio::before {
+    French keywords: article, articles
+
+  Line 35:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--medium .ratio::before,
+    French keywords: article, articles
+
+  Line 36:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--medium .ratio::before {
+    French keywords: article, articles
+
+  Line 40:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--large .ratio::before,
+    French keywords: article, articles
+
+  Line 41:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--large .ratio::before {
+    French keywords: article, articles
+
+  Line 47:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--small .ratio .ratio::before,
+    French keywords: article, articles
+
+  Line 48:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--small .ratio .ratio::before {
+    French keywords: article, articles
+
+  Line 52:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--medium .ratio::before,
+    French keywords: article, articles
+
+  Line 53:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--medium .ratio::before {
+    French keywords: article, articles
+
+  Line 57:
+    Content:   .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--large .ratio::before,
+    French keywords: article, articles
+
+  Line 58:
+    Content:   .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--large .ratio::before {
+    French keywords: article, articles
+
+
+VIOLATION #167: /Users/mac/Desktop/Alpha-Medical/assets/component-cart.css
+Total occurrences: 4
+
+  Line 40:
+    Content: .cart__login-paragraph a {
+    French keywords: a
+
+  Line 185:
+    Content: .tax-note {
+    French keywords: note
+
+  Line 200:
+    Content:   .cart-note {
+    French keywords: note
+
+  Line 209:
+    Content:   .tax-note {
+    French keywords: note
+
+================================================================================
+END OF REPORT
+================================================================================
