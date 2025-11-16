@@ -1,0 +1,116 @@
+{
+  "timestamp": "2025-11-16T03:20:20.861046",
+  "url": "https://www.alphamedical.shop",
+  "criteria": {
+    "title_tag": {
+      "status": "PASS",
+      "content": "Medical Equipment | FDA-Compliant | Alpha Medical Care",
+      "length": 54,
+      "optimal_range": "50-60 characters"
+    },
+    "meta_description": {
+      "status": "ACCEPTABLE",
+      "content": "Professional medical support equipment & orthopedic braces. Knee braces, posture correctors, LED therapy. Free shipping $50+. FDA-compliant.",
+      "length": 140,
+      "optimal_range": "150-160 characters"
+    },
+    "html_lang": {
+      "status": "PASS",
+      "value": "en"
+    },
+    "open_graph": {
+      "status": "PASS",
+      "tags_found": {
+        "og:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
+        "og:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
+        "og:image": "http://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200",
+        "og:url": "https://www.alphamedical.shop/",
+        "og:type": "website",
+        "og:site_name": "Alpha Medical Care"
+      },
+      "count": "6/6"
+    },
+    "twitter_cards": {
+      "status": "PASS",
+      "tags_found": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
+        "twitter:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
+        "twitter:image": "https://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200"
+      },
+      "count": "4/4"
+    },
+    "structured_data": {
+      "status": "PASS",
+      "schemas_found": {
+        "Organization": true,
+        "WebSite": true,
+        "BreadcrumbList": false,
+        "Product": false,
+        "FAQPage": false,
+        "ProductGroup": true
+      },
+      "count": "3/6",
+      "details": [
+        {
+          "type": "Organization",
+          "keys": [
+            "@context",
+            "@type",
+            "name",
+            "logo",
+            "sameAs",
+            "url"
+          ]
+        },
+        {
+          "type": "WebSite",
+          "keys": [
+            "@context",
+            "@type",
+            "name",
+            "potentialAction",
+            "url"
+          ]
+        },
+        {
+          "type": "ProductGroup",
+          "keys": [
+            "@context",
+            "@id",
+            "@type",
+            "brand",
+            "category",
+            "description",
+            "hasVariant",
+            "name",
+            "productGroupID",
+            "url"
+          ]
+        }
+      ]
+    },
+    "ai_crawlers": {
+      "status": "PASS",
+      "crawler_status": {
+        "GPTBot": "ALLOWED",
+        "Claude-Web": "ALLOWED",
+        "Google-Extended": "ALLOWED",
+        "PerplexityBot": "ALLOWED",
+        "CCBot": "ALLOWED",
+        "Applebot-Extended": "ALLOWED"
+      },
+      "count": "6/6"
+    },
+    "sitemap": {
+      "status": "FAIL",
+      "error": "Couldn't find a tree builder with the features you requested: xml. Do you need to install a parser library?"
+    },
+    "ssl_https": {
+      "status": "PASS",
+      "https_redirect": "PASS",
+      "hsts_enabled": "PASS",
+      "hsts_header": "max-age=7889238"
+    }
+  }
+}
