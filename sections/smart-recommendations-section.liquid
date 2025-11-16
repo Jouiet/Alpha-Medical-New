@@ -1,0 +1,62 @@
+{% comment %}
+  Smart Recommendations Section
+  Wrapper section for smart-recommendations snippet
+{% endcomment %}
+
+<div class="page-width">
+  {% render 'smart-recommendations', product: product, type: 'auto', limit: 4 %}
+</div>
+
+{% schema %}
+{
+  "name": "Smart Recommendations",
+  "tag": "section",
+  "class": "section-smart-recommendations",
+  "settings": [
+    {
+      "type": "select",
+      "id": "recommendation_type",
+      "label": "Recommendation Type",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto (with tabs)"
+        },
+        {
+          "value": "similar",
+          "label": "Similar Products"
+        },
+        {
+          "value": "complements",
+          "label": "Complements"
+        },
+        {
+          "value": "upgrades",
+          "label": "Bundles"
+        }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "range",
+      "id": "products_limit",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "label": "Number of Products",
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title (optional)",
+      "info": "Leave empty for auto-generated title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Smart Recommendations"
+    }
+  ]
+}
+{% endschema %}

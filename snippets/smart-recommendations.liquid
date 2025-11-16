@@ -1,0 +1,448 @@
+{% comment %}
+  SMART RECOMMENDATIONS SNIPPET
+  Displays personalized product recommendations using AI matrix
+
+  Usage:
+    {% render 'smart-recommendations', product: product, type: 'similar' %}
+
+  Parameters:
+    - product: Current product object (required)
+    - type: Recommendation type ('similar', 'complements', 'upgrades', 'auto') (default: 'auto')
+    - limit: Max number of products to show (default: 4)
+    - title: Section title (optional, auto-generated based on type)
+
+  Dependencies:
+    - product-recommendations-matrix.js (loaded in theme.liquid)
+{% endcomment %}
+
+{% liquid
+  assign current_product = product
+  assign rec_type = type | default: 'auto'
+  assign rec_limit = limit | default: 4
+
+  assign section_titles = '{"similar":"You May Also Like","complements":"Frequently Bought Together","upgrades":"Upgrade to Complete Relief Bundles","auto":"Recommended For You"}' | parse_json
+  assign section_title = title | default: section_titles[rec_type]
+%}
+
+<div class="smart-recommendations" data-product-handle="{{ current_product.handle }}" data-rec-type="{{ rec_type }}">
+  <div class="smart-recommendations__header">
+    <h2 class="smart-recommendations__title">{{ section_title }}</h2>
+
+    {% if rec_type == 'auto' %}
+      <div class="smart-recommendations__tabs">
+        <button class="smart-recommendations__tab active" data-type="similar">Similar Products</button>
+        <button class="smart-recommendations__tab" data-type="complements">Complements</button>
+        <button class="smart-recommendations__tab" data-type="upgrades">Bundles</button>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="smart-recommendations__container">
+    <div class="smart-recommendations__loading">
+      <div class="smart-recommendations__spinner"></div>
+      <p>Loading recommendations...</p>
+    </div>
+
+    <div class="smart-recommendations__grid" data-rec-grid>
+      <!-- Products will be injected here by JavaScript -->
+    </div>
+
+    <div class="smart-recommendations__empty" style="display: none;">
+      <p>No recommendations available at this time.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.smart-recommendations {
+  margin: 60px 0;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smart-recommendations__header {
+  margin-bottom: 30px;
+}
+
+.smart-recommendations__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.smart-recommendations__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.smart-recommendations__tab {
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.smart-recommendations__tab:hover {
+  border-color: #4A90E2;
+  color: #4A90E2;
+}
+
+.smart-recommendations__tab.active {
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  border-color: #4A90E2;
+  color: white;
+}
+
+.smart-recommendations__container {
+  position: relative;
+  min-height: 300px;
+}
+
+.smart-recommendations__loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #666;
+}
+
+.smart-recommendations__spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4A90E2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.smart-recommendations__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.smart-recommendations__grid.loaded {
+  opacity: 1;
+}
+
+.smart-recommendations__empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+}
+
+.rec-product-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.rec-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #4A90E2;
+}
+
+.rec-product-card__image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.rec-product-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.rec-product-card:hover .rec-product-card__image {
+  transform: scale(1.05);
+}
+
+.rec-product-card__badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.rec-product-card__content {
+  padding: 15px;
+}
+
+.rec-product-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 44px;
+}
+
+.rec-product-card__price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.rec-product-card__price-current {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4A90E2;
+}
+
+.rec-product-card__price-compare {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.rec-product-card__discount {
+  display: inline-block;
+  background: #ff4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rec-product-card__cta {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.rec-product-card__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+@media (max-width: 768px) {
+  .smart-recommendations {
+    margin: 40px 0;
+  }
+
+  .smart-recommendations__title {
+    font-size: 22px;
+  }
+
+  .smart-recommendations__grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .rec-product-card__title {
+    font-size: 14px;
+    min-height: 40px;
+  }
+
+  .rec-product-card__price-current {
+    font-size: 18px;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  // Wait for DOM and recommendations matrix to load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRecommendations);
+  } else {
+    initRecommendations();
+  }
+
+  function initRecommendations() {
+    const container = document.querySelector('.smart-recommendations');
+    if (!container) return;
+
+    const productHandle = container.dataset.productHandle;
+    const recType = container.dataset.recType;
+    const grid = container.querySelector('[data-rec-grid]');
+    const loading = container.querySelector('.smart-recommendations__loading');
+    const empty = container.querySelector('.smart-recommendations__empty');
+    const tabs = container.querySelectorAll('.smart-recommendations__tab');
+
+    // Check if matrix is loaded
+    if (typeof window.PRODUCT_RECOMMENDATIONS === 'undefined') {
+      console.warn('Recommendations matrix not loaded');
+      showEmpty();
+      return;
+    }
+
+    // Initial load
+    loadRecommendations(recType === 'auto' ? 'similar' : recType);
+
+    // Tab switching
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        loadRecommendations(this.dataset.type);
+      });
+    });
+
+    function loadRecommendations(type) {
+      showLoading();
+
+      // Get recommendations from matrix
+      const recommendations = window.getAllRecommendations(productHandle);
+      const handles = recommendations[type] || [];
+
+      if (handles.length === 0) {
+        showEmpty();
+        return;
+      }
+
+      // Fetch product data for each handle
+      fetchProductsData(handles.slice(0, {{ rec_limit }}))
+        .then(products => {
+          renderProducts(products, type);
+        })
+        .catch(err => {
+          console.error('Failed to fetch recommendations:', err);
+          showEmpty();
+        });
+    }
+
+    function fetchProductsData(handles) {
+      const promises = handles.map(handle =>
+        fetch(`/products/${handle}.js`)
+          .then(res => res.json())
+          .catch(err => {
+            console.warn(`Failed to fetch product: ${handle}`, err);
+            return null;
+          })
+      );
+
+      return Promise.all(promises).then(products =>
+        products.filter(p => p !== null)
+      );
+    }
+
+    function renderProducts(products, type) {
+      if (products.length === 0) {
+        showEmpty();
+        return;
+      }
+
+      grid.innerHTML = '';
+
+      products.forEach(product => {
+        const card = createProductCard(product, type);
+        grid.appendChild(card);
+      });
+
+      hideLoading();
+      grid.classList.add('loaded');
+    }
+
+    function createProductCard(product, type) {
+      const card = document.createElement('div');
+      card.className = 'rec-product-card';
+
+      const variant = product.variants[0];
+      const price = formatMoney(variant.price);
+      const comparePrice = variant.compare_at_price ? formatMoney(variant.compare_at_price) : null;
+      const discount = comparePrice ? Math.round(((variant.compare_at_price - variant.price) / variant.compare_at_price) * 100) : 0;
+
+      const badgeText = type === 'upgrades' ? 'Bundle' : (discount > 0 ? `-${discount}%` : '');
+
+      card.innerHTML = `
+        <a href="/products/${product.handle}" class="rec-product-card__link">
+          <div class="rec-product-card__image-wrapper">
+            ${product.featured_image ? `<img class="rec-product-card__image" src="${product.featured_image}" alt="${product.title}" loading="lazy">` : ''}
+            ${badgeText ? `<div class="rec-product-card__badge">${badgeText}</div>` : ''}
+          </div>
+          <div class="rec-product-card__content">
+            <h3 class="rec-product-card__title">${product.title}</h3>
+            <div class="rec-product-card__price">
+              <span class="rec-product-card__price-current">${price}</span>
+              ${comparePrice ? `<span class="rec-product-card__price-compare">${comparePrice}</span>` : ''}
+            </div>
+            <span class="rec-product-card__cta">View Product</span>
+          </div>
+        </a>
+      `;
+
+      return card;
+    }
+
+    function formatMoney(cents) {
+      return '$' + (cents / 100).toFixed(2);
+    }
+
+    function showLoading() {
+      loading.style.display = 'block';
+      grid.style.display = 'none';
+      empty.style.display = 'none';
+      grid.classList.remove('loaded');
+    }
+
+    function hideLoading() {
+      loading.style.display = 'none';
+      grid.style.display = 'grid';
+    }
+
+    function showEmpty() {
+      loading.style.display = 'none';
+      grid.style.display = 'none';
+      empty.style.display = 'block';
+    }
+  }
+})();
+</script>
