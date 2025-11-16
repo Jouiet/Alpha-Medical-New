@@ -169,10 +169,15 @@
       "settings": {
         "custom_liquid": "{% render 'sticky-add-to-cart', product: product %}"
       }
+    },
+    "bundle_products_showcase_1763392000": {
+      "type": "bundle-products-showcase",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "bundle_products_showcase_1763392000",
     "smart_recommendations_1763260184",
     "17602929538a878fad",
     "related-products",
