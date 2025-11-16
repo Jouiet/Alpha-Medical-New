@@ -1,0 +1,83 @@
+{
+  "total_bundles": 15,
+  "bundles_to_fix": 15,
+  "success_count": 15,
+  "failed_count": 0,
+  "results": [
+    {
+      "handle": "active-athlete-complete-protection",
+      "variant_id": 42421851684941,
+      "success": true
+    },
+    {
+      "handle": "active-athlete-knee-specialist",
+      "variant_id": 42421851652173,
+      "success": true
+    },
+    {
+      "handle": "beauty-wellness-led-complete",
+      "variant_id": 42421937111117,
+      "success": true
+    },
+    {
+      "handle": "chronic-pain-relief-kit",
+      "variant_id": 42421851750477,
+      "success": true
+    },
+    {
+      "handle": "chronic-pain-starter-kit",
+      "variant_id": 42421851619405,
+      "success": true
+    },
+    {
+      "handle": "chronic-pain-whole-body",
+      "variant_id": 42421937012813,
+      "success": true
+    },
+    {
+      "handle": "manual-labor-heavy-duty",
+      "variant_id": 42421937045581,
+      "success": true
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic",
+      "variant_id": 42421936947277,
+      "success": true
+    },
+    {
+      "handle": "office-worker-essential-kit",
+      "variant_id": 42421851553869,
+      "success": true
+    },
+    {
+      "handle": "office-worker-premium-workspace",
+      "variant_id": 42421936980045,
+      "success": true
+    },
+    {
+      "handle": "post-surgery-recovery-complete",
+      "variant_id": 42421936881741,
+      "success": true
+    },
+    {
+      "handle": "rehab-stroke-recovery",
+      "variant_id": 42421937078349,
+      "success": true
+    },
+    {
+      "handle": "senior-advanced-arthritis",
+      "variant_id": 42421937143885,
+      "success": true
+    },
+    {
+      "handle": "senior-mobility-support",
+      "variant_id": 42421851586637,
+      "success": true
+    },
+    {
+      "handle": "ultimate-pain-management-system",
+      "variant_id": 42421936914509,
+      "success": true
+    }
+  ]
+}

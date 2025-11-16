@@ -1,0 +1,42 @@
+{
+  "audit_date": "2025-11-16",
+  "total_bundles": 15,
+  "images": {
+    "pass": 15,
+    "fail": 0,
+    "rate": "100.0%"
+  },
+  "inventory": {
+    "pass": 15,
+    "fail": 0,
+    "rate": "100.0%"
+  },
+  "weight": {
+    "pass": 15,
+    "fail": 0,
+    "rate": "100.0%"
+  },
+  "overall": {
+    "pass": 15,
+    "fail": 0,
+    "rate": "100.0%"
+  },
+  "failures": [],
+  "all_pass": [
+    "active-athlete-complete-protection",
+    "active-athlete-knee-specialist",
+    "beauty-wellness-led-complete",
+    "chronic-pain-relief-kit",
+    "chronic-pain-starter-kit",
+    "chronic-pain-whole-body",
+    "manual-labor-heavy-duty",
+    "office-worker-advanced-ergonomic",
+    "office-worker-essential-kit",
+    "office-worker-premium-workspace",
+    "post-surgery-recovery-complete",
+    "rehab-stroke-recovery",
+    "senior-advanced-arthritis",
+    "senior-mobility-support",
+    "ultimate-pain-management-system"
+  ]
+}

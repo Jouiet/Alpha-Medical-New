@@ -1,0 +1,97 @@
+{
+  "total_bundles": 15,
+  "success_count": 15,
+  "failed_count": 0,
+  "results": [
+    {
+      "handle": "active-athlete-complete-protection",
+      "success": true,
+      "matched_product": "neenca-hinged-knee-brace-side-stabilizers-support",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sc10261a933c84e51980ee375b87daaa6m.webp?v=1760282380"
+    },
+    {
+      "handle": "active-athlete-knee-specialist",
+      "success": true,
+      "matched_product": "sports-knee-pads-pressurized-elastic-support-gym",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S004ad4eef27b4573b40242cf5abe95eeK.webp?v=1761220067"
+    },
+    {
+      "handle": "beauty-wellness-led-complete",
+      "success": true,
+      "matched_product": "7-color-led-face-mask-red-light-therapy",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S2c0e278808a548d78227f2883aa8b703v.webp?v=1760382491"
+    },
+    {
+      "handle": "chronic-pain-relief-kit",
+      "success": true,
+      "matched_product": "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S4f19958451f04707bb48fe13b916060ab.webp?v=1760382488"
+    },
+    {
+      "handle": "chronic-pain-starter-kit",
+      "success": true,
+      "matched_product": "tourmaline-magnetic-knee-pads-self-heating-support",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S4724d3d917604ae2adc3ce7ecd92ab491.webp?v=1761850182"
+    },
+    {
+      "handle": "chronic-pain-whole-body",
+      "success": true,
+      "matched_product": "hello-face-red-light-therapy-mask-face-neck-infrared-led",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sd0a04516f7a345b18bf6103834492136I.webp?v=1760382503"
+    },
+    {
+      "handle": "manual-labor-heavy-duty",
+      "success": true,
+      "matched_product": "posture-corrector-adjustable-back-brace-for-women-men",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S3e41c1869318494baabb42c36194596dE.webp?v=1760382151"
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic",
+      "success": true,
+      "matched_product": "magnetic-posture-corrector-shoulder-orthopedic-brace",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S6def856d74984011baa23f56de21454bq.webp?v=1760275207"
+    },
+    {
+      "handle": "office-worker-essential-kit",
+      "success": true,
+      "matched_product": "adjustable-hunchback-orthotic-brace-back-waist-posture-corrector-back-support-corset-shoulder-spine-brace-neck-stretcher",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Se4bc34b0d01b4c93927e7336cf8e3fffS.webp?v=1761844392"
+    },
+    {
+      "handle": "office-worker-premium-workspace",
+      "success": true,
+      "matched_product": "led-facial-mask-with-neck-7-colors-photon-anti-aging",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S095f186cb59f483380ca2ee963944357r.webp?v=1760800054"
+    },
+    {
+      "handle": "post-surgery-recovery-complete",
+      "success": true,
+      "matched_product": "adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S690054a199a943a7ac8a60c3388cb42cM.webp?v=1761845411"
+    },
+    {
+      "handle": "rehab-stroke-recovery",
+      "success": true,
+      "matched_product": "rehabilitation-robot-gloves-mirror-training-device",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/Sdbffc851f50a44ffbe3d951a502cc813n_4432c2fb-ac68-41e1-972d-fc4223432f49.webp?v=1760382520"
+    },
+    {
+      "handle": "senior-advanced-arthritis",
+      "success": true,
+      "matched_product": "electric-vibration-massager-bunion-corrector-unisex-foot-hallux-valgus-braces-adjustable-toe-separator-finger-toe-corrector",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S6d4f849fc1f046d98a13e4e734d64259f.webp?v=1762438423"
+    },
+    {
+      "handle": "senior-mobility-support",
+      "success": true,
+      "matched_product": "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S252175176daa4529938c9e866adb5f959.webp?v=1760275195"
+    },
+    {
+      "handle": "ultimate-pain-management-system",
+      "success": true,
+      "matched_product": "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+      "image_url": "https://cdn.shopify.com/s/files/1/0671/0316/2445/files/S4f19958451f04707bb48fe13b916060ab.webp?v=1760382488"
+    }
+  ]
+}
