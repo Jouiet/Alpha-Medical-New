@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Confetti Test - Alpha Medical</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4770DB;
+            margin-top: 0;
+        }
+        .test-result {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+        }
+        .test-result.pass {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            color: #155724;
+        }
+        .test-result.fail {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            color: #721c24;
+        }
+        .test-result.info {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            color: #0c5460;
+        }
+        button {
+            background: #4770DB;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #3557b8;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .manual-trigger {
+            background: #28a745;
+        }
+        .manual-trigger:hover {
+            background: #218838;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        .summary {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .summary.success {
+            background: #28a745;
+            color: white;
+        }
+        .summary.failure {
+            background: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🎊 Confetti System Test - Alpha Medical</h1>
+        <p>This page tests the free shipping confetti celebration system.</p>
+
+        <button onclick="runTests()" id="runBtn">Run Tests</button>
+        <button class="manual-trigger" onclick="manualTrigger()">Manual Trigger Confetti</button>
+        <button onclick="clearSession()">Clear Session Storage</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        let testResults = [];
+
+        function addResult(name, passed, message) {
+            testResults.push({ name, passed, message });
+            const resultsDiv = document.getElementById('results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `test-result ${passed ? 'pass' : 'fail'}`;
+            resultDiv.innerHTML = `<strong>${passed ? '✅' : '❌'} ${name}</strong><br>${message}`;
+            resultsDiv.appendChild(resultDiv);
+        }
+
+        function addInfo(message) {
+            const resultsDiv = document.getElementById('results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = message;
+            resultsDiv.appendChild(resultDiv);
+        }
+
+        function showSummary() {
+            const passed = testResults.filter(r => r.passed).length;
+            const total = testResults.length;
+            const allPassed = passed === total;
+
+            const summaryDiv = document.createElement('div');
+            summaryDiv.className = `summary ${allPassed ? 'success' : 'failure'}`;
+            summaryDiv.innerHTML = `
+                ${allPassed ? '🎉' : '⚠️'}
+                Tests: ${passed}/${total} passed
+                ${allPassed ? '<br>✅ CONFETTI SYSTEM READY!' : '<br>❌ Issues detected'}
+            `;
+            document.getElementById('results').insertBefore(summaryDiv, document.getElementById('results').firstChild);
+        }
+
+        async function runTests() {
+            document.getElementById('results').innerHTML = '';
+            testResults = [];
+            document.getElementById('runBtn').disabled = true;
+
+            addInfo('Starting factual verification tests...');
+
+            // TEST 1: Check if confetti function exists
+            const functionExists = typeof window.triggerFreeShippingConfetti === 'function';
+            addResult(
+                'TEST 1: Confetti Function Exists',
+                functionExists,
+                functionExists
+                    ? 'window.triggerFreeShippingConfetti is defined'
+                    : '🚨 CRITICAL: Function not found - script not loaded from theme.liquid'
+            );
+
+            // TEST 2: Fetch homepage and check for script
+            try {
+                const response = await fetch('/');
+                const html = await response.text();
+                const scriptPresent = html.includes('triggerFreeShippingConfetti');
+                addResult(
+                    'TEST 2: Script in HTML Source',
+                    scriptPresent,
+                    scriptPresent
+                        ? 'Confetti script found in theme.liquid HTML'
+                        : '🚨 Script NOT in HTML - deployment issue'
+                );
+            } catch (e) {
+                addResult('TEST 2: Script in HTML Source', false, 'Error fetching page: ' + e.message);
+            }
+
+            // TEST 3: Check for MutationObserver
+            const observerTest = () => {
+                try {
+                    const testObserver = new MutationObserver(() => {});
+                    testObserver.disconnect();
+                    return true;
+                } catch (e) {
+                    return false;
+                }
+            };
+            const observerWorks = observerTest();
+            addResult(
+                'TEST 3: MutationObserver Support',
+                observerWorks,
+                observerWorks
+                    ? 'Browser supports MutationObserver'
+                    : '🚨 Browser does not support MutationObserver'
+            );
+
+            // TEST 4: Check sessionStorage
+            try {
+                sessionStorage.setItem('test', 'test');
+                sessionStorage.removeItem('test');
+                addResult('TEST 4: SessionStorage Available', true, 'SessionStorage is accessible');
+            } catch (e) {
+                addResult('TEST 4: SessionStorage Available', false, '🚨 SessionStorage blocked: ' + e.message);
+            }
+
+            // TEST 5: Test confetti container creation
+            if (functionExists) {
+                addInfo('Testing confetti generation...');
+
+                // Clear cooldown
+                sessionStorage.removeItem('free_shipping_confetti_time');
+
+                // Capture console logs
+                const originalLog = console.log;
+                const logs = [];
+                console.log = function(...args) {
+                    logs.push(args.join(' '));
+                    originalLog.apply(console, args);
+                };
+
+                // Trigger confetti
+                try {
+                    window.triggerFreeShippingConfetti();
+
+                    // Wait a bit for DOM operations
+                    await new Promise(resolve => setTimeout(resolve, 500));
+
+                    // Check if container was created
+                    const container = document.getElementById('confetti-container');
+                    const containerCreated = container !== null;
+                    const confettiCount = container ? container.children.length : 0;
+
+                    addResult(
+                        'TEST 5: Confetti Container Created',
+                        containerCreated,
+                        containerCreated
+                            ? `Container created with ${confettiCount} confetti pieces`
+                            : '🚨 Container not created - check console for errors'
+                    );
+
+                    // Check confetti pieces
+                    addResult(
+                        'TEST 6: Confetti Pieces Generated',
+                        confettiCount === 50,
+                        confettiCount === 50
+                            ? '50 confetti pieces generated correctly'
+                            : `🚨 Expected 50, got ${confettiCount} pieces`
+                    );
+
+                    // Check console logs
+                    const hasInitLog = logs.some(log => log.includes('🎊'));
+                    const hasLaunchLog = logs.some(log => log.includes('🎉'));
+                    addResult(
+                        'TEST 7: Console Logging',
+                        hasInitLog && hasLaunchLog,
+                        (hasInitLog && hasLaunchLog)
+                            ? 'Debug logging working correctly'
+                            : '🚨 Missing expected console logs'
+                    );
+
+                    // Restore console.log
+                    console.log = originalLog;
+
+                } catch (e) {
+                    addResult('TEST 5: Confetti Generation', false, '🚨 Error triggering confetti: ' + e.message);
+                    console.log = originalLog;
+                }
+            }
+
+            showSummary();
+            document.getElementById('runBtn').disabled = false;
+        }
+
+        function manualTrigger() {
+            if (typeof window.triggerFreeShippingConfetti === 'function') {
+                sessionStorage.removeItem('free_shipping_confetti_time');
+                window.triggerFreeShippingConfetti();
+                alert('Confetti triggered! Watch the screen. 🎊');
+            } else {
+                alert('❌ Confetti function not found. Run tests first.');
+            }
+        }
+
+        function clearSession() {
+            sessionStorage.clear();
+            alert('SessionStorage cleared. Cooldown reset.');
+        }
+
+        // Auto-run tests on load
+        window.addEventListener('load', () => {
+            setTimeout(runTests, 500);
+        });
+    </script>
+</body>
+</html>
