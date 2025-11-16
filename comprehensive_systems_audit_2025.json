@@ -1,0 +1,94 @@
+{
+  "timestamp": "2025-11-16T03:12:01.237859",
+  "store": "azffej-as.myshopify.com",
+  "checks": {
+    "bundles_collection": {
+      "status": "FAIL"
+    },
+    "bundle_products": {
+      "status": "PASS",
+      "active": 15,
+      "total": 15,
+      "discount_correct": 15
+    },
+    "bundle_cta_snippets": {
+      "bundles-collection-cta.liquid": "EXISTS",
+      "bundle-hover-images.liquid": "EXISTS",
+      "product-bundle-smart-cta.liquid": "EXISTS",
+      "cart-bundles-upsell.liquid": "EXISTS"
+    },
+    "bundle_mapping": {
+      "status": "PASS"
+    },
+    "social_image_file": {
+      "status": "PASS",
+      "size_kb": 54.78125
+    },
+    "social_image_script": {
+      "status": "PASS"
+    },
+    "email_templates": {
+      "email-welcome-1.liquid": "MISSING",
+      "email-welcome-2.liquid": "MISSING",
+      "email-welcome-3.liquid": "MISSING"
+    },
+    "test_customers": {
+      "status": "PASS",
+      "created_today": 3,
+      "recent_total": 5
+    },
+    "loyalty_scripts": {
+      "loyalty_setup.py": "EXISTS",
+      "loyalty_manager.py": "EXISTS",
+      "loyalty_webhooks.gs": "EXISTS",
+      "loyalty_redemption_api.gs": "EXISTS"
+    },
+    "loyalty_widgets": {
+      "loyalty-points-widget.liquid": "EXISTS",
+      "loyalty-points-badge.liquid": "EXISTS",
+      "loyalty-redemption-form.liquid": "EXISTS",
+      "loyalty-history.liquid": "EXISTS"
+    },
+    "loyalty_system_status": {
+      "status": "BLOCKED",
+      "reason": "Shopify Basic plan - Customer API write access unavailable",
+      "requirement": "Shopify plan upgrade ($79/month)"
+    },
+    "priority_4_social_image": {
+      "status": "READY",
+      "action_required": "Manual upload to Shopify"
+    },
+    "priority_2_subscriptions": {
+      "status": "PENDING",
+      "effort": "20-30 hours",
+      "requirement": "Shopify Admin manual configuration"
+    },
+    "priority_3_loyalty_simplified": {
+      "status": "PENDING",
+      "effort": "10-15 hours",
+      "alternative": "Tag-based system (no customer metafields)"
+    },
+    "priority_1_ai_recommendations": {
+      "status": "PENDING",
+      "effort": "40-60 hours",
+      "approach": "Rule-based collaborative filtering (no external AI APIs)"
+    },
+    "homepage": {
+      "status": "PASS"
+    },
+    "sitemap": {
+      "status": "PASS"
+    },
+    "robots_txt": {
+      "status": "PASS",
+      "ai_crawlers_allowed": []
+    },
+    "documentation": {
+      "TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md": "EXISTS",
+      "LOYALTY_SYSTEM_SETUP_GUIDE.md": "EXISTS",
+      "ALPHA_MEDICAL_15_BUNDLES_FINAL.md": "EXISTS",
+      "SHOPIFY_FLOW_CONFIGURATION_GUIDE.md": "EXISTS",
+      "SEO_MARKETING_FORENSIC_ANALYSIS.md": "EXISTS"
+    }
+  }
+}
