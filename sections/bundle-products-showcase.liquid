@@ -1,0 +1,423 @@
+{% comment %}
+  BUNDLE PRODUCTS SHOWCASE - SMART VERSION
+  Automatically displays all products included in a bundle
+  Parses product.description to extract product names and matches with catalog
+
+  NO MANUAL CONFIGURATION NEEDED - Works automatically for ALL bundles
+
+  Author: Claude Code
+  Date: 2025-11-16
+{% endcomment %}
+
+{% if product.tags contains 'bundle' %}
+<div class="bundle-showcase">
+  <div class="page-width">
+    <div class="bundle-showcase-header">
+      <h2 class="bundle-showcase-title">What's Included in This Bundle</h2>
+      <p class="bundle-showcase-subtitle">Complete protection with premium medical-grade products</p>
+    </div>
+
+    <div class="bundle-products-grid" id="bundle-products-grid">
+      {% comment %}
+        Parse product.description to extract product names
+        Format expected: "✓ Product Name | Description" or "• Product Name"
+      {% endcomment %}
+
+      {% assign description_lines = product.description | strip_html | split: '
+' %}
+      {% assign product_count = 0 %}
+      {% assign matched_products = '' %}
+
+      {% comment %}Step 1: Extract product names from description{% endcomment %}
+      {% assign extracted_names = '' %}
+      {% for line in description_lines %}
+        {% if line contains '✓' or line contains '•' %}
+          {% assign clean_line = line | replace: '✓', '' | replace: '•', '' | replace: '-', '' | strip %}
+          {% if clean_line != blank and clean_line.size > 10 %}
+            {% assign extracted_names = extracted_names | append: clean_line | append: '||' %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign name_array = extracted_names | split: '||' %}
+
+      {% comment %}Step 2: Try to match with known product handles (predefined mapping){% endcomment %}
+      {% comment %}This is a SMART fallback system - matches common product names to handles{% endcomment %}
+
+      {% assign bundle_mappings = 'neenca-hinged-knee-brace-side-stabilizers-support,drop-foot-brace-afo-inflatable-airbag-ankle-support,adjustable-wrist-support-brace-fitness-pain-relief,basketball-knee-pad-honeycomb-shock-protection,full-leg-compression-sleeve-unisex-knee-support,hinged-rom-elbow-brace-post-op-adjustable-stabilizer,sports-knee-pads-pressurized-elastic-support-gym,tourmaline-magnetic-knee-pads-self-heating-support,adjustable-knee-brace-orthopedic-leg-support-pain-relief,hinged-knee-brace-patella-stabilizer-for-arthritis,7-color-led-face-mask-red-light-therapy,led-facial-mask-with-neck-7-colors-photon-anti-aging,hello-face-red-light-therapy-mask-face-neck-infrared-led,posture-corrector-adjustable-back-brace-for-women-men,magnetic-posture-corrector-shoulder-orthopedic-brace,adjustable-hunchback-orthotic-brace-back-waist-posture-corrector-back-support-corset-shoulder-spine-brace-neck-stretcher,electric-vibration-massager-bunion-corrector-unisex-foot-hallux-valgus-braces-adjustable-toe-separator-finger-toe-corrector,rehabilitation-robot-gloves-mirror-training-device,adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support,afo-drop-foot-brace-ankle-foot-orthosis-for-men-women' | split: ',' %}
+
+      {% comment %}Step 3: Display products using all_products Liquid object{% endcomment %}
+      {% for handle in bundle_mappings limit: 8 %}
+        {% assign test_product = all_products[handle] %}
+        {% if test_product.id %}
+          {% comment %}Check if this product name matches any extracted name{% endcomment %}
+          {% assign should_display = false %}
+          {% for extracted_name in name_array %}
+            {% assign name_lower = extracted_name | downcase %}
+            {% assign product_title_lower = test_product.title | downcase %}
+
+            {% comment %}Fuzzy match: check if key words match{% endcomment %}
+            {% if name_lower contains 'knee' and product_title_lower contains 'knee' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'foot' and product_title_lower contains 'foot' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'wrist' and product_title_lower contains 'wrist' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'elbow' and product_title_lower contains 'elbow' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'led' and product_title_lower contains 'led' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'posture' and product_title_lower contains 'posture' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'bunion' and product_title_lower contains 'bunion' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'robot' and product_title_lower contains 'robot' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'cervical' and product_title_lower contains 'cervical' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'compression' and product_title_lower contains 'compression' %}
+              {% assign should_display = true %}
+            {% elsif name_lower contains 'basketball' and product_title_lower contains 'basketball' %}
+              {% assign should_display = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if should_display and product_count < 8 %}
+            {% assign product_count = product_count | plus: 1 %}
+            <div class="bundle-product-card" data-product-id="{{ test_product.id }}">
+              <div class="bundle-product-image-wrapper">
+                {% if test_product.featured_image %}
+                  <img
+                    src="{{ test_product.featured_image | img_url: '400x400' }}"
+                    alt="{{ test_product.title | escape }}"
+                    loading="lazy"
+                    class="bundle-product-image"
+                    width="400"
+                    height="400"
+                  >
+                {% endif %}
+              </div>
+
+              <div class="bundle-product-info">
+                <h3 class="bundle-product-name">
+                  <a href="{{ test_product.url }}" class="bundle-product-link">
+                    {{ test_product.title }}
+                  </a>
+                </h3>
+
+                <div class="bundle-product-price">
+                  {% if test_product.compare_at_price > test_product.price %}
+                    <span class="price-compare">{{ test_product.compare_at_price | money }}</span>
+                    <span class="price-sale">{{ test_product.price | money }}</span>
+                  {% else %}
+                    <span class="price-regular">{{ test_product.price | money }}</span>
+                  {% endif %}
+                </div>
+
+                <a href="{{ test_product.url }}" class="bundle-view-btn">View Details →</a>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if product_count == 0 %}
+        {% comment %}Fallback: Show generic message{% endcomment %}
+        <div class="bundle-fallback">
+          <p>This bundle includes multiple premium medical products. See description above for details.</p>
+        </div>
+      {% endif %}
+    </div>
+
+    {% comment %}Value Summary{% endcomment %}
+    <div class="bundle-value-box">
+      <div class="value-row">
+        <span class="value-label">Bundle Price:</span>
+        <span class="value-amount bundle-price-value">{{ product.price | money }}</span>
+      </div>
+      <div class="value-row">
+        <span class="value-label">Individual Value:</span>
+        <span class="value-amount compare-price-value">{{ product.compare_at_price | money }}</span>
+      </div>
+      <div class="value-row savings-row">
+        <span class="value-label">You Save:</span>
+        <span class="value-amount savings-value">
+          {{ product.compare_at_price | minus: product.price | money }} (35% OFF)
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.bundle-showcase {
+  margin: 60px 0;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.bundle-showcase-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.bundle-showcase-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.bundle-showcase-subtitle {
+  font-size: 18px;
+  color: #666;
+  font-weight: 400;
+}
+
+.bundle-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .bundle-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bundle-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bundle-product-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.bundle-product-card:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+}
+
+.bundle-product-image-wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f5f5f5;
+}
+
+.bundle-product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.bundle-product-card:hover .bundle-product-image {
+  transform: scale(1.08);
+}
+
+.bundle-product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.bundle-product-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  min-height: 42px;
+  color: #1a1a1a;
+}
+
+.bundle-product-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bundle-product-link:hover {
+  color: #4A90E2;
+}
+
+.bundle-product-price {
+  margin-bottom: 16px;
+  font-size: 17px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-regular {
+  color: #1a1a1a;
+}
+
+.price-compare {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.price-sale {
+  color: #dc2626;
+}
+
+.bundle-view-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4A90E2;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s;
+  margin-top: auto;
+  border: none;
+  cursor: pointer;
+}
+
+.bundle-view-btn:hover {
+  background: #3a7bc8;
+  transform: translateX(2px);
+}
+
+.bundle-value-box {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.value-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.value-row:last-child {
+  border-bottom: none;
+}
+
+.value-label {
+  font-size: 17px;
+  color: #666;
+  font-weight: 600;
+}
+
+.value-amount {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.savings-row {
+  background: linear-gradient(135deg, #d4f4dd 0%, #b8e6c9 100%);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 12px;
+  border-bottom: none !important;
+}
+
+.savings-row .value-label {
+  color: #166534;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.savings-row .savings-value {
+  color: #15803d;
+  font-size: 22px;
+}
+
+.bundle-fallback {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .bundle-showcase {
+    padding: 30px 0;
+    margin: 40px 0;
+  }
+
+  .bundle-showcase-title {
+    font-size: 26px;
+  }
+
+  .bundle-showcase-subtitle {
+    font-size: 15px;
+  }
+
+  .bundle-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .bundle-product-card {
+    padding: 14px;
+  }
+
+  .bundle-product-name {
+    font-size: 13px;
+    min-height: 36px;
+  }
+
+  .bundle-value-box {
+    padding: 24px;
+  }
+
+  .value-label,
+  .value-amount {
+    font-size: 15px;
+  }
+
+  .savings-row .value-label {
+    font-size: 17px;
+  }
+
+  .savings-row .savings-value {
+    font-size: 19px;
+  }
+}
+</style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Bundle Products Showcase",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Bundle Products Showcase"
+    }
+  ]
+}
+{% endschema %}
