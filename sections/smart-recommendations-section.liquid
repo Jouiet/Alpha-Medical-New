@@ -4,7 +4,11 @@
 {% endcomment %}
 
 <div class="page-width">
-  {% render 'smart-recommendations', product: product, type: 'auto', limit: 4 %}
+  {% render 'smart-recommendations', 
+     product: product, 
+     type: section.settings.recommendation_type, 
+     limit: section.settings.products_limit,
+     title: section.settings.section_title %}
 </div>
 
 {% schema %}
