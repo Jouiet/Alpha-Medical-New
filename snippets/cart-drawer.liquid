@@ -82,8 +82,10 @@
         <div class="cart-section cart-section--bundles">
           {%- if cart != empty -%}
             {%- render 'cart-bundles-upsell' -%}
-            {%- render 'free-shipping-progress-bar' -%}
-            {%- render 'loyalty-points-badge' -%}
+            <div class="cart-section-1-inline">
+              {%- render 'free-shipping-progress-bar' -%}
+              {%- render 'loyalty-points-badge' -%}
+            </div>
           {%- endif -%}
         </div>
 
@@ -123,6 +125,94 @@
         /* Section 1: Bundles - Larger text */
         .cart-section--bundles {
           font-size: 1.1rem;
+        }
+
+        /* SECTION 1: INLINE LAYOUT - Free Shipping + Rewards */
+        .cart-section-1-inline {
+          display: flex;
+          gap: 0.5rem;
+          align-items: stretch;
+        }
+
+        .cart-section-1-inline > * {
+          flex: 1;
+          min-width: 0;
+        }
+
+        /* Optimize Free Shipping Bar when inline */
+        .cart-section-1-inline .free-shipping-bar-wrapper {
+          margin: 8px 0 !important;
+          padding: 10px !important;
+          border-radius: 6px !important;
+        }
+
+        .cart-section-1-inline .free-shipping-message {
+          font-size: 11px !important;
+          margin-bottom: 6px !important;
+          gap: 4px !important;
+        }
+
+        .cart-section-1-inline .icon-checkmark {
+          width: 14px !important;
+          height: 14px !important;
+        }
+
+        .cart-section-1-inline .progress-bar-track {
+          height: 16px !important;
+        }
+
+        .cart-section-1-inline .progress-labels {
+          font-size: 9px !important;
+        }
+
+        /* Optimize Loyalty Badge when inline */
+        .cart-section-1-inline .loyalty-badge-compact {
+          padding: 10px !important;
+          margin: 8px 0 !important;
+          border-radius: 6px !important;
+        }
+
+        .cart-section-1-inline .loyalty-compact-header {
+          font-size: 11px !important;
+          margin-bottom: 4px !important;
+        }
+
+        .cart-section-1-inline .rewards-cta-compact,
+        .cart-section-1-inline .loyalty-compact-cta {
+          padding: 6px 10px !important;
+          font-size: 10px !important;
+        }
+
+        /* SECTION 1: REDUCE BUNDLES HEIGHT ÷2 */
+        .cart-section--bundles .cart-bundle-upsell {
+          padding: 8px 10px !important;
+          margin: 8px 0 !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell__icon {
+          width: 20px !important;
+          height: 20px !important;
+          margin: 0 auto 6px !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell__icon svg {
+          width: 10px !important;
+          height: 10px !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell__title {
+          font-size: 13px !important;
+          margin: 0 0 4px 0 !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell__text {
+          font-size: 11px !important;
+          margin: 0 0 8px 0 !important;
+        }
+
+        .cart-section--bundles .cart-bundle-upsell__button {
+          padding: 5px 12px !important;
+          font-size: 11px !important;
         }
 
         /* Section 2: Cart Items - Optimized table text */
