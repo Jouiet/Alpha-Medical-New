@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 16, 2025 at 11:30 UTC
+**Generated:** November 16, 2025 at 14:09 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -83,7 +83,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -10540,7 +10540,7 @@ shopify theme push  # Select live theme when prompted
 **CORRECTED REALITY (FACTUAL):**
 
 **✅ INSTALLED (3/5 tracking platforms):**
-1. **Google Tag Manager:** GTM-MW2FN7MQ
+1. **Google Tag Manager:** GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 2. **Google Analytics 4:** 
    - GT-NC6L8G55
    - G-646TW8P5E0
@@ -10704,7 +10704,7 @@ The 54.5% score **understates actual compliance** due to overly strict criteria:
 
 **Factual Reality:**
 - GA4 INSTALLED via Conversios app (Oct 30, 2024)
-- GTM Container ACTIVE (GTM-MW2FN7MQ)
+- GTM Container ACTIVE (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))
 - Google Merchant Center CONFIGURED (MC-38T9BHWKF5)
 - Web Pixels Manager with 1 pixel configured
 
@@ -10771,7 +10771,7 @@ The 54.5% score **understates actual compliance** due to overly strict criteria:
 **Status:** ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 
 **Configuration:**
-- GTM Container: GTM-MW2FN7MQ
+- GTM Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 - GA4 Measurement IDs: GT-NC6L8G55, G-646TW8P5E0
 - Google Merchant Center: MC-38T9BHWKF5
 - Installation Date: October 30, 2024
@@ -10794,10 +10794,10 @@ The 54.5% score **understates actual compliance** due to overly strict criteria:
 ```markdown
 ### 3. **Google Tag Manager (GTM)** - ✅ INSTALLED
 
-**Status:** ✅ **INSTALLED (GTM-MW2FN7MQ)**
+**Status:** ✅ **INSTALLED (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))**
 
 **Configuration:**
-- Container ID: GTM-MW2FN7MQ
+- Container ID: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 - Installed via: Conversios app (Oct 30, 2024)
 - Status: Active and firing
 ```
@@ -11166,7 +11166,7 @@ Innovation
 
 7. **GA4 + GTM + Conversios** ✅ (COMMON - ~60% adoption)
    - GA4 Measurement IDs: GT-NC6L8G55, G-646TW8P5E0
-   - GTM Container: GTM-MW2FN7MQ
+   - GTM Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
    - Conversios app (Oct 30, 2024): Enhanced tracking
    - Google Merchant Center: MC-38T9BHWKF5
    - **Innovation Level:** Median
@@ -15458,7 +15458,7 @@ if overlap_keywords >= 2: → upgrade_bundles
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -19448,7 +19448,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -20018,7 +20018,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -20593,7 +20593,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -20920,7 +20920,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -21045,7 +21045,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -21565,7 +21565,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -22108,7 +22108,7 @@ python3 generate_llms_txt.py
 # 9. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -22951,7 +22951,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 10. Alpha Medical 15 Bundles Final
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -25519,7 +25519,7 @@ Response: 200 OK
 # 11. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -25839,7 +25839,7 @@ For each bundle:
 # 12. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -29752,7 +29752,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 13. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -31576,7 +31576,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 14. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -31749,7 +31749,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 15. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -32655,7 +32655,7 @@ function markProposalsAsCreated(hash) {
 # 16. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -33120,7 +33120,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 17. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -34339,7 +34339,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 18. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -36148,7 +36148,7 @@ Pack de 10-20 pads = Meilleur prix
 # 19. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -36445,7 +36445,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 20. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -37049,7 +37049,7 @@ June:
 # 21. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -37440,7 +37440,7 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 # 22. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -38823,7 +38823,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 23. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -39671,7 +39671,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 24. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -40086,7 +40086,7 @@ python3 generate_llms_txt.py
 # 25. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -40789,7 +40789,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 26. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -41550,7 +41550,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 27. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -41569,7 +41569,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 |-------------|--------|------------|----------|--------------|
 | **Klaviyo** | ✅ ACTIF | Company ID: WTx7Jb | Email marketing + SMS | Script live détecté |
 | **Google Analytics 4** | ✅ ACTIF | G-646TW8P5E0 | Analytics web | Measurement ID vérifié |
-| **Google Tag Manager** | ✅ ACTIF | GTM-MW2FN7MQ | Tag management | Container ID vérifié |
+| **Google Tag Manager** | ✅ ACTIF | GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM) | Tag management | Container ID vérifié |
 | **Loox** | ✅ ACTIF | _VKAJ9m85g | Product reviews | Widget vérifié |
 | **ReConvert** | ✅ ACTIF | Extension 353 | Post-purchase upsells | Script détecté |
 | **Shopify Inbox** | ✅ ACTIF | inbox-1251 | Live chat | Script détecté |
@@ -41617,7 +41617,7 @@ Via app: "Conversios Google Analytics 4" (30th OCT 2024)
 - ⚠️ purchase - À vérifier
 
 #### ✅ Google Tag Manager (ACTIF)
-**Container ID:** GTM-MW2FN7MQ
+**Container ID:** GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 
 **Configuration:**
 - GTM script chargé sur toutes les pages
@@ -41708,7 +41708,7 @@ grep "facebook.*tracking" = 0 résultats
 ```html
 <!-- Facebook Pixel via GTM (Recommandé) -->
 1. Créer Facebook Pixel dans Meta Business Manager
-2. Ajouter pixel via Google Tag Manager (GTM-MW2FN7MQ)
+2. Ajouter pixel via Google Tag Manager (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))
 3. Configurer events: PageView, ViewContent, AddToCart, Purchase
 4. Tester avec Facebook Pixel Helper extension
 ```
@@ -42081,7 +42081,7 @@ Impact: Email performance +10-20%
 
 2. Ajouter via GTM (RECOMMANDÉ)
    - GTM dashboard: https://tagmanager.google.com/
-   - Container: GTM-MW2FN7MQ
+   - Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
    - New Tag → Facebook Pixel
    - Paste Pixel ID
    - Trigger: All Pages
@@ -42312,7 +42312,7 @@ _learnq.push(['track', 'Viewed Product', item]);
 G-646TW8P5E0
 
 // Google Tag Manager  
-GTM-MW2FN7MQ
+GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 
 // Loox Reviews
 https://loox.io/widget/_VKAJ9m85g/loox.1760287760427.js
@@ -42356,7 +42356,7 @@ grep "fbq(" homepage → 0 results
 # 28. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -42584,7 +42584,7 @@ grep "fbq(" homepage → 0 results
 # 29. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -45551,7 +45551,7 @@ FILES:
 # 30. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -45824,7 +45824,7 @@ Workflow AUTOMATIQUE:
 # 31. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -46574,7 +46574,7 @@ Cliquer **"Save"**
 # 32. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -47020,7 +47020,7 @@ Tous les documents sont prêts et validés contre sources officielles:
 # 33. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -47728,7 +47728,7 @@ End flow
 # 34. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -48180,7 +48180,7 @@ python3 update_landing_page_with_klaviyo.py
 # 35. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -48766,7 +48766,7 @@ Not `text/html` or `application/octet-stream`
 # 36. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -49155,7 +49155,7 @@ query GetCustomerLoyalty($customerId: ID!) {
 # 37. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -49712,7 +49712,7 @@ After setup complete, verify:
 # 38. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -49806,7 +49806,7 @@ Create new menu "Footer CONNECT" with these items:
 # 39. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -49889,7 +49889,7 @@ Après sauvegarde:
 # 40. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -50268,7 +50268,7 @@ EMAIL_CODES:
 # 41. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -50969,7 +50969,7 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 # 42. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -51221,7 +51221,7 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 # 43. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -51678,7 +51678,7 @@ Mark Task 3.10 as COMPLETE when:
 # 44. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -52214,7 +52214,7 @@ Mark Task 3.10 as COMPLETE when:
 # 45. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -52593,7 +52593,7 @@ Pour la validation complète, voir:
 # 46. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -53514,7 +53514,7 @@ Timestamp: 2025-10-13T00:00:00Z
 # 47. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -54260,7 +54260,7 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 # 48. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -54492,7 +54492,7 @@ Cliquer **"Generate from template"** pour:
 # 49. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -54863,7 +54863,7 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 # 50. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -55181,7 +55181,7 @@ Update robots.txt.liquid when:
 # 51. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -55643,7 +55643,7 @@ data = {
 # 52. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -55832,7 +55832,7 @@ data = {
 # 53. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -55868,7 +55868,7 @@ data = {
 **CRITICAL CORRECTION:** Previous analysis in TRACKING_ANALYTICS_GAPS_2025.md was **INCORRECT**.
 
 **INSTALLED (3/5):**
-- ✅ Google Tag Manager (GTM-MW2FN7MQ)
+- ✅ Google Tag Manager (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))
 - ✅ Google Analytics 4 (GT-NC6L8G55, G-646TW8P5E0) via Conversios app (Oct 30, 2024)
 - ✅ Google Merchant Center (MC-38T9BHWKF5)
 - ✅ Web Pixels Manager (1 pixel: App ID 1301053517)
@@ -56015,7 +56015,7 @@ Status: ❌ **NOT INSTALLED**
 ```
 ### 1. **Google Analytics 4 (GA4)** - INSTALLED ✅
 Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
-- GTM Container: GTM-MW2FN7MQ
+- GTM Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 - GA4 Measurement IDs: GT-NC6L8G55, G-646TW8P5E0
 - Google Merchant Center: MC-38T9BHWKF5
 ```
@@ -56128,7 +56128,7 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 # 54. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -56363,7 +56363,7 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 # 55. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -56976,7 +56976,7 @@ All 3 have:
 # 56. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -57238,7 +57238,7 @@ To quickly complete the basic site setup:
 # 57. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -57730,7 +57730,7 @@ Si besoin d'aide:
 # 58. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -58075,7 +58075,7 @@ Complete your order - Alpha Medical Care
 # 59. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -59235,7 +59235,7 @@ Production Confidence: **75%** (should work, but unverified)
 # 60. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -59652,7 +59652,7 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 # 61. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -59748,7 +59748,7 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 # 62. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -60383,7 +60383,7 @@ function getRecommendations(pain, activity, budget) {
 # 63. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -60761,7 +60761,7 @@ After installing tracking:
 # 64. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-16 11:30
+**Last Modified:** 2025-11-16 14:09
 
 ---
 
@@ -62279,7 +62279,7 @@ Visit **alphamedicalcare.com/resources** for:
 ## Document Information
 
 **Total Documentation Files:** 64
-**Generated:** November 16, 2025 at 11:30 UTC
+**Generated:** November 16, 2025 at 14:09 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
