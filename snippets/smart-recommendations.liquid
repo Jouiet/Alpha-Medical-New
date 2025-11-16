@@ -20,8 +20,17 @@
   assign rec_type = type | default: 'auto'
   assign rec_limit = limit | default: 4
 
-  assign section_titles = '{"similar":"You May Also Like","complements":"Frequently Bought Together","upgrades":"Upgrade to Complete Relief Bundles","auto":"Recommended For You"}' | parse_json
-  assign section_title = title | default: section_titles[rec_type]
+  if title != blank
+    assign section_title = title
+  elsif rec_type == 'similar'
+    assign section_title = 'You May Also Like'
+  elsif rec_type == 'complements'
+    assign section_title = 'Frequently Bought Together'
+  elsif rec_type == 'upgrades'
+    assign section_title = 'Upgrade to Complete Relief Bundles'
+  else
+    assign section_title = 'Recommended For You'
+  endif
 %}
 
 <div class="smart-recommendations" data-product-handle="{{ current_product.handle }}" data-rec-type="{{ rec_type }}">
