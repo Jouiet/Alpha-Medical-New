@@ -40,6 +40,12 @@
   <meta property="og:image:secure_url" content="https:{{ settings.logo | image_url: width: 1200 }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+{%- else -%}
+  {%- comment -%} Fallback to uploaded social media image {%- endcomment -%}
+  <meta property="og:image" content="http:{{ 'alpha-medical-social.png' | asset_url }}">
+  <meta property="og:image:secure_url" content="https:{{ 'alpha-medical-social.png' | asset_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 {%- endif -%}
 
 {%- if request.page_type == 'product' -%}
@@ -59,4 +65,6 @@
   <meta name="twitter:image" content="https:{{ settings.share_image | image_url: width: 1200 }}">
 {%- elsif settings.logo -%}
   <meta name="twitter:image" content="https:{{ settings.logo | image_url: width: 1200 }}">
+{%- else -%}
+  <meta name="twitter:image" content="https:{{ 'alpha-medical-social.png' | asset_url }}">
 {%- endif -%}
