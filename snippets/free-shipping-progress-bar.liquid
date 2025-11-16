@@ -15,10 +15,10 @@
   endif
 -%}
 
-<div class="free-shipping-bar-wrapper" data-cart-total="{{ cart_total }}">
+<div class="free-shipping-bar-wrapper" data-cart-total="{{ cart_total }}" data-threshold="{{ free_shipping_threshold }}">
   {% if cart_total >= free_shipping_threshold %}
     {%- comment -%} Free shipping unlocked {%- endcomment -%}
-    <div class="free-shipping-message success">
+    <div class="free-shipping-message success" data-confetti-trigger="true">
       <svg class="icon-checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
         <path d="M6 10l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -267,118 +267,143 @@
 </style>
 
 <script>
-  // CONFETTI CELEBRATION SYSTEM
-  function createConfetti() {
-    // Check if already celebrated this session
-    const sessionKey = 'confetti_celebrated_' + Date.now();
-    const lastCelebration = sessionStorage.getItem('free_shipping_confetti');
+  // CONFETTI CELEBRATION SYSTEM - AJAX-COMPATIBLE
+  (function() {
+    'use strict';
 
-    // Only celebrate once per page load
-    if (lastCelebration && (Date.now() - parseInt(lastCelebration)) < 10000) {
-      return;
-    }
+    // Global confetti function
+    window.triggerFreeShippingConfetti = function() {
+      console.log('🎊 triggerFreeShippingConfetti called');
 
-    sessionStorage.setItem('free_shipping_confetti', Date.now().toString());
+      // Check if already celebrated recently
+      const lastCelebration = sessionStorage.getItem('free_shipping_confetti_time');
+      const now = Date.now();
 
-    // Create container
-    let container = document.getElementById('confetti-container');
-    if (!container) {
-      container = document.createElement('div');
-      container.id = 'confetti-container';
-      document.body.appendChild(container);
-    }
-
-    // Color palette (Alpha Medical brand colors + celebration colors)
-    const colors = [
-      '#4770DB', // Primary blue
-      '#5b84e8', // Light blue
-      '#28a745', // Success green
-      '#ffc107', // Gold
-      '#ff6b6b', // Coral
-      '#4ecdc4', // Teal
-      '#95e1d3', // Mint
-      '#f38181'  // Rose
-    ];
-
-    // Shapes
-    const shapes = ['square', 'circle', 'triangle'];
-
-    // Generate 50 confetti pieces
-    const confettiCount = 50;
-
-    for (let i = 0; i < confettiCount; i++) {
-      const confetti = document.createElement('div');
-      confetti.className = 'confetti-piece falling';
-
-      // Random shape
-      const shape = shapes[Math.floor(Math.random() * shapes.length)];
-      confetti.classList.add(shape);
-
-      // Random color
-      const color = colors[Math.floor(Math.random() * colors.length)];
-      confetti.style.background = color;
-      if (shape === 'triangle') {
-        confetti.style.borderBottomColor = color;
+      if (lastCelebration && (now - parseInt(lastCelebration)) < 5000) {
+        console.log('⏭️ Confetti skipped - already celebrated recently');
+        return;
       }
 
-      // Random horizontal position
-      confetti.style.left = Math.random() * 100 + '%';
+      console.log('✅ Confetti triggered!');
+      sessionStorage.setItem('free_shipping_confetti_time', now.toString());
 
-      // Random animation properties
-      const fallDuration = 2 + Math.random() * 1.5; // 2-3.5s
-      const drift = (Math.random() - 0.5) * 200; // -100px to +100px drift
-      const rotation = Math.random() * 720 - 360; // -360deg to +360deg
-
-      confetti.style.setProperty('--fall-duration', fallDuration + 's');
-      confetti.style.setProperty('--drift', drift + 'px');
-      confetti.style.setProperty('--rotation', rotation + 'deg');
-
-      // Add delay for staggered effect
-      confetti.style.animationDelay = (Math.random() * 0.3) + 's';
-
-      container.appendChild(confetti);
-    }
-
-    // Clean up after animations complete
-    setTimeout(() => {
-      if (container && container.parentNode) {
-        container.remove();
+      // Create container
+      let container = document.getElementById('confetti-container');
+      if (!container) {
+        container = document.createElement('div');
+        container.id = 'confetti-container';
+        document.body.appendChild(container);
+        console.log('📦 Confetti container created');
       }
-    }, 4000); // Remove after 4s (max animation time)
-  }
 
-  // Update progress bar on cart changes
-  document.addEventListener('DOMContentLoaded', function() {
-    const progressBar = document.querySelector('.free-shipping-bar-wrapper');
+      // Color palette (Alpha Medical brand colors + celebration colors)
+      const colors = [
+        '#4770DB', // Primary blue
+        '#5b84e8', // Light blue
+        '#28a745', // Success green
+        '#ffc107', // Gold
+        '#ff6b6b', // Coral
+        '#4ecdc4', // Teal
+        '#95e1d3', // Mint
+        '#f38181'  // Rose
+      ];
 
-    if (progressBar) {
-      // Check if free shipping is already unlocked on page load
-      const cartTotal = parseInt(progressBar.getAttribute('data-cart-total'));
-      const threshold = 15000; // $150 in cents
+      // Shapes
+      const shapes = ['square', 'circle', 'triangle'];
 
-      if (cartTotal >= threshold) {
-        // Delay slightly to ensure DOM is ready
+      // Generate 50 confetti pieces
+      const confettiCount = 50;
+
+      for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti-piece falling';
+
+        // Random shape
+        const shape = shapes[Math.floor(Math.random() * shapes.length)];
+        confetti.classList.add(shape);
+
+        // Random color
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.background = color;
+        if (shape === 'triangle') {
+          confetti.style.borderBottomColor = color;
+        }
+
+        // Random horizontal position
+        confetti.style.left = Math.random() * 100 + '%';
+
+        // Random animation properties
+        const fallDuration = 2 + Math.random() * 1.5; // 2-3.5s
+        const drift = (Math.random() - 0.5) * 200; // -100px to +100px drift
+        const rotation = Math.random() * 720 - 360; // -360deg to +360deg
+
+        confetti.style.setProperty('--fall-duration', fallDuration + 's');
+        confetti.style.setProperty('--drift', drift + 'px');
+        confetti.style.setProperty('--rotation', rotation + 'deg');
+
+        // Add delay for staggered effect
+        confetti.style.animationDelay = (Math.random() * 0.3) + 's';
+
+        container.appendChild(confetti);
+      }
+
+      console.log(`🎉 ${confettiCount} confetti pieces launched!`);
+
+      // Clean up after animations complete
+      setTimeout(() => {
+        if (container && container.parentNode) {
+          container.remove();
+          console.log('🧹 Confetti cleaned up');
+        }
+      }, 4000);
+    };
+
+    // Check for confetti trigger on DOM mutations (for AJAX cart updates)
+    function checkConfettiTrigger() {
+      const trigger = document.querySelector('[data-confetti-trigger="true"]');
+      if (trigger && !trigger.hasAttribute('data-confetti-fired')) {
+        console.log('🎯 Confetti trigger found!');
+        trigger.setAttribute('data-confetti-fired', 'true');
+        // Small delay to let UI settle
         setTimeout(() => {
-          createConfetti();
-        }, 300);
+          window.triggerFreeShippingConfetti();
+        }, 200);
       }
+    }
 
-      // Listen for Shopify cart update events
-      document.addEventListener('cart:updated', function(event) {
-        progressBar.setAttribute('data-cart-updated', 'true');
+    // Initial check on script load
+    checkConfettiTrigger();
 
-        // Check if threshold just crossed
-        setTimeout(() => {
-          const updatedBar = document.querySelector('.free-shipping-bar-wrapper');
-          if (updatedBar) {
-            const newTotal = parseInt(updatedBar.getAttribute('data-cart-total'));
-            if (newTotal >= threshold) {
-              createConfetti();
-            }
-          }
-          progressBar.removeAttribute('data-cart-updated');
-        }, 600);
+    // Watch for DOM changes (AJAX cart updates)
+    const observer = new MutationObserver(function(mutations) {
+      checkConfettiTrigger();
+    });
+
+    // Start observing
+    if (document.body) {
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      console.log('👀 MutationObserver started - watching for confetti triggers');
+    } else {
+      // Body not ready yet, wait for DOMContentLoaded
+      document.addEventListener('DOMContentLoaded', function() {
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+        checkConfettiTrigger();
+        console.log('👀 MutationObserver started (after DOMContentLoaded)');
       });
     }
-  });
+
+    // Also listen for cart:updated event as backup
+    document.addEventListener('cart:updated', function() {
+      console.log('🛒 cart:updated event detected');
+      setTimeout(checkConfettiTrigger, 500);
+    });
+
+    console.log('✅ Confetti system initialized');
+  })();
 </script>
