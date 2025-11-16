@@ -19,6 +19,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [SEO_AUDIT_RECOMMENDATIONS](SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
 - [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
+- [SESSION_PART_14_COMPREHENSIVE_AUDIT](SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
 
 ### Pricing & Product Management
 
