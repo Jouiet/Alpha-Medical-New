@@ -168,12 +168,19 @@
         "products_limit": 4,
         "section_title": ""
       }
+    },
+    "sticky_add_to_cart_1763302400": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'sticky-add-to-cart', product: product %}"
+      }
     }
   },
   "order": [
     "main",
     "smart_recommendations_1763260184",
     "17602929538a878fad",
-    "related-products"
+    "related-products",
+    "sticky_add_to_cart_1763302400"
   ]
 }
