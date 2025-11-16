@@ -470,15 +470,24 @@
   (function() {
     'use strict';
 
-    const stickyATC = document.getElementById('sticky-add-to-cart-{{ product.id }}');
-    if (!stickyATC) return;
+    // Wait for DOM to be fully loaded
+    function initStickyATC() {
+      const stickyATC = document.getElementById('sticky-add-to-cart-{{ product.id }}');
+      if (!stickyATC) return;
 
     const productHandle = stickyATC.dataset.productHandle;
     const productId = stickyATC.dataset.productId;
 
-    // Find main add to cart button
-    const mainATCButton = document.querySelector('form[action="/cart/add"] button[type="submit"]');
-    if (!mainATCButton) return;
+    // Find main add to cart button (try multiple selectors for different themes)
+    const mainATCButton =
+      document.querySelector('button[name="add"]') || // Dawn theme
+      document.querySelector('form[action="/cart/add"] button[type="submit"]') || // Classic themes
+      document.querySelector('.product-form__submit') || // Some themes
+      document.querySelector('[data-add-to-cart]') || // Custom implementations
+      document.querySelector('button:has-text("Add to cart")'); // Fallback
+
+    // If no main button found, show sticky always (as fallback)
+    const hasMainButton = !!mainATCButton;
 
     // Elements
     const variantSelect = stickyATC.querySelector('[data-sticky-variant-select]');
@@ -501,29 +510,45 @@
     }
 
     // Intersection Observer - Show/Hide sticky bar
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          // Main button out of view - show sticky
-          stickyATC.classList.add('is-visible');
+    if (hasMainButton) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            // Main button out of view - show sticky
+            stickyATC.classList.add('is-visible');
 
-          // Track sticky bar view
-          trackGA4Event('view_sticky_add_to_cart', {
-            'event_category': 'sticky_atc',
-            'product_handle': productHandle,
-            'product_id': productId
-          });
-        } else {
-          // Main button in view - hide sticky
-          stickyATC.classList.remove('is-visible');
-        }
+            // Track sticky bar view (only once)
+            if (!stickyATC.dataset.tracked) {
+              trackGA4Event('view_sticky_add_to_cart', {
+                'event_category': 'sticky_atc',
+                'product_handle': productHandle,
+                'product_id': productId
+              });
+              stickyATC.dataset.tracked = 'true';
+            }
+          } else {
+            // Main button in view - hide sticky
+            stickyATC.classList.remove('is-visible');
+          }
+        });
+      }, {
+        threshold: 0,
+        rootMargin: '-100px 0px 0px 0px'
       });
-    }, {
-      threshold: 0,
-      rootMargin: '-100px 0px 0px 0px'
-    });
 
-    observer.observe(mainATCButton);
+      observer.observe(mainATCButton);
+    } else {
+      // No main button found - show sticky after delay (fallback behavior)
+      setTimeout(() => {
+        stickyATC.classList.add('is-visible');
+        trackGA4Event('view_sticky_add_to_cart', {
+          'event_category': 'sticky_atc',
+          'product_handle': productHandle,
+          'product_id': productId,
+          'fallback_mode': true
+        });
+      }, 1000);
+    }
 
     // Quantity Controls
     qtyBtns.forEach(btn => {
@@ -679,6 +704,15 @@
           }
         });
       }
+    }
+    } // End initStickyATC function
+
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initStickyATC);
+    } else {
+      // DOM already loaded, init immediately
+      initStickyATC();
     }
 
   })();
