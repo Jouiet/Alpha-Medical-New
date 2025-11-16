@@ -30,7 +30,7 @@
 **CRITICAL CORRECTION:** Previous analysis in TRACKING_ANALYTICS_GAPS_2025.md was **INCORRECT**.
 
 **INSTALLED (3/5):**
-- ✅ Google Tag Manager (GTM-MW2FN7MQ)
+- ✅ Google Tag Manager (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))
 - ✅ Google Analytics 4 (GT-NC6L8G55, G-646TW8P5E0) via Conversios app (Oct 30, 2024)
 - ✅ Google Merchant Center (MC-38T9BHWKF5)
 - ✅ Web Pixels Manager (1 pixel: App ID 1301053517)
@@ -177,7 +177,7 @@ Status: ❌ **NOT INSTALLED**
 ```
 ### 1. **Google Analytics 4 (GA4)** - INSTALLED ✅
 Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
-- GTM Container: GTM-MW2FN7MQ
+- GTM Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 - GA4 Measurement IDs: GT-NC6L8G55, G-646TW8P5E0
 - Google Merchant Center: MC-38T9BHWKF5
 ```

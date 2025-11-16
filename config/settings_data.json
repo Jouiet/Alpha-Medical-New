@@ -149,6 +149,51 @@
         "disabled": false,
         "settings": {}
       },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "2200952712151285029": {
+        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "5004459476573512578": {
+        "type": "shopify://apps/conversios-google-analytics-4/blocks/app-embed/a5ed6aee-249e-497f-93bc-8eb285acecca",
+        "disabled": false,
+        "settings": {}
+      },
+      "3141728750423887031": {
+        "type": "shopify://apps/conversios-google-analytics-4/blocks/app-embed-body/a5ed6aee-249e-497f-93bc-8eb285acecca",
+        "disabled": false,
+        "settings": {}
+      },
+      "11472260868519512057": {
+        "type": "shopify://apps/conversios-server-side-tagging/blocks/app-embed/17c89d6a-cc93-4a0d-8653-84e0d248403e",
+        "disabled": false,
+        "settings": {}
+      },
+      "6876071678445956735": {
+        "type": "shopify://apps/conversios-server-side-tagging/blocks/app-embed-body/17c89d6a-cc93-4a0d-8653-84e0d248403e",
+        "disabled": false,
+        "settings": {}
+      },
+      "8774941748004189772": {
+        "type": "shopify://apps/reconvert/blocks/cart-drawer/72c64c30-2f7c-4a71-ae4c-efd1d5d1d2e2",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "643381569867433295": {
+        "type": "shopify://apps/infinite-fb-tiktok-pixels/blocks/app-embed/66ae554b-dfd3-49ce-89e3-201f6854e21d",
+        "disabled": false,
+        "settings": {}
+      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,

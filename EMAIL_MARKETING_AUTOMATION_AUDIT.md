@@ -13,7 +13,7 @@
 |-------------|--------|------------|----------|--------------|
 | **Klaviyo** | ✅ ACTIF | Company ID: WTx7Jb | Email marketing + SMS | Script live détecté |
 | **Google Analytics 4** | ✅ ACTIF | G-646TW8P5E0 | Analytics web | Measurement ID vérifié |
-| **Google Tag Manager** | ✅ ACTIF | GTM-MW2FN7MQ | Tag management | Container ID vérifié |
+| **Google Tag Manager** | ✅ ACTIF | GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM) | Tag management | Container ID vérifié |
 | **Loox** | ✅ ACTIF | _VKAJ9m85g | Product reviews | Widget vérifié |
 | **ReConvert** | ✅ ACTIF | Extension 353 | Post-purchase upsells | Script détecté |
 | **Shopify Inbox** | ✅ ACTIF | inbox-1251 | Live chat | Script détecté |
@@ -61,7 +61,7 @@ Via app: "Conversios Google Analytics 4" (30th OCT 2024)
 - ⚠️ purchase - À vérifier
 
 #### ✅ Google Tag Manager (ACTIF)
-**Container ID:** GTM-MW2FN7MQ
+**Container ID:** GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 
 **Configuration:**
 - GTM script chargé sur toutes les pages
@@ -152,7 +152,7 @@ grep "facebook.*tracking" = 0 résultats
 ```html
 <!-- Facebook Pixel via GTM (Recommandé) -->
 1. Créer Facebook Pixel dans Meta Business Manager
-2. Ajouter pixel via Google Tag Manager (GTM-MW2FN7MQ)
+2. Ajouter pixel via Google Tag Manager (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))
 3. Configurer events: PageView, ViewContent, AddToCart, Purchase
 4. Tester avec Facebook Pixel Helper extension
 ```
@@ -525,7 +525,7 @@ Impact: Email performance +10-20%
 
 2. Ajouter via GTM (RECOMMANDÉ)
    - GTM dashboard: https://tagmanager.google.com/
-   - Container: GTM-MW2FN7MQ
+   - Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
    - New Tag → Facebook Pixel
    - Paste Pixel ID
    - Trigger: All Pages
@@ -756,7 +756,7 @@ _learnq.push(['track', 'Viewed Product', item]);
 G-646TW8P5E0
 
 // Google Tag Manager  
-GTM-MW2FN7MQ
+GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 
 // Loox Reviews
 https://loox.io/widget/_VKAJ9m85g/loox.1760287760427.js

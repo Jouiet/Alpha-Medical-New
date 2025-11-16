@@ -10451,7 +10451,7 @@ shopify theme push  # Select live theme when prompted
 **CORRECTED REALITY (FACTUAL):**
 
 **✅ INSTALLED (3/5 tracking platforms):**
-1. **Google Tag Manager:** GTM-MW2FN7MQ
+1. **Google Tag Manager:** GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 2. **Google Analytics 4:** 
    - GT-NC6L8G55
    - G-646TW8P5E0
@@ -10615,7 +10615,7 @@ The 54.5% score **understates actual compliance** due to overly strict criteria:
 
 **Factual Reality:**
 - GA4 INSTALLED via Conversios app (Oct 30, 2024)
-- GTM Container ACTIVE (GTM-MW2FN7MQ)
+- GTM Container ACTIVE (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))
 - Google Merchant Center CONFIGURED (MC-38T9BHWKF5)
 - Web Pixels Manager with 1 pixel configured
 
@@ -10682,7 +10682,7 @@ The 54.5% score **understates actual compliance** due to overly strict criteria:
 **Status:** ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 
 **Configuration:**
-- GTM Container: GTM-MW2FN7MQ
+- GTM Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 - GA4 Measurement IDs: GT-NC6L8G55, G-646TW8P5E0
 - Google Merchant Center: MC-38T9BHWKF5
 - Installation Date: October 30, 2024
@@ -10705,10 +10705,10 @@ The 54.5% score **understates actual compliance** due to overly strict criteria:
 ```markdown
 ### 3. **Google Tag Manager (GTM)** - ✅ INSTALLED
 
-**Status:** ✅ **INSTALLED (GTM-MW2FN7MQ)**
+**Status:** ✅ **INSTALLED (GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM))**
 
 **Configuration:**
-- Container ID: GTM-MW2FN7MQ
+- Container ID: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
 - Installed via: Conversios app (Oct 30, 2024)
 - Status: Active and firing
 ```
@@ -11077,7 +11077,7 @@ Innovation
 
 7. **GA4 + GTM + Conversios** ✅ (COMMON - ~60% adoption)
    - GA4 Measurement IDs: GT-NC6L8G55, G-646TW8P5E0
-   - GTM Container: GTM-MW2FN7MQ
+   - GTM Container: GT-NC6L8G55 (Shopify Channel App - NATIVE, not GTM)
    - Conversios app (Oct 30, 2024): Enhanced tracking
    - Google Merchant Center: MC-38T9BHWKF5
    - **Innovation Level:** Median

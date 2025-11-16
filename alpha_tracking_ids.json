@@ -1,0 +1,13 @@
+{
+  "store": "Alpha Medical",
+  "url": "https://www.alphamedical.shop",
+  "tracking_ids": {
+    "GA4_GT": [
+      "GT-NC6L8G55"
+    ],
+    "Merchant_Center": [
+      "MC-38T9BHWKF5"
+    ]
+  },
+  "gtag_configs": []
+}
