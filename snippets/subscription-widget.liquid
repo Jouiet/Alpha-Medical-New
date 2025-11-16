@@ -1,0 +1,482 @@
+{% comment %}
+  SUBSCRIPTION WIDGET - Shopify Native Subscriptions
+  Displays subscription purchase options with frequency selector
+
+  Usage:
+    {% render 'subscription-widget', product: product %}
+
+  Dependencies:
+    - Shopify selling plans must be created
+    - Product must be assigned to at least one selling plan group
+
+  Features:
+    - One-time vs subscription toggle
+    - Delivery frequency selector (30/60/90 days)
+    - Dynamic pricing calculation (10%/15%/20% off)
+    - GA4 event tracking
+    - Alpha Medical branding
+
+  Note: Only displays if product has selling plans enabled
+{% endcomment %}
+
+{%- if product.requires_selling_plan == false and product.selling_plan_groups.size > 0 -%}
+
+  {%- liquid
+    assign has_selling_plans = false
+    if product.selling_plan_groups.size > 0
+      assign has_selling_plans = true
+    endif
+
+    assign default_price = product.selected_or_first_available_variant.price
+    assign default_compare_price = product.selected_or_first_available_variant.compare_at_price
+  -%}
+
+  {%- if has_selling_plans -%}
+    <div class="subscription-widget" data-product-id="{{ product.id }}" data-product-handle="{{ product.handle }}">
+      <div class="subscription-widget__header">
+        <h3 class="subscription-widget__title">📦 Purchase Options</h3>
+        <p class="subscription-widget__subtitle">Choose one-time or save with subscription</p>
+      </div>
+
+      <div class="subscription-widget__options">
+
+        <!-- OPTION 1: One-Time Purchase -->
+        <label class="subscription-option subscription-option--onetime">
+          <input
+            type="radio"
+            name="purchase_option"
+            value="onetime"
+            class="subscription-option__radio"
+            checked
+            data-option-type="onetime"
+          >
+          <div class="subscription-option__content">
+            <div class="subscription-option__header">
+              <span class="subscription-option__name">One-Time Purchase</span>
+              <span class="subscription-option__price" data-price-onetime>
+                {{ default_price | money }}
+              </span>
+            </div>
+            <div class="subscription-option__description">
+              Buy now, no commitment
+            </div>
+          </div>
+        </label>
+
+        <!-- OPTION 2: Subscribe & Save -->
+        <label class="subscription-option subscription-option--subscription">
+          <input
+            type="radio"
+            name="purchase_option"
+            value="subscription"
+            class="subscription-option__radio"
+            data-option-type="subscription"
+          >
+          <div class="subscription-option__content">
+            <div class="subscription-option__header">
+              <span class="subscription-option__name">
+                Subscribe & Save
+                <span class="subscription-option__badge">
+                  {%- if product.selling_plan_groups.first.name contains '20%' -%}
+                    20% OFF
+                  {%- elsif product.selling_plan_groups.first.name contains '15%' -%}
+                    15% OFF
+                  {%- else -%}
+                    10% OFF
+                  {%- endif -%}
+                </span>
+              </span>
+              <span class="subscription-option__price" data-price-subscription>
+                {%- liquid
+                  assign discount_percent = 10
+                  if product.selling_plan_groups.first.name contains '20%'
+                    assign discount_percent = 20
+                  elsif product.selling_plan_groups.first.name contains '15%'
+                    assign discount_percent = 15
+                  endif
+
+                  assign discounted_price = default_price | times: 100 | minus: discount_percent | divided_by: 100
+                -%}
+                {{ discounted_price | money }}
+              </span>
+            </div>
+
+            <div class="subscription-option__description">
+              Never run out, cancel anytime
+            </div>
+
+            <!-- Delivery Frequency Selector -->
+            <div class="subscription-frequency" data-subscription-frequency style="display: none;">
+              <label class="subscription-frequency__label">
+                Delivered every:
+              </label>
+              <select name="delivery_frequency" class="subscription-frequency__select" data-frequency-select>
+                {%- for selling_plan_group in product.selling_plan_groups -%}
+                  {%- for selling_plan in selling_plan_group.selling_plans -%}
+                    <option
+                      value="{{ selling_plan.id }}"
+                      data-plan-name="{{ selling_plan.name }}"
+                      data-price-adjustment="{{ selling_plan.price_adjustments.first.value }}"
+                    >
+                      {%- if selling_plan.name contains '30 days' -%}
+                        30 days
+                      {%- elsif selling_plan.name contains '60 days' -%}
+                        60 days (every 2 months)
+                      {%- elsif selling_plan.name contains '90 days' -%}
+                        90 days (every 3 months)
+                      {%- else -%}
+                        {{ selling_plan.name }}
+                      {%- endif -%}
+                    </option>
+                  {%- endfor -%}
+                {%- endfor -%}
+              </select>
+            </div>
+          </div>
+        </label>
+
+      </div>
+
+      <!-- Subscription Benefits -->
+      <div class="subscription-benefits">
+        <ul class="subscription-benefits__list">
+          <li class="subscription-benefits__item">
+            <svg class="subscription-benefits__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>Save {%- if product.selling_plan_groups.first.name contains '20%' -%}20%{%- elsif product.selling_plan_groups.first.name contains '15%' -%}15%{%- else -%}10%{%- endif -%} on every order</span>
+          </li>
+          <li class="subscription-benefits__item">
+            <svg class="subscription-benefits__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>Pause, skip or cancel anytime</span>
+          </li>
+          <li class="subscription-benefits__item">
+            <svg class="subscription-benefits__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <span>Manage your subscription online</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Customer Portal Link -->
+      {%- if customer -%}
+        <div class="subscription-widget__portal">
+          <a href="/tools/recurring/portal" class="subscription-widget__portal-link">
+            Manage My Subscriptions →
+          </a>
+        </div>
+      {%- endif -%}
+
+    </div>
+
+    <style>
+    .subscription-widget {
+      background: #f9f9f9;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .subscription-widget__header {
+      margin-bottom: 16px;
+    }
+
+    .subscription-widget__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2c3e50;
+      margin: 0 0 4px 0;
+    }
+
+    .subscription-widget__subtitle {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin: 0;
+    }
+
+    .subscription-widget__options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .subscription-option {
+      display: flex;
+      align-items: flex-start;
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .subscription-option:hover {
+      border-color: #4A90E2;
+      box-shadow: 0 4px 12px rgba(74, 144, 226, 0.1);
+    }
+
+    .subscription-option:has(input:checked) {
+      border-color: #4A90E2;
+      background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(127, 204, 201, 0.05) 100%);
+    }
+
+    .subscription-option__radio {
+      margin-top: 2px;
+      margin-right: 12px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: #4A90E2;
+    }
+
+    .subscription-option__content {
+      flex: 1;
+    }
+
+    .subscription-option__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .subscription-option__name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2c3e50;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .subscription-option__badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .subscription-option__price {
+      font-size: 18px;
+      font-weight: 700;
+      color: #4A90E2;
+    }
+
+    .subscription-option__description {
+      font-size: 13px;
+      color: #7f8c8d;
+      margin-top: 4px;
+    }
+
+    .subscription-frequency {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .subscription-frequency__label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+
+    .subscription-frequency__select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #2c3e50;
+      background: white;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    .subscription-frequency__select:hover,
+    .subscription-frequency__select:focus {
+      border-color: #4A90E2;
+      outline: none;
+    }
+
+    .subscription-benefits {
+      padding: 16px;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .subscription-benefits__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .subscription-benefits__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #2c3e50;
+    }
+
+    .subscription-benefits__icon {
+      color: #27ae60;
+      flex-shrink: 0;
+    }
+
+    .subscription-widget__portal {
+      text-align: center;
+    }
+
+    .subscription-widget__portal-link {
+      display: inline-block;
+      color: #4A90E2;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .subscription-widget__portal-link:hover {
+      color: #3a7bc8;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .subscription-widget {
+        padding: 16px;
+      }
+
+      .subscription-option__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .subscription-option__price {
+        font-size: 16px;
+      }
+    }
+    </style>
+
+    <script>
+    (function() {
+      'use strict';
+
+      const widget = document.querySelector('.subscription-widget');
+      if (!widget) return;
+
+      const productHandle = widget.dataset.productHandle;
+      const oneTimeRadio = widget.querySelector('[data-option-type="onetime"]');
+      const subscriptionRadio = widget.querySelector('[data-option-type="subscription"]');
+      const frequencyDiv = widget.querySelector('[data-subscription-frequency]');
+      const frequencySelect = widget.querySelector('[data-frequency-select]');
+
+      // Track GA4 event
+      function trackGA4Event(eventName, params) {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', eventName, params);
+        } else if (typeof window.dataLayer !== 'undefined') {
+          window.dataLayer.push({
+            'event': eventName,
+            ...params
+          });
+        }
+      }
+
+      // Toggle frequency selector visibility
+      function updateFrequencyVisibility() {
+        if (subscriptionRadio.checked) {
+          frequencyDiv.style.display = 'block';
+
+          // Track subscription selection
+          trackGA4Event('select_subscription_option', {
+            'event_category': 'subscriptions',
+            'product_handle': productHandle,
+            'purchase_type': 'subscription',
+            'frequency': frequencySelect.value
+          });
+        } else {
+          frequencyDiv.style.display = 'none';
+
+          // Track one-time selection
+          trackGA4Event('select_purchase_option', {
+            'event_category': 'subscriptions',
+            'product_handle': productHandle,
+            'purchase_type': 'onetime'
+          });
+        }
+      }
+
+      // Event listeners
+      oneTimeRadio.addEventListener('change', updateFrequencyVisibility);
+      subscriptionRadio.addEventListener('change', updateFrequencyVisibility);
+
+      frequencySelect.addEventListener('change', function() {
+        const selectedOption = this.options[this.selectedIndex];
+        const planName = selectedOption.dataset.planName;
+
+        // Track frequency change
+        trackGA4Event('change_subscription_frequency', {
+          'event_category': 'subscriptions',
+          'product_handle': productHandle,
+          'frequency': this.value,
+          'plan_name': planName
+        });
+      });
+
+      // Track initial widget view
+      trackGA4Event('view_subscription_widget', {
+        'event_category': 'subscriptions',
+        'product_handle': productHandle,
+        'has_selling_plans': true
+      });
+
+      // Initialize visibility
+      updateFrequencyVisibility();
+
+      // Add selling plan to cart (integrate with theme's add to cart functionality)
+      // This is a placeholder - actual implementation depends on theme's cart JS
+      const form = widget.closest('form[action="/cart/add"]');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          if (subscriptionRadio.checked) {
+            // Add selling_plan parameter to form
+            const sellingPlanInput = document.createElement('input');
+            sellingPlanInput.type = 'hidden';
+            sellingPlanInput.name = 'selling_plan';
+            sellingPlanInput.value = frequencySelect.value;
+            form.appendChild(sellingPlanInput);
+
+            // Track add to cart with subscription
+            trackGA4Event('add_to_cart_subscription', {
+              'event_category': 'subscriptions',
+              'product_handle': productHandle,
+              'selling_plan_id': frequencySelect.value,
+              'frequency': frequencySelect.options[frequencySelect.selectedIndex].text
+            });
+          }
+        });
+      }
+
+    })();
+    </script>
+
+  {%- endif -%}
+
+{%- endif -%}

@@ -21,10 +21,17 @@
       "settings": {
         "custom_liquid": "{% render 'loyalty-tier-badge' %}"
       }
+    },
+    "subscription_portal_1763296000": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"subscription-portal-link\" style=\"margin: 20px 0; padding: 16px; background: linear-gradient(135deg, #4A90E2 0%, #7FCCC9 100%); border-radius: 8px; text-align: center;\">\n  <h3 style=\"color: white; margin: 0 0 8px 0; font-size: 18px;\">Manage Your Subscriptions</h3>\n  <p style=\"color: white; margin: 0 0 12px 0; font-size: 14px;\">Pause, skip, or update your subscription anytime</p>\n  <a href=\"/tools/recurring/portal\" style=\"display: inline-block; background: white; color: #4A90E2; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;\">\n    View My Subscriptions \u2192\n  </a>\n</div>"
+      }
     }
   },
   "order": [
     "main",
-    "loyalty_tier_badge_1763290544"
+    "loyalty_tier_badge_1763290544",
+    "subscription_portal_1763296000"
   ]
 }

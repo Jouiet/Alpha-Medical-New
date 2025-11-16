@@ -80,6 +80,12 @@
           "settings": {
             "custom_liquid": "{% render 'product-bundle-smart-cta', product: product %}"
           }
+        },
+        "subscription_widget_1763296000": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'subscription-widget', product: product %}"
+          }
         }
       },
       "block_order": [
@@ -92,6 +98,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "subscription_widget_1763296000",
         "bundle_cta_smart",
         "trust_badges",
         "description",
