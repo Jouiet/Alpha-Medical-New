@@ -208,18 +208,174 @@
     50% { transform: translateY(0); }
     75% { transform: translateY(-2px); }
   }
+
+  /* CONFETTI CELEBRATION SYSTEM */
+  #confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #4770db;
+    top: -10px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .confetti-piece.square {
+    border-radius: 0;
+  }
+
+  .confetti-piece.circle {
+    border-radius: 50%;
+  }
+
+  .confetti-piece.triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid currentColor;
+    background: transparent;
+  }
+
+  @keyframes confetti-fall {
+    0% {
+      opacity: 1;
+      top: -10%;
+      transform: translateX(0) rotateZ(0deg);
+    }
+    100% {
+      opacity: 0;
+      top: 100%;
+      transform: translateX(var(--drift)) rotateZ(var(--rotation));
+    }
+  }
+
+  .confetti-piece.falling {
+    animation: confetti-fall var(--fall-duration) linear forwards;
+  }
 </style>
 
 <script>
+  // CONFETTI CELEBRATION SYSTEM
+  function createConfetti() {
+    // Check if already celebrated this session
+    const sessionKey = 'confetti_celebrated_' + Date.now();
+    const lastCelebration = sessionStorage.getItem('free_shipping_confetti');
+
+    // Only celebrate once per page load
+    if (lastCelebration && (Date.now() - parseInt(lastCelebration)) < 10000) {
+      return;
+    }
+
+    sessionStorage.setItem('free_shipping_confetti', Date.now().toString());
+
+    // Create container
+    let container = document.getElementById('confetti-container');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'confetti-container';
+      document.body.appendChild(container);
+    }
+
+    // Color palette (Alpha Medical brand colors + celebration colors)
+    const colors = [
+      '#4770DB', // Primary blue
+      '#5b84e8', // Light blue
+      '#28a745', // Success green
+      '#ffc107', // Gold
+      '#ff6b6b', // Coral
+      '#4ecdc4', // Teal
+      '#95e1d3', // Mint
+      '#f38181'  // Rose
+    ];
+
+    // Shapes
+    const shapes = ['square', 'circle', 'triangle'];
+
+    // Generate 50 confetti pieces
+    const confettiCount = 50;
+
+    for (let i = 0; i < confettiCount; i++) {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti-piece falling';
+
+      // Random shape
+      const shape = shapes[Math.floor(Math.random() * shapes.length)];
+      confetti.classList.add(shape);
+
+      // Random color
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.background = color;
+      if (shape === 'triangle') {
+        confetti.style.borderBottomColor = color;
+      }
+
+      // Random horizontal position
+      confetti.style.left = Math.random() * 100 + '%';
+
+      // Random animation properties
+      const fallDuration = 2 + Math.random() * 1.5; // 2-3.5s
+      const drift = (Math.random() - 0.5) * 200; // -100px to +100px drift
+      const rotation = Math.random() * 720 - 360; // -360deg to +360deg
+
+      confetti.style.setProperty('--fall-duration', fallDuration + 's');
+      confetti.style.setProperty('--drift', drift + 'px');
+      confetti.style.setProperty('--rotation', rotation + 'deg');
+
+      // Add delay for staggered effect
+      confetti.style.animationDelay = (Math.random() * 0.3) + 's';
+
+      container.appendChild(confetti);
+    }
+
+    // Clean up after animations complete
+    setTimeout(() => {
+      if (container && container.parentNode) {
+        container.remove();
+      }
+    }, 4000); // Remove after 4s (max animation time)
+  }
+
   // Update progress bar on cart changes
   document.addEventListener('DOMContentLoaded', function() {
     const progressBar = document.querySelector('.free-shipping-bar-wrapper');
 
     if (progressBar) {
+      // Check if free shipping is already unlocked on page load
+      const cartTotal = parseInt(progressBar.getAttribute('data-cart-total'));
+      const threshold = 15000; // $150 in cents
+
+      if (cartTotal >= threshold) {
+        // Delay slightly to ensure DOM is ready
+        setTimeout(() => {
+          createConfetti();
+        }, 300);
+      }
+
       // Listen for Shopify cart update events
       document.addEventListener('cart:updated', function(event) {
         progressBar.setAttribute('data-cart-updated', 'true');
+
+        // Check if threshold just crossed
         setTimeout(() => {
+          const updatedBar = document.querySelector('.free-shipping-bar-wrapper');
+          if (updatedBar) {
+            const newTotal = parseInt(updatedBar.getAttribute('data-cart-total'));
+            if (newTotal >= threshold) {
+              createConfetti();
+            }
+          }
           progressBar.removeAttribute('data-cart-updated');
         }, 600);
       });
