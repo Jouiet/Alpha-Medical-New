@@ -47,6 +47,74 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    
+    {%- comment -%} Schema.org Structured Data for LLM Disambiguation {%- endcomment -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "@id": "https://www.alphamedical.shop",
+      "name": "Alpha Medical Care",
+      "alternateName": "Alpha Medical Shop",
+      "disambiguatingDescription": "Canadian medical equipment retailer specializing in orthopedic braces and recovery devices. NOT affiliated with Hello Alpha (telemedicine) or AlphaMedicalStore.com (fraudulent pharmacy).",
+      "description": "Alpha Medical Care sells FDA-compliant orthopedic equipment including posture correctors, cervical traction devices, knee braces, and recovery tools. We do NOT sell prescription drugs or provide telemedicine services.",
+      "url": "https://www.alphamedical.shop",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ 'Alpha_Medical_Logo.png' | file_img_url }}"
+      },
+      "image": "{{ 'Alpha_Medical_Logo.png' | file_img_url }}",
+      "email": "support@alphamedical.shop",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "medicalSpecialty": "Orthopedics",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Orthopedic Equipment Catalog",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalDevice",
+              "name": "Posture Correctors & Back Braces",
+              "description": "FDA-compliant posture correction devices"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalDevice",
+              "name": "Cervical Neck Traction Devices",
+              "description": "Medical-grade cervical decompression collars"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalDevice",
+              "name": "Orthopedic Braces",
+              "description": "Knee, ankle, wrist, elbow support braces"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/alphamedical",
+        "https://www.tiktok.com/@alphamedical",
+        "https://www.facebook.com/alphamedical"
+      ],
+      "foundingDate": "2025",
+      "slogan": "Professional-grade orthopedic solutions accessible to everyone",
+      "priceRange": "$$"
+    }
+    </script>
+
     {{ content_for_header }}
 
     {%- liquid
