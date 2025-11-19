@@ -1475,9 +1475,9 @@ Certifications:
 
 ---
 
-**Action 3.1.1: Stratégie Détaillée par Canal Social (4 Canaux)**
+**Action 3.1.1: Stratégie Détaillée par Canal Social (3 Canaux)**
 
-**Contexte Alpha Medical:** Produits médicaux/orthopédiques nécessitent approche éducative + preuve sociale + crédibilité. Chaque canal social a ses propres personas, comportements et produits optimaux.
+**Contexte Alpha Medical:** Produits médicaux/orthopédiques B2C nécessitent approche éducative + preuve sociale + crédibilité. Alpha Medical utilise 3 canaux sociaux (Facebook, Instagram, TikTok) - PAS de LinkedIn (pas de B2B). Chaque canal a ses propres personas, comportements et produits optimaux.
 
 ---
 
@@ -1710,87 +1710,6 @@ Format Contenu TikTok:
 
 ---
 
-**CANAL 4: LINKEDIN**
-
-**Personas Alpha Medical:**
-
-```yaml
-Persona 1 - "Le Corporate Wellness Manager" (35-55 ans)
-  - Démographie: RH, responsable bien-être entreprise
-  - Comportement: Recherche solutions ergonomie employés
-  - Motivation: Réduire arrêts maladie, améliorer productivité
-  - Pain points: Budget santé limité, ROI pas clair
-  - Besoin: Achats volume, preuves efficacité, ROI démontré
-
-Persona 2 - "L'Entrepreneur Santé Optimale" (30-50 ans)
-  - Démographie: Founder, exec, high performer
-  - Comportement: Investit santé pour performance
-  - Motivation: Optimisation cognitive/physique
-  - Pain points: Temps limité, sédentarité bureau
-  - Besoin: Solutions efficaces rapides, biohacking
-```
-
-**Cibles LinkedIn:**
-```yaml
-Démographie:
-  - Âge: 30-65 ans (focus 35-55)
-  - Localisation: Urbain, US/CA/EU
-  - Langue: Anglais professionnel, ton business
-  - Secteurs: Corporate, tech, healthcare, consulting
-
-Comportement:
-  - Actifs LinkedIn 2-4x/semaine
-  - Consomment content thought leadership
-  - Recherchent ROI, études, data
-  - Achats réfléchis, comparent solutions
-  - Considèrent achats volume (équipes)
-
-Budget:
-  - Panier moyen: $100-400 (le plus élevé)
-  - Achats volume potentiel (B2B)
-  - Recherchent qualité professionnelle
-  - Investissement santé = investissement productivité
-```
-
-**Produits Prioritaires LinkedIn:**
-```yaml
-Top Performers LinkedIn Alpha Medical:
-  1. Ergonomie Bureau & Posture (50% ventes LinkedIn)
-     - Lumbar Support Belt professionnel
-     - Posture Corrector discret sous vêtements
-     - Cervical Neck Traction bureau
-     - Adjustable Wrist Support clavier
-     - Prix: $40-120
-     - Angle: Productivité, prévention, ergonomie
-
-  2. Thérapie Recovery Executives (30% ventes LinkedIn)
-     - Electric Lumbar Massager heated
-     - Cervical Spine Massager EMS
-     - Leg Recovery Boots (entrepreneurs actifs)
-     - Eye Massager stress relief
-     - Prix: $80-250
-     - Angle: Recovery rapide, stress management, performance
-
-  3. Solutions Conditions Chroniques (20% ventes LinkedIn)
-     - OA Unloader Brace arthrose
-     - Hinged Knee Brace professionnelle
-     - Lower Back Brace 6 stays
-     - Prix: $60-180
-     - Angle: Continuer travailler malgré condition, qualité vie
-
-Format Contenu LinkedIn:
-  - Posts: Articles thought leadership ("L'impact posture sur productivité")
-  - Ton: Professionnel, data-driven, études citées
-  - Angles: "ROI investissement ergonomie: Case study"
-  - Carrousels: "5 signes votre posture affecte performance"
-  - LinkedIn Articles: Guides complets (2000+ mots)
-  - Webinars: Partenariats entreprises, lunch & learns
-  - Moins de visuels flashy, plus graphiques/data/testimonials B2B
-  - Social proof: "Adopté par 50+ entreprises tech"
-```
-
----
-
 **Matrice Canaux x Produits Alpha Medical (Quick Reference)**
 
 ```yaml
@@ -1814,12 +1733,6 @@ TikTok:
   3. Fitness Recovery Hacks (20%)
   Budget moyen: $30-80
 
-LinkedIn:
-  1. Ergonomie Bureau & Posture (50%)
-  2. Thérapie Recovery Executives (30%)
-  3. Solutions Conditions Chroniques (20%)
-  Budget moyen: $100-400
-
 Par Produit (Meilleur canal):
 
 Supports Genou:
@@ -1828,14 +1741,14 @@ Supports Genou:
   - TikTok: Prévention jeunes sportifs, viral demos
 
 Supports Posture:
-  - LinkedIn: Ergonomie bureau, corporate wellness
   - Instagram: Lifestyle wellness, yoga, fitness
   - Facebook: Correction posture, soulagement douleur
+  - TikTok: Gaming posture, tech neck prevention
 
 Thérapie Tech (LED, EMS, etc.):
   - Instagram: Aesthetic + performance, influencers
   - TikTok: Viral potential, wow factor, transformations
-  - LinkedIn: Executive recovery, biohacking
+  - Facebook: Educational, science-backed explanations
 
 Récupération Sport:
   - Instagram: Athletes, fitness enthusiasts
@@ -1845,37 +1758,38 @@ Récupération Sport:
 
 ---
 
-**Stratégie Cross-Canal Alpha Medical (Synergie)**
+**Stratégie Cross-Canal Alpha Medical (Synergie 3 Canaux)**
 
 ```yaml
 Lancement Nouveau Produit Médical → Cascade Éducative:
-  1. LinkedIn: Article thought leadership + études (Semaine 1)
-     - Crédibilité professionnelle établie
-     - B2B early adopters
-  2. Facebook: Groupes santé + témoignages patients (Semaine 2)
+  1. Facebook: Groupes santé + témoignages patients (Semaine 1)
      - Preuve sociale patients réels
      - Education conditions ciblées
-  3. Instagram: Influencers fitness test produit (Semaine 3)
+     - Crédibilité médicale établie
+  2. Instagram: Influencers fitness test produit (Semaine 2)
      - Aesthetic content, lifestyle integration
      - Reviews authentiques athletes
-  4. TikTok: Demos virales + before/after (Semaine 4)
+     - Stories + Reels demos
+  3. TikTok: Demos virales + before/after (Semaine 3)
      - Mass awareness, younger audience
      - Potential viral spread
+     - UGC encouragement
 
 Flash Deal Produit Populaire → Cascade Urgence:
   1. Email: Annonce 48h avant (subscribers) + guide
-  2. LinkedIn: Post professionnel 24h avant (bulk orders angle)
+  2. Facebook: Post + live demo 24h avant
   3. Instagram: Stories countdown 12h avant + swipe up
-  4. Facebook: Post + live demo au lancement
-  5. TikTok: "Deal alert!" vidéos frénétiques
-  6. Tous: Rappels dernières 6 heures (FOMO éthique)
+  4. TikTok: "Deal alert!" vidéos frénétiques au lancement
+  5. Tous canaux: Rappels dernières 6 heures (FOMO éthique)
 
 Produit Viral TikTok → Amplification Crédibilité:
   1. TikTok: Buzz initial, demos wow (Jour 1-5)
+     - Launch viral, hooks accrocheurs
   2. Instagram: Reels repurposed + influencers try (Jour 3-10)
+     - Amplification audience fitness/wellness
   3. Facebook: Educational posts "Why it works" (Jour 7-14)
      - Combattre scepticisme avec science
-  4. LinkedIn: Case study professionnel si applicable (Jour 14-30)
+     - Testimonials patients + études
 ```
 
 ---
