@@ -63,6 +63,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 - [AI_DISCOVERY_IMPLEMENTATION](AI_DISCOVERY_IMPLEMENTATION.md): Project documentation
 - [FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION](FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md): Alpha Medical Care operates: Original schema reflected physical stores (Canada), not e-commerce HQ (US).
+- [GSC_CONFIGURATION_REPORT_2025-11-19](GSC_CONFIGURATION_REPORT_2025-11-19.md): <meta name="google-site-verification" content="Y7EPPu0mS85zoUexpqneDh1POER-ygWiEC3Xww3Yz0" />
 - [IMPLEMENTATION_ROADMAP](IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
 - [MANUAL_FOOTER_CONFIG](MANUAL_FOOTER_CONFIG.md): 1. Go to Shopify Admin → Settings → Store details 2. Change "Store name" from "My Store" to "Alpha Medical Care"
 - [NEXT_STEPS_FLOW_CONFIGURATION](NEXT_STEPS_FLOW_CONFIGURATION.md): claude mcp add chrome-devtools npx chrome-devtools-mcp@latest MCP servers require a CLI session restart to become active.
