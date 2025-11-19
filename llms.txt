@@ -73,6 +73,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 - [COLLECTION_OVERLAP_VERIFICATION_REPORT](COLLECTION_OVERLAP_VERIFICATION_REPORT.md): 1. verifyduplicatessimple.py - Vérification générale doublons 2. checkpromotionalduplicates.py - Vérification règle collections promotionnelles
 - [DEPLOYMENT_VERIFICATION](DEPLOYMENT_VERIFICATION.md): Project documentation
+- [GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS](GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md): Status: ❌ NOT ADDED ✅ 6. Google Search Console (déjà fait)
 - [STATUS_REPORT_PAGES](STATUS_REPORT_PAGES.md): Project documentation
 
 ## Theme Structure
