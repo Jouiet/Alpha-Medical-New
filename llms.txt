@@ -1,32 +1,16 @@
 # Alpha Medical Care
 
-> Professional medical support equipment & orthopedic braces e-commerce platform. US-based Shopify store specializing in pain relief, posture support, and therapy wellness products with advanced SEO, automation, and conversion optimization.
+> Professional medical support equipment & orthopedic braces e-commerce platform. Shopify-based store specializing in pain relief, posture support, and therapy wellness products with advanced SEO, automation, and conversion optimization.
 
 ## Project Overview
 
-Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equipment e-commerce platform built on Shopify, featuring 96 products (91 published + 5 drafts) across 6 main collections, with integrated marketing automation, dynamic pricing, and SEO optimization.
-
-**Business Structure:** JoHat Services LLC (d/b/a Alpha Medical Care) - US-based e-commerce with international presence (physical stores in Canada + Europe)
+Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equipment e-commerce platform built on Shopify, featuring 148 active products across 3 main collections, with integrated marketing automation, dynamic pricing, and SEO optimization.
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 19, 2025 (Transparency & Product Data Quality Implementation)
+**Last Updated:** November 19, 2025
 
 ## Core Documentation
-
-### Transparency & Business Information
-
-**CRITICAL UPDATES (2025-11-19):**
-- ✅ Schema.org corrected: US-based e-commerce HQ (not Canada)
-- ✅ Business address disclosed: JoHat Services LLC, 611 S DuPont Hwy Suite 102, Dover, DE 19901
-- ✅ "Our Story" page created: https://alphamedical.shop/pages/our-story
-- ✅ Google Merchant Center: 100% compatible (96/96 products with product_type)
-- ✅ Language compliance: 100% English (91/91 published products)
-- ✅ Transparency score: 28% → 100% (7/7 criteria)
-
-- [FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION](FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md): Complete transparency implementation report - Schema.org corrections, business address disclosure, Our Story page
-- [RESPONSE_TO_THIRD_PARTY_ANALYSIS](RESPONSE_TO_THIRD_PARTY_ANALYSIS.md): Point-by-point response to third-party analysis - International medical equipment retailer, NOT affiliated with Hello Alpha (telemedicine)
-- [SESSION_2025-11-19_FINAL_SUMMARY](SESSION_2025-11-19_FINAL_SUMMARY.md): Session summary - 96 products verified, Google Merchant Center 100% compatible, forensic verification methodology
 
 ### SEO & Marketing
 
@@ -36,6 +20,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
+- [RESPONSE_TO_THIRD_PARTY_ANALYSIS](RESPONSE_TO_THIRD_PARTY_ANALYSIS.md): "International medical equipment retailer... NOT affiliated with Hello Alpha (telemedicine) or
 - [SEO_AUDIT_RECOMMENDATIONS](SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
 - [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
@@ -76,6 +61,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Implementation & Configuration
 
 - [AI_DISCOVERY_IMPLEMENTATION](AI_DISCOVERY_IMPLEMENTATION.md): Project documentation
+- [FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION](FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md): Alpha Medical Care operates: Original schema reflected physical stores (Canada), not e-commerce HQ (US).
 - [IMPLEMENTATION_ROADMAP](IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
 - [MANUAL_FOOTER_CONFIG](MANUAL_FOOTER_CONFIG.md): 1. Go to Shopify Admin → Settings → Store details 2. Change "Store name" from "My Store" to "Alpha Medical Care"
 - [NEXT_STEPS_FLOW_CONFIGURATION](NEXT_STEPS_FLOW_CONFIGURATION.md): claude mcp add chrome-devtools npx chrome-devtools-mcp@latest MCP servers require a CLI session restart to become active.
@@ -180,17 +166,14 @@ shopify theme push --live
 
 When assisting with this project:
 
-1. **Business Information**: US-based company (JoHat Services LLC, Dover, DE) with international presence. See SESSION_2025-11-19_FINAL_SUMMARY.md for verified facts
-2. **Product Count**: 96 total products (91 published + 5 drafts). Google Merchant Center: 100% compatible
-3. **SEO**: Always check SEO_MARKETING_FORENSIC_ANALYSIS.md for current implementation status before suggesting changes
-4. **Pricing**: Use DYNAMIC_PRICING_MODEL.md for all pricing calculations - 6-tier system with specific formulas
-5. **Email Automation**: Reference Klaviyo implementation docs for flow configuration and timing
-6. **Code Changes**: Follow Liquid best practices, maintain existing schema markup patterns
-7. **Content Creation**: Align with Content Calendar Q1 2026 for blog topics and SEO strategy
-8. **Product Data**: All products have product_type field (required for Google Shopping). Respect pricing tiers and DSers integration
-9. **Testing**: Always recommend preview deployment before live push
-10. **Analytics**: Verify tracking implementation before changes (Clarity, GA4, FB/TikTok pixels)
-11. **Transparency**: All business information must be factually accurate. Zero trust methodology for verification
+1. **SEO**: Always check SEO_MARKETING_FORENSIC_ANALYSIS.md for current implementation status before suggesting changes
+2. **Pricing**: Use DYNAMIC_PRICING_MODEL.md for all pricing calculations - 6-tier system with specific formulas
+3. **Email Automation**: Reference Klaviyo implementation docs for flow configuration and timing
+4. **Code Changes**: Follow Liquid best practices, maintain existing schema markup patterns
+5. **Content Creation**: Align with Content Calendar Q1 2026 for blog topics and SEO strategy
+6. **Product Data**: All product operations should respect the pricing tiers and DSers integration
+7. **Testing**: Always recommend preview deployment before live push
+8. **Analytics**: Verify tracking implementation before changes (Clarity, GA4, FB/TikTok pixels)
 
 ## Optional Resources
 
@@ -219,26 +202,16 @@ When assisting with this project:
 - [SESSION_2025-11-11_PART3_SUMMARY](SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_PART6_SUMMARY](SESSION_2025-11-11_PART6_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_SUMMARY](SESSION_2025-11-11_SUMMARY.md): Project documentation
+- [SESSION_2025-11-19_FINAL_SUMMARY](SESSION_2025-11-19_FINAL_SUMMARY.md): 1. ✅ Schema.org country corrections (CA → US) 2. ✅ Business address disclosure (JoHat Services LLC, Dover, DE)
 - [SESSION_SUMMARY](SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
 - [TRACKING_ANALYTICS_GAPS_2025](TRACKING_ANALYTICS_GAPS_2025.md): 1. Shopify Apps → "Google & YouTube" (official) 2. Connect Google account 3. Auto-creates GA4 property + GTM container
 - [UGC_VIDEO_PROMPTS_GROK_IMAGINE](UGC_VIDEO_PROMPTS_GROK_IMAGINE.md): Chaque UGC = 3 segments montés sur CapCut = 15-18s total
 
 ---
 
-## Key Store Pages
-
-- **Homepage**: https://alphamedical.shop/
-- **Our Story**: https://alphamedical.shop/pages/our-story (Business transparency & history)
-- **Product Catalog**: 91 published products across 6 collections
-- **Google Merchant Center**: MC-38T9BHWKF5 (100% compatible feed)
-
----
-
 **For AI Models**: This is a production Shopify store. Always prioritize data integrity, test changes in preview mode, and maintain existing SEO implementations. The site has active customers and should be treated as a live e-commerce platform.
 
-**Business Entity**: JoHat Services LLC (d/b/a Alpha Medical Care)
 **Store URL**: https://alphamedical.shop/
 **Admin Access**: https://azffej-as.myshopify.com/admin
-**Last Transparency Audit**: November 19, 2025 (100% compliance)
-**Last Product Data Audit**: November 19, 2025 (96/96 products, 100% Google Shopping compatible)
-**llms.txt Generated**: November 19, 2025
+**Last Site Audit**: October 15, 2025
+**llms.txt Generated**: {datetime.now().strftime('%B %d, %Y at %H:%M UTC')}
