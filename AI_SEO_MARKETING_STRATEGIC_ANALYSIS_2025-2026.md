@@ -1473,6 +1473,413 @@ Certifications:
 - Format similaire TikTok (peut repurpose)
 - Focus: Quick tips, démonstrations, éducation
 
+---
+
+**Action 3.1.1: Stratégie Détaillée par Canal Social (4 Canaux)**
+
+**Contexte Alpha Medical:** Produits médicaux/orthopédiques nécessitent approche éducative + preuve sociale + crédibilité. Chaque canal social a ses propres personas, comportements et produits optimaux.
+
+---
+
+**CANAL 1: FACEBOOK**
+
+**Personas Alpha Medical:**
+
+```yaml
+Persona 1 - "Le Patient Actif" (40-65 ans)
+  - Démographie: Mixte, souffre douleurs chroniques ou post-op
+  - Comportement: Recherche solutions, consulte groupes santé Facebook
+  - Motivation: Soulager douleur, retrouver mobilité
+  - Pain points: Coût traitements médicaux, temps récupération
+  - Besoin: Produits médicalement validés, témoignages patients
+
+Persona 2 - "Le Parent Préventif" (35-55 ans)
+  - Démographie: Parent, famille active, sportifs amateurs
+  - Comportement: Recherche équipement sport/récupération famille
+  - Motivation: Prévenir blessures enfants/ados sportifs
+  - Pain points: Produits inadaptés âge, manque conseils
+  - Besoin: Guides choix, recommandations par âge/sport
+```
+
+**Cibles Facebook:**
+```yaml
+Démographie:
+  - Âge: 35-70 ans (focus 40-60)
+  - Localisation: US (HQ), CA, EU
+  - Langue: Anglais, Français
+  - Intérêts: Santé, wellness, fitness, senior health
+
+Comportement:
+  - Membres groupes: "Chronic Pain Support", "Arthritis Fighters"
+  - Recherchent témoignages patients
+  - Partagent solutions santé avec amis/famille
+  - Consultent avis avant achat médical
+
+Budget:
+  - Panier moyen: $60-150
+  - Sensibles prix mais privilégient qualité/efficacité
+  - Recherchent solutions durables (pas jetables)
+```
+
+**Produits Prioritaires Facebook:**
+```yaml
+Top Performers Facebook Alpha Medical:
+  1. Supports Genou (40% engagement)
+     - Tourmaline Magnetic Knee Pads
+     - Dynamic Knee Support with Spring
+     - Hinged Knee Brace arthrite
+     - Prix: $25-80
+     - Angle: Soulagement douleur quotidienne, mobilité
+
+  2. Supports Posture/Dos (30% engagement)
+     - Posture Corrector bureau
+     - Lumbar Support Belt hernies
+     - Back Brace Scoliosis
+     - Prix: $30-70
+     - Angle: Travail bureau, prévention douleur
+
+  3. Thérapie & Récupération (30% engagement)
+     - Cervical Neck Traction Device
+     - Electric Ankle Brace thérapie
+     - Leg Recovery Boots compression
+     - Prix: $40-200
+     - Angle: Récupération post-op, thérapie domicile
+
+Format Contenu Facebook:
+  - Posts: Témoignages patients (avant/après)
+  - Videos: Démonstrations utilisation (60-90 sec)
+  - Lives: Q&A avec kinésithérapeutes partenaires
+  - Groupes: Répondre questions communautés santé
+  - Ton: Empathique, éducatif, médical (pas vendeur)
+```
+
+---
+
+**CANAL 2: INSTAGRAM**
+
+**Personas Alpha Medical:**
+
+```yaml
+Persona 1 - "L'Athlète Conscient" (25-40 ans)
+  - Démographie: Sportif régulier, fitness enthusiast, yoga
+  - Comportement: Stories entraînement, découvre via Reels fitness
+  - Motivation: Performance optimale, prévention blessures
+  - Pain points: Blessures récurrentes, temps récupération
+  - Besoin: Équipement pro-niveau, aesthetic + fonctionnel
+
+Persona 2 - "Le Wellness Influencer" (22-38 ans)
+  - Démographie: Créateur contenu health/wellness/lifestyle
+  - Comportement: Partage routine santé, produits testés
+  - Motivation: Lifestyle sain, solutions naturelles
+  - Pain points: Produits inefficaces, marques peu crédibles
+  - Besoin: Produits photogéniques + efficaces, collabs
+```
+
+**Cibles Instagram:**
+```yaml
+Démographie:
+  - Âge: 22-45 ans (focus 25-38)
+  - Localisation: Urbain, US/CA/EU
+  - Langue: Anglais (audience internationale)
+  - Intérêts: Fitness, yoga, wellness, biohacking, recovery
+
+Comportement:
+  - Actifs Instagram Stories + Reels quotidiennement
+  - Suivent influenceurs fitness/health
+  - Achats via Instagram Shopping (mobile-first)
+  - Sensibles esthétique produits (design matters)
+
+Budget:
+  - Panier moyen: $50-120
+  - Achats impulsifs si produit visuellement attractif
+  - Investissent dans qualité pour performance
+```
+
+**Produits Prioritaires Instagram:**
+```yaml
+Top Performers Instagram Alpha Medical:
+  1. Tech Thérapie & Recovery (45% ventes IG)
+     - LED Face Mask thérapie (photogénique!)
+     - Smart Knee Massager vibration
+     - Electric Lumbar Massager heated
+     - Leg Recovery Boots (viral fitness)
+     - Prix: $60-200
+     - Angle: Recovery tech, biohacking, performance
+
+  2. Supports Sport & Performance (35% ventes IG)
+     - Knee Booster with Spring (coureurs)
+     - Sports Knee Pads compression
+     - Adjustable Wrist Support fitness
+     - Ankle Support Brace sport
+     - Prix: $25-80
+     - Angle: Performance, prévention, style sportif
+
+  3. Wellness & Posture (20% ventes IG)
+     - Posture Corrector esthétique
+     - Cervical Spine Massager EMS
+     - Neck Traction Device portable
+     - Prix: $35-100
+     - Angle: Wellness routine, self-care, posture perfect
+
+Format Contenu Instagram:
+  - Feed: Photos lifestyle athletes/yogis utilisant produits
+  - Reels: Quick demos 15-30 sec ("Recovery hack!", "Game changer")
+  - Stories: Polls "Which knee support?", before/after, swipe up
+  - IGTV: Guides longs (10-15 min) par condition
+  - UGC: Reshare clients athletes (avec permission)
+  - Aesthetic: Clean, moderne, medical + lifestyle blend
+```
+
+---
+
+**CANAL 3: TIKTOK**
+
+**Personas Alpha Medical:**
+
+```yaml
+Persona 1 - "Le Gen Z Health Conscious" (18-28 ans)
+  - Démographie: Gen Z, digital native, prevention-focused
+  - Comportement: FYP health hacks, achète produits viraux wellness
+  - Motivation: Prévenir douleurs (gaming posture, phone neck)
+  - Pain points: Jeune mais déjà douleurs (tech neck, gaming wrist)
+  - Besoin: Solutions cool/fun, pas "vieux", preuve ça marche
+
+Persona 2 - "L'Injury Survivor Viral" (20-35 ans)
+  - Démographie: Post-blessure sport/accident, partage recovery
+  - Comportement: Documente récupération, #InjuryRecovery trends
+  - Motivation: Inspirer autres, montrer products qui aident
+  - Pain points: Produits médicaux "boring", chers
+  - Besoin: Produits efficaces à partager, histoires vraies
+```
+
+**Cibles TikTok:**
+```yaml
+Démographie:
+  - Âge: 16-35 ans (focus 18-28)
+  - Localisation: Global (US/UK/CA priorité contenu anglais)
+  - Langue: Anglais + slang, captions générationnels
+  - Intérêts: Fitness, gaming, health hacks, life hacks
+
+Comportement:
+  - Temps écran TikTok: 80-120 min/jour
+  - Découverte via FYP (For You Page)
+  - #TikTokMadeMeBuyIt mindset
+  - Partagent vidéos produits avec amis
+
+Budget:
+  - Panier moyen: $30-80 (plus petit mais fréquent)
+  - Micro-transactions impulsives
+  - Recherchent deals/value ("This changed my life for $40!")
+```
+
+**Produits Prioritaires TikTok:**
+```yaml
+Top Performers TikTok Alpha Medical:
+  1. Gadgets Tech Thérapie Viraux (50% engagement)
+     - LED Face Mask 7 couleurs (très photogénique)
+     - Electric Gua Sha vibration (tendance beauté)
+     - EMS Neck Massager portable
+     - Smart Knee Massager airbag
+     - Prix: $25-80 (sweet spot $35-50)
+     - Angle: "This saved me!", transformation, wow factor
+
+  2. Gaming/Tech Posture Fixes (30% engagement)
+     - Posture Corrector gaming
+     - Wrist Brace gaming/typing
+     - Neck Traction inflatable desk
+     - Prix: $20-60
+     - Angle: Fix gaming posture, prevent tech neck, life hack
+
+  3. Fitness Recovery Hacks (20% engagement)
+     - Knee Pads honeycomb protection
+     - Ankle Support adjustable wrap
+     - Electric Heating Leg Massager
+     - Prix: $25-70
+     - Angle: Recovery secret, athlete hack, injury prevent
+
+Format Contenu TikTok:
+  - Vidéos: 15-45 sec, hook 3 premières secondes crucial
+  - Trends: Sons viraux, challenges (#30DayPostureChallenge)
+  - Demos: "Watch this work!", "Wait for the end..."
+  - Before/After: Transformations posture, douleur
+  - POV: "POV: You discover this $40 game changer"
+  - Storytelling: "Story time: How I fixed my knee"
+  - Duets: Encourage UGC, reactions doctors/physios
+  - Lives: Product demos, Q&A blessures communes
+```
+
+---
+
+**CANAL 4: LINKEDIN**
+
+**Personas Alpha Medical:**
+
+```yaml
+Persona 1 - "Le Corporate Wellness Manager" (35-55 ans)
+  - Démographie: RH, responsable bien-être entreprise
+  - Comportement: Recherche solutions ergonomie employés
+  - Motivation: Réduire arrêts maladie, améliorer productivité
+  - Pain points: Budget santé limité, ROI pas clair
+  - Besoin: Achats volume, preuves efficacité, ROI démontré
+
+Persona 2 - "L'Entrepreneur Santé Optimale" (30-50 ans)
+  - Démographie: Founder, exec, high performer
+  - Comportement: Investit santé pour performance
+  - Motivation: Optimisation cognitive/physique
+  - Pain points: Temps limité, sédentarité bureau
+  - Besoin: Solutions efficaces rapides, biohacking
+```
+
+**Cibles LinkedIn:**
+```yaml
+Démographie:
+  - Âge: 30-65 ans (focus 35-55)
+  - Localisation: Urbain, US/CA/EU
+  - Langue: Anglais professionnel, ton business
+  - Secteurs: Corporate, tech, healthcare, consulting
+
+Comportement:
+  - Actifs LinkedIn 2-4x/semaine
+  - Consomment content thought leadership
+  - Recherchent ROI, études, data
+  - Achats réfléchis, comparent solutions
+  - Considèrent achats volume (équipes)
+
+Budget:
+  - Panier moyen: $100-400 (le plus élevé)
+  - Achats volume potentiel (B2B)
+  - Recherchent qualité professionnelle
+  - Investissement santé = investissement productivité
+```
+
+**Produits Prioritaires LinkedIn:**
+```yaml
+Top Performers LinkedIn Alpha Medical:
+  1. Ergonomie Bureau & Posture (50% ventes LinkedIn)
+     - Lumbar Support Belt professionnel
+     - Posture Corrector discret sous vêtements
+     - Cervical Neck Traction bureau
+     - Adjustable Wrist Support clavier
+     - Prix: $40-120
+     - Angle: Productivité, prévention, ergonomie
+
+  2. Thérapie Recovery Executives (30% ventes LinkedIn)
+     - Electric Lumbar Massager heated
+     - Cervical Spine Massager EMS
+     - Leg Recovery Boots (entrepreneurs actifs)
+     - Eye Massager stress relief
+     - Prix: $80-250
+     - Angle: Recovery rapide, stress management, performance
+
+  3. Solutions Conditions Chroniques (20% ventes LinkedIn)
+     - OA Unloader Brace arthrose
+     - Hinged Knee Brace professionnelle
+     - Lower Back Brace 6 stays
+     - Prix: $60-180
+     - Angle: Continuer travailler malgré condition, qualité vie
+
+Format Contenu LinkedIn:
+  - Posts: Articles thought leadership ("L'impact posture sur productivité")
+  - Ton: Professionnel, data-driven, études citées
+  - Angles: "ROI investissement ergonomie: Case study"
+  - Carrousels: "5 signes votre posture affecte performance"
+  - LinkedIn Articles: Guides complets (2000+ mots)
+  - Webinars: Partenariats entreprises, lunch & learns
+  - Moins de visuels flashy, plus graphiques/data/testimonials B2B
+  - Social proof: "Adopté par 50+ entreprises tech"
+```
+
+---
+
+**Matrice Canaux x Produits Alpha Medical (Quick Reference)**
+
+```yaml
+Par Canal (Priorité décroissante):
+
+Facebook:
+  1. Supports Genou douleur chronique (40%)
+  2. Supports Posture/Dos (30%)
+  3. Thérapie & Récupération (30%)
+  Budget moyen: $60-150
+
+Instagram:
+  1. Tech Thérapie & Recovery (45%)
+  2. Supports Sport & Performance (35%)
+  3. Wellness & Posture (20%)
+  Budget moyen: $50-120
+
+TikTok:
+  1. Gadgets Tech Thérapie Viraux (50%)
+  2. Gaming/Tech Posture Fixes (30%)
+  3. Fitness Recovery Hacks (20%)
+  Budget moyen: $30-80
+
+LinkedIn:
+  1. Ergonomie Bureau & Posture (50%)
+  2. Thérapie Recovery Executives (30%)
+  3. Solutions Conditions Chroniques (20%)
+  Budget moyen: $100-400
+
+Par Produit (Meilleur canal):
+
+Supports Genou:
+  - Facebook: Douleur chronique, arthrite, seniors
+  - Instagram: Performance sport, runners, athletes
+  - TikTok: Prévention jeunes sportifs, viral demos
+
+Supports Posture:
+  - LinkedIn: Ergonomie bureau, corporate wellness
+  - Instagram: Lifestyle wellness, yoga, fitness
+  - Facebook: Correction posture, soulagement douleur
+
+Thérapie Tech (LED, EMS, etc.):
+  - Instagram: Aesthetic + performance, influencers
+  - TikTok: Viral potential, wow factor, transformations
+  - LinkedIn: Executive recovery, biohacking
+
+Récupération Sport:
+  - Instagram: Athletes, fitness enthusiasts
+  - TikTok: Young athletes, gaming recovery
+  - Facebook: Amateur sports, family activities
+```
+
+---
+
+**Stratégie Cross-Canal Alpha Medical (Synergie)**
+
+```yaml
+Lancement Nouveau Produit Médical → Cascade Éducative:
+  1. LinkedIn: Article thought leadership + études (Semaine 1)
+     - Crédibilité professionnelle établie
+     - B2B early adopters
+  2. Facebook: Groupes santé + témoignages patients (Semaine 2)
+     - Preuve sociale patients réels
+     - Education conditions ciblées
+  3. Instagram: Influencers fitness test produit (Semaine 3)
+     - Aesthetic content, lifestyle integration
+     - Reviews authentiques athletes
+  4. TikTok: Demos virales + before/after (Semaine 4)
+     - Mass awareness, younger audience
+     - Potential viral spread
+
+Flash Deal Produit Populaire → Cascade Urgence:
+  1. Email: Annonce 48h avant (subscribers) + guide
+  2. LinkedIn: Post professionnel 24h avant (bulk orders angle)
+  3. Instagram: Stories countdown 12h avant + swipe up
+  4. Facebook: Post + live demo au lancement
+  5. TikTok: "Deal alert!" vidéos frénétiques
+  6. Tous: Rappels dernières 6 heures (FOMO éthique)
+
+Produit Viral TikTok → Amplification Crédibilité:
+  1. TikTok: Buzz initial, demos wow (Jour 1-5)
+  2. Instagram: Reels repurposed + influencers try (Jour 3-10)
+  3. Facebook: Educational posts "Why it works" (Jour 7-14)
+     - Combattre scepticisme avec science
+  4. LinkedIn: Case study professionnel si applicable (Jour 14-30)
+```
+
+---
+
 **Action 3.2: Automation Capture Leads Social**
 
 **Semaine 41-44: Setup ManyChat (ou équivalent)**
