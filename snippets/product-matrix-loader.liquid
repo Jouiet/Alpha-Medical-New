@@ -1,0 +1,105 @@
+{%- comment -%}
+  ============================================================================
+  * PRODUCT MATRIX LOADER
+  ============================================================================
+  *
+  * PURPOSE:
+  * Loads product_matrix_complete.json and injects it as a global JS variable
+  * for the dynamic merchandising system.
+  *
+  * USAGE:
+  * {% render 'product-matrix-loader' %}
+  *
+  * OUTPUT:
+  * <script> window.AlphaMedicalProductMatrix = {...}; </script>
+  *
+  * TECHNICAL NOTES:
+  * - Data is loaded from Shopify metafields or static JSON asset
+  * - Matrix contains 96 products with 6-dimension scores
+  * - Used by assets/dynamic-merchandising.js for product rotation
+  *
+  ============================================================================
+{%- endcomment -%}
+
+<script>
+/**
+ * ALPHA MEDICAL - PRODUCT MATRIX DATA
+ *
+ * This data is generated from product_matrix_complete.json and contains
+ * scoring data for all 96 products across 6 dimensions:
+ *
+ * 1. Seasonality (25% weight) - Winter, Spring, Summer, Fall
+ * 2. Demographics (20% weight) - 6 segments (Office, Seniors, Beauty, Athletes, Gamers, Medical)
+ * 3. Pain Type (20% weight) - Knee, Back, Neck, Foot, Wrist, Shoulder
+ * 4. Price Tier (15% weight) - Budget, Mid-range, Premium, Luxury
+ * 5. Usage Intensity (10% weight) - Daily, Occasional, Recovery, Performance
+ * 6. Medical Condition (10% weight) - Arthritis, Post-surgery, Prevention, Chronic pain, Injury recovery
+ *
+ * IMPORTANT:
+ * This file should be generated dynamically from product_matrix_complete.json
+ * during theme deployment. For now, it loads via fetch from the assets folder.
+ */
+
+(function() {
+  'use strict';
+
+  // Option 1: Load from static JSON asset (recommended for initial implementation)
+  fetch('{{ 'product_matrix_complete.json' | asset_url }}')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to load product matrix: ' + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Extract product matrix from JSON structure
+      window.AlphaMedicalProductMatrix = data.product_matrix || {};
+
+      console.log('[ProductMatrix] ✅ Loaded', Object.keys(window.AlphaMedicalProductMatrix).length, 'products');
+
+      // Dispatch event to signal matrix is ready
+      document.dispatchEvent(new CustomEvent('alphamedical:matrix:loaded', {
+        detail: {
+          productCount: Object.keys(window.AlphaMedicalProductMatrix).length,
+          version: data._metadata?.version || 'unknown',
+          lastUpdate: data._metadata?.last_update || 'unknown'
+        }
+      }));
+    })
+    .catch(error => {
+      console.error('[ProductMatrix] ❌ Error loading product matrix:', error);
+
+      // Fallback: empty matrix (prevents JS errors)
+      window.AlphaMedicalProductMatrix = {};
+    });
+
+  // Option 2: Inline matrix data (for production - faster but larger HTML)
+  // This would be generated server-side by reading product_matrix_complete.json
+  // and injecting it directly into the Liquid template
+
+  // window.AlphaMedicalProductMatrix = {{ matrix_data_json }};
+
+})();
+</script>
+
+{%- comment -%}
+  ============================================================================
+  * IMPLEMENTATION NOTES:
+  ============================================================================
+  *
+  * CURRENT APPROACH (Option 1):
+  * - Fetches product_matrix_complete.json from Shopify assets at runtime
+  * - Async loading (slight delay but smaller initial HTML)
+  * - Requires product_matrix_complete.json to be uploaded to Shopify assets
+  *
+  * ALTERNATIVE APPROACH (Option 2):
+  * - Inline the entire matrix as a JS object in the HTML
+  * - Faster (no async fetch) but increases HTML size by ~500KB
+  * - Would require Liquid preprocessing to read JSON file
+  *
+  * RECOMMENDATION:
+  * - Start with Option 1 (fetch from assets)
+  * - If performance is critical, migrate to Option 2
+  *
+  ============================================================================
+{%- endcomment -%}

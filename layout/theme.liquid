@@ -449,6 +449,10 @@
       animation: confetti-fall var(--fall-duration) linear forwards;
     }
   </style>
+
+  {%- comment -%} DYNAMIC MERCHANDISING SYSTEM - Auto-added 2025-11-19 {%- endcomment -%}
+  {% render 'product-matrix-loader' %}
+  <script src="{{ 'dynamic-merchandising.js' | asset_url }}" defer></script>
 </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
