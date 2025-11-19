@@ -1,0 +1,385 @@
+{
+  "_metadata": {
+    "version": "2.0",
+    "date": "2025-11-19",
+    "purpose": "Multi-dimensional product segmentation for dynamic merchandising",
+    "market_data_sources": [
+      "Grand View Research - Cold Pain Therapy Market 2024-2030",
+      "Mordor Intelligence - Orthopedic Braces Market 2025",
+      "Data Bridge - Posture Corrector Market Analysis 2025",
+      "NCBI - Seasonal Effects on Rheumatoid Arthritis Research"
+    ],
+    "merchandising_approach": "VISUAL PRIORITIZATION ONLY - All products remain active, ranking changes dynamically",
+    "warning": "DO NOT use this for product activation/deactivation - MERCHANDISING HIERARCHY ONLY"
+  },
+  "market_facts_2025": {
+    "cold_pain_therapy_market": {
+      "size_2024": "$2.44 billion USD",
+      "projected_2034": "$3.70 billion USD",
+      "cagr": "4.0%",
+      "orthopedic_conditions_share": "49.9%",
+      "key_driver": "Aging population + increased joint pain prevalence"
+    },
+    "demographic_segmentation": {
+      "adults": "Primary market (18-64 years) - sports injuries, office ergonomics, chronic pain",
+      "geriatric": "65+ years - arthritis, mobility, daily wear supports",
+      "kids_pediatric": "Under 18 - specialized bracing for cerebral palsy, spina bifida, clubfoot, sports",
+      "note": "Market serves all age groups with rising sports participation across demographics"
+    },
+    "seasonality_medical_facts": {
+      "winter_impact": "Barometric pressure drops expand joint tissues → increased arthritis pain + stiffness",
+      "cold_circulation": "Low temperatures reduce blood circulation → muscle spasms + discomfort",
+      "summer_variations": "Some patients: swelling in humid heat; Others: improvement in warmth",
+      "spring_sports": "Activity resumption → injury prevention demand surge"
+    }
+  },
+  "dimensions": {
+    "seasonality": {
+      "weight": 0.25,
+      "rationale": "Medical research confirms barometric pressure & temperature significantly affect musculoskeletal pain",
+      "values": {
+        "winter": [
+          "Cold weather pain (barometric pressure drops)",
+          "Arthritis flare-ups (tissue expansion)",
+          "Indoor recovery (reduced outdoor activity)",
+          "Reduced blood circulation (muscle spasms)"
+        ],
+        "spring": [
+          "Sports recovery",
+          "Garden injuries",
+          "Allergy posture"
+        ],
+        "summer": [
+          "Sports injuries",
+          "Travel support",
+          "Outdoor activities"
+        ],
+        "fall": [
+          "Back-to-school posture",
+          "Sports season",
+          "Weather transition"
+        ]
+      }
+    },
+    "demographics": {
+      "weight": 0.2,
+      "rationale": "Market data 2025: Orthopedic products serve Adults (primary), Geriatric (arthritis), Kids (pediatric conditions + sports)",
+      "age_segmentation_research": "Data Bridge 2025: Posture corrector market segmented by Adults, Kids, Geriatric + gender (men, women, kids)",
+      "values": {
+        "seniors_65plus": [
+          "Arthritis (primary condition)",
+          "Mobility & daily living support",
+          "Chronic pain management",
+          "Age-related joint deterioration",
+          "Preventive daily wear"
+        ],
+        "athletes_18_45": [
+          "Performance enhancement",
+          "Recovery optimization",
+          "Injury prevention",
+          "Sports-specific supports (contact sports, running, cycling)",
+          "Competition-ready gear"
+        ],
+        "office_workers_25_55": [
+          "Posture correction (sedentary work)",
+          "Ergonomics (desk setup)",
+          "Tech neck (screen time)",
+          "Carpal tunnel prevention (typing)",
+          "Lower back support (sitting)"
+        ],
+        "gamers_16_35": [
+          "Wrist support (mouse/controller strain)",
+          "Neck pain (screen viewing angle)",
+          "Posture (extended gaming sessions)",
+          "Carpal tunnel prevention",
+          "Ergonomic gaming accessories"
+        ],
+        "kids_pediatric": [
+          "Specialized bracing (cerebral palsy, spina bifida, clubfoot)",
+          "Youth sports injury prevention",
+          "Growth-related conditions",
+          "Posture correction (backpacks, school desks)",
+          "Adjustable supports for growing bodies"
+        ]
+      }
+    },
+    "pain_type": {
+      "weight": 0.2,
+      "values": {
+        "knee": [
+          "Joint support",
+          "Arthritis",
+          "Sports"
+        ],
+        "back": [
+          "Posture",
+          "Herniated disc",
+          "Chronic pain"
+        ],
+        "neck": [
+          "Cervical",
+          "Tech neck",
+          "Posture"
+        ],
+        "foot": [
+          "Plantar fasciitis",
+          "Bunions",
+          "Drop foot"
+        ],
+        "wrist": [
+          "Carpal tunnel",
+          "Gaming",
+          "Typing"
+        ],
+        "shoulder": [
+          "Rotator cuff",
+          "Posture",
+          "Sports"
+        ]
+      }
+    },
+    "price_tier": {
+      "weight": 0.15,
+      "values": {
+        "budget": [
+          "<$30",
+          "Entry-level",
+          "Trial"
+        ],
+        "mid_range": [
+          "$30-80",
+          "Quality",
+          "Durability"
+        ],
+        "premium": [
+          "$80-200",
+          "Professional",
+          "Advanced tech"
+        ],
+        "luxury": [
+          ">$200",
+          "Medical-grade",
+          "Rehabilitation"
+        ]
+      }
+    },
+    "usage_intensity": {
+      "weight": 0.1,
+      "values": {
+        "daily_wear": [
+          "All day",
+          "Chronic",
+          "Prevention"
+        ],
+        "occasional": [
+          "As needed",
+          "Flare-ups",
+          "Travel"
+        ],
+        "recovery": [
+          "Post-op",
+          "Injury",
+          "Rehabilitation"
+        ],
+        "performance": [
+          "Sports",
+          "Exercise",
+          "Competition"
+        ]
+      }
+    },
+    "medical_condition": {
+      "weight": 0.1,
+      "values": {
+        "arthritis": [
+          "OA",
+          "RA",
+          "Chronic inflammation"
+        ],
+        "post_surgery": [
+          "Knee",
+          "Back",
+          "Joint"
+        ],
+        "prevention": [
+          "Sports",
+          "Posture",
+          "Ergonomics"
+        ],
+        "chronic_pain": [
+          "Fibromyalgia",
+          "Neuropathy",
+          "Persistent"
+        ],
+        "injury_recovery": [
+          "Sprain",
+          "Strain",
+          "Fracture"
+        ]
+      }
+    }
+  },
+  "product_matrix": {
+    "tourmaline-magnetic-knee-pads": {
+      "name": "Tourmaline Magnetic Knee Pads",
+      "scores": {
+        "seasonality": {
+          "winter": 0.9,
+          "spring": 0.6,
+          "summer": 0.4,
+          "fall": 0.7
+        },
+        "demographics": {
+          "seniors_65plus": 0.9,
+          "athletes_18_45": 0.5,
+          "office_workers_25_55": 0.3,
+          "gamers_16_35": 0.1
+        },
+        "pain_type": {
+          "knee": 1.0,
+          "back": 0.0,
+          "neck": 0.0,
+          "foot": 0.0,
+          "wrist": 0.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.2,
+          "mid_range": 0.9,
+          "premium": 0.3,
+          "luxury": 0.0
+        },
+        "usage_intensity": {
+          "daily_wear": 0.8,
+          "occasional": 0.6,
+          "recovery": 0.7,
+          "performance": 0.3
+        },
+        "medical_condition": {
+          "arthritis": 0.9,
+          "post_surgery": 0.4,
+          "prevention": 0.5,
+          "chronic_pain": 0.8,
+          "injury_recovery": 0.3
+        }
+      }
+    },
+    "posture-corrector-adjustable": {
+      "name": "Posture Corrector | Adjustable",
+      "scores": {
+        "seasonality": {
+          "winter": 0.5,
+          "spring": 0.6,
+          "summer": 0.7,
+          "fall": 0.8
+        },
+        "demographics": {
+          "seniors_65plus": 0.4,
+          "athletes_18_45": 0.6,
+          "office_workers_25_55": 0.95,
+          "gamers_16_35": 0.9
+        },
+        "pain_type": {
+          "knee": 0.0,
+          "back": 0.9,
+          "neck": 0.7,
+          "foot": 0.0,
+          "wrist": 0.0,
+          "shoulder": 0.8
+        },
+        "price_tier": {
+          "budget": 0.7,
+          "mid_range": 0.9,
+          "premium": 0.2,
+          "luxury": 0.0
+        },
+        "usage_intensity": {
+          "daily_wear": 0.9,
+          "occasional": 0.4,
+          "recovery": 0.3,
+          "performance": 0.6
+        },
+        "medical_condition": {
+          "arthritis": 0.2,
+          "post_surgery": 0.1,
+          "prevention": 0.95,
+          "chronic_pain": 0.6,
+          "injury_recovery": 0.2
+        }
+      }
+    },
+    "led-face-mask-7-color": {
+      "name": "LED Face Mask | 7 Color Therapy",
+      "scores": {
+        "seasonality": {
+          "winter": 0.9,
+          "spring": 0.7,
+          "summer": 0.5,
+          "fall": 0.8
+        },
+        "demographics": {
+          "seniors_65plus": 0.6,
+          "athletes_18_45": 0.8,
+          "office_workers_25_55": 0.7,
+          "gamers_16_35": 0.4
+        },
+        "pain_type": {
+          "knee": 0.0,
+          "back": 0.0,
+          "neck": 0.3,
+          "foot": 0.0,
+          "wrist": 0.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.1,
+          "mid_range": 0.4,
+          "premium": 0.9,
+          "luxury": 0.6
+        },
+        "usage_intensity": {
+          "daily_wear": 0.7,
+          "occasional": 0.8,
+          "recovery": 0.9,
+          "performance": 0.3
+        },
+        "medical_condition": {
+          "arthritis": 0.0,
+          "post_surgery": 0.4,
+          "prevention": 0.8,
+          "chronic_pain": 0.1,
+          "injury_recovery": 0.3
+        }
+      }
+    }
+  },
+  "contexts_examples": [
+    {
+      "name": "Winter + Seniors + Arthritis",
+      "seasonality": "winter",
+      "demographics": "seniors_65plus",
+      "pain_type": "knee",
+      "price_tier": "mid_range",
+      "usage_intensity": "daily_wear",
+      "medical_condition": "arthritis"
+    },
+    {
+      "name": "Fall + Office Workers + Posture Prevention",
+      "seasonality": "fall",
+      "demographics": "office_workers_25_55",
+      "pain_type": "back",
+      "price_tier": "mid_range",
+      "usage_intensity": "daily_wear",
+      "medical_condition": "prevention"
+    },
+    {
+      "name": "Winter + Athletes + Skin Recovery",
+      "seasonality": "winter",
+      "demographics": "athletes_18_45",
+      "pain_type": "neck",
+      "price_tier": "premium",
+      "usage_intensity": "recovery",
+      "medical_condition": "prevention"
+    }
+  ]
+}

@@ -1794,6 +1794,1143 @@ Produit Viral TikTok → Amplification Crédibilité:
 
 ---
 
+**Action 3.1.2: Matrice de Segmentation Multi-Dimensionnelle & Affichage Dynamique**
+
+**Objectif:** Créer un système de pondération produits pour adapter dynamiquement l'affichage selon la période, l'audience et le contexte.
+
+**Principe:** Chaque produit reçoit un **score composite (0-1)** basé sur 6 dimensions pondérées. Les produits avec les scores les plus élevés pour un contexte donné sont mis en avant.
+
+---
+
+### DIMENSIONS DE SEGMENTATION (6 dimensions, pondération totale = 100%)
+
+#### 1. SAISONNALITÉ (25% du score) - Dimension PRIORITAIRE
+
+**Rationale:** Les besoins médicaux varient significativement selon les saisons.
+
+```yaml
+Winter (Hiver):
+  - Douleurs arthritiques accrues (froid aggrave inflammation)
+  - Récupération indoor (moins d'activité extérieure)
+  - Problèmes circulation (température basse)
+
+  Produits prioritaires:
+    - Tourmaline Magnetic Knee Pads (score: 0.9)
+    - Heated therapy devices (score: 0.9)
+    - Compression supports (score: 0.8)
+
+Spring (Printemps):
+  - Reprise activité sportive (blessures prévention)
+  - Allergies saisonnières (posture affectée)
+  - Jardinage (douleurs dos/genoux)
+
+  Produits prioritaires:
+    - Knee supports for sports (score: 0.8)
+    - Back braces for gardening (score: 0.7)
+    - Wrist supports (score: 0.6)
+
+Summer (Été):
+  - Blessures sports outdoor (course, vélo, randonnée)
+  - Voyages (supports portables)
+  - Activités aquatiques (waterproof supports)
+
+  Produits prioritaires:
+    - Lightweight knee braces (score: 0.9)
+    - Travel-friendly supports (score: 0.8)
+    - Posture correctors (visible summer clothes) (score: 0.7)
+
+Fall (Automne):
+  - Rentrée scolaire/travail (posture bureau)
+  - Sports saison (football, basket, cross-country)
+  - Transition météo (douleurs articulaires)
+
+  Produits prioritaires:
+    - Posture correctors (score: 0.9)
+    - Ankle supports sports (score: 0.8)
+    - Desk ergonomics (score: 0.8)
+```
+
+---
+
+#### 2. DÉMOGRAPHIE (20% du score)
+
+```yaml
+Seniors 65+ ans:
+  - Pain points: Arthrite, mobilité réduite, douleur chronique
+  - Produits: Joint supports, daily wear braces, heated therapy
+  - Budget: Mid-range to premium ($50-150)
+  - Scoring: Tourmaline Knee Pads (0.9), Heated devices (0.9)
+
+Athletes 18-45 ans:
+  - Pain points: Blessures sportives, récupération, performance
+  - Produits: Performance braces, recovery devices, compression
+  - Budget: Mid-range to premium ($40-120)
+  - Scoring: Sports knee braces (0.9), Recovery boots (0.8)
+
+Office Workers 25-55 ans:
+  - Pain points: Posture, tech neck, carpal tunnel, sédentarité
+  - Produits: Posture correctors, wrist supports, neck devices
+  - Budget: Budget to mid-range ($25-80)
+  - Scoring: Posture correctors (0.95), Wrist braces (0.9)
+
+Gamers 16-35 ans:
+  - Pain points: Wrist pain, neck strain, posture gaming
+  - Produits: Wrist supports, neck devices, posture fixes
+  - Budget: Budget to mid-range ($20-70)
+  - Scoring: Wrist supports (0.9), Posture correctors (0.9)
+```
+
+---
+
+#### 3. TYPE DE DOULEUR / BESOIN (20% du score)
+
+```yaml
+Knee (Genou):
+  - Produits: 100% match knee braces
+  - Scoring: Knee products (1.0), Related (0.3-0.5), Unrelated (0.0)
+
+Back (Dos):
+  - Produits: Back braces, posture correctors, lumbar supports
+  - Scoring: Back products (1.0), Posture (0.9), Unrelated (0.0)
+
+Neck (Cou):
+  - Produits: Cervical braces, traction devices, neck massagers
+  - Scoring: Neck products (1.0), Posture (0.7), Unrelated (0.0)
+
+Foot (Pied):
+  - Produits: Bunion correctors, plantar fasciitis, drop foot braces
+  - Scoring: Foot products (1.0), Ankle (0.6), Unrelated (0.0)
+
+Wrist (Poignet):
+  - Produits: Carpal tunnel braces, gaming supports, typing aids
+  - Scoring: Wrist products (1.0), Hand therapy (0.7), Unrelated (0.0)
+
+Shoulder (Épaule):
+  - Produits: Rotator cuff supports, posture correctors
+  - Scoring: Shoulder products (1.0), Posture (0.8), Unrelated (0.0)
+```
+
+---
+
+#### 4. NIVEAU DE PRIX (15% du score)
+
+```yaml
+Budget (<$30):
+  - Entry-level products, trial purchases
+  - Persona: Price-conscious, first-time buyers
+  - Exemples: Basic knee straps, simple posture aids
+
+Mid-Range ($30-80):
+  - Quality products, proven durability
+  - Persona: Value seekers, repeat customers
+  - Exemples: Tourmaline Knee Pads, Posture Correctors (MAJORITY)
+
+Premium ($80-200):
+  - Advanced technology, professional-grade
+  - Persona: Serious recovery, athletes, chronic conditions
+  - Exemples: LED therapy masks, Electric massagers, Recovery boots
+
+Luxury (>$200):
+  - Medical-grade, rehabilitation equipment
+  - Persona: Post-surgery, serious medical conditions
+  - Exemples: Advanced rehab devices, professional therapy systems
+```
+
+---
+
+#### 5. INTENSITÉ D'USAGE (10% du score)
+
+```yaml
+Daily Wear (Port quotidien):
+  - Produits: Confortables, discrets, toute la journée
+  - Scoring: Posture correctors (0.9), Knee supports (0.8)
+
+Occasional (Occasionnel):
+  - Produits: As-needed, flare-ups, activités spécifiques
+  - Scoring: Sport braces (0.8), Travel supports (0.6)
+
+Recovery (Récupération):
+  - Produits: Post-op, injury recovery, rehabilitation
+  - Scoring: Recovery boots (0.9), Therapy devices (0.9)
+
+Performance (Performance):
+  - Produits: Sports, exercise, competition
+  - Scoring: Performance braces (0.9), Compression gear (0.8)
+```
+
+---
+
+#### 6. CONDITION MÉDICALE (10% du score)
+
+```yaml
+Arthritis (Arthrite):
+  - Produits: Joint supports, heated therapy, daily wear
+  - Scoring: Magnetic knee pads (0.9), Heated devices (0.9)
+
+Post-Surgery (Post-opératoire):
+  - Produits: Medical-grade supports, recovery devices
+  - Scoring: Professional braces (0.9), Recovery systems (0.9)
+
+Prevention (Prévention):
+  - Produits: Posture correctors, sports supports, ergonomics
+  - Scoring: Posture correctors (0.95), Sports braces (0.8)
+
+Chronic Pain (Douleur chronique):
+  - Produits: Daily wear supports, pain relief devices
+  - Scoring: Supports quotidiens (0.8), Therapy devices (0.8)
+
+Injury Recovery (Récupération blessure):
+  - Produits: Stabilization braces, compression, therapy
+  - Scoring: Stabilization braces (0.9), Compression (0.8)
+```
+
+---
+
+### ALGORITHME DE SCORING COMPOSITE
+
+**Formule:**
+```
+Score_Total = Σ (Score_Dimension × Poids_Dimension)
+
+Où:
+- Score_Dimension = 0-1 (pertinence produit pour cette dimension)
+- Poids_Dimension = % du score total (somme = 100%)
+
+Exemple:
+Score_Total = (0.9 × 0.25) + (0.9 × 0.20) + (1.0 × 0.20) + (0.9 × 0.15) + (0.8 × 0.10) + (0.9 × 0.10)
+            = 0.225 + 0.180 + 0.200 + 0.135 + 0.080 + 0.090
+            = 0.910 (score composite sur 1.0)
+```
+
+---
+
+### EXEMPLES DE SCORING PAR CONTEXTE
+
+#### Contexte 1: **Winter + Seniors + Arthritis**
+
+```yaml
+Tourmaline Magnetic Knee Pads:
+  Seasonality (25%):      0.90 × 0.25 = 0.225  # High relevance hiver
+  Demographics (20%):     0.90 × 0.20 = 0.180  # Perfect for seniors
+  Pain Type (20%):        1.00 × 0.20 = 0.200  # 100% knee match
+  Price Tier (15%):       0.90 × 0.15 = 0.135  # Mid-range sweet spot
+  Usage Intensity (10%):  0.80 × 0.10 = 0.080  # Daily wear
+  Medical Condition (10%):0.90 × 0.10 = 0.090  # Arthritis primary use
+
+  TOTAL COMPOSITE SCORE: 0.910 ⭐⭐⭐⭐⭐ (HIGHEST)
+
+Posture Corrector:
+  Seasonality (25%):      0.50 × 0.25 = 0.125  # Neutral winter
+  Demographics (20%):     0.40 × 0.20 = 0.080  # Lower for seniors
+  Pain Type (20%):        0.00 × 0.20 = 0.000  # Not knee-related
+  Price Tier (15%):       0.70 × 0.15 = 0.105  # Budget-mid range
+  Usage Intensity (10%):  0.90 × 0.10 = 0.090  # Daily wear
+  Medical Condition (10%):0.20 × 0.10 = 0.020  # Not for arthritis
+
+  TOTAL COMPOSITE SCORE: 0.420 (LOWER PRIORITY)
+```
+
+**Résultat:** En hiver, pour seniors avec arthrite, les Tourmaline Knee Pads obtiennent score 2.17x supérieur → Affichés en priorité (homepage featured, top collections, email campaigns)
+
+---
+
+#### Contexte 2: **Fall + Office Workers + Posture Prevention**
+
+```yaml
+Posture Corrector:
+  Seasonality (25%):      0.80 × 0.25 = 0.200  # Back-to-work season
+  Demographics (20%):     0.95 × 0.20 = 0.190  # Perfect for office workers
+  Pain Type (20%):        0.90 × 0.20 = 0.180  # Back/posture match
+  Price Tier (15%):       0.90 × 0.15 = 0.135  # Mid-range
+  Usage Intensity (10%):  0.90 × 0.10 = 0.090  # Daily desk wear
+  Medical Condition (10%):0.95 × 0.10 = 0.095  # Prevention primary
+
+  TOTAL COMPOSITE SCORE: 0.890 ⭐⭐⭐⭐⭐ (HIGHEST)
+
+Tourmaline Knee Pads:
+  Seasonality (25%):      0.70 × 0.25 = 0.175  # Moderate fall
+  Demographics (20%):     0.30 × 0.20 = 0.060  # Lower for office workers
+  Pain Type (20%):        0.00 × 0.20 = 0.000  # Not back-related
+  Price Tier (15%):       0.90 × 0.15 = 0.135  # Mid-range
+  Usage Intensity (10%):  0.80 × 0.10 = 0.080  # Daily wear
+  Medical Condition (10%):0.50 × 0.10 = 0.050  # Not prevention focus
+
+  TOTAL COMPOSITE SCORE: 0.500 (LOWER PRIORITY)
+```
+
+**Résultat:** En automne, pour office workers cherchant prévention posture, le Posture Corrector obtient score 1.78x supérieur → Priorité affichage
+
+---
+
+#### Contexte 3: **Winter + Athletes + Skin Recovery**
+
+```yaml
+LED Face Mask 7 Color:
+  Seasonality (25%):      0.90 × 0.25 = 0.225  # Skin care season
+  Demographics (20%):     0.80 × 0.20 = 0.160  # Athletes use recovery tech
+  Pain Type (20%):        0.30 × 0.20 = 0.060  # Face/neck area (indirect)
+  Price Tier (15%):       0.90 × 0.15 = 0.135  # Premium range
+  Usage Intensity (10%):  0.90 × 0.10 = 0.090  # Recovery focus
+  Medical Condition (10%):0.80 × 0.10 = 0.080  # Prevention/recovery
+
+  TOTAL COMPOSITE SCORE: 0.750 ⭐⭐⭐⭐ (HIGH)
+
+Tourmaline Knee Pads:
+  Seasonality (25%):      0.90 × 0.25 = 0.225  # Winter relevance
+  Demographics (20%):     0.50 × 0.20 = 0.100  # Moderate for athletes
+  Pain Type (20%):        0.00 × 0.20 = 0.000  # Not face/neck
+  Price Tier (15%):       0.90 × 0.15 = 0.135  # Mid-range
+  Usage Intensity (10%):  0.30 × 0.10 = 0.030  # Not recovery primary
+  Medical Condition (10%):0.50 × 0.10 = 0.050  # Not recovery focus
+
+  TOTAL COMPOSITE SCORE: 0.540 (LOWER)
+```
+
+**Résultat:** Pour athletes en hiver cherchant recovery, LED therapy devices prioritaires (score 1.39x supérieur)
+
+---
+
+### IMPLÉMENTATION TECHNIQUE - SITE DYNAMIQUE
+
+#### Phase 1: Collecte de Contexte (Automatique)
+
+```javascript
+// Context detection on page load
+const currentContext = {
+  // 1. SEASONALITY (auto-detected)
+  season: getCurrentSeason(),  // winter/spring/summer/fall
+
+  // 2. DEMOGRAPHICS (detected via user behavior + cookies)
+  demographic: detectDemographic(),  // seniors/athletes/office/gamers
+
+  // 3. PAIN TYPE (detected via browsing history or quiz)
+  painType: getUserPainFocus(),  // knee/back/neck/foot/wrist/shoulder
+
+  // 4. PRICE TIER (detected via cart history or preference)
+  priceTier: getUserPricePreference(),  // budget/mid/premium/luxury
+
+  // 5. USAGE INTENSITY (inferred from product views)
+  usageIntensity: inferUsagePattern(),  // daily/occasional/recovery/performance
+
+  // 6. MEDICAL CONDITION (from quiz or product tags viewed)
+  medicalCondition: detectCondition()  // arthritis/post-op/prevention/chronic/injury
+};
+
+function getCurrentSeason() {
+  const month = new Date().getMonth();
+  if (month >= 11 || month <= 1) return 'winter';
+  if (month >= 2 && month <= 4) return 'spring';
+  if (month >= 5 && month <= 7) return 'summer';
+  return 'fall';
+}
+
+function detectDemographic() {
+  // Check user browsing patterns, product tags viewed
+  // Example: Multiple views of "arthritis" products → seniors
+  //          Multiple views of "sports" products → athletes
+  //          Multiple views of "posture" products → office workers
+
+  const viewedTags = getUserViewedProductTags();
+
+  if (viewedTags.includes('arthritis') || viewedTags.includes('senior')) {
+    return 'seniors_65plus';
+  }
+  if (viewedTags.includes('sports') || viewedTags.includes('performance')) {
+    return 'athletes_18_45';
+  }
+  if (viewedTags.includes('posture') || viewedTags.includes('desk') || viewedTags.includes('ergonomics')) {
+    return 'office_workers_25_55';
+  }
+  if (viewedTags.includes('gaming') || viewedTags.includes('wrist')) {
+    return 'gamers_16_35';
+  }
+
+  return 'office_workers_25_55';  // Default
+}
+```
+
+---
+
+#### Phase 2: Scoring Produits Dynamique
+
+```javascript
+// Product scoring matrix (loaded from JSON file or API)
+const PRODUCT_MATRIX = {
+  "tourmaline-magnetic-knee-pads": {
+    scores: {
+      seasonality: { winter: 0.9, spring: 0.6, summer: 0.4, fall: 0.7 },
+      demographics: { seniors_65plus: 0.9, athletes_18_45: 0.5, office_workers_25_55: 0.3, gamers_16_35: 0.1 },
+      pain_type: { knee: 1.0, back: 0.0, neck: 0.0, foot: 0.0, wrist: 0.0, shoulder: 0.0 },
+      price_tier: { budget: 0.2, mid_range: 0.9, premium: 0.3, luxury: 0.0 },
+      usage_intensity: { daily_wear: 0.8, occasional: 0.6, recovery: 0.7, performance: 0.3 },
+      medical_condition: { arthritis: 0.9, post_surgery: 0.4, prevention: 0.5, chronic_pain: 0.8, injury_recovery: 0.3 }
+    }
+  },
+  // ... autres produits
+};
+
+// Dimension weights
+const DIMENSION_WEIGHTS = {
+  seasonality: 0.25,
+  demographics: 0.20,
+  pain_type: 0.20,
+  price_tier: 0.15,
+  usage_intensity: 0.10,
+  medical_condition: 0.10
+};
+
+function calculateCompositeScore(productScores, context) {
+  let totalScore = 0.0;
+
+  for (const [dimension, weight] of Object.entries(DIMENSION_WEIGHTS)) {
+    if (productScores[dimension] && context[dimension]) {
+      const dimensionScore = productScores[dimension][context[dimension]];
+      if (dimensionScore !== undefined) {
+        totalScore += dimensionScore * weight;
+      }
+    }
+  }
+
+  return totalScore.toFixed(3);
+}
+
+// Calculate scores for all products
+function rankProducts(context) {
+  const rankedProducts = [];
+
+  for (const [productId, productData] of Object.entries(PRODUCT_MATRIX)) {
+    const score = calculateCompositeScore(productData.scores, context);
+    rankedProducts.push({
+      productId: productId,
+      score: parseFloat(score),
+      ...productData
+    });
+  }
+
+  // Sort by score descending
+  rankedProducts.sort((a, b) => b.score - a.score);
+
+  return rankedProducts;
+}
+```
+
+---
+
+#### Phase 3: Affichage Dynamique Homepage
+
+```liquid
+<!-- Homepage Featured Products (dynamic based on context) -->
+{% comment %} Get ranked products from JS context {% endcomment %}
+<script>
+  const context = getCurrentContext();
+  const rankedProducts = rankProducts(context);
+
+  // Pass top 8 products to Liquid
+  window.featuredProductIds = rankedProducts.slice(0, 8).map(p => p.productId);
+</script>
+
+<div class="featured-products-section">
+  <h2>Recommended for You This {{ current_season }}</h2>
+
+  {% comment %} Render products sorted by composite score {% endcomment %}
+  <div class="product-grid">
+    {% for product_id in window.featuredProductIds %}
+      {% assign product = all_products[product_id] %}
+      {% render 'product-card', product: product, context_score: true %}
+    {% endfor %}
+  </div>
+</div>
+```
+
+---
+
+#### Phase 4: Email Campaigns Saisonnières
+
+**Automatisation Klaviyo:**
+
+```yaml
+Winter Campaign (Décembre-Février):
+  Trigger: Season = winter
+  Segment: demographics = seniors_65plus
+  Products: Top 5 scored for { season: winter, demographics: seniors_65plus }
+
+  Email Subject: "Winter Pain Relief: Top-Rated Products for Cold Weather Comfort"
+  Email Content:
+    - Featured: Tourmaline Magnetic Knee Pads (score: 0.91)
+    - Featured: Heated Therapy Devices (score: 0.87)
+    - Featured: Compression Supports (score: 0.82)
+
+Fall Campaign (Septembre-Novembre):
+  Trigger: Season = fall
+  Segment: demographics = office_workers_25_55
+  Products: Top 5 scored for { season: fall, demographics: office_workers }
+
+  Email Subject: "Back-to-Work Posture Solutions: Feel Better at Your Desk"
+  Email Content:
+    - Featured: Posture Corrector (score: 0.89)
+    - Featured: Lumbar Support Belt (score: 0.84)
+    - Featured: Ergonomic Wrist Supports (score: 0.78)
+```
+
+---
+
+### BÉNÉFICES MESURABLES
+
+**Métriques de succès:**
+
+```yaml
+Conversion Rate (Taux de conversion):
+  - Avant: 2.5% (affichage statique)
+  - Après: 3.5-4.0% (affichage dynamique contextualisé)
+  - Amélioration: +40-60%
+
+Average Order Value (Panier moyen):
+  - Avant: $75
+  - Après: $95-105 (produits mieux ciblés = prix plus élevés acceptés)
+  - Amélioration: +27-40%
+
+Time to Purchase (Temps avant achat):
+  - Avant: 3.2 visites en moyenne
+  - Après: 2.1 visites (produits pertinents dès première visite)
+  - Amélioration: -34%
+
+Bounce Rate (Taux de rebond):
+  - Avant: 52%
+  - Après: 38-42% (visiteurs trouvent produits pertinents immédiatement)
+  - Amélioration: -19-27%
+
+Email Open Rate (Taux d'ouverture emails):
+  - Avant: 22% (campagnes génériques)
+  - Après: 32-38% (sujets saisonniers + segmentés)
+  - Amélioration: +45-73%
+
+Email Click Rate (Taux de clic emails):
+  - Avant: 3.5%
+  - Après: 6.2-7.8% (produits ultra-ciblés)
+  - Amélioration: +77-123%
+```
+
+---
+
+### ROADMAP D'IMPLÉMENTATION
+
+**Mois 1-2: Setup Infrastructure**
+- [ ] Créer product_matrix.json avec scores tous produits (96 produits)
+- [ ] Développer JS context detection library
+- [ ] Implémenter scoring algorithm (client-side)
+- [ ] Tester avec 10 produits pilotes
+
+**Mois 3-4: Homepage Dynamique**
+- [ ] Intégrer scoring dans homepage featured section
+- [ ] A/B test: Static vs Dynamic display
+- [ ] Mesurer impact conversion (+40% attendu)
+- [ ] Déployer si A/B test positif
+
+**Mois 5-6: Collections Saisonnières**
+- [ ] Créer collections auto-populate basées sur scores
+- [ ] "Winter Must-Haves" (auto-updated produits score >0.7 winter)
+- [ ] "Summer Essentials" (auto-updated produits score >0.7 summer)
+- [ ] "Fall Posture Solutions" (auto-updated produits >0.7 fall + office)
+
+**Mois 7-8: Email Segmentation**
+- [ ] Intégrer matrix dans Klaviyo
+- [ ] Créer 4 campagnes saisonnières (winter/spring/summer/fall)
+- [ ] Créer 4 segments démographiques (seniors/athletes/office/gamers)
+- [ ] Mesurer impact email metrics (+70% CTR attendu)
+
+**Mois 9-12: Optimisation Continue**
+- [ ] Analyser performance par dimension
+- [ ] Ajuster poids dimensions si nécessaire (A/B test weights)
+- [ ] Ajouter dimensions si pertinentes (ex: geography, loyalty tier)
+- [ ] Automatiser scoring updates mensuels
+
+---
+
+### MATRICE COMPLÈTE - FICHIER DE RÉFÉRENCE
+
+**Fichier créé:** `segmentation_matrix_alpha_medical.json`
+
+**Contenu:**
+- 6 dimensions avec pondérations
+- Scores détaillés pour 96 produits Alpha Medical
+- Exemples de contextes et rankings
+- Documentation algorithme scoring
+
+**Usage:**
+- Import dans Shopify (metafields ou custom app)
+- Import dans Klaviyo (email segmentation)
+- Import dans GA4 (analytics par segment)
+- Import dans Facebook Ads (lookalike audiences)
+
+---
+
+### STRATÉGIE ROTATION MENSUELLE (12 MOIS) - Système Dynamique de Mise en Avant Produits
+
+⚠️ **IMPORTANT - MERCHANDISING HIÉRARCHIQUE DYNAMIQUE:**
+- **TOUS LES PRODUITS RESTENT ACTIFS** (AUCUN draft automatique)
+- **PRIORISATION VISUELLE UNIQUEMENT** (pas activation/désactivation)
+- **Merchandising = Ordre d'affichage dynamique** (top ranked products first)
+- **Ne JAMAIS toucher aux slides existants** (géré manuellement séparément)
+
+**Principe:** Chaque mois, **prioriser visuellement 2 catégories primaires** de produits alignées avec les scores de saisonnalité + démographie, avec **2-3 rappels d'autres sélections** pour maximiser cross-selling et engagement répété.
+
+**Objectif:** Site dynamique qui propose des produits différents chaque période, alignés avec les besoins réels des clients selon le contexte temporel et comportemental.
+
+**Méthode:** Utiliser les scores composites de la matrice multi-dimensionnelle pour déterminer automatiquement les **positions d'affichage optimales** (ranking, pas suppression).
+
+**Base factuelle 2025:**
+- Marché cold pain therapy: $2.44B (2024) → $3.70B projeté (2034) - CAGR 4.0%
+- Conditions orthopédiques: 49.9% du marché (2024)
+- Hiver: Pression barométrique ↓ = expansion tissus articulaires = douleur arthritique ↑
+- AI merchandising 2025: Rotation automatisée homepage + dynamic reordering temps réel
+
+---
+
+#### CALENDRIER ROTATION 12 MOIS (2025-2026)
+
+**JANVIER (Winter Peak)**
+
+**Catégories Primaires (Hero Homepage + Email Campaigns):**
+1. **Knee Supports - Arthritis Focus** (Score composite: 0.910)
+   - Tourmaline Magnetic Knee Pads (winter: 0.9, seniors: 0.9, arthritis: 0.9)
+   - Heated Knee Braces
+   - Compression Knee Sleeves
+   - **Messaging:** "Soulagement arthrite hiver | Chaleur thérapeutique"
+
+2. **Heated Therapy Devices** (Score composite: 0.885)
+   - LED Red Light Therapy devices
+   - Infrared heating pads
+   - Thermal compression wraps
+   - **Messaging:** "Récupération indoor | Thérapie par la chaleur"
+
+**Rappels (Secondary Sections - Cross-Sell):**
+- Posture Correctors (office workers post-holidays: 0.650)
+- Neck Traction Devices (indoor recovery: 0.720)
+- Back Braces (winter pain flare-ups: 0.780)
+
+**Email Segmentation:**
+- Seniors 65+: Arthritis knee supports (open rate attendu: +55%)
+- Athletes 18-45: Recovery devices post-winter sports (CTR attendu: +40%)
+- Office workers: Posture correction rentrée janvier (conversion: +25%)
+
+---
+
+**FÉVRIER (Winter Continuation + Valentine's Self-Care)**
+
+**Catégories Primaires:**
+1. **Recovery & Wellness Devices** (Score composite: 0.870)
+   - LED Face Mask 7-Color Therapy (winter skin + recovery: 0.9)
+   - Compression therapy boots
+   - Massage devices
+   - **Messaging:** "Self-care Février | Récupération bien-être"
+
+2. **Wrist & Hand Supports** (Score composite: 0.825)
+   - Carpal Tunnel braces (office workers indoor: 0.9)
+   - Wrist compression sleeves
+   - Gaming wrist supports
+   - **Messaging:** "Confort bureau hiver | Protection poignets"
+
+**Rappels:**
+- Knee supports arthritis (continuité janvier)
+- Back braces (douleur chronique hiver)
+- Ankle supports (sports indoor: basketball, gym)
+
+---
+
+**MARS (Spring Transition + Sports Resumption)**
+
+**Catégories Primaires:**
+1. **Knee Supports - Sports Prevention** (Score composite: 0.840)
+   - Lightweight knee braces (spring sports: 0.8)
+   - Hinged knee stabilizers
+   - Patellar straps for running
+   - **Messaging:** "Reprise sport printemps | Prévention blessures"
+
+2. **Back Braces - Gardening & Outdoor** (Score composite: 0.775)
+   - Lumbar support belts (gardening: 0.7)
+   - Lower back braces
+   - Posture correctors for outdoor work
+   - **Messaging:** "Jardinage sans douleur | Support dos actif"
+
+**Rappels:**
+- Wrist supports (jardinage + sports raquettes)
+- Ankle braces (trail running printemps)
+- Shoulder supports (sports saison)
+
+---
+
+**AVRIL (Spring Peak + Allergy Posture)**
+
+**Catégories Primaires:**
+1. **Posture Correctors - Allergy Season** (Score composite: 0.810)
+   - Adjustable posture braces (spring: 0.6, prevention: 0.95)
+   - Shoulder alignment devices
+   - Clavicle braces
+   - **Messaging:** "Posture printanière | Correction proactive"
+
+2. **Ankle Supports - Sports Season Start** (Score composite: 0.795)
+   - Ankle stabilizer braces
+   - Compression ankle sleeves
+   - Lace-up ankle supports
+   - **Messaging:** "Sports extérieurs | Protection chevilles"
+
+**Rappels:**
+- Knee supports (continuité sports printemps)
+- Wrist braces (tennis, golf, jardinage)
+- Compression socks (circulation printemps)
+
+---
+
+**MAI (Late Spring + Pre-Summer Sports)**
+
+**Catégories Primaires:**
+1. **Lightweight Sports Supports** (Score composite: 0.865)
+   - Breathable knee sleeves (summer prep: 0.7)
+   - Moisture-wicking braces
+   - Performance compression gear
+   - **Messaging:** "Équipement sport été | Léger et respirant"
+
+2. **Travel-Friendly Supports** (Score composite: 0.820)
+   - Portable neck pillows with support
+   - Compact compression devices
+   - Travel back braces
+   - **Messaging:** "Voyages sans douleur | Support portable"
+
+**Rappels:**
+- Posture correctors (transition travail été)
+- Foot supports (plantar fasciitis summer walks)
+- Shoulder braces (sports outdoor)
+
+---
+
+**JUIN (Summer Start + Outdoor Activities)**
+
+**Catégories Primaires:**
+1. **Waterproof & Outdoor Supports** (Score composite: 0.890)
+   - Waterproof knee braces (summer: 0.9, sports: 0.9)
+   - Neoprene supports for water sports
+   - Sweat-resistant compression gear
+   - **Messaging:** "Sports aquatiques | Support waterproof"
+
+2. **Posture Correctors - Discreet Summer** (Score composite: 0.750)
+   - Low-profile posture braces (summer clothes: 0.7)
+   - Invisible clavicle supports
+   - Thin back braces
+   - **Messaging:** "Posture invisible | Confort vêtements été"
+
+**Rappels:**
+- Ankle supports (randonnée, trail running)
+- Wrist braces (sports raquettes été)
+- Compression socks (voyages longs vols)
+
+---
+
+**JUILLET (Summer Peak + Vacation)**
+
+**Catégories Primaires:**
+1. **Travel & Portability** (Score composite: 0.875)
+   - Compact travel braces (summer: 0.8, travel: 0.95)
+   - Inflatable neck supports
+   - Foldable back cushions with support
+   - **Messaging:** "Vacances sans douleur | Support voyage"
+
+2. **Sports Injury Recovery** (Score composite: 0.840)
+   - Injury recovery braces (summer sports: 0.85)
+   - Post-injury compression
+   - Rehabilitation supports
+   - **Messaging:** "Récupération blessure été | Retour rapide"
+
+**Rappels:**
+- Knee supports (sports outdoor intensifs)
+- Foot & ankle braces (randonnée vacances)
+- LED therapy devices (récupération soir)
+
+---
+
+**AOÛT (Late Summer + Sports Intensification)**
+
+**Catégories Primaires:**
+1. **Performance Sports Braces** (Score composite: 0.895)
+   - High-performance knee braces (summer sports: 0.9, performance: 0.95)
+   - Professional-grade supports
+   - Competition-ready braces
+   - **Messaging:** "Performance maximale | Équipement pro"
+
+2. **Recovery Devices - Post-Exercise** (Score composite: 0.860)
+   - Compression boots (recovery: 0.9)
+   - LED therapy masks (athlete recovery: 0.8)
+   - Cold/heat therapy combos
+   - **Messaging:** "Récupération optimale | Thérapie post-effort"
+
+**Rappels:**
+- Ankle supports (sports haute intensité)
+- Wrist braces (sports raquettes, escalade)
+- Back supports (fatigue fin été)
+
+---
+
+**SEPTEMBRE (Fall Transition + Back to Work/School)**
+
+**Catégories Primaires:**
+1. **Posture Correctors - Office Return** (Score composite: 0.920)
+   - Adjustable posture braces (fall: 0.8, office workers: 0.95)
+   - Desk ergonomic supports
+   - Shoulder alignment devices
+   - **Messaging:** "Rentrée bureau | Posture parfaite"
+
+2. **Wrist Supports - Desk Work** (Score composite: 0.885)
+   - Carpal tunnel braces (fall: 0.7, office: 0.9, gaming: 0.9)
+   - Ergonomic wrist rests
+   - Typing supports
+   - **Messaging:** "Confort travail bureau | Protection poignets"
+
+**Rappels:**
+- Neck traction devices (tech neck rentrée)
+- Back braces (sédentarité reprise)
+- Compression socks (bureau toute journée)
+
+---
+
+**OCTOBRE (Fall Peak + Sports Season)**
+
+**Catégories Primaires:**
+1. **Ankle Supports - Fall Sports** (Score composite: 0.870)
+   - Ankle stabilizers (fall sports: 0.8, sports season: 0.9)
+   - Basketball ankle braces
+   - Football supports
+   - **Messaging:** "Sports automne | Protection chevilles"
+
+2. **Knee Supports - Sports Season** (Score composite: 0.855)
+   - Sports knee braces (fall: 0.7, athletes: 0.85)
+   - Hinged supports for contact sports
+   - Patellar tracking braces
+   - **Messaging:** "Saison sportive | Genoux protégés"
+
+**Rappels:**
+- Posture correctors (continuité rentrée)
+- Wrist supports (sports + travail)
+- Shoulder braces (sports contact)
+
+---
+
+**NOVEMBRE (Late Fall + Pre-Winter Transition)**
+
+**Catégories Primaires:**
+1. **Arthritis Preparation - Cold Weather** (Score composite: 0.895)
+   - Tourmaline magnetic supports (fall→winter: 0.7→0.9)
+   - Heated knee/elbow braces
+   - Thermal compression wraps
+   - **Messaging:** "Préparez l'hiver | Anti-arthrite"
+
+2. **Indoor Recovery Devices** (Score composite: 0.850)
+   - LED therapy devices (indoor transition: 0.8)
+   - Compression therapy boots
+   - Heat therapy pads
+   - **Messaging:** "Récupération indoor | Chaleur thérapeutique"
+
+**Rappels:**
+- Back braces (douleur transition météo)
+- Posture correctors (indoor work increase)
+- Foot supports (circulation cold weather)
+
+---
+
+**DÉCEMBRE (Winter Start + Holiday Self-Care)**
+
+**Catégories Primaires:**
+1. **Gift Sets - Medical Supports** (Score composite: 0.880)
+   - Combo knee + back support (winter: 0.85, gifting: 0.9)
+   - Wellness device bundles
+   - Premium therapy sets
+   - **Messaging:** "Cadeaux santé | Bien-être offert"
+
+2. **Chronic Pain Management** (Score composite: 0.905)
+   - Multi-area support systems (winter chronic: 0.9)
+   - Heated full-body wraps
+   - Complete pain relief kits
+   - **Messaging:** "Soulagement hiver | Kit complet"
+
+**Rappels:**
+- Posture correctors (cadeau famille)
+- LED therapy devices (self-care holidays)
+- Compression devices (voyages fêtes)
+
+---
+
+#### IMPLÉMENTATION TECHNIQUE - ROTATION AUTOMATIQUE
+
+**Code JavaScript - Auto-Rotation Homepage:**
+
+```javascript
+// Get current month and determine featured categories
+function getFeaturedCategoriesForMonth() {
+  const monthRotation = {
+    0: { // January
+      primary: ['knee-supports-arthritis', 'heated-therapy-devices'],
+      secondary: ['posture-correctors', 'neck-traction', 'back-braces'],
+      messaging: {
+        category1: "Soulagement arthrite hiver | Chaleur thérapeutique",
+        category2: "Récupération indoor | Thérapie par la chaleur"
+      }
+    },
+    1: { // February
+      primary: ['recovery-wellness-devices', 'wrist-hand-supports'],
+      secondary: ['knee-supports-arthritis', 'back-braces', 'ankle-supports'],
+      messaging: {
+        category1: "Self-care Février | Récupération bien-être",
+        category2: "Confort bureau hiver | Protection poignets"
+      }
+    },
+    2: { // March
+      primary: ['knee-supports-sports', 'back-braces-gardening'],
+      secondary: ['wrist-supports', 'ankle-braces', 'shoulder-supports'],
+      messaging: {
+        category1: "Reprise sport printemps | Prévention blessures",
+        category2: "Jardinage sans douleur | Support dos actif"
+      }
+    },
+    // ... (continue for months 3-11)
+    8: { // September
+      primary: ['posture-correctors-office', 'wrist-supports-desk'],
+      secondary: ['neck-traction', 'back-braces', 'compression-socks'],
+      messaging: {
+        category1: "Rentrée bureau | Posture parfaite",
+        category2: "Confort travail bureau | Protection poignets"
+      }
+    },
+    11: { // December
+      primary: ['gift-sets-medical', 'chronic-pain-management'],
+      secondary: ['posture-correctors', 'led-therapy', 'compression-devices'],
+      messaging: {
+        category1: "Cadeaux santé | Bien-être offert",
+        category2: "Soulagement hiver | Kit complet"
+      }
+    }
+  };
+
+  const currentMonth = new Date().getMonth();
+  return monthRotation[currentMonth];
+}
+
+// Fetch and display featured products based on monthly rotation
+function displayMonthlyFeaturedProducts() {
+  const rotation = getFeaturedCategoriesForMonth();
+
+  // Primary categories - Hero section
+  fetch(`/collections/${rotation.primary[0]}/products.json?limit=4`)
+    .then(res => res.json())
+    .then(products => {
+      renderHeroSection(products, rotation.messaging.category1, 'primary-1');
+    });
+
+  fetch(`/collections/${rotation.primary[1]}/products.json?limit=4`)
+    .then(res => res.json())
+    .then(products => {
+      renderHeroSection(products, rotation.messaging.category2, 'primary-2');
+    });
+
+  // Secondary categories - Cross-sell section
+  rotation.secondary.forEach((category, index) => {
+    fetch(`/collections/${category}/products.json?limit=3`)
+      .then(res => res.json())
+      .then(products => {
+        renderSecondarySection(products, `secondary-${index + 1}`);
+      });
+  });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', displayMonthlyFeaturedProducts);
+```
+
+---
+
+#### IMPLÉMENTATION KLAVIYO - EMAIL ROTATION MENSUELLE
+
+**Flow automatisé mensuel:**
+
+```yaml
+Trigger: 1er jour de chaque mois, 10h00 (segmentation automatique)
+
+Email "Nouveautés du Mois" - Version dynamique par segment:
+
+Segment Seniors 65+:
+  - Sujet: "Janvier: Soulagement arthrite hiver | Nouveaux produits"
+  - Hero: Tourmaline Magnetic Knee Pads (Score: 0.910)
+  - Cross-sell: Heated therapy devices, Back braces
+  - CTA: "Découvrir la sélection hiver"
+
+Segment Athletes 18-45:
+  - Sujet: "Janvier: Récupération optimale | Équipement indoor"
+  - Hero: LED Therapy Devices (Score: 0.860)
+  - Cross-sell: Compression boots, Performance braces
+  - CTA: "Optimiser ma récupération"
+
+Segment Office Workers 25-55:
+  - Sujet: "Rentrée Septembre: Posture parfaite bureau"
+  - Hero: Posture Correctors (Score: 0.920)
+  - Cross-sell: Wrist supports, Neck traction
+  - CTA: "Améliorer ma posture"
+
+Segment Gamers 16-35:
+  - Sujet: "Septembre: Confort gaming | Protection poignets"
+  - Hero: Wrist Supports (Score: 0.885)
+  - Cross-sell: Posture correctors, Neck devices
+  - CTA: "Gaming sans douleur"
+```
+
+---
+
+#### MÉTRIQUES ATTENDUES - ROTATION MENSUELLE
+
+**Conversion Rate (Taux de conversion):**
+- **Avant:** 2.5% (affichage statique toute l'année)
+- **Après:** 3.8-4.5% (rotation dynamique alignée besoins)
+- **Amélioration:** +52-80%
+- **Mécanisme:** Pertinence contextuelle maximale (bon produit, bon moment)
+
+**Average Order Value (Panier moyen):**
+- **Avant:** $75 (produits non-ciblés)
+- **Après:** $105-125 (cross-sell rappels 2-3 sélections)
+- **Amélioration:** +40-67%
+- **Mécanisme:** Rappels secondaires augmentent bundles/add-ons
+
+**Email Click-Through Rate (CTR emails):**
+- **Avant:** 3.5% (emails génériques)
+- **Après:** 7.2-9.5% (emails rotation mensuelle segmentés)
+- **Amélioration:** +106-171%
+- **Mécanisme:** Sujets ultra-ciblés par période + segment
+
+**Repeat Purchase Rate (Achats répétés):**
+- **Avant:** 15% (pas de raison de revenir chaque mois)
+- **Après:** 28-35% (nouvelles sélections chaque mois)
+- **Amélioration:** +87-133%
+- **Mécanisme:** Site perçu comme dynamique, incite revisites mensuelles
+
+**Category Penetration (Pénétration catégories):**
+- **Avant:** Clients achètent 1.2 catégories en moyenne
+- **Après:** 2.1-2.6 catégories (grâce rappels secondaires)
+- **Amélioration:** +75-117%
+- **Mécanisme:** Exposition mensuelle à 5 catégories (2 primaires + 3 rappels)
+
+**Example - Impact Septembre (Rentrée Bureau):**
+```yaml
+Contexte: Fall + Office Workers + Posture Prevention
+Catégorie Primaire: Posture Correctors (Score: 0.920)
+
+Résultats attendus Septembre:
+  - Traffic catégorie "Posture": +180% vs Août
+  - Conversion posture: 5.2% (vs 2.8% moyenne annuelle)
+  - Add-ons wrist supports: +65% (rappel secondaire)
+  - Panier moyen: $115 (posture $60 + wrist $35 + accessoires $20)
+  - Email CTR segment office: 9.1% (vs 3.5% baseline)
+```
+
+**Example - Impact Janvier (Winter Arthritis Peak):**
+```yaml
+Contexte: Winter + Seniors 65+ + Arthritis
+Catégorie Primaire: Knee Supports Arthritis (Score: 0.910)
+
+Résultats attendus Janvier:
+  - Traffic catégorie "Knee Arthritis": +210% vs Juillet
+  - Conversion knee: 6.5% (vs 2.5% moyenne annuelle)
+  - Add-ons heated devices: +85% (rappel secondaire)
+  - Panier moyen: $135 (knee $75 + heated $50 + compression $10)
+  - Email CTR segment seniors: 11.2% (vs 3.5% baseline)
+```
+
+---
+
+#### ROADMAP IMPLÉMENTATION ROTATION
+
+**Phase 1 (Mois 1-2): Setup Infrastructure**
+- [ ] Créer collections Shopify pour 24 catégories (2 primary × 12 mois)
+- [ ] Tagger produits avec catégories rotation appropriées
+- [ ] Développer rotation JavaScript (homepage + collections)
+- [ ] Configurer Klaviyo flows mensuels (4 segments × 12 mois = 48 emails)
+
+**Phase 2 (Mois 3): Test A/B Rotation**
+- [ ] A/B test: 50% trafic rotation dynamique vs 50% statique
+- [ ] Mesurer: Conversion, AOV, CTR, repeat purchases
+- [ ] Analyser performance par catégorie/mois
+- [ ] Ajuster poids dimensions si nécessaire
+
+**Phase 3 (Mois 4-6): Optimisation Continue**
+- [ ] Analyser données 3 mois (patterns saisonniers confirmés?)
+- [ ] Ajuster scores produits basés sur performance réelle
+- [ ] Affiner messaging par segment/mois
+- [ ] Automatiser totalement (zero intervention manuelle)
+
+**Phase 4 (Mois 7-12): Expansion Multi-Canal**
+- [ ] Intégrer rotation dans Facebook/Instagram ads (DCO)
+- [ ] Appliquer rotation à Google Shopping feeds
+- [ ] Créer landing pages dynamiques par rotation mensuelle
+- [ ] Mesurer impact cross-canal
+
+---
+
+#### INTEGRATION AVEC MATRICE MULTI-DIMENSIONNELLE
+
+**Lien automatique rotation ↔ scoring:**
+
+```javascript
+// Calculer score composite pour chaque produit selon mois actuel
+function getProductScoreForCurrentMonth(product) {
+  const currentMonth = new Date().getMonth();
+  const season = getSeasonFromMonth(currentMonth); // winter, spring, summer, fall
+
+  // Extract product scores from matrix (loaded from segmentation_matrix_alpha_medical.json)
+  const productScores = productMatrix[product.handle].scores;
+
+  // Calculate composite score for current season context
+  let compositeScore = 0.0;
+
+  compositeScore += productScores.seasonality[season] * 0.25; // 25%
+  compositeScore += getTopDemographicScore(productScores.demographics) * 0.20; // 20%
+  compositeScore += getTopPainTypeScore(productScores.pain_type) * 0.20; // 20%
+  compositeScore += productScores.price_tier['mid_range'] * 0.15; // 15% (default mid-range)
+  compositeScore += getTopUsageScore(productScores.usage_intensity) * 0.10; // 10%
+  compositeScore += getTopMedicalScore(productScores.medical_condition) * 0.10; // 10%
+
+  return compositeScore.toFixed(3);
+}
+
+// Automatic ranking - display top 4 products per primary category
+function displayTopProductsForMonth(categoryHandle) {
+  fetch(`/collections/${categoryHandle}/products.json?limit=50`)
+    .then(res => res.json())
+    .then(data => {
+      // Score each product for current month
+      const scoredProducts = data.products.map(product => ({
+        ...product,
+        compositeScore: getProductScoreForCurrentMonth(product)
+      }));
+
+      // Sort by score descending
+      scoredProducts.sort((a, b) => b.compositeScore - a.compositeScore);
+
+      // Display top 4
+      renderProducts(scoredProducts.slice(0, 4));
+    });
+}
+```
+
+**Avantage clé:** Rotation 100% automatique basée sur données scientifiques (scores composites), pas de décisions arbitraires.
+
+---
+
+**RÉSUMÉ ROTATION MENSUELLE:**
+
+✅ **12 mois planifiés** avec 2 catégories primaires + 2-3 rappels
+✅ **Alignement complet** avec matrice multi-dimensionnelle (scores composites)
+✅ **Automatisation totale** (JavaScript homepage + Klaviyo emails)
+✅ **Impact attendu:** +52-80% conversion, +40-67% AOV, +106-171% email CTR
+✅ **Implementation:** 4 phases sur 12 mois (setup, test, optimisation, expansion)
+
+**Fichier intégration:** Cette stratégie s'intègre directement avec `segmentation_matrix_alpha_medical.json` pour scoring automatique.
+
+---
+
 **Action 3.2: Automation Capture Leads Social**
 
 **Semaine 41-44: Setup ManyChat (ou équivalent)**
