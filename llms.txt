@@ -206,6 +206,7 @@ When assisting with this project:
 - [SESSION_2025-11-11_SUMMARY](SESSION_2025-11-11_SUMMARY.md): Project documentation
 - [SESSION_2025-11-19_FINAL_SUMMARY](SESSION_2025-11-19_FINAL_SUMMARY.md): 1. ✅ Schema.org country corrections (CA → US) 2. ✅ Business address disclosure (JoHat Services LLC, Dover, DE)
 - [SESSION_SUMMARY](SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
+- [TOP_10_URLS_TO_INDEX](TOP_10_URLS_TO_INDEX.md): https://www.alphamedical.shop/
 - [TRACKING_ANALYTICS_GAPS_2025](TRACKING_ANALYTICS_GAPS_2025.md): 1. Shopify Apps → "Google & YouTube" (official) 2. Connect Google account 3. Auto-creates GA4 property + GTM container
 - [UGC_VIDEO_PROMPTS_GROK_IMAGINE](UGC_VIDEO_PROMPTS_GROK_IMAGINE.md): Chaque UGC = 3 segments montés sur CapCut = 15-18s total
 
