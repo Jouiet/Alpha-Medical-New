@@ -1,13 +1,17 @@
 {
   "_metadata": {
-    "version": "2.0",
+    "version": "2.1",
     "date": "2025-11-19",
+    "last_update": "2025-11-19 - Factual inventory correction",
     "purpose": "Multi-dimensional product segmentation for dynamic merchandising",
+    "correction_applied": "Removed kids_pediatric (1.3% negligible), added beauty_wellness (20.5%), added specialized_medical (3.8%)",
+    "methodology": "Based on ACTUAL Alpha Medical inventory analysis (78 products), not generic market research",
     "market_data_sources": [
       "Grand View Research - Cold Pain Therapy Market 2024-2030",
       "Mordor Intelligence - Orthopedic Braces Market 2025",
       "Data Bridge - Posture Corrector Market Analysis 2025",
-      "NCBI - Seasonal Effects on Rheumatoid Arthritis Research"
+      "NCBI - Seasonal Effects on Rheumatoid Arthritis Research",
+      "Alpha Medical Shopify Inventory - Factual Product Audit (78 products analyzed)"
     ],
     "merchandising_approach": "VISUAL PRIORITIZATION ONLY - All products remain active, ranking changes dynamically",
     "warning": "DO NOT use this for product activation/deactivation - MERCHANDISING HIERARCHY ONLY"
@@ -21,10 +25,15 @@
       "key_driver": "Aging population + increased joint pain prevalence"
     },
     "demographic_segmentation": {
-      "adults": "Primary market (18-64 years) - sports injuries, office ergonomics, chronic pain",
-      "geriatric": "65+ years - arthritis, mobility, daily wear supports",
-      "kids_pediatric": "Under 18 - specialized bracing for cerebral palsy, spina bifida, clubfoot, sports",
-      "note": "Market serves all age groups with rising sports participation across demographics"
+      "factual_analysis": "Based on ACTUAL Alpha Medical inventory (78 products analyzed)",
+      "office_workers_25_55": "28.2% of catalog (22 products) - posture, neck, back, ergonomics",
+      "seniors_65plus": "26.9% of catalog (21 products) - arthritis, chronic pain, heated therapy",
+      "beauty_wellness_25_55": "20.5% of catalog (16 products) - LED masks, anti-aging, skin rejuvenation (NON-orthopedic)",
+      "athletes_18_45": "10.3% of catalog (8 products) - sports, performance, recovery",
+      "gamers_16_35": "5.1% of catalog (4 products) - wrist/carpal tunnel (dual-purpose with office)",
+      "specialized_medical": "3.8% of catalog (3 products) - stroke recovery, cerebral palsy rehab (adults), leg correctors",
+      "kids_pediatric_REMOVED": "Only 1-2 products (1.3-2.6%) - too small to segment",
+      "note": "Segmentation based on factual inventory, not generic market assumptions"
     },
     "seasonality_medical_facts": {
       "winter_impact": "Barometric pressure drops expand joint tissues → increased arthritis pain + stiffness",
@@ -63,43 +72,53 @@
     },
     "demographics": {
       "weight": 0.2,
-      "rationale": "Market data 2025: Orthopedic products serve Adults (primary), Geriatric (arthritis), Kids (pediatric conditions + sports)",
-      "age_segmentation_research": "Data Bridge 2025: Posture corrector market segmented by Adults, Kids, Geriatric + gender (men, women, kids)",
+      "rationale": "FACTUAL Alpha Medical inventory: Office 28.2%, Seniors 26.9%, Beauty 20.5%, Athletes 10.3%, Gamers 5.1%, Medical 3.8%",
+      "methodology": "Segmentation based on ACTUAL catalog analysis (78 products), not generic market research",
+      "correction_note": "kids_pediatric REMOVED (only 1.3% of catalog - negligible)",
       "values": {
-        "seniors_65plus": [
-          "Arthritis (primary condition)",
-          "Mobility & daily living support",
-          "Chronic pain management",
-          "Age-related joint deterioration",
-          "Preventive daily wear"
-        ],
-        "athletes_18_45": [
-          "Performance enhancement",
-          "Recovery optimization",
-          "Injury prevention",
-          "Sports-specific supports (contact sports, running, cycling)",
-          "Competition-ready gear"
-        ],
         "office_workers_25_55": [
-          "Posture correction (sedentary work)",
+          "Posture correction (LARGEST segment - 28.2% = 22 products)",
           "Ergonomics (desk setup)",
           "Tech neck (screen time)",
-          "Carpal tunnel prevention (typing)",
-          "Lower back support (sitting)"
+          "Cervical/neck support (traction devices)",
+          "Lower back & lumbar support (disc herniation, pain relief)",
+          "Hunchback & scoliosis correction"
+        ],
+        "seniors_65plus": [
+          "Arthritis (MAJOR segment - 26.9% = 21 products)",
+          "Mobility & daily living support",
+          "Chronic pain management",
+          "Heated/magnetic therapy (Tourmaline knee pads, hot compress)",
+          "Age-related joint deterioration"
+        ],
+        "beauty_wellness_25_55": [
+          "LED light therapy masks (SIGNIFICANT non-orthopedic - 20.5% = 16 products)",
+          "Face & neck skin rejuvenation (7-color photon therapy)",
+          "Anti-aging treatments (wrinkle reduction)",
+          "Eye massagers & facial devices (dark circles, fatigue relief)",
+          "Recovery & wellness (athletes use for recovery, women for anti-aging)",
+          "NOTE: Out of orthopedic scope but 2nd largest category"
+        ],
+        "athletes_18_45": [
+          "Sports injury prevention (MODERATE segment - 10.3% = 8 products)",
+          "Performance enhancement (basketball, running, cycling)",
+          "Recovery optimization (compression boots, leg recovery)",
+          "Sports-specific supports (knee pads, ankle braces)",
+          "Competition-ready gear"
         ],
         "gamers_16_35": [
-          "Wrist support (mouse/controller strain)",
-          "Neck pain (screen viewing angle)",
-          "Posture (extended gaming sessions)",
-          "Carpal tunnel prevention",
-          "Ergonomic gaming accessories"
+          "Wrist support (SMALL segment - 5.1% = 4 products)",
+          "Carpal tunnel prevention (mouse/controller strain)",
+          "Hand rehabilitation (massage gloves)",
+          "Ergonomic gaming accessories",
+          "NOTE: Dual-purpose products also serve office workers"
         ],
-        "kids_pediatric": [
-          "Specialized bracing (cerebral palsy, spina bifida, clubfoot)",
-          "Youth sports injury prevention",
-          "Growth-related conditions",
-          "Posture correction (backpacks, school desks)",
-          "Adjustable supports for growing bodies"
+        "specialized_medical_rehabilitation": [
+          "Stroke recovery (NICHE segment - 3.8% = 3 products)",
+          "Cerebral palsy rehabilitation (ADULT patients, not pediatric)",
+          "Rehabilitation robot gloves (mirror training, hand function recovery)",
+          "O/X-Type leg correctors (bow legs/knock knees)",
+          "Medical-grade post-surgery equipment"
         ]
       }
     },

@@ -1854,30 +1854,50 @@ Fall (Automne):
 
 #### 2. DÉMOGRAPHIE (20% du score)
 
+**⚠️ CORRECTION FACTUELLE (2025-11-19):** Segmentation basée sur INVENTAIRE RÉEL (78 produits audités)
+- ❌ kids_pediatric **SUPPRIMÉ** (1.3% = 1 produit - trop petit)
+- ✅ beauty_wellness **AJOUTÉ** (20.5% = 16 produits - 2e segment)
+- ✅ specialized_medical **AJOUTÉ** (3.8% = 3 produits - niche)
+
 ```yaml
-Seniors 65+ ans:
-  - Pain points: Arthrite, mobilité réduite, douleur chronique
-  - Produits: Joint supports, daily wear braces, heated therapy
-  - Budget: Mid-range to premium ($50-150)
-  - Scoring: Tourmaline Knee Pads (0.9), Heated devices (0.9)
-
-Athletes 18-45 ans:
-  - Pain points: Blessures sportives, récupération, performance
-  - Produits: Performance braces, recovery devices, compression
-  - Budget: Mid-range to premium ($40-120)
-  - Scoring: Sports knee braces (0.9), Recovery boots (0.8)
-
-Office Workers 25-55 ans:
-  - Pain points: Posture, tech neck, carpal tunnel, sédentarité
-  - Produits: Posture correctors, wrist supports, neck devices
+Office Workers 25-55 ans (SEGMENT #1 - 28.2% = 22 produits):
+  - Pain points: Posture, tech neck, cervical pain, sédentarité, lumbar pain
+  - Produits: Posture correctors, neck traction, cervical braces, lumbar supports
   - Budget: Budget to mid-range ($25-80)
-  - Scoring: Posture correctors (0.95), Wrist braces (0.9)
+  - Scoring: Posture correctors (0.95), Cervical devices (0.9), Lumbar (0.85)
 
-Gamers 16-35 ans:
-  - Pain points: Wrist pain, neck strain, posture gaming
-  - Produits: Wrist supports, neck devices, posture fixes
+Seniors 65+ ans (SEGMENT #2 - 26.9% = 21 produits):
+  - Pain points: Arthrite, mobilité réduite, douleur chronique
+  - Produits: Joint supports, heated/magnetic therapy, daily wear braces
+  - Budget: Mid-range to premium ($50-150)
+  - Scoring: Tourmaline Magnetic Knee Pads (0.9), Heated devices (0.9)
+
+Beauty/Wellness 25-55 ans (SEGMENT #3 - 20.5% = 16 produits - NON orthopédique):
+  - Pain points: Anti-aging, skin rejuvenation, recovery, eye fatigue, stress
+  - Produits: LED light therapy masks (7-color), eye massagers, facial devices
+  - Budget: Premium to luxury ($80-250)
+  - Scoring: LED masks (0.9), Eye massagers (0.85), Facial devices (0.8)
+  - NOTE: Hors scope médical orthopédique mais 2e plus grande catégorie produits
+
+Athletes 18-45 ans (SEGMENT #4 - 10.3% = 8 produits):
+  - Pain points: Blessures sportives, récupération, performance enhancement
+  - Produits: Sports knee braces, recovery boots, compression sleeves
+  - Budget: Mid-range to premium ($40-120)
+  - Scoring: Sports knee braces (0.9), Recovery boots (0.8), Compression (0.75)
+
+Gamers 16-35 ans (SEGMENT #5 - 5.1% = 4 produits):
+  - Pain points: Wrist pain (mouse/controller), carpal tunnel, neck strain
+  - Produits: Wrist supports, carpal tunnel braces, hand rehabilitation gloves
   - Budget: Budget to mid-range ($20-70)
-  - Scoring: Wrist supports (0.9), Posture correctors (0.9)
+  - Scoring: Wrist supports (0.9), Carpal tunnel braces (0.85)
+  - NOTE: Produits dual-purpose (servent aussi office workers)
+
+Specialized Medical/Rehabilitation (SEGMENT #6 - 3.8% = 3 produits):
+  - Pain points: Stroke recovery, cerebral palsy (adults), leg alignment issues
+  - Produits: Rehabilitation robot gloves (mirror training), O/X-Type leg correctors
+  - Budget: Luxury (>$200)
+  - Scoring: Rehab gloves (0.95), Leg correctors (0.9)
+  - NOTE: Medical-grade, post-surgery, advanced rehabilitation (NOT pediatric)
 ```
 
 ---
@@ -2126,26 +2146,44 @@ function getCurrentSeason() {
 
 function detectDemographic() {
   // Check user browsing patterns, product tags viewed
+  // 6 segments: office workers, seniors, beauty/wellness, athletes, gamers, specialized medical
   // Example: Multiple views of "arthritis" products → seniors
   //          Multiple views of "sports" products → athletes
-  //          Multiple views of "posture" products → office workers
+  //          Multiple views of "LED mask" products → beauty/wellness
 
   const viewedTags = getUserViewedProductTags();
 
-  if (viewedTags.includes('arthritis') || viewedTags.includes('senior')) {
+  // Specialized Medical (stroke recovery, rehab - 3.8% of catalog)
+  if (viewedTags.includes('stroke') || viewedTags.includes('rehabilitation') || viewedTags.includes('cerebral palsy')) {
+    return 'specialized_medical_rehabilitation';
+  }
+
+  // Beauty/Wellness (LED masks, anti-aging - 20.5% of catalog)
+  if (viewedTags.includes('LED') || viewedTags.includes('face mask') || viewedTags.includes('anti-aging') || viewedTags.includes('beauty') || viewedTags.includes('skin rejuvenation')) {
+    return 'beauty_wellness_25_55';
+  }
+
+  // Seniors (arthritis, chronic pain - 26.9% of catalog)
+  if (viewedTags.includes('arthritis') || viewedTags.includes('senior') || viewedTags.includes('chronic pain') || viewedTags.includes('heated therapy')) {
     return 'seniors_65plus';
   }
-  if (viewedTags.includes('sports') || viewedTags.includes('performance')) {
+
+  // Athletes (sports, performance - 10.3% of catalog)
+  if (viewedTags.includes('sports') || viewedTags.includes('performance') || viewedTags.includes('recovery boots') || viewedTags.includes('compression')) {
     return 'athletes_18_45';
   }
-  if (viewedTags.includes('posture') || viewedTags.includes('desk') || viewedTags.includes('ergonomics')) {
+
+  // Office Workers (posture, desk - 28.2% of catalog - LARGEST segment)
+  if (viewedTags.includes('posture') || viewedTags.includes('desk') || viewedTags.includes('ergonomics') || viewedTags.includes('cervical') || viewedTags.includes('lumbar')) {
     return 'office_workers_25_55';
   }
-  if (viewedTags.includes('gaming') || viewedTags.includes('wrist')) {
+
+  // Gamers (wrist, carpal tunnel - 5.1% of catalog)
+  if (viewedTags.includes('gaming') || viewedTags.includes('wrist') || viewedTags.includes('carpal tunnel')) {
     return 'gamers_16_35';
   }
 
-  return 'office_workers_25_55';  // Default
+  return 'office_workers_25_55';  // Default (largest segment)
 }
 ```
 
@@ -2335,7 +2373,7 @@ Email Click Rate (Taux de clic emails):
 **Mois 7-8: Email Segmentation**
 - [ ] Intégrer matrix dans Klaviyo
 - [ ] Créer 4 campagnes saisonnières (winter/spring/summer/fall)
-- [ ] Créer 4 segments démographiques (seniors/athletes/office/gamers)
+- [ ] Créer 6 segments démographiques (office/seniors/beauty/athletes/gamers/specialized_medical)
 - [ ] Mesurer impact email metrics (+70% CTR attendu)
 
 **Mois 9-12: Optimisation Continue**
@@ -2777,6 +2815,18 @@ Segment Gamers 16-35:
   - Hero: Wrist Supports (Score: 0.885)
   - Cross-sell: Posture correctors, Neck devices
   - CTA: "Gaming sans douleur"
+
+Segment Beauty/Wellness 25-55:
+  - Sujet: "Janvier: Rejuvenation peau hiver | LED Thérapie"
+  - Hero: LED Face Mask 7-Color (Score: 0.900)
+  - Cross-sell: Eye massagers, Facial devices
+  - CTA: "Découvrir thérapie lumière"
+
+Segment Specialized Medical/Rehabilitation:
+  - Sujet: "Récupération AVC | Rehabilitation Robot Gloves"
+  - Hero: Rehabilitation Robot Gloves (Score: 0.950)
+  - Cross-sell: O/X-Type Leg Correctors, Post-surgery equipment
+  - CTA: "Solutions rehabilitation avancées"
 ```
 
 ---
@@ -2847,7 +2897,7 @@ Résultats attendus Janvier:
 - [ ] Créer collections Shopify pour 24 catégories (2 primary × 12 mois)
 - [ ] Tagger produits avec catégories rotation appropriées
 - [ ] Développer rotation JavaScript (homepage + collections)
-- [ ] Configurer Klaviyo flows mensuels (4 segments × 12 mois = 48 emails)
+- [ ] Configurer Klaviyo flows mensuels (6 segments × 12 mois = 72 emails)
 
 **Phase 2 (Mois 3): Test A/B Rotation**
 - [ ] A/B test: 50% trafic rotation dynamique vs 50% statique
