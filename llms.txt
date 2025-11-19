@@ -56,6 +56,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
 - [LOYALTY_SYSTEM_SETUP_GUIDE](LOYALTY_SYSTEM_SETUP_GUIDE.md): Project documentation
 - [PAIN_RELIEF_GUIDE_IMPLEMENTATION](PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
+- [PAYPAL_DEACTIVATION_GUIDE](PAYPAL_DEACTIVATION_GUIDE.md): Project documentation
 - [SHOPIFY_FLOW_CONFIGURATION_GUIDE](SHOPIFY_FLOW_CONFIGURATION_GUIDE.md): Architecture: admin.shopify.com (Parent page) └── Iframe: apps.shopify.com (Cross-origin - DIFFERENT domain)
 - [SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE](SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md): 1. Send email to customer 2. Add customer tag: subscription-active Hi {{ customer.firstname }},
 - [ULTIMATE_PAIN_RELIEF_GUIDE](ULTIMATE_PAIN_RELIEF_GUIDE.md): Pain is your body's alarm system - a complex warning signal that something needs attention. Understanding the type of pain you're experiencing is t...
