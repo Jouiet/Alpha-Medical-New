@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025-11-19",
+  "store": "azffej-as.myshopify.com",
+  "api_version": "2025-01",
+  "language_audit": {
+    "total_products": 96,
+    "products_with_french": 1,
+    "total_violations": 1,
+    "compliance": "\u274c 1 products with French content",
+    "issues": [
+      {
+        "product_id": 7585939816525,
+        "product_title": "OA Unloader Brace | NEENCA Arthritis Pain Support",
+        "field": "body_html",
+        "french_phrases": [
+          "hier"
+        ]
+      }
+    ]
+  },
+  "draft_audit": {
+    "total_products": 96,
+    "draft_count": 5,
+    "active_count": 91,
+    "archived_count": 0,
+    "draft_list": [
+      {
+        "id": 7586409119821,
+        "title": "7 Color LED Face Mask | Red Light Therapy",
+        "status": "draft"
+      },
+      {
+        "id": 7586409316429,
+        "title": "Foreverlily 7 Color LED Mask | Face & Neck Skin Rejuvenation",
+        "status": "draft"
+      },
+      {
+        "id": 7585887125581,
+        "title": "Knee Booster with Spring Support | Running & Cycling",
+        "status": "draft"
+      },
+      {
+        "id": 7585940078669,
+        "title": "Knee Stabilizer Brace | Aluminum Alloy Support",
+        "status": "draft"
+      },
+      {
+        "id": 7585887354957,
+        "title": "Shoulder Posture Corrector | Back Support Brace",
+        "status": "draft"
+      }
+    ],
+    "compliance": "\u2705 5 products remain draft"
+  },
+  "product_type_audit": {
+    "total_products": 96,
+    "with_type": 96,
+    "missing_type": 0,
+    "missing_list": [],
+    "compliance": "\u2705 100% product_type filled"
+  },
+  "collection_audit": {
+    "total_collections": 7,
+    "with_description": 7,
+    "missing_description": 0,
+    "missing_list": [],
+    "compliance": "\u2705 All collections have descriptions"
+  }
+}
