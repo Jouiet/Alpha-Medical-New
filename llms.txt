@@ -190,6 +190,7 @@ When assisting with this project:
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
+- [GSC_FINAL_CHECKLIST](GSC_FINAL_CHECKLIST.md): SITEMAP STATUS: ┌─────────────────────────────────────────────────────────────┐ │ Sitemap URL: https://www.alphamedical.shop/sitemap.xml │
 - [HOMEPAGE_CTA_INSTRUCTIONS](HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
 - [LLMS_TXT_DEPLOYMENT](LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
