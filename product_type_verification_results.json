@@ -1,0 +1,586 @@
+{
+  "timestamp": "2025-11-20",
+  "store": "azffej-as.myshopify.com",
+  "total_products": 96,
+  "valid_count": 96,
+  "violation_count": 0,
+  "violations": [],
+  "valid_products": [
+    {
+      "id": 7586408923213,
+      "handle": "4-in-1-cavitation-body-slimming-machine-40k-ultrasound",
+      "title": "4-in-1 Cavitation Body Slimming Machine | 40K Ultrasound",
+      "product_type": "Medical Equipment"
+    },
+    {
+      "id": 7586409119821,
+      "handle": "7-color-led-face-mask-red-light-therapy",
+      "title": "7 Color LED Face Mask | Red Light Therapy",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586409807949,
+      "handle": "7-color-led-light-therapy-face-mask-anti-aging",
+      "title": "7 Color LED Light Therapy Face Mask | Anti-Aging",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586409185357,
+      "handle": "7-color-led-vibrating-neck-face-massager",
+      "title": "7 Color LED Vibrating Neck & Face Massager",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7620850876493,
+      "handle": "bundle-active-athlete-and-sports-enthusiast",
+      "title": "Active Athlete & Sports Enthusiast - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7620851105869,
+      "handle": "bundle-active-athlete-knee-support-kit",
+      "title": "Active Athlete - Knee Support Kit - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7602148245581,
+      "handle": "adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support",
+      "title": "Adjustable Cervical Collar Spine Thoracic Orthosis Head Ches",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7585886961741,
+      "handle": "adjustable-cervical-collar-neck-brace-orthosis",
+      "title": "Adjustable Cervical Collar | Neck Brace Orthosis",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7602146705485,
+      "handle": "adjustable-hunchback-orthotic-brace-back-waist-posture-corrector-back-support-corset-shoulder-spine-brace-neck-stretcher",
+      "title": "Adjustable Hunchback Orthotic Brace Back Waist Posture Corre",
+      "product_type": "Back & Posture Support"
+    },
+    {
+      "id": 7586408955981,
+      "handle": "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+      "title": "Adjustable Knee Brace | Orthopedic Leg Support & Pain Relief",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585940308045,
+      "handle": "adjustable-knee-patellar-tendon-strap-sports-support",
+      "title": "Adjustable Knee Patellar Tendon Strap | Sports Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887518797,
+      "handle": "adjustable-wrist-support-brace-fitness-pain-relief",
+      "title": "Adjustable Wrist Support Brace | Fitness & Pain Relief",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887617101,
+      "handle": "afo-drop-foot-brace-ankle-foot-orthosis-for-men-women",
+      "title": "AFO Drop Foot Brace | Ankle Foot Orthosis for Men & Women",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7585887420493,
+      "handle": "ankle-support-brace-adjustable-compression-wrap",
+      "title": "Ankle Support Brace | Adjustable Compression Wrap",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585886830669,
+      "handle": "back-brace-posture-corrector-scoliosis-hunchback-support",
+      "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887092813,
+      "handle": "basketball-knee-pad-honeycomb-shock-protection",
+      "title": "Basketball Knee Pad | Honeycomb Shock Protection",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7620851171405,
+      "handle": "bundle-beauty-and-wellness-premium-facial-therapy-kit",
+      "title": "Beauty & Wellness - Premium Facial Therapy Kit - Complete Ca",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7620851007565,
+      "handle": "bundle-beauty-and-wellness-enthusiast",
+      "title": "Beauty & Wellness Enthusiast - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7616306806861,
+      "handle": "bunion-corrector-toe-separator-bunions-haluksy-separators-halux-toe-spreader-finger-straightener-for-toe-hallux-valgus-corrector",
+      "title": "Bunion Corrector Toe Separator Bunions Haluksy Separators Ha",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7585887027277,
+      "handle": "cervical-neck-traction-device-inflatable-home-relief",
+      "title": "Cervical Neck Traction Device | Inflatable Home Relief",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7586399191117,
+      "handle": "cervical-spine-massager-ems-neck-lymphatic-drainage",
+      "title": "Cervical Spine Massager | EMS Neck Lymphatic Drainage",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7623056162893,
+      "handle": "chronic-pain-relief-kit",
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7623056031821,
+      "handle": "chronic-pain-starter-kit",
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7620851040333,
+      "handle": "bundle-comprehensive-therapy-user",
+      "title": "Comprehensive Therapy User - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7585886666829,
+      "handle": "double-patellar-knee-support-strap-pain-relief-brace",
+      "title": "Double Patellar Knee Support Strap | Pain Relief Brace",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887649869,
+      "handle": "drop-foot-brace-afo-inflatable-airbag-ankle-support",
+      "title": "Drop Foot Brace AFO | Inflatable Airbag Ankle Support",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7585886601293,
+      "handle": "dynamic-knee-support-with-spring-adjustable-joint-cushion",
+      "title": "Dynamic Knee Support with Spring | Adjustable Joint Cushion",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7616306839629,
+      "handle": "effective-bunion-corrector-airbag-traction-foot-hallux-valgus-braces-toe-separator-straightener-orthotics-toe-correction",
+      "title": "Effective Bunion Corrector Airbag traction Foot Hallux Valgu",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7620850942029,
+      "handle": "bundle-elderly-mobility-support",
+      "title": "Elderly / Mobility Support - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7586409381965,
+      "handle": "electric-airbag-eye-massager-heated-hot-compress",
+      "title": "Electric Airbag Eye Massager | Heated Hot Compress",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586408857677,
+      "handle": "electric-ankle-brace-hot-compress-vibration-massage",
+      "title": "Electric Ankle Brace | Hot Compress & Vibration Massage",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586410168397,
+      "handle": "electric-foot-hand-massager-vibration-heat-therapy",
+      "title": "Electric Foot & Hand Massager | Vibration & Heat Therapy",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7586399027277,
+      "handle": "electric-gua-sha-board-vibration-hot-compress-massage",
+      "title": "Electric Gua Sha Board | Vibration & Hot Compress Massage",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7593555984461,
+      "handle": "electric-heating-leg-massager-wireless-rechargeable-air-compression-leg-calf-massage-for-relief-relax-leg-muscles-health-care",
+      "title": "Electric Heating Leg Massager Wireless Rechargeable Air Comp",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586409054285,
+      "handle": "electric-lumbar-massager-heated-vibration-back-brace",
+      "title": "Electric Lumbar Massager | Heated Vibration Back Brace",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7602188517453,
+      "handle": "electric-medical-cupping-therapy-set-beauty-massager-glass-jars-anti-cellulite-cupping-vacuum-slimming-guasha",
+      "title": "Electric Medical Cupping Therapy Set Beauty Massager Glass J",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7616306774093,
+      "handle": "electric-vibration-massager-bunion-corrector-unisex-foot-hallux-valgus-braces-adjustable-toe-separator-finger-toe-corrector",
+      "title": "Electric Vibration Massager Bunion Corrector Unisex Foot Hal",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7586398634061,
+      "handle": "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
+      "title": "EMS Abdominal Toning Belt | Muscle Stimulator & Body Shaping",
+      "product_type": "Medical Equipment"
+    },
+    {
+      "id": 7586398437453,
+      "handle": "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "title": "EMS Hip Trainer | 3 Modes Buttock Lifting Massage",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586410135629,
+      "handle": "ems-red-light-eye-massager-dark-circles-wrinkle-reduction",
+      "title": "EMS Red Light Eye Massager | Dark Circles & Wrinkle Reductio",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586409087053,
+      "handle": "ems-v-face-lifting-device-6-modes-microcurrent-massager",
+      "title": "EMS V-Face Lifting Device | 6 Modes Microcurrent Massager",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586409152589,
+      "handle": "face-lifting-device-red-light-skin-rejuvenation-v-face",
+      "title": "Face Lifting Device | Red Light Skin Rejuvenation & V-Face",
+      "product_type": "Pain Relief Devices"
+    },
+    {
+      "id": 7620851073101,
+      "handle": "bundle-foot-care-and-bunion-relief",
+      "title": "Foot Care & Bunion Relief - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7586409316429,
+      "handle": "foreverlily-7-color-led-mask-face-neck-skin-rejuvenation",
+      "title": "Foreverlily 7 Color LED Mask | Face & Neck Skin Rejuvenation",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7586409480269,
+      "handle": "foreverlily-led-face-neck-mask-7-colors-3d-flexible",
+      "title": "Foreverlily LED Face & Neck Mask | 7 Colors 3D Flexible",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7586409906253,
+      "handle": "foreverlily-smart-knee-massager-vibration-air-pressure",
+      "title": "Foreverlily Smart Knee Massager | Vibration & Air Pressure",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585886765133,
+      "handle": "full-leg-compression-sleeve-unisex-knee-support",
+      "title": "Full Leg Compression Sleeve | Unisex Knee Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7586409447501,
+      "handle": "head-eye-massager-heat-fatigue-stress-relief",
+      "title": "Head & Eye Massager | Heat, Fatigue & Stress Relief",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586410004557,
+      "handle": "hello-face-red-light-therapy-mask-face-neck-infrared-led",
+      "title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585886797901,
+      "handle": "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887486029,
+      "handle": "hinged-rom-elbow-brace-post-op-adjustable-stabilizer",
+      "title": "Hinged ROM Elbow Brace | Post-Op Adjustable Stabilizer",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7586409611341,
+      "handle": "hip-fixation-brace-femoral-thigh-fracture-support",
+      "title": "Hip Fixation Brace | Femoral Thigh Fracture Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887223885,
+      "handle": "inflatable-neck-collar-cervical-traction-pillow",
+      "title": "Inflatable Neck Collar | Cervical Traction Pillow",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7585887256653,
+      "handle": "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "title": "Intelligent Massage Gloves | Hand Rehabilitation Robot",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585887453261,
+      "handle": "kids-posture-corrector-adjustable-back-support-for-children",
+      "title": "Kids Posture Corrector | Adjustable Back Support for Childre",
+      "product_type": "Back & Posture Support"
+    },
+    {
+      "id": 7585887125581,
+      "handle": "knee-booster-with-spring-support-running-cycling",
+      "title": "Knee Booster with Spring Support | Running & Cycling",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585940078669,
+      "handle": "knee-stabilizer-brace-aluminum-alloy-support",
+      "title": "Knee Stabilizer Brace | Aluminum Alloy Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7586409873485,
+      "handle": "led-facial-mask-with-neck-7-colors-photon-anti-aging",
+      "title": "LED Facial Mask with Neck | 7 Colors Photon Anti-Aging",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7585887158349,
+      "handle": "leg-recovery-boots-6-chambers-air-compression-massager",
+      "title": "Leg Recovery Boots | 6 Chambers Air Compression Massager",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585887289421,
+      "handle": "lower-back-brace-6-stays-anti-skid-lumbar-support",
+      "title": "Lower Back Brace | 6 Stays Anti-Skid Lumbar Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887387725,
+      "handle": "lumbar-support-belt-disc-herniation-pain-relief-brace",
+      "title": "Lumbar Support Belt | Disc Herniation & Pain Relief Brace",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887584333,
+      "handle": "magnetic-posture-corrector-shoulder-orthopedic-brace",
+      "title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7623086768205,
+      "handle": "manual-labor-heavy-duty",
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7586408890445,
+      "handle": "nano-steam-eye-massager-warm-spa-acupressure-mask",
+      "title": "Nano Steam Eye Massager | Warm Spa Acupressure Mask",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586410233933,
+      "handle": "neck-led-lift-mask-anti-wrinkle-skin-tightening",
+      "title": "Neck LED Lift Mask | Anti-Wrinkle Skin Tightening",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7586409218125,
+      "handle": "neck-massage-machine-4-head-heating-protection",
+      "title": "Neck Massage Machine | 4-Head Heating Protection",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585939849293,
+      "handle": "neck-traction-device-heating-inflatable-cervical",
+      "title": "Neck Traction Device | Heating Inflatable Cervical",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7585939914829,
+      "handle": "neenca-hinged-knee-brace-side-stabilizers-support",
+      "title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7586408988749,
+      "handle": "o-x-type-leg-corrector-adjustable-leg-straightener",
+      "title": "O/X-Type Leg Corrector | Adjustable Leg Straightener",
+      "product_type": "Medical Equipment"
+    },
+    {
+      "id": 7585939816525,
+      "handle": "oa-unloader-brace-neenca-arthritis-pain-support",
+      "title": "OA Unloader Brace | NEENCA Arthritis Pain Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7620851138637,
+      "handle": "bundle-office-worker-back-and-neck-relief-kit",
+      "title": "Office Worker - Back & Neck Relief Kit - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7623055966285,
+      "handle": "office-worker-essential-kit",
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7620850909261,
+      "handle": "bundle-office-worker-with-chronic-pain",
+      "title": "Office Worker with Chronic Pain - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7585886699597,
+      "handle": "patella-knee-tendon-strap-sports-support-stabilizer",
+      "title": "Patella Knee Tendon Strap | Sports Support & Stabilizer",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7620850974797,
+      "handle": "bundle-post-injury-post-surgery-recovery",
+      "title": "Post-Injury / Post-Surgery Recovery - Complete Care Kit",
+      "product_type": "Bundle"
+    },
+    {
+      "id": 7586399158349,
+      "handle": "posture-corrector-adjustable-back-brace-for-women-men",
+      "title": "Posture Corrector | Adjustable Back Brace for Women Men",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585887322189,
+      "handle": "posture-corrector-adjustable-shoulder-support-brace",
+      "title": "Posture Corrector | Adjustable Shoulder Support Brace",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7586409939021,
+      "handle": "professional-7-color-led-mask-facial-light-therapy",
+      "title": "Professional 7-Color LED Mask | Facial Light Therapy",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7623086800973,
+      "handle": "rehab-stroke-recovery",
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7586410758221,
+      "handle": "rehabilitation-robot-gloves-mirror-training-device",
+      "title": "Rehabilitation Robot Gloves | Mirror Training Device",
+      "product_type": "Medical Equipment"
+    },
+    {
+      "id": 7585886732365,
+      "handle": "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "title": "Rehabilitation Robot Gloves | Stroke Cerebral Palsy",
+      "product_type": "Medical Equipment"
+    },
+    {
+      "id": 7623086866509,
+      "handle": "senior-advanced-arthritis",
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7623055999053,
+      "handle": "senior-mobility-support",
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7585887354957,
+      "handle": "shoulder-posture-corrector-back-support-brace",
+      "title": "Shoulder Posture Corrector | Back Support Brace",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7585886928973,
+      "handle": "silicone-patellar-tendon-strap-knee-pain-relief",
+      "title": "Silicone Patellar Tendon Strap | Knee Pain Relief",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7602188550221,
+      "handle": "smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care",
+      "title": "Smart Electric Vacuum Cupping Device Body Scraping Massager ",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585940045901,
+      "handle": "sports-knee-pads-pressurized-elastic-support-gym",
+      "title": "Sports Knee Pads | Pressurized Elastic Support Gym",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7586409676877,
+      "handle": "stomach-massager-bian-shi-hot-compress-abdominal",
+      "title": "Stomach Massager | Bian Shi Hot Compress Abdominal",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7586408824909,
+      "handle": "super-relax-eye-massager-heating-vibration-sleep-aid",
+      "title": "Super Relax Eye Massager | Heating Vibration Sleep Aid",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585886568525,
+      "handle": "tourmaline-magnetic-knee-pads-self-heating-support",
+      "title": "Tourmaline Magnetic Knee Pads | Self-Heating Support",
+      "product_type": "Joint Support"
+    },
+    {
+      "id": 7623086637133,
+      "handle": "ultimate-pain-management-system",
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7586410070093,
+      "handle": "v-line-face-slimming-ems-lifting-microcurrent-device",
+      "title": "V-Line Face Slimming | EMS Lifting Microcurrent Device",
+      "product_type": "Medical Equipment"
+    },
+    {
+      "id": 7585939488845,
+      "handle": "velpeau-neck-traction-spine-pressure-pain-relief",
+      "title": "VELPEAU Neck Traction | Spine Pressure Pain Relief",
+      "product_type": "Neck Support"
+    },
+    {
+      "id": 7585886863437,
+      "handle": "velpeau-wrist-splint-carpal-tunnel-pain-relief",
+      "title": "VELPEAU Wrist Splint | Carpal Tunnel Pain Relief",
+      "product_type": "Pain Relief Devices"
+    },
+    {
+      "id": 7586410266701,
+      "handle": "vibration-shoulder-steamer-heated-belt-massager",
+      "title": "Vibration Shoulder Steamer | Heated Belt Massager",
+      "product_type": "Therapeutic Devices"
+    },
+    {
+      "id": 7585887191117,
+      "handle": "wrist-brace-support-carpal-tunnel-arthritis-relief",
+      "title": "Wrist Brace Support | Carpal Tunnel & Arthritis Relief",
+      "product_type": "Joint Support"
+    }
+  ]
+}
