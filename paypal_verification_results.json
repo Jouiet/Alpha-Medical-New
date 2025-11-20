@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-11-20",
+  "store": "https://www.alphamedical.shop",
+  "paypal_active": true,
+  "indicators_count": 2,
+  "indicators": [
+    {
+      "type": "JavaScript Variable",
+      "evidence": "ShopifyPaypalV4VisibilityTracking",
+      "severity": "HIGH",
+      "context": "PayPal V4 visibility tracking enabled"
+    },
+    {
+      "type": "PayPal Scripts",
+      "evidence": [
+        "PaypalV4VisibilityTracking"
+      ],
+      "severity": "HIGH",
+      "context": "1 PayPal-related scripts found"
+    }
+  ]
+}
