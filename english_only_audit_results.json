@@ -1,0 +1,786 @@
+{
+  "timestamp": "2025-11-20",
+  "store": "azffej-as.myshopify.com",
+  "total_items": 140,
+  "total_violations": 34,
+  "violations": [
+    {
+      "type": "PRODUCT",
+      "id": 7620850876493,
+      "handle": "bundle-active-athlete-and-sports-enthusiast",
+      "title": "Active Athlete & Sports Enthusiast - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620851105869,
+      "handle": "bundle-active-athlete-knee-support-kit",
+      "title": "Active Athlete - Knee Support Kit - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620851171405,
+      "handle": "bundle-beauty-and-wellness-premium-facial-therapy-kit",
+      "title": "Beauty & Wellness - Premium Facial Therapy Kit - Complete Ca",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620851007565,
+      "handle": "bundle-beauty-and-wellness-enthusiast",
+      "title": "Beauty & Wellness Enthusiast - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620851040333,
+      "handle": "bundle-comprehensive-therapy-user",
+      "title": "Comprehensive Therapy User - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620850942029,
+      "handle": "bundle-elderly-mobility-support",
+      "title": "Elderly / Mobility Support - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620851073101,
+      "handle": "bundle-foot-care-and-bunion-relief",
+      "title": "Foot Care & Bunion Relief - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7586409316429,
+      "handle": "foreverlily-7-color-led-mask-face-neck-skin-rejuvenation",
+      "title": "Foreverlily 7 Color LED Mask | Face & Neck Skin Rejuvenation",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7586409480269,
+      "handle": "foreverlily-led-face-neck-mask-7-colors-3d-flexible",
+      "title": "Foreverlily LED Face & Neck Mask | 7 Colors 3D Flexible",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7586410004557,
+      "handle": "hello-face-red-light-therapy-mask-face-neck-infrared-led",
+      "title": "Hello Face Red Light Therapy Mask | Face & Neck Infrared LED",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7586410233933,
+      "handle": "neck-led-lift-mask-anti-wrinkle-skin-tightening",
+      "title": "Neck LED Lift Mask | Anti-Wrinkle Skin Tightening",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7586409218125,
+      "handle": "neck-massage-machine-4-head-heating-protection",
+      "title": "Neck Massage Machine | 4-Head Heating Protection",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "car",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7585939816525,
+      "handle": "oa-unloader-brace-neenca-arthritis-pain-support",
+      "title": "OA Unloader Brace | NEENCA Arthritis Pain Support",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "hier"
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620851138637,
+      "handle": "bundle-office-worker-back-and-neck-relief-kit",
+      "title": "Office Worker - Back & Neck Relief Kit - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620850909261,
+      "handle": "bundle-office-worker-with-chronic-pain",
+      "title": "Office Worker with Chronic Pain - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7620850974797,
+      "handle": "bundle-post-injury-post-surgery-recovery",
+      "title": "Post-Injury / Post-Surgery Recovery - Complete Care Kit",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PRODUCT",
+      "id": 7602188550221,
+      "handle": "smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care",
+      "title": "Smart Electric Vacuum Cupping Device Body Scraping Massager ",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "french_in_vendor": [],
+      "french_in_tags": []
+    },
+    {
+      "type": "PAGE",
+      "id": 106932568141,
+      "handle": "about-us",
+      "title": "About Us - Alpha Medical Care | Medical Support Equipment Ex",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106932961357,
+      "handle": "bestsellers",
+      "title": "Bestsellers - Top Medical Support Products | Alpha Medical C",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106933026893,
+      "handle": "black-friday",
+      "title": "Black Friday Deals - Up to 50% Off Medical Support Products",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106876698701,
+      "handle": "contact",
+      "title": "Contact Us - Alpha Medical Care Customer Support",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106932863053,
+      "handle": "returns-exchanges",
+      "title": "Easy Returns & Exchanges - 30 Day Guarantee | Alpha Medical ",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106932731981,
+      "handle": "faq",
+      "title": "FAQ - Alpha Medical Care | Medical Support Products Question",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106935255117,
+      "handle": "help-center",
+      "title": "Help Center - Medical Support Product Guides | Alpha Medical",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106935222349,
+      "handle": "medical-disclaimer",
+      "title": "Medical Disclaimer - Alpha Medical Care Product Safety Infor",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106932994125,
+      "handle": "new-arrivals",
+      "title": "New Arrivals - Latest Medical Support Products | Alpha Medic",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106935156813,
+      "handle": "warranty-guarantee",
+      "title": "Product Warranty & Guarantee - Alpha Medical Care Quality Pr",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106935189581,
+      "handle": "product-registration",
+      "title": "Register Your Product - Extended Warranty | Alpha Medical Ca",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106932830285,
+      "handle": "shipping-delivery",
+      "title": "Shipping & Delivery - Fast Delivery | Alpha Medical Care",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 106932895821,
+      "handle": "terms-of-service",
+      "title": "Terms of Service - Alpha Medical Care Legal Terms & Conditio",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "BLOG_POST",
+      "id": 563243089997,
+      "title": "Wrist Supports for Carpal Tunnel: Complete Buying Guide 2026",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "hier"
+        ]
+      ]
+    },
+    {
+      "type": "BLOG_POST",
+      "id": 563230441549,
+      "title": "Managing Chronic Back Pain: Evidence-Based Strategies, Tools",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "hier"
+        ]
+      ]
+    },
+    {
+      "type": "BLOG_POST",
+      "id": 563230146637,
+      "title": "LED Light Therapy Benefits: Science-Backed Results & Clinica",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "BLOG_POST",
+      "id": 563229950029,
+      "title": "Best LED Face Masks 2025: Complete Comparison & Buyer's Guid",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "hier"
+        ]
+      ]
+    }
+  ]
+}
