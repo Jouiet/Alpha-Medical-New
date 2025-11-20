@@ -213,6 +213,7 @@ When assisting with this project:
 - [TOP_10_URLS_TO_INDEX](TOP_10_URLS_TO_INDEX.md): https://www.alphamedical.shop/
 - [TRACKING_ANALYTICS_GAPS_2025](TRACKING_ANALYTICS_GAPS_2025.md): 1. Shopify Apps → "Google & YouTube" (official) 2. Connect Google account 3. Auto-creates GA4 property + GTM container
 - [UGC_VIDEO_PROMPTS_GROK_IMAGINE](UGC_VIDEO_PROMPTS_GROK_IMAGINE.md): Chaque UGC = 3 segments montés sur CapCut = 15-18s total
+- [session_2025-11-20_summary](session_2025-11-20_summary.md): 1. verifyenglishonlyforensic.py (V1 - 415 lines) 2. verifyenglishonlyforensicv2.py (V2 - 403 lines)
 
 ---
 
