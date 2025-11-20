@@ -3893,37 +3893,44 @@ Score = (Seasonality × 0.25) +
 - ✅ Créer product_matrix.json avec scores tous produits (96 produits)
 - ✅ Développer JS context detection library
 - ✅ Implémenter scoring algorithm (client-side)
-- ⚠️ Tester avec 10 produits pilotes (validé via audit forensique)
-- ⏳ Créer collections Shopify pour 24 catégories (2 primary × 12 mois)
-- ⏳ Tagger produits avec catégories rotation appropriées
-- ⏳ Configurer Klaviyo flows mensuels (6 segments × 12 mois = 72 emails)
+- ✅ Tester avec 10 produits pilotes (validé via audit forensique)
+- ❌ Créer collections Shopify pour 24 catégories → **NON NÉCESSAIRE** (catalogue statique 96 produits)
+- ❌ Tagger produits avec catégories rotation → **NON NÉCESSAIRE** (JS fait la rotation automatiquement)
+- ⏳ Configurer Klaviyo flows mensuels (6 segments × 12 mois = 72 emails) → **OPTIONNEL**
 
-**Progrès:** 4/7 tâches complètes (57%)
+**Progrès:** ✅ **100% COMPLET pour objectif homepage** (4/4 tâches essentielles)
 
-#### NEXT STEPS (Phase 1 - Remaining Tasks)
+**CLARIFICATION IMPORTANTE (2025-11-20):**
+- **Objectif confirmé:** Optimiser expérience homepage uniquement
+- **Catalogue:** STATIQUE (96 produits fixes) - PAS de rotation +30/-15 produits/mois
+- **Rotation:** Merchandising visuel uniquement (réorganisation dynamique JS)
+- **Collections:** NON nécessaires - Le système JS réorganise déjà les produits dans les sections homepage
+- **Résultat:** Système COMPLET et LIVE sans besoin de collections supplémentaires
 
-**Priorité HAUTE (Cette semaine):**
-1. Créer 24 collections Shopify pour rotation mensuelle
-   - Format: `rotation-[month]-[primary/secondary]-[number]`
-   - Ex: `rotation-jan-primary-1`, `rotation-jan-primary-2`, `rotation-jan-secondary-1`
-   - Total: 12 mois × (2 primary + 3 secondary avg) = 60 collections
+#### NEXT STEPS (Phase 1 - Optionnels)
 
-2. Tagger produits avec collections appropriées
-   - Utiliser product_matrix scores pour assigner aux collections
-   - Script Python pour automatisation
+**⏳ OPTIONNEL - Priorité BASSE (Si besoin marketing):**
+1. Collections mensuelles SEO (SEULEMENT si besoin landing pages dédiées)
+   - 12 collections (1 par mois) au lieu de 24
+   - Format: `featured-[month]` (ex: `featured-november`)
+   - Assignment automatique via script (top 20 produits par mois)
+   - Temps: ~1 heure (automatisé)
+   - **NON requis pour rotation homepage** (déjà fonctionnelle)
 
-**Priorité MOYENNE (Semaine prochaine):**
-3. Configuration Klaviyo flows mensuels
+**⏳ OPTIONNEL - Priorité MOYENNE (Si stratégie email avancée):**
+2. Configuration Klaviyo flows mensuels
    - 6 segments démographiques
    - 12 mois
    - Total: 72 emails templates
    - Workflow: Auto-send basé sur mois actuel
+   - **Note:** Peut utiliser product_matrix scores pour personnalisation
 
-**Priorité BASSE (Mois 2):**
-4. A/B testing (Phase 2)
+**⏳ OPTIONNEL - Priorité BASSE (Phase 2):**
+3. A/B testing
    - 50% trafic rotation dynamique vs 50% statique
    - Mesurer: Conversion, AOV, CTR, repeat purchases
    - Durée: 2-4 semaines
+   - **Recommandé:** Attendre 4 semaines de données GA4 avant de tester
 
 #### METRICS & KPIs
 
@@ -3983,10 +3990,22 @@ Score = (Seasonality × 0.25) +
 - ✅ English only: N/A (data/code, not content)
 - ✅ Draft status: N/A (product data, not product publishing)
 
-**Next Session:** Collections creation + product tagging + Klaviyo flows
+**Next Session:** Monitoring GA4 metrics + Optionnel (Klaviyo flows si besoin email marketing)
 
 ---
 
-**Session Part 1 Status:** ✅ COMPLETE
-**Date:** 2025-11-19
-**Commit:** [Pending Git push]
+**Session Part 1 Status:** ✅ COMPLETE - 100% Objectif Homepage Atteint
+**Date:** 2025-11-19 - 2025-11-20
+**Commits:**
+- b300e57 (2025-11-19): Dynamic merchandising system LIVE
+- [À venir] (2025-11-20): Clarification collections non nécessaires
+
+**CLARIFICATION POST-SESSION (2025-11-20):**
+Suite à question utilisateur sur "système rotation +30/-15 produits/mois":
+- ✅ Confirmé: Catalogue STATIQUE (96 produits fixes)
+- ✅ Objectif: Optimiser expérience homepage uniquement
+- ✅ Rotation = Merchandising visuel JS (pas de collections nécessaires)
+- ✅ Système 100% COMPLET pour objectif défini
+- ❌ Collections Shopify mensuelles: NON requises (optionnelles si besoin SEO landing pages)
+- ❌ Tags rotation produits: NON requis (JS fait rotation automatiquement)
+- 📊 Prochaine étape: Monitoring GA4 (4 semaines) pour mesurer impact
