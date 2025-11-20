@@ -54,6 +54,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [DEPLOYMENT_GUIDE_COMPLETE](DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
 - [HOSTINGER_DNS_GSC_SETUP_GUIDE](HOSTINGER_DNS_GSC_SETUP_GUIDE.md): 1. ✅ Propriété ajoutée dans GSC 2. ✅ Meta tag HTML ajouté (méthode alternative de vérification)
 - [IMPLEMENTATION_MANUELLE_GUIDE](IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
+- [LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE](LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md): Shopify Admin REST API requires creating price rules + discount codes in 2 separate API calls. Manual UI is faster and more reliable for this one-t...
 - [LOYALTY_SYSTEM_SETUP_GUIDE](LOYALTY_SYSTEM_SETUP_GUIDE.md): Project documentation
 - [PAIN_RELIEF_GUIDE_IMPLEMENTATION](PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
 - [PAYPAL_DEACTIVATION_GUIDE](PAYPAL_DEACTIVATION_GUIDE.md): Project documentation
