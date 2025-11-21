@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 21, 2025 at 13:45 UTC
+**Generated:** November 21, 2025 at 13:51 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -50,49 +50,50 @@
 37. [Google Search Console Verification Status](#google_search_console_verification_status)
 38. [Gsc Configuration Report 2025-11-19](#gsc_configuration_report_2025-11-19)
 39. [Gsc Final Checklist](#gsc_final_checklist)
-40. [Homepage Cta Instructions](#homepage_cta_instructions)
-41. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
-42. [Implementation Manuelle Guide](#implementation_manuelle_guide)
-43. [Implementation Report Pricing](#implementation_report_pricing)
-44. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
-45. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
-46. [Llms Txt Deployment](#llms_txt_deployment)
-47. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
-48. [Loyalty System Architecture](#loyalty_system_architecture)
-49. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
-50. [Manual Footer Config](#manual_footer_config)
-51. [Menu Bundles Instructions](#menu_bundles_instructions)
-52. [Mydealz Synthese](#mydealz_synthese)
-53. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-54. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-55. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-56. [Paypal Deactivation Guide](#paypal_deactivation_guide)
-57. [Phase 3 Implementation Log](#phase_3_implementation_log)
-58. [Pricing Quick Reference](#pricing_quick_reference)
-59. [Pricing Verification](#pricing_verification)
-60. [Product Optimization Tracking](#product_optimization_tracking)
-61. [Rapport Final Complet](#rapport_final_complet)
-62. [Rapport Theme Analyse](#rapport_theme_analyse)
-63. [Response To Third Party Analysis](#response_to_third_party_analysis)
-64. [Robots Txt Deployment](#robots_txt_deployment)
-65. [Seo Audit Recommendations](#seo_audit_recommendations)
-66. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-67. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-68. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-69. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
-70. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
-71. [Session Summary](#session_summary)
-72. [Shopify Configuration Complete](#shopify_configuration_complete)
-73. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-74. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-75. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
-76. [Status Report Pages](#status_report_pages)
-77. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
-78. [Top 10 Urls To Index](#top_10_urls_to_index)
-79. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-80. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
-81. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
-82. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
+40. [Gtm Setup Guide](#gtm_setup_guide)
+41. [Homepage Cta Instructions](#homepage_cta_instructions)
+42. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
+43. [Implementation Manuelle Guide](#implementation_manuelle_guide)
+44. [Implementation Report Pricing](#implementation_report_pricing)
+45. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
+46. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
+47. [Llms Txt Deployment](#llms_txt_deployment)
+48. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
+49. [Loyalty System Architecture](#loyalty_system_architecture)
+50. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
+51. [Manual Footer Config](#manual_footer_config)
+52. [Menu Bundles Instructions](#menu_bundles_instructions)
+53. [Mydealz Synthese](#mydealz_synthese)
+54. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+55. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+56. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+57. [Paypal Deactivation Guide](#paypal_deactivation_guide)
+58. [Phase 3 Implementation Log](#phase_3_implementation_log)
+59. [Pricing Quick Reference](#pricing_quick_reference)
+60. [Pricing Verification](#pricing_verification)
+61. [Product Optimization Tracking](#product_optimization_tracking)
+62. [Rapport Final Complet](#rapport_final_complet)
+63. [Rapport Theme Analyse](#rapport_theme_analyse)
+64. [Response To Third Party Analysis](#response_to_third_party_analysis)
+65. [Robots Txt Deployment](#robots_txt_deployment)
+66. [Seo Audit Recommendations](#seo_audit_recommendations)
+67. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+68. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+69. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+70. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
+71. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
+72. [Session Summary](#session_summary)
+73. [Shopify Configuration Complete](#shopify_configuration_complete)
+74. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+75. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+76. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
+77. [Status Report Pages](#status_report_pages)
+78. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
+79. [Top 10 Urls To Index](#top_10_urls_to_index)
+80. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+81. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
+82. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+83. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
 
 ---
 
@@ -101,7 +102,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -18815,7 +18816,7 @@ Efficacité: FAIBLE (blocages non anticipés)
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -22805,7 +22806,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -23375,7 +23376,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -23950,7 +23951,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -24277,7 +24278,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -24402,7 +24403,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -24922,7 +24923,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -25465,7 +25466,7 @@ python3 generate_llms_txt.py
 # 9. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -30319,7 +30320,7 @@ python3 install_google_ads_pixel.py AW-XXXXXXXXXX
 # 10. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -31162,7 +31163,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical 8 Bundles Final
 
 **File:** `ALPHA_MEDICAL_8_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -33802,7 +33803,7 @@ Response: 200 OK
 # 12. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -34122,7 +34123,7 @@ For each bundle:
 # 13. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -35269,7 +35270,7 @@ Audit complet 7 critères
 # 14. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -39182,7 +39183,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 15. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -41006,7 +41007,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 16. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -41179,7 +41180,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 17. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -42085,7 +42086,7 @@ function markProposalsAsCreated(hash) {
 # 18. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -42550,7 +42551,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 19. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -43769,7 +43770,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 20. Bundle Persona Critical Audit
 
 **File:** `BUNDLE_PERSONA_CRITICAL_AUDIT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -44393,7 +44394,7 @@ Pour chaque bundle, je vérifie:
 # 21. Bundle Reconstruction Analysis 2025
 
 **File:** `BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -44843,7 +44844,7 @@ Market data shows:
 # 22. Cart Drawer Forensic Analysis
 
 **File:** `CART_DRAWER_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -45400,7 +45401,7 @@ document.addEventListener('cart:updated', function(event) {
 # 23. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -47209,7 +47210,7 @@ Pack de 10-20 pads = Meilleur prix
 # 24. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -47506,7 +47507,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 25. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -48110,7 +48111,7 @@ June:
 # 26. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -48501,7 +48502,7 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 # 27. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -49884,7 +49885,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 28. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -50732,7 +50733,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 29. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -51147,7 +51148,7 @@ python3 generate_llms_txt.py
 # 30. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -51850,7 +51851,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 31. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -52611,7 +52612,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 32. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -53417,7 +53418,7 @@ grep "fbq(" homepage → 0 results
 # 33. Final Report Transparency Implementation
 
 **File:** `FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -54112,7 +54113,7 @@ Back & Posture Support: 1 product
 # 34. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -54340,7 +54341,7 @@ Back & Posture Support: 1 product
 # 35. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -57307,7 +57308,7 @@ FILES:
 # 36. Google Ads Setup Guide
 
 **File:** `GOOGLE_ADS_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -57719,7 +57720,7 @@ Avant de considérer l'installation complète:
 # 37. Google Search Console Verification Status
 
 **File:** `GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -57955,7 +57956,7 @@ Je **REFUSE** de dire:
 # 38. Gsc Configuration Report 2025-11-19
 
 **File:** `GSC_CONFIGURATION_REPORT_2025-11-19.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -58573,7 +58574,7 @@ curl -s "https://alphamedical.shop/robots.txt"
 # 39. Gsc Final Checklist
 
 **File:** `GSC_FINAL_CHECKLIST.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -58959,10 +58960,658 @@ SOUMISSIONS MANUELLES:
 ---
 
 
-# 40. Homepage Cta Instructions
+# 40. Gtm Setup Guide
+
+**File:** `GTM_SETUP_GUIDE.md`
+**Last Modified:** 2025-11-21 13:51
+
+---
+
+# GOOGLE TAG MANAGER (GTM) - GUIDE COMPLET D'INSTALLATION
+**Store:** Alpha Medical Care (azffej-as.myshopify.com)
+**Date:** 2025-11-21
+
+---
+
+## POURQUOI GTM?
+
+Google Tag Manager (GTM) est un gestionnaire de tags centralisé qui permet de:
+- ✅ Installer Google Ads conversion tracking sans modifier le code
+- ✅ Gérer tous les pixels marketing (Facebook, TikTok, etc.) depuis une interface
+- ✅ Tester les tags avant publication (mode Preview)
+- ✅ Historique des versions et rollback facile
+- ✅ Pas besoin d'accès développeur pour ajouter/modifier des tags
+
+---
+
+## STATUT ACTUEL
+
+| Élément | Status | Action requise |
+|---------|--------|----------------|
+| **GTM Container** | ❌ NON CRÉÉ | Créer container + obtenir ID |
+| **GTM Code** | ❌ NON INSTALLÉ | Installer dans theme.liquid |
+| **Google Ads Tag** | ⏳ EN ATTENTE | Configurer dans GTM |
+| **Conversion Tag** | ⏳ EN ATTENTE | Configurer dans GTM |
+
+---
+
+## ÉTAPE 1: CRÉER UN CONTAINER GTM
+
+### A. Accéder à Google Tag Manager
+
+1. **Allez sur:** https://tagmanager.google.com/
+
+2. **Connectez-vous** avec le compte Google associé à:
+   - Google Ads: Alpha Medical Care (128-734-6786)
+   - Google Analytics: 513383884
+
+### B. Créer un nouveau container
+
+1. **Si aucun container n'existe:**
+   ```
+   Cliquez "Créer un compte" (Create Account)
+   ```
+
+2. **Remplissez le formulaire:**
+   ```
+   Nom du compte: Alpha Medical
+   Pays: [Votre pays]
+
+   Cochez "Partager les données de manière anonyme avec Google..."
+
+   Configuration du container:
+   - Nom du container: Alpha Medical Care
+   - Type de cible: Web
+
+   Cliquez "Créer"
+   ```
+
+3. **Acceptez les conditions:**
+   ```
+   Lisez les conditions d'utilisation
+   → Cochez "J'accepte..."
+   → Cliquez "Oui"
+   ```
+
+4. **Récupérez le Container ID:**
+   ```
+   Après création, vous verrez:
+
+   "Installer Google Tag Manager"
+
+   En haut à gauche: GTM-XXXXXXX ← COPIEZ CE CODE
+
+   Exemple: GTM-ABC1234
+   ```
+
+---
+
+## ÉTAPE 2: INSTALLER GTM SUR LE SITE
+
+### Prérequis
+- Container ID (format: GTM-XXXXXXX)
+- Accès au dossier Alpha-Medical/
+
+### Installation automatique
+
+```bash
+cd /Users/mac/Desktop/Alpha-Medical
+
+# Remplacez GTM-XXXXXXX par votre vrai Container ID
+python3 install_gtm.py GTM-XXXXXXX
+```
+
+### Ce que le script fait:
+
+1. ✅ Valide le format du Container ID
+2. ✅ Crée un backup: `layout/theme.liquid.backup_gtm`
+3. ✅ Installe le code GTM dans `layout/theme.liquid`:
+   - Head code (avant `</head>`)
+   - Body code (après `<body>`)
+4. ✅ Affiche les instructions de configuration
+
+### Vérification manuelle
+
+Après installation, vérifiez que le code GTM est présent:
+
+```bash
+# Vérifier head code
+grep -A 3 "Google Tag Manager" layout/theme.liquid | head -10
+
+# Vérifier body code (noscript)
+grep -A 2 "Google Tag Manager (noscript)" layout/theme.liquid
+```
+
+---
+
+## ÉTAPE 3: VÉRIFIER L'INSTALLATION
+
+### A. Test sur le site live
+
+1. **Allez sur:** https://www.alphamedical.shop/
+
+2. **Ouvrez la console développeur:**
+   - Chrome: F12 → Console
+   - Safari: Option+Cmd+C
+
+3. **Testez GTM:**
+   ```javascript
+   // Dans la console, tapez:
+   dataLayer
+
+   // Vous devriez voir:
+   // Array(X) [{gtm.start: ..., event: 'gtm.js'}, ...]
+
+   // Si undefined ou vide = GTM non chargé
+   ```
+
+4. **Vérifiez avec Google Tag Assistant:**
+   - Extension Chrome: Google Tag Assistant
+   - Activez-la sur votre site
+   - Devrait détecter: Google Tag Manager (GTM-XXXXXXX)
+
+### B. Mode Aperçu (Preview) dans GTM
+
+1. **Dans GTM:**
+   ```
+   Allez sur: https://tagmanager.google.com/
+   → Sélectionnez: Container GTM-XXXXXXX
+   → Cliquez "Aperçu" (Preview) en haut à droite
+   ```
+
+2. **Connectez le site:**
+   ```
+   Entrez: https://www.alphamedical.shop
+   → Cliquez "Connect"
+
+   Un nouvel onglet s'ouvre avec le site
+   + une fenêtre Tag Assistant en bas
+   ```
+
+3. **Vérifiez les événements:**
+   ```
+   Tag Assistant → Onglet "Summary"
+   → Devrait afficher: Initialization Event
+   → Tags: Aucun tag configuré (normal à cette étape)
+   ```
+
+---
+
+## ÉTAPE 4: CONFIGURER GOOGLE ADS TAG
+
+### Prérequis
+
+Vous devez d'abord obtenir de Google Ads:
+- ✅ Conversion ID (format: AW-XXXXXXXXXX)
+- ✅ Conversion Label (format: YYYYYYYYY)
+
+Si vous ne les avez pas encore:
+1. Suivez `GOOGLE_ADS_SETUP_GUIDE.md` ÉTAPE 1
+2. Créez la conversion "Purchase" dans Google Ads
+3. Récupérez le Conversion ID et le Conversion Label
+
+### A. Créer le tag Google Ads (Base Pixel)
+
+1. **Dans GTM:**
+   ```
+   Tags → Nouveau
+   ```
+
+2. **Configuration du tag:**
+   ```
+   Nom: Google Ads - Base Pixel
+
+   Type de tag:
+   → Cherchez "Google Ads"
+   → Sélectionnez "Balise Google Ads"
+
+   Configuration:
+   - ID de conversion: AW-XXXXXXXXXX
+
+   Trigger (Déclencheur):
+   → All Pages (Toutes les pages)
+
+   Cliquez "Enregistrer"
+   ```
+
+### B. Créer le tag de conversion Purchase
+
+1. **Tags → Nouveau:**
+   ```
+   Nom: Google Ads - Purchase Conversion
+
+   Type de tag:
+   → "Suivi des conversions Google Ads"
+
+   Configuration:
+   - ID de conversion: AW-XXXXXXXXXX
+   - Libellé de conversion: YYYYYYYYY
+   - Valeur de conversion: {{Transaction Revenue}}
+   - ID de transaction: {{Transaction ID}}
+   - Code devise: USD (ou votre devise)
+
+   Trigger (Déclencheur):
+   → Créez nouveau: "Purchase" (voir section C)
+
+   Cliquez "Enregistrer"
+   ```
+
+### C. Créer le trigger Purchase
+
+1. **Triggers → Nouveau:**
+   ```
+   Nom: Purchase Confirmation Page
+
+   Type de déclencheur:
+   → Page View
+
+   Ce déclencheur se déclenche sur:
+   → Quelques pages vues (Some Page Views)
+
+   Condition:
+   - Page URL | contient | /checkouts/
+   - ET
+   - Page URL | contient | /thank_you
+
+   OU (alternative plus fiable):
+   - Page Path | correspond à l'expression régulière | /orders/.*
+
+   Cliquez "Enregistrer"
+   ```
+
+### D. Créer les variables de transaction
+
+GTM a besoin de récupérer les données de la commande.
+
+#### Option 1: Shopify Plus (Accès checkout)
+
+Éditez `templates/checkout.liquid` ou `layout/checkout.liquid`:
+
+```liquid
+{% if first_time_accessed %}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'purchase',
+    'transactionId': '{{ order.order_number }}',
+    'transactionTotal': {{ order.total_price | money_without_currency }},
+    'transactionCurrency': '{{ order.currency }}'
+  });
+</script>
+{% endif %}
+```
+
+Puis dans GTM:
+```
+Variables → Nouvelle variable utilisateur
+
+Variable 1:
+- Nom: Transaction Revenue
+- Type: Variable de couche de données
+- Nom de la variable de couche de données: transactionTotal
+
+Variable 2:
+- Nom: Transaction ID
+- Type: Variable de couche de données
+- Nom de la variable de couche de données: transactionId
+```
+
+#### Option 2: Shopify Standard (Additional Scripts)
+
+Dans Shopify Admin:
+```
+Settings → Checkout → Order status page
+→ Additional scripts
+
+Ajoutez:
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'purchase',
+    'transactionId': '{{ order.order_number }}',
+    'transactionTotal': {{ order.total_price | money_without_currency }},
+    'transactionCurrency': '{{ order.currency }}'
+  });
+</script>
+```
+
+---
+
+## ÉTAPE 5: TESTER ET PUBLIER
+
+### A. Tester en mode Aperçu
+
+1. **Dans GTM:**
+   ```
+   Cliquez "Aperçu" (Preview)
+   → Connectez: https://www.alphamedical.shop
+   ```
+
+2. **Tester le Base Pixel:**
+   ```
+   Naviguez sur n'importe quelle page
+   → Tag Assistant devrait afficher:
+     "Google Ads - Base Pixel" | FIRED
+   ```
+
+3. **Tester la conversion Purchase:**
+   ```
+   Créez une commande test:
+   - Ajoutez un produit au panier
+   - Complétez le checkout
+   - Arrivez sur la page de confirmation
+
+   → Tag Assistant devrait afficher:
+     "Google Ads - Purchase Conversion" | FIRED
+   ```
+
+4. **Vérifier les valeurs:**
+   ```
+   Cliquez sur le tag "Purchase Conversion"
+   → Onglet "Variables"
+   → Vérifiez:
+     - Transaction Revenue = montant correct
+     - Transaction ID = order number
+   ```
+
+### B. Publier le container
+
+1. **Si tous les tests passent:**
+   ```
+   Dans GTM, cliquez "Envoyer" (Submit)
+   ```
+
+2. **Créez une version:**
+   ```
+   Nom de la version: v1.0 - Google Ads Conversion Tracking
+
+   Description:
+   - Google Ads Base Pixel (AW-XXXXXXXXXX)
+   - Purchase Conversion Tracking
+   - Transaction revenue and ID variables
+
+   Cliquez "Publier"
+   ```
+
+3. **Confirmation:**
+   ```
+   Vous devriez voir:
+   "Version 1 publiée" avec date et heure
+   ```
+
+---
+
+## ÉTAPE 6: VÉRIFIER LES CONVERSIONS
+
+### A. Dans GTM (Temps réel)
+
+```
+Vue d'ensemble → Section "Débogage"
+→ Devrait afficher les récents événements de page vues
+```
+
+### B. Dans Google Ads (24-48h délai)
+
+```
+Allez sur: https://ads.google.com/
+→ Compte: Alpha Medical Care (128-734-6786)
+→ Outils et paramètres → Mesure → Conversions
+→ Onglet "Activité récente"
+
+Devrait afficher:
+- Source: Website (gtag)
+- Conversion name: Purchase
+- Date/heure de la conversion test
+```
+
+---
+
+## ÉTAPE 7: GIT COMMIT
+
+```bash
+cd /Users/mac/Desktop/Alpha-Medical
+
+# Vérifier les changements
+git status
+
+# Ajouter les fichiers modifiés
+git add layout/theme.liquid
+git add install_gtm.py
+git add GTM_SETUP_GUIDE.md
+
+# Commit
+git commit -m "feat(gtm): Install Google Tag Manager GTM-XXXXXXX
+
+GOOGLE TAG MANAGER INSTALLATION:
+
+GTM Container installed:
+✅ Container ID: GTM-XXXXXXX (Alpha Medical Care)
+✅ Head code installé dans layout/theme.liquid
+✅ Body code (noscript) installé après <body>
+✅ Backup créé: layout/theme.liquid.backup_gtm
+
+Tags configured in GTM:
+✅ Google Ads Base Pixel (AW-XXXXXXXXXX)
+✅ Purchase Conversion (AW-XXXXXXXXXX/YYYYYYYYY)
+✅ Variables: Transaction Revenue, Transaction ID
+✅ Trigger: Purchase Confirmation Page
+
+Files modified:
+- layout/theme.liquid: GTM container code
+- install_gtm.py (NEW): Automated GTM installation script
+- GTM_SETUP_GUIDE.md (NEW): Complete setup guide
+
+Testing:
+- Mode Preview: All tags firing correctly
+- Test order: Conversion tracked successfully
+- Google Tag Assistant: GTM detected
+
+Next steps:
+1. Monitor conversions in Google Ads (24-48h)
+2. Add additional tags (Facebook Pixel, etc.) in GTM
+3. Setup GA4 e-commerce tracking via GTM
+
+Store: azffej-as.myshopify.com
+GTM Container: GTM-XXXXXXX
+Google Ads: 128-734-6786"
+
+# Push vers GitHub
+git push origin main
+```
+
+---
+
+## ÉTAPE 8: CONFIGURATION AVANCÉE (OPTIONNELLE)
+
+### A. Enhanced Conversions (Données utilisateur hachées)
+
+Dans GTM:
+```
+Tags → Google Ads - Purchase Conversion → Modifier
+→ Section "Données utilisateur"
+→ Activez "Inclure les données utilisateur depuis les variables"
+
+Variables à créer:
+- email: Variable de couche de données | email (haché côté serveur)
+- phone: Variable de couche de données | phone (haché côté serveur)
+```
+
+### B. Dynamic Remarketing (Produits vus)
+
+```
+Tags → Nouveau
+Nom: Google Ads - Product View
+
+Type: Balise Google Ads - Remarketing
+
+Configuration:
+- ID de conversion: AW-XXXXXXXXXX
+- Données de remarketing personnalisées:
+  * ecomm_prodid: {{Product ID}}
+  * ecomm_pagetype: product
+  * ecomm_totalvalue: {{Product Price}}
+
+Trigger: Product Page View (créez un trigger pour template.product)
+```
+
+### C. Add to Cart Event
+
+```
+Tags → Nouveau
+Nom: Google Ads - Add to Cart
+
+Type: Balise Google Ads
+
+Configuration:
+- ID de conversion: AW-XXXXXXXXXX
+- Événement: add_to_cart
+
+Trigger: Add to Cart Button Click (créez un trigger sur bouton)
+```
+
+---
+
+## DÉPANNAGE
+
+### Problème: GTM ne charge pas
+
+**Symptômes:**
+- `dataLayer` est undefined dans console
+- Google Tag Assistant ne détecte rien
+
+**Solutions:**
+1. Vérifiez que `layout/theme.liquid` contient le code GTM (head + body)
+2. Videz le cache Shopify: Admin → Themes → Actions → Edit code → Ctrl+S
+3. Testez en navigation privée
+4. Vérifiez bloqueurs de publicité (désactivez pour test)
+5. Vérifiez que le Container ID est correct (GTM-XXXXXXX)
+
+### Problème: Tags ne se déclenchent pas
+
+**Symptômes:**
+- Tag Assistant affiche le tag comme "Not Fired"
+- Aucun événement dans GTM Debug
+
+**Solutions:**
+1. Vérifiez les triggers en mode Preview
+2. Vérifiez les conditions des triggers (URL, événements)
+3. Testez les variables (Variables → Debug)
+4. Vérifiez l'ordre de déclenchement (Tags → Order)
+
+### Problème: Conversions ne trackent pas dans Google Ads
+
+**Symptômes:**
+- Aucune conversion dans Google Ads après 24-48h
+- Tag se déclenche dans GTM mais pas dans Ads
+
+**Solutions:**
+1. Vérifiez le Conversion ID (doit être exact: AW-XXXXXXXXXX)
+2. Vérifiez le Conversion Label (doit être exact: YYYYYYYYY)
+3. Vérifiez les variables Transaction Revenue et Transaction ID
+4. Vérifiez que la conversion existe dans Google Ads
+5. Attendez 24-48h (délai de traitement)
+
+### Problème: Variables vides (Transaction Revenue = 0)
+
+**Cause:** dataLayer ne contient pas les données de transaction
+
+**Solutions:**
+1. Vérifiez que le code dataLayer.push() est sur la page de confirmation
+2. Dans console, tapez: `dataLayer` → vérifiez les valeurs
+3. Vérifiez les noms des variables (case-sensitive)
+4. Ajoutez console.log() pour déboguer:
+   ```javascript
+   console.log('Transaction Total:', '{{ order.total_price | money_without_currency }}');
+   ```
+
+---
+
+## RESSOURCES
+
+**Documentation officielle:**
+- Google Tag Manager: https://support.google.com/tagmanager
+- GTM for e-commerce: https://developers.google.com/tag-platform/gtagjs/reference/events
+- Shopify + GTM: https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/google-tag-manager
+
+**Outils de diagnostic:**
+- Google Tag Assistant: https://chrome.google.com/webstore (extension Chrome)
+- GTM Preview Mode: Intégré dans GTM
+- Conversion Tracking Status: Google Ads → Tools → Conversions → Tracking status
+
+**Templates GTM populaires:**
+- Facebook Pixel via GTM
+- TikTok Pixel via GTM
+- GA4 E-commerce via GTM
+- Hotjar via GTM
+
+---
+
+## CHECKLIST FINALE
+
+Avant de considérer l'installation complète:
+
+**GTM Installation:**
+- [ ] Container GTM créé (GTM-XXXXXXX obtenu)
+- [ ] Script `install_gtm.py` exécuté avec succès
+- [ ] Code GTM installé dans `layout/theme.liquid` (head + body)
+- [ ] dataLayer fonctionne (test console navigateur)
+- [ ] Google Tag Assistant détecte GTM
+- [ ] Mode Preview fonctionne
+
+**Google Ads Configuration:**
+- [ ] Conversion ID (AW-XXXXXXXXXX) obtenu depuis Google Ads
+- [ ] Conversion Label (YYYYYYYYY) obtenu
+- [ ] Tag "Base Pixel" créé dans GTM
+- [ ] Tag "Purchase Conversion" créé dans GTM
+- [ ] Variables Transaction Revenue et Transaction ID créées
+- [ ] Trigger "Purchase Confirmation Page" créé
+
+**Testing:**
+- [ ] Mode Preview testé (tous tags se déclenchent)
+- [ ] Commande test créée
+- [ ] Tag "Purchase Conversion" déclenché sur page confirmation
+- [ ] Variables contiennent les bonnes valeurs (montant, ID commande)
+- [ ] Container publié (Version 1)
+
+**Vérification:**
+- [ ] Conversion test apparaît dans Google Ads (24-48h délai)
+- [ ] Git commit + push effectué
+- [ ] Documentation mise à jour
+
+---
+
+**Installation Date:** 2025-11-21
+**Store:** Alpha Medical Care (azffej-as.myshopify.com)
+**Google Ads:** 128-734-6786
+**Status:** ⏳ EN ATTENTE DU GTM CONTAINER ID
+
+---
+
+## TEMPS ESTIMÉ
+
+| Étape | Temps | Complexité |
+|-------|-------|------------|
+| Créer container GTM | 3 min | Facile |
+| Installer GTM (script) | 1 min | Automatique |
+| Vérifier installation | 2 min | Facile |
+| Configurer tags Google Ads | 10 min | Moyen |
+| Créer variables + triggers | 5 min | Moyen |
+| Tester en Preview | 5 min | Facile |
+| Commande test + vérification | 10 min | Facile |
+| Publier + commit | 2 min | Facile |
+| **TOTAL** | **38 min** | **Moyen** |
+
+**Prérequis:** Conversion ID Google Ads (AW-XXXXXXXXXX) obtenu avant de commencer.
+
+---
+
+---
+
+
+# 41. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -59232,10 +59881,10 @@ Workflow AUTOMATIQUE:
 ---
 
 
-# 41. Hostinger Dns Gsc Setup Guide
+# 42. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -59608,10 +60257,10 @@ dig TXT alphamedical.shop +short
 ---
 
 
-# 42. Implementation Manuelle Guide
+# 43. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -60358,10 +61007,10 @@ Cliquer **"Save"**
 ---
 
 
-# 43. Implementation Report Pricing
+# 44. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -60804,10 +61453,10 @@ Tous les documents sont prêts et validés contre sources officielles:
 ---
 
 
-# 44. Klaviyo Abandoned Cart Flow Implementation
+# 45. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -61512,10 +62161,10 @@ End flow
 ---
 
 
-# 45. Klaviyo Welcome Flow Implementation
+# 46. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -61964,10 +62613,10 @@ python3 update_landing_page_with_klaviyo.py
 ---
 
 
-# 46. Llms Txt Deployment
+# 47. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -62550,10 +63199,10 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 47. Loyalty Simplified Manual Actions Guide
+# 48. Loyalty Simplified Manual Actions Guide
 
 **File:** `LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -62866,10 +63515,10 @@ System is 100% operational when:
 ---
 
 
-# 48. Loyalty System Architecture
+# 49. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -63255,10 +63904,10 @@ query GetCustomerLoyalty($customerId: ID!) {
 ---
 
 
-# 49. Loyalty System Setup Guide
+# 50. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -63812,10 +64461,10 @@ After setup complete, verify:
 ---
 
 
-# 50. Manual Footer Config
+# 51. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -63906,10 +64555,10 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 51. Menu Bundles Instructions
+# 52. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -63989,10 +64638,10 @@ Après sauvegarde:
 ---
 
 
-# 52. Mydealz Synthese
+# 53. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -64368,10 +65017,10 @@ EMAIL_CODES:
 ---
 
 
-# 53. Newsletter Flows Creation Checklist
+# 54. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -65069,10 +65718,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 54. Next Steps Flow Configuration
+# 55. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -65321,10 +65970,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 55. Pain Relief Guide Implementation
+# 56. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -65778,10 +66427,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 56. Paypal Deactivation Guide
+# 57. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -66076,10 +66725,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 57. Phase 3 Implementation Log
+# 58. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -66612,10 +67261,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 58. Pricing Quick Reference
+# 59. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -66991,10 +67640,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 59. Pricing Verification
+# 60. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -67912,10 +68561,10 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 60. Product Optimization Tracking
+# 61. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -68658,10 +69307,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 61. Rapport Final Complet
+# 62. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -68890,10 +69539,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 62. Rapport Theme Analyse
+# 63. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -69261,10 +69910,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 63. Response To Third Party Analysis
+# 64. Response To Third Party Analysis
 
 **File:** `RESPONSE_TO_THIRD_PARTY_ANALYSIS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -69787,10 +70436,10 @@ The third-party analysis was **harsh but fair**. We addressed every factual erro
 ---
 
 
-# 64. Robots Txt Deployment
+# 65. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -70105,10 +70754,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 65. Seo Audit Recommendations
+# 66. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -70567,10 +71216,10 @@ data = {
 ---
 
 
-# 66. Session 2025-11-11 Part3 Summary
+# 67. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -70756,10 +71405,10 @@ data = {
 ---
 
 
-# 67. Session 2025-11-11 Part6 Summary
+# 68. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -71052,10 +71701,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 68. Session 2025-11-11 Summary
+# 69. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -71287,10 +71936,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 69. Session 2025-11-19 Final Summary
+# 70. Session 2025-11-19 Final Summary
 
 **File:** `SESSION_2025-11-19_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -71569,10 +72218,10 @@ All information is now:
 ---
 
 
-# 70. Session Part 14 Comprehensive Audit
+# 71. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -72182,10 +72831,10 @@ All 3 have:
 ---
 
 
-# 71. Session Summary
+# 72. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -72444,10 +73093,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 72. Shopify Configuration Complete
+# 73. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -72936,10 +73585,10 @@ Si besoin d'aide:
 ---
 
 
-# 73. Shopify Email Implementation Checklist
+# 74. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -73281,10 +73930,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 74. Shopify Flow Configuration Guide
+# 75. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -74441,10 +75090,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 75. Shopify Flow Subscriptions Guide
+# 76. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -74858,10 +75507,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 76. Status Report Pages
+# 77. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -74954,10 +75603,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 77. Top5 Percent Native Implementation Plan
+# 78. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -75589,10 +76238,10 @@ function getRecommendations(pain, activity, budget) {
 ---
 
 
-# 78. Top 10 Urls To Index
+# 79. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -75901,10 +76550,10 @@ Homepage (Prio 1)
 ---
 
 
-# 79. Tracking Analytics Gaps 2025
+# 80. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -76280,10 +76929,10 @@ After installing tracking:
 ---
 
 
-# 80. Ugc Video Prompts Grok Imagine
+# 81. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -77082,10 +77731,10 @@ alphamedical.shop
 ---
 
 
-# 81. Ultimate Pain Relief Guide
+# 82. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -78598,10 +79247,10 @@ Visit **alphamedicalcare.com/resources** for:
 ---
 
 
-# 82. Session 2025-11-20 Summary
+# 83. Session 2025-11-20 Summary
 
 **File:** `session_2025-11-20_summary.md`
-**Last Modified:** 2025-11-21 13:45
+**Last Modified:** 2025-11-21 13:51
 
 ---
 
@@ -78936,8 +79585,8 @@ Visit **alphamedicalcare.com/resources** for:
 
 ## Document Information
 
-**Total Documentation Files:** 82
-**Generated:** November 21, 2025 at 13:45 UTC
+**Total Documentation Files:** 83
+**Generated:** November 21, 2025 at 13:51 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
