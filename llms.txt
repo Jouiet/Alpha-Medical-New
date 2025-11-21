@@ -200,6 +200,7 @@ When assisting with this project:
 - [GOOGLE_ADS_GTM_PROGRESS](GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
 - [GOOGLE_ADS_NEXT_STEPS](GOOGLE_ADS_NEXT_STEPS.md): 1. Si premier container: Cliquez "Créer un compte" Formulaire: Configuration container:
 - [GSC_FINAL_CHECKLIST](GSC_FINAL_CHECKLIST.md): SITEMAP STATUS: ┌─────────────────────────────────────────────────────────────┐ │ Sitemap URL: https://www.alphamedical.shop/sitemap.xml │
+- [GTM_ADD_MISSING_TAGS_STEPS](GTM_ADD_MISSING_TAGS_STEPS.md): 1. Cliquez: "Balises" (Tags) → "Nouveau" (bouton rouge) 2. Nom du tag: Google Tag - Base (AW-17749024238)
 - [HOMEPAGE_CTA_INSTRUCTIONS](HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
 - [LLMS_TXT_DEPLOYMENT](LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
