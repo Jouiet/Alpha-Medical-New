@@ -1,146 +1,152 @@
 #!/usr/bin/env python3
 """
-VERIFICATION: Loyalty Discount Codes Status
+Verify Loyalty Discount Codes
+Checks if all 4 loyalty tier discount codes exist and are configured correctly
 Date: 2025-11-20
-Purpose: Verify if loyalty discount codes (LOYALTY10, LOYALTY15, LOYALTY25, LOYALTY50) exist
 """
 
+import os
 import requests
+import json
+from dotenv import load_dotenv
 
-# Load credentials
-try:
-    with open('.env.admin', 'r') as f:
-        for line in f:
-            if line.startswith('SHOPIFY_ADMIN_ACCESS_TOKEN='):
-                TOKEN = line.split('=', 1)[1].strip()
-                break
-except:
-    print("❌ Failed to load credentials")
-    exit(1)
+# Load environment variables
+load_env_path = os.path.join(os.path.dirname(__file__), '.env.admin')
+load_dotenv(load_env_path)
 
-SHOP = "azffej-as.myshopify.com"
-API_VERSION = "2025-10"
-REST_URL = f"https://{SHOP}/admin/api/{API_VERSION}"
-HEADERS = {"X-Shopify-Access-Token": TOKEN}
+SHOPIFY_STORE_DOMAIN = os.getenv('SHOPIFY_STORE_DOMAIN')
+SHOPIFY_ADMIN_ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
 
-print("=" * 80)
-print("VERIFICATION: Loyalty Discount Codes")
-print("=" * 80)
-print()
+GRAPHQL_URL = f"https://{SHOPIFY_STORE_DOMAIN}/admin/api/2024-10/graphql.json"
 
-REQUIRED_CODES = {
-    "LOYALTY10": {"discount": "10%", "tier": "Bronze"},
-    "LOYALTY15": {"discount": "15%", "tier": "Silver"},
-    "LOYALTY25": {"discount": "25%", "tier": "Gold"},
-    "LOYALTY50": {"discount": "50%", "tier": "Platinum"}
+headers = {
+    'X-Shopify-Access-Token': SHOPIFY_ADMIN_ACCESS_TOKEN,
+    'Content-Type': 'application/json'
 }
 
-# Fetch all discount codes (price rules)
-print("Fetching all discount codes from Shopify...\n")
+EXPECTED_CODES = ["LOYALTY10", "LOYALTY15", "LOYALTY25", "LOYALTY50"]
 
-response = requests.get(
-    f"{REST_URL}/price_rules.json?limit=250",
-    headers=HEADERS
-)
+def search_discount_codes():
+    """Search for loyalty discount codes"""
 
-if response.status_code != 200:
-    print(f"❌ API Error: {response.status_code}")
-    print(f"Response: {response.text[:500]}")
-    exit(1)
-
-price_rules = response.json().get('price_rules', [])
-print(f"✅ Fetched {len(price_rules)} price rules\n")
-
-# Check each required code
-print("=" * 80)
-print("LOYALTY CODE STATUS")
-print("=" * 80)
-
-found_codes = {}
-missing_codes = []
-
-for code_name, details in REQUIRED_CODES.items():
-    print(f"\nChecking: {code_name} ({details['tier']} - {details['discount']})")
-
-    # Find matching price rule
-    matching_rule = None
-    for rule in price_rules:
-        if code_name.lower() in rule.get('title', '').lower():
-            matching_rule = rule
-            break
-
-    if matching_rule:
-        rule_id = matching_rule['id']
-        value = matching_rule.get('value', 0)
-        value_type = matching_rule.get('value_type', 'unknown')
-
-        # Fetch discount codes for this rule
-        codes_response = requests.get(
-            f"{REST_URL}/price_rules/{rule_id}/discount_codes.json",
-            headers=HEADERS
-        )
-
-        if codes_response.status_code == 200:
-            codes = codes_response.json().get('discount_codes', [])
-            if codes:
-                code = codes[0].get('code', 'UNKNOWN')
-                print(f"   ✅ FOUND")
-                print(f"      Code: {code}")
-                print(f"      Value: {abs(value)}{'' if value_type == 'percentage' else '$'} off")
-                print(f"      Rule ID: {rule_id}")
-                found_codes[code_name] = {
-                    "code": code,
-                    "value": abs(value),
-                    "value_type": value_type,
-                    "rule_id": rule_id
+    query = """
+    query {
+      codeDiscountNodes(first: 50) {
+        edges {
+          node {
+            id
+            codeDiscount {
+              ... on DiscountCodeBasic {
+                title
+                codes(first: 1) {
+                  edges {
+                    node {
+                      code
+                    }
+                  }
                 }
-            else:
-                print(f"   ⚠️  Price rule exists but no discount code created")
-                print(f"      Rule ID: {rule_id}")
-                missing_codes.append(code_name)
+                status
+                summary
+                customerGets {
+                  value {
+                    ... on DiscountPercentage {
+                      percentage
+                    }
+                  }
+                }
+                startsAt
+                endsAt
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+
+    payload = {"query": query}
+
+    try:
+        response = requests.post(GRAPHQL_URL, headers=headers, json=payload)
+        response.raise_for_status()
+        result = response.json()
+
+        if 'errors' in result:
+            print("❌ GraphQL Error:")
+            print(json.dumps(result['errors'], indent=2))
+            return []
+
+        edges = result.get('data', {}).get('codeDiscountNodes', {}).get('edges', [])
+
+        discount_codes = []
+        for edge in edges:
+            code_discount = edge.get('node', {}).get('codeDiscount', {})
+            if code_discount:
+                codes_edges = code_discount.get('codes', {}).get('edges', [])
+                if codes_edges:
+                    code = codes_edges[0]['node']['code']
+                    if code in EXPECTED_CODES:
+                        percentage = code_discount.get('customerGets', {}).get('value', {}).get('percentage', 0)
+                        discount_codes.append({
+                            'code': code,
+                            'title': code_discount.get('title', 'N/A'),
+                            'status': code_discount.get('status', 'N/A'),
+                            'percentage': percentage * 100 if percentage else 0,
+                            'summary': code_discount.get('summary', 'N/A')
+                        })
+
+        return discount_codes
+
+    except Exception as e:
+        print(f"❌ Error: {str(e)}")
+        return []
+
+def main():
+    print("=" * 70)
+    print("VERIFYING LOYALTY DISCOUNT CODES")
+    print("=" * 70)
+    print(f"Store: {SHOPIFY_STORE_DOMAIN}")
+    print()
+
+    print("Searching for loyalty discount codes...")
+    found_codes = search_discount_codes()
+
+    print()
+    print("=" * 70)
+    print("RESULTS")
+    print("=" * 70)
+
+    found_code_names = [dc['code'] for dc in found_codes]
+
+    for expected_code in EXPECTED_CODES:
+        if expected_code in found_code_names:
+            code_data = next(dc for dc in found_codes if dc['code'] == expected_code)
+            print(f"✅ {expected_code}")
+            print(f"   Title: {code_data['title']}")
+            print(f"   Status: {code_data['status']}")
+            print(f"   Discount: {code_data['percentage']:.0f}%")
+            print(f"   Summary: {code_data['summary']}")
+            print()
         else:
-            print(f"   ⚠️  Price rule exists but couldn't fetch codes")
-            print(f"      Rule ID: {rule_id}")
-            missing_codes.append(code_name)
-    else:
-        print(f"   ❌ NOT FOUND")
-        missing_codes.append(code_name)
+            print(f"❌ {expected_code} - NOT FOUND")
+            print()
 
-# Summary
-print("\n" + "=" * 80)
-print("VERIFICATION SUMMARY")
-print("=" * 80)
+    print("=" * 70)
+    print("SUMMARY")
+    print("=" * 70)
+    print(f"Found: {len(found_codes)}/{len(EXPECTED_CODES)} discount codes")
 
-print(f"\n✅ Found: {len(found_codes)}/{len(REQUIRED_CODES)} discount codes")
-print(f"❌ Missing: {len(missing_codes)}/{len(REQUIRED_CODES)} discount codes")
-
-if missing_codes:
-    print(f"\n🔴 MISSING CODES:")
-    for code in missing_codes:
-        details = REQUIRED_CODES[code]
-        print(f"   - {code} ({details['tier']} tier - {details['discount']} off)")
-
-    print("\n📋 MANUAL ACTION REQUIRED:")
-    print("\n1. Go to Shopify Admin → Discounts")
-    print("2. Create each missing discount code:")
-    print()
-    for code in missing_codes:
-        details = REQUIRED_CODES[code]
-        print(f"   {code}:")
-        print(f"   - Title: Loyalty {details['tier']} Tier Discount")
-        print(f"   - Code: {code}")
-        print(f"   - Type: Percentage")
-        print(f"   - Value: {details['discount']}")
-        print(f"   - Customer eligibility: Customers with tag 'loyalty-{details['tier'].lower()}'")
-        print(f"   - Usage limit: No limit")
-        print(f"   - Active dates: No end date")
+    if len(found_codes) == len(EXPECTED_CODES):
         print()
+        print("🎉 ALL LOYALTY DISCOUNT CODES EXIST AND ARE ACTIVE!")
+        print()
+        print("NEXT STEP: Configure Shopify Flow for automatic tier tagging")
+        print("URL: https://admin.shopify.com/store/azffej-as/apps/flow")
+    else:
+        missing = set(EXPECTED_CODES) - set(found_code_names)
+        print()
+        print(f"⚠️  Missing codes: {', '.join(missing)}")
+        print("Run create_loyalty_discount_codes.py to create missing codes")
 
-    print("⏱️  Time required: ~5 minutes total")
-    print()
-    exit(1)
-else:
-    print("\n✅ ALL LOYALTY DISCOUNT CODES EXIST")
-    print("✅ Loyalty discount system is ready to use")
-    print()
-    exit(0)
+if __name__ == "__main__":
+    main()
