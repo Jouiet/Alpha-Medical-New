@@ -66,14 +66,108 @@ for hashtag in "${INSTAGRAM_HASHTAGS[@]}"; do
     sleep 10
 done
 
-echo "Instagram scraping complete: $INSTAGRAM_RESULTS/${{#INSTAGRAM_HASHTAGS[@]}} hashtags successful" >> "$LOG_FILE"
+echo "Instagram scraping complete: $INSTAGRAM_RESULTS/${#INSTAGRAM_HASHTAGS[@]} hashtags successful" >> "$LOG_FILE"
 
 ###############################################################################
-# PHASE 2: COMPETITOR INTELLIGENCE SCRAPING
+# PHASE 2: TIKTOK CONSUMER INTELLIGENCE SCRAPING
 ###############################################################################
 
 echo "" >> "$LOG_FILE"
-echo "PHASE 2: Competitor Intelligence Scraping..." >> "$LOG_FILE"
+echo "PHASE 2: TikTok Consumer Intelligence Scraping..." >> "$LOG_FILE"
+
+# Same hashtags as Instagram for cross-platform consumer intelligence
+TIKTOK_HASHTAGS=(
+    "arthritis"
+    "jointpain"
+    "backpain"
+    "kneepain"
+    "seniorfitness"
+    "deskpain"
+    "posturecorrection"
+)
+
+TIKTOK_RESULTS=0
+
+for hashtag in "${TIKTOK_HASHTAGS[@]}"; do
+    echo "  → Scraping TikTok #$hashtag..." >> "$LOG_FILE"
+
+    python3 lead_generation_scraper.py \
+        --tiktok \
+        --hashtag "$hashtag" \
+        >> "$LOG_FILE" 2>&1
+
+    if [ $? -eq 0 ]; then
+        TIKTOK_RESULTS=$((TIKTOK_RESULTS + 1))
+        echo "    ✅ TikTok #$hashtag done" >> "$LOG_FILE"
+    else
+        echo "    ❌ TikTok #$hashtag failed" >> "$LOG_FILE"
+    fi
+
+    # Rate limit: Wait 10 seconds between hashtags
+    sleep 10
+done
+
+echo "TikTok scraping complete: $TIKTOK_RESULTS/${#TIKTOK_HASHTAGS[@]} hashtags successful" >> "$LOG_FILE"
+
+###############################################################################
+# PHASE 3: FACEBOOK CONSUMER INTELLIGENCE SCRAPING
+###############################################################################
+
+echo "" >> "$LOG_FILE"
+echo "PHASE 3: Facebook Consumer Intelligence Scraping..." >> "$LOG_FILE"
+
+# Top Facebook pages for pain/health topics (public pages with high engagement)
+declare -a FACEBOOK_PAGES=(
+    "https://www.facebook.com/ArthritisFoundation"
+    "https://www.facebook.com/BackPainReliefClinic"
+    "https://www.facebook.com/KneeHealthMatters"
+    "https://www.facebook.com/ChronicPainSupport"
+    "https://www.facebook.com/SeniorFitnessAndWellness"
+)
+
+FACEBOOK_RESULTS=0
+
+for page_url in "${FACEBOOK_PAGES[@]}"; do
+    echo "  → Scraping Facebook page: $page_url..." >> "$LOG_FILE"
+
+    # Extract page name from URL for logging
+    page_name=$(echo "$page_url" | sed 's/.*facebook\.com\///' | sed 's/\/.*//')
+
+    python3 -c "
+import sys
+sys.path.insert(0, '$SCRIPT_DIR')
+from lead_generation_scraper import ApifyLeadScraper, LeadAnalyzer
+import os
+
+scraper = ApifyLeadScraper(os.getenv('APIFY_API_TOKEN'))
+analyzer = LeadAnalyzer('$SCRIPT_DIR/leads')
+
+posts = scraper.scrape_facebook_pages(['$page_url'], max_posts=30)
+print(f'✅ Scraped {len(posts)} Facebook posts from $page_name')
+
+# Save raw data
+analyzer.save_leads(posts, 'general', 'facebook')
+" >> "$LOG_FILE" 2>&1
+
+    if [ $? -eq 0 ]; then
+        FACEBOOK_RESULTS=$((FACEBOOK_RESULTS + 1))
+        echo "    ✅ Facebook page $page_name done" >> "$LOG_FILE"
+    else
+        echo "    ❌ Facebook page $page_name failed" >> "$LOG_FILE"
+    fi
+
+    # Rate limit: Wait 15 seconds between pages
+    sleep 15
+done
+
+echo "Facebook scraping complete: $FACEBOOK_RESULTS/${#FACEBOOK_PAGES[@]} pages successful" >> "$LOG_FILE"
+
+###############################################################################
+# PHASE 4: COMPETITOR INTELLIGENCE SCRAPING
+###############################################################################
+
+echo "" >> "$LOG_FILE"
+echo "PHASE 4: Competitor Intelligence Scraping..." >> "$LOG_FILE"
 
 # D2C Competitor research (market intelligence, not B2B leads)
 declare -a GMAPS_QUERIES=(
@@ -179,10 +273,16 @@ fi
 
 echo "" >> "$LOG_FILE"
 echo "======================================================================" >> "$LOG_FILE"
-echo "SUMMARY" >> "$LOG_FILE"
+echo "SUMMARY - MULTI-PLATFORM CONSUMER INTELLIGENCE" >> "$LOG_FILE"
 echo "======================================================================" >> "$LOG_FILE"
-echo "Instagram hashtags scraped: $INSTAGRAM_RESULTS/${#INSTAGRAM_HASHTAGS[@]}" >> "$LOG_FILE"
-echo "Google Maps queries scraped: $GMAPS_RESULTS/${#GMAPS_QUERIES[@]}" >> "$LOG_FILE"
+echo "CONSUMER INTELLIGENCE (75-80%):" >> "$LOG_FILE"
+echo "  Instagram hashtags scraped: $INSTAGRAM_RESULTS/${#INSTAGRAM_HASHTAGS[@]}" >> "$LOG_FILE"
+echo "  TikTok hashtags scraped: $TIKTOK_RESULTS/${#TIKTOK_HASHTAGS[@]}" >> "$LOG_FILE"
+echo "  Facebook pages scraped: $FACEBOOK_RESULTS/${#FACEBOOK_PAGES[@]}" >> "$LOG_FILE"
+echo "" >> "$LOG_FILE"
+echo "COMPETITOR INTELLIGENCE (20-25%):" >> "$LOG_FILE"
+echo "  Google Maps queries scraped: $GMAPS_RESULTS/${#GMAPS_QUERIES[@]}" >> "$LOG_FILE"
+echo "" >> "$LOG_FILE"
 echo "Completed: $TIMESTAMP" >> "$LOG_FILE"
 echo "" >> "$LOG_FILE"
 
