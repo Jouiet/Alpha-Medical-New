@@ -1,0 +1,39 @@
+================================================================================
+NEXT ACTION REQUIRED - GOOGLE SHEET MANUAL CREATION (3 minutes)
+================================================================================
+
+STATUS: Service account storage quota exceeded. Need your help to create sheet.
+
+WHAT I'VE PREPARED FOR YOU:
+✅ Google Drive API enabled and working
+✅ Service account credentials configured
+✅ Automation scripts ready (configure_existing_sheet.py)
+✅ Complete instructions written (GOOGLE_SHEET_SETUP_INSTRUCTIONS.md)
+
+WHAT YOU NEED TO DO (3 minutes):
+
+1. CREATE SHEET (1 min):
+   - Open: https://sheets.google.com/create
+   - Rename to: "Alpha Medical - Lead Management"
+
+2. SHARE WITH SERVICE ACCOUNT (1 min):
+   - Click "Share" button
+   - Add: ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+   - Role: Editor
+   - Click "Send"
+
+3. COPY SHEET ID (30 sec):
+   - From URL: https://docs.google.com/spreadsheets/d/SHEET_ID_HERE/edit
+   - Copy the ID between /d/ and /edit
+
+4. RUN CONFIGURATION (30 sec):
+   cd /Users/mac/Desktop/Alpha-Medical
+   python3 configure_existing_sheet.py YOUR_SHEET_ID_HERE
+
+DETAILED INSTRUCTIONS:
+See: GOOGLE_SHEET_SETUP_INSTRUCTIONS.md
+
+AFTER COMPLETION:
+The automation system will be 100% operational and ready to scrape leads daily.
+
+================================================================================

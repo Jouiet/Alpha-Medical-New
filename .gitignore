@@ -23,3 +23,4 @@ credentials.json
 # Logs
 *.log
 .env
+google_credentials.json
