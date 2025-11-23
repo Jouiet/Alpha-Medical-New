@@ -48,6 +48,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [CHAT_INSTANT_ANSWERS](CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
 - [COMPLETE_ACQUISITION_AUTOMATION_SYSTEM](COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md): Project documentation
 - [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
+- [KLAVIYO_FLYWHEEL_UPGRADE_2025](KLAVIYO_FLYWHEEL_UPGRADE_2025.md): Project documentation
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
 - [LOYALTY_AUTOMATION_PROGRESS_REPORT](LOYALTY_AUTOMATION_PROGRESS_REPORT.md): ✅ Trigger: Order paid │ ✅ Condition 1: IF customer.amountSpent.amount >= 2500 │ ✅ TRUE (Platinum tier):
