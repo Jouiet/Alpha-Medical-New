@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 21, 2025
+**Last Updated:** November 23, 2025
 
 ## Core Documentation
 
@@ -25,6 +25,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SEO_AUDIT_RECOMMENDATIONS](SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
 - [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
+- [SYSTEM_ANALYSIS_COMPLETE_2025-11-22](market-analysis/SYSTEM_ANALYSIS_COMPLETE_2025-11-22.md): Project documentation
 
 ### Pricing & Product Management
 
@@ -36,17 +37,22 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [PRICING_VERIFICATION](PRICING_VERIFICATION.md): Price = [(Product Cost + Shipping Cost) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
 - [PRODUCT_OPTIMIZATION_TRACKING](PRODUCT_OPTIMIZATION_TRACKING.md): Project documentation
 - [README_PRICING](README_PRICING.md): Project documentation
+- [TOP_10_HERO_PRODUCTS_MAPPING](TOP_10_HERO_PRODUCTS_MAPPING.md): Project documentation
+- [production-log](video-ads-assets/outputs/production-log.md): Hook: "{First 3 seconds hook}"
 
 ### Email Marketing & Automation
 
 - [ABANDONED_CART_RECOVERY_CONFIG](ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
+- [AUTOMATION_COMPLETE_WORKFLOWS](market-analysis/AUTOMATION_COMPLETE_WORKFLOWS.md): ✅ Apify Blog & Documentation ✅ GitHub Apify Examples ✅ Shopify Apps Installées (vérification factuelle - 7 apps)
 - [CHAT_INSTANT_ANSWERS](CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
 - [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
+- [LOYALTY_AUTOMATION_PROGRESS_REPORT](LOYALTY_AUTOMATION_PROGRESS_REPORT.md): ✅ Trigger: Order paid │ ✅ Condition 1: IF customer.amountSpent.amount >= 2500 │ ✅ TRUE (Platinum tier):
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 
 ### Content & Blog
 
+- [ASSET_GATHERING_GUIDE](ASSET_GATHERING_GUIDE.md): {product-handle}hero{angle}.jpg
 - [BLOG_IMAGES_ASSIGNMENT](BLOG_IMAGES_ASSIGNMENT.md): Project documentation
 - [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
@@ -67,12 +73,16 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Implementation & Configuration
 
 - [AI_DISCOVERY_IMPLEMENTATION](AI_DISCOVERY_IMPLEMENTATION.md): Project documentation
+- [COMPLETE_MANUALLY_FINAL_40_PERCENT](COMPLETE_MANUALLY_FINAL_40_PERCENT.md): Vous devriez voir une condition avec "Select condition" qui est déjà créée dans la branche FALSE.
+- [COMPLETE_SHOPIFY_FLOW_SETUP](COMPLETE_SHOPIFY_FLOW_SETUP.md): Le workflow est ouvert dans votre navigateur à cette URL: https://admin.shopify.com/store/azffej-as/apps/flow/editor/019aa2e4-81e1-798b-8beb-91d1e8...
 - [FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION](FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md): Alpha Medical Care operates: Original schema reflected physical stores (Canada), not e-commerce HQ (US).
 - [GSC_CONFIGURATION_REPORT_2025-11-19](GSC_CONFIGURATION_REPORT_2025-11-19.md): <meta name="google-site-verification" content="Y7EPPu0mS85zoUexpqneDh1POER-ygWiEC3Xww3Yz0" />
 - [IMPLEMENTATION_ROADMAP](IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
+- [LEAD_MANAGEMENT_SHOPIFY_FLOWS](market-analysis/LEAD_MANAGEMENT_SHOPIFY_FLOWS.md): 1. Add customer to segment by persona tag (seniors, athletes, workers, etc.) 2. Add note: "Lead imported from [platform] on [date]"
 - [MANUAL_FOOTER_CONFIG](MANUAL_FOOTER_CONFIG.md): 1. Go to Shopify Admin → Settings → Store details 2. Change "Store name" from "My Store" to "Alpha Medical Care"
 - [NEXT_STEPS_FLOW_CONFIGURATION](NEXT_STEPS_FLOW_CONFIGURATION.md): claude mcp add chrome-devtools npx chrome-devtools-mcp@latest MCP servers require a CLI session restart to become active.
 - [PHASE_3_IMPLEMENTATION_LOG](PHASE_3_IMPLEMENTATION_LOG.md): Project documentation
+- [SETUP_GOOGLE_SHEETS_API](market-analysis/SETUP_GOOGLE_SHEETS_API.md): 1. Go to: https://console.cloud.google.com/ 2. Click "Select a project" → "New Project"
 - [SHOPIFY_CONFIGURATION_COMPLETE](SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
 - [TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN](TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md): 1. ✅ Run python3 createsocialshareimage.py 2. ⏳ Manual upload to Shopify Theme Settings → Social media
 
@@ -80,6 +90,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 - [COLLECTION_OVERLAP_VERIFICATION_REPORT](COLLECTION_OVERLAP_VERIFICATION_REPORT.md): 1. verifyduplicatessimple.py - Vérification générale doublons 2. checkpromotionalduplicates.py - Vérification règle collections promotionnelles
 - [DEPLOYMENT_VERIFICATION](DEPLOYMENT_VERIFICATION.md): Project documentation
+- [FACTUAL_VERIFICATION_STATUS](FACTUAL_VERIFICATION_STATUS.md): Project documentation
 - [GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS](GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md): Bien que GSC soit configuré (meta tag présent), nous ne pouvons PAS vérifier sans accès au dashboard:
 - [STATUS_REPORT_PAGES](STATUS_REPORT_PAGES.md): Project documentation
 
@@ -190,11 +201,15 @@ When assisting with this project:
 - [ALPHA_MEDICAL_15_BUNDLES_COMPLETE](ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md): Project documentation
 - [ALPHA_MEDICAL_8_BUNDLES_FINAL](ALPHA_MEDICAL_8_BUNDLES_FINAL.md): Project documentation
 - [ALPHA_MEDICAL_BUNDLE_STRATEGY](ALPHA_MEDICAL_BUNDLE_STRATEGY.md): Project documentation
+- [ALPHA_MEDICAL_FLYWHEEL_STRATEGY](market-analysis/ALPHA_MEDICAL_FLYWHEEL_STRATEGY.md): Project documentation
+- [ALPHA_MEDICAL_PITCH_DECK_TEMPLATE](ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md): [Logo Alpha Medical Care - utiliser version haute résolution] ALPHA MEDICAL CARE Making Medical-Grade Recovery Accessible to Everyone
 - [ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA](ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md): Project documentation
 - [ANALYSE_FORENSIQUE_SITE](ANALYSE_FORENSIQUE_SITE.md): Project documentation
 - [ANALYSE_FORENSIQUE_SITE_WEB](ANALYSE_FORENSIQUE_SITE_WEB.md): Project documentation
+- [APIFY_INTEGRATION_COMPLETE](APIFY_INTEGRATION_COMPLETE.md): Project documentation
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
+- [CREATIFY_PROMPTS_ALPHA_MEDICAL](CREATIFY_PROMPTS_ALPHA_MEDICAL.md): Project documentation
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
@@ -208,18 +223,29 @@ When assisting with this project:
 - [MENU_BUNDLES_INSTRUCTIONS](MENU_BUNDLES_INSTRUCTIONS.md): Menu principal (ordre): 1. Home 2. Catalog 3. Bundles ⬅️ NOUVEAU 4. Contact 5. Pain Relief & Recovery
 - [MYDEALZ_SYNTHESE](MYDEALZ_SYNTHESE.md): Couleurs: Typographie: Style: Énergique, dynamique, focus deals/économies
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
+- [PRE_LAUNCH_CHECKLIST_23_DAYS](PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
 - [RAPPORT_FINAL_COMPLET](RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](RAPPORT_THEME_ANALYSE.md): Project documentation
 - [README](google-sheets-template/README.md): 1. Aller sur Google Sheets: https://sheets.google.com 2. Créer nouveau spreadsheet
+- [README](video-ads-assets/README.md): open VIDEOADSCREATIONPLAYBOOK.md open video-ads-assets/products/README.md
+- [README](video-ads-assets/outputs/README.md): YYYY-MM-DD{product-handle}{type}v{version}.mp4 2025-11-23tourmaline-knee-padsugcv1.mp4
+- [README](video-ads-assets/products/README.md): Chaque produit a son propre dossier avec 4 sous-dossiers: {product-handle}/ ├── hero-images/ # Images fond blanc, studio
+- [README](video-ads-assets/scripts/README.md): python3 assetorganizer.py --create {product-handle} cd /Users/mac/Desktop/Alpha-Medical/video-ads-assets/scripts/
+- [README](market-analysis/README.md): Project documentation
+- [README_COMPLETE](market-analysis/README_COMPLETE.md): market-analysis/ ├── leadgenerationscraper.py # 🎯 LEAD GENERATION │ ├── Instagram hashtag scraping
 - [ROBOTS_TXT_DEPLOYMENT](ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
 - [SESSION_2025-11-11_PART3_SUMMARY](SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_PART6_SUMMARY](SESSION_2025-11-11_PART6_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_SUMMARY](SESSION_2025-11-11_SUMMARY.md): Project documentation
 - [SESSION_2025-11-19_FINAL_SUMMARY](SESSION_2025-11-19_FINAL_SUMMARY.md): 1. ✅ Schema.org country corrections (CA → US) 2. ✅ Business address disclosure (JoHat Services LLC, Dover, DE)
 - [SESSION_SUMMARY](SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
+- [SESSION_SUMMARY_2025-11-22_CONTINUATION](market-analysis/SESSION_SUMMARY_2025-11-22_CONTINUATION.md): Project documentation
+- [TODO_MASTER_PRE_LAUNCH_23_DAYS](TODO_MASTER_PRE_LAUNCH_23_DAYS.md): Project documentation
 - [TOP_10_URLS_TO_INDEX](TOP_10_URLS_TO_INDEX.md): https://www.alphamedical.shop/
 - [TRACKING_ANALYTICS_GAPS_2025](TRACKING_ANALYTICS_GAPS_2025.md): 1. Shopify Apps → "Google & YouTube" (official) 2. Connect Google account 3. Auto-creates GA4 property + GTM container
 - [UGC_VIDEO_PROMPTS_GROK_IMAGINE](UGC_VIDEO_PROMPTS_GROK_IMAGINE.md): Chaque UGC = 3 segments montés sur CapCut = 15-18s total
+- [VIDEO_ADS_CREATION_PLAYBOOK](VIDEO_ADS_CREATION_PLAYBOOK.md): /video-ads-assets/ ├── products/ # Assets organisés par produit
+- [VIDEO_ADS_INFRASTRUCTURE_COMPLETE](VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md): Project documentation
 - [session_2025-11-20_summary](session_2025-11-20_summary.md): 1. verifyenglishonlyforensic.py (V1 - 415 lines) 2. verifyenglishonlyforensicv2.py (V2 - 403 lines)
 
 ---
