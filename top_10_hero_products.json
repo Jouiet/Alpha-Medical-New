@@ -1,0 +1,152 @@
+[
+  {
+    "rank": 1,
+    "handle": "magnetic-posture-corrector-shoulder-orthopedic-brace",
+    "title": "Magnetic Posture Corrector | Shoulder Orthopedic Brace",
+    "product_type": "neck support",
+    "price_tier": "mid_range",
+    "hero_score": 0.934,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.22,
+      "demographics": 0.129,
+      "ugc_trends": 0.083,
+      "sales_potential": 0.063
+    }
+  },
+  {
+    "rank": 2,
+    "handle": "tourmaline-magnetic-knee-pads-self-heating-support",
+    "title": "Tourmaline Magnetic Knee Pads | Self-Heating Support",
+    "product_type": "knee support",
+    "price_tier": "mid_range",
+    "hero_score": 0.923,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.25,
+      "demographics": 0.099,
+      "ugc_trends": 0.083,
+      "sales_potential": 0.052
+    }
+  },
+  {
+    "rank": 3,
+    "handle": "kids-posture-corrector-adjustable-back-support-for-children",
+    "title": "Kids Posture Corrector | Adjustable Back Support for Children",
+    "product_type": "neck support",
+    "price_tier": "mid_range",
+    "hero_score": 0.897,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.178,
+      "demographics": 0.126,
+      "ugc_trends": 0.098,
+      "sales_potential": 0.056
+    }
+  },
+  {
+    "rank": 4,
+    "handle": "back-brace-posture-corrector-scoliosis-hunchback-support",
+    "title": "Back Brace Posture Corrector | Scoliosis & Hunchback Support",
+    "product_type": "wrist support",
+    "price_tier": "mid_range",
+    "hero_score": 0.887,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.155,
+      "demographics": 0.105,
+      "ugc_trends": 0.135,
+      "sales_potential": 0.052
+    }
+  },
+  {
+    "rank": 5,
+    "handle": "hinged-knee-brace-patella-stabilizer-for-arthritis",
+    "title": "Hinged Knee Brace | Patella Stabilizer for Arthritis",
+    "product_type": "knee support",
+    "price_tier": "mid_range",
+    "hero_score": 0.871,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.215,
+      "demographics": 0.091,
+      "ugc_trends": 0.068,
+      "sales_potential": 0.058
+    }
+  },
+  {
+    "rank": 6,
+    "handle": "lower-back-brace-6-stays-anti-skid-lumbar-support",
+    "title": "Lower Back Brace | 6 Stays Anti-Skid Lumbar Support",
+    "product_type": "wrist support",
+    "price_tier": "mid_range",
+    "hero_score": 0.87,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.178,
+      "demographics": 0.097,
+      "ugc_trends": 0.105,
+      "sales_potential": 0.051
+    }
+  },
+  {
+    "rank": 7,
+    "handle": "posture-corrector-adjustable-shoulder-support-brace",
+    "title": "Posture Corrector | Adjustable Shoulder Support Brace",
+    "product_type": "neck support",
+    "price_tier": "mid_range",
+    "hero_score": 0.866,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.14,
+      "demographics": 0.124,
+      "ugc_trends": 0.105,
+      "sales_potential": 0.057
+    }
+  },
+  {
+    "rank": 8,
+    "handle": "shoulder-posture-corrector-back-support-brace",
+    "title": "Shoulder Posture Corrector | Back Support Brace",
+    "product_type": "neck support",
+    "price_tier": "mid_range",
+    "hero_score": 0.864,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.14,
+      "demographics": 0.098,
+      "ugc_trends": 0.135,
+      "sales_potential": 0.051
+    }
+  },
+  {
+    "rank": 9,
+    "handle": "knee-stabilizer-brace-aluminum-alloy-support",
+    "title": "Knee Stabilizer Brace | Aluminum Alloy Support",
+    "product_type": "knee support",
+    "price_tier": "mid_range",
+    "hero_score": 0.857,
+    "breakdown": {
+      "price": 0.439,
+      "seasonality": 0.185,
+      "demographics": 0.076,
+      "ugc_trends": 0.105,
+      "sales_potential": 0.052
+    }
+  },
+  {
+    "rank": 10,
+    "handle": "neenca-hinged-knee-brace-side-stabilizers-support",
+    "title": "NEENCA Hinged Knee Brace | Side Stabilizers Support",
+    "product_type": "knee support",
+    "price_tier": "premium",
+    "hero_score": 0.832,
+    "breakdown": {
+      "price": 0.39,
+      "seasonality": 0.2,
+      "demographics": 0.082,
+      "ugc_trends": 0.105,
+      "sales_potential": 0.055
+    }
+  }
+]

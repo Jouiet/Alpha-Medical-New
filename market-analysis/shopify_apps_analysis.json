@@ -1,0 +1,62 @@
+{
+  "store": "azffej-as.myshopify.com",
+  "timestamp": "2025-11-22",
+  "categories": {
+    "email_marketing": [
+      {
+        "title": "Email",
+        "handle": "shopify-email"
+      }
+    ],
+    "crm": [],
+    "automation": [
+      {
+        "title": "Flow",
+        "handle": "flow"
+      }
+    ],
+    "analytics": [],
+    "inventory": [
+      {
+        "title": "Loox Reviews",
+        "handle": "loox-fashion-reviews"
+      }
+    ],
+    "shipping": [
+      {
+        "title": "DSers-AliExpress Dropshipping",
+        "handle": "dsers-1"
+      }
+    ],
+    "other": [
+      {
+        "title": "Translate & Adapt",
+        "handle": "translate-and-adapt"
+      },
+      {
+        "title": "Alpha Medical New",
+        "handle": null
+      }
+    ]
+  },
+  "automation_suggestions": [
+    {
+      "workflow": "Lead Gen → Email Nurturing",
+      "steps": [
+        "1. Apify scrape Instagram/Google Maps → Leads",
+        "2. Google Sheets → Store & qualify leads",
+        "3. Email Marketing App → Automated campaigns",
+        "4. Shopify Flow → Trigger based on customer behavior"
+      ]
+    },
+    {
+      "workflow": "Order Automation → Fulfillment",
+      "steps": [
+        "1. Shopify → New order trigger",
+        "2. Inventory App → Check stock",
+        "3. Shopify Flow → Notify fulfillment",
+        "4. Email App → Customer updates"
+      ]
+    }
+  ]
+}

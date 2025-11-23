@@ -1,0 +1,633 @@
+{
+  "target_markets": [
+    {
+      "country_code": "AU",
+      "country_name": "Australia",
+      "cities": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Perth",
+        "Adelaide"
+      ],
+      "language": "en"
+    },
+    {
+      "country_code": "CA",
+      "country_name": "Canada",
+      "cities": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary",
+        "Ottawa",
+        "Edmonton"
+      ],
+      "language": "en"
+    },
+    {
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "cities": [
+        "London",
+        "Manchester",
+        "Birmingham",
+        "Leeds",
+        "Glasgow",
+        "Edinburgh"
+      ],
+      "language": "en"
+    },
+    {
+      "country_code": "NZ",
+      "country_name": "New Zealand",
+      "cities": [
+        "New Zealand"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "US",
+      "country_name": "United States",
+      "cities": [
+        "New York",
+        "Los Angeles",
+        "Chicago",
+        "Houston",
+        "Phoenix",
+        "Philadelphia",
+        "San Francisco",
+        "Miami",
+        "Seattle",
+        "Boston",
+        "Atlanta",
+        "Dallas"
+      ],
+      "language": "en"
+    },
+    {
+      "country_code": "AE",
+      "country_name": "United Arab Emirates",
+      "cities": [
+        "United Arab Emirates"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "BE",
+      "country_name": "Belgium",
+      "cities": [
+        "Belgium"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "cities": [
+        "Switzerland"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "DE",
+      "country_name": "Germany",
+      "cities": [
+        "Berlin",
+        "Munich",
+        "Hamburg",
+        "Frankfurt",
+        "Cologne"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "DK",
+      "country_name": "Denmark",
+      "cities": [
+        "Denmark"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "ES",
+      "country_name": "Spain",
+      "cities": [
+        "Spain"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "FI",
+      "country_name": "Finland",
+      "cities": [
+        "Finland"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "FR",
+      "country_name": "France",
+      "cities": [
+        "Paris",
+        "Marseille",
+        "Lyon",
+        "Toulouse",
+        "Nice"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "cities": [
+        "Ireland"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "IT",
+      "country_name": "Italy",
+      "cities": [
+        "Italy"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "JP",
+      "country_name": "Japan",
+      "cities": [
+        "Japan"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "cities": [
+        "Netherlands"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "NO",
+      "country_name": "Norway",
+      "cities": [
+        "Norway"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "PL",
+      "country_name": "Poland",
+      "cities": [
+        "Poland"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "SE",
+      "country_name": "Sweden",
+      "cities": [
+        "Sweden"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "BR",
+      "country_name": "Brazil",
+      "cities": [
+        "Brazil"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "GR",
+      "country_name": "Greece",
+      "cities": [
+        "Greece"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "SK",
+      "country_name": "Slovakia",
+      "cities": [
+        "Slovakia"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "UM",
+      "country_name": "U.S. Outlying Islands",
+      "cities": [
+        "U.S. Outlying Islands"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "MA",
+      "country_name": "Morocco",
+      "cities": [
+        "Morocco"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "AT",
+      "country_name": "Austria",
+      "cities": [
+        "Austria"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "cities": [
+        "Czech Republic"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "HK",
+      "country_name": "Hong Kong",
+      "cities": [
+        "Hong Kong"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "IL",
+      "country_name": "Israel",
+      "cities": [
+        "Israel"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "KR",
+      "country_name": "South Korea",
+      "cities": [
+        "South Korea"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "MY",
+      "country_name": "Malaysia",
+      "cities": [
+        "Malaysia"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "PT",
+      "country_name": "Portugal",
+      "cities": [
+        "Portugal"
+      ],
+      "language": "multi"
+    },
+    {
+      "country_code": "SG",
+      "country_name": "Singapore",
+      "cities": [
+        "Singapore"
+      ],
+      "language": "multi"
+    }
+  ],
+  "lead_generation_locations": [
+    {
+      "location": "Sydney, Australia",
+      "country_code": "AU",
+      "language": "en"
+    },
+    {
+      "location": "Melbourne, Australia",
+      "country_code": "AU",
+      "language": "en"
+    },
+    {
+      "location": "Brisbane, Australia",
+      "country_code": "AU",
+      "language": "en"
+    },
+    {
+      "location": "Perth, Australia",
+      "country_code": "AU",
+      "language": "en"
+    },
+    {
+      "location": "Adelaide, Australia",
+      "country_code": "AU",
+      "language": "en"
+    },
+    {
+      "location": "Toronto, Canada",
+      "country_code": "CA",
+      "language": "en"
+    },
+    {
+      "location": "Vancouver, Canada",
+      "country_code": "CA",
+      "language": "en"
+    },
+    {
+      "location": "Montreal, Canada",
+      "country_code": "CA",
+      "language": "en"
+    },
+    {
+      "location": "Calgary, Canada",
+      "country_code": "CA",
+      "language": "en"
+    },
+    {
+      "location": "Ottawa, Canada",
+      "country_code": "CA",
+      "language": "en"
+    },
+    {
+      "location": "Edmonton, Canada",
+      "country_code": "CA",
+      "language": "en"
+    },
+    {
+      "location": "London, United Kingdom",
+      "country_code": "GB",
+      "language": "en"
+    },
+    {
+      "location": "Manchester, United Kingdom",
+      "country_code": "GB",
+      "language": "en"
+    },
+    {
+      "location": "Birmingham, United Kingdom",
+      "country_code": "GB",
+      "language": "en"
+    },
+    {
+      "location": "Leeds, United Kingdom",
+      "country_code": "GB",
+      "language": "en"
+    },
+    {
+      "location": "Glasgow, United Kingdom",
+      "country_code": "GB",
+      "language": "en"
+    },
+    {
+      "location": "Edinburgh, United Kingdom",
+      "country_code": "GB",
+      "language": "en"
+    },
+    {
+      "location": "New Zealand, New Zealand",
+      "country_code": "NZ",
+      "language": "multi"
+    },
+    {
+      "location": "New York, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Los Angeles, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Chicago, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Houston, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Phoenix, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Philadelphia, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "San Francisco, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Miami, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Seattle, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Boston, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Atlanta, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "Dallas, United States",
+      "country_code": "US",
+      "language": "en"
+    },
+    {
+      "location": "United Arab Emirates, United Arab Emirates",
+      "country_code": "AE",
+      "language": "multi"
+    },
+    {
+      "location": "Belgium, Belgium",
+      "country_code": "BE",
+      "language": "multi"
+    },
+    {
+      "location": "Switzerland, Switzerland",
+      "country_code": "CH",
+      "language": "multi"
+    },
+    {
+      "location": "Berlin, Germany",
+      "country_code": "DE",
+      "language": "multi"
+    },
+    {
+      "location": "Munich, Germany",
+      "country_code": "DE",
+      "language": "multi"
+    },
+    {
+      "location": "Hamburg, Germany",
+      "country_code": "DE",
+      "language": "multi"
+    },
+    {
+      "location": "Frankfurt, Germany",
+      "country_code": "DE",
+      "language": "multi"
+    },
+    {
+      "location": "Cologne, Germany",
+      "country_code": "DE",
+      "language": "multi"
+    },
+    {
+      "location": "Denmark, Denmark",
+      "country_code": "DK",
+      "language": "multi"
+    },
+    {
+      "location": "Spain, Spain",
+      "country_code": "ES",
+      "language": "multi"
+    },
+    {
+      "location": "Finland, Finland",
+      "country_code": "FI",
+      "language": "multi"
+    },
+    {
+      "location": "Paris, France",
+      "country_code": "FR",
+      "language": "multi"
+    },
+    {
+      "location": "Marseille, France",
+      "country_code": "FR",
+      "language": "multi"
+    },
+    {
+      "location": "Lyon, France",
+      "country_code": "FR",
+      "language": "multi"
+    },
+    {
+      "location": "Toulouse, France",
+      "country_code": "FR",
+      "language": "multi"
+    },
+    {
+      "location": "Nice, France",
+      "country_code": "FR",
+      "language": "multi"
+    },
+    {
+      "location": "Ireland, Ireland",
+      "country_code": "IE",
+      "language": "multi"
+    },
+    {
+      "location": "Italy, Italy",
+      "country_code": "IT",
+      "language": "multi"
+    },
+    {
+      "location": "Japan, Japan",
+      "country_code": "JP",
+      "language": "multi"
+    },
+    {
+      "location": "Netherlands, Netherlands",
+      "country_code": "NL",
+      "language": "multi"
+    },
+    {
+      "location": "Norway, Norway",
+      "country_code": "NO",
+      "language": "multi"
+    },
+    {
+      "location": "Poland, Poland",
+      "country_code": "PL",
+      "language": "multi"
+    },
+    {
+      "location": "Sweden, Sweden",
+      "country_code": "SE",
+      "language": "multi"
+    },
+    {
+      "location": "Brazil, Brazil",
+      "country_code": "BR",
+      "language": "multi"
+    },
+    {
+      "location": "Greece, Greece",
+      "country_code": "GR",
+      "language": "multi"
+    },
+    {
+      "location": "Slovakia, Slovakia",
+      "country_code": "SK",
+      "language": "multi"
+    },
+    {
+      "location": "U.S. Outlying Islands, U.S. Outlying Islands",
+      "country_code": "UM",
+      "language": "multi"
+    },
+    {
+      "location": "Morocco, Morocco",
+      "country_code": "MA",
+      "language": "multi"
+    },
+    {
+      "location": "Austria, Austria",
+      "country_code": "AT",
+      "language": "multi"
+    },
+    {
+      "location": "Czech Republic, Czech Republic",
+      "country_code": "CZ",
+      "language": "multi"
+    },
+    {
+      "location": "Hong Kong, Hong Kong",
+      "country_code": "HK",
+      "language": "multi"
+    },
+    {
+      "location": "Israel, Israel",
+      "country_code": "IL",
+      "language": "multi"
+    },
+    {
+      "location": "South Korea, South Korea",
+      "country_code": "KR",
+      "language": "multi"
+    },
+    {
+      "location": "Malaysia, Malaysia",
+      "country_code": "MY",
+      "language": "multi"
+    },
+    {
+      "location": "Portugal, Portugal",
+      "country_code": "PT",
+      "language": "multi"
+    },
+    {
+      "location": "Singapore, Singapore",
+      "country_code": "SG",
+      "language": "multi"
+    }
+  ]
+}

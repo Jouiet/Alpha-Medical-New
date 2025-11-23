@@ -1,0 +1,53 @@
+======================================================================
+TEST SCRAPING RUN: 2025-11-22 23:16:56
+======================================================================
+Testing Instagram scraping...
+
+📸 Scraping Instagram Hashtags: arthritis
+   Max posts per hashtag: 50
+   Run ID: O9FZGGEKKVd0S2Zfv
+   ⏳ Waiting for completion...   ⏳ Waiting for completion... 0s   ⏳ Waiting for completion... 5s   ⏳ Waiting for completion... 10s   ⏳ Waiting for completion... 15s ✅ (16.8s)
+✅ Scraped 50 Instagram posts
+
+✅ Generated 3 qualified leads from Instagram
+
+💾 Saved 3 leads to: /Users/mac/Desktop/Alpha-Medical/market-analysis/leads/general/leads_general_instagram_20251122_231718.json
+✅ Instagram scraping successful
+✅ Lead file created: leads/general/leads_general_instagram_20251122_231718.json
+Testing CSV export...
+======================================================================
+SHOPIFY CSV EXPORT
+======================================================================
+Input:  leads/general/leads_general_instagram_20251122_231718.json
+Output: shopify_import_20251122_231718.csv
+======================================================================
+
+✅ Loaded 3 leads from leads/general/leads_general_instagram_20251122_231718.json
+   [1/3] ⚠️  Skipped: Unknown (no contact info)
+   [2/3] ⚠️  Skipped: Unknown (no contact info)
+   [3/3] ⚠️  Skipped: Unknown (no contact info)
+
+======================================================================
+CSV EXPORT COMPLETE
+======================================================================
+✅ Converted: 0/3 leads
+⚠️  Skipped: 3 leads (no contact info)
+
+📄 Output file: shopify_import_20251122_231718.csv
+
+📝 Next step:
+   1. Go to Shopify Admin → Customers
+   2. Click 'Import'
+   3. Upload: shopify_import_20251122_231718.csv
+   4. Review and import
+
+🎉 Export successful!
+✅ CSV export successful
+✅ Shopify CSV ready: shopify_import_20251122_231718.csv
+
+First 5 rows of CSV:
+First Name,Last Name,Email,Phone,Tags,Note
+
+======================================================================
+TEST COMPLETE - Check test_scraping_log.txt for results
+======================================================================

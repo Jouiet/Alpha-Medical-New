@@ -1,0 +1,806 @@
+# UGC TESTIMONIAL TEMPLATE - COMPLETE GUIDE
+# Duration: 15 seconds | Format: 9:16 vertical
+# Best for: All demographics, authenticity, social proof, cold audiences
+
+**Template Version:** 2.0
+**Word Count:** ~1000 words (complete reference)
+**Last Updated:** 2025-11-23
+
+---
+
+## 📋 TEMPLATE OVERVIEW
+
+**What is UGC (User-Generated Content)?**
+UGC testimonial videos simulate authentic customer reviews. They feature real-looking people sharing genuine experiences with your product, not polished brand advertisements. This format dominates TikTok, Instagram Reels, and Facebook Reels because audiences trust peer recommendations over corporate messaging.
+
+**Why This Format Works:**
+- 4x higher CTR vs traditional ads (2025 data)
+- 70% more engagement on Instagram vs branded content
+- 57% of Gen Z prefer short authentic videos
+- Stops scroll in first 3 seconds (critical for mobile)
+- Works WITHOUT sound (85% mobile users)
+
+**Performance Benchmarks (Expected):**
+- CTR: 1.5-3% (good), >3% (excellent)
+- CPC: $0.80-$1.50 (good), <$0.80 (excellent)
+- 3-sec view rate: >60% target
+- ROAS: >2.0x minimum, >3.0x scale-worthy
+
+---
+
+## 🎬 SCRIPT STRUCTURE (15 SECONDS)
+
+### [0-3 sec] HOOK - Grab Attention IMMEDIATELY
+
+**Purpose:** Stop the scroll within 1 second. Mobile users scroll 300+ posts/hour.
+
+**Formula: Personal Struggle + Relatable Pain**
+
+**{PAIN_POINT_STATEMENT}** - Replace with one of these patterns:
+
+**Pattern 1: "I couldn't..." (Lost capability)**
+Examples:
+- "I couldn't run for 6 months because of knee pain..."
+- "I couldn't sleep through the night without back pain..."
+- "I couldn't play with my grandkids without knee stiffness..."
+- "I couldn't sit at my desk for more than 2 hours..."
+
+**Pattern 2: "My [body part] used to..." (Past suffering)**
+Examples:
+- "My knees used to ache every winter morning..."
+- "My back used to hurt after every workday..."
+- "My shoulders used to be so tense I got headaches..."
+- "My feet used to swell up every evening..."
+
+**Pattern 3: "[Condition] made..." (Condition impact)**
+Examples:
+- "Arthritis made simple tasks impossible..."
+- "Chronic pain made me miss family events..."
+- "Knee inflammation made stairs my enemy..."
+- "Sciatica made driving unbearable..."
+
+**Pattern 4: "Stop scrolling if..." (Direct interrupt)**
+Examples:
+- "Stop scrolling if knee pain holds you back..."
+- "Stop if you wake up with back pain..."
+- "Attention if arthritis limits your life..."
+
+**Hook Selection Guide:**
+- **Seniors (65+):** Pattern 2 or 3 (relate to chronic conditions)
+- **Office Workers (25-55):** Pattern 1 or 2 (lost productivity)
+- **Athletes (18-45):** Pattern 1 or 4 (performance impact)
+
+**CRITICAL:** First 3 words = most important. Example:
+✅ GOOD: "I couldn't run..." (clear pain point)
+❌ BAD: "Have you ever experienced..." (too vague, slow)
+
+**Visual Direction for Creatify:**
+- Avatar: Slightly concerned expression (not overdramatic)
+- Setting: Relatable to pain (outdoor if mobility, desk if office, home if daily)
+- Body language: Subtle discomfort memory (hand on knee/back if appropriate)
+
+---
+
+### [4-7 sec] PROBLEM → SOLUTION - The Discovery
+
+**Purpose:** Introduce product as the solution that changed everything.
+
+**Formula: Transition + Product Introduction**
+
+**Standard Script:**
+"...until I discovered {PRODUCT_NAME}."
+
+**{PRODUCT_NAME}** - Use FULL descriptive name for credibility:
+✅ GOOD: "...these heated knee pads." (descriptive)
+✅ GOOD: "...this magnetic posture corrector." (feature included)
+❌ BAD: "...this product." (too generic)
+❌ BAD: "...Alpha Medical." (brand only, not descriptive)
+
+**Advanced Variations:**
+
+**Variation A: Friend/Authority Recommendation**
+"...until my physical therapist recommended {PRODUCT_NAME}."
+"...until my friend who's a nurse told me about {PRODUCT_NAME}."
+"...until I found {PRODUCT_NAME} recommended by 2,000+ seniors."
+
+**Variation B: Research/Discovery**
+"...until I discovered {PRODUCT_NAME} used in 500+ PT clinics."
+"...until I found {PRODUCT_NAME} with actual medical-grade support."
+
+**Variation C: Desperation/Last Resort**
+"...until I gave {PRODUCT_NAME} one last try."
+"...until I invested in professional-grade {PRODUCT_NAME}."
+
+**Visual Direction:**
+- CRITICAL: Show product here! Avatar holding product OR product image insert
+- Product should be clearly visible for 2-3 seconds
+- If avatar holding: Natural grip, not stiff/posed
+- Lighting: Product well-lit, features visible
+- Expression: Relief, discovery moment
+
+**Creatify Product Image Options:**
+1. Avatar holding product (if BYOA or appropriate stock avatar)
+2. Product image overlay (upload hero image from assets)
+3. Cut to product close-up (if Creatify supports B-roll)
+
+---
+
+### [8-11 sec] DEMONSTRATION - Proof of Results
+
+**Purpose:** Prove the benefit with specific, tangible results. NOT vague claims.
+
+**Formula: Result + USP #1 + USP #2**
+
+**Full Script Pattern:**
+"{BENEFIT_STATEMENT}. {USP_1}. {USP_2}."
+
+**{BENEFIT_STATEMENT}** - Specific outcome achieved:
+
+**For Pain Relief Products:**
+- "Now I'm back to 5K runs. Zero pain."
+- "I can finally sleep through the night."
+- "Stairs are no longer my enemy."
+- "I played with my grandkids pain-free all day."
+
+**For Support/Posture Products:**
+- "My posture improved in just 2 weeks."
+- "I can work 8 hours without back pain now."
+- "All-day comfort. I barely notice I'm wearing it."
+
+**For Heated/Seasonal Products:**
+- "Self-heating technology. Works even in -10°C."
+- "Warm relief all winter long. No batteries needed."
+
+**{USP_1}** - First unique selling point (differentiator):
+- "Self-heating technology." (Tourmaline pads)
+- "Six steel stays support." (Back brace)
+- "Magnetic therapy nodes." (Magnetic products)
+- "Medical-grade compression." (Professional products)
+
+**{USP_2}** - Second unique selling point:
+- "Works even in -10°C." (Winter products)
+- "All-day comfort." (Long-wear products)
+- "Professional-grade quality." (Premium positioning)
+- "FDA registered device." (Credibility)
+
+**USP Selection Guide:**
+
+| Product Type | USP #1 Focus | USP #2 Focus |
+|--------------|--------------|--------------|
+| Heated/Winter | Heating technology | Temperature range |
+| Support/Brace | Support structure (stays, hinges) | Comfort/wearability |
+| Magnetic | Magnetic therapy | Pain relief speed |
+| Compression | Compression level | Breathability |
+| Posture | Correction mechanism | Discretion |
+
+**Visual Direction:**
+- Show benefit: Avatar active, smiling, moving
+- Demonstrate usage: Product visible being worn
+- Energy shift: From concerned (hook) to relieved/happy
+- Setting change: From pain context to relief context (optional)
+
+**Text Overlay (Creatify):**
+Display at 9-10 seconds:
+- Position: Top-center
+- Text: "{Primary USP} [icon]"
+- Examples:
+  - "Self-Heating Technology ❄️→🔥"
+  - "Medical-Grade Support ⭐"
+  - "6 Steel Stays 🔩"
+- Font: Bold, large, high contrast
+- Duration: 2-3 seconds
+- Animation: Fade in/out
+
+---
+
+### [12-15 sec] CTA - Call to Action + Offer
+
+**Purpose:** Drive action with clear instructions + urgency/value.
+
+**Formula: Action + Urgency/Value**
+
+**Standard CTA Options:**
+
+**Option 1: Simple Direct**
+"Link in bio. You won't regret it."
+
+**Option 2: Confidence/Guarantee**
+"Try it risk-free. Link in bio."
+"30-day guarantee. Link in bio."
+
+**Option 3: Social Proof Close**
+"Join 2,000+ pain-free customers. Link in bio."
+"See why 500+ seniors love it. Link in bio."
+
+**Option 4: Urgency**
+"Limited stock. Get yours today."
+"Sale ends soon. Link in bio."
+
+**Option 5: Benefit Reminder**
+"Your pain-free life starts here. Link in bio."
+"Wake up pain-free tomorrow. Link in bio."
+
+**CTA Selection Guide:**
+- **Cold audiences:** Option 2 or 3 (reduce risk, add proof)
+- **Warm audiences:** Option 1 or 4 (simpler, more direct)
+- **High-priced (>$100):** Option 2 (emphasize guarantee)
+- **Time-sensitive:** Option 4 (urgency)
+
+**Visual Direction:**
+- Avatar: Direct eye contact (if possible)
+- Expression: Genuine recommendation, friend-to-friend
+- Optional: Point to overlay text (natural gesture)
+- Product: Can be visible or in background
+
+**Text Overlay (Creatify) - MANDATORY:**
+Display at 12-15 seconds:
+- Position: Bottom (above captions if both present)
+- Text: "alphamedical.shop | -{DISCOUNT}% CODE: {CODE}"
+- Examples:
+  - "alphamedical.shop | -20% CODE: WARMKNEES20"
+  - "alphamedical.shop | -25% CODE: OFFICE25"
+  - "alphamedical.shop | -30% CODE: WINTER30"
+- Font: Bold, ultra-readable
+- Colors: High contrast (white on dark background or vice versa)
+- Duration: Full 3 seconds (must be readable)
+- Size: Large enough for mobile
+
+**{DISCOUNT}** - Percentage off:
+- 15-20%: Standard testing
+- 25%: Strong offer, office workers
+- 30%: Bundle or high-ticket
+- 40%+: Clearance only (devalues brand)
+
+**{CODE}** - Discount code naming:
+- Format: [CONTEXT][NUMBER]
+- Examples: WARMKNEES20, OFFICE25, SENIOR20, ATHLETE25
+- Max length: 15 characters (readability)
+- Easy to remember + type
+
+---
+
+## 🎨 CREATIFY CONFIGURATION GUIDE
+
+### Avatar Selection (Critical for UGC Feel)
+
+**Demographics Matching:**
+
+**For Seniors 65+ Products:**
+- Age: 60-70 years old
+- Gender: Match primary audience or 50/50 test
+- Appearance: Warm, trustworthy, relatable (not model-perfect)
+- Clothing: Casual comfortable (cardigan, polo, casual shirt)
+- Setting: Home, outdoor park, living room
+- Expression: Genuine, not over-acted
+- Ethnicity: Diverse or match primary market
+
+**Search Terms Creatify:**
+- "mature woman outdoor winter"
+- "senior man casual home"
+- "grandmother warm smile"
+- "grandfather active lifestyle"
+
+**For Office Workers 25-55:**
+- Age: 35-50 years old
+- Appearance: Professional but approachable
+- Clothing: Business casual (polo, blouse, smart casual)
+- Setting: Home office, desk, indoor neutral
+- Expression: Relatable work stress → relief
+- Tech: Can have laptop/desk visible (context)
+
+**Search Terms:**
+- "professional woman desk"
+- "businessman casual office"
+- "remote worker home"
+
+**For Athletes 18-45:**
+- Age: 25-40 years old
+- Appearance: Fit, active, energetic
+- Clothing: Activewear (athletic tee, sports attire)
+- Setting: Gym, outdoor park, home gym
+- Expression: Confident, performance-focused
+- Energy: Higher than seniors (more dynamic)
+
+**Search Terms:**
+- "athletic woman gym"
+- "runner outdoor park"
+- "fitness enthusiast"
+
+**Avatar Quality Check:**
+- [ ] Lip-sync looks natural (preview test)
+- [ ] Not "uncanny valley" creepy
+- [ ] Expressions authentic (not robotic)
+- [ ] Matches target demo age ±5 years
+- [ ] Setting appropriate for product
+
+**Pro Tip:** Test 3 avatars in preview (FREE) before rendering. Pick most natural lip-sync.
+
+---
+
+### Voice Selection (Tone is Everything)
+
+**Voice Characteristics by Persona:**
+
+**Seniors:**
+- Age: Mature (45-65 voice age)
+- Gender: Female often higher trust, Male for credibility (A/B test)
+- Tone: Warm, reassuring, grateful
+- Emotion: Relief, genuine appreciation (not salesy)
+- Pace: Normal to slightly slower (0.9-1.0x)
+- Accent: Neutral American or Canadian
+
+**Creatify Voice Search:**
+- Filter: Age "Mature", Tone "Warm" or "Natural"
+- Test: "Conversational Female Warm" or "Mature Male Reassuring"
+- Avoid: "Professional Corporate" (too formal), "Energetic Young" (mismatch)
+
+**Office Workers:**
+- Age: Mid-range (35-50 voice age)
+- Tone: Professional yet friendly, relatable
+- Emotion: Confident, solution-oriented
+- Pace: Normal (1.0x)
+- Style: Conversational, peer-to-peer
+
+**Creatify Voice Search:**
+- "Natural Conversational Woman"
+- "Friendly Professional Male"
+
+**Athletes:**
+- Age: Younger (25-40 voice age)
+- Tone: Energetic, dynamic, confident
+- Emotion: Enthusiastic, performance-focused
+- Pace: Slightly faster (1.0-1.1x)
+- Style: Motivational, authentic
+
+**Creatify Voice Search:**
+- "Energetic Female"
+- "Dynamic Male Confident"
+
+**Voice Quality Check:**
+- [ ] Matches avatar age/appearance
+- [ ] Emotion appropriate for script
+- [ ] NOT robotic or monotone
+- [ ] Clear pronunciation (test medical terms)
+- [ ] Pacing feels natural
+
+**Pro Tip:** If voice sounds robotic, switch to "Natural" or "Conversational" category. Avoid "AI" or "Synthetic" labeled voices.
+
+---
+
+### Captions (MANDATORY - 85% watch without sound)
+
+**Creatify Settings:**
+```
+Enable Captions: YES (non-negotiable)
+Style: White text, black semi-transparent box background
+Font: Sans-serif, bold weight (max readability)
+Size: Medium-Large (mobile-optimized)
+Position: Bottom-center (standard)
+Timing: Auto-sync with voice (verify in preview)
+```
+
+**Caption Best Practices:**
+- Max 2 lines on screen simultaneously
+- 3-4 words per line (readability)
+- Full script must be captioned (not just keywords)
+- Sync timing: <0.3 second delay acceptable
+- Special characters: Use emojis sparingly (❄️, 🔥, ⭐ OK)
+
+**Quality Check:**
+- [ ] All words spelled correctly (especially product name)
+- [ ] Timing syncs with audio
+- [ ] Readable on mobile (test 6" screen if possible)
+- [ ] No truncation (all text visible)
+- [ ] High contrast (white on black or inverse)
+
+**Common Caption Errors to Fix:**
+- ❌ Product name misspelled
+- ❌ Discount code wrong
+- ❌ Medical terms incorrect
+- ❌ Too small font size
+- ❌ Sync delay >1 second
+
+---
+
+### Background Music
+
+**Creatify Settings:**
+```
+Add Background Music: YES
+Genre: Upbeat Soft, Inspirational, Calm
+Volume: -18dB to -20dB (subtle, does NOT overpower voice)
+Mood: Positive, warm, friendly (not aggressive)
+```
+
+**Genre Selection by Product:**
+
+| Product Type | Music Genre | Mood |
+|--------------|-------------|------|
+| Pain Relief (Seniors) | Calm Inspirational | Hopeful, warm |
+| Office/Posture | Upbeat Soft | Productive, positive |
+| Athletic/Performance | Energetic Modern | Motivational, dynamic |
+| Winter/Seasonal | Calm Winter, Soft Ambient | Cozy, reassuring |
+
+**Volume Critical:**
+- -18dB: Noticeable but doesn't compete with voice
+- -20dB: Very subtle background (safest)
+- -15dB: Too loud (will overpower voice)
+- Test in preview: Can you hear every word clearly?
+
+**Quality Check:**
+- [ ] Music doesn't overpower voice
+- [ ] Mood matches script emotion
+- [ ] No jarring transitions
+- [ ] Volume consistent throughout
+
+**Pro Tip:** When in doubt, go quieter (-20dB). Voice clarity > music presence.
+
+---
+
+### Text Overlays (Visual Reinforcement)
+
+**Overlay #1: USP Highlight (8-11 sec)**
+```
+Text: "{Primary USP} [optional icon]"
+Examples:
+  - "Self-Heating Technology ❄️→🔥"
+  - "Medical-Grade Support ⭐"
+  - "6 Steel Stays 🔩"
+  - "Magnetic Therapy 🧲"
+Position: Top-center or mid-center
+Font: Bold, sans-serif, very large
+Colors: High contrast (white on dark overlay, or brand colors)
+Duration: 2-3 seconds
+Animation: Fade in + fade out (smooth)
+```
+
+**Overlay #2: CTA + Discount (12-15 sec)**
+```
+Text: "alphamedical.shop | -{DISCOUNT}% CODE: {CODE}"
+Example: "alphamedical.shop | -20% CODE: WARMKNEES20"
+Position: Bottom (above captions if present)
+Font: Bold, ultra-readable, large
+Colors: Brand colors or white/black high contrast
+Duration: Full 3 seconds (must be readable)
+Animation: None or simple fade in (must be readable entire time)
+```
+
+**Overlay Best Practices:**
+- Maximum 2 overlays per 15-sec video
+- Don't cover avatar face
+- High contrast always (mobile sunlight test)
+- Short text only (max 6-8 words)
+- Icons/emojis optional (add personality)
+
+---
+
+## 📊 CUSTOMIZATION VARIABLES REFERENCE
+
+### Complete Variables List
+
+**{PAIN_POINT_STATEMENT}** - Opening hook
+- Type: Question or statement
+- Length: 8-12 words max
+- Tone: Relatable, specific, emotional
+- Example: "My knees used to ache every winter morning..."
+
+**{PRODUCT_NAME}** - Product introduction
+- Type: Descriptive product name
+- Format: "these {adjective} {product type}" or "this {feature} {product}"
+- NOT just brand name
+- Example: "these heated knee pads" NOT "Alpha Medical"
+
+**{BENEFIT_STATEMENT}** - Primary result achieved
+- Type: Specific outcome statement
+- Length: 6-10 words
+- Tone: Confident, proven, measurable if possible
+- Example: "Now I'm back to 5K runs. Zero pain."
+
+**{USP_1}** - First unique selling point
+- Type: Technical feature or key differentiator
+- Length: 2-4 words
+- Focus: What makes product different
+- Example: "Self-heating technology" or "Six steel stays"
+
+**{USP_2}** - Second unique selling point
+- Type: Benefit, performance, or credibility
+- Length: 3-6 words
+- Focus: Complement USP #1 (different angle)
+- Example: "Works even in -10°C" or "FDA registered device"
+
+**{DISCOUNT}** - Percentage off
+- Type: Number only (no % symbol needed)
+- Range: 15-30 typical, 40+ clearance
+- Example: 20 (for 20% off)
+
+**{CODE}** - Discount code
+- Type: Alphanumeric code
+- Format: CONTEXT + NUMBER
+- Length: 6-15 characters max
+- Example: WARMKNEES20, OFFICE25, SENIOR20
+
+---
+
+## ✅ QUALITY CHECKLIST
+
+### Pre-Render Checklist
+
+**Script Quality:**
+- [ ] Hook is relatable and specific (not generic)
+- [ ] Product name is descriptive (not just brand)
+- [ ] Benefits are tangible and proven
+- [ ] USPs are unique differentiators (not generic features)
+- [ ] CTA is clear and actionable
+- [ ] Discount code is correct and active
+- [ ] Total duration ~15 seconds when read naturally
+
+**Creatify Settings:**
+- [ ] Avatar matches target demographic (age, appearance, setting)
+- [ ] Voice matches avatar + persona (tone, age, emotion)
+- [ ] Captions ENABLED (white/black, readable)
+- [ ] Music subtle (-18 to -20dB, doesn't overpower voice)
+- [ ] Text overlay #1 (USP) configured correctly
+- [ ] Text overlay #2 (CTA + code) configured correctly
+- [ ] Format 9:16 vertical (1080x1920)
+- [ ] Duration set to 15 seconds
+
+**Preview Testing:**
+- [ ] Watched preview minimum 2 times
+- [ ] Lip-sync natural (no delay >0.5 sec)
+- [ ] Hook grabs attention in first 3 seconds
+- [ ] Product clearly visible at 4-7 seconds
+- [ ] Captions readable on mobile
+- [ ] Music volume appropriate
+- [ ] All text overlays appear at right time
+- [ ] CTA + discount code visible final 3 seconds
+
+**Mobile Optimization:**
+- [ ] Hook works WITHOUT sound (visual + captions)
+- [ ] Text large enough for 6" phone screen
+- [ ] Product image clear and visible
+- [ ] No critical info in top/bottom 10% (UI overlap)
+
+---
+
+## 🎯 BEST USED FOR
+
+**Optimal Use Cases:**
+
+✅ **Cold Audiences** (Prospecting new customers)
+- Builds trust through peer recommendation
+- Overcomes ad skepticism
+- Relatable storytelling
+
+✅ **Mobile-First Platforms**
+- TikTok (native format)
+- Instagram Reels (high engagement)
+- Facebook Reels (growing placement)
+
+✅ **Lower to Mid-Priced Products** ($30-$100)
+- Impulse purchase range
+- Low consideration time
+- Quick decision-making
+
+✅ **Relatable Pain Points**
+- Common problems (pain, discomfort, frustration)
+- Widely experienced (not niche)
+- Emotional resonance
+
+✅ **Building Trust & Authenticity**
+- First-time brand exposure
+- Skeptical audiences
+- Competitive markets
+
+**NOT Optimal For:**
+
+❌ Complex products requiring detailed explanation
+❌ High-ticket items (>$200) needing more education
+❌ B2B professional services
+❌ Products without visual before/after
+❌ Technical/industrial products
+
+---
+
+## 📈 PERFORMANCE OPTIMIZATION
+
+### A/B Testing Variations
+
+**Test these elements systematically:**
+
+**Variation 1: Hook Angle**
+- Version A: Pain-focused ("I couldn't...")
+- Version B: Discovery-focused ("Stop scrolling if...")
+- Version C: Authority-led ("My therapist recommended...")
+
+**Variation 2: Avatar Demographics**
+- Version A: Female 60-65
+- Version B: Male 60-65
+- Version C: Female 50-55 (younger)
+
+**Variation 3: Voice Tone**
+- Version A: Warm grateful
+- Version B: Confident assertive
+- Version C: Energetic enthusiastic
+
+**Variation 4: CTA Approach**
+- Version A: Simple direct ("Link in bio")
+- Version B: Guarantee-focused ("Try risk-free")
+- Version C: Social proof ("Join 2,000+ customers")
+
+**Testing Protocol:**
+- Test 1 variable at a time
+- Run each variation 7 days minimum
+- Minimum 1,000 impressions per variation
+- Compare CTR as primary metric
+- Scale winner, iterate loser
+
+---
+
+## 📝 COMPLETE EXAMPLE: TOURMALINE KNEE PADS
+
+**Product:** Tourmaline Magnetic Knee Pads | Self-Heating Support
+**Target:** Seniors 65+, winter pain sufferers
+**Platform:** TikTok + IG Reels
+**Budget:** $60 (7 days)
+
+### FINAL SCRIPT
+
+```
+[0-3 sec] HOOK
+"My knees used to ache every winter morning..."
+
+[4-7 sec] PROBLEM → SOLUTION
+"...until I discovered these heated knee pads."
+[Visual: Avatar holds up knee pads, clearly visible]
+
+[8-11 sec] DEMONSTRATION
+"Self-heating technology. No more pain, even in -10°C. All-day warmth."
+[Visual: Avatar smiling, gesturing positively]
+[Text Overlay: "Self-Heating Technology ❄️→🔥"]
+
+[12-15 sec] CTA
+"Magnetic therapy that actually works. Link in bio."
+[Text Overlay: "alphamedical.shop | -20% CODE: WARMKNEES20"]
+```
+
+### CREATIFY CONFIGURATION
+
+**Avatar:**
+- Search: "mature woman outdoor winter"
+- Age: 62-68
+- Gender: Female
+- Clothing: Warm cardigan, casual
+- Setting: Outdoor park (winter feel) or cozy home
+- Expression: Genuine relief, warm smile
+
+**Voice:**
+- Filter: Mature Female, Warm tone
+- Selection: "Conversational Female Mature" or "Warm Grandmother Voice"
+- Language: English (US)
+- Speed: 1.0x (normal)
+- Emotion: Grateful, relieved
+
+**Customization:**
+- Format: 9:16 vertical (1080x1920)
+- Duration: 15 seconds exactly
+- Captions: YES - white text, black box, bottom-center
+- Music: "Calm Inspirational", -18dB volume
+- Overlay 1: "Self-Heating Technology ❄️→🔥" at 9 sec, 3 sec duration
+- Overlay 2: "alphamedical.shop | -20% CODE: WARMKNEES20" at 12 sec, 3 sec duration
+
+### EXPECTED PERFORMANCE
+
+**Benchmarks:**
+- CTR: 2-3% (winter seasonal + strong pain point)
+- CPC: $0.90-$1.30 (seniors demographic)
+- 3-sec view rate: 65-75% (strong hook)
+- ROAS: 2.5-3.5x (if product delivers)
+
+**Success Criteria:**
+- ✅ CTR >2% = Good, continue
+- ✅ CPC <$1.50 = Good, continue
+- ✅ ROAS >2.0x = Profitable, scale
+- 🔄 If metrics below = Iterate hook or avatar
+
+---
+
+## 🔄 ITERATION GUIDE
+
+**If Video Underperforms (<1.5% CTR):**
+
+1. **Change Hook** (easiest, highest impact)
+   - Try different pain point angle
+   - Test authority recommendation
+   - Use pattern interruption ("Stop scrolling...")
+
+2. **Change Avatar** (medium effort, high impact)
+   - Test different age (±10 years)
+   - Test opposite gender
+   - Different setting (outdoor vs indoor)
+
+3. **Adjust Voice** (easy, medium impact)
+   - More energetic tone
+   - Different gender
+   - Adjust emotion
+
+4. **Strengthen CTA** (easy, low-medium impact)
+   - Add urgency ("Limited stock...")
+   - Add guarantee ("Risk-free trial...")
+   - Add social proof ("Join 2,000+ customers...")
+
+5. **Increase Discount** (last resort, margin impact)
+   - From 20% → 25% or 30%
+   - Test bundle offers
+   - Limited-time framing
+
+**Iterate one variable at a time.** Track what changes improve CTR.
+
+---
+
+## 🎓 ADVANCED TIPS
+
+**Psychology Hacks:**
+
+1. **Use "I" not "You"** in script (more relatable)
+   ✅ "I couldn't run..." (relatable)
+   ❌ "You can't run..." (accusatory)
+
+2. **Specific > Generic** always
+   ✅ "5K runs" (specific)
+   ❌ "exercise" (generic)
+
+3. **Numbers add credibility**
+   ✅ "2,000+ customers", "-10°C", "6 months"
+   ❌ "Many customers", "cold weather", "a while"
+
+4. **Show, don't just tell**
+   ✅ Product visible, avatar demonstrates
+   ❌ Just talking head
+
+5. **End on action, not fade**
+   ✅ "Link in bio." (direct command)
+   ❌ "Check it out if you want..." (weak)
+
+**Platform-Specific:**
+
+**TikTok:**
+- Fast hook (<2 sec ideal)
+- Use trending music (check TikTok trends)
+- More energetic pacing
+- Native feel (less polished OK)
+
+**Instagram Reels:**
+- Hook can be slightly longer (3 sec)
+- More polished aesthetic acceptable
+- Captions very important (default sound off)
+- Square format option (9:16 or 1:1 test)
+
+**Facebook Reels:**
+- Target older demographics works great
+- Sound often on (but caption anyway)
+- Longer watch time OK
+- Less trend-dependent
+
+---
+
+## 📞 SUPPORT & RESOURCES
+
+**Template Issues:**
+- Check: VIDEO_ADS_CREATION_PLAYBOOK.md
+- Section: "TROUBLESHOOTING"
+
+**Creatify Settings Help:**
+- Dashboard: https://app.creatify.ai
+- Support: [email protected]
+
+**Performance Tracking:**
+- Log all metrics: video-ads-assets/outputs/production-log.md
+- Compare variations: Track CTR/CPC/ROAS per version
+
+---
+
+**TEMPLATE VERSION:** 2.0
+**WORD COUNT:** ~1,000 words
+**STATUS:** ✅ Complete & Ready to Use
+
+**NEXT:** Copy this template, replace variables, create in Creatify!

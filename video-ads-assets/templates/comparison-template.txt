@@ -1,0 +1,725 @@
+# COMPARISON TEMPLATE
+**Type:** Product Comparison Video (Us vs Them)
+**Duration:** 25-30 seconds optimal
+**Format:** 1:1 square (1080x1080) OR 9:16 vertical (1080x1920)
+**Best For:** Competitive categories, premium positioning, skeptical audiences
+**UGC Score:** Medium (educational + persuasive, less emotional than UGC)
+**Platform Priority:** Facebook Feed > Instagram Reels > TikTok
+
+---
+
+## 🎬 COMPLETE SCRIPT STRUCTURE
+
+### [0-4 sec] HOOK - Problem with Alternatives
+
+**Opening Hook Patterns:**
+
+**Pattern 1: "Stop buying..." (Negative command + problem)**
+Examples:
+- "Stop buying cheap knee braces that fall apart in a month..."
+- "Stop wasting money on posture correctors that dig into your skin..."
+- "Stop settling for basic back supports with no real reinforcement..."
+
+**Pattern 2: "Most [products]..." (Category criticism)**
+Examples:
+- "Most knee braces are either too bulky or provide zero support..."
+- "Most posture correctors are uncomfortable after 10 minutes..."
+- "Most back supports use cheap elastic that loses compression fast..."
+
+**Pattern 3: "Why choose..." (Direct comparison setup)**
+Examples:
+- "Why choose our magnetic knee pads over standard braces?"
+- "Why pay more for our posture corrector? Let me show you..."
+- "Why is our back brace worth $20 more than drugstore options?"
+
+**Pattern 4: "There's a reason..." (Authority positioning)**
+Examples:
+- "There's a reason doctors recommend ours over cheaper alternatives..."
+- "There's a reason we have 4.8 stars and competitors have 3.2..."
+- "There's a reason 80% of customers switch to us and never go back..."
+
+**Hook Selection by Competitive Landscape:**
+- **Crowded market (many competitors):** Pattern 1 or 2 (differentiate aggressively)
+- **Price-sensitive audience:** Pattern 3 (justify premium)
+- **Quality-focused audience:** Pattern 4 (authority positioning)
+
+**Visual Direction for Creatify:**
+- Avatar: Slightly frustrated OR knowing/confident expression
+- Setting: Clean, professional (credibility)
+- Product: OUR product visible early (brand visibility)
+- Text overlay: Optional "⚠️ Before you buy..." or "Watch this first"
+
+---
+
+### [5-12 sec] COMPARISON POINTS - Feature-by-Feature
+
+**Comparison Structure: 3-Point Format**
+
+**POINT 1: Material/Quality (Most Important)**
+
+**Script Pattern:**
+```
+"Standard braces: {INFERIOR_MATERIAL} that {NEGATIVE_OUTCOME}.
+Our {PRODUCT}: {SUPERIOR_MATERIAL} that {POSITIVE_OUTCOME}."
+```
+
+**Examples:**
+- "Drugstore knee braces: thin neoprene that loses elasticity in weeks. Ours: medical-grade compression fabric with reinforced stitching that lasts years."
+- "Cheap posture correctors: scratchy elastic that digs into skin. Ours: breathable mesh with padded straps you can wear all day."
+- "Basic back supports: single-layer elastic with no structure. Ours: dual-layer compression with 6 steel stays for real lumbar support."
+
+**Visual Direction:**
+- Split screen OR side-by-side comparison
+- Left: Generic/competitor product (no brand visible)
+- Right: OUR product (clear branding)
+- Text overlay: "❌ Standard" (left) vs "✅ Ours" (right)
+
+---
+
+**POINT 2: Features/Technology**
+
+**Script Pattern:**
+```
+"Typical [products]: {MISSING_FEATURE}.
+Our {PRODUCT}: {UNIQUE_FEATURE} that {SPECIFIC_BENEFIT}."
+```
+
+**Examples:**
+- "Regular knee braces: no heating, no therapy. Ours: self-heating tourmaline nodes + 12 magnetic therapy points for active pain relief."
+- "Other posture correctors: just pull your shoulders back. Ours: 8 magnetic nodes along spine to retrain muscle memory naturally."
+- "Standard supports: one-size-fits-all that fits no one. Ours: 4-point adjustable compression for custom fit every time."
+
+**Visual Direction:**
+- Feature close-up: Show OUR unique feature (nodes, stays, adjustability)
+- Comparison graphic: Simple visual chart (Them vs Us)
+- Text overlay: Feature highlight (e.g., "Self-Heating Technology ❄️→🔥")
+
+---
+
+**POINT 3: Results/Longevity**
+
+**Script Pattern:**
+```
+"With cheap [products]: {SHORT-TERM_PROBLEM}.
+With ours: {LONG-TERM_BENEFIT}. {PROOF_ELEMENT}."
+```
+
+**Examples:**
+- "With cheap braces: pain relief for a week, then back to square one. With ours: lasting support that works for years. 8,000+ customers, 4.8 stars."
+- "With flimsy correctors: you stop wearing them after a few days. With ours: comfortable enough to wear 8+ hours daily. 85% still use after 6 months."
+- "With basic supports: you'll buy 3-4 replacements per year. With ours: one purchase, lifetime durability. 30-day money-back guarantee."
+
+**Visual Direction:**
+- Timeline graphic: Short-term vs Long-term
+- Customer testimonial quote overlay (if available)
+- Star rating visual: Ours 4.8⭐ vs Competitors 3.2⭐
+- Text overlay: Social proof number (e.g., "8,000+ Happy Customers")
+
+---
+
+### [13-20 sec] VALUE PROPOSITION - Why Worth It
+
+**Value Justification:**
+
+**Pattern 1: "Yes, it's $X more, but..." (Address price objection)**
+Examples:
+- "Yes, it's $20 more than drugstore options, but you'll never need to replace it."
+- "Yes, it costs more upfront, but compare: their $30 brace lasts 2 months. Ours lasts 2+ years."
+- "Higher price, yes. But you're paying for medical-grade quality, not disposable junk."
+
+**Pattern 2: "Think about it..." (ROI calculation)**
+Examples:
+- "Think about it: $60 once vs. $30 every few months. Which is actually cheaper?"
+- "Think about it: would you rather pay $40 for real relief or $15 for something that doesn't work?"
+- "Do the math: their $25 brace × 4 replacements per year = $100. Ours: $60 once. You save $40."
+
+**Pattern 3: "Invest in..." (Reframe as investment)**
+Examples:
+- "Invest in your health with a product that actually works."
+- "Invest once in quality instead of repeatedly buying cheap failures."
+- "Invest in something that lasts instead of temporary fixes."
+
+**Visual Direction:**
+- Avatar: Confident, holding OUR product
+- Price comparison graphic: Show cost-per-use or annual cost
+- Text overlay: Value equation (e.g., "$60 once vs $120/year")
+- Product: Final hero shot of OUR product
+
+---
+
+### [21-25 sec] SOCIAL PROOF & GUARANTEE
+
+**Proof Stacking:**
+
+**Script Pattern:**
+```
+"{CERTIFICATION/AUTHORITY}. {SOCIAL_PROOF_NUMBER}. {RISK_REVERSAL}."
+```
+
+**Examples:**
+- "FDA-registered. Over 10,000 verified customers. 30-day money-back guarantee if you're not thrilled."
+- "Doctor-recommended. 4.8 stars from 3,000+ reviews. Try it risk-free for 30 days."
+- "Medical-grade certified. Trusted by physiotherapists nationwide. Love it or return it, no questions asked."
+
+**Visual Direction:**
+- Certification badges: FDA, CE, medical-grade logos
+- Star rating: Large, prominent ⭐⭐⭐⭐⭐ 4.8/5
+- Guarantee seal: "30-Day Money-Back Guarantee" badge
+- Text overlay: Stack all proof elements together
+
+---
+
+### [26-30 sec] CALL TO ACTION
+
+**CTA Patterns:**
+
+**Pattern 1: "Make the switch..." (Competitive action)**
+- "Make the switch to quality. Get 20% off today with code UPGRADE20."
+- "Stop settling. Upgrade to the best. Link in bio."
+- "Make the smart choice. Order now at alphamedical.shop."
+
+**Pattern 2: "Limited offer..." (Urgency)**
+- "Limited stock available. Don't miss out. Code COMPARE20."
+- "Sale ends Sunday. Grab yours before it's too late."
+- "Only 47 left in stock. Order now."
+
+**Pattern 3: "Join thousands..." (Social proof CTA)**
+- "Join 10,000+ customers who made the switch. Link below."
+- "See why thousands choose us over cheap alternatives."
+- "Join the 4.8-star community. Order today."
+
+**Text Overlay (Last 4-5 seconds - MANDATORY):**
+```
+alphamedical.shop
+-20% CODE: {COMPARISON_CODE}
+30-DAY MONEY-BACK GUARANTEE
+FREE SHIPPING $50+
+```
+
+**Overlay Styling:**
+- Font: Bold sans-serif (high contrast)
+- Color: White text + dark background (maximum readability)
+- Position: Bottom third (mobile-safe)
+- Include: Discount + Guarantee (reduce purchase friction)
+
+---
+
+## 🎭 CREATIFY CONFIGURATION GUIDE
+
+### Avatar Selection (Credible Authority Figure)
+
+**Key Principle:** Trustworthy expert, not aggressive salesperson
+
+**For Premium Positioning (Justify Higher Price):**
+- Age: 40-55 (mature, experienced)
+- Appearance: Business casual or smart casual (button-down, blazer optional)
+- Setting: Professional home office or clean background
+- Demeanor: Confident, knowledgeable, slightly assertive (not pushy)
+- Expression: Knowing smile (you know the secret competitors won't tell you)
+
+**For Quality-Focused Messaging:**
+- Age: 45-60 (seasoned, seen it all)
+- Appearance: Professional casual (polo, cardigan, glasses = authority)
+- Setting: Well-lit home or office (credibility)
+- Demeanor: Helpful educator, insider sharing wisdom
+- Expression: Sincere, trustworthy, slight concern for viewer's wellbeing
+
+**For Value/ROI Positioning:**
+- Age: 35-50 (savvy shopper, practical)
+- Appearance: Casual professional (relatable, not corporate)
+- Setting: Home or realistic everyday setting
+- Demeanor: Friendly advisor, honest comparison
+- Expression: "I'm telling you this as a friend" vibe
+
+**Search Terms Creatify:**
+- "confident professional woman business casual indoor"
+- "trustworthy presenter mature office setting"
+- "knowledgeable man explaining product serious helpful"
+- "expert advisor friendly professional background"
+
+**AVOID:**
+- Overly formal (feels like corporate ad)
+- Too casual (reduces credibility for premium positioning)
+- Aggressive expression (comparison should educate, not attack)
+
+---
+
+### Voice Selection
+
+**Tone Characteristics:**
+- Gender: Neutral or match target demographic
+- Age: Mature (40-60) - experienced authority
+- Emotion: Confident + helpful (not condescending)
+- Pace: Medium (clear articulation of comparisons)
+
+**Voice Style:**
+- **Opening (hook):** Slightly critical but constructive (frustrated with inferior options)
+- **Comparison:** Clear, factual, matter-of-fact (state facts, not opinions)
+- **Value prop:** Confident, reassuring (this is the smart choice)
+- **CTA:** Warm invitation, no pressure (offer is there when ready)
+
+**Creatify Voice Filters:**
+- Language: English (US) - neutral, educated accent
+- Tone: Professional conversational
+- Energy: Medium (authoritative but approachable)
+- Clarity: Very high (comparisons must be crystal clear)
+
+**Search Terms Creatify:**
+- "authoritative voice professional comparison"
+- "confident presenter voice educational"
+- "mature voice trustworthy product review"
+
+**AVOID:**
+- Overly enthusiastic (reduces credibility)
+- Monotone (boring for 30 sec)
+- Condescending tone (alienates competitor users)
+
+---
+
+### Captions Configuration
+
+**MANDATORY for Comparisons:**
+✅ Captions ENABLED (complex information, fact retention critical)
+
+**Settings:**
+- Style: White text + black background (high contrast essential)
+- Font: Bold sans-serif (Montserrat Bold, Roboto Bold)
+- Position: Bottom third (standard) OR top for comparison labels
+- Timing: Perfect sync <0.2 sec (precision = credibility)
+- Line breaks: Max 2 lines, 4-6 words per line
+
+**Caption Strategy for Comparisons:**
+- **Competitor mentions:** Regular weight or gray text (de-emphasize)
+- **Our features:** BOLD or color highlight (emphasize)
+- **Numbers:** Always highlight (e.g., "4.8 stars" vs "3.2 stars")
+
+**Platform-Specific:**
+- **Facebook:** LARGER captions (older demographic, comparison facts must be readable)
+- **Instagram:** Standard size, professional style
+- **TikTok:** Auto-highlight if available (word-by-word emphasis)
+
+---
+
+### Background Music
+
+**Music Type:** Professional corporate or motivational (credibility over hype)
+
+**Volume Settings:**
+- Overall: -20dB to -22dB (voice absolutely must dominate for facts)
+- Hook section: -18dB (slightly higher for attention)
+- Comparison sections: -22dB (facts need maximum clarity)
+- CTA section: -20dB (balanced close)
+
+**Genre:**
+- **Premium positioning:** Sophisticated corporate, subtle strings
+- **Value positioning:** Upbeat motivational, modern
+- **Quality focus:** Clean professional, minimal percussion
+
+**Creatify Music Library Search:**
+- "professional corporate background subtle"
+- "motivational business presentation music"
+- "confident product comparison soundtrack"
+
+**AVOID:**
+- Aggressive/dramatic music (feels like attack ad)
+- Upbeat pop (too casual for comparison credibility)
+- Anything with lyrics (competes with dense script)
+
+---
+
+### Text Overlays
+
+**COMPARISON POINT Overlays (Critical for Visual Learning):**
+
+**Split-Screen Labels:**
+```
+Left side: "❌ Standard Braces"
+Right side: "✅ Alpha Medical"
+Position: Top corners
+Duration: Throughout comparison section (5-12 sec)
+Style: Bold, high contrast
+```
+
+**Feature Callouts:**
+```
+Text: "Self-Heating Technology ❄️→🔥"
+Position: Middle or top (over OUR product)
+Duration: 3-4 sec per feature
+Style: Brand color accent + white text
+Animation: Slide in from right (our side)
+```
+
+**Proof Statistics:**
+```
+Text: "4.8 ⭐⭐⭐⭐⭐ (3,000+ reviews)"
+Position: Lower third or middle
+Duration: 4-5 sec
+Style: Large, gold stars prominent
+```
+
+**Guarantee Seal:**
+```
+Text: "30-Day Money-Back Guarantee ✅"
+Position: Bottom or corner
+Duration: Last 8-10 sec (reassurance throughout closing)
+Style: Badge or seal graphic
+```
+
+**CTA Overlay (MANDATORY, Last 4-5 sec):**
+```
+Text: "alphamedical.shop
+-20% CODE: UPGRADE20
+30-DAY GUARANTEE | FREE SHIPPING $50+"
+Position: Bottom third
+Style: White text + black semi-transparent box
+Font: Bold, large (mobile readability)
+```
+
+---
+
+## 📝 COMPLETE EXAMPLE: Tourmaline Knee Pads vs Standard Braces
+
+**Product:** Tourmaline Magnetic Knee Pads | Self-Heating Support
+**Competitors:** Generic drugstore knee braces, Amazon basics
+**Target:** Seniors 65+, arthritis sufferers, value-conscious buyers
+**Format:** 1:1 square (1080x1080) - Facebook Feed optimized
+**Duration:** 28 seconds
+
+**SCRIPT:**
+
+```
+[0-4 sec - HOOK]
+"Stop buying cheap knee braces that fall apart after a month and provide zero real relief."
+(Visual: Avatar holding generic brace, slightly frustrated expression)
+(Text overlay: "⚠️ Before you buy another knee brace..." top)
+
+[5-12 sec - COMPARISON POINTS]
+
+POINT 1 - Material:
+"Standard braces: thin neoprene that loses compression in weeks.
+Ours: medical-grade fabric with reinforced stitching that lasts years."
+(Visual: Split-screen - left generic brace, right our knee pads)
+(Text overlay: Left "❌ Standard", Right "✅ Alpha Medical")
+
+POINT 2 - Technology:
+"Regular braces: no heating, no therapy, just basic compression.
+Ours: self-heating tourmaline nodes PLUS 12 magnetic therapy points for active pain relief."
+(Visual: Close-up of tourmaline nodes on our product)
+(Text overlay: "Self-Heating + Magnetic Therapy" center)
+
+POINT 3 - Results:
+"With cheap braces: temporary relief, buy replacements every 2 months.
+With ours: lasting support that works. 8,000+ customers, 4.8 stars."
+(Visual: Star rating comparison graphic)
+(Text overlay: "8,000+ Customers ⭐ 4.8/5" center)
+
+[13-20 sec - VALUE PROPOSITION]
+"Yes, it's $25 more than drugstore options. But think about it:
+Their $30 brace × 6 replacements per year = $180.
+Ours: $55 once. You actually save $125."
+(Visual: Price comparison graphic, calculator-style)
+(Text overlay: "$55 once vs $180/year" center)
+
+[21-25 sec - PROOF & GUARANTEE]
+"FDA-registered. Recommended by physiotherapists. 30-day money-back guarantee."
+(Visual: Certification badges, avatar confident with product)
+(Text overlay: "30-Day Money-Back Guarantee ✅" bottom)
+
+[26-28 sec - CTA]
+"Make the switch to quality. Get 20% off today with code UPGRADE20."
+(Visual: Avatar smiling, product hero shot)
+(Text overlay: "alphamedical.shop | -20% CODE: UPGRADE20 | 30-DAY GUARANTEE" bottom)
+```
+
+**Creatify Settings:**
+- Avatar: 55-60 year old woman, professional casual (cardigan)
+- Setting: Home living room, bright natural lighting
+- Voice: Mature female (50-60), confident helpful tone
+- Music: Professional motivational, -20dB
+- Captions: Enabled, white/black, larger font
+- Duration: 28 seconds exact
+
+**Assets Needed:**
+- Generic competitor brace image (royalty-free stock)
+- Hero image: `tourmaline-knee-pads_hero_white-bg.jpg`
+- Feature close-up: `tourmaline-knee-pads_feature_nodes.jpg`
+- Comparison graphic: Price calculation (create in Canva)
+
+---
+
+## 📝 COMPLETE EXAMPLE: Magnetic Posture Corrector vs Cheap Alternatives
+
+**Product:** Magnetic Posture Corrector | Invisible Under Clothes
+**Competitors:** Amazon basics, drugstore posture straps
+**Target:** Office workers 25-45, desk job, back pain
+**Format:** 9:16 vertical (1080x1920) - Instagram Reels
+**Duration:** 25 seconds
+
+**SCRIPT:**
+
+```
+[0-4 sec - HOOK]
+"Most posture correctors are uncomfortable after 10 minutes and too bulky to wear at work. Here's why ours is different."
+(Visual: Avatar wearing our corrector under shirt, invisible)
+(Text overlay: "Watch this before buying ⚠️" top)
+
+[5-12 sec - COMPARISON]
+
+POINT 1:
+"Cheap correctors: scratchy elastic that digs into your armpits.
+Ours: breathable mesh with padded straps. Wear it 8+ hours, zero discomfort."
+(Visual: Close-up of soft padding, avatar adjusting comfortably)
+
+POINT 2:
+"Theirs: visible bulge under clothes. Embarrassing.
+Ours: invisible design. Wear to meetings, dates, anywhere."
+(Visual: Side-by-side, generic vs ours under same shirt)
+
+POINT 3:
+"Theirs: just pull shoulders back. Temporary fix.
+Ours: 8 magnetic nodes retrain muscle memory. Long-term posture improvement."
+(Visual: Magnetic nodes close-up, spine alignment graphic)
+
+[13-20 sec - VALUE]
+"Worth the extra $15? 12,000 office workers think so. 4.8 stars. 85% still wearing it after 6 months."
+(Visual: Customer testimonial quotes, star rating)
+
+[21-23 sec - GUARANTEE]
+"Try it risk-free for 30 days. You'll never go back to cheap straps."
+
+[24-25 sec - CTA]
+"Get 20% off today. Code POSTURE20. Link in bio."
+(Text overlay: "alphamedical.shop | -20% POSTURE20" bottom)
+```
+
+**Creatify Settings:**
+- Avatar: 35 year old professional, business casual
+- Setting: Office desk
+- Voice: Mature male/female (35-45), professional friendly
+- Music: Modern corporate, -20dB
+- Captions: Enabled
+- Duration: 25 seconds
+
+---
+
+## 🔄 A/B TESTING VARIATIONS
+
+### Version A: Feature Comparison (Rational Buyers)
+- Emphasize: Specifications, materials, technology
+- Hook: "Why choose ours over cheaper options? Three reasons..."
+- Best for: Educated audience, research-oriented buyers
+
+### Version B: Price/Value Comparison (Budget-Conscious)
+- Emphasize: Cost-per-use, ROI, savings calculation
+- Hook: "Think ours is expensive? Do the math..."
+- Best for: Price-sensitive audience, repeat buyers of cheap products
+
+### Version C: Results Comparison (Outcome-Focused)
+- Emphasize: What you GET, not what it HAS
+- Hook: "Cheap braces gave me 2 weeks of relief. This gave me 2 years..."
+- Best for: Frustrated buyers, previous product failures
+
+### Version D: Social Proof Comparison (Skeptical Buyers)
+- Emphasize: Reviews, ratings, testimonials
+- Hook: "4.8 stars vs 3.2 stars. There's a reason..."
+- Best for: Risk-averse buyers, first-time purchasers
+
+**Test different angles with same product.**
+
+---
+
+## 📊 PERFORMANCE OPTIMIZATION
+
+### Hook Testing (First 4 Seconds Critical)
+
+**Test 1:** "Stop buying..." (Negative command)
+- Expected 3-sec view rate: 70-75%
+- Best for: Frustrated repeat buyers
+
+**Test 2:** "Most [products]..." (Category criticism)
+- Expected 3-sec view rate: 65-70%
+- Best for: Educated, skeptical audience
+
+**Test 3:** "There's a reason..." (Authority)
+- Expected 3-sec view rate: 60-65%
+- Best for: Risk-averse, research-oriented
+
+### Comparison Style Optimization
+
+**Side-by-side visual:**
+- Higher engagement, clearer contrast
+- Better for: Visual differences (size, design)
+
+**Sequential comparison:**
+- Better for: Feature/benefit differences
+- More conversational, less aggressive
+
+**Optimal:** Combine both - visual for design, sequential for features
+
+---
+
+## 🎯 PLATFORM-SPECIFIC RECOMMENDATIONS
+
+### Facebook Feed (PRIMARY for Comparisons)
+- Format: 1:1 square
+- Duration: 25-30 seconds (older demographic tolerates longer)
+- Hook: Value-focused, ROI calculations
+- Text overlays: LARGE, high contrast (readability priority)
+- Captions: Mandatory, larger font
+- Tone: Helpful educator, not aggressive competitor
+
+**Why Facebook is best:**
+- Older demographic appreciates value comparisons
+- Longer attention span for factual content
+- Higher conversion intent (research phase buyers)
+
+### Instagram Reels (Secondary)
+- Format: 9:16 vertical
+- Duration: 22-25 seconds
+- Hook: Quality-focused, lifestyle differences
+- Style: More visual, less text-heavy
+- Tone: Modern, sophisticated
+
+### TikTok (Tertiary for Comparisons)
+- Format: 9:16 vertical
+- Duration: 20-25 seconds MAX
+- Hook: Entertainment value, not just facts
+- Style: Dynamic cuts, faster pace
+- Tone: Friendly advice, not lecture
+
+**Note:** Comparison content generally performs BETTER on Facebook/Instagram than TikTok due to audience maturity and purchase intent.
+
+---
+
+## 💡 ADVANCED PSYCHOLOGY TIPS
+
+1. **Avoid Direct Brand Attacks:**
+   - Say "cheap alternatives" NOT "Brand X sucks"
+   - Say "standard braces" NOT "competitor products are garbage"
+   - Constructive comparison > aggressive attack
+
+2. **Use "You" Language:**
+   - "You'll save $125" > "Customers save money"
+   - "You won't need to replace it" > "It lasts longer"
+   - Personal relevance = higher conversion
+
+3. **Specificity Builds Trust:**
+   - "4.8 stars from 3,247 reviews" > "highly rated"
+   - "$55 vs $180 per year" > "more affordable long-term"
+   - Exact numbers = credible comparison
+
+4. **Risk Reversal Closes Sales:**
+   - "30-day money-back guarantee" = removes purchase fear
+   - "Try it risk-free" = lowers barrier
+   - Always include guarantee in comparison ads
+
+5. **Social Proof Validates Claims:**
+   - "12,000 customers switched" = bandwagon effect
+   - "85% still using after 6 months" = retention proof
+   - Numbers validate comparison claims
+
+---
+
+## ✅ PRE-RENDER QUALITY CHECKLIST
+
+**HOOK (0-4 sec):**
+- [ ] Problem with alternatives stated clearly
+- [ ] Not overly aggressive or negative
+- [ ] Creates curiosity (why is ours different?)
+- [ ] Relatable frustration (viewer has experienced this)
+
+**COMPARISON POINTS (5-12 sec):**
+- [ ] 3 clear differences highlighted
+- [ ] Specific, factual (not vague superiority claims)
+- [ ] Visual comparison shown (side-by-side or sequential)
+- [ ] Our product advantages obvious
+
+**VALUE PROPOSITION (13-20 sec):**
+- [ ] Price objection addressed (if premium)
+- [ ] ROI calculation clear (if applicable)
+- [ ] Value justified with specifics
+- [ ] Not defensive, confident positioning
+
+**PROOF & GUARANTEE (21-25 sec):**
+- [ ] Social proof number stated (customers, reviews)
+- [ ] Certification or authority mentioned
+- [ ] Money-back guarantee included
+- [ ] Risk reversal clear
+
+**CTA (26-30 sec):**
+- [ ] Action clear and simple
+- [ ] Discount code visible and readable
+- [ ] Guarantee restated (reduce friction)
+- [ ] Website displayed prominently
+
+**Technical:**
+- [ ] Duration 25-30 seconds (not longer, attention span limit)
+- [ ] Captions perfectly synced (complex info)
+- [ ] Comparison graphics clear and readable
+- [ ] Music subtle (voice must dominate)
+- [ ] Tone helpful, not attacking
+- [ ] File size <100 MB
+
+---
+
+## 📈 SUCCESS METRICS
+
+**Target Benchmarks:**
+- CTR (Click-Through Rate): >1.5% (comparison content, lower than UGC but higher intent)
+- 3-sec video view rate: >65% (hook must overcome skepticism)
+- Avg watch time: >18 sec (70% completion - longer video, educational)
+- Engagement rate: >3% (questions in comments about comparisons)
+- Conversion rate: Higher than UGC (lower-funnel content)
+
+**A/B Test KPIs:**
+- Hook style impact on completion rate
+- Comparison point quantity (2 vs 3 vs 4 points) impact on retention
+- Guarantee prominence impact on CTR
+- Value calculation impact on conversion
+
+---
+
+## 🛠️ PRODUCTION TIPS
+
+### Asset Preparation
+
+**MUST HAVE:**
+1. Hero image of OUR product (white background)
+2. Lifestyle image of OUR product (usage context)
+3. Generic competitor image (royalty-free stock, NO branded competitors)
+
+**NICE TO HAVE:**
+4. Side-by-side comparison graphic (create in Canva)
+5. Price calculation graphic (visual ROI)
+6. Certification badges (FDA, CE)
+7. Star rating graphic (Ours vs Industry Average)
+
+**Where to Find Generic Competitor Images:**
+- Unsplash, Pexels (royalty-free stock photos)
+- Generic "knee brace" or "back support" searches
+- NEVER use actual competitor product photos (legal risk)
+
+### Creatify Configuration Tips
+
+**Comparison Section:**
+- Upload generic image first (establish "them")
+- Upload our product second (establish "us")
+- Use text overlays to label clearly
+- Keep visual consistency (same lighting, angle if possible)
+
+**Voice Tone Calibration:**
+- Preview with CONFIDENT voice (not aggressive)
+- Avoid voices that sound condescending
+- Test with friendly educator tone
+
+---
+
+**READY TO CREATE?** Follow VIDEO_ADS_CREATION_PLAYBOOK.md Step 3 with this template!
+
+**Recommended Products for Comparison Format:**
+1. Tourmaline Knee Pads (Rank #2) - EXCELLENT for feature/tech comparison vs basic braces
+2. Magnetic Posture Corrector (Rank #1) - GREAT for invisible design vs bulky alternatives
+3. Lower Back Brace (Rank #6) - GOOD for medical-grade vs drugstore comparison
+
+**Credits Required:** 1 Creatify credit per render
+**Production Time:** ~75 minutes (requires comparison graphics + careful script balance)

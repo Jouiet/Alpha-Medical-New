@@ -1,0 +1,639 @@
+# PRODUCT DEMO TEMPLATE
+**Type:** Product Demonstration Video
+**Duration:** 18-25 seconds optimal
+**Format:** 9:16 vertical (1080x1920) OR 1:1 square (1080x1080)
+**Best For:** Products with unique features, technology, or visible mechanisms
+**UGC Score:** Medium-High (educational + authentic presentation)
+**Platform Priority:** TikTok > Instagram Reels > Facebook Reels
+
+---
+
+## 🎬 COMPLETE SCRIPT STRUCTURE
+
+### [0-3 sec] HOOK - Feature Revelation
+
+**Opening Hook Patterns:**
+
+**Pattern 1: "Wait, this..." (Curiosity interruption)**
+Examples:
+- "Wait, this knee brace heats itself without batteries..."
+- "Wait, this back support has 6 steel stays..."
+- "Wait, this posture corrector is invisible under clothes..."
+
+**Pattern 2: "You need to see..." (Direct invitation)**
+Examples:
+- "You need to see how this self-heating technology works..."
+- "You need to see what makes this different from every other brace..."
+- "You need to see the magnetic therapy nodes up close..."
+
+**Pattern 3: "I can't believe..." (Amazement)**
+Examples:
+- "I can't believe how lightweight this knee brace is..."
+- "I can't believe this actually heats up on its own..."
+- "I can't believe I can wear this under my shirt all day..."
+
+**Pattern 4: "This is not..." (Contrast positioning)**
+Examples:
+- "This is not your typical knee brace. Watch this..."
+- "This is not like other posture correctors. Here's why..."
+- "This is not just another back support. Let me show you..."
+
+**Hook Selection by Product Feature:**
+- **Technology-Based (self-heating, magnetic):** Pattern 1 or 2
+- **Design Innovation (invisible, lightweight):** Pattern 3 or 4
+- **Medical-Grade Features (steel stays, hinged):** Pattern 2 or 4
+
+**Visual Direction for Creatify:**
+- Avatar: Holding product OR product prominently displayed
+- Expression: Genuine interest/excitement (not salesy)
+- Setting: Clean background (product is focus)
+- Lighting: Bright, clear (showcase product details)
+
+---
+
+### [4-8 sec] FEATURE 1 - Primary USP Demonstration
+
+**Feature Introduction:**
+
+**Pattern 1: "See this..." (Visual demonstration)**
+- "See these tourmaline nodes? They generate natural heat using your body's warmth."
+- "See these 6 steel stays? Medical-grade support that adapts to your spine."
+- "See how thin this is? Completely invisible under any clothing."
+
+**Pattern 2: "What makes this special is..." (Educational)**
+- "What makes this special is the self-heating technology. No batteries, no charging."
+- "What makes this different is the adjustable compression. Custom fit every time."
+- "What makes this work is the magnetic therapy nodes. 12 strategically placed magnets."
+
+**Pattern 3: "Unlike other [products]..." (Comparison positioning)**
+- "Unlike other knee braces, this heats itself naturally."
+- "Unlike typical back supports, this has medical-grade steel reinforcement."
+- "Unlike bulky correctors, this is invisible and comfortable all day."
+
+**Visual Direction:**
+- Product close-up: Show ACTUAL feature (nodes, stays, material)
+- Avatar interaction: Touching/pointing to specific feature
+- Text overlay: Feature name (e.g., "Self-Heating Technology ❄️→🔥")
+- Duration: 4-5 seconds (enough to comprehend feature)
+
+**Demonstration Angles:**
+- Technology features: Macro close-up (show detail)
+- Material features: Fabric feel, flexibility demonstration
+- Structural features: Side view, cross-section explanation
+
+---
+
+### [9-14 sec] FEATURE 2 - Secondary USP or Usage
+
+**Usage Demonstration:**
+
+**Pattern 1: "And here's the best part..." (Benefit reveal)**
+- "And here's the best part: it stays in place during any activity."
+- "And the best part: you can adjust it in seconds for perfect fit."
+- "And here's what I love: I forget I'm even wearing it."
+
+**Pattern 2: "You can..." (Application showcase)**
+- "You can wear this while walking, sitting, or sleeping."
+- "You can adjust the compression with one hand."
+- "You can wear this under work clothes, workout gear, anything."
+
+**Pattern 3: "It works by..." (Mechanism explanation)**
+- "It works by using your body heat to activate tourmaline minerals."
+- "It works by providing targeted compression exactly where you need it."
+- "It works by gently pulling your shoulders back into natural alignment."
+
+**Visual Direction:**
+- Lifestyle context: Show product in use (avatar wearing it)
+- Movement demonstration: Walking, bending, sitting
+- Versatility showcase: Different settings (office, gym, outdoor)
+- Text overlay: Secondary benefit (e.g., "Adjustable Fit 🎯")
+
+---
+
+### [15-19 sec] FEATURE 3 - Proof/Credibility Element
+
+**Credibility Builders:**
+
+**Pattern 1: "Certified..." (Authority)**
+- "FDA-registered. Doctor-recommended. Trusted by thousands."
+- "Medical-grade materials. CE certified. Safe for daily use."
+- "Tested by physiotherapists. Approved for rehabilitation."
+
+**Pattern 2: "[X] customers..." (Social proof)**
+- "Over 10,000 customers see results in 2 weeks."
+- "4.8 stars from 3,000+ verified reviews."
+- "Recommended by orthopedic specialists nationwide."
+
+**Pattern 3: "Works for..." (Versatility proof)**
+- "Works for arthritis, sports injuries, and chronic pain."
+- "Perfect for seniors, athletes, and office workers."
+- "Effective for prevention and recovery both."
+
+**Visual Direction:**
+- Certification badges: Quick flash of FDA, CE logos
+- Star ratings: Visual representation of reviews
+- Diverse users: Show different demographics (if applicable)
+- Text overlay: Proof statement (e.g., "10K+ Happy Customers ⭐")
+
+---
+
+### [20-23 sec] CALL TO ACTION
+
+**CTA Patterns:**
+
+**Pattern 1: "Get yours..." (Direct invitation)**
+- "Get yours today. Link in bio. Limited stock."
+- "Get 20% off right now. Code DEMO20. Link below."
+- "Get yours at alphamedical.shop. Free shipping over $50."
+
+**Pattern 2: "Try it risk-free..." (Low-barrier offer)**
+- "Try it risk-free for 30 days. You'll love it."
+- "30-day money-back guarantee. Zero risk."
+- "Free returns. If it doesn't work, send it back."
+
+**Pattern 3: "Don't wait..." (Urgency)**
+- "Don't wait. Winter sale ends soon. Grab yours now."
+- "Limited stock available. Order today."
+- "Sale ends in 48 hours. Link in bio."
+
+**Text Overlay (Last 3-4 seconds):**
+```
+alphamedical.shop
+-20% CODE: {PRODUCT_CODE}
+FREE SHIPPING $50+
+```
+
+**Overlay Styling:**
+- Font: Bold sans-serif (Arial Black, Montserrat Bold)
+- Color: White text + semi-transparent black background
+- Position: Bottom third (mobile-safe zone)
+- Animation: Gentle fade-in (not distracting)
+
+---
+
+## 🎭 CREATIFY CONFIGURATION GUIDE
+
+### Avatar Selection (Product Demo Specialists)
+
+**Key Principle:** Credible presenter, not salesperson
+
+**For Technology Products (Self-Heating, Magnetic):**
+- Age: 35-50 (mature, knowledgeable)
+- Appearance: Smart casual (button-down, glasses optional = authority)
+- Setting: Clean home or office (minimal distraction)
+- Demeanor: Educational, confident, genuine interest
+
+**For Medical-Grade Products (Braces, Supports):**
+- Age: 40-60 (experienced, trustworthy)
+- Appearance: Professional casual (polo, sweater)
+- Setting: Well-lit indoor (home office, living room)
+- Demeanor: Helpful, empathetic, authoritative
+
+**For Lifestyle Products (Everyday comfort):**
+- Age: 30-45 (relatable, active)
+- Appearance: Athletic casual (hoodie, workout top)
+- Setting: Home or gym (realistic usage context)
+- Demeanor: Enthusiastic but authentic, personal experience
+
+**Search Terms Creatify:**
+- "mature professional demonstrating product indoor"
+- "confident presenter home office clean background"
+- "trustworthy person explaining product casual"
+- "knowledgeable woman holding item clear lighting"
+
+**Avatar Body Language:**
+- Hands: Interacting with product (holding, pointing, adjusting)
+- Eyes: Looking at product then camera (engaging viewer)
+- Expression: Interested, impressed (genuine, not fake excitement)
+- Posture: Upright, professional, approachable
+
+---
+
+### Voice Selection
+
+**Tone Characteristics:**
+- Gender: Neutral or match target demographic
+- Age: Mature (35-55) - credible educator
+- Emotion: Informative + enthusiastic (not salesy)
+- Pace: Medium to slightly faster (energetic but clear)
+
+**Voice Style by Product:**
+- **Technology products:** Confident, clear, slightly faster (modern feel)
+- **Medical products:** Warm, reassuring, medium pace (trustworthy)
+- **Lifestyle products:** Friendly, conversational, natural pace (relatable)
+
+**Creatify Voice Filters:**
+- Language: English (US) - clear neutral accent
+- Tone: Educational conversational
+- Energy: Medium-High (engaged, not hyper)
+- Clarity: High (enunciation important for features)
+
+**Search Terms Creatify:**
+- "educational presenter voice clear confident"
+- "product demonstration voice professional friendly"
+- "mature explainer voice warm authoritative"
+
+**Voice Variation by Section:**
+- HOOK (0-3 sec): Slightly higher energy (grab attention)
+- FEATURE 1 (4-8 sec): Clear, informative (explain)
+- FEATURE 2 (9-14 sec): Conversational, relatable (application)
+- PROOF (15-19 sec): Authoritative, confident (credibility)
+- CTA (20-23 sec): Warm invitation, friendly (not pushy)
+
+---
+
+### Captions Configuration
+
+**MANDATORY for Product Demos:**
+✅ Captions ENABLED (complex info needs visual reinforcement)
+
+**Settings:**
+- Style: White text + black background OR auto-highlight style
+- Font: Bold sans-serif (Montserrat, Roboto Bold)
+- Position: Bottom third (standard) OR middle (for emphasis)
+- Timing: Perfect sync <0.2 seconds (technical info must be precise)
+- Line breaks: Max 2 lines, 3-5 words per line
+
+**Caption Emphasis Strategy:**
+- FEATURE NAMES: All caps or bold (e.g., "SELF-HEATING TECHNOLOGY")
+- Numbers: Highlight distinctly (e.g., "6 STEEL STAYS", "12 MAGNETS")
+- Benefits: Color emphasis if platform allows (red for pain, green for relief)
+
+**Platform-Specific Caption Styles:**
+- **TikTok:** Auto-highlight captions (word-by-word yellow highlight)
+- **Instagram:** Classic white/black box (professional, clean)
+- **Facebook:** Larger font (older demographic, readability priority)
+
+---
+
+### Background Music
+
+**Music Type:** Upbeat modern tech/commercial (professional energy)
+
+**Volume Settings:**
+- Overall: -18dB to -20dB (voice MUST be clear for educational content)
+- HOOK section: -16dB (slightly louder for energy)
+- FEATURE sections: -20dB (voice priority for information)
+- CTA section: -18dB (balanced, not overwhelming)
+
+**Genre by Product Type:**
+- **Technology products:** Modern electronic, tech commercial
+- **Medical products:** Soft corporate, professional
+- **Lifestyle products:** Upbeat acoustic, friendly pop
+
+**Creatify Music Library Search:**
+- "modern tech background upbeat"
+- "corporate professional light energy"
+- "product showcase music clean"
+
+**AVOID:**
+- Heavy drums (distracts from features)
+- Lyrics (competes with script)
+- Dramatic builds (feels like infomercial)
+
+---
+
+### Text Overlays
+
+**FEATURE 1 Overlay (4-8 sec):**
+```
+Text: "Self-Heating Technology ❄️→🔥"
+Position: Top or middle
+Duration: 4-5 sec
+Style: Bold white + colored accent (brand color)
+Animation: Fade in + stay + fade out
+```
+
+**FEATURE 2 Overlay (9-14 sec):**
+```
+Text: "Adjustable Compression 🎯"
+Position: Top or middle (consistent with Feature 1)
+Duration: 4-5 sec
+Style: Same as Feature 1
+```
+
+**PROOF Overlay (15-19 sec):**
+```
+Text: "10,000+ Happy Customers ⭐⭐⭐⭐⭐"
+Position: Middle center
+Duration: 3-4 sec
+Style: Slightly larger, emphasis on stars
+```
+
+**CTA Overlay (20-23 sec - MANDATORY):**
+```
+Text: "alphamedical.shop
+-20% CODE: HEAT20
+FREE SHIPPING $50+"
+Position: Bottom third
+Duration: Last 3-4 seconds
+Style: White text + black semi-transparent box
+Font: Larger, high contrast
+```
+
+---
+
+## 📝 COMPLETE EXAMPLE: Tourmaline Knee Pads
+
+**Product:** Tourmaline Magnetic Knee Pads | Self-Heating Support
+**Target:** Seniors 65+, winter season, arthritis pain
+**Format:** 9:16 vertical (1080x1920) - TikTok/Reels optimized
+**Duration:** 23 seconds
+
+**SCRIPT:**
+
+```
+[0-3 sec - HOOK]
+"Wait, these knee pads heat themselves without batteries or charging..."
+(Visual: Avatar holding knee pads, intrigued expression)
+(Text overlay: None yet - clean hook)
+
+[4-8 sec - FEATURE 1: Self-Heating Tech]
+"See these tourmaline nodes? They use your body heat to generate natural warmth. No cords. No hassle."
+(Visual: Close-up of tourmaline mineral nodes, finger pointing)
+(Text overlay: "Self-Heating Technology ❄️→🔥" top center)
+(Product image: Macro shot of nodes)
+
+[9-14 sec - FEATURE 2: Magnetic Therapy]
+"Plus, 12 magnetic therapy points target pain and improve circulation. You can wear them all day under pants."
+(Visual: Avatar wearing knee pads, walking demonstration)
+(Text overlay: "12 Magnetic Therapy Points 🧲" top center)
+(Product image: Lifestyle shot - senior wearing knee pads outdoor)
+
+[15-19 sec - PROOF]
+"FDA-registered. Recommended by physiotherapists. Over 8,000 seniors use them daily."
+(Visual: Avatar confident, thumbs up OR product certification badge)
+(Text overlay: "8,000+ Happy Customers ⭐⭐⭐⭐⭐" center)
+
+[20-23 sec - CTA]
+"Get 20% off today. Code WARMKNEES20. Link in bio."
+(Visual: Avatar smiling, product in hand)
+(Text overlay: "alphamedical.shop | -20% CODE: WARMKNEES20 | FREE SHIPPING $50+" bottom)
+```
+
+**Creatify Settings:**
+- Avatar: 60-65 year old woman, casual warm clothing
+- Setting: Home living room, natural lighting
+- Voice: Mature female (55-65), warm informative tone
+- Music: Soft corporate upbeat, -18dB
+- Captions: Enabled, white/black standard
+- Duration: 23 seconds exact
+
+**Assets Needed:**
+- Hero image: `tourmaline-knee-pads_hero_white-bg.jpg`
+- Feature close-up: `tourmaline-knee-pads_feature_nodes-closeup.jpg`
+- Lifestyle image: `tourmaline-knee-pads_lifestyle_senior-wearing.jpg`
+
+---
+
+## 📝 COMPLETE EXAMPLE: Magnetic Posture Corrector
+
+**Product:** Magnetic Posture Corrector | Invisible Under Clothes
+**Target:** Office workers 25-45, desk job, back pain
+**Format:** 1:1 square (1080x1080) - Instagram/Facebook Feed
+**Duration:** 20 seconds
+
+**SCRIPT:**
+
+```
+[0-3 sec - HOOK]
+"This posture corrector is completely invisible under clothes. Let me show you."
+(Visual: Avatar wearing it under shirt, no visible bulge)
+(Text overlay: None)
+
+[4-8 sec - FEATURE 1: Invisible Design]
+"See how thin this is? Breathable mesh. Adjustable straps. You can wear it to work, gym, anywhere."
+(Visual: Product close-up, fabric detail, avatar adjusting straps)
+(Text overlay: "Invisible Design 👔" top)
+
+[9-14 sec - FEATURE 2: Magnetic Therapy]
+"8 magnetic nodes along your spine improve posture naturally without constant pulling or discomfort."
+(Visual: Avatar standing upright, side view showing alignment)
+(Text overlay: "8 Magnetic Therapy Nodes 🧲" top)
+
+[15-18 sec - PROOF]
+"Trusted by 12,000 office workers. 4.8 stars. Doctor-recommended."
+(Visual: Avatar at desk, natural posture, confident)
+(Text overlay: "12K+ Customers ⭐ 4.8/5" center)
+
+[19-20 sec - CTA]
+"Get yours today. 20% off with code POSTURE20."
+(Text overlay: "alphamedical.shop | -20% CODE: POSTURE20" bottom)
+```
+
+**Creatify Settings:**
+- Avatar: 35 year old professional, business casual
+- Setting: Office desk or home workspace
+- Voice: Mature female/male (35-45), professional friendly
+- Music: Modern corporate, -18dB
+- Captions: Enabled
+- Duration: 20 seconds
+
+---
+
+## 🔄 A/B TESTING VARIATIONS
+
+### Version A: Feature-Heavy (Tech-Savvy Audience)
+- Emphasize: Mechanisms, materials, specifications
+- Hook: "You need to see how this works..."
+- Best for: Younger demographics (25-45), high education
+
+### Version B: Benefit-Focused (Results-Oriented Audience)
+- Emphasize: What it does for YOU, outcomes
+- Hook: "This changed how I [activity]..."
+- Best for: Older demographics (55+), practical users
+
+### Version C: Comparison-Based (Skeptical Audience)
+- Emphasize: "Unlike other products..."
+- Hook: "This is not your typical [product]..."
+- Best for: Experienced buyers, previous product failures
+
+**Test with same product, different emphasis angles.**
+
+---
+
+## 📊 PERFORMANCE OPTIMIZATION
+
+### Hook Testing (First 3 Seconds Critical)
+
+**Test 1:** "Wait, this..." (Pattern interrupt)
+- Expected 3-sec view rate: 75-80%
+- Best for: Unique technology features
+
+**Test 2:** "You need to see..." (Direct invitation)
+- Expected 3-sec view rate: 70-75%
+- Best for: Visual demonstrations
+
+**Test 3:** "This is not..." (Contrast)
+- Expected 3-sec view rate: 65-70%
+- Best for: Crowded product categories
+
+### Feature Presentation Optimization
+
+**Quick cuts (2-3 sec per feature):**
+- Better for: Short attention spans, TikTok
+- Higher completion rate, less detail retention
+
+**Slower demonstration (5-6 sec per feature):**
+- Better for: Educational content, older demographics
+- Lower completion but higher understanding
+
+**Optimal balance:** 4-5 seconds per key feature
+
+---
+
+## 🎯 PLATFORM-SPECIFIC RECOMMENDATIONS
+
+### TikTok (Primary for Demos)
+- Format: 9:16 vertical
+- Duration: 20-23 seconds (sweet spot)
+- Hook: High energy, pattern interrupt
+- Pace: Faster cuts, dynamic
+- Text overlays: Auto-highlight captions (built-in TikTok style)
+- Music: Trending sounds when possible
+
+### Instagram Reels (Secondary)
+- Format: 9:16 vertical
+- Duration: 18-22 seconds
+- Hook: Curiosity-driven
+- Pace: Medium, clear information
+- Captions: Clean white/black professional
+- Music: Upbeat modern (not trending dependency)
+
+### Facebook Reels/Feed (Tertiary)
+- Format: 1:1 square (Feed) OR 9:16 (Reels)
+- Duration: 15-20 seconds (shorter for older audience)
+- Hook: Benefit-focused, clear
+- Text overlays: LARGER, high contrast
+- Captions: Mandatory, larger font
+- Pace: Slower, more detail
+
+---
+
+## 💡 ADVANCED PSYCHOLOGY TIPS
+
+1. **Show, Don't Just Tell:**
+   - Physical demonstration > verbal description
+   - Close-ups of features build credibility
+   - Hand interaction (touching product) = tangible reality
+
+2. **Repetition for Retention:**
+   - Mention key feature in voice + caption + text overlay
+   - Triple reinforcement = 3x retention rate
+
+3. **Number Specificity = Trust:**
+   - "12 magnetic nodes" > "multiple magnets"
+   - "6 steel stays" > "reinforced support"
+   - "8,000 customers" > "thousands of users"
+
+4. **Contrast Creates Value:**
+   - "Unlike other braces..." positions as premium
+   - "This is not..." creates curiosity
+   - "Instead of batteries..." highlights innovation
+
+5. **Proof Stacking:**
+   - Certification + Reviews + Usage stats
+   - Triple proof = credibility spike
+
+---
+
+## ✅ PRE-RENDER QUALITY CHECKLIST
+
+**HOOK (0-3 sec):**
+- [ ] Unique feature teased clearly
+- [ ] Visual immediately interesting
+- [ ] Hook creates curiosity or surprise
+- [ ] No wasted words (every word counts)
+
+**FEATURE 1 (4-8 sec):**
+- [ ] Feature SHOWN visually (not just described)
+- [ ] Close-up clear and well-lit
+- [ ] Text overlay emphasizes feature name
+- [ ] Duration sufficient to comprehend (4-5 sec)
+
+**FEATURE 2 (9-14 sec):**
+- [ ] Second benefit complements first (not redundant)
+- [ ] Lifestyle context shown (product in use)
+- [ ] Versatility or ease-of-use highlighted
+- [ ] Text overlay visible
+
+**PROOF (15-19 sec):**
+- [ ] Credibility element included (certification/reviews/stats)
+- [ ] Specific numbers used (not vague claims)
+- [ ] Visual proof if possible (badges, stars)
+- [ ] Builds trust without feeling salesy
+
+**CTA (20-23 sec):**
+- [ ] Clear action stated
+- [ ] Discount code visible and readable
+- [ ] Website displayed prominently
+- [ ] Urgency or incentive included
+
+**Technical:**
+- [ ] Duration 18-23 seconds (not longer)
+- [ ] Captions perfectly synced
+- [ ] Product images high quality
+- [ ] Music doesn't overpower voice
+- [ ] File size <100 MB
+
+---
+
+## 📈 SUCCESS METRICS
+
+**Target Benchmarks:**
+- CTR (Click-Through Rate): >1.8% (educational content slightly lower than UGC)
+- 3-sec video view rate: >75% (hook is critical)
+- Avg watch time: >15 sec (75% completion rate)
+- Engagement rate: >4% (comments asking questions = good signal)
+
+**A/B Test KPIs:**
+- Hook variation impact on 3-sec retention
+- Feature presentation style impact on watch time
+- Proof element impact on CTR (does social proof increase clicks?)
+
+---
+
+## 🛠️ PRODUCTION TIPS
+
+### Asset Preparation Priority
+
+**MUST HAVE:**
+1. Hero image (white background, high res)
+2. Feature close-up (macro shot of key feature)
+3. Lifestyle image (product in use context)
+
+**NICE TO HAVE:**
+4. Certification badges (FDA, CE logos)
+5. Multiple angle shots (side, top, detail)
+6. Comparison shots (vs standard products)
+
+### Creatify Upload Order
+
+1. Upload hero image FIRST (sets visual tone)
+2. Upload feature close-up for mid-section
+3. Upload lifestyle for application demonstration
+4. Upload badges/proof elements last
+
+### Rendering Strategy
+
+**Preview extensively:**
+- Preview 2-3 times with different avatar/voice combinations
+- Test different music volumes
+- Verify caption timing precision
+
+**Optimize before final render:**
+- Ensure all text overlays visible on mobile preview
+- Check feature close-ups are clear (not blurry)
+- Verify voice pronunciation of technical terms
+
+---
+
+**READY TO CREATE?** Follow VIDEO_ADS_CREATION_PLAYBOOK.md Step 3 with this template!
+
+**Recommended Products for Demo Format:**
+1. Tourmaline Knee Pads (Rank #2) - PERFECT for self-heating tech demo
+2. Hinged Knee Brace (Rank #5) - Great for structural feature demo
+3. Magnetic Posture Corrector (Rank #1) - Excellent for invisible design demo
+
+**Credits Required:** 1 Creatify credit per render
+**Production Time:** ~60 minutes (more complex than UGC, requires multiple assets)

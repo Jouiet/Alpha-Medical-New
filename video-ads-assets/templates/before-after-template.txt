@@ -1,0 +1,481 @@
+# BEFORE/AFTER TRANSFORMATION TEMPLATE
+**Type:** Before/After Comparison Video
+**Duration:** 12-15 seconds optimal
+**Format:** 1:1 square (1080x1080) OR 9:16 vertical (1080x1920)
+**Best For:** Products with VISIBLE transformation (posture, pain relief, mobility)
+**UGC Score:** High (shows real results, builds trust)
+**Platform Priority:** Instagram Reels > Facebook Feed > TikTok
+
+---
+
+## 🎬 COMPLETE SCRIPT STRUCTURE
+
+### [0-2 sec] BEFORE STATE - Show the Problem
+
+**Opening Hook Patterns:**
+
+**Pattern 1: "Before..." (Simple past tense)**
+Examples:
+- "Before this brace, I couldn't even stand up straight..."
+- "Before these knee pads, stairs were my nightmare..."
+- "Before this posture corrector, I had constant headaches..."
+
+**Pattern 2: "Look at this..." (Direct visual)**
+Examples:
+- "Look at my posture 3 weeks ago... hunched, painful..."
+- "Look at how I walked before... limping, slow..."
+- "Look at my mobility before... stiff, limited..."
+
+**Pattern 3: "[Time period] ago..." (Timeline emphasis)**
+Examples:
+- "30 days ago, I couldn't lift my arms above my head..."
+- "2 months ago, my back looked like this..."
+- "3 weeks ago, I couldn't sit without pain..."
+
+**Hook Selection by Product Type:**
+- **Posture Products:** Pattern 2 or 3 (visual is KEY)
+- **Pain Relief:** Pattern 1 or 3 (emphasize duration)
+- **Mobility:** Pattern 1 or 2 (show limitation)
+
+**Visual Direction for Creatify:**
+- Avatar: Neutral to slightly concerned expression
+- Setting: Same setting for BEFORE and AFTER (consistency = credibility)
+- Body language: Slouched, restricted, uncomfortable (subtle, not dramatic)
+- Clothing: Same outfit BEFORE and AFTER (reinforces authenticity)
+
+---
+
+### [3-6 sec] THE TRANSITION - Introduce Product
+
+**Transition Phrases:**
+
+**Pattern 1: "Then I tried..." (Discovery moment)**
+- "Then I tried {PRODUCT_NAME}..."
+- "Then I discovered this {PRODUCT_CATEGORY} from {BRAND}..."
+- "Then I started wearing {PRODUCT_NAME} daily..."
+
+**Pattern 2: "After using..." (Result-focused)**
+- "After using {PRODUCT_NAME} for {TIME_PERIOD}..."
+- "After wearing this for just {X} weeks..."
+- "After {X} days with {PRODUCT_NAME}..."
+
+**Time Period Guidelines:**
+- Posture correction: "3 weeks" or "30 days" (realistic timeframe)
+- Pain relief: "2 weeks" or "14 days" (credible, not too fast)
+- Mobility improvement: "1 month" or "4 weeks" (substantial change)
+
+**Visual Direction:**
+- Product image: Show ACTUAL product (hero image)
+- Avatar: Slight smile, hopeful expression
+- Text overlay: Product name + time period (e.g., "After 30 days with Magnetic Posture Corrector")
+
+---
+
+### [7-10 sec] AFTER STATE - Show Transformation
+
+**Result Statements:**
+
+**Pattern 1: "Now..." (Present transformation)**
+- "Now I stand tall without even thinking about it."
+- "Now I can walk 3 miles without pain."
+- "Now my shoulders are aligned naturally."
+
+**Pattern 2: "Look at the difference..." (Visual proof)**
+- "Look at the difference. My posture completely changed."
+- "Look at this. No more slouching, no more pain."
+- "Look at my alignment now. Night and day."
+
+**Pattern 3: "{SPECIFIC_BENEFIT}" (Measurable result)**
+- "2 inches taller. No back pain. Confident posture."
+- "Pain-free for 30 days straight. Life changing."
+- "Full range of motion. I can finally exercise again."
+
+**Visual Direction for Creatify:**
+- Avatar: Confident smile, upright posture
+- Setting: SAME as BEFORE (critical for credibility)
+- Body language: Open, relaxed, natural alignment
+- Lighting: Slightly brighter (subtle psychological cue)
+
+---
+
+### [11-12 sec] CALL TO ACTION
+
+**CTA Patterns:**
+
+**Pattern 1: "If you struggle with..." (Relate to viewer)**
+- "If you struggle with back pain, try this. Link in bio."
+- "If you have posture issues, this changed my life. Link below."
+
+**Pattern 2: "Best investment..." (Value emphasis)**
+- "Best $60 I ever spent. Link in bio."
+- "Totally worth it. Get yours at {WEBSITE}."
+
+**Pattern 3: "You won't regret it" (Confidence)**
+- "You won't regret this. Link in bio."
+- "Changed my life. It can change yours too."
+
+**Text Overlay (Last 2-3 seconds):**
+```
+alphamedical.shop
+-{DISCOUNT}% CODE: {DISCOUNT_CODE}
+```
+
+**Overlay Styling:**
+- Font: Bold sans-serif (Arial Black, Helvetica Bold)
+- Color: White text + black background rectangle
+- Position: Bottom third (safe zone for all platforms)
+- Size: Large enough to read on mobile (min 48pt)
+
+---
+
+## 🎭 CREATIFY CONFIGURATION GUIDE
+
+### Avatar Selection (CRITICAL for Before/After Credibility)
+
+**Key Principle:** SAME avatar, DIFFERENT posture/expression
+
+**For Posture Corrector Products:**
+- Age: 30-45 (office worker demographic)
+- Appearance: Professional casual (button-down, sweater)
+- Setting: Office desk or home workspace
+- BEFORE pose: Slouched, rounded shoulders
+- AFTER pose: Upright, shoulders back
+
+**For Pain Relief Products (Back/Knee):**
+- Age: 55-70 (seniors with chronic pain)
+- Appearance: Casual comfortable (polo, cardigan)
+- Setting: Living room or outdoor park
+- BEFORE pose: Restricted movement, cautious
+- AFTER pose: Relaxed movement, confident
+
+**For Mobility Products:**
+- Age: 40-60 (active adults)
+- Appearance: Athletic casual (performance wear)
+- Setting: Home gym or outdoor
+- BEFORE pose: Limited range of motion
+- AFTER pose: Full extension, fluid movement
+
+**Search Terms Creatify BEFORE Avatar:**
+- "middle-aged person slouching desk"
+- "senior cautious movement indoor"
+- "adult restricted posture office"
+
+**Search Terms Creatify AFTER Avatar:**
+- "confident upright posture professional"
+- "senior active outdoor walking"
+- "adult natural posture relaxed"
+
+**PRO TIP:** If Creatify doesn't allow posture change for same avatar:
+- Use split-screen effect in editing
+- OR use VERY similar-looking avatars (same age, ethnicity, setting)
+- Consistency in background/clothing is MORE important than exact same face
+
+---
+
+### Voice Selection
+
+**Tone Characteristics:**
+- Gender: Match target demographic (female for seniors/wellness, male for athletes)
+- Age: Mature (35-55 range) - credible, experienced
+- Emotion: START neutral/concerned → END confident/happy
+- Pace: Medium (not rushed, sincere)
+
+**Creatify Voice Filters:**
+- Language: English (US) - neutral accent
+- Tone: Conversational, sincere
+- Energy: Medium (not overly enthusiastic)
+- Warmth: High (trustworthy)
+
+**Search Terms Creatify:**
+- "mature female sincere transformation"
+- "mature male confident testimonial"
+- "authentic voice before-after story"
+
+**Voice Variation by Section:**
+- BEFORE (0-2 sec): Lower energy, slightly slower
+- TRANSITION (3-6 sec): Rising energy, hopeful
+- AFTER (7-10 sec): Higher energy, enthusiastic (but not fake)
+- CTA (11-12 sec): Warm invitation, friendly
+
+---
+
+### Captions Configuration
+
+**MANDATORY for Before/After:**
+✅ Captions ENABLED (85% watch without sound)
+
+**Settings:**
+- Style: White text + black background box (high contrast)
+- Font: Bold sans-serif (maximum readability)
+- Position: Bottom third (allows product image visibility)
+- Timing: Sync <0.3 seconds delay
+- Line breaks: Max 2 lines, 3-4 words per line
+
+**Caption Emphasis by Section:**
+- BEFORE: Emphasize problem words ("pain", "couldn't", "struggled")
+- AFTER: Emphasize transformation words ("now", "pain-free", "confident")
+
+---
+
+### Background Music
+
+**Music Type:** Inspirational uplifting (transformation journey)
+
+**Volume Settings:**
+- Overall: -18dB to -20dB (voice is PRIORITY)
+- BEFORE section: -20dB (subtle, somber undertone)
+- AFTER section: -16dB (slightly louder, triumphant)
+
+**Genre by Product:**
+- Posture Corrector: Soft corporate motivational
+- Pain Relief: Gentle acoustic hopeful
+- Mobility: Upbeat soft pop
+
+**Creatify Music Library Search:**
+- "inspirational soft background"
+- "transformation journey music"
+- "hopeful acoustic light"
+
+**AVOID:**
+- Heavy bass (distracts from voice)
+- Lyrics (competes with script)
+- Dramatic crescendos (feels fake)
+
+---
+
+### Text Overlays
+
+**BEFORE Section Overlay (optional):**
+```
+Text: "30 days ago ❌"
+Position: Top right
+Duration: 0-2 sec
+Color: Red or dark gray (problem state)
+```
+
+**TRANSITION Overlay:**
+```
+Text: "{PRODUCT_NAME}"
+Position: Center (over product image)
+Duration: 3-6 sec
+Color: White + brand color accent
+```
+
+**AFTER Section Overlay:**
+```
+Text: "After 30 days ✅"
+Position: Top right
+Duration: 7-10 sec
+Color: Green or bright color (success state)
+```
+
+**CTA Overlay (MANDATORY):**
+```
+Text: "alphamedical.shop | -20% CODE: POSTURE20"
+Position: Bottom third
+Duration: 11-12 sec (last 2 seconds)
+Color: White text + black semi-transparent background
+```
+
+---
+
+## 📝 COMPLETE EXAMPLE: Magnetic Posture Corrector
+
+**Product:** Magnetic Posture Corrector | Invisible Under Clothes
+**Target:** Office workers 25-45, desk job, back pain
+**Format:** 1:1 square (1080x1080) - Instagram Feed optimized
+**Duration:** 12 seconds
+
+**SCRIPT:**
+
+```
+[0-2 sec - BEFORE]
+"30 days ago, I couldn't sit at my desk without back pain..."
+(Visual: Avatar slouched at desk, concerned expression)
+(Text overlay: "30 days ago ❌" top right)
+
+[3-6 sec - TRANSITION]
+"...then I started wearing this Magnetic Posture Corrector daily."
+(Visual: Product image - hero shot white background + lifestyle shot)
+(Text overlay: "Magnetic Posture Corrector" center)
+
+[7-10 sec - AFTER]
+"Now? Pain-free. Posture perfect. I forget I'm even wearing it."
+(Visual: Avatar upright at desk, confident smile, natural posture)
+(Text overlay: "After 30 days ✅" top right)
+
+[11-12 sec - CTA]
+"Best $50 I ever spent. Link in bio."
+(Text overlay: "alphamedical.shop | -20% CODE: POSTURE20" bottom)
+```
+
+**Creatify Settings:**
+- Avatar: 35-year-old professional woman, office setting
+- BEFORE pose: Slouched shoulders, hand on lower back
+- AFTER pose: Upright posture, relaxed at keyboard
+- Voice: Mature female (35-45), conversational warm
+- Music: Soft corporate motivational, -18dB
+- Captions: Enabled, white/black
+- Duration: 12 seconds exact
+
+**Assets Needed:**
+- Hero image: `magnetic-posture-corrector_hero_white-bg.jpg`
+- Lifestyle image: `magnetic-posture-corrector_lifestyle_office-desk.jpg`
+
+---
+
+## 🔄 A/B TESTING VARIATIONS
+
+### Version A: Time-Based Transformation
+- Hook: "30 days ago vs today..."
+- Emphasis: Duration of use
+- Best for: Products needing time to work
+
+### Version B: Visual Split-Screen
+- Hook: "Look at the difference..."
+- Emphasis: Side-by-side comparison
+- Best for: Posture products with visible change
+
+### Version C: Emotional Journey
+- Hook: "I was so frustrated until..."
+- Emphasis: Emotional relief
+- Best for: Chronic pain solutions
+
+**Test with same product, same audience, different hooks.**
+
+---
+
+## 📊 PERFORMANCE OPTIMIZATION
+
+### Hook Testing (First 3 Seconds Critical)
+
+**Test 1:** "Before vs After" visual split
+- Expected CTR: 2.0-2.5%
+- Best for: Visual transformation products
+
+**Test 2:** "{X} days ago, I couldn't..."
+- Expected CTR: 1.8-2.2%
+- Best for: Pain relief narratives
+
+**Test 3:** "Look at this transformation..."
+- Expected CTR: 1.5-2.0%
+- Best for: Posture/alignment products
+
+### Transition Optimization
+
+**Quick transition (2 seconds):**
+- Better for short attention spans (TikTok)
+- Higher completion rate
+
+**Slower transition (4 seconds):**
+- Better for credibility (Instagram/Facebook)
+- Shows product details
+
+---
+
+## 🎯 PLATFORM-SPECIFIC RECOMMENDATIONS
+
+### Instagram Reels (Primary)
+- Format: 9:16 vertical
+- Duration: 12-15 seconds
+- Hook: Pattern 2 ("Look at...")
+- Music: Slightly louder (-16dB)
+- Captions: MANDATORY
+
+### Facebook Feed (Secondary)
+- Format: 1:1 square
+- Duration: 12 seconds (shorter = better)
+- Hook: Pattern 3 ("{X} days ago...")
+- Text overlays: MORE prominent (older demographic)
+- Captions: MANDATORY + larger font
+
+### TikTok (Tertiary)
+- Format: 9:16 vertical
+- Duration: 12 seconds MAX
+- Hook: Pattern 1 ("Before this...")
+- Trend integration: Use trending sounds (remix script to fit)
+- Hashtags: #transformation #beforeandafter #fyp
+
+---
+
+## 💡 ADVANCED PSYCHOLOGY TIPS
+
+1. **Timeline Credibility:**
+   - Use ODD numbers (31 days vs 30 days) = feels more authentic
+   - Use REALISTIC timelines (not "overnight" - less credible)
+
+2. **Visual Consistency = Trust:**
+   - SAME background BEFORE/AFTER (proves it's real)
+   - SAME lighting (subtle is better than dramatic)
+   - SAME clothing (reinforces authenticity)
+
+3. **Emotion Arc:**
+   - START concerned but not desperate
+   - TRANSITION hopeful
+   - END genuinely happy (not over-the-top)
+
+4. **Specificity Builds Trust:**
+   - "2 inches taller" > "much taller"
+   - "30 days pain-free" > "no more pain"
+   - "$50" > "affordable"
+
+---
+
+## ✅ PRE-RENDER QUALITY CHECKLIST
+
+**BEFORE Section (0-2 sec):**
+- [ ] Problem clearly visible (posture, expression, movement)
+- [ ] Relatable pain point stated
+- [ ] NOT overdramatized (authentic struggle)
+- [ ] Text overlay visible if used
+
+**TRANSITION Section (3-6 sec):**
+- [ ] Product name clearly stated
+- [ ] Product image visible and clear
+- [ ] Timeline mentioned (e.g., "30 days")
+- [ ] Smooth visual transition BEFORE → AFTER
+
+**AFTER Section (7-10 sec):**
+- [ ] Transformation VISIBLE (posture, confidence, movement)
+- [ ] Specific benefit stated
+- [ ] Same setting as BEFORE (credibility)
+- [ ] Avatar expression genuinely happy
+
+**CTA Section (11-12 sec):**
+- [ ] Clear call to action
+- [ ] Discount code visible
+- [ ] Website displayed prominently
+- [ ] Lasting 2-3 seconds minimum
+
+**Technical:**
+- [ ] Duration EXACTLY 12 seconds (not 11 or 13)
+- [ ] Captions readable on mobile
+- [ ] Music doesn't overpower voice
+- [ ] File size <100 MB
+
+---
+
+## 📈 SUCCESS METRICS
+
+**Target Benchmarks:**
+- CTR (Click-Through Rate): >2.0% (before/after performs HIGH)
+- 3-sec video view rate: >70% (hook is strong)
+- Avg watch time: >10 sec (90% completion ideal)
+- Engagement rate: >5% (saves/shares common for transformations)
+
+**A/B Test KPIs:**
+- Hook variation impact on 3-sec views
+- Timeline statement impact on trust (comments analysis)
+- Visual consistency impact on shares (credibility signal)
+
+---
+
+**READY TO CREATE?** Follow VIDEO_ADS_CREATION_PLAYBOOK.md Step 3 with this template!
+
+**Recommended Products for Before/After Format:**
+1. Magnetic Posture Corrector (Rank #1) - PERFECT visual transformation
+2. Lower Back Brace (Rank #6) - Great for mobility improvement
+3. Hinged Knee Brace (Rank #5) - Excellent for walking/stairs comparison
+
+**Credits Required:** 1 Creatify credit per render
+**Production Time:** ~45 minutes (including asset selection + preview iterations)
