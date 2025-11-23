@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 23, 2025 at 11:24 UTC
+**Generated:** November 23, 2025 at 13:32 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -29,88 +29,91 @@
 16. [Analyse Forensique Site Web](#analyse_forensique_site_web)
 17. [Apify Integration Complete](#apify_integration_complete)
 18. [Asset Gathering Guide](#asset_gathering_guide)
-19. [Blog Images Assignment](#blog_images_assignment)
-20. [Bundle Auto Creation Architecture](#bundle_auto_creation_architecture)
-21. [Bundle Builder Deployment Guide](#bundle_builder_deployment_guide)
-22. [Bundle Builder System Documentation](#bundle_builder_system_documentation)
-23. [Bundle Persona Critical Audit](#bundle_persona_critical_audit)
-24. [Bundle Reconstruction Analysis 2025](#bundle_reconstruction_analysis_2025)
-25. [Cart Drawer Forensic Analysis](#cart_drawer_forensic_analysis)
-26. [Chat Instant Answers](#chat_instant_answers)
-27. [Collection Overlap Verification Report](#collection_overlap_verification_report)
-28. [Complete Manually Final 40 Percent](#complete_manually_final_40_percent)
-29. [Complete Shopify Flow Setup](#complete_shopify_flow_setup)
-30. [Content Calendar Q1 2026](#content_calendar_q1_2026)
-31. [Creatify Prompts Alpha Medical](#creatify_prompts_alpha_medical)
-32. [Critical Manual Actions Guide](#critical_manual_actions_guide)
-33. [Custom Bundle Builder Complete Analysis](#custom_bundle_builder_complete_analysis)
-34. [Deployment Guide Complete](#deployment_guide_complete)
-35. [Deployment Verification](#deployment_verification)
-36. [Dsers Configuration Guide](#dsers_configuration_guide)
-37. [Dsers Form Configuration](#dsers_form_configuration)
-38. [Email Marketing Automation Audit](#email_marketing_automation_audit)
-39. [Factual Verification Status](#factual_verification_status)
-40. [Final Report Transparency Implementation](#final_report_transparency_implementation)
-41. [Final Store Status 2025-10-31](#final_store_status_2025-10-31)
-42. [Forensic Analysis Report](#forensic_analysis_report)
-43. [Get Conversion Id Steps](#get_conversion_id_steps)
-44. [Google Ads Gtm Progress](#google_ads_gtm_progress)
-45. [Google Ads Next Steps](#google_ads_next_steps)
-46. [Google Ads Setup Guide](#google_ads_setup_guide)
-47. [Google Search Console Verification Status](#google_search_console_verification_status)
-48. [Gsc Configuration Report 2025-11-19](#gsc_configuration_report_2025-11-19)
-49. [Gsc Final Checklist](#gsc_final_checklist)
-50. [Gtm Add Missing Tags Steps](#gtm_add_missing_tags_steps)
-51. [Gtm Setup Guide](#gtm_setup_guide)
-52. [Homepage Cta Instructions](#homepage_cta_instructions)
-53. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
-54. [Implementation Manuelle Guide](#implementation_manuelle_guide)
-55. [Implementation Report Pricing](#implementation_report_pricing)
-56. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
-57. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
-58. [Llms Txt Deployment](#llms_txt_deployment)
-59. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
-60. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
-61. [Loyalty System Architecture](#loyalty_system_architecture)
-62. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
-63. [Manual Footer Config](#manual_footer_config)
-64. [Menu Bundles Instructions](#menu_bundles_instructions)
-65. [Mydealz Synthese](#mydealz_synthese)
-66. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-67. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-68. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-69. [Paypal Deactivation Guide](#paypal_deactivation_guide)
-70. [Phase 3 Implementation Log](#phase_3_implementation_log)
-71. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
-72. [Pricing Quick Reference](#pricing_quick_reference)
-73. [Pricing Verification](#pricing_verification)
-74. [Product Optimization Tracking](#product_optimization_tracking)
-75. [Rapport Final Complet](#rapport_final_complet)
-76. [Rapport Theme Analyse](#rapport_theme_analyse)
-77. [Response To Third Party Analysis](#response_to_third_party_analysis)
-78. [Robots Txt Deployment](#robots_txt_deployment)
-79. [Seo Audit Recommendations](#seo_audit_recommendations)
-80. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-81. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-82. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-83. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
-84. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
-85. [Session Summary](#session_summary)
-86. [Shopify Configuration Complete](#shopify_configuration_complete)
-87. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-88. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-89. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
-90. [Status Report Pages](#status_report_pages)
-91. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
-92. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
-93. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
-94. [Top 10 Urls To Index](#top_10_urls_to_index)
-95. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-96. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
-97. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
-98. [Video Ads Creation Playbook](#video_ads_creation_playbook)
-99. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
-100. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
+19. [Automation Setup Complete Guide](#automation_setup_complete_guide)
+20. [Blog Images Assignment](#blog_images_assignment)
+21. [Bundle Auto Creation Architecture](#bundle_auto_creation_architecture)
+22. [Bundle Builder Deployment Guide](#bundle_builder_deployment_guide)
+23. [Bundle Builder System Documentation](#bundle_builder_system_documentation)
+24. [Bundle Persona Critical Audit](#bundle_persona_critical_audit)
+25. [Bundle Reconstruction Analysis 2025](#bundle_reconstruction_analysis_2025)
+26. [Cart Drawer Forensic Analysis](#cart_drawer_forensic_analysis)
+27. [Chat Instant Answers](#chat_instant_answers)
+28. [Collection Overlap Verification Report](#collection_overlap_verification_report)
+29. [Complete Manually Final 40 Percent](#complete_manually_final_40_percent)
+30. [Complete Shopify Flow Setup](#complete_shopify_flow_setup)
+31. [Content Calendar Q1 2026](#content_calendar_q1_2026)
+32. [Creatify Prompts Alpha Medical](#creatify_prompts_alpha_medical)
+33. [Critical Manual Actions Guide](#critical_manual_actions_guide)
+34. [Custom Bundle Builder Complete Analysis](#custom_bundle_builder_complete_analysis)
+35. [Deployment Guide Complete](#deployment_guide_complete)
+36. [Deployment Verification](#deployment_verification)
+37. [Dsers Configuration Guide](#dsers_configuration_guide)
+38. [Dsers Form Configuration](#dsers_form_configuration)
+39. [Email Marketing Automation Audit](#email_marketing_automation_audit)
+40. [Factual Verification Status](#factual_verification_status)
+41. [Final Report Transparency Implementation](#final_report_transparency_implementation)
+42. [Final Store Status 2025-10-31](#final_store_status_2025-10-31)
+43. [Forensic Analysis Report](#forensic_analysis_report)
+44. [Get Conversion Id Steps](#get_conversion_id_steps)
+45. [Gmail Apps Script Setup](#gmail_apps_script_setup)
+46. [Google Ads Gtm Progress](#google_ads_gtm_progress)
+47. [Google Ads Next Steps](#google_ads_next_steps)
+48. [Google Ads Setup Guide](#google_ads_setup_guide)
+49. [Google Search Console Verification Status](#google_search_console_verification_status)
+50. [Google Sheet Setup Instructions](#google_sheet_setup_instructions)
+51. [Gsc Configuration Report 2025-11-19](#gsc_configuration_report_2025-11-19)
+52. [Gsc Final Checklist](#gsc_final_checklist)
+53. [Gtm Add Missing Tags Steps](#gtm_add_missing_tags_steps)
+54. [Gtm Setup Guide](#gtm_setup_guide)
+55. [Homepage Cta Instructions](#homepage_cta_instructions)
+56. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
+57. [Implementation Manuelle Guide](#implementation_manuelle_guide)
+58. [Implementation Report Pricing](#implementation_report_pricing)
+59. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
+60. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
+61. [Llms Txt Deployment](#llms_txt_deployment)
+62. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
+63. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
+64. [Loyalty System Architecture](#loyalty_system_architecture)
+65. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
+66. [Manual Footer Config](#manual_footer_config)
+67. [Menu Bundles Instructions](#menu_bundles_instructions)
+68. [Mydealz Synthese](#mydealz_synthese)
+69. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+70. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+71. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+72. [Paypal Deactivation Guide](#paypal_deactivation_guide)
+73. [Phase 3 Implementation Log](#phase_3_implementation_log)
+74. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
+75. [Pricing Quick Reference](#pricing_quick_reference)
+76. [Pricing Verification](#pricing_verification)
+77. [Product Optimization Tracking](#product_optimization_tracking)
+78. [Rapport Final Complet](#rapport_final_complet)
+79. [Rapport Theme Analyse](#rapport_theme_analyse)
+80. [Response To Third Party Analysis](#response_to_third_party_analysis)
+81. [Robots Txt Deployment](#robots_txt_deployment)
+82. [Seo Audit Recommendations](#seo_audit_recommendations)
+83. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+84. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+85. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+86. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
+87. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
+88. [Session Summary](#session_summary)
+89. [Shopify Configuration Complete](#shopify_configuration_complete)
+90. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+91. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+92. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
+93. [Status Report Pages](#status_report_pages)
+94. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
+95. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
+96. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
+97. [Top 10 Urls To Index](#top_10_urls_to_index)
+98. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+99. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
+100. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+101. [Video Ads Creation Playbook](#video_ads_creation_playbook)
+102. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
+103. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
 
 ---
 
@@ -119,7 +122,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -21442,7 +21445,7 @@ Evidence quality: 100%
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -25432,7 +25435,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -26002,7 +26005,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -26577,7 +26580,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -26904,7 +26907,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -27029,7 +27032,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -27549,7 +27552,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -28092,7 +28095,7 @@ python3 generate_llms_txt.py
 # 9. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -35294,7 +35297,7 @@ Objectif CPA: <$35 (vs <$50 test)
 # 10. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -36137,7 +36140,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical 8 Bundles Final
 
 **File:** `ALPHA_MEDICAL_8_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -38777,7 +38780,7 @@ Response: 200 OK
 # 12. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -39097,7 +39100,7 @@ For each bundle:
 # 13. Alpha Medical Pitch Deck Template
 
 **File:** `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -41156,7 +41159,7 @@ END OF PITCH DECK TEMPLATE
 # 14. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -42303,7 +42306,7 @@ Audit complet 7 critères
 # 15. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -46216,7 +46219,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 16. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -48040,7 +48043,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 17. Apify Integration Complete
 
 **File:** `APIFY_INTEGRATION_COMPLETE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -48596,7 +48599,7 @@ python3 influencer_lead_generation.py --full-discovery
 # 18. Asset Gathering Guide
 
 **File:** `ASSET_GATHERING_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -49022,10 +49025,462 @@ cp source/* destination/
 ---
 
 
-# 19. Blog Images Assignment
+# 19. Automation Setup Complete Guide
+
+**File:** `AUTOMATION_SETUP_COMPLETE_GUIDE.md`
+**Last Modified:** 2025-11-23 13:32
+
+---
+
+# LEAD AUTOMATION SYSTEM - COMPLETE SETUP GUIDE
+
+**Alpha Medical - B2B & Influencer Lead Generation**
+
+**Status:** 95% Complete - Requires 3 manual steps (20 minutes total)
+
+**Created:** 2025-11-23
+
+---
+
+## SYSTEM OVERVIEW
+
+**What This System Does:**
+
+1. **Daily Lead Scraping** (9 AM automated)
+   - Instagram influencers (7 hashtags × 50 results = 350 leads/day)
+   - Google Maps B2B (6 queries × 20 results = 120 leads/day)
+   - Total: ~470 leads/day automatically
+
+2. **Google Sheets Integration**
+   - Auto-sync scraped leads to organized spreadsheet
+   - 3 worksheets: Raw Leads, Qualified Leads, Analytics
+   - Real-time collaboration and filtering
+
+3. **Email Nurturing** (10 AM automated)
+   - Personalized emails based on persona + quality score
+   - Automatic status updates in Google Sheets
+   - Gmail rate-limit protection (100 emails/day)
+
+4. **Shopify Integration** (future)
+   - Convert qualified leads to Shopify customers
+   - Trigger Flows for abandoned cart, post-purchase
+   - Loyalty program integration
+
+---
+
+## WHAT'S ALREADY DONE ✅
+
+### Infrastructure (100% Complete)
+
+- ✅ Google Drive API enabled
+- ✅ Google Sheets API enabled
+- ✅ Service account credentials configured
+- ✅ Apify account setup ($39/month budget)
+- ✅ GitHub repo security (all secrets removed)
+
+### Scripts Created (100% Complete)
+
+- ✅ `lead_generation_scraper.py` - Instagram + Google Maps scraping
+- ✅ `daily_lead_scraping.sh` - Automated daily scraping bash script
+- ✅ `configure_existing_sheet.py` - Google Sheet structure setup
+- ✅ `Gmail_Lead_Nurturing.gs` - Email automation Apps Script
+- ✅ `setup_cron_job.sh` - Cron job installation script
+
+### Documentation (100% Complete)
+
+- ✅ `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md` - Sheet creation guide
+- ✅ `GMAIL_APPS_SCRIPT_SETUP.md` - Email automation guide
+- ✅ `LEAD_MANAGEMENT_SHOPIFY_FLOWS.md` - Shopify Flow configuration
+- ✅ `market-analysis/README.md` - Complete Apify integration guide
+
+---
+
+## WHAT YOU NEED TO DO (20 Minutes)
+
+### Step 1: Create Google Sheet (3 minutes)
+
+**Why:** Service account has storage quota exceeded, need personal Google Drive
+
+**Instructions:** See `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md`
+
+**Quick Steps:**
+1. Open: https://sheets.google.com/create
+2. Rename: "Alpha Medical - Lead Management"
+3. Share with: `ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com` (Editor)
+4. Copy Sheet ID from URL
+5. Run: `python3 configure_existing_sheet.py SHEET_ID`
+
+**Expected Output:** 3 worksheets created, headers formatted, Sheet ID saved to .env
+
+---
+
+### Step 2: Setup Cron Job (5 minutes)
+
+**Why:** Automate daily lead scraping at 9 AM
+
+**Instructions:**
+
+```bash
+cd /Users/mac/Desktop/Alpha-Medical
+./setup_cron_job.sh
+```
+
+**What It Does:**
+- Makes scraping script executable
+- Adds cron entry: `0 9 * * * /Users/mac/Desktop/Alpha-Medical/market-analysis/daily_lead_scraping.sh`
+- Verifies installation
+
+**Expected Daily Output:**
+- ~470 leads scraped (Instagram + Google Maps)
+- Synced to Google Sheets "Raw Leads"
+- Exported to Shopify CSV files
+- Logged to `market-analysis/scraping_log.txt`
+
+**Test Manually:**
+```bash
+/Users/mac/Desktop/Alpha-Medical/market-analysis/daily_lead_scraping.sh
+```
+
+---
+
+### Step 3: Setup Gmail Apps Script (5 minutes)
+
+**Why:** Automate personalized email nurturing to qualified leads
+
+**Instructions:** See `GMAIL_APPS_SCRIPT_SETUP.md`
+
+**Quick Steps:**
+1. Open Google Sheet: "Alpha Medical - Lead Management"
+2. Extensions → Apps Script
+3. Delete default code
+4. Paste: `/Users/mac/Desktop/Alpha-Medical/market-analysis/Gmail_Lead_Nurturing.gs`
+5. Save & authorize permissions
+6. Add trigger: `sendLeadEmails` → Time-driven → Day timer → 10-11 AM
+
+**Expected Daily Output:**
+- Up to 50 personalized emails sent
+- Leads status updated: "New" → "Contacted"
+- Timestamps added to "Last Contact" column
+
+---
+
+## COMPLETE AUTOMATION FLOW
+
+**Daily Automated Workflow:**
+
+```
+9:00 AM  → Cron job starts lead scraping
+           ├─ Instagram: 7 hashtags × 50 results = 350 leads
+           └─ Google Maps: 6 queries × 20 results = 120 leads
+
+9:30 AM  → Leads synced to Google Sheets "Raw Leads"
+           └─ Shopify CSV exported for manual import
+
+[MANUAL] → Review Raw Leads
+           └─ Move qualified leads to "Qualified Leads" sheet
+              (or setup Shopify Flow to auto-qualify)
+
+10:00 AM → Gmail Apps Script runs
+           ├─ Reads "Qualified Leads" where Status = "New"
+           ├─ Sends personalized emails (max 50/day)
+           └─ Updates Status to "Contacted"
+
+[ONGOING]→ Monitor responses in Gmail
+           └─ Update lead status in Google Sheets
+```
+
+---
+
+## COST BREAKDOWN
+
+**Monthly Costs:**
+
+| Service | Cost | Usage |
+|---------|------|-------|
+| Apify | $39/month | Lead scraping (Instagram + Google Maps) |
+| Google Workspace (optional) | $0 (free Gmail) | Email automation (100 emails/day limit) |
+| Shopify | $39/month | (Already paying for store) |
+| **TOTAL** | **$39/month** | (~$1.30/day for 470 leads/day = $0.003/lead) |
+
+**Cost per Lead:** $0.003 (3/10th of a cent!)
+
+**Compared to:**
+- Lead databases: $0.10-$0.50 per lead
+- LinkedIn Sales Navigator: $99/month (limited leads)
+- Manual research: $10-15/hour labor
+
+**ROI:** If 1 lead converts per month → customer LTV $100+ → 256% ROI
+
+---
+
+## MONITORING & METRICS
+
+### Daily Checks (5 min/day)
+
+1. **View Scraping Logs:**
+   ```bash
+   tail -50 /Users/mac/Desktop/Alpha-Medical/market-analysis/scraping_log.txt
+   ```
+
+2. **Check Google Sheets:**
+   - Raw Leads: Verify new leads added daily
+   - Qualified Leads: Check email status updates
+   - Analytics: Review metrics dashboard
+
+3. **Monitor Gmail:**
+   - Check sent folder for email confirmations
+   - Review responses from interested leads
+
+### Weekly Analytics (15 min/week)
+
+**Track in Analytics Sheet:**
+
+| Metric | Target | Actual | Status |
+|--------|--------|--------|--------|
+| Leads Scraped (weekly) | 3,290 | - | Pending |
+| Qualified Leads (weekly) | 100 | - | Pending |
+| Emails Sent (weekly) | 350 | - | Pending |
+| Responses Received | 35 (10% rate) | - | Pending |
+| Conversions to Customer | 3-5 | - | Pending |
+
+---
+
+## TROUBLESHOOTING
+
+### Cron Job Not Running
+
+**Check cron status:**
+```bash
+crontab -l
+```
+
+**View cron logs (macOS):**
+```bash
+log show --predicate 'process == "cron"' --last 1d
+```
+
+**Test manually:**
+```bash
+/Users/mac/Desktop/Alpha-Medical/market-analysis/daily_lead_scraping.sh
+```
+
+---
+
+### Google Sheets Sync Failed
+
+**Error:** "Failed to open spreadsheet"
+
+**Fix:**
+1. Verify Sheet ID in `.env` file
+2. Confirm service account has Editor access
+3. Check credentials file exists: `google_credentials.json`
+
+---
+
+### No Emails Sent
+
+**Check Apps Script execution log:**
+1. Apps Script editor → Executions (left sidebar)
+2. View error messages
+3. Ensure trigger is active (⏰ Triggers tab)
+
+**Common causes:**
+- No leads with Status = "New"
+- Gmail daily limit reached (100 emails)
+- Script not authorized
+
+---
+
+## SCALING UP
+
+### Increase Lead Volume
+
+**More Instagram Hashtags:**
+
+Edit `daily_lead_scraping.sh` line 37:
+```bash
+INSTAGRAM_HASHTAGS=(
+    "arthritis"
+    "jointpain"
+    # ADD MORE:
+    "chronicpain"
+    "fibromyalgia"
+    "backrelief"
+)
+```
+
+**More Google Maps Locations:**
+
+Edit line 79:
+```bash
+declare -a GMAPS_QUERIES=(
+    "senior center:Miami, FL"
+    # ADD MORE CITIES:
+    "senior center:Chicago, IL"
+    "senior center:Houston, TX"
+)
+```
+
+**Expected:** +100-200 leads/day per added location/hashtag
+
+---
+
+### Upgrade Email Volume
+
+**Google Workspace ($6/user/month):**
+- 2,000 emails/day limit (vs 100 free)
+- Professional email domain
+- Better deliverability
+
+**Update script:**
+
+Edit `Gmail_Lead_Nurturing.gs` line 32:
+```javascript
+MAX_EMAILS_PER_RUN: 200, // Increased from 50
+```
+
+---
+
+## SHOPIFY FLOW INTEGRATION (Future)
+
+**Goal:** Auto-qualify leads and trigger Shopify Flows
+
+**Requirements:**
+- Shopify Flow app (free on Plus plans, $99/month otherwise)
+- Webhook integration from Google Sheets
+- Custom Shopify Flow workflows
+
+**See:** `LEAD_MANAGEMENT_SHOPIFY_FLOWS.md` for detailed setup
+
+**Estimated Setup Time:** 30-45 minutes
+
+---
+
+## CURRENT STATUS SUMMARY
+
+### ✅ Completed (95%)
+
+- Infrastructure setup
+- All scripts created and tested
+- Documentation written
+- GitHub secrets removed
+- Social share image uploaded
+- .env configuration ready
+
+### ⏳ Pending User Action (3 steps, 20 min)
+
+1. Create Google Sheet manually (3 min)
+2. Run cron job setup (5 min)
+3. Setup Gmail Apps Script (5 min)
+
+### 🔮 Future Enhancements
+
+- Shopify Flow automation (30-45 min)
+- Subscription model (Priority 2 from TOP5_PERCENT plan)
+- Loyalty program (Priority 3 from TOP5_PERCENT plan)
+- AI recommendations (Priority 1 from TOP5_PERCENT plan)
+
+---
+
+## FILES REFERENCE
+
+**Setup Scripts:**
+- `configure_existing_sheet.py` - Google Sheet structure
+- `setup_cron_job.sh` - Cron job installation
+
+**Automation Scripts:**
+- `market-analysis/lead_generation_scraper.py` - Lead scraping
+- `market-analysis/daily_lead_scraping.sh` - Daily automation
+- `market-analysis/Gmail_Lead_Nurturing.gs` - Email automation
+
+**Documentation:**
+- `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md` - Sheet creation
+- `GMAIL_APPS_SCRIPT_SETUP.md` - Email setup
+- `NEXT_ACTION_REQUIRED.txt` - Quick reference
+- This file: `AUTOMATION_SETUP_COMPLETE_GUIDE.md` - Master guide
+
+**Configuration:**
+- `.env` - Environment variables (Sheet ID, API keys)
+- `google_credentials.json` - Service account credentials
+
+---
+
+## QUICK START CHECKLIST
+
+Use this checklist to complete setup:
+
+```
+□ Step 1: Create Google Sheet (3 min)
+  □ Open: https://sheets.google.com/create
+  □ Rename: "Alpha Medical - Lead Management"
+  □ Share with: ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+  □ Copy Sheet ID
+  □ Run: python3 configure_existing_sheet.py SHEET_ID
+  □ Verify: 3 worksheets created
+
+□ Step 2: Setup Cron Job (5 min)
+  □ Run: ./setup_cron_job.sh
+  □ Verify: crontab -l shows entry
+  □ Test: Run scraping script manually
+
+□ Step 3: Setup Gmail Apps Script (5 min)
+  □ Open Google Sheet → Extensions → Apps Script
+  □ Paste Gmail_Lead_Nurturing.gs
+  □ Save & authorize
+  □ Add trigger: sendLeadEmails → Day timer → 10-11 AM
+  □ Test: Run manually, check execution log
+
+□ Step 4: Verification (5 min)
+  □ Wait for 9 AM next day
+  □ Check scraping_log.txt for results
+  □ Check Google Sheets for new leads
+  □ Wait for 10 AM
+  □ Check Gmail sent folder for emails
+  □ Check Google Sheets for status updates
+
+□ Step 5: Monitor & Optimize (ongoing)
+  □ Daily: Check logs and sheets (5 min)
+  □ Weekly: Review analytics metrics (15 min)
+  □ Monthly: Adjust hashtags/queries based on quality
+```
+
+---
+
+## SUPPORT
+
+**Script Errors:**
+- Check logs: `tail -f market-analysis/scraping_log.txt`
+- Test scripts manually
+- Verify .env configuration
+
+**Google Sheets Issues:**
+- Confirm service account access
+- Check Sheet ID in .env
+- Verify credentials file exists
+
+**Email Automation:**
+- Check Apps Script execution log
+- Verify Gmail permissions
+- Ensure trigger is active
+
+**General Questions:**
+- Review: `market-analysis/README.md`
+- Reference: `LEAD_MANAGEMENT_SHOPIFY_FLOWS.md`
+
+---
+
+✅ **READY TO COMPLETE!** Follow the 3 steps above to activate full automation.
+
+**Estimated Time to Fully Operational:** 20 minutes of your time
+**Expected Results:** 470 leads/day automated, 50 emails/day automated, $0.003 cost per lead
+
+---
+
+
+# 20. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -49195,10 +49650,10 @@ cp source/* destination/
 ---
 
 
-# 20. Bundle Auto Creation Architecture
+# 21. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -50101,10 +50556,10 @@ function markProposalsAsCreated(hash) {
 ---
 
 
-# 21. Bundle Builder Deployment Guide
+# 22. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -50566,10 +51021,10 @@ gtag('event', 'trending_proposal_viewed', {
 ---
 
 
-# 22. Bundle Builder System Documentation
+# 23. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -51785,10 +52240,10 @@ gtag('event', 'bundle_proposal_submitted', {
 ---
 
 
-# 23. Bundle Persona Critical Audit
+# 24. Bundle Persona Critical Audit
 
 **File:** `BUNDLE_PERSONA_CRITICAL_AUDIT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -52409,10 +52864,10 @@ Pour chaque bundle, je vérifie:
 ---
 
 
-# 24. Bundle Reconstruction Analysis 2025
+# 25. Bundle Reconstruction Analysis 2025
 
 **File:** `BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -52859,10 +53314,10 @@ Market data shows:
 ---
 
 
-# 25. Cart Drawer Forensic Analysis
+# 26. Cart Drawer Forensic Analysis
 
 **File:** `CART_DRAWER_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -53416,10 +53871,10 @@ document.addEventListener('cart:updated', function(event) {
 ---
 
 
-# 26. Chat Instant Answers
+# 27. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -55225,10 +55680,10 @@ Pack de 10-20 pads = Meilleur prix
 ---
 
 
-# 27. Collection Overlap Verification Report
+# 28. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -55522,10 +55977,10 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ---
 
 
-# 28. Complete Manually Final 40 Percent
+# 29. Complete Manually Final 40 Percent
 
 **File:** `COMPLETE_MANUALLY_FINAL_40_PERCENT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -55727,10 +56182,10 @@ Une fois le workflow activé:
 ---
 
 
-# 29. Complete Shopify Flow Setup
+# 30. Complete Shopify Flow Setup
 
 **File:** `COMPLETE_SHOPIFY_FLOW_SETUP.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -55905,10 +56360,10 @@ Après activation complète:
 ---
 
 
-# 30. Content Calendar Q1 2026
+# 31. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -56509,10 +56964,10 @@ June:
 ---
 
 
-# 31. Creatify Prompts Alpha Medical
+# 32. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -58522,10 +58977,10 @@ Ce document est un living document - à mettre à jour après testing phase avec
 ---
 
 
-# 32. Critical Manual Actions Guide
+# 33. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -58913,10 +59368,10 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 ---
 
 
-# 33. Custom Bundle Builder Complete Analysis
+# 34. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -60296,10 +60751,10 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 ---
 
 
-# 34. Deployment Guide Complete
+# 35. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -61144,10 +61599,10 @@ Shopify webhook → Apps Script Web App → Google Sheets
 ---
 
 
-# 35. Deployment Verification
+# 36. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -61559,10 +62014,10 @@ python3 generate_llms_txt.py
 ---
 
 
-# 36. Dsers Configuration Guide
+# 37. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -62262,10 +62717,10 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 ---
 
 
-# 37. Dsers Form Configuration
+# 38. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -63023,10 +63478,10 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 ---
 
 
-# 38. Email Marketing Automation Audit
+# 39. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -63829,10 +64284,10 @@ grep "fbq(" homepage → 0 results
 ---
 
 
-# 39. Factual Verification Status
+# 40. Factual Verification Status
 
 **File:** `FACTUAL_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -64223,10 +64678,10 @@ Test → Measure → Validate → Scale.
 ---
 
 
-# 40. Final Report Transparency Implementation
+# 41. Final Report Transparency Implementation
 
 **File:** `FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -64918,10 +65373,10 @@ Back & Posture Support: 1 product
 ---
 
 
-# 41. Final Store Status 2025-10-31
+# 42. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -65146,10 +65601,10 @@ Back & Posture Support: 1 product
 ---
 
 
-# 42. Forensic Analysis Report
+# 43. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -68113,10 +68568,10 @@ FILES:
 ---
 
 
-# 43. Get Conversion Id Steps
+# 44. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -68497,10 +68952,320 @@ TOTAL: ~30 minutes de travail actif
 ---
 
 
-# 44. Google Ads Gtm Progress
+# 45. Gmail Apps Script Setup
+
+**File:** `GMAIL_APPS_SCRIPT_SETUP.md`
+**Last Modified:** 2025-11-23 13:32
+
+---
+
+# GMAIL APPS SCRIPT SETUP - EMAIL AUTOMATION
+
+**Purpose:** Automate personalized lead nurturing emails sent daily from Google Sheets
+
+**Time Required:** 5 minutes (one-time setup)
+
+---
+
+## PREREQUISITES
+
+✅ Google Sheet created: "Alpha Medical - Lead Management"
+✅ Service account email configured
+✅ Sheet ID saved to .env file
+
+**NOTE:** This step can only be completed AFTER you create the Google Sheet manually.
+
+---
+
+## STEP-BY-STEP INSTRUCTIONS
+
+### Step 1: Open Your Google Sheet (30 seconds)
+
+1. Open your Google Sheet: "Alpha Medical - Lead Management"
+   (The one you just created in the previous step)
+
+### Step 2: Open Apps Script Editor (1 min)
+
+2. Click **Extensions** (menu bar)
+3. Click **Apps Script**
+4. This opens the Apps Script editor in a new tab
+
+### Step 3: Delete Default Code (30 seconds)
+
+5. You'll see default function `myFunction() { }`
+6. **Select all code** (Cmd+A or Ctrl+A)
+7. **Delete it**
+
+### Step 4: Paste Lead Nurturing Script (1 min)
+
+8. Open this file on your computer:
+   ```
+   /Users/mac/Desktop/Alpha-Medical/market-analysis/Gmail_Lead_Nurturing.gs
+   ```
+
+9. **Copy all contents** of that file
+
+10. **Paste into Apps Script editor**
+
+### Step 5: Save & Authorize (2 min)
+
+11. Click **💾 Save** (or Cmd+S)
+
+12. Rename project:
+    - Click "Untitled project" at top
+    - Change to: `Gmail Lead Nurturing`
+    - Press Enter
+
+13. Click **▶️ Run** button (to test)
+
+14. You'll see popup: **"Authorization required"**
+    - Click **Review permissions**
+    - Select your Google account
+    - Click **Advanced**
+    - Click **"Go to Gmail Lead Nurturing (unsafe)"**
+    - Click **Allow**
+
+    **NOTE:** This is your own script, it's safe. Google shows this warning for all custom scripts.
+
+### Step 6: Setup Daily Trigger (1 min)
+
+15. Click **⏰ Triggers** (left sidebar - clock icon)
+
+16. Click **+ Add Trigger** (bottom right)
+
+17. Configure trigger:
+    - **Function:** `sendLeadEmails`
+    - **Event source:** `Time-driven`
+    - **Type of time based trigger:** `Day timer`
+    - **Time of day:** `10am to 11am`
+
+18. Click **Save**
+
+19. You may need to authorize again (same process as step 14)
+
+---
+
+## VERIFICATION
+
+### Test Manual Run (Optional)
+
+1. Go back to Apps Script editor
+2. Select function: `sendLeadEmails`
+3. Click **▶️ Run**
+4. Check **Execution log** (bottom of screen)
+5. Should see: "✅ Email campaign complete"
+
+### Check Trigger Status
+
+1. Click **⏰ Triggers** (left sidebar)
+2. You should see:
+   ```
+   sendLeadEmails | Head | Time-driven | Day timer | 10am-11am
+   ```
+3. Status should be **Active** (no errors)
+
+---
+
+## WHAT HAPPENS DAILY
+
+**Every day at 10 AM:**
+
+1. Script reads "Qualified Leads" sheet
+2. Finds leads with status = "New"
+3. Sends personalized email based on:
+   - Persona (seniors, workers, athletes)
+   - Quality score (hot/warm/cold lead)
+   - Business name
+4. Updates status to "Contacted"
+5. Adds timestamp to "Last Contact" column
+6. Respects Gmail rate limits (50 emails/run max)
+
+**Email Templates:**
+- **Hot leads (score ≥ 8.5):** Aggressive offer (25% discount)
+- **Warm leads (score 7.5-8.4):** Educational content + soft CTA
+- **Cold leads (score < 7.5):** Pure value content, no hard sell
+
+---
+
+## GMAIL RATE LIMITS
+
+**Free Gmail Account:**
+- 100 emails/day maximum
+- Script configured to send max 50/run
+
+**Google Workspace:**
+- 2,000 emails/day maximum
+- Can increase script limit to 100+/run
+
+**Rate Limiting Protection:**
+- 2-second delay between emails
+- Automatic daily quota tracking
+- Stops if limit reached
+
+---
+
+## CUSTOMIZATION
+
+### Change Email Templates
+
+1. Open Apps Script editor
+2. Scroll to `getEmailTemplate()` function (line 40)
+3. Edit HTML templates:
+   - `seniors.hot` - Hot lead template for seniors
+   - `seniors.warm` - Warm lead template
+   - `workers.hot` - Hot lead template for office workers
+   - etc.
+4. Click **💾 Save**
+
+### Change Trigger Time
+
+1. Click **⏰ Triggers**
+2. Click **⋮** (three dots) next to trigger
+3. Click **Edit trigger**
+4. Change time range
+5. Click **Save**
+
+### Test Mode (Send No Emails)
+
+1. Open Apps Script editor
+2. Find line 34:
+   ```javascript
+   TEST_MODE: false
+   ```
+3. Change to:
+   ```javascript
+   TEST_MODE: true
+   ```
+4. Click **💾 Save**
+5. Run manually to test without sending real emails
+
+---
+
+## TROUBLESHOOTING
+
+### Error: "Cannot read property 'Qualified Leads'"
+
+**Cause:** Sheet name doesn't match
+**Fix:** Ensure worksheet is named exactly `Qualified Leads` (case-sensitive)
+
+### Error: "Service invoked too many times"
+
+**Cause:** Hit Gmail daily limit
+**Fix:** Wait 24 hours, reduce MAX_EMAILS_PER_RUN to 25
+
+### No Emails Sent
+
+**Cause:** No leads with status = "New"
+**Fix:** Check "Qualified Leads" sheet, ensure Status column has "New" values
+
+### Emails Not Personalized
+
+**Cause:** Missing data in Business Name or Email columns
+**Fix:** Ensure lead scraping populated all required columns
+
+---
+
+## MONITORING
+
+### View Execution History
+
+1. Apps Script editor
+2. Click **Executions** (left sidebar)
+3. Shows:
+   - Timestamp of each run
+   - Success/Failure status
+   - Duration
+   - Error messages (if any)
+
+### View Sent Emails
+
+1. Open Gmail
+2. Go to **Sent** folder
+3. Emails sent by script will appear here
+
+### Track in Google Sheet
+
+1. Open "Qualified Leads" sheet
+2. Check columns:
+   - **Status:** Should change from "New" to "Contacted"
+   - **Last Contact:** Should have today's date
+   - **Next Action:** Auto-populated with follow-up date
+
+---
+
+## INTEGRATION WITH LEAD SCRAPING
+
+**Full Automation Flow:**
+
+1. **9:00 AM:** Cron job scrapes leads (Instagram + Google Maps)
+2. **9:30 AM:** Leads synced to Google Sheets "Raw Leads"
+3. **Manual/Flow:** Qualify leads → move to "Qualified Leads" sheet
+4. **10:00 AM:** Apps Script sends nurturing emails to new qualified leads
+5. **Ongoing:** Monitor responses, update lead status
+
+---
+
+## METRICS TO TRACK
+
+**In Analytics Sheet:**
+
+- Total emails sent (daily)
+- Open rate (requires UTM tracking)
+- Response rate
+- Conversion to customer
+
+**Add to Analytics sheet:**
+```
+Metric: Emails Sent Daily
+Value: [count from Apps Script log]
+Target: 50
+Status: On Track
+```
+
+---
+
+## NEXT STEPS AFTER SETUP
+
+1. ✅ Verify trigger is active
+2. ✅ Add sample qualified lead to test
+3. ✅ Run manual test (click Run button)
+4. ✅ Check Gmail sent folder for test email
+5. ✅ Wait for daily trigger (next day 10 AM)
+6. ✅ Monitor execution logs
+
+---
+
+## QUICK REFERENCE
+
+**Script Location:**
+- File: `/Users/mac/Desktop/Alpha-Medical/market-analysis/Gmail_Lead_Nurturing.gs`
+- Apps Script: Extensions → Apps Script
+
+**Key Functions:**
+- `sendLeadEmails()` - Main function (triggered daily)
+- `getEmailTemplate()` - Email templates by persona/priority
+- `updateLeadStatus()` - Updates sheet after sending
+
+**Trigger:**
+- Daily at 10-11 AM
+- Function: `sendLeadEmails`
+
+**Rate Limits:**
+- Free Gmail: 100 emails/day
+- Script limit: 50 emails/run
+- Delay: 2 seconds between emails
+
+---
+
+✅ **READY!** Once you complete these 6 steps, email automation will run daily at 10 AM.
+
+---
+
+
+# 46. Google Ads Gtm Progress
 
 **File:** `GOOGLE_ADS_GTM_PROGRESS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -68868,10 +69633,10 @@ python3 check_gtm_status.py
 ---
 
 
-# 45. Google Ads Next Steps
+# 47. Google Ads Next Steps
 
 **File:** `GOOGLE_ADS_NEXT_STEPS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -69134,10 +69899,10 @@ git push origin main
 ---
 
 
-# 46. Google Ads Setup Guide
+# 48. Google Ads Setup Guide
 
 **File:** `GOOGLE_ADS_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -69546,10 +70311,10 @@ Avant de considérer l'installation complète:
 ---
 
 
-# 47. Google Search Console Verification Status
+# 49. Google Search Console Verification Status
 
 **File:** `GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -69782,10 +70547,195 @@ Je **REFUSE** de dire:
 ---
 
 
-# 48. Gsc Configuration Report 2025-11-19
+# 50. Google Sheet Setup Instructions
+
+**File:** `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md`
+**Last Modified:** 2025-11-23 13:32
+
+---
+
+# GOOGLE SHEET SETUP - MANUAL CREATION REQUIRED
+
+**Status:** Service account has storage quota exceeded. Need to create sheet under your personal Google account.
+
+**Time Required:** 3 minutes
+
+---
+
+## STEP-BY-STEP INSTRUCTIONS
+
+### Step 1: Create New Google Sheet (1 min)
+
+1. **Open this URL:** https://sheets.google.com/create
+
+2. **Rename the sheet:**
+   - Click "Untitled spreadsheet" at top
+   - Change name to: `Alpha Medical - Lead Management`
+   - Press Enter
+
+### Step 2: Share with Service Account (1 min)
+
+3. **Click "Share" button** (top right corner)
+
+4. **Add service account email:**
+   ```
+   ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+   ```
+
+5. **Set permissions to "Editor"**
+
+6. **Click "Send"**
+
+### Step 3: Copy Sheet ID (30 seconds)
+
+7. **Look at the URL in your browser:**
+   ```
+   https://docs.google.com/spreadsheets/d/SHEET_ID_HERE/edit
+   ```
+
+8. **Copy the SHEET_ID** (between `/d/` and `/edit`)
+   - Example: `1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms`
+
+### Step 4: Run Configuration Script (30 seconds)
+
+9. **Open Terminal and run:**
+   ```bash
+   cd /Users/mac/Desktop/Alpha-Medical
+   python3 configure_existing_sheet.py YOUR_SHEET_ID_HERE
+   ```
+
+   Replace `YOUR_SHEET_ID_HERE` with the actual ID from step 8.
+
+---
+
+## EXPECTED OUTPUT
+
+When you run the configuration script, you should see:
+
+```
+======================================================================
+CONFIGURING EXISTING GOOGLE SHEET
+======================================================================
+
+Sheet ID: 1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms
+
+[1/4] Authenticating...
+✅ Authenticated
+
+[2/4] Opening spreadsheet...
+✅ Opened: Alpha Medical - Lead Management
+   URL: https://docs.google.com/spreadsheets/d/...
+
+[3/4] Setting up worksheets...
+✅ Created 3 worksheets:
+   - Raw Leads
+   - Qualified Leads
+   - Analytics
+
+[4/4] Adding headers and formatting...
+✅ Headers configured and formatted
+
+======================================================================
+CONFIGURATION COMPLETE
+======================================================================
+
+✅ Sheet ID saved to .env file
+✅ READY FOR AUTOMATION!
+```
+
+---
+
+## WHAT THE SCRIPT DOES
+
+The configuration script will automatically:
+
+1. ✅ Rename "Sheet1" to "Raw Leads"
+2. ✅ Create "Qualified Leads" worksheet
+3. ✅ Create "Analytics" worksheet
+4. ✅ Add column headers to all sheets
+5. ✅ Format headers (bold, colored backgrounds)
+6. ✅ Freeze header rows
+7. ✅ Add initial analytics tracking metrics
+8. ✅ Save Sheet ID to `.env` file
+
+---
+
+## TROUBLESHOOTING
+
+### Error: "Failed to open spreadsheet"
+**Cause:** Sheet not shared with service account
+**Fix:** Make sure you shared with exact email (copy-paste to avoid typos):
+```
+ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+```
+
+### Error: "Authentication failed"
+**Cause:** `google_credentials.json` file missing or corrupted
+**Fix:** Verify file exists:
+```bash
+ls -lh /Users/mac/Desktop/Alpha-Medical/google_credentials.json
+```
+Should show: `-rw-r--r-- ... 2.3K ... google_credentials.json`
+
+### Error: Wrong Sheet ID
+**Cause:** Copied wrong part of URL
+**Example URL:**
+```
+https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit#gid=0
+```
+**Correct ID:** `1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms`
+**Wrong:** `edit#gid=0` (don't include this part)
+
+---
+
+## AFTER SETUP COMPLETE
+
+Once the Google Sheet is configured, you can:
+
+1. **Test lead scraping:**
+   ```bash
+   python3 market-analysis/lead_generation_scraper.py --test
+   ```
+
+2. **View leads in Google Sheet:**
+   - Open the sheet URL from script output
+   - Check "Raw Leads" tab for scraped data
+
+3. **Setup automation:**
+   - See: `LEAD_MANAGEMENT_SHOPIFY_FLOWS.md`
+   - Setup cron job for daily scraping
+   - Setup Gmail Apps Script for nurturing
+
+---
+
+## QUICK REFERENCE
+
+**Service Account Email:**
+```
+ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+```
+
+**Configuration Script:**
+```bash
+python3 configure_existing_sheet.py SHEET_ID
+```
+
+**Test Scraping:**
+```bash
+python3 market-analysis/lead_generation_scraper.py --test
+```
+
+---
+
+**READY TO START!** Follow the 4 steps above to complete the Google Sheets setup.
+
+---
+
+
+# 51. Gsc Configuration Report 2025-11-19
 
 **File:** `GSC_CONFIGURATION_REPORT_2025-11-19.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -70400,10 +71350,10 @@ curl -s "https://alphamedical.shop/robots.txt"
 ---
 
 
-# 49. Gsc Final Checklist
+# 52. Gsc Final Checklist
 
 **File:** `GSC_FINAL_CHECKLIST.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -70789,10 +71739,10 @@ SOUMISSIONS MANUELLES:
 ---
 
 
-# 50. Gtm Add Missing Tags Steps
+# 53. Gtm Add Missing Tags Steps
 
 **File:** `GTM_ADD_MISSING_TAGS_STEPS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -71188,10 +72138,10 @@ Business model: Dropshipping (pre-launch)
 ---
 
 
-# 51. Gtm Setup Guide
+# 54. Gtm Setup Guide
 
 **File:** `GTM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -71836,10 +72786,10 @@ Avant de considérer l'installation complète:
 ---
 
 
-# 52. Homepage Cta Instructions
+# 55. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -72109,10 +73059,10 @@ Workflow AUTOMATIQUE:
 ---
 
 
-# 53. Hostinger Dns Gsc Setup Guide
+# 56. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -72485,10 +73435,10 @@ dig TXT alphamedical.shop +short
 ---
 
 
-# 54. Implementation Manuelle Guide
+# 57. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -73235,10 +74185,10 @@ Cliquer **"Save"**
 ---
 
 
-# 55. Implementation Report Pricing
+# 58. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -73681,10 +74631,10 @@ Tous les documents sont prêts et validés contre sources officielles:
 ---
 
 
-# 56. Klaviyo Abandoned Cart Flow Implementation
+# 59. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -74389,10 +75339,10 @@ End flow
 ---
 
 
-# 57. Klaviyo Welcome Flow Implementation
+# 60. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -74841,10 +75791,10 @@ python3 update_landing_page_with_klaviyo.py
 ---
 
 
-# 58. Llms Txt Deployment
+# 61. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -75427,10 +76377,10 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 59. Loyalty Automation Progress Report
+# 62. Loyalty Automation Progress Report
 
 **File:** `LOYALTY_AUTOMATION_PROGRESS_REPORT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -75658,10 +76608,10 @@ Après complétion manuelle:
 ---
 
 
-# 60. Loyalty Simplified Manual Actions Guide
+# 63. Loyalty Simplified Manual Actions Guide
 
 **File:** `LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -75974,10 +76924,10 @@ System is 100% operational when:
 ---
 
 
-# 61. Loyalty System Architecture
+# 64. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -76363,10 +77313,10 @@ query GetCustomerLoyalty($customerId: ID!) {
 ---
 
 
-# 62. Loyalty System Setup Guide
+# 65. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -76920,10 +77870,10 @@ After setup complete, verify:
 ---
 
 
-# 63. Manual Footer Config
+# 66. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -77014,10 +77964,10 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 64. Menu Bundles Instructions
+# 67. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -77097,10 +78047,10 @@ Après sauvegarde:
 ---
 
 
-# 65. Mydealz Synthese
+# 68. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -77476,10 +78426,10 @@ EMAIL_CODES:
 ---
 
 
-# 66. Newsletter Flows Creation Checklist
+# 69. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -78177,10 +79127,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 67. Next Steps Flow Configuration
+# 70. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -78429,10 +79379,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 68. Pain Relief Guide Implementation
+# 71. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -78886,10 +79836,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 69. Paypal Deactivation Guide
+# 72. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -79184,10 +80134,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 70. Phase 3 Implementation Log
+# 73. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -79720,10 +80670,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 71. Pre Launch Checklist 23 Days
+# 74. Pre Launch Checklist 23 Days
 
 **File:** `PRE_LAUNCH_CHECKLIST_23_DAYS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -80232,10 +81182,10 @@ Prêt à lancer? 🚀
 ---
 
 
-# 72. Pricing Quick Reference
+# 75. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -80611,10 +81561,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 73. Pricing Verification
+# 76. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -81532,10 +82482,10 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 74. Product Optimization Tracking
+# 77. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -82278,10 +83228,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 75. Rapport Final Complet
+# 78. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -82510,10 +83460,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 76. Rapport Theme Analyse
+# 79. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -82881,10 +83831,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 77. Response To Third Party Analysis
+# 80. Response To Third Party Analysis
 
 **File:** `RESPONSE_TO_THIRD_PARTY_ANALYSIS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -83407,10 +84357,10 @@ The third-party analysis was **harsh but fair**. We addressed every factual erro
 ---
 
 
-# 78. Robots Txt Deployment
+# 81. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -83725,10 +84675,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 79. Seo Audit Recommendations
+# 82. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -84187,10 +85137,10 @@ data = {
 ---
 
 
-# 80. Session 2025-11-11 Part3 Summary
+# 83. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -84376,10 +85326,10 @@ data = {
 ---
 
 
-# 81. Session 2025-11-11 Part6 Summary
+# 84. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -84672,10 +85622,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 82. Session 2025-11-11 Summary
+# 85. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -84907,10 +85857,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 83. Session 2025-11-19 Final Summary
+# 86. Session 2025-11-19 Final Summary
 
 **File:** `SESSION_2025-11-19_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -85189,10 +86139,10 @@ All information is now:
 ---
 
 
-# 84. Session Part 14 Comprehensive Audit
+# 87. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -85802,10 +86752,10 @@ All 3 have:
 ---
 
 
-# 85. Session Summary
+# 88. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -86064,10 +87014,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 86. Shopify Configuration Complete
+# 89. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -86556,10 +87506,10 @@ Si besoin d'aide:
 ---
 
 
-# 87. Shopify Email Implementation Checklist
+# 90. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -86901,10 +87851,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 88. Shopify Flow Configuration Guide
+# 91. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -88061,10 +89011,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 89. Shopify Flow Subscriptions Guide
+# 92. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -88478,10 +89428,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 90. Status Report Pages
+# 93. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -88574,10 +89524,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 91. Todo Master Pre Launch 23 Days
+# 94. Todo Master Pre Launch 23 Days
 
 **File:** `TODO_MASTER_PRE_LAUNCH_23_DAYS.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -89860,10 +90810,10 @@ Order paid
 ---
 
 
-# 92. Top5 Percent Native Implementation Plan
+# 95. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -90495,10 +91445,10 @@ function getRecommendations(pain, activity, budget) {
 ---
 
 
-# 93. Top 10 Hero Products Mapping
+# 96. Top 10 Hero Products Mapping
 
 **File:** `TOP_10_HERO_PRODUCTS_MAPPING.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -91000,10 +91950,10 @@ CTA: [specific offer + discount code]
 ---
 
 
-# 94. Top 10 Urls To Index
+# 97. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -91312,10 +92262,10 @@ Homepage (Prio 1)
 ---
 
 
-# 95. Tracking Analytics Gaps 2025
+# 98. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -91691,10 +92641,10 @@ After installing tracking:
 ---
 
 
-# 96. Ugc Video Prompts Grok Imagine
+# 99. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -92493,10 +93443,10 @@ alphamedical.shop
 ---
 
 
-# 97. Ultimate Pain Relief Guide
+# 100. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -94009,10 +94959,10 @@ Visit **alphamedicalcare.com/resources** for:
 ---
 
 
-# 98. Video Ads Creation Playbook
+# 101. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -95211,10 +96161,10 @@ This is a living document - update as you learn!
 ---
 
 
-# 99. Video Ads Infrastructure Complete
+# 102. Video Ads Infrastructure Complete
 
 **File:** `VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -95770,10 +96720,10 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 ---
 
 
-# 100. Session 2025-11-20 Summary
+# 103. Session 2025-11-20 Summary
 
 **File:** `session_2025-11-20_summary.md`
-**Last Modified:** 2025-11-23 11:24
+**Last Modified:** 2025-11-23 13:32
 
 ---
 
@@ -96108,8 +97058,8 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 
 ## Document Information
 
-**Total Documentation Files:** 100
-**Generated:** November 23, 2025 at 11:24 UTC
+**Total Documentation Files:** 103
+**Generated:** November 23, 2025 at 13:32 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
