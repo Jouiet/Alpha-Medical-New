@@ -43,9 +43,10 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Email Marketing & Automation
 
 - [ABANDONED_CART_RECOVERY_CONFIG](ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
-- [AUTOMATION_COMPLETE_WORKFLOWS](market-analysis/AUTOMATION_COMPLETE_WORKFLOWS.md): ✅ Apify Blog & Documentation ✅ GitHub Apify Examples ✅ Shopify Apps Installées (vérification factuelle - 7 apps)
+- [AUTOMATION_COMPLETE_WORKFLOWS](market-analysis/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_SETUP_COMPLETE_GUIDE](AUTOMATION_SETUP_COMPLETE_GUIDE.md): Project documentation
 - [CHAT_INSTANT_ANSWERS](CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
+- [COMPLETE_ACQUISITION_AUTOMATION_SYSTEM](COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md): Project documentation
 - [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
