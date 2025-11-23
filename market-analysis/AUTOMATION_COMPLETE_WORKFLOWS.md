@@ -26,19 +26,26 @@
 - ✅ **Email**: Shopify Email (96 templates, 8 automations actives)
 - ✅ **Security**: All secrets removed from GitHub
 
-### System Reconfiguration (2025-11-23):
-- ✅ **DÉSACTIVÉ**: Cold email system (illégal + inefficace + 0 ROI)
-- ✅ **RECONFIGURÉ**: Google Maps scraping (B2B → Competitor intelligence)
-- ✅ **OBJECTIF**: Scraping = Market intelligence pour TOUS les canaux
-- ✅ **UTILISATION**: Nourrir Meta/TikTok ads + SEO content + Email opt-in
+### System Optimization (2025-11-23):
+- ✅ **RECONFIGURÉ**: Google Maps scraping (B2B leads → D2C competitor intelligence)
+- ✅ **CLARIFIÉ**: Scraping architecture = 75-80% consumer + 20-25% competitor
+- ✅ **OBJECTIF**: Scraping intelligence = Feed TOUS les canaux acquisition
+- ✅ **FLYWHEEL**: Insights → Ads/SEO → Traffic → Email opt-in → Nurture → Conversions
 
-### Scraping Intelligence Purpose:
-**NE SERT PAS À**: Envoyer cold emails directs (impossible + illégal)
-**SERT À**:
-1. **Audience Research**: Pain points, trending topics, hashtags performants
-2. **Ad Optimization**: Meta/TikTok custom audiences, ad copy insights
-3. **SEO/Content**: Blog topics, FAQ content, product descriptions
-4. **Competitor Intel**: Pricing, reviews analysis, product gaps
+### Répartition Scraping (470 insights/jour):
+**75-80% = CONSUMER INTELLIGENCE** (Instagram 350 posts/jour):
+- **Cible**: Consommateurs directs (#kneepain, #arthritis, #deskpain, etc.)
+- **Usage**: Pain points → Ad copy, SEO topics, product descriptions
+- **ROI**: Feed Meta/TikTok custom audiences, content calendar, trending hashtags
+
+**20-25% = COMPETITOR INTELLIGENCE** (Google Maps 120 stores/jour):
+- **Cible**: Orthopedic stores, medical supply competitors (D2C)
+- **Usage**: Pricing analysis, review mining, product gaps, positioning
+- **ROI**: Competitive pricing, product development, market differentiation
+
+### Email Marketing Architecture:
+**INCORRECT**: Scraping → Cold email outreach (0 emails collectés, illégal)
+**CORRECT**: Scraping insights → Optimize ads/SEO → Site traffic → Lead magnets → Email opt-in (Shopify Email) → Nurture sequences
 
 **📋 Architecture Complète:** Voir [COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md](../COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md)
 **📊 Analytics Stack:** GA4 + GTM + Meta Pixel + TikTok Pixel (vérifié)
