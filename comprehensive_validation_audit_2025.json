@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-11-15T16:05:20.252331Z",
+  "timestamp": "2025-11-24T13:34:22.196459Z",
   "criteria": {
     "Metafields Populated (Active Products)": {
       "passed": true,
-      "details": "98/98 active products have metafields (100.0%)"
+      "details": "91/91 active products have metafields (100.0%)"
     },
     "Draft Products Remain Draft": {
       "passed": true,
@@ -34,16 +34,16 @@
       "details": "301 redirect: \u2713, HSTS: \u2713 (max-age=7889238...)"
     },
     "Homepage Meta Tags Perfect": {
-      "passed": false,
-      "details": "Title: 100 chars (optimal: 50-60). Description: 236 chars (optimal: 150-160)"
+      "passed": true,
+      "details": "Title: 54 chars \u2713. Description: 158 chars \u2713"
     },
     "100% English Only": {
       "passed": true,
-      "details": "98/98 products English. French detected: 0"
+      "details": "91/91 products English. French detected: 0"
     },
     "Bundles Count (1 per persona)": {
-      "passed": true,
-      "details": "15 bundles (expected: 14-15 for 8 personas with tiers)"
+      "passed": false,
+      "details": "8 bundles (expected: 14-15 for 8 personas with tiers)"
     },
     "No Duplicate Bundles": {
       "passed": true,
@@ -52,7 +52,7 @@
   },
   "failures": [
     "Structured Data Schemas Present: Found: Organization, Product, WebSite. Missing: BreadcrumbList",
-    "Homepage Meta Tags Perfect: Title: 100 chars (optimal: 50-60). Description: 236 chars (optimal: 150-160)"
+    "Bundles Count (1 per persona): 8 bundles (expected: 14-15 for 8 personas with tiers)"
   ],
   "warnings": [
     "og:image tag exists but may be empty or default placeholder"
