@@ -222,6 +222,7 @@ When assisting with this project:
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [CREATIFY_PROMPTS_ALPHA_MEDICAL](CREATIFY_PROMPTS_ALPHA_MEDICAL.md): Project documentation
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
+- [GET_ADMIN_API_TOKEN](GET_ADMIN_API_TOKEN.md): https://admin.shopify.com/store/azffej-as/settings/apps/development 1. Cliquez sur l'app
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
 - [GOOGLE_ADS_NEXT_STEPS](GOOGLE_ADS_NEXT_STEPS.md): 1. Si premier container: Cliquez "Créer un compte" Formulaire: Configuration container:
@@ -237,12 +238,12 @@ When assisting with this project:
 - [PRE_LAUNCH_CHECKLIST_23_DAYS](PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
 - [RAPPORT_FINAL_COMPLET](RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](RAPPORT_THEME_ANALYSE.md): Project documentation
+- [README](market-analysis/README.md): Project documentation
 - [README](google-sheets-template/README.md): 1. Aller sur Google Sheets: https://sheets.google.com 2. Créer nouveau spreadsheet
 - [README](video-ads-assets/README.md): open VIDEOADSCREATIONPLAYBOOK.md open video-ads-assets/products/README.md
-- [README](video-ads-assets/outputs/README.md): YYYY-MM-DD{product-handle}{type}v{version}.mp4 2025-11-23tourmaline-knee-padsugcv1.mp4
 - [README](video-ads-assets/products/README.md): Chaque produit a son propre dossier avec 4 sous-dossiers: {product-handle}/ ├── hero-images/ # Images fond blanc, studio
 - [README](video-ads-assets/scripts/README.md): python3 assetorganizer.py --create {product-handle} cd /Users/mac/Desktop/Alpha-Medical/video-ads-assets/scripts/
-- [README](market-analysis/README.md): Project documentation
+- [README](video-ads-assets/outputs/README.md): YYYY-MM-DD{product-handle}{type}v{version}.mp4 2025-11-23tourmaline-knee-padsugcv1.mp4
 - [README_COMPLETE](market-analysis/README_COMPLETE.md): market-analysis/ ├── leadgenerationscraper.py # 🎯 LEAD GENERATION │ ├── Instagram hashtag scraping
 - [ROBOTS_TXT_DEPLOYMENT](ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
 - [SESSION_2025-11-11_PART3_SUMMARY](SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
