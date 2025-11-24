@@ -1,0 +1,247 @@
+{
+  "timestamp": "2025-11-24 18:59:10 UTC",
+  "current_state": {
+    "leads_scraped": 0,
+    "leads_qualified": 0,
+    "leads_contacted": 0,
+    "leads_converted": 0,
+    "orders": 0,
+    "customers": 0,
+    "revenue": 0.0
+  },
+  "scraping_sources": {
+    "instagram": {
+      "method": "Hashtag scraping",
+      "target_hashtags": [
+        "#kneepain",
+        "#arthritis",
+        "#backpain",
+        "#deskpain",
+        "#posturecorrection",
+        "#chronicpain",
+        "#jointpain"
+      ],
+      "volume_target": "700-1,500 leads/month",
+      "qualification_mechanism": "NONE",
+      "geographic_filter": "NONE (global scraping)",
+      "demographic_filter": "NONE",
+      "business_filter": "NONE (B2C + B2B mixed)"
+    },
+    "facebook": {
+      "method": "Hashtag scraping",
+      "target_hashtags": [
+        "Similar to Instagram"
+      ],
+      "volume_target": "700-1,500 leads/month",
+      "qualification_mechanism": "NONE",
+      "geographic_filter": "NONE (global scraping)",
+      "demographic_filter": "NONE",
+      "business_filter": "NONE (B2C + B2B mixed)"
+    },
+    "tiktok": {
+      "method": "Hashtag scraping",
+      "target_hashtags": [
+        "Similar to Instagram"
+      ],
+      "volume_target": "700-1,500 leads/month",
+      "qualification_mechanism": "NONE",
+      "geographic_filter": "NONE (global scraping)",
+      "demographic_filter": "NONE",
+      "business_filter": "NONE (B2C + B2B mixed)"
+    },
+    "google_maps": {
+      "method": "Business listings scraping",
+      "target": "Competitor intelligence (orthopedic stores, medical supply)",
+      "volume_target": "500-750 leads/month",
+      "qualification_mechanism": "NONE",
+      "usage": "Competitive analysis, NOT customer acquisition"
+    }
+  },
+  "noise_sources": {
+    "1_wrong_geography": {
+      "description": "Non-US leads (site ships US only)",
+      "estimated_percentage": "60-70%",
+      "reason": "Global hashtag scraping, no geographic filter",
+      "severity": "CRITICAL"
+    },
+    "2_influencers_creators": {
+      "description": "Content creators, not customers",
+      "estimated_percentage": "10-15%",
+      "reason": "Hashtag usage for reach, not pain expression",
+      "severity": "HIGH"
+    },
+    "3_business_accounts": {
+      "description": "Physios, chiropractors, medical professionals",
+      "estimated_percentage": "15-20%",
+      "reason": "No B2B/B2C filtering",
+      "severity": "HIGH"
+    },
+    "4_spam_bots": {
+      "description": "Automated accounts, inactive users",
+      "estimated_percentage": "5-10%",
+      "reason": "Social media scraping inherent noise",
+      "severity": "MEDIUM"
+    },
+    "5_wrong_intent": {
+      "description": "Hashtag users without purchase intent",
+      "estimated_percentage": "20-30%",
+      "reason": "Hashtag \u2260 buyer intent (awareness stage only)",
+      "severity": "HIGH"
+    },
+    "6_no_email": {
+      "description": "Scraped usernames, NOT email addresses",
+      "estimated_percentage": "100%",
+      "reason": "Instagram/TikTok scraping = usernames only",
+      "severity": "CRITICAL - ARCHITECTURAL FLAW"
+    }
+  },
+  "qualification_stages": {
+    "stage_1_scraping": {
+      "mechanism": "Hashtag targeting",
+      "filters": "NONE",
+      "qualification_rate": "Unknown (no data)"
+    },
+    "stage_2_data_enrichment": {
+      "mechanism": "NOT IMPLEMENTED",
+      "filters": "N/A",
+      "qualification_rate": "0%"
+    },
+    "stage_3_lead_scoring": {
+      "mechanism": "NOT IMPLEMENTED",
+      "filters": "N/A",
+      "qualification_rate": "0%"
+    },
+    "stage_4_geographic_filter": {
+      "mechanism": "NOT IMPLEMENTED",
+      "filters": "N/A",
+      "qualification_rate": "0%"
+    },
+    "stage_5_business_type_filter": {
+      "mechanism": "NOT IMPLEMENTED",
+      "filters": "N/A",
+      "qualification_rate": "0%"
+    },
+    "stage_6_email_validation": {
+      "mechanism": "NOT APPLICABLE",
+      "reason": "Scraping yields usernames, not emails",
+      "qualification_rate": "0%"
+    }
+  },
+  "scenarios": {
+    "outreach_model": {
+      "total_scraped": 2100,
+      "us_based": 630.0,
+      "b2c_consumers": 441.0,
+      "purchase_intent": 44.1,
+      "reachable": 0
+    },
+    "insights_model": {
+      "total_scraped": 2100,
+      "insights_generated": 2100,
+      "ads_informed": "100%",
+      "seo_topics_identified": "50-100 topics/month",
+      "content_calendar": "4-8 posts/week",
+      "expected_traffic_lift": "+15-25% (SEO + informed ads)",
+      "email_opt_in_rate": "2-5%"
+    }
+  },
+  "benchmarks": {
+    "paid_ads_facebook": {
+      "channel": "Facebook/Instagram Ads",
+      "lead_quality": "Medium-High",
+      "conversion_rate": "1-5%",
+      "cost_per_lead": "$2-8",
+      "snr": "60-80% (qualified traffic)"
+    },
+    "paid_ads_google": {
+      "channel": "Google Ads (Search)",
+      "lead_quality": "High",
+      "conversion_rate": "3-8%",
+      "cost_per_lead": "$5-15",
+      "snr": "70-85% (high intent)"
+    },
+    "seo_organic": {
+      "channel": "Organic Search (SEO)",
+      "lead_quality": "High",
+      "conversion_rate": "2-5%",
+      "cost_per_lead": "$0.50-2 (content cost amortized)",
+      "snr": "75-90% (self-qualified)"
+    },
+    "cold_email": {
+      "channel": "Cold Email (B2B)",
+      "lead_quality": "Low-Medium",
+      "conversion_rate": "0.5-2%",
+      "cost_per_lead": "$0.10-0.50",
+      "snr": "5-15% (high noise)",
+      "legal_status": "ILLEGAL without opt-in (CAN-SPAM, GDPR)"
+    },
+    "social_scraping_outreach": {
+      "channel": "Social Scraping \u2192 Cold Outreach",
+      "lead_quality": "Very Low",
+      "conversion_rate": "<0.5%",
+      "cost_per_lead": "$0.01-0.05",
+      "snr": "1-5% (very high noise)",
+      "legal_status": "ILLEGAL (no opt-in, GDPR/CAN-SPAM violation)"
+    },
+    "social_scraping_insights": {
+      "channel": "Social Scraping \u2192 Insights \u2192 Ads/SEO",
+      "lead_quality": "N/A (indirect)",
+      "conversion_rate": "Depends on ads/SEO performance",
+      "cost_per_lead": "$0.01-0.05 (scraping) + ad spend",
+      "snr": "100% (all data = insights)",
+      "legal_status": "LEGAL (public data, no direct contact)"
+    }
+  },
+  "structural_problems": {
+    "1_no_email_capture": {
+      "problem": "Scraping yields usernames, NOT email addresses",
+      "impact": "0% reachable for email marketing",
+      "snr_impact": "SNR \u2192 0% (cannot contact)",
+      "fix_time": "ARCHITECTURAL - Cannot be fixed (API limitation)",
+      "workaround": "Use insights model instead of outreach model"
+    },
+    "2_no_geographic_filter": {
+      "problem": "Global scraping, site ships US only",
+      "impact": "60-70% leads unusable",
+      "snr_impact": "SNR -60-70%",
+      "fix_time": "2h (add location filter to scraping scripts)",
+      "fix_complexity": "LOW"
+    },
+    "3_no_b2b_b2c_filter": {
+      "problem": "Business accounts mixed with consumers",
+      "impact": "15-20% leads are B2B (wrong target)",
+      "snr_impact": "SNR -15-20%",
+      "fix_time": "4h (account type detection + filtering)",
+      "fix_complexity": "MEDIUM"
+    },
+    "4_no_lead_scoring": {
+      "problem": "All leads treated equally",
+      "impact": "No prioritization of high-intent leads",
+      "snr_impact": "SNR -20-30% (wasted effort on low-intent)",
+      "fix_time": "8h (implement scoring algorithm)",
+      "fix_complexity": "MEDIUM"
+    },
+    "5_hashtag_low_intent": {
+      "problem": "Hashtag usage \u2260 purchase intent",
+      "impact": "70-80% awareness stage, not consideration",
+      "snr_impact": "SNR -70-80%",
+      "fix_time": "CANNOT FIX (inherent to method)",
+      "workaround": "Use for insights, not direct conversion"
+    },
+    "6_no_data_enrichment": {
+      "problem": "No email/phone enrichment",
+      "impact": "Cannot contact leads",
+      "snr_impact": "SNR \u2192 0% for outreach",
+      "fix_time": "N/A (paid services: $0.10-0.50/lead)",
+      "legal_issue": "GDPR/CAN-SPAM compliance questionable"
+    }
+  },
+  "final_assessment": {
+    "current_snr": "0% (outreach model - no emails)",
+    "theoretical_snr_no_filters": "2-5%",
+    "theoretical_snr_all_filters": "15-25%",
+    "insights_model_snr": "100%",
+    "recommendation": "Use insights model, NOT outreach model",
+    "legal_status": "Outreach model = ILLEGAL, Insights model = LEGAL"
+  }
+}

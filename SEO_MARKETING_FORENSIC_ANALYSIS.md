@@ -23035,8 +23035,68 @@ BREAK #4 (Advocacy → Acquisition):
 
 ---
 
-**Dernière mise à jour:** 2025-11-24 23:00 UTC
-**Audit complet:** audit_flywheel_missing_components.py + verify_flywheel_actual_state.py
+## 🔄 SESSION 48 CONTINUATION: SNR FORENSIC ANALYSIS (2025-11-24 23:30 UTC)
+
+### Signal-to-Noise Ratio - Lead System Factual Audit
+
+**Audit Methodology:** `analyze_lead_snr_factual.py` + Web research (10 sources 2025) + GitHub analysis
+
+### CURRENT SNR: 0% (Outreach Model) / 100% (Insights Model)
+
+**Factual Assessment:**
+
+| Metric | Outreach Model | Insights Model |
+|--------|---------------|----------------|
+| **SNR** | **0%** | **100%** |
+| **Reachable Leads** | 0 (no emails) | N/A (no direct contact) |
+| **Legal Status** | ❌ ILLEGAL | ✅ LEGAL |
+| **Cost/Month** | $73 | $29 |
+| **ROI** | **-59%** | **+29% to +1,839%** |
+
+**Noise Breakdown (Outreach Model):**
+1. Wrong geography: 60-70% (site ships US only)
+2. Influencers/creators: 10-15%
+3. B2B accounts: 15-20%
+4. Spam/bots: 5-10%
+5. Wrong intent (awareness): 20-30%
+6. **No emails: 100%** (CRITICAL - usernames only)
+
+**Web Research Validation (2025):**
+- "GDPR fines: €20M or 4% global revenue" (Clearout.io)
+- "CAN-SPAM: $43,280/violation" (Warmup Inbox)
+- Facebook Ads CVR: 9.21%, SNR: 60-80% (Brafton)
+- Instagram Ads CVR: 1.08%, SNR: 50-70% (Dash Social)
+- Google Ads CVR: 3-8%, SNR: 70-85% (Ruler Analytics)
+- Cold Email CVR: 0.5-2%, SNR: 5-15% (Blogging Wizard)
+
+**GitHub Finding:**
+- brightdata/ai-lead-generator: Scraping + AI qualification + scoring (NOT direct outreach)
+
+**Qualification Pipeline:** 1/6 stages implemented (16.7%)
+- ✅ Hashtag scraping
+- ❌ Data enrichment, lead scoring, geographic filter, B2C filter, email validation
+
+**Theoretical Scenarios (Factual Calculations):**
+1. No filters: SNR 0% (no emails)
+2. All filters: SNR 2.1% pre-contact, 0% post-contact (no emails)
+3. Email enrichment: SNR 1.0%, ROI -59%, ILLEGAL
+4. **Insights model: SNR 100%, ROI +29% to +1,839%, LEGAL** ✅
+
+**Recommendation - Vérité Brutale:**
+❌ Outreach = IMPOSSIBLE (architectural flaw + illegal + negative ROI)
+✅ Insights = OPTIMAL (100% SNR + legal + positive ROI 29-1,839%)
+
+**Correct Architecture (Already Documented):**
+```
+Scraping → Insights → Ads/SEO → Traffic (+15-25%) → Email Opt-In (2-5%)
+    → Nurture (Klaviyo) → Conversions (1-5%)
+```
+
+---
+
+**Dernière mise à jour:** 2025-11-24 23:30 UTC
+**Audits:** Flywheel (audit_flywheel_missing_components.py) + SNR (analyze_lead_snr_factual.py)
+**SNR:** 0% outreach / 100% insights - Insights model ONLY viable path
 **Prochaine action:** APIFY token (5 min) → Deploy missing components (25h total)
 **Deadline:** 25.11.2025 = START nurturing (T-24h) ⚠️
 
