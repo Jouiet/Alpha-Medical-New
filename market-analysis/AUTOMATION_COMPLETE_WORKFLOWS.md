@@ -3927,8 +3927,64 @@ Month 3 (cumulative):     9,000-22,000 emails ✅
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 00:00 UTC (Pre-launch email feasibility - 20K NOT achievable pre-launch, achievable Month 3)
-**Status global**: 85/100 - Flywheel structurally incomplete (30% operational)
-**SNR**: 0% (outreach) / 100% (insights)
-**Email feasibility**: 500-2K pre-launch (realistic) / 20K Month 3 (achievable)
-**Deadline nurturing**: 25.11.2025 (T-24h) - Core automation ready to test
+## 🔍 SESSION 48 FINAL: FLYWHEEL DIAGRAM VERIFICATION (2025-11-25 00:15 UTC)
+
+### DIAGRAMS PROPOSÉS - FACTUAL VERIFICATION
+
+**Audit:** `verify_flywheel_diagram_factual.py`
+
+**Proposed:** Month 3 + Month 6 diagrams with "SCRAPING (X% Intel, Y% Leads)"
+
+### ❌ 2 ERREURS FACTUELLES CRITIQUES
+
+**ERREUR #1: Pre-launch 33K emails**
+- Proposed: 33,000 emails pre-launch
+- Factual: 500-2,000 emails realistic ($2-5K ads)
+- To achieve 33K: $165K budget required (Facebook Lead Ads $5 CPL)
+- **Verdict: IMPOSSIBLE sans budget massif**
+
+**ERREUR #2: "SCRAPING (X% Intel, Y% Leads)"**
+- Proposed: "20% Intel, 80% Leads" ou "10% Intel, 90% Leads"
+- Factual: Scraping = usernames, PAS emails (API limitation)
+- SNR outreach: 0% (cannot contact)
+- SNR insights: 100% (all data usable)
+- **Verdict: Scraping = 100% Intelligence, 0% Contactable Leads**
+
+### ✅ EMAIL SOURCE CORRECTION
+
+**❌ INCORRECT:** Emails from scraping
+**✅ CORRECT:** Emails from website traffic opt-ins
+
+**Correct flow:**
+```
+Scraping → Intelligence (100%)
+    → Better ads/SEO
+    → More traffic (3-10x)
+    → More opt-ins (5-8% conversion)
+    → 2K-4K emails/month (Month 3-6)
+```
+
+### CORRECTED DIAGRAMS
+
+**Month 3 (Factual):**
+- Scraping: 100% Intel (trends, pain points)
+- Traffic: 3-5x from better targeting
+- Opt-ins: 2K-4K/month from traffic (NOT scraping)
+- List: 9K-22K cumulative
+
+**Month 6 (Factual):**
+- Scraping: 100% Intel (+ customer data + reviews)
+- Traffic: 10x from 5x better strategy
+- Opt-ins: 1K-2K/month from traffic
+- List: 60K+ cumulative ✅
+
+**Accuracy:** 5/7 components correct (71%), 2/7 incorrect (29%)
+
+---
+
+**Dernière mise à jour:** 2025-11-25 00:15 UTC (Diagrams verified - 2 errors corrected)
+**Status**: 85/100 - Flywheel incomplete (30% operational)
+**SNR**: 0% outreach / 100% insights
+**Pre-launch**: 500-2K (NOT 33K)
+**Scraping**: 100% intel, 0% leads
+**Email source**: Traffic opt-ins (5-8%), NOT scraping
