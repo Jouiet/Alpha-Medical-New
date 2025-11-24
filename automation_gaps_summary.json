@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-24",
+  "platforms": {
+    "klaviyo": {
+      "documented_flows": 5,
+      "missing_flows": 10,
+      "advanced_features_unconfigured": 4
+    },
+    "apify": {
+      "active_actors": 4,
+      "missing_actors": 3
+    },
+    "github_actions": {
+      "active_workflows": 5,
+      "missing_workflows": 8
+    }
+  },
+  "total_gaps": {
+    "critical_high": 4,
+    "medium": 5,
+    "quick_wins": 2
+  }
+}
