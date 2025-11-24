@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 24, 2025 at 18:07 UTC
+**Generated:** November 24, 2025 at 18:54 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -130,7 +130,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -23020,12 +23020,163 @@ Section: "ANALYSE FORENSIQUE ULTRA-COMPLÈTE - SESSION 2025-11-24 17:00 UTC"
 
 ---
 
-**Dernière mise à jour:** 2025-11-24 22:30 UTC
-**Analyse forensique complète:** market-analysis/AUTOMATION_COMPLETE_WORKFLOWS.md
-**Prochaine action:** APIFY token (5 min) + TikTok setup (30 min manual)
+## 🔄 UPDATE SESSION 48 CONTINUATION: FLYWHEEL STRUCTURAL AUDIT (2025-11-24 23:00 UTC)
+
+### ❌ CRITICAL FINDING: FLYWHEEL STRUCTURALLY INCOMPLETE
+
+**Audit Methodology:** Python scripts (`audit_flywheel_missing_components.py`, `verify_flywheel_actual_state.py`)
+
+**User Challenge:** "NON! le flywheel est INCOMPLET" - Identified disconnect between documented vs actual state
+
+### 📊 THEORETICAL VS ACTUAL STATE
+
+```
+DOCUMENTED (Theoretical):           ACTUAL (Factual):
+     ┌─────────┐                      ┌─────────┐
+     │ADVOCACY │                      │ADVOCACY │
+     └────┬────┘                      │  ❌ 0%  │
+          │                           └────┬────┘
+    ┌─────┴─────┐                   ┌──────┴──────┐
+    │           │                   │             │
+ ┌──▼──┐   ┌───▼──┐             ┌──▼───┐    ┌───▼───┐
+ │ACQU.│   │RETEN.│             │ACQU. │    │RETEN. │
+ └──┬──┘   └───▲──┘             │ ⏳0% │    │ ❌ 0% │
+    │          │                 └──┬───┘    └───▲───┘
+    └────┬─────┘                    │            │
+         │                          └──────┬─────┘
+    ┌────▼────┐                           │
+    │CONVER.  │                     ┌─────▼─────┐
+    └─────────┘                     │ CONVER.   │
+                                   │   ❌ 0%   │
+                                   └───────────┘
+```
+
+### 🔴 10 STRUCTURAL GAPS IDENTIFIED
+
+**ACQUISITION → CONVERSION: 3 gaps**
+1. ❌ Product recommendations (no upsell/cross-sell metafields)
+2. ❌ Upsell automation (AOV stuck at baseline)
+3. ❌ Cross-sell automation (no bundle logic)
+
+**CONVERSION → RETENTION: 5 gaps**
+4. ❌ Welcome Series email flow (NOT deployed)
+5. ❌ Abandoned Cart recovery flow (NOT deployed) ← **$3.65/recipient lost**
+6. ❌ Browse Abandonment flow (NOT deployed)
+7. ❌ Post-Purchase nurture flow (NOT deployed)
+8. ❌ Win-Back campaign flow (NOT deployed)
+
+**RETENTION → ADVOCACY: 1 gap**
+9. ❌ Post-purchase review automation (10% manual vs 25% automated)
+
+**ADVOCACY → ACQUISITION: 1 gap**
+10. ❌ Referral program (no referral codes, viral loop broken)
+
+**POSITIVE FINDING:**
+✅ Subscription infrastructure EXISTS (3 selling plans configured via Native Shopify)
+
+### 🔗 FLYWHEEL BREAKS - CAUSAL CHAIN
+
+```
+BREAK #1 (Acquisition → Conversion):
+  No product discovery automation
+  → Customers see 1 product, leave
+  → AOV stays at minimum
+  → Missing: Recommendation engine
+
+BREAK #2 (Conversion → Retention):
+  Email flows NOT deployed (5/5 missing)
+  → No automated nurture
+  → Lost revenue: $80K-120K Year 1
+  → Missing: Klaviyo flow deployment (20h)
+
+BREAK #3 (Retention → Advocacy):
+  No post-purchase automation
+  → Review collection: 10% (should be 25%)
+  → Social proof weak
+  → Missing: Review request automation (30 min)
+
+BREAK #4 (Advocacy → Acquisition):
+  No referral program
+  → No viral growth loop
+  → CAC stays high (no reduction from referrals)
+  → Missing: Referral incentive program (15 min)
+```
+
+### 📈 FACTUAL OPERATIONAL DATA (API-VERIFIED)
+
+**Orders:** 0 (GraphQL query confirmed)
+- Impact: No conversion data to analyze
+- Status: Flywheel CANNOT spin without transactions
+
+**Customers:** 0 (GraphQL query confirmed)
+- Impact: Nothing to retain
+- Status: Retention phase DORMANT
+
+**Repeat Purchases:** 0
+- Impact: No LTV to optimize
+- Status: Cannot measure retention success
+
+**Reviews:** 0
+- Loox widgets: Active ✅
+- Customer base: 0 ❌
+- Impact: No social proof to feed acquisition
+
+**GitHub Actions Runs:** 0 completed (last 10 runs checked)
+- Workflows: 5 (all configured)
+- Status: NOT EXECUTING
+- Blocker: APIFY_API_TOKEN missing
+- Impact: Lead generation automation BLOCKED
+
+### 📊 SYSTEM STATUS - POST-STRUCTURAL AUDIT
+
+**Previous Assessment:**
+- Overall: 90/100
+- Operational: 70%
+- Assessment basis: Documented infrastructure
+
+**Factual Assessment (Post-Audit):**
+- Overall: 85/100 (-5 points)
+- Operational: 30% (-40 points)
+- Assessment basis: Actual component deployment + operational data
+- Infrastructure ready: 10/10 documented
+- Components built: 3/10 (30%)
+- Components active: 0/10 (0% - no transactions to trigger)
+
+**Structural Gaps:** 10 components
+**Blockers:** 2 (APIFY token, TikTok pixel)
+**Breaking Points:** 4 (one per flywheel phase)
+
+### 🔧 ACTIVATION SEQUENCE
+
+**PHASE 1: UNBLOCK (Day 1)**
+1. Configure APIFY_API_TOKEN (5 min)
+   - Unlocks: Lead generation automation
+   - Impact: 700+ leads/month automated
+
+**PHASE 2: CRITICAL DEPLOYMENT (Week 1)**
+2. Deploy Klaviyo Abandoned Cart flow (4h)
+   - ROI: Highest ($3.65/recipient)
+   - Impact: 18-25% cart recovery
+   - Revenue: $80K-120K Year 1
+
+**PHASE 3: BUILD MISSING COMPONENTS (Week 2-4)**
+3. Product recommendation metafields (4h)
+4. Post-purchase review automation (30 min)
+5. Referral program (15 min)
+6. Deploy remaining 4 Klaviyo flows (16h)
+
+**IGNITION TRIGGER:** First sale → Flywheel starts spinning
+
+**ACCELERATION:** First repeat purchase → Flywheel gains momentum
+
+---
+
+**Dernière mise à jour:** 2025-11-24 23:00 UTC
+**Audit complet:** audit_flywheel_missing_components.py + verify_flywheel_actual_state.py
+**Prochaine action:** APIFY token (5 min) → Deploy missing components (25h total)
 **Deadline:** 25.11.2025 = START nurturing (T-24h) ⚠️
 
-**Le système est à 90/100. Core automation ready.**
+**Système: 85/100 - Flywheel structurally incomplete (10 gaps, 30% operational)**
 
 ---
 
@@ -23035,7 +23186,7 @@ Section: "ANALYSE FORENSIQUE ULTRA-COMPLÈTE - SESSION 2025-11-24 17:00 UTC"
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -27025,7 +27176,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -27595,7 +27746,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -28170,7 +28321,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -28497,7 +28648,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -28622,7 +28773,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -29142,7 +29293,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -29685,7 +29836,7 @@ python3 generate_llms_txt.py
 # 9. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -38225,10 +38376,93 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-24 22:30 UTC
-**Next action:** APIFY token (5 min) + TikTok manual setup (30 min)
+## 🔄 UPDATE SESSION 48 CONTINUATION: FLYWHEEL STRUCTURAL AUDIT (2025-11-24 23:00 UTC)
+
+### ❌ FLYWHEEL INCOMPLET - 10 STRUCTURAL GAPS IDENTIFIED
+
+**Context:** User challenge: "NON! le flywheel est INCOMPLET"
+
+**Audit Script:** `audit_flywheel_missing_components.py` + `verify_flywheel_actual_state.py`
+
+### 📊 FACTUAL FLYWHEEL STATE
+
+```
+   ACQUISITION → CONVERSION → RETENTION → ADVOCACY
+        ⏳            ❌           ❌          ❌
+      Blocked        Dead        Dead        Dead
+   (APIFY token)  (0 orders) (0 customers) (0 reviews)
+```
+
+**Operational Reality:**
+- Orders: 0 (API verified)
+- Customers: 0 (API verified)
+- Repeat purchases: 0
+- Reviews: 0 (Loox widgets active but no customers)
+- GitHub Actions: 0 completed runs (APIFY_API_TOKEN missing)
+
+**Status:** DORMANT (infrastructure ready, waiting for ignition)
+
+### 🔴 10 MISSING COMPONENTS
+
+**ACQUISITION → CONVERSION (3 gaps):**
+1. ❌ Product recommendation system (no metafields for upsell/cross-sell)
+2. ❌ Upsell automation (AOV optimization missing)
+3. ❌ Cross-sell automation (bundle suggestions missing)
+
+**CONVERSION → RETENTION (5 gaps):**
+4. ❌ Welcome Series flow (NOT deployed - $2.10/recipient lost)
+5. ❌ Abandoned Cart flow (NOT deployed - $3.65/recipient lost) ← **HIGHEST ROI**
+6. ❌ Browse Abandonment flow (NOT deployed - $1.85/recipient lost)
+7. ❌ Post-Purchase flow (NOT deployed - $1.40/recipient lost)
+8. ❌ Win-Back flow (NOT deployed - $2.80/recipient lost)
+
+**Note:** ✅ Subscription infrastructure EXISTS (3 selling plans found)
+
+**RETENTION → ADVOCACY (1 gap):**
+9. ❌ Post-purchase review automation (collection rate: 10% manual vs 25% automated)
+
+**ADVOCACY → ACQUISITION (1 gap):**
+10. ❌ Referral program (no referral discount codes, viral loop broken)
+
+### 🔗 FLYWHEEL BREAKS
+
+**BREAK #1:** Acquisition → Conversion (no product discovery automation)
+**BREAK #2:** Conversion → Retention (5/5 email flows NOT deployed)
+**BREAK #3:** Retention → Advocacy (no review automation)
+**BREAK #4:** Advocacy → Acquisition (no referral incentive)
+
+**Impact:** Revenue loss $80K-120K Year 1 (email flows alone)
+
+### 📊 SYSTEM STATUS - POST-AUDIT
+
+**Infrastructure:** 95/100 (no change)
+**Configuration:** 80/100 → 75/100 (-5 points - structural gaps)
+**Overall:** 90/100 → 85/100 (-5 points - incomplete flywheel)
+**Operational:** 70% → 30% (-40% - factual vs theoretical state)
+
+**Structural Gaps:** 10 components
+**Blockers:** 2 (APIFY token, TikTok pixel)
+**Breaking Points:** 4 (each flywheel phase broken)
+
+### 🔧 ACTIVATION PATH
+
+**IMMEDIATE (Unblock):**
+1. Configure APIFY_API_TOKEN (5 min)
+2. Deploy Klaviyo flows (20h - $80K-120K impact Year 1)
+
+**SHORT-TERM (Build Components):**
+3. Product recommendation metafields (4h)
+4. Post-purchase review automation (30 min)
+5. Referral program (15 min)
+
+**IGNITION:** First sale → Flywheel starts spinning
+
+---
+
+**Dernière mise à jour:** 2025-11-24 23:00 UTC
+**Next action:** APIFY token (5 min) + Deploy missing flywheel components
 **Deadline:** 25.11.2025 = START nurturing (T-24h) ⚠️ **CRITIQUE**
-**Status:** 90/100 - Core automation infrastructure ready
+**Status:** 85/100 - Flywheel structurally incomplete (30% operational)
 
 ---
 
@@ -38238,7 +38472,7 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 # 10. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -39081,7 +39315,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical 8 Bundles Final
 
 **File:** `ALPHA_MEDICAL_8_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -41721,7 +41955,7 @@ Response: 200 OK
 # 12. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -42041,7 +42275,7 @@ For each bundle:
 # 13. Alpha Medical Pitch Deck Template
 
 **File:** `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -44100,7 +44334,7 @@ END OF PITCH DECK TEMPLATE
 # 14. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -45247,7 +45481,7 @@ Audit complet 7 critères
 # 15. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -49160,7 +49394,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 16. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -50984,7 +51218,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 17. Analytics Tracking Factual Status
 
 **File:** `ANALYTICS_TRACKING_FACTUAL_STATUS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -51160,7 +51394,7 @@ No need to modify old docs - this file supersedes previous information.
 # 18. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -51527,7 +51761,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 19. Apify Integration Complete
 
 **File:** `APIFY_INTEGRATION_COMPLETE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -52083,7 +52317,7 @@ python3 influencer_lead_generation.py --full-discovery
 # 20. Asset Gathering Guide
 
 **File:** `ASSET_GATHERING_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -52512,7 +52746,7 @@ cp source/* destination/
 # 21. Automation Setup Complete Guide
 
 **File:** `AUTOMATION_SETUP_COMPLETE_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -52964,7 +53198,7 @@ Use this checklist to complete setup:
 # 22. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -53137,7 +53371,7 @@ Use this checklist to complete setup:
 # 23. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -54043,7 +54277,7 @@ function markProposalsAsCreated(hash) {
 # 24. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -54508,7 +54742,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 25. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -55727,7 +55961,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 26. Bundle Persona Critical Audit
 
 **File:** `BUNDLE_PERSONA_CRITICAL_AUDIT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -56351,7 +56585,7 @@ Pour chaque bundle, je vérifie:
 # 27. Bundle Reconstruction Analysis 2025
 
 **File:** `BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -56801,7 +57035,7 @@ Market data shows:
 # 28. Cart Drawer Forensic Analysis
 
 **File:** `CART_DRAWER_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -57358,7 +57592,7 @@ document.addEventListener('cart:updated', function(event) {
 # 29. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -59167,7 +59401,7 @@ Pack de 10-20 pads = Meilleur prix
 # 30. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -59464,7 +59698,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 31. Complete Acquisition Automation System
 
 **File:** `COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -61982,7 +62216,7 @@ RESULT: System-wide efficiency gains 10-20%/quarter
 # 32. Complete Manually Final 40 Percent
 
 **File:** `COMPLETE_MANUALLY_FINAL_40_PERCENT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -62187,7 +62421,7 @@ Une fois le workflow activé:
 # 33. Complete Shopify Flow Setup
 
 **File:** `COMPLETE_SHOPIFY_FLOW_SETUP.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -62365,7 +62599,7 @@ Après activation complète:
 # 34. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -62969,7 +63203,7 @@ June:
 # 35. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -64982,7 +65216,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 36. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -65373,7 +65607,7 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 # 37. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -66756,7 +66990,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 38. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -67604,7 +67838,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 39. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -68019,7 +68253,7 @@ python3 generate_llms_txt.py
 # 40. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -68722,7 +68956,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 41. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -69483,7 +69717,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 42. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -70289,7 +70523,7 @@ grep "fbq(" homepage → 0 results
 # 43. Factual Verification Complete Session 47
 
 **File:** `FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -70740,7 +70974,7 @@ Upload: gh secret set GOOGLE_CREDENTIALS_JSON < credentials.json
 # 44. Factual Verification Status
 
 **File:** `FACTUAL_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -71134,7 +71368,7 @@ Test → Measure → Validate → Scale.
 # 45. Final Report Transparency Implementation
 
 **File:** `FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -71829,7 +72063,7 @@ Back & Posture Support: 1 product
 # 46. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -72057,7 +72291,7 @@ Back & Posture Support: 1 product
 # 47. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -72899,7 +73133,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 48. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -75866,7 +76100,7 @@ FILES:
 # 49. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -76250,7 +76484,7 @@ TOTAL: ~30 minutes de travail actif
 # 50. Gmail Apps Script Setup
 
 **File:** `GMAIL_APPS_SCRIPT_SETUP.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -76560,7 +76794,7 @@ Status: On Track
 # 51. Google Ads Gtm Progress
 
 **File:** `GOOGLE_ADS_GTM_PROGRESS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -76931,7 +77165,7 @@ python3 check_gtm_status.py
 # 52. Google Ads Next Steps
 
 **File:** `GOOGLE_ADS_NEXT_STEPS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -77197,7 +77431,7 @@ git push origin main
 # 53. Google Ads Setup Guide
 
 **File:** `GOOGLE_ADS_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -77609,7 +77843,7 @@ Avant de considérer l'installation complète:
 # 54. Google Search Console Verification Status
 
 **File:** `GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -77845,7 +78079,7 @@ Je **REFUSE** de dire:
 # 55. Google Sheet Setup Instructions
 
 **File:** `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -78030,7 +78264,7 @@ python3 market-analysis/lead_generation_scraper.py --test
 # 56. Gsc Configuration Report 2025-11-19
 
 **File:** `GSC_CONFIGURATION_REPORT_2025-11-19.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -78648,7 +78882,7 @@ curl -s "https://alphamedical.shop/robots.txt"
 # 57. Gsc Final Checklist
 
 **File:** `GSC_FINAL_CHECKLIST.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -79037,7 +79271,7 @@ SOUMISSIONS MANUELLES:
 # 58. Gtm Add Missing Tags Steps
 
 **File:** `GTM_ADD_MISSING_TAGS_STEPS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -79436,7 +79670,7 @@ Business model: Dropshipping (pre-launch)
 # 59. Gtm Setup Guide
 
 **File:** `GTM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -80084,7 +80318,7 @@ Avant de considérer l'installation complète:
 # 60. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -80357,7 +80591,7 @@ Workflow AUTOMATIQUE:
 # 61. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -80733,7 +80967,7 @@ dig TXT alphamedical.shop +short
 # 62. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -81483,7 +81717,7 @@ Cliquer **"Save"**
 # 63. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -81929,7 +82163,7 @@ Tous les documents sont prêts et validés contre sources officielles:
 # 64. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -82637,7 +82871,7 @@ End flow
 # 65. Klaviyo Flywheel Upgrade 2025
 
 **File:** `KLAVIYO_FLYWHEEL_UPGRADE_2025.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -84024,7 +84258,7 @@ Expected Advocate Engagement:
 # 66. Klaviyo Plan Recommendation Email Only
 
 **File:** `KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -84456,7 +84690,7 @@ TOTAL MONTHLY COST: $300-350/mo (Month 1)
 # 67. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -84908,7 +85142,7 @@ python3 update_landing_page_with_klaviyo.py
 # 68. Lead Automation System Operational
 
 **File:** `LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -85254,7 +85488,7 @@ grep GOOGLE_SHEET_ID /Users/mac/Desktop/Alpha-Medical/.env
 # 69. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -85840,7 +86074,7 @@ Not `text/html` or `application/octet-stream`
 # 70. Loyalty Automation Progress Report
 
 **File:** `LOYALTY_AUTOMATION_PROGRESS_REPORT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -86071,7 +86305,7 @@ Après complétion manuelle:
 # 71. Loyalty Simplified Manual Actions Guide
 
 **File:** `LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -86387,7 +86621,7 @@ System is 100% operational when:
 # 72. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -86776,7 +87010,7 @@ query GetCustomerLoyalty($customerId: ID!) {
 # 73. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -87333,7 +87567,7 @@ After setup complete, verify:
 # 74. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -87427,7 +87661,7 @@ Create new menu "Footer CONNECT" with these items:
 # 75. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -87510,7 +87744,7 @@ Après sauvegarde:
 # 76. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -87889,7 +88123,7 @@ EMAIL_CODES:
 # 77. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -88590,7 +88824,7 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 # 78. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -88842,7 +89076,7 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 # 79. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -89299,7 +89533,7 @@ Mark Task 3.10 as COMPLETE when:
 # 80. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -89597,7 +89831,7 @@ If you encounter issues not covered in this guide:
 # 81. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -90133,7 +90367,7 @@ If you encounter issues not covered in this guide:
 # 82. Pre Launch Checklist 23 Days
 
 **File:** `PRE_LAUNCH_CHECKLIST_23_DAYS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -90645,7 +90879,7 @@ Prêt à lancer? 🚀
 # 83. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -91024,7 +91258,7 @@ Pour la validation complète, voir:
 # 84. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -91945,7 +92179,7 @@ Timestamp: 2025-10-13T00:00:00Z
 # 85. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -92691,7 +92925,7 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 # 86. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -92923,7 +93157,7 @@ Cliquer **"Generate from template"** pour:
 # 87. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -93294,7 +93528,7 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 # 88. Response To Third Party Analysis
 
 **File:** `RESPONSE_TO_THIRD_PARTY_ANALYSIS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -93820,7 +94054,7 @@ The third-party analysis was **harsh but fair**. We addressed every factual erro
 # 89. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -94138,7 +94372,7 @@ Update robots.txt.liquid when:
 # 90. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -94600,7 +94834,7 @@ data = {
 # 91. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -94789,7 +95023,7 @@ data = {
 # 92. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -95085,7 +95319,7 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 # 93. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -95320,7 +95554,7 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 # 94. Session 2025-11-19 Final Summary
 
 **File:** `SESSION_2025-11-19_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -95602,7 +95836,7 @@ All information is now:
 # 95. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -96215,7 +96449,7 @@ All 3 have:
 # 96. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -96477,7 +96711,7 @@ To quickly complete the basic site setup:
 # 97. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -96969,7 +97203,7 @@ Si besoin d'aide:
 # 98. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -97314,7 +97548,7 @@ Complete your order - Alpha Medical Care
 # 99. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -98474,7 +98708,7 @@ Production Confidence: **75%** (should work, but unverified)
 # 100. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -98891,7 +99125,7 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 # 101. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -98987,7 +99221,7 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 # 102. Todo Master Pre Launch 23 Days
 
 **File:** `TODO_MASTER_PRE_LAUNCH_23_DAYS.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -100273,7 +100507,7 @@ Order paid
 # 103. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -100908,7 +101142,7 @@ function getRecommendations(pain, activity, budget) {
 # 104. Top 10 Hero Products Mapping
 
 **File:** `TOP_10_HERO_PRODUCTS_MAPPING.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -101413,7 +101647,7 @@ CTA: [specific offer + discount code]
 # 105. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -101725,7 +101959,7 @@ Homepage (Prio 1)
 # 106. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -102104,7 +102338,7 @@ After installing tracking:
 # 107. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -102906,7 +103140,7 @@ alphamedical.shop
 # 108. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -104422,7 +104656,7 @@ Visit **alphamedicalcare.com/resources** for:
 # 109. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -105624,7 +105858,7 @@ This is a living document - update as you learn!
 # 110. Video Ads Infrastructure Complete
 
 **File:** `VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -106183,7 +106417,7 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 # 111. Session 2025-11-20 Summary
 
 **File:** `session_2025-11-20_summary.md`
-**Last Modified:** 2025-11-24 18:07
+**Last Modified:** 2025-11-24 18:54
 
 ---
 
@@ -106519,7 +106753,7 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 ## Document Information
 
 **Total Documentation Files:** 111
-**Generated:** November 24, 2025 at 18:07 UTC
+**Generated:** November 24, 2025 at 18:54 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
