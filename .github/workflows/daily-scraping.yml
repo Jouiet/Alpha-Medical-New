@@ -1,0 +1,183 @@
+name: Daily Multi-Platform Lead Scraping
+
+on:
+  schedule:
+    # Runs daily at 9:00 AM UTC (replaces local cron job)
+    - cron: '0 9 * * *'
+
+  # Allow manual triggering for testing
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Platform to scrape (all, instagram, facebook, tiktok)'
+        required: false
+        default: 'all'
+      max_results:
+        description: 'Max results per platform'
+        required: false
+        default: '700'
+
+jobs:
+  scrape-consumer-intelligence:
+    runs-on: ubuntu-latest
+
+    strategy:
+      # Run platforms in parallel for speed
+      matrix:
+        platform: [instagram, facebook, tiktok]
+      # Don't cancel other platforms if one fails
+      fail-fast: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          cd market-analysis
+          pip install -r requirements.txt || pip install apify-client gspread oauth2client
+
+      - name: Scrape ${{ matrix.platform }} leads
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd market-analysis
+
+          # Determine scraping volume based on month
+          # Month 1: 700/platform, Month 2: 1000/platform, Month 3+: 1500/platform
+          LAUNCH_DATE="2025-12-15"  # Update with actual launch date
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          DAYS_SINCE_LAUNCH=$(( ($(date -d "$CURRENT_DATE" +%s) - $(date -d "$LAUNCH_DATE" +%s)) / 86400 ))
+
+          if [ $DAYS_SINCE_LAUNCH -lt 30 ]; then
+            MAX_RESULTS=700
+            MONTH="Month 1"
+          elif [ $DAYS_SINCE_LAUNCH -lt 60 ]; then
+            MAX_RESULTS=1000
+            MONTH="Month 2"
+          else
+            MAX_RESULTS=1500
+            MONTH="Month 3+"
+          fi
+
+          echo "📊 Scraping ${{ matrix.platform }} - $MONTH - Target: $MAX_RESULTS leads"
+
+          # Run scraping based on platform
+          case "${{ matrix.platform }}" in
+            instagram)
+              python3 lead_generation_scraper.py \
+                --instagram \
+                --hashtag "arthritis" \
+                --max-results $MAX_RESULTS
+              ;;
+            facebook)
+              python3 lead_generation_scraper.py \
+                --facebook \
+                --max-results $MAX_RESULTS
+              ;;
+            tiktok)
+              python3 lead_generation_scraper.py \
+                --tiktok \
+                --hashtag "jointpain" \
+                --max-results $MAX_RESULTS
+              ;;
+          esac
+
+      - name: Upload scraped data as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: leads-${{ matrix.platform }}-${{ github.run_number }}
+          path: market-analysis/leads/general/*.json
+          retention-days: 30
+
+      - name: Display scraping summary
+        if: always()
+        run: |
+          cd market-analysis/leads/general
+          echo "📈 Scraping Results for ${{ matrix.platform }}:"
+          ls -lh *${{ matrix.platform }}*.json 2>/dev/null || echo "No files found"
+
+          # Count leads
+          LEAD_COUNT=$(find . -name "*${{ matrix.platform }}*.json" -exec cat {} \; | grep -o '"platform"' | wc -l)
+          echo "✅ Total leads scraped: $LEAD_COUNT"
+
+  sync-to-google-sheets:
+    needs: scrape-consumer-intelligence
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd market-analysis
+          pip install gspread oauth2client
+
+      - name: Download all scraped artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: market-analysis/leads/general
+
+      - name: Setup Google Sheets credentials
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        run: |
+          cd market-analysis
+          echo "$GOOGLE_CREDENTIALS_JSON" > google_credentials.json
+
+      - name: Sync leads to Google Sheets
+        run: |
+          cd market-analysis
+
+          # Find all lead files from today's scraping
+          DATE=$(date +%Y%m%d)
+          LEAD_FILES=$(find leads/general -name "leads_general_*_${DATE}*.json" -type f)
+
+          if [ -z "$LEAD_FILES" ]; then
+            echo "⚠️ No lead files found for today"
+            exit 0
+          fi
+
+          # Sync each file
+          for file in $LEAD_FILES; do
+            echo "📤 Syncing: $file"
+            python3 sync_leads_to_sheets.py "$file" || echo "Failed to sync $file"
+          done
+
+          echo "✅ Google Sheets sync complete"
+
+      - name: Cleanup credentials
+        if: always()
+        run: |
+          rm -f market-analysis/google_credentials.json
+
+  notify-completion:
+    needs: [scrape-consumer-intelligence, sync-to-google-sheets]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Create summary
+        run: |
+          echo "# 📊 Daily Scraping Summary - $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Results:" >> $GITHUB_STEP_SUMMARY
+          echo "- Instagram: ${{ needs.scrape-consumer-intelligence.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Facebook: ${{ needs.scrape-consumer-intelligence.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- TikTok: ${{ needs.scrape-consumer-intelligence.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Google Sheets Sync: ${{ needs.sync-to-google-sheets.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🎯 Target: 2,100 → 3,000 → 4,500 leads/month (progressive)" >> $GITHUB_STEP_SUMMARY

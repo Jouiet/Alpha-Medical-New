@@ -1,0 +1,112 @@
+name: Weekly Shopify Backup
+
+on:
+  schedule:
+    # Runs every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  backup-shopify-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Shopify API dependencies
+        run: |
+          pip install shopify-python-api requests
+
+      - name: Export Shopify products
+        env:
+          SHOPIFY_API_KEY: ${{ secrets.SHOPIFY_API_KEY }}
+          SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
+          SHOPIFY_STORE: azffej-as.myshopify.com
+        run: |
+          mkdir -p backups
+
+          python3 << 'PYTHON_SCRIPT'
+          import shopify
+          import json
+          import os
+          from datetime import datetime
+
+          # Setup Shopify session
+          shop_url = f"https://{os.getenv('SHOPIFY_API_KEY')}:{os.getenv('SHOPIFY_PASSWORD')}@{os.getenv('SHOPIFY_STORE')}/admin"
+          shopify.ShopifyResource.set_site(shop_url)
+
+          # Backup date
+          backup_date = datetime.now().strftime('%Y-%m-%d')
+
+          print(f"📦 Starting Shopify backup - {backup_date}")
+
+          # Backup products
+          products = shopify.Product.find()
+          products_data = [product.to_dict() for product in products]
+
+          with open(f'backups/products_backup_{backup_date}.json', 'w') as f:
+              json.dump(products_data, f, indent=2, default=str)
+
+          print(f"✅ Backed up {len(products_data)} products")
+
+          # Backup collections
+          collections = shopify.CustomCollection.find()
+          collections_data = [collection.to_dict() for collection in collections]
+
+          with open(f'backups/collections_backup_{backup_date}.json', 'w') as f:
+              json.dump(collections_data, f, indent=2, default=str)
+
+          print(f"✅ Backed up {len(collections_data)} collections")
+
+          # Backup metafields (if any)
+          try:
+              metafields = shopify.Metafield.find()
+              metafields_data = [mf.to_dict() for mf in metafields]
+
+              with open(f'backups/metafields_backup_{backup_date}.json', 'w') as f:
+                  json.dump(metafields_data, f, indent=2, default=str)
+
+              print(f"✅ Backed up {len(metafields_data)} metafields")
+          except Exception as e:
+              print(f"⚠️ Metafields backup skipped: {e}")
+
+          print("🎉 Backup complete!")
+          PYTHON_SCRIPT
+
+      - name: Commit backup to repository
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+
+          git add backups/
+          git commit -m "chore: Weekly Shopify backup $(date +%Y-%m-%d)" || echo "No changes to commit"
+          git push
+
+      - name: Upload backup as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: shopify-backup-${{ github.run_number }}
+          path: backups/*.json
+          retention-days: 90
+
+      - name: Create backup summary
+        run: |
+          echo "# 📦 Shopify Backup Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Files Backed Up:" >> $GITHUB_STEP_SUMMARY
+          ls -lh backups/*.json | awk '{print "- " $9 " (" $5 ")"}' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Backup committed to repository" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Artifact uploaded (90 days retention)" >> $GITHUB_STEP_SUMMARY
