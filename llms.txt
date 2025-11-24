@@ -32,6 +32,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [DSERS_CONFIGURATION_GUIDE](DSERS_CONFIGURATION_GUIDE.md): Ce guide vous accompagne dans la configuration EXACTE des règles de pricing dynamique dans DSers pour atteindre les marges nettes définies dans le ...
 - [DSERS_FORM_CONFIGURATION](DSERS_FORM_CONFIGURATION.md): ┌──────────────────────────────────────────────────────────────────────────────┐ │ Product Cost Range(USD): [10.00] - [50.00] │
 - [DYNAMIC_PRICING_MODEL](DYNAMIC_PRICING_MODEL.md): Ce document définit le modèle de pricing dynamique pour Alpha Medical, garantissant des marges nettes prédéfinies après déduction de TOUS les coûts...
+- [FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025](FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md): Générer leads qualifiés via scraping social + paid ads + SEO
 - [IMPLEMENTATION_REPORT_PRICING](IMPLEMENTATION_REPORT_PRICING.md): Price value = [(Product Cost + Shipping Cost + Tax) × (1+ Profit %) + Fixed Profit] / (1 - Breakeven %)
 - [PRICING_QUICK_REFERENCE](PRICING_QUICK_REFERENCE.md): Prix: $25 Shipping: $12 Tier: 1 (car $25 entre $10-50) Fixed Profit: $30.30
 - [PRICING_VERIFICATION](PRICING_VERIFICATION.md): Price = [(Product Cost + Shipping Cost) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
