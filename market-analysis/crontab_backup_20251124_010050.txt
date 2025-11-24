@@ -1,0 +1,3 @@
+# MBNB MySQL Health Monitor - Every 5 minutes
+*/5 * * * * /Users/mac/Desktop/Mbnb-Code/mbnb_web/mysql_health_monitor.sh >/dev/null 2>&1
+0 9 * * * /Users/mac/Desktop/Alpha-Medical/market-analysis/daily_lead_scraping.sh
