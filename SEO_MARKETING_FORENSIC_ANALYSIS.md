@@ -21421,7 +21421,10 @@ Evidence quality: 100%
 
 **Multi-Platform Scraping Integration:**
 - Consumer insights (Instagram, TikTok, Facebook via Apify) → Feed email copy
-- Scraping volumes: 210 leads/month minimum (70/month per platform: Instagram, Facebook, TikTok)
+- **Scraping volumes (Aggressive Progression):**
+  * Month 1 (Launch): 2,100 leads/month (700 per platform: IG, FB, TT)
+  * Month 2: 3,000 leads/month (1,000 per platform)
+  * Month 3+: 4,500 leads/month (1,500 per platform)
 - Pain points & consumer language → Email subject lines, body content
 - Trending topics → Campaign timing & product recommendations
 - Continuous email optimization via consumer intelligence

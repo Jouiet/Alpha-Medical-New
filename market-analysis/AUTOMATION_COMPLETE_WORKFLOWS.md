@@ -32,15 +32,27 @@
 - ✅ **OBJECTIF**: Scraping intelligence = Feed TOUS les canaux acquisition
 - ✅ **FLYWHEEL**: Insights → Ads/SEO → Traffic → Email opt-in → Nurture → Conversions
 
-### Répartition Scraping (210 leads/month minimum):
+### Répartition Scraping (Progression Agressive):
 **CONSUMER INTELLIGENCE** (Multi-Platform via Apify):
-- **Instagram:** 70 leads/month (consumer pain points, trends, language)
-- **Facebook:** 70 leads/month (community discussions, pain points)
-- **TikTok:** 70 leads/month (viral trends, younger demographics)
-- **Total:** 210 leads/month minimum
-- **Cible**: Consommateurs directs (#kneepain, #arthritis, #deskpain, etc.)
-- **Usage**: Pain points → Ad copy, SEO topics, email subject lines, product descriptions
-- **ROI**: Feed Meta/TikTok custom audiences, content calendar, trending hashtags
+
+**Month 1 (Launch):** 2,100 leads/month total
+- Instagram: 700 leads/month
+- Facebook: 700 leads/month
+- TikTok: 700 leads/month
+
+**Month 2:** 3,000 leads/month total
+- Instagram: 1,000 leads/month
+- Facebook: 1,000 leads/month
+- TikTok: 1,000 leads/month
+
+**Month 3+:** 4,500 leads/month total
+- Instagram: 1,500 leads/month
+- Facebook: 1,500 leads/month
+- TikTok: 1,500 leads/month
+
+**Cible**: Consommateurs directs (#kneepain, #arthritis, #deskpain, etc.)
+**Usage**: Pain points → Ad copy, SEO topics, email subject lines, product descriptions
+**ROI**: Feed Meta/TikTok custom audiences, content calendar, trending hashtags
 
 **COMPETITOR INTELLIGENCE** (Google Maps via Apify):
 - **Cible**: Orthopedic stores, medical supply competitors (D2C)

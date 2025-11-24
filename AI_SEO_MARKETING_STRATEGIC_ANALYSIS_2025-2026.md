@@ -7284,7 +7284,10 @@ Objectif CPA: <$35 (vs <$50 test)
 
 **Multi-Platform Scraping Intelligence:**
 - Consumer insights (Instagram, TikTok, Facebook via Apify) → Feed email copy, pain points, language
-- Scraping volumes: 210 leads/month minimum (70/month per platform: Instagram, Facebook, TikTok)
+- **Scraping volumes (Aggressive Progression):**
+  * Month 1: 2,100 leads/month (700 per platform)
+  * Month 2: 3,000 leads/month (1,000 per platform)
+  * Month 3+: 4,500 leads/month (1,500 per platform)
 - Usage: Optimize email subject lines, product recommendations, ad copy
 - Integration: Scraping insights → Email templates → A/B testing → Winning copy
 
