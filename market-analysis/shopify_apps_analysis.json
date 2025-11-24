@@ -6,6 +6,10 @@
       {
         "title": "Email",
         "handle": "shopify-email"
+      },
+      {
+        "title": "Klaviyo: Email Marketing & SMS",
+        "handle": "klaviyo-email-marketing"
       }
     ],
     "crm": [],

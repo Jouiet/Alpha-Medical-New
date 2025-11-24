@@ -18,20 +18,21 @@ except ImportError:
     print("❌ shopify module not installed. Run: pip install ShopifyAPI")
     sys.exit(1)
 
-# Load environment variables
-env_file = Path(__file__).parent.parent / '.env'
-if env_file.exists():
-    with open(env_file) as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith('#') and '=' in line:
-                key, value = line.split('=', 1)
-                os.environ[key] = value.strip('"').strip("'")
+# Load environment variables from both .env and .env.admin
+for env_filename in ['.env', '.env.admin']:
+    env_file = Path(__file__).parent.parent / env_filename
+    if env_file.exists():
+        with open(env_file) as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    os.environ[key] = value.strip('"').strip("'")
 
-# Shopify credentials
+# Shopify credentials (try multiple env var names)
 API_KEY = os.getenv('SHOPIFY_API_KEY')
 API_SECRET = os.getenv('SHOPIFY_API_SECRET')
-ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_API_TOKEN')
+ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN') or os.getenv('SHOPIFY_ADMIN_API_TOKEN')
 STORE_URL = os.getenv('SHOPIFY_STORE_DOMAIN', 'azffej-as.myshopify.com')
 
 if not all([API_KEY, ACCESS_TOKEN]):
