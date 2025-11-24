@@ -32,13 +32,17 @@
 - ✅ **OBJECTIF**: Scraping intelligence = Feed TOUS les canaux acquisition
 - ✅ **FLYWHEEL**: Insights → Ads/SEO → Traffic → Email opt-in → Nurture → Conversions
 
-### Répartition Scraping (470 insights/jour):
-**75-80% = CONSUMER INTELLIGENCE** (Instagram 350 posts/jour):
+### Répartition Scraping (210 leads/month minimum):
+**CONSUMER INTELLIGENCE** (Multi-Platform via Apify):
+- **Instagram:** 70 leads/month (consumer pain points, trends, language)
+- **Facebook:** 70 leads/month (community discussions, pain points)
+- **TikTok:** 70 leads/month (viral trends, younger demographics)
+- **Total:** 210 leads/month minimum
 - **Cible**: Consommateurs directs (#kneepain, #arthritis, #deskpain, etc.)
-- **Usage**: Pain points → Ad copy, SEO topics, product descriptions
+- **Usage**: Pain points → Ad copy, SEO topics, email subject lines, product descriptions
 - **ROI**: Feed Meta/TikTok custom audiences, content calendar, trending hashtags
 
-**20-25% = COMPETITOR INTELLIGENCE** (Google Maps 120 stores/jour):
+**COMPETITOR INTELLIGENCE** (Google Maps via Apify):
 - **Cible**: Orthopedic stores, medical supply competitors (D2C)
 - **Usage**: Pricing analysis, review mining, product gaps, positioning
 - **ROI**: Competitive pricing, product development, market differentiation

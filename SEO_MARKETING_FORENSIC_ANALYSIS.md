@@ -21421,9 +21421,10 @@ Evidence quality: 100%
 
 **Multi-Platform Scraping Integration:**
 - Consumer insights (Instagram, TikTok, Facebook via Apify) → Feed email copy
+- Scraping volumes: 210 leads/month minimum (70/month per platform: Instagram, Facebook, TikTok)
 - Pain points & consumer language → Email subject lines, body content
 - Trending topics → Campaign timing & product recommendations
-- 470 insights/day → Continuous email optimization
+- Continuous email optimization via consumer intelligence
 
 **Persona Segmentation (Shopify):**
 - Seniors (65+, arthritis/joint pain) → Klaviyo segment sync

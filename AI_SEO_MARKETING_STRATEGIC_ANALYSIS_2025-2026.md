@@ -7283,8 +7283,9 @@ Objectif CPA: <$35 (vs <$50 test)
 - Expected email CTR: +106-171% (vs generic emails)
 
 **Multi-Platform Scraping Intelligence:**
-- Consumer insights (Instagram, TikTok, Facebook) → Feed email copy, pain points, language
-- Apify scraping (470 insights/day) → Optimize email subject lines, product recommendations
+- Consumer insights (Instagram, TikTok, Facebook via Apify) → Feed email copy, pain points, language
+- Scraping volumes: 210 leads/month minimum (70/month per platform: Instagram, Facebook, TikTok)
+- Usage: Optimize email subject lines, product recommendations, ad copy
 - Integration: Scraping insights → Email templates → A/B testing → Winning copy
 
 **Persona Segmentation (Shopify Segments):**
