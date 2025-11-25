@@ -1,0 +1,61 @@
+name: Clean and Segment Leads
+
+# Process all raw leads from ALL sources:
+# - Apify scraping (Instagram, Facebook, TikTok, Google Maps)
+# - Contest/Giveaway (Klaviyo)
+# - Facebook Lead Ads
+# - External imports (xlsx/csv)
+#
+# Actions:
+# 1. Remove duplicates
+# 2. Validate emails/phones
+# 3. Calculate quality score
+# 4. Detect persona
+# 5. Move to "Qualified Leads" sheet
+
+on:
+  schedule:
+    # Daily at 10:00 AM UTC (1 hour after daily-scraping.yml runs at 9 AM)
+    - cron: '0 10 * * *'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  clean-and-segment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install gspread oauth2client python-dotenv
+
+      - name: Create credentials file
+        run: |
+          echo '${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}' > google_credentials.json
+
+      - name: Clean and segment all raw leads
+        run: |
+          python3 clean_and_segment_leads.py
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f google_credentials.json
+
+      - name: Log results
+        run: |
+          echo "✅ Lead cleaning and segmentation completed"
+          echo "   Raw Leads processed → Qualified Leads updated"
+          echo "   View: https://docs.google.com/spreadsheets/d/1KyE_H8OPLLJfgRjehNZLS_RcMJToHRQ9gny1Sgoa_JE"
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Lead cleaning failed - Check workflow logs"

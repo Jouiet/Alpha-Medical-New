@@ -1,0 +1,51 @@
+name: Sync Klaviyo Contest Leads
+
+# Sync contest/giveaway form submissions from Klaviyo to Google Sheet
+# Schedule: Every hour during pre-launch (to capture leads fast)
+# List: "Pre-Launch Contest Participants"
+
+on:
+  schedule:
+    # Every hour from 8 AM to 8 PM UTC (peak signup hours)
+    - cron: '0 8-20 * * *'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  sync-klaviyo-leads:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install klaviyo-api gspread oauth2client python-dotenv
+
+      - name: Create credentials file
+        run: |
+          echo '${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}' > google_credentials.json
+
+      - name: Sync Klaviyo contest leads to Google Sheet
+        env:
+          KLAVIYO_PRIVATE_API_KEY: ${{ secrets.KLAVIYO_PRIVATE_API_KEY }}
+        run: |
+          python3 sync_klaviyo_to_sheet.py \
+            --list-name "Pre-Launch Contest Participants" \
+            --hours 1 \
+            --source-tag "contest_prelaunch"
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f google_credentials.json
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Klaviyo sync failed - Check workflow logs"

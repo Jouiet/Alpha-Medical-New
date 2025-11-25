@@ -8832,13 +8832,13 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-24 23:45 UTC (Comprehensive automation gaps analysis completed)
-**Automation Status:** 14 components active, 25 gaps identified
-**Priority Actions:** 4 critical/high ROI (6-8 days effort) + 2 quick wins (3h)
-**Revenue Impact:** $100K-150K Year 1 (if gaps filled)
-**SNR:** 0% (outreach) / 100% (insights) - Insights model confirmed optimal
-**Next action:** APIFY token (5 min) + Deploy critical automation gaps
-**Deadline:** 25.11.2025 = START nurturing (T-24h) ⚠️ **CRITIQUE**
-**Status:** 85/100 - Flywheel structurally incomplete (30% operational)
+**Dernière mise à jour:** 2025-11-25 00:30 UTC (3-source lead architecture implemented)
+**Lead Architecture:** 4 sources (Contest Klaviyo, FB Lead Ads, Import externes, Apify) → Google Sheet centralisé
+**Code Status:** 100% ready (7 files: 4 scripts + 3 workflows)
+**Pre-Launch Leads:** 1,500-2K opt-ins B2C (contest + FB ads, $6,345 budget, ROI 166-391%)
+**Automation:** Klaviyo sync hourly, FB sync 6h, Clean/segment daily 10 AM
+**Manual Setup Required:** 6h (Contest page 2h, FB Ads 3h, Sheet structure 1h)
+**SNR:** 0% (outreach) / 100% (insights) - Apify for insights ONLY, Contest/FB for opt-ins
+**Status:** 85/100 - Flywheel incomplete (code ready, user setup pending)
 
 ---

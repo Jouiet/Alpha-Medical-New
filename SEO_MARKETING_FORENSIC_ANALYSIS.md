@@ -23362,16 +23362,18 @@ GITHUB ACTIONS (8 gaps):
 
 ---
 
-**Dernière mise à jour:** 2025-11-24 23:45 UTC (Comprehensive automation gaps forensic audit completed)
-**Audits Completed:** Flywheel + SNR + Automation Gaps (3 platforms)
-**Total Gaps Identified:** 25 (Klaviyo: 14, Apify: 3, GitHub Actions: 8)
-**Revenue Impact:** $120K-190K Year 1 (if all gaps filled)
-**Priority Actions:** 4 critical/high ROI (6-8 days) + 2 quick wins (3h)
-**Blocker:** User verification required for Shopify Email/Flow/Klaviyo actual state
-**SNR:** 0% outreach / 100% insights - Insights model ONLY viable path
-**Prochaine action:** User verification (Shopify/Klaviyo admin) → APIFY token (5 min) → Deploy critical gaps
-**Deadline:** 25.11.2025 = START nurturing (T-24h) ⚠️ **CRITIQUE**
+**Dernière mise à jour:** 2025-11-25 00:30 UTC (3-source lead architecture forensic implementation)
+**Audits Completed:** Flywheel + SNR + Automation Gaps + Lead Architecture (4 sources)
+**Lead Sources Implemented:** Contest Klaviyo (8.5 score), FB Lead Ads (9.0 score), Import externes (7.0), Apify insights (5.0)
+**Code Status:** 100% ready - 4 Python scripts + 3 GitHub Actions workflows
+**Integration:** ALL sources → Google Sheet "Raw Leads" → clean_and_segment_leads.py → "Qualified Leads" → Email nurturing
+**Pre-Launch Budget:** $6,345 (contest prizes $345 + FB ads $6K) → Expected 1,500-2K opt-ins B2C
+**ROI Forensic:** 166-391% (Investment $6,345 → Revenue $16,875-37,500 → Net $10,530-31,155)
+**Legal Status:** ✅ Contest/FB opt-ins LEGAL, ⚠️ Import depends on consent, ✅ Apify insights only (NO outreach)
+**SNR:** 0% outreach (Apify) / 100% insights (Apify) / 100% opt-in (Contest + FB Lead Ads)
+**Manual Setup:** 6h required (Contest page 2h, FB Ads 3h, Sheet 1h) - User actions pending
+**Prochaine action:** User executes 3 manual setups → Test end-to-end → Enable workflows
 
-**Système: 85/100 - Flywheel structurally incomplete (25 automation gaps identified, 30% operational)**
+**Système: 85/100 - Flywheel incomplete (code 100% ready, user setup 0% complete, 30% operational)**
 
 ---

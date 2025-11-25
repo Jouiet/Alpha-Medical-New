@@ -1,0 +1,52 @@
+name: Sync Facebook Lead Ads
+
+# Sync Facebook Lead Ads submissions to Google Sheet
+# Schedule: Every 6 hours (capture leads regularly)
+# Form: Pre-launch contest form (ID set in secrets)
+
+on:
+  schedule:
+    # Every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  sync-facebook-leads:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install facebook-business gspread oauth2client python-dotenv
+
+      - name: Create credentials file
+        run: |
+          echo '${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}' > google_credentials.json
+
+      - name: Sync Facebook Lead Ads to Google Sheet
+        env:
+          FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+          FACEBOOK_AD_ACCOUNT_ID: ${{ secrets.FACEBOOK_AD_ACCOUNT_ID }}
+        run: |
+          python3 sync_facebook_leads_to_sheet.py \
+            --form-id "${{ secrets.FACEBOOK_LEAD_FORM_ID }}" \
+            --hours 6 \
+            --source-tag "facebook_lead_ads"
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f google_credentials.json
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Facebook Lead Ads sync failed - Check workflow logs"
