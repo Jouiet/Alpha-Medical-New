@@ -24,3 +24,4 @@ credentials.json
 *.log
 .env
 google_credentials.json
+.klaviyo-backup-codes
