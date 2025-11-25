@@ -8832,18 +8832,20 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 01:15 UTC (COMPLETE B2C lead architecture - 10 sources)
-**Lead Architecture COMPLETE:** 10 sources B2C
-  - **AUTOMATED (4):** Contest Klaviyo, FB Lead Ads, Import externes, Apify scraping
-  - **ORGANIC (6):** Website CTAs, SEO blog, Instagram organic, TikTok organic, Shopify checkout, Email flows
+**Dernière mise à jour:** 2025-11-25 02:00 UTC (PHASED B2C lead architecture - 3 → 10 → 11 sources)
+**Lead Architecture PHASED:** 11 sources B2C (phased rollout)
+  - **PHASE 1 (ACTIVE - Nov-Dec 2025):** 3 sources - Contest Typeform, FB Lead Ads, Import externes
+  - **PHASE 2 (PLANNED - Month 1-3):** +7 sources - Google Ads, On-site forms, Blog, IG/TikTok organic, Referral, Retargeting, Social shares
+  - **PHASE 3 (PLANNED - Month 4-12):** +1 source - YouTube content
   - **Integration:** All → Google Sheet centralisé → Clean/segment daily
-**Code Status:** 100% ready (7 files: 4 scripts + 3 workflows) for 4 automated sources
-**Pre-Launch Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | Post-Launch: +430-1,250/month organic (if integrated)
-**Pre-Launch Budget:** $6,345 (Contest $345 + FB ads $6K) | Post-Launch: $97.80/mo (Apify only)
-**ROI:** 166-391% PRE-LAUNCH ($10,530-31,155 net profit)
-**Automation:** Klaviyo hourly, FB 6h, Clean/segment daily 10 AM | Organic sources: ⚠️ 4 NOT integrated, 2 PARTIAL
-**Manual Setup Required:** 6h (Contest 2h, FB Ads 3h, Sheet 1h) + Organic integration TBD
-**SNR:** 0% (outreach) / 100% (insights) - Apify insights ONLY, Contest/FB/Organic for opt-ins
-**Status:** 85/100 - Flywheel incomplete (4 sources automated, 6 organic sources need integration)
+**Code Status:** 71% ready (5/7 files) | 29% needs Typeform update (2/7: sync script + workflow)
+**PHASE 1 Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | PHASE 2-3: +760-2,150/mo (if implemented)
+**PHASE 1 Budget:** $6,345 one-time (Contest $345 + FB ads $6K) + $97.80/mo (Apify insights)
+**PHASE 2 Budget:** +$3,050-5,100/mo (Google Ads + Referral app + organic $0)
+**ROI PHASE 1:** 166-391% PRE-LAUNCH ($10,530-31,155 net profit)
+**Automation:** Typeform hourly (⚠️ needs code update), FB 6h (✅ ready), Clean/segment daily 10 AM (✅ ready)
+**Manual Setup Required:** 6h (Typeform form 2h, FB Ads 3h, Sheet 1h) + Code update (Klaviyo→Typeform API)
+**SNR:** 0% (outreach) / 100% (insights) - Apify insights ONLY, 3 PHASE 1 sources for opt-ins
+**Status:** 85/100 - Flywheel incomplete (PHASE 1: 71% coded, PHASE 2-3: 0% coded)
 
 ---

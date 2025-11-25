@@ -4473,26 +4473,36 @@ Scraping → Intelligence (100%)
 
 ---
 
-## 🎯 SESSION 48 CONTINUATION: COMPLETE B2C LEAD ARCHITECTURE (2025-11-25 00:30 UTC)
+## 🎯 SESSION 48 CONTINUATION: PHASED B2C LEAD ARCHITECTURE (2025-11-25 01:30 UTC)
 
-### Architecture Multi-Sources: COMPLETE Lead Ecosystem B2C
+### Architecture Multi-Sources: PHASED Launch Strategy (3 → 10 → 11 sources)
 
-**Context:** COMPLETE B2C lead architecture including ALL touchpoints (automated + organic)
+**Context:** PHASED B2C lead architecture aligned with realistic launch timeline (PRE-LAUNCH → POST-LAUNCH → SCALE)
 **Methodology:** CODE-based integration (Python + GitHub Actions), NO third-party tools
 **Output:** All sources → Google Sheet centralisé → Nettoyage/segmentation automatique
 
 ---
 
-### 📊 ARCHITECTURE FACTUELLE COMPLÈTE - B2C UNIQUEMENT
+### 📊 ARCHITECTURE FACTUELLE PHASÉE - B2C UNIQUEMENT
 
-**AUTOMATED LEAD SOURCES (Code Implemented - 4 sources):**
+---
+
+## 🚀 PHASE 1: PRE-LAUNCH (Nov-Dec 2025) - 3 SOURCES ACTIVES
+
+**Timeline:** November-December 2025 (20 days campaign)
+**Objective:** Build initial lead database (1,500-2,000 opt-ins B2C)
+**Budget:** $6,345 total
+**Status:** ✅ Code ready, manual setup required (6h)
+
+### Sources Phase 1:
 
 1. ✅ **Contest/Giveaway PRE-LAUNCH** (1500-2K emails B2C)
-   - Platform: Klaviyo Signup Form (embedded Shopify page)
-   - Integration: `sync_klaviyo_to_sheet.py` → Google Sheet
-   - Workflow: `sync-klaviyo-leads.yml` (hourly 8 AM - 8 PM)
+   - Platform: **Typeform** (automated form)
+   - Integration: `sync_typeform_to_sheet.py` → Google Sheet
+   - Workflow: `sync-typeform-leads.yml` (hourly 8 AM - 8 PM)
    - Quality Score: 8.5 (explicit opt-in)
-   - Cost: $345 prizes + $6K FB ads = $6,345
+   - Cost: $345 prizes (3 prizes × $115)
+   - Status: ⚠️ **CODE NEEDS UPDATE** (currently using Klaviyo API, must switch to Typeform API)
 
 2. ✅ **Facebook Lead Ads** (ongoing)
    - Platform: Facebook/Instagram Lead Ads (Instant Forms)
@@ -4500,95 +4510,135 @@ Scraping → Intelligence (100%)
    - Workflow: `sync-facebook-leads.yml` (every 6 hours)
    - Quality Score: 9.0 (paid ads + explicit consent)
    - Cost: $6K budget (20 days, $300/day, $4 CPL)
+   - Status: ✅ Code ready
 
-3. ✅ **Import Fichiers Externes** (xlsx/sheets fournis par user)
-   - Platform: Manual uploads (xlsx, csv)
+3. ✅ **Import Fichiers Externes** (xlsx/csv/json manual paste)
+   - Platform: Manual uploads (xlsx, csv, json)
    - Integration: `import_leads_to_sheet.py` (manual run)
    - Workflow: Manual trigger (no automation needed)
    - Quality Score: 7.0 (depends on source quality)
    - Cost: $0
+   - Status: ✅ Code ready
 
-4. ✅ **Apify Scraping** (existing - 100% insights, 0% outreach)
-   - Platform: Instagram, Facebook, TikTok (scraping)
-   - Integration: Existing `daily-scraping.yml`
-   - Workflow: Daily 9 AM UTC
-   - Quality Score: 5.0-6.0 (no opt-in, insights only)
-   - Cost: $97.80/mo
+**PHASE 1 TOTAL:**
+- **Sources:** 3 active
+- **Budget:** $6,345 (one-time)
+- **Expected Volume:** 1,500-2,000 opt-ins
+- **ROI:** 166-391% ($10,530-31,155 net profit)
 
 ---
 
-**ORGANIC TOUCHPOINTS (Need Integration - 6+ sources):**
+## 📈 PHASE 2: POST-LAUNCH (Month 1-3) - 7 NEW SOURCES
 
-5. 📋 **Website CTAs** (homepage, product pages, footer newsletter)
-   - Platform: Shopify site (multiple touchpoints)
-   - Integration: ⚠️ NEEDS tracking → Google Sheet
-   - Workflow: Real-time or daily sync needed
+**Timeline:** Month 1-3 after launch
+**Objective:** Scale lead acquisition with organic + paid channels
+**Budget:** TBD (Google Ads budget + $0 organic)
+**Status:** 📋 Planned, not implemented
+
+### Sources Phase 2 (7 new sources):
+
+4. 📋 **Google Ads Campaigns** (Search + Display + Shopping)
+   - Platform: Google Ads
+   - Integration: ⚠️ NEEDS implementation → Google Sheet
+   - Quality Score: 8.0-9.0 (paid search intent)
+   - Cost: TBD (suggested $3K-5K/month)
+   - Status: 📋 Not implemented
+
+5. 📋 **On-Site Newsletter/Contact Forms** (Shopify forms)
+   - Platform: Shopify site (homepage, footer, product pages)
+   - Integration: ⚠️ NEEDS Shopify webhook → Google Sheet
    - Quality Score: 8.0 (explicit opt-in on site)
    - Cost: $0
-   - **Status:** NOT automated yet (manual tracking or needs Shopify webhook integration)
+   - Status: 📋 Not implemented
 
-6. 📋 **SEO Organic** (blog posts, educational content, lead magnets)
-   - Platform: Blog articles, guides, downloadable resources
-   - Integration: ⚠️ NEEDS tracking → Google Sheet
-   - Workflow: Form submissions need capture
+6. 📋 **Blog Content Marketing** (SEO organic + lead magnets)
+   - Platform: Shopify blog + downloadable guides
+   - Integration: ⚠️ NEEDS form tracking → Google Sheet
    - Quality Score: 7.5 (content-qualified leads)
-   - Cost: $0 (organic traffic)
-   - **Status:** NOT automated yet (content forms need integration)
+   - Cost: $0 (organic)
+   - Status: 📋 Not implemented
 
-7. 📋 **Instagram Organic** (bio link, stories with CTAs, post CTAs)
-   - Platform: Instagram organic posts/stories
-   - Integration: ⚠️ NEEDS bio link tracking → Google Sheet
-   - Workflow: Link clicks → landing page → form submission
-   - Quality Score: 7.0 (social engagement)
+7. 📋 **Instagram/TikTok Organic** (bio links, stories, video CTAs)
+   - Platform: Instagram + TikTok organic content
+   - Integration: ⚠️ NEEDS landing page tracking → Google Sheet
+   - Quality Score: 6.5-7.0 (social engagement)
    - Cost: $0 (organic social)
-   - **Status:** NOT automated yet (link tracking needed)
+   - Status: 📋 Not implemented
 
-8. 📋 **TikTok Organic** (bio link, video CTAs)
-   - Platform: TikTok organic content
-   - Integration: ⚠️ NEEDS bio link tracking → Google Sheet
-   - Workflow: Link clicks → landing page → form submission
-   - Quality Score: 6.5 (viral potential but lower intent)
-   - Cost: $0 (organic social)
-   - **Status:** NOT automated yet (link tracking needed)
+8. 📋 **Customer Referral Program** (post-purchase referrals)
+   - Platform: Shopify app (e.g., ReferralCandy, Smile.io)
+   - Integration: ⚠️ NEEDS referral tracking → Google Sheet
+   - Quality Score: 8.5 (referred by customers)
+   - Cost: ~$50-100/mo (app subscription)
+   - Status: 📋 Not implemented
 
-9. 📋 **Shopify Checkout** (newsletter opt-in checkbox)
-   - Platform: Shopify checkout process
-   - Integration: ⚠️ NEEDS customer data export → Google Sheet
-   - Workflow: Post-purchase opt-ins
-   - Quality Score: 8.5 (paying customers)
-   - Cost: $0
-   - **Status:** Shopify native (needs export automation)
+9. 📋 **Email/Facebook Retargeting** (cart abandonment, site visitors)
+   - Platform: Klaviyo + Facebook Pixel
+   - Integration: ⚠️ NEEDS retargeting tracking → Google Sheet
+   - Quality Score: 7.5 (warm leads)
+   - Cost: Variable (retargeting ad spend)
+   - Status: 📋 Not implemented
 
-10. 📋 **Email Flows** (abandoned cart recovery, post-purchase)
-   - Platform: Klaviyo + Shopify Email
-   - Integration: ⚠️ PARTIAL - engagement tracking needed
-   - Workflow: Automated flows (existing) but need lead capture
-   - Quality Score: Varies (7.0-8.5)
-   - Cost: $0
-   - **Status:** PARTIAL - flows exist, but new leads from flows need capture
+10. 📋 **Social Shares** (viral sharing incentives)
+   - Platform: Social share buttons + incentives
+   - Integration: ⚠️ NEEDS share tracking → Google Sheet
+   - Quality Score: 6.5 (viral/referral)
+   - Cost: $0 (organic)
+   - Status: 📋 Not implemented
+
+**PHASE 2 TOTAL:**
+- **New Sources:** 7 (cumulative: 10 sources)
+- **Budget:** TBD (Google Ads + referral app ~$50-100/mo)
+- **Expected Volume:** +500-1,500/month (cumulative with Phase 1)
 
 ---
 
-**TOTAL LEAD SOURCES (B2C):** 10 sources
-- **AUTOMATED:** 4 sources (Contest, FB Ads, Import, Apify) - ✅ Code ready
-- **NEED INTEGRATION:** 6 sources (Website CTAs, SEO, Instagram, TikTok, Checkout, Email) - 📋 Planned
+## 🎯 PHASE 3: SCALE (Month 4-12) - 1 NEW SOURCE
+
+**Timeline:** Month 4-12 after launch
+**Objective:** Content-driven long-term growth
+**Budget:** $0 (organic content)
+**Status:** 📋 Planned, not implemented
+
+### Sources Phase 3 (1 new source):
+
+11. 📋 **YouTube Content** (educational videos, product demos, testimonials)
+   - Platform: YouTube organic + paid ads (optional)
+   - Integration: ⚠️ NEEDS video description links → Google Sheet
+   - Quality Score: 7.0-8.0 (video engagement)
+   - Cost: $0 organic (optional: YouTube Ads budget TBD)
+   - Status: 📋 Not implemented
+
+**PHASE 3 TOTAL:**
+- **New Sources:** 1 (cumulative: 11 sources)
+- **Budget:** $0 organic (or YouTube Ads TBD)
+- **Expected Volume:** +200-500/month (cumulative with Phase 1-2)
+
+---
+
+**TOTAL LEAD SOURCES (All Phases):** 11 sources
+- **PHASE 1 (ACTIVE):** 3 sources - ✅ Code ready (Typeform needs fix)
+- **PHASE 2 (PLANNED):** 7 sources - 📋 Not implemented
+- **PHASE 3 (PLANNED):** 1 source - 📋 Not implemented
+
+**Note:** Apify scraping exists (daily 9 AM) but is 100% insights, 0% outreach. NOT counted as lead source.
 
 **Centralisation:** Tout → Google Sheet "Raw Leads" → Nettoyage automatique → "Qualified Leads"
 
 ---
 
-### 🔄 FLUX D'INTÉGRATION
+### 🔄 FLUX D'INTÉGRATION (PHASE 1 ONLY - PRE-LAUNCH)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ SOURCE 1: Contest/Giveaway (Klaviyo)                           │
+│ SOURCE 1: Contest/Giveaway (Typeform)                          │
 ├─────────────────────────────────────────────────────────────────┤
-│ Shopify page: /pages/contest-prelaunch                         │
-│   ↓ Klaviyo Signup Form (email, name, phone)                   │
-│   ↓ List: "Pre-Launch Contest Participants"                    │
-│   ↓ [HOURLY 8AM-8PM] sync-klaviyo-leads.yml                    │
-│   ↓ sync_klaviyo_to_sheet.py (last 1h new profiles)            │
-│   ↓ Google Sheet "Raw Leads" (source: contest_prelaunch)       │
+│ Typeform: Contest form (email, name, phone, preferences)       │
+│   ↓ User submits form                                          │
+│   ↓ [HOURLY 8AM-8PM] sync-typeform-leads.yml                   │
+│   ↓ sync_typeform_to_sheet.py (Typeform API → last 1h)         │
+│   ↓ Google Sheet "Raw Leads" (source: contest_typeform)        │
+│   ⚠️ NEEDS CODE UPDATE (currently Klaviyo, must switch)        │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
@@ -4600,40 +4650,50 @@ Scraping → Intelligence (100%)
 │   ↓ [EVERY 6 HOURS] sync-facebook-leads.yml                    │
 │   ↓ sync_facebook_leads_to_sheet.py (Meta API)                 │
 │   ↓ Google Sheet "Raw Leads" (source: facebook_lead_ads)       │
+│   ✅ CODE READY                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ SOURCE 3: Import Externes (xlsx/csv)                           │
+│ SOURCE 3: Import Externes (xlsx/csv/json)                      │
 ├─────────────────────────────────────────────────────────────────┤
-│ User provides: leads_file.xlsx                                 │
+│ User provides: leads_file.xlsx (or csv, json)                  │
 │   ↓ Manual run: python3 import_leads_to_sheet.py file.xlsx    │
 │   ↓ Script: validates, cleans, appends                         │
 │   ↓ Google Sheet "Raw Leads" (source: import_externe)          │
+│   ✅ CODE READY                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ SOURCE 4: Apify Scraping (existing - insights only)            │
+│ INSIGHTS SOURCE: Apify Scraping (existing - NOT for outreach)  │
 ├─────────────────────────────────────────────────────────────────┤
 │ [DAILY 9 AM] daily-scraping.yml                                │
 │   ↓ Instagram, Facebook, TikTok scraping                       │
-│   ↓ Google Sheet "Raw Leads" (sources: instagram, facebook, etc)│
+│   ↓ Google Sheet "Raw Leads" (sources: instagram, facebook)    │
+│   ↓ 100% INSIGHTS ONLY, 0% OUTREACH                            │
+│   ✅ OPERATIONAL (existing)                                     │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ SOURCES 5-10: Organic Touchpoints (NEED integration)           │
+│ PHASE 2 SOURCES (Month 1-3): 7 sources                         │
 ├─────────────────────────────────────────────────────────────────┤
-│ 5. Website CTAs → ⚠️ Shopify webhook needed → Sheet            │
-│ 6. SEO Organic (blog/guides) → ⚠️ Form tracking → Sheet        │
-│ 7. Instagram Organic (bio link) → ⚠️ Landing page tracking     │
-│ 8. TikTok Organic (bio link) → ⚠️ Landing page tracking        │
-│ 9. Shopify Checkout opt-ins → ⚠️ Customer export → Sheet       │
-│ 10. Email Flows (Klaviyo/Shopify) → ⚠️ Engagement tracking     │
+│ 4. Google Ads → ⚠️ NEEDS implementation (TBD)                  │
+│ 5. On-site forms → ⚠️ NEEDS Shopify webhook (TBD)              │
+│ 6. Blog content → ⚠️ NEEDS form tracking (TBD)                 │
+│ 7. Instagram/TikTok organic → ⚠️ NEEDS landing page tracking   │
+│ 8. Referral program → ⚠️ NEEDS referral app integration        │
+│ 9. Email/FB retargeting → ⚠️ NEEDS retargeting tracking        │
+│ 10. Social shares → ⚠️ NEEDS share tracking                    │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ PHASE 3 SOURCES (Month 4-12): 1 source                         │
+├─────────────────────────────────────────────────────────────────┤
+│ 11. YouTube content → ⚠️ NEEDS video link tracking (TBD)       │
 └─────────────────────────────────────────────────────────────────┘
 
 ═════════════════════════════════════════════════════════════════
 
-ALL 10 SOURCES → Google Sheet "Raw Leads" (unprocessed)
-  (4 automated ✅ + 6 need integration ⚠️)
+PHASE 1 (3 SOURCES) → Google Sheet "Raw Leads" (unprocessed)
   ↓
 [DAILY 10 AM UTC] clean-segment-leads.yml
   ↓
@@ -4661,66 +4721,110 @@ Conversions
 
 ### 📂 FILES CREATED (Code Only - NO Documentation)
 
-**Python Scripts (Integration):**
-1. `import_leads_to_sheet.py` - Import xlsx/csv → Google Sheet
-2. `clean_and_segment_leads.py` - Nettoyage + segmentation ALL sources
-3. `sync_klaviyo_to_sheet.py` - Klaviyo contest leads → Google Sheet
-4. `sync_facebook_leads_to_sheet.py` - Facebook Lead Ads → Google Sheet
+**Python Scripts (Integration) - PHASE 1:**
+1. ✅ `import_leads_to_sheet.py` - Import xlsx/csv/json → Google Sheet (READY)
+2. ✅ `clean_and_segment_leads.py` - Nettoyage + segmentation ALL sources (READY)
+3. ⚠️ `sync_klaviyo_to_sheet.py` - **NEEDS UPDATE to Typeform API** (currently Klaviyo)
+4. ✅ `sync_facebook_leads_to_sheet.py` - Facebook Lead Ads → Google Sheet (READY)
 
-**GitHub Actions Workflows:**
-1. `.github/workflows/sync-klaviyo-leads.yml` - Hourly (8 AM - 8 PM UTC)
-2. `.github/workflows/sync-facebook-leads.yml` - Every 6 hours
-3. `.github/workflows/clean-segment-leads.yml` - Daily 10 AM UTC (après scraping)
+**GitHub Actions Workflows - PHASE 1:**
+1. ⚠️ `.github/workflows/sync-klaviyo-leads.yml` - **NEEDS RENAME** to `sync-typeform-leads.yml`
+2. ✅ `.github/workflows/sync-facebook-leads.yml` - Every 6 hours (READY)
+3. ✅ `.github/workflows/clean-segment-leads.yml` - Daily 10 AM UTC après scraping (READY)
 
 **Total Files:** 7 (4 scripts + 3 workflows)
+**Status:** 5/7 ready (71%) | 2/7 need Typeform update (29%)
 
 ---
 
-### 🔧 IMPLEMENTATION STATUS
+### 🔧 IMPLEMENTATION STATUS - PHASE 1 ONLY
 
 | Component | Status | Integration | Automation |
 |-----------|--------|-------------|------------|
-| **Contest Klaviyo → Sheet** | ✅ CODE ready | sync_klaviyo_to_sheet.py | Hourly (workflow ready) |
+| **Contest Typeform → Sheet** | ⚠️ NEEDS UPDATE | sync_klaviyo_to_sheet.py → **must become sync_typeform_to_sheet.py** | Hourly (workflow needs rename) |
 | **Facebook Ads → Sheet** | ✅ CODE ready | sync_facebook_leads_to_sheet.py | Every 6h (workflow ready) |
-| **Import xlsx → Sheet** | ✅ CODE ready | import_leads_to_sheet.py | Manual (no automation needed) |
-| **Apify → Sheet** | ✅ OPERATIONAL | Existing daily-scraping.yml | Daily 9 AM ✅ |
+| **Import xlsx/csv/json → Sheet** | ✅ CODE ready | import_leads_to_sheet.py | Manual (no automation needed) |
+| **Apify → Sheet** | ✅ OPERATIONAL | Existing daily-scraping.yml | Daily 9 AM ✅ (insights only) |
 | **Clean + Segment** | ✅ CODE ready | clean_and_segment_leads.py | Daily 10 AM (workflow ready) |
 | **Email Nurturing** | ✅ OPERATIONAL | Gmail Apps Script (existing) | Weekly Monday 12 AM ✅ |
 
-**Code Status:** 100% ready (7 files created)
-**Automation Status:** Ready to deploy (workflows configured)
-**Missing:** Manual setup steps (Klaviyo form, FB Ads campaign, Sheet structure)
+**PHASE 1 Code Status:** 71% ready (5/7 files) | 29% needs Typeform update (2/7 files)
+**Automation Status:** Mostly ready, Typeform integration needs code update
+**Missing:**
+- Manual setup steps (Typeform form, FB Ads campaign, Sheet structure) - 6h
+- Code update: Klaviyo API → Typeform API (sync script + workflow)
+
+**PHASE 2 Status:** 0% implemented (7 sources planned, not coded)
+**PHASE 3 Status:** 0% implemented (1 source planned, not coded)
 
 ---
 
-### 💰 COST ANALYSIS - COMPLETE LEAD ECOSYSTEM (10 SOURCES)
+### 💰 COST ANALYSIS - PHASED APPROACH
 
-| Source | Volume Target | Cost | CPL | Quality Score | Legal Status | Integration Status |
-|--------|---------------|------|-----|---------------|--------------|-------------------|
-| **1. Contest (Klaviyo)** | 1,500-2,000 | $6,345 ($345 prizes + $6K ads) | $3.17-4.23 | 8.5 | ✅ LEGAL (opt-in) | ✅ AUTOMATED |
-| **2. Facebook Lead Ads** | Included in contest ads | Included above | Same | 9.0 | ✅ LEGAL (explicit consent) | ✅ AUTOMATED |
-| **3. Import Externes** | Variable | $0 | $0 | 7.0 | ⚠️ Depends on source consent | ✅ MANUAL |
-| **4. Apify Scraping** | 14,100/month | $97.80/mo | $0.007 | 5.0-6.0 | ✅ LEGAL (insights only, NO outreach) | ✅ AUTOMATED |
-| **5. Website CTAs** | 200-500/month | $0 | $0 | 8.0 | ✅ LEGAL (site opt-in) | ⚠️ NOT INTEGRATED |
-| **6. SEO Organic** | 100-300/month | $0 | $0 | 7.5 | ✅ LEGAL (content opt-in) | ⚠️ NOT INTEGRATED |
-| **7. Instagram Organic** | 50-150/month | $0 | $0 | 7.0 | ✅ LEGAL (bio link opt-in) | ⚠️ NOT INTEGRATED |
-| **8. TikTok Organic** | 30-100/month | $0 | $0 | 6.5 | ✅ LEGAL (bio link opt-in) | ⚠️ NOT INTEGRATED |
-| **9. Shopify Checkout** | 50-200/month | $0 | $0 | 8.5 | ✅ LEGAL (checkout opt-in) | ⚠️ PARTIAL |
-| **10. Email Flows** | Variable | $0 | $0 | 7.0-8.5 | ✅ LEGAL (existing subscribers) | ⚠️ PARTIAL |
+---
 
-**AUTOMATED SOURCES (4):**
-- Total Cost: $6,442.80 (one-time $6,345 + $97.80/mo)
-- Expected Volume: 1,500-2,000 opt-ins PRE-LAUNCH + 14,100/month insights (Apify)
+#### PHASE 1: PRE-LAUNCH (Nov-Dec 2025) - 3 SOURCES
 
-**ORGANIC SOURCES (6):**
-- Total Cost: $0 (all organic)
-- Expected Volume: 430-1,250/month post-launch (if integrated)
-- Integration Status: ⚠️ 4 NOT integrated, 2 PARTIAL
+| Source | Volume Target | Cost | CPL | Quality Score | Legal Status | Code Status |
+|--------|---------------|------|-----|---------------|--------------|-------------|
+| **1. Contest (Typeform)** | 1,500-2,000 | $345 (prizes) | ~$0.17-0.23 | 8.5 | ✅ LEGAL (opt-in) | ⚠️ NEEDS UPDATE |
+| **2. Facebook Lead Ads** | Included in contest traffic | $6,000 (ads) | ~$3-4 | 9.0 | ✅ LEGAL (consent) | ✅ READY |
+| **3. Import Externes** | Variable | $0 | $0 | 7.0 | ⚠️ Depends on consent | ✅ READY |
+| **Insights: Apify** | 14,100/month | $97.80/mo | $0.007 | 5.0-6.0 | ✅ LEGAL (insights only, NO outreach) | ✅ OPERATIONAL |
 
-**TOTAL PRE-LAUNCH BUDGET:** $6,345 (20 days)
-**TOTAL MONTHLY COST (post-launch):** $97.80/mo (Apify only)
-**Expected Opt-In Leads (B2C):** 1,500-2,000 (PRE-LAUNCH) + 430-1,250/month (POST-LAUNCH organic)
-**Expected Insight Leads:** 14,100/month (Apify - NO direct contact)
+**PHASE 1 BUDGET:**
+- One-time: $6,345 ($345 prizes + $6,000 FB ads)
+- Monthly: $97.80 (Apify insights only)
+- CPL blended: $3.17-4.23 per opt-in (1,500-2K leads)
+
+**PHASE 1 EXPECTED VOLUME:**
+- Opt-ins: 1,500-2,000 B2C (contest + FB lead ads)
+- Insights: 14,100/month (Apify - NO outreach)
+
+---
+
+#### PHASE 2: POST-LAUNCH (Month 1-3) - 7 NEW SOURCES
+
+| Source | Volume Target | Cost | CPL | Quality Score | Status |
+|--------|---------------|------|-----|---------------|--------|
+| **4. Google Ads** | 500-1,000/mo | $3,000-5,000/mo | $3-5 | 8.0-9.0 | 📋 PLANNED |
+| **5. On-Site Forms** | 200-500/mo | $0 | $0 | 8.0 | 📋 PLANNED |
+| **6. Blog Content** | 100-300/mo | $0 | $0 | 7.5 | 📋 PLANNED |
+| **7. Instagram/TikTok Organic** | 80-250/mo | $0 | $0 | 6.5-7.0 | 📋 PLANNED |
+| **8. Referral Program** | 50-200/mo | $50-100/mo (app) | $0.25-2 | 8.5 | 📋 PLANNED |
+| **9. Email/FB Retargeting** | 100-300/mo | Variable | Variable | 7.5 | 📋 PLANNED |
+| **10. Social Shares** | 30-100/mo | $0 | $0 | 6.5 | 📋 PLANNED |
+
+**PHASE 2 BUDGET:**
+- Google Ads: $3,000-5,000/mo (variable)
+- Referral App: $50-100/mo
+- Organic: $0
+- Total: $3,050-5,100/mo + organic
+
+**PHASE 2 EXPECTED VOLUME:**
+- +560-1,650/month (cumulative with Phase 1)
+
+---
+
+#### PHASE 3: SCALE (Month 4-12) - 1 NEW SOURCE
+
+| Source | Volume Target | Cost | CPL | Quality Score | Status |
+|--------|---------------|------|-----|---------------|--------|
+| **11. YouTube Content** | 200-500/mo | $0 organic | $0 | 7.0-8.0 | 📋 PLANNED |
+
+**PHASE 3 BUDGET:**
+- $0 organic content (or YouTube Ads TBD)
+
+**PHASE 3 EXPECTED VOLUME:**
+- +200-500/month (cumulative with Phase 1-2)
+
+---
+
+**TOTAL ALL PHASES:**
+- **PHASE 1 (ACTIVE):** 3 sources, $6,345 one-time + $97.80/mo, 1,500-2K opt-ins
+- **PHASE 2 (PLANNED):** +7 sources, +$3,050-5,100/mo, +560-1,650/mo leads
+- **PHASE 3 (PLANNED):** +1 source, +$0, +200-500/mo leads
+- **CUMULATIVE:** 11 sources, 2,260-4,150 total leads (Year 1)
 
 **ROI Calculation (Contest + FB Ads):**
 - Investment: $6,345

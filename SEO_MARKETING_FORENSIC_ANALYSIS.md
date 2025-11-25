@@ -23362,23 +23362,26 @@ GITHUB ACTIONS (8 gaps):
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 01:15 UTC (COMPLETE B2C lead architecture - 10 sources forensic audit)
-**Audits Completed:** Flywheel + SNR + Automation Gaps + COMPLETE Lead Architecture (10 sources B2C)
-**Lead Sources COMPLETE (10 total):**
-  - **AUTOMATED (4):** Contest Klaviyo (8.5 score), FB Lead Ads (9.0), Import externes (7.0), Apify insights (5.0-6.0)
-  - **ORGANIC (6):** Website CTAs (8.0), SEO blog (7.5), Instagram organic (7.0), TikTok organic (6.5), Shopify checkout (8.5), Email flows (7.0-8.5)
-**Code Status:** 100% ready - 4 Python scripts + 3 GitHub Actions workflows (AUTOMATED sources only)
-**Integration:** ALL 10 sources → Google Sheet "Raw Leads" → clean_and_segment_leads.py → "Qualified Leads" → Email nurturing
-**Pre-Launch Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | Post-Launch: +430-1,250/month organic (if integrated)
-**Pre-Launch Budget:** $6,345 (prizes $345 + FB ads $6K) | Post-Launch: $97.80/mo (Apify only) + $0 organic
-**ROI Forensic PRE-LAUNCH:** 166-391% (Investment $6,345 → Revenue $16,875-37,500 → Net $10,530-31,155)
-**ROI Forensic POST-LAUNCH (organic):** UNBOUNDED (Cost $0 → Volume 430-1,250/month → 100% organic margin)
-**Legal Status:** ✅ ALL 10 sources LEGAL (Contest/FB/Organic opt-ins), ⚠️ Import depends on consent, ✅ Apify insights only
-**SNR:** 0% outreach (Apify) / 100% insights (Apify) / 100% opt-in (9 other sources)
-**Integration Status:** ✅ 4 AUTOMATED | ⚠️ 4 NOT integrated (Website CTAs, SEO, IG, TikTok) | ⚠️ 2 PARTIAL (Checkout, Email)
-**Manual Setup:** 6h required (Contest 2h, FB Ads 3h, Sheet 1h) + Organic integration TBD - User actions pending
-**Prochaine action:** User executes 4 automated setups → Test end-to-end → Enable workflows → Plan organic integration
+**Dernière mise à jour:** 2025-11-25 02:00 UTC (PHASED B2C lead architecture - 3 → 10 → 11 sources forensic audit)
+**Audits Completed:** Flywheel + SNR + Automation Gaps + PHASED Lead Architecture (11 sources B2C phased)
+**Lead Sources PHASED (11 total):**
+  - **PHASE 1 (ACTIVE - Nov-Dec 2025):** Contest Typeform (8.5), FB Lead Ads (9.0), Import externes (7.0) + Apify insights (5.0-6.0)
+  - **PHASE 2 (PLANNED - Month 1-3):** Google Ads (8.0-9.0), On-site forms (8.0), Blog content (7.5), IG/TikTok organic (6.5-7.0), Referral program (8.5), Email/FB retargeting (7.5), Social shares (6.5)
+  - **PHASE 3 (PLANNED - Month 4-12):** YouTube content (7.0-8.0)
+**Code Status:** 71% ready (5/7 files) | 29% needs Typeform update (sync script + workflow)
+**Integration:** PHASE 1 sources → Google Sheet "Raw Leads" → clean_and_segment_leads.py → "Qualified Leads" → Email nurturing
+**PHASE 1 Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | PHASE 2-3: +760-2,150/mo (if implemented)
+**PHASE 1 Budget:** $6,345 one-time (prizes $345 + FB ads $6K) + $97.80/mo (Apify insights)
+**PHASE 2-3 Budget:** +$3,050-5,100/mo (Google Ads + referral app) + $0 organic
+**ROI Forensic PHASE 1:** 166-391% (Investment $6,345 → Revenue $16,875-37,500 → Net $10,530-31,155)
+**ROI Forensic PHASE 2-3:** HIGH (Google Ads paid, 6 sources $0 organic = high organic margin)
+**Legal Status:** ✅ ALL 11 sources LEGAL (Contest/FB/Organic opt-ins), ⚠️ Import depends on consent, ✅ Apify insights only
+**SNR:** 0% outreach (Apify) / 100% insights (Apify) / 100% opt-in (3 PHASE 1 sources)
+**Integration Status PHASE 1:** ✅ 2/3 ready (FB, Import) | ⚠️ 1/3 needs Typeform update (Contest)
+**Integration Status PHASE 2-3:** 📋 0% (8 sources planned, not coded)
+**Manual Setup PHASE 1:** 6h (Typeform form 2h, FB Ads 3h, Sheet 1h) + Code update (Klaviyo→Typeform API)
+**Prochaine action:** Update code Typeform API → User executes PHASE 1 setup → Test end-to-end → Enable workflows → Plan PHASE 2 implementation
 
-**Système: 85/100 - Flywheel incomplete (4 sources automated 100%, 6 organic sources 0-50% integration)**
+**Système: 85/100 - Flywheel incomplete (PHASE 1: 71% coded, PHASE 2-3: 0% coded, phased rollout planned)**
 
 ---
