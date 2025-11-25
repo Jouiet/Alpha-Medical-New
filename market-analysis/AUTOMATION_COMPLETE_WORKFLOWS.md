@@ -5449,3 +5449,11 @@ USER completes audit (4-6h) → Analyze results (1-2h) → Build ONLY gaps (40-8
 **Blocker:** Chrome DevTools MCP disconnected (manual actions required)
 **Next:** Execute manual Flow configuration + pixel verification
 
+
+**SESSION 49 CONTINUATION - Pixel Verification:**
+- ✅ GTM Container: GTM-WFPH2KZP confirmed (theme.liquid line 461)
+- ❌ Facebook Pixel: NOT in theme.liquid (may be in GTM tags)
+- ❌ TikTok Pixel: NOT in theme.liquid (may be in GTM tags)
+- ❌ GA4 Direct: NOT found (may be in GTM tags)
+- ⚠️  Subscriptions API: 404 (not available on Basic plan)
+- 📊 Next: Manual GTM verification required for complete pixel audit

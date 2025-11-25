@@ -8853,11 +8853,13 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 **Volume Potentiel:** 1,255-2,690 leads/mois (si toutes 23 sources actives)
 **Budget Estimate:** $4-8K/mo (PAID ADS) + $0 (ON-SITE + RETARGETING organic)
 **ROI Priority Sources:** 116-215% (10 sources: 765-1,680 leads/mo, blended CPL $5-10)
-**Audit Complete:** ✅ API verified (0 orders, 0 webhooks, 0 metafields) | ✅ Flow verified (7 workflows) | ⚠️ Pixels unverified (theme check needed)
+**Audit Complete:** ✅ API verified (0 orders, 0 webhooks, 0 metafields) | ✅ Flow verified (7 workflows) | ✅ Pixels: GTM-WFPH2KZP confirmed (FB/TikTok may be in GTM)
+**Tracking:** GTM container GTM-WFPH2KZP installed (theme.liquid line 461) | FB Pixel NOT in theme | TikTok Pixel NOT in theme | GA4 NOT in theme (all may be via GTM tags)
+**Subscriptions:** ❌ API 404 (Basic plan limitation - manual verification needed)
 **Approach:** VERIFY first (audit DONE), build second (gaps identified) - Zéro assumptions, FAITS vérifiables uniquement
 **Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows: 4 active but UNTESTED (PRE-LAUNCH)
-**Immediate Actions:** Activate "Thank customers" (2min) | Fix duplicates (5min) | Verify pixels (10min) | Create 2 workflows (30min) | Test (15min)
-**Session 49:** API audit complete via verify_store_infrastructure.py | 7 workflows verified | 60min to launch-ready identified
-**Status:** 45/100 - Audit complete (+4), priority tasks identified, manual actions required
+**Immediate Actions:** Activate "Thank customers" (2min) | Fix duplicates (5min) | Verify GTM tags (manual) | Create 2 workflows (30min) | Test (15min)
+**Session 49:** API audit + pixel verification via check_theme_pixels.py | GTM confirmed | Subscriptions API checked (404)
+**Status:** 46/100 - Audit complete (+5), GTM verified, manual GTM tag verification needed
 
 ---
