@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 25, 2025 at 19:16 UTC
+**Generated:** November 25, 2025 at 19:25 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -73,55 +73,56 @@
 60. [Homepage Cta Instructions](#homepage_cta_instructions)
 61. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
 62. [Implementation Manuelle Guide](#implementation_manuelle_guide)
-63. [Implementation Report Pricing](#implementation_report_pricing)
-64. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
-65. [Klaviyo Flywheel Upgrade 2025](#klaviyo_flywheel_upgrade_2025)
-66. [Klaviyo Plan Recommendation Email Only](#klaviyo_plan_recommendation_email_only)
-67. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
-68. [Lead Automation System Operational](#lead_automation_system_operational)
-69. [Llms Txt Deployment](#llms_txt_deployment)
-70. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
-71. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
-72. [Loyalty System Architecture](#loyalty_system_architecture)
-73. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
-74. [Manual Footer Config](#manual_footer_config)
-75. [Menu Bundles Instructions](#menu_bundles_instructions)
-76. [Mydealz Synthese](#mydealz_synthese)
-77. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-78. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-79. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-80. [Paypal Deactivation Guide](#paypal_deactivation_guide)
-81. [Phase 3 Implementation Log](#phase_3_implementation_log)
-82. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
-83. [Pricing Quick Reference](#pricing_quick_reference)
-84. [Pricing Verification](#pricing_verification)
-85. [Product Optimization Tracking](#product_optimization_tracking)
-86. [Rapport Final Complet](#rapport_final_complet)
-87. [Rapport Theme Analyse](#rapport_theme_analyse)
-88. [Response To Third Party Analysis](#response_to_third_party_analysis)
-89. [Robots Txt Deployment](#robots_txt_deployment)
-90. [Seo Audit Recommendations](#seo_audit_recommendations)
-91. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-92. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-93. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-94. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
-95. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
-96. [Session Summary](#session_summary)
-97. [Shopify Configuration Complete](#shopify_configuration_complete)
-98. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-99. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-100. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
-101. [Status Report Pages](#status_report_pages)
-102. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
-103. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
-104. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
-105. [Top 10 Urls To Index](#top_10_urls_to_index)
-106. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-107. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
-108. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
-109. [Video Ads Creation Playbook](#video_ads_creation_playbook)
-110. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
-111. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
+63. [Implementation Plan 3 Phases](#implementation_plan_3_phases)
+64. [Implementation Report Pricing](#implementation_report_pricing)
+65. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
+66. [Klaviyo Flywheel Upgrade 2025](#klaviyo_flywheel_upgrade_2025)
+67. [Klaviyo Plan Recommendation Email Only](#klaviyo_plan_recommendation_email_only)
+68. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
+69. [Lead Automation System Operational](#lead_automation_system_operational)
+70. [Llms Txt Deployment](#llms_txt_deployment)
+71. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
+72. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
+73. [Loyalty System Architecture](#loyalty_system_architecture)
+74. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
+75. [Manual Footer Config](#manual_footer_config)
+76. [Menu Bundles Instructions](#menu_bundles_instructions)
+77. [Mydealz Synthese](#mydealz_synthese)
+78. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+79. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+80. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+81. [Paypal Deactivation Guide](#paypal_deactivation_guide)
+82. [Phase 3 Implementation Log](#phase_3_implementation_log)
+83. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
+84. [Pricing Quick Reference](#pricing_quick_reference)
+85. [Pricing Verification](#pricing_verification)
+86. [Product Optimization Tracking](#product_optimization_tracking)
+87. [Rapport Final Complet](#rapport_final_complet)
+88. [Rapport Theme Analyse](#rapport_theme_analyse)
+89. [Response To Third Party Analysis](#response_to_third_party_analysis)
+90. [Robots Txt Deployment](#robots_txt_deployment)
+91. [Seo Audit Recommendations](#seo_audit_recommendations)
+92. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+93. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+94. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+95. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
+96. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
+97. [Session Summary](#session_summary)
+98. [Shopify Configuration Complete](#shopify_configuration_complete)
+99. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+100. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+101. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
+102. [Status Report Pages](#status_report_pages)
+103. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
+104. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
+105. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
+106. [Top 10 Urls To Index](#top_10_urls_to_index)
+107. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+108. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
+109. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+110. [Video Ads Creation Playbook](#video_ads_creation_playbook)
+111. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
+112. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
 
 ---
 
@@ -130,7 +131,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -23528,7 +23529,7 @@ GITHUB ACTIONS (8 gaps):
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -27518,7 +27519,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -28088,7 +28089,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -28663,7 +28664,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -28990,7 +28991,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -29115,7 +29116,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -29635,7 +29636,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -30178,7 +30179,7 @@ python3 generate_llms_txt.py
 # 9. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -39040,7 +39041,7 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 # 10. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -39883,7 +39884,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical 8 Bundles Final
 
 **File:** `ALPHA_MEDICAL_8_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -42523,7 +42524,7 @@ Response: 200 OK
 # 12. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -42843,7 +42844,7 @@ For each bundle:
 # 13. Alpha Medical Pitch Deck Template
 
 **File:** `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -44902,7 +44903,7 @@ END OF PITCH DECK TEMPLATE
 # 14. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -46049,7 +46050,7 @@ Audit complet 7 critères
 # 15. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -49962,7 +49963,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 16. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -51786,7 +51787,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 17. Analytics Tracking Factual Status
 
 **File:** `ANALYTICS_TRACKING_FACTUAL_STATUS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -51962,7 +51963,7 @@ No need to modify old docs - this file supersedes previous information.
 # 18. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -52329,7 +52330,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 19. Apify Integration Complete
 
 **File:** `APIFY_INTEGRATION_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -52885,7 +52886,7 @@ python3 influencer_lead_generation.py --full-discovery
 # 20. Asset Gathering Guide
 
 **File:** `ASSET_GATHERING_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -53314,7 +53315,7 @@ cp source/* destination/
 # 21. Automation Setup Complete Guide
 
 **File:** `AUTOMATION_SETUP_COMPLETE_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -53766,7 +53767,7 @@ Use this checklist to complete setup:
 # 22. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -53939,7 +53940,7 @@ Use this checklist to complete setup:
 # 23. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -54845,7 +54846,7 @@ function markProposalsAsCreated(hash) {
 # 24. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -55310,7 +55311,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 25. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -56529,7 +56530,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 26. Bundle Persona Critical Audit
 
 **File:** `BUNDLE_PERSONA_CRITICAL_AUDIT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -57153,7 +57154,7 @@ Pour chaque bundle, je vérifie:
 # 27. Bundle Reconstruction Analysis 2025
 
 **File:** `BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -57603,7 +57604,7 @@ Market data shows:
 # 28. Cart Drawer Forensic Analysis
 
 **File:** `CART_DRAWER_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -58160,7 +58161,7 @@ document.addEventListener('cart:updated', function(event) {
 # 29. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -59969,7 +59970,7 @@ Pack de 10-20 pads = Meilleur prix
 # 30. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -60266,7 +60267,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 31. Complete Acquisition Automation System
 
 **File:** `COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -62784,7 +62785,7 @@ RESULT: System-wide efficiency gains 10-20%/quarter
 # 32. Complete Manually Final 40 Percent
 
 **File:** `COMPLETE_MANUALLY_FINAL_40_PERCENT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -62989,7 +62990,7 @@ Une fois le workflow activé:
 # 33. Complete Shopify Flow Setup
 
 **File:** `COMPLETE_SHOPIFY_FLOW_SETUP.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -63167,7 +63168,7 @@ Après activation complète:
 # 34. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -63771,7 +63772,7 @@ June:
 # 35. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -65784,7 +65785,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 36. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -66175,7 +66176,7 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 # 37. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -67558,7 +67559,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 38. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -68406,7 +68407,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 39. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -68821,7 +68822,7 @@ python3 generate_llms_txt.py
 # 40. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -69524,7 +69525,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 41. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -70285,7 +70286,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 42. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -71091,7 +71092,7 @@ grep "fbq(" homepage → 0 results
 # 43. Factual Verification Complete Session 47
 
 **File:** `FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -71542,7 +71543,7 @@ Upload: gh secret set GOOGLE_CREDENTIALS_JSON < credentials.json
 # 44. Factual Verification Status
 
 **File:** `FACTUAL_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -71936,7 +71937,7 @@ Test → Measure → Validate → Scale.
 # 45. Final Report Transparency Implementation
 
 **File:** `FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -72631,7 +72632,7 @@ Back & Posture Support: 1 product
 # 46. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -72859,7 +72860,7 @@ Back & Posture Support: 1 product
 # 47. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -73701,7 +73702,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 48. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -76668,7 +76669,7 @@ FILES:
 # 49. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -77052,7 +77053,7 @@ TOTAL: ~30 minutes de travail actif
 # 50. Gmail Apps Script Setup
 
 **File:** `GMAIL_APPS_SCRIPT_SETUP.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -77362,7 +77363,7 @@ Status: On Track
 # 51. Google Ads Gtm Progress
 
 **File:** `GOOGLE_ADS_GTM_PROGRESS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -77733,7 +77734,7 @@ python3 check_gtm_status.py
 # 52. Google Ads Next Steps
 
 **File:** `GOOGLE_ADS_NEXT_STEPS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -77999,7 +78000,7 @@ git push origin main
 # 53. Google Ads Setup Guide
 
 **File:** `GOOGLE_ADS_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -78411,7 +78412,7 @@ Avant de considérer l'installation complète:
 # 54. Google Search Console Verification Status
 
 **File:** `GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -78647,7 +78648,7 @@ Je **REFUSE** de dire:
 # 55. Google Sheet Setup Instructions
 
 **File:** `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -78832,7 +78833,7 @@ python3 market-analysis/lead_generation_scraper.py --test
 # 56. Gsc Configuration Report 2025-11-19
 
 **File:** `GSC_CONFIGURATION_REPORT_2025-11-19.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -79450,7 +79451,7 @@ curl -s "https://alphamedical.shop/robots.txt"
 # 57. Gsc Final Checklist
 
 **File:** `GSC_FINAL_CHECKLIST.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -79839,7 +79840,7 @@ SOUMISSIONS MANUELLES:
 # 58. Gtm Add Missing Tags Steps
 
 **File:** `GTM_ADD_MISSING_TAGS_STEPS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -80238,7 +80239,7 @@ Business model: Dropshipping (pre-launch)
 # 59. Gtm Setup Guide
 
 **File:** `GTM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -80886,7 +80887,7 @@ Avant de considérer l'installation complète:
 # 60. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -81159,7 +81160,7 @@ Workflow AUTOMATIQUE:
 # 61. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -81535,7 +81536,7 @@ dig TXT alphamedical.shop +short
 # 62. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -82282,10 +82283,778 @@ Cliquer **"Save"**
 ---
 
 
-# 63. Implementation Report Pricing
+# 63. Implementation Plan 3 Phases
+
+**File:** `IMPLEMENTATION_PLAN_3_PHASES.md`
+**Last Modified:** 2025-11-25 19:25
+
+---
+
+# IMPLEMENTATION PLAN - 3 PHASES COMPLETE
+## Alpha Medical B2C Lead Architecture (11 sources)
+
+**Created:** 2025-11-25 02:30 UTC
+**Approach:** Build ALL infrastructure now, test immediately, deploy phased
+**Total Sources:** 11 (3 Phase 1 + 7 Phase 2 + 1 Phase 3)
+**Total Timeline:** 12 weeks (infrastructure) + phased deployment (52 weeks)
+
+---
+
+## 🎯 EXECUTIVE SUMMARY
+
+**Stratégie:** Build complete infrastructure for all 3 phases NOW, then deploy sources in phased timeline based on business readiness (not technical readiness).
+
+**Why Build All Now?**
+- Unified architecture (no technical debt from rushed Phase 2-3 implementations)
+- Test all integrations end-to-end before launch
+- Flexibility to activate sources earlier if opportunity arises
+- Code review & optimization across all sources (not piecemeal)
+
+**Deployment Strategy:**
+- **Infrastructure:** 12 weeks (all 11 sources coded + tested)
+- **PHASE 1 Activation:** Week 13 (Nov 2025) - 3 sources
+- **PHASE 2 Activation:** Week 26 (Month 1-3 post-launch) - 7 sources
+- **PHASE 3 Activation:** Week 39 (Month 4-12 post-launch) - 1 source
+
+---
+
+## 📊 INFRASTRUCTURE BUILD (Weeks 1-12)
+
+### Week 1-2: Architecture & Foundation
+**Goal:** Setup unified data pipeline for all 11 sources
+
+#### Tasks:
+1. **Google Sheet Structure (2h)**
+   - Create "Raw Leads" sheet (20 columns for all sources)
+   - Create "Qualified Leads" sheet (18 columns)
+   - Create "Analytics" dashboard (4 tabs: Overview, By Source, By Persona, Performance)
+   - Add formulas, conditional formatting, data validation
+   - Test: Manual data entry → Clean → Qualified
+
+2. **Central Processing Script Enhancement (4h)**
+   - Update `clean_and_segment_leads.py` to handle all 11 sources
+   - Add source-specific validation rules
+   - Add quality scoring for all source types
+   - Add persona detection (15 keywords → 5 personas)
+   - Test: Mock data from all 11 sources → Cleaning → Output validation
+
+3. **GitHub Actions Infrastructure (2h)**
+   - Create workflows folder structure (11 workflows)
+   - Setup secrets management (plan for 15+ secrets)
+   - Create reusable workflow templates
+   - Test: Workflow syntax validation
+
+**Deliverables:**
+- ✅ Google Sheet ready for all sources
+- ✅ Enhanced cleaning script (handles 11 sources)
+- ✅ Workflow infrastructure ready
+
+**Timeline:** 8 hours (Week 1-2)
+
+---
+
+### Week 3-4: PHASE 1 Sources (3 sources)
+
+#### Source 1: Contest/Giveaway (Typeform)
+
+**API Research (30min):**
+- Typeform API: `https://api.typeform.com/forms/{form_id}/responses`
+- Authentication: Bearer token (Personal Access Token)
+- Rate limit: 600 requests/day
+- Webhook option: Real-time push (better than polling)
+
+**Tasks:**
+1. **Create sync_typeform_to_sheet.py (3h)**
+   - Fetch responses from Typeform API (last N hours)
+   - Parse form fields (email, name, phone, custom questions)
+   - Validate & clean data
+   - Append to Google Sheet "Raw Leads"
+   - Handle duplicates, errors, logging
+   - Test: Mock Typeform response → Sheet
+
+2. **Create workflow sync-typeform-leads.yml (1h)**
+   - Schedule: Hourly 8 AM - 8 PM UTC (cron: `0 8-20 * * *`)
+   - Environment: Python 3.11, dependencies: requests, gspread
+   - Secrets: TYPEFORM_API_TOKEN, GOOGLE_SHEETS_CREDENTIALS
+   - Test: Manual workflow dispatch
+
+3. **Setup Typeform Contest Form (2h - USER ACTION)**
+   - Create form with fields: email, name, phone, location, preferences
+   - Get form ID
+   - Generate Personal Access Token
+   - Test form submission → API response
+
+**Code Estimate:** 150 lines Python + 40 lines YAML
+**Timeline:** 4 hours coding + 2 hours user setup = 6 hours total
+
+---
+
+#### Source 2: Facebook Lead Ads
+
+**Status:** ✅ Code exists (`sync_facebook_leads_to_sheet.py`)
+
+**Tasks:**
+1. **Review & Test Existing Code (1h)**
+   - Verify Meta API compatibility (Graph API v18.0+)
+   - Test with dummy lead form
+   - Verify error handling
+
+2. **Setup FB Lead Form (3h - USER ACTION)**
+   - Create FB Ads campaign
+   - Create Lead Ads with Instant Form
+   - Get form ID, ad account ID
+   - Generate access token (90-day validity, plan for refresh)
+   - Test form submission → API response
+
+**Timeline:** 1 hour review + 3 hours user setup = 4 hours total
+
+---
+
+#### Source 3: Import Externes
+
+**Status:** ✅ Code exists (`import_leads_to_sheet.py`)
+
+**Tasks:**
+1. **Enhance for JSON Support (1h)**
+   - Current: xlsx, csv
+   - Add: json, jsonl support
+   - Test with sample files (xlsx, csv, json)
+
+**Timeline:** 1 hour enhancement
+
+---
+
+**PHASE 1 TOTAL:** 11 hours (coding + enhancements)
+
+---
+
+### Week 5-8: PHASE 2 Sources (7 sources)
+
+#### Source 4: Google Ads Campaigns
+
+**API Research (30min):**
+- Google Ads API: Lead form extensions
+- Authentication: OAuth 2.0 (service account)
+- API: `https://googleads.googleapis.com/v15/customers/{customer_id}/leadFormSubmissions`
+
+**Tasks:**
+1. **Create sync_google_ads_to_sheet.py (4h)**
+   - Authenticate with Google Ads API (OAuth 2.0)
+   - Fetch lead form submissions (last N hours)
+   - Parse fields (similar to FB leads)
+   - Quality score: 8.5 (paid search high intent)
+   - Append to Sheet with source: "google_ads"
+   - Test: Mock API response → Sheet
+
+2. **Create workflow sync-google-ads-leads.yml (1h)**
+   - Schedule: Every 6 hours (same as FB)
+   - Secrets: GOOGLE_ADS_CLIENT_ID, GOOGLE_ADS_CLIENT_SECRET, GOOGLE_ADS_REFRESH_TOKEN, GOOGLE_ADS_CUSTOMER_ID
+   - Test: Manual dispatch
+
+3. **Setup Google Ads Campaign (4h - USER ACTION)**
+   - Create Search + Display campaigns
+   - Add Lead Form extensions
+   - Get customer ID, setup OAuth
+   - Test form submission
+
+**Code Estimate:** 180 lines Python + 40 lines YAML
+**Timeline:** 5 hours coding + 4 hours user setup = 9 hours total
+
+---
+
+#### Source 5: On-Site Newsletter/Contact Forms
+
+**Integration Options (30min research):**
+- **Option A:** Shopify Form Apps (e.g., Klaviyo, Mailchimp forms)
+- **Option B:** Shopify webhook on customer creation
+- **Option C:** Custom form with Shopify API
+
+**Recommended:** Option B (Shopify webhook → catches all form submissions)
+
+**Tasks:**
+1. **Create Shopify webhook handler (3h)**
+   - Create endpoint (Flask app or Shopify Function)
+   - Webhook: `customers/create`, `customers/update`
+   - Parse customer data (email, name, phone, tags)
+   - Push to Google Sheet
+   - Deploy: Vercel/Railway (free tier) or GitHub Pages (static webhook catcher)
+
+2. **Create sync_shopify_forms_to_sheet.py (2h)**
+   - Fallback: Shopify Admin API polling (if webhook fails)
+   - Fetch customers created in last N hours
+   - Filter by tags (e.g., "newsletter_subscriber")
+   - Quality score: 8.0
+   - Test: Create test customer → Sheet
+
+3. **Create workflow sync-shopify-forms.yml (1h)**
+   - Schedule: Every 4 hours (frequent for on-site forms)
+   - Secrets: SHOPIFY_API_KEY, SHOPIFY_API_SECRET, SHOPIFY_SHOP_URL
+   - Test: Manual dispatch
+
+4. **Setup Shopify Forms (2h - USER ACTION)**
+   - Install/configure form app or use native Shopify forms
+   - Setup webhook endpoint
+   - Test form submission
+
+**Code Estimate:** 150 lines Python (webhook) + 120 lines Python (fallback) + 40 lines YAML
+**Timeline:** 6 hours coding + 2 hours user setup = 8 hours total
+
+---
+
+#### Source 6: Blog Content Marketing
+
+**Integration:** Blog post forms (Shopify blog + embedded forms)
+
+**Tasks:**
+1. **Reuse On-Site Form Integration (0h)**
+   - Same Shopify webhook/API as Source 5
+   - Tag customers with "blog_subscriber" or "lead_magnet"
+   - Quality score: 7.5 (content-qualified)
+
+2. **Create Lead Magnet Download Tracker (2h)**
+   - Track downloads of PDFs/guides
+   - Log email + resource downloaded
+   - Append to Sheet with source: "blog_content"
+   - Implementation: Shopify metafields or custom API
+
+**Timeline:** 2 hours (lead magnet tracking only, form reuses Source 5)
+
+---
+
+#### Source 7: Instagram/TikTok Organic
+
+**Integration:** Bio link clicks → Landing page → Form submission
+
+**Tasks:**
+1. **Create Link Tracker (3h)**
+   - Use UTM parameters (e.g., `?utm_source=instagram&utm_campaign=bio_link`)
+   - Capture UTM params when form submitted (Shopify or Typeform)
+   - Enrich leads in Sheet with UTM data
+   - Quality score: 7.0 (Instagram), 6.5 (TikTok)
+
+2. **Update Existing Form Integrations (1h)**
+   - Modify `sync_typeform_to_sheet.py` to capture UTM params
+   - Modify `sync_shopify_forms_to_sheet.py` to capture UTM params
+   - Map UTM source → Lead source column
+
+3. **Create Landing Pages (2h - USER ACTION)**
+   - Create Shopify pages for bio links (e.g., `/pages/instagram-exclusive`)
+   - Embed forms (Typeform or Shopify)
+   - Test: Click bio link → Submit form → Check UTM in Sheet
+
+**Timeline:** 4 hours coding + 2 hours user setup = 6 hours total
+
+---
+
+#### Source 8: Customer Referral Program
+
+**Integration:** Referral app (ReferralCandy, Smile.io, or custom)
+
+**Tasks:**
+1. **Research Referral App APIs (1h)**
+   - ReferralCandy API: `https://api.referralcandy.com/v1/referrals`
+   - Smile.io API: `https://api.smile.io/v1/customers/{customer_id}/referrals`
+   - Authentication: API key
+
+2. **Create sync_referrals_to_sheet.py (3h)**
+   - Fetch referrals (last N hours)
+   - Parse referee email + referrer email
+   - Quality score: 8.5 (referred by customer)
+   - Append to Sheet with source: "referral_program"
+   - Test: Mock referral data → Sheet
+
+3. **Create workflow sync-referrals.yml (1h)**
+   - Schedule: Daily (referrals are less frequent)
+   - Secrets: REFERRAL_APP_API_KEY
+   - Test: Manual dispatch
+
+4. **Setup Referral App (2h - USER ACTION)**
+   - Choose app (ReferralCandy $49/mo or Smile.io $49/mo)
+   - Configure rewards, install Shopify app
+   - Get API credentials
+   - Test referral flow
+
+**Code Estimate:** 140 lines Python + 40 lines YAML
+**Timeline:** 5 hours coding + 2 hours user setup = 7 hours total
+
+---
+
+#### Source 9: Email/Facebook Retargeting
+
+**Integration:** Klaviyo + Facebook Pixel
+
+**Tasks:**
+1. **Create sync_klaviyo_engagement_to_sheet.py (3h)**
+   - Track email engagement (opens, clicks) → NEW leads from engagement
+   - Klaviyo API: Fetch profiles who engaged but not yet in DB
+   - Quality score: 7.5 (warm leads)
+   - Append with source: "email_retargeting"
+
+2. **Create sync_facebook_retargeting_to_sheet.py (2h)**
+   - Facebook Custom Audiences API (if accessible)
+   - Or: Manual export of retargeting conversions → Import externes
+   - Quality score: 7.5
+
+3. **Create workflows (1h)**
+   - `sync-klaviyo-engagement.yml` - Daily
+   - `sync-facebook-retargeting.yml` - Daily
+   - Test: Manual dispatch
+
+4. **Setup Retargeting (3h - USER ACTION)**
+   - Klaviyo: Create engagement segments
+   - Facebook: Setup retargeting campaigns
+   - Test: Engage with email → Check if tracked
+
+**Code Estimate:** 150 lines Python (Klaviyo) + 100 lines Python (FB) + 80 lines YAML
+**Timeline:** 6 hours coding + 3 hours user setup = 9 hours total
+
+---
+
+#### Source 10: Social Shares
+
+**Integration:** Track social share buttons → New visitors → Form submissions
+
+**Tasks:**
+1. **Create Social Share Tracking (2h)**
+   - Add social share buttons (AddThis, ShareThis, or custom)
+   - Track share events → Google Analytics
+   - Enrich form submissions with "referred by share" flag
+   - Quality score: 6.5
+
+2. **Integrate with Form Submissions (1h)**
+   - Add hidden field to forms: `referral_source=social_share`
+   - Capture in all form sync scripts
+   - Append with source: "social_share"
+
+**Timeline:** 3 hours coding (no user setup needed if using existing forms)
+
+---
+
+**PHASE 2 TOTAL:** 48 hours (coding + user setups)
+
+---
+
+### Week 9-10: PHASE 3 Source (1 source)
+
+#### Source 11: YouTube Content
+
+**Integration:** Video description links → Landing page → Form submissions
+
+**Tasks:**
+1. **Reuse UTM Tracking (0h)**
+   - Same as Instagram/TikTok organic (Source 7)
+   - UTM params: `?utm_source=youtube&utm_campaign=video_{video_id}`
+   - Quality score: 7.5 (video engagement)
+
+2. **YouTube Analytics Integration (Optional - 3h)**
+   - YouTube Data API: Track video engagement
+   - Correlate video views → Form submissions
+   - Create dashboard: Video performance vs leads
+   - NOT critical for lead capture, but useful for attribution
+
+3. **Create Video Landing Pages (2h - USER ACTION)**
+   - Create Shopify pages for video CTAs
+   - Embed forms (Typeform or Shopify)
+   - Test: Click video link → Submit form
+
+**Timeline:** 3 hours coding (optional analytics) + 2 hours user setup = 5 hours total
+
+---
+
+**PHASE 3 TOTAL:** 5 hours
+
+---
+
+### Week 11-12: Testing & Optimization
+
+#### End-to-End Testing (16 hours)
+
+**Test Plan:**
+
+1. **Integration Tests (8h)**
+   - Test each of 11 sources individually
+   - Mock API responses → Verify Sheet updates
+   - Test error handling (API failures, rate limits)
+   - Test duplicate detection across sources
+
+2. **Workflow Tests (4h)**
+   - Test all 11 GitHub Actions workflows
+   - Verify cron schedules
+   - Verify secrets access
+   - Test manual dispatch for all workflows
+
+3. **Performance Tests (2h)**
+   - Test Sheet API rate limits (100 requests/100 seconds)
+   - Test with high volume (1000+ leads/day)
+   - Optimize batch operations if needed
+
+4. **User Acceptance Tests (2h)**
+   - Test manual import (xlsx, csv, json)
+   - Test data quality (clean, segment, persona detection)
+   - Test Analytics dashboard (charts update correctly)
+
+**Test Deliverables:**
+- ✅ Test report (pass/fail for each source)
+- ✅ Integration test suite (pytest)
+- ✅ Performance benchmarks
+
+**Timeline:** 16 hours testing
+
+---
+
+## 📁 CODE STRUCTURE (All 11 Sources)
+
+```
+Alpha-Medical/
+├── sync_typeform_to_sheet.py           # PHASE 1 - Contest (NEW)
+├── sync_facebook_leads_to_sheet.py     # PHASE 1 - FB Ads (EXISTS)
+├── import_leads_to_sheet.py            # PHASE 1 - Import (EXISTS, enhance JSON)
+├── sync_google_ads_to_sheet.py         # PHASE 2 - Google Ads (NEW)
+├── sync_shopify_forms_to_sheet.py      # PHASE 2 - On-site forms (NEW)
+├── sync_blog_content_to_sheet.py       # PHASE 2 - Blog (reuses Shopify)
+├── sync_referrals_to_sheet.py          # PHASE 2 - Referral program (NEW)
+├── sync_klaviyo_engagement_to_sheet.py # PHASE 2 - Email retargeting (NEW)
+├── sync_facebook_retargeting_to_sheet.py # PHASE 2 - FB retargeting (NEW)
+├── track_social_shares.py              # PHASE 2 - Social shares (NEW)
+├── track_youtube_links.py              # PHASE 3 - YouTube (reuses UTM tracking)
+├── clean_and_segment_leads.py          # CENTRAL - Cleaning (EXISTS, enhance)
+├── .github/workflows/
+│   ├── sync-typeform-leads.yml         # Hourly 8AM-8PM
+│   ├── sync-facebook-leads.yml         # Every 6h (EXISTS)
+│   ├── sync-google-ads-leads.yml       # Every 6h
+│   ├── sync-shopify-forms.yml          # Every 4h
+│   ├── sync-referrals.yml              # Daily
+│   ├── sync-klaviyo-engagement.yml     # Daily
+│   ├── sync-facebook-retargeting.yml   # Daily
+│   └── clean-segment-leads.yml         # Daily 10AM (EXISTS)
+├── tests/
+│   ├── test_typeform_integration.py
+│   ├── test_facebook_integration.py
+│   ├── test_google_ads_integration.py
+│   ├── test_shopify_integration.py
+│   ├── test_referral_integration.py
+│   ├── test_retargeting_integration.py
+│   ├── test_cleaning_script.py
+│   └── test_end_to_end.py
+└── IMPLEMENTATION_PLAN_3_PHASES.md     # This file
+```
+
+**Total Files:**
+- 11 Python scripts (7 new, 4 existing/enhanced)
+- 8 GitHub Actions workflows (5 new, 3 existing)
+- 8 Test files (all new)
+- **27 files total**
+
+---
+
+## ⏱️ TIMELINE SUMMARY
+
+| Phase | Duration | Tasks | Deliverables |
+|-------|----------|-------|--------------|
+| **Week 1-2: Foundation** | 8h | Architecture, Sheet, Central script | ✅ Infrastructure ready |
+| **Week 3-4: Phase 1** | 11h | Typeform, FB, Import | ✅ 3 sources coded |
+| **Week 5-8: Phase 2** | 48h | Google Ads, Shopify, Blog, Social, Referral, Retargeting | ✅ 7 sources coded |
+| **Week 9-10: Phase 3** | 5h | YouTube | ✅ 1 source coded |
+| **Week 11-12: Testing** | 16h | Integration tests, E2E tests | ✅ All sources tested |
+| **TOTAL BUILD** | **88 hours** | 27 files | ✅ Complete infrastructure |
+
+**Infrastructure Readiness:** Week 13 (end of Week 12 + 1 week buffer)
+
+---
+
+## 🚀 DEPLOYMENT TIMELINE (Phased Activation)
+
+### PHASE 1: PRE-LAUNCH (Week 13 - Nov 2025)
+
+**Activate:** 3 sources (Typeform, FB Ads, Import)
+
+**User Actions:**
+1. Create Typeform contest form (2h)
+2. Launch FB Ads campaign (3h)
+3. Prepare import files (1h)
+4. Enable workflows in GitHub Actions (30min)
+
+**Testing Period:** 1 week (Week 13)
+- Monitor: 500-1000 test leads
+- Verify: Data quality, no errors, analytics accurate
+
+**Go-Live:** Week 14 (contest launch)
+
+**Timeline:** Week 13-14 (2 weeks)
+
+---
+
+### PHASE 2: POST-LAUNCH (Week 26 - Month 1-3 after launch)
+
+**Activate:** 7 sources (Google Ads, Shopify, Blog, Social, Referral, Retargeting, Social shares)
+
+**Prerequisites:**
+- ✅ Store launched (revenue > $10K/month)
+- ✅ 1,500+ leads from Phase 1
+- ✅ Budget approved for Google Ads ($3-5K/month)
+
+**User Actions:**
+1. Launch Google Ads campaigns (4h)
+2. Install referral app (ReferralCandy/Smile) (2h)
+3. Configure on-site forms (2h)
+4. Setup retargeting campaigns (3h)
+5. Create blog content with lead magnets (ongoing)
+6. Enable 7 workflows (1h)
+
+**Testing Period:** 2 weeks (Week 26-27)
+- Monitor: 1000+ leads/month from new sources
+- Verify: Source attribution accurate, no conflicts
+
+**Timeline:** Week 26-28 (3 weeks)
+
+---
+
+### PHASE 3: SCALE (Week 39 - Month 4-12 after launch)
+
+**Activate:** 1 source (YouTube)
+
+**Prerequisites:**
+- ✅ 5,000+ total leads
+- ✅ Content team ready (video production)
+
+**User Actions:**
+1. Create YouTube channel (if not exists) (1h)
+2. Upload first 3-5 videos with CTAs (ongoing)
+3. Create video landing pages (2h)
+4. Enable UTM tracking (already active from Phase 2)
+
+**Timeline:** Week 39-40 (2 weeks)
+
+---
+
+## 💰 COST BREAKDOWN (Infrastructure + Operations)
+
+### Infrastructure Build (One-Time)
+
+| Item | Hours | Rate | Cost |
+|------|-------|------|------|
+| **Development (88h)** | 88h | $0 (in-house) | $0 |
+| **Testing** | 16h | $0 (in-house) | $0 |
+| **User Setups** | 30h | $0 (internal) | $0 |
+| **TOTAL BUILD** | 118h | - | **$0** |
+
+---
+
+### Operational Costs (Monthly)
+
+#### PHASE 1 (Active - Nov-Dec 2025)
+- Typeform: $0 (free tier up to 100 responses/month) or $25/mo (Pro plan)
+- Facebook Ads: $6,000 (one-time 20-day campaign)
+- Import: $0
+- Apify (insights): $97.80/mo
+- **TOTAL PHASE 1:** $97.80/mo + $6,000 one-time
+
+#### PHASE 2 (Month 1-3)
+- Google Ads: $3,000-5,000/mo
+- Referral App: $49-99/mo (ReferralCandy/Smile)
+- Shopify Forms: $0 (native)
+- Blog: $0 (organic)
+- Retargeting: Variable (included in ad spend)
+- Social shares: $0 (organic)
+- **TOTAL PHASE 2:** +$3,049-5,099/mo
+
+#### PHASE 3 (Month 4-12)
+- YouTube: $0 (organic)
+- **TOTAL PHASE 3:** +$0/mo
+
+**Cumulative Monthly Cost:**
+- Month 0 (build): $0
+- Month 1-2 (Phase 1): $97.80/mo
+- Month 3-5 (Phase 2): $3,146.80-5,196.80/mo
+- Month 6-12 (Phase 3): $3,146.80-5,196.80/mo (same)
+
+---
+
+## 🎯 SUCCESS METRICS (Testing Phase)
+
+### Infrastructure Testing (Week 11-12)
+
+| Metric | Target | Test Method |
+|--------|--------|-------------|
+| **API Success Rate** | >99% | 1000 API calls per source |
+| **Data Accuracy** | 100% | Compare API response vs Sheet data |
+| **Duplicate Detection** | 100% | Submit 50 duplicate leads |
+| **Error Handling** | 0 crashes | Simulate API failures (5 per source) |
+| **Workflow Reliability** | 100% | Run all workflows 10 times |
+| **Sheet Performance** | <5s per batch | Batch insert 100 leads |
+
+### Phase 1 Testing (Week 13)
+
+| Metric | Target | Monitoring |
+|--------|--------|------------|
+| **Typeform Sync** | 100% of submissions | Check Sheet vs Typeform responses |
+| **FB Ads Sync** | 100% of leads | Check Sheet vs FB Ads Manager |
+| **Import Success** | 100% of files | Test 10 files (xlsx, csv, json) |
+| **Data Quality** | >95% valid emails | Check email validation results |
+| **Cleaning Script** | 0 errors | Monitor daily logs |
+
+### Phase 2 Testing (Week 26-27)
+
+| Metric | Target | Monitoring |
+|--------|--------|------------|
+| **Google Ads Sync** | 100% of submissions | Check Sheet vs Google Ads |
+| **Shopify Forms** | 100% of submissions | Check Sheet vs Shopify customers |
+| **Referral Tracking** | 100% of referrals | Check Sheet vs Referral app |
+| **UTM Attribution** | 100% accuracy | Test 50 links with UTM params |
+| **Source Conflicts** | 0 conflicts | Check no duplicate syncs |
+
+---
+
+## 🛠️ DEVELOPMENT PRIORITY (Next Steps)
+
+### Immediate (This Session)
+1. **Create sync_typeform_to_sheet.py** (3h)
+2. **Create sync-typeform-leads.yml** (1h)
+3. **Enhance import_leads_to_sheet.py for JSON** (1h)
+4. **Update clean_and_segment_leads.py for 11 sources** (2h)
+
+**Session Goal:** Complete Phase 1 code (7 hours)
+
+---
+
+### Week 2-4 (Next 2 Weeks)
+1. Create Phase 2 scripts (7 sources) - 35h
+2. Create Phase 2 workflows (7 workflows) - 7h
+3. Build test suite (8 test files) - 12h
+
+**Goal:** All code ready for testing
+
+---
+
+### Week 5-6 (Testing)
+1. Integration tests (8h)
+2. Workflow tests (4h)
+3. Performance tests (2h)
+4. UAT (2h)
+
+**Goal:** All tests passing, ready for Phase 1 deployment
+
+---
+
+## 📋 DEPENDENCIES & BLOCKERS
+
+### Critical Path
+
+```
+Week 1-2: Foundation
+    ↓
+Week 3-4: Phase 1 Code → BLOCKS → Phase 1 Testing (Week 13)
+    ↓
+Week 5-8: Phase 2 Code → BLOCKS → Phase 2 Testing (Week 26)
+    ↓
+Week 9-10: Phase 3 Code → BLOCKS → Phase 3 Testing (Week 39)
+    ↓
+Week 11-12: All Testing → BLOCKS → Production Deployment
+```
+
+### External Dependencies
+
+1. **Typeform Form** - USER must create (blocks Week 13 testing)
+2. **FB Ads Campaign** - USER must launch (blocks Week 13 testing)
+3. **Google Ads Campaign** - USER must launch (blocks Week 26 testing)
+4. **Referral App** - USER must install (blocks Week 26 testing)
+5. **Google Sheets** - Already exists (no blocker)
+
+### Risk Mitigation
+
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| API rate limits | Medium | Implement exponential backoff, caching |
+| Sheet API quota exceeded | High | Batch operations, optimize writes |
+| Workflow failures | Medium | Retry logic, error notifications |
+| User setup delays | High | Provide detailed setup guides + videos |
+| Budget constraints (Phase 2) | Medium | Phase 2 can start with fewer sources |
+
+---
+
+## ✅ ACCEPTANCE CRITERIA
+
+### Infrastructure Complete (Week 12)
+
+- [ ] All 11 Python scripts written + documented
+- [ ] All 8 GitHub Actions workflows configured
+- [ ] All 8 test files passing (100% coverage)
+- [ ] Google Sheet structure complete with formulas
+- [ ] Setup guides written for all 11 sources
+- [ ] Test environment validated (mock data works)
+
+### Phase 1 Ready (Week 13)
+
+- [ ] Typeform form created + tested
+- [ ] FB Ads campaign launched + tested
+- [ ] Import script tested with real files
+- [ ] 100+ test leads processed successfully
+- [ ] Analytics dashboard showing accurate data
+- [ ] No errors in logs for 7 consecutive days
+
+### Phase 2 Ready (Week 26)
+
+- [ ] Google Ads campaign launched
+- [ ] Referral app installed + configured
+- [ ] Shopify forms capturing submissions
+- [ ] Blog lead magnets tracking downloads
+- [ ] UTM tracking working for social sources
+- [ ] Retargeting campaigns active
+- [ ] 1000+ leads/month from new sources
+
+### Phase 3 Ready (Week 39)
+
+- [ ] YouTube channel active with 5+ videos
+- [ ] Video landing pages created
+- [ ] UTM tracking for YouTube working
+- [ ] 200+ leads/month from YouTube
+
+---
+
+## 📖 NEXT ACTIONS (Ordered Priority)
+
+**NOW (This Session):**
+1. Create `sync_typeform_to_sheet.py`
+2. Create `.github/workflows/sync-typeform-leads.yml`
+3. Enhance `import_leads_to_sheet.py` (add JSON support)
+4. Update `clean_and_segment_leads.py` (handle 11 sources)
+
+**THIS WEEK:**
+5. Create test suite for Phase 1 (3 tests)
+6. Document setup guides for Typeform + FB Ads
+
+**NEXT WEEK:**
+7. Start Phase 2 scripts (Google Ads first)
+8. Create Shopify integration
+9. Build referral program integration
+
+**WEEK 3:**
+10. Complete remaining Phase 2 integrations
+11. Build Phase 3 (YouTube tracking)
+12. Full test suite for all sources
+
+**WEEK 4:**
+13. End-to-end testing (all 11 sources)
+14. Performance optimization
+15. User acceptance testing prep
+
+---
+
+**Ready to start building. Commençons par Phase 1?**
+
+1. Créer `sync_typeform_to_sheet.py` maintenant?
+2. Ou préférez-vous voir d'abord un autre script (ex: Google Ads)?
+3. Ou créer les tests d'abord?
+
+Quelle est votre priorité immédiate?
+
+---
+
+
+# 64. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -82728,10 +83497,10 @@ Tous les documents sont prêts et validés contre sources officielles:
 ---
 
 
-# 64. Klaviyo Abandoned Cart Flow Implementation
+# 65. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -83436,10 +84205,10 @@ End flow
 ---
 
 
-# 65. Klaviyo Flywheel Upgrade 2025
+# 66. Klaviyo Flywheel Upgrade 2025
 
 **File:** `KLAVIYO_FLYWHEEL_UPGRADE_2025.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -84823,10 +85592,10 @@ Expected Advocate Engagement:
 ---
 
 
-# 66. Klaviyo Plan Recommendation Email Only
+# 67. Klaviyo Plan Recommendation Email Only
 
 **File:** `KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -85255,10 +86024,10 @@ TOTAL MONTHLY COST: $300-350/mo (Month 1)
 ---
 
 
-# 67. Klaviyo Welcome Flow Implementation
+# 68. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -85707,10 +86476,10 @@ python3 update_landing_page_with_klaviyo.py
 ---
 
 
-# 68. Lead Automation System Operational
+# 69. Lead Automation System Operational
 
 **File:** `LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -86053,10 +86822,10 @@ grep GOOGLE_SHEET_ID /Users/mac/Desktop/Alpha-Medical/.env
 ---
 
 
-# 69. Llms Txt Deployment
+# 70. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -86639,10 +87408,10 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 70. Loyalty Automation Progress Report
+# 71. Loyalty Automation Progress Report
 
 **File:** `LOYALTY_AUTOMATION_PROGRESS_REPORT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -86870,10 +87639,10 @@ Après complétion manuelle:
 ---
 
 
-# 71. Loyalty Simplified Manual Actions Guide
+# 72. Loyalty Simplified Manual Actions Guide
 
 **File:** `LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -87186,10 +87955,10 @@ System is 100% operational when:
 ---
 
 
-# 72. Loyalty System Architecture
+# 73. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -87575,10 +88344,10 @@ query GetCustomerLoyalty($customerId: ID!) {
 ---
 
 
-# 73. Loyalty System Setup Guide
+# 74. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -88132,10 +88901,10 @@ After setup complete, verify:
 ---
 
 
-# 74. Manual Footer Config
+# 75. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -88226,10 +88995,10 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 75. Menu Bundles Instructions
+# 76. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -88309,10 +89078,10 @@ Après sauvegarde:
 ---
 
 
-# 76. Mydealz Synthese
+# 77. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -88688,10 +89457,10 @@ EMAIL_CODES:
 ---
 
 
-# 77. Newsletter Flows Creation Checklist
+# 78. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -89389,10 +90158,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 78. Next Steps Flow Configuration
+# 79. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -89641,10 +90410,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 79. Pain Relief Guide Implementation
+# 80. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -90098,10 +90867,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 80. Paypal Deactivation Guide
+# 81. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -90396,10 +91165,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 81. Phase 3 Implementation Log
+# 82. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -90932,10 +91701,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 82. Pre Launch Checklist 23 Days
+# 83. Pre Launch Checklist 23 Days
 
 **File:** `PRE_LAUNCH_CHECKLIST_23_DAYS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -91444,10 +92213,10 @@ Prêt à lancer? 🚀
 ---
 
 
-# 83. Pricing Quick Reference
+# 84. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -91823,10 +92592,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 84. Pricing Verification
+# 85. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -92744,10 +93513,10 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 85. Product Optimization Tracking
+# 86. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -93490,10 +94259,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 86. Rapport Final Complet
+# 87. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -93722,10 +94491,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 87. Rapport Theme Analyse
+# 88. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -94093,10 +94862,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 88. Response To Third Party Analysis
+# 89. Response To Third Party Analysis
 
 **File:** `RESPONSE_TO_THIRD_PARTY_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -94619,10 +95388,10 @@ The third-party analysis was **harsh but fair**. We addressed every factual erro
 ---
 
 
-# 89. Robots Txt Deployment
+# 90. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -94937,10 +95706,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 90. Seo Audit Recommendations
+# 91. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -95399,10 +96168,10 @@ data = {
 ---
 
 
-# 91. Session 2025-11-11 Part3 Summary
+# 92. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -95588,10 +96357,10 @@ data = {
 ---
 
 
-# 92. Session 2025-11-11 Part6 Summary
+# 93. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -95884,10 +96653,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 93. Session 2025-11-11 Summary
+# 94. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -96119,10 +96888,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 94. Session 2025-11-19 Final Summary
+# 95. Session 2025-11-19 Final Summary
 
 **File:** `SESSION_2025-11-19_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -96401,10 +97170,10 @@ All information is now:
 ---
 
 
-# 95. Session Part 14 Comprehensive Audit
+# 96. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -97014,10 +97783,10 @@ All 3 have:
 ---
 
 
-# 96. Session Summary
+# 97. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -97276,10 +98045,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 97. Shopify Configuration Complete
+# 98. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -97768,10 +98537,10 @@ Si besoin d'aide:
 ---
 
 
-# 98. Shopify Email Implementation Checklist
+# 99. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -98113,10 +98882,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 99. Shopify Flow Configuration Guide
+# 100. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -99273,10 +100042,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 100. Shopify Flow Subscriptions Guide
+# 101. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -99690,10 +100459,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 101. Status Report Pages
+# 102. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -99786,10 +100555,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 102. Todo Master Pre Launch 23 Days
+# 103. Todo Master Pre Launch 23 Days
 
 **File:** `TODO_MASTER_PRE_LAUNCH_23_DAYS.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -101072,10 +101841,10 @@ Order paid
 ---
 
 
-# 103. Top5 Percent Native Implementation Plan
+# 104. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -101707,10 +102476,10 @@ function getRecommendations(pain, activity, budget) {
 ---
 
 
-# 104. Top 10 Hero Products Mapping
+# 105. Top 10 Hero Products Mapping
 
 **File:** `TOP_10_HERO_PRODUCTS_MAPPING.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -102212,10 +102981,10 @@ CTA: [specific offer + discount code]
 ---
 
 
-# 105. Top 10 Urls To Index
+# 106. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -102524,10 +103293,10 @@ Homepage (Prio 1)
 ---
 
 
-# 106. Tracking Analytics Gaps 2025
+# 107. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -102903,10 +103672,10 @@ After installing tracking:
 ---
 
 
-# 107. Ugc Video Prompts Grok Imagine
+# 108. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -103705,10 +104474,10 @@ alphamedical.shop
 ---
 
 
-# 108. Ultimate Pain Relief Guide
+# 109. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -105221,10 +105990,10 @@ Visit **alphamedicalcare.com/resources** for:
 ---
 
 
-# 109. Video Ads Creation Playbook
+# 110. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -106423,10 +107192,10 @@ This is a living document - update as you learn!
 ---
 
 
-# 110. Video Ads Infrastructure Complete
+# 111. Video Ads Infrastructure Complete
 
 **File:** `VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -106982,10 +107751,10 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 ---
 
 
-# 111. Session 2025-11-20 Summary
+# 112. Session 2025-11-20 Summary
 
 **File:** `session_2025-11-20_summary.md`
-**Last Modified:** 2025-11-25 19:16
+**Last Modified:** 2025-11-25 19:25
 
 ---
 
@@ -107320,8 +108089,8 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 
 ## Document Information
 
-**Total Documentation Files:** 111
-**Generated:** November 25, 2025 at 19:16 UTC
+**Total Documentation Files:** 112
+**Generated:** November 25, 2025 at 19:25 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
