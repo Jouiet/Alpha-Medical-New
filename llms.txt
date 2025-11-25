@@ -21,7 +21,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
-- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Project documentation
+- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Plan: basic
 - [RESPONSE_TO_THIRD_PARTY_ANALYSIS](RESPONSE_TO_THIRD_PARTY_ANALYSIS.md): "International medical equipment retailer... NOT affiliated with Hello Alpha (telemedicine) or
 - [SEO_AUDIT_RECOMMENDATIONS](SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
 - [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
