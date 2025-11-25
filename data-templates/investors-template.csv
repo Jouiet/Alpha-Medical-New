@@ -1,3 +1,5 @@
 timestamp,name,email,phone,location,preferences,source,quality_score,investor_type,investment_interest
-2025-01-15T09:00:00Z,Michael Johnson,mjohnson@venture.com,+1555123456,"San Francisco, USA","Business updates, Product launches",import_externe,7.0,Angel Investor,Seed Round
-2025-01-15T10:30:00Z,Sarah Williams,swilliams@vc-fund.com,+1555987654,"Boston, USA","Market analysis, Growth metrics",import_externe,7.0,VC Fund,Series A
+2025-01-15T09:00:00Z,Sarah Williams,swilliams@vc-partners.com,+1555123456,"San Francisco, USA","E-commerce metrics, Revenue growth, Customer acquisition",import_externe,7.5,VC Partner,Interested in e-commerce metrics
+2025-01-15T10:30:00Z,Michael Johnson,mjohnson@angel-network.com,+1555987654,"Boston, USA","Traction data, User growth, Market validation",import_externe,7.0,Angel Investor,Wants to see traction data
+2025-01-15T11:45:00Z,David Chen,dchen@apptech-ceo.com,+1555789012,"Austin, USA","Strategic partnerships, Technology integration, Co-investment",import_externe,8.5,Strategic Partner (App CEO),Potential partnership + investment
+2025-01-15T14:00:00Z,Robert Martinez,rmartinez@pe-acquisitions.com,+1555345678,"New York, USA","Full operations review, Asset valuation, Acquisition terms",import_externe,9.0,Acquisition Investor (Private Equity),Wants to acquire entire website and operations
