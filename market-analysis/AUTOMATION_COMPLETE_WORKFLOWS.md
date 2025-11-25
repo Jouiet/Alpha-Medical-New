@@ -4473,19 +4473,19 @@ Scraping → Intelligence (100%)
 
 ---
 
-## 🎯 SESSION 48 CONTINUATION: 3 SOURCES LEAD ARCHITECTURE (2025-11-25 00:30 UTC)
+## 🎯 SESSION 48 CONTINUATION: COMPLETE B2C LEAD ARCHITECTURE (2025-11-25 00:30 UTC)
 
-### Architecture Multi-Sources: Contest + Facebook Lead Ads + Import Externes
+### Architecture Multi-Sources: COMPLETE Lead Ecosystem B2C
 
-**Context:** User confirmed 3 sources de leads PRE-LAUNCH (NOT scraping for outreach)
+**Context:** COMPLETE B2C lead architecture including ALL touchpoints (automated + organic)
 **Methodology:** CODE-based integration (Python + GitHub Actions), NO third-party tools
 **Output:** All sources → Google Sheet centralisé → Nettoyage/segmentation automatique
 
 ---
 
-### 📊 ARCHITECTURE FACTUELLE
+### 📊 ARCHITECTURE FACTUELLE COMPLÈTE - B2C UNIQUEMENT
 
-**3 Sources de Leads PRE-LAUNCH:**
+**AUTOMATED LEAD SOURCES (Code Implemented - 4 sources):**
 
 1. ✅ **Contest/Giveaway PRE-LAUNCH** (1500-2K emails B2C)
    - Platform: Klaviyo Signup Form (embedded Shopify page)
@@ -4514,6 +4514,64 @@ Scraping → Intelligence (100%)
    - Workflow: Daily 9 AM UTC
    - Quality Score: 5.0-6.0 (no opt-in, insights only)
    - Cost: $97.80/mo
+
+---
+
+**ORGANIC TOUCHPOINTS (Need Integration - 6+ sources):**
+
+5. 📋 **Website CTAs** (homepage, product pages, footer newsletter)
+   - Platform: Shopify site (multiple touchpoints)
+   - Integration: ⚠️ NEEDS tracking → Google Sheet
+   - Workflow: Real-time or daily sync needed
+   - Quality Score: 8.0 (explicit opt-in on site)
+   - Cost: $0
+   - **Status:** NOT automated yet (manual tracking or needs Shopify webhook integration)
+
+6. 📋 **SEO Organic** (blog posts, educational content, lead magnets)
+   - Platform: Blog articles, guides, downloadable resources
+   - Integration: ⚠️ NEEDS tracking → Google Sheet
+   - Workflow: Form submissions need capture
+   - Quality Score: 7.5 (content-qualified leads)
+   - Cost: $0 (organic traffic)
+   - **Status:** NOT automated yet (content forms need integration)
+
+7. 📋 **Instagram Organic** (bio link, stories with CTAs, post CTAs)
+   - Platform: Instagram organic posts/stories
+   - Integration: ⚠️ NEEDS bio link tracking → Google Sheet
+   - Workflow: Link clicks → landing page → form submission
+   - Quality Score: 7.0 (social engagement)
+   - Cost: $0 (organic social)
+   - **Status:** NOT automated yet (link tracking needed)
+
+8. 📋 **TikTok Organic** (bio link, video CTAs)
+   - Platform: TikTok organic content
+   - Integration: ⚠️ NEEDS bio link tracking → Google Sheet
+   - Workflow: Link clicks → landing page → form submission
+   - Quality Score: 6.5 (viral potential but lower intent)
+   - Cost: $0 (organic social)
+   - **Status:** NOT automated yet (link tracking needed)
+
+9. 📋 **Shopify Checkout** (newsletter opt-in checkbox)
+   - Platform: Shopify checkout process
+   - Integration: ⚠️ NEEDS customer data export → Google Sheet
+   - Workflow: Post-purchase opt-ins
+   - Quality Score: 8.5 (paying customers)
+   - Cost: $0
+   - **Status:** Shopify native (needs export automation)
+
+10. 📋 **Email Flows** (abandoned cart recovery, post-purchase)
+   - Platform: Klaviyo + Shopify Email
+   - Integration: ⚠️ PARTIAL - engagement tracking needed
+   - Workflow: Automated flows (existing) but need lead capture
+   - Quality Score: Varies (7.0-8.5)
+   - Cost: $0
+   - **Status:** PARTIAL - flows exist, but new leads from flows need capture
+
+---
+
+**TOTAL LEAD SOURCES (B2C):** 10 sources
+- **AUTOMATED:** 4 sources (Contest, FB Ads, Import, Apify) - ✅ Code ready
+- **NEED INTEGRATION:** 6 sources (Website CTAs, SEO, Instagram, TikTok, Checkout, Email) - 📋 Planned
 
 **Centralisation:** Tout → Google Sheet "Raw Leads" → Nettoyage automatique → "Qualified Leads"
 
@@ -4561,9 +4619,21 @@ Scraping → Intelligence (100%)
 │   ↓ Google Sheet "Raw Leads" (sources: instagram, facebook, etc)│
 └─────────────────────────────────────────────────────────────────┘
 
+┌─────────────────────────────────────────────────────────────────┐
+│ SOURCES 5-10: Organic Touchpoints (NEED integration)           │
+├─────────────────────────────────────────────────────────────────┤
+│ 5. Website CTAs → ⚠️ Shopify webhook needed → Sheet            │
+│ 6. SEO Organic (blog/guides) → ⚠️ Form tracking → Sheet        │
+│ 7. Instagram Organic (bio link) → ⚠️ Landing page tracking     │
+│ 8. TikTok Organic (bio link) → ⚠️ Landing page tracking        │
+│ 9. Shopify Checkout opt-ins → ⚠️ Customer export → Sheet       │
+│ 10. Email Flows (Klaviyo/Shopify) → ⚠️ Engagement tracking     │
+└─────────────────────────────────────────────────────────────────┘
+
 ═════════════════════════════════════════════════════════════════
 
-ALL SOURCES → Google Sheet "Raw Leads" (unprocessed)
+ALL 10 SOURCES → Google Sheet "Raw Leads" (unprocessed)
+  (4 automated ✅ + 6 need integration ⚠️)
   ↓
 [DAILY 10 AM UTC] clean-segment-leads.yml
   ↓
@@ -4623,17 +4693,33 @@ Conversions
 
 ---
 
-### 💰 COST ANALYSIS - 3 SOURCES PRE-LAUNCH
+### 💰 COST ANALYSIS - COMPLETE LEAD ECOSYSTEM (10 SOURCES)
 
-| Source | Volume Target | Cost | CPL | Quality Score | Legal Status |
-|--------|---------------|------|-----|---------------|--------------|
-| **Contest (Klaviyo)** | 1,500-2,000 | $6,345 ($345 prizes + $6K ads) | $3.17-4.23 | 8.5 | ✅ LEGAL (opt-in) |
-| **Facebook Lead Ads** | Included in contest ads | Included above | Same | 9.0 | ✅ LEGAL (explicit consent) |
-| **Import Externes** | Variable | $0 | $0 | 7.0 | ⚠️ Depends on source consent |
-| **Apify Scraping** | 14,100/month | $97.80/mo | $0.007 | 5.0 | ✅ LEGAL (insights only, NO outreach) |
+| Source | Volume Target | Cost | CPL | Quality Score | Legal Status | Integration Status |
+|--------|---------------|------|-----|---------------|--------------|-------------------|
+| **1. Contest (Klaviyo)** | 1,500-2,000 | $6,345 ($345 prizes + $6K ads) | $3.17-4.23 | 8.5 | ✅ LEGAL (opt-in) | ✅ AUTOMATED |
+| **2. Facebook Lead Ads** | Included in contest ads | Included above | Same | 9.0 | ✅ LEGAL (explicit consent) | ✅ AUTOMATED |
+| **3. Import Externes** | Variable | $0 | $0 | 7.0 | ⚠️ Depends on source consent | ✅ MANUAL |
+| **4. Apify Scraping** | 14,100/month | $97.80/mo | $0.007 | 5.0-6.0 | ✅ LEGAL (insights only, NO outreach) | ✅ AUTOMATED |
+| **5. Website CTAs** | 200-500/month | $0 | $0 | 8.0 | ✅ LEGAL (site opt-in) | ⚠️ NOT INTEGRATED |
+| **6. SEO Organic** | 100-300/month | $0 | $0 | 7.5 | ✅ LEGAL (content opt-in) | ⚠️ NOT INTEGRATED |
+| **7. Instagram Organic** | 50-150/month | $0 | $0 | 7.0 | ✅ LEGAL (bio link opt-in) | ⚠️ NOT INTEGRATED |
+| **8. TikTok Organic** | 30-100/month | $0 | $0 | 6.5 | ✅ LEGAL (bio link opt-in) | ⚠️ NOT INTEGRATED |
+| **9. Shopify Checkout** | 50-200/month | $0 | $0 | 8.5 | ✅ LEGAL (checkout opt-in) | ⚠️ PARTIAL |
+| **10. Email Flows** | Variable | $0 | $0 | 7.0-8.5 | ✅ LEGAL (existing subscribers) | ⚠️ PARTIAL |
 
-**Total Pre-Launch Budget:** $6,345 (20 days)
-**Expected Opt-In Leads (B2C):** 1,500-2,000 (contest + FB lead ads)
+**AUTOMATED SOURCES (4):**
+- Total Cost: $6,442.80 (one-time $6,345 + $97.80/mo)
+- Expected Volume: 1,500-2,000 opt-ins PRE-LAUNCH + 14,100/month insights (Apify)
+
+**ORGANIC SOURCES (6):**
+- Total Cost: $0 (all organic)
+- Expected Volume: 430-1,250/month post-launch (if integrated)
+- Integration Status: ⚠️ 4 NOT integrated, 2 PARTIAL
+
+**TOTAL PRE-LAUNCH BUDGET:** $6,345 (20 days)
+**TOTAL MONTHLY COST (post-launch):** $97.80/mo (Apify only)
+**Expected Opt-In Leads (B2C):** 1,500-2,000 (PRE-LAUNCH) + 430-1,250/month (POST-LAUNCH organic)
 **Expected Insight Leads:** 14,100/month (Apify - NO direct contact)
 
 **ROI Calculation (Contest + FB Ads):**

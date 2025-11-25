@@ -8832,13 +8832,18 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 00:30 UTC (3-source lead architecture implemented)
-**Lead Architecture:** 4 sources (Contest Klaviyo, FB Lead Ads, Import externes, Apify) → Google Sheet centralisé
-**Code Status:** 100% ready (7 files: 4 scripts + 3 workflows)
-**Pre-Launch Leads:** 1,500-2K opt-ins B2C (contest + FB ads, $6,345 budget, ROI 166-391%)
-**Automation:** Klaviyo sync hourly, FB sync 6h, Clean/segment daily 10 AM
-**Manual Setup Required:** 6h (Contest page 2h, FB Ads 3h, Sheet structure 1h)
-**SNR:** 0% (outreach) / 100% (insights) - Apify for insights ONLY, Contest/FB for opt-ins
-**Status:** 85/100 - Flywheel incomplete (code ready, user setup pending)
+**Dernière mise à jour:** 2025-11-25 01:15 UTC (COMPLETE B2C lead architecture - 10 sources)
+**Lead Architecture COMPLETE:** 10 sources B2C
+  - **AUTOMATED (4):** Contest Klaviyo, FB Lead Ads, Import externes, Apify scraping
+  - **ORGANIC (6):** Website CTAs, SEO blog, Instagram organic, TikTok organic, Shopify checkout, Email flows
+  - **Integration:** All → Google Sheet centralisé → Clean/segment daily
+**Code Status:** 100% ready (7 files: 4 scripts + 3 workflows) for 4 automated sources
+**Pre-Launch Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | Post-Launch: +430-1,250/month organic (if integrated)
+**Pre-Launch Budget:** $6,345 (Contest $345 + FB ads $6K) | Post-Launch: $97.80/mo (Apify only)
+**ROI:** 166-391% PRE-LAUNCH ($10,530-31,155 net profit)
+**Automation:** Klaviyo hourly, FB 6h, Clean/segment daily 10 AM | Organic sources: ⚠️ 4 NOT integrated, 2 PARTIAL
+**Manual Setup Required:** 6h (Contest 2h, FB Ads 3h, Sheet 1h) + Organic integration TBD
+**SNR:** 0% (outreach) / 100% (insights) - Apify insights ONLY, Contest/FB/Organic for opt-ins
+**Status:** 85/100 - Flywheel incomplete (4 sources automated, 6 organic sources need integration)
 
 ---
