@@ -5450,10 +5450,19 @@ USER completes audit (4-6h) → Analyze results (1-2h) → Build ONLY gaps (40-8
 **Next:** Execute manual Flow configuration + pixel verification
 
 
-**SESSION 49 CONTINUATION - Pixel Verification:**
+**SESSION 49 CONTINUATION - Pixel Verification + Infrastructure Complete:**
 - ✅ GTM Container: GTM-WFPH2KZP confirmed (theme.liquid line 461)
 - ✅ GA4: ACTIVE via GTM tags (Session 47 owner-verified 2025-11-23)
 - ✅ Facebook Pixel: ACTIVE via GTM tags (Session 47 owner-verified 2025-11-23)
 - ✅ TikTok Pixel: ACTIVE via GTM tags (Session 47 owner-verified 2025-11-23)
 - ⚠️  Subscriptions API: 404 (not available on Basic plan)
 - 📊 Source: FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md (codebase confirmation)
+
+**SESSION 49 FINAL - Klaviyo Plan Verified + Documentation Complete:**
+- ✅ Klaviyo Plan: $30/mo ACTIVE (1,000 profiles, 10K emails/month, 150 SMS credits/month)
+- ✅ Billing: Mastercard ***4297, cycle Nov 24 - Dec 24, 2025
+- ✅ Usage: 8/1,000 profiles (1%), 0/10,000 emails (0%), 0/150 SMS (0%)
+- ✅ BLOQUEUR #3 RÉSOLU: Plan already selected (Email + SMS)
+- ✅ INFRASTRUCTURE_AUDIT_CHECKLIST.md: 1,914 lines exhaustive audit COMPLETE
+- ✅ Klaviyo backup codes: Saved to .klaviyo-backup-codes (5 codes, 600 permissions, .gitignore)
+- 📊 Status: 46/100 → Blockers: 2 remaining (15 min total, down from 20 min)

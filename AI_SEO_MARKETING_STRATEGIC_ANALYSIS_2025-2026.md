@@ -8856,9 +8856,11 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 **Audit Complete:** ✅ API verified (0 orders, 0 webhooks, 0 metafields) | ✅ Flow verified (7 workflows) | ✅ Pixels: GTM-WFPH2KZP + GA4/FB/TikTok ACTIVE via GTM tags
 **Tracking:** GTM container GTM-WFPH2KZP ✅ (theme.liquid:461) | GA4 ✅ ACTIVE via GTM | FB Pixel ✅ ACTIVE via GTM | TikTok Pixel ✅ ACTIVE via GTM (Session 47 owner-verified 2025-11-23)
 **Subscriptions:** ❌ API 404 (Basic plan limitation - manual verification needed)
+**Klaviyo Status:** ✅ Plan $30/mo ACTIVE (1,000 profiles, 10K emails, 150 SMS credits) | Billing: Mastercard ***4297 | Usage: 8/1,000 profiles (1%), 0 emails, 0 SMS | BLOQUEUR #3 ✅ RESOLVED
 **Approach:** VERIFY first (audit DONE), build second (gaps identified) - Zéro assumptions, FAITS vérifiables uniquement
-**Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows: 4 active but UNTESTED (PRE-LAUNCH)
-**Immediate Actions:** Activate "Thank customers" (2min) | Fix duplicates (5min) | Verify GTM tags (manual) | Create 2 workflows (30min) | Test (15min)
+**Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows: 4 active but UNTESTED (PRE-LAUNCH) | GitHub Actions: 9 created, 0 executable (missing secrets)
+**Blockers Remaining:** 2/3 (15 min total, down from 20 min) | BLOQUEUR #1: Google Sheets API (10 min) | BLOQUEUR #2: GitHub Secrets (5 min) | BLOQUEUR #3: ✅ RESOLVED
+**Immediate Actions:** Activate "Thank customers" (2min) | Fix duplicates (5min) | Create 2 workflows (30min) | Test (15min) | Then: Google Sheets API + GitHub Secrets (15 min)
 **Session 49:** API audit + pixel verification via check_theme_pixels.py | GTM confirmed | Subscriptions API checked (404)
 **Status:** 46/100 - Audit complete (+5), GTM verified, manual GTM tag verification needed
 

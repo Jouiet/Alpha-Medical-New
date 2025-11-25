@@ -1086,9 +1086,10 @@ TOTAL FLYWHEEL:            25/100 (foundation built, automation BLOCKED)
 
 ### 9. CRITICAL BLOCKERS ANALYSIS
 
-**Total Blockers:** 3 manual tasks (20 minutes total)
+**Total Blockers:** 2 manual tasks (15 minutes total) - DOWN FROM 3 (20 min)
 **Impact:** Blocking $55,000+ incremental revenue Year 1
-**ROI of Unblocking:** 2,750× return on 20 minutes of work
+**ROI of Unblocking:** 3,667× return on 15 minutes of work (UP from 2,750×)
+**Status Update:** BLOQUEUR #3 (Klaviyo) ✅ RESOLVED - Plan $30/mo already active
 
 #### BLOQUEUR #1: Google Sheets API Credentials
 
@@ -1138,42 +1139,42 @@ Steps to Unblock:
 Note: Credentials already exist in .env.admin, just need to be copied
 ```
 
-#### BLOQUEUR #3: Klaviyo Plan Selection
+#### BLOQUEUR #3: Klaviyo Plan Selection ✅ RÉSOLU
 
 ```yaml
-Time Required: 5 minutes
-Impact: Decision point - affects email automation sophistication
-Affected Systems:
-  - Klaviyo email flows
-  - Advanced segmentation
-  - SMS marketing (optional)
+Status: ✅ RESOLVED (2025-11-25 23:00 UTC)
+Time Required: 0 minutes (plan already active)
+Impact: Email + SMS automation ready to configure
+
+CURRENT PLAN (VERIFIED):
+Plan: $30/month (Email + SMS + 150 mobile credits)
+Billing Cycle: Nov 24 - Dec 24, 2025
+Payment Method: Mastercard ending in 4297
+Limits:
+  - Active Profiles: 1,000 (currently 8 = 1% usage)
+  - Email Sends: 10,000/month (currently 0 = 0% usage)
+  - Mobile Credits: 150/month SMS/MMS/WhatsApp (currently 0 = 0% usage)
+
+CAPABILITIES UNLOCKED:
+✅ Unlimited email flows (Welcome, Abandoned Cart, Post-Purchase, Win-back)
+✅ Advanced segmentation (persona-based, behavior-based)
+✅ SMS marketing (150 credits = ~150 SMS or ~50 MMS per month)
+✅ A/B testing
+✅ Predictive analytics
+✅ 1,000 active profiles (sufficient for launch + first 3-6 months)
+
+NEXT ACTIONS:
+1. Verify/refresh Klaviyo API credentials (.env file returned 401)
+2. Create Klaviyo flows:
+   - Welcome Series (3 emails: Day 0, 2, 5)
+   - Abandoned Cart (3 emails: 1h, 24h, 48h)
+   - Post-Purchase + Review Request (2 emails: Day 1, 7)
+   - Win-back Campaign (lapsed >60 days)
+3. Sync Shopify customer data to Klaviyo
+4. Create customer segments (4 personas × 3 lifecycle stages = 12 segments)
+
 Revenue Impact: $35,000+ Year 1 (14× revenue multiplier vs manual campaigns)
-
-Options:
-1. Free Plan (0-250 contacts)
-   - Email: 500 sends/month
-   - Flows: Basic only
-   - Cost: $0/month
-   - Best for: MVP testing
-
-2. Email Plan (251-500 contacts)
-   - Email: Unlimited sends
-   - Flows: All flows
-   - SMS: NOT included
-   - Cost: $20/month
-   - Best for: Email-only strategy
-
-3. Email + SMS Plan (251-500 contacts)
-   - Email: Unlimited sends
-   - SMS: 1,250 SMS/MMS credits/month
-   - Flows: All flows + SMS
-   - Cost: $35/month
-   - Best for: Omnichannel strategy
-
-Recommendation: Start with Email Plan ($20/mo), upgrade to Email+SMS when >500 contacts
-
-Decision Required: USER must select plan and create Klaviyo flows
-Alternative: Use Shopify Email (free, 10K emails/month) - less sophisticated but $0 cost
+Alternative Eliminated: Shopify Email backup plan no longer needed
 ```
 
 ---

@@ -23412,8 +23412,11 @@ GITHUB ACTIONS (8 gaps):
 - **Gaps Forensic:** 4 workflows missing (newsletter, contact, waitlist, account) | 0 external integrations | 0 customer metafields | Pixels VERIFIED (GTM only)
 - **Pixels Forensic:** GTM-WFPH2KZP ✅ (theme.liquid:461) | GA4 ✅ ACTIVE via GTM tags | FB Pixel ✅ ACTIVE via GTM tags | TikTok Pixel ✅ ACTIVE via GTM tags (Session 47 owner-verified 2025-11-23, FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md)
 - **Subscriptions Forensic:** API endpoint 404 (Basic plan limitation) - Native subscriptions status UNKNOWN (manual UI check required)
-- **Priority Tasks (60min):** Activate Thank customers (2min) | Fix duplicates (5min) | Verify GTM tags (manual) | Create 2 workflows (30min) | Test order (15min)
-- **Files Session 49:** verify_store_infrastructure.py ✅, check_theme_pixels.py ✅, audit_subscriptions.py ✅
-- **Status:** 46/100 (+5 from audit) - Audit + pixel verification complete, GTM confirmed, manual GTM tag check needed
+- **Priority Tasks (60min):** Activate Thank customers (2min) | Fix duplicates (5min) | Create 2 workflows (30min) | Test order (15min)
+- **Files Session 49:** verify_store_infrastructure.py ✅, check_theme_pixels.py ✅, audit_subscriptions.py ✅, INFRASTRUCTURE_AUDIT_CHECKLIST.md ✅ (1,914 lines)
+- **Klaviyo Verified:** ✅ Plan $30/mo ACTIVE (1,000 profiles, 10K emails, 150 SMS credits) | Usage: 8/1,000 profiles (1%) | BLOQUEUR #3 ✅ RESOLVED
+- **Klaviyo Backup Codes:** ✅ Saved to .klaviyo-backup-codes (5 codes, 600 permissions, .gitignore)
+- **Blockers Update:** 3 → 2 remaining (20 min → 15 min) | BLOQUEUR #1: Google Sheets API ⏳ | BLOQUEUR #2: GitHub Secrets ⏳ | BLOQUEUR #3: ✅ RESOLVED
+- **Status:** 46/100 (+5 from audit) - Infrastructure doc complete, Klaviyo plan verified, 2 blockers remaining (15 min total)
 
 ---
