@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 25, 2025 at 19:25 UTC
+**Generated:** November 25, 2025 at 19:37 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -75,54 +75,56 @@
 62. [Implementation Manuelle Guide](#implementation_manuelle_guide)
 63. [Implementation Plan 3 Phases](#implementation_plan_3_phases)
 64. [Implementation Report Pricing](#implementation_report_pricing)
-65. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
-66. [Klaviyo Flywheel Upgrade 2025](#klaviyo_flywheel_upgrade_2025)
-67. [Klaviyo Plan Recommendation Email Only](#klaviyo_plan_recommendation_email_only)
-68. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
-69. [Lead Automation System Operational](#lead_automation_system_operational)
-70. [Llms Txt Deployment](#llms_txt_deployment)
-71. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
-72. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
-73. [Loyalty System Architecture](#loyalty_system_architecture)
-74. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
-75. [Manual Footer Config](#manual_footer_config)
-76. [Menu Bundles Instructions](#menu_bundles_instructions)
-77. [Mydealz Synthese](#mydealz_synthese)
-78. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-79. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-80. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-81. [Paypal Deactivation Guide](#paypal_deactivation_guide)
-82. [Phase 3 Implementation Log](#phase_3_implementation_log)
-83. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
-84. [Pricing Quick Reference](#pricing_quick_reference)
-85. [Pricing Verification](#pricing_verification)
-86. [Product Optimization Tracking](#product_optimization_tracking)
-87. [Rapport Final Complet](#rapport_final_complet)
-88. [Rapport Theme Analyse](#rapport_theme_analyse)
-89. [Response To Third Party Analysis](#response_to_third_party_analysis)
-90. [Robots Txt Deployment](#robots_txt_deployment)
-91. [Seo Audit Recommendations](#seo_audit_recommendations)
-92. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-93. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-94. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-95. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
-96. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
-97. [Session Summary](#session_summary)
-98. [Shopify Configuration Complete](#shopify_configuration_complete)
-99. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-100. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-101. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
-102. [Status Report Pages](#status_report_pages)
-103. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
-104. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
-105. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
-106. [Top 10 Urls To Index](#top_10_urls_to_index)
-107. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-108. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
-109. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
-110. [Video Ads Creation Playbook](#video_ads_creation_playbook)
-111. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
-112. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
+65. [Infrastructure Audit Checklist](#infrastructure_audit_checklist)
+66. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
+67. [Klaviyo Flywheel Upgrade 2025](#klaviyo_flywheel_upgrade_2025)
+68. [Klaviyo Plan Recommendation Email Only](#klaviyo_plan_recommendation_email_only)
+69. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
+70. [Lead Automation System Operational](#lead_automation_system_operational)
+71. [Llms Txt Deployment](#llms_txt_deployment)
+72. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
+73. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
+74. [Loyalty System Architecture](#loyalty_system_architecture)
+75. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
+76. [Manual Footer Config](#manual_footer_config)
+77. [Menu Bundles Instructions](#menu_bundles_instructions)
+78. [Mydealz Synthese](#mydealz_synthese)
+79. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+80. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+81. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+82. [Paypal Deactivation Guide](#paypal_deactivation_guide)
+83. [Phase 3 Implementation Log](#phase_3_implementation_log)
+84. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
+85. [Pricing Quick Reference](#pricing_quick_reference)
+86. [Pricing Verification](#pricing_verification)
+87. [Priority Sources Implementation](#priority_sources_implementation)
+88. [Product Optimization Tracking](#product_optimization_tracking)
+89. [Rapport Final Complet](#rapport_final_complet)
+90. [Rapport Theme Analyse](#rapport_theme_analyse)
+91. [Response To Third Party Analysis](#response_to_third_party_analysis)
+92. [Robots Txt Deployment](#robots_txt_deployment)
+93. [Seo Audit Recommendations](#seo_audit_recommendations)
+94. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+95. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+96. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+97. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
+98. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
+99. [Session Summary](#session_summary)
+100. [Shopify Configuration Complete](#shopify_configuration_complete)
+101. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+102. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+103. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
+104. [Status Report Pages](#status_report_pages)
+105. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
+106. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
+107. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
+108. [Top 10 Urls To Index](#top_10_urls_to_index)
+109. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+110. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
+111. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+112. [Video Ads Creation Playbook](#video_ads_creation_playbook)
+113. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
+114. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
 
 ---
 
@@ -131,7 +133,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -23529,7 +23531,7 @@ GITHUB ACTIONS (8 gaps):
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -27519,7 +27521,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -28089,7 +28091,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -28664,7 +28666,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -28991,7 +28993,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -29116,7 +29118,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -29636,7 +29638,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -30179,7 +30181,7 @@ python3 generate_llms_txt.py
 # 9. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -39041,7 +39043,7 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 # 10. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -39884,7 +39886,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical 8 Bundles Final
 
 **File:** `ALPHA_MEDICAL_8_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -42524,7 +42526,7 @@ Response: 200 OK
 # 12. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -42844,7 +42846,7 @@ For each bundle:
 # 13. Alpha Medical Pitch Deck Template
 
 **File:** `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -44903,7 +44905,7 @@ END OF PITCH DECK TEMPLATE
 # 14. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -46050,7 +46052,7 @@ Audit complet 7 critères
 # 15. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -49963,7 +49965,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 16. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -51787,7 +51789,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 17. Analytics Tracking Factual Status
 
 **File:** `ANALYTICS_TRACKING_FACTUAL_STATUS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -51963,7 +51965,7 @@ No need to modify old docs - this file supersedes previous information.
 # 18. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -52330,7 +52332,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 19. Apify Integration Complete
 
 **File:** `APIFY_INTEGRATION_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -52886,7 +52888,7 @@ python3 influencer_lead_generation.py --full-discovery
 # 20. Asset Gathering Guide
 
 **File:** `ASSET_GATHERING_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -53315,7 +53317,7 @@ cp source/* destination/
 # 21. Automation Setup Complete Guide
 
 **File:** `AUTOMATION_SETUP_COMPLETE_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -53767,7 +53769,7 @@ Use this checklist to complete setup:
 # 22. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -53940,7 +53942,7 @@ Use this checklist to complete setup:
 # 23. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -54846,7 +54848,7 @@ function markProposalsAsCreated(hash) {
 # 24. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -55311,7 +55313,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 25. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -56530,7 +56532,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 26. Bundle Persona Critical Audit
 
 **File:** `BUNDLE_PERSONA_CRITICAL_AUDIT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -57154,7 +57156,7 @@ Pour chaque bundle, je vérifie:
 # 27. Bundle Reconstruction Analysis 2025
 
 **File:** `BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -57604,7 +57606,7 @@ Market data shows:
 # 28. Cart Drawer Forensic Analysis
 
 **File:** `CART_DRAWER_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -58161,7 +58163,7 @@ document.addEventListener('cart:updated', function(event) {
 # 29. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -59970,7 +59972,7 @@ Pack de 10-20 pads = Meilleur prix
 # 30. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -60267,7 +60269,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 31. Complete Acquisition Automation System
 
 **File:** `COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -62785,7 +62787,7 @@ RESULT: System-wide efficiency gains 10-20%/quarter
 # 32. Complete Manually Final 40 Percent
 
 **File:** `COMPLETE_MANUALLY_FINAL_40_PERCENT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -62990,7 +62992,7 @@ Une fois le workflow activé:
 # 33. Complete Shopify Flow Setup
 
 **File:** `COMPLETE_SHOPIFY_FLOW_SETUP.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -63168,7 +63170,7 @@ Après activation complète:
 # 34. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -63772,7 +63774,7 @@ June:
 # 35. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -65785,7 +65787,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 36. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -66176,7 +66178,7 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 # 37. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -67559,7 +67561,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 38. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -68407,7 +68409,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 39. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -68822,7 +68824,7 @@ python3 generate_llms_txt.py
 # 40. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -69525,7 +69527,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 41. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -70286,7 +70288,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 42. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -71092,7 +71094,7 @@ grep "fbq(" homepage → 0 results
 # 43. Factual Verification Complete Session 47
 
 **File:** `FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -71543,7 +71545,7 @@ Upload: gh secret set GOOGLE_CREDENTIALS_JSON < credentials.json
 # 44. Factual Verification Status
 
 **File:** `FACTUAL_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -71937,7 +71939,7 @@ Test → Measure → Validate → Scale.
 # 45. Final Report Transparency Implementation
 
 **File:** `FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -72632,7 +72634,7 @@ Back & Posture Support: 1 product
 # 46. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -72860,7 +72862,7 @@ Back & Posture Support: 1 product
 # 47. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -73702,7 +73704,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 48. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -76669,7 +76671,7 @@ FILES:
 # 49. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -77053,7 +77055,7 @@ TOTAL: ~30 minutes de travail actif
 # 50. Gmail Apps Script Setup
 
 **File:** `GMAIL_APPS_SCRIPT_SETUP.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -77363,7 +77365,7 @@ Status: On Track
 # 51. Google Ads Gtm Progress
 
 **File:** `GOOGLE_ADS_GTM_PROGRESS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -77734,7 +77736,7 @@ python3 check_gtm_status.py
 # 52. Google Ads Next Steps
 
 **File:** `GOOGLE_ADS_NEXT_STEPS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -78000,7 +78002,7 @@ git push origin main
 # 53. Google Ads Setup Guide
 
 **File:** `GOOGLE_ADS_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -78412,7 +78414,7 @@ Avant de considérer l'installation complète:
 # 54. Google Search Console Verification Status
 
 **File:** `GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -78648,7 +78650,7 @@ Je **REFUSE** de dire:
 # 55. Google Sheet Setup Instructions
 
 **File:** `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -78833,7 +78835,7 @@ python3 market-analysis/lead_generation_scraper.py --test
 # 56. Gsc Configuration Report 2025-11-19
 
 **File:** `GSC_CONFIGURATION_REPORT_2025-11-19.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -79451,7 +79453,7 @@ curl -s "https://alphamedical.shop/robots.txt"
 # 57. Gsc Final Checklist
 
 **File:** `GSC_FINAL_CHECKLIST.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -79840,7 +79842,7 @@ SOUMISSIONS MANUELLES:
 # 58. Gtm Add Missing Tags Steps
 
 **File:** `GTM_ADD_MISSING_TAGS_STEPS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -80239,7 +80241,7 @@ Business model: Dropshipping (pre-launch)
 # 59. Gtm Setup Guide
 
 **File:** `GTM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -80887,7 +80889,7 @@ Avant de considérer l'installation complète:
 # 60. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -81160,7 +81162,7 @@ Workflow AUTOMATIQUE:
 # 61. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -81536,7 +81538,7 @@ dig TXT alphamedical.shop +short
 # 62. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -82286,7 +82288,7 @@ Cliquer **"Save"**
 # 63. Implementation Plan 3 Phases
 
 **File:** `IMPLEMENTATION_PLAN_3_PHASES.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -83054,7 +83056,7 @@ Quelle est votre priorité immédiate?
 # 64. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -83497,10 +83499,684 @@ Tous les documents sont prêts et validés contre sources officielles:
 ---
 
 
-# 65. Klaviyo Abandoned Cart Flow Implementation
+# 65. Infrastructure Audit Checklist
+
+**File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
+**Last Modified:** 2025-11-25 19:37
+
+---
+
+# INFRASTRUCTURE AUDIT CHECKLIST
+## Alpha Medical - Vérification de l'Existant AVANT Planification
+
+**Created:** 2025-11-25 03:30 UTC
+**Purpose:** VÉRIFIER factuellement ce qui existe AVANT de planifier/coder
+**Approach:** Pas de suppositions - seulement des FAITS vérifiables
+
+---
+
+## 🎯 OBJECTIF
+
+**AVANT de créer quoi que ce soit, répondre à:**
+1. Qu'est-ce qui existe DÉJÀ? (workflows, emails, forms, data)
+2. Où sont les DONNÉES actuellement? (Shopify, Klaviyo, autres?)
+3. Quel est le VOLUME réel? (nombre de leads captés)
+4. Qu'est-ce qui MANQUE réellement? (gap analysis)
+
+**Règle:** Zéro assumptions. Seulement des faits vérifiés.
+
+---
+
+## ✅ SECTION 1: SHOPIFY INFRASTRUCTURE
+
+### A. Shopify Admin Access Verification
+
+**Action:** Se connecter à Shopify Admin
+- [ ] URL du store Shopify: _________________________
+- [ ] Accès admin vérifié: ☐ Oui ☐ Non
+- [ ] Date de vérification: _________________________
+
+---
+
+### B. Shopify Flow - Workflows Actifs
+
+**Navigation:** Shopify Admin → Apps → Shopify Flow
+
+**Workflows à vérifier:**
+
+#### 1. Cart Abandonment
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom du workflow:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif ☐ Brouillon
+- [ ] **Trigger:** _________________________
+- [ ] **Actions:** _________________________
+- [ ] **Email envoyé?** ☐ Oui ☐ Non
+- [ ] **Template email:** _________________________
+- [ ] **Données captées:** _________________________
+- [ ] **Volume (30 derniers jours):** _________ abandons
+
+#### 2. Account Creation / Welcome
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom du workflow:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif ☐ Brouillon
+- [ ] **Trigger:** _________________________
+- [ ] **Actions:** _________________________
+- [ ] **Email envoyé?** ☐ Oui ☐ Non
+- [ ] **Template email:** _________________________
+- [ ] **Données captées:** _________________________
+- [ ] **Volume (30 derniers jours):** _________ créations
+
+#### 3. Newsletter Signup
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom du workflow:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif ☐ Brouillon
+- [ ] **Trigger:** _________________________
+- [ ] **Actions:** _________________________
+- [ ] **Email envoyé?** ☐ Oui ☐ Non
+- [ ] **Données captées:** _________________________
+- [ ] **Volume (30 derniers jours):** _________ signups
+
+#### 4. Contact Form
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom du workflow:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif ☐ Brouillon
+- [ ] **Trigger:** _________________________
+- [ ] **Actions:** _________________________
+- [ ] **Où vont les submissions?** _________________________
+- [ ] **Volume (30 derniers jours):** _________ soumissions
+
+#### 5. Product Waitlist / Back-in-Stock
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom du workflow:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif ☐ Brouillon
+- [ ] **Trigger:** _________________________
+- [ ] **Actions:** _________________________
+- [ ] **Volume (30 derniers jours):** _________ inscriptions
+
+#### 6. Autres Workflows
+Liste complète de TOUS les workflows actifs:
+```
+1. _________________________
+2. _________________________
+3. _________________________
+4. _________________________
+5. _________________________
+```
+
+---
+
+### C. Shopify Email - Campagnes Actives
+
+**Navigation:** Shopify Admin → Marketing → Automations
+
+**Automations à vérifier:**
+
+#### 1. Abandon de panier
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Statut:** ☐ Actif ☐ Inactif
+- [ ] **Nombre d'emails dans séquence:** _________
+- [ ] **Délai d'envoi:** _________________________
+- [ ] **Taux d'ouverture moyen:** _________%
+- [ ] **Taux de conversion:** _________%
+- [ ] **Volume envoyé (30 jours):** _________ emails
+
+#### 2. Welcome Series
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Statut:** ☐ Actif ☐ Inactif
+- [ ] **Nombre d'emails:** _________
+- [ ] **Taux d'ouverture moyen:** _________%
+- [ ] **Volume envoyé (30 jours):** _________ emails
+
+#### 3. Browse Abandonment
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Statut:** ☐ Actif ☐ Inactif
+- [ ] **Volume envoyé (30 jours):** _________ emails
+
+#### 4. Autres Automations
+Liste complète:
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+---
+
+### D. Shopify Forms - Forms Actifs
+
+**Navigation:** Shopify Admin → Online Store → Pages / Forms
+
+#### Newsletter Signup Form
+- [ ] **Existe sur le site?** ☐ Oui ☐ Non
+- [ ] **Emplacement:** ☐ Footer ☐ Popup ☐ Page dédiée ☐ Autre: _________
+- [ ] **Champs captés:** _________________________
+- [ ] **Action après soumission:** _________________________
+- [ ] **Données stockées où?** _________________________
+
+#### Contact Form
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **URL:** _________________________
+- [ ] **Champs captés:** _________________________
+- [ ] **Où vont les données?** _________________________
+
+#### Product Waitlist Form
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Bouton "Notify me when available"?** ☐ Oui ☐ Non
+- [ ] **Champs captés:** _________________________
+
+---
+
+### E. Shopify Customers Database
+
+**Navigation:** Shopify Admin → Customers
+
+**Vérification des données:**
+- [ ] **Nombre total de customers:** _________
+- [ ] **Customers avec email:** _________
+- [ ] **Customers avec phone:** _________
+- [ ] **Customers avec tags:** _________
+- [ ] **Date du plus ancien customer:** _________________________
+- [ ] **Date du plus récent customer:** _________________________
+
+**Tags utilisés (liste complète):**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+4. _________________________
+5. _________________________
+```
+
+**Segments créés:**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+---
+
+### F. Shopify Marketing Events
+
+**Navigation:** Shopify Admin → Marketing → Events
+
+- [ ] **Nombre total d'events (30 jours):** _________
+- [ ] **Types d'events trackés:** _________________________
+- [ ] **Pixels installés:**
+  - [ ] Facebook Pixel: ☐ Oui (ID: _________) ☐ Non
+  - [ ] TikTok Pixel: ☐ Oui (ID: _________) ☐ Non
+  - [ ] Google Analytics: ☐ Oui (ID: _________) ☐ Non
+  - [ ] Google Ads: ☐ Oui ☐ Non
+  - [ ] Autres: _________________________
+
+---
+
+## ✅ SECTION 2: KLAVIYO INFRASTRUCTURE
+
+### A. Klaviyo Account Access
+
+- [ ] **Compte Klaviyo actif?** ☐ Oui ☐ Non
+- [ ] **URL du compte:** _________________________
+- [ ] **Accès vérifié:** ☐ Oui ☐ Non
+- [ ] **Date de vérification:** _________________________
+
+---
+
+### B. Klaviyo Lists
+
+**Vérification des listes:**
+
+Liste complète de TOUTES les listes:
+```
+1. Nom: _________________ | Subscribers: _________ | Status: _________
+2. Nom: _________________ | Subscribers: _________ | Status: _________
+3. Nom: _________________ | Subscribers: _________ | Status: _________
+4. Nom: _________________ | Subscribers: _________ | Status: _________
+5. Nom: _________________ | Subscribers: _________ | Status: _________
+```
+
+---
+
+### C. Klaviyo Flows
+
+**Flows actifs:**
+
+#### 1. Abandon de panier
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Statut:** ☐ Live ☐ Draft ☐ Inactif
+- [ ] **Nombre d'emails:** _________
+- [ ] **Volume (30 jours):** _________ envois
+
+#### 2. Welcome Series
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Statut:** ☐ Live ☐ Draft ☐ Inactif
+- [ ] **Volume (30 jours):** _________ envois
+
+#### 3. Browse Abandonment
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Statut:** ☐ Live ☐ Draft ☐ Inactif
+- [ ] **Volume (30 jours):** _________ envois
+
+#### 4. Post-Purchase
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Volume (30 jours):** _________ envois
+
+Liste COMPLÈTE de tous les flows:
+```
+1. _________________________
+2. _________________________
+3. _________________________
+4. _________________________
+5. _________________________
+```
+
+---
+
+### D. Klaviyo Campaigns
+
+**Campagnes envoyées (30 derniers jours):**
+
+| Date | Nom | Recipients | Open Rate | Click Rate | Revenue |
+|------|-----|-----------|-----------|------------|---------|
+| ____ | ___ | _________ | _________% | _________% | $______ |
+| ____ | ___ | _________ | _________% | _________% | $______ |
+| ____ | ___ | _________ | _________% | _________% | $______ |
+
+---
+
+### E. Klaviyo Integration avec Shopify
+
+- [ ] **Intégration active?** ☐ Oui ☐ Non
+- [ ] **Sync automatique?** ☐ Oui ☐ Non
+- [ ] **Données synced:** _________________________
+- [ ] **Fréquence de sync:** _________________________
+- [ ] **Dernière sync:** _________________________
+
+---
+
+## ✅ SECTION 3: FACEBOOK/META INFRASTRUCTURE
+
+### A. Facebook Business Manager Access
+
+- [ ] **Compte Business Manager?** ☐ Oui ☐ Non
+- [ ] **Business Manager ID:** _________________________
+- [ ] **Accès vérifié:** ☐ Oui ☐ Non
+
+---
+
+### B. Facebook Ad Account
+
+- [ ] **Ad Account actif?** ☐ Oui ☐ Non
+- [ ] **Ad Account ID:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif ☐ Restricted
+- [ ] **Spend limit:** $_________________________
+- [ ] **Spend (30 derniers jours):** $_________________________
+
+---
+
+### C. Facebook Lead Ads
+
+**Campagnes Lead Ads actives:**
+
+#### Campagne 1:
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom:** _________________________
+- [ ] **Statut:** ☐ Active ☐ Paused ☐ Ended
+- [ ] **Lead Form ID:** _________________________
+- [ ] **Budget:** $_________/day
+- [ ] **Leads générés (30 jours):** _________
+- [ ] **Cost per lead:** $_________
+
+#### Campagne 2:
+- [ ] **Nom:** _________________________
+- [ ] **Leads (30 jours):** _________
+
+**Total Lead Ads:**
+- **Nombre de campagnes actives:** _________
+- **Total leads (30 jours):** _________
+- **Total spend (30 jours):** $_________
+
+---
+
+### D. Facebook Pixel
+
+- [ ] **Pixel installé?** ☐ Oui ☐ Non
+- [ ] **Pixel ID:** _________________________
+- [ ] **Events trackés (30 jours):** _________
+- [ ] **Standard events actifs:**
+  - [ ] PageView
+  - [ ] ViewContent
+  - [ ] AddToCart
+  - [ ] InitiateCheckout
+  - [ ] Purchase
+  - [ ] Lead
+  - [ ] CompleteRegistration
+
+---
+
+### E. Facebook Custom Audiences
+
+**Audiences créées:**
+```
+1. Nom: _________________ | Size: _________ | Type: _________
+2. Nom: _________________ | Size: _________ | Type: _________
+3. Nom: _________________ | Size: _________ | Type: _________
+```
+
+**Retargeting campaigns actives:**
+- [ ] **Nombre:** _________
+- [ ] **Spend (30 jours):** $_________
+- [ ] **Results:** _________
+
+---
+
+## ✅ SECTION 4: TIKTOK INFRASTRUCTURE
+
+### A. TikTok Ads Manager
+
+- [ ] **Compte TikTok Ads?** ☐ Oui ☐ Non
+- [ ] **Ad Account ID:** _________________________
+- [ ] **Statut:** ☐ Actif ☐ Inactif
+
+---
+
+### B. TikTok Pixel
+
+- [ ] **Pixel installé?** ☐ Oui ☐ Non
+- [ ] **Pixel ID:** _________________________
+- [ ] **Events trackés (30 jours):** _________
+
+---
+
+### C. TikTok Campaigns
+
+**Campagnes actives:**
+- [ ] **Nombre de campagnes:** _________
+- [ ] **Lead generation campaigns:** _________
+- [ ] **Spend (30 jours):** $_________
+- [ ] **Leads générés:** _________
+
+---
+
+## ✅ SECTION 5: GOOGLE INFRASTRUCTURE
+
+### A. Google Analytics 4
+
+- [ ] **GA4 installé?** ☐ Oui ☐ Non
+- [ ] **Property ID:** _________________________
+- [ ] **Events trackés:** _________________________
+- [ ] **Conversions configurées:** _________________________
+
+---
+
+### B. Google Ads
+
+- [ ] **Compte Google Ads?** ☐ Oui ☐ Non
+- [ ] **Customer ID:** _________________________
+- [ ] **Campagnes actives:** _________
+- [ ] **Spend (30 jours):** $_________
+
+**Lead Form extensions:**
+- [ ] **Utilisées?** ☐ Oui ☐ Non
+- [ ] **Leads générés (30 jours):** _________
+
+---
+
+### C. Google Tag Manager
+
+- [ ] **GTM installé?** ☐ Oui ☐ Non
+- [ ] **Container ID:** _________________________
+- [ ] **Tags actifs:** _________
+
+---
+
+## ✅ SECTION 6: DATA STORAGE & EXPORT
+
+### A. Google Sheet - Lead Database
+
+- [ ] **Existe?** ☐ Oui ☐ Non
+- [ ] **Nom exact:** _________________________
+- [ ] **URL:** _________________________
+- [ ] **Nombre de tabs:** _________
+- [ ] **Tab names:** _________________________
+- [ ] **Nombre de lignes (total leads):** _________
+- [ ] **Dernière mise à jour:** _________________________
+- [ ] **Mise à jour manuelle ou automatique?** ☐ Manuelle ☐ Auto
+- [ ] **Service account access?** ☐ Oui ☐ Non
+
+**Structure des colonnes (liste exacte):**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+4. _________________________
+5. _________________________
+[...]
+```
+
+---
+
+### B. Export Existants
+
+**Shopify → Autre système:**
+- [ ] **Export automatique?** ☐ Oui ☐ Non
+- [ ] **Vers où?** _________________________
+- [ ] **Fréquence:** _________________________
+- [ ] **Dernière export:** _________________________
+
+**Klaviyo → Autre système:**
+- [ ] **Export automatique?** ☐ Oui ☐ Non
+- [ ] **Vers où?** _________________________
+
+**Facebook → Autre système:**
+- [ ] **Export automatique?** ☐ Oui ☐ Non
+- [ ] **Méthode:** _________________________
+
+---
+
+## ✅ SECTION 7: VOLUME METRICS (RÉELS - 30 DERNIERS JOURS)
+
+### A. Shopify Metrics
+
+- **Total visitors:** _________
+- **Total sessions:** _________
+- **Cart abandonment rate:** _________%
+- **Cart abandonments (nombre):** _________
+- **Account creations:** _________
+- **Newsletter signups (si form existe):** _________
+- **Contact form submissions:** _________
+- **Orders:** _________
+- **Conversion rate:** _________%
+
+---
+
+### B. Email Metrics (Shopify Email + Klaviyo)
+
+- **Total emails envoyés (30 jours):** _________
+- **Open rate moyen:** _________%
+- **Click rate moyen:** _________%
+- **Revenue from email (30 jours):** $_________
+
+---
+
+### C. Paid Ads Metrics
+
+**Facebook Ads:**
+- **Impressions:** _________
+- **Clicks:** _________
+- **Leads:** _________
+- **Spend:** $_________
+- **CPC:** $_________
+- **CPL:** $_________
+
+**TikTok Ads:**
+- **Leads:** _________
+- **Spend:** $_________
+
+**Google Ads:**
+- **Leads:** _________
+- **Spend:** $_________
+
+---
+
+## ✅ SECTION 8: GAP ANALYSIS
+
+**À remplir APRÈS avoir complété Sections 1-7:**
+
+### Ce qui EXISTE et FONCTIONNE:
+```
+1. _________________________
+2. _________________________
+3. _________________________
+4. _________________________
+5. _________________________
+```
+
+### Ce qui EXISTE mais NE FONCTIONNE PAS:
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+### Ce qui MANQUE complètement:
+```
+1. _________________________
+2. _________________________
+3. _________________________
+4. _________________________
+5. _________________________
+```
+
+### DONNÉES non exportées vers Google Sheet:
+```
+1. Source: _________ | Volume: _________ | Pourquoi pas exporté: _________
+2. Source: _________ | Volume: _________ | Pourquoi pas exporté: _________
+3. Source: _________ | Volume: _________ | Pourquoi pas exporté: _________
+```
+
+---
+
+## 🎯 CONCLUSIONS DE L'AUDIT
+
+**À remplir APRÈS audit complet:**
+
+### 1. Infrastructure Existante (Score /10)
+
+| Catégorie | Score | Notes |
+|-----------|-------|-------|
+| Shopify workflows | __/10 | ___________________________ |
+| Email automation | __/10 | ___________________________ |
+| Forms & capture | __/10 | ___________________________ |
+| Data storage | __/10 | ___________________________ |
+| Paid ads setup | __/10 | ___________________________ |
+| Export/sync | __/10 | ___________________________ |
+| **TOTAL** | **__/60** | |
+
+---
+
+### 2. Priorités Réelles (Basées sur FAITS)
+
+**Top 3 quick wins (déjà presque prêt):**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+**Top 3 gaps critiques (manque le plus):**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+**Top 3 améliorations (existe mais peut être mieux):**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+---
+
+### 3. Volume Réel vs Potentiel
+
+| Source | Volume Actuel | Volume Potentiel | Gap | Action Requise |
+|--------|---------------|------------------|-----|----------------|
+| Cart Abandonment | _________ | _________ | ___% | _______________ |
+| Account Creation | _________ | _________ | ___% | _______________ |
+| Newsletter | _________ | _________ | ___% | _______________ |
+| Contact Form | _________ | _________ | ___% | _______________ |
+| FB Lead Ads | _________ | _________ | ___% | _______________ |
+| **TOTAL** | **_________** | **_________** | **___%** | |
+
+---
+
+### 4. Plan d'Action Réel (Post-Audit)
+
+**Phase 1: Quick Wins (0-2 semaines)**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+**Phase 2: Gaps Critiques (2-4 semaines)**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+**Phase 3: Optimisations (4-8 semaines)**
+```
+1. _________________________
+2. _________________________
+3. _________________________
+```
+
+---
+
+## 📋 INSTRUCTIONS POUR COMPLÉTER CET AUDIT
+
+**Option A: Audit Manuel (Recommandé pour précision)**
+1. Se connecter à chaque plateforme (Shopify, Klaviyo, FB, etc.)
+2. Remplir chaque section avec les DONNÉES RÉELLES
+3. Screenshots des dashboards importants
+4. Noter TOUT ce qui existe (même si non utilisé)
+
+**Option B: Audit Assisté (Plus rapide)**
+1. Fournir accès temporaire aux plateformes
+2. Scripts d'audit automatiques (Shopify API, Klaviyo API, etc.)
+3. Génération automatique des métriques
+4. Vérification manuelle des résultats
+
+---
+
+**Temps estimé pour audit complet:** 4-6 heures
+**Deadline:** Avant tout coding/planning supplémentaire
+**Responsable:** _________________________
+**Date de complétion:** _________________________
+
+---
+
+**UNE FOIS CET AUDIT COMPLÉTÉ, nous aurons les FAITS pour:**
+- Savoir exactement ce qui existe
+- Identifier les VRAIS gaps
+- Planifier SEULEMENT ce qui manque
+- Éviter de dupliquer l'existant
+- Construire sur ce qui fonctionne déjà
+
+**PAS de coding avant que cet audit soit complété avec des FAITS vérifiables.**
+
+---
+
+
+# 66. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -84205,10 +84881,10 @@ End flow
 ---
 
 
-# 66. Klaviyo Flywheel Upgrade 2025
+# 67. Klaviyo Flywheel Upgrade 2025
 
 **File:** `KLAVIYO_FLYWHEEL_UPGRADE_2025.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -85592,10 +86268,10 @@ Expected Advocate Engagement:
 ---
 
 
-# 67. Klaviyo Plan Recommendation Email Only
+# 68. Klaviyo Plan Recommendation Email Only
 
 **File:** `KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -86024,10 +86700,10 @@ TOTAL MONTHLY COST: $300-350/mo (Month 1)
 ---
 
 
-# 68. Klaviyo Welcome Flow Implementation
+# 69. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -86476,10 +87152,10 @@ python3 update_landing_page_with_klaviyo.py
 ---
 
 
-# 69. Lead Automation System Operational
+# 70. Lead Automation System Operational
 
 **File:** `LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -86822,10 +87498,10 @@ grep GOOGLE_SHEET_ID /Users/mac/Desktop/Alpha-Medical/.env
 ---
 
 
-# 70. Llms Txt Deployment
+# 71. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -87408,10 +88084,10 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 71. Loyalty Automation Progress Report
+# 72. Loyalty Automation Progress Report
 
 **File:** `LOYALTY_AUTOMATION_PROGRESS_REPORT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -87639,10 +88315,10 @@ Après complétion manuelle:
 ---
 
 
-# 72. Loyalty Simplified Manual Actions Guide
+# 73. Loyalty Simplified Manual Actions Guide
 
 **File:** `LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -87955,10 +88631,10 @@ System is 100% operational when:
 ---
 
 
-# 73. Loyalty System Architecture
+# 74. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -88344,10 +89020,10 @@ query GetCustomerLoyalty($customerId: ID!) {
 ---
 
 
-# 74. Loyalty System Setup Guide
+# 75. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -88901,10 +89577,10 @@ After setup complete, verify:
 ---
 
 
-# 75. Manual Footer Config
+# 76. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -88995,10 +89671,10 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 76. Menu Bundles Instructions
+# 77. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -89078,10 +89754,10 @@ Après sauvegarde:
 ---
 
 
-# 77. Mydealz Synthese
+# 78. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -89457,10 +90133,10 @@ EMAIL_CODES:
 ---
 
 
-# 78. Newsletter Flows Creation Checklist
+# 79. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -90158,10 +90834,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 79. Next Steps Flow Configuration
+# 80. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -90410,10 +91086,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 80. Pain Relief Guide Implementation
+# 81. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -90867,10 +91543,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 81. Paypal Deactivation Guide
+# 82. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -91165,10 +91841,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 82. Phase 3 Implementation Log
+# 83. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -91701,10 +92377,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 83. Pre Launch Checklist 23 Days
+# 84. Pre Launch Checklist 23 Days
 
 **File:** `PRE_LAUNCH_CHECKLIST_23_DAYS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -92213,10 +92889,10 @@ Prêt à lancer? 🚀
 ---
 
 
-# 84. Pricing Quick Reference
+# 85. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -92592,10 +93268,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 85. Pricing Verification
+# 86. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -93513,10 +94189,504 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 86. Product Optimization Tracking
+# 87. Priority Sources Implementation
+
+**File:** `PRIORITY_SOURCES_IMPLEMENTATION.md`
+**Last Modified:** 2025-11-25 19:37
+
+---
+
+# PRIORITY SOURCES IMPLEMENTATION PLAN
+## Alpha Medical - 10 Sources Prioritaires (Option B)
+
+**Created:** 2025-11-25 03:00 UTC
+**Strategy:** Build 10 high-ROI sources NOW, defer 13 others based on business needs
+**Timeline:** 80 hours (10 days at 8h/day)
+**Expected Volume:** 765-1,680 leads/month from priority sources only
+
+---
+
+## 🎯 SOURCES PRIORITAIRES (10 sources)
+
+### Critères de priorisation:
+1. **ROI élevé** - Sources avec meilleur ratio coût/lead
+2. **Volume potentiel** - Sources générant le plus de leads
+3. **Déjà actifs** - Sources partiellement déployées (quick wins)
+4. **Coût $0** - Sources organiques (ON-SITE)
+5. **Facilité technique** - API disponibles, intégration simple
+
+---
+
+## 📊 MATRICE DE PRIORISATION
+
+| # | Source | Catégorie | Volume/mois | Coût | ROI | Status | Priorité |
+|---|--------|-----------|-------------|------|-----|--------|----------|
+| **1** | **Newsletter Signup** | ON-SITE | 50-100 | $0 | ⭐⭐⭐⭐⭐ | New | **P0** |
+| **2** | **Contact Form** | ON-SITE | 10-20 | $0 | ⭐⭐⭐⭐⭐ | New | **P0** |
+| **3** | **Product Waitlist** | ON-SITE | 5-10 | $0 | ⭐⭐⭐⭐⭐ | New | **P0** |
+| **4** | **Cart Abandonment** | ON-SITE | 200-300 | $0 | ⭐⭐⭐⭐⭐ | ✅ Actif | **P0** |
+| **5** | **Account Creation** | ON-SITE | 30-50 | $0 | ⭐⭐⭐⭐⭐ | ✅ Actif | **P0** |
+| **18** | **Google Ads** | PAID ADS | 200-500 | $3-5K/mo | ⭐⭐⭐⭐ | New | **P0** |
+| **19** | **Facebook/IG Ads** | PAID ADS | 300-450 | Included | ⭐⭐⭐⭐⭐ | ✅ Deployed | **P0** |
+| **20** | **TikTok Ads** | PAID ADS | 50-150 | $1-3K/mo | ⭐⭐⭐⭐ | 🔧 Pixel deployed | **P0** |
+| **39** | **Email Retargeting** | RETARGETING | 100-200 | $0 | ⭐⭐⭐⭐⭐ | New | **P0** |
+| **40** | **Facebook Retargeting** | RETARGETING | 50-100 | Ad spend | ⭐⭐⭐⭐ | 🔧 Pixel deployed | **P0** |
+
+**TOTAL VOLUME:** 765-1,680 leads/month
+**TOTAL COST:** $0 (ON-SITE) + $4-8K/mo (Paid Ads + Retargeting)
+**BLENDED CPL:** ~$5-10 per lead
+
+---
+
+## 💰 ANALYSE ROI - SOURCES PRIORITAIRES
+
+### CATÉGORIE 1: ON-SITE (5 sources) - ROI MAXIMAL
+
+**Volume:** 295-480/month
+**Cost:** $0 (organic, already paying for website)
+**CPL:** $0
+**ROI:** UNBOUNDED (infinite ROI)
+
+**Justification:**
+- Trafic existant sur le site (0 coût marginal)
+- Conversion 2-5% sur formulaires (industry standard)
+- Setup 1x puis automatique
+- Qualité élevée (site visitors = high intent)
+
+**Quick Wins:**
+- Cart Abandonment ✅ DÉJÀ ACTIF (Shopify native, besoin tracking seulement)
+- Account Creation ✅ DÉJÀ ACTIF (Shopify native, besoin tracking seulement)
+
+---
+
+### CATÉGORIE 4: PAID ADS (3 sources) - ROI PROUVÉ
+
+**Volume:** 550-1,100/month
+**Cost:** $4-8K/month
+**CPL:** $7-14
+**ROI:** 150-300% (based on $75 AOV, 20% conversion)
+
+**Justification:**
+- Scalable (augmenter budget = augmenter volume)
+- Ciblage précis (audiences qualifiées)
+- Mesurable (ROAS tracking)
+- FB Lead Ads ✅ DÉJÀ DEPLOYED (quick win)
+- TikTok Pixel ✅ DÉJÀ DEPLOYED (ready for ads)
+
+---
+
+### CATÉGORIE 9: RETARGETING (2 sources) - WARM LEADS
+
+**Volume:** 150-300/month
+**Cost:** $0 (email) + ad spend (FB retargeting)
+**CPL:** $2-5 (lower than cold ads)
+**ROI:** 200-400% (warm leads convert better)
+
+**Justification:**
+- Visitors déjà familiers avec la marque
+- Conversion 2-3x higher than cold traffic
+- FB Pixel ✅ DÉJÀ DEPLOYED (quick win)
+- Email retargeting = $0 cost (Klaviyo/Shopify existing)
+
+---
+
+## 🏗️ PLAN D'IMPLÉMENTATION - 10 SOURCES (80 hours)
+
+### WEEK 1: ON-SITE CATEGORY (5 sources) - 32 hours
+
+#### Day 1-2: Shopify Integration Foundation (16h)
+
+**Source 1-2: Cart Abandonment + Account Creation (Quick Wins)**
+- Status: ✅ Already active in Shopify
+- Task: Add tracking to Google Sheet
+- Time: 4h
+
+**Approach:**
+- Shopify webhook: `carts/update`, `customers/create`
+- OR: Shopify Admin API polling (fallback)
+- Reuse existing Shopify customer data
+- Map to Google Sheet "Raw Leads"
+
+**Deliverable:** `sync_shopify_native_to_sheet.py`
+
+---
+
+**Source 3-5: Newsletter + Contact + Waitlist**
+- Task: Create form tracking system
+- Time: 12h
+
+**Approach:**
+- Option A: Shopify Forms app (native)
+- Option B: Typeform embedded forms (reuse existing integration)
+- Option C: Custom Shopify form + webhook
+
+**Recommended:** Option A (Shopify Forms app)
+- Built-in Shopify
+- No additional cost
+- Easy webhook integration
+
+**Deliverables:**
+- `sync_shopify_forms_to_sheet.py` (handles all 3 form types)
+- `.github/workflows/sync-shopify-forms.yml` (every 4h)
+
+---
+
+#### Day 3-4: Testing + Documentation (16h)
+
+- Test all 5 ON-SITE sources end-to-end
+- Create form templates (Newsletter, Contact, Waitlist)
+- User setup guide (Shopify app installation)
+- Verify data quality in Google Sheet
+
+**Deliverables:**
+- `tests/test_shopify_integration.py`
+- `SETUP_GUIDE_ONSITE_SOURCES.md`
+
+---
+
+### WEEK 2: PAID ADS CATEGORY (3 sources) - 24 hours
+
+#### Day 5-6: Google Ads Integration (12h)
+
+**Source 18: Google Ads (Search + Display + Shopping)**
+- Status: Not deployed (ready to launch)
+- Task: Lead Form extensions integration
+- Time: 12h
+
+**Approach:**
+- Google Ads API (Lead Form extension submissions)
+- OAuth 2.0 authentication
+- Fetch submissions every 6h
+- Quality score: 9.0 (paid search, high intent)
+
+**Deliverables:**
+- `sync_google_ads_to_sheet.py` (180 lines)
+- `.github/workflows/sync-google-ads-leads.yml`
+- User setup guide (Google Ads campaign + Lead Forms)
+
+---
+
+#### Day 7: Facebook/TikTok Ads (Quick Wins) (12h)
+
+**Source 19: Facebook/Instagram Ads**
+- Status: ✅ Lead Ads DEPLOYED (quick win)
+- Task: Verify existing integration works
+- Time: 2h (testing only)
+
+**Source 20: TikTok Ads**
+- Status: 🔧 Pixel deployed, need Lead Ads integration
+- Task: TikTok Lead Generation API integration
+- Time: 10h
+
+**Approach (TikTok):**
+- TikTok Marketing API (Lead Generation)
+- Similar to FB Lead Ads
+- Fetch submissions every 6h
+- Quality score: 8.0
+
+**Deliverables:**
+- `sync_tiktok_ads_to_sheet.py` (150 lines)
+- `.github/workflows/sync-tiktok-leads.yml`
+
+---
+
+### WEEK 3: RETARGETING CATEGORY (2 sources) - 16 hours
+
+#### Day 8: Email Retargeting (Browse Abandonment) (8h)
+
+**Source 39: Email Retargeting**
+- Status: New (but Klaviyo already active)
+- Task: Track browse abandonment → capture new leads
+- Time: 8h
+
+**Approach:**
+- Klaviyo API: Fetch profiles who received "Browse Abandonment" email
+- Filter: NOT yet in database (new leads from retargeting)
+- Quality score: 8.0 (warm leads)
+
+**Deliverables:**
+- `sync_klaviyo_retargeting_to_sheet.py` (120 lines)
+- `.github/workflows/sync-klaviyo-retargeting.yml` (daily)
+
+---
+
+#### Day 9: Facebook Retargeting (8h)
+
+**Source 40: Facebook Retargeting**
+- Status: 🔧 Pixel deployed (quick win)
+- Task: Track retargeting conversions → capture leads
+- Time: 8h
+
+**Approach:**
+- Facebook Custom Audiences API (if accessible)
+- OR: Manual export + Import tool (xlsx)
+- Track pixel events → form submissions
+- Quality score: 8.0
+
+**Deliverables:**
+- `sync_facebook_retargeting_to_sheet.py` (100 lines)
+- OR: Documentation for manual export process
+
+---
+
+### WEEK 4: TESTING + DOCUMENTATION (8 hours)
+
+#### Day 10: End-to-End Testing (8h)
+
+- Integration tests for all 10 sources
+- Performance tests (Sheet API limits)
+- User acceptance testing
+- Setup guides for all 10 sources
+- Deployment checklist
+
+**Deliverables:**
+- Complete test suite (10 test files)
+- User setup guide (PDF or MD)
+- Deployment runbook
+- Monitoring dashboard setup
+
+---
+
+## 📁 CODE STRUCTURE - 10 PRIORITY SOURCES
+
+```
+Alpha-Medical/
+├── PHASE 1 (EXISTING - 3 sources):
+│   ├── sync_typeform_to_sheet.py          ✅ Created
+│   ├── sync_facebook_leads_to_sheet.py    ✅ Exists
+│   └── import_leads_to_sheet.py           ✅ Enhanced
+│
+├── PRIORITY (NEW - 7 sources):
+│   ├── sync_shopify_native_to_sheet.py    🔨 Week 1 (Cart + Account)
+│   ├── sync_shopify_forms_to_sheet.py     🔨 Week 1 (Newsletter + Contact + Waitlist)
+│   ├── sync_google_ads_to_sheet.py        🔨 Week 2 (Google Ads)
+│   ├── sync_tiktok_ads_to_sheet.py        🔨 Week 2 (TikTok Ads)
+│   ├── sync_klaviyo_retargeting_to_sheet.py 🔨 Week 3 (Email Retargeting)
+│   └── sync_facebook_retargeting_to_sheet.py 🔨 Week 3 (FB Retargeting)
+│
+├── CENTRAL (EXISTING):
+│   └── clean_and_segment_leads.py         ✅ Updated (23 sources)
+│
+├── .github/workflows/
+│   ├── sync-typeform-leads.yml            ✅ Created
+│   ├── sync-facebook-leads.yml            ✅ Exists
+│   ├── sync-shopify-native.yml            🔨 Week 1
+│   ├── sync-shopify-forms.yml             🔨 Week 1
+│   ├── sync-google-ads-leads.yml          🔨 Week 2
+│   ├── sync-tiktok-leads.yml              🔨 Week 2
+│   ├── sync-klaviyo-retargeting.yml       🔨 Week 3
+│   ├── sync-facebook-retargeting.yml      🔨 Week 3
+│   └── clean-segment-leads.yml            ✅ Exists
+│
+└── tests/
+    ├── test_shopify_integration.py        🔨 Week 1
+    ├── test_google_ads_integration.py     🔨 Week 2
+    ├── test_tiktok_integration.py         🔨 Week 2
+    ├── test_retargeting_integration.py    🔨 Week 3
+    └── test_priority_sources_e2e.py       🔨 Week 4
+```
+
+**Total Files:**
+- 7 new Python scripts (10 sources total with existing 3)
+- 7 new workflows (10 workflows total)
+- 5 test files
+- **19 new files** (+ 3 existing updated)
+
+---
+
+## ⏱️ TIMELINE DÉTAILLÉ - 80 HOURS
+
+| Week | Focus | Sources | Hours | Deliverables |
+|------|-------|---------|-------|--------------|
+| **Week 1** | ON-SITE | 5 sources | 32h | 2 scripts + 2 workflows + tests |
+| **Week 2** | PAID ADS | 3 sources | 24h | 2 scripts + 2 workflows + tests |
+| **Week 3** | RETARGETING | 2 sources | 16h | 2 scripts + 2 workflows + tests |
+| **Week 4** | TESTING | All 10 | 8h | Test suite + docs + deployment |
+| **TOTAL** | - | **10 sources** | **80h** | **19 files** |
+
+**Deployment Readiness:** End of Week 4 (10 days @ 8h/day)
+
+---
+
+## 💰 COÛT OPÉRATIONNEL - 10 SOURCES PRIORITAIRES
+
+### Infrastructure (One-Time)
+- Development: 80h @ $0 (in-house)
+- Testing: Included
+- **Total:** $0
+
+### Monthly Operational Costs
+
+**CATÉGORIE ON-SITE (5 sources):**
+- Newsletter Signup: $0
+- Contact Form: $0
+- Product Waitlist: $0
+- Cart Abandonment: $0 (Shopify native)
+- Account Creation: $0 (Shopify native)
+- **Subtotal:** $0/month
+
+**CATÉGORIE PAID ADS (3 sources):**
+- Google Ads: $3,000-5,000/month
+- Facebook/IG Ads: Included in PRE-LAUNCH budget ($6K one-time)
+- TikTok Ads: $1,000-3,000/month
+- **Subtotal:** $4,000-8,000/month
+
+**CATÉGORIE RETARGETING (2 sources):**
+- Email Retargeting: $0 (Klaviyo existing)
+- Facebook Retargeting: Included in ad spend
+- **Subtotal:** $0 incremental
+
+**TOTAL MONTHLY COST:** $4,000-8,000/month (PAID ADS only)
+**Expected Volume:** 765-1,680 leads/month
+**Blended CPL:** $5-10 per lead
+
+---
+
+## 📊 ROI PROJECTION - 10 SOURCES
+
+### Scenario Conservative
+
+**Investment:**
+- Build: $0 (in-house dev)
+- Monthly spend: $4,000 (ads)
+
+**Volume:**
+- 765 leads/month (low estimate)
+- Conversion rate: 15% (conservative for e-commerce)
+- Orders: 115/month
+- AOV: $75
+- Revenue: $8,625/month
+
+**ROI:** ($8,625 - $4,000) / $4,000 = **116% ROI**
+
+---
+
+### Scenario Optimiste
+
+**Investment:**
+- Build: $0 (in-house dev)
+- Monthly spend: $8,000 (ads)
+
+**Volume:**
+- 1,680 leads/month (high estimate)
+- Conversion rate: 20% (optimistic)
+- Orders: 336/month
+- AOV: $75
+- Revenue: $25,200/month
+
+**ROI:** ($25,200 - $8,000) / $8,000 = **215% ROI**
+
+---
+
+## 🎯 SUCCESS METRICS - 10 SOURCES
+
+### Week 1 (ON-SITE)
+- [ ] 5 ON-SITE sources tracking data
+- [ ] 50+ test leads processed
+- [ ] 0 errors in logs (7 days)
+- [ ] Forms live on website
+
+### Week 2 (PAID ADS)
+- [ ] Google Ads campaign launched
+- [ ] TikTok Lead Ads launched
+- [ ] 100+ paid leads captured
+- [ ] CPL ≤ $15
+
+### Week 3 (RETARGETING)
+- [ ] Email retargeting tracking active
+- [ ] FB retargeting tracking active
+- [ ] 50+ retargeting leads captured
+- [ ] CPL ≤ $5 (lower than cold ads)
+
+### Week 4 (DEPLOYMENT)
+- [ ] All 10 sources tested end-to-end
+- [ ] User setup guides complete
+- [ ] Workflows automated (8 workflows)
+- [ ] Dashboard showing 10 source breakdown
+
+---
+
+## 🚫 SOURCES DIFFÉRÉES (13 sources)
+
+Ces sources seront implémentées plus tard selon besoins business:
+
+**CATÉGORIE 2: SOCIAL (4 sources) - DEFER**
+- Instagram organic (bio link) - Volume moyen, effort élevé
+- Facebook organic (messages) - Difficulté API
+- TikTok organic (bio link) - Couvert par TikTok Ads
+- YouTube organic - PHASE 3 (content-driven)
+
+**CATÉGORIE 3: SEO/CONTENT (4 sources) - DEFER**
+- Blog Newsletter - Besoin contenu existant d'abord
+- Google Organic Search - GA4 déjà actif, tracking suffisant
+- Google Shop - Volume faible (5-10/mois)
+- Podcast Listeners - Pas de podcast actif
+
+**CATÉGORIE 8: REFERRAL (3 sources) - DEFER**
+- Customer Referral Program - Besoin customers existants d'abord
+- Email Forwards - HubSpot native, actif
+- Social Shares - Shopify native, actif
+
+**CATÉGORIE 9: RETARGETING (2 sources implemented, 1 deferred)**
+- Google RLSA - Defer (Google Ads Display priority first)
+
+**Total Deferred:** 13 sources
+**Rationale:** Focus sur quick wins + high ROI d'abord, ajouter complexity later
+
+---
+
+## ✅ ACCEPTANCE CRITERIA
+
+### Infrastructure Ready
+- [ ] 10 Python scripts written + documented
+- [ ] 8 GitHub Actions workflows configured
+- [ ] 5 test files passing
+- [ ] Google Sheet columns for all 10 sources
+- [ ] Setup guides for all 10 sources
+
+### Deployment Ready
+- [ ] All 10 sources tested with real data
+- [ ] 100+ leads processed successfully
+- [ ] No errors in logs (7 consecutive days)
+- [ ] Analytics dashboard accurate
+- [ ] User training complete
+
+---
+
+## 🚀 NEXT IMMEDIATE ACTIONS
+
+**NOW (This Session):**
+1. Create `sync_shopify_native_to_sheet.py` (Cart + Account tracking)
+2. Create `sync_shopify_forms_to_sheet.py` (Newsletter + Contact + Waitlist)
+3. Create workflows for Shopify integrations
+
+**THIS WEEK:**
+4. Test Shopify integrations end-to-end
+5. User setup guide for Shopify forms
+6. Start Google Ads integration
+
+**NEXT WEEK:**
+7. Complete Paid Ads integrations (Google + TikTok)
+8. Start Retargeting integrations
+9. Build test suite
+
+---
+
+**Ready to start building Week 1 (ON-SITE sources)?**
+
+Commençons par:
+1. **sync_shopify_native_to_sheet.py** (Cart Abandonment + Account Creation)
+2. **sync_shopify_forms_to_sheet.py** (Newsletter + Contact + Waitlist)
+
+Ou préférez-vous voir le plan final mis à jour avant de coder?
+
+---
+
+
+# 88. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -94259,10 +95429,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 87. Rapport Final Complet
+# 89. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -94491,10 +95661,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 88. Rapport Theme Analyse
+# 90. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -94862,10 +96032,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 89. Response To Third Party Analysis
+# 91. Response To Third Party Analysis
 
 **File:** `RESPONSE_TO_THIRD_PARTY_ANALYSIS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -95388,10 +96558,10 @@ The third-party analysis was **harsh but fair**. We addressed every factual erro
 ---
 
 
-# 90. Robots Txt Deployment
+# 92. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -95706,10 +96876,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 91. Seo Audit Recommendations
+# 93. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -96168,10 +97338,10 @@ data = {
 ---
 
 
-# 92. Session 2025-11-11 Part3 Summary
+# 94. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -96357,10 +97527,10 @@ data = {
 ---
 
 
-# 93. Session 2025-11-11 Part6 Summary
+# 95. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -96653,10 +97823,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 94. Session 2025-11-11 Summary
+# 96. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -96888,10 +98058,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 95. Session 2025-11-19 Final Summary
+# 97. Session 2025-11-19 Final Summary
 
 **File:** `SESSION_2025-11-19_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -97170,10 +98340,10 @@ All information is now:
 ---
 
 
-# 96. Session Part 14 Comprehensive Audit
+# 98. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -97783,10 +98953,10 @@ All 3 have:
 ---
 
 
-# 97. Session Summary
+# 99. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -98045,10 +99215,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 98. Shopify Configuration Complete
+# 100. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -98537,10 +99707,10 @@ Si besoin d'aide:
 ---
 
 
-# 99. Shopify Email Implementation Checklist
+# 101. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -98882,10 +100052,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 100. Shopify Flow Configuration Guide
+# 102. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -100042,10 +101212,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 101. Shopify Flow Subscriptions Guide
+# 103. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -100459,10 +101629,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 102. Status Report Pages
+# 104. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -100555,10 +101725,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 103. Todo Master Pre Launch 23 Days
+# 105. Todo Master Pre Launch 23 Days
 
 **File:** `TODO_MASTER_PRE_LAUNCH_23_DAYS.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -101841,10 +103011,10 @@ Order paid
 ---
 
 
-# 104. Top5 Percent Native Implementation Plan
+# 106. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -102476,10 +103646,10 @@ function getRecommendations(pain, activity, budget) {
 ---
 
 
-# 105. Top 10 Hero Products Mapping
+# 107. Top 10 Hero Products Mapping
 
 **File:** `TOP_10_HERO_PRODUCTS_MAPPING.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -102981,10 +104151,10 @@ CTA: [specific offer + discount code]
 ---
 
 
-# 106. Top 10 Urls To Index
+# 108. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -103293,10 +104463,10 @@ Homepage (Prio 1)
 ---
 
 
-# 107. Tracking Analytics Gaps 2025
+# 109. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -103672,10 +104842,10 @@ After installing tracking:
 ---
 
 
-# 108. Ugc Video Prompts Grok Imagine
+# 110. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -104474,10 +105644,10 @@ alphamedical.shop
 ---
 
 
-# 109. Ultimate Pain Relief Guide
+# 111. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -105990,10 +107160,10 @@ Visit **alphamedicalcare.com/resources** for:
 ---
 
 
-# 110. Video Ads Creation Playbook
+# 112. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -107192,10 +108362,10 @@ This is a living document - update as you learn!
 ---
 
 
-# 111. Video Ads Infrastructure Complete
+# 113. Video Ads Infrastructure Complete
 
 **File:** `VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -107751,10 +108921,10 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 ---
 
 
-# 112. Session 2025-11-20 Summary
+# 114. Session 2025-11-20 Summary
 
 **File:** `session_2025-11-20_summary.md`
-**Last Modified:** 2025-11-25 19:25
+**Last Modified:** 2025-11-25 19:37
 
 ---
 
@@ -108089,8 +109259,8 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 
 ## Document Information
 
-**Total Documentation Files:** 112
-**Generated:** November 25, 2025 at 19:25 UTC
+**Total Documentation Files:** 114
+**Generated:** November 25, 2025 at 19:37 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
