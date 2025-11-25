@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-IMPORT EXTERNAL LEADS (XLSX/CSV) TO GOOGLE SHEETS
+IMPORT EXTERNAL LEADS (XLSX/CSV/JSON) TO GOOGLE SHEETS
 Import fichiers externes fournis par user → Google Sheet centralisé
 
 Usage:
     python3 import_leads_to_sheet.py leads_file.xlsx
     python3 import_leads_to_sheet.py leads_file.csv
+    python3 import_leads_to_sheet.py leads_file.json
 
 Features:
-- Supports xlsx and csv formats
+- Supports xlsx, csv, json, and jsonl formats
 - Auto-detects columns (flexible mapping)
 - Validates email format
 - Removes duplicates
@@ -146,9 +147,19 @@ def import_leads(file_path):
             df = pd.read_excel(file_path)
         elif file_path.suffix.lower() == '.csv':
             df = pd.read_csv(file_path)
+        elif file_path.suffix.lower() == '.json':
+            # Try to read as JSON (array of objects or JSON Lines)
+            try:
+                df = pd.read_json(file_path, orient='records')
+            except ValueError:
+                # Try JSON Lines format (one JSON object per line)
+                df = pd.read_json(file_path, lines=True)
+        elif file_path.suffix.lower() == '.jsonl':
+            # JSON Lines format
+            df = pd.read_json(file_path, lines=True)
         else:
             print(f"❌ ERROR: Unsupported file format: {file_path.suffix}")
-            print(f"   Supported formats: .xlsx, .xls, .csv")
+            print(f"   Supported formats: .xlsx, .xls, .csv, .json, .jsonl")
             return False
 
         print(f"✅ Loaded {len(df)} rows from {file_path.name}")

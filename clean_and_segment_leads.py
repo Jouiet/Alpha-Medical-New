@@ -1,18 +1,31 @@
 #!/usr/bin/env python3
 """
 CLEAN AND SEGMENT LEADS - GOOGLE SHEET AUTOMATION
-Nettoyage + Segmentation automatique des leads de TOUTES les sources
+Nettoyage + Segmentation automatique des leads de TOUTES les sources (11 sources B2C)
 
 Sources traitées:
-- Apify scraping (Instagram, Facebook, TikTok, Google Maps)
-- Contest/Giveaway pre-launch
-- Facebook Lead Ads
-- Import fichiers externes (xlsx/csv)
+PHASE 1 (PRE-LAUNCH):
+- Contest/Giveaway (Typeform) - Quality 8.5
+- Facebook Lead Ads - Quality 9.0
+- Import fichiers externes (xlsx/csv/json) - Quality 7.0
+- Apify scraping (insights only) - Quality 5.0-6.0
+
+PHASE 2 (POST-LAUNCH):
+- Google Ads campaigns - Quality 8.5
+- On-site newsletter/contact forms - Quality 8.0
+- Blog content marketing - Quality 7.5
+- Instagram/TikTok organic - Quality 6.5-7.0
+- Customer referral program - Quality 8.5
+- Email/Facebook retargeting - Quality 7.5
+- Social shares - Quality 6.5
+
+PHASE 3 (SCALE):
+- YouTube content - Quality 7.5
 
 Process:
 1. Read "Raw Leads" sheet (all unprocessed leads)
 2. Clean data (duplicates, validation, standardization)
-3. Score leads (1-10 quality score)
+3. Score leads (1-10 quality score based on source + data completeness)
 4. Detect persona (seniors, athletes, workers, parents, travelers)
 5. Write to "Qualified Leads" sheet
 6. Mark as processed in "Raw Leads"
@@ -127,16 +140,50 @@ def calculate_quality_score(lead):
     if lead['location']:
         score += 0.5
 
-    # Source quality bonus
+    # Source quality bonus (23 sources total - categorized)
     source_bonus = {
-        'facebook_lead_ads': 1.5,      # Highest (paid ads, explicit opt-in)
-        'contest_prelaunch': 1.0,      # High (explicit opt-in, brand aware)
-        'import_externe': 0.5,         # Medium (depends on source quality)
-        'klaviyo': 1.0,                # High (website opt-in)
-        'instagram': 0.0,              # Low (scraped, no opt-in)
-        'facebook': 0.0,               # Low (scraped, no opt-in)
-        'tiktok': 0.0,                 # Low (scraped, no opt-in)
-        'google_maps': 0.0             # Low (scraped B2B)
+        # CATÉGORIE 1: ON-SITE (5 sources)
+        'newsletter_signup': 1.5,          # High (explicit opt-in)
+        'contact_form': 1.5,               # High (explicit intent)
+        'product_waitlist': 2.0,           # Highest (high intent)
+        'cart_abandonment': 1.0,           # Medium (browsing, may convert)
+        'account_creation': 1.5,           # High (commitment)
+
+        # CATÉGORIE 2: SOCIAL (4 sources)
+        'instagram_organic': 0.5,          # Low-Medium (bio link, DMs)
+        'facebook_organic': 0.5,           # Low-Medium (messages, groups)
+        'tiktok_organic': 0.5,             # Low-Medium (bio link)
+        'youtube_organic': 1.0,            # Medium (video description)
+
+        # CATÉGORIE 3: SEO/CONTENT (4 sources)
+        'blog_newsletter': 1.0,            # Medium-High (content qualified)
+        'google_organic': 0.5,             # Medium (SEO traffic)
+        'google_shop': 1.5,                # High (shopping intent)
+        'podcast_listeners': 1.0,          # Medium (audio engagement)
+
+        # CATÉGORIE 4: PAID ADS (4 sources)
+        'google_ads': 2.0,                 # Highest (paid search, high intent)
+        'facebook_lead_ads': 2.0,          # Highest (paid, explicit opt-in)
+        'tiktok_ads': 1.5,                 # High (paid social)
+        'youtube_preroll': 1.0,            # Medium-High (video ads)
+
+        # CATÉGORIE 8: REFERRAL (3 sources)
+        'customer_referral': 2.0,          # Highest (referred by customer)
+        'email_forwards': 1.5,             # High (tell-a-friend)
+        'social_shares': 1.0,              # Medium-High (viral sharing)
+
+        # CATÉGORIE 9: RETARGETING (3 sources)
+        'email_retargeting': 1.5,          # High (browse abandonment)
+        'facebook_retargeting': 1.5,       # High (pixel retargeting)
+        'google_rlsa': 1.5,                # High (search retargeting)
+
+        # LEGACY/OTHER SOURCES
+        'contest_typeform': 1.5,           # High (Phase 1 contest)
+        'import_externe': 0.5,             # Medium (depends on source)
+        'apify_scraping': 0.0,             # Low (insights only, NO outreach)
+        'instagram': 0.0,                  # Low (scraped - LEGACY)
+        'facebook': 0.0,                   # Low (scraped - LEGACY)
+        'tiktok': 0.0,                     # Low (scraped - LEGACY)
     }
     score += source_bonus.get(lead['platform'], 0.0)
 
