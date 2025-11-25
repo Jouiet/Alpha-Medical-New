@@ -8832,17 +8832,19 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 20:48 UTC (Session 48 Part 2 - Templates CSV + Documentation)
+**Dernière mise à jour:** 2025-11-25 21:15 UTC (Session 49 - Infrastructure Audit Factuel API)
 **Lead Architecture COMPLETE:** 23 sources B2C identifiées (6 catégories)
-  - **CATÉGORIE 1: ON-SITE (5):** Newsletter, Contact, Waitlist, Cart Abandonment ✅, Account Creation ✅
+  - **CATÉGORIE 1: ON-SITE (5):** Newsletter ⏳, Contact ⏳, Waitlist ⏳, Cart Abandonment ✅, Account Creation ✅
   - **CATÉGORIE 2: SOCIAL (4):** Instagram, Facebook (Lead Ads ✅), TikTok, YouTube
   - **CATÉGORIE 3: SEO/CONTENT (4):** Blog, Google Organic ✅ GA4, Google Shop, Podcast
-  - **CATÉGORIE 4: PAID ADS (4):** Google Ads, Facebook/IG Ads ✅, TikTok Ads (Pixel ✅), YouTube Pre-Roll
+  - **CATÉGORIE 4: PAID ADS (4):** Google Ads, Facebook/IG Ads ✅, TikTok Ads (Pixel ⚠️), YouTube Pre-Roll
   - **CATÉGORIE 8: REFERRAL (3):** Customer Referral ✅ (template), Email Forwards ✅, Social Shares ✅
-  - **CATÉGORIE 9: RETARGETING (3):** Email Retargeting, Facebook Retargeting (Pixel ✅), Google RLSA
+  - **CATÉGORIE 9: RETARGETING (3):** Email Retargeting ✅, Facebook Retargeting (Pixel ⚠️), Google RLSA
   - **Integration:** All 23 → Google Sheet → Clean/segment daily
 **Shopify Store:** https://alphamedical.shop (B2C commerce, PAS B2B, PAS D2C)
-**Code Status:** 9 files ready (7 scripts + 2 templates) covering 3 sources automated | 20 sources awaiting audit → prioritization
+**Store Audit (API 2024-10):** Plan: basic ($29/mo) | Products: 96 (81 published) | Customers: 8 (test) | Orders: 0 | Webhooks: 0 | Metafields: 0 (Basic limit)
+**Shopify Flow:** 7 workflows (4 active, 3 inactive) | "Thank customers" ❌ INACTIVE | 2 duplicate welcome ❌ | 4 workflows manquants
+**Code Status:** 10 files (7 scripts + 2 templates + 1 audit script) | verify_store_infrastructure.py ✅ | 20 sources awaiting implementation
 **CSV Templates:**
   - `data-templates/partnership-template.csv` ✅ (REFERRAL source, quality 8.5)
   - `data-templates/investors-template.csv` ✅ (4 investor profiles: VC 7.5, Angel 7.0, Strategic 8.5, Acquisition 9.0)
@@ -8851,11 +8853,11 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 **Volume Potentiel:** 1,255-2,690 leads/mois (si toutes 23 sources actives)
 **Budget Estimate:** $4-8K/mo (PAID ADS) + $0 (ON-SITE + RETARGETING organic)
 **ROI Priority Sources:** 116-215% (10 sources: 765-1,680 leads/mo, blended CPL $5-10)
-**Critical Blocker:** ⚠️ INFRASTRUCTURE_AUDIT_CHECKLIST.md MUST be completed (4-6h) BEFORE additional coding
-**Approach:** VERIFY first (audit), build second (gaps only) - Zéro assumptions, FAITS vérifiables uniquement
-**Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows existants (à vérifier via audit)
-**Manual Actions:** Complete audit → Identify exact gaps → Build missing pieces only (do NOT duplicate Shopify native)
-**Session 48 Part 2:** Templates CSV créés (partnership + investors 4 profiles) - commits bc7be45, ba9f2e4 ✅
-**Status:** 41/100 - Planning phase + templates ready (audit required before build phase can proceed)
+**Audit Complete:** ✅ API verified (0 orders, 0 webhooks, 0 metafields) | ✅ Flow verified (7 workflows) | ⚠️ Pixels unverified (theme check needed)
+**Approach:** VERIFY first (audit DONE), build second (gaps identified) - Zéro assumptions, FAITS vérifiables uniquement
+**Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows: 4 active but UNTESTED (PRE-LAUNCH)
+**Immediate Actions:** Activate "Thank customers" (2min) | Fix duplicates (5min) | Verify pixels (10min) | Create 2 workflows (30min) | Test (15min)
+**Session 49:** API audit complete via verify_store_infrastructure.py | 7 workflows verified | 60min to launch-ready identified
+**Status:** 45/100 - Audit complete (+4), priority tasks identified, manual actions required
 
 ---

@@ -5400,3 +5400,52 @@ USER completes audit (4-6h) → Analyze results (1-2h) → Build ONLY gaps (40-8
 **DOCUMENTATION SESSION 48 PART 2: COMPLETE ✅**
 **STATUS FINAL:** 41/100 - Planning phase + templates ready (audit required before build phase)
 **NEXT ACTION:** USER completes INFRASTRUCTURE_AUDIT_CHECKLIST.md (4-6h mandatory)
+
+---
+
+## SESSION 49 - INFRASTRUCTURE AUDIT FACTUEL VIA API ADMIN
+**Date:** 2025-11-25 21:00-21:15 UTC
+**Objectif:** Audit factuel API Admin + identification tâches prioritaires
+
+### AUDIT RÉALISÉ
+
+**Method:** Shopify Admin API 2024-10 + Chrome DevTools MCP
+**Credentials:** .env.admin (shpat_2d07...4047)
+**Script:** verify_store_infrastructure.py (308 lines)
+
+**FAITS VÉRIFIÉS (API):**
+- Store: Alpha Medical Care (www.alphamedical.shop)
+- Plan: basic ($29/mo)
+- Products: 96 total (81 published, 15 draft)
+- Customers: 8 (test accounts, no real emails)
+- Orders: 0 (PRE-LAUNCH)
+- Webhooks: 0
+- Metafields: 0 (404 - Basic plan limit)
+- Marketing Events: 0
+
+**WORKFLOWS (Chrome DevTools):**
+- Total: 7 (4 active, 3 inactive)
+- Active: Loyalty tagging, Abandoned browse/cart/checkout
+- Inactive: Thank customers, 2x Welcome subscribers (duplicates)
+- Email metrics (30d): ALL ZERO (expected PRE-LAUNCH)
+
+**GAPS IDENTIFIÉS:**
+- ❌ "Thank customers" workflow INACTIVE (CRITICAL)
+- ❌ 2 duplicate subscriber workflows
+- ❌ 4 workflows manquants (newsletter, contact, waitlist, account)
+- ❌ 0 webhooks (no Klaviyo, no Google Sheets)
+- ❌ 0 metafields (loyalty broken)
+- ⚠️  Pixels unverified (may exist in theme code)
+
+**PRIORITY TASKS (60min to launch-ready):**
+1. Activate "Thank customers" (2min)
+2. Fix duplicates (5min)
+3. Verify pixels in theme (10min)
+4. Create newsletter workflow (15min)
+5. Create contact workflow (15min)
+6. Test with fake order (15min)
+
+**Status:** 45/100 (+4 from audit)
+**Blocker:** Chrome DevTools MCP disconnected (manual actions required)
+**Next:** Execute manual Flow configuration + pixel verification
+
