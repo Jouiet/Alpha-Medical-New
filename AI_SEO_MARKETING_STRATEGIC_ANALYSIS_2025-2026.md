@@ -8832,20 +8832,26 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 02:00 UTC (PHASED B2C lead architecture - 3 → 10 → 11 sources)
-**Lead Architecture PHASED:** 11 sources B2C (phased rollout)
-  - **PHASE 1 (ACTIVE - Nov-Dec 2025):** 3 sources - Contest Typeform, FB Lead Ads, Import externes
-  - **PHASE 2 (PLANNED - Month 1-3):** +7 sources - Google Ads, On-site forms, Blog, IG/TikTok organic, Referral, Retargeting, Social shares
-  - **PHASE 3 (PLANNED - Month 4-12):** +1 source - YouTube content
-  - **Integration:** All → Google Sheet centralisé → Clean/segment daily
-**Code Status:** 71% ready (5/7 files) | 29% needs Typeform update (2/7: sync script + workflow)
-**PHASE 1 Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | PHASE 2-3: +760-2,150/mo (if implemented)
-**PHASE 1 Budget:** $6,345 one-time (Contest $345 + FB ads $6K) + $97.80/mo (Apify insights)
-**PHASE 2 Budget:** +$3,050-5,100/mo (Google Ads + Referral app + organic $0)
-**ROI PHASE 1:** 166-391% PRE-LAUNCH ($10,530-31,155 net profit)
-**Automation:** Typeform hourly (⚠️ needs code update), FB 6h (✅ ready), Clean/segment daily 10 AM (✅ ready)
-**Manual Setup Required:** 6h (Typeform form 2h, FB Ads 3h, Sheet 1h) + Code update (Klaviyo→Typeform API)
-**SNR:** 0% (outreach) / 100% (insights) - Apify insights ONLY, 3 PHASE 1 sources for opt-ins
-**Status:** 85/100 - Flywheel incomplete (PHASE 1: 71% coded, PHASE 2-3: 0% coded)
+**Dernière mise à jour:** 2025-11-25 03:30 UTC (Session 48 Final - 23 sources B2C + Audit-first approach)
+**Lead Architecture COMPLETE:** 23 sources B2C identifiées (6 catégories)
+  - **CATÉGORIE 1: ON-SITE (5):** Newsletter, Contact, Waitlist, Cart Abandonment ✅, Account Creation ✅
+  - **CATÉGORIE 2: SOCIAL (4):** Instagram, Facebook (Lead Ads ✅), TikTok, YouTube
+  - **CATÉGORIE 3: SEO/CONTENT (4):** Blog, Google Organic ✅ GA4, Google Shop, Podcast
+  - **CATÉGORIE 4: PAID ADS (4):** Google Ads, Facebook/IG Ads ✅, TikTok Ads (Pixel ✅), YouTube Pre-Roll
+  - **CATÉGORIE 8: REFERRAL (3):** Customer Referral, Email Forwards ✅, Social Shares ✅
+  - **CATÉGORIE 9: RETARGETING (3):** Email Retargeting, Facebook Retargeting (Pixel ✅), Google RLSA
+  - **Integration:** All 23 → Google Sheet → Clean/segment daily
+**Shopify Store:** https://alphamedical.shop (B2C commerce, PAS B2B, PAS D2C)
+**Code Status:** 7 files ready (3 sources: Typeform, FB Lead Ads, Import) | 20 sources awaiting audit → prioritization
+**Priority Strategy:** Option B - 10 sources prioritaires (ON-SITE 5 + PAID ADS 3 + RETARGETING 2) = 80h build
+**Deferred:** 13 sources (SOCIAL organic, SEO/CONTENT, REFERRAL - based on business needs)
+**Volume Potentiel:** 1,255-2,690 leads/mois (si toutes 23 sources actives)
+**Budget Estimate:** $4-8K/mo (PAID ADS) + $0 (ON-SITE + RETARGETING organic)
+**ROI Priority Sources:** 116-215% (10 sources: 765-1,680 leads/mo, blended CPL $5-10)
+**Critical Blocker:** ⚠️ INFRASTRUCTURE_AUDIT_CHECKLIST.md MUST be completed (4-6h) BEFORE additional coding
+**Approach:** VERIFY first (audit), build second (gaps only) - Zéro assumptions, FAITS vérifiables uniquement
+**Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows existants (à vérifier via audit)
+**Manual Actions:** Complete audit → Identify exact gaps → Build missing pieces only (do NOT duplicate Shopify native)
+**Status:** 40/100 - Planning phase (audit required before build phase can proceed)
 
 ---

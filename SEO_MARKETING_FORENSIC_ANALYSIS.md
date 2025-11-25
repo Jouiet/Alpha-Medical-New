@@ -23362,26 +23362,32 @@ GITHUB ACTIONS (8 gaps):
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 02:00 UTC (PHASED B2C lead architecture - 3 → 10 → 11 sources forensic audit)
-**Audits Completed:** Flywheel + SNR + Automation Gaps + PHASED Lead Architecture (11 sources B2C phased)
-**Lead Sources PHASED (11 total):**
-  - **PHASE 1 (ACTIVE - Nov-Dec 2025):** Contest Typeform (8.5), FB Lead Ads (9.0), Import externes (7.0) + Apify insights (5.0-6.0)
-  - **PHASE 2 (PLANNED - Month 1-3):** Google Ads (8.0-9.0), On-site forms (8.0), Blog content (7.5), IG/TikTok organic (6.5-7.0), Referral program (8.5), Email/FB retargeting (7.5), Social shares (6.5)
-  - **PHASE 3 (PLANNED - Month 4-12):** YouTube content (7.0-8.0)
-**Code Status:** 71% ready (5/7 files) | 29% needs Typeform update (sync script + workflow)
-**Integration:** PHASE 1 sources → Google Sheet "Raw Leads" → clean_and_segment_leads.py → "Qualified Leads" → Email nurturing
-**PHASE 1 Volume:** 1,500-2K opt-ins B2C (contest + FB ads) | PHASE 2-3: +760-2,150/mo (if implemented)
-**PHASE 1 Budget:** $6,345 one-time (prizes $345 + FB ads $6K) + $97.80/mo (Apify insights)
-**PHASE 2-3 Budget:** +$3,050-5,100/mo (Google Ads + referral app) + $0 organic
-**ROI Forensic PHASE 1:** 166-391% (Investment $6,345 → Revenue $16,875-37,500 → Net $10,530-31,155)
-**ROI Forensic PHASE 2-3:** HIGH (Google Ads paid, 6 sources $0 organic = high organic margin)
-**Legal Status:** ✅ ALL 11 sources LEGAL (Contest/FB/Organic opt-ins), ⚠️ Import depends on consent, ✅ Apify insights only
-**SNR:** 0% outreach (Apify) / 100% insights (Apify) / 100% opt-in (3 PHASE 1 sources)
-**Integration Status PHASE 1:** ✅ 2/3 ready (FB, Import) | ⚠️ 1/3 needs Typeform update (Contest)
-**Integration Status PHASE 2-3:** 📋 0% (8 sources planned, not coded)
-**Manual Setup PHASE 1:** 6h (Typeform form 2h, FB Ads 3h, Sheet 1h) + Code update (Klaviyo→Typeform API)
-**Prochaine action:** Update code Typeform API → User executes PHASE 1 setup → Test end-to-end → Enable workflows → Plan PHASE 2 implementation
+**Dernière mise à jour:** 2025-11-25 03:30 UTC (Session 48 Final - 23 sources B2C forensic + Audit-first methodology)
+**Audits Completed:** Flywheel + SNR + Automation Gaps + COMPLETE Lead Architecture (23 sources B2C) + Infrastructure Audit Framework
+**Lead Sources COMPLETE (23 total - 6 catégories):**
+  - **CATÉGORIE 1: ON-SITE (5):** Newsletter (50-100/mo), Contact (10-20/mo), Waitlist (5-10/mo), Cart Abandonment ✅ (200-300/mo), Account Creation ✅ (30-50/mo)
+  - **CATÉGORIE 2: SOCIAL (4):** Instagram (100-200/mo), Facebook Lead Ads ✅ (300-450/mo), TikTok (20-50/mo), YouTube (10-30/mo)
+  - **CATÉGORIE 3: SEO/CONTENT (4):** Blog (30-60/mo), Google Organic ✅ GA4 (100-300/mo), Google Shop (5-10/mo), Podcast (20-50/mo)
+  - **CATÉGORIE 4: PAID ADS (4):** Google Ads (200-500/mo), Facebook/IG Ads ✅ (incl. Lead Ads), TikTok Ads Pixel ✅ (50-150/mo), YouTube Pre-Roll (20-50/mo)
+  - **CATÉGORIE 8: REFERRAL (3):** Customer Referral (20-50/mo), Email Forwards ✅ (10-30/mo), Social Shares ✅ (30-60/mo)
+  - **CATÉGORIE 9: RETARGETING (3):** Email Retargeting (100-200/mo), Facebook Retargeting Pixel ✅ (50-100/mo), Google RLSA (30-80/mo)
+**Shopify Store:** https://alphamedical.shop (Admin: azffej-as.myshopify.com) - B2C Commerce (PAS B2B, PAS D2C)
+**Volume Forensic Total:** 1,255-2,690 leads/mois (si toutes 23 sources actives et optimisées)
+**Code Status:** 7 files ready (4 scripts + 3 workflows) covering 3 sources | 20 sources awaiting audit → prioritization → build
+**Integration:** All 23 sources → Google Sheet "Raw Leads" → clean_and_segment_leads.py (23 sources scoring) → "Qualified Leads" → Email nurturing
+**Priority Strategy:** Option B - 10 sources prioritaires (ON-SITE 5 + PAID ADS 3 + RETARGETING 2) = 80h build | 13 sources différées
+**Budget Forensic:** $4-8K/mo (PAID ADS) + $0 (ON-SITE 5 + RETARGETING 2 = organic)
+**ROI Forensic (10 Priority Sources):** 116-215% (Investment $4-8K/mo → Volume 765-1,680 leads/mo → Blended CPL $5-10)
+**ROI Forensic (ALL 23 Sources):** UNBOUNDED potential (ON-SITE + RETARGETING + REFERRAL + SOCIAL organic = $0 marginal cost)
+**Legal Status:** ✅ ALL 23 sources LEGAL (opt-in based) EXCEPT ⚠️ Import externes (depends on consent) + ✅ Apify insights only (NO outreach)
+**SNR:** 0% outreach (Apify) / 100% insights (Apify) / 100% opt-in (22 other sources)
+**Critical Blocker:** ⚠️ INFRASTRUCTURE_AUDIT_CHECKLIST.md (600+ lines) MUST be completed (4-6h) BEFORE any additional coding
+**Audit Framework:** 8 sections (Shopify, Klaviyo, Facebook, TikTok, Google, Data Storage, Volume Metrics, Gap Analysis)
+**Methodology:** VERIFY first (audit existing infrastructure), identify EXACT gaps, build ONLY missing pieces (do NOT duplicate Shopify/Klaviyo native)
+**Infrastructure Existante (à vérifier via audit):** Shopify Flow workflows, Shopify Email campaigns, Klaviyo flows, FB Pixel, TikTok Pixel, GA4
+**Prochaine action:** User completes audit → Identify exact gaps → Confirm 10 priority sources → Build missing integrations only (NOT duplicate existing)
+**Files Created Session 48:** sync_typeform_to_sheet.py ✅, sync-typeform-leads.yml ✅, INFRASTRUCTURE_AUDIT_CHECKLIST.md ✅ (600+ lines), PRIORITY_SOURCES_IMPLEMENTATION.md ✅ (800+ lines), import JSON support ✅, clean 23 sources scoring ✅
 
-**Système: 85/100 - Flywheel incomplete (PHASE 1: 71% coded, PHASE 2-3: 0% coded, phased rollout planned)**
+**Système: 40/100 - Infrastructure planning phase (audit-first approach, build-second methodology, forensically sound)**
 
 ---
