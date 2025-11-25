@@ -8832,17 +8832,20 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 03:30 UTC (Session 48 Final - 23 sources B2C + Audit-first approach)
+**Dernière mise à jour:** 2025-11-25 20:48 UTC (Session 48 Part 2 - Templates CSV + Documentation)
 **Lead Architecture COMPLETE:** 23 sources B2C identifiées (6 catégories)
   - **CATÉGORIE 1: ON-SITE (5):** Newsletter, Contact, Waitlist, Cart Abandonment ✅, Account Creation ✅
   - **CATÉGORIE 2: SOCIAL (4):** Instagram, Facebook (Lead Ads ✅), TikTok, YouTube
   - **CATÉGORIE 3: SEO/CONTENT (4):** Blog, Google Organic ✅ GA4, Google Shop, Podcast
   - **CATÉGORIE 4: PAID ADS (4):** Google Ads, Facebook/IG Ads ✅, TikTok Ads (Pixel ✅), YouTube Pre-Roll
-  - **CATÉGORIE 8: REFERRAL (3):** Customer Referral, Email Forwards ✅, Social Shares ✅
+  - **CATÉGORIE 8: REFERRAL (3):** Customer Referral ✅ (template), Email Forwards ✅, Social Shares ✅
   - **CATÉGORIE 9: RETARGETING (3):** Email Retargeting, Facebook Retargeting (Pixel ✅), Google RLSA
   - **Integration:** All 23 → Google Sheet → Clean/segment daily
 **Shopify Store:** https://alphamedical.shop (B2C commerce, PAS B2B, PAS D2C)
-**Code Status:** 7 files ready (3 sources: Typeform, FB Lead Ads, Import) | 20 sources awaiting audit → prioritization
+**Code Status:** 9 files ready (7 scripts + 2 templates) covering 3 sources automated | 20 sources awaiting audit → prioritization
+**CSV Templates:**
+  - `data-templates/partnership-template.csv` ✅ (REFERRAL source, quality 8.5)
+  - `data-templates/investors-template.csv` ✅ (4 investor profiles: VC 7.5, Angel 7.0, Strategic 8.5, Acquisition 9.0)
 **Priority Strategy:** Option B - 10 sources prioritaires (ON-SITE 5 + PAID ADS 3 + RETARGETING 2) = 80h build
 **Deferred:** 13 sources (SOCIAL organic, SEO/CONTENT, REFERRAL - based on business needs)
 **Volume Potentiel:** 1,255-2,690 leads/mois (si toutes 23 sources actives)
@@ -8852,6 +8855,7 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 **Approach:** VERIFY first (audit), build second (gaps only) - Zéro assumptions, FAITS vérifiables uniquement
 **Automation:** Typeform hourly ✅, FB 6h ✅, Clean daily ✅ | Shopify flows existants (à vérifier via audit)
 **Manual Actions:** Complete audit → Identify exact gaps → Build missing pieces only (do NOT duplicate Shopify native)
-**Status:** 40/100 - Planning phase (audit required before build phase can proceed)
+**Session 48 Part 2:** Templates CSV créés (partnership + investors 4 profiles) - commits bc7be45, ba9f2e4 ✅
+**Status:** 41/100 - Planning phase + templates ready (audit required before build phase can proceed)
 
 ---

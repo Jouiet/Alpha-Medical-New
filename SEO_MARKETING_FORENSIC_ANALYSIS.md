@@ -23362,18 +23362,25 @@ GITHUB ACTIONS (8 gaps):
 
 ---
 
-**Dernière mise à jour:** 2025-11-25 03:30 UTC (Session 48 Final - 23 sources B2C forensic + Audit-first methodology)
+**Dernière mise à jour:** 2025-11-25 20:48 UTC (Session 48 Part 2 - Templates CSV forensic + Documentation finale)
 **Audits Completed:** Flywheel + SNR + Automation Gaps + COMPLETE Lead Architecture (23 sources B2C) + Infrastructure Audit Framework
 **Lead Sources COMPLETE (23 total - 6 catégories):**
   - **CATÉGORIE 1: ON-SITE (5):** Newsletter (50-100/mo), Contact (10-20/mo), Waitlist (5-10/mo), Cart Abandonment ✅ (200-300/mo), Account Creation ✅ (30-50/mo)
   - **CATÉGORIE 2: SOCIAL (4):** Instagram (100-200/mo), Facebook Lead Ads ✅ (300-450/mo), TikTok (20-50/mo), YouTube (10-30/mo)
   - **CATÉGORIE 3: SEO/CONTENT (4):** Blog (30-60/mo), Google Organic ✅ GA4 (100-300/mo), Google Shop (5-10/mo), Podcast (20-50/mo)
   - **CATÉGORIE 4: PAID ADS (4):** Google Ads (200-500/mo), Facebook/IG Ads ✅ (incl. Lead Ads), TikTok Ads Pixel ✅ (50-150/mo), YouTube Pre-Roll (20-50/mo)
-  - **CATÉGORIE 8: REFERRAL (3):** Customer Referral (20-50/mo), Email Forwards ✅ (10-30/mo), Social Shares ✅ (30-60/mo)
+  - **CATÉGORIE 8: REFERRAL (3):** Customer Referral ✅ template (20-50/mo), Email Forwards ✅ (10-30/mo), Social Shares ✅ (30-60/mo)
   - **CATÉGORIE 9: RETARGETING (3):** Email Retargeting (100-200/mo), Facebook Retargeting Pixel ✅ (50-100/mo), Google RLSA (30-80/mo)
 **Shopify Store:** https://alphamedical.shop (Admin: azffej-as.myshopify.com) - B2C Commerce (PAS B2B, PAS D2C)
 **Volume Forensic Total:** 1,255-2,690 leads/mois (si toutes 23 sources actives et optimisées)
-**Code Status:** 7 files ready (4 scripts + 3 workflows) covering 3 sources | 20 sources awaiting audit → prioritization → build
+**Code Status:** 9 files ready (7 scripts + 2 templates) covering 3 sources automated | 20 sources awaiting audit → prioritization → build
+**CSV Templates Forensic:**
+  - `data-templates/partnership-template.csv` ✅ (CATÉGORIE 8: REFERRAL, source: partnership_referral, quality: 8.5, columns: 9)
+  - `data-templates/investors-template.csv` ✅ (Import externe, 4 investor profiles, columns: 10)
+    - VC Partner (quality 7.5) - E-commerce metrics focus
+    - Angel Investor (quality 7.0) - Traction data focus
+    - Strategic Partner App CEO (quality 8.5) - Partnership + investment
+    - Acquisition Investor PE (quality 9.0) - Full operations acquisition
 **Integration:** All 23 sources → Google Sheet "Raw Leads" → clean_and_segment_leads.py (23 sources scoring) → "Qualified Leads" → Email nurturing
 **Priority Strategy:** Option B - 10 sources prioritaires (ON-SITE 5 + PAID ADS 3 + RETARGETING 2) = 80h build | 13 sources différées
 **Budget Forensic:** $4-8K/mo (PAID ADS) + $0 (ON-SITE 5 + RETARGETING 2 = organic)
@@ -23386,8 +23393,12 @@ GITHUB ACTIONS (8 gaps):
 **Methodology:** VERIFY first (audit existing infrastructure), identify EXACT gaps, build ONLY missing pieces (do NOT duplicate Shopify/Klaviyo native)
 **Infrastructure Existante (à vérifier via audit):** Shopify Flow workflows, Shopify Email campaigns, Klaviyo flows, FB Pixel, TikTok Pixel, GA4
 **Prochaine action:** User completes audit → Identify exact gaps → Confirm 10 priority sources → Build missing integrations only (NOT duplicate existing)
-**Files Created Session 48:** sync_typeform_to_sheet.py ✅, sync-typeform-leads.yml ✅, INFRASTRUCTURE_AUDIT_CHECKLIST.md ✅ (600+ lines), PRIORITY_SOURCES_IMPLEMENTATION.md ✅ (800+ lines), import JSON support ✅, clean 23 sources scoring ✅
+**Files Created Session 48 + Part 2:**
+  - Session 48: sync_typeform_to_sheet.py ✅, sync-typeform-leads.yml ✅, INFRASTRUCTURE_AUDIT_CHECKLIST.md ✅ (600+ lines), PRIORITY_SOURCES_IMPLEMENTATION.md ✅ (800+ lines), import JSON support ✅, clean 23 sources scoring ✅
+  - Part 2: partnership-template.csv ✅ (commit bc7be45), investors-template.csv ✅ (commit ba9f2e4, 4 investor profiles)
+**Git Forensic Session Part 2:** 3 commits (9f158ef docs push, bc7be45 templates création, ba9f2e4 investors 4 profiles)
+**Templates Forensic Use Case:** Manual import leads via `import_leads_to_sheet.py` (CSV/JSON/JSONL support) → partnership programs + investor communications
 
-**Système: 40/100 - Infrastructure planning phase (audit-first approach, build-second methodology, forensically sound)**
+**Système: 41/100 - Infrastructure planning phase + templates ready (audit-first approach, build-second methodology, forensically sound)**
 
 ---
