@@ -23410,7 +23410,7 @@ GITHUB ACTIONS (8 gaps):
 - **Flow Audit:** 7 workflows (4 active, 3 inactive) | Active: Loyalty, Abandoned browse/cart/checkout | Inactive: Thank customers ❌, 2x Welcome duplicates ❌
 - **Email Metrics (30d):** ALL ZERO (reach, sessions, orders, sales) - Expected PRE-LAUNCH
 - **Gaps Forensic:** 4 workflows missing (newsletter, contact, waitlist, account) | 0 external integrations | 0 customer metafields | Pixels VERIFIED (GTM only)
-- **Pixels Forensic:** GTM-WFPH2KZP ✅ (theme.liquid:461) | FB Pixel ❌ NOT in theme | TikTok Pixel ❌ NOT in theme | GA4 ❌ NOT in theme | All may be configured as GTM tags (manual verification needed)
+- **Pixels Forensic:** GTM-WFPH2KZP ✅ (theme.liquid:461) | GA4 ✅ ACTIVE via GTM tags | FB Pixel ✅ ACTIVE via GTM tags | TikTok Pixel ✅ ACTIVE via GTM tags (Session 47 owner-verified 2025-11-23, FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md)
 - **Subscriptions Forensic:** API endpoint 404 (Basic plan limitation) - Native subscriptions status UNKNOWN (manual UI check required)
 - **Priority Tasks (60min):** Activate Thank customers (2min) | Fix duplicates (5min) | Verify GTM tags (manual) | Create 2 workflows (30min) | Test order (15min)
 - **Files Session 49:** verify_store_infrastructure.py ✅, check_theme_pixels.py ✅, audit_subscriptions.py ✅
