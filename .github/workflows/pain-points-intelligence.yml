@@ -1,0 +1,151 @@
+name: Pain Points Intelligence (Bi-Monthly)
+
+on:
+  schedule:
+    # Runs 2x/month: 1st and 15th at 9:00 AM UTC
+    - cron: '0 9 1,15 * *'
+
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      max_results:
+        description: 'Max posts to analyze per platform'
+        required: false
+        default: '100'
+
+jobs:
+  scrape-pain-points:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        platform: [instagram, tiktok]
+      fail-fast: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          cd market-analysis
+          pip install -r requirements.txt || pip install apify-client gspread oauth2client
+
+      - name: Scrape ${{ matrix.platform }} pain points
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+        run: |
+          cd market-analysis
+
+          MAX_RESULTS=${{ github.event.inputs.max_results || '100' }}
+
+          echo "🔍 Scraping ${{ matrix.platform }} for PAIN POINTS - Max: $MAX_RESULTS posts"
+          echo "📅 Purpose: Ad copy ideas & consumer insights"
+
+          # Scrape pain-related hashtags
+          case "${{ matrix.platform }}" in
+            instagram)
+              python3 lead_generation_scraper.py \
+                --instagram \
+                --hashtag "arthritis" \
+                --max-results $MAX_RESULTS
+              ;;
+            tiktok)
+              python3 lead_generation_scraper.py \
+                --tiktok \
+                --hashtag "jointpain" \
+                --max-results $MAX_RESULTS
+              ;;
+          esac
+
+      - name: Upload intelligence data
+        uses: actions/upload-artifact@v4
+        with:
+          name: pain-points-${{ matrix.platform }}-${{ github.run_number }}
+          path: market-analysis/leads/general/*.json
+          retention-days: 90
+
+      - name: Display summary
+        if: always()
+        run: |
+          cd market-analysis/leads/general
+          echo "📊 Pain Points Intelligence - ${{ matrix.platform }}:"
+          ls -lh *${{ matrix.platform }}*.json 2>/dev/null || echo "No data collected"
+
+  sync-to-google-sheets:
+    needs: scrape-pain-points
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          cd market-analysis
+          pip install gspread oauth2client
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: market-analysis/leads/general
+
+      - name: Setup Google Sheets credentials
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        run: |
+          cd market-analysis
+          echo "$GOOGLE_CREDENTIALS_JSON" > google_credentials.json
+
+      - name: Sync to Google Sheets
+        run: |
+          cd market-analysis
+
+          DATE=$(date +%Y%m%d)
+          LEAD_FILES=$(find leads/general -name "*.json" -type f)
+
+          if [ -z "$LEAD_FILES" ]; then
+            echo "⚠️  No data to sync"
+            exit 0
+          fi
+
+          for file in $LEAD_FILES; do
+            echo "📤 Syncing: $file"
+            python3 sync_leads_to_sheets.py "$file" || echo "Failed to sync $file"
+          done
+
+          echo "✅ Sync complete"
+
+      - name: Cleanup
+        if: always()
+        run: rm -f market-analysis/google_credentials.json
+
+  summary:
+    needs: [scrape-pain-points, sync-to-google-sheets]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Create summary
+        run: |
+          echo "# 🔍 Pain Points Intelligence - $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Purpose:** Consumer pain points → Ad copy ideas" >> $GITHUB_STEP_SUMMARY
+          echo "**Frequency:** 2x/month (1st & 15th)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Results:" >> $GITHUB_STEP_SUMMARY
+          echo "- Instagram: ${{ needs.scrape-pain-points.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- TikTok: ${{ needs.scrape-pain-points.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Sync: ${{ needs.sync-to-google-sheets.result }}" >> $GITHUB_STEP_SUMMARY
