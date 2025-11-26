@@ -54,10 +54,12 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX](EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX.md): ❌ NE PAS désactiver ce qui fonctionne dans Shopify ✅ AJOUTER uniquement ce qui MANQUE dans Klaviyo
 - [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_DISCOUNT_CODES_SETUP](KLAVIYO_DISCOUNT_CODES_SETUP.md): Discount Code: WINBACK15 Discount Type: Percentage Percentage: 15% Applies to: ☑ Entire order (all products)
+- [KLAVIYO_FLOWS_DEPLOYED_VIA_API](KLAVIYO_FLOWS_DEPLOYED_VIA_API.md): Status: ✅ CREATED (draft) Flow ID: SFmLH7 Trigger: Segment "Opportunités de reconquête (Shopify)"
 - [KLAVIYO_FLOWS_DEPLOYMENT_GUIDE](KLAVIYO_FLOWS_DEPLOYMENT_GUIDE.md): Project documentation
 - [KLAVIYO_FLYWHEEL_UPGRADE_2025](KLAVIYO_FLYWHEEL_UPGRADE_2025.md): Project documentation
 - [KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY](KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md): Project documentation
 - [KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL](KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md): Project documentation
+- [KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE](KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md): 1. Click the email action box 2. Look for "Template" or "Select template" dropdown
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_WINBACK15_CORRECT_SETTINGS](KLAVIYO_WINBACK15_CORRECT_SETTINGS.md): ❌ Applies to: Specific collections (empty - NO collections selected) ❌ Maximum discount uses: No usage limits
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
