@@ -22,3 +22,6 @@
 - [2025-11-26 19:22 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/deploy_theme_liquid.py
 - [2025-11-26 19:51 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX_V2.md
 - [2025-11-26 20:45 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md
+- [2025-11-26 20:50 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_DISCOUNT_CODES_SETUP.md
+- [2025-11-26 20:51 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_WINBACK15_CORRECT_SETTINGS.md
+- [2025-11-26 20:54 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/create_klaviyo_discount_codes.py

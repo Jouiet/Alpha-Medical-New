@@ -241,7 +241,10 @@ Future: Consider for specific products (braces, tape = consumables)
 - [x] Shopify integration connected (6 metrics) ✅
 - [x] Segments configured (10 segments) ✅
 - [x] Lists created (3 lists) ✅
-- [ ] Unique coupon codes created (WELCOME10 ✅, WINBACK15, REVIEW10)
+- [x] Unique coupon codes created ✅
+  - WELCOME10 ✅ (existing - 10% OFF)
+  - WINBACK15 ✅ (created 2025-11-26 - 15% OFF, 1000 uses, once per customer)
+  - REVIEW10 ✅ (created 2025-11-26 - 10% OFF, 2000 uses, once per customer)
 
 ### Flow #1: Customer Winback (45 min)
 - [ ] Flow: "Customer Winback - Standard (Email & SMS)"
