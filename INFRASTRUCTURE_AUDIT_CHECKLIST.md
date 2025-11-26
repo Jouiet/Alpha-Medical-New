@@ -2861,3 +2861,54 @@ Components 100% Complete:
 Score: 67/100 → 72/100 (+5 points)
 SEO: 81.8% → 100% (11/11 checks passed)
 Time: 55 minutes automated implementation
+
+---
+
+## KLAVIYO FLOWS - API LIMITATIONS (2025-11-26)
+
+### Investigation Results
+
+**Klaviyo API Capabilities:**
+```yaml
+✅ Flows API (GET): Can retrieve existing flows
+❌ Flows API (POST): NOT supported (404 - no valid revisions)
+❌ Flow Templates API: NOT supported (404 - endpoint doesn't exist)
+❌ Flow Creation: NOT supported via API
+
+Conclusion: Klaviyo flows MUST be created via UI (no programmatic option)
+```
+
+**Chrome DevTools MCP:**
+```yaml
+Status: ❌ NOT CONNECTED
+Error: "Not connected" when attempting mcp__chrome-devtools__new_page
+Cause: MCP server not running or misconfigured
+Impact: Cannot automate UI interactions
+
+Conclusion: Manual browser-based deployment required
+```
+
+### Deployment Guide Created
+
+**File:** `KLAVIYO_FLOWS_DEPLOYMENT_GUIDE.md` (20,000+ words)
+
+**Content:**
+- ✅ Complete step-by-step configuration for all 4 flows
+- ✅ All prerequisites verified (segments, codes, integration)
+- ✅ Exact email copy, timing, personalization
+- ✅ Complementarity matrix verification
+- ✅ ROI projections (+$28K-43K Year 1)
+- ✅ Troubleshooting guide
+- ✅ Verification scripts (API-based)
+
+**Status:** ✅ READY for user manual deployment (3-4h)
+
+**Prerequisites (All Complete):**
+- ✅ Klaviyo account: ACTIVE ($30/mo)
+- ✅ Shopify integration: CONNECTED (6 metrics)
+- ✅ Segments: 10 configured
+- ✅ Discount codes: 3 ACTIVE (WELCOME10, WINBACK15, REVIEW10)
+- ✅ API access: Verified (Account ID: WTx7Jb)
+
+---
+
