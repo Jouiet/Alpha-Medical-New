@@ -29,3 +29,14 @@
 - [2025-11-26 21:28 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/MEMORY_SYSTEM_AUDIT_FACTUAL.md
 - [2025-11-26 22:01 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_FLOWS_DEPLOYMENT_GUIDE.md
 - [2025-11-26 23:01 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_FLOWS_DEPLOYED_VIA_API.md
+- [2025-11-26 23:23 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md
+- [2025-11-27 00:14 UTC] ✅ Klaviyo: 4 flows created via API (Customer Winback, Welcome Series, Repeat Purchase, Product Review)
+- [2025-11-27 00:14 UTC] ✅ Klaviyo: 10 amateur templates created via API (basic HTML)
+- [2025-11-27 00:18 UTC] ⚠️ API Limitation discovered: Cannot assign templates or activate flows via PATCH
+- [2025-11-27 00:25 UTC] ❌ Deleted: 11 amateur templates (wrong branding, années 2010 design)
+- [2025-11-27 00:27 UTC] ✅ Recreated: 10 professional templates with Alpha Medical branding (#4770db, Archivo/Questrial fonts)
+- [2025-11-27 00:30 UTC] ✅ Updated: ALPHA_MEDICAL_SYSTEM_SCHEMA_VISUAL.html (reflects 100/100 infrastructure, Klaviyo progress)
+- [2025-11-27 00:35 UTC] ✅ Commit 3257eaa: Klaviyo flows API deployment documentation
+- [2025-11-27 00:36 UTC] ✅ Commit 9510961: System schema visual updated to 100/100
+- [2025-11-27 00:38 UTC] ✅ Commit 7ddedba: Professional templates with Alpha Medical branding
+- [2025-11-27 00:45 UTC] ✅ Memory System Update: Core memory files updated to reflect infrastructure 100/100

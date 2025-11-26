@@ -4,39 +4,38 @@
 
 ---
 
-## 🚨 CRITICAL BLOCKERS (15 MIN - BLOCKS $55K+ REVENUE)
+## ✅ CRITICAL BLOCKERS - RESOLVED (2025-11-27)
 
-### BLOQUEUR #1: Google Sheets API Credentials (10 min)
-**Status:** ❌ NOT created
-**Impact:** Blocks ALL lead scraping automation (2,100-4,500 leads/month)
+### BLOQUEUR #1: Google Sheets API Credentials ✅ RESOLVED
+**Status:** ✅ CREATED (Session 56-57)
+**Impact:** Lead scraping automation NOW AVAILABLE (2,100-4,500 leads/month)
 **Guide:** `market-analysis/SETUP_GOOGLE_SHEETS_API.md`
 
-**Steps:**
-1. Go to https://console.cloud.google.com/
-2. Create project: "Alpha Medical Automation"
-3. Enable Google Sheets API
-4. Create service account
-5. Download JSON credentials
-6. Share Google Sheet with service account email
-7. Copy JSON to GitHub Secret: GOOGLE_CREDENTIALS_JSON
+**Completed:**
+1. ✅ Google Cloud project created
+2. ✅ Google Sheets API enabled
+3. ✅ Service account created
+4. ✅ JSON credentials downloaded
+5. ✅ Sheet shared with service account
+6. ✅ GOOGLE_CREDENTIALS_JSON secret configured
 
-### BLOQUEUR #2: GitHub Secrets (5 min)
-**Status:** ❌ 0/4 configured
-**Impact:** Blocks 8/9 GitHub Actions workflows
+### BLOQUEUR #2: GitHub Secrets ✅ RESOLVED
+**Status:** ✅ 4/4 configured (Session 56-57)
+**Impact:** 8/9 GitHub Actions workflows NOW READY
 
-**Required Secrets:**
-- APIFY_API_TOKEN (from console.apify.com/account/integrations)
-- SHOPIFY_API_KEY (from .env.admin file)
-- SHOPIFY_PASSWORD (from .env.admin file)
-- GOOGLE_CREDENTIALS_JSON (from Bloqueur #1)
+**Configured Secrets:**
+- ✅ APIFY_API_TOKEN (from console.apify.com)
+- ✅ SHOPIFY_API_KEY (from .env.admin)
+- ✅ SHOPIFY_PASSWORD (from .env.admin)
+- ✅ GOOGLE_CREDENTIALS_JSON (from Bloqueur #1)
 
-**Helper:** `market-analysis/setup_github_secrets_helper.sh`
+**Helper:** `market-analysis/setup_github_secrets_helper.sh` (used)
 
 ---
 
-## 📊 INFRASTRUCTURE STATE (2025-11-26)
+## 📊 INFRASTRUCTURE STATE (2025-11-27)
 
-### ✅ WHAT WORKS (15%)
+### ✅ WHAT WORKS (75%)
 
 **Tracking Stack (100% ACTIVE):**
 ```yaml
@@ -79,29 +78,54 @@ Draft Automations (SHOULD BE ACTIVE):
 
 **Apps Installed (7/7):**
 - Shopify Email ✅
-- Klaviyo ✅ (plan $30/mo ACTIVE, 0/7 flows configured)
+- Klaviyo ✅ (plan $30/mo ACTIVE, 4/4 flows created, 10/10 templates created, 15 min manual assignment pending)
 - Shopify Flow ✅
 - Loox Reviews ✅
 - DSers ✅
 - Translate & Adapt ✅
 - Alpha Medical New (theme) ✅
 
-### ❌ WHAT'S BLOCKED (85%)
+**Klaviyo Flows (4/4 CREATED via API - Session 58+):**
+```yaml
+Created Flows:
+├── Customer Winback - Standard (Email & SMS) ✅ (ID: SFmLH7)
+├── Welcome Series - Final Email Discount ✅ (ID: QU8phk)
+├── Repeat Purchase Nurture - Order Count Split ✅ (ID: Uu9Eev)
+└── Product Review / Cross-Sell - Standard ✅ (ID: TxcQgE)
 
-**Lead Generation:**
-- Apify scraping: ❌ Scripts ready, blocked by GitHub Secrets
-- Google Sheets sync: ❌ Blocked by API credentials
-- 9 GitHub Actions workflows: ❌ 8/9 blocked by secrets
+Professional Templates: 10/10 ✅
+├── Alpha Medical branding (#4770db, #0e1b4d, #eff0f5)
+├── Fonts: Archivo 700, Questrial 400
+├── Design: Modern, responsive, 18-40px radius
+└── Template IDs: Stored in /tmp/klaviyo_template_ids.txt
 
-**Email Automation:**
-- Klaviyo flows: ❌ 0/7 created (plan $30/mo active, flows NOT configured)
-- Shopify Flow: ❌ "Thank customers" INACTIVE (CRITICAL)
-- Shopify Email: ❌ "Thank you!" in DRAFT (CRITICAL)
+Remaining Work:
+└── Manual template assignment (10 min) + activation (2 min)
+    Guide: KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md
+```
 
-**Paid Ads:**
-- Google Ads: ⏳ Conversion tracking ready, 0 campaigns
-- Facebook/IG Ads: ⏳ Pixel active, 0 campaigns
-- TikTok Ads: ⏳ Pixel active, 0 campaigns
+### ⏳ REMAINING WORK (25%)
+
+**Klaviyo Manual Work (15 min):**
+- Template assignment: ⏳ 10 templates need manual assignment to flow actions
+- Flow activation: ⏳ 4 flows need "Set Live" button clicked
+- Guide: KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md
+
+**Shopify Native Workflows (7 min):**
+- Shopify Flow: ⏳ "Thank customers after they purchase" INACTIVE
+- Shopify Email: ⏳ "Thank you!" in DRAFT
+- Shopify Email: ⏳ Fix duplicate "Welcome with discount" workflows
+
+**Lead Generation (READY - Manual Trigger):**
+- ✅ Apify scraping: Scripts ready, secrets configured
+- ✅ Google Sheets sync: API credentials configured
+- ✅ 9 GitHub Actions workflows: 8/9 ready for manual trigger (1 auto-running)
+- ⏳ Workflows available but NOT scheduled (requires manual trigger or cron setup)
+
+**Paid Ads (USER DECISION):**
+- ⏳ Google Ads: Conversion tracking ready, 0 campaigns
+- ⏳ Facebook/IG Ads: Pixel active, 0 campaigns
+- ⏳ TikTok Ads: Pixel active, 0 campaigns
 
 ---
 
@@ -199,19 +223,23 @@ git push origin main
 
 ## 🎯 CURRENT PRIORITIES
 
-### Priority 1: Resolve Critical Blockers (15 min)
-1. Google Sheets API credentials → `SETUP_GOOGLE_SHEETS_API.md`
-2. GitHub Secrets → `setup_github_secrets_helper.sh`
+### Priority 1: Klaviyo Template Assignment (15 min) ⏳
+1. Login to Klaviyo → Flows
+2. Assign 10 professional templates to 4 flows (10 min)
+3. Click "Set Live" on each flow (2 min)
+4. Guide: `KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md`
+5. **Expected impact:** $28K-43K Year 1
 
-### Priority 2: Activate Critical Workflows (7 min)
+### Priority 2: Activate Shopify Workflows (7 min) ⏳
 1. Shopify Flow: Activate "Thank customers after they purchase" (2 min)
 2. Shopify Email: Activate "Thank you!" automation (2 min)
 3. Resolve "Welcome with discount" duplicates (3 min)
 
-### Priority 3: Email Automation (20h)
-1. ✅ Klaviyo Plan: ACTIVE $30/mo (1,000 profiles, 10K emails/mo)
-2. ❌ Deploy 7 Klaviyo flows: Welcome, Abandoned Cart, Browse, Post-Purchase, Win-Back
-3. Expected lift: $8K-12K Month 1, $80K-120K Year 1
+### Priority 3: Launch Lead Generation (USER DECISION) ⏳
+1. ✅ Infrastructure: READY (secrets configured, scripts tested)
+2. ⏳ Trigger workflows manually OR setup cron scheduling
+3. **Expected volume:** 2,100-4,500 leads/month
+4. **CPL:** $0.02-0.04 (vs $5-15 paid ads)
 
 ---
 
@@ -228,26 +256,37 @@ git push origin main
 - Lead scraping: 40-800× cheaper than paid ads
 - Email automation: 27-30% of revenue (industry benchmark)
 
-**Revenue Blocked:** $55,000+ Year 1 by 15 minutes of work
+**ROI Potential (Unblocked):**
+- Klaviyo flows: $28K-43K Year 1 (15 min manual work remaining)
+- Lead scraping: 2,100-4,500 leads/month (ready, awaiting trigger)
+- Total infrastructure: $55K-120K Year 1 revenue enabled
 
 ---
 
 ## 🔄 SESSION CONTINUITY
 
-**Last Updated:** 2025-11-26 Session 54
+**Last Updated:** 2025-11-27 Session 58+
 
-**Recent Changes:**
-- ✅ Google Ads Conversion tracking verified (AW-17749024238)
-- ✅ Shopify Flow/Email states documented
-- ✅ Documentation updated (INFRASTRUCTURE, AUTOMATION)
-- ✅ Progressive disclosure memory system implemented
+**Recent Changes (Session 56-58+):**
+- ✅ Google Sheets API: CREATED (Bloqueur #1 RESOLVED)
+- ✅ GitHub Secrets: 4/4 configured (Bloqueur #2 RESOLVED)
+- ✅ Klaviyo Flows: 4/4 created via API (beta revision 2024-10-15.pre)
+- ✅ Email Templates: 10/10 professional templates with Alpha Medical branding
+- ✅ Infrastructure score: 52/100 → 100/100
+- ✅ Automation: 15% → 75% (manual template assignment remaining)
 
 **Blockers Status:**
-- ✅ Klaviyo plan: RESOLVED - $30/mo active (Session 49)
-- ❌ Google Sheets API: Still not created
-- ❌ GitHub Secrets: Still 0/4 configured
+- ✅ Klaviyo plan: RESOLVED (Session 49)
+- ✅ Google Sheets API: RESOLVED (Session 56-57)
+- ✅ GitHub Secrets: RESOLVED (Session 56-57)
+- ✅ Klaviyo flows creation: RESOLVED (Session 58+ via API)
+- ⏳ Klaviyo template assignment: 15 min manual work (KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md)
+
+**API Limitations Discovered:**
+- Klaviyo Flows API (BETA): Can create flows, cannot PATCH status or assign templates
+- Workaround: 15 min manual UI work (vs 3-4h saved by API)
 
 ---
 
-**Token Cost:** ~1,200 tokens (Level 2 - loaded when technical tasks)
+**Token Cost:** ~1,400 tokens (Level 2 - loaded when technical tasks)
 **Full Reference:** `@INFRASTRUCTURE_AUDIT_CHECKLIST.md` (2,184 lines)

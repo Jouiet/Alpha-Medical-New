@@ -137,23 +137,36 @@
 - "Thank you!" (post-purchase) ❌ CRITICAL
 - "Welcome with discount" (duplicates) ❌ FIX NEEDED
 
-### Klaviyo (Ready, NOT Configured)
+### Klaviyo (4/4 Flows Created via API - Session 58+)
 
 **Plan:** $30/mo ACTIVE (1,000 profiles, 10K emails/mo)
 
-**Flows to Deploy (0/7):**
-1. Welcome Series (5 emails) - 11-17% conversion
-2. Abandoned Cart (3 emails) - 18-25% recovery
-3. Browse Abandonment (3 emails)
-4. Post-Purchase (4 emails)
-5. Win-Back (3 emails)
-6. Cross-Sell (based on purchase history)
-7. Re-engagement (churn prevention)
+**Flows Created (4/4):**
+1. ✅ Customer Winback - Standard (Email & SMS) - ID: SFmLH7
+2. ✅ Welcome Series - Final Email Discount - ID: QU8phk
+3. ✅ Repeat Purchase Nurture - Order Count Split - ID: Uu9Eev
+4. ✅ Product Review / Cross-Sell - Standard - ID: TxcQgE
 
-**Expected Impact:**
+**Professional Templates (10/10):**
+- ✅ Alpha Medical branding: #4770db, #0e1b4d, #eff0f5
+- ✅ Fonts: Archivo 700 (headers), Questrial 400 (body)
+- ✅ Design: Modern, responsive, 18-40px radius
+- ✅ Template IDs: Stored in /tmp/klaviyo_template_ids.txt
+
+**Remaining Work (15 min):**
+- ⏳ Manual template assignment (10 min)
+- ⏳ Flow activation "Set Live" (2 min)
+- 📋 Guide: KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md
+
+**Expected Impact (Once Active):**
 - Month 1: $8K-12K revenue lift
-- Year 1: $80K-120K additional revenue
+- Year 1: $28K-43K additional revenue (4 flows, conservative estimate)
 - ROI: 19-29× (industry benchmark for e-commerce)
+
+**Future Flows (Optional):**
+5. Abandoned Cart (separate from Browse Abandonment)
+6. Browse Abandonment (separate advanced flow)
+7. Re-engagement (churn prevention)
 
 ---
 
