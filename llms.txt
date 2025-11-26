@@ -52,9 +52,11 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [COMPLETE_ACQUISITION_AUTOMATION_SYSTEM](COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md): Project documentation
 - [EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX](EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX.md): ❌ NE PAS désactiver ce qui fonctionne dans Shopify ✅ AJOUTER uniquement ce qui MANQUE dans Klaviyo
 - [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
+- [KLAVIYO_DISCOUNT_CODES_SETUP](KLAVIYO_DISCOUNT_CODES_SETUP.md): Discount Code: WINBACK15 Discount Type: Percentage Percentage: 15% Applies to: ☑ Entire order (all products)
 - [KLAVIYO_FLYWHEEL_UPGRADE_2025](KLAVIYO_FLYWHEEL_UPGRADE_2025.md): Project documentation
 - [KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY](KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md): Project documentation
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
+- [KLAVIYO_WINBACK15_CORRECT_SETTINGS](KLAVIYO_WINBACK15_CORRECT_SETTINGS.md): ❌ Applies to: Specific collections (empty - NO collections selected) ❌ Maximum discount uses: No usage limits
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
 - [LOYALTY_AUTOMATION_PROGRESS_REPORT](LOYALTY_AUTOMATION_PROGRESS_REPORT.md): ✅ Trigger: Order paid │ ✅ Condition 1: IF customer.amountSpent.amount >= 2500 │ ✅ TRUE (Platinum tier):
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
