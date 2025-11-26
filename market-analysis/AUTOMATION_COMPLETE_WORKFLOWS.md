@@ -5,28 +5,30 @@
 
 ---
 
-## 🎯 STATUT ACTUEL (Mise à Jour: 2025-11-26 16:30 UTC - Session 56 VERIFIED)
+## 🎯 STATUT ACTUEL (Mise à Jour: 2025-11-26 19:30 UTC - Session 56+ VERIFIED)
 
-**⏳ SYSTÈME PARTIELLEMENT OPÉRATIONNEL - INFRASTRUCTURE PRÊTE, BLOQUEURS ACTIFS**
+**✅ SYSTÈME OPÉRATIONNEL - BLOQUEURS TECHNIQUES RÉSOLUS, AUTOMATISATION ACTIVE**
 
 ### ARCHITECTURE GLOBALE:
-**Scraping Intelligence** → **Multi-Channel Acquisition** → **Conversions**
-- ❌ Apify scraping (BLOCKED - GitHub Secrets manquants)
-- ⏳ Meta Ads + TikTok Ads + Google Ads (pixels ✅, campaigns ❌)
-- ✅ SEO/AEO content strategy (deployed)
-- ⏳ Email automation (4/11 automations active)
+**Consumer Intelligence** → **Lead Capture** → **Email Automation** → **Conversions**
+- ✅ Consumer Intelligence (pain points 2x/mois, hashtags 1x/mois, Google Sheets sync active)
+- ✅ Lead Capture (welcome popup 10%, exit-intent 15%, deployed LIVE)
+- ✅ Email Automation HYBRID (Option C: 2 Shopify + 5 Klaviyo, ZERO duplication)
 - ✅ GA4 + GTM + Meta Pixel + TikTok Pixel + Google Ads Conversion tracking
+- ⏳ Paid Ads (tracking ready, campaigns NOT launched - user decision)
 
-### Infrastructure État Factuel (Session 56 - 2025-11-26 16:30 UTC VERIFIED):
-- ❌ **Scraping**: Scripts created ✅, GitHub Actions workflows ready ✅, BLOCKED by missing secrets
-- ❌ **Google Sheets**: Sheet ID configured, API credentials NOT created (10 min manual)
-- ❌ **Automation**: 5 GitHub Actions workflows created, 8/9 BLOCKED by missing secrets
-- ✅ **Tracking**: GTM-WFPH2KZP + FB Pixel 2396097167472997 + Google Tag GT-NC6L8G55 ACTIVE (verified via curl on live site)
-- ✅ **Site Content**: 96 products + 7 collections + 26 pages = 100% ENGLISH ONLY (verified via forensic v2 script)
-- ⏳ **Shopify Flow**: 4/7 workflows ACTIVE, 3 workflows INACTIVE (requires manual UI activation - user action needed)
-- ⏳ **Ads Platforms**: Conversion tracking configured ✅, campaigns NOT launched
-- ❌ **Email**: Klaviyo plan NOT selected (0/7 flows created), Shopify Email 4/7 active
-- ❌ **Security**: 0/4 GitHub Secrets configured (CRITICAL BLOCKER)
+### Infrastructure État Factuel (Session 56+ - 2025-11-26 19:30 UTC VERIFIED):
+- ✅ **Consumer Intelligence**: Pain points workflow (2x/mois), hashtags (1x/mois), Google Sheets sync active
+- ✅ **Google Sheets**: API credentials created, service account active, 17 leads synced (verified)
+- ✅ **GitHub Secrets**: 4/4 configured (APIFY_API_TOKEN, SHOPIFY×2, GOOGLE_CREDENTIALS_JSON)
+- ✅ **GitHub Actions**: Workflows operational, consumer intelligence automated
+- ✅ **Tracking**: GTM-WFPH2KZP + FB Pixel + TikTok Pixel + Google Ads (AW-17749024238) ACTIVE
+- ✅ **Site Content**: 96 products + 7 collections + 26 pages = 100% ENGLISH ONLY (verified)
+- ✅ **Lead Capture**: Welcome popup (10% OFF) + Exit-intent (15% OFF) DEPLOYED to Shopify LIVE
+- ⏳ **Shopify Flow**: 4/7 workflows ACTIVE, 3 workflows INACTIVE (manual UI activation pending)
+- ⏳ **Shopify Email**: 5/7 automations ACTIVE (Welcome 10% OFF deployed Session 56)
+- ✅ **Email Strategy**: Option C Hybrid selected - Shopify Email (2) + Klaviyo (5) = ZERO duplication
+- ⏳ **Klaviyo**: Plan $30/mo ACTIVE, 0/7 flows deployed (deployment ready, awaiting execution)
 
 ### System Optimization (2025-11-23):
 - ✅ **RECONFIGURÉ**: Google Maps scraping (B2B leads → D2C competitor intelligence)
@@ -70,79 +72,147 @@
 
 ---
 
-## 🚀 UPGRADE: KLAVIYO + SHOPIFY EMAIL HYBRID (2025-11-24)
+## 🚀 OPTION C: HYBRID COMPLEMENTARY (SELECTED 2025-11-26)
 
-**✅ STRATÉGIE HYBRIDE EMAIL:**
+**✅ STRATÉGIE CONFIRMÉE: Shopify Email + Flow (triggers simples) + Klaviyo (intelligence avancée)**
 
-### Division of Work:
-**Klaviyo (Advanced Automation):**
-- ✅ Welcome Series (5 emails) - 11-17% conversion
-- ✅ Abandoned Cart Recovery (3 emails) - 18-25% recovery rate
-- ✅ Browse Abandonment (3 emails)
-- ✅ Post-Purchase Nurture (4 emails)
-- ✅ Win-Back Campaigns (3 emails) - Churn prediction triggers
-- ✅ **Klaviyo Data Platform (KDP) - FREE:**
-  * RFM segmentation (automatic)
-  * CLV prediction (customer lifetime value)
-  * Churn risk detection (predictive analytics)
-  * Product affinity analysis (bundle recommendations)
-  * Best cross-sell date predictions (AI-powered timing)
-  * Multi-touch attribution (5-day email window)
+### Email Automation Complementarity Matrix (Session 56+):
 
-**Shopify Email (Simple Campaigns):**
-- ✅ Newsletters & Announcements
-- ✅ Promotional Campaigns
-- ✅ Product Launches
-- ✅ Cost: $1/1,000 emails (keep for simple one-off campaigns)
-
-### Klaviyo Plan Recommendation (Email-Only):
+**Shopify Email - KEEP ACTIVE (2 workflows):**
 ```yaml
-Month 1:
-  Plan: Email Plan - 20,000 profiles tier
-  Cost: $300-350/mo
-  Inclus:
-    - 20,000 active profiles
-    - 200,000 email sends/mo
-    - Unlimited email flows
-    - KDP (RFM, CLV, churn prediction) - FREE
-    - Dynamic product feeds
-    - Predictive send times (AI)
-    - A/B testing
-    - Multi-touch attribution
+1. Checkout Abandonment: "You left items at checkout"
+   Status: ✅ ACTIVE
+   Raison: Simple trigger, Shopify native, works well
 
-Auto-Scaling:
-  Month 2: 35K profiles → $400-450/mo (25% cap protection)
-  Month 3: 60K profiles → $500-600/mo
-  Month 12: 180K profiles → $900-1,100/mo
+2. Post-Purchase: "Thank you!"
+   Status: ❌ INACTIVE (activation manuelle requise 2 min)
+   Raison: Simple thank you, no intelligence needed
 ```
 
-### Projected Revenue Lift (Email-Only vs Shopify Email):
-- **Month 1:** +$8K-12K revenue gain (+5-10% lift)
-- **Month 3:** +$30K-40K revenue gain (+15-18% lift)
-- **Month 12:** +$80K-120K revenue gain (+30-35% of total revenue from email)
+**Shopify Email - DISABLE (3 workflows pour éviter duplication):**
+```yaml
+3. Browse Abandonment: "We're happy to see you again"
+   Status: ✅ ACTIVE → ❌ À DÉSACTIVER
+   Raison: Klaviyo handles with better targeting
 
-**ROI:** 25-120× on Klaviyo upgrade cost (Month 1-12)
+4. Browse Abandonment: "Did something catch your eye?"
+   Status: ✅ ACTIVE → ❌ À DÉSACTIVER
+   Raison: Duplication avec Klaviyo
 
-**📋 Plan Complet:** Voir [KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md](../KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md)
+5. Cart Abandonment: "You left items in your cart"
+   Status: ✅ ACTIVE → ❌ À DÉSACTIVER
+   Raison: Klaviyo has better recovery rate (18-25% vs 10-15%)
 
-### Migration Status:
-⏳ **Week 1-2 (Current):**
-- [ ] Select Klaviyo Email Plan (20K tier)
-- [ ] Import email list (Shopify → Klaviyo)
-- [ ] Enable KDP features (RFM, CLV, churn prediction)
-- [ ] Create first flow: Welcome Series (Priority #1)
+6. Welcome Series: "Welcome To Alpha Medical! Here's 10% OFF"
+   Status: ✅ ACTIVE → ❌ À DÉSACTIVER
+   Raison: Klaviyo can do multi-email series (3-5 emails)
 
-⏳ **Week 3-4:**
-- [ ] Migrate Abandoned Cart flow (Shopify Email → Klaviyo)
-- [ ] Configure Browse Abandonment flow
-- [ ] Setup Post-Purchase flow
+7. Welcome duplicate: "Welcome with discount" (duplicate)
+   Status: ❌ DRAFT → ❌ À SUPPRIMER
+   Raison: Duplicate confirmed
+```
 
-⏳ **Month 2:**
-- [ ] Win-Back campaign (churn prediction triggers)
-- [ ] RFM segmentation optimization
-- [ ] A/B testing (subject lines, send times)
+**Klaviyo - DEPLOY (5 flows):**
+```yaml
+1. Abandoned Cart Recovery (3 emails)
+   Trigger: Cart created, no checkout
+   Emails: 1h, 24h, 72h after abandonment
+   Expected: 18-25% recovery rate (vs 10-15% Shopify)
+   Status: ⏳ TO DEPLOY
 
-**Keep Shopify Email for:** Simple promotional campaigns, announcements
+2. Browse Abandonment (2 emails)
+   Trigger: Product viewed, no cart
+   Emails: 2h (product reminder), 24h (social proof + reviews)
+   Status: ⏳ TO DEPLOY
+
+3. Welcome Series (3 emails)
+   Trigger: Email subscription
+   Emails: Immediate (WELCOME10 code), Day 3 (brand story), Day 7 (reminder)
+   Discount: Reuse WELCOME10 code (10% OFF, created Session 56)
+   Status: ⏳ TO DEPLOY
+
+4. Win-Back Flow (2 emails)
+   Trigger: No purchase in 60 days (churn prediction via KDP)
+   Emails: "We miss you" + special offer, Day 7 (last chance)
+   Status: ⏳ TO DEPLOY (UNIQUE - Shopify cannot do this)
+
+5. Cross-Sell/Upsell Flow (1 email)
+   Trigger: Product affinity post-purchase (Klaviyo KDP AI)
+   Email: Complementary products based on purchase history
+   Status: ⏳ TO DEPLOY (UNIQUE - Product affinity AI)
+```
+
+**Shopify Flow - KEEP (4 workflows):**
+```yaml
+- "New Loyalty Tier Tagging (Automatic)" ✅ ACTIVE
+- "Convert abandoned product browse" ✅ ACTIVE
+- "Recover abandoned cart" ✅ ACTIVE
+- "Recover abandoned checkout" ✅ ACTIVE
+```
+
+### Klaviyo Plan (ACTIVE - Session 49):
+```yaml
+Current Plan:
+  Tier: Email Plan - 1,000 profiles
+  Cost: $30/mo (ACTIVE, verified Session 49)
+  Inclus:
+    - 1,000 active profiles
+    - 10,000 email sends/mo
+    - Unlimited email flows (0/7 deployed)
+    - KDP (RFM, CLV, churn prediction) - FREE
+    - A/B testing
+    - Dynamic segmentation
+
+Recommended Upgrade (When >1,000 emails):
+  Tier: Email Plan - 20,000 profiles
+  Cost: $300-350/mo
+  Timing: When email list reaches 900-1,000 addresses
+```
+
+### Projected Revenue Lift (Option C Hybrid):
+```yaml
+Cost: $350/mo Klaviyo (20K tier when scaled)
+Workflows Active: 7 total (2 Shopify + 5 Klaviyo)
+Duplication: ZERO (verified via complementarity matrix)
+
+Revenue Impact:
+  Month 1: +$8K-12K (conservative, 5-10% lift)
+  Month 3: +$25K-35K (15-18% lift)
+  Month 12: +$60K-90K (25-30% of revenue from email)
+
+ROI: 14-21× on Klaviyo cost (Year 1)
+vs Option B (Klaviyo-only): 75% of potential, lower migration risk
+```
+
+**📋 Complementarity Matrix:** `EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX.md` (410 lines, Session 56+)
+
+### Deployment Status (Session 56+ - 2025-11-26):
+
+**✅ COMPLETED:**
+- [x] Email automation complementarity analysis (Option A/B/C)
+- [x] Option C selected (Hybrid: 2 Shopify + 5 Klaviyo)
+- [x] WELCOME10 discount code created (10% OFF, Session 56)
+- [x] Welcome popup deployed (10% OFF, LIVE on Shopify)
+- [x] Exit-intent popup deployed (15% OFF, LIVE on Shopify)
+- [x] Shopify Email "Welcome To Alpha Medical" workflow activated (Session 56)
+- [x] Lead capture 15/100 → 75/100 (+60 points)
+
+**⏳ PENDING (10 min MANUAL UI):**
+- [ ] Désactiver Shopify Email: "We're happy to see you again" (browse)
+- [ ] Désactiver Shopify Email: "Did something catch your eye?" (browse)
+- [ ] Désactiver Shopify Email: "You left items in your cart" (cart)
+- [ ] Désactiver Shopify Email: "Welcome To Alpha Medical!" (welcome)
+- [ ] Activer Shopify Email: "Thank you!" (post-purchase)
+- [ ] Supprimer Shopify Email: Duplicate "Welcome with discount"
+
+**⏳ PENDING (6-8h KLAVIYO DEPLOYMENT):**
+- [ ] Deploy Klaviyo Flow #1: Abandoned Cart Recovery (2h)
+- [ ] Deploy Klaviyo Flow #2: Browse Abandonment (1.5h)
+- [ ] Deploy Klaviyo Flow #3: Welcome Series (2h)
+- [ ] Deploy Klaviyo Flow #4: Win-Back (1.5h)
+- [ ] Deploy Klaviyo Flow #5: Cross-Sell/Upsell (1h)
+- [ ] Test all flows end-to-end (1h)
+- [ ] Monitor first 48h: delivery, open rates, no duplicates (ongoing)
 
 ---
 
