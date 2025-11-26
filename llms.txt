@@ -228,6 +228,7 @@ When assisting with this project:
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
 - [GOOGLE_ADS_NEXT_STEPS](GOOGLE_ADS_NEXT_STEPS.md): 1. Si premier container: Cliquez "Créer un compte" Formulaire: Configuration container:
+- [GOOGLE_SHEETS_MANAGEMENT](market-analysis/GOOGLE_SHEETS_MANAGEMENT.md): Google Sheet: "Alpha Medical - Lead Management" python3 cleanupsheets.py
 - [GSC_FINAL_CHECKLIST](GSC_FINAL_CHECKLIST.md): SITEMAP STATUS: ┌─────────────────────────────────────────────────────────────┐ │ Sitemap URL: https://www.alphamedical.shop/sitemap.xml │
 - [GTM_ADD_MISSING_TAGS_STEPS](GTM_ADD_MISSING_TAGS_STEPS.md): 1. Cliquez: "Balises" (Tags) → "Nouveau" (bouton rouge) 2. Nom du tag: Google Tag - Base (AW-17749024238)
 - [HOMEPAGE_CTA_INSTRUCTIONS](HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
