@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 26, 2025 at 20:43 UTC
+**Generated:** November 26, 2025 at 20:47 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -80,56 +80,57 @@
 67. [Implementation Report Pricing](#implementation_report_pricing)
 68. [Infrastructure Audit Checklist](#infrastructure_audit_checklist)
 69. [Klaviyo Abandoned Cart Flow Implementation](#klaviyo_abandoned_cart_flow_implementation)
-70. [Klaviyo Flywheel Upgrade 2025](#klaviyo_flywheel_upgrade_2025)
-71. [Klaviyo Plan Recommendation Email Only](#klaviyo_plan_recommendation_email_only)
-72. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
-73. [Lead Automation System Operational](#lead_automation_system_operational)
-74. [Llms Txt Deployment](#llms_txt_deployment)
-75. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
-76. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
-77. [Loyalty System Architecture](#loyalty_system_architecture)
-78. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
-79. [Manual Footer Config](#manual_footer_config)
-80. [Menu Bundles Instructions](#menu_bundles_instructions)
-81. [Mydealz Synthese](#mydealz_synthese)
-82. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
-83. [Next Steps Flow Configuration](#next_steps_flow_configuration)
-84. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
-85. [Paypal Deactivation Guide](#paypal_deactivation_guide)
-86. [Phase 3 Implementation Log](#phase_3_implementation_log)
-87. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
-88. [Pricing Quick Reference](#pricing_quick_reference)
-89. [Pricing Verification](#pricing_verification)
-90. [Priority Sources Implementation](#priority_sources_implementation)
-91. [Product Optimization Tracking](#product_optimization_tracking)
-92. [Rapport Final Complet](#rapport_final_complet)
-93. [Rapport Theme Analyse](#rapport_theme_analyse)
-94. [Response To Third Party Analysis](#response_to_third_party_analysis)
-95. [Robots Txt Deployment](#robots_txt_deployment)
-96. [Seo Audit Recommendations](#seo_audit_recommendations)
-97. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
-98. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
-99. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
-100. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
-101. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
-102. [Session Summary](#session_summary)
-103. [Shopify Configuration Complete](#shopify_configuration_complete)
-104. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
-105. [Shopify Email Manual Activation](#shopify_email_manual_activation)
-106. [Shopify Email Welcome Discount Manual Setup](#shopify_email_welcome_discount_manual_setup)
-107. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
-108. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
-109. [Status Report Pages](#status_report_pages)
-110. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
-111. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
-112. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
-113. [Top 10 Urls To Index](#top_10_urls_to_index)
-114. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
-115. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
-116. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
-117. [Video Ads Creation Playbook](#video_ads_creation_playbook)
-118. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
-119. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
+70. [Klaviyo Flows Complementarity Analysis](#klaviyo_flows_complementarity_analysis)
+71. [Klaviyo Flywheel Upgrade 2025](#klaviyo_flywheel_upgrade_2025)
+72. [Klaviyo Plan Recommendation Email Only](#klaviyo_plan_recommendation_email_only)
+73. [Klaviyo Welcome Flow Implementation](#klaviyo_welcome_flow_implementation)
+74. [Lead Automation System Operational](#lead_automation_system_operational)
+75. [Llms Txt Deployment](#llms_txt_deployment)
+76. [Loyalty Automation Progress Report](#loyalty_automation_progress_report)
+77. [Loyalty Simplified Manual Actions Guide](#loyalty_simplified_manual_actions_guide)
+78. [Loyalty System Architecture](#loyalty_system_architecture)
+79. [Loyalty System Setup Guide](#loyalty_system_setup_guide)
+80. [Manual Footer Config](#manual_footer_config)
+81. [Menu Bundles Instructions](#menu_bundles_instructions)
+82. [Mydealz Synthese](#mydealz_synthese)
+83. [Newsletter Flows Creation Checklist](#newsletter_flows_creation_checklist)
+84. [Next Steps Flow Configuration](#next_steps_flow_configuration)
+85. [Pain Relief Guide Implementation](#pain_relief_guide_implementation)
+86. [Paypal Deactivation Guide](#paypal_deactivation_guide)
+87. [Phase 3 Implementation Log](#phase_3_implementation_log)
+88. [Pre Launch Checklist 23 Days](#pre_launch_checklist_23_days)
+89. [Pricing Quick Reference](#pricing_quick_reference)
+90. [Pricing Verification](#pricing_verification)
+91. [Priority Sources Implementation](#priority_sources_implementation)
+92. [Product Optimization Tracking](#product_optimization_tracking)
+93. [Rapport Final Complet](#rapport_final_complet)
+94. [Rapport Theme Analyse](#rapport_theme_analyse)
+95. [Response To Third Party Analysis](#response_to_third_party_analysis)
+96. [Robots Txt Deployment](#robots_txt_deployment)
+97. [Seo Audit Recommendations](#seo_audit_recommendations)
+98. [Session 2025-11-11 Part3 Summary](#session_2025-11-11_part3_summary)
+99. [Session 2025-11-11 Part6 Summary](#session_2025-11-11_part6_summary)
+100. [Session 2025-11-11 Summary](#session_2025-11-11_summary)
+101. [Session 2025-11-19 Final Summary](#session_2025-11-19_final_summary)
+102. [Session Part 14 Comprehensive Audit](#session_part_14_comprehensive_audit)
+103. [Session Summary](#session_summary)
+104. [Shopify Configuration Complete](#shopify_configuration_complete)
+105. [Shopify Email Implementation Checklist](#shopify_email_implementation_checklist)
+106. [Shopify Email Manual Activation](#shopify_email_manual_activation)
+107. [Shopify Email Welcome Discount Manual Setup](#shopify_email_welcome_discount_manual_setup)
+108. [Shopify Flow Configuration Guide](#shopify_flow_configuration_guide)
+109. [Shopify Flow Subscriptions Guide](#shopify_flow_subscriptions_guide)
+110. [Status Report Pages](#status_report_pages)
+111. [Todo Master Pre Launch 23 Days](#todo_master_pre_launch_23_days)
+112. [Top5 Percent Native Implementation Plan](#top5_percent_native_implementation_plan)
+113. [Top 10 Hero Products Mapping](#top_10_hero_products_mapping)
+114. [Top 10 Urls To Index](#top_10_urls_to_index)
+115. [Tracking Analytics Gaps 2025](#tracking_analytics_gaps_2025)
+116. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
+117. [Ultimate Pain Relief Guide](#ultimate_pain_relief_guide)
+118. [Video Ads Creation Playbook](#video_ads_creation_playbook)
+119. [Video Ads Infrastructure Complete](#video_ads_infrastructure_complete)
+120. [Session 2025-11-20 Summary](#session_2025-11-20_summary)
 
 ---
 
@@ -138,7 +139,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -23613,7 +23614,7 @@ GITHUB ACTIONS (8 gaps):
 # 2. Implementation Roadmap
 
 **File:** `IMPLEMENTATION_ROADMAP.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -27603,7 +27604,7 @@ Begin with Action 1.1 ➜ `git checkout -b fix/add-meta-descriptions`
 # 3. Dynamic Pricing Model
 
 **File:** `DYNAMIC_PRICING_MODEL.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -28173,7 +28174,7 @@ Pour toute question ou validation de calcul, référer à ce document et tester 
 # 4. Readme Pricing
 
 **File:** `README_PRICING.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -28748,7 +28749,7 @@ Ce système de pricing dynamique a été **vérifié et validé** contre les sou
 # 5. Abandoned Cart Recovery Config
 
 **File:** `ABANDONED_CART_RECOVERY_CONFIG.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -29075,7 +29076,7 @@ Alpha Medical Care Team
 # 6. Actions Finales 5Min
 
 **File:** `ACTIONS_FINALES_5MIN.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -29200,7 +29201,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 # 7. Actions Manuelles Requises
 
 **File:** `ACTIONS_MANUELLES_REQUISES.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -29720,7 +29721,7 @@ Icons:
 # 8. Ai Discovery Implementation
 
 **File:** `AI_DISCOVERY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -30263,7 +30264,7 @@ python3 generate_llms_txt.py
 # 9. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -39145,7 +39146,7 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 # 10. Alpha Medical 15 Bundles Complete
 
 **File:** `ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -39988,7 +39989,7 @@ Système complet soulagement douleur + thérapie. Basé sur recherche LED therap
 # 11. Alpha Medical 8 Bundles Final
 
 **File:** `ALPHA_MEDICAL_8_BUNDLES_FINAL.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -42628,7 +42629,7 @@ Response: 200 OK
 # 12. Alpha Medical Bundle Strategy
 
 **File:** `ALPHA_MEDICAL_BUNDLE_STRATEGY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -42948,7 +42949,7 @@ For each bundle:
 # 13. Alpha Medical Pitch Deck Template
 
 **File:** `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -45007,7 +45008,7 @@ END OF PITCH DECK TEMPLATE
 # 14. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -46154,7 +46155,7 @@ Audit complet 7 critères
 # 15. Analyse Forensique Site
 
 **File:** `ANALYSE_FORENSIQUE_SITE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -50067,7 +50068,7 @@ URL testée: `/products/wireless-ems-body-sculptor-butt-trainer-29-levels`
 # 16. Analyse Forensique Site Web
 
 **File:** `ANALYSE_FORENSIQUE_SITE_WEB.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -51891,7 +51892,7 @@ Ensuite suivre plan d'action semaine 1 à la lettre.
 # 17. Analytics Tracking Factual Status
 
 **File:** `ANALYTICS_TRACKING_FACTUAL_STATUS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -52067,7 +52068,7 @@ No need to modify old docs - this file supersedes previous information.
 # 18. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -52434,7 +52435,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 19. Apify Integration Complete
 
 **File:** `APIFY_INTEGRATION_COMPLETE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -52990,7 +52991,7 @@ python3 influencer_lead_generation.py --full-discovery
 # 20. Asset Gathering Guide
 
 **File:** `ASSET_GATHERING_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -53419,7 +53420,7 @@ cp source/* destination/
 # 21. Automation Setup Complete Guide
 
 **File:** `AUTOMATION_SETUP_COMPLETE_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -53871,7 +53872,7 @@ Use this checklist to complete setup:
 # 22. Blog Images Assignment
 
 **File:** `BLOG_IMAGES_ASSIGNMENT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -54044,7 +54045,7 @@ Use this checklist to complete setup:
 # 23. Bundle Auto Creation Architecture
 
 **File:** `BUNDLE_AUTO_CREATION_ARCHITECTURE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -54950,7 +54951,7 @@ function markProposalsAsCreated(hash) {
 # 24. Bundle Builder Deployment Guide
 
 **File:** `BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -55415,7 +55416,7 @@ gtag('event', 'trending_proposal_viewed', {
 # 25. Bundle Builder System Documentation
 
 **File:** `BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -56634,7 +56635,7 @@ gtag('event', 'bundle_proposal_submitted', {
 # 26. Bundle Persona Critical Audit
 
 **File:** `BUNDLE_PERSONA_CRITICAL_AUDIT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -57258,7 +57259,7 @@ Pour chaque bundle, je vérifie:
 # 27. Bundle Reconstruction Analysis 2025
 
 **File:** `BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -57708,7 +57709,7 @@ Market data shows:
 # 28. Cart Drawer Forensic Analysis
 
 **File:** `CART_DRAWER_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -58265,7 +58266,7 @@ document.addEventListener('cart:updated', function(event) {
 # 29. Chat Instant Answers
 
 **File:** `CHAT_INSTANT_ANSWERS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -60074,7 +60075,7 @@ Pack de 10-20 pads = Meilleur prix
 # 30. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -60345,7 +60346,7 @@ gh workflow run daily-scraping.yml
 # 31. Claude Md Verification Report
 
 **File:** `CLAUDE_MD_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -60593,7 +60594,7 @@ App #4: Loox Reviews ✅ INSTALLED
 # 32. Collection Overlap Verification Report
 
 **File:** `COLLECTION_OVERLAP_VERIFICATION_REPORT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -60890,7 +60891,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 33. Complete Acquisition Automation System
 
 **File:** `COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -63408,7 +63409,7 @@ RESULT: System-wide efficiency gains 10-20%/quarter
 # 34. Complete Manually Final 40 Percent
 
 **File:** `COMPLETE_MANUALLY_FINAL_40_PERCENT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -63613,7 +63614,7 @@ Une fois le workflow activé:
 # 35. Complete Shopify Flow Setup
 
 **File:** `COMPLETE_SHOPIFY_FLOW_SETUP.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -63791,7 +63792,7 @@ Après activation complète:
 # 36. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -64395,7 +64396,7 @@ June:
 # 37. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -66408,7 +66409,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 38. Critical Manual Actions Guide
 
 **File:** `CRITICAL_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -66799,7 +66800,7 @@ curl -s "https://www.alphamedical.shop/" | grep "<title>"
 # 39. Custom Bundle Builder Complete Analysis
 
 **File:** `CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -68182,7 +68183,7 @@ INSERT INTO settings (key, value) VALUES ('bundle_vote_threshold', '10');
 # 40. Deployment Guide Complete
 
 **File:** `DEPLOYMENT_GUIDE_COMPLETE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -69030,7 +69031,7 @@ Shopify webhook → Apps Script Web App → Google Sheets
 # 41. Deployment Verification
 
 **File:** `DEPLOYMENT_VERIFICATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -69445,7 +69446,7 @@ python3 generate_llms_txt.py
 # 42. Dsers Configuration Guide
 
 **File:** `DSERS_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -70148,7 +70149,7 @@ Marge Nette Réelle = Revenue - (COGS + Tous frais réels)
 # 43. Dsers Form Configuration
 
 **File:** `DSERS_FORM_CONFIGURATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -70909,7 +70910,7 @@ Selon la documentation officielle DSers, **Minimum Profit** agit comme un filet 
 # 44. Email Automation Complementarity Matrix
 
 **File:** `EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -71051,23 +71052,42 @@ Upgrade: $350/mo (20,000 profiles tier) - when >1,000 emails
 
 ### Valeur ajoutée (CE QUE SHOPIFY NE PEUT PAS FAIRE):
 ```yaml
-1. Welcome multi-touch nurturing (vs 1 email Shopify)
-2. Win-Back churn prediction (UNIQUE - pas dans Shopify)
-3. Cross-sell AI timing (UNIQUE - pas dans Shopify)
-4. RFM/CLV segmentation auto (UNIQUE - Shopify = manuel)
-5. VIP progression emails (complément Shopify Flow tags)
-6. A/B testing avancé (vs limité Shopify)
+4 Flows Complémentaires (NOMS EXACTS de bibliothèque Klaviyo):
+
+1. Customer Winback - Standard (Email & SMS)
+   → Churn detection ML (UNIQUE - Shopify cannot do)
+   → Segment "Opportunités de reconquête" auto-populated
+
+2. Welcome Series - Final Email Discount
+   → Multi-touch nurturing 4 emails (EXTENDS Shopify 1 email)
+   → Conditional: 4th email only if no purchase
+
+3. Repeat Purchase Nurture Series - Order Count Split
+   → Predicted next order date ML (UNIQUE - Shopify cannot do)
+   → Lifecycle messaging (1st, 2nd, 3+ buyers)
+
+4. Product Review / Cross-Sell - Standard (Email & SMS)
+   → 7-10 days post-purchase (COMPLEMENTS Shopify immediate thank you)
+   → Review collection + cross-sell recommendations
+
+Plus: RFM/CLV segmentation auto (Klaviyo CDP - FREE), A/B testing avancé
 ```
 
-### ROI Projeté:
+### ROI Projeté (4 Flows):
 ```yaml
-Month 1: +$2K-4K (welcome series + cross-sell)
-Month 3: +$8K-15K (win-back kicking in)
-Month 12: +$25K-40K (all flows optimized)
+Month 1: +$1.5K-3K (welcome nurturing + review/cross-sell start)
+Month 3: +$6.5K-11.5K (winback + repeat purchase nurture kick in)
+Month 12: +$28K-43K (all flows optimized, full lifecycle coverage)
 
-ROI: 7-12× Year 1 (conservative vs original 14-21×)
-Raison baisse: Shopify fait déjà browse/cart/checkout abandonment
-Klaviyo ajoute: Nurturing + Intelligence, pas replacement
+ROI: 8-12× Year 1 (conservative, proven benchmarks)
+Breakdown:
+  - Winback: +$10K-15K (lapsed customer reactivation)
+  - Welcome Multi-Touch: +$5K-8K (cold subscriber nurturing)
+  - Repeat Purchase Nurture: +$8K-12K (purchase frequency increase)
+  - Review/Cross-Sell: +$5K-8K (social proof + AOV boost)
+
+Note: Shopify fait déjà browse/cart/checkout abandonment
+Klaviyo ajoute: ML Intelligence + Lifecycle Nurturing (not replacement)
 ```
 
 ---
@@ -71086,41 +71106,70 @@ Klaviyo ajoute: Nurturing + Intelligence, pas replacement
 4. Wait 24-48h: KDP analysis first data
 ```
 
-### Phase 2: Créer 4 Flows COMPLÉMENTAIRES (2.5h)
+### Phase 2: Créer 4 Flows COMPLÉMENTAIRES (3-4h)
 
-**Flow #1: Welcome Series Multi-Touch (45 min)**
+**Flow #1: Customer Winback - Standard (Email & SMS) (45 min)**
 ```
-Trigger: Email subscription
+Klaviyo Template: "Customer Winback - Standard (Email & SMS)"
+Category: Remind customers to purchase
+
+Trigger: Segment "Opportunités de reconquête (Shopify)" (Klaviyo auto-segment)
+Emails:
+  - Day 60: "We miss you!" + 15% WINBACK15
+  - Day 67: "Last chance" + urgency
+  - Optional SMS for dual-channel reach
+
+Why UNIQUE: Shopify cannot detect churn automatically
+Klaviyo ML: Auto-identifies lapsed customers (60+ days no purchase)
+```
+
+**Flow #2: Welcome Series - Final Email Discount (45 min)**
+```
+Klaviyo Template: "Welcome Series - Final Email Discount"
+Category: Nurture subscribers
+
+Trigger: Email subscription (List "Liste d'adresses e-mail")
 Emails:
   - Day 0: Welcome + WELCOME10 reinforcement
   - Day 3: Brand story + testimonials
-  - Day 7: Bestsellers showcase
-  - Day 14: "Still interested?" reminder
-Filter: Exclude if purchased (exit flow)
+  - Day 7: Bestsellers showcase + urgency
+  - Day 14: Final 10% discount (ONLY if no purchase yet)
+Conditional Split: Exit flow if "Placed Order"
+
+Why COMPLEMENTARY: Extends Shopify welcome (not replacing)
+Shopify Email: Immediate welcome (1 email)
+Klaviyo: Multi-touch nurturing (4 emails)
 ```
 
-**Flow #2: Win-Back Campaign (45 min)**
+**Flow #3: Repeat Purchase Nurture Series - Order Count Split (60 min)**
 ```
-Trigger: Last purchase > 60 days (segment via KDP)
+Klaviyo Template: "Repeat Purchase Nurture Series - Order Count Split"
+Category: Encourage repeat purchases
+
+Trigger: Predicted next order date (Klaviyo CDP Machine Learning)
+Split Paths: 1st buyer, 2nd buyer, 3+ buyers (lifecycle messaging)
+Timing: 3-5 days BEFORE predicted next purchase
+Content: Personalized based on order history
+
+Why UNIQUE: Shopify cannot predict next purchase timing
+Klaviyo ML: Uses purchase history to predict churn before it happens
+```
+
+**Flow #4: Product Review / Cross-Sell - Standard (Email & SMS) (45 min)**
+```
+Klaviyo Template: "Product Review / Cross-Sell - Standard (Email & SMS)"
+Category: Other (Post-Purchase)
+
+Trigger: Placed Order (Shopify)
+Delay: 7-10 days (product received, usage started)
 Emails:
-  - Day 60: "We miss you" + 15% special offer
-  - Day 67: "Last chance" + urgency
-Filter: Customers with >1 purchase (loyalty focus)
-```
+  - Email 1: Review request + 5-star incentive (REVIEW10 discount)
+  - Email 2: Cross-sell recommendations (based on purchased category)
+  - Optional SMS for dual-channel
 
-**Flow #3: Cross-Sell Intelligence (30 min)**
-```
-Trigger: Order placed
-Delay: 7-10 days (KDP optimal timing)
-Content: Product affinity recommendations (KDP AI)
-Filter: Exclude if <$50 AOV (focus high-value)
-```
-
-**Flow #4: VIP Tier Progression (30 min)**
-```
-Trigger: Customer tagged "VIP" or "Loyal" (Shopify Flow)
-Email: "Congrats VIP!" + exclusive perks
-Integration: Use Shopify Flow tag as Klaviyo trigger
+Why COMPLEMENTARY: Timing separation from Shopify
+Shopify Email: "Thank you!" immediate post-purchase
+Klaviyo: Review + cross-sell 7-10 days after (no conflict)
 ```
 
 ### Phase 3: Test & Monitor (30 min)
@@ -71179,7 +71228,7 @@ ROI: 7-12× Year 1
 # 45. Email Marketing Automation Audit
 
 **File:** `EMAIL_MARKETING_AUTOMATION_AUDIT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -71985,7 +72034,7 @@ grep "fbq(" homepage → 0 results
 # 46. Factual Verification Complete Session 47
 
 **File:** `FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -72436,7 +72485,7 @@ Upload: gh secret set GOOGLE_CREDENTIALS_JSON < credentials.json
 # 47. Factual Verification Status
 
 **File:** `FACTUAL_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -72830,7 +72879,7 @@ Test → Measure → Validate → Scale.
 # 48. Final Report Transparency Implementation
 
 **File:** `FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -73525,7 +73574,7 @@ Back & Posture Support: 1 product
 # 49. Final Store Status 2025-10-31
 
 **File:** `FINAL_STORE_STATUS_2025-10-31.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -73753,7 +73802,7 @@ Back & Posture Support: 1 product
 # 50. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -74595,7 +74644,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 51. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -77562,7 +77611,7 @@ FILES:
 # 52. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -77946,7 +77995,7 @@ TOTAL: ~30 minutes de travail actif
 # 53. Gmail Apps Script Setup
 
 **File:** `GMAIL_APPS_SCRIPT_SETUP.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -78256,7 +78305,7 @@ Status: On Track
 # 54. Google Ads Gtm Progress
 
 **File:** `GOOGLE_ADS_GTM_PROGRESS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -78627,7 +78676,7 @@ python3 check_gtm_status.py
 # 55. Google Ads Next Steps
 
 **File:** `GOOGLE_ADS_NEXT_STEPS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -78893,7 +78942,7 @@ git push origin main
 # 56. Google Ads Setup Guide
 
 **File:** `GOOGLE_ADS_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -79305,7 +79354,7 @@ Avant de considérer l'installation complète:
 # 57. Google Search Console Verification Status
 
 **File:** `GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -79541,7 +79590,7 @@ Je **REFUSE** de dire:
 # 58. Google Sheet Setup Instructions
 
 **File:** `GOOGLE_SHEET_SETUP_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -79726,7 +79775,7 @@ python3 market-analysis/lead_generation_scraper.py --test
 # 59. Gsc Configuration Report 2025-11-19
 
 **File:** `GSC_CONFIGURATION_REPORT_2025-11-19.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -80344,7 +80393,7 @@ curl -s "https://alphamedical.shop/robots.txt"
 # 60. Gsc Final Checklist
 
 **File:** `GSC_FINAL_CHECKLIST.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -80733,7 +80782,7 @@ SOUMISSIONS MANUELLES:
 # 61. Gtm Add Missing Tags Steps
 
 **File:** `GTM_ADD_MISSING_TAGS_STEPS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -81132,7 +81181,7 @@ Business model: Dropshipping (pre-launch)
 # 62. Gtm Setup Guide
 
 **File:** `GTM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -81780,7 +81829,7 @@ Avant de considérer l'installation complète:
 # 63. Homepage Cta Instructions
 
 **File:** `HOMEPAGE_CTA_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -82053,7 +82102,7 @@ Workflow AUTOMATIQUE:
 # 64. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -82429,7 +82478,7 @@ dig TXT alphamedical.shop +short
 # 65. Implementation Manuelle Guide
 
 **File:** `IMPLEMENTATION_MANUELLE_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -83179,7 +83228,7 @@ Cliquer **"Save"**
 # 66. Implementation Plan 3 Phases
 
 **File:** `IMPLEMENTATION_PLAN_3_PHASES.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -83947,7 +83996,7 @@ Quelle est votre priorité immédiate?
 # 67. Implementation Report Pricing
 
 **File:** `IMPLEMENTATION_REPORT_PRICING.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -84393,7 +84442,7 @@ Tous les documents sont prêts et validés contre sources officielles:
 # 68. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -86978,7 +87027,7 @@ TOTAL INFRASTRUCTURE: 59/100 ⚠️  (+7 points from lead capture deployment)
 # 69. Klaviyo Abandoned Cart Flow Implementation
 
 **File:** `KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -87683,10 +87732,341 @@ End flow
 ---
 
 
-# 70. Klaviyo Flywheel Upgrade 2025
+# 70. Klaviyo Flows Complementarity Analysis
+
+**File:** `KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md`
+**Last Modified:** 2025-11-26 20:47
+
+---
+
+# KLAVIYO FLOWS - COMPLEMENTARITY ANALYSIS
+## ZERO Duplication with Shopify Email/Flow
+
+**Date:** 2025-11-26 Session 56+
+**Objective:** Select 4 Klaviyo flows that ADD value (not duplicate Shopify)
+
+---
+
+## ❌ FLOWS TO SKIP (Already in Shopify Email - ACTIVE)
+
+### Prevent Lost Sales (Shopify handles 100%)
+```yaml
+❌ Abandoned Checkout Reminder:
+   Shopify Email: "You left items at checkout" ✅ ACTIVE
+   Reason: DUPLICATE - Shopify already does this
+
+❌ Browse Abandonment:
+   Shopify Email: "Did something catch your eye?" ✅ ACTIVE
+   Shopify Email: "We're happy to see you again" ✅ ACTIVE
+   Reason: DUPLICATE - Shopify has 2 browse abandonment workflows
+
+❌ Abandoned Cart Reminder:
+   Shopify Email: "You left items in your cart" ✅ ACTIVE
+   Reason: DUPLICATE - Shopify already does this
+
+❌ Abandoned Search/Collection:
+   Reason: Low priority, niche use case
+```
+
+### Nurture Subscribers (Shopify handles welcome)
+```yaml
+❌ Welcome Series - Standard (3 emails):
+   Shopify Email: "Welcome To Alpha Medical! Here's 10% OFF" ✅ ACTIVE
+   Reason: PARTIAL DUPLICATE - But can EXTEND with multi-touch
+
+✅ Welcome Series - Final Email Discount (4 emails):
+   Klaviyo: 4th email ONLY if not converted yet
+   Reason: COMPLEMENTARY - Extends Shopify welcome with nurturing
+
+❌ Happy Birthday:
+   Reason: Requires birthdate collection (not configured)
+```
+
+### Build Customer Loyalty (Shopify handles thank you)
+```yaml
+❌ First Purchase Thank You:
+   Shopify Email: "Thank you!" ✅ ACTIVE
+   Shopify Flow: "Thank customers after they purchase" ✅ ACTIVE
+   Reason: DUPLICATE - Shopify already does this
+
+❌ Customer Thank You - New vs. Returning:
+   Reason: DUPLICATE - Shopify "Thank you!" already sends
+```
+
+### Order Status Updates (Shopify native)
+```yaml
+❌ Order Confirmed, Shipment Confirmed, etc.:
+   Reason: Shopify native transactional emails (NOT marketing)
+   Note: Should stay in Shopify for consistency
+```
+
+---
+
+## ✅ TOP 4 FLOWS TO DEPLOY (Complementary + High ROI)
+
+### 1. Customer Winback - Standard (Email & SMS)
+```yaml
+Category: Remind customers to purchase
+Klaviyo Flow Name: "Customer Winback - Standard (Email & SMS)"
+
+Why UNIQUE to Klaviyo:
+  - Uses Klaviyo ML to detect lapsed customers (30/60/90 days)
+  - Shopify CANNOT detect churn automatically
+  - Segments: "Opportunités de reconquête (Shopify)" already created
+
+Setup:
+  - Trigger: Klaviyo churn prediction (segment "Opportunités de reconquête")
+  - Emails: 2-3 emails (Day 60, 67, 74)
+  - Offer: 15% "We miss you" discount
+  - Split: Email + SMS for dual-channel reach
+
+Expected Impact:
+  - Month 3: +$2K-4K (lapsed customer reactivation)
+  - Year 1: +$10K-15K
+  - ROI: High-value existing customers (lower CAC)
+
+Duplication: ZERO - Shopify has no churn detection
+```
+
+### 2. Welcome Series - Final Email Discount
+```yaml
+Category: Nurture subscribers
+Klaviyo Flow Name: "Welcome Series - Final Email Discount"
+
+Why COMPLEMENTARY (not duplicate):
+  - Shopify Email: 1 welcome email (immediate)
+  - Klaviyo: 4 emails (Day 0, 3, 7, 14)
+  - 4th email ONLY sends if subscriber hasn't converted yet
+
+Setup:
+  - Trigger: Email subscription (Shopify customer created)
+  - Email 1 (Day 0): Welcome + WELCOME10 reinforcement (complements Shopify)
+  - Email 2 (Day 3): Brand story + testimonials
+  - Email 3 (Day 7): Bestsellers showcase + urgency
+  - Email 4 (Day 14): Final discount (ONLY if no purchase yet)
+  - Conditional Split: Exit flow if purchased
+
+Expected Impact:
+  - Month 1: +$1K-2K (nurturing cold subscribers)
+  - Year 1: +$5K-8K
+  - ROI: Low-cost nurturing, high conversion lift
+
+Duplication: ZERO - Extends Shopify welcome, not replacing it
+```
+
+### 3. Repeat Purchase Nurture Series - Order Count Split
+```yaml
+Category: Encourage repeat purchases
+Klaviyo Flow Name: "Repeat Purchase Nurture Series - Order Count Split"
+
+Why UNIQUE to Klaviyo:
+  - Uses Klaviyo ML "predicted date of next purchase" (CDP feature)
+  - Shopify CANNOT predict next purchase timing
+  - Sends well-timed nudges BEFORE predicted churn
+
+Setup:
+  - Trigger: Predicted next purchase date (Klaviyo CDP)
+  - Split paths: 1st buyer, 2nd buyer, 3+ buyers (lifecycle messaging)
+  - Timing: 3-5 days before predicted next purchase
+  - Content: Personalized recommendations based on order history
+
+Expected Impact:
+  - Month 3: +$2K-3K (repeat purchase acceleration)
+  - Year 1: +$8K-12K
+  - ROI: Increases purchase frequency (LTV boost)
+
+Duplication: ZERO - Shopify has no predictive ML
+```
+
+### 4. Product Review / Cross-Sell - Standard (Email & SMS)
+```yaml
+Category: Other (Post-Purchase)
+Klaviyo Flow Name: "Product Review / Cross-Sell - Standard (Email & SMS)"
+
+Why COMPLEMENTARY (not duplicate):
+  - Shopify Email: "Thank you!" (basic post-purchase)
+  - Klaviyo: Review request + cross-sell recommendations (7-10 days after)
+  - Timing: AFTER Shopify thank you (no conflict)
+
+Setup:
+  - Trigger: Placed Order (Shopify)
+  - Delay: 7-10 days (product received, usage started)
+  - Email 1: Review request + 5-star incentive
+  - Email 2: Cross-sell (based on purchased category)
+  - Split: Email + SMS for dual-channel
+
+Expected Impact:
+  - Month 1: +$500-1K (cross-sell + social proof)
+  - Year 1: +$5K-8K (repeat purchases + reviews)
+  - Reviews: 50-100 reviews Year 1 (social proof asset)
+
+Duplication: ZERO - Shopify "Thank you!" is immediate, Klaviyo is 7+ days after
+```
+
+---
+
+## 📊 TOTAL IMPACT PROJECTION (4 Flows)
+
+```yaml
+Month 1 Impact:
+  - Winback: +$0 (needs 60 days data)
+  - Welcome Multi-Touch: +$1K-2K
+  - Repeat Purchase Nurture: +$0 (needs purchase data)
+  - Review/Cross-Sell: +$500-1K
+  Total Month 1: +$1.5K-3K
+
+Month 3 Impact:
+  - Winback: +$2K-4K (lapsed customers kick in)
+  - Welcome Multi-Touch: +$1.5K-2.5K
+  - Repeat Purchase Nurture: +$2K-3K
+  - Review/Cross-Sell: +$1K-2K
+  Total Month 3: +$6.5K-11.5K
+
+Year 1 Impact:
+  - Winback: +$10K-15K
+  - Welcome Multi-Touch: +$5K-8K
+  - Repeat Purchase Nurture: +$8K-12K
+  - Review/Cross-Sell: +$5K-8K
+  Total Year 1: +$28K-43K
+
+ROI: 8-12× Year 1 (conservative)
+Cost: $30-350/mo Klaviyo tier
+```
+
+---
+
+## 🚫 OTHER FLOWS CONSIDERED (Why NOT selected)
+
+### Happy Birthday - Standard
+```yaml
+Reason NOT selected:
+  - Requires birthdate collection (not configured)
+  - Low priority vs. churn prevention
+  - Would need popup/form update to collect birthdates
+Future: Consider AFTER birthdate collection implemented
+```
+
+### Back In Stock - VIP vs. Non-VIP
+```yaml
+Reason NOT selected:
+  - Requires inventory stockout issues (not current problem)
+  - Medical equipment: stable inventory, no scarcity
+  - Better for fashion/limited edition products
+Future: Monitor if inventory issues emerge
+```
+
+### Price Drop Notification
+```yaml
+Reason NOT selected:
+  - Medical equipment: stable pricing (no frequent drops)
+  - Better for dynamic pricing industries (electronics, fashion)
+  - Alpha Medical: consistent pricing strategy
+Future: N/A (not applicable to business model)
+```
+
+### Replenishment Reminder
+```yaml
+Reason NOT selected:
+  - Medical equipment: varied consumption cycles (hard to predict)
+  - Better for consumables (supplements, skincare with fixed cycles)
+  - Would need per-product replenishment windows
+Future: Consider for specific products (braces, tape = consumables)
+```
+
+---
+
+## 📋 DEPLOYMENT CHECKLIST (Manual UI - 3-4h)
+
+### Pre-Deployment (Verify first)
+- [x] Klaviyo account active ($30/mo) ✅
+- [x] Shopify integration connected (6 metrics) ✅
+- [x] Segments configured (10 segments) ✅
+- [x] Lists created (3 lists) ✅
+- [ ] Unique coupon codes created (WELCOME10 ✅, WINBACK15, REVIEW10)
+
+### Flow #1: Customer Winback (45 min)
+- [ ] Flow: "Customer Winback - Standard (Email & SMS)"
+- [ ] Trigger: Segment "Opportunités de reconquête (Shopify)"
+- [ ] Email 1 (Day 60): "We miss you!" + 15% discount WINBACK15
+- [ ] Email 2 (Day 67): "Last chance" + urgency
+- [ ] SMS: Optional (only if SMS list grows)
+- [ ] Test: Send test email to owner
+- [ ] Activate: Set live
+
+### Flow #2: Welcome Series (45 min)
+- [ ] Flow: "Welcome Series - Final Email Discount"
+- [ ] Trigger: List subscription (Email list)
+- [ ] Email 1 (Day 0): Welcome + WELCOME10
+- [ ] Email 2 (Day 3): Brand story + testimonials
+- [ ] Email 3 (Day 7): Bestsellers + urgency
+- [ ] Email 4 (Day 14): Final 10% (conditional: no purchase)
+- [ ] Conditional Split: Has placed order = Exit flow
+- [ ] Test: Send test email series
+- [ ] Activate: Set live
+
+### Flow #3: Repeat Purchase Nurture (60 min)
+- [ ] Flow: "Repeat Purchase Nurture Series - Order Count Split"
+- [ ] Trigger: Predicted next order date (Klaviyo CDP)
+- [ ] Wait 48h: Klaviyo CDP data accumulation
+- [ ] Split paths: 1st buyer, 2nd buyer, 3+ buyers
+- [ ] Customize: Messaging per lifecycle stage
+- [ ] Test: Wait for first purchase, verify trigger
+- [ ] Activate: Set live (manual mode initially)
+
+### Flow #4: Review/Cross-Sell (45 min)
+- [ ] Flow: "Product Review / Cross-Sell - Standard (Email & SMS)"
+- [ ] Trigger: Placed Order (Shopify)
+- [ ] Delay: 7-10 days
+- [ ] Email: Review request + cross-sell products
+- [ ] Incentive: REVIEW10 (10% off next order if review submitted)
+- [ ] Test: Place test order, verify timing
+- [ ] Activate: Set live
+
+### Post-Deployment (30 min)
+- [ ] Monitor: 48h delivery rates, open rates
+- [ ] Verify: NO duplication with Shopify emails (test with owner email)
+- [ ] Document: Update INFRASTRUCTURE_AUDIT_CHECKLIST.md
+- [ ] Track: First 7 days performance (opens, clicks, revenue)
+
+---
+
+## ✅ FINAL VERIFICATION
+
+```yaml
+Total Workflows: 13-14 (when deployed)
+  - Shopify Email: 5-6 workflows ✅ ACTIVE (KEEP 100%)
+  - Shopify Flow: 4 workflows ✅ ACTIVE (KEEP 100%)
+  - Klaviyo: 4 flows ⏳ TO DEPLOY (COMPLEMENTARY)
+
+Duplication Check:
+  Browse/Cart/Checkout abandonment: Shopify ✅
+  Welcome immediate: Shopify ✅
+  Post-purchase thank you: Shopify ✅
+
+  Welcome nurturing (4 emails): Klaviyo ✅ EXTENDS
+  Churn detection/winback: Klaviyo ✅ UNIQUE
+  Repeat purchase prediction: Klaviyo ✅ UNIQUE
+  Review/cross-sell (7-10d after): Klaviyo ✅ UNIQUE
+
+Result: ZERO duplication ✅
+```
+
+---
+
+**Session 56+ Complete - Klaviyo Flows Analysis**
+**Approach:** Complementarity (not replacement)
+**Selected:** 4 flows with highest ROI + zero overlap
+**Projected Impact:** +$28K-43K Year 1 (8-12× ROI)
+
+**Last Updated:** 2025-11-26 22:00 UTC
+
+---
+
+
+# 71. Klaviyo Flywheel Upgrade 2025
 
 **File:** `KLAVIYO_FLYWHEEL_UPGRADE_2025.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -89070,10 +89450,10 @@ Expected Advocate Engagement:
 ---
 
 
-# 71. Klaviyo Plan Recommendation Email Only
+# 72. Klaviyo Plan Recommendation Email Only
 
 **File:** `KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -89502,10 +89882,10 @@ TOTAL MONTHLY COST: $300-350/mo (Month 1)
 ---
 
 
-# 72. Klaviyo Welcome Flow Implementation
+# 73. Klaviyo Welcome Flow Implementation
 
 **File:** `KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -89954,10 +90334,10 @@ python3 update_landing_page_with_klaviyo.py
 ---
 
 
-# 73. Lead Automation System Operational
+# 74. Lead Automation System Operational
 
 **File:** `LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -90300,10 +90680,10 @@ grep GOOGLE_SHEET_ID /Users/mac/Desktop/Alpha-Medical/.env
 ---
 
 
-# 74. Llms Txt Deployment
+# 75. Llms Txt Deployment
 
 **File:** `LLMS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -90886,10 +91266,10 @@ Not `text/html` or `application/octet-stream`
 ---
 
 
-# 75. Loyalty Automation Progress Report
+# 76. Loyalty Automation Progress Report
 
 **File:** `LOYALTY_AUTOMATION_PROGRESS_REPORT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -91117,10 +91497,10 @@ Après complétion manuelle:
 ---
 
 
-# 76. Loyalty Simplified Manual Actions Guide
+# 77. Loyalty Simplified Manual Actions Guide
 
 **File:** `LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -91433,10 +91813,10 @@ System is 100% operational when:
 ---
 
 
-# 77. Loyalty System Architecture
+# 78. Loyalty System Architecture
 
 **File:** `LOYALTY_SYSTEM_ARCHITECTURE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -91822,10 +92202,10 @@ query GetCustomerLoyalty($customerId: ID!) {
 ---
 
 
-# 78. Loyalty System Setup Guide
+# 79. Loyalty System Setup Guide
 
 **File:** `LOYALTY_SYSTEM_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -92379,10 +92759,10 @@ After setup complete, verify:
 ---
 
 
-# 79. Manual Footer Config
+# 80. Manual Footer Config
 
 **File:** `MANUAL_FOOTER_CONFIG.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -92473,10 +92853,10 @@ Create new menu "Footer CONNECT" with these items:
 ---
 
 
-# 80. Menu Bundles Instructions
+# 81. Menu Bundles Instructions
 
 **File:** `MENU_BUNDLES_INSTRUCTIONS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -92556,10 +92936,10 @@ Après sauvegarde:
 ---
 
 
-# 81. Mydealz Synthese
+# 82. Mydealz Synthese
 
 **File:** `MYDEALZ_SYNTHESE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -92935,10 +93315,10 @@ EMAIL_CODES:
 ---
 
 
-# 82. Newsletter Flows Creation Checklist
+# 83. Newsletter Flows Creation Checklist
 
 **File:** `NEWSLETTER_FLOWS_CREATION_CHECKLIST.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -93636,10 +94016,10 @@ Risk:      MEDIUM (Setup looks correct, but no smoke test)
 ---
 
 
-# 83. Next Steps Flow Configuration
+# 84. Next Steps Flow Configuration
 
 **File:** `NEXT_STEPS_FLOW_CONFIGURATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -93888,10 +94268,10 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 ---
 
 
-# 84. Pain Relief Guide Implementation
+# 85. Pain Relief Guide Implementation
 
 **File:** `PAIN_RELIEF_GUIDE_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -94345,10 +94725,10 @@ Mark Task 3.10 as COMPLETE when:
 ---
 
 
-# 85. Paypal Deactivation Guide
+# 86. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -94643,10 +95023,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 86. Phase 3 Implementation Log
+# 87. Phase 3 Implementation Log
 
 **File:** `PHASE_3_IMPLEMENTATION_LOG.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -95179,10 +95559,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 87. Pre Launch Checklist 23 Days
+# 88. Pre Launch Checklist 23 Days
 
 **File:** `PRE_LAUNCH_CHECKLIST_23_DAYS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -95691,10 +96071,10 @@ Prêt à lancer? 🚀
 ---
 
 
-# 88. Pricing Quick Reference
+# 89. Pricing Quick Reference
 
 **File:** `PRICING_QUICK_REFERENCE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -96070,10 +96450,10 @@ Pour la validation complète, voir:
 ---
 
 
-# 89. Pricing Verification
+# 90. Pricing Verification
 
 **File:** `PRICING_VERIFICATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -96991,10 +97371,10 @@ Timestamp: 2025-10-13T00:00:00Z
 ---
 
 
-# 90. Priority Sources Implementation
+# 91. Priority Sources Implementation
 
 **File:** `PRIORITY_SOURCES_IMPLEMENTATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -97485,10 +97865,10 @@ Ou préférez-vous voir le plan final mis à jour avant de coder?
 ---
 
 
-# 91. Product Optimization Tracking
+# 92. Product Optimization Tracking
 
 **File:** `PRODUCT_OPTIMIZATION_TRACKING.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -98231,10 +98611,10 @@ Tous les 149 produits sont maintenant **COMPLÈTEMENT optimisés**:
 ---
 
 
-# 92. Rapport Final Complet
+# 93. Rapport Final Complet
 
 **File:** `RAPPORT_FINAL_COMPLET.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -98463,10 +98843,10 @@ Cliquer **"Generate from template"** pour:
 ---
 
 
-# 93. Rapport Theme Analyse
+# 94. Rapport Theme Analyse
 
 **File:** `RAPPORT_THEME_ANALYSE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -98834,10 +99214,10 @@ Le nom "My Store" est configuré dans **Shopify Admin → Settings → General �
 ---
 
 
-# 94. Response To Third Party Analysis
+# 95. Response To Third Party Analysis
 
 **File:** `RESPONSE_TO_THIRD_PARTY_ANALYSIS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -99360,10 +99740,10 @@ The third-party analysis was **harsh but fair**. We addressed every factual erro
 ---
 
 
-# 95. Robots Txt Deployment
+# 96. Robots Txt Deployment
 
 **File:** `ROBOTS_TXT_DEPLOYMENT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -99678,10 +100058,10 @@ Update robots.txt.liquid when:
 ---
 
 
-# 96. Seo Audit Recommendations
+# 97. Seo Audit Recommendations
 
 **File:** `SEO_AUDIT_RECOMMENDATIONS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -100140,10 +100520,10 @@ data = {
 ---
 
 
-# 97. Session 2025-11-11 Part3 Summary
+# 98. Session 2025-11-11 Part3 Summary
 
 **File:** `SESSION_2025-11-11_PART3_SUMMARY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -100329,10 +100709,10 @@ data = {
 ---
 
 
-# 98. Session 2025-11-11 Part6 Summary
+# 99. Session 2025-11-11 Part6 Summary
 
 **File:** `SESSION_2025-11-11_PART6_SUMMARY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -100625,10 +101005,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 99. Session 2025-11-11 Summary
+# 100. Session 2025-11-11 Summary
 
 **File:** `SESSION_2025-11-11_SUMMARY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -100860,10 +101240,10 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ---
 
 
-# 100. Session 2025-11-19 Final Summary
+# 101. Session 2025-11-19 Final Summary
 
 **File:** `SESSION_2025-11-19_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -101142,10 +101522,10 @@ All information is now:
 ---
 
 
-# 101. Session Part 14 Comprehensive Audit
+# 102. Session Part 14 Comprehensive Audit
 
 **File:** `SESSION_PART_14_COMPREHENSIVE_AUDIT.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -101755,10 +102135,10 @@ All 3 have:
 ---
 
 
-# 102. Session Summary
+# 103. Session Summary
 
 **File:** `SESSION_SUMMARY.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -102017,10 +102397,10 @@ To quickly complete the basic site setup:
 ---
 
 
-# 103. Shopify Configuration Complete
+# 104. Shopify Configuration Complete
 
 **File:** `SHOPIFY_CONFIGURATION_COMPLETE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -102509,10 +102889,10 @@ Si besoin d'aide:
 ---
 
 
-# 104. Shopify Email Implementation Checklist
+# 105. Shopify Email Implementation Checklist
 
 **File:** `SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -102854,10 +103234,10 @@ Complete your order - Alpha Medical Care
 ---
 
 
-# 105. Shopify Email Manual Activation
+# 106. Shopify Email Manual Activation
 
 **File:** `SHOPIFY_EMAIL_MANUAL_ACTIVATION.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -102991,10 +103371,10 @@ Email capture sources actives:
 ---
 
 
-# 106. Shopify Email Welcome Discount Manual Setup
+# 107. Shopify Email Welcome Discount Manual Setup
 
 **File:** `SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -103199,10 +103579,10 @@ Visitor → Email popup → Opt-in (10% discount) → Welcome email with WELCOME
 ---
 
 
-# 107. Shopify Flow Configuration Guide
+# 108. Shopify Flow Configuration Guide
 
 **File:** `SHOPIFY_FLOW_CONFIGURATION_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -104359,10 +104739,10 @@ Production Confidence: **75%** (should work, but unverified)
 ---
 
 
-# 108. Shopify Flow Subscriptions Guide
+# 109. Shopify Flow Subscriptions Guide
 
 **File:** `SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -104776,10 +105156,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 109. Status Report Pages
+# 110. Status Report Pages
 
 **File:** `STATUS_REPORT_PAGES.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -104872,10 +105252,10 @@ If "Subscription billing attempt upcoming" trigger is unavailable:
 ---
 
 
-# 110. Todo Master Pre Launch 23 Days
+# 111. Todo Master Pre Launch 23 Days
 
 **File:** `TODO_MASTER_PRE_LAUNCH_23_DAYS.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -106158,10 +106538,10 @@ Order paid
 ---
 
 
-# 111. Top5 Percent Native Implementation Plan
+# 112. Top5 Percent Native Implementation Plan
 
 **File:** `TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -106793,10 +107173,10 @@ function getRecommendations(pain, activity, budget) {
 ---
 
 
-# 112. Top 10 Hero Products Mapping
+# 113. Top 10 Hero Products Mapping
 
 **File:** `TOP_10_HERO_PRODUCTS_MAPPING.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -107298,10 +107678,10 @@ CTA: [specific offer + discount code]
 ---
 
 
-# 113. Top 10 Urls To Index
+# 114. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -107610,10 +107990,10 @@ Homepage (Prio 1)
 ---
 
 
-# 114. Tracking Analytics Gaps 2025
+# 115. Tracking Analytics Gaps 2025
 
 **File:** `TRACKING_ANALYTICS_GAPS_2025.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -107989,10 +108369,10 @@ After installing tracking:
 ---
 
 
-# 115. Ugc Video Prompts Grok Imagine
+# 116. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -108791,10 +109171,10 @@ alphamedical.shop
 ---
 
 
-# 116. Ultimate Pain Relief Guide
+# 117. Ultimate Pain Relief Guide
 
 **File:** `ULTIMATE_PAIN_RELIEF_GUIDE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -110307,10 +110687,10 @@ Visit **alphamedicalcare.com/resources** for:
 ---
 
 
-# 117. Video Ads Creation Playbook
+# 118. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -111509,10 +111889,10 @@ This is a living document - update as you learn!
 ---
 
 
-# 118. Video Ads Infrastructure Complete
+# 119. Video Ads Infrastructure Complete
 
 **File:** `VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -112068,10 +112448,10 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 ---
 
 
-# 119. Session 2025-11-20 Summary
+# 120. Session 2025-11-20 Summary
 
 **File:** `session_2025-11-20_summary.md`
-**Last Modified:** 2025-11-26 20:43
+**Last Modified:** 2025-11-26 20:47
 
 ---
 
@@ -112406,8 +112786,8 @@ python3 asset_organizer.py --verify tourmaline-knee-pads
 
 ## Document Information
 
-**Total Documentation Files:** 119
-**Generated:** November 26, 2025 at 20:43 UTC
+**Total Documentation Files:** 120
+**Generated:** November 26, 2025 at 20:47 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
