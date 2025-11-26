@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 """
-SYNC APIFY LEADS TO GOOGLE SHEETS
-No external apps - Pure Python + Google Sheets API
+SYNC APIFY LEADS TO GOOGLE SHEETS (v2 - Improved)
+- Prevents duplicates automatically
+- Maintains header structure
+- Sorts by quality score
 
 Usage:
-    python3 sync_leads_to_sheets.py leads/general/leads_general_instagram_20251122.json
+    python3 sync_leads_to_sheets_v2.py leads/general/leads_general_instagram_20251122.json
 
 Requirements:
     pip install gspread oauth2client
-
-Setup:
-    1. Create Google Cloud Project
-    2. Enable Google Sheets API
-    3. Create Service Account
-    4. Download credentials.json → rename to google_credentials.json
-    5. Share Google Sheet with service account email
 """
 
 import json
@@ -28,6 +23,22 @@ from pathlib import Path
 CREDENTIALS_FILE = Path(__file__).parent / "google_credentials.json"
 SHEET_NAME = "Alpha Medical - Lead Management"
 WORKSHEET_NAME = "Raw Leads"
+
+# Correct headers (12 columns)
+EXPECTED_HEADERS = [
+    "timestamp",
+    "platform",
+    "type",
+    "name",
+    "contact",
+    "location",
+    "engagement",
+    "rating",
+    "review_count",
+    "quality_score",
+    "persona_match",
+    "lead_url"
+]
 
 def detect_persona(name, category, address):
     """Detect persona based on lead data"""
@@ -47,13 +58,11 @@ def detect_persona(name, category, address):
         return 'unknown'
 
 def sync_to_sheets(leads_file):
-    """Sync leads from JSON file to Google Sheets"""
+    """Sync leads from JSON file to Google Sheets (with duplicate prevention)"""
 
     # Check if credentials file exists
     if not CREDENTIALS_FILE.exists():
         print(f"❌ ERROR: Credentials file not found: {CREDENTIALS_FILE}")
-        print(f"   Please create a service account and download credentials to:")
-        print(f"   {CREDENTIALS_FILE}")
         return False
 
     # Load leads from JSON
@@ -83,20 +92,36 @@ def sync_to_sheets(leads_file):
         spreadsheet = client.open(SHEET_NAME)
         worksheet = spreadsheet.worksheet(WORKSHEET_NAME)
         print(f"✅ Opened sheet: {SHEET_NAME} → {WORKSHEET_NAME}")
-    except gspread.exceptions.SpreadsheetNotFound:
-        print(f"❌ ERROR: Spreadsheet '{SHEET_NAME}' not found")
-        print(f"   Please create the sheet and share it with the service account email")
-        return False
-    except gspread.exceptions.WorksheetNotFound:
-        print(f"❌ ERROR: Worksheet '{WORKSHEET_NAME}' not found")
-        print(f"   Please create a worksheet named '{WORKSHEET_NAME}'")
-        return False
     except Exception as e:
         print(f"❌ ERROR opening sheet: {e}")
         return False
 
+    # Verify headers
+    try:
+        current_headers = worksheet.row_values(1)
+        if current_headers != EXPECTED_HEADERS:
+            print(f"⚠️  Headers mismatch! Fixing...")
+            worksheet.update([EXPECTED_HEADERS], 'A1:L1')
+            print(f"✅ Headers fixed")
+    except Exception as e:
+        print(f"⚠️  Could not verify headers: {e}")
+
+    # Get existing leads to check for duplicates
+    try:
+        existing_data = worksheet.get_all_values()[1:]  # Skip header
+        existing_keys = set()
+        for row in existing_data:
+            if len(row) >= 6 and row[3].strip():  # Has name
+                key = f"{row[3]}|{row[4]}|{row[5]}".lower()  # name|contact|location
+                existing_keys.add(key)
+        print(f"✅ Found {len(existing_keys)} existing leads in sheet")
+    except Exception as e:
+        print(f"⚠️  Could not check existing leads: {e}")
+        existing_keys = set()
+
     # Sync each lead
     synced_count = 0
+    skipped_count = 0
     errors = []
 
     for i, lead in enumerate(leads, 1):
@@ -107,19 +132,29 @@ def sync_to_sheets(leads_file):
             # Extract location
             location = lead.get('address') or lead.get('location') or lead.get('locationName') or ''
 
+            # Create unique key for duplicate check
+            name = lead.get('name', '')
+            key = f"{name}|{contact}|{location}".lower()
+
+            # Skip if duplicate
+            if key in existing_keys:
+                print(f"   [{i}/{len(leads)}] ⏭️  {name} (duplicate - skipped)")
+                skipped_count += 1
+                continue
+
             # Detect persona
             persona = detect_persona(
-                lead.get('name', ''),
+                name,
                 lead.get('category', ''),
                 location
             )
 
-            # Prepare row data
+            # Prepare row data (exactly 12 columns)
             row = [
                 datetime.now().isoformat(),  # timestamp
                 lead.get('platform', ''),     # platform
                 lead.get('type', ''),         # type
-                lead.get('name', ''),         # name
+                name,                         # name
                 contact,                      # contact
                 location,                     # location
                 lead.get('engagement', ''),   # engagement (Instagram)
@@ -132,8 +167,9 @@ def sync_to_sheets(leads_file):
 
             # Append to sheet
             worksheet.append_row(row, value_input_option='USER_ENTERED')
+            existing_keys.add(key)  # Add to existing keys to prevent duplicates within this batch
             synced_count += 1
-            print(f"   [{i}/{len(leads)}] ✅ {lead.get('name', 'Unknown')} (score: {lead.get('quality_score', 'N/A')})")
+            print(f"   [{i}/{len(leads)}] ✅ {name} (score: {lead.get('quality_score', 'N/A')})")
 
         except Exception as e:
             error_msg = f"Lead {i}: {lead.get('name', 'Unknown')} - {str(e)}"
@@ -145,20 +181,21 @@ def sync_to_sheets(leads_file):
     print(f"SYNC COMPLETE")
     print("="*70)
     print(f"✅ Successfully synced: {synced_count}/{len(leads)} leads")
+    print(f"⏭️  Skipped duplicates: {skipped_count}/{len(leads)} leads")
     if errors:
         print(f"❌ Errors: {len(errors)}")
-        for error in errors[:5]:  # Show first 5 errors
+        for error in errors[:5]:
             print(f"   - {error}")
         if len(errors) > 5:
             print(f"   ... and {len(errors) - 5} more errors")
 
-    return synced_count == len(leads)
+    return synced_count + skipped_count == len(leads)
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 sync_leads_to_sheets.py <leads_file.json>")
+        print("Usage: python3 sync_leads_to_sheets_v2.py <leads_file.json>")
         print("\nExample:")
-        print("  python3 sync_leads_to_sheets.py leads/general/leads_general_instagram_20251122.json")
+        print("  python3 sync_leads_to_sheets_v2.py leads/general/leads_general_instagram_20251122.json")
         sys.exit(1)
 
     leads_file = sys.argv[1]
@@ -170,7 +207,7 @@ def main():
     success = sync_to_sheets(leads_file)
 
     if success:
-        print("\n🎉 All leads synced successfully!")
+        print("\n🎉 Sync completed successfully!")
         sys.exit(0)
     else:
         print("\n⚠️  Sync completed with errors")
