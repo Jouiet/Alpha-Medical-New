@@ -1,52 +1,49 @@
 {
-  "timestamp": "2025-11-11T13:40:55.186250",
+  "timestamp": "2025-11-26T22:47:36.683623",
   "store_url": "https://www.alphamedical.shop",
   "api_version": "2025-10",
   "results": {
     "meta_tags": {
       "title": {
-        "value": "Professional Medical Equipment You Can Trust - FDA-Compliant | 30-Day Guarantee | Alpha Medical Care",
-        "length": 100,
-        "optimal": false,
-        "status": "\u26a0\ufe0f FAIL"
+        "value": "Medical Equipment | FDA-Compliant | Alpha Medical Care",
+        "length": 54,
+        "optimal": true,
+        "status": "\u2705 PASS"
       },
       "description": {
-        "value": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. F",
-        "length": 236,
-        "optimal": false,
-        "status": "\u26a0\ufe0f FAIL"
+        "value": "Shop FDA-compliant orthopedic braces, posture correctors &amp; therapy devices. 30-day money-back guarantee. Free shipping $150+. 10,000+ satisfied customers.",
+        "length": 158,
+        "optimal": true,
+        "status": "\u2705 PASS"
       },
       "og_tags": {
-        "complete": false,
+        "complete": true,
         "tags": {
           "og:site_name": "Alpha Medical Care",
           "og:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
-          "og:description": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
-          "og:image": null,
+          "og:description": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials.",
+          "og:image": "http://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712",
           "og:url": "https://www.alphamedical.shop/",
           "og:type": "website"
         },
-        "missing": [
-          "og:image"
-        ],
-        "status": "\u274c FAIL"
+        "missing": [],
+        "status": "\u2705 PASS"
       },
       "twitter_cards": {
-        "complete": false,
+        "complete": true,
         "tags": {
           "twitter:card": "summary_large_image",
           "twitter:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
-          "twitter:description": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
-          "twitter:image": null
+          "twitter:description": "Professional medical support equipment &amp; orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices &amp; massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials.",
+          "twitter:image": "https://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712"
         },
-        "missing": [
-          "twitter:image"
-        ],
-        "status": "\u274c FAIL"
+        "missing": [],
+        "status": "\u2705 PASS"
       }
     },
     "schemas": {
       "found": [
+        "MedicalBusiness",
         "Organization",
         "WebSite",
         "ProductGroup"
@@ -104,13 +101,13 @@
       "status": "\u2705 PASS"
     },
     "products": {
-      "total_active": 83,
+      "total_active": 91,
       "with_metafields": 83,
-      "compliance_rate": 100.0,
-      "status": "\u2705 PASS"
+      "compliance_rate": 91.20879120879121,
+      "status": "\u26a0\ufe0f PARTIAL"
     },
     "collections": {
-      "total": 6,
+      "total": 7,
       "with_descriptions": 6,
       "empty_collections": [],
       "count_empty": 0,
@@ -128,22 +125,22 @@
     },
     "summary": {
       "categories": {
-        "Meta Tags (Title)": false,
-        "Meta Tags (Description)": false,
-        "Open Graph Complete": false,
-        "Twitter Cards Complete": false,
+        "Meta Tags (Title)": true,
+        "Meta Tags (Description)": true,
+        "Open Graph Complete": true,
+        "Twitter Cards Complete": true,
         "Schemas Present": false,
         "AI Crawlers (\u22656)": true,
         "Sitemap Accessible": true,
         "SSL/HTTPS Perfect": true,
-        "Products Metafields (100%)": true,
+        "Products Metafields (100%)": false,
         "Collections Descriptions (\u226575%)": true,
         "llms.txt Page": true
       },
-      "passed": 6,
+      "passed": 9,
       "total": 11,
-      "score": 54.54545454545454,
-      "grade": "F"
+      "score": 81.81818181818183,
+      "grade": "B"
     }
   }
 }
