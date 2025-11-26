@@ -2272,10 +2272,26 @@ Account Status: ✅ ACTIVE ($30/mo tier - 1,000 profiles)
 Configuration Verified (2025-11-26):
   - Opt-in method: Single opt-in ✅ CORRECT (B2C e-commerce)
   - API Access Level: Full Access ✅ CORRECT
-  - Public API Key: pk_3055b7c6594e513a36d470d2bf8044017e ✅ (client tracking)
-  - Private API Key: ⏳ NEEDED for flow creation via API
+  - API Key: ✅ STORED in .env.admin (gitignored)
+  - API verified: /flows, /accounts endpoints accessible
 
-Flows Status: 0/4 deployed (awaiting private API key)
+Flows Status: 3/3 draft templates (Klaviyo auto-generated)
+  - REgfmx: "Essential Flow Recommendation_" (draft, unconfigured)
+  - U5HbuD: "Essential Flow Recommendation_" (draft, unconfigured)
+  - VS94Z8: "Essential Flow Recommendation_" (draft, unconfigured)
+
+Integration Status (API verified 2025-11-26):
+  - Shopify: ✅ CONNECTED (6 metrics active)
+    • Placed Order, Checkout Started, Ordered Product
+    • Fulfilled Order, Cancelled Order, Refunded Order
+  - Profiles: 8 total (5 test emails + owner)
+  - Lists: 3 created (Email list, SMS list, Preview list)
+  - Segments: 10 pre-configured
+    • 5 Shopify-specific: VIP, Regular buyers, Win-back, Churn risk, Potential buyers
+    • 5 Engagement: 30-day, 60-day, 90-day, New subscribers, Recent subscribers
+  - Campaigns: 0 sent (PRE-LAUNCH)
+
+Custom Flows: 0/4 deployed (ready to create)
 
 Planned Flows (COMPLEMENTARY to Shopify):
   1. Welcome Series Multi-Touch (4-5 emails) - EXTENDS Shopify welcome
@@ -2288,6 +2304,12 @@ NO DUPLICATION with Shopify Email/Flow:
   - Post-purchase "Thank you": Shopify handles ✅
   - Welcome immediate: Shopify handles ✅
   - Klaviyo adds: Multi-touch nurturing, churn detection, AI cross-sell
+
+Readiness Score: 85/100
+  ✅ Account active + API configured
+  ✅ Shopify integration fully connected
+  ✅ Segments auto-configured (RFM, engagement)
+  ⏳ 0/4 custom flows created (manual UI work required)
 ```
 
 ### Lead Capture Popups - DEPLOYED LIVE
