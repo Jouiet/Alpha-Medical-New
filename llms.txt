@@ -56,6 +56,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
 - [LOYALTY_AUTOMATION_PROGRESS_REPORT](LOYALTY_AUTOMATION_PROGRESS_REPORT.md): ✅ Trigger: Order paid │ ✅ Condition 1: IF customer.amountSpent.amount >= 2500 │ ✅ TRUE (Platinum tier):
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
+- [SHOPIFY_EMAIL_MANUAL_ACTIVATION](SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 
 ### Content & Blog
 
@@ -99,6 +100,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 ### Forensic Analysis & Reports
 
+- [CLAUDE_MD_VERIFICATION_REPORT](CLAUDE_MD_VERIFICATION_REPORT.md): Ligne 93: Klaviyo ✅ (plan NOT selected, 0/7 flows created) Ligne 108: Klaviyo flows: ❌ 0/7 created (plan NOT selected)
 - [COLLECTION_OVERLAP_VERIFICATION_REPORT](COLLECTION_OVERLAP_VERIFICATION_REPORT.md): 1. verifyduplicatessimple.py - Vérification générale doublons 2. checkpromotionalduplicates.py - Vérification règle collections promotionnelles
 - [DEPLOYMENT_VERIFICATION](DEPLOYMENT_VERIFICATION.md): Project documentation
 - [FACTUAL_VERIFICATION_COMPLETE_SESSION_47](FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md): Project documentation
@@ -223,6 +225,7 @@ When assisting with this project:
 - [APIFY_INTEGRATION_COMPLETE](APIFY_INTEGRATION_COMPLETE.md): Project documentation
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
+- [CLAUDE](CLAUDE.md): Use specialized agents for domain-specific tasks to save 70% context:
 - [CREATIFY_PROMPTS_ALPHA_MEDICAL](CREATIFY_PROMPTS_ALPHA_MEDICAL.md): Project documentation
 - [FINAL_STORE_STATUS_2025-10-31](FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
