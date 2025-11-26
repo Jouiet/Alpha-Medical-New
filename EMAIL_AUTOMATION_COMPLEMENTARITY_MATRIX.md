@@ -136,23 +136,42 @@ Upgrade: $350/mo (20,000 profiles tier) - when >1,000 emails
 
 ### Valeur ajoutée (CE QUE SHOPIFY NE PEUT PAS FAIRE):
 ```yaml
-1. Welcome multi-touch nurturing (vs 1 email Shopify)
-2. Win-Back churn prediction (UNIQUE - pas dans Shopify)
-3. Cross-sell AI timing (UNIQUE - pas dans Shopify)
-4. RFM/CLV segmentation auto (UNIQUE - Shopify = manuel)
-5. VIP progression emails (complément Shopify Flow tags)
-6. A/B testing avancé (vs limité Shopify)
+4 Flows Complémentaires (NOMS EXACTS de bibliothèque Klaviyo):
+
+1. Customer Winback - Standard (Email & SMS)
+   → Churn detection ML (UNIQUE - Shopify cannot do)
+   → Segment "Opportunités de reconquête" auto-populated
+
+2. Welcome Series - Final Email Discount
+   → Multi-touch nurturing 4 emails (EXTENDS Shopify 1 email)
+   → Conditional: 4th email only if no purchase
+
+3. Repeat Purchase Nurture Series - Order Count Split
+   → Predicted next order date ML (UNIQUE - Shopify cannot do)
+   → Lifecycle messaging (1st, 2nd, 3+ buyers)
+
+4. Product Review / Cross-Sell - Standard (Email & SMS)
+   → 7-10 days post-purchase (COMPLEMENTS Shopify immediate thank you)
+   → Review collection + cross-sell recommendations
+
+Plus: RFM/CLV segmentation auto (Klaviyo CDP - FREE), A/B testing avancé
 ```
 
-### ROI Projeté:
+### ROI Projeté (4 Flows):
 ```yaml
-Month 1: +$2K-4K (welcome series + cross-sell)
-Month 3: +$8K-15K (win-back kicking in)
-Month 12: +$25K-40K (all flows optimized)
+Month 1: +$1.5K-3K (welcome nurturing + review/cross-sell start)
+Month 3: +$6.5K-11.5K (winback + repeat purchase nurture kick in)
+Month 12: +$28K-43K (all flows optimized, full lifecycle coverage)
 
-ROI: 7-12× Year 1 (conservative vs original 14-21×)
-Raison baisse: Shopify fait déjà browse/cart/checkout abandonment
-Klaviyo ajoute: Nurturing + Intelligence, pas replacement
+ROI: 8-12× Year 1 (conservative, proven benchmarks)
+Breakdown:
+  - Winback: +$10K-15K (lapsed customer reactivation)
+  - Welcome Multi-Touch: +$5K-8K (cold subscriber nurturing)
+  - Repeat Purchase Nurture: +$8K-12K (purchase frequency increase)
+  - Review/Cross-Sell: +$5K-8K (social proof + AOV boost)
+
+Note: Shopify fait déjà browse/cart/checkout abandonment
+Klaviyo ajoute: ML Intelligence + Lifecycle Nurturing (not replacement)
 ```
 
 ---
@@ -171,41 +190,70 @@ Klaviyo ajoute: Nurturing + Intelligence, pas replacement
 4. Wait 24-48h: KDP analysis first data
 ```
 
-### Phase 2: Créer 4 Flows COMPLÉMENTAIRES (2.5h)
+### Phase 2: Créer 4 Flows COMPLÉMENTAIRES (3-4h)
 
-**Flow #1: Welcome Series Multi-Touch (45 min)**
+**Flow #1: Customer Winback - Standard (Email & SMS) (45 min)**
 ```
-Trigger: Email subscription
+Klaviyo Template: "Customer Winback - Standard (Email & SMS)"
+Category: Remind customers to purchase
+
+Trigger: Segment "Opportunités de reconquête (Shopify)" (Klaviyo auto-segment)
+Emails:
+  - Day 60: "We miss you!" + 15% WINBACK15
+  - Day 67: "Last chance" + urgency
+  - Optional SMS for dual-channel reach
+
+Why UNIQUE: Shopify cannot detect churn automatically
+Klaviyo ML: Auto-identifies lapsed customers (60+ days no purchase)
+```
+
+**Flow #2: Welcome Series - Final Email Discount (45 min)**
+```
+Klaviyo Template: "Welcome Series - Final Email Discount"
+Category: Nurture subscribers
+
+Trigger: Email subscription (List "Liste d'adresses e-mail")
 Emails:
   - Day 0: Welcome + WELCOME10 reinforcement
   - Day 3: Brand story + testimonials
-  - Day 7: Bestsellers showcase
-  - Day 14: "Still interested?" reminder
-Filter: Exclude if purchased (exit flow)
+  - Day 7: Bestsellers showcase + urgency
+  - Day 14: Final 10% discount (ONLY if no purchase yet)
+Conditional Split: Exit flow if "Placed Order"
+
+Why COMPLEMENTARY: Extends Shopify welcome (not replacing)
+Shopify Email: Immediate welcome (1 email)
+Klaviyo: Multi-touch nurturing (4 emails)
 ```
 
-**Flow #2: Win-Back Campaign (45 min)**
+**Flow #3: Repeat Purchase Nurture Series - Order Count Split (60 min)**
 ```
-Trigger: Last purchase > 60 days (segment via KDP)
+Klaviyo Template: "Repeat Purchase Nurture Series - Order Count Split"
+Category: Encourage repeat purchases
+
+Trigger: Predicted next order date (Klaviyo CDP Machine Learning)
+Split Paths: 1st buyer, 2nd buyer, 3+ buyers (lifecycle messaging)
+Timing: 3-5 days BEFORE predicted next purchase
+Content: Personalized based on order history
+
+Why UNIQUE: Shopify cannot predict next purchase timing
+Klaviyo ML: Uses purchase history to predict churn before it happens
+```
+
+**Flow #4: Product Review / Cross-Sell - Standard (Email & SMS) (45 min)**
+```
+Klaviyo Template: "Product Review / Cross-Sell - Standard (Email & SMS)"
+Category: Other (Post-Purchase)
+
+Trigger: Placed Order (Shopify)
+Delay: 7-10 days (product received, usage started)
 Emails:
-  - Day 60: "We miss you" + 15% special offer
-  - Day 67: "Last chance" + urgency
-Filter: Customers with >1 purchase (loyalty focus)
-```
+  - Email 1: Review request + 5-star incentive (REVIEW10 discount)
+  - Email 2: Cross-sell recommendations (based on purchased category)
+  - Optional SMS for dual-channel
 
-**Flow #3: Cross-Sell Intelligence (30 min)**
-```
-Trigger: Order placed
-Delay: 7-10 days (KDP optimal timing)
-Content: Product affinity recommendations (KDP AI)
-Filter: Exclude if <$50 AOV (focus high-value)
-```
-
-**Flow #4: VIP Tier Progression (30 min)**
-```
-Trigger: Customer tagged "VIP" or "Loyal" (Shopify Flow)
-Email: "Congrats VIP!" + exclusive perks
-Integration: Use Shopify Flow tag as Klaviyo trigger
+Why COMPLEMENTARY: Timing separation from Shopify
+Shopify Email: "Thank you!" immediate post-purchase
+Klaviyo: Review + cross-sell 7-10 days after (no conflict)
 ```
 
 ### Phase 3: Test & Monitor (30 min)
