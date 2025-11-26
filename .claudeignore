@@ -1,0 +1,180 @@
+# Claude Code - Ignore irrelevant files for Alpha Medical
+
+# ============================================================================
+# SENSITIVE FILES (Never load into context)
+# ============================================================================
+.env
+.env.*
+credentials.json
+google-credentials*.json
+**/secrets/**
+*.key
+*.pem
+*.p12
+
+# ============================================================================
+# DEPENDENCIES & BUILD ARTIFACTS
+# ============================================================================
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.vercel/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================================================
+# GIT & VERSION CONTROL
+# ============================================================================
+.git/
+.gitignore
+.gitattributes
+.github/
+*.orig
+
+# ============================================================================
+# LARGE DATA FILES (Exclude from context)
+# ============================================================================
+*.csv
+*.xlsx
+*.xls
+*.json.bak
+*.xml.bak
+*.sql
+*.sqlite
+*.db
+
+# ============================================================================
+# SHOPIFY THEME ASSETS (Binary/compiled files)
+# ============================================================================
+assets/fonts/
+assets/images/
+*.woff
+*.woff2
+*.ttf
+*.eot
+*.otf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+*.mp4
+*.webm
+*.ogg
+
+# ============================================================================
+# COMPILED/MINIFIED FILES
+# ============================================================================
+*.min.js
+*.min.css
+*.bundle.js
+*.chunk.js
+*.map
+*-compiled.*
+
+# ============================================================================
+# CACHE & TEMPORARY FILES
+# ============================================================================
+.cache/
+.temp/
+.tmp/
+*.cache
+.DS_Store
+*.tmp
+*.swp
+*~
+Thumbs.db
+
+# ============================================================================
+# BACKUP FILES
+# ============================================================================
+*.bak
+*.backup
+backup/
+backups/
+*_backup.*
+*_old.*
+*.save
+
+# ============================================================================
+# TEST DATA & MOCKS
+# ============================================================================
+test-data/
+mock-data/
+fixtures/
+*.test.json
+*.mock.json
+__tests__/
+__mocks__/
+
+# ============================================================================
+# LARGE DOCUMENTATION BACKUPS (Keep only current versions)
+# ============================================================================
+*_backup.md
+*_old.md
+*_archive.md
+archive/
+archived/
+
+# ============================================================================
+# PYTHON ARTIFACTS (Lead generation scripts)
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# ============================================================================
+# IDE & EDITOR FILES
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ============================================================================
+# OS FILES
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ============================================================================
+# PACKAGE MANAGER LOCKS (Too large, not needed for context)
+# ============================================================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================================================
+# GENERATED REPORTS (Exclude large reports from auto-loading)
+# ============================================================================
+# Note: Verification reports in .claude/ are intentionally INCLUDED
+# They are small and essential for system understanding
+
+# ============================================================================
+# EXCLUSIONS (Files to ALWAYS include despite patterns above)
+# ============================================================================
+# Use ! prefix to negate patterns (if needed in future)

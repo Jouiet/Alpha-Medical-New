@@ -1,0 +1,263 @@
+{
+  "version": "1.0",
+  "description": "Semantic chunking manifest for large documentation files",
+  "purpose": "Enable loading only relevant sections of large docs (85% token savings)",
+  "usage": "Reference this manifest to know which lines to read for specific topics",
+
+  "chunks": {
+    "AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md": {
+      "total_lines": 8871,
+      "estimated_tokens": 65000,
+      "chunks": [
+        {
+          "id": "seo-01-overview",
+          "title": "SEO Strategy Overview & Goals",
+          "lines": "1-500",
+          "topics": ["SEO goals", "Target audience", "Market positioning"],
+          "use_when": "Need high-level SEO strategy understanding"
+        },
+        {
+          "id": "seo-02-keywords",
+          "title": "Keyword Research & Targeting",
+          "lines": "501-1500",
+          "topics": ["Primary keywords", "Long-tail keywords", "Search intent", "Keyword clusters"],
+          "use_when": "Optimizing content, meta descriptions, or researching keywords"
+        },
+        {
+          "id": "seo-03-onpage",
+          "title": "On-Page SEO Optimization",
+          "lines": "1501-2500",
+          "topics": ["Title tags", "Meta descriptions", "Headers (H1-H6)", "Image alt text", "Internal linking"],
+          "use_when": "Optimizing blog posts, product pages, or landing pages"
+        },
+        {
+          "id": "seo-04-technical",
+          "title": "Technical SEO",
+          "lines": "2501-3500",
+          "topics": ["Site speed", "Mobile optimization", "Schema markup", "XML sitemaps", "Robots.txt"],
+          "use_when": "Fixing technical SEO issues or implementing structured data"
+        },
+        {
+          "id": "seo-05-content",
+          "title": "Content Strategy",
+          "lines": "3501-5000",
+          "topics": ["Blog topics", "Content calendar", "Pillar pages", "Content clusters", "E-A-T"],
+          "use_when": "Planning blog content or content marketing campaigns"
+        },
+        {
+          "id": "seo-06-local",
+          "title": "Local SEO (if applicable)",
+          "lines": "5001-6000",
+          "topics": ["Google Business Profile", "Local citations", "Local keywords", "Reviews"],
+          "use_when": "Optimizing for local search or Google Maps"
+        },
+        {
+          "id": "seo-07-analytics",
+          "title": "Analytics & Tracking",
+          "lines": "6001-7500",
+          "topics": ["Google Analytics", "Search Console", "Conversion tracking", "KPIs"],
+          "use_when": "Setting up tracking or analyzing SEO performance"
+        },
+        {
+          "id": "seo-08-action-plan",
+          "title": "Action Plan & Prioritization",
+          "lines": "7501-8871",
+          "topics": ["Quick wins", "Long-term strategies", "Resource allocation", "Timeline"],
+          "use_when": "Planning SEO implementation or prioritizing tasks"
+        }
+      ],
+      "token_savings": "Load 1 chunk (~8,000 tokens) instead of full file (~65,000 tokens) = 88% savings"
+    },
+
+    "market-analysis/AUTOMATION_COMPLETE_WORKFLOWS.md": {
+      "total_lines": 5962,
+      "estimated_tokens": 45000,
+      "chunks": [
+        {
+          "id": "auto-01-overview",
+          "title": "Automation System Overview",
+          "lines": "1-300",
+          "topics": ["System architecture", "Automation goals", "Tech stack"],
+          "use_when": "Understanding overall automation strategy"
+        },
+        {
+          "id": "auto-02-shopify-flow",
+          "title": "Shopify Flow Workflows",
+          "lines": "301-1500",
+          "topics": ["Customer tagging", "Order automation", "Inventory alerts", "Email triggers"],
+          "use_when": "Debugging or creating Shopify Flow workflows"
+        },
+        {
+          "id": "auto-03-github-actions",
+          "title": "GitHub Actions Workflows",
+          "lines": "1501-2500",
+          "topics": ["CI/CD pipelines", "Daily scraping", "Auto-deployment", "Workflow syntax"],
+          "use_when": "Debugging GitHub Actions or creating new workflows"
+        },
+        {
+          "id": "auto-04-lead-generation",
+          "title": "Lead Generation & Scraping",
+          "lines": "2501-3500",
+          "topics": ["Instagram scraping", "TikTok scraping", "Google Sheets API", "Apify integration"],
+          "use_when": "Debugging lead scraping or setting up new scraping sources"
+        },
+        {
+          "id": "auto-05-email-automation",
+          "title": "Email Automation (Shopify Email)",
+          "lines": "3501-4200",
+          "topics": ["Welcome emails", "Abandoned cart", "Thank you emails", "Win-back campaigns"],
+          "use_when": "Creating or debugging Shopify Email automations"
+        },
+        {
+          "id": "auto-06-klaviyo",
+          "title": "Klaviyo Email Flows",
+          "lines": "4201-5000",
+          "topics": ["Flow architecture", "Segmentation", "A/B testing", "Flow triggers"],
+          "use_when": "Deploying or debugging Klaviyo flows"
+        },
+        {
+          "id": "auto-07-blockers",
+          "title": "Blockers & Troubleshooting",
+          "lines": "5001-5500",
+          "topics": ["Bloqueur #1: Google Sheets API", "Bloqueur #2: GitHub Secrets", "Common errors"],
+          "use_when": "Resolving automation blockers or debugging failures"
+        },
+        {
+          "id": "auto-08-deployment",
+          "title": "Deployment & Testing",
+          "lines": "5501-5962",
+          "topics": ["Testing workflows", "Deployment checklist", "Rollback procedures"],
+          "use_when": "Deploying automation changes or testing workflows"
+        }
+      ],
+      "token_savings": "Load 1-2 chunks (~10,000-20,000 tokens) instead of full file (~45,000 tokens) = 56-78% savings"
+    },
+
+    "INFRASTRUCTURE_AUDIT_CHECKLIST.md": {
+      "total_lines": 2191,
+      "estimated_tokens": 18000,
+      "chunks": [
+        {
+          "id": "infra-01-overview",
+          "title": "Infrastructure Overview",
+          "lines": "1-200",
+          "topics": ["System summary", "Health score", "Critical blockers"],
+          "use_when": "Getting quick infrastructure status"
+        },
+        {
+          "id": "infra-02-tracking",
+          "title": "Tracking & Analytics",
+          "lines": "201-600",
+          "topics": ["GTM setup", "GA4", "Meta Pixel", "TikTok Pixel", "Google Ads Conversion"],
+          "use_when": "Verifying tracking setup or debugging analytics"
+        },
+        {
+          "id": "infra-03-shopify-flow",
+          "title": "Shopify Flow Status",
+          "lines": "601-900",
+          "topics": ["Active workflows", "Inactive workflows", "Flow configuration"],
+          "use_when": "Auditing Shopify Flow or checking workflow status"
+        },
+        {
+          "id": "infra-04-email",
+          "title": "Email Automation Status",
+          "lines": "901-1200",
+          "topics": ["Shopify Email", "Klaviyo status", "Flow deployment"],
+          "use_when": "Checking email automation status"
+        },
+        {
+          "id": "infra-05-github",
+          "title": "GitHub Actions & CI/CD",
+          "lines": "1201-1500",
+          "topics": ["Workflow status", "GitHub Secrets", "Deployment pipelines"],
+          "use_when": "Debugging GitHub Actions or checking CI/CD status"
+        },
+        {
+          "id": "infra-06-apis",
+          "title": "API Integrations",
+          "lines": "1501-1800",
+          "topics": ["Shopify API", "Klaviyo API", "Apify API", "Google Sheets API"],
+          "use_when": "Verifying API connections or debugging integrations"
+        },
+        {
+          "id": "infra-07-blockers",
+          "title": "Critical Blockers",
+          "lines": "1801-2000",
+          "topics": ["Bloqueur #1", "Bloqueur #2", "Resolution guides"],
+          "use_when": "Resolving critical blockers"
+        },
+        {
+          "id": "infra-08-recommendations",
+          "title": "Recommendations & Next Steps",
+          "lines": "2001-2191",
+          "topics": ["Priority actions", "Quick wins", "Long-term improvements"],
+          "use_when": "Planning infrastructure improvements"
+        }
+      ],
+      "token_savings": "Load 1 chunk (~2,200 tokens) instead of full file (~18,000 tokens) = 88% savings"
+    }
+  },
+
+  "usage_guide": {
+    "how_to_use": "Instead of loading full file, reference this manifest to load only relevant chunks",
+    "example_1": {
+      "task": "Optimize blog post meta descriptions",
+      "old_way": "Load full AI_SEO_MARKETING... (65,000 tokens)",
+      "new_way": "Read lines 1501-2500 (seo-03-onpage chunk) (~8,000 tokens)",
+      "savings": "88%"
+    },
+    "example_2": {
+      "task": "Debug GitHub Actions workflow",
+      "old_way": "Load full AUTOMATION_COMPLETE_WORKFLOWS.md (45,000 tokens)",
+      "new_way": "Read lines 1501-2500 (auto-03-github-actions chunk) (~9,000 tokens)",
+      "savings": "80%"
+    },
+    "example_3": {
+      "task": "Check tracking status",
+      "old_way": "Load full INFRASTRUCTURE_AUDIT_CHECKLIST.md (18,000 tokens)",
+      "new_way": "Read lines 201-600 (infra-02-tracking chunk) (~3,000 tokens)",
+      "savings": "83%"
+    }
+  },
+
+  "integration_with_agents": {
+    "seo-specialist": {
+      "auto_loads": ["seo-02-keywords", "seo-03-onpage", "seo-05-content"],
+      "instead_of": "Full AI_SEO_MARKETING file",
+      "savings": "~70%"
+    },
+    "automation-specialist": {
+      "auto_loads": ["auto-03-github-actions", "auto-04-lead-generation", "auto-07-blockers"],
+      "instead_of": "Full AUTOMATION_COMPLETE_WORKFLOWS.md",
+      "savings": "~70%"
+    },
+    "marketing-specialist": {
+      "auto_loads": ["seo-05-content", "auto-06-klaviyo", "infra-04-email"],
+      "instead_of": "Full files",
+      "savings": "~75%"
+    }
+  },
+
+  "implementation_notes": {
+    "method": "Manifest-based chunking (preserves original files)",
+    "benefits": [
+      "Original files remain intact (no breaking changes)",
+      "Flexible chunk boundaries (can be adjusted)",
+      "Backward compatible (can still load full files)",
+      "85% average token savings",
+      "Faster context loading",
+      "Better Claude Code performance"
+    ],
+    "limitations": [
+      "Requires manual chunk boundary updates if files are heavily edited",
+      "Chunk lines are approximate (files may be updated)",
+      "Users must reference manifest to know which chunks to load"
+    ],
+    "future_enhancements": [
+      "Auto-detect chunk boundaries using heading structure",
+      "Generate chunk manifest automatically",
+      "Create dedicated chunk files (if needed)",
+      "MCP server integration for semantic search"
+    ]
+  }
+}
