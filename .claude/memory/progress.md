@@ -16,3 +16,4 @@
 - [2025-11-26 16:43 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/.claude/FACTUAL_VERIFICATION_SCRIPT.sh
 - [2025-11-26 16:50 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/.claude/PRODUCT_AUDIT_SCRIPT.sh
 - [2025-11-26 17:46 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md
+- [2025-11-26 18:16 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md
