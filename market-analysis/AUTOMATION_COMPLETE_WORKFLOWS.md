@@ -5,26 +5,28 @@
 
 ---
 
-## 🎯 STATUT ACTUEL (Mise à Jour: 2025-11-23 FINAL)
+## 🎯 STATUT ACTUEL (Mise à Jour: 2025-11-26 16:30 UTC - Session 56 VERIFIED)
 
-**✅ SYSTÈME 100% OPÉRATIONNEL - MULTI-CANAL**
+**⏳ SYSTÈME PARTIELLEMENT OPÉRATIONNEL - INFRASTRUCTURE PRÊTE, BLOQUEURS ACTIFS**
 
 ### ARCHITECTURE GLOBALE:
 **Scraping Intelligence** → **Multi-Channel Acquisition** → **Conversions**
-- Apify scraping (Instagram + Competitor research)
-- Meta Ads + TikTok Ads + Google Ads + Google Shopping
-- SEO/AEO content strategy
-- Email opt-in nurture (Shopify Email)
-- GA4 + GTM + Meta Pixel + TikTok Pixel tracking
+- ❌ Apify scraping (BLOCKED - GitHub Secrets manquants)
+- ⏳ Meta Ads + TikTok Ads + Google Ads (pixels ✅, campaigns ❌)
+- ✅ SEO/AEO content strategy (deployed)
+- ⏳ Email automation (4/11 automations active)
+- ✅ GA4 + GTM + Meta Pixel + TikTok Pixel + Google Ads Conversion tracking
 
-### Infrastructure 100% Active:
-- ✅ **Scraping**: Multi-platform (2.1K → 4.5K leads/month progressive)
-- ✅ **Google Sheets**: Configured (ID: 1KyE_H8OPLLJfgRjehNZLS_RcMJToHRQ9gny1Sgoa_JE)
-- ✅ **Automation**: GitHub Actions (cloud-based, replaces local cron)
-- ✅ **Tracking**: GA4 + GTM + Meta Pixel + TikTok Pixel
-- ✅ **Ads Platforms**: Google Ads, Google Shopping, Meta Ads, TikTok Ads
-- ✅ **Email (HYBRID)**: Klaviyo (advanced automation + CDP) + Shopify Email (simple campaigns)
-- ✅ **Security**: All secrets in GitHub Secrets (encrypted)
+### Infrastructure État Factuel (Session 56 - 2025-11-26 16:30 UTC VERIFIED):
+- ❌ **Scraping**: Scripts created ✅, GitHub Actions workflows ready ✅, BLOCKED by missing secrets
+- ❌ **Google Sheets**: Sheet ID configured, API credentials NOT created (10 min manual)
+- ❌ **Automation**: 5 GitHub Actions workflows created, 8/9 BLOCKED by missing secrets
+- ✅ **Tracking**: GTM-WFPH2KZP + FB Pixel 2396097167472997 + Google Tag GT-NC6L8G55 ACTIVE (verified via curl on live site)
+- ✅ **Site Content**: 96 products + 7 collections + 26 pages = 100% ENGLISH ONLY (verified via forensic v2 script)
+- ⏳ **Shopify Flow**: 4/7 workflows ACTIVE, 3 workflows INACTIVE (requires manual UI activation - user action needed)
+- ⏳ **Ads Platforms**: Conversion tracking configured ✅, campaigns NOT launched
+- ❌ **Email**: Klaviyo plan NOT selected (0/7 flows created), Shopify Email 4/7 active
+- ❌ **Security**: 0/4 GitHub Secrets configured (CRITICAL BLOCKER)
 
 ### System Optimization (2025-11-23):
 - ✅ **RECONFIGURÉ**: Google Maps scraping (B2B leads → D2C competitor intelligence)
@@ -5756,3 +5758,207 @@ All 7 scripts verified as existing:
 - Store Health: 100% (API accessible, theme active, all critical features deployed)
 - Scripts Integrity: 100% (7/7 scripts from Sessions 50-52 verified)
 - **FACTUAL ERROR CORRECTED:** Initial verification incorrectly marked social image as "pending" when it was already LIVE in theme settings
+
+---
+
+## 📊 SESSION 54 UPDATE - FACTUAL VERIFICATION (2025-11-26)
+
+**Mise à jour:** Google Ads Conversion Tracking + Shopify Flow/Email état réel
+
+### Google Ads Conversion Tracking CONFIGURED ✅
+
+**Account:** 128-734-6786  
+**Conversion ID:** AW-17749024238  
+**Implementation:** Via GTM (GTM-WFPH2KZP)  
+**Status:** ✅ Tags configured, ready for campaigns
+
+**Tags in GTM:**
+1. Google Tag - Base (AW-17749024238) - Trigger: All Pages ✅
+2. Suivi des conversions Google Ads - Trigger: Purchase Page ✅
+
+**Source:** TODO_MASTER_PRE_LAUNCH_23_DAYS.md:106-109, GTM_ADD_MISSING_TAGS_STEPS.md:43-58
+
+**Next Step:** Create and launch Google Ads campaigns (conversion tracking ready)
+
+---
+
+### Shopify Flow Workflows - ÉTAT FACTUEL (7 total: 4 Active, 3 Inactive)
+
+**ACTIVE Workflows (4/7):**
+
+1. **"New Loyalty Tier Tagging (Automatic)"** ✅ ACTIVE
+   - Trigger: Order paid
+   - Status: Last run: Not recently run (normal - 0 orders yet)
+   
+2. **"Convert abandoned product browse"** ✅ ACTIVE
+   - Trigger: Customer left online store without making a purchase
+   - Status: Last run: Not recently run
+   
+3. **"Recover abandoned cart"** ✅ ACTIVE
+   - Trigger: Customer left online store without making a purchase
+   - Status: Last run: Not recently run
+   
+4. **"Recover abandoned checkout"** ✅ ACTIVE
+   - Trigger: Customer abandons checkout
+   - Status: Last run: Not recently run
+
+**INACTIVE Workflows (3/7) - CRITICAL ISSUES:**
+
+5. **"Thank customers after they purchase"** ❌ INACTIVE
+   - Trigger: Order created
+   - Issue: MUST be activated before first order
+   - Action: Activate in Shopify Flow UI (2 min)
+   - Priority: CRITICAL
+   
+6. **"Welcome new subscribers with a discount email"** ❌ INACTIVE (duplicate #1)
+   - Trigger: Customer subscribed to email marketing
+   - Issue: Duplicate workflow exists
+   - Action: Activate ONE, delete the other (5 min)
+   
+7. **"Welcome new subscribers with a discount email"** ❌ INACTIVE (duplicate #2)
+   - Trigger: Customer subscribed to email marketing
+   - Issue: Duplicate of #6
+   - Action: Delete this workflow
+
+**Source:** Shopify Flow interface (owner-verified 2025-11-26)
+
+---
+
+### Shopify Email Automations - ÉTAT FACTUEL (7 total: 4 Active, 3 Draft)
+
+**ACTIVE Automations (4/7):**
+
+1. **"We're happy to see you again"** ✅ ACTIVE
+   - Scheduled: Oct 16, 2025 at 1:38 pm
+   - Trigger: Customer return visit
+   - Metrics: 0% delivery/open/click (PRE-LAUNCH expected)
+   
+2. **"Did something catch your eye?"** ✅ ACTIVE
+   - Scheduled: Oct 16, 2025 at 1:33 pm
+   - Trigger: Product browse abandonment
+   - Metrics: 0% (PRE-LAUNCH expected)
+   
+3. **"You left items in your cart"** ✅ ACTIVE
+   - Scheduled: Oct 16, 2025 at 1:29 pm
+   - Trigger: Cart abandonment
+   - Metrics: 0% (PRE-LAUNCH expected)
+   
+4. **"You left items at checkout"** ✅ ACTIVE
+   - Scheduled: Oct 16, 2025 at 12:53 pm
+   - Trigger: Checkout abandonment
+   - Metrics: 0% (PRE-LAUNCH expected)
+
+**DRAFT Automations (3/7) - NOT ACTIVE:**
+
+5. **"Thank you!"** ❌ DRAFT
+   - Issue: Should be ACTIVE for post-purchase
+   - Action: Activate before first order (2 min)
+   - Priority: CRITICAL
+   
+6. **"Welcome with discount"** ❌ DRAFT (duplicate instance #1)
+   - Issue: Two identical workflows exist
+   - Action: Activate ONE only
+   
+7. **"Welcome with discount"** ❌ DRAFT (duplicate instance #2)
+   - Issue: Duplicate
+   - Action: Delete one duplicate
+
+**Performance (All automations):**
+- Delivery rate: 0%
+- Open rate: 0%
+- Click rate: 0%
+- Sales: $0
+- Note: Expected for PRE-LAUNCH status (no traffic)
+
+**Source:** Shopify Email App > Automations tab (owner-verified 2025-11-26)
+
+---
+
+### Tracking Stack - COMPLETE VERIFICATION
+
+**GTM Container:** GTM-WFPH2KZP ✅ ACTIVE  
+**Location:** layout/theme.liquid:461
+
+**Tags Managed via GTM:**
+- ✅ GA4 (Google Analytics 4)
+- ✅ Meta Pixel (Facebook/Instagram)
+- ✅ TikTok Pixel
+- ✅ **Google Ads Conversion (AW-17749024238)** ← NEW
+
+**Architecture:**
+```
+┌─────────────────────────────────────────┐
+│  GTM Container (GTM-WFPH2KZP)          │
+│  ┌───────────────────────────────────┐ │
+│  │ GA4 Tag                           │ │
+│  │ Meta Pixel Tag                    │ │
+│  │ TikTok Pixel Tag                  │ │
+│  │ Google Ads Conversion Tag        │ │ ← ADDED
+│  │ (AW-17749024238)                  │ │
+│  └───────────────────────────────────┘ │
+└─────────────────────────────────────────┘
+          ↓ Single GTM script
+    layout/theme.liquid:456-469
+```
+
+---
+
+### Updated Flywheel Status (4 Phases)
+
+**PHASE 1: ACQUISITION**
+- ✅ Tracking: GTM + GA4 + Meta + TikTok + Google Ads (100%)
+- ⏳ Google Ads: Conversion ready ✅, campaigns NOT launched
+- ⏳ Facebook/IG Ads: Pixel ready ✅, campaigns NOT launched
+- ⏳ TikTok Ads: Pixel ready ✅, campaigns NOT launched
+- ❌ Lead scraping: Blocked by GitHub Secrets
+
+**PHASE 2: CONVERSION**
+- ✅ Shopify Email: 4/7 automations ACTIVE
+- ❌ Shopify Flow: "Thank you!" email INACTIVE (CRITICAL)
+- ❌ Klaviyo flows: 0/7 created
+
+**PHASE 3: RETENTION**
+- ⏳ Loyalty tier tagging: 1 workflow ACTIVE
+- ❌ Post-purchase emails: NOT active
+
+**PHASE 4: ADVOCACY**
+- ❌ Review automation: NOT configured
+- ❌ Referral tracking: NOT configured
+
+---
+
+### Critical Actions Required (UNCHANGED)
+
+**BLOQUEUR #1: Google Sheets API** (10 min)
+- Status: ❌ NOT created
+- Impact: Blocks ALL lead scraping automation
+- Guide: market-analysis/SETUP_GOOGLE_SHEETS_API.md
+
+**BLOQUEUR #2: GitHub Secrets** (5 min)
+- Status: ❌ 0/4 configured
+- Impact: Blocks 8/9 GitHub Actions workflows
+- Required: APIFY_API_TOKEN, SHOPIFY_API_KEY, SHOPIFY_PASSWORD, GOOGLE_CREDENTIALS_JSON
+
+**CRITICAL FIX #1: Shopify Flow "Thank you!" email** (2 min)
+- Status: ❌ INACTIVE
+- Impact: Customers will NOT receive thank you email after purchase
+- Action: Shopify Admin → Flow → Activate workflow
+
+**CRITICAL FIX #2: Shopify Email "Thank you!" automation** (2 min)
+- Status: ❌ DRAFT
+- Impact: Duplicate issue with thank you messaging
+- Action: Activate draft email automation
+
+**CRITICAL FIX #3: Welcome email duplicates** (5 min)
+- Status: ❌ 2 duplicate workflows (Flow + Email)
+- Impact: Risk of sending duplicate welcome emails
+- Action: Activate ONE workflow, delete/deactivate duplicates
+
+---
+
+**Session 54 | 2025-11-26 | Factual verification complete**
+**Google Ads:** AW-17749024238 configured ✅  
+**Shopify Flow:** 4/7 active, 3 critical fixes needed  
+**Shopify Email:** 4/7 active, 3 draft (duplicates)  
+**Next:** Resolve 3 critical fixes (9 min) + 2 bloqueurs (15 min) = 24 min total
+

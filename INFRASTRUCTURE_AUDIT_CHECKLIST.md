@@ -2,10 +2,17 @@
 ## Audit Exhaustif, Factuel et Architectural
 
 **Date de Création:** 2025-11-25
-**Dernière Vérification API:** 2025-11-25 22:40 UTC
+**Dernière Vérification API:** 2025-11-26 16:30 UTC (Session 56)
 **Méthode:** Bottom-up verification via APIs + Code inspection + Documentation cross-reference
 **Approche:** FACTUEL UNIQUEMENT - Aucune assumption, seulement des faits vérifiables
 **Status Global:** 46/100 - PRE-LAUNCH (0 orders, infrastructure 80% ready)
+
+**Session 56 Verifications (2025-11-26):**
+- ✅ Product Catalog: 96 products, 100% English verified (forensic v2 script)
+- ✅ Collections: 7 collections, 100% English verified
+- ✅ Pages: 26 pages, 100% English verified
+- ✅ Tracking: GTM-WFPH2KZP, FB Pixel (2396097167472997), Google Tag (GT-NC6L8G55) ACTIVE on live site
+- ⏳ Shopify Flow: 3 workflows INACTIVE (requires manual UI activation - blocker user action)
 
 ---
 
@@ -153,7 +160,33 @@ Type: Native Shopify app (free)
 Purpose: Email marketing, automations, campaigns
 Plan: Included in Shopify Basic
 Limitations: 10,000 emails/month free, $1 per 1,000 after
-Configuration Status: ⏳ App installed, workflows NOT fully configured
+
+Automations Status (7 total): 4 Active, 3 Draft
+Active Automations (4):
+  1. "We're happy to see you again" - Active (Oct 16, 2025)
+     └─ Trigger: Customer return visit
+  2. "Did something catch your eye?" - Active (Oct 16, 2025)
+     └─ Trigger: Product browse abandonment
+  3. "You left items in your cart" - Active (Oct 16, 2025)
+     └─ Trigger: Cart abandonment
+  4. "You left items at checkout" - Active (Oct 16, 2025)
+     └─ Trigger: Checkout abandonment
+
+Draft Automations (3):
+  1. "Thank you!" - Draft
+     └─ Issue: Should be ACTIVE for post-purchase
+  2. "Welcome with discount" - Draft (duplicate instance #1)
+  3. "Welcome with discount" - Draft (duplicate instance #2)
+     └─ Issue: Duplicate workflows, activate ONE only
+
+Performance (All automations):
+  - Delivery rate: 0% (no traffic)
+  - Open rate: 0%
+  - Click rate: 0%
+  - Sales: $0
+  Note: Expected for PRE-LAUNCH status
+
+Source: Shopify Email App > Automations tab (owner-verified 2025-11-26)
 ```
 
 **App #2: Klaviyo: Email Marketing & SMS**
@@ -261,12 +294,12 @@ Testing: ❌ Not tested (0 orders)
 Source: COMPLETE_SHOPIFY_FLOW_SETUP.md:16-21
 ```
 
-**Workflow #2: Abandoned Browse**
+**Workflow #2: Convert abandoned product browse**
 ```yaml
 Status: ✅ ACTIVE
-Trigger: Customer views product, doesn't add to cart (30 min)
+Trigger: Customer left online store without making a purchase
 Actions:
-  - Send Shopify Email: "Come back and browse"
+  - Send Shopify Email: "Did something catch your eye?"
   - Add tag: "abandoned_browse"
 Email Metrics (30d):
   - Sent: 0
@@ -275,62 +308,70 @@ Email Metrics (30d):
   - Orders: 0
   - Revenue: $0
 Note: Expected for PRE-LAUNCH (no real traffic)
+Source: Shopify Flow > Active workflows (owner-verified 2025-11-26)
 ```
 
-**Workflow #3: Abandoned Cart**
+**Workflow #3: Recover abandoned cart**
 ```yaml
 Status: ✅ ACTIVE
-Trigger: Cart created, not converted (1 hour)
+Trigger: Customer left online store without making a purchase
 Actions:
-  - Send Shopify Email: "Complete your order"
+  - Send Shopify Email: "You left items in your cart"
   - Add tag: "cart_abandonment"
 Email Metrics (30d): ALL ZERO (expected PRE-LAUNCH)
+Source: Shopify Flow > Active workflows (owner-verified 2025-11-26)
 ```
 
-**Workflow #4: Abandoned Checkout**
+**Workflow #4: Recover abandoned checkout**
 ```yaml
 Status: ✅ ACTIVE
-Trigger: Checkout started, not completed (1 hour)
+Trigger: Customer abandons checkout
 Actions:
-  - Send Shopify Email: "Checkout reminder"
+  - Send Shopify Email: "You left items at checkout"
   - Add tag: "checkout_abandonment"
 Email Metrics (30d): ALL ZERO (expected PRE-LAUNCH)
+Source: Shopify Flow > Active workflows (owner-verified 2025-11-26)
 ```
 
 #### 3.2 Inactive Workflows (3) - CRITICAL ISSUES
 
-**Workflow #5: Thank Customers After Purchase**
+**Workflow #5: Thank customers after they purchase**
 ```yaml
 Status: ❌ INACTIVE - CRITICAL PRIORITY #1
-Trigger: Order paid
+Trigger: Order created
 Actions:
-  - Send Shopify Email: "Thank you for your order"
+  - Send Shopify Email: "Thank you!"
   - Add tag: "customer"
 Impact: Customers will NOT receive thank you email after purchase
 Action Required: Activate in Shopify Admin (2 minutes)
 Priority: CRITICAL - Must activate before first real order
+Source: Shopify Flow > Inactive workflows (owner-verified 2025-11-26)
 ```
 
-**Workflow #6: Welcome Subscribers (Duplicate #1)**
+**Workflow #6: Welcome new subscribers with a discount email (Duplicate #1)**
 ```yaml
 Status: ❌ INACTIVE
-Trigger: Customer marketing opt-in
+Trigger: Customer subscribed to email marketing
 Actions:
-  - Send welcome email
-Impact: Duplicate workflow (2 identical workflows)
+  - Send Shopify Email: "Welcome with discount"
+  - Add tag: "new_subscriber"
+Impact: Duplicate workflow (2 identical workflows exist)
 Action Required: Activate ONE, delete the other (5 minutes)
 Priority: HIGH - Risk of duplicate emails
+Source: Shopify Flow > Inactive workflows (owner-verified 2025-11-26)
 ```
 
-**Workflow #7: Welcome Subscribers (Duplicate #2)**
+**Workflow #7: Welcome new subscribers with a discount email (Duplicate #2)**
 ```yaml
 Status: ❌ INACTIVE
-Trigger: Customer marketing opt-in
+Trigger: Customer subscribed to email marketing
 Actions:
-  - Send welcome email
+  - Send Shopify Email: "Welcome with discount"
+  - Add tag: "new_subscriber"
 Impact: Duplicate of Workflow #6
-Action Required: Delete this workflow (keep #6)
+Action Required: Delete this workflow (keep #6 only)
 Priority: HIGH
+Source: Shopify Flow > Inactive workflows (owner-verified 2025-11-26)
 ```
 
 #### 3.3 Missing Workflows (4) - Identified Gaps
@@ -445,6 +486,32 @@ Source: ANALYTICS_TRACKING_FACTUAL_STATUS.md:20-23
 Verification: Owner-verified active status
 ```
 
+#### 4.5 Google Ads Conversion Tracking
+
+```yaml
+Status: ✅ CONFIGURED in GTM (ready for campaign launch)
+Implementation: Via GTM tags (NOT standalone script)
+Google Ads Account: 128-734-6786
+Conversion ID: AW-17749024238
+Source: TODO_MASTER_PRE_LAUNCH_23_DAYS.md:106-109, GTM_ADD_MISSING_TAGS_STEPS.md:43-58
+
+Tags Configured:
+  1. Google Tag - Base (AW-17749024238)
+     - Type: Balise Google Ads
+     - Trigger: Initialization - All Pages
+     - Purpose: Load base Google Ads tracking
+
+  2. Suivi des conversions Google Ads
+     - Type: Suivi conversions Google Ads
+     - Conversion ID: AW-17749024238
+     - Trigger: Purchase Confirmation Page
+     - Purpose: Track purchase conversions
+     - Events: Purchase with transaction value
+
+Verification: Tags configured in GTM container GTM-WFPH2KZP
+Note: Conversion data will appear in Google Ads once campaigns are active
+```
+
 **Architecture Rationale:**
 ```
 Modern Tracking Stack (2025 Best Practice):
@@ -456,6 +523,9 @@ Modern Tracking Stack (2025 Best Practice):
 │  │ Meta Pixel Tag (Facebook/IG)      │ │
 │  ├───────────────────────────────────┤ │
 │  │ TikTok Pixel Tag                  │ │
+│  ├───────────────────────────────────┤ │
+│  │ Google Ads Conversion Tag        │ │
+│  │ (AW-17749024238)                  │ │
 │  └───────────────────────────────────┘ │
 └─────────────────────────────────────────┘
           ↓ Single GTM script in theme
@@ -981,14 +1051,17 @@ Last Run: Auto-updates on every commit
 
 **Configured:**
 - ✅ GTM + GA4 + FB Pixel + TikTok Pixel (100% active)
+- ✅ Google Ads Conversion Tracking (Account: 128-734-6786, ID: AW-17749024238)
 - ✅ 96 products live on store
 - ✅ 8 collections with SEO-optimized descriptions
 - ✅ Blog with articles (SEO foundation)
 
+**Partially Configured:**
+- ⏳ Google Ads (conversion tracking ✅, 0 campaigns ❌)
+- ⏳ Facebook/IG Ads (pixel ✅, 0 campaigns ❌)
+- ⏳ TikTok Ads (pixel ✅, 0 campaigns ❌)
+
 **NOT Configured:**
-- ❌ Google Ads campaigns (0 active)
-- ❌ Facebook/IG Ads campaigns (0 active, pixel ready)
-- ❌ TikTok Ads campaigns (0 active, pixel ready)
 - ❌ Lead generation scraping (scripts ready, not running)
 - ❌ Newsletter signup workflow (form exists, Flow NOT configured)
 - ❌ Contest/giveaway running (Typeform ready, sync NOT active)
@@ -1224,9 +1297,9 @@ Alternative Eliminated: Shopify Email backup plan no longer needed
 #### 10.3 Marketing Gaps
 
 **Paid Advertising:**
-- ❌ No Google Ads campaigns
-- ❌ No Facebook/IG Ads campaigns
-- ❌ No TikTok Ads campaigns
+- ⏳ Google Ads: Conversion tracking configured (AW-17749024238), campaigns NOT created
+- ⏳ Facebook/IG Ads: Pixel active via GTM, campaigns NOT created
+- ⏳ TikTok Ads: Pixel active via GTM, campaigns NOT created
 - ❌ No retargeting campaigns (pixels ready, campaigns NOT created)
 
 **Content Marketing:**
@@ -1949,3 +2022,177 @@ Google Sheets API:
 - Progress: 52/100 (maintained - verification session)
 - Created verify_all_sessions_deployments.py (9,234 bytes comprehensive verification script)
 - **FACTUAL ERROR CORRECTED:** Initial verification incorrectly marked social image as "pending" when already LIVE
+
+---
+
+## SESSION 54 UPDATE (2025-11-26 14:00 UTC)
+
+**Focus:** Google Ads Conversion tracking + Shopify Flow/Email factual state verification
+
+### Google Ads Conversion Tracking - CONFIGURED ✅
+
+**Section 4.5 added:**
+
+```yaml
+Status: ✅ CONFIGURED in GTM (ready for campaign launch)
+Implementation: Via GTM tags (NOT standalone script)
+Google Ads Account: 128-734-6786
+Conversion ID: AW-17749024238
+
+Tags Configured:
+  1. Google Tag - Base (AW-17749024238)
+     - Type: Balise Google Ads
+     - Trigger: Initialization - All Pages
+  
+  2. Suivi des conversions Google Ads
+     - Type: Suivi conversions Google Ads
+     - Conversion ID: AW-17749024238
+     - Trigger: Purchase Confirmation Page
+     - Events: Purchase with transaction value
+
+Verification: Tags configured in GTM container GTM-WFPH2KZP
+Note: Conversion data will appear once Google Ads campaigns are active
+Source: TODO_MASTER_PRE_LAUNCH_23_DAYS.md:106-109, GTM_ADD_MISSING_TAGS_STEPS.md:43-58
+```
+
+**Updated Architecture Diagram (Section 4):**
+```
+┌─────────────────────────────────────────┐
+│  GTM Container (GTM-WFPH2KZP)          │
+│  ┌───────────────────────────────────┐ │
+│  │ GA4 Tag                           │ │
+│  │ Meta Pixel Tag                    │ │
+│  │ TikTok Pixel Tag                  │ │
+│  │ Google Ads Conversion Tag        │ │ ← ADDED
+│  │ (AW-17749024238)                  │ │
+│  └───────────────────────────────────┘ │
+└─────────────────────────────────────────┘
+```
+
+---
+
+### Shopify Flow Workflows - FACTUAL STATE (Section 3 updated)
+
+**VERIFIED:** 7 workflows total (4 Active, 3 Inactive)
+
+**Active Workflows (4):**
+- ✅ "New Loyalty Tier Tagging (Automatic)" - Trigger: Order paid
+- ✅ "Convert abandoned product browse" - Trigger: Customer left store without purchase
+- ✅ "Recover abandoned cart" - Trigger: Customer left store without purchase
+- ✅ "Recover abandoned checkout" - Trigger: Customer abandons checkout
+
+**Inactive Workflows (3) - CRITICAL ISSUES:**
+- ❌ "Thank customers after they purchase" - Trigger: Order created (MUST activate before first order)
+- ❌ "Welcome new subscribers with a discount email" (duplicate #1) - Trigger: Customer subscribed
+- ❌ "Welcome new subscribers with a discount email" (duplicate #2) - Trigger: Customer subscribed
+
+**Updated trigger names (exact):**
+- Workflow #2: "Customer left online store without making a purchase" (NOT "Customer views product, doesn't add to cart")
+- Workflow #3: "Customer left online store without making a purchase" (NOT "Cart created, not converted")
+- Workflow #4: "Customer abandons checkout" (NOT "Checkout started, not completed")
+- Workflow #5: "Order created" (NOT "Order paid")
+- Workflows #6-7: "Customer subscribed to email marketing" (NOT "Customer marketing opt-in")
+
+**Source:** Shopify Flow interface (owner-verified 2025-11-26)
+
+---
+
+### Shopify Email Automations - FACTUAL STATE (Section 2.1 updated)
+
+**App #1: Shopify Email - COMPLETE STATUS**
+
+```yaml
+Automations Status (7 total): 4 Active, 3 Draft
+
+Active Automations (4):
+  1. "We're happy to see you again" - Active (Oct 16, 2025 at 1:38 pm)
+     └─ Trigger: Customer return visit
+  2. "Did something catch your eye?" - Active (Oct 16, 2025 at 1:33 pm)
+     └─ Trigger: Product browse abandonment
+  3. "You left items in your cart" - Active (Oct 16, 2025 at 1:29 pm)
+     └─ Trigger: Cart abandonment
+  4. "You left items at checkout" - Active (Oct 16, 2025 at 12:53 pm)
+     └─ Trigger: Checkout abandonment
+
+Draft Automations (3):
+  1. "Thank you!" - Draft
+     └─ Issue: Should be ACTIVE for post-purchase
+  2. "Welcome with discount" - Draft (duplicate instance #1)
+  3. "Welcome with discount" - Draft (duplicate instance #2)
+     └─ Issue: Duplicate workflows, activate ONE only
+
+Performance (All automations):
+  - Delivery rate: 0% (no traffic)
+  - Open rate: 0%
+  - Click rate: 0%
+  - Sales: $0
+  Note: Expected for PRE-LAUNCH status
+
+Source: Shopify Email App > Automations tab (owner-verified 2025-11-26)
+```
+
+**Email Subjects Updated (exact):**
+- Browse abandonment: "Did something catch your eye?"
+- Cart abandonment: "You left items in your cart"
+- Checkout abandonment: "You left items at checkout"
+- Thank you: "Thank you!"
+- Welcome: "Welcome with discount"
+
+---
+
+### Section 8.1 - PHASE 1: ACQUISITION (Updated)
+
+**Configured:**
+- ✅ GTM + GA4 + FB Pixel + TikTok Pixel (100% active)
+- ✅ **Google Ads Conversion Tracking (Account: 128-734-6786, ID: AW-17749024238)** ← ADDED
+- ✅ 96 products live on store
+- ✅ 8 collections with SEO-optimized descriptions
+- ✅ Blog with articles (SEO foundation)
+
+**Partially Configured:**
+- ⏳ **Google Ads (conversion tracking ✅, 0 campaigns ❌)** ← UPDATED
+- ⏳ **Facebook/IG Ads (pixel ✅, 0 campaigns ❌)** ← UPDATED
+- ⏳ **TikTok Ads (pixel ✅, 0 campaigns ❌)** ← UPDATED
+
+**NOT Configured:**
+- ❌ Lead generation scraping (scripts ready, not running)
+- ❌ Newsletter signup workflow (form exists, Flow NOT configured)
+- ❌ Contest/giveaway running (Typeform ready, sync NOT active)
+
+---
+
+### Section 10.3 - Marketing Gaps (Updated)
+
+**Paid Advertising:**
+- ⏳ **Google Ads: Conversion tracking configured (AW-17749024238), campaigns NOT created** ← UPDATED
+- ⏳ **Facebook/IG Ads: Pixel active via GTM, campaigns NOT created** ← UPDATED
+- ⏳ **TikTok Ads: Pixel active via GTM, campaigns NOT created** ← UPDATED
+- ❌ No retargeting campaigns (pixels ready, campaigns NOT created)
+
+---
+
+### Critical Actions - PRIORITIZED
+
+**Priority 1 (2 min):**
+1. Activate Shopify Flow: "Thank customers after they purchase"
+2. Activate Shopify Email: "Thank you!" automation
+
+**Priority 2 (5 min):**
+3. Resolve duplicate "Welcome with discount" workflows (activate ONE, delete duplicate)
+
+**Priority 3 (15 min):**
+4. GitHub Secrets: Configure 4 secrets (APIFY_API_TOKEN, SHOPIFY_API_KEY, SHOPIFY_PASSWORD, GOOGLE_CREDENTIALS_JSON)
+
+**Priority 4 (10 min):**
+5. Google Sheets API: Create service account credentials
+
+**Total:** 32 minutes to resolve all critical issues
+
+---
+
+**Session 54 Complete | 2025-11-26 14:00 UTC**  
+**Updated:** Sections 2.1, 3, 4.5, 8.1, 10.3  
+**Added:** Google Ads Conversion tracking documentation  
+**Verified:** Shopify Flow (7 workflows) + Shopify Email (7 automations) exact states  
+**Progress:** 52/100 (maintained - verification + documentation update session)
+
