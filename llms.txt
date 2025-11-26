@@ -55,6 +55,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [KLAVIYO_DISCOUNT_CODES_SETUP](KLAVIYO_DISCOUNT_CODES_SETUP.md): Discount Code: WINBACK15 Discount Type: Percentage Percentage: 15% Applies to: ☑ Entire order (all products)
 - [KLAVIYO_FLYWHEEL_UPGRADE_2025](KLAVIYO_FLYWHEEL_UPGRADE_2025.md): Project documentation
 - [KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY](KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md): Project documentation
+- [KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL](KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md): Project documentation
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_WINBACK15_CORRECT_SETTINGS](KLAVIYO_WINBACK15_CORRECT_SETTINGS.md): ❌ Applies to: Specific collections (empty - NO collections selected) ❌ Maximum discount uses: No usage limits
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
