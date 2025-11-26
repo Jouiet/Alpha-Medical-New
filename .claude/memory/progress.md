@@ -28,3 +28,4 @@
 - [2025-11-26 21:10 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md
 - [2025-11-26 21:28 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/MEMORY_SYSTEM_AUDIT_FACTUAL.md
 - [2025-11-26 22:01 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_FLOWS_DEPLOYMENT_GUIDE.md
+- [2025-11-26 23:01 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_FLOWS_DEPLOYED_VIA_API.md
