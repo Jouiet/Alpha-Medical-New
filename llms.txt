@@ -23,7 +23,6 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27](archive/old-audits/COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27.md): Project documentation
 - [CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025](archive/old-audits/CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025.md): Category Score Status ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](archive/bundles-pricing/CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
-- [DOCUMENTATION_FORENSIC_ANALYSIS_SESSION_61](DOCUMENTATION_FORENSIC_ANALYSIS_SESSION_61.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](archive/old-audits/EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Project documentation
@@ -248,7 +247,6 @@ When assisting with this project:
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](archive/implementation-guides/BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [CLAUDE](CLAUDE.md): Use specialized agents for domain-specific tasks to save 70% context:
 - [CREATIFY_PROMPTS_ALPHA_MEDICAL](CREATIFY_PROMPTS_ALPHA_MEDICAL.md): Project documentation
-- [DOCUMENTATION_ACTIVE_FINAL](DOCUMENTATION_ACTIVE_FINAL.md): Project documentation
 - [FINAL_STORE_STATUS_2025-10-31](archive/session-summaries/FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](archive/setup-completed/GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
