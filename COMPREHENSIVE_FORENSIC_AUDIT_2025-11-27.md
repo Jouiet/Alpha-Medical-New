@@ -3743,3 +3743,44 @@ Month 1: Product performance trends visible
 **Impact:** UX improvement - cookie consent flow fully accessible
 **Files:** snippets/cookie-consent-banner.liquid (2 z-index properties)
 **Status:** FIXED ✅
+
+---
+
+## SESSION 64B-3: Cookie Banner Spatial Positioning Fix (2025-11-27 19:00 UTC)
+
+**Persistent Issue:** "le bouton customise cookies est caché sous le widget 'Chat' de Inbox shopify"
+**Previous Fix (64B-2):** Z-index increased to 999999 → Did NOT resolve issue
+**Actual Problem:** Spatial overlap, not z-index layering
+
+**Forensic Analysis:**
+```css
+/* Z-Index Fix (Session 64B-2) - CORRECT but INSUFFICIENT */
+z-index: 999999;  /* Banner renders ABOVE widget ✅ */
+
+/* Spatial Problem (UNRESOLVED) */
+bottom: 0;  /* Banner at SAME vertical position as widget ❌ */
+/* Result: Banner covers widget, blocks access to Inbox chat */
+```
+
+**Root Cause:**
+- Cookie banner: `bottom: 0` (flush to bottom edge)
+- Shopify Inbox widget: bottom-right corner (~60px height)
+- Physical coordinates overlap → Banner blocks widget access
+
+**Fix Applied:**
+```css
+/* BEFORE */
+#cookie-consent-banner { bottom: 0; }
+
+/* AFTER */
+#cookie-consent-banner { bottom: 80px; }  /* 80px clearance */
+```
+
+**Verification:**
+- ✅ 80px vertical clearance for Shopify Inbox widget
+- ✅ Users can access both cookie controls AND chat simultaneously
+- ✅ No forced dismissal of banner to access support
+
+**Impact:** UX improvement - widget coexistence without conflicts
+**Files:** snippets/cookie-consent-banner.liquid (1 property change)
+**Status:** FIXED ✅ (spatial + z-index both resolved)

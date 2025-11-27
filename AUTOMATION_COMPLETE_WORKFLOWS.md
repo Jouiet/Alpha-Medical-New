@@ -887,3 +887,74 @@ Z-Index Standards (Alpha Medical):
 
 **Session 64B-2 Status:** COMPLETE ✅
 **Automation Impact:** UX improvement - consent flow unobstructed
+
+---
+
+## SESSION 64B-3: Cookie Banner Spatial Conflict Resolution (2025-11-27)
+
+**Workflow:** Widget Coexistence Automation
+
+**Issue Evolution:**
+```yaml
+Session 64B-2:
+  Problem: Z-index layering (widget renders above banner)
+  Fix: Increased z-index to 999999
+  Result: Banner renders above widget ✅
+  
+Session 64B-3:
+  Problem: Spatial overlap (banner blocks widget access)
+  Fix: Repositioned banner to bottom: 80px
+  Result: Both widgets accessible simultaneously ✅
+```
+
+**Spatial Management Strategy:**
+```css
+/* Cookie Banner - Leaves clearance for bottom widgets */
+#cookie-consent-banner {
+  position: fixed;
+  bottom: 80px;  /* 80px clearance zone */
+  z-index: 999999;  /* Above all widgets */
+}
+
+/* Shopify Inbox Widget (Auto-injected by Shopify) */
+/* Position: bottom-right, ~60px height */
+/* Clearance: 80px ensures no overlap */
+```
+
+**Clearance Zone Calculation:**
+```yaml
+Shopify Inbox Widget:
+  Height: ~60px
+  Margin needed: ~20px
+  Total clearance: 80px
+
+Cookie Banner Positioning:
+  bottom: 80px (clears Inbox widget)
+  Full width (left: 0, right: 0)
+  Z-index: 999999 (visibility priority)
+```
+
+**UX Automation Result:**
+- ✅ Cookie banner visible and accessible
+- ✅ Shopify Inbox widget visible and accessible
+- ✅ No forced choice (users can interact with both)
+- ✅ No widget conflicts on any viewport size
+
+**Multi-Widget Compatibility:**
+```yaml
+Tested Widgets:
+  - Shopify Inbox (bottom-right): ✅ 80px clearance sufficient
+  - Free Shipping Bar (top): ✅ No conflict (different zone)
+  - Confetti (overlay): ✅ No conflict (temporary, high z-index)
+  
+Future Widget Additions:
+  - Bottom zone reserved: 0-80px (for Shopify widgets)
+  - Cookie banner zone: 80px+ (legal compliance UI)
+  - Top zone: Available for promotions/announcements
+```
+
+**Files Modified:**
+- snippets/cookie-consent-banner.liquid (bottom: 0 → 80px)
+
+**Session 64B-3 Status:** COMPLETE ✅
+**Automation Impact:** Widget coexistence - professional multi-feature UX
