@@ -59,6 +59,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [KLAVIYO_FLYWHEEL_UPGRADE_2025](KLAVIYO_FLYWHEEL_UPGRADE_2025.md): Project documentation
 - [KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY](KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md): Project documentation
 - [KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL](KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md): Project documentation
+- [KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE](KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md): <!-- Complete legal footer -->
 - [KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE](KLAVIYO_TEMPLATE_ASSIGNMENT_GUIDE.md): 1. Click the email action box 2. Look for "Template" or "Select template" dropdown
 - [KLAVIYO_WELCOME_FLOW_IMPLEMENTATION](KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_WINBACK15_CORRECT_SETTINGS](KLAVIYO_WINBACK15_CORRECT_SETTINGS.md): ❌ Applies to: Specific collections (empty - NO collections selected) ❌ Maximum discount uses: No usage limits
@@ -259,6 +260,7 @@ When assisting with this project:
 - [README](video-ads-assets/outputs/README.md): YYYY-MM-DD{product-handle}{type}v{version}.mp4 2025-11-23tourmaline-knee-padsugcv1.mp4
 - [README](video-ads-assets/products/README.md): Chaque produit a son propre dossier avec 4 sous-dossiers: {product-handle}/ ├── hero-images/ # Images fond blanc, studio
 - [README](video-ads-assets/scripts/README.md): python3 assetorganizer.py --create {product-handle} cd /Users/mac/Desktop/Alpha-Medical/video-ads-assets/scripts/
+- [README](klaviyo_templates_professional/README.md): Project documentation
 - [README](market-analysis/README.md): Project documentation
 - [README_COMPLETE](market-analysis/README_COMPLETE.md): market-analysis/ ├── leadgenerationscraper.py # 🎯 LEAD GENERATION │ ├── Instagram hashtag scraping
 - [ROBOTS_TXT_DEPLOYMENT](ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
