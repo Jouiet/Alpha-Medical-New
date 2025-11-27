@@ -1327,7 +1327,7 @@ Alternative Eliminated: Shopify Email backup plan no longer needed
 **Purchase:**
 - ❌ PayPal ACTIVE (should be DISABLED per requirement)
 - ❌ No upsell/cross-sell in cart
-- ❌ No bundle builder (bundles exist but not customizable)
+- ✅ Bundle builder (bundle-builder-combined.liquid + JS - FIXED Session 60)
 
 **Post-Purchase:**
 - ❌ "Thank customers" workflow INACTIVE
