@@ -57,7 +57,7 @@
         "link_list_83Nt9B": {
           "type": "link_list",
           "settings": {
-            "heading": "BRAND",
+            "heading": "CUSTOMER SERVICE",
             "menu": "footer-brand"
           }
         },
@@ -74,13 +74,28 @@
             "heading": "LEGAL",
             "menu": "footer"
           }
+        },
+        "link_list_LEGAL_AUTO": {
+          "type": "link_list",
+          "settings": {
+            "heading": "LEGAL",
+            "menu": "legal"
+          }
+        },
+        "link_list_COMPANY_AUTO": {
+          "type": "link_list",
+          "settings": {
+            "heading": "COMPANY",
+            "menu": "footer-company"
+          }
         }
       },
       "block_order": [
         "link_list_4qwLpy",
         "link_list_83Nt9B",
-        "link_list_UWX4CN",
-        "link_list_6dx3UK"
+        "link_list_COMPANY_AUTO",
+        "link_list_LEGAL_AUTO",
+        "link_list_UWX4CN"
       ],
       "settings": {
         "color_scheme": "scheme-3",
