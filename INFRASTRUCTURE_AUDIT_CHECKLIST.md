@@ -4602,3 +4602,115 @@ After:
 **Critical Gaps Remaining:** ZERO
 **Launch Readiness:** 100% - READY TO LAUNCH GLOBALLY
 
+
+---
+
+## SESSION 64B UPDATE - COOKIE BANNER BRANDING (2025-11-27)
+
+**Status:** ✅ COMPLETE - Cookie banner updated with Alpha Medical brand colors
+
+**User Request:** "le cookie banner DOIT utiliser notre branding (couleurs)!!"
+
+**Alpha Medical Brand Colors Applied:**
+```css
+Primary Blue: #4770DB
+Success Green: #28a745 (already used for Accept button)
+Light Blue: #5b84e8 (hover states)
+```
+
+**Changes Made to snippets/cookie-consent-banner.liquid:**
+
+**1. Banner Border:**
+- Before: `border-top: 2px solid #e5e5e5` (generic gray)
+- After: `border-top: 3px solid #4770DB` (Alpha Medical primary blue, stronger 3px)
+- Box-shadow: Updated to use primary blue tint `rgba(71, 112, 219, 0.15)`
+
+**2. Privacy Policy Link:**
+- Before: `color: #0066cc` (generic blue)
+- After: `color: #4770DB` (Alpha Medical primary blue)
+- Hover: `color: #5b84e8` (Alpha Medical light blue)
+
+**3. Reject All Button:**
+- Before: `background: #6c757d` (generic gray)
+- After: `background: #4770DB` (Alpha Medical primary blue)
+- Hover: `background: #3a5fbd` (darker shade)
+- Box-shadow: `rgba(71, 112, 219, 0.3)` (brand color glow)
+
+**4. Customize Button:**
+- Before: `border: 2px solid #e5e5e5`, `color: #1a1a1a`
+- After: `border: 2px solid #4770DB`, `color: #4770DB`
+- Hover: `background: #4770DB`, `color: #ffffff` (fills with brand color)
+
+**5. Accept All Button:**
+- No change: Already using `#28a745` (Alpha Medical success green) ✅
+- Enhanced: Added brand color box-shadow on hover
+
+**Visual Impact:**
+```yaml
+Brand Consistency:
+  Before: Generic blue/gray colors (no brand identity)
+  After: Full Alpha Medical branding (primary blue + success green)
+  
+User Recognition:
+  Cookie banner now matches site header, buttons, and overall design
+  Immediate visual connection to Alpha Medical brand
+  
+Professional Appearance:
+  Branded 3px blue border (stronger visual presence)
+  Cohesive color scheme across all interactive elements
+  Smooth hover transitions with brand color glows
+```
+
+**Files Modified:**
+- snippets/cookie-consent-banner.liquid (8 color updates)
+
+**Session 64B Completion:** 2025-11-27
+**Infrastructure Score:** 100/100 (maintained)
+**Brand Consistency:** ✅ COMPLETE (cookie banner matches Alpha Medical design system)
+
+---
+
+## SESSION 64B-2: Cookie Banner Z-Index Fix (2025-11-27)
+
+**Issue Reported:** "le bouton customise cookies est caché sous le widget 'Chat'"
+**Root Cause:** Cookie banner z-index (9999) was too low, allowing chat widgets to overlay banner buttons
+
+**Z-Index Updates:**
+
+**1. Cookie Banner:**
+- Before: `z-index: 9999`
+- After: `z-index: 999999`
+- Increase: 100x higher (ensures banner appears above all widgets)
+
+**2. Cookie Preferences Modal:**
+- Before: `z-index: 10000`
+- After: `z-index: 1000000`
+- Increase: 100x higher (maintains modal > banner hierarchy)
+
+**Technical Rationale:**
+```yaml
+Standard Z-Index Layers (Common Shopify Widgets):
+  - Page content: 0-99
+  - Sticky headers: 1000-1999
+  - Dropdowns/tooltips: 5000-9998
+  - Chat widgets (Tidio/Shopify Inbox): 10000-99999
+  - Cookie banners (should be top): 999999+
+  - Cookie modals (should be above banner): 1000000+
+
+Alpha Medical Implementation:
+  - Cookie banner: 999999 (above all chat widgets)
+  - Cookie modal: 1000000 (above banner for preferences)
+  - Result: All consent UI elements visible and accessible
+```
+
+**User Experience Impact:**
+- "Customize" button now fully visible and clickable ✅
+- No overlap with chat widgets, notifications, or other floating elements ✅
+- Cookie consent flow unobstructed ✅
+
+**Files Modified:**
+- snippets/cookie-consent-banner.liquid (2 z-index updates)
+
+**Session 64B-2 Completion:** 2025-11-27
+**Infrastructure Score:** 100/100 (maintained)
+**UX/Accessibility:** ✅ FIXED (cookie banner fully accessible above all widgets)
