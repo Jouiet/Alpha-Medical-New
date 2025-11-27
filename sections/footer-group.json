@@ -67,12 +67,20 @@
             "heading": "CONNECT",
             "menu": "footer-connect"
           }
+        },
+        "link_list_6dx3UK": {
+          "type": "link_list",
+          "settings": {
+            "heading": "LEGAL",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
         "link_list_4qwLpy",
         "link_list_83Nt9B",
-        "link_list_UWX4CN"
+        "link_list_UWX4CN",
+        "link_list_6dx3UK"
       ],
       "settings": {
         "color_scheme": "scheme-3",
