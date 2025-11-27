@@ -33,16 +33,11 @@
 
 5. "Thank you!"
    Trigger: Post-purchase (order placed)
-   Status: ❌ DRAFT (Session 61 correction - INACTIVE, needs activation)
-
-6. "Welcome with discount" (DUPLICATE x2)
-   Trigger: Email subscription
-   Discount: WELCOME10
-   Status: ❌ DRAFT (2 duplicate workflows - should DELETE, Klaviyo handles better)
+   Status: ✅ ACTIVE (Nov 26, 2025 at 2:32 pm - user screenshot verified)
 ```
 
-**Total:** 4 emails ACTIFS (corrections Session 61)
-**Draft:** 3 (Thank you! + 2 Welcome duplicates)
+**Total:** 5/5 emails ACTIVE (100%) ✅
+**FACTUAL CORRECTION Session 61:** Previous docs claimed "Thank you!" was DRAFT. User screenshot confirms ACTIVE since Nov 26, 2025.
 
 ### Shopify Flow - Workflows Status (Session 61 Verified)
 
@@ -72,21 +67,17 @@
 5. "Thank customers after they purchase"
    Trigger: Order placed
    Action: Send thank you (complements Email "Thank you!")
-   Status: ❌ INACTIVE - REQUIRES MANUAL UI ACTIVATION (5 min)
-
-6. "Welcome new subscribers with discount" (DUPLICATE #1)
-   Trigger: Email subscription
-   Status: ❌ INACTIVE (duplicate, should DELETE)
-
-7. "Welcome new subscribers with discount" (DUPLICATE #2)
-   Trigger: Email subscription
-   Status: ❌ INACTIVE (duplicate, should DELETE)
+   Status: ✅ ACTIVE (verified via Shopify UI screenshot 2025-11-27)
 ```
 
-**Total:** 4/7 flows ACTIFS (Session 61 factual)
-**Inactive:** 3 (1 needs activation, 2 duplicates to DELETE)
+**Total:** 5/5 workflows ACTIVE (100%) ✅
+**FACTUAL CORRECTION Session 61:** Previous documentation incorrectly claimed 7 workflows (5 active + 2 inactive duplicates). User confirms only 5 workflows exist total in Shopify Flow. Workflows #6-7 "Welcome new subscribers" DO NOT EXIST.
 
-### TOTAL SHOPIFY: 8/14 Workflows Opérationnels (Corrections Session 61)
+### TOTAL SHOPIFY: 10/10 Workflows Opérationnels (100%) ✅
+**Shopify Email:** 5/5 active (100%) ✅ (browse×2, cart, checkout, thank you)
+**Shopify Flow:** 5/5 active (100%) ✅ (loyalty, browse, cart, checkout, thank you)
+**Total Active:** 10/10 workflows (5 Email + 5 Flow)
+**FACTUAL STATUS:** Both Shopify Email AND Shopify Flow are 100% operational (user screenshot verified 2025-11-27)
 
 ---
 

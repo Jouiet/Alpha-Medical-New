@@ -1,8 +1,8 @@
 # ALPHA MEDICAL - PROGRESSIVE DISCLOSURE MEMORY SYSTEM
 
 > **Project:** B2C e-commerce RETAILER - Medical equipment store (alphamedical.shop)
-> **Status:** PRE-LAUNCH (Launch: 2025-12-15) | **Health:** 76/100 🟢 GOOD
-> **Last Updated:** 2025-11-27 Session 61 (Factual Health Score Calculation)
+> **Status:** PRE-LAUNCH (Launch: 2025-12-15) | **Health:** 81/100 🟢 GOOD
+> **Last Updated:** 2025-11-27 Session 61 (Factual Workflow Corrections +5 points)
 
 ---
 
@@ -178,14 +178,15 @@ gh workflow run daily-scraping.yml
 
 ## 🎯 PRIORITIES (IN ORDER)
 
-### Priority 1: Resolve Critical Blockers (15 min)
-1. Google Sheets API credentials → `@market-analysis/SETUP_GOOGLE_SHEETS_API.md`
-2. GitHub Secrets → `market-analysis/setup_github_secrets_helper.sh`
+### Priority 1: Critical Blockers ✅ RESOLVED (Session 56)
+1. ✅ Google Sheets API credentials configured
+2. ✅ GitHub Secrets 4/4 configured (APIFY, GOOGLE, SHOPIFY×2)
 
-### Priority 2: Activate Critical Workflows (7 min)
-1. Shopify Flow: "Thank customers after they purchase" (INACTIVE)
-2. Shopify Email: "Thank you!" automation (DRAFT)
-3. Fix duplicate "Welcome with discount" workflows
+### Priority 2: Activate Workflows ✅ 100% COMPLETE
+1. ✅ Shopify Flow: 5/5 workflows ACTIVE (100% - user verified)
+2. ✅ Shopify Email: 5/5 automations ACTIVE (100% - user screenshot verified Nov 26-27)
+3. ✅ Duplicate workflows: NONE EXIST (Session 61 factual correction)
+**Status:** ALL Shopify workflows operational, NO manual tasks remaining
 
 ### Priority 3: Email Automation (20h)
 1. Deploy 7 Klaviyo flows (Welcome, Cart, Browse, Post-Purchase, Win-Back, Cross-Sell, Re-engage)
