@@ -453,6 +453,10 @@
   {%- comment -%} DYNAMIC MERCHANDISING SYSTEM - Auto-added 2025-11-19 {%- endcomment -%}
   {% render 'product-matrix-loader' %}
   <script src="{{ 'dynamic-merchandising.js' | asset_url }}" defer></script>
+
+  {%- comment -%} Google Consent Mode v2 - MUST load BEFORE GTM {%- endcomment -%}
+  {%- render 'gtm-consent-mode' -%}
+
 <!-- Google Tag Manager (Alpha Medical Care) -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -698,5 +702,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {%- comment -%}GA4 Enhanced Ecommerce - Auto-tracking for all page types{%- endcomment -%}
     {%- render 'ga4-auto-events' -%}
+
+    {%- comment -%}GDPR/CCPA Cookie Consent Banner - Native implementation{%- endcomment -%}
+    {%- render 'cookie-consent-banner' -%}
   </body>
 </html>

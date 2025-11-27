@@ -1,0 +1,113 @@
+{% comment %}
+  Google Consent Mode v2 Implementation
+
+  Implements Google's Consent Mode v2 for GTM/GA4/Google Ads
+  - Sets default consent state (denied) before GTM loads
+  - Updates consent based on user choice from cookie-consent-banner
+  - Required for EU/UK/CA compliance with Google tags
+
+  Installation: Add {% render 'gtm-consent-mode' %} BEFORE GTM snippet in theme.liquid
+
+  Documentation: https://developers.google.com/tag-platform/security/guides/consent
+{% endcomment %}
+
+<script>
+// Google Consent Mode v2 - Default State (before GTM loads)
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+// Set default consent to 'denied' for all regions
+// This ensures no tracking happens until user consents
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': 500 // Wait 500ms for consent banner to load
+});
+
+// Region-specific defaults (optional - currently set to deny globally)
+// For stricter GDPR enforcement in EU/EEA:
+gtag('consent', 'default', {
+  'region': ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'IS', 'LI', 'NO'], // EU/EEA + UK
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied'
+});
+
+// For Canada (CCPA-like regulations):
+gtag('consent', 'default', {
+  'region': ['CA'],
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied'
+});
+
+// Check if user has already given consent (from previous visit)
+(function() {
+  var COOKIE_NAME = 'alpha_cookie_consent';
+
+  function getStoredConsent() {
+    // Try cookie first
+    var cookieValue = document.cookie
+      .split('; ')
+      .find(function(row) { return row.startsWith(COOKIE_NAME + '='); });
+
+    if (cookieValue) {
+      try {
+        return JSON.parse(cookieValue.split('=')[1]);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    // Fallback to localStorage
+    try {
+      var localValue = localStorage.getItem(COOKIE_NAME);
+      return localValue ? JSON.parse(localValue) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // Apply stored consent immediately if available
+  var consent = getStoredConsent();
+  if (consent) {
+    gtag('consent', 'update', {
+      'analytics_storage': consent.analytics ? 'granted' : 'denied',
+      'ad_storage': consent.marketing ? 'granted' : 'denied',
+      'ad_user_data': consent.marketing ? 'granted' : 'denied',
+      'ad_personalization': consent.marketing ? 'granted' : 'denied'
+    });
+
+    // Push consent state to dataLayer for GTM triggers
+    window.dataLayer.push({
+      'event': 'consent_initialized',
+      'cookie_consent': {
+        'analytics': consent.analytics,
+        'marketing': consent.marketing,
+        'timestamp': consent.timestamp
+      }
+    });
+  }
+})();
+</script>
+
+{% comment %}
+  IMPORTANT INSTALLATION ORDER:
+
+  In theme.liquid <head>, order must be:
+  1. {% render 'gtm-consent-mode' %} (this file)
+  2. Google Tag Manager snippet
+  3. Other tracking scripts (GA4, Meta Pixel, etc.)
+
+  In theme.liquid before </body>:
+  4. {% render 'cookie-consent-banner' %}
+
+  This ensures:
+  - Consent Mode defaults set BEFORE GTM loads
+  - GTM respects consent settings
+  - Banner can update consent after page load
+{% endcomment %}
