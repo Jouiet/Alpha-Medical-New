@@ -3196,7 +3196,7 @@ python3 test_admin_api.py
 ```
 - Status: ✅ SUCCESS (200 OK)
 - Shop: Alpha Medical Care (Basic plan)
-- Email: jouiet.hat@gmail.com
+- Email: contact@alphamedical.shop
 - Currency: USD
 - GraphQL: Fully functional
 

@@ -29,7 +29,7 @@ Status: Active ✅
 To: Customers subscribed to email marketing ✅
 Subject: "Welcome to Alpha Medical! Here's 10% OFF" ✅
 Preview: "Thanks for joining us! Use code WELCOME10 for 10% off your first order" ✅
-From: Alpha Medical Care - jouiet.hat@gmail.com ✅
+From: Alpha Medical Care - contact@alphamedical.shop ✅
 ```
 
 ---

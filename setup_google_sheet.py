@@ -124,7 +124,7 @@ def setup_google_sheet():
     print(f"\nIMPORTANT: Share this sheet with your email to access it:")
     print(f"   1. Open: {sheet_url}")
     print(f"   2. Click 'Share' button")
-    print(f"   3. Add: jouiet.hat@gmail.com (Editor)")
+    print(f"   3. Add: contact@alphamedical.shop (Editor)")
     print(f"\nTo save Sheet ID to .env file:")
     print(f'   echo "GOOGLE_SHEET_ID={sheet_id}" >> .env')
 

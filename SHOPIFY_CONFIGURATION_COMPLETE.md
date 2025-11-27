@@ -53,7 +53,7 @@
 1. Aller sur: https://admin.shopify.com/store/azffej-as/apps
 2. Cliquer sur **"Klaviyo"** dans la liste
 3. Cliquer sur **"Get started with Klaviyo"**
-4. Créer compte avec email: `jouiet.hat@gmail.com`
+4. Créer compte avec email: `contact@alphamedical.shop`
 5. Choisir **"Free plan"** (jusqu'à 250 contacts)
 6. Dans Klaviyo, configurer:
    - **Email de bienvenue** (template disponible)
@@ -64,7 +64,7 @@
 
 1. URL déjà ouverte ou aller sur: https://admin.shopify.com/store/azffej-as/apps
 2. Cliquer sur **"Tidio"**
-3. Créer compte avec email: `jouiet.hat@gmail.com`
+3. Créer compte avec email: `contact@alphamedical.shop`
 4. Choisir **"Free plan"**
 5. Configurer les 5 chatbots selon le brief:
    - **Welcome chatbot:** "Bonjour! Bienvenue chez Alpha Medical Care..."
@@ -477,5 +477,5 @@ Si besoin d'aide:
 ---
 
 **🎯 Configuration créée le 12 octobre 2025**
-**📧 Contact:** jouiet.hat@gmail.com
+**📧 Contact:** contact@alphamedical.shop
 **🏪 Store:** https://alphamedical.shop

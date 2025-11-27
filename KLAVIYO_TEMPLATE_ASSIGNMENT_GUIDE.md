@@ -106,7 +106,7 @@ After assigning all templates, check each flow:
 ## ⚠️ TROUBLESHOOTING
 
 **If you see "Update sender email address" warnings:**
-- Current sender: jouiet.hat@gmail.com
+- Current sender: contact@alphamedical.shop
 - This will work but may have lower deliverability
 - **Action:** Can ignore for now, or verify custom domain later
 - Not blocking activation

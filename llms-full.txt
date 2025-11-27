@@ -7896,7 +7896,7 @@ Complete your order - Alpha Medical Care
 2. Drag "Email" action from left sidebar to canvas (between Trigger and End)
 3. Click email action to configure:
    - Name: "Pain Relief Guide - Immediate Delivery"
-   - From: Alpha Medical Care <jouiet.hat@gmail.com>
+   - From: Alpha Medical Care <contact@alphamedical.shop>
    - Subject: 📥 Your FREE Pain Relief Guide is Ready
    - Preview text: Download your complete guide to pain relief and start your recovery journey today
 4. Design email (use template from KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md lines 113-180)
@@ -20360,7 +20360,7 @@ Purchase Confirmation Page    21/11/2025 20:04
 ```
 Version 2 - v1.0 - Google Ads Conversion Tracking
 Date publication: 21/11/2025 21:04
-Publié par: jouiet.hat@gmail.com
+Publié par: contact@alphamedical.shop
 
 Description:
 Google Ads conversion tracking - Lancement 15.12.2025
@@ -21130,7 +21130,7 @@ Status: ✅ 100% verified
 ```
 Action: GTM → Submit → Publish
 Timestamp: 21/11/2025 23:16
-Published by: jouiet.hat@gmail.com
+Published by: contact@alphamedical.shop
 
 Version metadata:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -29377,7 +29377,7 @@ Store professionnel, brandé, avec 50+ produits et 4 apps premium installées!
 2. Trouver **Tidio** dans la liste
 3. Cliquer **"Open app"**
 4. Si compte pas créé:
-   - Créer compte gratuit avec jouiet.hat@gmail.com
+   - Créer compte gratuit avec contact@alphamedical.shop
    - Vérifier email
    - Login
 5. Dans dashboard Tidio:
@@ -29710,7 +29710,7 @@ Icons:
 
 ## 📞 SUPPORT
 
-**Email:** jouiet.hat@gmail.com
+**Email:** contact@alphamedical.shop
 **Shopify Support:** https://help.shopify.com
 
 **Apps Support:**
@@ -35736,7 +35736,7 @@ Visible in dashboard (24-48h)
 Container ID: GTM-WFPH2KZP
 Version publiée: 2
 Date publication: 21/11/2025 21:04 UTC
-Publié par: jouiet.hat@gmail.com
+Publié par: contact@alphamedical.shop
 Site: www.alphamedical.shop
 Status: EN LIGNE (vérifié)
 ```
@@ -36168,7 +36168,7 @@ Modifications:
 - Google Tag - Base (AW-17749024238): Ajouté
 - Purchase Confirmation Page: Modifié
 
-Publiée: 21/11/2025 23:16 par jouiet.hat@gmail.com
+Publiée: 21/11/2025 23:16 par contact@alphamedical.shop
 ```
 
 **Éléments associés Version 3:**
@@ -47393,7 +47393,7 @@ TOTAL: 2 pages uniquement
 - ✅ Page complète et professionnelle
 - ✅ Dernière mise à jour: October 12, 2025
 - ✅ Sections GDPR complètes
-- ✅ Contact: jouiet.hat@gmail.com
+- ✅ Contact: contact@alphamedical.shop
 - ✅ Adresse: 611 South Dupont Highway suite 102, Harrington, DE, 19901, US
 
 **Sections présentes:**
@@ -86710,7 +86710,7 @@ Plan: basic
 Cost: $29/month USD
 Country: United States
 Currency: USD (enabled presentment currencies: USD only)
-Email: jouiet.hat@gmail.com
+Email: contact@alphamedical.shop
 Primary Domain: azffej-as.myshopify.com
 Custom Domain: www.alphamedical.shop (active)
 ```
@@ -95233,7 +95233,7 @@ After assigning all templates, check each flow:
 ## ⚠️ TROUBLESHOOTING
 
 **If you see "Update sender email address" warnings:**
-- Current sender: jouiet.hat@gmail.com
+- Current sender: contact@alphamedical.shop
 - This will work but may have lower deliverability
 - **Action:** Can ignore for now, or verify custom domain later
 - Not blocking activation
@@ -104912,7 +104912,7 @@ Cliquer **"Generate from template"** pour:
 - `ACTIONS_FINALES_5MIN.md` (guide express)
 - `RAPPORT_FINAL_COMPLET.md` (ce fichier - état final)
 
-**Email:** jouiet.hat@gmail.com
+**Email:** contact@alphamedical.shop
 **Store:** https://alphamedical.shop
 **Date:** 12 octobre 2025
 
@@ -108535,7 +108535,7 @@ To quickly complete the basic site setup:
 1. Aller sur: https://admin.shopify.com/store/azffej-as/apps
 2. Cliquer sur **"Klaviyo"** dans la liste
 3. Cliquer sur **"Get started with Klaviyo"**
-4. Créer compte avec email: `jouiet.hat@gmail.com`
+4. Créer compte avec email: `contact@alphamedical.shop`
 5. Choisir **"Free plan"** (jusqu'à 250 contacts)
 6. Dans Klaviyo, configurer:
    - **Email de bienvenue** (template disponible)
@@ -108546,7 +108546,7 @@ To quickly complete the basic site setup:
 
 1. URL déjà ouverte ou aller sur: https://admin.shopify.com/store/azffej-as/apps
 2. Cliquer sur **"Tidio"**
-3. Créer compte avec email: `jouiet.hat@gmail.com`
+3. Créer compte avec email: `contact@alphamedical.shop`
 4. Choisir **"Free plan"**
 5. Configurer les 5 chatbots selon le brief:
    - **Welcome chatbot:** "Bonjour! Bienvenue chez Alpha Medical Care..."
@@ -108959,7 +108959,7 @@ Si besoin d'aide:
 ---
 
 **🎯 Configuration créée le 12 octobre 2025**
-**📧 Contact:** jouiet.hat@gmail.com
+**📧 Contact:** contact@alphamedical.shop
 **🏪 Store:** https://alphamedical.shop
 
 ---
@@ -109485,7 +109485,7 @@ Status: Active ✅
 To: Customers subscribed to email marketing ✅
 Subject: "Welcome to Alpha Medical! Here's 10% OFF" ✅
 Preview: "Thanks for joining us! Use code WELCOME10 for 10% off your first order" ✅
-From: Alpha Medical Care - jouiet.hat@gmail.com ✅
+From: Alpha Medical Care - contact@alphamedical.shop ✅
 ```
 
 ---

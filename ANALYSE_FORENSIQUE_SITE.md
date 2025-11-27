@@ -1223,7 +1223,7 @@ TOTAL: 2 pages uniquement
 - ✅ Page complète et professionnelle
 - ✅ Dernière mise à jour: October 12, 2025
 - ✅ Sections GDPR complètes
-- ✅ Contact: jouiet.hat@gmail.com
+- ✅ Contact: contact@alphamedical.shop
 - ✅ Adresse: 611 South Dupont Highway suite 102, Harrington, DE, 19901, US
 
 **Sections présentes:**

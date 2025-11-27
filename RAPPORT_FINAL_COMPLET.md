@@ -216,6 +216,6 @@ Cliquer **"Generate from template"** pour:
 - `ACTIONS_FINALES_5MIN.md` (guide express)
 - `RAPPORT_FINAL_COMPLET.md` (ce fichier - état final)
 
-**Email:** jouiet.hat@gmail.com
+**Email:** contact@alphamedical.shop
 **Store:** https://alphamedical.shop
 **Date:** 12 octobre 2025

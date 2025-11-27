@@ -73,7 +73,7 @@ Plan: basic
 Cost: $29/month USD
 Country: United States
 Currency: USD (enabled presentment currencies: USD only)
-Email: jouiet.hat@gmail.com
+Email: contact@alphamedical.shop
 Primary Domain: azffej-as.myshopify.com
 Custom Domain: www.alphamedical.shop (active)
 ```

@@ -5457,7 +5457,7 @@ Visible in dashboard (24-48h)
 Container ID: GTM-WFPH2KZP
 Version publiée: 2
 Date publication: 21/11/2025 21:04 UTC
-Publié par: jouiet.hat@gmail.com
+Publié par: contact@alphamedical.shop
 Site: www.alphamedical.shop
 Status: EN LIGNE (vérifié)
 ```
@@ -5889,7 +5889,7 @@ Modifications:
 - Google Tag - Base (AW-17749024238): Ajouté
 - Purchase Confirmation Page: Modifié
 
-Publiée: 21/11/2025 23:16 par jouiet.hat@gmail.com
+Publiée: 21/11/2025 23:16 par contact@alphamedical.shop
 ```
 
 **Éléments associés Version 3:**

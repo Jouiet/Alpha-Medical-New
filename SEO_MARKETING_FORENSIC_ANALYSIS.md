@@ -7742,7 +7742,7 @@ Complete your order - Alpha Medical Care
 2. Drag "Email" action from left sidebar to canvas (between Trigger and End)
 3. Click email action to configure:
    - Name: "Pain Relief Guide - Immediate Delivery"
-   - From: Alpha Medical Care <jouiet.hat@gmail.com>
+   - From: Alpha Medical Care <contact@alphamedical.shop>
    - Subject: 📥 Your FREE Pain Relief Guide is Ready
    - Preview text: Download your complete guide to pain relief and start your recovery journey today
 4. Design email (use template from KLAVIYO_WELCOME_FLOW_IMPLEMENTATION.md lines 113-180)
@@ -20206,7 +20206,7 @@ Purchase Confirmation Page    21/11/2025 20:04
 ```
 Version 2 - v1.0 - Google Ads Conversion Tracking
 Date publication: 21/11/2025 21:04
-Publié par: jouiet.hat@gmail.com
+Publié par: contact@alphamedical.shop
 
 Description:
 Google Ads conversion tracking - Lancement 15.12.2025
@@ -20976,7 +20976,7 @@ Status: ✅ 100% verified
 ```
 Action: GTM → Submit → Publish
 Timestamp: 21/11/2025 23:16
-Published by: jouiet.hat@gmail.com
+Published by: contact@alphamedical.shop
 
 Version metadata:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

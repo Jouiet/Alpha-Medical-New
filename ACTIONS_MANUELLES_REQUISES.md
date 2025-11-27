@@ -161,7 +161,7 @@
 2. Trouver **Tidio** dans la liste
 3. Cliquer **"Open app"**
 4. Si compte pas créé:
-   - Créer compte gratuit avec jouiet.hat@gmail.com
+   - Créer compte gratuit avec contact@alphamedical.shop
    - Vérifier email
    - Login
 5. Dans dashboard Tidio:
@@ -494,7 +494,7 @@ Icons:
 
 ## 📞 SUPPORT
 
-**Email:** jouiet.hat@gmail.com
+**Email:** contact@alphamedical.shop
 **Shopify Support:** https://help.shopify.com
 
 **Apps Support:**
