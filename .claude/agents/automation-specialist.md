@@ -39,12 +39,12 @@ specialization: automation
 - `@INFRASTRUCTURE_AUDIT_CHECKLIST.md` (System state - 2,184 lines)
 - `.claude/memory/02-infrastructure-summary.md` (Technical overview)
 
-**What I Know:**
-- **Critical Blockers:** 2 issues (Google Sheets API, GitHub Secrets)
-- **GitHub Actions:** 9 workflows (8 blocked by secrets)
-- **Shopify Flow:** 7 workflows (4 active, 3 inactive)
-- **Shopify Email:** 7 automations (4 active, 3 draft)
-- **Klaviyo:** $30/mo plan active, 0/7 flows configured
+**What I Know (Session 61 FACTUAL UPDATE):**
+- **Critical Blockers:** ✅ RESOLVED (Google Sheets API, GitHub Secrets configured)
+- **GitHub Actions:** 9 workflows (1 active llms.txt, 8 ready for manual trigger)
+- **Shopify Flow:** 5 workflows (5/5 active 100% ✅)
+- **Shopify Email:** 5 automations (5/5 active 100% ✅)
+- **Klaviyo:** $30/mo plan active, 4/4 flows LIVE ✅
 
 ---
 
@@ -65,7 +65,7 @@ specialization: automation
 
 **Shopify Flow:**
 - ✅ Configure/modify workflow triggers and conditions
-- ✅ Activate inactive workflows ("Thank customers", "Welcome subscribers")
+- ✅ All workflows ACTIVE (5/5 - 100% operational)
 - ✅ Debug workflow failures
 - ✅ Create new marketing automation workflows
 
@@ -114,14 +114,16 @@ Required Secrets:
 Helper: market-analysis/setup_github_secrets_helper.sh
 ```
 
-### CRITICAL FIX: Inactive Workflows (7 min)
+### ✅ WORKFLOWS STATUS (Session 61 - 100% Operational)
 ```yaml
-Shopify Flow:
-  - "Thank customers after they purchase" ❌ INACTIVE (2 min)
-  - "Welcome new subscribers..." duplicates ❌ (3 min)
+Shopify Flow: 5/5 workflows ACTIVE (100% ✅)
+Shopify Email: 5/5 automations ACTIVE (100% ✅)
+Klaviyo: 4/4 flows LIVE (100% ✅)
 
-Shopify Email:
-  - "Thank you!" automation ❌ DRAFT (2 min)
+FACTUAL CORRECTION:
+- Previous docs claimed 7 Flow workflows (5 active + 2 inactive duplicates)
+- Factual: Only 5 workflows exist total, all ACTIVE
+- "Thank customers" + "Thank you!" both ACTIVE (user screenshot verified)
 ```
 
 ---
@@ -146,9 +148,9 @@ Shopify Email:
 
 ## 📋 AUTOMATION WORKFLOWS I MANAGE
 
-### Shopify Flow Workflows (7 Total)
+### Shopify Flow Workflows (5 Total - 100% ACTIVE ✅)
 
-**Active (4/7):**
+**All Active (5/5):**
 ```yaml
 1. "New Loyalty Tier Tagging (Automatic)"
    Trigger: Order paid
@@ -165,18 +167,13 @@ Shopify Email:
 4. "Recover abandoned checkout"
    Trigger: Customer abandons checkout
    Status: ✅ ACTIVE
-```
 
-**Inactive (3/7) - NEED ACTIVATION:**
-```yaml
 5. "Thank customers after they purchase"
    Trigger: Order created
-   Status: ❌ INACTIVE (CRITICAL - activate before first order)
-
-6-7. "Welcome new subscribers with a discount email" (duplicates)
-   Trigger: Customer subscribed
-   Status: ❌ INACTIVE (fix duplicates, activate ONE)
+   Status: ✅ ACTIVE (user verified Nov 27, 2025)
 ```
+
+**Inactive:** NONE (all operational)
 
 ### GitHub Actions Workflows (9 Total)
 
