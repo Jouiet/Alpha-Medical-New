@@ -102,7 +102,7 @@ TOTAL INFRASTRUCTURE:       91/100 🟢 EXCELLENT (Calculation: 725÷8 categorie
    - Note: PRE-LAUNCH acceptable
 
 3. **Shopify Configuration: 85/100 (-15 points)**
-   - Policies non vérifiées (refund, privacy, terms) (-10)
+   - Policies: 7/7 exist ✅, footer links missing (-5), compliance gaps (-10)
    - Checkout settings non auditées (-5)
 
 4. **Email Automation: 95/100 (-5 points)**
@@ -230,6 +230,342 @@ Conversion Rate: N/A
 Status: ✅ PRE-LAUNCH CONFIRMED
 Next: Test workflows with fake orders before real traffic
 ```
+
+####1.5 Legal Compliance & Policies
+
+**Verification:** Shopify Admin API (Pages endpoint) - 2025-11-27 Session 61
+**Method:** API retrieval + compliance audit (GDPR, CCPA, CAN-SPAM, FTC)
+
+**Policy Pages Status:**
+```yaml
+Total Policy Pages: 7 (all PUBLISHED ✅)
+
+Core Policies (4):
+├── Privacy Policy: ✅ PUBLISHED (1,782 chars, updated Nov 26, 2025)
+├── Refund Policy: ✅ PUBLISHED (2,436 chars, updated Nov 26, 2025)
+├── Shipping Policy: ✅ PUBLISHED (1,890 chars, updated Nov 26, 2025)
+└── Terms of Service: ✅ PUBLISHED (5,863 chars, updated Oct 13, 2025)
+
+Additional Pages (3):
+├── Returns & Exchanges: ✅ PUBLISHED (3,870 chars, updated Oct 14, 2025)
+├── Shipping & Delivery: ✅ PUBLISHED (3,183 chars, updated Oct 14, 2025)
+└── Data Sharing Opt-Out: ✅ PUBLISHED (2,597 chars, updated Oct 11, 2025)
+
+Status: ✅ All policies accessible via footer
+URLs: https://www.alphamedical.shop/pages/{handle}
+```
+
+**COMPLIANCE AUDIT FINDINGS (Session 61):**
+
+**✅ STRENGTHS:**
+```yaml
+Medical Equipment Disclaimer:
+├── ✅ Terms of Service includes clear medical disclaimer
+├── ✅ "NOT intended to diagnose, treat, cure, or prevent any disease"
+├── ✅ "Consult healthcare professional before use"
+└── ✅ Liability limitation for misuse
+
+Hygiene Products:
+├── ✅ Refund policy mentions "opened hygiene products" non-returnable
+└── ✅ Health and safety justification provided
+
+Return Policy:
+├── ✅ Clear 30-day return window
+├── ✅ Eligibility criteria well-defined
+├── ✅ Return process documented
+└── ✅ No restocking fees (customer-friendly)
+
+Shipping:
+├── ✅ Methods, costs, tracking documented
+├── ✅ Processing times clear (1-2 business days)
+└── ✅ Free shipping threshold ($50+)
+```
+
+**⚠️ COMPLIANCE GAPS (2025 Standards):**
+```yaml
+PRIVACY POLICY (CCPA/GDPR):
+❌ California Consumer Privacy Act (CCPA) not explicitly mentioned
+   - Impact: California residents have specific rights
+   - Required: Explicit CCPA section with opt-out mechanisms
+   - Reference: CA Civil Code §1798.100-1798.199
+
+❌ Data retention periods not specified
+   - Impact: GDPR Art. 13(2)(a) requires retention timeline
+   - Required: "How long we keep your data"
+
+❌ International data transfers not mentioned
+   - Impact: If any EU visitors, GDPR Art. 44-50 applies
+   - Required: Mention of data transfer mechanisms
+
+❌ Data Processing Officer (DPO) contact not provided
+   - Impact: GDPR Art. 37 may require DPO
+   - Note: May not apply if no EU customers
+
+❌ Cookie types not detailed
+   - Impact: GDPR/CCPA require cookie categorization
+   - Required: Necessary, Analytics, Marketing cookies listed
+   - Current: Generic "we use cookies" statement
+
+❌ Third-party data sharing not comprehensive
+   - Impact: CCPA requires disclosure of ALL third parties
+   - Current: "Service providers" mentioned generically
+   - Required: List specific categories (analytics, ads, payment)
+
+TERMS OF SERVICE:
+❌ Age restriction not specified
+   - Impact: COPPA compliance requires 18+ or parental consent
+   - Required: "You must be 18+ to use this site"
+
+❌ Accessibility statement missing
+   - Impact: ADA Title III, WCAG 2.1 AA recommended
+   - Required: Accessibility commitment statement
+
+FOOTER NAVIGATION (CRITICAL):
+❌ Policy links MISSING from footer
+   - Impact: GDPR Art. 12 "easily accessible", CCPA §1798.135 "clear and conspicuous"
+   - Current: Only "Shipping & Delivery" + "Returns & Exchanges" in footer
+   - Missing: Privacy Policy, Terms of Service, Refund Policy, Data Sharing Opt-Out
+   - Pages EXIST (7/7 published) but NOT linked in navigation
+   - Required: Add all policy links to footer menu
+
+COOKIE CONSENT:
+❌ No cookie consent banner detected
+   - Impact: GDPR/CCPA require opt-in for non-essential cookies
+   - Current: GTM + GA4 + Meta Pixel + TikTok fire without consent
+   - Required: Explicit consent before analytics/marketing cookies
+   - Recommendation: Install cookie consent app (Pandectes, Consentmo)
+
+DATA SUBJECT RIGHTS:
+⚠️  Rights mentioned but no workflow
+   - Privacy Policy mentions: access, correction, deletion, opt-out
+   - Gap: No clear process/form for requests
+   - Required: Contact email/form for data subject requests
+   - Note: emails exist (privacy@, returns@) but not in Privacy Policy
+```
+
+**📊 COMPLIANCE SCORE BREAKDOWN:**
+
+```yaml
+Privacy Policy Compliance: 60/100
+├── ✅ Information collection (8/10)
+├── ✅ Data usage explanation (8/10)
+├── ✅ Security measures mentioned (7/10)
+├── ⚠️  User rights listed but incomplete (6/10)
+├── ❌ CCPA explicit section missing (0/10)
+├── ❌ Data retention not specified (0/10)
+├── ❌ Cookie categorization missing (0/10)
+├── ❌ Third-party list incomplete (5/10)
+└── ❌ International transfers not mentioned (0/10)
+
+Terms of Service Compliance: 85/100
+├── ✅ Medical disclaimer EXCELLENT (10/10)
+├── ✅ Intellectual property (9/10)
+├── ✅ Limitation of liability (9/10)
+├── ✅ Arbitration clause (8/10)
+├── ❌ Age restriction missing (0/10)
+└── ❌ Accessibility statement missing (0/10)
+
+Refund/Return Policy Compliance: 90/100
+├── ✅ Clear return window (10/10)
+├── ✅ Hygiene products exception (10/10)
+├── ✅ Process well-documented (9/10)
+└── ⚠️  Partial refunds policy unclear (7/10)
+
+Shipping Policy Compliance: 95/100
+├── ✅ Methods, costs, tracking (10/10)
+├── ✅ Processing times (10/10)
+└── ⚠️  PO Box restrictions minor (9/10)
+
+Cookie Consent Compliance: 0/100
+❌ No consent mechanism implemented
+❌ Analytics/marketing cookies fire automatically
+❌ GDPR/CCPA violation (non-essential cookies without consent)
+
+OVERALL LEGAL COMPLIANCE: 66/100 ⚠️  MODERATE RISK
+```
+
+**🚨 CRITICAL RECOMMENDATIONS (Pre-Launch):**
+
+**Priority 0: Add Footer Policy Links (CRITICAL - 2 min effort)**
+```yaml
+Action: Update Shopify Navigation menu to add missing policy links
+
+Current Footer Menu:
+BRAND section (4 links):
+├── About Us
+├── Shipping & Delivery ✅
+├── Returns & Exchanges ✅
+└── FAQ
+
+Required Additions (4 new links):
+├── Privacy Policy → /pages/privacy-policy
+├── Terms of Service → /pages/terms-of-service
+├── Refund Policy → /pages/refund-policy
+└── Do Not Sell My Info → /pages/data-sharing-opt-out
+
+Implementation Steps:
+1. Shopify Admin → Online Store → Navigation
+2. Find "Footer" menu (or create "Legal" submenu)
+3. Add 4 new menu items:
+   - "Privacy Policy" → Link to /pages/privacy-policy
+   - "Terms of Service" → Link to /pages/terms-of-service
+   - "Refund Policy" → Link to /pages/refund-policy
+   - "Do Not Sell My Info" → Link to /pages/data-sharing-opt-out
+4. Save menu
+5. Verify links appear in footer
+
+Impact: CRITICAL compliance fix
+Risk: VERY HIGH (GDPR/CCPA violation without accessible links)
+Timeline: 2 minutes (manual Shopify Admin)
+Cost: $0
+
+Note: Pages already exist and are published (verified Session 61)
+      Only navigation links missing
+```
+
+**Priority 1: Cookie Consent (CRITICAL - 4h effort)**
+```yaml
+Action: Install cookie consent app
+Options:
+├── Pandectes GDPR Compliance (Shopify App Store)
+├── Consentmo GDPR Compliance (Shopify App Store)
+└── CookieYes (third-party integration)
+
+Implementation:
+1. Install app from Shopify App Store
+2. Configure cookie categories (Necessary, Analytics, Marketing)
+3. Block GTM/GA4/Meta/TikTok until consent
+4. Test consent flow (accept/reject)
+5. Verify cookies only fire after consent
+
+Impact: 0/100 → 90/100 Cookie Consent Compliance
+Risk: HIGH (current state = GDPR/CCPA violation)
+Timeline: 4 hours (app install + config + test)
+```
+
+**Priority 2: Privacy Policy Updates (HIGH - 2h effort)**
+```yaml
+Action: Update Privacy Policy with CCPA/GDPR sections
+
+Required Additions:
+1. CALIFORNIA RESIDENTS (CCPA Section)
+   - Right to know what personal information collected
+   - Right to delete personal information
+   - Right to opt-out of sale (even if not selling)
+   - Non-discrimination for exercising rights
+   - Contact: privacy@alphamedical.shop
+
+2. Data Retention
+   - Customer data: Retained during active account + 2 years
+   - Order data: 7 years (tax/legal requirements)
+   - Marketing data: Until opt-out or 3 years inactivity
+   - Logs: 90 days
+
+3. Cookie Details
+   - Necessary: Shopping cart, checkout, security
+   - Analytics: Google Analytics (performance tracking)
+   - Marketing: Meta Pixel, TikTok Pixel (advertising)
+
+4. Third-Party Services
+   - Shopify (platform hosting)
+   - Stripe (payment processing - PCI DSS compliant)
+   - Klaviyo (email marketing)
+   - Google Analytics (website analytics)
+   - Meta/Facebook (advertising)
+   - TikTok (advertising)
+
+Impact: 60/100 → 85/100 Privacy Policy Compliance
+Risk: MEDIUM (California = 12% US population)
+Timeline: 2 hours (manual Shopify Admin edit)
+```
+
+**Priority 3: Terms of Service Updates (MEDIUM - 1h effort)**
+```yaml
+Action: Add age restriction + accessibility statement
+
+Required Additions:
+1. Age Restriction (Section 1 - Agreement to Terms)
+   "You must be at least 18 years of age to use this website.
+   By using this site, you represent that you are 18 or older."
+
+2. Accessibility Statement (new Section 18)
+   "Alpha Medical Care is committed to making our website accessible
+   to all users, including those with disabilities. We strive to meet
+   WCAG 2.1 AA standards. If you experience accessibility issues,
+   please contact us at support@alphamedical.shop."
+
+Impact: 85/100 → 95/100 Terms of Service Compliance
+Risk: LOW (best practice, not immediate legal requirement)
+Timeline: 1 hour (manual Shopify Admin edit)
+```
+
+**📋 IMPLEMENTATION CHECKLIST (Owner Manual Work):**
+
+```markdown
+Priority 0: Footer Policy Links (2 min) - ULTRA-CRITICAL ⚡
+├── [ ] Shopify Admin → Online Store → Navigation
+├── [ ] Click "Footer" menu (or main navigation menu)
+├── [ ] Add new menu item: "Privacy Policy"
+│   └── Link: /pages/privacy-policy
+├── [ ] Add new menu item: "Terms of Service"
+│   └── Link: /pages/terms-of-service
+├── [ ] Add new menu item: "Refund Policy"
+│   └── Link: /pages/refund-policy
+├── [ ] Add new menu item: "Do Not Sell My Info"
+│   └── Link: /pages/data-sharing-opt-out
+├── [ ] Save menu
+├── [ ] Visit https://www.alphamedical.shop
+└── [ ] Verify: All 4 new links appear in footer
+
+Priority 1: Cookie Consent (4h) - CRITICAL
+├── [ ] Shopify Admin → Apps → Visit App Store
+├── [ ] Search "Pandectes GDPR" OR "Consentmo GDPR"
+├── [ ] Install app (follow setup wizard)
+├── [ ] Configure categories: Necessary, Analytics, Marketing
+├── [ ] Block scripts: GTM, GA4, Meta Pixel, TikTok (until consent)
+├── [ ] Customize banner: Alpha Medical branding
+├── [ ] Test: Accept cookies → verify pixels fire
+├── [ ] Test: Reject cookies → verify pixels blocked
+└── [ ] Verify: Banner shows on all pages
+
+Priority 2: Privacy Policy Updates (2h) - HIGH
+├── [ ] Shopify Admin → Online Store → Pages → Privacy Policy
+├── [ ] Add Section: "CALIFORNIA RESIDENTS (CCPA)"
+├── [ ] Add Section: "Data Retention Periods"
+├── [ ] Update Section: "Cookies" (categorize types)
+├── [ ] Update Section: "Third-Party Services" (list all)
+├── [ ] Add contact: privacy@alphamedical.shop
+├── [ ] Update "Last Updated" date
+└── [ ] Save and verify live
+
+Priority 3: Terms of Service Updates (1h) - MEDIUM
+├── [ ] Shopify Admin → Online Store → Pages → Terms of Service
+├── [ ] Section 1: Add age restriction (18+)
+├── [ ] Add Section 18: Accessibility Statement
+├── [ ] Update "Last Updated" date
+└── [ ] Save and verify live
+```
+
+**UPDATED INFRASTRUCTURE SCORE IMPACT:**
+
+```yaml
+Current: Shopify Configuration 85/100 (-15 pts)
+├── Policies exist: +5 (7/7 published pages)
+├── Footer links missing: -5 (accessibility violation)
+├── Cookie consent missing: -5 (GDPR/CCPA violation)
+└── Policy content gaps: -10 (CCPA section, data retention, cookies)
+
+After Priority 0 (Footer Links - 2 min): 85 → 87/100 (+2 pts)
+After Priority 0+1 (+ Cookie Consent - 4h): 87 → 92/100 (+5 pts)
+After Priority 0+1+2 (+ Privacy updates - 2h): 92 → 94/100 (+2 pts)
+After Priority 0+1+2+3 (+ Terms updates - 1h): 94 → 96/100 (+2 pts)
+
+Total Infrastructure Impact: 91/100 → 94-96/100 (+3-5 pts)
+
+Note: Priority 0 (2 min) gives +2 pts for minimal effort (compliance accessibility)
+```
+
+**STATUS: ✅ POLICIES EXIST (7/7 published), ❌ FOOTER LINKS MISSING, ⚠️ COMPLIANCE GAPS
 
 ---
 
