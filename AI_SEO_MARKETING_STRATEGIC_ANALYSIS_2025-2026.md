@@ -8949,3 +8949,78 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 - Month 1 expected: $8K-12K (4 flows, conservative)
 
 ---
+
+---
+
+## SESSION 61 UPDATE - LEGAL COMPLIANCE & TRACKING (2025-11-27)
+
+**Focus:** Pre-launch legal compliance audit + enhanced ecommerce gap analysis
+
+### Legal Compliance Findings
+
+**Policy Pages:** 7/7 PUBLISHED ✅ (Privacy, Refund, Shipping, Terms, Returns, Shipping & Delivery, Data Sharing Opt-Out)
+
+**Critical Gaps Impacting SEO/Marketing:**
+1. ❌ Cookie Consent Banner MISSING → GDPR/CCPA violation
+   - Impact: Cannot run paid ads in EU/California legally
+   - Impact: GA4/Meta/TikTok pixels fire without consent
+   - Fix: Install Pandectes or Consentmo app (4h)
+
+2. ❌ Footer Policy Links MISSING → Accessibility violation
+   - Impact: SEO penalties possible (accessibility = ranking factor)
+   - Impact: User trust (can't find Privacy/Terms easily)
+   - Fix: Add 4 navigation menu items (2 min)
+
+3. ❌ Privacy Policy CCPA Section MISSING
+   - Impact: California market (12% US population) compliance risk
+   - Impact: Cannot legally target California with paid ads
+   - Fix: Add CCPA section to Privacy Policy (2h)
+
+**SEO/Marketing Implications:**
+- Cannot launch paid ads until cookie consent implemented (legal risk)
+- Accessibility gaps may impact organic rankings (Google prioritizes accessible sites)
+- Missing CCPA compliance limits California targeting (major market)
+
+### Enhanced Ecommerce Tracking Gap
+
+**Finding:** Enhanced ecommerce events NOT IMPLEMENTED in theme code
+
+**Impact on Marketing:**
+- ❌ Cannot track product views, add-to-cart, checkout funnel in GA4
+- ❌ Cannot optimize ads based on product-level data
+- ❌ Cannot create product audiences for retargeting
+- ❌ Cannot analyze abandoned cart behavior (only Shopify native emails)
+
+**Recommendation:** Implement enhanced ecommerce (4-6h development)
+- Expected lift: +15-25% ad ROI (better attribution)
+- Expected lift: +10-20% conversion rate (funnel optimization)
+- Required for: Google Shopping ads optimization, Dynamic remarketing
+
+### Infrastructure Score Impact on Marketing Readiness
+
+**Current:** 91/100 🟢 EXCELLENT (but with legal gaps)
+
+**After Owner Fixes (7h manual work):**
+- Cookie consent implemented: Can launch EU/CA paid ads legally ✅
+- Footer links added: SEO accessibility improved ✅  
+- CCPA compliance: California targeting enabled ✅
+- Score: 96/100 🟢 NEAR-PERFECT
+
+**Marketing Launch Readiness:**
+- Organic SEO: ✅ READY (91/100 infrastructure)
+- Email marketing: ✅ READY (Klaviyo 4/4 flows LIVE)
+- Paid ads (US non-CA): ⚠️ READY (but cookie consent recommended)
+- Paid ads (EU/CA): ❌ BLOCKED (cookie consent required by law)
+- Enhanced attribution: ❌ LIMITED (ecommerce tracking not implemented)
+
+**Next Steps for Marketing:**
+1. Owner implements cookie consent (CRITICAL for paid ads)
+2. Owner adds footer links (SEO best practice)
+3. Developer implements enhanced ecommerce (attribution improvement)
+4. Launch paid ads after cookie consent live
+
+---
+
+**Session 61 Marketing Impact:** Legal compliance gaps identified, roadmap to 96/100 documented
+**Marketing Readiness:** 91% (can launch organic + email, paid ads require cookie consent)
+
