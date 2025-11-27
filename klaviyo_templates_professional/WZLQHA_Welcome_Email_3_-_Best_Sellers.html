@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our most-loved pain relief products ⭐</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Questrial&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Questrial', Arial, sans-serif;
+            background-color: #eff0f5;
+            color: #0e1b4d;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #4770db;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .logo {
+            font-family: 'Archivo', Arial, sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        h1 {
+            font-family: 'Archivo', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #0e1b4d;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Archivo', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #0e1b4d;
+            margin: 30px 0 15px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #0e1b4d;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4770db;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 40px;
+            font-family: 'Archivo', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 25px 0;
+            text-align: center;
+            transition: background-color 0.3s;
+            min-height: 44px;
+            line-height: 1.2;
+        }
+        .cta-button:hover {
+            background-color: #3659c7;
+        }
+        .secondary-cta {
+            display: inline-block;
+            background-color: transparent;
+            color: #4770db !important;
+            text-decoration: none;
+            padding: 14px 35px;
+            border: 2px solid #4770db;
+            border-radius: 40px;
+            font-family: 'Archivo', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            margin: 10px 5px;
+            text-align: center;
+        }
+        .highlight-box {
+            background-color: #eff0f5;
+            border-radius: 18px;
+            border-left: 4px solid #4770db;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        .discount-code {
+            font-family: 'Archivo', monospace;
+            font-size: 24px;
+            color: #4770db;
+            background-color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 2px dashed #4770db;
+            display: inline-block;
+            margin: 15px 0;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .product-grid {
+            display: table;
+            width: 100%;
+            margin: 25px 0;
+        }
+        .product-item {
+            display: table-cell;
+            width: 50%;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .product-image {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .trust-badges {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+        .trust-badge {
+            display: inline-block;
+            margin: 10px 15px;
+            font-size: 14px;
+            color: #0e1b4d;
+        }
+        .trust-badge::before {
+            content: "✓ ";
+            color: #4770db;
+            font-weight: bold;
+        }
+        .social-proof {
+            text-align: center;
+            padding: 25px;
+            background-color: #eff0f5;
+            margin: 30px 0;
+            border-radius: 18px;
+        }
+        .footer {
+            background-color: #0e1b4d;
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #4770db;
+            text-decoration: none;
+        }
+        .footer p {
+            color: #ffffff;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .social-links {
+            margin: 25px 0;
+        }
+        .social-link {
+            display: inline-block;
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .unsubscribe {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+        .unsubscribe a {
+            color: #4770db;
+        }
+
+        /* Mobile Responsive */
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px !important;
+            }
+            h1 {
+                font-size: 26px !important;
+            }
+            h2 {
+                font-size: 20px !important;
+            }
+            p {
+                font-size: 15px !important;
+            }
+            .cta-button {
+                display: block !important;
+                width: 100% !important;
+                padding: 18px 20px !important;
+                font-size: 17px !important;
+            }
+            .secondary-cta {
+                display: block !important;
+                width: 100% !important;
+                margin: 10px 0 !important;
+            }
+            .product-item {
+                display: block !important;
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            .trust-badge {
+                display: block !important;
+                margin: 8px 0 !important;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <a href="https://alphamedical.shop?utm_source=klaviyo&utm_medium=email" class="logo">ALPHA MEDICAL</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Our Best-Selling Pain Relief Solutions</h1>
+            
+                <p>Hi {{ first_name|default:'there' }},</p>
+                <p>These are the products our customers can't stop raving about:</p>
+                <div class="highlight-box">
+                    <h2>⭐ Top Customer Favorites</h2>
+                    <p><strong>1. Premium Knee Brace</strong> - Arthritis relief & stability support<br><small>4.9/5 stars • 500+ reviews</small></p>
+                    <p><strong>2. Posture Corrector Pro</strong> - Back pain relief for desk workers<br><small>4.8/5 stars • 400+ reviews</small></p>
+                    <p><strong>3. Compression Sleeve Set</strong> - Joint support & injury prevention<br><small>4.9/5 stars • 350+ reviews</small></p>
+                </div>
+                <p style="text-align: center;">
+                    <a href="https://alphamedical.shop/collections/best-sellers?utm_source=klaviyo&utm_medium=email&utm_campaign=welcome_email3" class="cta-button">Shop Best Sellers</a>
+                </p>
+                <p style="text-align: center; margin-top: 15px;"><small>Don't forget: Your WELCOME10 discount is still active!</small></p>
+            
+            
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="trust-badges">
+            <span class="trust-badge">FREE Shipping $50+</span>
+            <span class="trust-badge">30-Day Returns</span>
+            <span class="trust-badge">Secure Checkout</span>
+            <span class="trust-badge">Trusted by Thousands</span>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p style="font-size: 16px; margin-bottom: 20px;"><strong>ALPHA MEDICAL</strong></p>
+            <p>Your trusted source for professional-grade pain relief and medical equipment</p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://facebook.com/alphamedical" class="social-link">Facebook</a> •
+                <a href="https://instagram.com/alphamedical" class="social-link">Instagram</a> •
+                <a href="https://tiktok.com/@alphamedical" class="social-link">TikTok</a>
+            </div>
+
+            <!-- Company Info -->
+            <p style="margin-top: 25px; font-size: 13px;">Alpha Medical<br>
+            123 Medical Plaza, Suite 100<br>
+            New York, NY 10001, USA</p>
+
+            <p style="margin-top: 20px;">
+                <a href="https://alphamedical.shop/pages/contact?utm_source=klaviyo&utm_medium=email">Contact Support</a> •
+                <a href="https://alphamedical.shop/pages/faq?utm_source=klaviyo&utm_medium=email">FAQ</a> •
+                <a href="https://alphamedical.shop/pages/shipping?utm_source=klaviyo&utm_medium=email">Shipping Info</a>
+            </p>
+
+            <!-- Unsubscribe (Klaviyo tags) -->
+            <div class="unsubscribe">
+                <p>You're receiving this email because you subscribed to Alpha Medical updates.</p>
+                <p><a href="{% unsubscribe_link %}">Unsubscribe</a> • <a href="{% manage_preferences_link %}">Manage Preferences</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
