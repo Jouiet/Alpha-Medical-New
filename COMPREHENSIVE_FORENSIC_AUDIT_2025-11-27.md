@@ -2159,8 +2159,104 @@ Remaining Blockers:
 
 ---
 
+## 📊 SESSION 61 INFRASTRUCTURE SCORE UPDATES (2025-11-27)
+
+### 🎯 INFRASTRUCTURE HEALTH SCORE EVOLUTION
+
+**Méthodologie PRE-LAUNCH:** Infrastructure READINESS (setup complet) vs PERFORMANCE (résultats business)
+
+**Score Evolution Session 61:**
+```yaml
+76/100 → 81/100 (+5) → 90/100 (+9) → 91/100 (+1) = 🟢 EXCELLENT
+```
+
+### Corrections Factuelles Majeures (Session 61)
+
+**CORRECTION #1: Shopify Workflows Status (+5 points)**
+```yaml
+Claim Initial: "7 Shopify Flow workflows (5 active, 2 inactive duplicates)"
+User Feedback: "qu'est-ce que tu racontes?? il n'y a que 5 workflows dans Flow Apps"
+Verification: User screenshot showing 5/5 workflows ACTIVE (100% ✅)
+Reality: Only 5 workflows exist total, ALL ACTIVE
+Impact: Workflow Automation 60/100 → 100/100 (+40 points category)
+       Total Score: 76/100 → 81/100 (+5 points)
+Files Updated: KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md
+```
+
+**CORRECTION #2: PRE-LAUNCH Methodology Shift (+9 points)**
+```yaml
+Error: Penalized for "0 leads generated" when infrastructure ready but no traffic
+User Feedback: "nous n'avons pas encore demarré l'activité... ne peut etre calculé que post lancement"
+Analogy: Like penalizing restaurant for "0 customers served" before opening day
+Fix: Changed to READINESS methodology (infrastructure ready) vs PERFORMANCE (results)
+Impact:
+  - Consumer Intelligence: 60/100 → 95/100 (+35 pts category)
+  - GitHub Actions: 70/100 → 95/100 (+25 pts category)
+  - Data Infrastructure: 75/100 → 85/100 (+10 pts category)
+  - Total Score: 81/100 → 90/100 (+9 points)
+Verification: gh workflow list + gh run list showed 10/10 workflows active with cron schedules
+```
+
+**CORRECTION #3: Klaviyo Flows Verification (+1 point)**
+```yaml
+Claim Initial: "Klaviyo 4/7 flows (manque 3: Win-Back, Cross-Sell, Re-engage)"
+User Evidence: Klaviyo screenshot showing ALL 4 critical flows LIVE:
+  - Welcome Series - Final Email Discount ✅ LIVE
+  - Customer Winback - Standard ✅ LIVE (j'avais dit "manquant" - FAUX)
+  - Product Review / Cross-Sell - Standard ✅ LIVE (j'avais dit "manquant" - FAUX)
+  - Repeat Purchase Nurture ✅ LIVE (j'avais dit "manquant" - FAUX)
+Reality: 4/4 critical flows operational 24/7, revenue automation active
+Impact: Email Automation 90/100 → 95/100 (+5 pts category)
+       Total Score: 90/100 → 91/100 (+1 point)
+Root Cause: Did not verify current Klaviyo state before making claims
+```
+
+### 📊 FINAL INFRASTRUCTURE SCORE: 91/100 🟢 EXCELLENT
+
+**Score Breakdown (8 Categories × 12.5% Weight):**
+```yaml
+Shopify Configuration:      85/100 ✅
+Tracking & Analytics:       95/100 ✅
+Email Automation:           95/100 ✅ (Klaviyo 4/4 LIVE all critical)
+Lead Capture:               75/100 ✅
+Workflow Automation:        100/100 ✅ (Shopify Flow 5/5 + Shopify Email 5/5)
+Data Infrastructure:        85/100 ✅
+Consumer Intelligence:      95/100 ✅ (10/10 GitHub workflows active)
+GitHub Actions Automation:  95/100 ✅ (10/10 workflows active, 2 failing = -5 pts)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TOTAL INFRASTRUCTURE:       91/100 🟢 EXCELLENT
+```
+
+**Gaps Remaining (9% pour 100/100):**
+1. Lead Capture (-25 pts): Conversion optimization, A/B testing
+2. Data Infrastructure (-15 pts): No BI dashboard, no data warehouse
+3. Shopify Config (-15 pts): Policies + checkout non vérifiés
+4. Email Automation (-5 pts): A/B testing, segmentation avancée
+5. Tracking (-5 pts): Enhanced ecommerce non testé end-to-end
+
+**Status:** ALL gaps = optimisations avancées (NOT critical blockers)
+
+### 🔍 Pattern Analysis: Errors Made
+
+**Error Type 1: Documentation Trust Over Verification**
+- Trusted old docs claiming "7 workflows" without running verification
+- Fix: User enforced bottom-up factual verification (API, screenshots, commands)
+
+**Error Type 2: Performance vs Readiness Confusion**
+- Penalized for 0 results when infrastructure ready but pre-launch
+- Fix: Changed to PRE-LAUNCH methodology (READINESS not PERFORMANCE)
+
+**Error Type 3: Claiming Without Verification**
+- Claimed Klaviyo flows missing without checking current state
+- Fix: User screenshot provided evidence of reality
+
+**Lesson:** NEVER claim without PRIMARY source verification (API, UI, code inspection)
+
+---
+
 **Rapport généré:** 2025-11-27 18:45 UTC (Original)
 **Session 60 Update:** 2025-11-27 23:00 UTC
+**Session 61 Update:** 2025-11-27 (Infrastructure Score 76→91/100)
 **Sites audités:** 10 (100% mesures réelles via Chrome DevTools)
 **Prochaine révision recommandée:** Post-launch +30 jours (avec vraies données conversions/traffic)
 

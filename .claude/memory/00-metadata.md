@@ -31,16 +31,16 @@
 
 ## 📊 CURRENT STATE (2025-11-27 FACTUAL - Session 61)
 
-**Health Score:** 90/100 🟢 EXCELLENT (PRE-LAUNCH Methodology: READINESS not performance)
+**Health Score:** 91/100 🟢 EXCELLENT (PRE-LAUNCH Methodology: READINESS not performance)
 **Revenue:** $0 (PRE-LAUNCH)
 **Orders:** 0
 **Products:** 96 (81 published, 15 draft)
 **Traffic:** Minimal (pre-launch)
-**Automation:** 90% infrastructure complete (10% optimisations avancées)
+**Automation:** 91% infrastructure complete (9% optimisations avancées)
 
 **Critical Blockers:** ✅ RÉSOLUS (0 technical, 0 manual - Shopify workflows 100% operational)
 **GitHub Actions:** ✅ 10/10 workflows active, running automatiquement (2 failing = -5 pts)
-**Gaps (10%):** BI/warehouse, Klaviyo 3 flows, A/B testing, policies non vérifiées
+**Gaps (9%):** BI/warehouse, A/B testing, policies non vérifiées, segmentation avancée
 
 ---
 
@@ -79,7 +79,7 @@
 - GitHub Actions: 9 workflows (1 active llms.txt, 8 ready for manual trigger)
 - Shopify Flow: 5 workflows (5/5 active 100% ✅)
 - Shopify Email: 5 automations (5/5 active 100% ✅)
-- Klaviyo: $30/mo plan active (4/4 flows LIVE ✅, 10/10 templates assigned ✅, revenue automation active)
+- Klaviyo: $30/mo plan active (4/4 flows LIVE ✅ ALL critical, 10/10 templates professional ✅, revenue automation active 24/7)
 
 ---
 

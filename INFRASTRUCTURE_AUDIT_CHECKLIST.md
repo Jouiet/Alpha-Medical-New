@@ -34,14 +34,14 @@
 ```
 Shopify Configuration:      85/100 ✅ (store setup complete, 100% English verified)
 Tracking & Analytics:       95/100 ✅ (GTM + GA4 + FB + TikTok + Google Ads verified LIVE)
-Email Automation:           90/100 ✅ (Klaviyo 4/4 LIVE + Shopify Email 5/5 + Flow 5/5 + popups 2/2)
+Email Automation:           95/100 ✅ (Klaviyo 4/4 LIVE all critical + Shopify 10/10 + popups 2/2)
 Lead Capture:               75/100 ✅ (popups 2/2 DEPLOYED, welcome 10%, exit-intent 15%)
 Workflow Automation:        100/100 ✅ (Shopify Flow 5/5 100%, Shopify Email 5/5 100% - user verified)
 Data Infrastructure:        85/100 ✅ (Google Sheets API + sync tested, -15 for no BI/warehouse)
 Consumer Intelligence:      95/100 ✅ (10/10 GitHub workflows active, 2 failing -5)
 GitHub Actions Automation:  95/100 ✅ (10/10 workflows active, 2 failing -5)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-TOTAL INFRASTRUCTURE:       90/100 🟢 EXCELLENT (Calculation: 720÷8 categories = 90)
+TOTAL INFRASTRUCTURE:       91/100 🟢 EXCELLENT (Calculation: 725÷8 categories = 90.625 ≈ 91)
 **PRE-LAUNCH Methodology:** Infrastructure READINESS (not performance results)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -55,16 +55,22 @@ TOTAL INFRASTRUCTURE:       90/100 🟢 EXCELLENT (Calculation: 720÷8 categorie
 - Dernière mise à jour: 2025-11-27 Session 61 (PRE-LAUNCH recalculation)
 
 **Corrections Session 61:**
-- Email Automation: 30/100 → 90/100 (+60 points factual correction)
+- Email Automation: 30/100 → 90/100 → 95/100 (+65 points total)
   - Raison: Klaviyo 4 flows LIVE (Session 58-59), templates 10/10 professionnels deployed
+  - Correction FINALE: Klaviyo screenshot shows ALL critical flows LIVE:
+    * Welcome Series ✅ LIVE
+    * Customer Winback (Win-Back) ✅ LIVE (j'avais dit "manquant" - FAUX)
+    * Product Review / Cross-Sell ✅ LIVE (j'avais dit "manquant" - FAUX)
+    * Repeat Purchase Nurture (Re-engage) ✅ LIVE (j'avais dit "manquant" - FAUX)
+  - Gap réel: A/B testing (-3), segmentation avancée (-2) = -5 seulement
 
 - Workflow Automation: 60/100 → 100/100 (+40 points factual correction)
   - Raison: Shopify Flow 5/5 active 100% (user confirmed only 5 exist, not 7)
   - Shopify Email 5/5 active 100% (user screenshot shows "Thank you!" active Nov 26, not DRAFT)
   - Previous docs incorrectly claimed: 7 Flow workflows (5 active + 2 inactive duplicates), Email 4/6 active
-  - Factual: Flow 5/5 (100%), Email 5/5 (100%), workflows #6-7 don't exist
+  - Factuel: Flow 5/5 (100%), Email 5/5 (100%), workflows #6-7 don't exist
 
-- Impact: TOTAL 76/100 → 81/100 (+5) → 90/100 (+9 PRE-LAUNCH recalculation)
+- Impact: TOTAL 76/100 → 81/100 (+5) → 90/100 (+9 PRE-LAUNCH) → 91/100 (+1 Klaviyo correction)
 
 **PRE-LAUNCH SCORE CORRECTION (Session 61 FINAL):**
 - Consumer Intelligence: 60/100 → 95/100 (+35 points)
@@ -99,8 +105,8 @@ TOTAL INFRASTRUCTURE:       90/100 🟢 EXCELLENT (Calculation: 720÷8 categorie
    - Policies non vérifiées (refund, privacy, terms) (-10)
    - Checkout settings non auditées (-5)
 
-4. **Email Automation: 90/100 (-10 points)**
-   - Klaviyo 4/7 flows (manque Win-Back, Cross-Sell, Re-engage) (-5)
+4. **Email Automation: 95/100 (-5 points)**
+   - Klaviyo 4/4 flows LIVE (Win-Back ✅, Cross-Sell ✅, Re-engage ✅ - user screenshot)
    - A/B testing: 0 (-3)
    - Segmentation avancée: Non configurée (-2)
 
@@ -114,7 +120,7 @@ TOTAL INFRASTRUCTURE:       90/100 🟢 EXCELLENT (Calculation: 720÷8 categorie
 7. **GitHub Actions: 95/100 (-5 points)**
    - 2/10 workflows failing
 
-**TOTAL GAPS: 80 points manquants ÷ 8 catégories = 10 points moyenne**
+**TOTAL GAPS: 75 points manquants ÷ 8 catégories = 9.375 points moyenne ≈ 9 points**
 
 - English-Only Compliance: ✅ VERIFIED 100%
   - Audit scope: Theme files, JS/CSS, Products (API), Collections (API)
