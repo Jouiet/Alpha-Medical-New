@@ -1,9 +1,10 @@
 # KLAVIYO + SHOPIFY - MATRICE DE COMPLÉMENTARITÉ FACTUELLE
 ## Approche Bottom-Up: ZÉRO Duplication
 
-**Date:** 2025-11-26 Session 56+ FINAL
-**Méthode:** Bottom-up basée sur FAITS vérifiés (API + Screenshots)
+**Date:** 2025-11-27 Session 61 UPDATE (Factual Corrections)
+**Méthode:** Bottom-up basée sur FAITS vérifiés (API + Code Inspection + INFRASTRUCTURE_AUDIT_CHECKLIST)
 **Objectif:** Identifier flows Klaviyo COMPLÉMENTAIRES (pas duplications)
+**Last Verification:** Session 61 - 2025-11-27
 
 ---
 
@@ -32,25 +33,26 @@
 
 5. "Thank you!"
    Trigger: Post-purchase (order placed)
-   Status: ✅ ACTIVE (verified in screenshot)
+   Status: ❌ DRAFT (Session 61 correction - INACTIVE, needs activation)
 
-6. "Welcome To Alpha Medical! Here's 10% OFF"
+6. "Welcome with discount" (DUPLICATE x2)
    Trigger: Email subscription
    Discount: WELCOME10
-   Status: ✅ ACTIVE (configured Session 56)
+   Status: ❌ DRAFT (2 duplicate workflows - should DELETE, Klaviyo handles better)
 ```
 
-**Total:** 6 emails ACTIFS
+**Total:** 4 emails ACTIFS (corrections Session 61)
+**Draft:** 3 (Thank you! + 2 Welcome duplicates)
 
-### Shopify Flow - 4 Workflows ACTIFS ✅
+### Shopify Flow - Workflows Status (Session 61 Verified)
 
-**Vérification:** Screenshot utilisateur 2025-11-26
+**Vérification:** INFRASTRUCTURE_AUDIT_CHECKLIST.md + Code Inspection 2025-11-27
 
 ```yaml
-1. "Thank customers after they purchase"
-   Trigger: Order placed
-   Action: Send thank you (complements Email "Thank you!")
-   Status: ✅ ACTIVE
+1. "Loyalty Tier Tagging (Automatic)"
+   Trigger: Order paid, customer.amountSpent check
+   Action: Add tier tags (bronze/silver/gold/platinum)
+   Status: ✅ ACTIVE (80% configured)
 
 2. "Convert abandoned product browse"
    Trigger: Product viewed, no purchase
@@ -66,11 +68,25 @@
    Trigger: Checkout started, not completed
    Action: Recovery email (complements Email checkout abandonment)
    Status: ✅ ACTIVE
+
+5. "Thank customers after they purchase"
+   Trigger: Order placed
+   Action: Send thank you (complements Email "Thank you!")
+   Status: ❌ INACTIVE - REQUIRES MANUAL UI ACTIVATION (5 min)
+
+6. "Welcome new subscribers with discount" (DUPLICATE #1)
+   Trigger: Email subscription
+   Status: ❌ INACTIVE (duplicate, should DELETE)
+
+7. "Welcome new subscribers with discount" (DUPLICATE #2)
+   Trigger: Email subscription
+   Status: ❌ INACTIVE (duplicate, should DELETE)
 ```
 
-**Total:** 4 flows ACTIFS
+**Total:** 4/7 flows ACTIFS (Session 61 factual)
+**Inactive:** 3 (1 needs activation, 2 duplicates to DELETE)
 
-### TOTAL SHOPIFY: 10 Workflows Opérationnels ✅
+### TOTAL SHOPIFY: 8/14 Workflows Opérationnels (Corrections Session 61)
 
 ---
 
