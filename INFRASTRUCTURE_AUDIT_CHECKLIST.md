@@ -56,8 +56,15 @@ TOTAL INFRASTRUCTURE:       76/100 🟢 GOOD (Calculation: 610÷8 categories = 7
   - Raison: Klaviyo 4 flows LIVE (Session 58-59), templates 10/10 professionnels deployed
   - Impact: TOTAL 59/100 → 76/100 (+17 points)
 
+- English-Only Compliance: ✅ VERIFIED 100%
+  - Audit scope: Theme files, JS/CSS, Products (API), Collections (API)
+  - Findings: 4 French comments in theme (non-rendered)
+  - Action: Comments translated to English
+  - Result: Site 100% English-only (user requirement MET)
+  - Files: bundle-builder-combined.liquid, free-shipping-progress-bar.liquid
+
 **Bloqueurs Techniques:** ✅ RÉSOLUS (Google Sheets API, GitHub Secrets)
-**Bloqueurs Manuels:** 1 task (5 min UI activation - Shopify Flow workflows)
+**Bloqueurs Manuels:** 3 tasks (15 min UI activation - Shopify Flow/Email workflows)
 
 ---
 
