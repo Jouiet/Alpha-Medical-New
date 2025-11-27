@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 27, 2025 at 19:35 UTC
+**Generated:** November 27, 2025 at 19:37 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -40,7 +40,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -21867,7 +21867,7 @@ Evidence quality: 100%
 **User Requirements Compliance:**
 - ✅ NO SMS (email-only strategy - cost savings $9K vs $18K)
 - ✅ Hybrid approach (not replacing Shopify Email completely)
-- ✅ NO B2B (D2C/B2C consumer focus maintained)
+- ✅ NO B2B (B2C RETAILER consumer focus maintained)
 - ✅ NO dynamic pricing (not affected by Klaviyo)
 - ✅ 100% English (all email templates)
 - ✅ ROI-positive (25-120× across 12 months)
@@ -23784,7 +23784,7 @@ Month 4-6:
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -32746,7 +32746,7 @@ La question est **"pourquoi ce n'est pas déjà fait?"**
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -33893,7 +33893,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -33901,7 +33901,7 @@ Audit complet 7 critères
 
 **Date:** 2025-11-23
 **Méthodologie:** Recherche web factuelle + Comparaison rigoureuse pricing/features
-**Objectif:** Identifier les actors Apify OPTIMAUX pour le flywheel multi-canal D2C
+**Objectif:** Identifier les actors Apify OPTIMAUX pour le flywheel multi-canal B2C RETAILER
 
 ---
 
@@ -34249,7 +34249,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 ✅ Données factuelles pricing (recherche web extensive)
 ✅ Features vérifiées (official Apify Store)
 ✅ User reviews (4.8/5 stars Google Maps scraper, etc.)
-✅ Use case Alpha Medical spécifique (D2C health/wellness consumer intelligence)
+✅ Use case Alpha Medical spécifique (B2C RETAILER health/wellness consumer intelligence)
 ✅ ROI calculations conservateurs (industry benchmarks)
 
 **STATUS:** OPTIMAL ACTORS IDENTIFIÉS - READY FOR IMPLEMENTATION
@@ -34260,7 +34260,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -34547,7 +34547,7 @@ gh workflow run daily-scraping.yml
 # 6. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -36823,7 +36823,7 @@ TOTAL INFRASTRUCTURE:       91/100 🟢 EXCELLENT
 # 7. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -37427,7 +37427,7 @@ June:
 # 8. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -39440,7 +39440,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 9. Documentation Active Final
 
 **File:** `DOCUMENTATION_ACTIVE_FINAL.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -39592,7 +39592,7 @@ Docs historiques, projets différés, info intégrée ailleurs
 # 10. Documentation Forensic Analysis Session 61
 
 **File:** `DOCUMENTATION_FORENSIC_ANALYSIS_SESSION_61.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -40004,7 +40004,7 @@ git commit -m "docs: Archive obsolete documentation - 127 files"
 # 11. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -40846,7 +40846,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 12. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -41230,7 +41230,7 @@ TOTAL: ~30 minutes de travail actif
 # 13. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -41606,7 +41606,7 @@ dig TXT alphamedical.shop +short
 # 14. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -45069,7 +45069,7 @@ Session 58+ End: 100/100 (+33) ✅
 # 15. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -45401,7 +45401,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 16. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -45947,7 +45947,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 17. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -46426,7 +46426,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 18. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -46724,7 +46724,7 @@ If you encounter issues not covered in this guide:
 # 19. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -47036,7 +47036,7 @@ Homepage (Prio 1)
 # 20. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -47838,7 +47838,7 @@ alphamedical.shop
 # 21. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-27 19:35
+**Last Modified:** 2025-11-27 19:37
 
 ---
 
@@ -49042,7 +49042,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 21
-**Generated:** November 27, 2025 at 19:35 UTC
+**Generated:** November 27, 2025 at 19:37 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
