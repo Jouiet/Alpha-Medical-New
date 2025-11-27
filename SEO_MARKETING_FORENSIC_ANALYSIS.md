@@ -21821,7 +21821,7 @@ Evidence quality: 100%
 **User Requirements Compliance:**
 - ✅ NO SMS (email-only strategy - cost savings $9K vs $18K)
 - ✅ Hybrid approach (not replacing Shopify Email completely)
-- ✅ NO B2B (D2C/B2C consumer focus maintained)
+- ✅ NO B2B (B2C RETAILER consumer focus maintained)
 - ✅ NO dynamic pricing (not affected by Klaviyo)
 - ✅ 100% English (all email templates)
 - ✅ ROI-positive (25-120× across 12 months)

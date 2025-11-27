@@ -2,7 +2,7 @@
 
 **Date:** 2025-11-23
 **Méthodologie:** Recherche web factuelle + Comparaison rigoureuse pricing/features
-**Objectif:** Identifier les actors Apify OPTIMAUX pour le flywheel multi-canal D2C
+**Objectif:** Identifier les actors Apify OPTIMAUX pour le flywheel multi-canal B2C RETAILER
 
 ---
 
@@ -350,7 +350,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 ✅ Données factuelles pricing (recherche web extensive)
 ✅ Features vérifiées (official Apify Store)
 ✅ User reviews (4.8/5 stars Google Maps scraper, etc.)
-✅ Use case Alpha Medical spécifique (D2C health/wellness consumer intelligence)
+✅ Use case Alpha Medical spécifique (B2C RETAILER health/wellness consumer intelligence)
 ✅ ROI calculations conservateurs (industry benchmarks)
 
 **STATUS:** OPTIMAL ACTORS IDENTIFIÉS - READY FOR IMPLEMENTATION
