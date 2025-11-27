@@ -61,7 +61,52 @@ TOTAL INFRASTRUCTURE:       81/100 🟢 GOOD (Calculation: 650÷8 categories = 8
   - Previous docs incorrectly claimed: 7 Flow workflows (5 active + 2 inactive duplicates), Email 4/6 active
   - Factual: Flow 5/5 (100%), Email 5/5 (100%), workflows #6-7 don't exist
 
-- Impact: TOTAL 76/100 → 81/100 (+5 points overall, would be higher but already at 81.25 ≈ 81)
+- Impact: TOTAL 76/100 → 81/100 (+5 points overall)
+
+**FACTUAL GAP ANALYSIS - Pourquoi 81/100 (pas 100/100):**
+
+**19 points manquants = 19% infrastructure NON opérationnelle:**
+
+1. **Consumer Intelligence: 60/100 (-40 points)**
+   - Gap: 8/9 GitHub Actions workflows READY but NOT RUNNING
+   - Daily scraping: STOPPED (pas actif en production)
+   - Pain points/hashtags: Manuel trigger seulement (2x/mois, 1x/mois)
+   - Impact: 0 leads générés, workflows prêts ≠ workflows actifs
+
+2. **GitHub Actions Automation: 70/100 (-30 points)**
+   - Gap: 8/9 workflows NOT RUNNING (1/9 active: llms.txt seulement)
+   - Pas de cron scheduling configuré
+   - Pas de monitoring/alerting production
+   - Ready for manual trigger ≠ Déployé en production
+
+3. **Data Infrastructure: 75/100 (-25 points)**
+   - Gap: Google Sheets sync NOT automatisé (testé 1x, pas en continu)
+   - Pas de data warehouse
+   - Pas de BI dashboard
+   - Pas de data pipeline automatisé
+
+4. **Lead Capture: 75/100 (-25 points)**
+   - Gap: Conversion rates FAIBLES (welcome 10%, exit 15% vs industrie 15-25%)
+   - Pas d'A/B testing popups
+   - 0 leads capturés (PRE-LAUNCH OK mais pas optimisé)
+
+5. **Shopify Configuration: 85/100 (-15 points)**
+   - Gap: PayPal status INCONNU (requirement: doit être désactivé)
+   - Store policies non vérifiées (refund, privacy, terms)
+   - Checkout settings non auditées
+   - Tax/shipping settings non vérifiées
+
+6. **Email Automation: 90/100 (-10 points)**
+   - Gap: Klaviyo 4/7 flows déployés (manque 3: Win-Back, Cross-Sell, Re-engage)
+   - A/B testing: 0 configuré
+   - Segmentation avancée: Non configurée
+
+7. **Tracking & Analytics: 95/100 (-5 points)**
+   - Gap: Enhanced ecommerce events non testés end-to-end
+   - Data Layer validation non faite
+   - Conversion tracking tests: 0
+
+**TOTAL GAPS: 150 points manquants ÷ 8 catégories = 18.75 points moyenne ≈ 19 points**
 
 - English-Only Compliance: ✅ VERIFIED 100%
   - Audit scope: Theme files, JS/CSS, Products (API), Collections (API)
@@ -71,7 +116,8 @@ TOTAL INFRASTRUCTURE:       81/100 🟢 GOOD (Calculation: 650÷8 categories = 8
   - Files: bundle-builder-combined.liquid, free-shipping-progress-bar.liquid
 
 **Bloqueurs Techniques:** ✅ RÉSOLUS (Google Sheets API, GitHub Secrets)
-**Bloqueurs Manuels:** ✅ AUCUN (All Shopify workflows 100% active - user screenshot verified)
+**Bloqueurs Manuels:** ✅ AUCUN (Shopify workflows 100% active)
+**Gaps Restants:** 19% infrastructure (workflows ready but NOT running, optimisations non faites)
 
 ---
 

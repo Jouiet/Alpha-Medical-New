@@ -36,9 +36,10 @@
 **Orders:** 0
 **Products:** 96 (81 published, 15 draft)
 **Traffic:** Minimal (pre-launch)
-**Automation:** 81% infrastructure complete (Email 90%, Tracking 95%, Workflows 95%)
+**Automation:** 81% infrastructure complete (19% gaps: workflows ready but NOT running, optimisations non faites)
 
-**Critical Blockers:** ✅ AUCUN (0 technical, 0 manual - all systems 100% operational)
+**Critical Blockers:** ✅ RÉSOLUS (0 technical, 0 manual - Shopify workflows 100% operational)
+**Gaps (19%):** GitHub Actions 8/9 NOT running, Klaviyo 4/7 flows, lead capture non optimisée, PayPal non vérifié
 
 ---
 

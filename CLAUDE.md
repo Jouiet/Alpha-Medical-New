@@ -182,15 +182,21 @@ gh workflow run daily-scraping.yml
 1. ✅ Google Sheets API credentials configured
 2. ✅ GitHub Secrets 4/4 configured (APIFY, GOOGLE, SHOPIFY×2)
 
-### Priority 2: Activate Workflows ✅ 100% COMPLETE
+### Priority 2: Shopify Workflows ✅ 100% COMPLETE (Session 61)
 1. ✅ Shopify Flow: 5/5 workflows ACTIVE (100% - user verified)
 2. ✅ Shopify Email: 5/5 automations ACTIVE (100% - user screenshot verified Nov 26-27)
-3. ✅ Duplicate workflows: NONE EXIST (Session 61 factual correction)
-**Status:** ALL Shopify workflows operational, NO manual tasks remaining
+**Status:** ALL Shopify workflows operational
 
-### Priority 3: Email Automation (20h)
-1. Deploy 7 Klaviyo flows (Welcome, Cart, Browse, Post-Purchase, Win-Back, Cross-Sell, Re-engage)
-2. Expected lift: $8K-12K Month 1, $80K-120K Year 1
+### Priority 3: Infrastructure Gaps (19% manquant pour 100/100) ⏳ PENDING
+**Par ordre d'impact (points manquants):**
+
+1. **Consumer Intelligence (-40 pts):** GitHub Actions 8/9 NOT running → 0 leads générés
+2. **GitHub Actions (-30 pts):** Workflows ready mais pas déployés en production
+3. **Data Infrastructure (-25 pts):** Google Sheets sync non automatisé
+4. **Lead Capture (-25 pts):** Conversion rates 10-15% vs industrie 15-25%
+5. **Shopify Config (-15 pts):** Policies + checkout settings non vérifiés
+6. **Email Automation (-10 pts):** Klaviyo 4/7 flows (manque Win-Back, Cross-Sell, Re-engage)
+7. **Tracking (-5 pts):** Enhanced ecommerce non testé end-to-end
 
 ### Priority 4: Launch Paid Ads (User Decision)
 - Google Ads (tracking ready)
