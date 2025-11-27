@@ -1,0 +1,162 @@
+{% comment %}
+  GA4 Enhanced Ecommerce - Automatic Event Tracking
+
+  Auto-detects page type and triggers appropriate GA4 events:
+  - Product pages: view_item
+  - Cart page: view_cart
+  - Checkout: begin_checkout
+  - Thank you page: purchase
+
+  Installation: Add {% render 'ga4-auto-events' %} to theme.liquid before </body>
+{% endcomment %}
+
+{% if template contains 'product' and product %}
+  {%- comment -%} Product Page: view_item event {%- endcomment -%}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      'event': 'view_item',
+      'ecommerce': {
+        'currency': '{{ cart.currency.iso_code }}',
+        'value': {{ product.selected_or_first_available_variant.price | divided_by: 100.0 }},
+        'items': [{
+          'item_id': '{{ product.selected_or_first_available_variant.sku | default: product.id }}',
+          'item_name': {{ product.title | json }},
+          'item_brand': 'Alpha Medical Care',
+          'item_category': {% if product.type %}{{ product.type | json }}{% else %}'General'{% endif %},
+          'price': {{ product.selected_or_first_available_variant.price | divided_by: 100.0 }},
+          'quantity': 1
+        }]
+      }
+    });
+  </script>
+{% endif %}
+
+{% if template == 'cart' %}
+  {%- comment -%} Cart Page: view_cart event {%- endcomment -%}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      'event': 'view_cart',
+      'ecommerce': {
+        'currency': '{{ cart.currency.iso_code }}',
+        'value': {{ cart.total_price | divided_by: 100.0 }},
+        'items': [
+          {% for item in cart.items %}
+          {
+            'item_id': '{{ item.sku | default: item.product_id }}',
+            'item_name': {{ item.product_title | json }},
+            'item_brand': 'Alpha Medical Care',
+            'item_variant': {{ item.variant_title | json }},
+            'price': {{ item.price | divided_by: 100.0 }},
+            'quantity': {{ item.quantity }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    });
+  </script>
+{% endif %}
+
+{% if template contains 'checkout' and checkout and checkout.step == 0 %}
+  {%- comment -%} Checkout Page: begin_checkout event {%- endcomment -%}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      'event': 'begin_checkout',
+      'ecommerce': {
+        'currency': '{{ checkout.currency }}',
+        'value': {{ checkout.total_price | divided_by: 100.0 }},
+        'items': [
+          {% for item in checkout.line_items %}
+          {
+            'item_id': '{{ item.sku | default: item.product_id }}',
+            'item_name': {{ item.title | json }},
+            'item_brand': 'Alpha Medical Care',
+            'item_variant': {{ item.variant_title | json }},
+            'price': {{ item.price | divided_by: 100.0 }},
+            'quantity': {{ item.quantity }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    });
+  </script>
+{% endif %}
+
+{% if template contains 'thank' or checkout.id %}
+  {%- comment -%} Thank You Page: purchase event {%- endcomment -%}
+  {% if first_time_accessed %}
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ ecommerce: null });
+      window.dataLayer.push({
+        'event': 'purchase',
+        'ecommerce': {
+          'transaction_id': '{{ checkout.order_number | default: checkout.id }}',
+          'affiliation': 'Alpha Medical Care',
+          'value': {{ checkout.total_price | divided_by: 100.0 }},
+          'tax': {{ checkout.tax_price | divided_by: 100.0 }},
+          'shipping': {{ checkout.shipping_price | divided_by: 100.0 }},
+          'currency': '{{ checkout.currency }}',
+          'items': [
+            {% for item in checkout.line_items %}
+            {
+              'item_id': '{{ item.sku | default: item.product_id }}',
+              'item_name': {{ item.title | json }},
+              'item_brand': 'Alpha Medical Care',
+              'item_variant': {{ item.variant_title | json }},
+              'price': {{ item.price | divided_by: 100.0 }},
+              'quantity': {{ item.quantity }}
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }
+      });
+    </script>
+  {% endif %}
+{% endif %}
+
+{%- comment -%} Add to Cart Event Listener {%- endcomment -%}
+<script>
+  (function() {
+    if (typeof window.ga4CartTrackerInitialized !== 'undefined') return;
+    window.ga4CartTrackerInitialized = true;
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Shopify AJAX Cart API intercept
+      var originalFetch = window.fetch;
+      window.fetch = function() {
+        var args = arguments;
+        return originalFetch.apply(this, args).then(function(response) {
+          if (args[0] && args[0].includes('/cart/add')) {
+            response.clone().json().then(function(data) {
+              if (data && data.id) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({ ecommerce: null });
+                window.dataLayer.push({
+                  'event': 'add_to_cart',
+                  'ecommerce': {
+                    'currency': '{{ cart.currency.iso_code }}',
+                    'value': (data.price / 100.0),
+                    'items': [{
+                      'item_id': data.variant_id || data.id,
+                      'item_name': data.product_title,
+                      'item_brand': 'Alpha Medical Care',
+                      'price': (data.price / 100.0),
+                      'quantity': data.quantity || 1
+                    }]
+                  }
+                });
+              }
+            }).catch(function() {});
+          }
+          return response;
+        });
+      };
+    });
+  })();
+</script>

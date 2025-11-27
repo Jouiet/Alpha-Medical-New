@@ -1,0 +1,163 @@
+{% comment %}
+  GA4 Enhanced Ecommerce Events
+
+  Implements Google Analytics 4 ecommerce tracking for:
+  - view_item (product page views)
+  - add_to_cart (add to cart actions)
+  - view_cart (cart page views)
+  - begin_checkout (checkout initiation)
+  - purchase (order confirmation)
+
+  Requires: GTM with GA4 configured
+  Usage: {% render 'ga4-ecommerce-events', event_type: 'view_item', product: product %}
+{% endcomment %}
+
+{% if event_type == 'view_item' and product %}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });  // Clear previous ecommerce object
+    window.dataLayer.push({
+      'event': 'view_item',
+      'ecommerce': {
+        'currency': '{{ cart.currency.iso_code }}',
+        'value': {{ product.selected_or_first_available_variant.price | divided_by: 100.0 }},
+        'items': [{
+          'item_id': '{{ product.selected_or_first_available_variant.sku | default: product.id }}',
+          'item_name': {{ product.title | json }},
+          'item_brand': 'Alpha Medical Care',
+          'item_category': {% if product.type %}{{ product.type | json }}{% else %}'General'{% endif %},
+          'price': {{ product.selected_or_first_available_variant.price | divided_by: 100.0 }},
+          'quantity': 1
+        }]
+      }
+    });
+  </script>
+{% endif %}
+
+{% if event_type == 'add_to_cart_listener' %}
+  <script>
+    // Add to Cart Event Listener
+    document.addEventListener('DOMContentLoaded', function() {
+      // Listen for cart addition events
+      document.addEventListener('cart:item-added', function(event) {
+        var item = event.detail;
+        if (item && item.variant_id) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ ecommerce: null });
+          window.dataLayer.push({
+            'event': 'add_to_cart',
+            'ecommerce': {
+              'currency': '{{ cart.currency.iso_code }}',
+              'value': (item.price / 100.0),
+              'items': [{
+                'item_id': item.variant_id,
+                'item_name': item.product_title,
+                'item_brand': 'Alpha Medical Care',
+                'price': (item.price / 100.0),
+                'quantity': item.quantity || 1
+              }]
+            }
+          });
+        }
+      });
+
+      // Fallback: Listen for add-to-cart button clicks
+      var addToCartButtons = document.querySelectorAll('[name="add"]');
+      addToCartButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          setTimeout(function() {
+            // Give time for form to process, then track
+            var formData = new FormData(button.closest('form'));
+            var variantId = formData.get('id');
+            if (variantId) {
+              // Variant ID captured, event will be triggered by cart:item-added
+            }
+          }, 100);
+        });
+      });
+    });
+  </script>
+{% endif %}
+
+{% if event_type == 'view_cart' %}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      'event': 'view_cart',
+      'ecommerce': {
+        'currency': '{{ cart.currency.iso_code }}',
+        'value': {{ cart.total_price | divided_by: 100.0 }},
+        'items': [
+          {% for item in cart.items %}
+          {
+            'item_id': '{{ item.sku | default: item.product_id }}',
+            'item_name': {{ item.product_title | json }},
+            'item_brand': 'Alpha Medical Care',
+            'item_variant': {{ item.variant_title | json }},
+            'price': {{ item.price | divided_by: 100.0 }},
+            'quantity': {{ item.quantity }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    });
+  </script>
+{% endif %}
+
+{% if event_type == 'begin_checkout' %}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      'event': 'begin_checkout',
+      'ecommerce': {
+        'currency': '{{ cart.currency.iso_code }}',
+        'value': {{ cart.total_price | divided_by: 100.0 }},
+        'items': [
+          {% for item in cart.items %}
+          {
+            'item_id': '{{ item.sku | default: item.product_id }}',
+            'item_name': {{ item.product_title | json }},
+            'item_brand': 'Alpha Medical Care',
+            'item_variant': {{ item.variant_title | json }},
+            'price': {{ item.price | divided_by: 100.0 }},
+            'quantity': {{ item.quantity }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    });
+  </script>
+{% endif %}
+
+{% if event_type == 'purchase' and order %}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+      'event': 'purchase',
+      'ecommerce': {
+        'transaction_id': '{{ order.order_number }}',
+        'affiliation': 'Alpha Medical Care',
+        'value': {{ order.total_price | divided_by: 100.0 }},
+        'tax': {{ order.tax_price | divided_by: 100.0 }},
+        'shipping': {{ order.shipping_price | divided_by: 100.0 }},
+        'currency': '{{ order.currency }}',
+        'coupon': '{% if order.discount_applications.size > 0 %}{{ order.discount_applications.first.title }}{% endif %}',
+        'items': [
+          {% for line_item in order.line_items %}
+          {
+            'item_id': '{{ line_item.sku | default: line_item.product_id }}',
+            'item_name': {{ line_item.title | json }},
+            'item_brand': 'Alpha Medical Care',
+            'item_variant': {{ line_item.variant_title | json }},
+            'price': {{ line_item.price | divided_by: 100.0 }},
+            'quantity': {{ line_item.quantity }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    });
+  </script>
+{% endif %}

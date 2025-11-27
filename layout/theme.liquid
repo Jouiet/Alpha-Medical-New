@@ -695,5 +695,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- if template.name == 'collection' and collection.handle == 'medical-equipment-bundles' -%}
       {%- render 'bundle-hover-images' -%}
     {%- endif -%}
+
+    {%- comment -%}GA4 Enhanced Ecommerce - Auto-tracking for all page types{%- endcomment -%}
+    {%- render 'ga4-auto-events' -%}
   </body>
 </html>
