@@ -1,0 +1,62 @@
+name: Sync Shopify Forms Contest Leads
+
+# Sync contest/giveaway form submissions from Shopify Forms to Google Sheet
+# Schedule: Every hour during business hours (8 AM - 8 PM UTC)
+# List: Shopify Forms submissions
+
+on:
+  schedule:
+    # Every hour from 8 AM to 8 PM UTC (peak signup hours)
+    - cron: '0 8-20 * * *'
+  workflow_dispatch:  # Manual trigger
+    inputs:
+      hours:
+        description: 'Fetch submissions from last N hours'
+        required: false
+        default: '1'
+
+jobs:
+  sync-shopify-forms-leads:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests gspread oauth2client python-dotenv
+
+      - name: Create credentials file
+        run: |
+          echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > google_credentials.json
+
+      - name: Sync Shopify Forms submissions to Google Sheet
+        env:
+          SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_PASSWORD }}
+          SHOPIFY_STORE_DOMAIN: azffej-as.myshopify.com
+          GOOGLE_SHEET_NAME: Alpha Medical - Lead Management
+        run: |
+          HOURS="${{ github.event.inputs.hours }}"
+          if [ -z "$HOURS" ]; then
+            HOURS="1"
+          fi
+
+          python3 sync_shopify_forms_to_sheet.py \
+            --hours "$HOURS" \
+            --source-tag "contest_shopify_forms"
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f google_credentials.json
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Shopify Forms sync failed - Check workflow logs"
