@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 28, 2025 at 16:22 UTC
+**Generated:** November 28, 2025 at 16:27 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -39,7 +39,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -24952,7 +24952,7 @@ User Impact:
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -34951,7 +34951,7 @@ SEO Impact:
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -36098,7 +36098,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -36465,7 +36465,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -37819,7 +37819,7 @@ END_TO_END_VERIFIED=false
 # 6. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -38115,7 +38115,7 @@ gh workflow run daily-scraping.yml
 # 7. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -41656,10 +41656,69 @@ Recommendation: Reinvest first month profits to scale to $700-1000/month
   - Objective: ROAS 3.0-4.0
   - Focus: Convert leads + new customers
 
-01.02.2026+: 💰 ONGOING MONTHLY
-  - Budget: $350/month ($11.33/day)
-  - Objective: ROAS 3.5-5.0
-  - Strategy: Optimize and scale
+01.02.2026+: 💰 ONGOING MONTHLY (Budget Évolutif)
+  - Jan-Fev: $350/mois ($11.67/jour) - 100% FB/IG
+  - Mar-Août: $450/mois ($15/jour) - 100% FB/IG
+  - Sep-Oct: $550/mois ($18.33/jour) - 90% FB/IG, 10% TikTok test
+  - Nov-Dec: $750/mois ($25/jour) - 70% FB/IG, 30% TikTok
+  - Total 2026: $6,000
+  - Note: Budget créations SÉPARÉ (non inclus)
+```
+
+**Budget Annuel 2026 Détaillé:**
+```yaml
+ALLOCATION PAR PHASE:
+
+Phase 1 - Bootstrap (Jan-Fev): $700 total
+  Budget/Jour: $11.67
+  Plateforme: 100% Facebook/Instagram
+  Status: ❌ SOUS-OPTIMAL (41% sous minimum FB $20/jour)
+  ROAS Attendu: 2.6-7.0×
+  Revenue: $1,820-4,900
+
+Phase 2 - Optimize (Mar-Août): $2,700 total
+  Budget/Jour: $15
+  Plateforme: 100% Facebook/Instagram
+  Status: ⚠️ LIMITE (25% sous minimum FB)
+  ROAS Attendu: 3.0-8.4×
+  Revenue: $8,100-22,680
+
+Phase 3 - Test (Sep-Oct): $1,100 total
+  Budget/Jour: $18.33
+  Allocation: 90% FB/IG ($16.50), 10% TikTok ($1.83)
+  Status: ⚠️ LIMITE (TikTok test seulement, budget insuffisant)
+  ROAS Attendu: 3.0-8.4×
+  Revenue: $3,300-9,240
+
+Phase 4 - Scale Q4 (Nov-Dec): $1,500 total
+  Budget/Jour: $25
+  Allocation: 70% FB/IG ($17.50), 30% TikTok ($7.50)
+  Status: ✅ VIABLE (premier budget atteignant minimum FB)
+  ROAS Attendu: 2.4-6.6×
+  Revenue: $3,600-9,900
+
+PROJECTIONS ANNUELLES 2026:
+  Budget Total Ads: $6,000
+  Revenue Conservateur: $16,820-46,720
+  Profit Net (35% margin): -$113 à +$10,352
+  ROI: -2% à +173%
+  Orders: 280-779 (23-65/mois moyen)
+  Breakeven ROAS: 2.86×
+  Breakeven Timeline: Mois 4-6
+
+VÉRITÉ BRUTALE:
+  - Budget moyen: $16.67/jour (17-44% SOUS optimal $20-30/jour)
+  - Multi-platform: IMPOSSIBLE avant Novembre
+  - TikTok: Budget insuffisant Sep-Dec (test seulement)
+  - Google Ads: ❌ Aucun budget disponible 2026
+  - Croissance: LENTE (pas explosive)
+  - Scaling limité: Q1-Q3 en mode survie/optimization
+  - Q4 seulement: Budget viable pour croissance
+
+RECOMMANDATION SCALING:
+  - Réinvestir profits Q1-Q3 pour augmenter budget Q4
+  - Si ROAS >4.0 en Q2: Augmenter budget Q3-Q4
+  - Target 2027: $30-50/jour minimum ($900-1500/mois)
 ```
 
 **Critical finding:**
@@ -42435,7 +42494,7 @@ bottom: 0;  /* Banner at SAME vertical position as widget ❌ */
 # 8. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -43039,7 +43098,7 @@ June:
 # 9. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -45052,7 +45111,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 10. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -45894,7 +45953,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 11. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -46278,7 +46337,7 @@ TOTAL: ~30 minutes de travail actif
 # 12. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -46654,7 +46713,7 @@ dig TXT alphamedical.shop +short
 # 13. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -51491,7 +51550,7 @@ After Fix (bottom: 80px):
 # 14. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -51823,7 +51882,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 15. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -52369,7 +52428,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 16. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -52848,7 +52907,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 17. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -53146,7 +53205,7 @@ If you encounter issues not covered in this guide:
 # 18. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -53458,7 +53517,7 @@ Homepage (Prio 1)
 # 19. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -54260,7 +54319,7 @@ alphamedical.shop
 # 20. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-28 16:22
+**Last Modified:** 2025-11-28 16:27
 
 ---
 
@@ -55464,7 +55523,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 20
-**Generated:** November 28, 2025 at 16:22 UTC
+**Generated:** November 28, 2025 at 16:27 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
