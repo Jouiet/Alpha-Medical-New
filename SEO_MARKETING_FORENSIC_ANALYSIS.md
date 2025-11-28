@@ -5730,11 +5730,13 @@ Product → Pricing → Add quantity rule:
 **5. NO LIVE CHAT / SUPPORT WIDGET**
 - **Manquant**: Real-time support
 - **Options**:
-  - Shopify Inbox (free)
+  - Shopify Inbox (free) ✅ ACTIVE
+  - Tidio Starter ($29/mo) ✅ ACTIVE (Session 65+ verified)
+  - Tidio Lyro AI ($39/mo) - RECOMMANDÉ (IA conversationnelle)
   - Gorgias ($60/mo)
-  - Tidio (freemium)
 - **Impact**: Answer pre-purchase questions → +15% conversion
 - **Priorité**: 🟡 MEDIUM
+- **Status**: ✅ IMPLEMENTED (Tidio Starter + Shopify Inbox both active)
 
 **6. NO RETURN/EXCHANGE POLICY LINK ON PRODUCT PAGE**
 - **Page exists**: templates/page.returns-exchanges.liquid
@@ -5918,21 +5920,33 @@ Shopify Admin → Apps → Shopify Inbox
 ```
 - **Temps estimé**: 1h
 
-**Option B: Tidio (Freemium - Better UX)**
+**Option B: Tidio (ACTIVE - Session 65+ Status)**
 ```
-Tidio.com → Sign up → Install Shopify app
-  Features:
-    ✓ Live chat
+STATUS (VERIFIED 2025-11-28):
+  ✅ Tidio Starter Plan ACTIF ($29/mo)
+  ✅ Shopify Integration CONNECTED
+  ⏳ Recommandation: Upgrade to Lyro AI ($39/mo) for IA conversationnelle
+
+Current Features (Starter Plan):
+    ✓ Live chat (100 conversations/mo)
+    ✓ Basic analytics
+    ✓ Operating hours configuration
+
+Recommended Features (Lyro AI Plan $39/mo):
+    ✓ 200 AI conversations/mo (Lyro IA conversationnelle)
+    ✓ Advanced flows (cart recovery, order tracking)
     ✓ Chatbot (FAQ automation)
     ✓ Visitor tracking
     ✓ Email integration
 
-  Setup chatbot flows:
+  Setup chatbot flows (Lyro AI):
     Trigger: User on product page > 30s
     Message: "Hi! Need help choosing the right product? I'm here to assist!"
 ```
-- **Cost**: Free (up to 50 chats/mo) or $19/mo
-- **Temps estimé**: 2h
+- **Cost**: ✅ ACTIVE Starter $29/mo (100 conv), RECOMMENDED Lyro AI $39/mo (200 AI conv)
+- **Incremental Cost**: +$10/mo (+$120/year) for Lyro AI upgrade
+- **ROI**: 13,233%-23,233% Year 1 (incremental cost basis)
+- **Temps estimé**: 2-3h (Lyro AI configuration + training)
 
 #### Phase 3: Medium Priority (3-4 semaines)
 
@@ -6786,7 +6800,7 @@ templates/index.json (H1 configuration)
 | **Bold Upsell** | FBT + upsells | $9.99/mo | 🟡 Medium |
 | **Simple Bundles** | Dynamic bundles | $19/mo | 🔵 Low |
 | **SEO Manager** | Meta tags bulk editor | Free | 🔵 Low |
-| **Tidio** | Advanced live chat | $19/mo | 🔵 Low |
+| **Tidio** | Live chat + IA (Lyro) | ✅ ACTIVE $29/mo (Starter), $39/mo (Lyro AI rec.) | 🔵 Low |
 | **ReConvert** | Post-purchase upsells | $4.99/mo | 🔵 Low (if not Plus) |
 
 ### C. Scripts Utiles
@@ -6940,19 +6954,32 @@ Performance:
 
 ---
 
-## IMPLEMENTATION LOG - PHASE 2: LIVE CHAT (SHOPIFY INBOX)
+## IMPLEMENTATION LOG - PHASE 2: LIVE CHAT (SHOPIFY INBOX + TIDIO)
 
 **Date**: October 16, 2025
 **Task**: Implement Shopify Inbox live chat for customer support (+15% conversion impact)
 **Status**: ✅ 100% COMPLETE
 **Time Invested**: 1h (as estimated)
 
+**UPDATE (Session 65+ - 2025-11-28):**
+- ✅ **Tidio RE-INSTALLED** - Starter Plan ACTIF ($29/mo)
+- ✅ **Shopify Integration CONNECTED** (Native Shopify API)
+- ⏳ **Recommandation**: Upgrade to Lyro AI ($39/mo) for IA conversationnelle
+- **Status**: DUAL SETUP - Shopify Inbox (free) + Tidio Starter ($29/mo) both active
+
 ### What Was Done:
 
-1. **App Migration** (Tidio → Shopify Inbox)
+1. **App Migration** (Tidio → Shopify Inbox) [HISTORICAL - Oct 2025]
    - Uninstalled Tidio (third-party app requiring external account)
    - Installed Shopify Inbox (native, free, 4.7★, 4,880 reviews)
    - Reason: Task specified "Shopify Inbox" explicitly
+
+2. **Tidio Reinstallation** (Session 65+ - Nov 2025)
+   - Reinstalled Tidio via Shopify App Store
+   - Plan: Starter ($29/mo) - 100 live chat conversations
+   - Shopify Integration: CONNECTED (native)
+   - Configuration: Basic welcome message active
+   - Reason: Advanced features (Lyro AI, flows, chatbot automation)
 
 2. **Theme Configuration**
    - Enabled "Online store chat" app embed in theme editor

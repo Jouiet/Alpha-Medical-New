@@ -986,7 +986,7 @@ Comparaison vs 3 catégories:
 | **Social Proof** | ✅ Viewing/stock | 🟡 50% have | ✅ Multi-layer |
 | **Video Product** | 🔴 0 videos | 🟡 20% have | ✅ 80%+ |
 | **Size/Fit Guide** | 🟡 Button (?) | 🟡 30% have | ✅ Interactive |
-| **Live Chat** | ✅ Shopify Chat | ✅ 70% have | ✅ 24/7 |
+| **Live Chat** | ✅ Tidio Starter + Shopify Chat | ✅ 70% have | ✅ 24/7 |
 | **Urgency Timers** | 🔴 None | 🟡 40% have | ✅ Dynamic |
 | **Bundle Offers** | 🔴 Broken | 🟡 20% have | ✅ 60% have |
 | **Exit Intent** | 🔴 None | 🟡 50% have | ✅ 90% |
