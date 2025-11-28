@@ -957,4 +957,388 @@ Future Widget Additions:
 - snippets/cookie-consent-banner.liquid (bottom: 0 → 80px)
 
 **Session 64B-3 Status:** COMPLETE ✅
+
+---
+
+## SESSION 65 UPDATE - SHOPIFY FORMS CONTEST WORKFLOW (2025-11-28)
+
+**Focus:** Create Shopify Forms contest/giveaway + automated sync to Google Sheets
+
+### 1. Shopify Forms Creation ✅ COMPLETED
+
+**Form Configuration (Verified via Chrome DevTools MCP):**
+```yaml
+Form Name: "Pre-Launch Contest Giveaway"
+Form ID: 768671
+Type: Popup (overlay)
+Status: Active
+Published: ✅ YES (alphamedical.shop)
+Theme Integration: ✅ Forms app embed enabled
+
+Fields (all required):
+  - First name (text)
+  - Email (email)
+  - Phone (tel, default +212 Morocco)
+
+Marketing Consent:
+  - Email: ✅ Enabled (auto opt-in on submission)
+  - SMS: ✅ Enabled (auto opt-in on submission)
+  - Method: "On form submission" (no checkbox required)
+
+Display Settings:
+  - Show on: All pages
+  - Trigger: First page view (immediate)
+  - Display: Overlay style
+  - Teaser: Bottom-left (after close)
+
+Auto-tagging:
+  - Tag: shopify-forms-768671 (auto-assigned to submissions)
+```
+
+**Form Submission Flow (Expected):**
+1. User visits alphamedical.shop (first time)
+2. Popup appears immediately (overlay)
+3. User fills: First name, Email, Phone
+4. User clicks "Submit"
+5. Shopify creates Customer record with:
+   - Contact info
+   - Marketing consent: Email + SMS
+   - Tag: shopify-forms-768671
+
+**Verification Status:**
+- ✅ Form created in Shopify admin
+- ✅ Form turned ON (active)
+- ✅ Forms app embed enabled in theme editor
+- ✅ Theme saved
+- ⚠️ Popup NOT tested with real submission (trigger: first page view only)
+
+### 2. GitHub Actions Workflow ✅ CREATED
+
+**Workflow Details:**
+```yaml
+Name: "Sync Shopify Forms Contest Leads"
+File: .github/workflows/sync-shopify-forms-leads.yml
+Workflow ID: 211198931
+Status: ✅ ACTIVE
+
+Schedule:
+  - Cron: '0 8-20 * * *'  # Every hour 8 AM - 8 PM UTC
+  - Manual: workflow_dispatch (hours parameter)
+
+Secrets Required:
+  - SHOPIFY_PASSWORD: ✅ Configured (shpat_***REDACTED***)
+  - GOOGLE_CREDENTIALS_JSON: ✅ Configured
+  - GOOGLE_SHEET_NAME: Alpha Medical - Lead Management (hardcoded)
+```
+
+**Script Created:**
+```yaml
+File: sync_shopify_forms_to_sheet.py
+Size: 229 lines (6,514 bytes)
+Language: Python 3.11
+
+Dependencies:
+  - requests
+  - gspread
+  - oauth2client
+  - python-dotenv
+
+Data Source: Shopify Customers API (NOT Forms API directly)
+Detection Method: Filter customers by tags containing "form", "contest", or "giveaway"
+Sync Destination: Google Sheet → "Raw Leads" tab
+Quality Score: 8.5 (high - explicit opt-in)
+```
+
+### 3. Technical Implementation (FACTUAL)
+
+**How it Works (Verified via code inspection):**
+```python
+# NOT direct Forms API access
+# Uses Customers API with tag filtering
+
+def fetch_shopify_forms_submissions(hours_ago=24):
+    # Fetches customers created in last N hours
+    url = f'https://{SHOPIFY_DOMAIN}/admin/api/2024-10/customers.json'
+    url += f'?created_at_min={since}&limit=250'
+
+    # Filters for form-related tags
+    for customer in customers:
+        tags = customer.get('tags', '').lower()
+        if 'form' in tags or 'contest' in tags or 'giveaway' in tags:
+            # Extract and sync to Google Sheets
+```
+
+**Critical Dependency:**
+- Workflow depends on Shopify Forms creating a Customer record
+- Customer MUST have tag containing "form", "contest", or "giveaway"
+- If Shopify Forms doesn't create customer → NO SYNC
+
+### 4. Configuration & Testing ✅ VERIFIED
+
+**GitHub Secrets Configuration:**
+```bash
+# Before Session 65:
+SHOPIFY_PASSWORD: ❌ Empty/Invalid
+
+# After Session 65:
+SHOPIFY_PASSWORD: ✅ Updated with Admin API token
+  Token: shpat_***REDACTED*** (Admin API access token from .env.admin)
+  Source: .env.admin file
+  Verified: ✅ Via workflow run logs
+
+GOOGLE_CREDENTIALS_JSON: ✅ Updated
+  Service Account: ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+  Verified: ✅ Via Python test script
+```
+
+**Google Sheet Access:**
+```yaml
+Sheet Name: "Alpha Medical - Lead Management"
+Sheet ID: 1UnNrIELOh44E5GyHs0ueIWHOeM7423azKeDmbwC7IOE
+URL: https://docs.google.com/spreadsheets/d/1UnNrIELOh44E5GyHs0ueIWHOeM7423azKeDmbwC7IOE
+
+Access Status:
+  Before: ❌ SpreadsheetNotFound (not shared)
+  After: ✅ Accessible (shared with service account)
+
+Worksheets Found: 3
+  - Raw Leads (1000 rows x 124 cols)
+  - Qualified Leads (1000 rows x 26 cols)
+  - Dashboard (1000 rows x 26 cols)
+
+Permissions: ✅ Editor (granted to service account)
+```
+
+**Workflow Test Results:**
+```yaml
+Test Run 1 (19766517860):
+  Status: ❌ FAILURE
+  Error: "SHOPIFY_ADMIN_ACCESS_TOKEN not set"
+  Cause: Empty SHOPIFY_PASSWORD secret
+
+Test Run 2 (19766948657):
+  Status: ❌ FAILURE
+  Error: "Failed to connect to Google Sheet: <Response [200]>"
+  Cause: SpreadsheetNotFound (not shared with service account)
+
+Test Run 3 (19766984936):
+  Status: ❌ FAILURE
+  Error: "Failed to connect to Google Sheet: <Response [200]>"
+  Cause: Same - Google Sheet still not shared
+
+Test Run 4 (19767105664):
+  Status: ✅ SUCCESS
+  Duration: 15 seconds
+  Result: "No new form submissions to sync"
+  Customers found: 0 (expected - form just created)
+```
+
+**Local Testing (Verified):**
+```bash
+# Google Sheets Connection Test
+✅ Client authorized successfully
+✅ Sheet opened: Alpha Medical - Lead Management
+✅ Worksheets found: ['Raw Leads', 'Qualified Leads', 'Dashboard']
+✅ Worksheet 'Raw Leads' accessed successfully
+
+# Shopify API Test (via workflow)
+✅ SHOPIFY_ADMIN_ACCESS_TOKEN: *** (masked but present)
+✅ Store: azffej-as.myshopify.com
+✅ Fetching Shopify Forms submissions from last 24 hours...
+✅ Found 0 new customers in timeframe
+✅ Found 0 form submissions
+```
+
+### 5. Limitations & Gaps (BRUTAL HONESTY)
+
+**Known Limitations:**
+```yaml
+1. NO Direct Forms API Access:
+   - Script uses Customers API, not Forms API
+   - Depends on customer creation by Shopify Forms
+   - If Forms creates submission WITHOUT customer → NO SYNC
+
+2. Tag-Based Detection (Fragile):
+   - Relies on tags containing "form", "contest", or "giveaway"
+   - Form auto-tag: "shopify-forms-768671" (doesn't match filters!)
+   - CRITICAL GAP: Auto-tag doesn't contain required keywords
+   - Script won't detect submissions with only auto-tag
+
+3. Form Popup NOT Tested:
+   - Configured to show on "First page view"
+   - During testing: Popup didn't appear (already visited)
+   - NO real submission test performed
+   - Flow unverified: Form → Customer → Sync
+
+4. Marketing Consent Assumption:
+   - Script assumes accepts_marketing = True
+   - Not verified if Shopify Forms actually sets this flag
+   - Could result in incomplete data
+
+5. Phone Format Issues:
+   - Default country: Morocco (+212)
+   - User could select different country
+   - Script extracts phone as-is (no validation)
+```
+
+**Critical Bug Identified:**
+```python
+# Script filters customers by tags:
+if 'form' in tags or 'contest' in tags or 'giveaway' in tags:
+
+# Shopify Forms auto-tag: "shopify-forms-768671"
+# Contains: "forms" (plural) ✅
+# Contains: "form" (singular) ✅ - Python 'in' operator matches substring
+# WAIT: Auto-tag DOES contain "form" as substring!
+
+# Actually: Script SHOULD work with auto-tag ✅
+# False alarm - tag filtering is correct
+```
+
+**Re-analysis (Corrected):**
+```python
+# Auto-tag: "shopify-forms-768671"
+# Check: 'form' in 'shopify-forms-768671' → TRUE ✅
+# Script will detect submissions correctly
+```
+
+### 6. Infrastructure Impact
+
+**GitHub Actions Status:**
+```yaml
+Before Session 65:
+  Total Workflows: 10
+  Active: 10/10
+  Failing: 1/10 (typeform - missing secrets)
+  Score: 97.5/100
+
+After Session 65:
+  Total Workflows: 11 (+1 new)
+  Active: 11/11
+  Failing: 1/11 (typeform - missing secrets)
+  Passing: 10/11
+  Score: 97.7/100 (+0.2 pts)
+
+New Workflow:
+  - Sync Shopify Forms Contest Leads ✅ PASSING
+```
+
+**Automation Coverage:**
+```yaml
+Lead Capture Channels (Updated):
+  ✅ Shopify Forms (NEW - contest/giveaway)
+  ✅ Facebook Lead Ads
+  ✅ Klaviyo
+  ⚠️ Typeform (workflow exists but disabled - missing secrets)
+
+Total Lead Sync Workflows: 4
+Working Workflows: 3/4 (75%)
+```
+
+**Files Created:**
+```yaml
+New Files:
+  1. sync_shopify_forms_to_sheet.py (229 lines, 6,514 bytes)
+  2. .github/workflows/sync-shopify-forms-leads.yml (63 lines, 1,768 bytes)
+
+Modified Files:
+  None (new workflow only)
+
+Commits:
+  - c673ff3: feat(automation): Add Shopify Forms lead sync workflow
+  - 6e13422: Merged with remote changes
+```
+
+### 7. Production Readiness Assessment
+
+**What Works (100% Verified):**
+```yaml
+✅ Form created and active in Shopify
+✅ Form published on live site
+✅ GitHub Actions workflow active
+✅ Workflow executes successfully
+✅ Google Sheets connection working
+✅ Shopify API connection working
+✅ Hourly automation configured
+✅ Credentials properly secured in GitHub Secrets
+```
+
+**What's Untested (Honest Gaps):**
+```yaml
+⚠️ Real form submission (popup trigger = first page view only)
+⚠️ Customer creation by Shopify Forms (assumed but not verified)
+⚠️ Marketing consent flag setting (assumed but not verified)
+⚠️ Data mapping to Google Sheet (0 submissions to test)
+⚠️ Phone number handling across countries
+⚠️ Edge cases: duplicate submissions, invalid emails, etc.
+```
+
+**Next Steps for Production Validation:**
+```yaml
+1. Submit test form entry:
+   - Open alphamedical.shop in incognito mode
+   - Fill form with test data
+   - Verify customer created in Shopify admin
+   - Check customer tags include "shopify-forms-768671"
+
+2. Trigger manual workflow run:
+   - gh workflow run "Sync Shopify Forms Contest Leads" --field hours=1
+   - Check workflow logs for submission detection
+   - Verify data appears in Google Sheet "Raw Leads" tab
+
+3. Monitor hourly automation:
+   - Wait for scheduled run (next hour)
+   - Verify cron trigger works
+   - Check no errors in automated runs
+
+4. Load testing:
+   - Submit 5-10 test entries
+   - Verify all appear in Google Sheet
+   - Check for duplicates
+   - Validate data quality
+```
+
+### 8. Summary (.env format)
+
+```bash
+# SHOPIFY FORMS CONTEST WORKFLOW - SESSION 65
+SHOPIFY_FORM_NAME="Pre-Launch Contest Giveaway"
+SHOPIFY_FORM_ID=768671
+SHOPIFY_FORM_STATUS=active
+SHOPIFY_FORM_TYPE=popup
+SHOPIFY_FORM_TAG=shopify-forms-768671
+
+# GITHUB ACTIONS
+WORKFLOW_NAME="Sync Shopify Forms Contest Leads"
+WORKFLOW_ID=211198931
+WORKFLOW_STATUS=active
+WORKFLOW_SCHEDULE="0 8-20 * * *"
+WORKFLOW_LAST_RUN=19767105664
+WORKFLOW_LAST_STATUS=success
+
+# GOOGLE SHEETS
+GOOGLE_SHEET_NAME="Alpha Medical - Lead Management"
+GOOGLE_SHEET_ID=1UnNrIELOh44E5GyHs0ueIWHOeM7423azKeDmbwC7IOE
+GOOGLE_SERVICE_ACCOUNT=ecom-317@astute-quarter-476613-h3.iam.gserviceaccount.com
+GOOGLE_SHEET_TAB="Raw Leads"
+
+# SECRETS CONFIGURED
+GITHUB_SECRET_SHOPIFY_PASSWORD=configured
+GITHUB_SECRET_GOOGLE_CREDENTIALS_JSON=configured
+
+# INFRASTRUCTURE IMPACT
+WORKFLOWS_TOTAL=11
+WORKFLOWS_ACTIVE=11
+WORKFLOWS_PASSING=10
+WORKFLOWS_FAILING=1
+GITHUB_ACTIONS_SCORE=97.7/100
+
+# PRODUCTION STATUS
+FORM_DEPLOYED=true
+WORKFLOW_OPERATIONAL=true
+REAL_SUBMISSION_TESTED=false
+END_TO_END_VERIFIED=false
+```
+
+**Session 65 Status:** WORKFLOW OPERATIONAL ✅ (Production testing pending)
 **Automation Impact:** Widget coexistence - professional multi-feature UX
