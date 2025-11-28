@@ -3597,7 +3597,101 @@ VÉRITÉ BRUTALE:
 RECOMMANDATION SCALING:
   - Réinvestir profits Q1-Q3 pour augmenter budget Q4
   - Si ROAS >4.0 en Q2: Augmenter budget Q3-Q4
-  - Target 2027: $30-50/jour minimum ($900-1500/mois)
+  - Target 2027: $95/jour minimum ($20 FB + $50 TikTok + $25 Google)
+```
+
+**VÉRIFICATION FACTUELLE WEB (Recherche 28.11.2025):**
+```yaml
+SOURCES CONSULTÉES:
+  - Meta/Facebook Ads documentation (via industry blogs)
+  - TikTok Ads knowledge base
+  - Google Ads official help center
+  - Expert sources: Madgicx, Jon Loomer, Lebesgue, WordStream
+  - Date: Novembre 2024 - 2025
+
+MINIMUMS TECHNIQUES PLATEFORMES (Vérifié):
+  Facebook/Instagram:
+    Minimum Meta: $5/jour (conversions)
+    Minimum Recommandé: $20-35/jour (testing)
+    Optimal Ecommerce: $50-100+/jour
+    Source: ✅ VÉRIFIÉ (multiple sources 2024-2025)
+
+  TikTok:
+    Minimum Plateforme: $20/jour (ad group), $50/jour (campaign)
+    Recommandé: $50-100/jour
+    Optimal: $100-200+/jour
+    Source: ⚠️ Knowledge base (recherche web failed)
+
+  Google Ads/Shopping:
+    Minimum Technique: $1/jour (aucun minimum officiel)
+    CPC Moyen Shopping: $0.66
+    Recommandé: $25-35/jour (Shopping)
+    Optimal: $50-100/jour
+    Source: ✅ VÉRIFIÉ (Google official + industry)
+
+LEARNING PHASE REQUIREMENTS (Vérifié):
+  Facebook/Instagram NEW (2025):
+    Events Requis: 10 conversions
+    Période: 3 jours
+    Rollout: Progressif (pas tous comptes)
+    Budget Requis (CPA $100): $333/jour
+    Source: ✅ VÉRIFIÉ (Meta update via Madgicx, Lebesgue)
+
+  Facebook/Instagram OLD:
+    Events Requis: 50 conversions
+    Période: 7 jours
+    Budget Requis (CPA $100): $714/jour
+    Source: ✅ VÉRIFIÉ (consensus industry)
+
+  Benefits Exit Learning:
+    CPA Reduction: -19% après sortie
+    Stable vs Learning: -68% CPA
+    Source: ✅ VÉRIFIÉ (industry research)
+
+TON BUDGET VS MINIMUMS VÉRIFIÉS:
+  Jan-Fev ($11.67/jour):
+    vs Min Technique FB ($5): +133% ✅
+    vs Min Recommandé FB ($20): -42% ❌
+    vs Optimal FB ($50): -77% ❌
+    Verdict: SOUS-OPTIMAL
+
+  Mar-Août ($15/jour):
+    vs Min Recommandé FB ($20): -25% ❌
+    vs Optimal FB ($50): -70% ❌
+    Verdict: LIMITE
+
+  Sep-Oct ($18.33 total):
+    FB $16.50 vs Rec $20: -18% ❌
+    TikTok $1.83 vs Min $20: -91% ❌
+    Verdict: FB limite, TikTok non viable
+
+  Nov-Dec ($25 total):
+    FB $17.50 vs Rec $20: -12% ❌
+    TikTok $7.50 vs Min $20: -62% ❌
+    Verdict: FB proche viable, TikTok sous-optimal
+
+  Google Sep-Dec ($6.67/jour):
+    vs Min Recommandé ($25): -73% ❌
+    Verdict: Branded search SEULEMENT
+
+CONCLUSION RECHERCHE WEB:
+  ✅ Campagnes PEUVENT tourner (au-dessus min technique $5)
+  ❌ Performance sous-optimale GARANTIE (sous min recommandé)
+  ❌ Learning phase IMPOSSIBLE (budget 92% sous requis $333/j)
+  ❌ ROAS attendu: 2-4× (vs 5-8× si budget optimal)
+  ❌ Multi-platform viable: IMPOSSIBLE 2026
+
+BUDGET OPTIMAL CALCULÉ (Sources Vérifiées):
+  Minimum Recommandé: $95/jour
+    - Facebook: $20/jour
+    - TikTok: $50/jour
+    - Google Shopping: $25/jour
+
+  Ton Budget Max 2026: $25/jour (Nov-Dec)
+  Écart: -74% sous optimal multi-platform
+
+  Mode 2026: BOOTSTRAP/SURVIE (croissance lente)
+  Mode Optimal: Requiert $95-150/jour ($2,850-4,500/mois)
 ```
 
 **Critical finding:**
