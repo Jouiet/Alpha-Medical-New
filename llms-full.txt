@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 28, 2025 at 16:27 UTC
+**Generated:** November 28, 2025 at 16:40 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -39,7 +39,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -24952,7 +24952,7 @@ User Impact:
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -34951,7 +34951,7 @@ SEO Impact:
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -36098,7 +36098,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -36465,7 +36465,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -37819,7 +37819,7 @@ END_TO_END_VERIFIED=false
 # 6. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -38115,7 +38115,7 @@ gh workflow run daily-scraping.yml
 # 7. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -41659,9 +41659,10 @@ Recommendation: Reinvest first month profits to scale to $700-1000/month
 01.02.2026+: 💰 ONGOING MONTHLY (Budget Évolutif)
   - Jan-Fev: $350/mois ($11.67/jour) - 100% FB/IG
   - Mar-Août: $450/mois ($15/jour) - 100% FB/IG
-  - Sep-Oct: $550/mois ($18.33/jour) - 90% FB/IG, 10% TikTok test
-  - Nov-Dec: $750/mois ($25/jour) - 70% FB/IG, 30% TikTok
-  - Total 2026: $6,000
+  - Sep-Oct: $550/mois ($18.33/jour) - 100% FB/IG
+  - Nov-Dec: $750/mois ($25/jour) - 100% FB/IG
+  - Google Ads: $800 Sep-Dec ($6.67/jour) - Branded search
+  - Total 2026: $6,800 ($6,000 FB/IG + $800 Google)
   - Note: Budget créations SÉPARÉ (non inclus)
 ```
 
@@ -41683,43 +41684,208 @@ Phase 2 - Optimize (Mar-Août): $2,700 total
   ROAS Attendu: 3.0-8.4×
   Revenue: $8,100-22,680
 
-Phase 3 - Test (Sep-Oct): $1,100 total
+Phase 3 - Scale Sep-Oct: $1,100 total
   Budget/Jour: $18.33
-  Allocation: 90% FB/IG ($16.50), 10% TikTok ($1.83)
-  Status: ⚠️ LIMITE (TikTok test seulement, budget insuffisant)
+  Allocation: 100% Facebook/Instagram
+  Status: ⚠️ LIMITE (8% sous minimum recommandé FB $20)
   ROAS Attendu: 3.0-8.4×
   Revenue: $3,300-9,240
 
 Phase 4 - Scale Q4 (Nov-Dec): $1,500 total
   Budget/Jour: $25
-  Allocation: 70% FB/IG ($17.50), 30% TikTok ($7.50)
-  Status: ✅ VIABLE (premier budget atteignant minimum FB)
+  Allocation: 100% Facebook/Instagram
+  Status: ✅ VIABLE (au-dessus minimum recommandé FB $20/jour)
   ROAS Attendu: 2.4-6.6×
   Revenue: $3,600-9,900
 
 PROJECTIONS ANNUELLES 2026:
-  Budget Total Ads: $6,000
-  Revenue Conservateur: $16,820-46,720
-  Profit Net (35% margin): -$113 à +$10,352
-  ROI: -2% à +173%
+  Budget Total Ads: $6,800 ($6,000 FB/IG + $800 Google)
+  Platforms: Facebook/Instagram (100%) + Google Ads (Q4 branded)
+  Revenue Conservateur: $16,820-46,720 (FB/IG seul)
+  Profit Net (35% margin): -$913 à +$9,552
+  ROI: -13% à +140%
   Orders: 280-779 (23-65/mois moyen)
-  Breakeven ROAS: 2.86×
+  Breakeven ROAS: 2.86× (FB/IG), Google ROI séparé
   Breakeven Timeline: Mois 4-6
 
 VÉRITÉ BRUTALE:
   - Budget moyen: $16.67/jour (17-44% SOUS optimal $20-30/jour)
-  - Multi-platform: IMPOSSIBLE avant Novembre
-  - TikTok: Budget insuffisant Sep-Dec (test seulement)
-  - Google Ads: ❌ Aucun budget disponible 2026
-  - Croissance: LENTE (pas explosive)
-  - Scaling limité: Q1-Q3 en mode survie/optimization
-  - Q4 seulement: Budget viable pour croissance
+  - Stratégie 2026: 100% Facebook/Instagram (TikTok EXCLU)
+  - Google Ads: $800 budget séparé Sep-Dec ($6.67/jour)
+  - Q4 (Nov-Dec): ✅ PREMIER budget viable ($25/jour = +25% vs min recommandé)
+  - Q1-Q3: Mode BOOTSTRAP (sous recommandé mais fonctionnel)
+  - Croissance: LENTE Q1-Q3, viable Q4
+  - Multi-platform: Google Ads branded search seulement (Q4)
 
 RECOMMANDATION SCALING:
   - Réinvestir profits Q1-Q3 pour augmenter budget Q4
   - Si ROAS >4.0 en Q2: Augmenter budget Q3-Q4
-  - Target 2027: $30-50/jour minimum ($900-1500/mois)
+  - Target 2027 Phase 1: $50/jour FB/IG ($1,500/mois)
+  - Target 2027 Phase 2: Multi-platform $95/jour ($20 FB + $50 TikTok + $25 Google)
+  - Stratégie 2026: Focus concentration FB/IG (meilleure performance vs dilution 3 platforms)
 ```
+
+**VÉRIFICATION FACTUELLE WEB (Recherche 28.11.2025):**
+```yaml
+SOURCES CONSULTÉES:
+  - Meta/Facebook Ads documentation (via industry blogs)
+  - TikTok Ads knowledge base
+  - Google Ads official help center
+  - Expert sources: Madgicx, Jon Loomer, Lebesgue, WordStream
+  - Date: Novembre 2024 - 2025
+
+MINIMUMS TECHNIQUES PLATEFORMES (Vérifié):
+  Facebook/Instagram:
+    Minimum Meta: $5/jour (conversions)
+    Minimum Recommandé: $20-35/jour (testing)
+    Optimal Ecommerce: $50-100+/jour
+    Source: ✅ VÉRIFIÉ (multiple sources 2024-2025)
+
+  TikTok:
+    Minimum Plateforme: $20/jour (ad group), $50/jour (campaign)
+    Recommandé: $50-100/jour
+    Optimal: $100-200+/jour
+    Source: ⚠️ Knowledge base (recherche web failed)
+
+  Google Ads/Shopping:
+    Minimum Technique: $1/jour (aucun minimum officiel)
+    CPC Moyen Shopping: $0.66
+    Recommandé: $25-35/jour (Shopping)
+    Optimal: $50-100/jour
+    Source: ✅ VÉRIFIÉ (Google official + industry)
+
+LEARNING PHASE REQUIREMENTS (Vérifié):
+  Facebook/Instagram NEW (2025):
+    Events Requis: 10 conversions
+    Période: 3 jours
+    Rollout: Progressif (pas tous comptes)
+    Budget Requis (CPA $100): $333/jour
+    Source: ✅ VÉRIFIÉ (Meta update via Madgicx, Lebesgue)
+
+  Facebook/Instagram OLD:
+    Events Requis: 50 conversions
+    Période: 7 jours
+    Budget Requis (CPA $100): $714/jour
+    Source: ✅ VÉRIFIÉ (consensus industry)
+
+  Benefits Exit Learning:
+    CPA Reduction: -19% après sortie
+    Stable vs Learning: -68% CPA
+    Source: ✅ VÉRIFIÉ (industry research)
+
+TON BUDGET VS MINIMUMS VÉRIFIÉS:
+  Jan-Fev ($11.67/jour):
+    vs Min Technique FB ($5): +133% ✅
+    vs Min Recommandé FB ($20): -42% ❌
+    vs Optimal FB ($50): -77% ❌
+    Verdict: SOUS-OPTIMAL
+
+  Mar-Août ($15/jour):
+    vs Min Recommandé FB ($20): -25% ❌
+    vs Optimal FB ($50): -70% ❌
+    Verdict: LIMITE
+
+  Sep-Oct ($18.33/jour):
+    FB/IG $18.33 vs Rec $20: -8% ❌
+    Allocation: 100% Facebook/Instagram
+    Verdict: LIMITE (proche viable)
+
+  Nov-Dec ($25/jour):
+    FB/IG $25 vs Rec $20: +25% ✅
+    Allocation: 100% Facebook/Instagram
+    Verdict: ✅ VIABLE (au-dessus minimum recommandé)
+
+  Google Sep-Dec ($6.67/jour):
+    vs Min Recommandé ($25): -73% ❌
+    Verdict: Branded search SEULEMENT
+
+CONCLUSION RECHERCHE WEB:
+  ✅ Campagnes PEUVENT tourner (au-dessus min technique $5)
+  ✅ Q4 viable: $25/jour = +25% vs min recommandé FB ($20)
+  ❌ Q1-Q3 sous-optimal: 8-42% sous min recommandé
+  ❌ Learning phase IMPOSSIBLE: budget 92% sous requis ($333/j)
+  ❌ ROAS attendu Q1-Q3: 2-4× (vs 5-8× si budget optimal)
+  ✅ Stratégie 2-platform: FB/IG + Google (TikTok exclu)
+
+BUDGET OPTIMAL CALCULÉ (Sources Vérifiées):
+  Minimum Recommandé: $95/jour
+    - Facebook: $20/jour
+    - TikTok: $50/jour
+    - Google Shopping: $25/jour
+
+  Ton Budget Max 2026: $25/jour (Nov-Dec)
+  Écart: -74% sous optimal multi-platform
+
+  Mode 2026: BOOTSTRAP/SURVIE (croissance lente)
+  Mode Optimal: Requiert $95-150/jour ($2,850-4,500/mois)
+```
+
+---
+
+## SESSION 65 UPDATE - BUDGET STRATEGY REVISION (2025-11-28)
+
+**Décision stratégique:** Exclusion TikTok Ads 2026
+
+**Rationale (Web-Verified):**
+```yaml
+PROBLÈME IDENTIFIÉ:
+  Budget TikTok 2026: $560 total
+    - Sep-Oct: $55/mois ($1.83/jour) = -91% sous minimum ($20/jour)
+    - Nov-Dec: $225/mois ($7.50/jour) = -62% sous minimum ($20/jour)
+
+  Conclusion: Budget TikTok 100% sous-optimal (échec garanti)
+
+SOLUTION APPLIQUÉE:
+  Réallocation: $560 TikTok → Facebook/Instagram
+
+  Impact Q4 (Nov-Dec):
+    AVANT: $17.50/jour FB + $7.50/jour TikTok = $25/jour
+    APRÈS: $25/jour FB (100%) = +43% budget FB
+
+  Résultat: Q4 FB $25/jour = +25% vs minimum recommandé ($20) ✅
+
+  Status: Q4 PASSE de "proche viable" à "VIABLE confirmé"
+
+NOUVELLE ALLOCATION 2026:
+  Facebook/Instagram: $6,000 (100% de budget primary)
+  Google Ads: $800 (budget séparé, Q4 seulement, branded search)
+  TikTok: $0 (exclu stratégie 2026)
+
+  Total: $6,800
+
+AVANTAGES STRATÉGIE 2-PLATFORM:
+  ✅ Concentration budget = meilleure performance
+  ✅ Q4 franchit seuil viabilité FB ($20/jour minimum recommandé)
+  ✅ Learning data concentré (vs dilué sur 3 platforms)
+  ✅ Gestion simplifiée (2 platforms vs 3)
+  ✅ Google Ads = capture branded search (low CPC, high intent)
+
+  vs 3-PLATFORM (ancien plan):
+  ❌ Budget dilué sur 3 platforms = 3× sous-optimal
+  ❌ TikTok 91% sous minimum = échec garanti
+  ❌ FB/IG dilué = performance réduite
+  ❌ Complexité gestion (+50% temps)
+
+BUDGET PAR PÉRIODE (FINAL):
+  Q1 (Jan-Fev): $11.67/jour - 100% FB/IG (-42% vs rec)
+  Q2 (Mar-Juin): $15/jour - 100% FB/IG (-25% vs rec)
+  Q3 (Jul-Août): $15/jour - 100% FB/IG (-25% vs rec)
+  Sep-Oct: $18.33/jour - 100% FB/IG (-8% vs rec)
+  Q4 (Nov-Dec): $25/jour FB + $6.67/jour Google ✅ VIABLE
+
+PERFORMANCE ATTENDUE 2026:
+  Q1-Q3: Mode bootstrap (fonctionnel mais sous-optimal)
+  Q4: Mode viable (au-dessus minimum recommandé)
+  Transition 2027: Scaling vers $50/jour FB (optimal single-platform)
+```
+
+**Documentation mise à jour:**
+- Budget allocation sections (all periods now 100% FB/IG)
+- VÉRITÉ BRUTALE section (TikTok exclusion noted)
+- RECOMMANDATION SCALING (2-platform strategy)
+- Projections updated to $6,800 total budget
+
+---
 
 **Critical finding:**
 - Footer perception gap (76 points) is PRIMARY conversion blocker
@@ -42494,7 +42660,7 @@ bottom: 0;  /* Banner at SAME vertical position as widget ❌ */
 # 8. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -43098,7 +43264,7 @@ June:
 # 9. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -45111,7 +45277,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 10. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -45953,7 +46119,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 11. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -46337,7 +46503,7 @@ TOTAL: ~30 minutes de travail actif
 # 12. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -46713,7 +46879,7 @@ dig TXT alphamedical.shop +short
 # 13. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -51550,7 +51716,7 @@ After Fix (bottom: 80px):
 # 14. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -51882,7 +52048,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 15. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -52428,7 +52594,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 16. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -52907,7 +53073,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 17. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -53205,7 +53371,7 @@ If you encounter issues not covered in this guide:
 # 18. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -53517,7 +53683,7 @@ Homepage (Prio 1)
 # 19. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -54319,7 +54485,7 @@ alphamedical.shop
 # 20. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-28 16:27
+**Last Modified:** 2025-11-28 16:40
 
 ---
 
@@ -55523,7 +55689,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 20
-**Generated:** November 28, 2025 at 16:27 UTC
+**Generated:** November 28, 2025 at 16:40 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
