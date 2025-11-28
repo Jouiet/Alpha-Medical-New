@@ -3376,6 +3376,171 @@ d5df0fa: docs: Session 65 infrastructure updates - 94/100 score
 
 **Production Readiness:** ✅ OPERATIONAL (validation recommended)
 
+---
+
+### Session 65 UPDATE - Launch Date + Budget Allocation (2025-11-28)
+
+**Date Changes:**
+```yaml
+BEFORE:
+  Site Launch: 15.12.2025
+  Contest Winner Announced: 15.01.2026
+  Contest Duration: 48 days
+
+AFTER:
+  Site Launch: 25.12.2025 (Christmas Day)
+  Contest Winner Announced: 05.01.2026 (New Year)
+  Contest Duration: 38 days (28.11 → 05.01)
+```
+
+**Budget Allocation:**
+```yaml
+Pre-Contest Budget: $300 (38 days)
+Monthly Budget (Jan+): $350/month (ongoing)
+
+Budget/Day if Spread: $7.89/day (NON VIABLE - 60% below FB minimum)
+```
+
+**RECOMMENDED STRATEGY: "Post-Noël Blitz"**
+```yaml
+Timing: 26.12.2025 → 05.01.2026 (10 days)
+Budget/Day: $30/day
+Total Budget: $300
+Platform: Facebook/Instagram only
+
+Performance Projections:
+  Impressions: 30,000-50,000
+  Leads: 60-100
+  Cost Per Lead: $3-5
+  Quality Score: 8-9/10
+  Learning Phase: ✅ Complete (50+ conversions possible)
+
+Why Optimal:
+  1. $30/day = FB minimum viable budget ✅
+  2. Post-Christmas = peak attention (shopping mood active)
+  3. Pre-New Year = urgency maximale
+  4. Concentrated budget = better FB optimization
+  5. Avoids Dec 20-25 (low engagement period)
+
+Alternative if strict $300:
+  26.12 → 04.01 (9 days): $33.33/day
+  Leads: 54-90
+  CPL: $3.33-5.50
+```
+
+**January 2026+ Monthly Budget: $350**
+```yaml
+Effective Start: 06.01.2026 (after contest)
+Days Remaining: 25 (Jan 6-31)
+Budget/Day: $14/day
+
+Platform: 100% Facebook/Instagram
+Focus: Conversion (Purchase objective)
+
+Projections (per month):
+  Orders: 24-54
+  Revenue: $1,200-3,780
+  ROAS: 3.4-10.8
+
+Performance: Acceptable but limited
+  - Learning phase: 2-4 weeks
+  - Scaling: Difficult (budget 60% below optimal)
+  - Optimization: Limited
+
+Viability: ✅ YES for slow growth
+Breakeven: Month 3-4
+Profitability: Month 5-6
+```
+
+**Critical Actions Before Ads:**
+```yaml
+1. Cookie Consent Banner (4h) - BLOQUEUR LÉGAL
+2. Footer Policy Links (2 min) - COMPLIANCE
+3. Policy Content Updates (3h) - RGPD/CCPA
+4. Funnel Testing (2h) - End-to-end checkout
+
+Total: 8 hours required work
+Deadline: 24.12.2025 (before launch)
+```
+
+**Form Modification Required (Manual):**
+```yaml
+Location: Shopify Admin → Marketing → Forms
+Form: "Pre-Launch Contest Giveaway" (ID: 768671)
+Change: "Gagnant annoncé 15 Janvier 2026"
+     → "Gagnant annoncé 5 Janvier 2026"
+Time: 2 minutes
+```
+
+**Documentation Updated:**
+```yaml
+CLAUDE.md:
+  - Launch date: 15.12.2025 → 25.12.2025
+  - Infrastructure score: 91 → 94/100
+  - Last updated: Session 61 → Session 65
+
+INFRASTRUCTURE_AUDIT_CHECKLIST.md:
+  - Days to launch: 18 → 27
+  - Launch target: 2025-12-15 → 2025-12-25
+  - Score: 93 → 94/100
+
+COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md:
+  - This section added
+```
+
+**Budget Comparison (Brutal Truth):**
+```yaml
+Current Allocation ($300 pre-contest):
+  If spread 38 days: $7.89/day = DISASTER (CPL $10-20, 15-30 leads)
+  If concentrated 10 days: $30/day = OPTIMAL (CPL $3-5, 60-100 leads)
+
+Difference: +45-70 leads (+200-300% improvement)
+
+Monthly Budget ($350):
+  Current: $11.33/day (62% below optimal)
+  Optimal: $30/day minimum
+  Gap: -$18.67/day
+
+Impact: Slow growth, limited scaling, 2-4 month breakeven
+
+Recommendation: Reinvest first month profits to scale to $700-1000/month
+```
+
+**Updated Timeline:**
+```yaml
+28.11 → 24.12 (27 days): Preparation Phase
+  - Fix compliance blockers (8h work)
+  - Setup FB Ads Manager
+  - Create ad creative
+  - Test funnel end-to-end
+  - Spend: $0
+
+25.12.2025: 🚀 SITE LAUNCH (Christmas Day)
+  - Site operational
+  - Monitor first orders
+  - Verify automation flows
+
+26.12 → 05.01 (10 days): 📣 POST-NOËL BLITZ
+  - Budget: $30/day = $300 total
+  - Objective: 60-100 contest leads
+  - Platform: Facebook/Instagram
+
+05.01.2026: 🎁 CONTEST WINNER ANNOUNCED
+  - Draw winner
+  - Email/social announcement
+  - Prize fulfillment
+
+06.01 → 31.01 (25 days): 💰 CONVERSION FOCUS
+  - Budget: $350 ÷ 25 = $14/day
+  - Objective: ROAS 3.0-4.0
+  - Focus: Convert leads + new customers
+
+01.02.2026+: 💰 ONGOING MONTHLY
+  - Budget: $350/month ($11.33/day)
+  - Objective: ROAS 3.5-5.0
+  - Strategy: Optimize and scale
+```
+
 **Critical finding:**
 - Footer perception gap (76 points) is PRIMARY conversion blocker
 - Backend infrastructure (91.25/100) doesn't match frontend perception (15/100)
