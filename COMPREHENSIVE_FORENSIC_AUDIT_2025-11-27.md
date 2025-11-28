@@ -3535,10 +3535,69 @@ Recommendation: Reinvest first month profits to scale to $700-1000/month
   - Objective: ROAS 3.0-4.0
   - Focus: Convert leads + new customers
 
-01.02.2026+: 💰 ONGOING MONTHLY
-  - Budget: $350/month ($11.33/day)
-  - Objective: ROAS 3.5-5.0
-  - Strategy: Optimize and scale
+01.02.2026+: 💰 ONGOING MONTHLY (Budget Évolutif)
+  - Jan-Fev: $350/mois ($11.67/jour) - 100% FB/IG
+  - Mar-Août: $450/mois ($15/jour) - 100% FB/IG
+  - Sep-Oct: $550/mois ($18.33/jour) - 90% FB/IG, 10% TikTok test
+  - Nov-Dec: $750/mois ($25/jour) - 70% FB/IG, 30% TikTok
+  - Total 2026: $6,000
+  - Note: Budget créations SÉPARÉ (non inclus)
+```
+
+**Budget Annuel 2026 Détaillé:**
+```yaml
+ALLOCATION PAR PHASE:
+
+Phase 1 - Bootstrap (Jan-Fev): $700 total
+  Budget/Jour: $11.67
+  Plateforme: 100% Facebook/Instagram
+  Status: ❌ SOUS-OPTIMAL (41% sous minimum FB $20/jour)
+  ROAS Attendu: 2.6-7.0×
+  Revenue: $1,820-4,900
+
+Phase 2 - Optimize (Mar-Août): $2,700 total
+  Budget/Jour: $15
+  Plateforme: 100% Facebook/Instagram
+  Status: ⚠️ LIMITE (25% sous minimum FB)
+  ROAS Attendu: 3.0-8.4×
+  Revenue: $8,100-22,680
+
+Phase 3 - Test (Sep-Oct): $1,100 total
+  Budget/Jour: $18.33
+  Allocation: 90% FB/IG ($16.50), 10% TikTok ($1.83)
+  Status: ⚠️ LIMITE (TikTok test seulement, budget insuffisant)
+  ROAS Attendu: 3.0-8.4×
+  Revenue: $3,300-9,240
+
+Phase 4 - Scale Q4 (Nov-Dec): $1,500 total
+  Budget/Jour: $25
+  Allocation: 70% FB/IG ($17.50), 30% TikTok ($7.50)
+  Status: ✅ VIABLE (premier budget atteignant minimum FB)
+  ROAS Attendu: 2.4-6.6×
+  Revenue: $3,600-9,900
+
+PROJECTIONS ANNUELLES 2026:
+  Budget Total Ads: $6,000
+  Revenue Conservateur: $16,820-46,720
+  Profit Net (35% margin): -$113 à +$10,352
+  ROI: -2% à +173%
+  Orders: 280-779 (23-65/mois moyen)
+  Breakeven ROAS: 2.86×
+  Breakeven Timeline: Mois 4-6
+
+VÉRITÉ BRUTALE:
+  - Budget moyen: $16.67/jour (17-44% SOUS optimal $20-30/jour)
+  - Multi-platform: IMPOSSIBLE avant Novembre
+  - TikTok: Budget insuffisant Sep-Dec (test seulement)
+  - Google Ads: ❌ Aucun budget disponible 2026
+  - Croissance: LENTE (pas explosive)
+  - Scaling limité: Q1-Q3 en mode survie/optimization
+  - Q4 seulement: Budget viable pour croissance
+
+RECOMMANDATION SCALING:
+  - Réinvestir profits Q1-Q3 pour augmenter budget Q4
+  - Si ROAS >4.0 en Q2: Augmenter budget Q3-Q4
+  - Target 2027: $30-50/jour minimum ($900-1500/mois)
 ```
 
 **Critical finding:**
