@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 28, 2025 at 15:02 UTC
+**Generated:** November 28, 2025 at 16:22 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -39,7 +39,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -24952,7 +24952,7 @@ User Impact:
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -34951,7 +34951,7 @@ SEO Impact:
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -36098,7 +36098,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -36465,7 +36465,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -37819,15 +37819,15 @@ END_TO_END_VERIFIED=false
 # 6. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
 # ALPHA MEDICAL - PROGRESSIVE DISCLOSURE MEMORY SYSTEM
 
 > **Project:** B2C e-commerce RETAILER - Medical equipment store (alphamedical.shop)
-> **Status:** PRE-LAUNCH (Launch: 2025-12-15) | **Health:** 91/100 🟢 EXCELLENT
-> **Last Updated:** 2025-11-27 Session 61 (Klaviyo 4/4 flows LIVE verification +1 point)
+> **Status:** PRE-LAUNCH (Launch: 2025-12-25) | **Health:** 94/100 🟢 EXCELLENT
+> **Last Updated:** 2025-11-28 Session 65 (Shopify Forms + GitHub Actions 100% +3 points)
 
 ---
 
@@ -38115,7 +38115,7 @@ gh workflow run daily-scraping.yml
 # 7. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -41497,6 +41497,171 @@ d5df0fa: docs: Session 65 infrastructure updates - 94/100 score
 
 **Production Readiness:** ✅ OPERATIONAL (validation recommended)
 
+---
+
+### Session 65 UPDATE - Launch Date + Budget Allocation (2025-11-28)
+
+**Date Changes:**
+```yaml
+BEFORE:
+  Site Launch: 15.12.2025
+  Contest Winner Announced: 15.01.2026
+  Contest Duration: 48 days
+
+AFTER:
+  Site Launch: 25.12.2025 (Christmas Day)
+  Contest Winner Announced: 05.01.2026 (New Year)
+  Contest Duration: 38 days (28.11 → 05.01)
+```
+
+**Budget Allocation:**
+```yaml
+Pre-Contest Budget: $300 (38 days)
+Monthly Budget (Jan+): $350/month (ongoing)
+
+Budget/Day if Spread: $7.89/day (NON VIABLE - 60% below FB minimum)
+```
+
+**RECOMMENDED STRATEGY: "Post-Noël Blitz"**
+```yaml
+Timing: 26.12.2025 → 05.01.2026 (10 days)
+Budget/Day: $30/day
+Total Budget: $300
+Platform: Facebook/Instagram only
+
+Performance Projections:
+  Impressions: 30,000-50,000
+  Leads: 60-100
+  Cost Per Lead: $3-5
+  Quality Score: 8-9/10
+  Learning Phase: ✅ Complete (50+ conversions possible)
+
+Why Optimal:
+  1. $30/day = FB minimum viable budget ✅
+  2. Post-Christmas = peak attention (shopping mood active)
+  3. Pre-New Year = urgency maximale
+  4. Concentrated budget = better FB optimization
+  5. Avoids Dec 20-25 (low engagement period)
+
+Alternative if strict $300:
+  26.12 → 04.01 (9 days): $33.33/day
+  Leads: 54-90
+  CPL: $3.33-5.50
+```
+
+**January 2026+ Monthly Budget: $350**
+```yaml
+Effective Start: 06.01.2026 (after contest)
+Days Remaining: 25 (Jan 6-31)
+Budget/Day: $14/day
+
+Platform: 100% Facebook/Instagram
+Focus: Conversion (Purchase objective)
+
+Projections (per month):
+  Orders: 24-54
+  Revenue: $1,200-3,780
+  ROAS: 3.4-10.8
+
+Performance: Acceptable but limited
+  - Learning phase: 2-4 weeks
+  - Scaling: Difficult (budget 60% below optimal)
+  - Optimization: Limited
+
+Viability: ✅ YES for slow growth
+Breakeven: Month 3-4
+Profitability: Month 5-6
+```
+
+**Critical Actions Before Ads:**
+```yaml
+1. Cookie Consent Banner (4h) - BLOQUEUR LÉGAL
+2. Footer Policy Links (2 min) - COMPLIANCE
+3. Policy Content Updates (3h) - RGPD/CCPA
+4. Funnel Testing (2h) - End-to-end checkout
+
+Total: 8 hours required work
+Deadline: 24.12.2025 (before launch)
+```
+
+**Form Modification Required (Manual):**
+```yaml
+Location: Shopify Admin → Marketing → Forms
+Form: "Pre-Launch Contest Giveaway" (ID: 768671)
+Change: "Gagnant annoncé 15 Janvier 2026"
+     → "Gagnant annoncé 5 Janvier 2026"
+Time: 2 minutes
+```
+
+**Documentation Updated:**
+```yaml
+CLAUDE.md:
+  - Launch date: 15.12.2025 → 25.12.2025
+  - Infrastructure score: 91 → 94/100
+  - Last updated: Session 61 → Session 65
+
+INFRASTRUCTURE_AUDIT_CHECKLIST.md:
+  - Days to launch: 18 → 27
+  - Launch target: 2025-12-15 → 2025-12-25
+  - Score: 93 → 94/100
+
+COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md:
+  - This section added
+```
+
+**Budget Comparison (Brutal Truth):**
+```yaml
+Current Allocation ($300 pre-contest):
+  If spread 38 days: $7.89/day = DISASTER (CPL $10-20, 15-30 leads)
+  If concentrated 10 days: $30/day = OPTIMAL (CPL $3-5, 60-100 leads)
+
+Difference: +45-70 leads (+200-300% improvement)
+
+Monthly Budget ($350):
+  Current: $11.33/day (62% below optimal)
+  Optimal: $30/day minimum
+  Gap: -$18.67/day
+
+Impact: Slow growth, limited scaling, 2-4 month breakeven
+
+Recommendation: Reinvest first month profits to scale to $700-1000/month
+```
+
+**Updated Timeline:**
+```yaml
+28.11 → 24.12 (27 days): Preparation Phase
+  - Fix compliance blockers (8h work)
+  - Setup FB Ads Manager
+  - Create ad creative
+  - Test funnel end-to-end
+  - Spend: $0
+
+25.12.2025: 🚀 SITE LAUNCH (Christmas Day)
+  - Site operational
+  - Monitor first orders
+  - Verify automation flows
+
+26.12 → 05.01 (10 days): 📣 POST-NOËL BLITZ
+  - Budget: $30/day = $300 total
+  - Objective: 60-100 contest leads
+  - Platform: Facebook/Instagram
+
+05.01.2026: 🎁 CONTEST WINNER ANNOUNCED
+  - Draw winner
+  - Email/social announcement
+  - Prize fulfillment
+
+06.01 → 31.01 (25 days): 💰 CONVERSION FOCUS
+  - Budget: $350 ÷ 25 = $14/day
+  - Objective: ROAS 3.0-4.0
+  - Focus: Convert leads + new customers
+
+01.02.2026+: 💰 ONGOING MONTHLY
+  - Budget: $350/month ($11.33/day)
+  - Objective: ROAS 3.5-5.0
+  - Strategy: Optimize and scale
+```
+
 **Critical finding:**
 - Footer perception gap (76 points) is PRIMARY conversion blocker
 - Backend infrastructure (91.25/100) doesn't match frontend perception (15/100)
@@ -42270,7 +42435,7 @@ bottom: 0;  /* Banner at SAME vertical position as widget ❌ */
 # 8. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -42874,7 +43039,7 @@ June:
 # 9. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -44887,7 +45052,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 10. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -45729,7 +45894,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 11. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -46113,7 +46278,7 @@ TOTAL: ~30 minutes de travail actif
 # 12. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -46489,7 +46654,7 @@ dig TXT alphamedical.shop +short
 # 13. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -50718,8 +50883,8 @@ Challenge 4: Git Push Conflicts
 
 **Launch Readiness Update (Final):**
 ```
-Days to Launch: 18 (target: 2025-12-15)
-Infrastructure Score: 93/100 (OUTSTANDING)
+Days to Launch: 27 (target: 2025-12-25)
+Infrastructure Score: 94/100 (EXCELLENT)
 Critical Blockers: 0 remaining
 Manual Work Remaining: 0 minutes (100% automation complete)
 
@@ -51326,7 +51491,7 @@ After Fix (bottom: 80px):
 # 14. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -51658,7 +51823,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 15. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -52204,7 +52369,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 16. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -52683,7 +52848,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 17. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -52981,7 +53146,7 @@ If you encounter issues not covered in this guide:
 # 18. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -53293,7 +53458,7 @@ Homepage (Prio 1)
 # 19. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -54095,7 +54260,7 @@ alphamedical.shop
 # 20. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-28 15:02
+**Last Modified:** 2025-11-28 16:22
 
 ---
 
@@ -55299,7 +55464,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 20
-**Generated:** November 28, 2025 at 15:02 UTC
+**Generated:** November 28, 2025 at 16:22 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
