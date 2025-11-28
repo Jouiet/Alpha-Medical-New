@@ -6374,6 +6374,13 @@ Weaknesses:
 - Greeting Delay: 20 seconds (first-time visitors)
 - Status: ⏳ TO BE CONFIGURED (user will execute)
 
+**GOOGLE ANALYTICS INTEGRATION:**
+- GA4 Measurement ID (primary): G-J2DWRXL1HN (verified INFRASTRUCTURE_AUDIT_CHECKLIST.md:4015)
+- GTM Container ID (alternative): GTM-WFPH2KZP (verified theme.liquid:456-469)
+- Tidio Field: "ID de la balise Google"
+- Recommended: Use G-J2DWRXL1HN OR GTM-WFPH2KZP (both valid)
+- Status: ⏳ TO BE CONFIGURED (user will execute)
+
 ---
 
 ### 📊 TIDIO CAPACITÉS RÉELLES (2025)
