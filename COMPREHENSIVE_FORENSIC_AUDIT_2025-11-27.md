@@ -3538,9 +3538,10 @@ Recommendation: Reinvest first month profits to scale to $700-1000/month
 01.02.2026+: 💰 ONGOING MONTHLY (Budget Évolutif)
   - Jan-Fev: $350/mois ($11.67/jour) - 100% FB/IG
   - Mar-Août: $450/mois ($15/jour) - 100% FB/IG
-  - Sep-Oct: $550/mois ($18.33/jour) - 90% FB/IG, 10% TikTok test
-  - Nov-Dec: $750/mois ($25/jour) - 70% FB/IG, 30% TikTok
-  - Total 2026: $6,000
+  - Sep-Oct: $550/mois ($18.33/jour) - 100% FB/IG
+  - Nov-Dec: $750/mois ($25/jour) - 100% FB/IG
+  - Google Ads: $800 Sep-Dec ($6.67/jour) - Branded search
+  - Total 2026: $6,800 ($6,000 FB/IG + $800 Google)
   - Note: Budget créations SÉPARÉ (non inclus)
 ```
 
@@ -3562,42 +3563,45 @@ Phase 2 - Optimize (Mar-Août): $2,700 total
   ROAS Attendu: 3.0-8.4×
   Revenue: $8,100-22,680
 
-Phase 3 - Test (Sep-Oct): $1,100 total
+Phase 3 - Scale Sep-Oct: $1,100 total
   Budget/Jour: $18.33
-  Allocation: 90% FB/IG ($16.50), 10% TikTok ($1.83)
-  Status: ⚠️ LIMITE (TikTok test seulement, budget insuffisant)
+  Allocation: 100% Facebook/Instagram
+  Status: ⚠️ LIMITE (8% sous minimum recommandé FB $20)
   ROAS Attendu: 3.0-8.4×
   Revenue: $3,300-9,240
 
 Phase 4 - Scale Q4 (Nov-Dec): $1,500 total
   Budget/Jour: $25
-  Allocation: 70% FB/IG ($17.50), 30% TikTok ($7.50)
-  Status: ✅ VIABLE (premier budget atteignant minimum FB)
+  Allocation: 100% Facebook/Instagram
+  Status: ✅ VIABLE (au-dessus minimum recommandé FB $20/jour)
   ROAS Attendu: 2.4-6.6×
   Revenue: $3,600-9,900
 
 PROJECTIONS ANNUELLES 2026:
-  Budget Total Ads: $6,000
-  Revenue Conservateur: $16,820-46,720
-  Profit Net (35% margin): -$113 à +$10,352
-  ROI: -2% à +173%
+  Budget Total Ads: $6,800 ($6,000 FB/IG + $800 Google)
+  Platforms: Facebook/Instagram (100%) + Google Ads (Q4 branded)
+  Revenue Conservateur: $16,820-46,720 (FB/IG seul)
+  Profit Net (35% margin): -$913 à +$9,552
+  ROI: -13% à +140%
   Orders: 280-779 (23-65/mois moyen)
-  Breakeven ROAS: 2.86×
+  Breakeven ROAS: 2.86× (FB/IG), Google ROI séparé
   Breakeven Timeline: Mois 4-6
 
 VÉRITÉ BRUTALE:
   - Budget moyen: $16.67/jour (17-44% SOUS optimal $20-30/jour)
-  - Multi-platform: IMPOSSIBLE avant Novembre
-  - TikTok: Budget insuffisant Sep-Dec (test seulement)
-  - Google Ads: ❌ Aucun budget disponible 2026
-  - Croissance: LENTE (pas explosive)
-  - Scaling limité: Q1-Q3 en mode survie/optimization
-  - Q4 seulement: Budget viable pour croissance
+  - Stratégie 2026: 100% Facebook/Instagram (TikTok EXCLU)
+  - Google Ads: $800 budget séparé Sep-Dec ($6.67/jour)
+  - Q4 (Nov-Dec): ✅ PREMIER budget viable ($25/jour = +25% vs min recommandé)
+  - Q1-Q3: Mode BOOTSTRAP (sous recommandé mais fonctionnel)
+  - Croissance: LENTE Q1-Q3, viable Q4
+  - Multi-platform: Google Ads branded search seulement (Q4)
 
 RECOMMANDATION SCALING:
   - Réinvestir profits Q1-Q3 pour augmenter budget Q4
   - Si ROAS >4.0 en Q2: Augmenter budget Q3-Q4
-  - Target 2027: $95/jour minimum ($20 FB + $50 TikTok + $25 Google)
+  - Target 2027 Phase 1: $50/jour FB/IG ($1,500/mois)
+  - Target 2027 Phase 2: Multi-platform $95/jour ($20 FB + $50 TikTok + $25 Google)
+  - Stratégie 2026: Focus concentration FB/IG (meilleure performance vs dilution 3 platforms)
 ```
 
 **VÉRIFICATION FACTUELLE WEB (Recherche 28.11.2025):**
@@ -3660,15 +3664,15 @@ TON BUDGET VS MINIMUMS VÉRIFIÉS:
     vs Optimal FB ($50): -70% ❌
     Verdict: LIMITE
 
-  Sep-Oct ($18.33 total):
-    FB $16.50 vs Rec $20: -18% ❌
-    TikTok $1.83 vs Min $20: -91% ❌
-    Verdict: FB limite, TikTok non viable
+  Sep-Oct ($18.33/jour):
+    FB/IG $18.33 vs Rec $20: -8% ❌
+    Allocation: 100% Facebook/Instagram
+    Verdict: LIMITE (proche viable)
 
-  Nov-Dec ($25 total):
-    FB $17.50 vs Rec $20: -12% ❌
-    TikTok $7.50 vs Min $20: -62% ❌
-    Verdict: FB proche viable, TikTok sous-optimal
+  Nov-Dec ($25/jour):
+    FB/IG $25 vs Rec $20: +25% ✅
+    Allocation: 100% Facebook/Instagram
+    Verdict: ✅ VIABLE (au-dessus minimum recommandé)
 
   Google Sep-Dec ($6.67/jour):
     vs Min Recommandé ($25): -73% ❌
@@ -3676,10 +3680,11 @@ TON BUDGET VS MINIMUMS VÉRIFIÉS:
 
 CONCLUSION RECHERCHE WEB:
   ✅ Campagnes PEUVENT tourner (au-dessus min technique $5)
-  ❌ Performance sous-optimale GARANTIE (sous min recommandé)
-  ❌ Learning phase IMPOSSIBLE (budget 92% sous requis $333/j)
-  ❌ ROAS attendu: 2-4× (vs 5-8× si budget optimal)
-  ❌ Multi-platform viable: IMPOSSIBLE 2026
+  ✅ Q4 viable: $25/jour = +25% vs min recommandé FB ($20)
+  ❌ Q1-Q3 sous-optimal: 8-42% sous min recommandé
+  ❌ Learning phase IMPOSSIBLE: budget 92% sous requis ($333/j)
+  ❌ ROAS attendu Q1-Q3: 2-4× (vs 5-8× si budget optimal)
+  ✅ Stratégie 2-platform: FB/IG + Google (TikTok exclu)
 
 BUDGET OPTIMAL CALCULÉ (Sources Vérifiées):
   Minimum Recommandé: $95/jour
@@ -3693,6 +3698,73 @@ BUDGET OPTIMAL CALCULÉ (Sources Vérifiées):
   Mode 2026: BOOTSTRAP/SURVIE (croissance lente)
   Mode Optimal: Requiert $95-150/jour ($2,850-4,500/mois)
 ```
+
+---
+
+## SESSION 65 UPDATE - BUDGET STRATEGY REVISION (2025-11-28)
+
+**Décision stratégique:** Exclusion TikTok Ads 2026
+
+**Rationale (Web-Verified):**
+```yaml
+PROBLÈME IDENTIFIÉ:
+  Budget TikTok 2026: $560 total
+    - Sep-Oct: $55/mois ($1.83/jour) = -91% sous minimum ($20/jour)
+    - Nov-Dec: $225/mois ($7.50/jour) = -62% sous minimum ($20/jour)
+
+  Conclusion: Budget TikTok 100% sous-optimal (échec garanti)
+
+SOLUTION APPLIQUÉE:
+  Réallocation: $560 TikTok → Facebook/Instagram
+
+  Impact Q4 (Nov-Dec):
+    AVANT: $17.50/jour FB + $7.50/jour TikTok = $25/jour
+    APRÈS: $25/jour FB (100%) = +43% budget FB
+
+  Résultat: Q4 FB $25/jour = +25% vs minimum recommandé ($20) ✅
+
+  Status: Q4 PASSE de "proche viable" à "VIABLE confirmé"
+
+NOUVELLE ALLOCATION 2026:
+  Facebook/Instagram: $6,000 (100% de budget primary)
+  Google Ads: $800 (budget séparé, Q4 seulement, branded search)
+  TikTok: $0 (exclu stratégie 2026)
+
+  Total: $6,800
+
+AVANTAGES STRATÉGIE 2-PLATFORM:
+  ✅ Concentration budget = meilleure performance
+  ✅ Q4 franchit seuil viabilité FB ($20/jour minimum recommandé)
+  ✅ Learning data concentré (vs dilué sur 3 platforms)
+  ✅ Gestion simplifiée (2 platforms vs 3)
+  ✅ Google Ads = capture branded search (low CPC, high intent)
+
+  vs 3-PLATFORM (ancien plan):
+  ❌ Budget dilué sur 3 platforms = 3× sous-optimal
+  ❌ TikTok 91% sous minimum = échec garanti
+  ❌ FB/IG dilué = performance réduite
+  ❌ Complexité gestion (+50% temps)
+
+BUDGET PAR PÉRIODE (FINAL):
+  Q1 (Jan-Fev): $11.67/jour - 100% FB/IG (-42% vs rec)
+  Q2 (Mar-Juin): $15/jour - 100% FB/IG (-25% vs rec)
+  Q3 (Jul-Août): $15/jour - 100% FB/IG (-25% vs rec)
+  Sep-Oct: $18.33/jour - 100% FB/IG (-8% vs rec)
+  Q4 (Nov-Dec): $25/jour FB + $6.67/jour Google ✅ VIABLE
+
+PERFORMANCE ATTENDUE 2026:
+  Q1-Q3: Mode bootstrap (fonctionnel mais sous-optimal)
+  Q4: Mode viable (au-dessus minimum recommandé)
+  Transition 2027: Scaling vers $50/jour FB (optimal single-platform)
+```
+
+**Documentation mise à jour:**
+- Budget allocation sections (all periods now 100% FB/IG)
+- VÉRITÉ BRUTALE section (TikTok exclusion noted)
+- RECOMMANDATION SCALING (2-platform strategy)
+- Projections updated to $6,800 total budget
+
+---
 
 **Critical finding:**
 - Footer perception gap (76 points) is PRIMARY conversion blocker
