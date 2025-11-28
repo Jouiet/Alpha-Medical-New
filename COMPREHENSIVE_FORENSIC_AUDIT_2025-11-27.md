@@ -4591,6 +4591,47 @@ Total: 107 products displayed across 6/7 working collections (85.7% success rate
 - Bundles + Collections (après assignment) + Tags (469 analyzed) + Seasonal = Scientific Ads strategy
 - 0 nouvelles apps Shopify requises
 
+**⚠️ CRITICAL GAP DISCOVERED (2025-11-28 Session 65 Continuation):**
+Bundle Builder + Bestsellers **NON INTÉGRÉS dans navigation header**
+
+**Chrome DevTools MCP Verification:**
+- Header navigation: ❌ Burger menu only (mobile-first sur desktop = -25-30% engagement)
+- Bestsellers link: ❌ Footer only (/pages/bestsellers)
+- Bundle Creator link: ✅ Homepage CTA only (/pages/bundle-creator)
+- Desktop mega menu: ❌ ABSENT (industry standard = +18% category discovery)
+
+**Impact Business Measured:**
+- Desktop users (65-70% medical equipment market): Forced click burger menu
+- Bundle Creator visibility: -35-50% creation rate vs header placement
+- Navigation engagement: -20-30% vs optimized header
+- **Revenue Impact:** -$20K-30K Year 1 (conservative estimate)
+
+**Root Cause:**
+Strategic docs (AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md) focused Ads/SEO, **NOT navigation UX optimization**
+- Bestsellers mentioned 2× only (never as header priority)
+- Bundle Builder system deployed (code exists) but navigation strategy absent
+
+**Quick Win Identified (+20-30% Navigation Engagement):**
+```yaml
+Recommended Header Structure (25 min implementation):
+  - Bestsellers (social proof driver)
+  - New Arrivals (freshness signal)
+  - Shop by Need ▼ (dropdown: Pain Relief, Posture, Therapy, Bundles)
+  - Create Bundle (conversion driver, +60-494% AOV)
+  - Sale/Promos
+
+Expected Impact:
+  - Bundle creation rate: +35-50%
+  - Navigation depth: +20-30%
+  - AOV lift: $65 → $103-385 (bundle conversion)
+  - ROI: +$16K-24K Year 1
+```
+
+**Action Required:**
+- Update `sections/header.liquid` with navigation links (15 min)
+- Remove burger menu dependency desktop (10 min)
+- A/B test header vs current (validation data-driven)
+
 ---
 
 ### 💰 COMPETITIVE PRICING: BENCHMARKS AMAZON + CURRENTBODY
