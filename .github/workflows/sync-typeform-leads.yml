@@ -35,7 +35,7 @@ jobs:
 
       - name: Create Google credentials file
         run: |
-          echo '${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}' > google_credentials.json
+          echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > google_credentials.json
 
       - name: Sync Typeform responses to Google Sheet
         env:
