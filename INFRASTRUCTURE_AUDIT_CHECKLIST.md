@@ -6333,26 +6333,46 @@ Weaknesses:
 **STATUS ACTUEL (VERIFIED 2025-11-28):**
 - ✅ **Tidio Starter Plan ACTIF** ($29/mo) - User confirmed: "deja pris abonnement starter!"
 - ✅ **Shopify Integration CONNECTED** - User confirmed: "connecté a shopify"
+- ⏳ **Chat Page:** PENDING LEGAL VERIFICATION (24h processing, approval expected)
 - ⏳ **Lyro AI:** NOT ACTIVATED (upgrade to $39/mo plan needed)
 - ⏳ **Flows Configuration:** MINIMAL (basic welcome message only)
+
+**CHAT PAGE VERIFICATION STATUS:**
+- Request submitted: 2025-11-28
+- Legal review: IN PROGRESS (Tidio Legal Team)
+- Estimated approval: Within 24 hours
+- Notification email: contact@alphamedical.shop
+- Public URL (pending): https://chatting.page/mgbvasemhlltntquk6tstekoflejm2nt
+- Widget functionality: ✅ ACTIVE (independent of Chat Page approval)
 
 **PLAN ACTUEL:**
 - Starter Plan: $29/mo
 - Features: 100 live chat conversations/mo, basic analytics, operating hours
 - Limitations: NO Lyro AI (IA conversationnelle), NO advanced flows
 
-**RECOMMANDATION UPGRADE:**
+**RECOMMANDATION UPGRADE (USER DECISION: NO):**
 - Target Plan: Lyro AI Chatbot ($39/mo)
 - Cost Increase: +$10/mo (+$120/year)
 - ROI Projeté: +$16K-28K Year 1 (3,318%-5,883% ROI)
 - Payback Period: <1 month post-launch
+- **USER DECISION (2025-11-28): ❌ NO UPGRADE - Staying on Starter Plan ($29/mo)**
+- Impact: Basic live chat only, no AI features, no automated flows
 
 **CONFIGURATION ACTUELLE (VERIFIED):**
-- Message de bienvenue proactif: "Salut 👋, si vous avez besoin d'aide, je suis toujours là."
+- Message de bienvenue proactif: "Salut 👋, si vous avez besoin d'aide, je suis toujours là." (TO BE UPDATED to English)
 - Objectif: Accueillir de nouveaux clients
 - Live Chat: Disponible 24/7
-- Flows: Basic welcome only (cart recovery, order tracking, bundle recommendations NOT configured)
-- Lyro AI Knowledge Base: NOT configured (website scraper not run)
+- Flows: Basic welcome only (cart recovery, order tracking, bundle recommendations NOT AVAILABLE on Starter)
+- Lyro AI: ❌ NOT AVAILABLE on Starter Plan (requires $39/mo upgrade - user declined)
+
+**CONFIGURATION RECOMMANDÉE (ENGLISH, $150+ SHIPPING):**
+- Background Color: #4770db (Alpha Medical Blue)
+- Header: "Pain Relief Support 24/7 - Alpha Medical Team"
+- Welcome Message: "Find the perfect product for your needs! 🎯\n\n💬 Response <2 min, 24/7\n📦 FREE Shipping $150+\n✅ 30-Day Satisfaction Guarantee\n\nHow can we help you today? 👋"
+- META Title: "Chat Support 24/7 - Alpha Medical | Pain Relief Equipment"
+- META Description: "Need help? Alpha Medical team responds 24/7. Questions about medical equipment, free shipping $150+, 30-day guarantee. Instant chat support!"
+- Greeting Delay: 20 seconds (first-time visitors)
+- Status: ⏳ TO BE CONFIGURED (user will execute)
 
 ---
 
