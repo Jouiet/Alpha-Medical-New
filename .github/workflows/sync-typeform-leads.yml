@@ -1,9 +1,9 @@
 name: Sync Typeform Contest Leads
 
 on:
-  schedule:
-    # Hourly from 8 AM to 8 PM UTC (peak contest submission hours)
-    - cron: '0 8-20 * * *'
+  # DISABLED: Using native Shopify Forms instead of Typeform (free, integrated)
+  # schedule:
+  #   - cron: '0 8-20 * * *'
 
   workflow_dispatch:
     inputs:
