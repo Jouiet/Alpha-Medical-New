@@ -4539,34 +4539,33 @@ bottom: 0;  /* Banner at SAME vertical position as widget ❌ */
 
 **Focus:** Forensic product analysis + Launch strategy revision + Critical infrastructure gaps discovered
 
-### 🚨 CRITICAL INFRASTRUCTURE GAP #1: COLLECTIONS VIDES = NAVIGATION CASSÉE
+### ⚠️ MINOR GAP: 1 EMPTY COLLECTION (6/7 OPERATIONAL) - CORRECTION SESSION 65
 
-**Découverte Brutale:**
-- **7 collections créées avec 0 produits assignés** = Site navigation CASSÉE
-- Customers CANNOT browse by category
-- SEO wasted (collection pages exist with 0 products)
-- Ads landing pages IMPOSSIBLES (pas de collections à cibler)
+**CORRECTION SESSION 65 (2025-11-28):**
+Session 65 claimed "7/7 collections with 0 products = navigation broken" based on metadata-only API read **WITHOUT** visual verification. User immediately challenged claim ("TOUS les produits sont live"). Chrome DevTools MCP verification revealed **FALSE ALARM**.
 
-**Collections Vides (Vérification API):**
+**Collections Status (FACTUAL - Verified via Chrome DevTools MCP 2025-11-28):**
 ```yaml
-1. Bestsellers (ID: 295064666189): 0 products
-2. Complete Care Kits (ID: 295163035725): 0 products
-3. Medical Equipment Bundles (ID: 296239169613): 0 products
-4. New Arrivals (ID: 295064764493): 0 products
-5. Pain Relief & Recovery (ID: 295060439117): 0 products
-6. Posture & Support (ID: 295060471885): 0 products
-7. Therapy & Wellness (ID: 295060504653): 0 products
+✅ Bestsellers: 14 products (OPERATIONAL)
+❌ Complete Care Kits: 0 products (EMPTY - requires manual assignment)
+✅ Medical Equipment Bundles: 8 products (OPERATIONAL)
+✅ New Arrivals: 20 products (OPERATIONAL)
+✅ Pain Relief & Recovery: 30 products (OPERATIONAL)
+✅ Posture & Support: 18 products (OPERATIONAL)
+✅ Therapy & Wellness: 17 products (OPERATIONAL)
+
+Total: 107 products displayed across 6/7 working collections (85.7% success rate)
 ```
 
-**Impact Business:**
-- **UX:** Menus navigation → collections vides → Bounce rate élevé
-- **SEO:** Google voit pages vides → Poor UX signal → Ranking impact négatif
-- **Conversions:** Customers forcés à chercher ou homepage browsing → Friction → Cart abandon
-- **Ads:** Impossible de cibler collections comme landing pages Q1-Q4
+**Actual Impact:**
+- **UX:** 6/7 collections work correctly, navigation functional
+- **SEO:** 1 empty collection page vs 80+ product pages = minimal impact
+- **Conversions:** Users can browse 107 products across 6 collections normally
+- **Ads:** 6 collection landing pages available (only Complete Care Kits unavailable)
 
-**Action Requise PRE-LAUNCH:**
-- Assigner produits aux collections (1-2 heures travail manuel Shopify admin)
-- **BLOQUEUR CRITIQUE pour launch 25.12.2025**
+**Action Required:**
+- Assign products to Complete Care Kits collection (30 min manual work)
+- **NOT a PRE-LAUNCH BLOCKER** (contrairement à Session 65 claim)
 
 ---
 
