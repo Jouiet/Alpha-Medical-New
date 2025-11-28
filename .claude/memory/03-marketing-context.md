@@ -181,44 +181,119 @@
 
 ---
 
-## 🎯 PAID ADVERTISING STRATEGY
+## 🎯 PAID ADVERTISING STRATEGY 2026
 
-### Google Ads
+**Budget Total 2026:** $6,800 ($6,000 FB/IG + $800 Google Ads)
+**Strategy:** 2-platform concentration (TikTok EXCLUDED)
+**Launch:** 25.12.2025 (Christmas Day)
+**Contest Winner:** 05.01.2026
+
+### Budget Calendar 2026
+
+**PRE-LAUNCH CONTEST (26.12.2025-05.01.2026):**
+- Budget: $300 ($30/jour) - 10 days
+- Platform: 100% Facebook/Instagram
+- Objective: 60-100 contest leads
+- Status: ✅ OPTIMAL (au-dessus min recommandé)
+
+**Q1 (Jan-Fev):**
+- Budget: $350/mois ($11.67/jour)
+- Platform: 100% Facebook/Instagram
+- Status: ⚠️ SOUS-OPTIMAL (-42% vs $20/jour recommandé)
+- ROAS Attendu: 2.6-7.0×
+- Mode: BOOTSTRAP (acquisition initiale)
+
+**Q2-Q3 (Mar-Août):**
+- Budget: $450/mois ($15/jour)
+- Platform: 100% Facebook/Instagram
+- Status: ⚠️ LIMITE (-25% vs $20/jour recommandé)
+- ROAS Attendu: 3.0-8.4×
+- Mode: OPTIMISATION (testing + scaling)
+
+**Q3.5 (Sep-Oct):**
+- Budget: $550/mois ($18.33/jour)
+- Platform: 100% Facebook/Instagram
+- Status: ⚠️ LIMITE (-8% vs $20/jour recommandé)
+- ROAS Attendu: 3.0-8.4×
+- Mode: PRÉ-Q4 SCALING
+
+**Q4 (Nov-Dec):**
+- Budget: $750/mois ($25/jour FB + $6.67/jour Google)
+- Platform: Facebook/Instagram + Google Ads
+- Status: ✅ VIABLE (+25% vs $20/jour recommandé FB)
+- ROAS Attendu: 2.4-6.6×
+- Mode: SCALING Q4 (premier budget viable)
+
+### Facebook/Instagram Ads ($6,000 annuel)
+**Status:** Pixel active ✅ (via GTM)
+**Campaigns:** NOT launched
+**Budget 2026:** $6,000 (88.2% du budget total)
+**Budget Moyen:** $16.67/jour
+**Peak Budget:** $25/jour (Q4)
+**Volume Attendu:** 280-779 orders annuel
+**ROAS Cible:** 2.86× breakeven, 3.0-8.4× optimal
+
+**Campaign Types:**
+- Traffic + Engagement (Q1-Q2)
+- Conversion campaigns (Q2+)
+- Retargeting (Q3+)
+- Scaling agressif (Q4)
+
+**Web-Verified Minimums (Sources: Meta 2024-2025):**
+- Minimum Technique: $5/jour ✅ (atteint)
+- Minimum Recommandé: $20/jour ⚠️ (atteint Q4 seulement)
+- Optimal Ecommerce: $50/jour ❌ (target 2027)
+- Learning Phase: 10 conversions/3 jours (impossible avec budget actuel)
+
+### Google Ads ($800 annuel Q4)
 **Status:** Conversion tracking configured ✅ (AW-17749024238)
 **Campaigns:** NOT launched
-**Budget:** TBD (recommend $1,200-3,000/mo)
-**Volume:** 100-200 leads/month potential
-**CPL:** $8-15 estimated
+**Budget 2026:** $800 (Sep-Dec seulement)
+**Budget/Jour:** $6.67
+**Objectif:** Branded search capture
+**Status:** ⚠️ Branded search SEULEMENT (-73% vs $25/jour recommandé)
 
-**Campaign Types:**
-- Search: Brand + competitor + problem keywords
-- Shopping: Product feed optimized
-- Display: Retargeting audiences
+**Campaign Types (Q4 only):**
+- Search: Brand keywords only
+- Shopping: Low priority (budget insufficient)
 
-### Facebook/Instagram Ads
-**Status:** Pixel active ✅ (via GTM)
-**Campaigns:** NOT launched
-**Budget:** TBD (recommend $1,500-3,000/mo)
-**Volume:** 150-300 leads/month potential
-**CPL:** $5-12 estimated
+**Web-Verified Minimums (Sources: Google 2024-2025):**
+- Minimum Technique: $1/jour ✅ (aucun minimum officiel)
+- Recommandé Shopping: $25-35/jour ❌ (budget insuffisant)
+- CPC Moyen Shopping: $0.66
 
-**Campaign Types:**
-- Image ads: Product benefits
-- Video ads: Pain relief demonstrations
-- Carousel ads: Multi-product showcases
-- Retargeting: Website visitors, cart abandoners
+### TikTok Ads (EXCLUDED 2026)
+**Status:** Pixel active ✅ (via GTM) - Tracking only
+**Campaigns:** NOT planned 2026
+**Rationale:** Budget 91% sous minimum ($20/jour requis)
+**Strategy:** Focus concentration FB/IG = meilleure performance
+**Future:** Considérer 2027 si budget $50/jour minimum
 
-### TikTok Ads
-**Status:** Pixel active ✅ (via GTM)
-**Campaigns:** NOT launched
-**Budget:** TBD (recommend $800-2,000/mo)
-**Volume:** 100-250 leads/month potential
-**CPL:** $4-10 estimated
+**Web-Verified Minimums (Sources: TikTok 2024):**
+- Minimum Plateforme: $20/jour (ad group), $50/jour (campaign)
+- Recommandé: $50-100/jour
+- Budget Alpha Medical Q4 max: $7.50/jour = -62% sous minimum ❌
 
-**Campaign Types:**
-- Short video: Pain relief solutions
-- UGC style: Real customer testimonials
-- Challenge/trend: Branded hashtag campaigns
+### Strategic Rationale (Session 65 - Web Verified)
+
+**Why 2-Platform (vs 3-Platform):**
+✅ Concentration budget = meilleure performance
+✅ Q4 FB atteint minimum viable ($25/jour vs $20 recommandé)
+✅ Learning data concentré vs dilué
+✅ Gestion simplifiée (2 vs 3 platforms = -33% complexité)
+✅ Google branded search = capture low-cost conversions
+❌ TikTok budget 91% sous minimum = échec garanti
+
+**Budget Reality Check:**
+- Q1-Q3: Mode BOOTSTRAP (sous-optimal mais fonctionnel)
+- Q4: ✅ PREMIER BUDGET VIABLE (au-dessus minimum recommandé)
+- Croissance: LENTE Q1-Q3, viable Q4
+- Breakeven: Mois 4-6 (ROAS 2.86×)
+- Target 2027: $50/jour FB (optimal single-platform)
+
+**Critical Success Factor:**
+Budget créatives SÉPARÉ = facteur #1 performance (60-70% impact ROAS)
+Budget minimum créatives: $500-1,000 (vidéos UGC, photos pro)
 
 ---
 

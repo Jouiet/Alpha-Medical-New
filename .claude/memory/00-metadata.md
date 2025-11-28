@@ -10,7 +10,7 @@
 **Type:** B2C e-commerce RETAILER
 **Domain:** alphamedical.shop (azffej-as.myshopify.com)
 **Platform:** Shopify Basic ($29/mo)
-**Status:** PRE-LAUNCH (Launch: 2025-12-15)
+**Status:** PRE-LAUNCH (Launch: 2025-12-25 Christmas Day)
 
 ---
 
