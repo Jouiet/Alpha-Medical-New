@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 28, 2025
+**Last Updated:** November 29, 2025
 
 ## Core Documentation
 
@@ -16,6 +16,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 - [AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026](AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md): Project documentation
 - [AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27](archive/old-audits/AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27.md): Status: ✅ ACTIVE (80% configured) Trigger: Order paid Condition: Customer total spent >= $2,500 (Platinum tier)
+- [BRUTAL_HONEST_SITE_AUDIT_2025-11-28](BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md): URL: https://www.alphamedical.shop Domaine Shopify: azffej-as.myshopify.com Plan: Basic ($29/mo)
 - [BUNDLE_PERSONA_CRITICAL_AUDIT](archive/old-audits/BUNDLE_PERSONA_CRITICAL_AUDIT.md): Pour chaque bundle, je vérifie: 1. ✅ Persona cohérente: Une VRAIE personne existe qui aurait besoin de CES produits ensemble?
 - [BUNDLE_RECONSTRUCTION_ANALYSIS_2025](archive/old-audits/BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md): Project documentation
 - [CART_DRAWER_FORENSIC_ANALYSIS](archive/old-audits/CART_DRAWER_FORENSIC_ANALYSIS.md): <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}"> (ligne 20 du snippet)
@@ -81,6 +82,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [ASSET_GATHERING_GUIDE](archive/miscellaneous/ASSET_GATHERING_GUIDE.md): {product-handle}hero{angle}.jpg
 - [BLOG_IMAGES_ASSIGNMENT](archive/setup-completed/BLOG_IMAGES_ASSIGNMENT.md): Project documentation
 - [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](archive/implementation-guides/BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
+- [BUNDLE_IMAGES_CREATION_GUIDE](BUNDLE_IMAGES_CREATION_GUIDE.md): 1. Go to: https://www.canva.com 2. Create free account or login 3. Click "Create a design" → "Custom size" → 2048 x 2048 px
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
 - [CRITICAL_MANUAL_ACTIONS_GUIDE](archive/implementation-guides/CRITICAL_MANUAL_ACTIONS_GUIDE.md): 1. Go to Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings → Payments
 - [DEPLOYMENT_GUIDE_COMPLETE](archive/implementation-guides/DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
@@ -280,6 +282,7 @@ When assisting with this project:
 - [SESSION_2025-11-11_PART6_SUMMARY](archive/session-summaries/SESSION_2025-11-11_PART6_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_SUMMARY](archive/session-summaries/SESSION_2025-11-11_SUMMARY.md): Project documentation
 - [SESSION_2025-11-19_FINAL_SUMMARY](archive/session-summaries/SESSION_2025-11-19_FINAL_SUMMARY.md): 1. ✅ Schema.org country corrections (CA → US) 2. ✅ Business address disclosure (JoHat Services LLC, Dover, DE)
+- [SESSION_65_FACTUAL_SUMMARY_2025-11-28](SESSION_65_FACTUAL_SUMMARY_2025-11-28.md): Shopify Forms App: Status: INSTALLED ✅ Install Date: 2025-11-28 (26 minutes before verification)
 - [SESSION_SUMMARY](archive/session-summaries/SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
 - [SESSION_SUMMARY_2025-11-22_CONTINUATION](archive/miscellaneous/SESSION_SUMMARY_2025-11-22_CONTINUATION.md): Project documentation
 - [SYSTEM_100_PERCENT_COMPLETE](archive/miscellaneous/SYSTEM_100_PERCENT_COMPLETE.md): Project documentation
