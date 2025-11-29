@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 29, 2025 at 13:09 UTC
+**Generated:** November 29, 2025 at 15:25 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -43,7 +43,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -26209,7 +26209,7 @@ Tidio Chat: ✅ ACTIVE (GA4 integration pending user config)
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -37592,7 +37592,7 @@ After Tidio GA4 Config (Projected): 100/100
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -38739,7 +38739,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -39106,7 +39106,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -41439,37 +41439,58 @@ English-Only Audit (verify_english_only_forensic_v2.py):
   Last Verified: 2025-11-20 (script execution date)
 ```
 
-### Tidio Integration State (FACTUAL)
+### Tidio Integration State (FACTUAL - CORRECTED 2025-11-29)
 
 ```yaml
 Tidio Installation:
-  App Status: ✅ INSTALLED (Session 65+)
-  Plan: Starter ($29/mo)
+  App Status: ✅ INSTALLED (verified GraphQL API 2025-11-29)
+  Developer: TIDIO LLC
+  Handle: tidio-chat
+  Plan: Starter $29/mo ✅ ACTIVE
   Shopify Integration: ✅ CONNECTED
-  Widget: ✅ DEPLOYED site-wide
 
-Tidio Configuration:
-  Phase 1 Setup: ⏳ NOT COMPLETED (0/5 tasks done)
+Widget Deployment:
+  App Embed: ⚠️ NOT ACTIVATED (theme settings verification)
+  Site Live: ❌ Widget code not detected (curl verification)
+  Action Required: Activate App Embed in theme settings (2 min)
 
-  Pending Manual Tasks (Dashboard UI Only - No API):
-    ☐ Task #1: Cart Abandonment Flow (30min)
-    ☐ Task #2: Welcome Message Optimization (15min)
-    ☐ Task #3: Order Tracking Automation (20min)
-    ☐ Task #4: Product Recommendations - Bundle Training (45min)
-    ☐ Task #5: Widget Customization - Branding (15min)
+Tidio Configuration (Dashboard - User Confirmed):
+  FAQ Classique: ✅ CONFIGURED (user confirmation 2025-11-29)
+  Type: Pre-written keyword responses
 
-  GA4 Integration:
-    Tag ID Verified: GT-NC6L8G55 (LIVE on site)
-    Tidio Config: ⏳ PENDING (user must enter in dashboard)
+  Advanced Features Status:
+    ☐ Cart Abandonment Flow (requires manual config)
+    ☐ Welcome Message Optimization (requires manual config)
+    ☐ Order Tracking Automation (requires manual config)
+    ☐ Product Recommendations - Bundle Training (requires manual config)
+    ☐ Widget Branding Customization (requires manual config)
 
-  Chat Page:
-    Status: ⏳ PENDING legal verification (24h)
-    Impact: None (widget functions independently)
+Upgrade Plan:
+  Date: 30.01.2026 (user confirmed)
+  Target Plan: Lyro AI $39/mo (+$10/mo from Starter)
+  Features Unlocked:
+    - AI Conversational: Natural language understanding
+    - Auto-Training: Web scraping + Shopify products
+    - Resolution Rate: 67-70% autonomous (vs 30-40% FAQ classique)
+    - 200 AI conversations/month included
+
+  FAQ Classique → Lyro AI Impact:
+    - FAQ responses become redundant (Lyro handles naturally)
+    - No re-configuration needed (Lyro auto-learns from FAQ)
+    - Immediate improvement in conversation quality
+
+Tidio Automation Type:
+  ✅ CHAT WIDGET ONLY (NOT email)
+  - All automations happen IN chat popup/messages
+  - Klaviyo handles email automation separately
+  - Shopify Flow handles backend automation
+  - Complementary systems, no redundancy
 
 Blocker Status:
-  ❌ NO BLOCKERS - Tidio tasks are optimization, not PRE-LAUNCH critical
-  ✅ Widget active, customers CAN chat
-  ⏳ Advanced features (cart recovery, order tracking) require manual setup
+  ✅ NO BLOCKERS - Tidio ready for use
+  ⚠️ Widget activation needed for FAQ to be visible on site
+  ✅ FAQ configured, waiting for widget deployment
+  ⏳ Lyro AI upgrade scheduled 30.01.2026
 ```
 
 ### Session 66 Corrections Applied
@@ -41556,7 +41577,7 @@ After Session 66 (API Verified):
 # 6. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -42110,7 +42131,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 7. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -42355,7 +42376,7 @@ Search: "product bundle images" or "product collage design"
 # 8. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -42651,7 +42672,7 @@ gh workflow run daily-scraping.yml
 # 9. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -47583,7 +47604,7 @@ Status: ⏳ TO BE CONFIGURED (user will execute)
 # 10. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -48187,7 +48208,7 @@ June:
 # 11. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -50200,7 +50221,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 12. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -51042,7 +51063,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 13. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -51426,7 +51447,7 @@ TOTAL: ~30 minutes de travail actif
 # 14. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -51802,7 +51823,7 @@ dig TXT alphamedical.shop +short
 # 15. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -59557,7 +59578,7 @@ Path: 97/100 → 100/100 = 3 remaining tasks (2 quick wins + 1 ongoing)
 # 16. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -59889,7 +59910,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 17. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -60435,7 +60456,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 18. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -60914,7 +60935,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 19. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -61212,7 +61233,7 @@ If you encounter issues not covered in this guide:
 # 20. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -63204,7 +63225,7 @@ Result: Complete product-specific recommendations with web-verified seasonality
 # 21. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -63716,7 +63737,7 @@ Target: 100/100 (with all optimizations)
 # 22. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -64028,7 +64049,7 @@ Homepage (Prio 1)
 # 23. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -64830,7 +64851,7 @@ alphamedical.shop
 # 24. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-29 13:08
+**Last Modified:** 2025-11-29 15:25
 
 ---
 
@@ -66034,7 +66055,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 24
-**Generated:** November 29, 2025 at 13:09 UTC
+**Generated:** November 29, 2025 at 15:25 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
