@@ -2328,37 +2328,58 @@ English-Only Audit (verify_english_only_forensic_v2.py):
   Last Verified: 2025-11-20 (script execution date)
 ```
 
-### Tidio Integration State (FACTUAL)
+### Tidio Integration State (FACTUAL - CORRECTED 2025-11-29)
 
 ```yaml
 Tidio Installation:
-  App Status: ✅ INSTALLED (Session 65+)
-  Plan: Starter ($29/mo)
+  App Status: ✅ INSTALLED (verified GraphQL API 2025-11-29)
+  Developer: TIDIO LLC
+  Handle: tidio-chat
+  Plan: Starter $29/mo ✅ ACTIVE
   Shopify Integration: ✅ CONNECTED
-  Widget: ✅ DEPLOYED site-wide
 
-Tidio Configuration:
-  Phase 1 Setup: ⏳ NOT COMPLETED (0/5 tasks done)
+Widget Deployment:
+  App Embed: ⚠️ NOT ACTIVATED (theme settings verification)
+  Site Live: ❌ Widget code not detected (curl verification)
+  Action Required: Activate App Embed in theme settings (2 min)
 
-  Pending Manual Tasks (Dashboard UI Only - No API):
-    ☐ Task #1: Cart Abandonment Flow (30min)
-    ☐ Task #2: Welcome Message Optimization (15min)
-    ☐ Task #3: Order Tracking Automation (20min)
-    ☐ Task #4: Product Recommendations - Bundle Training (45min)
-    ☐ Task #5: Widget Customization - Branding (15min)
+Tidio Configuration (Dashboard - User Confirmed):
+  FAQ Classique: ✅ CONFIGURED (user confirmation 2025-11-29)
+  Type: Pre-written keyword responses
 
-  GA4 Integration:
-    Tag ID Verified: GT-NC6L8G55 (LIVE on site)
-    Tidio Config: ⏳ PENDING (user must enter in dashboard)
+  Advanced Features Status:
+    ☐ Cart Abandonment Flow (requires manual config)
+    ☐ Welcome Message Optimization (requires manual config)
+    ☐ Order Tracking Automation (requires manual config)
+    ☐ Product Recommendations - Bundle Training (requires manual config)
+    ☐ Widget Branding Customization (requires manual config)
 
-  Chat Page:
-    Status: ⏳ PENDING legal verification (24h)
-    Impact: None (widget functions independently)
+Upgrade Plan:
+  Date: 30.01.2026 (user confirmed)
+  Target Plan: Lyro AI $39/mo (+$10/mo from Starter)
+  Features Unlocked:
+    - AI Conversational: Natural language understanding
+    - Auto-Training: Web scraping + Shopify products
+    - Resolution Rate: 67-70% autonomous (vs 30-40% FAQ classique)
+    - 200 AI conversations/month included
+
+  FAQ Classique → Lyro AI Impact:
+    - FAQ responses become redundant (Lyro handles naturally)
+    - No re-configuration needed (Lyro auto-learns from FAQ)
+    - Immediate improvement in conversation quality
+
+Tidio Automation Type:
+  ✅ CHAT WIDGET ONLY (NOT email)
+  - All automations happen IN chat popup/messages
+  - Klaviyo handles email automation separately
+  - Shopify Flow handles backend automation
+  - Complementary systems, no redundancy
 
 Blocker Status:
-  ❌ NO BLOCKERS - Tidio tasks are optimization, not PRE-LAUNCH critical
-  ✅ Widget active, customers CAN chat
-  ⏳ Advanced features (cart recovery, order tracking) require manual setup
+  ✅ NO BLOCKERS - Tidio ready for use
+  ⚠️ Widget activation needed for FAQ to be visible on site
+  ✅ FAQ configured, waiting for widget deployment
+  ⏳ Lyro AI upgrade scheduled 30.01.2026
 ```
 
 ### Session 66 Corrections Applied
