@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-11-15T01:49:54.123056",
+  "timestamp": "2025-11-29T13:33:56.510636",
   "collection_id": 296239169613,
-  "total_bundles": 15,
+  "total_bundles": 8,
   "expected_bundles": 15,
-  "verification_passed": true,
-  "total_regular_price": 8922.59,
-  "total_bundle_price": 5799.7,
-  "total_savings": 3122.8900000000003,
+  "verification_passed": false,
+  "total_regular_price": 4746.63,
+  "total_bundle_price": 3085.32,
+  "total_savings": 1661.31,
   "bundles": [
     {
       "id": 7623086866509,
@@ -17,17 +17,6 @@
       "savings": 246.66000000000003,
       "discount_pct": 34.999645264278115,
       "tags": "35-percent-off, arthritis, bundle, bunion-relief, joint-pain, senior, tier3",
-      "published": true
-    },
-    {
-      "id": 7623086833741,
-      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
-      "handle": "beauty-wellness-led-complete",
-      "price": "342.79",
-      "compare_at_price": "527.37",
-      "savings": 184.57999999999998,
-      "discount_pct": 35.000094810095376,
-      "tags": "35-percent-off, anti-aging, beauty, bundle, facial, led-therapy, tier2",
       "published": true
     },
     {
@@ -53,39 +42,6 @@
       "published": true
     },
     {
-      "id": 7623086735437,
-      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
-      "handle": "chronic-pain-whole-body",
-      "price": "488.64",
-      "compare_at_price": "751.75",
-      "savings": 263.11,
-      "discount_pct": 34.99966744263386,
-      "tags": "35-percent-off, bundle, chronic-pain, led-therapy, massage, tier3, whole-body",
-      "published": true
-    },
-    {
-      "id": 7623086702669,
-      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
-      "handle": "office-worker-premium-workspace",
-      "price": "451.43",
-      "compare_at_price": "694.50",
-      "savings": 243.07,
-      "discount_pct": 34.99928005759539,
-      "tags": "35-percent-off, bundle, eye-fatigue, office-worker, premium, screen-relief, tier3",
-      "published": true
-    },
-    {
-      "id": 7623086669901,
-      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
-      "handle": "office-worker-advanced-ergonomic",
-      "price": "318.44",
-      "compare_at_price": "489.91",
-      "savings": 171.47000000000003,
-      "discount_pct": 35.00030617868589,
-      "tags": "35-percent-off, advanced, bundle, ergonomic, led-therapy, office-worker, tier2",
-      "published": true
-    },
-    {
       "id": 7623086637133,
       "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
       "handle": "ultimate-pain-management-system",
@@ -97,17 +53,6 @@
       "published": true
     },
     {
-      "id": 7623086604365,
-      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
-      "handle": "post-surgery-recovery-complete",
-      "price": "520.82",
-      "compare_at_price": "801.26",
-      "savings": 280.43999999999994,
-      "discount_pct": 34.9998751965654,
-      "tags": "35-percent-off, bundle, comprehensive, orthopedic, post-surgery, recovery, tier3",
-      "published": true
-    },
-    {
       "id": 7623056162893,
       "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
       "handle": "chronic-pain-relief-kit",
@@ -116,28 +61,6 @@
       "savings": 213.84999999999997,
       "discount_pct": 34.999427177951254,
       "tags": "35-percent-off, bundle, chronic-pain, electric-therapy, multi-zone, tier2",
-      "published": true
-    },
-    {
-      "id": 7623056097357,
-      "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
-      "handle": "active-athlete-complete-protection",
-      "price": "394.69",
-      "compare_at_price": "607.22",
-      "savings": 212.53000000000003,
-      "discount_pct": 35.00049405487303,
-      "tags": "35-percent-off, athlete, bundle, complete-protection, sports, tier2",
-      "published": true
-    },
-    {
-      "id": 7623056064589,
-      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
-      "handle": "active-athlete-knee-specialist",
-      "price": "197.57",
-      "compare_at_price": "303.95",
-      "savings": 106.38,
-      "discount_pct": 34.999177496298735,
-      "tags": "35-percent-off, athlete, bundle, knee-specialist, sports, tier1",
       "published": true
     },
     {

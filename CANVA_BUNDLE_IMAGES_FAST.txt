@@ -1,0 +1,29 @@
+CANVA - 10 IMAGES BUNDLES EN 2 HEURES
+========================================
+
+SETUP (5min):
+1. Va sur: https://www.canva.com
+2. Login/Signup gratuit
+3. Clique "Create a design"
+4. Custom size: 2048 x 2048 px
+5. Cherche template: "Product Grid" ou "Product Collage"
+
+PREMIÈRE IMAGE (15min):
+1. Place 4 produits en grille 2x2
+2. Ajoute titre en haut: "Active Athlete Complete Care Kit"
+3. Ajoute badge: "4-ITEM KIT" ou "SAVE $$"
+4. Background: Blanc ou bleu clair (#F0F8FF)
+5. Download PNG 2048x2048
+
+DUPLICATA (10min × 9 restants):
+1. Dans Canva: Clique "File" → "Make a copy"
+2. Change juste les 4 produits + titre
+3. Download PNG
+4. Répète 9 fois
+
+UPLOAD:
+1. Mets les 10 PNG dans dossier: bundle_images/
+2. Nomme exactement (voir BUNDLE_IMAGES_CREATION_GUIDE.md)
+3. Run: python3 upload_bundle_images.py
+
+TOTAL: 2-2.5 heures → +$50K-80K Year 1
