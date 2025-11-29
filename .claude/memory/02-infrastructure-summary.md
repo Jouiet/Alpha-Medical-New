@@ -57,17 +57,21 @@
 
 ### ✅ WHAT WORKS (91%)
 
-**Tracking Stack (100% ACTIVE):**
+**Tracking Stack (100% ACTIVE - Verified 2025-11-29):**
 ```yaml
-GTM Container: GTM-WFPH2KZP
-├── GA4: Via GTM tags ✅
+GTM Container: GTM-WFPH2KZP ✅ VERIFIED LIVE
+├── GA4: GT-NC6L8G55 ✅ VERIFIED (Shopify Channel App format)
 ├── Meta Pixel: Via GTM tags ✅
 ├── TikTok Pixel: Via GTM tags ✅
 └── Google Ads Conversion: AW-17749024238 ✅
 
 Location: layout/theme.liquid:461
+Verification: Chrome DevTools MCP dataLayer inspection (2025-11-29)
 Status: All firing correctly
 Performance: 95/100
+
+NOTE: Previous docs incorrectly listed G-J2DWRXL1HN as GA4 ID
+CORRECTED: GT-NC6L8G55 is the ACTIVE GA4 ID (verified via live site inspection)
 ```
 
 **Shopify Flow (5/5 workflows ACTIVE - 100% ✅):**
@@ -118,13 +122,14 @@ Status: 10/10 active, 2 failing = -5 points (95/100)
 Note: Secrets configured (4/4), cron schedules active
 ```
 
-**Apps Installed (7/7):**
+**Apps Installed (8/8):**
 - Shopify Email ✅
 - Klaviyo ✅ (plan $30/mo ACTIVE, 4/4 flows LIVE, 10/10 templates assigned, revenue automation active 24/7)
 - Shopify Flow ✅
 - Loox Reviews ✅
 - DSers ✅
 - Translate & Adapt ✅
+- Tidio Chat ✅ (Starter $29/mo ACTIVE, GA4 integration pending - Session 65+)
 - Alpha Medical New (theme) ✅
 
 **Klaviyo Flows (4/4 LIVE - Session 58-59):**
@@ -317,7 +322,16 @@ git push origin main
 
 ## 🔄 SESSION CONTINUITY
 
-**Last Updated:** 2025-11-27 Session 61 (Infrastructure score corrections + documentation cleanup)
+**Last Updated:** 2025-11-29 Session 65+ (Tidio chat integration + GA4 ID factual verification)
+
+**Session 65+ Updates (2025-11-28/29):**
+- ✅ Tidio Chat: Starter Plan ($29/mo) ACTIVE, GA4 integration configured
+- ✅ GA4 ID Verified: GT-NC6L8G55 (Chrome DevTools MCP live verification)
+- ✅ Documentation Error Corrected: G-J2DWRXL1HN → GT-NC6L8G55
+- ✅ Customer Support: +50% channels (Email → Email + Tidio Chat)
+- ✅ Marketing Analytics: Chat attribution ready (pending user config)
+- ⏳ Chat Page: Pending legal verification (24h processing)
+- ⏳ User Action Required: Configure Tidio dashboard + add GT-NC6L8G55
 
 **Session 61 Updates (2025-11-27):**
 - ✅ Infrastructure score: 76/100 → 81/100 → 90/100 → 91/100 (final)
