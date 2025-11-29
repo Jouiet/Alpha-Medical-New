@@ -261,6 +261,7 @@ When assisting with this project:
 - [GSC_FINAL_CHECKLIST](archive/setup-completed/GSC_FINAL_CHECKLIST.md): SITEMAP STATUS: ┌─────────────────────────────────────────────────────────────┐ │ Sitemap URL: https://www.alphamedical.shop/sitemap.xml │
 - [GTM_ADD_MISSING_TAGS_STEPS](archive/implementation-guides/GTM_ADD_MISSING_TAGS_STEPS.md): 1. Cliquez: "Balises" (Tags) → "Nouveau" (bouton rouge) 2. Nom du tag: Google Tag - Base (AW-17749024238)
 - [HOMEPAGE_CTA_INSTRUCTIONS](archive/setup-completed/HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
+- [JUDGEME_IMPORT_STEP_BY_STEP](JUDGEME_IMPORT_STEP_BY_STEP.md): Vous avez montré ce formulaire: Import reviews Shopify product Search by product title, handle or ID
 - [LLMS_TXT_DEPLOYMENT](archive/implementation-guides/LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](archive/miscellaneous/LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
 - [LOYALTY_SYSTEM_ARCHITECTURE](archive/bundles-pricing/LOYALTY_SYSTEM_ARCHITECTURE.md): Project documentation
