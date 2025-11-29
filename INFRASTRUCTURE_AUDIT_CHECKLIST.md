@@ -121,6 +121,8 @@ TOTAL INFRASTRUCTURE:       94/100 🟢 EXCELLENT (Calculation: 745÷8 categorie
 
 7. **GitHub Actions: 100/100 (PERFECT ✅)**
    - 10/10 workflows operational (Health Check fixed, Typeform deleted)
+   - Latest verification (2025-11-29): gh run list shows 0/20 failures
+   - All workflows: active and passing (gh workflow list verified)
 
 **TOTAL GAPS: 65 points manquants ÷ 8 catégories = 8.125 points moyenne ≈ 6 points**
 
@@ -1066,12 +1068,19 @@ Priority: MEDIUM (revenue driver via reviews)
 
 ```yaml
 Container ID: GTM-WFPH2KZP
-Status: ✅ ACTIVE (verified in theme.liquid:461)
+Status: ✅ ACTIVE (verified 2025-11-29 via code inspection)
 Implementation: Native JavaScript code (NOT via app)
-Location: layout/theme.liquid lines 456-462 and 467-469
+Location: layout/theme.liquid line 465 (GTM script) + 472 (noscript fallback)
 dataLayer: ✅ Initialized and active
+Consent Mode: ✅ V2 configured (snippets/gtm-consent-mode.liquid:457)
 
-Code Evidence (theme.liquid:457-461):
+Latest Verification (2025-11-29):
+  - Script found: theme.liquid:465
+  - Container: GTM-WFPH2KZP (confirmed)
+  - Method: grep -n "GTM" layout/theme.liquid
+  - Apps: 0 tracking apps via Shopify App Store (manual GTM setup)
+
+Code Evidence (theme.liquid:461-465):
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
