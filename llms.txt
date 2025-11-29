@@ -35,6 +35,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](archive/session-summaries/SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
 - [SYSTEM_ANALYSIS_COMPLETE_2025-11-22](archive/miscellaneous/SYSTEM_ANALYSIS_COMPLETE_2025-11-22.md): Project documentation
+- [TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29](TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md): Cart Recovery: None (no automation) Sales: Baseline (pre-Tidio) Conversion Rate: Baseline
 
 ### Pricing & Product Management
 
@@ -117,6 +118,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [PRIORITY_SOURCES_IMPLEMENTATION](archive/setup-completed/PRIORITY_SOURCES_IMPLEMENTATION.md): Project documentation
 - [SETUP_GOOGLE_SHEETS_API](market-analysis/SETUP_GOOGLE_SHEETS_API.md): 1. Go to: https://console.cloud.google.com/ 2. Click "Select a project" → "New Project"
 - [SHOPIFY_CONFIGURATION_COMPLETE](archive/implementation-guides/SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
+- [TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29](TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md): Project documentation
 - [TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN](archive/miscellaneous/TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md): 1. ✅ Run python3 createsocialshareimage.py 2. ⏳ Manual upload to Shopify Theme Settings → Social media
 
 ### Forensic Analysis & Reports
@@ -286,6 +288,8 @@ When assisting with this project:
 - [SESSION_SUMMARY](archive/session-summaries/SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
 - [SESSION_SUMMARY_2025-11-22_CONTINUATION](archive/miscellaneous/SESSION_SUMMARY_2025-11-22_CONTINUATION.md): Project documentation
 - [SYSTEM_100_PERCENT_COMPLETE](archive/miscellaneous/SYSTEM_100_PERCENT_COMPLETE.md): Project documentation
+- [TIDIO_6_FLOWS_FINAL_SUMMARY](TIDIO_6_FLOWS_FINAL_SUMMARY.md): Project documentation
+- [TIDIO_DEDUPLICATION_MATRIX_2025-11-29](TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md): Project documentation
 - [TODO_MASTER_PRE_LAUNCH_23_DAYS](archive/miscellaneous/TODO_MASTER_PRE_LAUNCH_23_DAYS.md): Project documentation
 - [TOP_10_URLS_TO_INDEX](TOP_10_URLS_TO_INDEX.md): https://www.alphamedical.shop/
 - [TRACKING_ANALYTICS_GAPS_2025](archive/old-audits/TRACKING_ANALYTICS_GAPS_2025.md): 1. Shopify Apps → "Google & YouTube" (official) 2. Connect Google account 3. Auto-creates GA4 property + GTM container
