@@ -151,28 +151,19 @@
         "disabled": false,
         "settings": {}
       },
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#0e1b4d",
-          "secondary_color": "#e2e7fd",
-          "ternary_color": "#4770db",
-          "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": "👋 Welcome to Alpha Medical Care! Our team is here to help you find the perfect medical equipment for your needs. Questions about products, shipping, or our 30-day guarantee? We're here to assist!"
-        }
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
+      "6143736321357441667": {
+        "type": "shopify://apps/tidio-live-chat-chatbots/blocks/app-embed/1002274d-fb18-4939-98f6-5f05a8deeadc",
+        "disabled": false,
+        "settings": {}
+      },
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },
