@@ -130,6 +130,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [FACTUAL_VERIFICATION_STATUS](archive/session-summaries/FACTUAL_VERIFICATION_STATUS.md): Project documentation
 - [GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS](archive/setup-completed/GOOGLE_SEARCH_CONSOLE_VERIFICATION_STATUS.md): Bien que GSC soit configuré (meta tag présent), nous ne pouvons PAS vérifier sans accès au dashboard:
 - [HOOKS_VERIFICATION_REPORT](archive/miscellaneous/HOOKS_VERIFICATION_REPORT.md): { "sessionid": "string", "toolname": "string", "toolinput": { / tool-specific / },
+- [LIVE_SITE_VERIFICATION_2025-11-29](LIVE_SITE_VERIFICATION_2025-11-29.md): grep -c "GTM-WFPH2KZP" /tmp/homepage.html 1. <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-WFPH2KZP');</script>
 - [PHASE_1.5_VERIFICATION_REPORT](archive/miscellaneous/PHASE_1.5_VERIFICATION_REPORT.md): Tenter de créer un fichier avec "product" dans le nom pour déclencher le blocage automatique.
 - [STATUS_REPORT_PAGES](archive/bundles-pricing/STATUS_REPORT_PAGES.md): Project documentation
 
