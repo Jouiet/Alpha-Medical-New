@@ -81,6 +81,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Content & Blog
 
 - [ASSET_GATHERING_GUIDE](archive/miscellaneous/ASSET_GATHERING_GUIDE.md): {product-handle}hero{angle}.jpg
+- [AZURE_AD_SETUP_GUIDE](AZURE_AD_SETUP_GUIDE.md): open https://portal.azure.com ✅ Vous êtes connecté avec votre compte Microsoft ✅ Vous voyez "Microsoft Azure" en haut à gauche
 - [BLOG_IMAGES_ASSIGNMENT](archive/setup-completed/BLOG_IMAGES_ASSIGNMENT.md): Project documentation
 - [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](archive/implementation-guides/BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
 - [BUNDLE_IMAGES_CREATION_GUIDE](BUNDLE_IMAGES_CREATION_GUIDE.md): 1. Go to: https://www.canva.com 2. Create free account or login 3. Click "Create a design" → "Custom size" → 2048 x 2048 px
