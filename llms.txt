@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 29, 2025
+**Last Updated:** November 30, 2025
 
 ## Core Documentation
 
@@ -270,6 +270,7 @@ When assisting with this project:
 - [MENU_BUNDLES_INSTRUCTIONS](archive/setup-completed/MENU_BUNDLES_INSTRUCTIONS.md): Menu principal (ordre): 1. Home 2. Catalog 3. Bundles ⬅️ NOUVEAU 4. Contact 5. Pain Relief & Recovery
 - [MYDEALZ_SYNTHESE](archive/miscellaneous/MYDEALZ_SYNTHESE.md): Couleurs: Typographie: Style: Énergique, dynamique, focus deals/économies
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](archive/implementation-guides/NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
+- [POWER_BI_LEARNING_PATH](POWER_BI_LEARNING_PATH.md): Project documentation
 - [PRE_LAUNCH_CHECKLIST_23_DAYS](archive/miscellaneous/PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
 - [RAPPORT_FINAL_COMPLET](archive/old-audits/RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](archive/miscellaneous/RAPPORT_THEME_ANALYSE.md): Project documentation
