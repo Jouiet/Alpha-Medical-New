@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** November 30, 2025 at 00:09 UTC
+**Generated:** November 30, 2025 at 00:13 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -50,7 +50,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -26216,7 +26216,7 @@ Tidio Chat: ✅ ACTIVE (GA4 integration pending user config)
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -37599,7 +37599,7 @@ After Tidio GA4 Config (Projected): 100/100
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -38746,7 +38746,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -39113,7 +39113,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -41584,7 +41584,7 @@ After Session 66 (API Verified):
 # 6. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -42138,7 +42138,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 7. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -42383,7 +42383,7 @@ Search: "product bundle images" or "product collage design"
 # 8. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -42679,7 +42679,7 @@ gh workflow run daily-scraping.yml
 # 9. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -42702,8 +42702,27 @@ gh workflow run daily-scraping.yml
 - ✅ Shopify Forms popups: CONFIRMED VISIBLE via browser inspection (2 popups)
 - ✅ H1 fix product pages: CONFIRMED via browser DOM inspection (1 H1 only)
 
+**SESSION 2025-11-30 UPDATES (Power BI Analytics Integration):**
+- ✅ Power BI REST API integration installed (commit 8f4f317)
+- ✅ pbipy v2.13.0 + msal libraries (macOS compatible)
+- ✅ Learning path documented: POWER_BI_LEARNING_PATH.md (526 lines, 3-6 months curriculum)
+- ✅ Connection test script: powerbi_connection_test.py (DAX queries, dataset management)
+- ✅ Quick start helper: powerbi_quick_start.sh (setup automation)
+- ⏳ Configuration pending: Azure AD App Registration required (user action)
+- 📊 Strategy: Free tier learning (0$/mois) for 3-6 months mastery
+- 🎯 Upgrade Pro ($10/mois): When revenue > $10K/month + technical mastery complete
+- 🔗 Flywheel integration: Unified analytics (Shopify, GA4, Klaviyo, Google Sheets, Meta Ads)
+- 📈 Infrastructure impact: Data Infrastructure gap -15 pts → Will close to -3 pts after learning
+
 **BROWSER VALIDATION COMPLETE (2025-11-29):**
 All critical infrastructure verified via Chrome DevTools inspection.
+
+**ANALYTICS ROADMAP (2025-11-30):**
+Power BI = Alternative to Windows-only MCP Server. Cross-platform REST API solution enables:
+- DAX-powered analytics (LTV cohorts, attribution, CAC by source)
+- 4-phase flywheel dashboards (Acquisition → Conversion → Retention → Advocacy)
+- Python automation integration (Claude Code workflows)
+- Free tier = Perfect for PRE-LAUNCH learning (no financial pressure)
 
 ---
 
@@ -47636,7 +47655,7 @@ Status: ⏳ TO BE CONFIGURED (user will execute)
 # 10. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -48240,7 +48259,7 @@ June:
 # 11. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -50253,7 +50272,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 12. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -51095,7 +51114,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 13. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -51479,7 +51498,7 @@ TOTAL: ~30 minutes de travail actif
 # 14. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -51855,7 +51874,7 @@ dig TXT alphamedical.shop +short
 # 15. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -51887,6 +51906,18 @@ dig TXT alphamedical.shop +short
 - ✅ **Live Site Verification:** Complete HTML inspection (11,384 lines analyzed)
 - ✅ **Infrastructure Score:** 94/100 → 96/100 (+2 points browser validation)
 
+**Session 2025-11-30 Accomplissements (Power BI Analytics Integration):**
+- ✅ **Power BI REST API:** Installed pbipy v2.13.0 + msal (macOS compatible alternative to Windows-only MCP Server)
+- ✅ **Learning Path:** POWER_BI_LEARNING_PATH.md created (526 lines, 6-phase curriculum, 3-6 months timeline)
+- ✅ **Test Script:** powerbi_connection_test.py (7.1K) - Azure AD auth + DAX query execution
+- ✅ **Quick Start:** powerbi_quick_start.sh (2.9K) - Automated setup helper
+- ✅ **Credentials Template:** .env.powerbi (gitignored) - Azure AD App Registration guide
+- ⏳ **Configuration:** Azure AD setup required (5-10 min user action)
+- 📊 **Strategy:** Free tier learning (0$/mois) for technical mastery before Pro upgrade
+- 🎯 **Upgrade Trigger:** Revenue > $10K/mois + 50+ DAX measures mastered + 10+ dashboards built
+- 📈 **Gap Closure:** Data Infrastructure -15 pts → -3 pts expected after learning complete (Months 3-6)
+- 🔗 **Flywheel Readiness:** Architecture planned for unified analytics (8 data sources integration)
+
 ---
 
 ## 📊 EXECUTIVE SUMMARY
@@ -51901,20 +51932,24 @@ dig TXT alphamedical.shop +short
 - **Customers:** 8 (test accounts, no real emails)
 - **Revenue YTD:** $0 (pre-launch confirmed)
 
-**Infrastructure Score (BROWSER VALIDATED - 2025-11-29):**
+**Infrastructure Score (UPDATED - 2025-11-30):**
 ```
 Shopify Configuration:      90/100 ✅ (store setup complete, 100% English, policies visible)
 Tracking & Analytics:       100/100 ✅ (GTM + GA4 + FB + TikTok browser validated LIVE)
 Email Automation:           95/100 ✅ (Klaviyo 4/4 LIVE + Shopify 10/10 + popups validated)
 Lead Capture:               100/100 ✅ (popups 2/2 BROWSER CONFIRMED visible)
 Workflow Automation:        100/100 ✅ (Shopify Flow 5/5 + GitHub Actions 10/10 ALL passing)
-Data Infrastructure:        85/100 ✅ (Google Sheets API + sync tested, -15 no BI/warehouse)
+Data Infrastructure:        85/100 ✅ (Google Sheets API + sync tested, -15 BI/warehouse gap)
+  → Power BI integration: ✅ INSTALLED (pbipy, learning path ready)
+  → Gap closure plan: -15 pts → -3 pts (after 3-6 months learning)
+  → Free tier learning: 0$/mois for technical mastery
 Consumer Intelligence:      100/100 ✅ (10/10 GitHub workflows active, 0 failures)
 SEO Infrastructure:         95/100 ✅ (H1 fix browser validated, meta tags complete)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 TOTAL INFRASTRUCTURE:       96/100 🟢 EXCELLENT (Calculation: 765÷8 categories = 95.625 ≈ 96)
 **PRE-LAUNCH Methodology:** Infrastructure READINESS (not performance results)
 **Browser Validation:** Chrome DevTools inspection complete ✅
+**Analytics Roadmap:** Power BI learning path active, closes BI/warehouse gap (3-6 months)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
@@ -59630,7 +59665,7 @@ Path: 97/100 → 100/100 = 3 remaining tasks (2 quick wins + 1 ongoing)
 # 16. Judgeme Import Step By Step
 
 **File:** `JUDGEME_IMPORT_STEP_BY_STEP.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -59954,7 +59989,7 @@ print(r.json()['data']['products']['edges'][0]['node']['handle'])
 # 17. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -60286,7 +60321,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 18. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -60832,7 +60867,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 19. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -61311,7 +61346,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 20. Live Site Verification 2025-11-29
 
 **File:** `LIVE_SITE_VERIFICATION_2025-11-29.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -61738,7 +61773,7 @@ grep -i "tidio\|gtm\|judge" /tmp/homepage.html
 # 21. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -62036,7 +62071,7 @@ If you encounter issues not covered in this guide:
 # 22. Power Bi Learning Path
 
 **File:** `POWER_BI_LEARNING_PATH.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -62573,7 +62608,7 @@ open https://learn.microsoft.com/training/paths/get-started-power-bi/
 # 23. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -64565,7 +64600,7 @@ Result: Complete product-specific recommendations with web-verified seasonality
 # 24. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -65077,7 +65112,7 @@ Target: 100/100 (with all optimizations)
 # 25. Tidio 6 Flows Final Summary
 
 **File:** `TIDIO_6_FLOWS_FINAL_SUMMARY.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -65441,7 +65476,7 @@ Target: 100/100 (with all optimizations)
 # 26. Tidio Deduplication Matrix 2025-11-29
 
 **File:** `TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -66063,7 +66098,7 @@ Step 3: Places order
 # 27. Tidio Support Flows Final Implementation 2025-11-29
 
 **File:** `TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -66921,7 +66956,7 @@ C) Attendre Lyro AI 30.01.2026 (1h setup) ⏳ AI automation 60-70%
 # 28. Tidio Templates Analysis Factual 2025-11-29
 
 **File:** `TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -68889,7 +68924,7 @@ Solution 3: Fallback Plan
 # 29. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -69201,7 +69236,7 @@ Homepage (Prio 1)
 # 30. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -70003,7 +70038,7 @@ alphamedical.shop
 # 31. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-11-30 00:09
+**Last Modified:** 2025-11-30 00:13
 
 ---
 
@@ -71207,7 +71242,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 31
-**Generated:** November 30, 2025 at 00:09 UTC
+**Generated:** November 30, 2025 at 00:13 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
