@@ -63,8 +63,7 @@ cat .claude/memory/progress.md
 │   ├── 02-infrastructure-summary.md  # Level 2: Technical context (conditional)
 │   ├── 03-marketing-context.md       # Level 2: Marketing context (conditional)
 │   ├── session-log.md          # Auto-generated session activity log
-│   ├── progress.md             # Auto-generated progress tracking
-│   └── activeContext.md        # Dynamic context tracking (Phase 3)
+│   └── progress.md             # Auto-generated progress tracking
 │
 ├── hooks/                       # Automation hooks
 │   ├── pre-tool-use.sh         # Constraint enforcement (blocks violations)
@@ -295,9 +294,6 @@ cat .claude/memory/session-log.md
 
 # View progress tracking:
 cat .claude/memory/progress.md
-
-# Check active context:
-cat .claude/memory/activeContext.md
 ```
 
 ---
@@ -338,10 +334,7 @@ ls -la .claude/memory/
 # 2. Check file sizes
 du -h .claude/memory/*.md
 
-# 3. Validate JSON in activeContext.md
-jq . .claude/memory/activeContext.md
-
-# 4. Manually load if needed
+# 3. Manually load if needed
 @.claude/memory/00-metadata.md
 ```
 
@@ -435,18 +428,6 @@ Model Context Protocol server for advanced retrieval:
 - Keyword-based retrieval
 - Context-aware recommendations
 - Auto-suggest relevant docs
-
-#### activeContext.md Dynamic Tracking
-Real-time tracking of conversation context:
-```json
-{
-  "current_task": "Deploy Klaviyo email flows",
-  "relevant_docs": ["03-marketing-context.md", "KLAVIYO_FLOWS.md"],
-  "active_agents": ["marketing-specialist"],
-  "blockers": ["Bloqueur #2: GitHub Secrets"],
-  "next_steps": ["Configure GitHub Secrets", "Test flows"]
-}
-```
 
 #### Advanced Retrieval Patterns
 - RAG (Retrieval-Augmented Generation) for large codebases
