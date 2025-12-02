@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** November 30, 2025
+**Last Updated:** December 02, 2025
 
 ## Core Documentation
 
@@ -20,7 +20,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [BUNDLE_PERSONA_CRITICAL_AUDIT](archive/old-audits/BUNDLE_PERSONA_CRITICAL_AUDIT.md): Pour chaque bundle, je vérifie: 1. ✅ Persona cohérente: Une VRAIE personne existe qui aurait besoin de CES produits ensemble?
 - [BUNDLE_RECONSTRUCTION_ANALYSIS_2025](archive/old-audits/BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md): Project documentation
 - [CART_DRAWER_FORENSIC_ANALYSIS](archive/old-audits/CART_DRAWER_FORENSIC_ANALYSIS.md): <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}"> (ligne 20 du snippet)
-- [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): All critical infrastructure verified via Chrome DevTools inspection. Power BI = Alternative to Windows-only MCP Server. Cross-platform REST API sol...
+- [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): Project documentation
 - [COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27](archive/old-audits/COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27.md): Project documentation
 - [CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025](archive/old-audits/CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025.md): Category Score Status ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](archive/bundles-pricing/CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
@@ -29,10 +29,12 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Project documentation
 - [KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS](archive/miscellaneous/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md): Project documentation
 - [MEMORY_SYSTEM_AUDIT_FACTUAL](archive/old-audits/MEMORY_SYSTEM_AUDIT_FACTUAL.md): Status: ✅ Executable (755 permissions) Size: 5,365 bytes Functionality: WORKING 100%
+- [POLICY_PAGES_AUDIT_REPORT_2025-11-30](POLICY_PAGES_AUDIT_REPORT_2025-11-30.md): Project documentation
 - [PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026](PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md): Project documentation
 - [RESPONSE_TO_THIRD_PARTY_ANALYSIS](archive/miscellaneous/RESPONSE_TO_THIRD_PARTY_ANALYSIS.md): "International medical equipment retailer... NOT affiliated with Hello Alpha (telemedicine) or
 - [SEO_AUDIT_RECOMMENDATIONS](archive/miscellaneous/SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
 - [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
+- [SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01](SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md): Total Workflows: 5 Active Workflows: 5/5 (100% ✅) Inactive Workflows: 0 Workflows Verified:
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](archive/session-summaries/SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
 - [SYSTEM_ANALYSIS_COMPLETE_2025-11-22](archive/miscellaneous/SYSTEM_ANALYSIS_COMPLETE_2025-11-22.md): Project documentation
 - [TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29](TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md): Cart Recovery: None (no automation) Sales: Baseline (pre-Tidio) Conversion Rate: Baseline
@@ -55,7 +57,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Email Marketing & Automation
 
 - [ABANDONED_CART_RECOVERY_CONFIG](archive/implementation-guides/ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
-- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): Required Secrets: ├── TYPEFORMAPITOKEN: ❌ NOT configured ├── GOOGLESHEETNAME: ❌ NOT configured
+- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): 1. Input Folder ID (Google Drive) → File Created + File Updated trigger nodes 2. Output Folder ID (Google Drive) → Workflow Configuration node
 - [AUTOMATION_COMPLETE_WORKFLOWS](archive/miscellaneous/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_SETUP_COMPLETE_GUIDE](archive/implementation-guides/AUTOMATION_SETUP_COMPLETE_GUIDE.md): Project documentation
 - [CHAT_INSTANT_ANSWERS](archive/setup-completed/CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
@@ -273,6 +275,7 @@ When assisting with this project:
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](archive/implementation-guides/NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
 - [POWER_BI_LEARNING_PATH](POWER_BI_LEARNING_PATH.md): Project documentation
 - [PRE_LAUNCH_CHECKLIST_23_DAYS](archive/miscellaneous/PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
+- [PRE_LAUNCH_RUNBOOK_2025-12-25](PRE_LAUNCH_RUNBOOK_2025-12-25.md): Status: 5/5 ACTIVE (100%) Verified: 2025-12-01 (Browser inspection)
 - [RAPPORT_FINAL_COMPLET](archive/old-audits/RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](archive/miscellaneous/RAPPORT_THEME_ANALYSE.md): Project documentation
 - [README](google-sheets-template/README.md): 1. Aller sur Google Sheets: https://sheets.google.com 2. Créer nouveau spreadsheet
