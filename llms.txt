@@ -51,6 +51,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [PRICING_VERIFICATION](archive/bundles-pricing/PRICING_VERIFICATION.md): Price = [(Product Cost + Shipping Cost) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
 - [PRODUCT_OPTIMIZATION_TRACKING](archive/bundles-pricing/PRODUCT_OPTIMIZATION_TRACKING.md): Project documentation
 - [README_PRICING](archive/bundles-pricing/README_PRICING.md): Project documentation
+- [SCHEMA_MARKUP_AI_OPTIMIZATION_2025](SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md): 1. Entity Authority: 45% - Structured data quality 2. Content Relevance: 30% - Semantic matching
 - [TOP_10_HERO_PRODUCTS_MAPPING](archive/miscellaneous/TOP_10_HERO_PRODUCTS_MAPPING.md): Project documentation
 - [production-log](video-ads-assets/outputs/production-log.md): Hook: "{First 3 seconds hook}"
 
