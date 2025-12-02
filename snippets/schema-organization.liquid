@@ -1,0 +1,69 @@
+{% comment %}
+  Organization Schema - JSON-LD Structured Data
+  Establishes brand authority and E-E-A-T for AI citations
+  Use: {% render 'schema-organization' %}
+  Spec: https://schema.org/Organization
+  Optimized for: ChatGPT, Gemini, Perplexity brand citations
+{% endcomment %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ shop.url }}#organization",
+  "name": "Alpha Medical Care",
+  "legalName": "Alpha Medical Care",
+  "url": "{{ shop.url }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://{{ shop.domain }}/cdn/shop/files/logo.png",
+    "width": 250,
+    "height": 60
+  },
+  "description": "Trusted provider of medical-grade support and rehabilitation equipment. Specializing in orthopedic braces, pain relief products, and recovery aids for healthcare consumers.",
+  "foundingDate": "2024",
+  "slogan": "Professional Medical Support Equipment for Your Recovery",
+  "knowsAbout": [
+    "Medical Equipment",
+    "Orthopedic Support",
+    "Pain Management",
+    "Rehabilitation Products",
+    "Post-Injury Recovery",
+    "Physical Therapy Aids",
+    "Medical-Grade Products"
+  ],
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "serviceType": [
+    "Medical Equipment Retail",
+    "Orthopedic Support Products",
+    "Rehabilitation Equipment"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "email": "support@alphamedical.shop",
+    "availableLanguage": "English",
+    "areaServed": "Worldwide"
+  },
+  "sameAs": [
+    "{{ shop.url }}"
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+</script>

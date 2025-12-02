@@ -1,0 +1,52 @@
+{% comment %}
+  Author Person Schema - JSON-LD Structured Data
+  Establishes author authority for E-E-A-T and AI citations
+  Use: {% render 'schema-author-person', author_name: 'Dr. Sarah Mitchell' %}
+  Spec: https://schema.org/Person
+{% endcomment %}
+
+{%- liquid
+  assign default_author = 'Dr. Sarah Mitchell'
+  assign author_name = author_name | default: default_author
+-%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ shop.url }}/authors/{{ author_name | handleize }}",
+  "name": "{{ author_name }}",
+  "jobTitle": "Medical Content Specialist",
+  "description": "Medical content specialist with expertise in orthopedic support, pain management, and rehabilitation equipment. Dedicated to providing evidence-based information for healthcare consumers.",
+  "knowsAbout": [
+    "Orthopedic Support",
+    "Pain Management",
+    "Rehabilitation Equipment",
+    "Medical-Grade Products",
+    "Post-Injury Recovery",
+    "Ergonomic Solutions",
+    "Physical Therapy Aids"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional Certification",
+      "name": "Certified Medical Equipment Specialist"
+    }
+  ],
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Alpha Medical Care",
+    "url": "{{ shop.url }}"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Medical Product Expertise Program"
+  },
+  "image": "{{ shop.url }}/cdn/shop/files/author-dr-sarah-mitchell.jpg",
+  "url": "{{ shop.url }}/pages/about-our-team",
+  "sameAs": [
+    "{{ shop.url }}/pages/about-our-team"
+  ]
+}
+</script>
