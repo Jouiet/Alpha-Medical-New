@@ -26,7 +26,7 @@
     "url": {{ collection.image | image_url: width: 1200 | prepend: "https:" | json }},
     "width": 1200,
     "height": {{ collection.image.height | times: 1200 | divided_by: collection.image.width | round }}
-  }{% else %}{{ shop.brand.logo | image_url: width: 1200 | prepend: "https:" | json }}{% endif %},
+  }{% elsif shop.brand.logo %}{{ shop.brand.logo | image_url: width: 1200 | prepend: "https:" | json }}{% else %}"https://{{ shop.domain }}/cdn/shop/files/logo.png"{% endif %},
   "publisher": {
     "@type": "Organization",
     "name": {{ shop.name | json }},
