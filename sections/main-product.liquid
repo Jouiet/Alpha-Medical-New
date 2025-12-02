@@ -763,6 +763,8 @@
       </div>
     </div>
 
+    {% render 'sticky-add-to-cart', product: product %}
+
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
@@ -784,7 +786,7 @@
             {{- 'icon-close.svg' | inline_asset_content -}}
           </button>
           <div class="product-popup-modal__content-info">
-            <h1 class="h2">{{ block.settings.page.title | escape }}</h1>
+            <h2 class="h2">{{ block.settings.page.title | escape }}</h2>
             {{ block.settings.page.content }}
           </div>
         </div>
