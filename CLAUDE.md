@@ -30,6 +30,7 @@ This project uses a **progressive disclosure memory system** for optimal context
 - `@AUTOMATION_COMPLETE_WORKFLOWS.md` (5,944 lines) - Complete automation architecture
 
 **Marketing & Strategy:**
+- `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` (1,064 lines) - **Official branding single source of truth**
 - `@AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md` (303KB) - SEO/marketing strategy
 - `@FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md` - Complete flywheel strategy
 - `@ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md` - Persona data and targeting
@@ -225,6 +226,22 @@ gh workflow run daily-scraping.yml
 1. **SEO work:** Invoke `@seo-specialist` (saves 70% context)
 2. **Automation work:** Invoke `@automation-specialist` (saves 70% context)
 3. **Marketing work:** Invoke `@marketing-specialist` (saves 70% context)
+
+### For Branding Tasks (NEW - Session 74)
+**Load:** `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` when working on:
+- Visual identity (logo, colors, typography)
+- Brand voice & messaging
+- Marketing copy (ads, emails, website content)
+- Design assets (graphics, templates, social media)
+- Quality standards & trust signals
+- Brand consistency audits
+
+**Why Load This Doc:**
+- ✅ Single source of truth (API-verified 2025-12-03)
+- ✅ Complete visual standards (logo usage, color palette, typography scale)
+- ✅ Detailed messaging framework (taglines, value props, elevator pitch)
+- ✅ Quality trust signals (5-step vetting, ISO 13485, 2-week testing)
+- ✅ Implementation guidelines (API deployment, theme integration)
 
 ### For Verification
 1. **Always check:** `@INFRASTRUCTURE_AUDIT_CHECKLIST.md` for factual verification

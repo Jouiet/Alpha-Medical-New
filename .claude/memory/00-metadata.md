@@ -57,13 +57,23 @@
   - Complementarity matrix (21 data flows)
   - AI integration philosophy + industry benchmarks 2025
   - Table des matières (CURRENT vs HISTORICAL structure)
+- `ALPHA_MEDICAL_BRAND_GUIDELINES.md` (1,064 lines) - **Official branding single source of truth**
+  - Visual identity: Logo, colors (#4770db, #0e1b4d, #eff0f5), typography (Archivo 700, Questrial 400)
+  - Brand voice, messaging framework, tone guidelines (8 sections)
+  - Quality standards (5-step vetting, ISO 13485, 2-week personal testing)
+  - Digital applications (website, email, social, ads)
+  - Data source: Shopify Admin API (LIVE site verified 2025-12-03)
 - `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md` (303KB) - SEO/Marketing strategy
 - `SEO_MARKETING_FORENSIC_ANALYSIS.md` (819KB) - SEO audit
 
 **Memory Structure:**
 - Level 1 (Always loaded): `00-metadata.md`, `01-core-constraints.md`
 - Level 2 (Domain-specific): `02-infrastructure-summary.md`, `03-marketing-context.md`
-- Level 3 (On-demand): Full documentation via `@INFRASTRUCTURE_AUDIT_CHECKLIST.md`
+- Level 3 (On-demand): Load explicitly with `@filename` when needed
+  - `@INFRASTRUCTURE_AUDIT_CHECKLIST.md` - System state audit
+  - `@AUTOMATION_COMPLETE_WORKFLOWS.md` - Workflows deep dive
+  - `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` - **Branding (visual identity, voice, messaging)**
+  - `@AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md` - SEO/marketing strategy
 
 ---
 
