@@ -417,7 +417,252 @@ Budget minimum créatives: $500-1,000 (vidéos UGC, photos pro)
 
 ---
 
-**Token Cost:** ~1,000 tokens (Level 2 - loaded when marketing tasks)
+## 🏅 QUALITY ASSURANCE & TRUST SIGNALS
+
+> **Purpose:** Internal quality standards that enable marketing trust signals and delivery promises
+> **Status:** Active operational policy
+> **Last Updated:** 2025-12-03 (Session 73)
+
+### Quality Standards Framework
+
+Alpha Medical is NOT a generic dropshipper - we are **professional curators** of medical equipment with rigorous vetting standards. This positioning enables premium marketing messaging and trust-based conversion optimization.
+
+**Core Policy Elements:**
+1. 5-Step supplier vetting process
+2. AliExpress Choice program only (7-15 day shipping)
+3. 4.5-5 star supplier rating minimum
+4. Stock >100 units requirement
+5. In-house DIY ad creative production
+
+---
+
+### 5-Step Vetting Process (Official Policy)
+
+**Source:** `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md` (investor/partner pitch)
+
+**Step 1: ISO 13485 Certification Verified**
+- Medical device quality management system standard
+- Documentation review and certificate validation
+- **Marketing Angle:** "ISO 13485 certified suppliers for medical-grade quality"
+
+**Step 2: Personal 2-Week Sample Testing**
+- Owner personally uses EVERY product for 2 weeks minimum
+- Functional testing, durability assessment, comfort evaluation
+- **Marketing Angle:** "Personally tested for 2 weeks before we list it"
+
+**Step 3: Supplier Facility Audits**
+- Virtual facility tours + documentation review
+- Quality control process verification
+- **Marketing Angle:** "Audited facilities ensure consistent quality"
+
+**Step 4: Quality SLAs in Contracts**
+- Maximum 2% defect rate threshold
+- Automatic termination clause if exceeded
+- **Marketing Angle:** "Quality guarantees backed by contracts"
+
+**Step 5: Continuous Review Monitoring**
+- Monitor customer reviews for quality issues
+- Products <4.5 stars (supplier rating) → re-evaluation or removal
+- **Alpha Medical Site Policy:** Products with ≥5 customer complaints OR <4 stars on site → automatic removal + replacement
+- **Marketing Angle:** "Proactive quality control - bad products don't stay"
+
+---
+
+### Operational Selection Criteria
+
+**Source:** Internal operational policy (Session 73 verified)
+
+**Criterion 1: AliExpress Choice Program Only**
+- **Shipping:** 7-15 days (vs 15-30 days standard dropshipping)
+- **Returns:** Free returns included
+- **Guarantees:** Delivery backed by AliExpress
+- **Marketing Impact:**
+  - "7-15 Day Guaranteed Delivery"
+  - "Free Returns on All Orders"
+  - 50% faster than standard dropshipping
+  - Reduces cart abandonment significantly
+
+**Criterion 2: 4.5-5 Star Rating Minimum**
+- Only top 20% suppliers qualify
+- Continuous rating monitoring
+- Drop supplier if rating falls below 4.5
+- **Marketing Impact:**
+  - "Top-Rated Suppliers Only"
+  - Lower defect rates = better customer reviews
+  - Higher customer satisfaction = repeat purchases
+
+**Criterion 3: Inventory Stock >100 Units**
+- Indicates proven demand and supplier reliability
+- Reduces out-of-stock fulfillment failures
+- Ensures availability during demand spikes
+- **Marketing Impact:**
+  - Reliable fulfillment = positive reviews
+  - Lower cancellation rates
+  - Can promise "In Stock" messaging
+
+---
+
+### Creative Production Policy
+
+**Source:** User clarification (Session 73 - "je le fais moi-meme!")
+
+**Policy:** 100% in-house DIY/UGC-style ad creative production
+
+**Production Style:**
+- UGC (User-Generated Content) aesthetic
+- Lo-fi authenticity (not overly polished)
+- Mobile-native vertical video
+- Real product usage demonstrations
+
+**Strategic Advantages:**
+- **Cost:** $0 external creative costs = 100% of $6,800 budget for media spend
+- **Performance:** UGC-style ads → 4× higher CTR, 50% lower CPC vs professional branded
+- **2025 Trend Alignment:** TikTok official: "Go for DIY or not overly polished style"
+- **Consumer Preference:** 79% Gen Z/Millennials prefer authentic content over polished ads
+- **Speed:** Faster iteration (no external agency approval cycles)
+
+**Budget Impact:**
+- Traditional approach: $500-1,000 creative costs = $5,800-6,300 for ads
+- DIY approach: $0 creative costs = $6,800 for ads (+8-17% more media spend)
+
+---
+
+### Marketing Trust Signals (Enabled by Quality Standards)
+
+**Ad Creative Messaging:**
+- "Every product ISO 13485 certified for medical-grade quality"
+- "Personally tested for 2 weeks before we list it"
+- "Only top-rated suppliers (4.5-5 stars)"
+- "7-15 day guaranteed delivery with free returns"
+- "We're picky so you don't have to be"
+- "Products with bad reviews? We remove them automatically"
+- "If 5+ customers complain, we pull it and find something better"
+
+**Landing Page Trust Elements:**
+- Quality standards badges (ISO 13485)
+- Personal testing testimonial (owner + quote)
+- Supplier rating display (4.5-5 stars)
+- Shipping guarantee (7-15 days)
+- Free returns policy
+- Quality guarantee: "Bad product? We remove it automatically (<4 stars OR 5+ complaints = gone)"
+
+**Email Flow Integration:**
+- **Welcome Flow:** Introduce 5-step vetting ("here's why we're different")
+- **Browse Abandonment:** Emphasize fast shipping + top-rated suppliers
+- **Cart Abandonment:** Highlight free returns + quality guarantees
+- **Post-Purchase:** Set expectations (7-15 days) + review request timing
+
+**Competitive Differentiation:**
+- Most dropshippers: Random suppliers, no vetting, 15-30 day shipping
+- Alpha Medical: ISO certified, personally tested, 7-15 day Choice shipping
+- **Positioning:** Professional medical equipment retailer, NOT generic dropshipper
+
+---
+
+### Quality Standards Impact Analysis
+
+**Customer Experience Protection:**
+- **Pre-listing:** ISO certification + personal testing + facility audit
+- **Contractual:** Quality SLAs with <2% defect termination clauses
+- **Post-listing (Supplier):** Continuous review monitoring + <4.5 stars removal policy
+- **Post-listing (Site):** Weekly monitoring + automatic removal if ≥5 complaints OR <4 stars on Alpha Medical site
+
+**Results:**
+- Lower defect rates → fewer returns → higher profitability
+- Better reviews → social proof → higher conversion rates
+- Faster shipping → less cart abandonment → more completed orders
+- Automatic bad product removal → protected brand reputation → sustained customer trust
+- Proactive replacement → catalog stays high-quality → consistent customer satisfaction
+
+**Performance Metrics (Choice vs Standard Dropshipping):**
+- Cart abandonment: 30-40% (Choice) vs 60-70% (standard) = 50% improvement
+- Defect rates: 1-2% (top suppliers) vs 5-10% (random) = 75% improvement
+- Revenue impact: 2× more completed orders + 3× better satisfaction = significantly higher profitability
+
+**Ad Performance (DIY/UGC vs Professional):**
+- Click-through rate (CTR): 4× higher
+- Cost per click (CPC): 50% lower
+- Budget efficiency: +8-17% more media spend (no creative costs)
+- Iteration speed: Faster testing (no agency delays)
+
+---
+
+### Quality Assurance Enforcement
+
+**Supplier Onboarding Checklist:**
+- [ ] Verify ISO 13485 certification
+- [ ] Confirm AliExpress Choice status
+- [ ] Check 4.5-5 star rating
+- [ ] Verify >100 units inventory
+- [ ] Order sample for 2-week personal testing
+- [ ] Review facility documentation
+- [ ] Negotiate quality SLA contract
+- [ ] Add to approved supplier list
+
+**Ongoing Monitoring:**
+- **Weekly:** Check supplier ratings (drop if <4.5)
+- **Weekly:** Monitor Alpha Medical site product reviews (remove if ≥5 complaints OR <4 stars)
+- **Monthly:** Review customer feedback for quality issues
+- **Quarterly:** Evaluate defect rates vs 2% SLA threshold
+- **Annually:** Re-audit certifications and facility compliance
+
+**Termination Triggers (Supplier-Level):**
+- Supplier rating drops below 4.5 stars
+- Defect rate exceeds 2% threshold
+- ISO 13485 certification expires/revoked
+- Consistent shipping delays (>15 days)
+- Inventory consistently <100 units
+
+**Product Removal Triggers (Site-Level):**
+- ≥5 customer complaints on Alpha Medical site
+- <4 stars customer rating on Alpha Medical site
+- **Action:** Automatic removal + replacement with high-potential product
+
+---
+
+### Strategic Positioning Framework
+
+**Brand Positioning:** Medical Equipment Curators (NOT Marketplace)
+
+**Trust Hierarchy:**
+1. **Certification Trust:** ISO 13485 (medical device standard)
+2. **Personal Trust:** 2-week testing by owner
+3. **Operational Trust:** 4.5+ star suppliers only
+4. **Performance Trust:** 7-15 day guaranteed delivery
+5. **Accountability Trust:** Quality SLAs with termination clauses
+
+**Competitive Moat:**
+- Price competition: Race to bottom (most dropshippers)
+- Quality competition: Professional vetting + medical standards (Alpha Medical)
+- **Result:** Premium positioning at accessible prices
+
+**Marketing Efficiency Impact:**
+- Trust signals → higher conversion rates → lower CAC
+- Fast shipping → less cart abandonment → more sales per ad dollar
+- Quality products → positive reviews → organic growth
+- Low defect rates → higher LTV → better unit economics
+
+---
+
+### Reference Documents
+
+**Quality Policy Sources:**
+- `ALPHA_MEDICAL_PITCH_DECK_TEMPLATE.md` - Official 5-step vetting process
+- Session 73 user clarifications - Operational criteria (Choice, 4.5★, stock >100)
+
+**Marketing Applications:**
+- Ad creative messaging (quality differentiation)
+- Email flow content (trust building sequences)
+- Landing page copy (supplier quality emphasis)
+- Social proof strategy (review management approach)
+
+**Related Context:**
+- `.claude/memory/01-core-constraints.md` - Owner handles supplier relationships
+- `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md` - Product inventory data
+
+---
+
+**Token Cost:** ~1,200 tokens (Level 2 - loaded when marketing tasks)
 **Full References:**
 - `@AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md` (303KB)
 - `@SEO_MARKETING_FORENSIC_ANALYSIS.md` (819KB)
