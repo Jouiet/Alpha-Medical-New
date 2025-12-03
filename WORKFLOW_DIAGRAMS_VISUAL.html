@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Medical - Diagrammes Workflows (Session 74)</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #1565c0;
+            border-bottom: 3px solid #1565c0;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #e65100;
+            margin-top: 40px;
+            padding: 10px;
+            background: #fff;
+            border-left: 5px solid #e65100;
+        }
+        .diagram-container {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .description {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #1565c0;
+        }
+        .mermaid {
+            text-align: center;
+        }
+        .nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #1565c0;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔄 ALPHA MEDICAL - VISUALISATIONS WORKFLOWS</h1>
+    <div style="text-align: center; margin-bottom: 30px; color: #666;">
+        <strong>Session 74 - Documentation Complète</strong><br>
+        35 workflows documentés | 6 catégories | 5 diagrammes visuels
+    </div>
+
+    <div class="nav">
+        <strong>Navigation:</strong>
+        <a href="#diagram1">1. Organigramme</a>
+        <a href="#diagram2">2. Dépendances</a>
+        <a href="#diagram3">3. Critical Path</a>
+        <a href="#diagram4">4. Pipeline E2E</a>
+        <a href="#diagram5">5. Matrice Timing</a>
+    </div>
+
+    <!-- DIAGRAM 1 -->
+    <div class="diagram-container" id="diagram1">
+        <h2>1️⃣ ORGANIGRAMME HIÉRARCHIQUE (Architecture Complète)</h2>
+        <div class="description">
+            <strong>Ce que montre ce diagramme:</strong> Vue d'ensemble de tous les workflows et leurs interconnexions, organisée en 5 tiers hiérarchiques.
+            <br><br>
+            <strong>Légende couleurs:</strong>
+            <ul style="margin: 10px 0;">
+                <li>🔵 Bleu clair = Sources externes (Facebook, Shopify Forms, etc.)</li>
+                <li>🟡 Jaune = Workflows de traitement (GitHub Actions)</li>
+                <li>🟣 Violet = Stockage (Google Sheets, Shopify)</li>
+                <li>🟢 Vert = Sorties/résultats</li>
+                <li>🟠 Orange foncé = IA (N8N workflows)</li>
+                <li>🔴 Rouge-orange = Tracking (GTM, GA4, pixels)</li>
+            </ul>
+        </div>
+        <div class="mermaid">
+graph TB
+    %% Style definitions
+    classDef sourceNode fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    classDef processNode fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef storageNode fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef outputNode fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px
+    classDef aiNode fill:#ffe0b2,stroke:#e65100,stroke-width:3px
+    classDef trackingNode fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+
+    %% LEAD SOURCES (Tier 1)
+    FB[Facebook Lead Ads]:::sourceNode
+    SF[Shopify Forms 768671]:::sourceNode
+    KC[Klaviyo Contest]:::sourceNode
+    WP[Website Popups]:::sourceNode
+    CF[Contact Form]:::sourceNode
+
+    %% STORAGE (Tier 2)
+    GS[Google Sheets<br/>Raw Leads]:::storageNode
+    SC[Shopify<br/>Customers]:::storageNode
+
+    %% DATA QUALITY (Tier 3)
+    CL[clean-segment-leads.yml<br/>Daily 10:00 UTC]:::processNode
+    CLD[Cleaned Leads<br/>+ Quality Scores]:::outputNode
+
+    %% CONSUMER INTEL (Tier 2 parallel)
+    IG[Instagram]:::sourceNode
+    RD[Reddit/Forums]:::sourceNode
+    HT[hashtags-trending.yml<br/>Monthly]:::processNode
+    PP[pain-points-intelligence.yml<br/>Bi-monthly]:::processNode
+    HTD[Hashtag Intel]:::outputNode
+    PPD[Consumer Intel]:::outputNode
+
+    %% EMAIL AUTOMATION (Tier 4)
+    SF1[Shopify Flow<br/>5 workflows]:::processNode
+    SE[Shopify Email<br/>5 automations<br/>0-24h]:::processNode
+    KF[Klaviyo<br/>4 flows<br/>14-90+ days]:::processNode
+
+    %% CONTENT AUTOMATION (Tier 2 parallel)
+    GD[Google Drive<br/>Images]:::sourceNode
+    VF[Video Files]:::sourceNode
+    PD[Product Data]:::sourceNode
+    N1[N8N #1<br/>Image AI<br/>OPERATIONAL]:::aiNode
+    N2[N8N #2<br/>YouTube AI<br/>READY]:::aiNode
+    N3[N8N #3<br/>Blog AI<br/>PLANNED]:::aiNode
+    PI[Processed<br/>Images]:::outputNode
+    YT[YouTube<br/>Videos]:::outputNode
+    BL[Blog<br/>Articles]:::outputNode
+    PG[Shopify Product<br/>Gallery]:::outputNode
+
+    %% MONITORING (Tier 2 parallel)
+    SA[Shopify API]:::sourceNode
+    HC[health-check.yml<br/>Every 6h]:::processNode
+    SB[shopify-backup.yml<br/>Weekly Sunday]:::processNode
+    GI[GitHub Issues]:::outputNode
+    BF[Backup Files]:::outputNode
+
+    %% TRACKING (Tier 5 - Final)
+    CUST[Customer<br/>Actions]:::outputNode
+    GTM[GTM Container]:::trackingNode
+    GA4[GA4]:::trackingNode
+    META[Meta Pixel]:::trackingNode
+    TIKTOK[TikTok Pixel]:::trackingNode
+    GADS[Google Ads]:::trackingNode
+
+    %% CONNECTIONS - Lead Capture Flow
+    FB -->|sync-facebook-leads.yml<br/>Every 6h| GS
+    SF -->|sync-shopify-forms-leads.yml<br/>Hourly 8-20h| GS
+    KC -->|sync-klaviyo-leads.yml<br/>Hourly 8-20h| GS
+    WP -->|Shopify Flow| SC
+    CF -.not configured.-> GS
+
+    %% Data Quality Flow
+    GS -->|Triggers Daily| CL
+    CL --> CLD
+
+    %% Consumer Intelligence Flow
+    IG --> HT
+    RD --> PP
+    HT --> HTD
+    PP --> PPD
+
+    %% Email Automation Flow
+    SC --> SF1
+    SF1 --> SE
+    SC --> KF
+    SE --> CUST
+    KF --> CUST
+
+    %% Content Automation Flow
+    GD -->|File Upload| N1
+    N1 -->|46.3s avg| PI
+    PI --> PG
+    VF -.planned.-> N2
+    N2 -.planned.-> YT
+    PD -.planned.-> N3
+    N3 -.planned.-> BL
+
+    %% Monitoring Flow
+    SA -->|API Status| HC
+    SA -->|Full Export| SB
+    HC -->|On Error| GI
+    SB --> BF
+
+    %% Tracking Flow
+    CUST -->|All Events| GTM
+    GTM --> GA4
+    GTM --> META
+    GTM --> TIKTOK
+    GTM --> GADS
+        </div>
+    </div>
+
+    <!-- DIAGRAM 2 -->
+    <div class="diagram-container" id="diagram2">
+        <h2>2️⃣ MATRICE DE DÉPENDANCES (7 Niveaux Hiérarchiques)</h2>
+        <div class="description">
+            <strong>Ce que montre ce diagramme:</strong> Dépendances entre workflows organisées en 7 niveaux (L0 → L6), du plus basique au plus avancé.
+            <br><br>
+            <strong>Légende niveaux:</strong>
+            <ul style="margin: 10px 0;">
+                <li><strong>L0</strong> = Sources externes (Facebook, Instagram, Shopify API)</li>
+                <li><strong>L1</strong> = Collection de données (GitHub Actions sync workflows)</li>
+                <li><strong>L2</strong> = Stockage (Google Sheets, Shopify Customers, images)</li>
+                <li><strong>L3</strong> = Traitement (clean-segment-leads, Shopify Flow)</li>
+                <li><strong>L4</strong> = Exécution automation (Shopify Email, Klaviyo, N8N)</li>
+                <li><strong>L5</strong> = Outputs finaux (interactions clients, contenu, intelligence)</li>
+                <li><strong>L6</strong> = Tracking & Analytics (GTM → GA4, Meta, TikTok, Google Ads)</li>
+            </ul>
+        </div>
+        <div class="mermaid">
+graph LR
+    %% Level 0: External Sources
+    subgraph L0["⬇️ LEVEL 0: External Sources"]
+        L0_FB[Facebook Ads]
+        L0_SF[Shopify Forms]
+        L0_KC[Klaviyo]
+        L0_WP[Website]
+        L0_GD[Google Drive]
+        L0_IG[Instagram]
+        L0_RD[Reddit]
+        L0_SA[Shopify API]
+    end
+
+    %% Level 1: Data Collection
+    subgraph L1["⬇️ LEVEL 1: Data Collection"]
+        L1_SYNC1[sync-facebook-leads.yml]
+        L1_SYNC2[sync-shopify-forms-leads.yml]
+        L1_SYNC3[sync-klaviyo-leads.yml]
+        L1_N1[N8N Workflow #1]
+        L1_HT[hashtags-trending.yml]
+        L1_PP[pain-points-intelligence.yml]
+        L1_HC[health-check.yml]
+        L1_SB[shopify-backup.yml]
+    end
+
+    %% Level 2: Storage
+    subgraph L2["⬇️ LEVEL 2: Storage"]
+        L2_GS[Google Sheets Raw]
+        L2_SC[Shopify Customers]
+        L2_PI[Processed Images]
+    end
+
+    %% Level 3: Data Processing
+    subgraph L3["⬇️ LEVEL 3: Data Processing"]
+        L3_CL[clean-segment-leads.yml]
+        L3_SF[Shopify Flow 5x]
+    end
+
+    %% Level 4: Automation Execution
+    subgraph L4["⬇️ LEVEL 4: Automation Execution"]
+        L4_SE[Shopify Email 5x]
+        L4_KF[Klaviyo Flows 4x]
+        L4_N2[N8N Workflow #2]
+        L4_N3[N8N Workflow #3]
+    end
+
+    %% Level 5: Final Output
+    subgraph L5["⬇️ LEVEL 5: Final Output"]
+        L5_CUST[Customer Interactions]
+        L5_CONTENT[Content Published]
+        L5_INTEL[Intelligence Data]
+    end
+
+    %% Level 6: Tracking
+    subgraph L6["⬇️ LEVEL 6: Tracking"]
+        L6_GTM[GTM Container]
+        L6_GA4[GA4]
+        L6_META[Meta Pixel]
+        L6_TT[TikTok Pixel]
+        L6_GADS[Google Ads]
+    end
+
+    %% Dependencies Level 0 → 1
+    L0_FB --> L1_SYNC1
+    L0_SF --> L1_SYNC2
+    L0_KC --> L1_SYNC3
+    L0_GD --> L1_N1
+    L0_IG --> L1_HT
+    L0_RD --> L1_PP
+    L0_SA --> L1_HC
+    L0_SA --> L1_SB
+
+    %% Dependencies Level 1 → 2
+    L1_SYNC1 --> L2_GS
+    L1_SYNC2 --> L2_GS
+    L1_SYNC3 --> L2_GS
+    L1_N1 --> L2_PI
+    L0_WP --> L2_SC
+
+    %% Dependencies Level 2 → 3
+    L2_GS --> L3_CL
+    L2_SC --> L3_SF
+
+    %% Dependencies Level 3 → 4
+    L3_SF --> L4_SE
+    L2_SC --> L4_KF
+    L2_PI --> L4_N2
+    L2_SC --> L4_N3
+
+    %% Dependencies Level 4 → 5
+    L4_SE --> L5_CUST
+    L4_KF --> L5_CUST
+    L4_N2 -.planned.-> L5_CONTENT
+    L4_N3 -.planned.-> L5_CONTENT
+    L1_HT --> L5_INTEL
+    L1_PP --> L5_INTEL
+
+    %% Dependencies Level 5 → 6
+    L5_CUST --> L6_GTM
+    L6_GTM --> L6_GA4
+    L6_GTM --> L6_META
+    L6_GTM --> L6_TT
+    L6_GTM --> L6_GADS
+
+    %% Styling
+    classDef level0 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef level1 fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef level2 fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
+    classDef level3 fill:#ffe0b2,stroke:#e65100,stroke-width:2px
+    classDef level4 fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+    classDef level5 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    classDef level6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+
+    class L0_FB,L0_SF,L0_KC,L0_WP,L0_GD,L0_IG,L0_RD,L0_SA level0
+    class L1_SYNC1,L1_SYNC2,L1_SYNC3,L1_N1,L1_HT,L1_PP,L1_HC,L1_SB level1
+    class L2_GS,L2_SC,L2_PI level2
+    class L3_CL,L3_SF level3
+    class L4_SE,L4_KF,L4_N2,L4_N3 level4
+    class L5_CUST,L5_CONTENT,L5_INTEL level5
+    class L6_GTM,L6_GA4,L6_META,L6_TT,L6_GADS level6
+        </div>
+    </div>
+
+    <!-- DIAGRAM 3 -->
+    <div class="diagram-container" id="diagram3">
+        <h2>3️⃣ WORKFLOW DEPENDENCY GRAPH (Critical Path Analysis)</h2>
+        <div class="description">
+            <strong>Ce que montre ce diagramme:</strong> Analyse du chemin critique (CRITICAL) vs workflows de support (SUPPORTING). Identifie les 6 chemins parallèles principaux.
+            <br><br>
+            <strong>Légende criticité:</strong>
+            <ul style="margin: 10px 0;">
+                <li>🟢 <strong>Vert START</strong> = Point de départ (trigger externe)</li>
+                <li>🔴 <strong>Rouge END</strong> = Business value finale</li>
+                <li>🟠 <strong>Orange CRITICAL</strong> = Chemin critique (impact revenue direct)</li>
+                <li>🔵 <strong>Bleu SUPPORTING</strong> = Support (amélioration indirecte)</li>
+                <li>🟣 <strong>Violet DECISION</strong> = Points de décision/branchement</li>
+            </ul>
+            <strong>6 chemins parallèles:</strong> Lead Management (CRITICAL), Customer Journey (CRITICAL), Content Pipeline (SUPPORT), Intelligence (SUPPORT), Monitoring (SUPPORT), Tracking (CRITICAL)
+        </div>
+        <div class="mermaid">
+graph TD
+    %% Critical Path: Lead → Customer → Revenue
+    START([START:<br/>External Trigger]):::startNode
+
+    %% Path 1: Lead Management (CRITICAL)
+    P1A{Lead Source?}:::decisionNode
+    P1B[Capture Lead<br/>GitHub Actions]:::criticalNode
+    P1C[Store in<br/>Google Sheets]:::criticalNode
+    P1D[Clean & Dedupe<br/>Daily 10:00 UTC]:::criticalNode
+    P1E[Quality Scored<br/>Leads Ready]:::criticalNode
+
+    %% Path 2: Customer Journey (CRITICAL)
+    P2A[Customer Action<br/>Website]:::criticalNode
+    P2B[Shopify Flow<br/>Tags & Triggers]:::criticalNode
+    P2C{Timing?}:::decisionNode
+    P2D[Shopify Email<br/>0-24h]:::criticalNode
+    P2E[Klaviyo Flows<br/>14-90+ days]:::criticalNode
+    P2F[Customer<br/>Engagement]:::criticalNode
+
+    %% Path 3: Content Pipeline (SUPPORTING)
+    P3A[Content Source<br/>Drive/Products]:::supportNode
+    P3B[N8N AI<br/>Processing]:::supportNode
+    P3C[Published<br/>Content]:::supportNode
+
+    %% Path 4: Intelligence (SUPPORTING)
+    P4A[Social/Forums<br/>Monitoring]:::supportNode
+    P4B[Consumer Intel<br/>Analysis]:::supportNode
+    P4C[Strategic<br/>Insights]:::supportNode
+
+    %% Path 5: Monitoring (SUPPORTING)
+    P5A[System<br/>Health Check]:::supportNode
+    P5B{Status?}:::decisionNode
+    P5C[Alert<br/>GitHub Issues]:::supportNode
+    P5D[Backup<br/>Weekly]:::supportNode
+
+    %% Path 6: Tracking (CRITICAL)
+    P6A[GTM<br/>Event Collection]:::criticalNode
+    P6B[Multi-Platform<br/>Tracking]:::criticalNode
+    P6C[Analytics &<br/>Attribution]:::criticalNode
+
+    END([END:<br/>Business Value]):::endNode
+
+    %% Critical Path Flow
+    START --> P1A
+    P1A -->|Facebook/Forms/Klaviyo| P1B
+    P1B --> P1C
+    P1C --> P1D
+    P1D --> P1E
+
+    START --> P2A
+    P2A --> P2B
+    P2B --> P2C
+    P2C -->|Immediate| P2D
+    P2C -->|Delayed| P2E
+    P2D --> P2F
+    P2E --> P2F
+
+    %% Supporting Paths
+    START --> P3A
+    P3A --> P3B
+    P3B --> P3C
+    P3C --> P2A
+
+    START --> P4A
+    P4A --> P4B
+    P4B --> P4C
+    P4C --> P1A
+
+    START --> P5A
+    P5A --> P5B
+    P5B -->|Error| P5C
+    P5B -->|OK| P5D
+
+    %% Tracking Path
+    P2F --> P6A
+    P6A --> P6B
+    P6B --> P6C
+
+    %% Convergence
+    P1E -.feeds.-> P2B
+    P6C --> END
+    P2F --> END
+    P3C -.supports.-> END
+    P4C -.informs.-> END
+
+    %% Styling
+    classDef startNode fill:#4caf50,stroke:#1b5e20,stroke-width:3px,color:#fff
+    classDef endNode fill:#f44336,stroke:#b71c1c,stroke-width:3px,color:#fff
+    classDef criticalNode fill:#ff9800,stroke:#e65100,stroke-width:3px
+    classDef supportNode fill:#2196f3,stroke:#0d47a1,stroke-width:2px
+    classDef decisionNode fill:#9c27b0,stroke:#4a148c,stroke-width:2px
+        </div>
+    </div>
+
+    <!-- DIAGRAM 4 -->
+    <div class="diagram-container" id="diagram4">
+        <h2>4️⃣ PIPELINE END-TO-END ILLUSTRÉ (10 Stages)</h2>
+        <div class="description">
+            <strong>Ce que montre ce diagramme:</strong> Parcours client complet de l'acquisition jusqu'à l'optimisation, organisé en 10 stages fonctionnels.
+            <br><br>
+            <strong>10 Stages du pipeline:</strong>
+            <ol style="margin: 10px 0;">
+                <li>🎯 <strong>ACQUISITION</strong> - Sources de leads (Facebook, Forms, Contest, Website)</li>
+                <li>📥 <strong>CAPTURE</strong> - Sync vers Google Sheets (GitHub Actions)</li>
+                <li>✅ <strong>QUALIFICATION</strong> - Nettoyage, déduplication, scoring</li>
+                <li>🚀 <strong>ACTIVATION</strong> - Création client Shopify + Flow tagging</li>
+                <li>💌 <strong>ENGAGEMENT</strong> - Email automation (Shopify 0-24h, Klaviyo 14-90d)</li>
+                <li>🎨 <strong>CONTENT</strong> - AI content generation (N8N workflows)</li>
+                <li>💰 <strong>CONVERSION</strong> - Purchase & order creation</li>
+                <li>📊 <strong>TRACKING</strong> - Analytics & pixels (GTM → GA4/Meta/Ads)</li>
+                <li>🧠 <strong>INTELLIGENCE</strong> - Consumer insights (Instagram, Reddit)</li>
+                <li>🔄 <strong>OPTIMIZATION</strong> - Performance analysis & strategy refinement</li>
+            </ol>
+        </div>
+        <div class="mermaid">
+graph LR
+    %% Stage 1: ACQUISITION
+    subgraph S1["🎯 STAGE 1: ACQUISITION"]
+        direction TB
+        A1[Facebook Ads]:::acquisition
+        A2[Shopify Forms]:::acquisition
+        A3[Klaviyo Contest]:::acquisition
+        A4[Website Popup]:::acquisition
+    end
+
+    %% Stage 2: CAPTURE
+    subgraph S2["📥 STAGE 2: CAPTURE"]
+        direction TB
+        C1[GitHub Actions<br/>Lead Sync<br/>Every 6h]:::capture
+        C2[Google Sheets<br/>Raw Leads]:::capture
+    end
+
+    %% Stage 3: QUALIFICATION
+    subgraph S3["✅ STAGE 3: QUALIFICATION"]
+        direction TB
+        Q1[clean-segment-leads.yml<br/>Daily 10:00 UTC]:::qualification
+        Q2[Deduplication]:::qualification
+        Q3[Quality Scoring]:::qualification
+        Q4[Cleaned Leads<br/>Ready]:::qualification
+    end
+
+    %% Stage 4: ACTIVATION
+    subgraph S4["🚀 STAGE 4: ACTIVATION"]
+        direction TB
+        AC1[Shopify Customer<br/>Record Created]:::activation
+        AC2[Shopify Flow<br/>Tagging + Triggers]:::activation
+    end
+
+    %% Stage 5: ENGAGEMENT
+    subgraph S5["💌 STAGE 5: ENGAGEMENT"]
+        direction TB
+        E1[Shopify Email<br/>5 automations<br/>0-24h]:::engagement
+        E2[Klaviyo Flows<br/>4 flows<br/>14-90+ days]:::engagement
+    end
+
+    %% Stage 6: CONTENT SUPPORT
+    subgraph S6["🎨 STAGE 6: CONTENT"]
+        direction TB
+        CS1[N8N Image AI<br/>OPERATIONAL]:::content
+        CS2[N8N YouTube AI<br/>READY]:::content
+        CS3[N8N Blog AI<br/>PLANNED]:::content
+    end
+
+    %% Stage 7: CONVERSION
+    subgraph S7["💰 STAGE 7: CONVERSION"]
+        direction TB
+        CV1[Customer<br/>Purchase]:::conversion
+        CV2[Order Created]:::conversion
+    end
+
+    %% Stage 8: TRACKING
+    subgraph S8["📊 STAGE 8: TRACKING"]
+        direction TB
+        T1[GTM Container]:::tracking
+        T2[GA4 Analytics]:::tracking
+        T3[Meta Pixel]:::tracking
+        T4[Google Ads]:::tracking
+    end
+
+    %% Stage 9: INTELLIGENCE
+    subgraph S9["🧠 STAGE 9: INTELLIGENCE"]
+        direction TB
+        I1[Instagram<br/>Hashtags]:::intelligence
+        I2[Reddit/Forums<br/>Pain Points]:::intelligence
+        I3[Consumer<br/>Insights]:::intelligence
+    end
+
+    %% Stage 10: OPTIMIZATION
+    subgraph S10["🔄 STAGE 10: OPTIMIZATION"]
+        direction TB
+        O1[Performance<br/>Analysis]:::optimization
+        O2[Strategy<br/>Refinement]:::optimization
+    end
+
+    %% Main Flow Connections
+    A1 --> C1
+    A2 --> C1
+    A3 --> C1
+    A4 --> AC1
+
+    C1 --> C2
+    C2 --> Q1
+    Q1 --> Q2
+    Q2 --> Q3
+    Q3 --> Q4
+
+    Q4 -.nurture data.-> AC1
+    AC1 --> AC2
+    AC2 --> E1
+    AC2 --> E2
+
+    CS1 -.product images.-> AC1
+    CS2 -.video content.-> AC1
+    CS3 -.blog articles.-> AC1
+
+    E1 --> CV1
+    E2 --> CV1
+    CV1 --> CV2
+
+    CV2 --> T1
+    AC1 --> T1
+    T1 --> T2
+    T1 --> T3
+    T1 --> T4
+
+    I1 --> I3
+    I2 --> I3
+    I3 -.informs.-> A1
+
+    T2 --> O1
+    T3 --> O1
+    T4 --> O1
+    O1 --> O2
+    O2 -.optimizes.-> A1
+    O2 -.optimizes.-> E1
+    O2 -.optimizes.-> E2
+
+    %% Styling
+    classDef acquisition fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
+    classDef capture fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef qualification fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
+    classDef activation fill:#ffe0b2,stroke:#e65100,stroke-width:2px
+    classDef engagement fill:#ffccbc,stroke:#d84315,stroke-width:3px
+    classDef content fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    classDef conversion fill:#ffcdd2,stroke:#c62828,stroke-width:3px
+    classDef tracking fill:#b2dfdb,stroke:#00695c,stroke-width:2px
+    classDef intelligence fill:#d1c4e9,stroke:#4527a0,stroke-width:2px
+    classDef optimization fill:#fff59d,stroke:#f57f17,stroke-width:2px
+        </div>
+    </div>
+
+    <!-- DIAGRAM 5 - TABLE -->
+    <div class="diagram-container" id="diagram5">
+        <h2>5️⃣ MATRICE TEMPORELLE (Timing Matrix)</h2>
+        <div class="description">
+            <strong>Ce que montre ce tableau:</strong> Fréquences d'exécution, timing précis, dépendances, et latence de sortie pour 17 workflows.
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Workflow</th>
+                    <th>Trigger Type</th>
+                    <th>Frequency</th>
+                    <th>Timing</th>
+                    <th>Dependencies</th>
+                    <th>Output Latency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>sync-facebook-leads.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Every 6h</td>
+                    <td>00:00, 06:00, 12:00, 18:00 UTC</td>
+                    <td>Facebook API</td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>sync-shopify-forms-leads.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Hourly</td>
+                    <td>08:00-20:00 UTC (12h window)</td>
+                    <td>Shopify Forms API</td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>sync-klaviyo-leads.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Hourly</td>
+                    <td>08:00-20:00 UTC (12h window)</td>
+                    <td>Klaviyo API</td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>clean-segment-leads.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Daily</td>
+                    <td>10:00 UTC</td>
+                    <td>Google Sheets Raw</td>
+                    <td>+24h max</td>
+                </tr>
+                <tr>
+                    <td><strong>hashtags-trending.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Monthly</td>
+                    <td>1st day 00:00 UTC</td>
+                    <td>Instagram API</td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>pain-points-intelligence.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Bi-monthly</td>
+                    <td>1st, 15th 00:00 UTC</td>
+                    <td>Reddit/Forums API</td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>health-check.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Every 6h</td>
+                    <td>00:00, 06:00, 12:00, 18:00 UTC</td>
+                    <td>Shopify Admin API</td>
+                    <td>Real-time</td>
+                </tr>
+                <tr>
+                    <td><strong>shopify-backup.yml</strong></td>
+                    <td>Cron</td>
+                    <td>Weekly</td>
+                    <td>Sunday 00:00 UTC</td>
+                    <td>Shopify Admin API</td>
+                    <td>~5-10 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Shopify Flow (5x)</strong></td>
+                    <td>Event</td>
+                    <td>Real-time</td>
+                    <td>On customer action</td>
+                    <td>Shopify Events</td>
+                    <td>&lt;1 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Shopify Email (5x)</strong></td>
+                    <td>Shopify Flow</td>
+                    <td>Real-time / Delayed</td>
+                    <td>0-24h after trigger</td>
+                    <td>Shopify Flow</td>
+                    <td>Variable</td>
+                </tr>
+                <tr>
+                    <td><strong>Klaviyo Flows (4x)</strong></td>
+                    <td>Event / Time</td>
+                    <td>Time-based</td>
+                    <td>Day 1, 3, 7, 14, 30, 60, 75, 90</td>
+                    <td>Shopify Integration</td>
+                    <td>Scheduled</td>
+                </tr>
+                <tr>
+                    <td><strong>N8N Workflow #1</strong></td>
+                    <td>Event</td>
+                    <td>Real-time</td>
+                    <td>On Google Drive upload</td>
+                    <td>Google Drive API</td>
+                    <td>~46.3s avg</td>
+                </tr>
+                <tr>
+                    <td><strong>N8N Workflow #2</strong></td>
+                    <td>Manual / Cron</td>
+                    <td>On-demand</td>
+                    <td>TBD (planned)</td>
+                    <td>Video upload</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td><strong>N8N Workflow #3</strong></td>
+                    <td>Manual / Cron</td>
+                    <td>On-demand</td>
+                    <td>TBD (planned)</td>
+                    <td>Product data</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td><strong>GTM Tracking</strong></td>
+                    <td>Event</td>
+                    <td>Real-time</td>
+                    <td>On all customer actions</td>
+                    <td>Website events</td>
+                    <td>&lt;100ms</td>
+                </tr>
+                <tr>
+                    <td><strong>tests.yml</strong></td>
+                    <td>Push</td>
+                    <td>On git push</td>
+                    <td>Immediate</td>
+                    <td>Code changes</td>
+                    <td>~2-3 min</td>
+                </tr>
+                <tr>
+                    <td><strong>update-llms-txt.yml</strong></td>
+                    <td>Push</td>
+                    <td>On .md changes</td>
+                    <td>Immediate</td>
+                    <td>Markdown files</td>
+                    <td>~30s</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; padding: 30px; background: #e3f2fd; border-radius: 10px;">
+        <h3 style="color: #1565c0;">📊 RÉSUMÉ SESSION 74</h3>
+        <p><strong>5 diagrammes créés</strong> | <strong>35 workflows documentés</strong> | <strong>6 catégories</strong></p>
+        <p style="color: #666; font-size: 14px;">
+            Source: AUTOMATION_COMPLETE_WORKFLOWS.md (6,569 lignes)<br>
+            Status: ✅ Pushed to origin/main
+        </p>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>

@@ -109,6 +109,10 @@
 
 ## 🎨 BRAND VOICE & MESSAGING
 
+> **✅ OFFICIAL BRANDING DOCUMENT:** `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` (verified via API 2025-12-03)
+> **Data Source:** Shopify Admin API (LIVE site)
+> **Status:** Single Source of Truth for all branding decisions
+
 ### Voice Characteristics
 - **Tone:** Professional yet approachable
 - **Language:** Clear, jargon-free, empathetic
@@ -120,6 +124,12 @@
 2. "Quality medical equipment for everyday comfort"
 3. "Trusted by thousands for pain management"
 4. "Professional-grade, consumer-friendly"
+
+**For Complete Branding Guidelines:**
+- Visual identity (logo, colors, typography): `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` Section 2
+- Detailed messaging framework: `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` Section 3
+- Digital applications: `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` Section 4
+- Quality standards & trust signals: `@ALPHA_MEDICAL_BRAND_GUIDELINES.md` Section 5
 
 ---
 
