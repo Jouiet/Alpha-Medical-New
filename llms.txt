@@ -123,6 +123,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [PRIORITY_SOURCES_IMPLEMENTATION](archive/setup-completed/PRIORITY_SOURCES_IMPLEMENTATION.md): Project documentation
 - [SETUP_GOOGLE_SHEETS_API](market-analysis/SETUP_GOOGLE_SHEETS_API.md): 1. Go to: https://console.cloud.google.com/ 2. Click "Select a project" → "New Project"
 - [SHOPIFY_CONFIGURATION_COMPLETE](archive/implementation-guides/SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
+- [SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION](SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md): 1. Check customer's total spend 2. If spend ≥ $1000: Add tag gold 3. Else if spend ≥ $500: Add tag silver
 - [TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29](TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md): Project documentation
 - [TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN](archive/miscellaneous/TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md): 1. ✅ Run python3 createsocialshareimage.py 2. ⏳ Manual upload to Shopify Theme Settings → Social media
 
@@ -277,6 +278,7 @@ When assisting with this project:
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](archive/implementation-guides/NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
 - [POWER_BI_LEARNING_PATH](POWER_BI_LEARNING_PATH.md): Project documentation
 - [PRE_LAUNCH_CHECKLIST_23_DAYS](archive/miscellaneous/PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
+- [PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03](PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03.md): 1. Shopify Admin → Online Store → Navigation → Footer menu 2. Add menu items (in order):
 - [PRE_LAUNCH_RUNBOOK_2025-12-25](PRE_LAUNCH_RUNBOOK_2025-12-25.md): Status: 5/5 ACTIVE (100%) Verified: 2025-12-01 (Browser inspection)
 - [RAPPORT_FINAL_COMPLET](archive/old-audits/RAPPORT_FINAL_COMPLET.md): Project documentation
 - [RAPPORT_THEME_ANALYSE](archive/miscellaneous/RAPPORT_THEME_ANALYSE.md): Project documentation
