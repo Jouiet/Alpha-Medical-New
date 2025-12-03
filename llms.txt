@@ -83,6 +83,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 ### Content & Blog
 
+- [ALPHA_MEDICAL_BRAND_GUIDELINES](ALPHA_MEDICAL_BRAND_GUIDELINES.md): Alpha Medical Care (alphamedical.shop) is NOT: We ARE:
 - [ASSET_GATHERING_GUIDE](archive/miscellaneous/ASSET_GATHERING_GUIDE.md): {product-handle}hero{angle}.jpg
 - [AZURE_AD_SETUP_GUIDE](AZURE_AD_SETUP_GUIDE.md): open https://portal.azure.com ✅ Vous êtes connecté avec votre compte Microsoft ✅ Vous voyez "Microsoft Azure" en haut à gauche
 - [BLOG_IMAGES_ASSIGNMENT](archive/setup-completed/BLOG_IMAGES_ASSIGNMENT.md): Project documentation
