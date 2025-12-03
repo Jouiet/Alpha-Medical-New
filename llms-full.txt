@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** December 03, 2025 at 15:11 UTC
+**Generated:** December 03, 2025 at 16:16 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -56,7 +56,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -27216,7 +27216,7 @@ Priority 8: FAQ Schema Markup
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -39453,7 +39453,7 @@ Month 4-6 (Mar 22 - Jun 21):
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -40600,7 +40600,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -40967,7 +40967,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -46234,56 +46234,502 @@ Google Consent Mode v2:
 
 ## 🔄 WORKFLOW COMPLEMENTARITY MATRIX
 
-### DATA FLOW ARCHITECTURE
+### 1️⃣ ORGANIGRAMME HIÉRARCHIQUE (Architecture Complète)
 
 ```mermaid
-flowchart TD
-    subgraph "LEAD CAPTURE (5 sources)"
-        A[Facebook Lead Ads] -->|sync-facebook-leads.yml| G[Google Sheets Raw Leads]
-        B[Shopify Forms 768671] -->|sync-shopify-forms-leads.yml| G
-        C[Klaviyo Contest] -->|sync-klaviyo-leads.yml| G
-        D[Website Popups] -->|Shopify Flow| E[Shopify Customers]
-        F[Contact Form] -.not configured.-> G
-    end
+graph TB
+    %% Style definitions
+    classDef sourceNode fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    classDef processNode fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef storageNode fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef outputNode fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px
+    classDef aiNode fill:#ffe0b2,stroke:#e65100,stroke-width:3px
+    classDef trackingNode fill:#ffccbc,stroke:#bf360c,stroke-width:2px
 
-    subgraph "DATA QUALITY (1 workflow)"
-        G -->|clean-segment-leads.yml Daily| H[Cleaned Leads]
-        H --> I[Lead Quality Scores]
-        H --> J[Deduplicated Data]
-    end
+    %% LEAD SOURCES (Tier 1)
+    FB[Facebook Lead Ads]:::sourceNode
+    SF[Shopify Forms 768671]:::sourceNode
+    KC[Klaviyo Contest]:::sourceNode
+    WP[Website Popups]:::sourceNode
+    CF[Contact Form]:::sourceNode
 
-    subgraph "CONSUMER INTELLIGENCE (2 workflows)"
-        K[Instagram] -->|hashtags-trending.yml Monthly| L[Hashtag Intel Sheet]
-        M[Reddit/Forums] -->|pain-points-intelligence.yml Bi-monthly| N[Consumer Intel Sheet]
-    end
+    %% STORAGE (Tier 2)
+    GS[Google Sheets<br/>Raw Leads]:::storageNode
+    SC[Shopify<br/>Customers]:::storageNode
 
-    subgraph "EMAIL AUTOMATION (13 workflows)"
-        E -->|Shopify Flow #1-5| O[Shopify Email 5 automations]
-        E -->|Klaviyo Integration| P[Klaviyo 4 flows]
-        O -.0-24h lifecycle.-> Q[Customer]
-        P -.14-90+ days lifecycle.-> Q
-    end
+    %% DATA QUALITY (Tier 3)
+    CL[clean-segment-leads.yml<br/>Daily 10:00 UTC]:::processNode
+    CLD[Cleaned Leads<br/>+ Quality Scores]:::outputNode
 
-    subgraph "CONTENT AUTOMATION (3 N8N workflows)"
-        R[Google Drive Images] -->|N8N Workflow #1| S[Processed Images]
-        S --> T[Shopify Product Gallery]
-        U[Video Files] -.N8N Workflow #2 (planned).-> V[YouTube Published]
-        W[Shopify Products] -.N8N Workflow #3 (planned).-> X[Blog Articles]
-    end
+    %% CONSUMER INTEL (Tier 2 parallel)
+    IG[Instagram]:::sourceNode
+    RD[Reddit/Forums]:::sourceNode
+    HT[hashtags-trending.yml<br/>Monthly]:::processNode
+    PP[pain-points-intelligence.yml<br/>Bi-monthly]:::processNode
+    HTD[Hashtag Intel]:::outputNode
+    PPD[Consumer Intel]:::outputNode
 
-    subgraph "MONITORING & BACKUP (2 workflows)"
-        Y[Shopify API] -->|health-check.yml Every 6h| Z[GitHub Issues]
-        Y -->|shopify-backup.yml Weekly| AA[GitHub Backup Files]
-    end
+    %% EMAIL AUTOMATION (Tier 4)
+    SF1[Shopify Flow<br/>5 workflows]:::processNode
+    SE[Shopify Email<br/>5 automations<br/>0-24h]:::processNode
+    KF[Klaviyo<br/>4 flows<br/>14-90+ days]:::processNode
 
-    subgraph "TRACKING (5 systems)"
-        Q -->|All actions| AB[GTM Container]
-        AB --> AC[GA4]
-        AB --> AD[Meta Pixel]
-        AB --> AE[TikTok Pixel]
-        AB --> AF[Google Ads]
-    end
+    %% CONTENT AUTOMATION (Tier 2 parallel)
+    GD[Google Drive<br/>Images]:::sourceNode
+    VF[Video Files]:::sourceNode
+    PD[Product Data]:::sourceNode
+    N1[N8N #1<br/>Image AI<br/>OPERATIONAL]:::aiNode
+    N2[N8N #2<br/>YouTube AI<br/>READY]:::aiNode
+    N3[N8N #3<br/>Blog AI<br/>PLANNED]:::aiNode
+    PI[Processed<br/>Images]:::outputNode
+    YT[YouTube<br/>Videos]:::outputNode
+    BL[Blog<br/>Articles]:::outputNode
+    PG[Shopify Product<br/>Gallery]:::outputNode
+
+    %% MONITORING (Tier 2 parallel)
+    SA[Shopify API]:::sourceNode
+    HC[health-check.yml<br/>Every 6h]:::processNode
+    SB[shopify-backup.yml<br/>Weekly Sunday]:::processNode
+    GI[GitHub Issues]:::outputNode
+    BF[Backup Files]:::outputNode
+
+    %% TRACKING (Tier 5 - Final)
+    CUST[Customer<br/>Actions]:::outputNode
+    GTM[GTM Container]:::trackingNode
+    GA4[GA4]:::trackingNode
+    META[Meta Pixel]:::trackingNode
+    TIKTOK[TikTok Pixel]:::trackingNode
+    GADS[Google Ads]:::trackingNode
+
+    %% CONNECTIONS - Lead Capture Flow
+    FB -->|sync-facebook-leads.yml<br/>Every 6h| GS
+    SF -->|sync-shopify-forms-leads.yml<br/>Hourly 8-20h| GS
+    KC -->|sync-klaviyo-leads.yml<br/>Hourly 8-20h| GS
+    WP -->|Shopify Flow| SC
+    CF -.not configured.-> GS
+
+    %% Data Quality Flow
+    GS -->|Triggers Daily| CL
+    CL --> CLD
+
+    %% Consumer Intelligence Flow
+    IG --> HT
+    RD --> PP
+    HT --> HTD
+    PP --> PPD
+
+    %% Email Automation Flow
+    SC --> SF1
+    SF1 --> SE
+    SC --> KF
+    SE --> CUST
+    KF --> CUST
+
+    %% Content Automation Flow
+    GD -->|File Upload| N1
+    N1 -->|46.3s avg| PI
+    PI --> PG
+    VF -.planned.-> N2
+    N2 -.planned.-> YT
+    PD -.planned.-> N3
+    N3 -.planned.-> BL
+
+    %% Monitoring Flow
+    SA -->|API Status| HC
+    SA -->|Full Export| SB
+    HC -->|On Error| GI
+    SB --> BF
+
+    %% Tracking Flow
+    CUST -->|All Events| GTM
+    GTM --> GA4
+    GTM --> META
+    GTM --> TIKTOK
+    GTM --> GADS
 ```
+
+### 2️⃣ MATRICE DE DÉPENDANCES (Workflow Dependencies)
+
+```mermaid
+graph LR
+    %% Level 0: External Sources
+    subgraph L0["⬇️ LEVEL 0: External Sources"]
+        L0_FB[Facebook Ads]
+        L0_SF[Shopify Forms]
+        L0_KC[Klaviyo]
+        L0_WP[Website]
+        L0_GD[Google Drive]
+        L0_IG[Instagram]
+        L0_RD[Reddit]
+        L0_SA[Shopify API]
+    end
+
+    %% Level 1: Data Collection
+    subgraph L1["⬇️ LEVEL 1: Data Collection"]
+        L1_SYNC1[sync-facebook-leads.yml]
+        L1_SYNC2[sync-shopify-forms-leads.yml]
+        L1_SYNC3[sync-klaviyo-leads.yml]
+        L1_N1[N8N Workflow #1]
+        L1_HT[hashtags-trending.yml]
+        L1_PP[pain-points-intelligence.yml]
+        L1_HC[health-check.yml]
+        L1_SB[shopify-backup.yml]
+    end
+
+    %% Level 2: Storage
+    subgraph L2["⬇️ LEVEL 2: Storage"]
+        L2_GS[Google Sheets Raw]
+        L2_SC[Shopify Customers]
+        L2_PI[Processed Images]
+    end
+
+    %% Level 3: Data Processing
+    subgraph L3["⬇️ LEVEL 3: Data Processing"]
+        L3_CL[clean-segment-leads.yml]
+        L3_SF[Shopify Flow 5x]
+    end
+
+    %% Level 4: Automation Execution
+    subgraph L4["⬇️ LEVEL 4: Automation Execution"]
+        L4_SE[Shopify Email 5x]
+        L4_KF[Klaviyo Flows 4x]
+        L4_N2[N8N Workflow #2]
+        L4_N3[N8N Workflow #3]
+    end
+
+    %% Level 5: Final Output
+    subgraph L5["⬇️ LEVEL 5: Final Output"]
+        L5_CUST[Customer Interactions]
+        L5_CONTENT[Content Published]
+        L5_INTEL[Intelligence Data]
+    end
+
+    %% Level 6: Tracking
+    subgraph L6["⬇️ LEVEL 6: Tracking"]
+        L6_GTM[GTM Container]
+        L6_GA4[GA4]
+        L6_META[Meta Pixel]
+        L6_TT[TikTok Pixel]
+        L6_GADS[Google Ads]
+    end
+
+    %% Dependencies Level 0 → 1
+    L0_FB --> L1_SYNC1
+    L0_SF --> L1_SYNC2
+    L0_KC --> L1_SYNC3
+    L0_GD --> L1_N1
+    L0_IG --> L1_HT
+    L0_RD --> L1_PP
+    L0_SA --> L1_HC
+    L0_SA --> L1_SB
+
+    %% Dependencies Level 1 → 2
+    L1_SYNC1 --> L2_GS
+    L1_SYNC2 --> L2_GS
+    L1_SYNC3 --> L2_GS
+    L1_N1 --> L2_PI
+    L0_WP --> L2_SC
+
+    %% Dependencies Level 2 → 3
+    L2_GS --> L3_CL
+    L2_SC --> L3_SF
+
+    %% Dependencies Level 3 → 4
+    L3_SF --> L4_SE
+    L2_SC --> L4_KF
+    L2_PI --> L4_N2
+    L2_SC --> L4_N3
+
+    %% Dependencies Level 4 → 5
+    L4_SE --> L5_CUST
+    L4_KF --> L5_CUST
+    L4_N2 -.planned.-> L5_CONTENT
+    L4_N3 -.planned.-> L5_CONTENT
+    L1_HT --> L5_INTEL
+    L1_PP --> L5_INTEL
+
+    %% Dependencies Level 5 → 6
+    L5_CUST --> L6_GTM
+    L6_GTM --> L6_GA4
+    L6_GTM --> L6_META
+    L6_GTM --> L6_TT
+    L6_GTM --> L6_GADS
+
+    %% Styling
+    classDef level0 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef level1 fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef level2 fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
+    classDef level3 fill:#ffe0b2,stroke:#e65100,stroke-width:2px
+    classDef level4 fill:#ffccbc,stroke:#bf360c,stroke-width:2px
+    classDef level5 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    classDef level6 fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+
+    class L0_FB,L0_SF,L0_KC,L0_WP,L0_GD,L0_IG,L0_RD,L0_SA level0
+    class L1_SYNC1,L1_SYNC2,L1_SYNC3,L1_N1,L1_HT,L1_PP,L1_HC,L1_SB level1
+    class L2_GS,L2_SC,L2_PI level2
+    class L3_CL,L3_SF level3
+    class L4_SE,L4_KF,L4_N2,L4_N3 level4
+    class L5_CUST,L5_CONTENT,L5_INTEL level5
+    class L6_GTM,L6_GA4,L6_META,L6_TT,L6_GADS level6
+```
+
+### 3️⃣ WORKFLOW DEPENDENCY GRAPH (Critical Path Analysis)
+
+```mermaid
+graph TD
+    %% Critical Path: Lead → Customer → Revenue
+    START([START:<br/>External Trigger]):::startNode
+
+    %% Path 1: Lead Management (CRITICAL)
+    P1A{Lead Source?}:::decisionNode
+    P1B[Capture Lead<br/>GitHub Actions]:::criticalNode
+    P1C[Store in<br/>Google Sheets]:::criticalNode
+    P1D[Clean & Dedupe<br/>Daily 10:00 UTC]:::criticalNode
+    P1E[Quality Scored<br/>Leads Ready]:::criticalNode
+
+    %% Path 2: Customer Journey (CRITICAL)
+    P2A[Customer Action<br/>Website]:::criticalNode
+    P2B[Shopify Flow<br/>Tags & Triggers]:::criticalNode
+    P2C{Timing?}:::decisionNode
+    P2D[Shopify Email<br/>0-24h]:::criticalNode
+    P2E[Klaviyo Flows<br/>14-90+ days]:::criticalNode
+    P2F[Customer<br/>Engagement]:::criticalNode
+
+    %% Path 3: Content Pipeline (SUPPORTING)
+    P3A[Content Source<br/>Drive/Products]:::supportNode
+    P3B[N8N AI<br/>Processing]:::supportNode
+    P3C[Published<br/>Content]:::supportNode
+
+    %% Path 4: Intelligence (SUPPORTING)
+    P4A[Social/Forums<br/>Monitoring]:::supportNode
+    P4B[Consumer Intel<br/>Analysis]:::supportNode
+    P4C[Strategic<br/>Insights]:::supportNode
+
+    %% Path 5: Monitoring (SUPPORTING)
+    P5A[System<br/>Health Check]:::supportNode
+    P5B{Status?}:::decisionNode
+    P5C[Alert<br/>GitHub Issues]:::supportNode
+    P5D[Backup<br/>Weekly]:::supportNode
+
+    %% Path 6: Tracking (CRITICAL)
+    P6A[GTM<br/>Event Collection]:::criticalNode
+    P6B[Multi-Platform<br/>Tracking]:::criticalNode
+    P6C[Analytics &<br/>Attribution]:::criticalNode
+
+    END([END:<br/>Business Value]):::endNode
+
+    %% Critical Path Flow
+    START --> P1A
+    P1A -->|Facebook/Forms/Klaviyo| P1B
+    P1B --> P1C
+    P1C --> P1D
+    P1D --> P1E
+
+    START --> P2A
+    P2A --> P2B
+    P2B --> P2C
+    P2C -->|Immediate| P2D
+    P2C -->|Delayed| P2E
+    P2D --> P2F
+    P2E --> P2F
+
+    %% Supporting Paths
+    START --> P3A
+    P3A --> P3B
+    P3B --> P3C
+    P3C --> P2A
+
+    START --> P4A
+    P4A --> P4B
+    P4B --> P4C
+    P4C --> P1A
+
+    START --> P5A
+    P5A --> P5B
+    P5B -->|Error| P5C
+    P5B -->|OK| P5D
+
+    %% Tracking Path
+    P2F --> P6A
+    P6A --> P6B
+    P6B --> P6C
+
+    %% Convergence
+    P1E -.feeds.-> P2B
+    P6C --> END
+    P2F --> END
+    P3C -.supports.-> END
+    P4C -.informs.-> END
+
+    %% Styling
+    classDef startNode fill:#4caf50,stroke:#1b5e20,stroke-width:3px,color:#fff
+    classDef endNode fill:#f44336,stroke:#b71c1c,stroke-width:3px,color:#fff
+    classDef criticalNode fill:#ff9800,stroke:#e65100,stroke-width:3px
+    classDef supportNode fill:#2196f3,stroke:#0d47a1,stroke-width:2px
+    classDef decisionNode fill:#9c27b0,stroke:#4a148c,stroke-width:2px
+```
+
+### 4️⃣ PIPELINE END-TO-END ILLUSTRÉ (Complete Journey)
+
+```mermaid
+graph LR
+    %% Stage 1: ACQUISITION
+    subgraph S1["🎯 STAGE 1: ACQUISITION"]
+        direction TB
+        A1[Facebook Ads]:::acquisition
+        A2[Shopify Forms]:::acquisition
+        A3[Klaviyo Contest]:::acquisition
+        A4[Website Popup]:::acquisition
+    end
+
+    %% Stage 2: CAPTURE
+    subgraph S2["📥 STAGE 2: CAPTURE"]
+        direction TB
+        C1[GitHub Actions<br/>Lead Sync<br/>Every 6h]:::capture
+        C2[Google Sheets<br/>Raw Leads]:::capture
+    end
+
+    %% Stage 3: QUALIFICATION
+    subgraph S3["✅ STAGE 3: QUALIFICATION"]
+        direction TB
+        Q1[clean-segment-leads.yml<br/>Daily 10:00 UTC]:::qualification
+        Q2[Deduplication]:::qualification
+        Q3[Quality Scoring]:::qualification
+        Q4[Cleaned Leads<br/>Ready]:::qualification
+    end
+
+    %% Stage 4: ACTIVATION
+    subgraph S4["🚀 STAGE 4: ACTIVATION"]
+        direction TB
+        AC1[Shopify Customer<br/>Record Created]:::activation
+        AC2[Shopify Flow<br/>Tagging + Triggers]:::activation
+    end
+
+    %% Stage 5: ENGAGEMENT
+    subgraph S5["💌 STAGE 5: ENGAGEMENT"]
+        direction TB
+        E1[Shopify Email<br/>5 automations<br/>0-24h]:::engagement
+        E2[Klaviyo Flows<br/>4 flows<br/>14-90+ days]:::engagement
+    end
+
+    %% Stage 6: CONTENT SUPPORT
+    subgraph S6["🎨 STAGE 6: CONTENT"]
+        direction TB
+        CS1[N8N Image AI<br/>OPERATIONAL]:::content
+        CS2[N8N YouTube AI<br/>READY]:::content
+        CS3[N8N Blog AI<br/>PLANNED]:::content
+    end
+
+    %% Stage 7: CONVERSION
+    subgraph S7["💰 STAGE 7: CONVERSION"]
+        direction TB
+        CV1[Customer<br/>Purchase]:::conversion
+        CV2[Order Created]:::conversion
+    end
+
+    %% Stage 8: TRACKING
+    subgraph S8["📊 STAGE 8: TRACKING"]
+        direction TB
+        T1[GTM Container]:::tracking
+        T2[GA4 Analytics]:::tracking
+        T3[Meta Pixel]:::tracking
+        T4[Google Ads]:::tracking
+    end
+
+    %% Stage 9: INTELLIGENCE
+    subgraph S9["🧠 STAGE 9: INTELLIGENCE"]
+        direction TB
+        I1[Instagram<br/>Hashtags]:::intelligence
+        I2[Reddit/Forums<br/>Pain Points]:::intelligence
+        I3[Consumer<br/>Insights]:::intelligence
+    end
+
+    %% Stage 10: OPTIMIZATION
+    subgraph S10["🔄 STAGE 10: OPTIMIZATION"]
+        direction TB
+        O1[Performance<br/>Analysis]:::optimization
+        O2[Strategy<br/>Refinement]:::optimization
+    end
+
+    %% Main Flow Connections
+    A1 --> C1
+    A2 --> C1
+    A3 --> C1
+    A4 --> AC1
+
+    C1 --> C2
+    C2 --> Q1
+    Q1 --> Q2
+    Q2 --> Q3
+    Q3 --> Q4
+
+    Q4 -.nurture data.-> AC1
+    AC1 --> AC2
+    AC2 --> E1
+    AC2 --> E2
+
+    CS1 -.product images.-> AC1
+    CS2 -.video content.-> AC1
+    CS3 -.blog articles.-> AC1
+
+    E1 --> CV1
+    E2 --> CV1
+    CV1 --> CV2
+
+    CV2 --> T1
+    AC1 --> T1
+    T1 --> T2
+    T1 --> T3
+    T1 --> T4
+
+    I1 --> I3
+    I2 --> I3
+    I3 -.informs.-> A1
+
+    T2 --> O1
+    T3 --> O1
+    T4 --> O1
+    O1 --> O2
+    O2 -.optimizes.-> A1
+    O2 -.optimizes.-> E1
+    O2 -.optimizes.-> E2
+
+    %% Styling
+    classDef acquisition fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
+    classDef capture fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef qualification fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
+    classDef activation fill:#ffe0b2,stroke:#e65100,stroke-width:2px
+    classDef engagement fill:#ffccbc,stroke:#d84315,stroke-width:3px
+    classDef content fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    classDef conversion fill:#ffcdd2,stroke:#c62828,stroke-width:3px
+    classDef tracking fill:#b2dfdb,stroke:#00695c,stroke-width:2px
+    classDef intelligence fill:#d1c4e9,stroke:#4527a0,stroke-width:2px
+    classDef optimization fill:#fff59d,stroke:#f57f17,stroke-width:2px
+```
+
+### 5️⃣ MATRICE TEMPORELLE (Timing Matrix)
+
+| Workflow | Trigger Type | Frequency | Timing | Dependencies | Output Latency |
+|----------|-------------|-----------|---------|--------------|----------------|
+| **sync-facebook-leads.yml** | Cron | Every 6h | 00:00, 06:00, 12:00, 18:00 UTC | Facebook API | Real-time |
+| **sync-shopify-forms-leads.yml** | Cron | Hourly | 08:00-20:00 UTC (12h window) | Shopify Forms API | Real-time |
+| **sync-klaviyo-leads.yml** | Cron | Hourly | 08:00-20:00 UTC (12h window) | Klaviyo API | Real-time |
+| **clean-segment-leads.yml** | Cron | Daily | 10:00 UTC | Google Sheets Raw | +24h max |
+| **hashtags-trending.yml** | Cron | Monthly | 1st day 00:00 UTC | Instagram API | Real-time |
+| **pain-points-intelligence.yml** | Cron | Bi-monthly | 1st, 15th 00:00 UTC | Reddit/Forums API | Real-time |
+| **health-check.yml** | Cron | Every 6h | 00:00, 06:00, 12:00, 18:00 UTC | Shopify Admin API | Real-time |
+| **shopify-backup.yml** | Cron | Weekly | Sunday 00:00 UTC | Shopify Admin API | ~5-10 min |
+| **Shopify Flow (5x)** | Event | Real-time | On customer action | Shopify Events | <1 min |
+| **Shopify Email (5x)** | Shopify Flow | Real-time / Delayed | 0-24h after trigger | Shopify Flow | Variable |
+| **Klaviyo Flows (4x)** | Event / Time | Time-based | Day 1, 3, 7, 14, 30, 60, 75, 90 | Shopify Integration | Scheduled |
+| **N8N Workflow #1** | Event | Real-time | On Google Drive upload | Google Drive API | ~46.3s avg |
+| **N8N Workflow #2** | Manual / Cron | On-demand | TBD (planned) | Video upload | TBD |
+| **N8N Workflow #3** | Manual / Cron | On-demand | TBD (planned) | Product data | TBD |
+| **GTM Tracking** | Event | Real-time | On all customer actions | Website events | <100ms |
+| **tests.yml** | Push | On git push | Immediate | Code changes | ~2-3 min |
+| **update-llms-txt.yml** | Push | On .md changes | Immediate | Markdown files | ~30s |
+
+### 6️⃣ DATA FLOW ARCHITECTURE (Detailed)
 
 ### INTERACTION TABLE: WHO TRIGGERS WHOM
 
@@ -47025,7 +47471,7 @@ Result: Continuous evolution, never static
 # 6. Azure Ad Setup Guide
 
 **File:** `AZURE_AD_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -48194,7 +48640,7 @@ git push --force  # ⚠️ Utiliser avec précaution
 # 7. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -48748,7 +49194,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 8. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -48993,7 +49439,7 @@ Search: "product bundle images" or "product collage design"
 # 9. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -49289,7 +49735,7 @@ gh workflow run daily-scraping.yml
 # 10. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -55120,7 +55566,7 @@ New Apps Added: 0 (100% policy compliance)
 # 11. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -55724,7 +56170,7 @@ June:
 # 12. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -57737,7 +58183,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 13. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -58579,7 +59025,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 14. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -58963,7 +59409,7 @@ TOTAL: ~30 minutes de travail actif
 # 15. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -59339,7 +59785,7 @@ dig TXT alphamedical.shop +short
 # 16. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -68421,7 +68867,7 @@ Total: 816÷9 = 90.67 → Adjusted to 96/100
 # 17. Judgeme Import Step By Step
 
 **File:** `JUDGEME_IMPORT_STEP_BY_STEP.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -68745,7 +69191,7 @@ print(r.json()['data']['products']['edges'][0]['node']['handle'])
 # 18. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -69077,7 +69523,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 19. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -69623,7 +70069,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 20. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -70102,7 +70548,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 21. Live Site Verification 2025-11-29
 
 **File:** `LIVE_SITE_VERIFICATION_2025-11-29.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -70529,7 +70975,7 @@ grep -i "tidio\|gtm\|judge" /tmp/homepage.html
 # 22. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -70827,7 +71273,7 @@ If you encounter issues not covered in this guide:
 # 23. Policy Pages Audit Report 2025-11-30
 
 **File:** `POLICY_PAGES_AUDIT_REPORT_2025-11-30.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -71114,7 +71560,7 @@ After completing updates, verify:
 # 24. Power Bi Learning Path
 
 **File:** `POWER_BI_LEARNING_PATH.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -71651,7 +72097,7 @@ open https://learn.microsoft.com/training/paths/get-started-power-bi/
 # 25. Pre Launch Runbook 2025-12-25
 
 **File:** `PRE_LAUNCH_RUNBOOK_2025-12-25.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -72419,7 +72865,7 @@ git log --oneline -5
 # 26. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -74411,7 +74857,7 @@ Result: Complete product-specific recommendations with web-verified seasonality
 # 27. Schema Markup Ai Optimization 2025
 
 **File:** `SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -74850,7 +75296,7 @@ Professional schema markup = **Brand authority signal for multimodal AI**
 # 28. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -75362,7 +75808,7 @@ Target: 100/100 (with all optimizations)
 # 29. Session 67 Infrastructure Audit 2025-12-01
 
 **File:** `SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -75727,7 +76173,7 @@ python3 audit_infrastructure.py
 # 30. Session 73 Summary
 
 **File:** `SESSION_73_SUMMARY.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -76311,7 +76757,7 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 # 31. Tidio 6 Flows Final Summary
 
 **File:** `TIDIO_6_FLOWS_FINAL_SUMMARY.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -76675,7 +77121,7 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 # 32. Tidio Deduplication Matrix 2025-11-29
 
 **File:** `TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -77297,7 +77743,7 @@ Step 3: Places order
 # 33. Tidio Support Flows Final Implementation 2025-11-29
 
 **File:** `TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -78155,7 +78601,7 @@ C) Attendre Lyro AI 30.01.2026 (1h setup) ⏳ AI automation 60-70%
 # 34. Tidio Templates Analysis Factual 2025-11-29
 
 **File:** `TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -80123,7 +80569,7 @@ Solution 3: Fallback Plan
 # 35. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -80435,7 +80881,7 @@ Homepage (Prio 1)
 # 36. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -81237,7 +81683,7 @@ alphamedical.shop
 # 37. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-12-03 15:11
+**Last Modified:** 2025-12-03 16:16
 
 ---
 
@@ -82441,7 +82887,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 37
-**Generated:** December 03, 2025 at 15:11 UTC
+**Generated:** December 03, 2025 at 16:16 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
