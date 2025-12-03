@@ -58,7 +58,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Email Marketing & Automation
 
 - [ABANDONED_CART_RECOVERY_CONFIG](archive/implementation-guides/ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
-- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): 1. Input Folder ID (Google Drive) → File Created + File Updated trigger nodes 2. Output Folder ID (Google Drive) → Workflow Configuration node
+- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_COMPLETE_WORKFLOWS](archive/miscellaneous/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_SETUP_COMPLETE_GUIDE](archive/implementation-guides/AUTOMATION_SETUP_COMPLETE_GUIDE.md): Project documentation
 - [CHAT_INSTANT_ANSWERS](archive/setup-completed/CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
