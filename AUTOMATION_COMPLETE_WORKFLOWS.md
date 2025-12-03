@@ -6567,3 +6567,61 @@ Result: Continuous evolution, never static
 **Strategic Position:** ✅ Tier 3 Advanced Mastery, self-hosted AI infrastructure
 **Next:** Continue with other priorities (user actions or optimization tasks)
 
+---
+
+## SESSION 75 UPDATE - SHOPIFY FLOW API LIMITATION DISCOVERY (2025-12-03)
+
+### Critical Technical Discovery
+
+**Finding:** Shopify Flow has NO public API (GraphQL or REST) for workflow configuration
+
+**Verification Method:**
+- Empirical testing via Chrome DevTools MCP
+- Shopify documentation review
+- Attempted programmatic access to workflow editor
+
+**Impact on Automation Strategy:**
+
+1. **Workflow Modifications:**
+   - CANNOT be scripted or automated
+   - MUST be done manually via Shopify Admin UI
+   - NO API endpoints exist for:
+     - Creating workflows
+     - Modifying workflow logic
+     - Adding/removing actions
+     - Changing triggers or conditions
+
+2. **Documentation Workaround:**
+   - Created comprehensive manual guide: `SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md` (200 lines)
+   - Includes step-by-step instructions for store owner
+   - Provides verification scenarios and testing procedures
+   - Documents technical limitations and constraints
+
+3. **Loyalty Tier Tagging Issue:**
+   - Problem: Workflow "New Loyalty Tier Tagging (Automatic)" accumulates tags instead of replacing
+   - Current behavior: Customer upgrade Bronze → Silver → Gold = customer has ALL 3 tags
+   - Impact: Email segmentation broken (receives Bronze, Silver, AND Gold emails)
+   - Solution: Manual UI modification to add "Remove customer tag" actions before "Add customer tag"
+   - Estimated time: 10 minutes for store owner
+
+**Strategic Implications:**
+
+- ✅ Shopify Flow workflows remain 100% operational (5/5 ACTIVE)
+- ⚠️ Future workflow modifications require manual UI changes (cannot be automated via CI/CD)
+- ✅ Comprehensive documentation bridges the automation gap
+- ✅ Zero regression: No changes made to existing workflows
+
+**Complementarity Matrix Status:**
+- Shopify Flow: 5/5 workflows ACTIVE (UI-only configuration)
+- Shopify Email: 4/4 automations ACTIVE
+- Klaviyo: 4/4 flows LIVE
+- **Result:** NO duplication, NO redundancy, complementarity MAINTAINED
+
+---
+
+**Session 75 Technical Discovery:** Shopify Flow API limitation documented
+**Automation Score:** 86/100 (maintained - no changes to active workflows)
+**Manual Actions Required:** 1 (Loyalty tier tagging fix - 10 min)
+**Documentation Created:** Comprehensive manual guide (200 lines)
+**Impact:** MEDIUM priority (email segmentation quality, not critical for pre-launch)
+
