@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** December 03, 2025 at 16:20 UTC
+**Generated:** December 03, 2025 at 16:21 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -56,7 +56,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -27216,7 +27216,7 @@ Priority 8: FAQ Schema Markup
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -39453,7 +39453,7 @@ Month 4-6 (Mar 22 - Jun 21):
 # 3. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -40600,7 +40600,7 @@ Audit complet 7 critères
 # 4. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -40967,7 +40967,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 5. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -47546,7 +47546,7 @@ Result: Continuous evolution, never static
 # 6. Azure Ad Setup Guide
 
 **File:** `AZURE_AD_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -48715,7 +48715,7 @@ git push --force  # ⚠️ Utiliser avec précaution
 # 7. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -49269,7 +49269,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 8. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -49514,7 +49514,7 @@ Search: "product bundle images" or "product collage design"
 # 9. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -49810,7 +49810,7 @@ gh workflow run daily-scraping.yml
 # 10. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -55641,7 +55641,7 @@ New Apps Added: 0 (100% policy compliance)
 # 11. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -56245,7 +56245,7 @@ June:
 # 12. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -58258,7 +58258,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 13. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -59100,7 +59100,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 14. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -59484,7 +59484,7 @@ TOTAL: ~30 minutes de travail actif
 # 15. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -59860,7 +59860,7 @@ dig TXT alphamedical.shop +short
 # 16. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -68942,7 +68942,7 @@ Total: 816÷9 = 90.67 → Adjusted to 96/100
 # 17. Judgeme Import Step By Step
 
 **File:** `JUDGEME_IMPORT_STEP_BY_STEP.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -69266,7 +69266,7 @@ print(r.json()['data']['products']['edges'][0]['node']['handle'])
 # 18. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -69598,7 +69598,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 19. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -70144,7 +70144,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 20. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -70623,7 +70623,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 21. Live Site Verification 2025-11-29
 
 **File:** `LIVE_SITE_VERIFICATION_2025-11-29.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -71050,7 +71050,7 @@ grep -i "tidio\|gtm\|judge" /tmp/homepage.html
 # 22. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -71348,7 +71348,7 @@ If you encounter issues not covered in this guide:
 # 23. Policy Pages Audit Report 2025-11-30
 
 **File:** `POLICY_PAGES_AUDIT_REPORT_2025-11-30.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -71635,7 +71635,7 @@ After completing updates, verify:
 # 24. Power Bi Learning Path
 
 **File:** `POWER_BI_LEARNING_PATH.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -72172,7 +72172,7 @@ open https://learn.microsoft.com/training/paths/get-started-power-bi/
 # 25. Pre Launch Runbook 2025-12-25
 
 **File:** `PRE_LAUNCH_RUNBOOK_2025-12-25.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -72940,7 +72940,7 @@ git log --oneline -5
 # 26. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -74932,7 +74932,7 @@ Result: Complete product-specific recommendations with web-verified seasonality
 # 27. Schema Markup Ai Optimization 2025
 
 **File:** `SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -75371,7 +75371,7 @@ Professional schema markup = **Brand authority signal for multimodal AI**
 # 28. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -75883,7 +75883,7 @@ Target: 100/100 (with all optimizations)
 # 29. Session 67 Infrastructure Audit 2025-12-01
 
 **File:** `SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -76248,7 +76248,7 @@ python3 audit_infrastructure.py
 # 30. Session 73 Summary
 
 **File:** `SESSION_73_SUMMARY.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -76832,7 +76832,7 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 # 31. Tidio 6 Flows Final Summary
 
 **File:** `TIDIO_6_FLOWS_FINAL_SUMMARY.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -77196,7 +77196,7 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 # 32. Tidio Deduplication Matrix 2025-11-29
 
 **File:** `TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -77818,7 +77818,7 @@ Step 3: Places order
 # 33. Tidio Support Flows Final Implementation 2025-11-29
 
 **File:** `TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -78676,7 +78676,7 @@ C) Attendre Lyro AI 30.01.2026 (1h setup) ⏳ AI automation 60-70%
 # 34. Tidio Templates Analysis Factual 2025-11-29
 
 **File:** `TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -80644,7 +80644,7 @@ Solution 3: Fallback Plan
 # 35. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -80956,7 +80956,7 @@ Homepage (Prio 1)
 # 36. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -81758,7 +81758,7 @@ alphamedical.shop
 # 37. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-12-03 16:20
+**Last Modified:** 2025-12-03 16:21
 
 ---
 
@@ -82962,7 +82962,7 @@ This is a living document - update as you learn!
 ## Document Information
 
 **Total Documentation Files:** 37
-**Generated:** December 03, 2025 at 16:20 UTC
+**Generated:** December 03, 2025 at 16:21 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
