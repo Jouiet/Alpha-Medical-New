@@ -51,7 +51,12 @@
 - `INFRASTRUCTURE_AUDIT_CHECKLIST.md` (2,184 lines) - Complete system state
 
 **Key References:**
-- `AUTOMATION_COMPLETE_WORKFLOWS.md` (6,049 lines) - Automation details + complementarity matrix
+- `AUTOMATION_COMPLETE_WORKFLOWS.md` (6,569 lines) - Complete automation documentation
+  - 35 workflows inventory (6 categories)
+  - 5 visual Mermaid diagrams (organigramme, dependencies, critical path, pipeline, timing)
+  - Complementarity matrix (21 data flows)
+  - AI integration philosophy + industry benchmarks 2025
+  - Table des matières (CURRENT vs HISTORICAL structure)
 - `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md` (303KB) - SEO/Marketing strategy
 - `SEO_MARKETING_FORENSIC_ANALYSIS.md` (819KB) - SEO audit
 
