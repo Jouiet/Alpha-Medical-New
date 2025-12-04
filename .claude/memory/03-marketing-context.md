@@ -368,11 +368,31 @@ Budget minimum créatives: $500-1,000 (vidéos UGC, photos pro)
 
 ## 📱 SOCIAL MEDIA STRATEGY
 
-### Planned Channels (NOT Active)
-- Instagram: Content strategy ready
-- Facebook: Page setup planned
-- TikTok: Content strategy ready
-- YouTube: Long-form content planned
+### Social Media Accounts
+
+**TikTok:**
+- Handle: @user8466880036834
+- Status: Account exists, content NOT active
+- Strategy: Content strategy ready
+- Note: Ads EXCLUDED 2026 (budget 91% sous minimum $20/jour)
+
+**Instagram:**
+- Handle: TBD (not provided)
+- Status: Account setup planned, content strategy ready
+
+**Facebook:**
+- Handle: TBD (not provided)
+- Status: Page setup planned
+
+**YouTube:**
+- Handle: TBD (not provided)
+- Status: Long-form content planned
+
+### Planned Channels Status
+- TikTok: ✅ Account created (@user8466880036834), content NOT active
+- Instagram: ⏳ Content strategy ready, account TBD
+- Facebook: ⏳ Page setup planned
+- YouTube: ⏳ Long-form content planned
 
 ### Content Calendar
 - Location: `CONTENT_CALENDAR_Q1_2026.md`
