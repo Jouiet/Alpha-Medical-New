@@ -77,6 +77,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [KLAVIYO_WINBACK15_CORRECT_SETTINGS](archive/setup-completed/KLAVIYO_WINBACK15_CORRECT_SETTINGS.md): ❌ Applies to: Specific collections (empty - NO collections selected) ❌ Maximum discount uses: No usage limits
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](archive/miscellaneous/LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
 - [LOYALTY_AUTOMATION_PROGRESS_REPORT](archive/bundles-pricing/LOYALTY_AUTOMATION_PROGRESS_REPORT.md): ✅ Trigger: Order paid │ ✅ Condition 1: IF customer.amountSpent.amount >= 2500 │ ✅ TRUE (Platinum tier):
+- [SESSION_76_AUTOMATION_COMPLETE_SUMMARY](SESSION_76_AUTOMATION_COMPLETE_SUMMARY.md): Project documentation
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](archive/implementation-guides/SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 - [SHOPIFY_EMAIL_MANUAL_ACTIVATION](archive/implementation-guides/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 - [SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP](archive/setup-completed/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md): 1. Shopify Admin → Marketing → Automations 2. Cliquer "Welcome new subscribers with a discount email" (Status: Inactive)
