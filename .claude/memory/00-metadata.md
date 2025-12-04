@@ -84,6 +84,12 @@
 - Theme: Alpha-Medical-New/main (ID: 140069830733)
 - Apps: 7 installed (Shopify Email, Klaviyo, Flow, Loox, DSers, Translate & Adapt)
 
+**Payment Gateway:**
+- Stripe: ⏳ NOT YET CONNECTED (Available: 2025-12-15, 11 days from now)
+- Status: Awaiting Stripe service full operational launch
+- Timeline: Stripe operational BEFORE site launch (2025-12-25)
+- PayPal: ❌ DISABLED (user requirement)
+
 **Tracking Stack:**
 - GTM: GTM-WFPH2KZP (managing all pixels)
 - GA4: Via GTM tags ✅
@@ -114,5 +120,5 @@
 
 ---
 
-**Last Updated:** 2025-12-03 Session 74
+**Last Updated:** 2025-12-04 Session 75 Continuation (Stripe status confirmed)
 **Token Cost:** ~400 tokens (Level 1 - always loaded)

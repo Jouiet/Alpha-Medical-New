@@ -6057,3 +6057,53 @@ Trigger: Order paid
 **Documentation Updates:** 2 files (COMPREHENSIVE_FORENSIC_AUDIT, INFRASTRUCTURE_AUDIT_CHECKLIST)
 **Policy Compliance:** ✅ NO new apps, complementarity maintained, zero duplication
 
+---
+
+### PAYMENT GATEWAY STATUS UPDATE (2025-12-04)
+
+**STRIPE - FACTUAL STATUS CONFIRMATION:**
+
+User confirmed: Stripe is NOT yet connected, awaiting full operational launch on **2025-12-15**
+
+**Timeline Analysis:**
+- Current date: 2025-12-04
+- Stripe availability: 2025-12-15 (11 days from now)
+- Site launch: 2025-12-25 (Christmas Day)
+- Window for payment testing: 10 days (2025-12-15 to 2025-12-25)
+
+**Impact on Pre-Launch Testing:**
+- ⏳ Checkout flow testing: DEFERRED until 2025-12-15
+- ⏳ Test transactions: Cannot be performed until Stripe connection
+- ⏳ Payment gateway integration: Scheduled 2025-12-15
+- ✅ Launch timeline: COMPATIBLE (Stripe operational 10 days before launch)
+
+**Payment Methods Status:**
+```yaml
+Stripe:
+  Status: ⏳ NOT CONNECTED
+  Available: 2025-12-15
+  Ready for launch: ✅ YES (10 days before launch date)
+
+Apple Pay:
+  Status: ✅ READY
+  Integration: Shopify native
+
+Google Pay:
+  Status: ✅ READY
+  Integration: Shopify native
+
+Shop Pay:
+  Status: ✅ READY
+  Integration: Shopify native
+
+PayPal:
+  Status: ❌ DISABLED
+  Reason: User requirement (PAS de PayPal)
+```
+
+**Documentation Updated:**
+- `.claude/memory/00-metadata.md` - Payment Gateway section added (2025-12-04)
+- `INFRASTRUCTURE_AUDIT_CHECKLIST.md` - Pre-launch checklist status corrected (lines 4371, 5619)
+- `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md` - Payment gateway timeline documented
+- Status: 100% factual, zero assumptions, user-confirmed information
+
