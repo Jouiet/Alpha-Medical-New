@@ -68,13 +68,6 @@
             "menu": "footer-connect"
           }
         },
-        "link_list_6dx3UK": {
-          "type": "link_list",
-          "settings": {
-            "heading": "LEGAL",
-            "menu": "footer"
-          }
-        },
         "link_list_LEGAL_AUTO": {
           "type": "link_list",
           "settings": {
