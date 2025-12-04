@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** December 04, 2025 at 13:20 UTC
+**Generated:** December 04, 2025 at 13:31 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -24,33 +24,34 @@
 11. [Comprehensive Forensic Audit 2025-11-27](#comprehensive_forensic_audit_2025-11-27)
 12. [Content Calendar Q1 2026](#content_calendar_q1_2026)
 13. [Creatify Prompts Alpha Medical](#creatify_prompts_alpha_medical)
-14. [Flywheel Optimization Blueprint 2025](#flywheel_optimization_blueprint_2025)
-15. [Get Conversion Id Steps](#get_conversion_id_steps)
-16. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
-17. [Infrastructure Audit Checklist](#infrastructure_audit_checklist)
-18. [Judgeme Import Step By Step](#judgeme_import_step_by_step)
-19. [Klaviyo Flows Deployed Via Api](#klaviyo_flows_deployed_via_api)
-20. [Klaviyo Shopify Complementarity Matrix Factual](#klaviyo_shopify_complementarity_matrix_factual)
-21. [Klaviyo Templates Professional Upgrade](#klaviyo_templates_professional_upgrade)
-22. [Live Site Verification 2025-11-29](#live_site_verification_2025-11-29)
-23. [Paypal Deactivation Guide](#paypal_deactivation_guide)
-24. [Policy Pages Audit Report 2025-11-30](#policy_pages_audit_report_2025-11-30)
-25. [Power Bi Learning Path](#power_bi_learning_path)
-26. [Pre Launch Execution Checklist 2025-12-03](#pre_launch_execution_checklist_2025-12-03)
-27. [Pre Launch Runbook 2025-12-25](#pre_launch_runbook_2025-12-25)
-28. [Product Catalog Forensic Analysis Ads Strategy 2026](#product_catalog_forensic_analysis_ads_strategy_2026)
-29. [Schema Markup Ai Optimization 2025](#schema_markup_ai_optimization_2025)
-30. [Session 65 Factual Summary 2025-11-28](#session_65_factual_summary_2025-11-28)
-31. [Session 67 Infrastructure Audit 2025-12-01](#session_67_infrastructure_audit_2025-12-01)
-32. [Session 73 Summary](#session_73_summary)
-33. [Shopify Flow Loyalty Tier Tagging Manual Modification](#shopify_flow_loyalty_tier_tagging_manual_modification)
-34. [Tidio 6 Flows Final Summary](#tidio_6_flows_final_summary)
-35. [Tidio Deduplication Matrix 2025-11-29](#tidio_deduplication_matrix_2025-11-29)
-36. [Tidio Support Flows Final Implementation 2025-11-29](#tidio_support_flows_final_implementation_2025-11-29)
-37. [Tidio Templates Analysis Factual 2025-11-29](#tidio_templates_analysis_factual_2025-11-29)
-38. [Top 10 Urls To Index](#top_10_urls_to_index)
-39. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
-40. [Video Ads Creation Playbook](#video_ads_creation_playbook)
+14. [Etapes Manuelles Prioritaires](#etapes_manuelles_prioritaires)
+15. [Flywheel Optimization Blueprint 2025](#flywheel_optimization_blueprint_2025)
+16. [Get Conversion Id Steps](#get_conversion_id_steps)
+17. [Hostinger Dns Gsc Setup Guide](#hostinger_dns_gsc_setup_guide)
+18. [Infrastructure Audit Checklist](#infrastructure_audit_checklist)
+19. [Judgeme Import Step By Step](#judgeme_import_step_by_step)
+20. [Klaviyo Flows Deployed Via Api](#klaviyo_flows_deployed_via_api)
+21. [Klaviyo Shopify Complementarity Matrix Factual](#klaviyo_shopify_complementarity_matrix_factual)
+22. [Klaviyo Templates Professional Upgrade](#klaviyo_templates_professional_upgrade)
+23. [Live Site Verification 2025-11-29](#live_site_verification_2025-11-29)
+24. [Paypal Deactivation Guide](#paypal_deactivation_guide)
+25. [Policy Pages Audit Report 2025-11-30](#policy_pages_audit_report_2025-11-30)
+26. [Power Bi Learning Path](#power_bi_learning_path)
+27. [Pre Launch Execution Checklist 2025-12-03](#pre_launch_execution_checklist_2025-12-03)
+28. [Pre Launch Runbook 2025-12-25](#pre_launch_runbook_2025-12-25)
+29. [Product Catalog Forensic Analysis Ads Strategy 2026](#product_catalog_forensic_analysis_ads_strategy_2026)
+30. [Schema Markup Ai Optimization 2025](#schema_markup_ai_optimization_2025)
+31. [Session 65 Factual Summary 2025-11-28](#session_65_factual_summary_2025-11-28)
+32. [Session 67 Infrastructure Audit 2025-12-01](#session_67_infrastructure_audit_2025-12-01)
+33. [Session 73 Summary](#session_73_summary)
+34. [Shopify Flow Loyalty Tier Tagging Manual Modification](#shopify_flow_loyalty_tier_tagging_manual_modification)
+35. [Tidio 6 Flows Final Summary](#tidio_6_flows_final_summary)
+36. [Tidio Deduplication Matrix 2025-11-29](#tidio_deduplication_matrix_2025-11-29)
+37. [Tidio Support Flows Final Implementation 2025-11-29](#tidio_support_flows_final_implementation_2025-11-29)
+38. [Tidio Templates Analysis Factual 2025-11-29](#tidio_templates_analysis_factual_2025-11-29)
+39. [Top 10 Urls To Index](#top_10_urls_to_index)
+40. [Ugc Video Prompts Grok Imagine](#ugc_video_prompts_grok_imagine)
+41. [Video Ads Creation Playbook](#video_ads_creation_playbook)
 
 ---
 
@@ -59,7 +60,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -27219,7 +27220,7 @@ Priority 8: FAQ Schema Markup
 # 2. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -39456,7 +39457,7 @@ Month 4-6 (Mar 22 - Jun 21):
 # 3. Alpha Medical Brand Guidelines
 
 **File:** `ALPHA_MEDICAL_BRAND_GUIDELINES.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -40504,7 +40505,7 @@ THEME_ID=140069830733
 # 4. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -41651,7 +41652,7 @@ Audit complet 7 critères
 # 5. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -42018,7 +42019,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 6. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -48816,7 +48817,7 @@ CURRENT SCORE (Session 75 Continuation):
 # 7. Azure Ad Setup Guide
 
 **File:** `AZURE_AD_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -49985,7 +49986,7 @@ git push --force  # ⚠️ Utiliser avec précaution
 # 8. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -50539,7 +50540,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 9. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -50784,7 +50785,7 @@ Search: "product bundle images" or "product collage design"
 # 10. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -51097,7 +51098,7 @@ gh workflow run daily-scraping.yml
 # 11. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -57216,7 +57217,7 @@ PayPal:
 # 12. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -57820,7 +57821,7 @@ June:
 # 13. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -59830,10 +59831,860 @@ Ce document est un living document - à mettre à jour après testing phase avec
 ---
 
 
-# 14. Flywheel Optimization Blueprint 2025
+# 14. Etapes Manuelles Prioritaires
+
+**File:** `ETAPES_MANUELLES_PRIORITAIRES.md`
+**Last Modified:** 2025-12-04 13:31
+
+---
+
+# ÉTAPES MANUELLES À COMPLÉTER - ALPHA MEDICAL
+**Date:** 2025-12-04
+**Durée Totale:** 6h 55min (sur 11 jours disponibles)
+**Stripe Disponible:** 2025-12-15 (dans 11 jours)
+
+---
+
+## 🎯 PRIORITÉ 1: LEGAL COMPLIANCE (1h 55min) - CRITIQUE
+
+### ☐ TÂCHE #6: Terms Age Restriction (30 min)
+
+**URL:** https://admin.shopify.com/store/azffej-as
+
+**ÉTAPES:**
+1. Login Shopify Admin
+2. Cliquer: **Settings** (bas gauche)
+3. Cliquer: **Legal**
+4. Cliquer: **Terms of Service**
+5. Scroll jusqu'à "Acceptance of Terms"
+6. **APRÈS cette section**, ajouter:
+
+```markdown
+## Eligibility
+
+You must be at least 18 years of age to use this website and purchase products. By using this site, you represent and warrant that you are at least 18 years old. If you are under 18, you may only use this site with the involvement of a parent or guardian.
+```
+
+7. Cliquer: **Save** (haut droite)
+8. Attendre: "Changes saved"
+
+**✅ VÉRIFICATION:**
+- Ouvrir: https://www.alphamedical.shop/policies/terms-of-service
+- Ctrl+F (Cmd+F): Chercher "18 years"
+- ✅ Si visible → DONE
+- ❌ Si absent → Répéter étapes
+
+**Status:** ☐ TODO
+
+---
+
+### ☐ TÂCHE #1: Footer Policy Links (10 min)
+
+**URL:** https://admin.shopify.com/store/azffej-as
+
+**ÉTAPES:**
+1. Login Shopify Admin
+2. Cliquer: **Online Store** (menu gauche)
+3. Cliquer: **Navigation**
+4. Trouver: **"Footer menu"** dans la liste
+5. Cliquer sur "Footer menu"
+
+**Ajouter 5 menu items (dans cet ordre):**
+
+**Item 1:**
+- Cliquer: "Add menu item"
+- Name: `Privacy Policy`
+- Link: `/policies/privacy-policy`
+- Cliquer: "Add"
+
+**Item 2:**
+- Cliquer: "Add menu item"
+- Name: `Terms of Service`
+- Link: `/policies/terms-of-service`
+- Cliquer: "Add"
+
+**Item 3:**
+- Cliquer: "Add menu item"
+- Name: `Refund Policy`
+- Link: `/policies/refund-policy`
+- Cliquer: "Add"
+
+**Item 4:**
+- Cliquer: "Add menu item"
+- Name: `Shipping Policy`
+- Link: `/pages/shipping-delivery`
+- Cliquer: "Add"
+
+**Item 5:**
+- Cliquer: "Add menu item"
+- Name: `Accessibility`
+- Link: `/pages/accessibility`
+- Cliquer: "Add"
+
+6. Cliquer: **"Save menu"** (haut droite)
+
+**✅ VÉRIFICATION:**
+- Ouvrir: https://www.alphamedical.shop/
+- Scroll vers le bas (footer)
+- Vérifier: 5 liens visibles et cliquables
+- Tester: Cliquer chaque lien → page s'ouvre
+
+**Status:** ☐ TODO
+
+---
+
+### ☐ TÂCHE #2: Accessibility Statement Page (15 min)
+
+**URL:** https://admin.shopify.com/store/azffej-as
+
+**ÉTAPES:**
+1. Login Shopify Admin
+2. Cliquer: **Online Store** → **Pages**
+3. Cliquer: **"Add page"** (haut droite)
+
+4. **Title:**
+```
+Accessibility Statement
+```
+
+5. **Content:** (copier-coller intégralement)
+```markdown
+# Accessibility Statement
+
+Alpha Medical Care is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+
+## Conformance Status
+We are committed to WCAG 2.1 Level AA conformance.
+
+## Features
+- Keyboard navigation support
+- Screen reader compatibility
+- Alt text for all images
+- Clear heading structure
+- Sufficient color contrast
+
+## Feedback
+If you experience any difficulty accessing our site, please contact us:
+- Email: accessibility@alphamedical.shop
+- Phone: 1-888-XXX-XXXX (TBD)
+
+Last updated: December 2025
+```
+
+6. **Expand:** "Search engine listing preview" (bas de page)
+7. **Vérifier URL handle:** Devrait être `accessibility`
+8. **Visibility:** Sélectionner "Visible"
+9. Cliquer: **"Save"** (haut droite)
+
+**✅ VÉRIFICATION:**
+- Ouvrir: https://www.alphamedical.shop/pages/accessibility
+- Vérifier page s'affiche correctement
+- ✅ Si page loads → DONE
+
+**Status:** ☐ TODO
+
+---
+
+### ☐ TÂCHE #3: Cookie Consent Banner - CookieYes (1h)
+
+**RECOMMANDÉ:** Option CookieYes (gratuit, 1h vs 4h custom)
+
+#### PARTIE A: Configuration CookieYes (30 min)
+
+**ÉTAPE 1: Créer Compte**
+1. Ouvrir: https://www.cookieyes.com/
+2. Cliquer: "Get Started Free" ou "Sign Up"
+3. Remplir:
+   - Email: [votre email]
+   - Password: [créer mot de passe]
+   - Accepter Terms
+4. Cliquer: "Create Account"
+5. **Vérifier email:** Ouvrir email confirmation, cliquer lien
+
+**ÉTAPE 2: Ajouter Website**
+1. Dans Dashboard, cliquer: "Add Website"
+2. Remplir:
+   - Website URL: `https://www.alphamedical.shop`
+   - Website Name: `Alpha Medical`
+   - Language: `English`
+   - Region: `United States`
+3. Cliquer: "Add Website"
+
+**ÉTAPE 3: Configurer Categories**
+
+**Necessary (vérifier déjà configuré):**
+- Shopify session cookies
+- Cart cookies
+- Security cookies
+
+**Analytics (ajouter):**
+- Cliquer: "Analytics" category
+- Ajouter:
+  - Google Analytics (GA4)
+  - Google Tag Manager (GTM)
+- Durée: 14-26 months
+- Save
+
+**Advertisement (ajouter):**
+- Cliquer: "Advertisement" category
+- Ajouter:
+  - Meta Pixel (Facebook)
+  - TikTok Pixel
+  - Google Ads
+- Durée: up to 24 months
+- Save
+
+**ÉTAPE 4: Customize Banner (OPTIONNEL)**
+- Position: Bottom
+- Colors: #4770db (bleu Alpha Medical)
+- Buttons:
+  - Accept: "Accept All"
+  - Reject: "Reject All"
+  - Settings: "Cookie Settings"
+- Save Changes
+
+**ÉTAPE 5: Copier Script**
+1. Dans Dashboard: "Installation" ou "Get Code"
+2. **COPIER ce script complet:**
+```html
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/YOUR_UNIQUE_ID/script.js"></script>
+```
+3. **NOTER L'ID:** YOUR_UNIQUE_ID (exemple: abc123xyz)
+
+#### PARTIE B: Installation Shopify (30 min)
+
+**ÉTAPE 1: Accéder Code**
+1. Shopify Admin: https://admin.shopify.com/store/azffej-as
+2. **Online Store** → **Themes**
+3. Cliquer: **"..."** (trois points) sur thème actif
+4. Cliquer: **"Edit code"**
+
+**ÉTAPE 2: Ouvrir theme.liquid**
+1. Sidebar gauche: Expand **"Layout"**
+2. Cliquer: **`theme.liquid`**
+3. Fichier s'ouvre dans éditeur
+
+**ÉTAPE 3: Trouver </head>**
+1. Utiliser: Ctrl+F (Cmd+F sur Mac)
+2. Chercher: `</head>`
+3. Balise trouvée (ligne 100-200 environ)
+
+**ÉTAPE 4: Insérer Script**
+1. **JUSTE AVANT** la ligne `</head>`, ajouter:
+```liquid
+<!-- CookieYes GDPR Banner -->
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/YOUR_UNIQUE_ID/script.js"></script>
+```
+
+2. **REMPLACER:** `YOUR_UNIQUE_ID` par l'ID réel copié de CookieYes
+
+**Exemple:**
+```liquid
+{{ content_for_header }}
+
+<!-- CookieYes GDPR Banner -->
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/abc123xyz/script.js"></script>
+
+</head>
+```
+
+3. Cliquer: **"Save"** (haut droite)
+4. Attendre: "File saved"
+
+**✅ VÉRIFICATION (5 TESTS OBLIGATOIRES):**
+
+**TEST 1: Banner Appears**
+- Mode Incognito: Ctrl+Shift+N (Chrome)
+- Ouvrir: https://www.alphamedical.shop/
+- ✅ Banner cookie visible avec boutons
+
+**TEST 2: Accept Works**
+- Cliquer: "Accept All"
+- ✅ Banner disparaît
+- ✅ Page normale
+
+**TEST 3: Reject Works**
+- Clear cookies: DevTools → Application → Cookies → Clear
+- Reload page
+- Cliquer: "Reject All"
+- ✅ Banner disparaît
+
+**TEST 4: Settings Works**
+- Clear cookies, reload
+- Cliquer: "Cookie Settings"
+- ✅ Modal s'ouvre avec toggles
+- ✅ On/off fonctionne
+
+**TEST 5: Mobile Responsive**
+- DevTools → Toggle device (Ctrl+Shift+M)
+- iPhone mode
+- ✅ Banner responsive
+
+**Status:** ☐ TODO
+
+---
+
+## 🎯 PRIORITÉ 2: ANALYTICS VALIDATION (2h) - HIGH
+
+### ☐ TÂCHE #17: Data Layer Validation (1h)
+
+**Prérequis:** Chrome Browser + DevTools
+
+#### TEST 1: Homepage (10 min)
+
+**ÉTAPES:**
+1. Ouvrir: https://www.alphamedical.shop/
+2. **F12** (ou Cmd+Option+I sur Mac) → DevTools
+3. Aller: **Console** tab
+4. Taper: `dataLayer`
+5. Press: **Enter**
+
+**✅ VÉRIFICATION:**
+```javascript
+// ATTENDU: Array avec événements
+▼ Array(19) [...]
+  0: {gtm.start: ..., event: "gtm.js"}
+  1: {event: "gtm.dom"}
+  2: {event: "page_view", ...}
+```
+
+**Checklist:**
+- ☐ dataLayer existe (pas "undefined")
+- ☐ dataLayer est un Array
+- ☐ dataLayer.length > 0
+- ☐ Event "page_view" présent
+
+6. **Screenshot:** DevTools Console → dataLayer
+7. Sauvegarder: `homepage_datalayer.png`
+
+**Status:** ☐ TODO
+
+---
+
+#### TEST 2: Product Page (15 min)
+
+**ÉTAPES:**
+1. Naviguer: Product page (ex: /products/knee-brace-support)
+2. DevTools → Console
+3. Taper: `dataLayer.filter(item => item.event === 'view_item')`
+4. Press: Enter
+
+**✅ VÉRIFICATION:**
+```javascript
+{
+  event: "view_item",
+  ecommerce: {
+    currency: "USD",
+    value: 29.99,  // Prix produit
+    items: [{
+      item_id: "...",
+      item_name: "...",
+      price: 29.99
+    }]
+  }
+}
+```
+
+**Checklist:**
+- ☐ Event "view_item" présent
+- ☐ ecommerce object existe
+- ☐ currency: "USD"
+- ☐ value = prix produit
+- ☐ items array présent
+
+5. **Screenshot:** view_item event
+6. Sauvegarder: `product_view_item.png`
+
+**Status:** ☐ TODO
+
+---
+
+#### TEST 3: Add to Cart (15 min)
+
+**ÉTAPES:**
+1. Sur product page (rester sur même page)
+2. DevTools → Console ouvert
+3. **Cliquer:** "Add to Cart" button
+4. Observer Console (nouveau event)
+
+5. Taper: `dataLayer.filter(item => item.event === 'add_to_cart')`
+6. Press: Enter
+
+**✅ VÉRIFICATION:**
+```javascript
+{
+  event: "add_to_cart",
+  ecommerce: {
+    currency: "USD",
+    value: 29.99,
+    items: [...]
+  }
+}
+```
+
+**Checklist:**
+- ☐ Event "add_to_cart" présent
+- ☐ Fired APRÈS click
+- ☐ ecommerce.value correct
+- ☐ items présent
+
+7. **Screenshot:** add_to_cart event
+8. Sauvegarder: `add_to_cart_event.png`
+
+**Status:** ☐ TODO
+
+---
+
+#### TEST 4: Cart Page (10 min)
+
+**ÉTAPES:**
+1. Naviguer: /cart
+2. DevTools → Console
+3. Taper: `dataLayer`
+
+**✅ VÉRIFICATION:**
+- ☐ dataLayer existe
+- ☐ page_view event pour /cart
+- ☐ Pas d'erreurs JavaScript
+
+**Status:** ☐ TODO
+
+---
+
+#### TEST 5: Collection Page (10 min)
+
+**ÉTAPES:**
+1. Naviguer: Collection (ex: /collections/pain-relief)
+2. DevTools → Console
+3. Taper: `dataLayer`
+
+**✅ VÉRIFICATION:**
+- ☐ dataLayer existe
+- ☐ page_view pour collection
+- ☐ dataLayer.length augmenté
+
+**Status:** ☐ TODO
+
+---
+
+### ☐ GA4 Real-Time Verification (30 min)
+
+**URL:** https://analytics.google.com/
+
+**ÉTAPES:**
+
+**TEST 1: Accès GA4**
+1. Login Google Analytics
+2. Sélectionner: Propriété "Alpha Medical" (GT-NC6L8G55)
+3. Menu gauche: **Reports** → **Real-time**
+
+**TEST 2: Page View**
+1. Autre tab: Ouvrir https://www.alphamedical.shop/
+2. Attendre: 5-10 secondes
+3. GA4 Real-Time:
+   - ✅ "Users in last 30 minutes" >= 1
+   - ✅ Event "page_view" visible
+
+**TEST 3: View Item**
+1. Naviguer: Product page
+2. Attendre: 10-15 secondes
+3. GA4 Real-Time:
+   - ✅ Event "view_item" visible
+
+**TEST 4: Add to Cart**
+1. Cliquer: "Add to Cart"
+2. Attendre: 10-15 secondes
+3. GA4 Real-Time:
+   - ✅ Event "add_to_cart" visible
+
+**TEST 5: Screenshot**
+- GA4 Real-Time overview avec events
+- Sauvegarder: `ga4_realtime_events.png`
+
+**Status:** ☐ TODO
+
+---
+
+### ☐ Meta Pixel Verification (30 min)
+
+**URL:** https://business.facebook.com/events_manager2/
+
+**OPTION A: Events Manager (si accès)**
+
+**ÉTAPES:**
+1. Login Facebook Business
+2. Events Manager
+3. Sélectionner: Pixel "Alpha Medical"
+4. Onglet: **"Test Events"**
+
+**Tests:**
+- Visit homepage → ✅ PageView visible
+- Visit product → ✅ ViewContent visible
+- Add to cart → ✅ AddToCart visible
+
+**Screenshot:** Events Manager
+**Sauvegarder:** `meta_pixel_events.png`
+
+---
+
+**OPTION B: DevTools Method (si pas accès Events Manager)**
+
+**ÉTAPES:**
+1. Homepage: https://www.alphamedical.shop/
+2. **F12** → DevTools
+3. Onglet: **Network**
+4. Filter: Taper `tr?` dans search box
+
+**Tests:**
+- Reload homepage
+- Visit product
+- Add to cart
+
+**✅ VÉRIFICATION:**
+- ☐ Requêtes `facebook.com/tr?` présentes
+- ☐ Paramètres: ev=PageView
+- ☐ Paramètres: ev=ViewContent
+- ☐ Paramètres: ev=AddToCart
+
+**Screenshot:** DevTools Network
+**Sauvegarder:** `meta_pixel_devtools.png`
+
+**Status:** ☐ TODO
+
+---
+
+## 🎯 PRIORITÉ 3: EMAIL OPTIMIZATION (2h) - MEDIUM
+
+### ☐ TÂCHE #8: Klaviyo A/B Test Config (1h)
+
+**URL:** https://www.klaviyo.com/
+
+**ÉTAPES:**
+1. Login Klaviyo
+2. Menu: **Flows**
+3. Trouver: "Welcome Series - Final Email Discount"
+4. Cliquer sur flow
+
+5. **Sélectionner:** Email #1 (premier email du flow)
+6. Cliquer: **"Create A/B Test"**
+
+7. **Configure:**
+   - **Variant A (Control):** Sujet actuel (laisser tel quel)
+   - **Variant B:** Nouveau sujet:
+     ```
+     Your [Pain Point] Solution Awaits - 10% Off Inside
+     ```
+   - **Metric:** Open rate
+   - **Split:** 50/50
+   - **Duration:** 30 days
+   - **Winner Selection:** Automatic
+
+8. Cliquer: **"Save"** (NE PAS activer encore)
+
+**✅ VÉRIFICATION:**
+- ☐ Flow montre badge "A/B Test Configured"
+- ☐ Test est SAVED mais pas ACTIVE
+- ☐ Activation prévue POST-LAUNCH (besoin traffic)
+
+**Note:** Activer après 500+ subscribers
+
+**Status:** ☐ TODO
+
+---
+
+### ☐ TÂCHE #11: Klaviyo Segmentation (1h)
+
+**URL:** https://www.klaviyo.com/
+
+**Créer 4 segments:**
+
+#### SEGMENT 1: VIP Customers
+
+**ÉTAPES:**
+1. Klaviyo → **Segments**
+2. Cliquer: **"Create Segment"**
+3. Name: `VIP Customers - 3+ Orders`
+4. **Conditions:**
+   - What someone has done: Placed Order
+   - at least 3 times
+   - in the last 365 days
+5. Cliquer: **"Create Segment"**
+
+**✅ VÉRIFICATION:**
+- ☐ Segment créé
+- ☐ Count: 0 members (normal PRE-LAUNCH)
+
+---
+
+#### SEGMENT 2: High-Value Customers
+
+**ÉTAPES:**
+1. Create Segment
+2. Name: `High-Value - LTV $200+`
+3. **Conditions:**
+   - Metric: Historic CLV (Customer Lifetime Value)
+   - is greater than: $200
+4. Create Segment
+
+---
+
+#### SEGMENT 3: Inactive 60+ Days
+
+**ÉTAPES:**
+1. Create Segment
+2. Name: `Inactive 60+ Days`
+3. **Conditions:**
+   - What someone has NOT done: Placed Order
+   - in the last 60 days
+   - AND
+   - What someone HAS done: Placed Order
+   - at least 1 time
+   - all time
+4. Create Segment
+
+---
+
+#### SEGMENT 4: Pain Point - Knee Pain
+
+**ÉTAPES:**
+1. Create Segment
+2. Name: `Interest - Knee Pain Relief`
+3. **Conditions:**
+   - What someone has done: Viewed Product
+   - where Product Name contains: "knee" OR "brace"
+   - in the last 90 days
+4. Create Segment
+
+**✅ VÉRIFICATION FINALE:**
+- ☐ 4 segments créés
+- ☐ Tous montrent 0 members (normal PRE-LAUNCH)
+- ☐ Rules valides
+
+**Status:** ☐ TODO
+
+---
+
+## 🎯 PRIORITÉ 4: SHOPIFY FLOW FIX (10 min) - MEDIUM
+
+### ☐ TÂCHE #14: Loyalty Tier Tag Removal (MANUEL)
+
+**URL:** https://admin.shopify.com/store/azffej-as
+
+**PROBLÈME:** Customers accumulent tags (bronze + silver + gold) au lieu de remplacer
+
+**SOLUTION:** Ajouter "Remove tag" actions AVANT "Add tag"
+
+**ÉTAPES:**
+
+1. Shopify Admin → **Apps** → **Flow**
+2. Trouver workflow: **"New Loyalty Tier Tagging (Automatic)"**
+3. Cliquer pour ouvrir
+
+4. **Pour chaque tier (Bronze, Silver, Gold):**
+
+**Action existante:** "Add customer tag: bronze"
+**Modifier pour:**
+```
+1. Remove customer tag: bronze
+2. Remove customer tag: silver
+3. Remove customer tag: gold
+4. PUIS Add customer tag: bronze
+```
+
+**Instructions détaillées:**
+
+**BRONZE TIER:**
+1. Cliquer sur "+" AVANT action "Add tag: bronze"
+2. Ajouter: "Remove customer tag"
+3. Tag: `silver`
+4. Ajouter encore: "Remove customer tag"
+5. Tag: `gold`
+6. Garder: "Add customer tag: bronze"
+
+**SILVER TIER:**
+1. Avant "Add tag: silver"
+2. Remove: `bronze`
+3. Remove: `gold`
+4. Puis Add: `silver`
+
+**GOLD TIER:**
+1. Avant "Add tag: gold"
+2. Remove: `bronze`
+3. Remove: `silver`
+4. Puis Add: `gold`
+
+5. Cliquer: **"Save"**
+6. Workflow reste ACTIVE
+
+**✅ VÉRIFICATION:**
+- ☐ 3 tiers modifiés (Bronze, Silver, Gold)
+- ☐ Chaque tier: Remove old tags AVANT Add new tag
+- ☐ Workflow status: ACTIVE
+
+**TEST (si client test disponible):**
+- Upgrade customer: Bronze → Silver
+- ✅ Tag "bronze" removed
+- ✅ Tag "silver" added
+- ✅ Only 1 tag present
+
+**Status:** ☐ TODO
+
+**Note:** Guide complet disponible: `SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md`
+
+---
+
+## 📊 RÉCAPITULATIF DES TÂCHES
+
+### PRIORITÉ 1: LEGAL (1h 55min) - CRITIQUE ⚠️
+
+| # | Tâche | Durée | Status |
+|---|-------|-------|--------|
+| 6 | Terms Age Restriction | 30 min | ☐ TODO |
+| 1 | Footer Policy Links | 10 min | ☐ TODO |
+| 2 | Accessibility Statement | 15 min | ☐ TODO |
+| 3 | Cookie Consent Banner | 1h | ☐ TODO |
+
+**Output:** Legal compliance 100%, GDPR compliant
+
+---
+
+### PRIORITÉ 2: ANALYTICS (2h) - HIGH 📊
+
+| # | Tâche | Durée | Status |
+|---|-------|-------|--------|
+| 17 | Data Layer Validation (5 tests) | 1h | ☐ TODO |
+| - | GA4 Real-Time Verification | 30 min | ☐ TODO |
+| - | Meta Pixel Verification | 30 min | ☐ TODO |
+
+**Output:** Analytics foundation verified (83% - 17% pending Stripe)
+
+---
+
+### PRIORITÉ 3: EMAIL (2h) - MEDIUM 📧
+
+| # | Tâche | Durée | Status |
+|---|-------|-------|--------|
+| 8 | Klaviyo A/B Test Config | 1h | ☐ TODO |
+| 11 | Klaviyo Segmentation (4 segments) | 1h | ☐ TODO |
+
+**Output:** Email optimization ready POST-LAUNCH
+
+---
+
+### PRIORITÉ 4: FLOW FIX (10 min) - MEDIUM ⚙️
+
+| # | Tâche | Durée | Status |
+|---|-------|-------|--------|
+| 14 | Loyalty Tier Tag Removal | 10 min | ☐ TODO |
+
+**Output:** Segmentation quality improved
+
+---
+
+## 🎯 PLANNING SUGGÉRÉ
+
+### OPTION A: MINIMUM VIABLE (4h 55min)
+
+**Exécuter:** Priorité 1 + 2 uniquement
+- Legal compliance (1h 55min)
+- Analytics validation (2h)
+- GA4 + Meta Pixel (1h)
+
+**Result:** Site légalement conforme + analytics opérationnel
+
+---
+
+### OPTION B: RECOMMANDÉ (6h 55min)
+
+**Exécuter:** Priorité 1 + 2 + 3 (sans Priorité 4)
+- Legal (1h 55min)
+- Analytics (2h)
+- Email optimization (2h)
+- Flow fix (10 min)
+
+**Result:** 88.6% workflows testable, prêt pour launch
+
+---
+
+### OPTION C: MAXIMUM (6h 55min)
+
+**Exécuter:** TOUTES les priorités
+- Legal (1h 55min)
+- Analytics (2h)
+- Email (2h)
+- Flow (10 min)
+
+**Result:** Optimization complète PRE-STRIPE
+
+---
+
+## 📈 SUCCESS METRICS
+
+**Après Priorité 1 (Legal):**
+- ✅ Terms: 18+ restriction
+- ✅ Footer: 5 policy links
+- ✅ Accessibility: Page published
+- ✅ Cookie Consent: GDPR banner
+
+**Après Priorité 2 (Analytics):**
+- ✅ dataLayer: 5/6 pages verified
+- ✅ GA4: 3/5 events (page_view, view_item, add_to_cart)
+- ✅ Meta Pixel: 3/5 events
+
+**Après Priorité 3 (Email):**
+- ✅ A/B test: Configured
+- ✅ Segments: 4 created
+
+**Après Priorité 4 (Flow):**
+- ✅ Loyalty tags: Fixed
+
+---
+
+## ⏳ TÂCHES POST-STRIPE (2025-12-15+)
+
+**CANNOT COMPLETE NOW - Require payment gateway:**
+
+1. ⏳ Enhanced Ecommerce full test (2h)
+   - Test purchase avec carte 4242 4242 4242 4242
+   - Verify: begin_checkout + purchase events
+
+2. ⏳ Post-Purchase Email Testing (1h)
+   - Thank You email
+   - Review Request email
+   - Cross-Sell email
+
+3. ⏳ Checkout Flow (30 min)
+   - End-to-end cart → payment → confirmation
+
+**Testable après:** 2025-12-15 (11 jours)
+
+---
+
+## 📁 DOCUMENTATION DE RÉFÉRENCE
+
+**Guide complet:** `/tmp/EXECUTION_MANUAL_JOURS_1-3.md` (888 lignes)
+
+**Contient:**
+- Instructions détaillées étape par étape
+- Screenshots à capturer
+- Vérifications obligatoires
+- Troubleshooting
+- Tests de validation
+
+---
+
+**PRÊT POUR EXÉCUTION**
+**Durée:** 4h 55min (minimum) à 6h 55min (recommandé)
+**Période:** 11 jours disponibles (2025-12-04 → 2025-12-15)
+**Charge:** 25-38 min/jour moyenne
+
+---
+
+
+# 15. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -60672,10 +61523,10 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 ---
 
 
-# 15. Get Conversion Id Steps
+# 16. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -61056,10 +61907,10 @@ TOTAL: ~30 minutes de travail actif
 ---
 
 
-# 16. Hostinger Dns Gsc Setup Guide
+# 17. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -61432,10 +62283,10 @@ dig TXT alphamedical.shop +short
 ---
 
 
-# 17. Infrastructure Audit Checklist
+# 18. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -70767,10 +71618,10 @@ Total: 816÷9 = 90.67 → Adjusted to 96/100
 ---
 
 
-# 18. Judgeme Import Step By Step
+# 19. Judgeme Import Step By Step
 
 **File:** `JUDGEME_IMPORT_STEP_BY_STEP.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -71091,10 +71942,10 @@ print(r.json()['data']['products']['edges'][0]['node']['handle'])
 ---
 
 
-# 19. Klaviyo Flows Deployed Via Api
+# 20. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -71423,10 +72274,10 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 ---
 
 
-# 20. Klaviyo Shopify Complementarity Matrix Factual
+# 21. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -71969,10 +72820,10 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 ---
 
 
-# 21. Klaviyo Templates Professional Upgrade
+# 22. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -72448,10 +73299,10 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 ---
 
 
-# 22. Live Site Verification 2025-11-29
+# 23. Live Site Verification 2025-11-29
 
 **File:** `LIVE_SITE_VERIFICATION_2025-11-29.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -72875,10 +73726,10 @@ grep -i "tidio\|gtm\|judge" /tmp/homepage.html
 ---
 
 
-# 23. Paypal Deactivation Guide
+# 24. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -73173,10 +74024,10 @@ If you encounter issues not covered in this guide:
 ---
 
 
-# 24. Policy Pages Audit Report 2025-11-30
+# 25. Policy Pages Audit Report 2025-11-30
 
 **File:** `POLICY_PAGES_AUDIT_REPORT_2025-11-30.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -73460,10 +74311,10 @@ After completing updates, verify:
 ---
 
 
-# 25. Power Bi Learning Path
+# 26. Power Bi Learning Path
 
 **File:** `POWER_BI_LEARNING_PATH.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -73997,10 +74848,10 @@ open https://learn.microsoft.com/training/paths/get-started-power-bi/
 ---
 
 
-# 26. Pre Launch Execution Checklist 2025-12-03
+# 27. Pre Launch Execution Checklist 2025-12-03
 
 **File:** `PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -75203,10 +76054,10 @@ Total: 4h 40min | Impact: LOW | Risk: NONE if skipped
 ---
 
 
-# 27. Pre Launch Runbook 2025-12-25
+# 28. Pre Launch Runbook 2025-12-25
 
 **File:** `PRE_LAUNCH_RUNBOOK_2025-12-25.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -75971,10 +76822,10 @@ git log --oneline -5
 ---
 
 
-# 28. Product Catalog Forensic Analysis Ads Strategy 2026
+# 29. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -77963,10 +78814,10 @@ Result: Complete product-specific recommendations with web-verified seasonality
 ---
 
 
-# 29. Schema Markup Ai Optimization 2025
+# 30. Schema Markup Ai Optimization 2025
 
 **File:** `SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -78402,10 +79253,10 @@ Professional schema markup = **Brand authority signal for multimodal AI**
 ---
 
 
-# 30. Session 65 Factual Summary 2025-11-28
+# 31. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -78914,10 +79765,10 @@ Target: 100/100 (with all optimizations)
 ---
 
 
-# 31. Session 67 Infrastructure Audit 2025-12-01
+# 32. Session 67 Infrastructure Audit 2025-12-01
 
 **File:** `SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -79279,10 +80130,10 @@ python3 audit_infrastructure.py
 ---
 
 
-# 32. Session 73 Summary
+# 33. Session 73 Summary
 
 **File:** `SESSION_73_SUMMARY.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -79863,10 +80714,10 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 ---
 
 
-# 33. Shopify Flow Loyalty Tier Tagging Manual Modification
+# 34. Shopify Flow Loyalty Tier Tagging Manual Modification
 
 **File:** `SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -80042,10 +80893,10 @@ Trigger: Order paid
 ---
 
 
-# 34. Tidio 6 Flows Final Summary
+# 35. Tidio 6 Flows Final Summary
 
 **File:** `TIDIO_6_FLOWS_FINAL_SUMMARY.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -80406,10 +81257,10 @@ Trigger: Order paid
 ---
 
 
-# 35. Tidio Deduplication Matrix 2025-11-29
+# 36. Tidio Deduplication Matrix 2025-11-29
 
 **File:** `TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -81028,10 +81879,10 @@ Step 3: Places order
 ---
 
 
-# 36. Tidio Support Flows Final Implementation 2025-11-29
+# 37. Tidio Support Flows Final Implementation 2025-11-29
 
 **File:** `TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -81886,10 +82737,10 @@ C) Attendre Lyro AI 30.01.2026 (1h setup) ⏳ AI automation 60-70%
 ---
 
 
-# 37. Tidio Templates Analysis Factual 2025-11-29
+# 38. Tidio Templates Analysis Factual 2025-11-29
 
 **File:** `TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -83854,10 +84705,10 @@ Solution 3: Fallback Plan
 ---
 
 
-# 38. Top 10 Urls To Index
+# 39. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -84166,10 +85017,10 @@ Homepage (Prio 1)
 ---
 
 
-# 39. Ugc Video Prompts Grok Imagine
+# 40. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -84968,10 +85819,10 @@ alphamedical.shop
 ---
 
 
-# 40. Video Ads Creation Playbook
+# 41. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-12-04 13:20
+**Last Modified:** 2025-12-04 13:31
 
 ---
 
@@ -86174,8 +87025,8 @@ This is a living document - update as you learn!
 
 ## Document Information
 
-**Total Documentation Files:** 40
-**Generated:** December 04, 2025 at 13:20 UTC
+**Total Documentation Files:** 41
+**Generated:** December 04, 2025 at 13:31 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
