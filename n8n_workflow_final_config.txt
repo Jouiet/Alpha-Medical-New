@@ -1,0 +1,113 @@
+# N8N WORKFLOW - FINAL CONFIGURATION VALUES
+# Date: 2025-12-01
+# Status: ALL IDS READY - DEPLOY TO N8N NOW
+
+================================================
+STEP 1: UPDATE "File Created" NODE
+================================================
+
+Node Name: File Created
+Field: Folder to Watch
+Mode: By ID
+Value: 1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+
+Steps:
+1. Open https://n8n.srv1168256.hstgr.cloud
+2. Navigate to Workflows → "Enhance Product Photos with Google Gemini AI for E-commerce Catalog"
+3. Click on "File Created" node
+4. In "Folder to Watch" field:
+   - Select mode: "By ID"
+   - Paste: 1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+5. Click Save
+
+================================================
+STEP 2: UPDATE "File Updated" NODE
+================================================
+
+Node Name: File Updated
+Field: Folder to Watch
+Mode: By ID
+Value: 1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+
+Steps:
+1. Click on "File Updated" node
+2. In "Folder to Watch" field:
+   - Select mode: "By ID"
+   - Paste: 1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+3. Click Save
+
+================================================
+STEP 3: UPDATE "Workflow Configuration" NODE
+================================================
+
+Node Name: Workflow Configuration
+Fields to update:
+
+1. google_sheet_id:
+   Value: 1Q5ujL0LQEz-kgGkg-oMzCutcpUnznpDPpRkqh1hUBUw
+
+2. dest_folder_id:
+   Value: 1O1PrZoTDweXQx8ImVLXlJArei9hdvizn
+
+3. text_prompt:
+   (Already configured - no change needed)
+
+Steps:
+1. Click on "Workflow Configuration" node
+2. In "Assignments" section:
+   - Find "google_sheet_id" → Replace with: 1Q5ujL0LQEz-kgGkg-oMzCutcpUnznpDPpRkqh1hUBUw
+   - Find "dest_folder_id" → Replace with: 1O1PrZoTDweXQx8ImVLXlJArei9hdvizn
+3. Click Save
+
+================================================
+STEP 4: ENABLE MCP ACCESS
+================================================
+
+1. Click ⚙️ "Workflow Settings" icon (top right corner)
+2. Scroll down to "MCP Access" section
+3. Toggle "Enable workflow access in MCP" → ON
+4. Click Save
+
+================================================
+STEP 5: ACTIVATE WORKFLOW
+================================================
+
+1. At the top of the workflow editor:
+   - Toggle "Active" switch → ON
+2. Click "Save" to save the workflow
+
+================================================
+VERIFICATION
+================================================
+
+After completing all steps, verify:
+
+✅ File Created node: folder = 1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+✅ File Updated node: folder = 1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+✅ Workflow Configuration node:
+   - google_sheet_id = 1Q5ujL0LQEz-kgGkg-oMzCutcpUnznpDPpRkqh1hUBUw
+   - dest_folder_id = 1O1PrZoTDweXQx8ImVLXlJArei9hdvizn
+✅ MCP Access = ENABLED
+✅ Workflow = ACTIVE
+
+================================================
+TEST WITH 1 IMAGE
+================================================
+
+1. Select 1 product image (JPG or PNG, < 20MB)
+2. Upload to: https://drive.google.com/drive/folders/1gs_U0T9ZapXtlrrvzxS9IX0AI9Qllnox
+3. Wait 5 minutes (trigger poll time)
+4. Check n8n Executions → Should see "Success" status
+5. Check Google Sheet → New row with "Completed" status
+6. Check Output folder → Enhanced image with "_clean" suffix
+
+If test successful → Upload remaining 99 products
+Processing time: ~50-100 minutes automatic
+Cost: ~$1-5 total
+
+================================================
+CONFIGURATION COMPLETE
+================================================
+
+All IDs configured and ready for deployment.
+Total configuration time: ~5 minutes in n8n UI.
