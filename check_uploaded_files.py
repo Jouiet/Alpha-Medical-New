@@ -19,7 +19,7 @@ if env_file.exists():
                 break
 
 SHOPIFY_DOMAIN = "azffej-as.myshopify.com"
-API_VERSION = "2025-01"
+API_VERSION = "2025-10"
 
 headers = {
     "X-Shopify-Access-Token": ACCESS_TOKEN,

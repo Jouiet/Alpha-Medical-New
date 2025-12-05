@@ -15,7 +15,7 @@ load_dotenv('.env.admin')
 
 STORE_DOMAIN = os.getenv('SHOPIFY_STORE_DOMAIN')
 ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
-API_VERSION = '2024-10'
+API_VERSION = '2025-10'
 
 def print_section(title):
     """Print section header"""

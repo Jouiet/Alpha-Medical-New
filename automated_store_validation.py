@@ -15,7 +15,7 @@ from datetime import datetime
 
 # Configuration
 SHOPIFY_DOMAIN = "azffej-as.myshopify.com"
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 STORE_URL = "https://www.alphamedical.shop"
 
 # Load admin token

@@ -24,7 +24,7 @@ if not SHOPIFY_TOKEN:
     print("❌ SHOPIFY_ADMIN_ACCESS_TOKEN not found")
     exit(1)
 
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 GRAPHQL_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}/graphql.json"
 HEADERS = {
     "X-Shopify-Access-Token": SHOPIFY_TOKEN,

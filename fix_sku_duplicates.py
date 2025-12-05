@@ -16,7 +16,7 @@ load_dotenv('.env.admin')
 
 SHOPIFY_STORE_DOMAIN = os.getenv('SHOPIFY_STORE_DOMAIN')
 SHOPIFY_ADMIN_ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
-API_VERSION = os.getenv('SHOPIFY_API_VERSION', '2024-10')
+API_VERSION = os.getenv('SHOPIFY_API_VERSION', '2025-10')
 
 # Headers pour les requêtes REST API
 headers = {

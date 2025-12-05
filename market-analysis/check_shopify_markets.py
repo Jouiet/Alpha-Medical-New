@@ -37,7 +37,7 @@ except Exception as e:
 if not SHOPIFY_TOKEN:
     print("❌ SHOPIFY_ADMIN_ACCESS_TOKEN not found in .env.admin")
     sys.exit(1)
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 
 GRAPHQL_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}/graphql.json"
 REST_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}"

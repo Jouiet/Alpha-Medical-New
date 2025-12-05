@@ -25,7 +25,7 @@ if not SHOPIFY_TOKEN:
     print("❌ SHOPIFY_ADMIN_ACCESS_TOKEN not found")
     exit(1)
 
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 THEME_ID = "140069830733"  # Alpha-Medical-New/main (current live theme)
 REST_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}/themes/{THEME_ID}/assets.json"
 HEADERS = {

@@ -10,7 +10,7 @@ import json
 # Shopify credentials
 SHOP_URL = "https://azffej-as.myshopify.com"
 ACCESS_TOKEN = "***REMOVED***"
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 
 # Headers for API requests
 headers = {

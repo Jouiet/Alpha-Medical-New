@@ -12,7 +12,7 @@ from typing import Dict, Tuple
 # Shopify API Configuration
 SHOPIFY_STORE = "azffej-as.myshopify.com"
 ACCESS_TOKEN = "***REMOVED***"
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 
 # API Headers
 HEADERS = {

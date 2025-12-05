@@ -9,7 +9,7 @@ import json
 # Shopify API Configuration
 SHOPIFY_STORE = "azffej-as.myshopify.com"
 ACCESS_TOKEN = "***REMOVED***"
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 
 HEADERS = {
     "X-Shopify-Access-Token": ACCESS_TOKEN,

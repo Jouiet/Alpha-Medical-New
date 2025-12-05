@@ -25,7 +25,7 @@ if not ACCESS_TOKEN:
     exit(1)
 
 SHOPIFY_DOMAIN = "azffej-as.myshopify.com"
-API_VERSION = "2025-01"
+API_VERSION = "2025-10"
 BASE_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}"
 
 headers = {

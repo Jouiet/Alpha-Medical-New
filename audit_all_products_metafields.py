@@ -33,7 +33,7 @@ except Exception as e:
     print(f"❌ Error loading credentials: {e}")
     exit(1)
 
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 GRAPHQL_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}/graphql.json"
 HEADERS = {
     "X-Shopify-Access-Token": SHOPIFY_TOKEN,

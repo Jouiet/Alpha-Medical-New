@@ -12,7 +12,7 @@ load_dotenv('.env.admin')
 
 SHOP_NAME = os.getenv('SHOPIFY_STORE_DOMAIN')
 ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
-API_VERSION = '2024-10'
+API_VERSION = '2025-10'
 THEME_ID = '140069830733'
 
 BASE_URL = f'https://{SHOP_NAME}/admin/api/{API_VERSION}'

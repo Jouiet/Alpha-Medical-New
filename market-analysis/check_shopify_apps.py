@@ -32,7 +32,7 @@ except Exception as e:
     print(f"❌ Failed to load .env.admin: {e}")
     sys.exit(1)
 
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 GRAPHQL_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}/graphql.json"
 
 headers = {

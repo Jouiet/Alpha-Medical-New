@@ -20,7 +20,7 @@ if env_file.exists():
                 break
 
 SHOPIFY_DOMAIN = "azffej-as.myshopify.com"
-API_VERSION = "2025-01"
+API_VERSION = "2025-10"
 BASE_URL = f"https://{SHOPIFY_DOMAIN}/admin/api/{API_VERSION}"
 
 headers = {

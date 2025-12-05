@@ -14,7 +14,7 @@ SHOP = "azffej-as.myshopify.com"
 TOKEN = os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN")
 if not TOKEN:
     raise ValueError("SHOPIFY_ADMIN_ACCESS_TOKEN environment variable not set")
-API_VERSION = "2025-01"
+API_VERSION = "2025-10"
 
 HEADERS = {"X-Shopify-Access-Token": TOKEN, "Content-Type": "application/json"}
 

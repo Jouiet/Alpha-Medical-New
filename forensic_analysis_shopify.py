@@ -15,7 +15,7 @@ load_dotenv('.env.admin')
 
 SHOPIFY_STORE = os.getenv('SHOPIFY_STORE_DOMAIN')
 ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
-API_VERSION = os.getenv('SHOPIFY_API_VERSION', '2024-01')
+API_VERSION = os.getenv('SHOPIFY_API_VERSION', '2025-10')
 
 BASE_URL = f"https://{SHOPIFY_STORE}/admin/api/{API_VERSION}"
 HEADERS = {

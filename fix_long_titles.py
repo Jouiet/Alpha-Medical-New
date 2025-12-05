@@ -11,7 +11,7 @@ from typing import Dict, List, Tuple
 # Shopify credentials
 SHOP_URL = "azffej-as.myshopify.com"
 ACCESS_TOKEN = "***REMOVED***"
-API_VERSION = "2024-10"
+API_VERSION = "2025-10"
 
 # Headers for API requests
 HEADERS = {

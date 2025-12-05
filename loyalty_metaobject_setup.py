@@ -13,7 +13,7 @@ load_dotenv('.env.admin')
 
 SHOPIFY_STORE = os.getenv('SHOPIFY_STORE_DOMAIN')
 ADMIN_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
-API_VERSION = '2024-10'
+API_VERSION = '2025-10'
 
 HEADERS = {
     'X-Shopify-Access-Token': ADMIN_TOKEN,
