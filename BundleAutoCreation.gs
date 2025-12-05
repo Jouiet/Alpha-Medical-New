@@ -10,7 +10,9 @@
 //   1. Create Google Sheet: "Bundle Proposals Auto-Creation"
 //   2. Create 2 sheets: PROPOSALS, BUNDLES_CREATED
 //   3. Tools → Script editor → Paste this code
-//   4. Set SHOPIFY_ADMIN_ACCESS_TOKEN in configuration
+//   4. Configure token in Script Properties (SECURE):
+//      File → Project properties → Script properties
+//      Add: SHOPIFY_ADMIN_ACCESS_TOKEN = shpat_xxxxx
 //   5. Deploy → New deployment → Web app (Anyone can access)
 //   6. Configure Gmail filter to forward "Bundle Proposal" emails
 //
@@ -21,10 +23,28 @@
 // ============================================================================
 
 const SHOPIFY_DOMAIN = 'azffej-as.myshopify.com';
-const SHOPIFY_ADMIN_ACCESS_TOKEN = 'shpat_xxxxx'; // ⚠️ À CONFIGURER
 const SHOPIFY_API_VERSION = '2025-10';
 const BUNDLE_COLLECTION_ID = 'gid://shopify/Collection/296239169613';
 const THRESHOLD = 10; // Auto-create at 10+ identical proposals
+
+/**
+ * Get Shopify Admin Access Token from Script Properties (SECURE)
+ * Setup: File → Project properties → Script properties → Add property:
+ *   Key: SHOPIFY_ADMIN_ACCESS_TOKEN
+ *   Value: shpat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ *
+ * NEVER hardcode tokens in code - use PropertiesService for security
+ */
+function getShopifyToken() {
+  const token = PropertiesService.getScriptProperties().getProperty('SHOPIFY_ADMIN_ACCESS_TOKEN');
+
+  if (!token) {
+    throw new Error('❌ SHOPIFY_ADMIN_ACCESS_TOKEN not configured in Script Properties. ' +
+                    'Configure it via: File → Project properties → Script properties');
+  }
+
+  return token;
+}
 
 // ============================================================================
 // TRIGGER: On Gmail Forward
@@ -279,7 +299,7 @@ function createBundleAuto(hash, productIds, productHandles) {
     method: 'post',
     contentType: 'application/json',
     headers: {
-      'X-Shopify-Access-Token': SHOPIFY_ADMIN_ACCESS_TOKEN
+      'X-Shopify-Access-Token': getShopifyToken()
     },
     payload: JSON.stringify(productPayload),
     muteHttpExceptions: true
@@ -419,7 +439,7 @@ function addBundleToCollection(productId) {
     method: 'post',
     contentType: 'application/json',
     headers: {
-      'X-Shopify-Access-Token': SHOPIFY_ADMIN_ACCESS_TOKEN
+      'X-Shopify-Access-Token': getShopifyToken()
     },
     payload: JSON.stringify(payload),
     muteHttpExceptions: true
@@ -666,7 +686,11 @@ function checkBundleStatus(hash) {
  * 2. APPS SCRIPT SETUP:
  *    - Tools → Script editor
  *    - Paste this code
- *    - Update SHOPIFY_ADMIN_ACCESS_TOKEN (line 22)
+ *    - Configure Script Properties (SECURE METHOD):
+ *      a. File → Project properties → Script properties
+ *      b. Add property: Key = SHOPIFY_ADMIN_ACCESS_TOKEN
+ *      c. Add value: shpat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (your real token)
+ *      d. Click "Save"
  *    - Save project
  *
  * 3. DEPLOY AS WEB APP:
