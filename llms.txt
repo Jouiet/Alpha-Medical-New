@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** December 04, 2025
+**Last Updated:** December 05, 2025
 
 ## Core Documentation
 
@@ -23,6 +23,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): Project documentation
 - [COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27](archive/old-audits/COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27.md): Project documentation
 - [CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025](archive/old-audits/CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025.md): Category Score Status ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- [COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05](COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md): $ find . -maxdepth 1 -type f -name ".py" | wc -l 280 $ find . -maxdepth 1 -type d | wc -l
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](archive/bundles-pricing/CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](archive/old-audits/EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
@@ -52,6 +53,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [PRODUCT_OPTIMIZATION_TRACKING](archive/bundles-pricing/PRODUCT_OPTIMIZATION_TRACKING.md): Project documentation
 - [README_PRICING](archive/bundles-pricing/README_PRICING.md): Project documentation
 - [SCHEMA_MARKUP_AI_OPTIMIZATION_2025](SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md): 1. Entity Authority: 45% - Structured data quality 2. Content Relevance: 30% - Semantic matching
+- [SESSION_68_NEW_PRODUCTS_OPTIMIZATION_2025-12-01](SESSION_68_NEW_PRODUCTS_OPTIMIZATION_2025-12-01.md): 1. AirBag Massage Cushion Electric Kneading (ID: 7631747743821) 2. Professional Full Body Shiatsu Massage Chair (ID: 7631747776589)
 - [TOP_10_HERO_PRODUCTS_MAPPING](archive/miscellaneous/TOP_10_HERO_PRODUCTS_MAPPING.md): Project documentation
 - [production-log](video-ads-assets/outputs/production-log.md): Hook: "{First 3 seconds hook}"
 
@@ -69,6 +71,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [KLAVIYO_FLOWS_DEPLOYED_VIA_API](KLAVIYO_FLOWS_DEPLOYED_VIA_API.md): Status: ✅ CREATED (draft) Flow ID: SFmLH7 Trigger: Segment "Opportunités de reconquête (Shopify)"
 - [KLAVIYO_FLOWS_DEPLOYMENT_GUIDE](archive/implementation-guides/KLAVIYO_FLOWS_DEPLOYMENT_GUIDE.md): Project documentation
 - [KLAVIYO_FLYWHEEL_UPGRADE_2025](archive/miscellaneous/KLAVIYO_FLYWHEEL_UPGRADE_2025.md): Project documentation
+- [KLAVIYO_MCP_SERVER_GUIDE](KLAVIYO_MCP_SERVER_GUIDE.md): { "mcpServers": { "klaviyo": { "command": "uvx", "args": ["klaviyo-mcp-server@latest"],
 - [KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY](archive/miscellaneous/KLAVIYO_PLAN_RECOMMENDATION_EMAIL_ONLY.md): Project documentation
 - [KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL](KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md): Project documentation
 - [KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE](KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md): <!-- Complete legal footer -->
@@ -77,6 +80,8 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [KLAVIYO_WINBACK15_CORRECT_SETTINGS](archive/setup-completed/KLAVIYO_WINBACK15_CORRECT_SETTINGS.md): ❌ Applies to: Specific collections (empty - NO collections selected) ❌ Maximum discount uses: No usage limits
 - [LEAD_AUTOMATION_SYSTEM_OPERATIONAL](archive/miscellaneous/LEAD_AUTOMATION_SYSTEM_OPERATIONAL.md): Project documentation
 - [LOYALTY_AUTOMATION_PROGRESS_REPORT](archive/bundles-pricing/LOYALTY_AUTOMATION_PROGRESS_REPORT.md): ✅ Trigger: Order paid │ ✅ Condition 1: IF customer.amountSpent.amount >= 2500 │ ✅ TRUE (Platinum tier):
+- [N8N_BLOG_AUTOMATION_SETUP_GUIDE](N8N_BLOG_AUTOMATION_SETUP_GUIDE.md): Project documentation
+- [SESSION_76_KLAVIYO_MCP_INSTALLATION](SESSION_76_KLAVIYO_MCP_INSTALLATION.md): 1. Analytics en langage naturel - Queries conversationnelles sur tes données 2. Segmentation intelligente - AI recommendations basées sur comportement
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](archive/implementation-guides/SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 - [SHOPIFY_EMAIL_MANUAL_ACTIVATION](archive/implementation-guides/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 - [SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP](archive/setup-completed/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md): 1. Shopify Admin → Marketing → Automations 2. Cliquer "Welcome new subscribers with a discount email" (Status: Inactive)
@@ -93,11 +98,14 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [CRITICAL_MANUAL_ACTIONS_GUIDE](archive/implementation-guides/CRITICAL_MANUAL_ACTIONS_GUIDE.md): 1. Go to Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings → Payments
 - [DEPLOYMENT_GUIDE_COMPLETE](archive/implementation-guides/DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
 - [GOOGLE_ADS_SETUP_GUIDE](archive/setup-completed/GOOGLE_ADS_SETUP_GUIDE.md): 1. Allez sur: https://ads.google.com/ 2. Sélectionnez le compte: 3. Navigation dans l'interface:
+- [GOOGLE_OAUTH2_CREDENTIALS_GUIDE](GOOGLE_OAUTH2_CREDENTIALS_GUIDE.md): 1. Ouvre: https://console.cloud.google.com/ 2. En haut à gauche, clique sur le dropdown du projet (à côté de "Google Cloud")
 - [GTM_SETUP_GUIDE](archive/implementation-guides/GTM_SETUP_GUIDE.md): Project documentation
 - [HOSTINGER_DNS_GSC_SETUP_GUIDE](HOSTINGER_DNS_GSC_SETUP_GUIDE.md): 1. ✅ Propriété ajoutée dans GSC 2. ✅ Meta tag HTML ajouté (méthode alternative de vérification)
 - [IMPLEMENTATION_MANUELLE_GUIDE](archive/implementation-guides/IMPLEMENTATION_MANUELLE_GUIDE.md): Project documentation
 - [LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE](archive/setup-completed/LOYALTY_SIMPLIFIED_MANUAL_ACTIONS_GUIDE.md): Shopify Admin REST API requires creating price rules + discount codes in 2 separate API calls. Manual UI is faster and more reliable for this one-t...
 - [LOYALTY_SYSTEM_SETUP_GUIDE](archive/bundles-pricing/LOYALTY_SYSTEM_SETUP_GUIDE.md): Project documentation
+- [N8N_ALPHA_MEDICAL_CONFIG_GUIDE](archive/n8n-documentation-session68/N8N_ALPHA_MEDICAL_CONFIG_GUIDE.md): Le workflow est 90% prêt. Il manque seulement 3 IDs à configurer:
+- [N8N_MCP_CONFIGURATION_GUIDE](archive/n8n-documentation-session68/N8N_MCP_CONFIGURATION_GUIDE.md): Server URL: https://n8n.srv1168256.hstgr.cloud/mcp-server/http MCP Access Token (for MCP Server):
 - [PAIN_RELIEF_GUIDE_IMPLEMENTATION](archive/miscellaneous/PAIN_RELIEF_GUIDE_IMPLEMENTATION.md): 1. Go to canva.com 2. Create free account (or use Pro for more templates) 3. Search for "eBook" or "Guide" templates
 - [PAYPAL_DEACTIVATION_GUIDE](PAYPAL_DEACTIVATION_GUIDE.md): Project documentation
 - [SHOPIFY_FLOW_CONFIGURATION_GUIDE](archive/implementation-guides/SHOPIFY_FLOW_CONFIGURATION_GUIDE.md): Architecture: admin.shopify.com (Parent page) └── Iframe: apps.shopify.com (Cross-origin - DIFFERENT domain)
@@ -117,6 +125,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [IMPLEMENTATION_ROADMAP](archive/implementation-guides/IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
 - [LEAD_MANAGEMENT_SHOPIFY_FLOWS](archive/miscellaneous/LEAD_MANAGEMENT_SHOPIFY_FLOWS.md): 1. Add customer to segment by persona tag (seniors, athletes, workers, etc.) 2. Add note: "Lead imported from [platform] on [date]"
 - [MANUAL_FOOTER_CONFIG](archive/setup-completed/MANUAL_FOOTER_CONFIG.md): 1. Go to Shopify Admin → Settings → Store details 2. Change "Store name" from "My Store" to "Alpha Medical Care"
+- [N8N_CREDENTIAL_SETUP_REQUIRED](N8N_CREDENTIAL_SETUP_REQUIRED.md): You need to create these 3 Google credentials in N8N:
 - [NEXT_STEPS_FLOW_CONFIGURATION](archive/implementation-guides/NEXT_STEPS_FLOW_CONFIGURATION.md): claude mcp add chrome-devtools npx chrome-devtools-mcp@latest MCP servers require a CLI session restart to become active.
 - [PHASE_2_IMPLEMENTATION](archive/miscellaneous/PHASE_2_IMPLEMENTATION.md): LOGFILE=".claude/hooks/pre-tool-use.log" logerror() { echo "[$(date -u)] ERROR: $1" >> "$LOGFILE"
 - [PHASE_3_IMPLEMENTATION_LOG](archive/miscellaneous/PHASE_3_IMPLEMENTATION_LOG.md): Project documentation
@@ -244,6 +253,7 @@ When assisting with this project:
 
 - [ACTIONS_FINALES_5MIN](archive/implementation-guides/ACTIONS_FINALES_5MIN.md): 1. Cliquer sur "Theme settings" (icône ⚙️ en bas à gauche) 2. Cliquer sur "Header" → "Logo"
 - [ACTIONS_MANUELLES_REQUISES](archive/setup-completed/ACTIONS_MANUELLES_REQUISES.md): Project documentation
+- [ADD_FILTER_TO_PREVENT_LOOP](ADD_FILTER_TO_PREVENT_LOOP.md): Le workflow retraite ses propres outputs en boucle: 5-lifestyle.jpg → 5-lifestyleclean.png → 5-lifestylecleanclean.png → ...
 - [ADVANCED_RETRIEVAL_PATTERNS](archive/miscellaneous/ADVANCED_RETRIEVAL_PATTERNS.md): 1. Load Level 1 (core memory) - ~1,000 tokens 2. Assess task type 3. Load Level 2 (domain-specific) - ~1,200 tokens
 - [ALPHA_MEDICAL_15_BUNDLES_COMPLETE](archive/bundles-pricing/ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md): Project documentation
 - [ALPHA_MEDICAL_8_BUNDLES_FINAL](archive/bundles-pricing/ALPHA_MEDICAL_8_BUNDLES_FINAL.md): Project documentation
@@ -259,8 +269,11 @@ When assisting with this project:
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](archive/bundles-pricing/BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](archive/implementation-guides/BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [CLAUDE](CLAUDE.md): Use specialized agents for domain-specific tasks to save 70% context:
+- [CLEAN_TEST_STATUS](CLEAN_TEST_STATUS.md): 1. Trigger détecte l'image dans INPUT 2. Filtre vérifie: contient "clean"? → NON
 - [CREATIFY_PROMPTS_ALPHA_MEDICAL](CREATIFY_PROMPTS_ALPHA_MEDICAL.md): Project documentation
+- [ENV_FILES_DOCUMENTATION](ENV_FILES_DOCUMENTATION.md): This project uses 5 separate .env files organized by service for better security and maintainability.
 - [ETAPES_MANUELLES_PRIORITAIRES](ETAPES_MANUELLES_PRIORITAIRES.md): 1. Login Shopify Admin 2. Cliquer: Online Store (menu gauche) 3. Cliquer: Navigation
+- [FINAL_ACTIVATION_STEPS](FINAL_ACTIVATION_STEPS.md): URL: https://n8n.srv1168256.hstgr.cloud/workflow/q0kyXyhCUq5gjmG2 Login with your N8N credentials
 - [FINAL_STORE_STATUS_2025-10-31](archive/session-summaries/FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](archive/setup-completed/GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
@@ -276,6 +289,13 @@ When assisting with this project:
 - [MCP_SERVER_SPECIFICATIONS](archive/miscellaneous/MCP_SERVER_SPECIFICATIONS.md): ┌─────────────────┐ │ Claude Code │ │ │ │ - User asks │ │ question │
 - [MENU_BUNDLES_INSTRUCTIONS](archive/setup-completed/MENU_BUNDLES_INSTRUCTIONS.md): Menu principal (ordre): 1. Home 2. Catalog 3. Bundles ⬅️ NOUVEAU 4. Contact 5. Pain Relief & Recovery
 - [MYDEALZ_SYNTHESE](archive/miscellaneous/MYDEALZ_SYNTHESE.md): Couleurs: Typographie: Style: Énergique, dynamique, focus deals/économies
+- [N8N_ENABLE_WORKFLOW_ACCESS](archive/n8n-documentation-session68/N8N_ENABLE_WORKFLOW_ACCESS.md): 1. Login: https://n8n.srv1168256.hstgr.cloud 2. Ouvrir le workflow: 3. Activer MCP Access:
+- [N8N_IMAGE_WORKFLOW_TEST_PLAN](archive/n8n-documentation-session68/N8N_IMAGE_WORKFLOW_TEST_PLAN.md): 1. Navigate to Google Drive: 2. Create Input Folder: 3. Create Output Folder:
+- [N8N_TEST_STATUS_2025-12-01](archive/n8n-documentation-session68/N8N_TEST_STATUS_2025-12-01.md): You need to provide the complete workflow JSON file in one of these ways:
+- [N8N_WORKFLOWS_DEPLOYMENT_FINAL](N8N_WORKFLOWS_DEPLOYMENT_FINAL.md): Project documentation
+- [N8N_WORKFLOW_IMAGE_PROCESSING](archive/n8n-documentation-session68/N8N_WORKFLOW_IMAGE_PROCESSING.md): ┌─────────────────────┐ │ Google Drive │ │ (Input Folder) │ │ New/Updated Images │
+- [N8N_WORKFLOW_SUCCESS_SUMMARY](N8N_WORKFLOW_SUCCESS_SUMMARY.md): Latest Executions (2025-12-02):
+- [N8N_YOUTUBE_WORKFLOW_DEPLOYMENT_STATUS](N8N_YOUTUBE_WORKFLOW_DEPLOYMENT_STATUS.md): 1. Video Analysis → Gemini 2.5 Flash analyzes video, generates detailed description + transcription
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](archive/implementation-guides/NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
 - [POWER_BI_LEARNING_PATH](POWER_BI_LEARNING_PATH.md): Project documentation
 - [PRE_LAUNCH_CHECKLIST_23_DAYS](archive/miscellaneous/PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
@@ -289,6 +309,7 @@ When assisting with this project:
 - [README](video-ads-assets/products/README.md): Chaque produit a son propre dossier avec 4 sous-dossiers: {product-handle}/ ├── hero-images/ # Images fond blanc, studio
 - [README](video-ads-assets/scripts/README.md): python3 assetorganizer.py --create {product-handle} cd /Users/mac/Desktop/Alpha-Medical/video-ads-assets/scripts/
 - [README](archive/miscellaneous/README.md): Project documentation
+- [README](scripts/README.md): scripts/ ├── analysis/ │ ├── audits/ # Comprehensive audits and forensic analysis (30+ scripts)
 - [README](klaviyo_templates_professional/README.md): Project documentation
 - [README_COMPLETE](archive/miscellaneous/README_COMPLETE.md): market-analysis/ ├── leadgenerationscraper.py # 🎯 LEAD GENERATION │ ├── Instagram hashtag scraping
 - [ROBOTS_TXT_DEPLOYMENT](archive/implementation-guides/ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
@@ -297,7 +318,9 @@ When assisting with this project:
 - [SESSION_2025-11-11_SUMMARY](archive/session-summaries/SESSION_2025-11-11_SUMMARY.md): Project documentation
 - [SESSION_2025-11-19_FINAL_SUMMARY](archive/session-summaries/SESSION_2025-11-19_FINAL_SUMMARY.md): 1. ✅ Schema.org country corrections (CA → US) 2. ✅ Business address disclosure (JoHat Services LLC, Dover, DE)
 - [SESSION_65_FACTUAL_SUMMARY_2025-11-28](SESSION_65_FACTUAL_SUMMARY_2025-11-28.md): Shopify Forms App: Status: INSTALLED ✅ Install Date: 2025-11-28 (26 minutes before verification)
+- [SESSION_69_SCHEMA_DEPLOYMENT_SUMMARY](SESSION_69_SCHEMA_DEPLOYMENT_SUMMARY.md): { "@type": "CollectionPage", "name": "Products", "numberOfItems": 85, "inLanguage": "en-US",
 - [SESSION_73_SUMMARY](SESSION_73_SUMMARY.md): PROJECTNAME="Alpha Medical" BUSINESSMODEL="B2C E-COMMERCE RETAILER" SHOPIFYSTOREURL="https://azffej-as.myshopify.com"
+- [SESSION_76_COOKIE_CONSENT_DISCOVERY](SESSION_76_COOKIE_CONSENT_DISCOVERY.md): Project documentation
 - [SESSION_SUMMARY](archive/session-summaries/SESSION_SUMMARY.md): Comprehensive site setup and content creation session for Alpha Medical Care e-commerce store.
 - [SESSION_SUMMARY_2025-11-22_CONTINUATION](archive/miscellaneous/SESSION_SUMMARY_2025-11-22_CONTINUATION.md): Project documentation
 - [SYSTEM_100_PERCENT_COMPLETE](archive/miscellaneous/SYSTEM_100_PERCENT_COMPLETE.md): Project documentation
@@ -309,6 +332,8 @@ When assisting with this project:
 - [UGC_VIDEO_PROMPTS_GROK_IMAGINE](UGC_VIDEO_PROMPTS_GROK_IMAGINE.md): Chaque UGC = 3 segments montés sur CapCut = 15-18s total
 - [VIDEO_ADS_CREATION_PLAYBOOK](VIDEO_ADS_CREATION_PLAYBOOK.md): /video-ads-assets/ ├── products/ # Assets organisés par produit
 - [VIDEO_ADS_INFRASTRUCTURE_COMPLETE](archive/miscellaneous/VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md): Project documentation
+- [YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026](YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026.md): 1. Stratégie documentée 2. Workflow automation 3. E-commerce infrastructure
+- [YOUTUBE_WORKFLOW_ENGLISH_CONVERSION](YOUTUBE_WORKFLOW_ENGLISH_CONVERSION.md): en español (es-ES) in English (en-US)
 - [session_2025-11-20_summary](archive/session-summaries/session_2025-11-20_summary.md): 1. verifyenglishonlyforensic.py (V1 - 415 lines) 2. verifyenglishonlyforensicv2.py (V2 - 403 lines)
 
 ---
