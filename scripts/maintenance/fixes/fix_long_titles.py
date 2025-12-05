@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple
 
 # Shopify credentials
 SHOP_URL = "azffej-as.myshopify.com"
-ACCESS_TOKEN = "***REMOVED***"
+ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
 API_VERSION = "2025-10"
 
 # Headers for API requests

@@ -11,7 +11,7 @@ from typing import List, Dict, Optional
 
 # Shopify credentials
 SHOP_URL = "https://azffej-as.myshopify.com"
-ACCESS_TOKEN = "***REMOVED***"
+ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
 API_VERSION = "2025-10"
 
 # Headers for API requests

@@ -3,7 +3,7 @@
 
 import requests
 
-SHOPIFY_ADMIN_ACCESS_TOKEN = '***REMOVED***'
+SHOPIFY_ADMIN_ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
 SHOPIFY_STORE_DOMAIN = 'azffej-as.myshopify.com'
 
 url = f'https://{SHOPIFY_STORE_DOMAIN}/admin/api/2024-10/collections.json'

@@ -8,7 +8,7 @@ import json
 
 # Shopify API Configuration
 SHOPIFY_STORE = "azffej-as.myshopify.com"
-ACCESS_TOKEN = "***REMOVED***"
+ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
 API_VERSION = "2025-10"
 
 HEADERS = {

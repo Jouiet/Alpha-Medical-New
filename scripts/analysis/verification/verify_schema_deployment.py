@@ -4,7 +4,7 @@
 import requests
 import json
 
-SHOPIFY_ADMIN_ACCESS_TOKEN = '***REMOVED***'
+SHOPIFY_ADMIN_ACCESS_TOKEN = os.getenv('SHOPIFY_ADMIN_ACCESS_TOKEN')
 SHOPIFY_STORE_DOMAIN = 'azffej-as.myshopify.com'
 THEME_ID = '140069830733'
 
