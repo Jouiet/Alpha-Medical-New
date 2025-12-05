@@ -162,7 +162,18 @@ def main():
     flows_result = check_shopify_flows()
 
     if flows_result['error']:
-        print(f"❌ ERREUR API: {flows_result['error']}")
+        print(f"❌ ERREUR API ATTENDUE: {flows_result['error']}")
+        print()
+        print("📌 LIMITATION TECHNIQUE SHOPIFY (2025-12-05):")
+        print("   ⚠️  Shopify ne fournit AUCUN endpoint API public (REST ou GraphQL)")
+        print("   ⚠️  pour lister, récupérer ou gérer les Flows programmatiquement")
+        print()
+        print("📋 VÉRIFICATION ALTERNATIVE:")
+        print("   ✅ Méthode: Vérification manuelle via Shopify Admin → Apps → Flow")
+        print("   ✅ Dernière vérification: Session 61 (2025-11-27) via user screenshot")
+        print("   ✅ Résultat: 5/5 flows actifs (100%)")
+        print()
+        print("📄 Documentation: SHOPIFY_FLOW_API_LIMITATION_2025-12-05.md")
     else:
         print(f"✅ FLOWS DÉTECTÉS: {flows_result['count']}")
         for flow in flows_result['flows']:

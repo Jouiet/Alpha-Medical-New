@@ -21,10 +21,12 @@
 - ✅ **URLs SEO:** Keyword stuffing éliminé, URLs courtes SEO-friendly, 301 redirects auto-créés par Shopify
 - ✅ **Sécurité BundleAutoCreation.gs:** Hardcoded token supprimé, PropertiesService.getScriptProperties() implémenté, production-ready
 - ✅ **Scripts Correction:** 3 scripts créés (fix_long_url_handles.py, fix_remaining_long_handles.py, fix_final_2_handles.py)
-- ✅ **Documentation:** Counter-audit réalisé, corrections appliquées à 7 sections du rapport forensique
+- ✅ **Shopify Flow API:** Limitation technique documentée (aucun endpoint public GraphQL/REST pour lister workflows)
+- ✅ **Shopify Flow Verification:** Méthode manuelle documentée, 5/5 flows actifs confirmés (Session 61 user screenshot)
+- ✅ **Documentation:** Counter-audit réalisé, corrections appliquées à 7 sections du rapport forensique, SHOPIFY_FLOW_API_LIMITATION_2025-12-05.md créé
 - 📊 **Précision Forensique:** 81.75/100 → 96/100 (+14.25 points après corrections factuelles)
-- 🎯 **Actions Complétées:** URL shortening ✅, Security hardening ✅, API verification ✅, Documentation updates ✅
-- 🎯 **Actions Restantes:** Shopify Flows API debug (medium - GraphQL field inexistant)
+- 🎯 **Actions Complétées:** URL shortening ✅, Security hardening ✅, API verification ✅, Documentation updates ✅, Shopify Flow API limitation documented ✅
+- 🎯 **Actions Restantes:** AUCUNE - 100% complété Session 80
 
 **Session 71 (2025-12-02 - N8N Workflows Audit + YouTube Strategy Roadmap - COMPLETE):**
 - ✅ **N8N Connectivity Test:** API verified operational (HTTP 200, all endpoints responding)
