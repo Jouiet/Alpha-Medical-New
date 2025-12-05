@@ -51,7 +51,6 @@
 
   // INITIALIZATION
   function init() {
-    console.log('[BundleBuilder] Init:', ALL_PRODUCTS.length, 'products');
 
     if (searchInput) {
       searchInput.addEventListener('input', handleSearchInput);
@@ -79,7 +78,6 @@
       document.querySelectorAll('.input-method').forEach(panel => {
         panel.classList.toggle('active', panel.dataset.method === method);
       });
-      console.log('[BundleBuilder] Method:', method);
     }
   };
 
@@ -420,7 +418,6 @@
   function trackEvent(name, params) {
     if (typeof gtag === 'function') gtag('event', name, params);
     else if (typeof dataLayer !== 'undefined') dataLayer.push({ event: name, ...params });
-    else console.log('[GA4]', name, params);
   }
 
   // AUTO-INIT

@@ -14,7 +14,6 @@ const bundlesFilter = {
    * Initialize bundles filter system
    */
   init() {
-    console.log('[Bundles Filter] Initializing...');
 
     // Set initial sort from select
     const sortSelect = document.getElementById('bundle-sort');
@@ -25,7 +24,6 @@ const bundlesFilter = {
     // Initial display
     this.applyFilters();
 
-    console.log('[Bundles Filter] Ready');
   },
 
   /**
@@ -33,7 +31,6 @@ const bundlesFilter = {
    * @param {string} persona - Persona slug (office-worker, chronic-pain, athlete, etc.)
    */
   filterPersona(persona) {
-    console.log('[Bundles Filter] Filtering by persona:', persona);
 
     this.currentPersona = persona;
 
@@ -62,7 +59,6 @@ const bundlesFilter = {
    * @param {string} tier - Tier slug (all, tier1, tier2, tier3, tier4)
    */
   filterTier(tier) {
-    console.log('[Bundles Filter] Filtering by tier:', tier);
 
     this.currentTier = tier;
 
@@ -128,7 +124,6 @@ const bundlesFilter = {
     // Re-apply sort
     this.sortBundles(this.currentSort);
 
-    console.log('[Bundles Filter] Visible bundles:', visibleCount);
   },
 
   /**
@@ -136,7 +131,6 @@ const bundlesFilter = {
    * @param {string} sortBy - Sort method (savings, price-low, price-high, products, popular)
    */
   sortBundles(sortBy) {
-    console.log('[Bundles Filter] Sorting by:', sortBy);
 
     this.currentSort = sortBy;
 
@@ -192,7 +186,6 @@ const bundlesFilter = {
    * Reset all filters
    */
   resetFilters() {
-    console.log('[Bundles Filter] Resetting filters');
 
     this.filterPersona('all');
     this.filterTier('all');
@@ -209,7 +202,6 @@ const bundlesFilter = {
    * @param {string} bundleId - Bundle identifier
    */
   addToCart(bundleId) {
-    console.log('[Bundles Filter] Adding bundle to cart:', bundleId);
 
     // Track analytics
     if (typeof gtag !== 'undefined') {
@@ -240,7 +232,6 @@ const bundlesFilter = {
     })
     .then(response => response.json())
     .then(data => {
-      console.log('Bundle added to cart:', data);
       // Update cart UI
       window.location.href = '/cart';
     })

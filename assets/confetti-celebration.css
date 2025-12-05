@@ -1,0 +1,55 @@
+/* CONFETTI CELEBRATION SYSTEM - CSS Animations */
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #4770db;
+  top: -10px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.confetti-piece.square {
+  border-radius: 0;
+}
+
+.confetti-piece.circle {
+  border-radius: 50%;
+}
+
+.confetti-piece.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid currentColor;
+  background: transparent;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    top: -10%;
+    transform: translateX(0) rotateZ(0deg);
+  }
+  100% {
+    opacity: 0;
+    top: 100%;
+    transform: translateX(var(--drift)) rotateZ(var(--rotation));
+  }
+}
+
+.confetti-piece.falling {
+  animation: confetti-fall var(--fall-duration) linear forwards;
+}

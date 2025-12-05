@@ -1,0 +1,50 @@
+# Alpha Medical - robots.txt
+# Store: www.alphamedical.shop
+# Updated: 2025-12-05
+
+# Allow all crawlers
+User-agent: *
+
+# Disallow admin and account pages
+Disallow: /admin
+Disallow: /account
+Disallow: /cart
+Disallow: /orders
+Disallow: /checkouts/
+Disallow: /checkout
+Disallow: /carts
+Disallow: /thank_you
+
+# Disallow internal Shopify pages
+Disallow: /policies/
+Disallow: /apps/
+Disallow: /services/
+Disallow: /search
+Disallow: /404
+
+# Disallow duplicate product pages
+Disallow: /*?*sort_by=
+Disallow: /*?*page=
+Disallow: /*?*q=
+Disallow: /*?*variant=
+Disallow: /collections/*+*
+
+# Disallow tracking URLs
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*ref=
+Disallow: /*?*fb_action_ids=
+Disallow: /*?*fb_action_types=
+Disallow: /*?*fb_source=
+
+# Allow images for Google Images
+User-agent: Googlebot-Image
+Allow: /cdn/
+Allow: /products/*.jpg
+Allow: /products/*.jpeg
+Allow: /products/*.png
+Allow: /products/*.webp
+
+# Sitemap
+Sitemap: https://www.alphamedical.shop/sitemap.xml

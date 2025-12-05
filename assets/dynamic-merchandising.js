@@ -80,7 +80,6 @@
     // Try to get from localStorage (set by user interactions)
     const stored = localStorage.getItem('alphamedical_demographic');
     if (stored) {
-      CONFIG.debug && console.log('[DynMerch] User demographic from localStorage:', stored);
       return stored;
     }
 
@@ -88,12 +87,10 @@
     const viewedTags = JSON.parse(localStorage.getItem('alphamedical_viewed_tags') || '[]');
     if (viewedTags.length > 0) {
       const inferred = inferDemographicFromTags(viewedTags);
-      CONFIG.debug && console.log('[DynMerch] Inferred demographic from tags:', inferred);
       return inferred;
     }
 
     // Default to largest segment
-    CONFIG.debug && console.log('[DynMerch] Using default demographic:', CONFIG.defaultDemographic);
     return CONFIG.defaultDemographic;
   }
 
@@ -203,7 +200,6 @@
     const productCards = section.querySelectorAll('[data-product-handle], .product-card, .grid__item');
 
     if (productCards.length === 0) {
-      CONFIG.debug && console.log('[DynMerch] No product cards found in section');
       return;
     }
 
@@ -233,7 +229,6 @@
     // Sort by composite score (descending)
     products.sort((a, b) => b.score - a.score);
 
-    CONFIG.debug && console.log('[DynMerch] Reordered products:', products.map(p => ({
       handle: p.handle,
       score: p.score.toFixed(3)
     })));
@@ -248,15 +243,12 @@
   function applyDynamicMerchandising(productMatrix) {
     const context = getCurrentContext();
 
-    CONFIG.debug && console.log('[DynMerch] Context:', context);
-    CONFIG.debug && console.log('[DynMerch] Product matrix loaded:', Object.keys(productMatrix).length, 'products');
 
     // Apply to each target section
     CONFIG.targetSections.forEach(sectionClass => {
       const sections = document.querySelectorAll(`.${sectionClass}, [data-section-type="${sectionClass}"]`);
 
       sections.forEach(section => {
-        CONFIG.debug && console.log('[DynMerch] Processing section:', sectionClass);
         reorderProductsInSection(section, productMatrix, context);
       });
     });
@@ -271,7 +263,6 @@
       });
     }
 
-    CONFIG.debug && console.log('[DynMerch] ✅ Dynamic merchandising applied successfully');
   }
 
   // =========================================================================
@@ -294,7 +285,6 @@
     const recentTags = viewedTags.slice(-50);
     localStorage.setItem('alphamedical_viewed_tags', JSON.stringify(recentTags));
 
-    CONFIG.debug && console.log('[DynMerch] Tracked product view:', productHandle, 'Tags:', recentTags.length);
   }
 
   // =========================================================================
@@ -302,7 +292,6 @@
   // =========================================================================
 
   function init() {
-    CONFIG.debug && console.log('[DynMerch] Initializing dynamic merchandising system...');
 
     // Check if product matrix is available (injected via Liquid)
     if (typeof window.AlphaMedicalProductMatrix === 'undefined') {

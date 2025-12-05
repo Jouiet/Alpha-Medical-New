@@ -77,7 +77,6 @@
       commitmentCheckbox.addEventListener('change', validateForm);
     }
 
-    console.log(`Bundle Builder initialized: ${ALL_PRODUCTS.length} products loaded`);
   }
 
   // =========================================================================
@@ -461,7 +460,6 @@
         ...params
       });
     } else {
-      console.log('GA4 Event:', eventName, params);
     }
   }
 

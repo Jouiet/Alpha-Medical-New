@@ -43,7 +43,6 @@ class RecentlyViewedProducts {
       // Save to localStorage
       localStorage.setItem(this.storageKey, JSON.stringify(items));
 
-      console.log('[RecentlyViewed] Product added:', productData.title);
     } catch (error) {
       console.error('[RecentlyViewed] Error adding product:', error);
     }
@@ -92,7 +91,6 @@ class RecentlyViewedProducts {
     // Don't render if no products
     if (items.length === 0) {
       container.style.display = 'none';
-      console.log('[RecentlyViewed] No products to display');
       return;
     }
 
@@ -101,7 +99,6 @@ class RecentlyViewedProducts {
 
     if (items.length === 0) {
       container.style.display = 'none';
-      console.log('[RecentlyViewed] No valid product data');
       return;
     }
 
@@ -120,7 +117,6 @@ class RecentlyViewedProducts {
     container.innerHTML = html;
     container.style.display = 'block';
 
-    console.log('[RecentlyViewed] Rendered', items.length, 'product(s)');
   }
 
   /**
@@ -169,7 +165,6 @@ class RecentlyViewedProducts {
   clear() {
     try {
       localStorage.removeItem(this.storageKey);
-      console.log('[RecentlyViewed] Cleared all products');
     } catch (error) {
       console.error('[RecentlyViewed] Error clearing products:', error);
     }
