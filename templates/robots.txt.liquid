@@ -1,213 +1,50 @@
-# Alpha Medical Care - Robots.txt
-# AI Models & Crawlers Configuration
+# Alpha Medical - robots.txt
+# Store: www.alphamedical.shop
+# Updated: 2025-12-05
 
-# AI Models: For LLM-friendly documentation, see:
-# https://alphamedical.shop/llms.txt
-
-# Standard Web Crawlers
+# Allow all crawlers
 User-agent: *
-Disallow: /a/downloads/-/*
+
+# Disallow admin and account pages
 Disallow: /admin
+Disallow: /account
 Disallow: /cart
 Disallow: /orders
 Disallow: /checkouts/
 Disallow: /checkout
-Disallow: /67103162445/checkouts
-Disallow: /67103162445/orders
 Disallow: /carts
-Disallow: /account
-Disallow: /collections/*sort_by*
-Disallow: /*/collections/*sort_by*
-Disallow: /collections/*+*
-Disallow: /collections/*%2B*
-Disallow: /collections/*%2b*
-Disallow: /*/collections/*+*
-Disallow: /*/collections/*%2B*
-Disallow: /*/collections/*%2b*
-Disallow: /blogs/*+*
-Disallow: /blogs/*%2B*
-Disallow: /blogs/*%2b*
-Disallow: /*/blogs/*+*
-Disallow: /*/blogs/*%2B*
-Disallow: /*/blogs/*%2b*
-Disallow: /*?*oseid=*
-Disallow: /*preview_theme_id*
-Disallow: /*preview_script_id*
+Disallow: /thank_you
+
+# Disallow internal Shopify pages
 Disallow: /policies/
+Disallow: /apps/
+Disallow: /services/
 Disallow: /search
-Disallow: /apple-app-site-association
-Disallow: /.well-known/shopify/monorail
-Disallow: /cdn/wpm/*.js
-Disallow: /wpm/*.js
-Disallow: /*/wpm/*.js
-Disallow: /cdn/shopifycloud/consent-tracking-api/*
-Disallow: /s/files/*/checkout/thank_you/*
+Disallow: /404
 
-# Google AdSense Bot
-User-agent: Mediapartners-Google
-Disallow:
-
-# Google AdsBot
-User-agent: adsbot-google
-Disallow: /checkouts/
-Disallow: /checkout
-Disallow: /carts
-Disallow: /orders
-Disallow: /67103162445/checkouts
-Disallow: /67103162445/orders
-Disallow: /*?*oseid=*
-Disallow: /*preview_theme_id*
-Disallow: /*preview_script_id*
-
-# Aggressive crawlers (slow them down)
-User-agent: Nutch
-Disallow: /
-
-User-agent: AhrefsBot
-Crawl-delay: 10
-Disallow: /a/downloads/-/*
-Disallow: /admin
-Disallow: /cart
-Disallow: /orders
-Disallow: /checkouts/
-Disallow: /checkout
-Disallow: /67103162445/checkouts
-Disallow: /67103162445/orders
-Disallow: /carts
-Disallow: /account
-Disallow: /collections/*sort_by*
-Disallow: /*/collections/*sort_by*
+# Disallow duplicate product pages
+Disallow: /*?*sort_by=
+Disallow: /*?*page=
+Disallow: /*?*q=
+Disallow: /*?*variant=
 Disallow: /collections/*+*
-Disallow: /collections/*%2B*
-Disallow: /collections/*%2b*
-Disallow: /*/collections/*+*
-Disallow: /*/collections/*%2B*
-Disallow: /*/collections/*%2b*
-Disallow: /blogs/*+*
-Disallow: /blogs/*%2B*
-Disallow: /blogs/*%2b*
-Disallow: /*/blogs/*+*
-Disallow: /*/blogs/*%2B*
-Disallow: /*/blogs/*%2b*
-Disallow: /*?*oseid=*
-Disallow: /*preview_theme_id*
-Disallow: /*preview_script_id*
-Disallow: /policies/
-Disallow: /search
-Disallow: /apple-app-site-association
-Disallow: /.well-known/shopify/monorail
-Disallow: /cdn/wpm/*.js
-Disallow: /wpm/*.js
-Disallow: /*/wpm/*.js
-Disallow: /cdn/shopifycloud/consent-tracking-api/*
-Disallow: /s/files/*/checkout/thank_you/*
 
-User-agent: AhrefsSiteAudit
-Crawl-delay: 10
-Disallow: /a/downloads/-/*
-Disallow: /admin
-Disallow: /cart
-Disallow: /orders
-Disallow: /checkouts/
-Disallow: /checkout
-Disallow: /67103162445/checkouts
-Disallow: /67103162445/orders
-Disallow: /carts
-Disallow: /account
-Disallow: /collections/*sort_by*
-Disallow: /*/collections/*sort_by*
-Disallow: /collections/*+*
-Disallow: /collections/*%2B*
-Disallow: /collections/*%2b*
-Disallow: /*/collections/*+*
-Disallow: /*/collections/*%2B*
-Disallow: /*/collections/*%2b*
-Disallow: /blogs/*+*
-Disallow: /blogs/*%2B*
-Disallow: /blogs/*%2b*
-Disallow: /*/blogs/*+*
-Disallow: /*/blogs/*%2B*
-Disallow: /*/blogs/*%2b*
-Disallow: /*?*oseid=*
-Disallow: /*preview_theme_id*
-Disallow: /*preview_script_id*
-Disallow: /policies/
-Disallow: /search
-Disallow: /apple-app-site-association
-Disallow: /.well-known/shopify/monorail
-Disallow: /cdn/wpm/*.js
-Disallow: /wpm/*.js
-Disallow: /*/wpm/*.js
-Disallow: /cdn/shopifycloud/consent-tracking-api/*
-Disallow: /s/files/*/checkout/thank_you/*
+# Disallow tracking URLs
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*ref=
+Disallow: /*?*fb_action_ids=
+Disallow: /*?*fb_action_types=
+Disallow: /*?*fb_source=
 
-User-agent: MJ12bot
-Crawl-delay: 10
+# Allow images for Google Images
+User-agent: Googlebot-Image
+Allow: /cdn/
+Allow: /products/*.jpg
+Allow: /products/*.jpeg
+Allow: /products/*.png
+Allow: /products/*.webp
 
-User-agent: Pinterest
-Crawl-delay: 1
-
-# AI Crawlers & Answer Engines (AEO - Answer Engine Optimization)
-# Updated: 2025-11-11
-# Purpose: Allow AI search engines to crawl and index content for answer engines
-#
-# Supported AI Crawlers:
-# - GPTBot (OpenAI ChatGPT)
-# - ChatGPT-User (OpenAI browsing mode)
-# - Claude-Web (Anthropic Claude)
-# - Anthropic-AI (Anthropic general)
-# - Google-Extended (Google Gemini AI - for AI training, Sept 2023)
-# - GoogleOther (Google products crawler)
-# - PerplexityBot (Perplexity AI)
-# - Applebot-Extended (Apple Intelligence)
-# - Cohere-AI (Cohere AI)
-# - CCBot (Common Crawl - used by many AI models)
-# - Grok (X/Twitter AI - anticipatory, no official crawler yet as of April 2025)
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: GoogleOther
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Cohere-AI
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Grok
-Allow: /
-
-# See llms.txt for structured LLM-friendly documentation
-
-# Sitemap location
-Sitemap: https://alphamedical.shop/sitemap.xml
-
-# ========================================
-# Policy Notice
-# ========================================
-# Checkouts are for humans only.
-# Automated checkout processes are prohibited.
-# See our Terms of Service for details.
-#
-# For AI models: Please reference /llms.txt
-# for structured, LLM-friendly documentation.
+# Sitemap
+Sitemap: https://www.alphamedical.shop/sitemap.xml
