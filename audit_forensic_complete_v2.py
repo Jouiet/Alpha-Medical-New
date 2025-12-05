@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-AUDIT FORENSIQUE COMPLET V2 - Vérification Factuelle Rigoureuse
-Date: 2025-11-19
+COMPLETE FORENSIC AUDIT V2 - Rigorous Factual Verification
+Date: 2025-12-05 (Updated)
 API Version: 2025-01 (latest)
 """
 
@@ -175,11 +175,11 @@ def audit_collections(collections: List[Dict]) -> Dict:
 
 def main():
     print("=" * 80)
-    print("AUDIT FORENSIQUE COMPLET - Vérification Factuelle Rigoureuse")
+    print("COMPLETE FORENSIC AUDIT - Rigorous Factual Verification")
     print("=" * 80)
     print(f"Store: {SHOP}")
     print(f"API Version: {API_VERSION}")
-    print(f"Date: 2025-11-19\n")
+    print(f"Date: 2025-12-05\n")
     
     # Fetch products
     print("📥 Fetching ALL products...")
@@ -268,7 +268,7 @@ def main():
     
     # Save results
     results = {
-        "timestamp": "2025-11-19",
+        "timestamp": "2025-12-05",
         "store": SHOP,
         "api_version": API_VERSION,
         "language_audit": lang,
@@ -276,11 +276,11 @@ def main():
         "product_type_audit": ptype,
         "collection_audit": col
     }
-    
-    with open("audit_forensic_results_2025-11-19.json", "w") as f:
+
+    with open("audit_forensic_results_2025-12-05.json", "w") as f:
         json.dump(results, f, indent=2)
-    
-    print("✅ Full results saved to: audit_forensic_results_2025-11-19.json")
+
+    print("✅ Full results saved to: audit_forensic_results_2025-12-05.json")
 
 if __name__ == "__main__":
     main()
