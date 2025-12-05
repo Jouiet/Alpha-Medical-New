@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** December 05, 2025 at 18:16 UTC
+**Generated:** December 05, 2025 at 18:31 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -78,7 +78,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -27238,7 +27238,7 @@ Priority 8: FAQ Schema Markup
 # 2. Add Filter To Prevent Loop
 
 **File:** `ADD_FILTER_TO_PREVENT_LOOP.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -27300,7 +27300,7 @@ traité avec succès. Cela empêche aussi la boucle.
 # 3. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -39537,7 +39537,7 @@ Month 4-6 (Mar 22 - Jun 21):
 # 4. Alpha Medical Brand Guidelines
 
 **File:** `ALPHA_MEDICAL_BRAND_GUIDELINES.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -40585,7 +40585,7 @@ THEME_ID=140069830733
 # 5. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -41732,7 +41732,7 @@ Audit complet 7 critères
 # 6. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -42099,7 +42099,7 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 7. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -49101,7 +49101,7 @@ CURRENT SCORE (Session 75 Continuation):
 # 8. Azure Ad Setup Guide
 
 **File:** `AZURE_AD_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -50270,7 +50270,7 @@ git push --force  # ⚠️ Utiliser avec précaution
 # 9. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -50824,7 +50824,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 10. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -51069,7 +51069,7 @@ Search: "product bundle images" or "product collage design"
 # 11. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -51382,7 +51382,7 @@ gh workflow run daily-scraping.yml
 # 12. Clean Test Status
 
 **File:** `CLEAN_TEST_STATUS.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -51481,7 +51481,7 @@ Script de monitoring en cours: `monitor_clean_test.py`
 # 13. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -58322,7 +58322,7 @@ Country: US
 # 14. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -58926,7 +58926,7 @@ June:
 # 15. Counter Audit External Vs Reality 2025-12-05
 
 **File:** `COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -59565,7 +59565,7 @@ MINIMUM_FIXES_FOR_LAUNCH=Remove fraudulent pharmacy mention + test SEO metadata
 # 16. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -61578,7 +61578,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 17. Env Files Documentation
 
 **File:** `ENV_FILES_DOCUMENTATION.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -61800,7 +61800,7 @@ SHOPIFY_GRAPHQL_URL=https://azffej-as.myshopify.com/admin/api/2025-10/graphql.js
 # 18. Etapes Manuelles Prioritaires
 
 **File:** `ETAPES_MANUELLES_PRIORITAIRES.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -62650,7 +62650,7 @@ Last updated: December 2025
 # 19. Final Activation Steps
 
 **File:** `FINAL_ACTIVATION_STEPS.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -62817,7 +62817,7 @@ Documentation Updated:
 # 20. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -63659,7 +63659,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 21. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -64043,7 +64043,7 @@ TOTAL: ~30 minutes de travail actif
 # 22. Google Oauth2 Credentials Guide
 
 **File:** `GOOGLE_OAUTH2_CREDENTIALS_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -64407,7 +64407,7 @@ Une fois fait, ces credentials sont **réutilisables** pour le Workflow YouTube 
 # 23. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -64783,7 +64783,7 @@ dig TXT alphamedical.shop +short
 # 24. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -74475,7 +74475,7 @@ Total: 816÷9 = 90.67 → Adjusted to 96/100
 # 25. Judgeme Import Step By Step
 
 **File:** `JUDGEME_IMPORT_STEP_BY_STEP.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -74799,7 +74799,7 @@ print(r.json()['data']['products']['edges'][0]['node']['handle'])
 # 26. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -75131,7 +75131,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 27. Klaviyo Mcp Server Guide
 
 **File:** `KLAVIYO_MCP_SERVER_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -75473,7 +75473,7 @@ Redémarre Claude Code et commence à poser des questions sur tes flows, segment
 # 28. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -76019,7 +76019,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 29. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -76498,7 +76498,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 30. Live Site Verification 2025-11-29
 
 **File:** `LIVE_SITE_VERIFICATION_2025-11-29.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -76925,7 +76925,7 @@ grep -i "tidio\|gtm\|judge" /tmp/homepage.html
 # 31. N8N Blog Automation Setup Guide
 
 **File:** `N8N_BLOG_AUTOMATION_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -77492,7 +77492,7 @@ return {
 # 32. N8N Credential Setup Required
 
 **File:** `N8N_CREDENTIAL_SETUP_REQUIRED.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -77796,7 +77796,7 @@ Once all credentials are configured and workflow is activated:
 # 33. N8N Workflows Deployment Final
 
 **File:** `N8N_WORKFLOWS_DEPLOYMENT_FINAL.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -78200,7 +78200,7 @@ Solution:
 # 34. N8N Workflow Success Summary
 
 **File:** `N8N_WORKFLOW_SUCCESS_SUMMARY.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -78416,7 +78416,7 @@ Total Nodes: 32
 # 35. N8N Youtube Workflow Deployment Status
 
 **File:** `N8N_YOUTUBE_WORKFLOW_DEPLOYMENT_STATUS.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -78674,7 +78674,7 @@ After deployment, verify:
 # 36. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -78972,7 +78972,7 @@ If you encounter issues not covered in this guide:
 # 37. Policy Pages Audit Report 2025-11-30
 
 **File:** `POLICY_PAGES_AUDIT_REPORT_2025-11-30.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -79259,7 +79259,7 @@ After completing updates, verify:
 # 38. Power Bi Learning Path
 
 **File:** `POWER_BI_LEARNING_PATH.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -79796,7 +79796,7 @@ open https://learn.microsoft.com/training/paths/get-started-power-bi/
 # 39. Pre Launch Execution Checklist 2025-12-03
 
 **File:** `PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -81002,7 +81002,7 @@ Total: 4h 40min | Impact: LOW | Risk: NONE if skipped
 # 40. Pre Launch Runbook 2025-12-25
 
 **File:** `PRE_LAUNCH_RUNBOOK_2025-12-25.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -81770,7 +81770,7 @@ git log --oneline -5
 # 41. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -83762,7 +83762,7 @@ Result: Complete product-specific recommendations with web-verified seasonality
 # 42. Schema Markup Ai Optimization 2025
 
 **File:** `SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -84201,7 +84201,7 @@ Professional schema markup = **Brand authority signal for multimodal AI**
 # 43. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -84713,7 +84713,7 @@ Target: 100/100 (with all optimizations)
 # 44. Session 67 Infrastructure Audit 2025-12-01
 
 **File:** `SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -85078,7 +85078,7 @@ python3 audit_infrastructure.py
 # 45. Session 68 New Products Optimization 2025-12-01
 
 **File:** `SESSION_68_NEW_PRODUCTS_OPTIMIZATION_2025-12-01.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -85336,7 +85336,7 @@ python3 audit_infrastructure.py
 # 46. Session 69 Schema Deployment Summary
 
 **File:** `SESSION_69_SCHEMA_DEPLOYMENT_SUMMARY.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -85698,7 +85698,7 @@ python3 audit_infrastructure.py
 # 47. Session 73 Summary
 
 **File:** `SESSION_73_SUMMARY.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -86282,7 +86282,7 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 # 48. Session 76 Cookie Consent Discovery
 
 **File:** `SESSION_76_COOKIE_CONSENT_DISCOVERY.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -86544,7 +86544,7 @@ cookie-consent-banner ✅
 # 49. Session 76 Klaviyo Mcp Installation
 
 **File:** `SESSION_76_KLAVIYO_MCP_INSTALLATION.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -86700,7 +86700,7 @@ Klaviyo a lancé un MCP (Model Context Protocol) server pour connecter directeme
 # 50. Shopify Flow Loyalty Tier Tagging Manual Modification
 
 **File:** `SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -86879,7 +86879,7 @@ Trigger: Order paid
 # 51. Tidio 6 Flows Final Summary
 
 **File:** `TIDIO_6_FLOWS_FINAL_SUMMARY.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -87243,7 +87243,7 @@ Trigger: Order paid
 # 52. Tidio Deduplication Matrix 2025-11-29
 
 **File:** `TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -87865,7 +87865,7 @@ Step 3: Places order
 # 53. Tidio Support Flows Final Implementation 2025-11-29
 
 **File:** `TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -88723,7 +88723,7 @@ C) Attendre Lyro AI 30.01.2026 (1h setup) ⏳ AI automation 60-70%
 # 54. Tidio Templates Analysis Factual 2025-11-29
 
 **File:** `TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -90691,7 +90691,7 @@ Solution 3: Fallback Plan
 # 55. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -91003,7 +91003,7 @@ Homepage (Prio 1)
 # 56. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -91805,7 +91805,7 @@ alphamedical.shop
 # 57. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -93007,7 +93007,7 @@ This is a living document - update as you learn!
 # 58. Youtube Strategy Complete Roadmap 2026
 
 **File:** `YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -93933,7 +93933,7 @@ TOTAL:         $0.45 per video
 # 59. Youtube Workflow English Conversion
 
 **File:** `YOUTUBE_WORKFLOW_ENGLISH_CONVERSION.md`
-**Last Modified:** 2025-12-05 18:16
+**Last Modified:** 2025-12-05 18:31
 
 ---
 
@@ -94157,7 +94157,7 @@ After making the 3 changes above, verify AI output is English:
 ## Document Information
 
 **Total Documentation Files:** 59
-**Generated:** December 05, 2025 at 18:16 UTC
+**Generated:** December 05, 2025 at 18:31 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
