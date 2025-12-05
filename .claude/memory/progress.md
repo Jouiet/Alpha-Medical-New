@@ -58,3 +58,4 @@
 - [2025-12-05 20:40 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/fixes/verify_corrections.py
 - [2025-12-05 20:43 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/fixes/fix_remaining_long_handles.py
 - [2025-12-05 20:43 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/fixes/fix_final_2_handles.py
+- [2025-12-05 20:54 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SHOPIFY_FLOW_API_LIMITATION_2025-12-05.md
