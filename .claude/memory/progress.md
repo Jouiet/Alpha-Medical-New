@@ -2,23 +2,6 @@
 
 > Updated by post-tool-use hook after significant changes
 
-- [2025-11-28 14:52 UTC] 📅 Contest winner announcement changed 15.01→05.01.2026
-- [2025-11-28 14:55 UTC] 💰 Budget 2026 allocated: $6,000 FB/IG + $800 Google Ads = $6,800 total
-- [2025-11-28 15:20 UTC] 🌐 Web research: Meta/Google/TikTok Ads minimums verified (2024-2025 sources)
-- [2025-11-28 15:25 UTC] ✅ Verified: FB minimum $5/jour (technique), $20/jour (recommandé), $50/jour (optimal)
-- [2025-11-28 15:30 UTC] ✅ Strategic decision: TikTok EXCLUDED 2026 (budget 91% sous minimum)
-- [2025-11-28 15:35 UTC] 💡 Budget reallocation: $560 TikTok → Facebook/Instagram
-- [2025-11-28 15:37 UTC] 📈 Q4 budget impact: $17.50→$25/jour FB (+43% = VIABLE status)
-- [2025-11-28 15:40 UTC] 📝 Updated: COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md (Session 65 budget revision)
-- [2025-11-28 15:42 UTC] 📝 Updated: CLAUDE.md (launch date, infrastructure score 91→94/100)
-- [2025-11-28 15:43 UTC] 📝 Updated: INFRASTRUCTURE_AUDIT_CHECKLIST.md (days to launch 18→27)
-- [2025-11-28 15:45 UTC] ✅ Commit 80ab18b: Budget strategy revision - TikTok exclusion 2026
-- [2025-11-28 15:46 UTC] 🚀 Push successful: 2 commits to origin/main (rebase successful)
-- [2025-11-28 16:10 UTC] 📝 Updated: .claude/memory/00-metadata.md (launch date 15.12→25.12)
-- [2025-11-28 16:15 UTC] 📝 Updated: .claude/memory/03-marketing-context.md (complete 2026 budget strategy)
-- [2025-11-28 16:16 UTC] 📊 Budget strategy 2026: 2-platform concentration (FB/IG 88.2%, Google 11.8%, TikTok 0%)
-- [2025-11-30 02:56 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/POLICY_PAGES_AUDIT_REPORT_2025-11-30.md
-- [2025-12-01 07:48 UTC] ✅ Created: /Users/mac/Desktop/henderson-shopify/.claude/memory/00-metadata.md
 - [2025-12-01 07:49 UTC] ✅ Created: /Users/mac/Desktop/henderson-shopify/.claude/memory/02-infrastructure-summary.md
 - [2025-12-01 07:50 UTC] ✅ Created: /Users/mac/Desktop/henderson-shopify/.claude/memory/03-marketing-context.md
 - [2025-12-01 08:05 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/audit_infrastructure.py
@@ -65,3 +48,8 @@
 - [2025-12-05 13:55 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md
 - [2025-12-05 14:05 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/memory/SESSION_78_SUMMARY_2025-12-05.md
 - [2025-12-05 14:12 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/standardize_api_versions.py
+- [2025-12-05 14:16 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/categorize_scripts.py
+- [2025-12-05 14:17 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/migrate_scripts_safe.py
+- [2025-12-05 14:21 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/identify_obsolete_scripts.py
+- [2025-12-05 14:25 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/execute_migration.py
+- [2025-12-05 14:26 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/scripts/README.md
