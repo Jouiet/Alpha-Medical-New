@@ -29,7 +29,7 @@
 
 ---
 
-## 📊 CURRENT STATE (2025-12-05 SESSION 79 VALIDATED)
+## 📊 CURRENT STATE (2025-12-05 SESSION 80 VALIDATED)
 
 **Health Score:** 100/100 🟢 PERFECT (PRE-LAUNCH Methodology: READINESS not performance)
 **Revenue:** $0 (PRE-LAUNCH)
@@ -92,7 +92,8 @@
 **E-commerce Platform:**
 - Shopify Basic ($29/mo)
 - Theme: Alpha-Medical-New/main (ID: 140069830733)
-- Apps: 7 installed (Shopify Email, Klaviyo, Flow, Loox, DSers, Translate & Adapt)
+- Apps: 9 active (Shopify Email, DSers, Loox, Flow, Klaviyo, Forms, Canva, Tidio, Alpha Medical API v2)
+- Apps Cleanup (Session 80): Judge.me désinstallé (redondance), Translate & Adapt désinstallé (contradiction mandat English-only)
 
 **Payment Gateway:**
 - Stripe: ⏳ NOT YET CONNECTED (Available: 2025-12-15, 11 days from now)
@@ -133,5 +134,8 @@
 
 ---
 
-**Last Updated:** 2025-12-05 Session 79 (P0-DAY3 + P1 Performance + SEO Deployment)
-**Token Cost:** ~500 tokens (Level 1 - always loaded)
+**Last Updated:** 2025-12-05 Session 80 (Apps Cleanup + Forensic Report Factual Corrections)
+**Recent Sessions:**
+- Session 80: Apps cleanup (Judge.me & Translate désinstallés), Forensic report corrections (7 sections), sitemap.xml supprimé
+- Session 79: Repository optimization (284→15 root files, 95% reduction), Performance (LCP 419ms), SEO deployment
+**Token Cost:** ~550 tokens (Level 1 - always loaded)

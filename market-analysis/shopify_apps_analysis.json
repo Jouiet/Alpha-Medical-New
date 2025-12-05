@@ -24,6 +24,10 @@
       {
         "title": "Loox Reviews",
         "handle": "loox-fashion-reviews"
+      },
+      {
+        "title": "Canva Connect",
+        "handle": "canva-app"
       }
     ],
     "shipping": [
@@ -34,11 +38,15 @@
     ],
     "other": [
       {
-        "title": "Translate & Adapt",
-        "handle": "translate-and-adapt"
+        "title": "Forms",
+        "handle": "shopify-forms"
       },
       {
-        "title": "Alpha Medical New",
+        "title": "Tidio ‑ Live Chat & Chatbots",
+        "handle": "tidio-chat"
+      },
+      {
+        "title": "Alpha Medical API v2",
         "handle": null
       }
     ]
