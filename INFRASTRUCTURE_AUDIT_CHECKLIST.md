@@ -151,6 +151,28 @@
 
 ---
 
+## 📑 TABLE OF CONTENTS
+
+**Quick Navigation** (9,739 lines total - search for specific topics):
+
+1. **CORE E-COMMERCE** (line 282) - Shopify store, products, customers, orders, policies
+2. **INSTALLED APPS** (line 948) - Email, automation, reviews, dropshipping (9 total)
+3. **SHOPIFY FLOW WORKFLOWS** (line 1079) - 5 active workflows, identified gaps
+4. **TRACKING & ANALYTICS** (line 1207) - GTM, GA4, Meta Pixel, TikTok, Google Ads
+5. **DATA INFRASTRUCTURE** (line 1332) - Webhooks, APIs, integrations
+6. **GITHUB ACTIONS** (line 1572) - Workflows (10/10 active), consumer intelligence
+7. **AUTOMATION SCRIPTS** (line 1732) - 265 Python scripts, 16 categories
+8. **FLYWHEEL STATUS** (line 1831) - Automation maturity matrix
+9. **CRITICAL BLOCKERS** (line 1944) - Analysis and resolution status
+10. **GAPS ANALYSIS** (line 2039) - 9% remaining optimizations
+11. **OPTIMIZATION OPPORTUNITIES** (line 2121) - Recommendations
+12. **ROADMAP** (line 2308) - Strategic implementation plan
+13. **FINANCIAL PROJECTIONS** (line 2479) - Revenue models
+
+**Pro Tip:** Use `Ctrl+F` (Cmd+F) + line number to jump directly to sections.
+
+---
+
 ## 📊 EXECUTIVE SUMMARY
 
 ### État Actuel Vérifié (2025-11-25)

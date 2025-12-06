@@ -2,23 +2,6 @@
 
 > Updated by post-tool-use hook after significant changes
 
-- [2025-12-03 16:57 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/ALPHA_MEDICAL_BRAND_GUIDELINES.md
-- [2025-12-03 18:37 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03.md
-- [2025-12-03 20:54 UTC] ✅ Script created: /tmp/update_privacy_policy_complete.py
-- [2025-12-03 21:33 UTC] ✅ Script created: /tmp/update_privacy_policy_retention_cookies.py
-- [2025-12-03 21:40 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md
-- [2025-12-04 12:49 UTC] ✅ Created: /tmp/non_stripe_tasks_analysis.md
-- [2025-12-04 13:08 UTC] ✅ Created: /tmp/EXECUTION_MANUAL_JOURS_1-3.md
-- [2025-12-04 13:25 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/ETAPES_MANUELLES_PRIORITAIRES.md
-- [2025-12-04 13:58 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/automate_legal_compliance.py
-- [2025-12-04 14:01 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/check_footer_menu.py
-- [2025-12-04 14:03 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/automate_analytics_validation.py
-- [2025-12-04 14:04 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/automate_klaviyo_email.py
-- [2025-12-04 14:05 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_76_AUTOMATION_COMPLETE_SUMMARY.md
-- [2025-12-04 16:37 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/complete_shopify_policies.py
-- [2025-12-04 17:10 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/fix_email_to_professional.py
-- [2025-12-04 17:19 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/complete_all_shopify_policies_final.py
-- [2025-12-04 21:27 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/KLAVIYO_MCP_SERVER_GUIDE.md
 - [2025-12-04 21:29 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_76_KLAVIYO_MCP_INSTALLATION.md
 - [2025-12-04 21:42 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_76_COOKIE_CONSENT_DISCOVERY.md
 - [2025-12-05 13:42 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/forensic_analysis_shopify.py
@@ -59,3 +42,21 @@
 - [2025-12-05 20:43 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/fixes/fix_remaining_long_handles.py
 - [2025-12-05 20:43 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/fixes/fix_final_2_handles.py
 - [2025-12-05 20:54 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SHOPIFY_FLOW_API_LIMITATION_2025-12-05.md
+- [2025-12-06 11:18 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/CLAUDE_SKILLS_COMPLETE_GUIDE.md
+- [2025-12-06 11:27 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SHOPIFY_MCP_FACTUAL_ANALYSIS.md
+- [2025-12-06 11:31 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/skills/brand-guidelines/SKILL.md
+- [2025-12-06 11:36 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/skills/seo-optimizer/SKILL.md
+- [2025-12-06 11:38 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/CLAUDE_SKILLS_INSTALLATION_GUIDE.md
+- [2025-12-06 11:43 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/STOREFRONT_API_SCOPES_ANALYSIS.md
+- [2025-12-06 11:45 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/verify_storefront_api_scopes.py
+- [2025-12-06 11:46 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/STOREFRONT_API_EMPIRICAL_VERIFICATION.md
+- [2025-12-06 11:51 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/STOREFRONT_API_CRITICAL_SECURITY_ANALYSIS.md
+- [2025-12-06 12:04 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/EMERGENCY_API_TOKEN_REVOCATION_GUIDE.md
+- [2025-12-06 12:14 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/AVAILABLE_APIS_AND_TOOLS.md
+- [2025-12-06 12:27 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/CLAUDE_TASKS_MEMORY_SYSTEMS_ANALYSIS.md
+- [2025-12-06 12:37 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/OPTIMIZATION_ROADMAP_95_100.md
+- [2025-12-06 12:44 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/CLAUDE.md
+- [2025-12-06 12:45 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/.claude/hooks/user-prompt-submit.sh
+- [2025-12-06 12:45 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/.claude/hooks/stop.sh
+- [2025-12-06 12:45 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/.claude/hooks/session-start.sh
+- [2025-12-06 12:45 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/.claude/hooks/notification.sh
