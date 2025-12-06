@@ -1,9 +1,54 @@
 # COUNTER-AUDIT: EXTERNAL AUDIT VS EMPIRICAL REALITY
 **Date:** 2025-12-05
-**Last Updated:** 2025-12-06 Session 81 (Claude Code System Optimization)
+**Last Updated:** 2025-12-06 Session 82 (Automation Empirical Verification)
 **Analyst:** Claude Code (Sonnet 4.5)
-**Methodology:** Factual verification of every claim via direct codebase inspection + API verification
+**Methodology:** Factual verification of every claim via direct codebase inspection + API verification + Chrome DevTools UI verification
 **Bullshit Tolerance:** ZERO
+
+---
+
+## 🔄 SESSION 82 UPDATE (2025-12-06) - AUTOMATION EMPIRICAL VERIFICATION
+
+**Focus:** Flywheel automation duplication resolution → DISCOVERED FALSE POSITIVES
+
+### Critical Discovery: Documentation vs Reality Mismatch ❌
+
+**Planned Task:** Resolve automation duplications identified in AUTOMATION_COMPLEMENTARITY_MATRIX_2025-12-06.txt
+**Method:** Chrome DevTools MCP direct UI verification (Shopify Flow + Email apps)
+**Result:** **3/3 planned deactivations were FALSE POSITIVES** - workflows DO NOT EXIST
+
+**Workflows claimed to exist (for deactivation):**
+1. ❌ Shopify Flow "welcome_subscribers" - **NOT FOUND** (checked Active + Inactive tabs)
+2. ❌ Shopify Flow "upsell_post_purchase" - **NOT FOUND** (checked Active + Inactive tabs)
+3. ❌ Shopify Email "welcome_new_subscribers" - **NOT FOUND** (checked Automations list)
+
+**Actual Empirical Findings:**
+- **Shopify Flow:** 5 workflows ALL ACTIVE, 0 inactive (verified UI: "No workflows found" in Inactive tab)
+- **Shopify Email:** 5 automations ALL ACTIVE (verified UI: Automations tab)
+
+**NEW duplications discovered (not in original plan):**
+1. ⚠️ **Browse Abandonment:** Shopify Flow "Convert abandoned product browse" + Shopify Email "Did something catch your eye?"
+2. ⚠️ **Checkout Abandonment:** Shopify Flow "Recover abandoned checkout" + Shopify Email "You left items at checkout"
+3. ⚠️ **Cart Abandonment:** 3-way duplication (Shopify Flow + Email + Klaviyo assumed)
+
+**Root Cause:** AUTOMATION_COMPLEMENTARITY_MATRIX_2025-12-06.txt documented **theoretical/planned** workflows, not **live system** state
+
+**Lesson Learned:** User's principle validated: "Vérification FACTUELLE RIGOUREUSE - pas de confiance aveugle dans les scripts"
+- Scripts reported workflows as existing → Empirical UI check proved they don't exist
+- Generated resolution plan based on false data → Wasted implementation time
+
+**Files Created:**
+- ✅ AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06.md (comprehensive empirical report)
+- ✅ AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06.md (marked as OUTDATED/INVALID)
+
+**Impact on External Audit:**
+- **Discipline Failure (Section 2):** Demonstrates importance of empirical verification over code analysis
+- **Architecture Chaos (Section 1):** Shows documentation drift from reality (another form of chaos)
+
+**Verification:**
+- Method: Chrome DevTools MCP browser automation (screenshot-level certainty)
+- Confidence: 100%
+- Bullshit Level: 0%
 
 ---
 

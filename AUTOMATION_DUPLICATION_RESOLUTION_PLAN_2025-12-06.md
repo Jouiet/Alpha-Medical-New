@@ -1,8 +1,34 @@
-# AUTOMATION DUPLICATION RESOLUTION PLAN
-**Date:** 2025-12-06
-**Source:** AUTOMATION_COMPLEMENTARITY_MATRIX_2025-12-06.txt
-**Method:** Bottom-up empirical analysis → Actionable implementation
-**Bullshit Level:** 0% (factual decisions only)
+# ⚠️ OUTDATED/INVALID - AUTOMATION DUPLICATION RESOLUTION PLAN
+
+**STATUS:** ❌ **SUPERSEDED** - This plan was based on incorrect data
+**Date Created:** 2025-12-06
+**Date Invalidated:** 2025-12-06 Session 82 (same day)
+**Reason:** Empirical verification via Chrome DevTools MCP revealed workflows DO NOT EXIST
+**Replacement Document:** AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06.md
+
+---
+
+## ⚠️ CRITICAL WARNING
+
+**This document claimed to identify 3 duplications for removal:**
+1. ❌ Shopify Flow "welcome_subscribers" - **DOES NOT EXIST IN LIVE SYSTEM**
+2. ❌ Shopify Email "welcome_new_subscribers" - **DOES NOT EXIST IN LIVE SYSTEM**
+3. ❌ Shopify Flow "upsell_post_purchase" - **DOES NOT EXIST IN LIVE SYSTEM**
+
+**Empirical Verification (2025-12-06 Session 82):**
+- Used Chrome DevTools MCP to verify actual Shopify Flow + Email apps
+- Checked both "Active" and "Inactive" workflow tabs
+- **Result:** 0/3 workflows mentioned in this plan actually exist
+
+**Root Cause:** This plan was generated from AUTOMATION_COMPLEMENTARITY_MATRIX_2025-12-06.txt, which appears to have documented **theoretical/planned** workflows rather than **live system** reality.
+
+**Lesson Learned:** Always verify with empirical UI checks, not code/config analysis alone.
+
+**See:** AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06.md for actual duplication analysis
+
+---
+
+## ORIGINAL DOCUMENT (PRESERVED FOR REFERENCE)
 
 ---
 
