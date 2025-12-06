@@ -1,0 +1,141 @@
+====================================================================================================
+AUTOMATION COMPLEMENTARITY MATRIX - ALPHA MEDICAL
+====================================================================================================
+Date: 2025-12-06
+Systems Analyzed: Shopify Flow (5), Shopify Email (4), Klaviyo (4)
+Total Customer-Facing Workflows: 13
+====================================================================================================
+
+SECTION 1: WORKFLOW INVENTORY BY SYSTEM
+----------------------------------------------------------------------------------------------------
+
+SHOPIFY FLOW (5 workflows):
+  [✗] loyalty_tier_tagging
+      Trigger: customer_total_spend_threshold
+      Stage: retention
+      Action: add_customer_tag_loyalty_tier
+  [✓] abandoned_product_browse
+      Trigger: product_view_no_add_to_cart
+      Stage: conversion
+      Action: send_email_product_reminder
+  [✓] upsell_post_purchase
+      Trigger: order_created
+      Stage: conversion
+      Action: send_email_upsell_offer
+  [✓] thank_customers
+      Trigger: order_fulfilled
+      Stage: retention
+      Action: send_thank_you_email
+  [✓] welcome_subscribers
+      Trigger: marketing_consent
+      Stage: acquisition
+      Action: send_welcome_email
+
+SHOPIFY EMAIL (4 workflows):
+  [✓] abandoned_cart
+      Trigger: cart_abandoned
+      Stage: conversion
+      Action: send_cart_recovery_email
+  [✓] thank_you
+      Trigger: order_created
+      Stage: conversion
+      Action: send_order_confirmation
+  [✓] welcome_new_subscribers
+      Trigger: marketing_consent
+      Stage: acquisition
+      Action: send_welcome_email
+  [✓] win_back
+      Trigger: customer_inactive_90d
+      Stage: retention
+      Action: send_comeback_offer
+
+KLAVIYO (4 workflows):
+  [✓] welcome_series
+      Trigger: email_list_subscribe
+      Stage: acquisition
+      Action: send_3_email_series
+  [✓] abandoned_cart
+      Trigger: cart_abandoned
+      Stage: conversion
+      Action: send_3_email_recovery
+  [✓] post_purchase
+      Trigger: order_fulfilled
+      Stage: advocacy
+      Action: send_review_request_cross_sell
+  [✓] win_back
+      Trigger: customer_inactive_60d
+      Stage: retention
+      Action: send_reengagement_offer
+
+
+====================================================================================================
+SECTION 2: DUPLICATION ANALYSIS
+====================================================================================================
+
+DUPLICATION FOUND:
+  Trigger: order_created
+  Stage: conversion
+  Systems: Shopify Flow, Shopify Email
+  Workflows: upsell_post_purchase, thank_you
+  Strategy: REDUNDANT - Consolidate to Shopify Flow (more flexible)
+
+DUPLICATION FOUND:
+  Trigger: marketing_consent
+  Stage: acquisition
+  Systems: Shopify Flow, Shopify Email
+  Workflows: welcome_subscribers, welcome_new_subscribers
+  Strategy: REDUNDANT - Consolidate to Shopify Flow (more flexible)
+
+DUPLICATION FOUND:
+  Trigger: cart_abandoned
+  Stage: conversion
+  Systems: Shopify Email, Klaviyo
+  Workflows: abandoned_cart, abandoned_cart
+  Strategy: ACCEPTABLE - Klaviyo (advanced segmentation) complements Shopify Email (basic automation)
+
+
+====================================================================================================
+SECTION 3: FLYWHEEL GAPS ANALYSIS
+====================================================================================================
+
+GAP IDENTIFIED:
+  Stage: ADVOCACY
+  Severity: MEDIUM
+  Description: Only 1 automation for advocacy
+  Recommendation: Add backup/alternative advocacy automation
+
+GAP IDENTIFIED:
+  Stage: CONVERSION
+  Severity: MEDIUM
+  Description: Browse abandonment covered by Shopify Flow
+  Recommendation: ACCEPTABLE - unique to Shopify Flow capabilities
+
+
+====================================================================================================
+SECTION 4: FLYWHEEL STAGE COVERAGE
+====================================================================================================
+
+Customer-Facing Workflows by Stage:
+  ACQUISITION: 3 workflows
+  CONVERSION: 4 workflows
+  RETENTION: 2 workflows
+  ADVOCACY: 1 workflows
+
+
+====================================================================================================
+SECTION 5: ACTIONABLE RECOMMENDATIONS
+====================================================================================================
+
+PRIORITY 1 - RESOLVE DUPLICATIONS:
+  1. Welcome subscribers: Consolidate Shopify Flow → Shopify Email (simpler)
+  2. Abandoned cart: Keep BOTH (Klaviyo 3-email vs Shopify 1-email = complementary)
+  3. Win-back: Keep BOTH (Klaviyo 60d vs Shopify 90d = different timing)
+
+PRIORITY 2 - FILL GAPS:
+  1. Advocacy stage: Verify Klaviyo post-purchase handles review requests
+  2. Retention stage: Add loyalty rewards automation (manual currently)
+
+PRIORITY 3 - OPTIMIZATION:
+  1. Standardize email delays (Shopify: 4h cart abandon vs Klaviyo: 1h/3h/24h)
+  2. Add segmentation to Shopify Email (currently basic vs Klaviyo advanced)
+  3. Test A/B on cart recovery (Shopify vs Klaviyo performance)
