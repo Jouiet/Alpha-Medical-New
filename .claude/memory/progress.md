@@ -2,23 +2,6 @@
 
 > Updated by post-tool-use hook after significant changes
 
-- [2025-12-04 21:29 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_76_KLAVIYO_MCP_INSTALLATION.md
-- [2025-12-04 21:42 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_76_COOKIE_CONSENT_DISCOVERY.md
-- [2025-12-05 13:42 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/forensic_analysis_shopify.py
-- [2025-12-05 13:44 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/forensic_analysis_klaviyo.py
-- [2025-12-05 13:45 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/forensic_analysis_tracking.py
-- [2025-12-05 13:46 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/FORENSIC_ANALYSIS_COMPLETE_REPORT.py
-- [2025-12-05 13:55 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md
-- [2025-12-05 14:05 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/memory/SESSION_78_SUMMARY_2025-12-05.md
-- [2025-12-05 14:12 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/standardize_api_versions.py
-- [2025-12-05 14:16 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/categorize_scripts.py
-- [2025-12-05 14:17 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/migrate_scripts_safe.py
-- [2025-12-05 14:21 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/identify_obsolete_scripts.py
-- [2025-12-05 14:25 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/execute_migration.py
-- [2025-12-05 14:26 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/scripts/README.md
-- [2025-12-05 15:31 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/analyze_env_files.py
-- [2025-12-05 15:32 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.env.README.md
-- [2025-12-05 15:35 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/memory/SESSION_79_SUMMARY_2025-12-05.md
 - [2025-12-05 18:06 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/verify_new_shopify_token.py
 - [2025-12-05 18:24 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/assets/confetti-celebration.js
 - [2025-12-05 18:26 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/generate_sitemap.py
@@ -66,3 +49,6 @@
 - [2025-12-06 13:09 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/audit_automation_complementarity.py
 - [2025-12-06 13:10 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_klaviyo_flows_empirical.py
 - [2025-12-06 13:11 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06.md
+- [2025-12-06 13:25 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06.md
+- [2025-12-06 15:56 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/FACEBOOK_MARKETING_API_AUTOMATION_GUIDE.md
+- [2025-12-06 15:57 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/marketing/facebook_automation_complete.py
