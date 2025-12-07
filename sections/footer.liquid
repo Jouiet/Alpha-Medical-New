@@ -101,6 +101,14 @@
                             </a>
                           </li>
                         {%- endfor -%}
+                        {%- comment -%} Hardcoded Investor Relations link for COMPANY menu {%- endcomment -%}
+                        {%- if block.settings.menu.handle == 'footer-company' -%}
+                          <li>
+                            <a href="/pages/investors" class="link link--text list-menu__item list-menu__item--link">
+                              Investor Relations
+                            </a>
+                          </li>
+                        {%- endif -%}
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
