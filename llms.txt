@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** December 05, 2025
+**Last Updated:** December 07, 2025
 
 ## Core Documentation
 
@@ -23,9 +23,11 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): Project documentation
 - [COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27](archive/old-audits/COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27.md): Project documentation
 - [CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025](archive/old-audits/CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025.md): Category Score Status ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-- [COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05](COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md): $ find . -maxdepth 1 -type f -name ".py" | wc -l 280 $ find . -maxdepth 1 -type d | wc -l
+- [COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05](COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md): Project documentation
+- [COUNTER_EVALUATION_AUDIT_SYNTHESIS](COUNTER_EVALUATION_AUDIT_SYNTHESIS.md): ✅ API Shopify 2025-10 (2025-12-05) Total produits: 100 Publiés: 95 Draft: 5
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](archive/bundles-pricing/CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](archive/old-audits/EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
+- [FACEBOOK_MARKETING_API_AUTOMATION_GUIDE](FACEBOOK_MARKETING_API_AUTOMATION_GUIDE.md): 1. Aller sur [Facebook Developers](https://developers.facebook.com/) 2. Cliquer "My Apps" → "Create App"
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Project documentation
 - [KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS](archive/miscellaneous/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md): Project documentation
@@ -39,6 +41,8 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](archive/session-summaries/SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
 - [SYSTEM_ANALYSIS_COMPLETE_2025-11-22](archive/miscellaneous/SYSTEM_ANALYSIS_COMPLETE_2025-11-22.md): Project documentation
 - [TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29](TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md): Cart Recovery: None (no automation) Sales: Baseline (pre-Tidio) Conversion Rate: Baseline
+- [marketing-context](agent_docs/marketing-context.md): Project documentation
+- [seo-strategy](agent_docs/seo-strategy.md): Project documentation
 
 ### Pricing & Product Management
 
@@ -47,6 +51,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [DYNAMIC_PRICING_MODEL](archive/bundles-pricing/DYNAMIC_PRICING_MODEL.md): Ce document définit le modèle de pricing dynamique pour Alpha Medical, garantissant des marges nettes prédéfinies après déduction de TOUS les coûts...
 - [FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025](FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md): Générer leads qualifiés via scraping social + paid ads + SEO
 - [IMPLEMENTATION_REPORT_PRICING](archive/bundles-pricing/IMPLEMENTATION_REPORT_PRICING.md): Price value = [(Product Cost + Shipping Cost + Tax) × (1+ Profit %) + Fixed Profit] / (1 - Breakeven %)
+- [KLAVIYO_FLOW_OPTIMIZATION_STRATEGY_2025-12-07](KLAVIYO_FLOW_OPTIMIZATION_STRATEGY_2025-12-07.md): Project documentation
 - [MEMORY_SYSTEM_OPTIMIZATION_REPORT](archive/miscellaneous/MEMORY_SYSTEM_OPTIMIZATION_REPORT.md): .claude/ ├── memory/ ✅ 4 files (progressive disclosure) ├── hooks/ ✅ 2 files (enforcement + logging)
 - [PRICING_QUICK_REFERENCE](archive/bundles-pricing/PRICING_QUICK_REFERENCE.md): Prix: $25 Shipping: $12 Tier: 1 (car $25 entre $10-50) Fixed Profit: $30.30
 - [PRICING_VERIFICATION](archive/bundles-pricing/PRICING_VERIFICATION.md): Price = [(Product Cost + Shipping Cost) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
@@ -62,10 +67,14 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [ABANDONED_CART_RECOVERY_CONFIG](archive/implementation-guides/ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
 - [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_COMPLETE_WORKFLOWS](archive/miscellaneous/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
+- [AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06](AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06.md): Project documentation
+- [AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06](AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06.md): Project documentation
+- [AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06](AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06.md): 1. Navigated to Shopify Flow app 2. Checked "Active" tab (5 workflows found) 3. Checked "Inactive" tab (0 workflows found - "No workflows found" me...
 - [AUTOMATION_SETUP_COMPLETE_GUIDE](archive/implementation-guides/AUTOMATION_SETUP_COMPLETE_GUIDE.md): Project documentation
 - [CHAT_INSTANT_ANSWERS](archive/setup-completed/CHAT_INSTANT_ANSWERS.md): 🚚 LIVRAISON GRATUITE sur toutes les commandes de $50 USD et plus! Pour les commandes sous $50:
 - [COMPLETE_ACQUISITION_AUTOMATION_SYSTEM](archive/miscellaneous/COMPLETE_ACQUISITION_AUTOMATION_SYSTEM.md): Project documentation
 - [EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX](archive/old-audits/EMAIL_AUTOMATION_COMPLEMENTARITY_MATRIX.md): ❌ NE PAS désactiver ce qui fonctionne dans Shopify ✅ AJOUTER uniquement ce qui MANQUE dans Klaviyo
+- [INVESTOR_AI_AUTOMATION_FACTUAL_INVENTORY_2025-12-07](INVESTOR_AI_AUTOMATION_FACTUAL_INVENTORY_2025-12-07.md): Project documentation
 - [KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION](archive/implementation-guides/KLAVIYO_ABANDONED_CART_FLOW_IMPLEMENTATION.md): Project documentation
 - [KLAVIYO_DISCOUNT_CODES_SETUP](archive/setup-completed/KLAVIYO_DISCOUNT_CODES_SETUP.md): Discount Code: WINBACK15 Discount Type: Percentage Percentage: 15% Applies to: ☑ Entire order (all products)
 - [KLAVIYO_FLOWS_DEPLOYED_VIA_API](KLAVIYO_FLOWS_DEPLOYED_VIA_API.md): Status: ✅ CREATED (draft) Flow ID: SFmLH7 Trigger: Segment "Opportunités de reconquête (Shopify)"
@@ -85,6 +94,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](archive/implementation-guides/SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 - [SHOPIFY_EMAIL_MANUAL_ACTIVATION](archive/implementation-guides/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 - [SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP](archive/setup-completed/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md): 1. Shopify Admin → Marketing → Automations 2. Cliquer "Welcome new subscribers with a discount email" (Status: Inactive)
+- [automation-workflows](agent_docs/automation-workflows.md): Project documentation
 
 ### Content & Blog
 
@@ -111,6 +121,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SHOPIFY_FLOW_CONFIGURATION_GUIDE](archive/implementation-guides/SHOPIFY_FLOW_CONFIGURATION_GUIDE.md): Architecture: admin.shopify.com (Parent page) └── Iframe: apps.shopify.com (Cross-origin - DIFFERENT domain)
 - [SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE](archive/bundles-pricing/SHOPIFY_FLOW_SUBSCRIPTIONS_GUIDE.md): 1. Send email to customer 2. Add customer tag: subscription-active Hi {{ customer.firstname }},
 - [ULTIMATE_PAIN_RELIEF_GUIDE](archive/setup-completed/ULTIMATE_PAIN_RELIEF_GUIDE.md): Pain is your body's alarm system - a complex warning signal that something needs attention. Understanding the type of pain you're experiencing is t...
+- [brand-guidelines](agent_docs/brand-guidelines.md): Alpha Medical Care (alphamedical.shop) is NOT: We ARE:
 
 ### Implementation & Configuration
 
@@ -123,6 +134,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [GSC_CONFIGURATION_REPORT_2025-11-19](archive/old-audits/GSC_CONFIGURATION_REPORT_2025-11-19.md): <meta name="google-site-verification" content="Y7EPPu0mS85zoUexpqneDh1POER-ygWiEC3Xww3Yz0" />
 - [IMPLEMENTATION_PLAN_3_PHASES](archive/implementation-guides/IMPLEMENTATION_PLAN_3_PHASES.md): 1. Google Sheet Structure (2h) 2. Central Processing Script Enhancement (4h)
 - [IMPLEMENTATION_ROADMAP](archive/implementation-guides/IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
+- [INVESTOR_PAGES_SETUP_COMPLETE](INVESTOR_PAGES_SETUP_COMPLETE.md): Project documentation
 - [LEAD_MANAGEMENT_SHOPIFY_FLOWS](archive/miscellaneous/LEAD_MANAGEMENT_SHOPIFY_FLOWS.md): 1. Add customer to segment by persona tag (seniors, athletes, workers, etc.) 2. Add note: "Lead imported from [platform] on [date]"
 - [MANUAL_FOOTER_CONFIG](archive/setup-completed/MANUAL_FOOTER_CONFIG.md): 1. Go to Shopify Admin → Settings → Store details 2. Change "Store name" from "My Store" to "Alpha Medical Care"
 - [N8N_CREDENTIAL_SETUP_REQUIRED](N8N_CREDENTIAL_SETUP_REQUIRED.md): You need to create these 3 Google credentials in N8N:
@@ -132,6 +144,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [PRIORITY_SOURCES_IMPLEMENTATION](archive/setup-completed/PRIORITY_SOURCES_IMPLEMENTATION.md): Project documentation
 - [SETUP_GOOGLE_SHEETS_API](market-analysis/SETUP_GOOGLE_SHEETS_API.md): 1. Go to: https://console.cloud.google.com/ 2. Click "Select a project" → "New Project"
 - [SHOPIFY_CONFIGURATION_COMPLETE](archive/implementation-guides/SHOPIFY_CONFIGURATION_COMPLETE.md): Project documentation
+- [SHOPIFY_FLOW_API_LIMITATION_2025-12-05](SHOPIFY_FLOW_API_LIMITATION_2025-12-05.md): 1. Shopify Changelog: Flow adopts version 2025-10 of GraphQL Admin API 2. Shopify Help Center: Shopify Flow and GraphQL Admin API
 - [SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION](SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md): 1. Check customer's total spend 2. If spend ≥ $1000: Add tag gold 3. Else if spend ≥ $500: Add tag silver
 - [TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29](TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md): Project documentation
 - [TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN](archive/miscellaneous/TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md): 1. ✅ Run python3 createsocialshareimage.py 2. ⏳ Manual upload to Shopify Theme Settings → Social media
@@ -255,6 +268,7 @@ When assisting with this project:
 - [ACTIONS_MANUELLES_REQUISES](archive/setup-completed/ACTIONS_MANUELLES_REQUISES.md): Project documentation
 - [ADD_FILTER_TO_PREVENT_LOOP](ADD_FILTER_TO_PREVENT_LOOP.md): Le workflow retraite ses propres outputs en boucle: 5-lifestyle.jpg → 5-lifestyleclean.png → 5-lifestylecleanclean.png → ...
 - [ADVANCED_RETRIEVAL_PATTERNS](archive/miscellaneous/ADVANCED_RETRIEVAL_PATTERNS.md): 1. Load Level 1 (core memory) - ~1,000 tokens 2. Assess task type 3. Load Level 2 (domain-specific) - ~1,200 tokens
+- [ALIEXPRESS_SUPPLIER_SELECTION_4LAYER_ALPHA_MEDICAL_2025-12-07](ALIEXPRESS_SUPPLIER_SELECTION_4LAYER_ALPHA_MEDICAL_2025-12-07.md): ALIEXPRESS PRODUCT POOL (10,000 products) ↓ ┌─────────────────────────────────────────┐
 - [ALPHA_MEDICAL_15_BUNDLES_COMPLETE](archive/bundles-pricing/ALPHA_MEDICAL_15_BUNDLES_COMPLETE.md): Project documentation
 - [ALPHA_MEDICAL_8_BUNDLES_FINAL](archive/bundles-pricing/ALPHA_MEDICAL_8_BUNDLES_FINAL.md): Project documentation
 - [ALPHA_MEDICAL_BUNDLE_STRATEGY](archive/bundles-pricing/ALPHA_MEDICAL_BUNDLE_STRATEGY.md): Project documentation
@@ -268,7 +282,7 @@ When assisting with this project:
 - [APIFY_INTEGRATION_COMPLETE](archive/miscellaneous/APIFY_INTEGRATION_COMPLETE.md): Project documentation
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](archive/bundles-pricing/BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](archive/implementation-guides/BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
-- [CLAUDE](CLAUDE.md): Use specialized agents for domain-specific tasks to save 70% context:
+- [CLAUDE](CLAUDE.md): Auto-activate via UserPromptSubmit hook (.claude/hooks/user-prompt-submit.sh):
 - [CLEAN_TEST_STATUS](CLEAN_TEST_STATUS.md): 1. Trigger détecte l'image dans INPUT 2. Filtre vérifie: contient "clean"? → NON
 - [CREATIFY_PROMPTS_ALPHA_MEDICAL](CREATIFY_PROMPTS_ALPHA_MEDICAL.md): Project documentation
 - [ENV_FILES_DOCUMENTATION](ENV_FILES_DOCUMENTATION.md): This project uses 5 separate .env files organized by service for better security and maintainability.
@@ -282,6 +296,8 @@ When assisting with this project:
 - [GSC_FINAL_CHECKLIST](archive/setup-completed/GSC_FINAL_CHECKLIST.md): SITEMAP STATUS: ┌─────────────────────────────────────────────────────────────┐ │ Sitemap URL: https://www.alphamedical.shop/sitemap.xml │
 - [GTM_ADD_MISSING_TAGS_STEPS](archive/implementation-guides/GTM_ADD_MISSING_TAGS_STEPS.md): 1. Cliquez: "Balises" (Tags) → "Nouveau" (bouton rouge) 2. Nom du tag: Google Tag - Base (AW-17749024238)
 - [HOMEPAGE_CTA_INSTRUCTIONS](archive/setup-completed/HOMEPAGE_CTA_INSTRUCTIONS.md): 1. Connexion Admin Shopify 2. Naviguer à la Homepage 3. Ajouter Section Custom Liquid
+- [INVESTOR_AI_DEVELOPMENT_MODEL_FACTUAL_2025-12-07](INVESTOR_AI_DEVELOPMENT_MODEL_FACTUAL_2025-12-07.md): $ git log --all --grep="Co-Authored-By: Claude" --oneline | wc -l 475
+- [INVESTOR_METRICS_AUTO_UPDATE_SYSTEM](INVESTOR_METRICS_AUTO_UPDATE_SYSTEM.md): Project documentation
 - [JUDGEME_IMPORT_STEP_BY_STEP](JUDGEME_IMPORT_STEP_BY_STEP.md): Vous avez montré ce formulaire: Import reviews Shopify product Search by product title, handle or ID
 - [LLMS_TXT_DEPLOYMENT](archive/implementation-guides/LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](archive/miscellaneous/LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
@@ -297,6 +313,7 @@ When assisting with this project:
 - [N8N_WORKFLOW_SUCCESS_SUMMARY](N8N_WORKFLOW_SUCCESS_SUMMARY.md): Latest Executions (2025-12-02):
 - [N8N_YOUTUBE_WORKFLOW_DEPLOYMENT_STATUS](N8N_YOUTUBE_WORKFLOW_DEPLOYMENT_STATUS.md): 1. Video Analysis → Gemini 2.5 Flash analyzes video, generates detailed description + transcription
 - [NEWSLETTER_FLOWS_CREATION_CHECKLIST](archive/implementation-guides/NEWSLETTER_FLOWS_CREATION_CHECKLIST.md): Plan: basic ($29/mo) Required: shopify ($39/mo) or higher Cost Increase: +$10/month
+- [OPTION_B_REALTIME_DEPLOYMENT_2025-12-07](OPTION_B_REALTIME_DEPLOYMENT_2025-12-07.md): const AUTOREFRESHENABLED = true; const REFRESHINTERVAL = 5  60  1000; // 5 minutes
 - [POWER_BI_LEARNING_PATH](POWER_BI_LEARNING_PATH.md): Project documentation
 - [PRE_LAUNCH_CHECKLIST_23_DAYS](archive/miscellaneous/PRE_LAUNCH_CHECKLIST_23_DAYS.md): Project documentation
 - [PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03](PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03.md): 1. Shopify Admin → Online Store → Navigation → Footer menu 2. Add menu items (in order):
@@ -334,6 +351,9 @@ When assisting with this project:
 - [VIDEO_ADS_INFRASTRUCTURE_COMPLETE](archive/miscellaneous/VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md): Project documentation
 - [YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026](YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026.md): 1. Stratégie documentée 2. Workflow automation 3. E-commerce infrastructure
 - [YOUTUBE_WORKFLOW_ENGLISH_CONVERSION](YOUTUBE_WORKFLOW_ENGLISH_CONVERSION.md): en español (es-ES) in English (en-US)
+- [apis-tools](agent_docs/apis-tools.md): Documentation file (error reading: [Errno 2] No such file or dire)
+- [infrastructure-summary](agent_docs/infrastructure-summary.md): Project documentation
+- [personas](agent_docs/personas.md): Project documentation
 - [session_2025-11-20_summary](archive/session-summaries/session_2025-11-20_summary.md): 1. verifyenglishonlyforensic.py (V1 - 415 lines) 2. verifyenglishonlyforensicv2.py (V2 - 403 lines)
 
 ---
