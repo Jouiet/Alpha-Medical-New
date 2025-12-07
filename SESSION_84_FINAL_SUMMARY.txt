@@ -167,3 +167,44 @@ DUPLICATE_REMOVAL_METHOD="Auto-detected and removed isolated section (lines 287-
 BEFORE_REMOVAL="5 lines containing 'investor' (2 instances: COMPANY link + isolated section)"
 AFTER_REMOVAL="3 lines containing 'investor' (1 instance: COMPANY column only)"
 FINAL_STATE="Single instance in COMPANY column (4th item) - NO duplication ✅"
+
+# === CORRECTION #3 - COUNTRY/REGION SELECTOR RESTORATION (2025-12-07) ===
+SELECTOR_MISSING="Country/region selector disappeared from footer"
+SELECTOR_DESCRIPTION="footer__localization div became EMPTY after removing Investors duplication"
+SELECTOR_DETECTED_BY="User (brutal feedback: 'tu corriges une chose et tu gaches une autre')"
+SELECTOR_CAUSE="REMOVE_duplicate_investor_section.py removed lines 287-296 (Investors + closing tags + selector code)"
+
+# Error sequence
+ERROR_1="FORCE_add_investor_footer.py: Created isolated 'Investors' in footer__localization div"
+ERROR_2="REMOVE_duplicate_investor_section.py: Removed Investors BUT also removed selector render code"
+ERROR_3="Result: footer__localization div became empty (3 lines: opening div + closing divs)"
+
+# Investigation (bottom-up)
+INVESTIGATION_STEP_1="Compared footer before/after: 8 lines removed"
+INVESTIGATION_STEP_2="Found snippets: country-localization.liquid, language-localization.liquid"
+INVESTIGATION_STEP_3="Realized div should contain {% render %} calls to snippets"
+INVESTIGATION_STEP_4="Empty div = no country/language selector rendered"
+
+SELECTOR_RESTORATION="✅ DONE (FINAL)"
+SELECTOR_RESTORATION_COMMIT="28f92e6 (restore country/language selector)"
+SELECTOR_RESTORATION_SCRIPT="RESTORE_country_language_selector.py"
+SELECTOR_RESTORATION_METHOD="Restored Dawn theme standard code (80+ lines)"
+
+# Code restored
+CODE_RESTORED="Country selector (if enabled + multiple countries) + Language selector (if enabled + multiple languages)"
+SNIPPETS_RENDERED="country-localization.liquid, language-localization.liquid"
+NOSCRIPT_FALLBACKS="✅ Included (accessibility)"
+
+# Verification
+BEFORE_RESTORATION="footer__localization div EMPTY (3 lines)"
+AFTER_RESTORATION="footer__localization div PROPER (80+ lines with render calls)"
+SELECTOR_VISIBLE="✅ Country/region (United States | USD $) at footer bottom"
+
+# Transparency (EXIGENCES STRICTES compliance)
+MANQUE_DE_RIGUEUR="❌ Did not verify what was IN footer__localization before removing it"
+INCOMPLETE_VERIFICATION="❌ Only checked for 'Investors' duplication, not full footer structure"
+BRUTAL_HONESTY="✅ User was RIGHT - I fixed one thing (duplication) and broke another (selector)"
+BOTTOM_UP_INVESTIGATION="✅ Line-by-line comparison, snippet verification, proper restoration"
+COMPLETE_SOLUTION="✅ Full Dawn-standard code (not shortcuts)"
+
+SCRIPTS_TOTAL_FINAL="10 footer-related scripts (showing iterative debugging + multiple errors)"
