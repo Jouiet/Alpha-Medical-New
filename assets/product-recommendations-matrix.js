@@ -1,7 +1,7 @@
 /**
  * AI RECOMMENDATIONS MATRIX
- * Generated: 2025-12-09 03:19:11.724129
- * Products: 115
+ * Generated: 2025-12-09 15:59:10.626850
+ * Products: 93
  * Approach: Rule-based collaborative filtering
  *
  * Usage:
@@ -29,15 +29,14 @@ window.PRODUCT_RECOMMENDATIONS = {
   },
   "dynamic-knee-support-with-spring-adjustable-joint-cushion": {
     "similar": [
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "adjustable-knee-brace-orthopedic-leg-support-pain-relief"
     ],
     "complements": [
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support",
-      "posture-corrector-adjustable-shoulder-support-brace"
+      "lower-back-brace-6-stays-anti-skid-lumbar-support"
     ],
     "upgrades": []
   },
@@ -123,17 +122,16 @@ window.PRODUCT_RECOMMENDATIONS = {
   },
   "back-brace-posture-corrector-scoliosis-hunchback-support": {
     "similar": [
+      "kids-posture-corrector-adjustable-back-support-for-children",
+      "posture-corrector-adjustable-back-brace-for-women-men",
+      "posture-corrector-back-support-brace"
+    ],
+    "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "lower-back-brace-6-stays-anti-skid-lumbar-support",
       "posture-corrector-adjustable-shoulder-support-brace",
       "lumbar-support-belt-disc-herniation-pain-relief-brace",
       "magnetic-posture-corrector-shoulder-orthopedic-brace"
-    ],
-    "complements": [
-      "kids-posture-corrector-adjustable-back-support-for-children",
-      "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
-      "hip-fixation-brace-femoral-thigh-fracture-support",
-      "cervical-collar-posture-corrector"
     ],
     "upgrades": []
   },
@@ -276,7 +274,6 @@ window.PRODUCT_RECOMMENDATIONS = {
   },
   "lower-back-brace-6-stays-anti-skid-lumbar-support": {
     "similar": [
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "posture-corrector-adjustable-shoulder-support-brace",
       "lumbar-support-belt-disc-herniation-pain-relief-brace",
       "posture-corrector-adjustable-back-brace-for-women-men"
@@ -285,41 +282,40 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "leg-recovery-boots-6-chambers-air-compression-massager",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief"
+      "back-brace-posture-corrector-scoliosis-hunchback-support",
+      "leg-recovery-boots-6-chambers-air-compression-massager"
     ],
     "upgrades": []
   },
   "posture-corrector-adjustable-shoulder-support-brace": {
     "similar": [
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "lower-back-brace-6-stays-anti-skid-lumbar-support",
       "lumbar-support-belt-disc-herniation-pain-relief-brace",
       "magnetic-posture-corrector-shoulder-orthopedic-brace",
-      "posture-corrector-adjustable-back-brace-for-women-men"
+      "posture-corrector-adjustable-back-brace-for-women-men",
+      "adjustable-knee-brace-orthopedic-leg-support-pain-relief"
     ],
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
+      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "basketball-knee-pad-honeycomb-shock-protection",
       "kids-posture-corrector-adjustable-back-support-for-children",
-      "adjustable-wrist-support-brace-fitness-pain-relief",
-      "adjustable-knee-patellar-tendon-strap-sports-support"
+      "adjustable-wrist-support-brace-fitness-pain-relief"
     ],
     "upgrades": []
   },
   "lumbar-support-belt-disc-herniation-pain-relief-brace": {
     "similar": [
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "lower-back-brace-6-stays-anti-skid-lumbar-support",
       "posture-corrector-adjustable-shoulder-support-brace",
       "posture-corrector-adjustable-back-brace-for-women-men"
     ],
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
+      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "basketball-knee-pad-honeycomb-shock-protection",
       "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "kids-posture-corrector-adjustable-back-support-for-children",
-      "adjustable-wrist-support-brace-fitness-pain-relief"
+      "kids-posture-corrector-adjustable-back-support-for-children"
     ],
     "upgrades": []
   },
@@ -338,13 +334,15 @@ window.PRODUCT_RECOMMENDATIONS = {
     "upgrades": []
   },
   "kids-posture-corrector-adjustable-back-support-for-children": {
-    "similar": [],
+    "similar": [
+      "back-brace-posture-corrector-scoliosis-hunchback-support"
+    ],
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "lower-back-brace-6-stays-anti-skid-lumbar-support",
       "posture-corrector-adjustable-shoulder-support-brace",
-      "lumbar-support-belt-disc-herniation-pain-relief-brace"
+      "lumbar-support-belt-disc-herniation-pain-relief-brace",
+      "magnetic-posture-corrector-shoulder-orthopedic-brace"
     ],
     "upgrades": []
   },
@@ -377,7 +375,6 @@ window.PRODUCT_RECOMMENDATIONS = {
   },
   "magnetic-posture-corrector-shoulder-orthopedic-brace": {
     "similar": [
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
       "posture-corrector-adjustable-shoulder-support-brace",
       "posture-corrector-adjustable-back-brace-for-women-men"
     ],
@@ -386,7 +383,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "back-brace-posture-corrector-scoliosis-hunchback-support"
     ],
     "upgrades": []
   },
@@ -1250,277 +1247,7 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "upgrades": []
   },
-  "office-worker-essential-kit-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "senior-mobility-support-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "chronic-pain-starter-kit-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "active-athlete-knee-specialist": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
   "active-athlete-complete-protection": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "chronic-pain-relief-kit-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "post-surgery-recovery-complete": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "ultimate-pain-management-system-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "office-worker-advanced-ergonomic": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "office-worker-premium-workspace": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "chronic-pain-whole-body": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "manual-labor-heavy-duty-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "rehab-stroke-recovery-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "beauty-wellness-led-complete": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "senior-advanced-arthritis-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "office-worker-essential-kit-2": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "senior-mobility-support-2": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "chronic-pain-starter-kit-2": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "active-athlete-knee-specialist-1": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
@@ -1550,7 +1277,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "chronic-pain-starter-kit"
     ]
   },
-  "chronic-pain-relief-kit-2": {
+  "office-worker-essential-kit-3": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
@@ -1565,7 +1292,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "chronic-pain-starter-kit"
     ]
   },
-  "post-surgery-recovery-complete-1": {
+  "senior-mobility-support-3": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
@@ -1580,7 +1307,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "chronic-pain-starter-kit"
     ]
   },
-  "ultimate-pain-management-system-2": {
+  "chronic-pain-starter-kit-3": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
@@ -1595,7 +1322,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "chronic-pain-starter-kit"
     ]
   },
-  "office-worker-advanced-ergonomic-1": {
+  "active-athlete-knee-specialist-2": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
@@ -1610,7 +1337,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "chronic-pain-starter-kit"
     ]
   },
-  "office-worker-premium-workspace-1": {
+  "active-athlete-complete-protection-2": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
@@ -1625,67 +1352,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "chronic-pain-starter-kit"
     ]
   },
-  "chronic-pain-whole-body-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "manual-labor-heavy-duty-2": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "rehab-stroke-recovery-2": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "beauty-wellness-led-complete-1": {
-    "similar": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit",
-      "chronic-pain-relief-kit",
-      "ultimate-pain-management-system"
-    ],
-    "complements": [],
-    "upgrades": [
-      "office-worker-essential-kit",
-      "senior-mobility-support",
-      "chronic-pain-starter-kit"
-    ]
-  },
-  "senior-advanced-arthritis-2": {
+  "chronic-pain-relief-kit-3": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
