@@ -134,6 +134,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [GMAIL_APPS_SCRIPT_SETUP](archive/setup-completed/GMAIL_APPS_SCRIPT_SETUP.md): 1. Open your Google Sheet: "Alpha Medical - Lead Management" (The one you just created in the previous step)
 - [GOOGLE_SHEET_SETUP_INSTRUCTIONS](archive/setup-completed/GOOGLE_SHEET_SETUP_INSTRUCTIONS.md): Project documentation
 - [GSC_CONFIGURATION_REPORT_2025-11-19](archive/old-audits/GSC_CONFIGURATION_REPORT_2025-11-19.md): <meta name="google-site-verification" content="Y7EPPu0mS85zoUexpqneDh1POER-ygWiEC3Xww3Yz0" />
+- [IMPLEMENTATION_IMMEDIATE_GOOGLE_ECOSYSTEM](IMPLEMENTATION_IMMEDIATE_GOOGLE_ECOSYSTEM.md): Project documentation
 - [IMPLEMENTATION_PLAN_3_PHASES](archive/implementation-guides/IMPLEMENTATION_PLAN_3_PHASES.md): 1. Google Sheet Structure (2h) 2. Central Processing Script Enhancement (4h)
 - [IMPLEMENTATION_ROADMAP](archive/implementation-guides/IMPLEMENTATION_ROADMAP.md): ✅ TOUJOURS sauvegarder avant modification ✅ TOUJOURS tester en preview avant publication
 - [INVESTOR_PAGES_SETUP_COMPLETE](INVESTOR_PAGES_SETUP_COMPLETE.md): Project documentation
