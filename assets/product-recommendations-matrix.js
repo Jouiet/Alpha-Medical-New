@@ -1,7 +1,7 @@
 /**
  * AI RECOMMENDATIONS MATRIX
- * Generated: 2025-11-26 22:47:49.958339
- * Products: 91
+ * Generated: 2025-12-09 03:19:11.724129
+ * Products: 115
  * Approach: Rule-based collaborative filtering
  *
  * Usage:
@@ -23,7 +23,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "patella-knee-tendon-strap-sports-support-stabilizer",
       "full-leg-compression-sleeve-unisex-knee-support",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
-      "basketball-knee-pad-honeycomb-shock-protection"
+      "adjustable-cervical-collar-neck-brace-orthosis"
     ],
     "upgrades": []
   },
@@ -35,9 +35,9 @@ window.PRODUCT_RECOMMENDATIONS = {
     "complements": [
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief",
+      "lower-back-brace-6-stays-anti-skid-lumbar-support",
+      "posture-corrector-adjustable-shoulder-support-brace"
     ],
     "upgrades": []
   },
@@ -54,7 +54,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
       "silicone-patellar-tendon-strap-knee-pain-relief",
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "adjustable-cervical-collar-neck-brace-orthosis"
     ],
     "upgrades": []
   },
@@ -69,16 +69,22 @@ window.PRODUCT_RECOMMENDATIONS = {
       "tourmaline-magnetic-knee-pads-self-heating-support",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
       "silicone-patellar-tendon-strap-knee-pain-relief",
-      "basketball-knee-pad-honeycomb-shock-protection",
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "adjustable-cervical-collar-neck-brace-orthosis",
+      "cervical-neck-traction-device-inflatable-home-relief"
     ],
     "upgrades": []
   },
   "rehabilitation-robot-gloves-stroke-cerebral-palsy": {
-    "similar": [],
-    "complements": [
+    "similar": [
       "intelligent-massage-gloves-hand-rehabilitation-robot",
       "rehabilitation-robot-gloves-mirror-training-device"
+    ],
+    "complements": [
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "cervical-spine-massager-ems-neck-lymphatic-drainage"
     ],
     "upgrades": []
   },
@@ -93,8 +99,8 @@ window.PRODUCT_RECOMMENDATIONS = {
       "tourmaline-magnetic-knee-pads-self-heating-support",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
       "silicone-patellar-tendon-strap-knee-pain-relief",
-      "basketball-knee-pad-honeycomb-shock-protection",
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "adjustable-cervical-collar-neck-brace-orthosis",
+      "cervical-neck-traction-device-inflatable-home-relief"
     ],
     "upgrades": []
   },
@@ -110,8 +116,8 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
       "silicone-patellar-tendon-strap-knee-pain-relief",
-      "basketball-knee-pad-honeycomb-shock-protection",
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "adjustable-cervical-collar-neck-brace-orthosis",
+      "cervical-neck-traction-device-inflatable-home-relief"
     ],
     "upgrades": []
   },
@@ -124,11 +130,10 @@ window.PRODUCT_RECOMMENDATIONS = {
       "magnetic-posture-corrector-shoulder-orthopedic-brace"
     ],
     "complements": [
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "inflatable-neck-collar-cervical-traction-pillow",
       "kids-posture-corrector-adjustable-back-support-for-children",
-      "velpeau-neck-traction-spine-pressure-pain-relief"
+      "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+      "hip-fixation-brace-femoral-thigh-fracture-support",
+      "cervical-collar-posture-corrector"
     ],
     "upgrades": []
   },
@@ -164,27 +169,30 @@ window.PRODUCT_RECOMMENDATIONS = {
     "upgrades": []
   },
   "adjustable-cervical-collar-neck-brace-orthosis": {
-    "similar": [],
+    "similar": [
+      "cervical-collar-posture-corrector"
+    ],
     "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "inflatable-neck-collar-cervical-traction-pillow",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
     "upgrades": []
   },
   "cervical-neck-traction-device-inflatable-home-relief": {
     "similar": [
       "inflatable-neck-collar-cervical-traction-pillow",
-      "neck-traction-device-heating-inflatable-cervical"
+      "neck-traction-device-heating-inflatable-cervical",
+      "cervical-collar-posture-corrector"
     ],
     "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support",
-      "posture-corrector-adjustable-shoulder-support-brace"
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
     "upgrades": []
   },
@@ -205,14 +213,17 @@ window.PRODUCT_RECOMMENDATIONS = {
   },
   "leg-recovery-boots-6-chambers-air-compression-massager": {
     "similar": [
-      "cervical-spine-massager-ems-neck-lymphatic-drainage"
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "cervical-spine-massager-ems-neck-lymphatic-drainage",
+      "super-relax-eye-massager-heating-vibration-sleep-aid",
+      "electric-leg-massager-air-compression"
     ],
     "complements": [
-      "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
-      "patella-knee-tendon-strap-sports-support-stabilizer",
-      "full-leg-compression-sleeve-unisex-knee-support",
-      "hinged-knee-brace-patella-stabilizer-for-arthritis"
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief",
+      "intelligent-massage-gloves-hand-rehabilitation-robot"
     ],
     "upgrades": []
   },
@@ -229,7 +240,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "patella-knee-tendon-strap-sports-support-stabilizer",
       "full-leg-compression-sleeve-unisex-knee-support",
       "silicone-patellar-tendon-strap-knee-pain-relief",
-      "basketball-knee-pad-honeycomb-shock-protection"
+      "adjustable-cervical-collar-neck-brace-orthosis"
     ],
     "upgrades": []
   },
@@ -237,27 +248,29 @@ window.PRODUCT_RECOMMENDATIONS = {
     "similar": [
       "cervical-neck-traction-device-inflatable-home-relief",
       "velpeau-neck-traction-spine-pressure-pain-relief",
-      "neck-traction-device-heating-inflatable-cervical"
-    ],
-    "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support",
-      "posture-corrector-adjustable-shoulder-support-brace"
-    ],
-    "upgrades": []
-  },
-  "intelligent-massage-gloves-hand-rehabilitation-robot": {
-    "similar": [
-      "rehabilitation-robot-gloves-mirror-training-device"
+      "neck-traction-device-heating-inflatable-cervical",
+      "cervical-collar-posture-corrector"
     ],
     "complements": [
       "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
       "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
+    ],
+    "upgrades": []
+  },
+  "intelligent-massage-gloves-hand-rehabilitation-robot": {
+    "similar": [
       "rehabilitation-robot-gloves-stroke-cerebral-palsy",
-      "full-leg-compression-sleeve-unisex-knee-support"
+      "rehabilitation-robot-gloves-mirror-training-device"
+    ],
+    "complements": [
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "cervical-spine-massager-ems-neck-lymphatic-drainage"
     ],
     "upgrades": []
   },
@@ -272,8 +285,8 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief"
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
@@ -287,10 +300,10 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
       "basketball-knee-pad-honeycomb-shock-protection",
-      "inflatable-neck-collar-cervical-traction-pillow"
+      "kids-posture-corrector-adjustable-back-support-for-children",
+      "adjustable-wrist-support-brace-fitness-pain-relief",
+      "adjustable-knee-patellar-tendon-strap-sports-support"
     ],
     "upgrades": []
   },
@@ -303,10 +316,10 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
       "basketball-knee-pad-honeycomb-shock-protection",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief",
+      "kids-posture-corrector-adjustable-back-support-for-children",
+      "adjustable-wrist-support-brace-fitness-pain-relief"
     ],
     "upgrades": []
   },
@@ -329,13 +342,11 @@ window.PRODUCT_RECOMMENDATIONS = {
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "inflatable-neck-collar-cervical-traction-pillow"
+      "lower-back-brace-6-stays-anti-skid-lumbar-support",
+      "posture-corrector-adjustable-shoulder-support-brace",
+      "lumbar-support-belt-disc-herniation-pain-relief-brace"
     ],
-    "upgrades": [
-      "bundle-office-worker-back-and-neck-relief-kit"
-    ]
+    "upgrades": []
   },
   "hinged-rom-elbow-brace-post-op-adjustable-stabilizer": {
     "similar": [],
@@ -375,7 +386,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "adjustable-cervical-collar-neck-brace-orthosis"
+      "leg-recovery-boots-6-chambers-air-compression-massager"
     ],
     "upgrades": []
   },
@@ -390,11 +401,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "full-leg-compression-sleeve-unisex-knee-support",
       "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-foot-care-and-bunion-relief"
-    ]
+    "upgrades": []
   },
   "drop-foot-brace-afo-inflatable-airbag-ankle-support": {
     "similar": [
@@ -407,23 +414,20 @@ window.PRODUCT_RECOMMENDATIONS = {
       "full-leg-compression-sleeve-unisex-knee-support",
       "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-foot-care-and-bunion-relief"
-    ]
+    "upgrades": []
   },
   "velpeau-neck-traction-spine-pressure-pain-relief": {
     "similar": [
       "inflatable-neck-collar-cervical-traction-pillow",
-      "neck-traction-device-heating-inflatable-cervical"
+      "neck-traction-device-heating-inflatable-cervical",
+      "cervical-collar-posture-corrector"
     ],
     "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
     "upgrades": []
   },
@@ -442,14 +446,15 @@ window.PRODUCT_RECOMMENDATIONS = {
     "similar": [
       "cervical-neck-traction-device-inflatable-home-relief",
       "inflatable-neck-collar-cervical-traction-pillow",
-      "velpeau-neck-traction-spine-pressure-pain-relief"
+      "velpeau-neck-traction-spine-pressure-pain-relief",
+      "cervical-collar-posture-corrector"
     ],
     "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support",
-      "posture-corrector-adjustable-shoulder-support-brace"
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
     "upgrades": []
   },
@@ -464,7 +469,7 @@ window.PRODUCT_RECOMMENDATIONS = {
       "patella-knee-tendon-strap-sports-support-stabilizer",
       "full-leg-compression-sleeve-unisex-knee-support",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
-      "basketball-knee-pad-honeycomb-shock-protection"
+      "adjustable-cervical-collar-neck-brace-orthosis"
     ],
     "upgrades": []
   },
@@ -492,18 +497,18 @@ window.PRODUCT_RECOMMENDATIONS = {
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "velpeau-wrist-splint-carpal-tunnel-pain-relief",
       "silicone-patellar-tendon-strap-knee-pain-relief",
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "adjustable-cervical-collar-neck-brace-orthosis"
     ],
     "upgrades": []
   },
   "ems-hip-trainer-3-modes-buttock-lifting-massage": {
     "similar": [],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound",
-      "7-color-led-vibrating-neck-face-massager"
+      "electric-gua-sha-board-vibration-hot-compress-massage"
     ],
     "upgrades": []
   },
@@ -513,24 +518,27 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [
       "double-patellar-knee-support-strap-pain-relief-brace",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
       "leg-recovery-boots-6-chambers-air-compression-massager",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
   "electric-gua-sha-board-vibration-hot-compress-massage": {
     "similar": [
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "cervical-spine-massager-ems-neck-lymphatic-drainage",
       "super-relax-eye-massager-heating-vibration-sleep-aid",
+      "electric-ankle-brace-hot-compress-vibration-massage",
       "stomach-massager-bian-shi-hot-compress-abdominal"
     ],
     "complements": [
-      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
       "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "cervical-spine-massager-ems-neck-lymphatic-drainage",
-      "electric-ankle-brace-hot-compress-vibration-massage"
+      "nano-steam-eye-massager-warm-spa-acupressure-mask"
     ],
     "upgrades": []
   },
@@ -544,58 +552,74 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "inflatable-neck-collar-cervical-traction-pillow",
-      "kids-posture-corrector-adjustable-back-support-for-children"
+      "kids-posture-corrector-adjustable-back-support-for-children",
+      "adjustable-knee-brace-orthopedic-leg-support-pain-relief",
+      "hip-fixation-brace-femoral-thigh-fracture-support",
+      "posture-corrector-back-support-brace"
     ],
     "upgrades": []
   },
   "cervical-spine-massager-ems-neck-lymphatic-drainage": {
     "similar": [
-      "leg-recovery-boots-6-chambers-air-compression-massager"
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "electric-leg-massager-air-compression",
+      "medical-cupping-therapy-set-glass",
+      "electric-vacuum-cupping-massager"
     ],
     "complements": [
-      "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
-      "patella-knee-tendon-strap-sports-support-stabilizer",
-      "full-leg-compression-sleeve-unisex-knee-support",
-      "hinged-knee-brace-patella-stabilizer-for-arthritis"
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief",
+      "intelligent-massage-gloves-hand-rehabilitation-robot"
     ],
     "upgrades": []
   },
   "super-relax-eye-massager-heating-vibration-sleep-aid": {
     "similar": [
+      "leg-recovery-boots-6-chambers-air-compression-massager",
       "electric-gua-sha-board-vibration-hot-compress-massage",
-      "electric-airbag-eye-massager-heated-hot-compress",
-      "head-eye-massager-heat-fatigue-stress-relief"
+      "electric-ankle-brace-hot-compress-vibration-massage",
+      "nano-steam-eye-massager-warm-spa-acupressure-mask",
+      "electric-airbag-eye-massager-heated-hot-compress"
     ],
     "complements": [
-      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
       "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-ankle-brace-hot-compress-vibration-massage",
-      "nano-steam-eye-massager-warm-spa-acupressure-mask"
+      "cervical-spine-massager-ems-neck-lymphatic-drainage"
     ],
     "upgrades": []
   },
   "electric-ankle-brace-hot-compress-vibration-massage": {
     "similar": [
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "super-relax-eye-massager-heating-vibration-sleep-aid",
+      "head-eye-massager-heat-fatigue-stress-relief",
+      "stomach-massager-bian-shi-hot-compress-abdominal",
       "vibration-shoulder-steamer-heated-belt-massager"
     ],
     "complements": [
-      "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
-      "patella-knee-tendon-strap-sports-support-stabilizer",
-      "full-leg-compression-sleeve-unisex-knee-support",
-      "hinged-knee-brace-patella-stabilizer-for-arthritis"
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
   "nano-steam-eye-massager-warm-spa-acupressure-mask": {
-    "similar": [],
-    "complements": [
+    "similar": [
       "super-relax-eye-massager-heating-vibration-sleep-aid"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -606,10 +630,10 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [
       "double-patellar-knee-support-strap-pain-relief-brace",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
       "leg-recovery-boots-6-chambers-air-compression-massager",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
@@ -622,19 +646,19 @@ window.PRODUCT_RECOMMENDATIONS = {
       "double-patellar-knee-support-strap-pain-relief-brace",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
       "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief",
+      "lower-back-brace-6-stays-anti-skid-lumbar-support"
     ],
     "upgrades": []
   },
   "o-x-type-leg-corrector-adjustable-leg-straightener": {
     "similar": [],
     "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "double-patellar-knee-support-strap-pain-relief-brace",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis"
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
@@ -643,22 +667,24 @@ window.PRODUCT_RECOMMENDATIONS = {
       "foreverlily-smart-knee-massager-vibration-air-pressure"
     ],
     "complements": [
-      "tourmaline-magnetic-knee-pads-self-heating-support",
-      "double-patellar-knee-support-strap-pain-relief-brace",
-      "patella-knee-tendon-strap-sports-support-stabilizer",
-      "full-leg-compression-sleeve-unisex-knee-support",
-      "hinged-knee-brace-patella-stabilizer-for-arthritis"
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
   "ems-v-face-lifting-device-6-modes-microcurrent-massager": {
-    "similar": [],
+    "similar": [
+      "7-color-led-vibrating-neck-face-massager"
+    ],
     "complements": [
       "double-patellar-knee-support-strap-pain-relief-brace",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
       "leg-recovery-boots-6-chambers-air-compression-massager",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
@@ -678,13 +704,15 @@ window.PRODUCT_RECOMMENDATIONS = {
     ]
   },
   "7-color-led-vibrating-neck-face-massager": {
-    "similar": [],
+    "similar": [
+      "ems-v-face-lifting-device-6-modes-microcurrent-massager"
+    ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -693,40 +721,43 @@ window.PRODUCT_RECOMMENDATIONS = {
       "vibration-shoulder-steamer-heated-belt-massager"
     ],
     "complements": [
-      "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
-      "patella-knee-tendon-strap-sports-support-stabilizer",
-      "full-leg-compression-sleeve-unisex-knee-support",
-      "hinged-knee-brace-patella-stabilizer-for-arthritis"
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
   "electric-airbag-eye-massager-heated-hot-compress": {
     "similar": [
       "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "head-eye-massager-heat-fatigue-stress-relief"
+      "head-eye-massager-heat-fatigue-stress-relief",
+      "foreverlily-smart-knee-massager-vibration-air-pressure",
+      "electric-leg-massager-air-compression"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "basketball-knee-pad-honeycomb-shock-protection",
-      "posture-corrector-adjustable-shoulder-support-brace",
-      "lumbar-support-belt-disc-herniation-pain-relief-brace",
-      "adjustable-wrist-support-brace-fitness-pain-relief",
-      "adjustable-knee-patellar-tendon-strap-sports-support"
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "posture-corrector-adjustable-shoulder-support-brace"
     ],
     "upgrades": []
   },
   "head-eye-massager-heat-fatigue-stress-relief": {
     "similar": [
       "super-relax-eye-massager-heating-vibration-sleep-aid",
+      "electric-ankle-brace-hot-compress-vibration-massage",
       "electric-airbag-eye-massager-heated-hot-compress",
       "ems-red-light-eye-massager-dark-circles-wrinkle-reduction"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "electric-ankle-brace-hot-compress-vibration-massage",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -736,11 +767,11 @@ window.PRODUCT_RECOMMENDATIONS = {
       "neck-led-lift-mask-anti-wrinkle-skin-tightening"
     ],
     "complements": [
-      "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
     "upgrades": []
   },
@@ -749,22 +780,23 @@ window.PRODUCT_RECOMMENDATIONS = {
     "complements": [
       "dynamic-knee-support-with-spring-adjustable-joint-cushion",
       "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "inflatable-neck-collar-cervical-traction-pillow"
+      "lower-back-brace-6-stays-anti-skid-lumbar-support",
+      "posture-corrector-adjustable-shoulder-support-brace",
+      "lumbar-support-belt-disc-herniation-pain-relief-brace"
     ],
     "upgrades": []
   },
   "stomach-massager-bian-shi-hot-compress-abdominal": {
     "similar": [
-      "electric-gua-sha-board-vibration-hot-compress-massage"
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "electric-ankle-brace-hot-compress-vibration-massage"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "electric-ankle-brace-hot-compress-vibration-massage",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -774,10 +806,10 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [
       "double-patellar-knee-support-strap-pain-relief-brace",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "hinged-knee-brace-patella-stabilizer-for-arthritis",
       "leg-recovery-boots-6-chambers-air-compression-massager",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
@@ -787,24 +819,26 @@ window.PRODUCT_RECOMMENDATIONS = {
       "neck-led-lift-mask-anti-wrinkle-skin-tightening"
     ],
     "complements": [
-      "double-patellar-knee-support-strap-pain-relief-brace",
-      "hinged-knee-brace-patella-stabilizer-for-arthritis",
-      "leg-recovery-boots-6-chambers-air-compression-massager",
-      "wrist-brace-support-carpal-tunnel-arthritis-relief",
-      "lower-back-brace-6-stays-anti-skid-lumbar-support"
-    ],
-    "upgrades": []
-  },
-  "foreverlily-smart-knee-massager-vibration-air-pressure": {
-    "similar": [
-      "electric-lumbar-massager-heated-vibration-back-brace"
-    ],
-    "complements": [
       "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
       "patella-knee-tendon-strap-sports-support-stabilizer",
       "full-leg-compression-sleeve-unisex-knee-support",
       "hinged-knee-brace-patella-stabilizer-for-arthritis"
+    ],
+    "upgrades": []
+  },
+  "foreverlily-smart-knee-massager-vibration-air-pressure": {
+    "similar": [
+      "electric-lumbar-massager-heated-vibration-back-brace",
+      "electric-airbag-eye-massager-heated-hot-compress",
+      "electric-leg-massager-air-compression"
+    ],
+    "complements": [
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "wrist-brace-support-carpal-tunnel-arthritis-relief"
     ],
     "upgrades": []
   },
@@ -815,11 +849,11 @@ window.PRODUCT_RECOMMENDATIONS = {
       "ems-red-light-eye-massager-dark-circles-wrinkle-reduction"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -829,11 +863,11 @@ window.PRODUCT_RECOMMENDATIONS = {
       "ems-red-light-eye-massager-dark-circles-wrinkle-reduction"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "basketball-knee-pad-honeycomb-shock-protection",
-      "posture-corrector-adjustable-shoulder-support-brace",
-      "lumbar-support-belt-disc-herniation-pain-relief-brace",
-      "adjustable-wrist-support-brace-fitness-pain-relief",
-      "adjustable-knee-patellar-tendon-strap-sports-support"
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "posture-corrector-adjustable-shoulder-support-brace"
     ],
     "upgrades": []
   },
@@ -842,11 +876,11 @@ window.PRODUCT_RECOMMENDATIONS = {
       "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "7-color-led-vibrating-neck-face-massager"
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -857,11 +891,11 @@ window.PRODUCT_RECOMMENDATIONS = {
       "hello-face-red-light-therapy-mask-face-neck-infrared-led"
     ],
     "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
       "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
     ],
     "upgrades": []
   },
@@ -874,30 +908,12 @@ window.PRODUCT_RECOMMENDATIONS = {
       "full-leg-compression-sleeve-unisex-knee-support",
       "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-foot-care-and-bunion-relief"
-    ]
+    "upgrades": []
   },
   "neck-led-lift-mask-anti-wrinkle-skin-tightening": {
     "similar": [
       "foreverlily-led-face-neck-mask-7-colors-3d-flexible",
       "led-facial-mask-with-neck-7-colors-photon-anti-aging"
-    ],
-    "complements": [
-      "ems-hip-trainer-3-modes-buttock-lifting-massage",
-      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
-      "electric-gua-sha-board-vibration-hot-compress-massage",
-      "super-relax-eye-massager-heating-vibration-sleep-aid",
-      "4-in-1-cavitation-body-slimming-machine-40k-ultrasound"
-    ],
-    "upgrades": []
-  },
-  "vibration-shoulder-steamer-heated-belt-massager": {
-    "similar": [
-      "electric-ankle-brace-hot-compress-vibration-massage",
-      "neck-massage-machine-4-head-heating-protection"
     ],
     "complements": [
       "tourmaline-magnetic-knee-pads-self-heating-support",
@@ -908,9 +924,88 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "upgrades": []
   },
+  "vibration-shoulder-steamer-heated-belt-massager": {
+    "similar": [
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "super-relax-eye-massager-heating-vibration-sleep-aid",
+      "electric-ankle-brace-hot-compress-vibration-massage",
+      "neck-massage-machine-4-head-heating-protection"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "basketball-knee-pad-honeycomb-shock-protection",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "posture-corrector-adjustable-shoulder-support-brace"
+    ],
+    "upgrades": []
+  },
   "rehabilitation-robot-gloves-mirror-training-device": {
     "similar": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
       "intelligent-massage-gloves-hand-rehabilitation-robot"
+    ],
+    "complements": [
+      "basketball-knee-pad-honeycomb-shock-protection",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "posture-corrector-adjustable-shoulder-support-brace",
+      "lumbar-support-belt-disc-herniation-pain-relief-brace",
+      "adjustable-wrist-support-brace-fitness-pain-relief"
+    ],
+    "upgrades": []
+  },
+  "electric-leg-massager-air-compression": {
+    "similar": [
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "electric-gua-sha-board-vibration-hot-compress-massage",
+      "cervical-spine-massager-ems-neck-lymphatic-drainage",
+      "electric-airbag-eye-massager-heated-hot-compress",
+      "foreverlily-smart-knee-massager-vibration-air-pressure"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping",
+      "super-relax-eye-massager-heating-vibration-sleep-aid"
+    ],
+    "upgrades": []
+  },
+  "posture-corrector-back-support-brace": {
+    "similar": [
+      "back-brace-posture-corrector-scoliosis-hunchback-support"
+    ],
+    "complements": [
+      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
+      "basketball-knee-pad-honeycomb-shock-protection",
+      "lower-back-brace-6-stays-anti-skid-lumbar-support",
+      "posture-corrector-adjustable-shoulder-support-brace",
+      "lumbar-support-belt-disc-herniation-pain-relief-brace"
+    ],
+    "upgrades": []
+  },
+  "cervical-collar-posture-corrector": {
+    "similar": [
+      "adjustable-cervical-collar-neck-brace-orthosis",
+      "cervical-neck-traction-device-inflatable-home-relief",
+      "inflatable-neck-collar-cervical-traction-pillow",
+      "velpeau-neck-traction-spine-pressure-pain-relief",
+      "neck-traction-device-heating-inflatable-cervical"
+    ],
+    "complements": [
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support"
+    ],
+    "upgrades": []
+  },
+  "medical-cupping-therapy-set-glass": {
+    "similar": [
+      "cervical-spine-massager-ems-neck-lymphatic-drainage",
+      "electric-leg-massager-air-compression",
+      "electric-vacuum-cupping-massager"
     ],
     "complements": [
       "tourmaline-magnetic-knee-pads-self-heating-support",
@@ -921,37 +1016,26 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "upgrades": []
   },
-  "electric-heating-leg-massager-wireless-rechargeable-air-compression-leg-calf-massage-for-relief-relax-leg-muscles-health-care": {
-    "similar": [],
-    "complements": [],
-    "upgrades": []
-  },
-  "adjustable-hunchback-orthotic-brace-back-waist-posture-corrector-back-support-corset-shoulder-spine-brace-neck-stretcher": {
-    "similar": [],
-    "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "basketball-knee-pad-honeycomb-shock-protection"
+  "electric-vacuum-cupping-massager": {
+    "similar": [
+      "cervical-spine-massager-ems-neck-lymphatic-drainage",
+      "electric-leg-massager-air-compression",
+      "medical-cupping-therapy-set-glass"
     ],
-    "upgrades": [
-      "bundle-office-worker-back-and-neck-relief-kit"
-    ]
-  },
-  "adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support": {
-    "similar": [],
     "complements": [
-      "dynamic-knee-support-with-spring-adjustable-joint-cushion",
-      "back-brace-posture-corrector-scoliosis-hunchback-support",
-      "adjustable-cervical-collar-neck-brace-orthosis",
-      "cervical-neck-traction-device-inflatable-home-relief",
-      "basketball-knee-pad-honeycomb-shock-protection"
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "full-leg-compression-sleeve-unisex-knee-support"
     ],
     "upgrades": []
   },
-  "electric-medical-cupping-therapy-set-beauty-massager-glass-jars-anti-cellulite-cupping-vacuum-slimming-guasha": {
-    "similar": [],
+  "electric-bunion-corrector-toe-separator": {
+    "similar": [
+      "bunion-corrector-toe-separator",
+      "airbag-bunion-corrector-orthotic"
+    ],
     "complements": [
       "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
@@ -961,8 +1045,11 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "upgrades": []
   },
-  "smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care": {
-    "similar": [],
+  "bunion-corrector-toe-separator": {
+    "similar": [
+      "electric-bunion-corrector-toe-separator",
+      "airbag-bunion-corrector-orthotic"
+    ],
     "complements": [
       "tourmaline-magnetic-knee-pads-self-heating-support",
       "double-patellar-knee-support-strap-pain-relief-brace",
@@ -972,182 +1059,19 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "upgrades": []
   },
-  "electric-vibration-massager-bunion-corrector-unisex-foot-hallux-valgus-braces-adjustable-toe-separator-finger-toe-corrector": {
-    "similar": [],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-foot-care-and-bunion-relief"
-    ]
-  },
-  "bunion-corrector-toe-separator-bunions-haluksy-separators-halux-toe-spreader-finger-straightener-for-toe-hallux-valgus-corrector": {
-    "similar": [],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-foot-care-and-bunion-relief"
-    ]
-  },
-  "effective-bunion-corrector-airbag-traction-foot-hallux-valgus-braces-toe-separator-straightener-orthotics-toe-correction": {
-    "similar": [],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-foot-care-and-bunion-relief"
-    ]
-  },
-  "bundle-active-athlete-and-sports-enthusiast": {
+  "airbag-bunion-corrector-orthotic": {
     "similar": [
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-comprehensive-therapy-user"
+      "electric-bunion-corrector-toe-separator",
+      "bunion-corrector-toe-separator"
     ],
-    "complements": [],
-    "upgrades": [
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery"
-    ]
-  },
-  "bundle-office-worker-with-chronic-pain": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-comprehensive-therapy-user"
+    "complements": [
+      "tourmaline-magnetic-knee-pads-self-heating-support",
+      "double-patellar-knee-support-strap-pain-relief-brace",
+      "patella-knee-tendon-strap-sports-support-stabilizer",
+      "full-leg-compression-sleeve-unisex-knee-support",
+      "hinged-knee-brace-patella-stabilizer-for-arthritis"
     ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery"
-    ]
-  },
-  "bundle-elderly-mobility-support": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-comprehensive-therapy-user"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-post-injury-post-surgery-recovery"
-    ]
-  },
-  "bundle-post-injury-post-surgery-recovery": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-beauty-and-wellness-enthusiast",
-      "bundle-comprehensive-therapy-user"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
-  },
-  "bundle-beauty-and-wellness-enthusiast": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-comprehensive-therapy-user"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
-  },
-  "bundle-comprehensive-therapy-user": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
-  },
-  "bundle-foot-care-and-bunion-relief": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
-  },
-  "bundle-active-athlete-knee-support-kit": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
-  },
-  "bundle-office-worker-back-and-neck-relief-kit": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
-  },
-  "bundle-beauty-and-wellness-premium-facial-therapy-kit": {
-    "similar": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support",
-      "bundle-post-injury-post-surgery-recovery",
-      "bundle-beauty-and-wellness-enthusiast"
-    ],
-    "complements": [],
-    "upgrades": [
-      "bundle-active-athlete-and-sports-enthusiast",
-      "bundle-office-worker-with-chronic-pain",
-      "bundle-elderly-mobility-support"
-    ]
+    "upgrades": []
   },
   "office-worker-essential-kit": {
     "similar": [
@@ -1174,9 +1098,9 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [],
     "upgrades": [
-      "bundle-elderly-mobility-support",
       "office-worker-essential-kit",
-      "chronic-pain-starter-kit"
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit"
     ]
   },
   "chronic-pain-starter-kit": {
@@ -1249,12 +1173,519 @@ window.PRODUCT_RECOMMENDATIONS = {
     ],
     "complements": [],
     "upgrades": [
-      "bundle-comprehensive-therapy-user",
-      "bundle-beauty-and-wellness-premium-facial-therapy-kit",
-      "office-worker-essential-kit"
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
     ]
   },
   "senior-advanced-arthritis": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "shiatsu-massage-chair-full-body": {
+    "similar": [
+      "professional-shiatsu-massage-recliner",
+      "ergonomic-massage-recliner-chair"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
+    ],
+    "upgrades": []
+  },
+  "electric-massage-cushion-full-body": {
+    "similar": [
+      "professional-shiatsu-massage-recliner",
+      "ergonomic-massage-recliner-chair"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
+    ],
+    "upgrades": []
+  },
+  "professional-shiatsu-massage-recliner": {
+    "similar": [
+      "electric-leg-massager-air-compression",
+      "shiatsu-massage-chair-full-body",
+      "electric-massage-cushion-full-body"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
+    ],
+    "upgrades": []
+  },
+  "ergonomic-massage-recliner-chair": {
+    "similar": [
+      "shiatsu-massage-chair-full-body",
+      "electric-massage-cushion-full-body"
+    ],
+    "complements": [
+      "rehabilitation-robot-gloves-stroke-cerebral-palsy",
+      "leg-recovery-boots-6-chambers-air-compression-massager",
+      "intelligent-massage-gloves-hand-rehabilitation-robot",
+      "ems-hip-trainer-3-modes-buttock-lifting-massage",
+      "ems-abdominal-toning-belt-muscle-stimulator-body-shaping"
+    ],
+    "upgrades": []
+  },
+  "office-worker-essential-kit-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "senior-mobility-support-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "chronic-pain-starter-kit-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "active-athlete-knee-specialist": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "active-athlete-complete-protection": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "chronic-pain-relief-kit-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "post-surgery-recovery-complete": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "ultimate-pain-management-system-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "office-worker-advanced-ergonomic": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "office-worker-premium-workspace": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "chronic-pain-whole-body": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "manual-labor-heavy-duty-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "rehab-stroke-recovery-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "beauty-wellness-led-complete": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "senior-advanced-arthritis-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "office-worker-essential-kit-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "senior-mobility-support-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "chronic-pain-starter-kit-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "active-athlete-knee-specialist-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "active-athlete-complete-protection-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "chronic-pain-relief-kit-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "post-surgery-recovery-complete-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "ultimate-pain-management-system-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "office-worker-advanced-ergonomic-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "office-worker-premium-workspace-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "chronic-pain-whole-body-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "manual-labor-heavy-duty-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "rehab-stroke-recovery-2": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "beauty-wellness-led-complete-1": {
+    "similar": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit",
+      "chronic-pain-relief-kit",
+      "ultimate-pain-management-system"
+    ],
+    "complements": [],
+    "upgrades": [
+      "office-worker-essential-kit",
+      "senior-mobility-support",
+      "chronic-pain-starter-kit"
+    ]
+  },
+  "senior-advanced-arthritis-2": {
     "similar": [
       "office-worker-essential-kit",
       "senior-mobility-support",
