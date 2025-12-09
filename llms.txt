@@ -149,6 +149,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION](SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md): 1. Check customer's total spend 2. If spend ≥ $1000: Add tag gold 3. Else if spend ≥ $500: Add tag silver
 - [TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29](TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md): Project documentation
 - [TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN](archive/miscellaneous/TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md): 1. ✅ Run python3 createsocialshareimage.py 2. ⏳ Manual upload to Shopify Theme Settings → Social media
+- [WHITEBOOK_IMPLEMENTATION_COMPLETE_PLAN_GEMINI3PRO](WHITEBOOK_IMPLEMENTATION_COMPLETE_PLAN_GEMINI3PRO.md): Project documentation
 
 ### Forensic Analysis & Reports
 
