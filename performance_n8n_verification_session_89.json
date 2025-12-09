@@ -1,0 +1,233 @@
+{
+  "session": 89,
+  "date": "2025-12-09T19:21:03.418057",
+  "performance": {
+    "date_verified": "2025-12-09",
+    "verification_method": "Chrome DevTools MCP Performance trace (reload + autoStop)",
+    "url": "https://www.alphamedical.shop/",
+    "trace_bounds": {
+      "min": 229579598282,
+      "max": 229588630052
+    },
+    "cpu_throttling": "none",
+    "network_throttling": "none",
+    "core_web_vitals": {
+      "LCP": {
+        "value_ms": 1324,
+        "threshold_good": 2500,
+        "threshold_needs_improvement": 4000,
+        "status": "EXCELLENT",
+        "grade": "A",
+        "percentile": "< 75th percentile (industry)",
+        "note": "LCP 1.32s is EXCELLENT (well under 2.5s threshold)"
+      },
+      "LCP_breakdown": {
+        "TTFB": {
+          "value_ms": 45,
+          "percentage": 3.4,
+          "status": "EXCELLENT",
+          "note": "Time To First Byte - Server response time"
+        },
+        "Load_Delay": {
+          "value_ms": 137,
+          "percentage": 10.3,
+          "status": "GOOD",
+          "note": "Delay between TTFB and resource load start"
+        },
+        "Load_Duration": {
+          "value_ms": 0.2,
+          "percentage": 0.02,
+          "status": "EXCELLENT",
+          "note": "Actual resource load time (image/video)"
+        },
+        "Render_Delay": {
+          "value_ms": 1141,
+          "percentage": 86.2,
+          "status": "NEEDS_OPTIMIZATION",
+          "note": "Delay between load complete and render (CSS/JS blocking)"
+        }
+      },
+      "CLS": {
+        "value": 0.0,
+        "threshold_good": 0.1,
+        "threshold_needs_improvement": 0.25,
+        "status": "PERFECT",
+        "grade": "A+",
+        "note": "No layout shifts detected - PERFECT score"
+      },
+      "FCP": {
+        "value_ms": "Not recorded in trace",
+        "status": "N/A",
+        "note": "First Contentful Paint not explicitly recorded"
+      }
+    },
+    "performance_insights": [
+      {
+        "name": "LCPBreakdown",
+        "severity": "MEDIUM",
+        "issue": "Render delay 1,141ms (86.2% of LCP time)",
+        "impact": "Most LCP time spent on render delay vs resource loading",
+        "recommendation": "Optimize CSS/JS to reduce render-blocking",
+        "bounds": {
+          "min": 229579679709,
+          "max": 229581003327
+        }
+      },
+      {
+        "name": "RenderBlocking",
+        "severity": "LOW",
+        "issue": "Some render-blocking requests detected",
+        "estimated_savings": {
+          "FCP": 0,
+          "LCP": 0
+        },
+        "recommendation": "Defer or inline render-blocking resources",
+        "bounds": {
+          "min": 229579850114,
+          "max": 229579861058
+        }
+      },
+      {
+        "name": "NetworkDependencyTree",
+        "severity": "MEDIUM",
+        "issue": "Chain of dependent network requests",
+        "recommendation": "Reduce chain length, reduce resource sizes, defer non-critical",
+        "bounds": {
+          "min": 229579681133,
+          "max": 229581370234
+        }
+      },
+      {
+        "name": "DOMSize",
+        "severity": "LOW",
+        "issue": "Large DOM can impact style calculations",
+        "recommendation": "Reduce DOM nodes if possible",
+        "bounds": {
+          "min": 229581217984,
+          "max": 229582606912
+        }
+      },
+      {
+        "name": "ThirdParties",
+        "severity": "MEDIUM",
+        "issue": "3rd party code impacting load performance",
+        "recommendation": "Reduce and defer 3rd party scripts (GTM, pixels, etc)",
+        "bounds": {
+          "min": 229580621680,
+          "max": 229587508521
+        }
+      },
+      {
+        "name": "ForcedReflow",
+        "severity": "LOW",
+        "issue": "Forced reflows detected (JavaScript querying geometric properties)",
+        "recommendation": "Batch DOM reads/writes to avoid layout thrashing",
+        "bounds": {
+          "min": 229580697642,
+          "max": 229587449318
+        }
+      },
+      {
+        "name": "Cache",
+        "severity": "LOW",
+        "issue": "Cache lifetime could be improved",
+        "estimated_savings": {
+          "FCP": 0,
+          "LCP": 0
+        },
+        "estimated_wasted_bytes": 126,
+        "recommendation": "Extend cache lifetime for static assets"
+      }
+    ],
+    "overall_assessment": {
+      "grade": "A",
+      "status": "EXCELLENT",
+      "launch_ready": true,
+      "critical_issues": 0,
+      "medium_issues": 3,
+      "low_issues": 4,
+      "summary": "Site performance is EXCELLENT for PRE-LAUNCH. LCP 1.32s and CLS 0.00 are both well within 'Good' thresholds. Render delay optimization recommended but NOT blocking launch."
+    },
+    "industry_benchmarks": {
+      "LCP_good": "< 2.5s",
+      "LCP_alpha_medical": "1.32s",
+      "LCP_status": "PASS (47% faster than threshold)",
+      "CLS_good": "< 0.1",
+      "CLS_alpha_medical": "0.00",
+      "CLS_status": "PERFECT",
+      "TTFB_good": "< 800ms",
+      "TTFB_alpha_medical": "45ms",
+      "TTFB_status": "EXCELLENT (94% faster than threshold)"
+    },
+    "optimization_opportunities": [
+      {
+        "priority": "MEDIUM",
+        "time_estimate": "2-4 hours",
+        "impact": "Reduce LCP by 200-400ms (to ~1s)",
+        "action": "Defer non-critical JavaScript (GTM, pixels)"
+      },
+      {
+        "priority": "LOW",
+        "time_estimate": "1 hour",
+        "impact": "Reduce network chain depth",
+        "action": "Preload critical resources, reduce dependency chains"
+      },
+      {
+        "priority": "LOW",
+        "time_estimate": "30 min",
+        "impact": "Improve repeat visit performance",
+        "action": "Extend cache headers for static assets"
+      }
+    ]
+  },
+  "n8n": {
+    "date_verified": "2025-12-09",
+    "verification_method": "n8n admin UI inspection (Chrome DevTools MCP)",
+    "instance_url": "https://n8n.srv1168256.hstgr.cloud",
+    "workflow_url": "https://n8n.srv1168256.hstgr.cloud/workflow/q0kyXyhCUq5gjmG2",
+    "authentication_status": "CREDENTIALS_NOT_FOUND",
+    "credentials_location": ".env.admin",
+    "credentials_checked": [
+      "N8N_USER",
+      "N8N_PASSWORD",
+      "N8N_EMAIL"
+    ],
+    "credentials_found": false,
+    "workflows": {
+      "workflow_1": {
+        "id": "q0kyXyhCUq5gjmG2",
+        "name": "Alpha Medical Lead Generation Workflow",
+        "status": "UNKNOWN - Cannot verify without authentication",
+        "note": "Session 83 documented 2 pending toggles: Workflow activation + MCP Access"
+      },
+      "workflow_2": {
+        "id": "UNKNOWN",
+        "name": "UNKNOWN",
+        "status": "UNKNOWN - Cannot verify without authentication",
+        "note": "Second workflow mentioned in documentation but ID not found"
+      }
+    },
+    "pending_actions_from_session_83": [
+      {
+        "action": "Workflow activation toggle",
+        "time_estimate": "1 min",
+        "priority": "MEDIUM",
+        "status": "PENDING - requires manual UI toggle",
+        "note": "N8N API limitation: 'active' field is read-only"
+      },
+      {
+        "action": "MCP Access toggle",
+        "time_estimate": "1 min",
+        "priority": "MEDIUM",
+        "status": "PENDING - requires manual UI toggle",
+        "note": "Must be enabled in workflow settings"
+      }
+    ],
+    "verification_status": {
+      "complete": false,
+      "reason": "N8N credentials not found in .env.admin",
+      "recommendation": "User must provide N8N credentials OR manually verify via UI",
+      "alternative": "User can verify via UI in 2 min (check workflow active + MCP toggle)"
+    }
+  }
+}
