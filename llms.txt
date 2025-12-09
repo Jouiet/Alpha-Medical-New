@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** December 08, 2025
+**Last Updated:** December 09, 2025
 
 ## Core Documentation
 
@@ -41,6 +41,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](archive/session-summaries/SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
 - [SYSTEM_ANALYSIS_COMPLETE_2025-11-22](archive/miscellaneous/SYSTEM_ANALYSIS_COMPLETE_2025-11-22.md): Project documentation
 - [TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29](TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md): Cart Recovery: None (no automation) Sales: Baseline (pre-Tidio) Conversion Rate: Baseline
+- [WHITEBOOK_VS_ALPHA_MEDICAL_GAP_ANALYSIS](WHITEBOOK_VS_ALPHA_MEDICAL_GAP_ANALYSIS.md): Project documentation
 - [marketing-context](agent_docs/marketing-context.md): Project documentation
 - [seo-strategy](agent_docs/seo-strategy.md): Project documentation
 
