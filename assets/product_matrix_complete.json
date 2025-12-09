@@ -5,7 +5,7 @@
     "last_update": "2025-11-19 - Complete product matrix generation",
     "purpose": "Multi-dimensional product segmentation for dynamic merchandising",
     "methodology": "Based on ACTUAL Alpha Medical inventory analysis (96 products)",
-    "product_count": 130,
+    "product_count": 136,
     "last_generated": "2025-11-19",
     "status": "COMPLETE - All products scored"
   },
@@ -514,14 +514,14 @@
         "seasonality": {
           "winter": 0.5,
           "spring": 0.65,
-          "summer": 0.9500000000000001,
+          "summer": 0.65,
           "fall": 0.5
         },
         "demographics": {
           "office_workers_25_55": 0.2,
           "seniors_65plus": 0.2,
           "beauty_wellness_25_55": 0.2,
-          "athletes_18_45": 0.5,
+          "athletes_18_45": 0.35,
           "gamers_16_35": 0.35,
           "specialized_medical_rehabilitation": 0.2
         },
@@ -542,12 +542,12 @@
         "usage_intensity": {
           "daily_wear": 0.5,
           "occasional": 0.5,
-          "recovery": 0.7,
+          "recovery": 0.5,
           "performance": 0.5
         },
         "medical_condition": {
           "arthritis": 0.4,
-          "post_surgery": 0.4,
+          "post_surgery": 0.1,
           "prevention": 0.6,
           "chronic_pain": 0.1,
           "injury_recovery": 0.4
@@ -600,7 +600,99 @@
         }
       }
     },
+    "active-athlete-complete-protection-2": {
+      "name": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
+      "scores": {
+        "seasonality": {
+          "winter": 0.5,
+          "spring": 0.65,
+          "summer": 0.9500000000000001,
+          "fall": 0.5
+        },
+        "demographics": {
+          "office_workers_25_55": 0.2,
+          "seniors_65plus": 0.2,
+          "beauty_wellness_25_55": 0.2,
+          "athletes_18_45": 0.5,
+          "gamers_16_35": 0.35,
+          "specialized_medical_rehabilitation": 0.2
+        },
+        "pain_type": {
+          "knee": 1.0,
+          "back": 0.0,
+          "neck": 0.0,
+          "foot": 1.0,
+          "wrist": 1.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.0,
+          "mid_range": 0.0,
+          "premium": 0.4,
+          "luxury": 1.0
+        },
+        "usage_intensity": {
+          "daily_wear": 0.5,
+          "occasional": 0.5,
+          "recovery": 0.7,
+          "performance": 0.5
+        },
+        "medical_condition": {
+          "arthritis": 0.4,
+          "post_surgery": 0.4,
+          "prevention": 0.6,
+          "chronic_pain": 0.1,
+          "injury_recovery": 0.4
+        }
+      }
+    },
     "active-athlete-knee-specialist": {
+      "name": "Active Athlete Knee Specialist - Sports Support Bundle",
+      "scores": {
+        "seasonality": {
+          "winter": 0.5,
+          "spring": 0.5,
+          "summer": 0.65,
+          "fall": 0.5
+        },
+        "demographics": {
+          "office_workers_25_55": 0.2,
+          "seniors_65plus": 0.2,
+          "beauty_wellness_25_55": 0.2,
+          "athletes_18_45": 0.5,
+          "gamers_16_35": 0.2,
+          "specialized_medical_rehabilitation": 0.2
+        },
+        "pain_type": {
+          "knee": 1.0,
+          "back": 0.0,
+          "neck": 0.0,
+          "foot": 0.0,
+          "wrist": 0.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.0,
+          "mid_range": 0.4,
+          "premium": 1.0,
+          "luxury": 0.3
+        },
+        "usage_intensity": {
+          "daily_wear": 0.3,
+          "occasional": 0.5,
+          "recovery": 0.3,
+          "performance": 0.5
+        },
+        "medical_condition": {
+          "arthritis": 0.4,
+          "post_surgery": 0.1,
+          "prevention": 0.35,
+          "chronic_pain": 0.1,
+          "injury_recovery": 0.1
+        }
+      }
+    },
+    "active-athlete-knee-specialist-1": {
       "name": "Active Athlete Knee Specialist - Sports Support Bundle",
       "scores": {
         "seasonality": {
@@ -646,7 +738,7 @@
         }
       }
     },
-    "active-athlete-knee-specialist-1": {
+    "active-athlete-knee-specialist-2": {
       "name": "Active Athlete Knee Specialist - Sports Support Bundle",
       "scores": {
         "seasonality": {
@@ -1218,7 +1310,7 @@
         "pain_type": {
           "knee": 0.0,
           "back": 0.0,
-          "neck": 1.0,
+          "neck": 0.0,
           "foot": 0.0,
           "wrist": 0.0,
           "shoulder": 0.0
@@ -1658,6 +1750,52 @@
         }
       }
     },
+    "chronic-pain-relief-kit-3": {
+      "name": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "scores": {
+        "seasonality": {
+          "winter": 0.9500000000000001,
+          "spring": 0.8,
+          "summer": 0.5,
+          "fall": 0.5
+        },
+        "demographics": {
+          "office_workers_25_55": 0.65,
+          "seniors_65plus": 0.65,
+          "beauty_wellness_25_55": 0.35,
+          "athletes_18_45": 0.2,
+          "gamers_16_35": 0.35,
+          "specialized_medical_rehabilitation": 0.35
+        },
+        "pain_type": {
+          "knee": 1.0,
+          "back": 0.9,
+          "neck": 1.0,
+          "foot": 1.0,
+          "wrist": 1.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.0,
+          "mid_range": 0.0,
+          "premium": 0.4,
+          "luxury": 1.0
+        },
+        "usage_intensity": {
+          "daily_wear": 0.5,
+          "occasional": 0.5,
+          "recovery": 0.7,
+          "performance": 0.3
+        },
+        "medical_condition": {
+          "arthritis": 0.4,
+          "post_surgery": 0.4,
+          "prevention": 0.35,
+          "chronic_pain": 0.4,
+          "injury_recovery": 0.1
+        }
+      }
+    },
     "chronic-pain-starter-kit": {
       "name": "Chronic Pain Starter Kit - Targeted Relief Bundle",
       "scores": {
@@ -1796,6 +1934,52 @@
         }
       }
     },
+    "chronic-pain-starter-kit-3": {
+      "name": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "scores": {
+        "seasonality": {
+          "winter": 1.0,
+          "spring": 0.65,
+          "summer": 0.5,
+          "fall": 0.5
+        },
+        "demographics": {
+          "office_workers_25_55": 0.5,
+          "seniors_65plus": 0.65,
+          "beauty_wellness_25_55": 0.2,
+          "athletes_18_45": 0.2,
+          "gamers_16_35": 0.35,
+          "specialized_medical_rehabilitation": 0.2
+        },
+        "pain_type": {
+          "knee": 1.0,
+          "back": 0.9,
+          "neck": 0.0,
+          "foot": 1.0,
+          "wrist": 1.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.0,
+          "mid_range": 0.4,
+          "premium": 1.0,
+          "luxury": 0.3
+        },
+        "usage_intensity": {
+          "daily_wear": 0.5,
+          "occasional": 0.3,
+          "recovery": 0.5,
+          "performance": 0.3
+        },
+        "medical_condition": {
+          "arthritis": 0.4,
+          "post_surgery": 0.1,
+          "prevention": 0.35,
+          "chronic_pain": 0.4,
+          "injury_recovery": 0.1
+        }
+      }
+    },
     "chronic-pain-whole-body": {
       "name": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
       "scores": {
@@ -1808,7 +1992,7 @@
         "demographics": {
           "office_workers_25_55": 0.35,
           "seniors_65plus": 0.5,
-          "beauty_wellness_25_55": 0.5,
+          "beauty_wellness_25_55": 0.35,
           "athletes_18_45": 0.2,
           "gamers_16_35": 0.2,
           "specialized_medical_rehabilitation": 0.2
@@ -4192,22 +4376,22 @@
       "name": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
       "scores": {
         "seasonality": {
-          "winter": 0.8,
+          "winter": 0.65,
           "spring": 0.65,
           "summer": 0.5,
           "fall": 1.0
         },
         "demographics": {
-          "office_workers_25_55": 1.0,
-          "seniors_65plus": 0.5,
-          "beauty_wellness_25_55": 0.8,
+          "office_workers_25_55": 0.8,
+          "seniors_65plus": 0.35,
+          "beauty_wellness_25_55": 0.65,
           "athletes_18_45": 0.2,
           "gamers_16_35": 0.2,
           "specialized_medical_rehabilitation": 0.2
         },
         "pain_type": {
           "knee": 0.0,
-          "back": 0.9,
+          "back": 0.7,
           "neck": 1.0,
           "foot": 0.0,
           "wrist": 0.0,
@@ -4221,16 +4405,16 @@
         },
         "usage_intensity": {
           "daily_wear": 0.7,
-          "occasional": 0.5,
+          "occasional": 0.3,
           "recovery": 0.5,
           "performance": 0.3
         },
         "medical_condition": {
-          "arthritis": 0.7,
+          "arthritis": 0.4,
           "post_surgery": 0.1,
-          "prevention": 0.85,
+          "prevention": 0.6,
           "chronic_pain": 0.1,
-          "injury_recovery": 0.4
+          "injury_recovery": 0.1
         }
       }
     },
@@ -4418,18 +4602,64 @@
         }
       }
     },
+    "office-worker-essential-kit-3": {
+      "name": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "scores": {
+        "seasonality": {
+          "winter": 0.8,
+          "spring": 0.5,
+          "summer": 0.5,
+          "fall": 1.0
+        },
+        "demographics": {
+          "office_workers_25_55": 1.0,
+          "seniors_65plus": 0.35,
+          "beauty_wellness_25_55": 0.35,
+          "athletes_18_45": 0.2,
+          "gamers_16_35": 0.5,
+          "specialized_medical_rehabilitation": 0.2
+        },
+        "pain_type": {
+          "knee": 0.0,
+          "back": 0.7,
+          "neck": 1.0,
+          "foot": 0.0,
+          "wrist": 1.0,
+          "shoulder": 1.0
+        },
+        "price_tier": {
+          "budget": 0.0,
+          "mid_range": 0.0,
+          "premium": 0.4,
+          "luxury": 1.0
+        },
+        "usage_intensity": {
+          "daily_wear": 0.7,
+          "occasional": 0.5,
+          "recovery": 0.3,
+          "performance": 0.3
+        },
+        "medical_condition": {
+          "arthritis": 0.7,
+          "post_surgery": 0.1,
+          "prevention": 0.85,
+          "chronic_pain": 0.1,
+          "injury_recovery": 0.1
+        }
+      }
+    },
     "office-worker-premium-workspace": {
       "name": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
       "scores": {
         "seasonality": {
-          "winter": 0.9500000000000001,
-          "spring": 0.65,
+          "winter": 1.0,
+          "spring": 0.5,
           "summer": 0.5,
-          "fall": 0.8
+          "fall": 0.9500000000000001
         },
         "demographics": {
-          "office_workers_25_55": 0.5,
-          "seniors_65plus": 0.5,
+          "office_workers_25_55": 0.65,
+          "seniors_65plus": 0.65,
           "beauty_wellness_25_55": 1.0,
           "athletes_18_45": 0.2,
           "gamers_16_35": 0.2,
@@ -4437,11 +4667,11 @@
         },
         "pain_type": {
           "knee": 0.0,
-          "back": 0.0,
+          "back": 0.7,
           "neck": 1.0,
           "foot": 0.0,
           "wrist": 0.0,
-          "shoulder": 0.0
+          "shoulder": 1.0
         },
         "price_tier": {
           "budget": 0.0,
@@ -4452,7 +4682,7 @@
         "usage_intensity": {
           "daily_wear": 0.5,
           "occasional": 0.3,
-          "recovery": 0.5,
+          "recovery": 0.3,
           "performance": 0.3
         },
         "medical_condition": {
@@ -4460,7 +4690,7 @@
           "post_surgery": 0.1,
           "prevention": 0.35,
           "chronic_pain": 0.1,
-          "injury_recovery": 0.4
+          "injury_recovery": 0.1
         }
       }
     },
@@ -4652,8 +4882,8 @@
       "name": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
       "scores": {
         "seasonality": {
-          "winter": 0.65,
-          "spring": 0.8,
+          "winter": 0.5,
+          "spring": 0.65,
           "summer": 0.5,
           "fall": 0.5
         },
@@ -4662,15 +4892,15 @@
           "seniors_65plus": 0.2,
           "beauty_wellness_25_55": 0.2,
           "athletes_18_45": 0.2,
-          "gamers_16_35": 0.35,
-          "specialized_medical_rehabilitation": 0.5
+          "gamers_16_35": 0.2,
+          "specialized_medical_rehabilitation": 0.35
         },
         "pain_type": {
           "knee": 0.0,
           "back": 0.9,
           "neck": 1.0,
           "foot": 1.0,
-          "wrist": 1.0,
+          "wrist": 0.0,
           "shoulder": 0.0
         },
         "price_tier": {
@@ -4682,12 +4912,12 @@
         "usage_intensity": {
           "daily_wear": 0.3,
           "occasional": 0.5,
-          "recovery": 0.8999999999999999,
+          "recovery": 0.5,
           "performance": 0.3
         },
         "medical_condition": {
           "arthritis": 0.4,
-          "post_surgery": 0.7,
+          "post_surgery": 0.4,
           "prevention": 0.35,
           "chronic_pain": 0.1,
           "injury_recovery": 0.4
@@ -5204,25 +5434,25 @@
       "name": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
       "scores": {
         "seasonality": {
-          "winter": 0.8,
-          "spring": 0.9500000000000001,
-          "summer": 0.65,
+          "winter": 0.65,
+          "spring": 0.5,
+          "summer": 0.5,
           "fall": 0.5
         },
         "demographics": {
-          "office_workers_25_55": 0.2,
-          "seniors_65plus": 0.9500000000000001,
-          "beauty_wellness_25_55": 0.5,
-          "athletes_18_45": 0.35,
-          "gamers_16_35": 0.35,
-          "specialized_medical_rehabilitation": 0.35
+          "office_workers_25_55": 0.35,
+          "seniors_65plus": 0.35,
+          "beauty_wellness_25_55": 0.2,
+          "athletes_18_45": 0.2,
+          "gamers_16_35": 0.2,
+          "specialized_medical_rehabilitation": 0.2
         },
         "pain_type": {
-          "knee": 1.0,
+          "knee": 0.0,
           "back": 0.7,
-          "neck": 0.0,
+          "neck": 1.0,
           "foot": 1.0,
-          "wrist": 1.0,
+          "wrist": 0.0,
           "shoulder": 0.0
         },
         "price_tier": {
@@ -5232,16 +5462,16 @@
           "luxury": 1.0
         },
         "usage_intensity": {
-          "daily_wear": 0.7,
-          "occasional": 0.5,
-          "recovery": 0.7,
-          "performance": 0.5
+          "daily_wear": 0.3,
+          "occasional": 0.3,
+          "recovery": 0.3,
+          "performance": 0.3
         },
         "medical_condition": {
-          "arthritis": 1.0,
-          "post_surgery": 0.7,
-          "prevention": 0.6,
-          "chronic_pain": 0.7,
+          "arthritis": 0.7,
+          "post_surgery": 0.1,
+          "prevention": 0.1,
+          "chronic_pain": 0.1,
           "injury_recovery": 0.1
         }
       }
@@ -5431,6 +5661,52 @@
       }
     },
     "senior-mobility-support-2": {
+      "name": "Senior Mobility Support - Arthritis Care Bundle",
+      "scores": {
+        "seasonality": {
+          "winter": 0.65,
+          "spring": 0.5,
+          "summer": 0.65,
+          "fall": 0.9500000000000001
+        },
+        "demographics": {
+          "office_workers_25_55": 0.8,
+          "seniors_65plus": 0.65,
+          "beauty_wellness_25_55": 0.2,
+          "athletes_18_45": 0.2,
+          "gamers_16_35": 0.5,
+          "specialized_medical_rehabilitation": 0.2
+        },
+        "pain_type": {
+          "knee": 1.0,
+          "back": 0.9,
+          "neck": 1.0,
+          "foot": 1.0,
+          "wrist": 1.0,
+          "shoulder": 0.0
+        },
+        "price_tier": {
+          "budget": 0.0,
+          "mid_range": 0.0,
+          "premium": 0.4,
+          "luxury": 1.0
+        },
+        "usage_intensity": {
+          "daily_wear": 0.7,
+          "occasional": 0.5,
+          "recovery": 0.3,
+          "performance": 0.3
+        },
+        "medical_condition": {
+          "arthritis": 0.7,
+          "post_surgery": 0.1,
+          "prevention": 0.85,
+          "chronic_pain": 0.1,
+          "injury_recovery": 0.1
+        }
+      }
+    },
+    "senior-mobility-support-3": {
       "name": "Senior Mobility Support - Arthritis Care Bundle",
       "scores": {
         "seasonality": {
