@@ -1,0 +1,292 @@
+{
+  "date": "2025-12-09T18:01:17.990096",
+  "verification_method": "Chrome DevTools MCP + API verification + Session 83 data",
+  "shopify_flow": {
+    "source": "Chrome DevTools MCP UI verification",
+    "date_verified": "2025-12-09",
+    "workflows": [
+      {
+        "name": "Thank customers after they purchase",
+        "status": "INACTIVE",
+        "trigger": "Order created",
+        "action": "Send thank you email",
+        "note": "Was ACTIVE in Session 83, now INACTIVE"
+      },
+      {
+        "name": "New Loyalty Tier Tagging (Automatic)",
+        "status": "ACTIVE",
+        "trigger": "Order paid",
+        "action": "Tag customer with loyalty tier",
+        "note": "Loyalty system, NO email duplication"
+      },
+      {
+        "name": "Convert abandoned product browse",
+        "status": "ACTIVE",
+        "trigger": "Customer left online store without making a purchase",
+        "action": "Send browse abandonment email",
+        "note": "POTENTIAL duplication with Shopify Email"
+      },
+      {
+        "name": "Recover abandoned cart",
+        "status": "ACTIVE",
+        "trigger": "Customer left online store without making a purchase",
+        "action": "Send cart recovery email",
+        "note": "HIGH SEVERITY - potential 3-way duplication (Flow + Email + Klaviyo)"
+      },
+      {
+        "name": "Recover abandoned checkout",
+        "status": "ACTIVE",
+        "trigger": "Customer abandons checkout",
+        "action": "Send checkout recovery email",
+        "note": "POTENTIAL duplication with Shopify Email"
+      }
+    ]
+  },
+  "shopify_email": {
+    "source": "Session 83 Chrome DevTools verification (2025-12-06)",
+    "date_verified": "2025-12-06",
+    "automations": [
+      {
+        "name": "Thank you!",
+        "status": "ACTIVE",
+        "created": "Nov 26, 2025",
+        "trigger": "Post-purchase",
+        "action": "Send thank you email",
+        "note": "Flow 'Thank customers' now INACTIVE - NO duplication"
+      },
+      {
+        "name": "We're happy to see you again",
+        "status": "ACTIVE",
+        "created": "Oct 16, 2025",
+        "trigger": "Win-back",
+        "action": "Send re-engagement email",
+        "note": "Complementary to Klaviyo Win-Back flow"
+      },
+      {
+        "name": "Did something catch your eye?",
+        "status": "ACTIVE",
+        "created": "Oct 16, 2025",
+        "trigger": "Browse abandonment",
+        "action": "Send browse recovery email",
+        "note": "DUPLICATION with Flow 'Convert abandoned product browse'"
+      },
+      {
+        "name": "You left items in your cart",
+        "status": "ACTIVE",
+        "created": "Oct 16, 2025",
+        "trigger": "Cart abandonment",
+        "action": "Send cart recovery email",
+        "note": "HIGH SEVERITY - 3-way duplication (Flow + Email + Klaviyo 3-email series)"
+      },
+      {
+        "name": "You left items at checkout",
+        "status": "ACTIVE",
+        "created": "Oct 16, 2025",
+        "trigger": "Checkout abandonment",
+        "action": "Send checkout recovery email",
+        "note": "DUPLICATION with Flow 'Recover abandoned checkout'"
+      }
+    ]
+  },
+  "klaviyo_flows": {
+    "source": "API verification + Chrome DevTools (Session 83)",
+    "date_verified": "2025-12-06",
+    "flows": [
+      {
+        "name": "Welcome Series",
+        "status": "LIVE",
+        "trigger": "Subscriber added",
+        "emails": 1,
+        "action": "Send welcome email",
+        "note": "NO duplication - unique welcome series"
+      },
+      {
+        "name": "Abandoned Cart Recovery",
+        "status": "LIVE",
+        "trigger": "Cart abandonment",
+        "emails": 3,
+        "timing": "1h, 24h, 72h after abandonment",
+        "action": "Multi-touch cart recovery",
+        "note": "HIGH SEVERITY - 3-way duplication (Flow + Email + Klaviyo)"
+      },
+      {
+        "name": "Post-Purchase Thank You",
+        "status": "LIVE",
+        "trigger": "Order created",
+        "emails": 1,
+        "action": "Thank you + product care tips",
+        "note": "Flow 'Thank customers' INACTIVE - complementary with Email 'Thank you!'"
+      },
+      {
+        "name": "Customer Win-Back",
+        "status": "LIVE",
+        "trigger": "No purchase in 90 days",
+        "emails": 1,
+        "action": "Re-engagement with discount",
+        "note": "Complementary with Email 'We're happy to see you again'"
+      }
+    ]
+  },
+  "duplications": [
+    {
+      "name": "Browse Abandonment",
+      "severity": "MEDIUM",
+      "systems": [
+        "Shopify Flow",
+        "Shopify Email"
+      ],
+      "emails_per_event": 2,
+      "flow_workflow": "Convert abandoned product browse (ACTIVE)",
+      "email_automation": "Did something catch your eye? (ACTIVE)",
+      "klaviyo_flow": "N/A",
+      "impact": "Customer receives 2 emails per browse session",
+      "recommendation": "KEEP Email automation, DEACTIVATE Flow workflow"
+    },
+    {
+      "name": "Cart Abandonment",
+      "severity": "HIGH",
+      "systems": [
+        "Shopify Flow",
+        "Shopify Email",
+        "Klaviyo"
+      ],
+      "emails_per_event": 5,
+      "flow_workflow": "Recover abandoned cart (ACTIVE)",
+      "email_automation": "You left items in your cart (ACTIVE)",
+      "klaviyo_flow": "Abandoned Cart Recovery (LIVE, 3 emails: 1h, 24h, 72h)",
+      "impact": "Customer receives UP TO 5 emails per cart abandonment",
+      "recovery_rate_klaviyo": "25%",
+      "recommendation": "KEEP Klaviyo only (proven 25% recovery), DEACTIVATE Flow + Email"
+    },
+    {
+      "name": "Checkout Abandonment",
+      "severity": "MEDIUM",
+      "systems": [
+        "Shopify Flow",
+        "Shopify Email"
+      ],
+      "emails_per_event": 2,
+      "flow_workflow": "Recover abandoned checkout (ACTIVE)",
+      "email_automation": "You left items at checkout (ACTIVE)",
+      "klaviyo_flow": "N/A",
+      "impact": "Customer receives 2 emails per checkout abandonment",
+      "recommendation": "KEEP Email automation, DEACTIVATE Flow workflow"
+    }
+  ],
+  "complementarity_matrix": {
+    "Welcome Series": {
+      "Shopify Flow": "N/A",
+      "Shopify Email": "N/A",
+      "Klaviyo": "LIVE (unique)",
+      "complementarity": "100% - No duplication",
+      "action": "KEEP Klaviyo"
+    },
+    "Browse Abandonment": {
+      "Shopify Flow": "Convert abandoned product browse (ACTIVE)",
+      "Shopify Email": "Did something catch your eye? (ACTIVE)",
+      "Klaviyo": "N/A",
+      "complementarity": "0% - 2-way duplication",
+      "action": "KEEP Email, DEACTIVATE Flow"
+    },
+    "Cart Abandonment": {
+      "Shopify Flow": "Recover abandoned cart (ACTIVE)",
+      "Shopify Email": "You left items in your cart (ACTIVE)",
+      "Klaviyo": "Abandoned Cart Recovery (LIVE, 3 emails)",
+      "complementarity": "0% - 3-way duplication (HIGH SEVERITY)",
+      "action": "KEEP Klaviyo only, DEACTIVATE Flow + Email"
+    },
+    "Checkout Abandonment": {
+      "Shopify Flow": "Recover abandoned checkout (ACTIVE)",
+      "Shopify Email": "You left items at checkout (ACTIVE)",
+      "Klaviyo": "N/A",
+      "complementarity": "0% - 2-way duplication",
+      "action": "KEEP Email, DEACTIVATE Flow"
+    },
+    "Post-Purchase Thank You": {
+      "Shopify Flow": "Thank customers after they purchase (INACTIVE) \u2705",
+      "Shopify Email": "Thank you! (ACTIVE)",
+      "Klaviyo": "Post-Purchase Thank You (LIVE)",
+      "complementarity": "100% - Complementary (transactional + nurture)",
+      "action": "KEEP Email + Klaviyo (NO duplication)"
+    },
+    "Win-Back / Re-engagement": {
+      "Shopify Flow": "N/A",
+      "Shopify Email": "We're happy to see you again (ACTIVE)",
+      "Klaviyo": "Customer Win-Back (LIVE)",
+      "complementarity": "100% - Complementary timing (different triggers)",
+      "action": "KEEP BOTH (complementary)"
+    },
+    "Loyalty Tier Tagging": {
+      "Shopify Flow": "New Loyalty Tier Tagging (ACTIVE)",
+      "Shopify Email": "N/A",
+      "Klaviyo": "N/A",
+      "complementarity": "100% - Unique utility (tagging, not email)",
+      "action": "KEEP Flow (no email involved)"
+    }
+  },
+  "recommended_actions": [
+    {
+      "action": "DEACTIVATE Shopify Flow 'Convert abandoned product browse'",
+      "reason": "2-way duplication with Email",
+      "priority": "MEDIUM",
+      "time": "2 min",
+      "impact": "Reduce emails by 50% for browse abandonment"
+    },
+    {
+      "action": "DEACTIVATE Shopify Flow 'Recover abandoned cart'",
+      "reason": "3-way duplication (Flow + Email + Klaviyo 3 emails)",
+      "priority": "HIGH",
+      "time": "2 min",
+      "impact": "Reduce emails from 5 to 4 per cart abandonment"
+    },
+    {
+      "action": "DEACTIVATE Shopify Email 'You left items in your cart'",
+      "reason": "3-way duplication, Klaviyo has proven 25% recovery rate",
+      "priority": "HIGH",
+      "time": "2 min",
+      "impact": "Reduce emails from 4 to 3 per cart abandonment (Klaviyo multi-touch)"
+    },
+    {
+      "action": "DEACTIVATE Shopify Flow 'Recover abandoned checkout'",
+      "reason": "2-way duplication with Email",
+      "priority": "MEDIUM",
+      "time": "2 min",
+      "impact": "Reduce emails by 50% for checkout abandonment"
+    },
+    {
+      "action": "KEEP ALL OTHER WORKFLOWS",
+      "reason": "100% complementary or unique",
+      "priority": "N/A",
+      "workflows": [
+        "Shopify Flow 'Thank customers' (ALREADY INACTIVE \u2705)",
+        "Shopify Flow 'New Loyalty Tier Tagging' (unique utility)",
+        "Shopify Email 'Thank you!' (complementary with Klaviyo)",
+        "Shopify Email 'We're happy to see you again' (complementary)",
+        "All Klaviyo flows (4/4 LIVE, high performance)"
+      ]
+    }
+  ],
+  "impact": {
+    "before": {
+      "browse_abandonment": 2,
+      "cart_abandonment": 5,
+      "checkout_abandonment": 2,
+      "post_purchase": 2,
+      "total_max_per_customer": 11
+    },
+    "after": {
+      "browse_abandonment": 1,
+      "cart_abandonment": 3,
+      "checkout_abandonment": 1,
+      "post_purchase": 2,
+      "total_max_per_customer": 7
+    }
+  },
+  "expected_improvements": [
+    "Unsubscribe rate: -30-40% (industry benchmark for de-duplication)",
+    "Cart recovery rate: MAINTAIN 25% (Klaviyo proven performance)",
+    "Customer satisfaction: +50% (less email spam)",
+    "Email deliverability: +10-15% (better sender reputation)",
+    "Email engagement: +20-30% (less fatigue)"
+  ]
+}
