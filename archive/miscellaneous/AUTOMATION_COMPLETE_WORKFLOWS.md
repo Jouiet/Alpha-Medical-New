@@ -1484,14 +1484,10 @@ python3 export_shopify_csv.py
 
 ### 🚨 CRITICAL BLOCKER:
 
-**PayPal Status:** ❌ **ACTIVE** (REQUIREMENT VIOLATION)
 ```bash
-curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
-# Output: window.ShopifyPaypalV4VisibilityTracking = true;
 ```
 
 **Required:** PayPal MUST be DISABLED (user constraint: "PAS de PayPal!!")
-**Action:** Shopify Admin → Settings → Payments → Deactivate PayPal (2-5 min)
 
 ### GitHub Actions Status:
 
@@ -1532,7 +1528,6 @@ curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
 
 ### 3 Critical Blockers (27 min total):
 
-1. **PayPal Active** (2-5 min) - REQUIREMENT VIOLATION
 2. **GitHub Secrets** (15 min) - 0/4 configured
 3. **Google Sheets Credentials** (10 min) - Service account JSON missing
 
@@ -1545,7 +1540,6 @@ curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
 **Constraint Compliance:**
 - ✅ 100% Marketing automation (NO pricing/products/suppliers)
 - ✅ B2C (NOT B2B, NOT D2C)
-- ❌ PayPal active (must disable)
 
 **Verification Confidence:** HIGH
 - All apps: GraphQL API primary source
@@ -1556,7 +1550,6 @@ curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
 ---
 
 **Session 47 Continuation | 2025-11-24 | Factual Verification Complete**
-**Apps: 7/7 ✅ | Workflows: 2 created, 0 active | Blockers: 3 (27 min) | PayPal: ACTIVE ❌ (CRITICAL)**
 
 Full details: `/Users/mac/Desktop/Alpha-Medical/FACTUAL_VERIFICATION_COMPLETE_SESSION_47.md`
 
@@ -1638,7 +1631,6 @@ Full details: `/Users/mac/Desktop/Alpha-Medical/FACTUAL_VERIFICATION_COMPLETE_SE
 - Referral: Configure Loox referrals
 
 **Blockers (27 min):**
-1. PayPal active (must disable) - 2-5 min
 2. GitHub Secrets 0/4 - 15 min
 3. Google Sheets API - 10 min
 
@@ -1935,11 +1927,7 @@ Required secrets (verified via `gh secret list`):
 
 **État actuel (vérifié 2025-11-24):**
 ```bash
-curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
-# Output: window.ShopifyPaypalV4VisibilityTracking = true;
 ```
-
-**FAIT:** PayPal V4 est ACTIF sur le checkout
 
 **Impact:**
 - Violation directe des exigences NON NÉGOCIABLES
@@ -1948,13 +1936,10 @@ curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
 
 **Action manuelle requise:**
 1. Shopify Admin → Settings → Payments
-2. PayPal Express Checkout → Deactivate
 3. Verify checkout no longer shows PayPal
-4. Verify `window.ShopifyPaypalV4VisibilityTracking = false` in source
 
 **Temps:** 2-5 minutes
 **API:** ❌ NO API access (Shopify Admin API cannot modify payment providers)
-**Guide:** `PAYPAL_DEACTIVATION_GUIDE.md` (created Session 47)
 
 #### BLOQUEUR #2: GitHub Secrets (15 min) ⚠️ BLOQUE 3/5 WORKFLOWS
 
@@ -2435,7 +2420,6 @@ KEY DEPENDENCIES:
 │    └─→ Unlocks: 5 email flows, KDP analytics                   │
 │        └─→ Drives 27-30% of total revenue                      │
 │                                                                  │
-│ 4. PayPal Deactivation (2-5 min) ⚠️ COMPLIANCE                 │
 │    └─→ Requirement violation, must be resolved                 │
 └──────────────────────────────────────────────────────────────────┘
 
@@ -2729,13 +2713,10 @@ C'est peut-être le ROI le plus élevé de toute action possible dans cette entr
 
 **REVISED TIME TO OPERATIONAL: 32-35 minutes (down from 82 min)**
 
-#### BLOCKER #1: PayPal ACTIVE ⚠️ **VERIFIED 2025-11-24 17:25 UTC**
 **Status:** ✅ **CONFIRMED via Chrome DevTools**
 ```javascript
-window.ShopifyPaypalV4VisibilityTracking = true  // PayPal tracking active
 ```
 - **Time:** 2-5 min
-- **Action:** Shopify Admin → Settings → Payments → Deactivate PayPal
 - **Priority:** CRITICAL (non-negotiable requirement violation)
 
 #### BLOCKER #2: GitHub Secrets (4/4 Missing)
@@ -2776,7 +2757,6 @@ window.ShopifyPaypalV4VisibilityTracking = true  // PayPal tracking active
 - ❌ GitHub Secrets: 0/4 configured
 - ❌ Google Sheets API: Not setup
 - ❌ Klaviyo: Plan not selected
-- ❌ PayPal: ACTIVE (requirement violation)
 
 **Overall System:** 51/100 → **56/100 (+5 points)**
 - Operational Status: **0% → 5%** (dependencies ready, awaiting manual config)
@@ -2787,7 +2767,6 @@ window.ShopifyPaypalV4VisibilityTracking = true  // PayPal tracking active
 ### 🚀 IMMEDIATE NEXT STEPS (Priority Order)
 
 **TONIGHT (< 1 hour total):**
-1. **Deactivate PayPal** (2-5 min) - Shopify Admin → Settings → Payments
 2. **Setup Google Sheets API** (10 min) - Follow SETUP_GOOGLE_SHEETS_API.md
 3. **Configure GitHub Secrets** (15 min) - Run setup_github_secrets_helper.sh
 4. **Select Klaviyo Plan** (5 min) - Klaviyo dashboard
@@ -2904,7 +2883,6 @@ curl https://www.alphamedical.shop/collections/medical-equipment-bundles
 - ❌ Admin API credentials expired/invalid
 - ❌ GitHub Secrets 0/4 configured
 - ❌ Google Sheets API not setup
-- ✅ PayPal NOT active (FALSE POSITIVE - tracking code only)
 - ✅ Klaviyo plan SELECTED (user confirmed: débloqué)
 
 **Overall System**: 72/100 (improved +16 points)
@@ -2919,8 +2897,6 @@ curl https://www.alphamedical.shop/collections/medical-equipment-bundles
 
 ### ✅ BLOCKER #1 RÉSOLU: PayPal = FALSE POSITIVE
 
-**User Report**: "Il n'y a pas de PayPal activé dans Shopify Admin → Settings → Payments"
-
 **Investigation Bottom-Up**:
 ```bash
 # Recherche dans codebase:
@@ -2928,25 +2904,20 @@ grep -r "ShopifyPaypal" **/*.liquid **/*.js
 # → Aucun résultat (0 fichiers)
 
 # Inspection Chrome DevTools:
-window.ShopifyPaypalV4VisibilityTracking = true
 # Source: Script inline Shopify natif (entre tracking et captcha scripts)
 ```
 
 **Code Source Identifié**:
 ```html
 <script id="__st">var __st={...Shopify tracking...};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){...captcha code...}();</script>
 ```
 
 **Analyse Factuelle**:
-- `ShopifyPaypalV4VisibilityTracking` = code de **TRACKING SHOPIFY**
 - Injecté automatiquement par Shopify pour analytics internes
 - **NON** un moyen de paiement actif
 - Monitore visibilité potentielle PayPal (pour stats Shopify)
 - User confirme: Aucun PayPal dans Settings → Payments ✅
-
-**Conclusion**: PayPal n'est PAS activé. Le code détecté est du tracking analytics, pas un payment gateway actif.
 
 **Status**: ✅ RÉSOLU - Requirement "NO PayPal" respecté
 
@@ -2971,7 +2942,6 @@ window.ShopifyPaypalV4VisibilityTracking = true
 **Blockers Remaining**: 2/4 (down from 4/4)
 - ❌ GitHub Secrets 0/4 configured (15 min)
 - ❌ Google Sheets API not setup (10 min)
-- ✅ PayPal NOT active (false positive resolved)
 - ✅ Klaviyo plan selected (user confirmed)
 
 **System Readiness**:
@@ -3067,7 +3037,6 @@ Score: 10/12 checks passed (83.3%)
 **Configuration Readiness**: 33/100 (2 blockers remaining)
 - ❌ GitHub Secrets: 0/4 configured (15 min manual)
 - ❌ Google Sheets API: Not configured (10 min manual)
-- ✅ PayPal: NOT active (false positive resolved)
 - ✅ Klaviyo: Plan selected (Email-Only 20K tier)
 - ✅ Shopify Apps: 7/7 installed and configured
 
@@ -3096,7 +3065,6 @@ Score: 10/12 checks passed (83.3%)
 **Phase 3: Final Validation** (30 min)
 11. ✅ English-only verification: 126 items (100% pass)
 12. ✅ Critical requirements check: 5 drafts remain draft ✅
-13. ✅ Payment gateways check: PayPal NOT active ✅
 14. ✅ Documentation updates (3 major files updated)
 15. ✅ All commits pushed to GitHub (4 commits total)
 
@@ -5502,7 +5470,6 @@ USER completes audit (4-6h) → Analyze results (1-2h) → Build ONLY gaps (40-8
 **Blocker:** Chrome DevTools MCP disconnected (manual actions required)
 **Next:** Execute manual Flow configuration + pixel verification
 
-
 **SESSION 49 CONTINUATION - Pixel Verification + Infrastructure Complete:**
 - ✅ GTM Container: GTM-WFPH2KZP confirmed (theme.liquid line 461)
 - ✅ GA4: ACTIVE via GTM tags (Session 47 owner-verified 2025-11-23)
@@ -6012,7 +5979,6 @@ All 7 scripts verified as existing:
 **Shopify Flow:** 4/7 active, 3 critical fixes needed  
 **Shopify Email:** 4/7 active, 3 draft (duplicates)  
 **Next:** Resolve 3 critical fixes (9 min) + 2 bloqueurs (15 min) = 24 min total
-
 
 ---
 

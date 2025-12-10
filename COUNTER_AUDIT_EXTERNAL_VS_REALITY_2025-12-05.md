@@ -3,10 +3,6 @@
 > **Status:** 🚨 CRITICAL POLICY & INVENTORY FAILURES
 
 ## 🚨 CRITICAL FINDINGS (ACTION REQUIRED)
-1. **POLICY VIOLATION (PAYPAL ACTIVE):**
-   - **Requirement:** Stripe + Google/Apple Pay ONLY.
-   - **Reality:** PayPal v4 verified ACTIVE in frontend code.
-   - **Action:** IMMEDIATE Manual Deactivation in Shopify Admin.
 
 2. **INVENTORY FAILURE (BUNDLES):**
    - **Finding:** All 10 High-Ticket Bundles (Category 4 & 5) show `0` inventory.

@@ -194,14 +194,9 @@
 - **Evidence:**
   ```javascript
   // Found in live site HTML (2025-11-24):
-  window.ShopifyPaypalV4VisibilityTracking = true;
   ```
-- **Verification Command:** `curl -s "https://www.alphamedical.shop/" | grep -i "ShopifyPaypalV4"`
-- **Result:** PayPal V4 tracking is ACTIVE
 - **Previous Status:** ACTIVE since at least 2025-10-30 (forensic audit)
-- **Documentation:** PAYPAL_DEACTIVATION_GUIDE.md (created 2025-11-19) shows manual deactivation required
 - **Blocker Type:** CRITICAL - Cannot be automated via API
-- **Manual Work Required:** 2-5 minutes (Shopify Admin → Settings → Payments → Deactivate PayPal)
 
 #### Shopify Payments Status
 - **Status:** ⚠️ UNKNOWN (cannot verify via API)
@@ -214,7 +209,6 @@
 - **Verification Required:** Manual check in Shopify Admin → Settings → Payments
 
 **PAYMENT PROVIDERS CONCLUSION:**
-- ❌ **BLOCKER:** PayPal is ACTIVE (must be disabled)
 - ⏳ **ACTION REQUIRED:** Manual deactivation in Shopify Admin (2-5 min)
 - ⚠️ **VERIFICATION NEEDED:** Confirm Shopify Payments + Apple Pay + Google Pay are active
 
@@ -279,9 +273,7 @@ The following apps were mentioned in documentation but NOT found in GraphQL API 
 
 **Priority:** 🔴 MUST RESOLVE BEFORE LAUNCH
 
-### Blocker #1: PayPal Active (VIOLATION)
 - **Status:** ❌ ACTIVE (requirement: DISABLED)
-- **Evidence:** `window.ShopifyPaypalV4VisibilityTracking = true` in live HTML
 - **Action:** Manual deactivation via Shopify Admin → Settings → Payments
 - **Time:** 2-5 minutes
 - **Verification:** Check live checkout + HTML source after deactivation
@@ -356,11 +348,8 @@ The following apps were mentioned in documentation but NOT found in GraphQL API 
 
 ### Immediate (Must Do Now)
 
-**1. Deactivate PayPal (2-5 min)**
 ```
 URL: https://admin.shopify.com/store/azffej-as/settings/payments
-Action: Find PayPal → Click "Deactivate" → Confirm
-Verify: curl -s "https://www.alphamedical.shop/" | grep ShopifyPaypalV4
 Expected: No output (or undefined)
 ```
 

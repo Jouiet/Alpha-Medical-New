@@ -497,7 +497,6 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 
 #### Actions Critiques (27 min - BLOQUEURS)
 
-1. **Deactivate PayPal** (2-5 min)
    - URL: https://admin.shopify.com/store/azffej-as/settings/payments
    - Impact: Compliance requirement
 
@@ -798,11 +797,8 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 
 **Critical Blockers (Prevent Launch):**
 
-1. **Deactivate PayPal** (2-5 min)
    ```
    URL: https://admin.shopify.com/store/azffej-as/settings/payments
-   Action: Find PayPal → Deactivate → Confirm
-   Verify: curl -s "https://alphamedical.shop/" | grep ShopifyPaypalV4
    ```
 
 2. **Configure GitHub Secrets** (15 min)

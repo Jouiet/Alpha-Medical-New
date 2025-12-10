@@ -167,9 +167,7 @@
 ### 🔴 CRITIQUE (Blockers launch)
 
 **1. PayPal Status** ⚠️ **URGENT - 10 MIN**
-- **Status:** Probablement ACTIF (détecté `ShopifyPaypalV4VisibilityTracking = true`)
 - **Requirement:** DOIT être désactivé
-- **Action:** Admin → Settings → Payments → Deactivate PayPal
 - **Temps:** 10 minutes
 - **Deadline:** AVANT 15.12.2025
 
@@ -310,7 +308,6 @@
 
 **Vendredi 13 Dec:**
 - [ ] **GO/NO-GO DECISION:**
-  - ✅ PayPal désactivé
   - ✅ GTM tracking fonctionnel
   - ✅ Email flows actifs
   - ✅ Checkout fonctionne
@@ -478,7 +475,6 @@
 ## 🎯 NEXT IMMEDIATE ACTIONS (CETTE SEMAINE)
 
 **AUJOURD'HUI (22 Nov):**
-1. ⚠️ Vérifier PayPal status → Désactiver si actif (10 min)
 2. ⚠️ Vérifier GTM conversion tracking (15 min)
 
 **LUNDI 25 Nov:**

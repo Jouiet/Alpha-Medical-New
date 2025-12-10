@@ -50,7 +50,6 @@ Créer et **VÉRIFIER FACTUELLEMENT** des hooks pour automatiser :
 
 **Blocks:**
 - ❌ Product file modifications (`products/`, `price`, `inventory`, `variant`)
-- ❌ PayPal activation attempts
 - ❌ Credentials commits (`.env`, `.env.admin`, `credentials`, `secrets`)
 - ❌ Supplier/fulfillment changes (`dsers`, `fulfillment`, `supplier`)
 
@@ -103,12 +102,9 @@ OUTPUT: "❌ BLOCKED: Product file modification forbidden"
 ```
 **Result:** ✅ PASS
 
-**Test 1.2: Block PayPal Activation**
 ```bash
-INPUT: {"tool_name": "Edit", "tool_input": {"paypal": "enable", "activate": "true"}}
 EXPECTED: Exit code 2 (block)
 ACTUAL: Exit code 2 ✅
-OUTPUT: "❌ BLOCKED: PayPal activation forbidden"
 ```
 **Result:** ✅ PASS
 
@@ -274,7 +270,6 @@ Status: ✅ Executable, syntaxe valide, tests passed
 ### Automatisation de Qualité (Pre-Tool-Use)
 - ✅ **0% violation rate** des contraintes core (enforcement déterministe)
 - ✅ Bloque modifications produits/prix automatiquement
-- ✅ Bloque PayPal activation automatiquement
 - ✅ Bloque commits de credentials automatiquement
 - ✅ Messages d'erreur clairs avec contexte
 

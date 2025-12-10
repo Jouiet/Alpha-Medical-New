@@ -179,7 +179,6 @@
 - SEO Score: 42.9% (needs homepage meta + social images)
 - AI Crawlers: 3/5 (add Gemini, Grok)
 - Bundles: Strategy ready, création pending
-- PayPal: ACTIVE (critical violation)
 
 ### 🎯 NEXT SESSION PRIORITIES
 
@@ -187,7 +186,6 @@
 2. **Fix homepage meta tags** (title + description)
 3. **Add social share images** (OG + Twitter)
 4. **Add AI crawlers** (Gemini, Grok to robots.txt)
-5. **PayPal deactivation** (manual UI action)
 6. **Theme push** (deploy llms.txt template)
 
 ---

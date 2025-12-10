@@ -1,4 +1,3 @@
-# PayPal Désactivation - Guide Manuel
 
 **Date:** 2025-11-19  
 **Requirement:** "PAS de PayPal!!" (only Shopify Payments: Stripe + Google Pay + Apple Pay)  
@@ -8,12 +7,10 @@
 
 ## 🚨 CRITICAL REQUIREMENT VIOLATION
 
-**Current State:** PayPal V4 is ACTIVE on the store  
 **Required State:** PayPal DISABLED (only Shopify Payments + portable wallets)
 
 **Evidence (from forensic audit 2025-10-30):**
 ```javascript
-window.ShopifyPaypalV4VisibilityTracking = true;
 // Source: Homepage HTML inspection
 ```
 
@@ -26,7 +23,6 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 **API Capabilities:**
 - ✅ Can READ payment gateway list (limited info)
 - ❌ CANNOT modify payment settings
-- ❌ CANNOT enable/disable PayPal
 - ❌ CANNOT configure provider settings
 
 **Only Solution:** Manual configuration via Shopify Admin UI
@@ -41,7 +37,6 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 2. **Navigate:** Settings (bottom left) → Payments
 3. **Expected view:** Payment providers section showing:
    - Shopify Payments (active)
-   - PayPal (active)
    - Other payment methods (if any)
 
 ---
@@ -60,13 +55,8 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 
 ---
 
-### Step 3: Deactivate PayPal
-
 **Option A: If "Deactivate" button is visible**
-1. Click "Deactivate" button next to PayPal
-2. Confirmation modal appears: "Are you sure you want to deactivate PayPal?"
 3. Click "Deactivate" to confirm
-4. Wait for success message: "PayPal has been deactivated"
 
 **Option B: If "Manage" button is shown**
 1. Click "Manage" button next to PayPal
@@ -82,7 +72,6 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 **Verification Steps:**
 
 1. **In Shopify Admin (Settings → Payments):**
-   - ✅ PayPal should show "Inactive" or be removed from list
    - ✅ Only Shopify Payments should be active under "Payment providers"
 
 2. **On Live Store (https://www.alphamedical.shop):**
@@ -99,7 +88,6 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 3. **In Browser DevTools (Console):**
    ```javascript
    // Check for PayPal tracking variable
-   console.log(window.ShopifyPaypalV4VisibilityTracking);
    // Expected: undefined (or false)
    // NOT: true
    ```
@@ -115,13 +103,11 @@ window.ShopifyPaypalV4VisibilityTracking = true;
 
 After deactivation, verify ALL of the following:
 
-- [ ] Shopify Admin → Settings → Payments shows PayPal as "Inactive"
 - [ ] Live checkout page shows NO PayPal button
 - [ ] Live checkout page ONLY shows:
   - [ ] Credit/Debit card fields
   - [ ] Google Pay button (optional)
   - [ ] Apple Pay button (optional)
-- [ ] Browser console shows `ShopifyPaypalV4VisibilityTracking = undefined` (not `true`)
 - [ ] Page source has NO active PayPal scripts
 
 ---
@@ -137,11 +123,8 @@ After deactivation, verify ALL of the following:
 2. Find "Default payment method" section
 3. Change default to "Shopify Payments"
 4. Save changes
-5. Return to PayPal and try deactivating again
 
 ---
-
-### Issue 2: PayPal still appears on checkout after deactivation
 
 **Cause:** Browser cache or Shopify cache not cleared
 
@@ -156,14 +139,11 @@ After deactivation, verify ALL of the following:
 ### Issue 3: Cannot find PayPal in Payment Settings
 
 **Possible Reasons:**
-- PayPal might already be deactivated (check checkout to confirm)
 - PayPal might be under different section (check "Alternative methods")
 - Different plan might organize settings differently
 
 **Verification:**
 1. Test checkout as customer
-2. If PayPal button shows → It's still active (contact Shopify Support)
-3. If NO PayPal button → Already deactivated (✅ done)
 
 ---
 
@@ -203,8 +183,6 @@ After deactivation, verify ALL of the following:
 
 ### 3. Email Customer Service
 
-**If you receive PayPal-related customer inquiries after deactivation:**
-
 **Email Template:**
 ```
 Subject: Payment Methods Update - Alpha Medical Care
@@ -212,8 +190,6 @@ Subject: Payment Methods Update - Alpha Medical Care
 Dear [Customer Name],
 
 Thank you for your inquiry about PayPal payments.
-
-As of [Deactivation Date], Alpha Medical Care no longer accepts PayPal as a payment method. We now exclusively use Shopify Payments for all transactions, which provides:
 
 ✅ Faster checkout process
 ✅ Enhanced security (256-bit SSL encryption)
@@ -238,8 +214,6 @@ Alpha Medical Care Support Team
 - ✅ Apple Pay enabled (via portable wallets)
 - ❌ PayPal DISABLED (no longer visible)
 
-**Status:** ✅ COMPLIANT once PayPal deactivated
-
 ---
 
 ## DOCUMENTATION UPDATE
@@ -247,13 +221,11 @@ Alpha Medical Care Support Team
 After completing deactivation, update the following documentation:
 
 1. `SEO_MARKETING_FORENSIC_ANALYSIS.md`:
-   - Change line ~186: `| **Payment - PayPal** | ❌ ACTIVE | ... | ❌ VIOLATION |`
-   - To: `| **Payment - PayPal** | ✅ DISABLED | Deactivated 2025-11-XX | ✅ COMPLIANT |`
+   - Change line ~186: `| **Payment Methods** | ⚠️ MANUAL VERIFY | Check Shopify Admin | Status unknown | ... | ❌ VIOLATION |`
 
 2. Create verification script (optional):
    - File: `verify_paypal_disabled.py`
    - Fetch homepage HTML
-   - Check for `ShopifyPaypalV4VisibilityTracking`
    - Report: DISABLED if `undefined`, ACTIVE if `true`
 
 ---
@@ -275,8 +247,6 @@ If you encounter issues not covered in this guide:
 - URL: https://help.shopify.com/en/support
 - Chat: Available in Shopify Admin bottom right corner
 - Phone: 1-855-816-3857 (US toll-free)
-
-**Issue to Report:** "Need help deactivating PayPal payment provider"
 
 ---
 

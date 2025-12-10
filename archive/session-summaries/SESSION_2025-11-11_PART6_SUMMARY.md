@@ -209,7 +209,6 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 ## ⚠️ PENDING MANUAL ACTIONS
 
 ### 🔴 CRITICAL (Unchanged from Previous Sessions):
-1. **PayPal Deactivation** (STILL ACTIVE - violation of requirements)
    - URL: https://admin.shopify.com/store/azffej-as/settings/payments
    - Status: ACTIVE (confirmed via curl HTML check)
    - Requirement: Stripe + Google Pay + Apple Pay ONLY
@@ -271,7 +270,6 @@ Status: ✅ **INSTALLED via Conversios app (Oct 30, 2024)**
 
 **Next Session Focus:**
 1. Correct TRACKING_ANALYTICS_GAPS_2025.md with factual findings
-2. Manual tasks: PayPal deactivation + social share image upload
 3. Optional: FB/TikTok pixel installation if running paid ads
 
 ---

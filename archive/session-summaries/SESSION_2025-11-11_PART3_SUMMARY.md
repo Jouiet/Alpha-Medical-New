@@ -105,10 +105,7 @@
 
 ### CRITICAL (User Action Required):
 
-1. **❌ PayPal Deactivation** (REQUIREMENT VIOLATION)
-   - Current: PayPal V4 ACTIVE
    - Required: Stripe + Apple Pay + Google Pay ONLY
-   - Action: Shopify Admin → Settings → Payments → Deactivate PayPal
    - **Cannot be automated via API**
 
 2. **⚠️ Homepage Title Verification**
@@ -166,7 +163,6 @@
 ## 🔄 NEXT SESSION PRIORITIES
 
 1. **Verify homepage title fix** (manual check in Shopify Admin)
-2. **Confirm PayPal deactivation** (critical requirement)
 3. **Add social share images** (og:image, twitter:image)
 4. **Validate Flow emails** (check test customer inbox)
 5. **Re-run SEO validation** (target 90%+ score)

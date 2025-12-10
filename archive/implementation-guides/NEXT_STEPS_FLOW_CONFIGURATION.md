@@ -154,9 +154,7 @@ navigate to: https://admin.shopify.com/store/azffej-as/flow
 
 ## ❌ CRITICAL MANUAL TASKS REMAINING
 
-### 1. PayPal Deactivation (2-3 minutes) 🔴 CRITICAL
 **Status:** ACTIVE (requirement violation: "PAS de PayPal!!")
-**Evidence:** `window.ShopifyPaypalV4VisibilityTracking = true` verified on live site
 
 **Action:**
 1. Navigate: https://admin.shopify.com/store/azffej-as/settings/payments

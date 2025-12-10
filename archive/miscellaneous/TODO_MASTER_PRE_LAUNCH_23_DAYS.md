@@ -44,7 +44,6 @@
 
 **Contexte:**
 - Requirement initial: "PAS de PayPal!!"
-- Détection actuelle: Script détecte `ShopifyPaypalV4VisibilityTracking = true`
 - Status: PROBABLEMENT ACTIF (à vérifier + désactiver)
 
 **Actions détaillées:**
@@ -70,9 +69,7 @@
 **Fichier output:** Aucun (configuration Shopify)
 
 **En cas de problème:**
-- Si PayPal déjà désactivé → ✅ Marquer comme fait
 - Si impossibilité technique → Documenter raison + escalade support Shopify
-- Guidance: `PAYPAL_DEACTIVATION_GUIDE.md` (existe)
 
 ---
 
@@ -418,7 +415,6 @@ Order paid
 **Priorité:** CRITIQUE (validation fonctionnement end-to-end)
 **Temps estimé:** 15 minutes
 **Difficulté:** Facile
-**Dépendances:** PayPal désactivé ✅, GTM configuré ✅
 
 **Actions détaillées:**
 1. [ ] Ouvrir site en navigation privée: https://www.alphamedical.shop
@@ -464,7 +460,6 @@ Order paid
 
 **Si erreurs:**
 - Payment declined → Vérifier test mode activé dans Shopify Payments
-- PayPal apparaît → Retourner Tâche 1 (désactivation incomplète)
 - Thank You page 404 → Vérifier theme settings
 
 ---
@@ -958,7 +953,6 @@ Order paid
 
 **BLOCKERS (1 seul = NO-GO):**
 
-- [ ] ✅ PayPal DÉSACTIVÉ (Tâche 1)
   - Vérification: `python3 verify_paypal_status_forensic.py` = 0 indicators
   - Vérification: Test checkout = PayPal button NOT visible
 
@@ -1204,7 +1198,6 @@ Order paid
 
 **CETTE SEMAINE (22-27 NOV):**
 
-1. ⚠️ PayPal désactivation (10 min)
 2. ⚠️ GTM conversion tracking vérification (15 min)
 3. ⚠️ Klaviyo Welcome Flow activation (10 min)
 4. ⚠️ Klaviyo Abandoned Cart activation (10 min)
