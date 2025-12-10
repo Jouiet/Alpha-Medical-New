@@ -1,4 +1,4 @@
-// Updated: 1765392734
+// Updated: 1765393105
 /**
  * Bundle Builder - Complete Interactive Functionality
  * Handles product search, selection, price calculation, and form submission
@@ -143,6 +143,40 @@
         if (form) {
             form.addEventListener('submit', handleFormSubmit);
         }
+
+        // Paste buttons for URL inputs (Clipboard API)
+        document.querySelectorAll('.paste-btn').forEach(btn => {
+            btn.addEventListener('click', async function () {
+                const inputId = this.dataset.inputId;
+                const input = document.getElementById(inputId);
+
+                if (!input) return;
+
+                try {
+                    // Read from clipboard
+                    const text = await navigator.clipboard.readText();
+
+                    // Set value and trigger input event
+                    input.value = text;
+                    input.dispatchEvent(new Event('input', { bubbles: true }));
+
+                    // Visual feedback
+                    const originalBg = this.style.background;
+                    const originalColor = this.style.color;
+                    this.style.background = 'var(--accent-green)';
+                    this.style.color = 'white';
+                    setTimeout(() => {
+                        this.style.background = originalBg;
+                        this.style.color = originalColor;
+                    }, 800);
+
+                } catch (err) {
+                    console.warn('[Bundle Builder] Clipboard access denied, focusing input instead');
+                    input.focus();
+                    input.select();
+                }
+            });
+        });
     }
 
     /**

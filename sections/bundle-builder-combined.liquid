@@ -115,83 +115,145 @@
           <div class="method-header">
             <h3 class="method-title">
               <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                <path d="M10.8333 9.16667L14.1667 5.83333M14.1667 5.83333H11.6667M14.1667 5.83333V8.33333M9.16667 3.33333H6.5C5.11929 3.33333 4 4.45262 4 5.83333V13.5C4 14.8807 5.11929 16 6.5 16H13.5C14.8807 16 16 13.5V10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8333 9.16667L14.1667 5.83333M14.1667 5.83333H11.6667M14.1667 5.83333V8.33333M9.16667 3.33333H6.5C5.11929 3.33333 4 4.45262 4 5.83333V13.5C4 14.8807 5.11929 16 6.5 16H13.5C14.8807 16 16 14.8807 16 13.5V10.8333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               Method 2: Paste Product URLs
             </h3>
             <p class="method-instructions">
-              Copy product URL from our shop (e.g., alphamedical.shop/products/knee-brace) and paste below
+              Copy product URLs from our catalog and paste them below for quick bundle creation
             </p>
           </div>
 
           <div class="url-inputs">
             <div class="url-input-group">
               <label class="url-label">
-                <span class="url-label-number">Product #1</span>
+                <span class="url-label-number">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <text x="10" y="14" text-anchor="middle" fill="currentColor" font-size="10" font-weight="bold">1</text>
+                  </svg>
+                  Product #1
+                </span>
                 <span class="url-label-status" id="url-status-1"></span>
               </label>
-              <input
-                type="url"
-                class="url-input"
-                id="url-input-1"
-                placeholder="https://alphamedical.shop/products/..."
-                data-product-number="1"
-              >
+              <div class="url-input-wrapper">
+                <input
+                  type="url"
+                  class="url-input"
+                  id="url-input-1"
+                  placeholder="Paste URL here (e.g., alphamedical.shop/products/knee-brace)"
+                  data-product-number="1"
+                >
+                <button type="button" class="paste-btn" data-input-id="url-input-1" title="Paste from clipboard">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M8 3C8 2.44772 8.44772 2 9 2H11C11.5523 2 12 2.44772 12 3V4H8V3Z" fill="currentColor"/>
+                    <path d="M6 4V5H4C3.44772 5 3 5.44772 3 6V17C3 17.5523 3.44772 18 4 18H16C16.5523 18 17 17.5523 17 17V6C17 5.44772 16.5523 5 16 5H14V4H16C17.1046 4 18 4.89543 18 6V17C18 18.1046 17.1046 19 16 19H4C2.89543 19 2 18.1046 2 17V6C2 4.89543 2.89543 4 4 4H6Z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <div class="url-input-group">
               <label class="url-label">
-                <span class="url-label-number">Product #2</span>
+                <span class="url-label-number">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <text x="10" y="14" text-anchor="middle" fill="currentColor" font-size="10" font-weight="bold">2</text>
+                  </svg>
+                  Product #2
+                </span>
                 <span class="url-label-status" id="url-status-2"></span>
               </label>
-              <input
-                type="url"
-                class="url-input"
-                id="url-input-2"
-                placeholder="https://alphamedical.shop/products/..."
-                data-product-number="2"
-              >
+              <div class="url-input-wrapper">
+                <input
+                  type="url"
+                  class="url-input"
+                  id="url-input-2"
+                  placeholder="Paste URL here"
+                  data-product-number="2"
+                >
+                <button type="button" class="paste-btn" data-input-id="url-input-2" title="Paste from clipboard">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M8 3C8 2.44772 8.44772 2 9 2H11C11.5523 2 12 2.44772 12 3V4H8V3Z" fill="currentColor"/>
+                    <path d="M6 4V5H4C3.44772 5 3 5.44772 3 6V17C3 17.5523 3.44772 18 4 18H16C16.5523 18 17 17.5523 17 17V6C17 5.44772 16.5523 5 16 5H14V4H16C17.1046 4 18 4.89543 18 6V17C18 18.1046 17.1046 19 16 19H4C2.89543 19 2 18.1046 2 17V6C2 4.89543 2.89543 4 4 4H6Z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <div class="url-input-group">
               <label class="url-label">
-                <span class="url-label-number">Product #3</span>
+                <span class="url-label-number">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <text x="10" y="14" text-anchor="middle" fill="currentColor" font-size="10" font-weight="bold">3</text>
+                  </svg>
+                  Product #3
+                </span>
                 <span class="url-label-status" id="url-status-3"></span>
               </label>
-              <input
-                type="url"
-                class="url-input"
-                id="url-input-3"
-                placeholder="https://alphamedical.shop/products/..."
-                data-product-number="3"
-              >
+              <div class="url-input-wrapper">
+                <input
+                  type="url"
+                  class="url-input"
+                  id="url-input-3"
+                  placeholder="Paste URL here"
+                  data-product-number="3"
+                >
+                <button type="button" class="paste-btn" data-input-id="url-input-3" title="Paste from clipboard">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M8 3C8 2.44772 8.44772 2 9 2H11C11.5523 2 12 2.44772 12 3V4H8V3Z" fill="currentColor"/>
+                    <path d="M6 4V5H4C3.44772 5 3 5.44772 3 6V17C3 17.5523 3.44772 18 4 18H16C16.5523 18 17 17.5523 17 17V6C17 5.44772 16.5523 5 16 5H14V4H16C17.1046 4 18 4.89543 18 6V17C18 18.1046 17.1046 19 16 19H4C2.89543 19 2 18.1046 2 17V6C2 4.89543 2.89543 4 4 4H6Z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <div class="url-input-group">
               <label class="url-label">
-                <span class="url-label-number">Product #4 (Optional)</span>
+                <span class="url-label-number">
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <text x="10" y="14" text-anchor="middle" fill="currentColor" font-size="10" font-weight="bold">4</text>
+                  </svg>
+                  Product #4 <span class="optional-badge">Optional</span>
+                </span>
                 <span class="url-label-status" id="url-status-4"></span>
               </label>
-              <input
-                type="url"
-                class="url-input"
-                id="url-input-4"
-                placeholder="https://alphamedical.shop/products/..."
-                data-product-number="4"
-              >
+              <div class="url-input-wrapper">
+                <input
+                  type="url"
+                  class="url-input"
+                  id="url-input-4"
+                  placeholder="Paste URL here (optional)"
+                  data-product-number="4"
+                >
+                <button type="button" class="paste-btn" data-input-id="url-input-4" title="Paste from clipboard">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M8 3C8 2.44772 8.44772 2 9 2H11C11.5523 2 12 2.44772 12 3V4H8V3Z" fill="currentColor"/>
+                    <path d="M6 4V5H4C3.44772 5 3 5.44772 3 6V17C3 17.5523 3.44772 18 4 18H16C16.5523 18 17 17.5523 17 17V6C17 5.44772 16.5523 5 16 5H14V4H16C17.1046 4 18 4.89543 18 6V17C18 18.1046 17.1046 19 16 19H4C2.89543 19 2 18.1046 2 17V6C2 4.89543 2.89543 4 4 4H6Z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="method-help">
-            <p><strong>How to get product URLs:</strong></p>
+          <div class="method-help url-help">
+            <div class="help-header">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 14V14.01M10 6V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <strong>How to get product URLs:</strong>
+            </div>
             <ol>
-              <li>Browse our <a href="/collections/all" target="_blank">product catalog</a></li>
-              <li>Open product page in new tab</li>
-              <li>Copy URL from address bar (Cmd+L → Cmd+C)</li>
-              <li>Paste into input fields above</li>
+              <li>Visit our <a href="/collections/all" target="_blank" rel="noopener">product catalog</a></li>
+              <li>Click on any product you want in your bundle</li>
+              <li>Copy the URL from your browser's address bar</li>
+              <li>Click the <svg width="14" height="14" viewBox="0 0 20 20" fill="none" style="display:inline;vertical-align:middle"><path d="M8 3C8 2.44772 8.44772 2 9 2H11C11.5523 2 12 2.44772 12 3V4H8V3Z" fill="currentColor"/></svg> paste button or paste directly into the input</li>
             </ol>
-            <p class="method-note">
-              ✅ Only URLs from alphamedical.shop/products/* are accepted
+            <p class="method-tip">
+              💡 <strong>Tip:</strong> You can also paste URLs manually using Ctrl+V (Windows) or Cmd+V (Mac)
             </p>
           </div>
         </div>
