@@ -831,11 +831,14 @@
               assign upsell_collection = collections['pain-relief-recovery']
               assign upsell_title = 'Enhance Your Pain Relief'
             elsif cart_has_posture
+              assign upsell_collection = collections['pain-relief-recovery']
+              assign upsell_title = 'Complete Your Posture Solution'
+            elsif cart_has_led
+              assign upsell_collection = collections['beauty-anti-aging']
+              assign upsell_title = 'Complete Your Beauty Routine'
+            elsif cart_has_therapy
               assign upsell_collection = collections['therapy-wellness']
               assign upsell_title = 'Boost Your Wellness'
-            elsif cart_has_led or cart_has_therapy
-              assign upsell_collection = collections['posture-support']
-              assign upsell_title = 'Support Your Recovery'
             else
               assign upsell_collection = collections['bestsellers']
               assign upsell_title = 'Customers Also Love'
