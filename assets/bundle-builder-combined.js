@@ -1,426 +1,466 @@
 /**
- * BUNDLE BUILDER COMBINED - JavaScript
- * Méthodes: Recherche de produits + Input URL
- * Alpha Medical Care - 2025
+ * Bundle Builder - Complete Interactive Functionality
+ * Handles product search, selection, price calculation, and form submission
+ * 
+ * Dependencies: window.BUNDLE_BUILDER_PRODUCTS, window.BUNDLE_BUILDER_CONFIG
  */
 
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  // CONFIGURATION
-  const CONFIG = window.BUNDLE_BUILDER_CONFIG || {
-    minProducts: 3,
-    maxProducts: 4,
-    maxValue: 500,
-    discountPercent: 35,
-    threshold: 10,
-    monthlyLimit: 3
-  };
+    // State management
+    const state = {
+        selectedProducts: [],
+        searchResults: [],
+        config: window.BUNDLE_BUILDER_CONFIG || {
+            minProducts: 3,
+            maxProducts: 4,
+            maxValue: 500,
+            discountPercent: 35,
+            threshold: 10,
+            monthlyLimit: 3
+        }
+    };
 
-  const SEARCH_DEBOUNCE_MS = 300;
-  const ALL_PRODUCTS = window.BUNDLE_BUILDER_PRODUCTS || [];
+    // DOM elements (cached)
+    const elements = {
+        searchInput: null,
+        searchResults: null,
+        selectedProducts: null,
+        selectedCount: null,
+        priceSummary: null,
+        regularPrice: null,
+        bundlePrice: null,
+        savings: null,
+        maxValueWarning: null,
+        submissionForm: null,
+        submitButton: null,
+        bundleDataInput: null,
+        commitmentCheckbox: null,
+        emailInput: null
+    };
 
-  // STATE
-  let selectedProducts = [];
-  let currentMethod = 'search';
-  let searchDebounceTimer = null;
-  let urlDebounceTimers = {};
+    /**
+     * Initialize the bundle builder
+     */
+    function init() {
+        // Cache DOM elements
+        cacheElements();
 
-  // DOM ELEMENTS
-  const searchInput = document.getElementById('product-search-input');
-  const searchResults = document.getElementById('search-results');
-  const selectedContainer = document.getElementById('selected-products');
-  const selectedCountEl = document.getElementById('selected-count');
-  const priceSummaryEl = document.getElementById('price-summary');
-  const regularPriceEl = document.getElementById('regular-price');
-  const bundlePriceEl = document.getElementById('bundle-price');
-  const savingsEl = document.getElementById('savings');
-  const maxValueWarning = document.getElementById('max-value-warning');
-  const formContainer = document.getElementById('submission-form-container');
-  const bundleDataInput = document.getElementById('bundle-data-json');
-  const bundleMethodInput = document.getElementById('bundle-method');
-  const submitButton = document.getElementById('submit-proposal-btn');
-  const commitmentCheckbox = document.getElementById('commitment-checkbox');
+        // Check if all required elements exist
+        if (!validateElements()) {
+            console.error('[Bundle Builder] Required elements not found');
+            return;
+        }
 
-  const urlInputs = [
-    document.getElementById('url-input-1'),
-    document.getElementById('url-input-2'),
-    document.getElementById('url-input-3'),
-    document.getElementById('url-input-4')
-  ].filter(Boolean);
+        // Attach event listeners
+        attachEventListeners();
 
-  // INITIALIZATION
-  function init() {
+        // Initial render
+        renderSelectedProducts();
 
-    if (searchInput) {
-      searchInput.addEventListener('input', handleSearchInput);
-      searchInput.addEventListener('focus', handleSearchFocus);
+        console.log('[Bundle Builder] Initialized successfully');
     }
 
-    urlInputs.forEach((input, index) => {
-      if (input) {
-        input.addEventListener('input', () => handleUrlInput(index + 1));
-        input.addEventListener('paste', () => setTimeout(() => handleUrlInput(index + 1), 100));
-      }
-    });
-
-    if (commitmentCheckbox) commitmentCheckbox.addEventListener('change', validateForm);
-    document.addEventListener('click', handleDocumentClick);
-  }
-
-  // METHOD SWITCHING
-  window.bundleBuilderCombined = {
-    switchMethod: function(method) {
-      currentMethod = method;
-      document.querySelectorAll('.method-tab').forEach(tab => {
-        tab.classList.toggle('active', tab.dataset.method === method);
-      });
-      document.querySelectorAll('.input-method').forEach(panel => {
-        panel.classList.toggle('active', panel.dataset.method === method);
-      });
-    }
-  };
-
-  // SEARCH METHOD
-  function handleSearchInput(e) {
-    clearTimeout(searchDebounceTimer);
-    searchDebounceTimer = setTimeout(() => performSearch(e.target.value.trim()), SEARCH_DEBOUNCE_MS);
-  }
-
-  function handleSearchFocus() {
-    if (searchInput.value.trim() === '') showRecentProducts();
-  }
-
-  function performSearch(query) {
-    if (!query || query.length < 2) {
-      searchResults.innerHTML = '';
-      return;
+    /**
+     * Cache all DOM elements
+     */
+    function cacheElements() {
+        elements.searchInput = document.getElementById('product-search-input');
+        elements.searchResults = document.getElementById('search-results');
+        elements.selectedProducts = document.getElementById('selected-products');
+        elements.selectedCount = document.getElementById('selected-count');
+        elements.priceSummary = document.getElementById('price-summary');
+        elements.regularPrice = document.getElementById('regular-price');
+        elements.bundlePrice = document.getElementById('bundle-price');
+        elements.savings = document.getElementById('savings');
+        elements.maxValueWarning = document.getElementById('max-value-warning');
+        elements.submissionForm = document.getElementById('submission-form-container');
+        elements.submitButton = document.getElementById('submit-proposal-btn');
+        elements.bundleDataInput = document.getElementById('bundle-data-json');
+        elements.commitmentCheckbox = document.getElementById('commitment-checkbox');
+        elements.emailInput = document.getElementById('contact-email');
     }
 
-    const queryLower = query.toLowerCase();
-    const results = ALL_PRODUCTS.filter(p => 
-      p.title.toLowerCase().includes(queryLower) ||
-      (p.productType && p.productType.toLowerCase().includes(queryLower)) ||
-      (p.vendor && p.vendor.toLowerCase().includes(queryLower))
-    ).slice(0, 10);
-
-    displaySearchResults(results, query);
-  }
-
-  function showRecentProducts() {
-    displaySearchResults(ALL_PRODUCTS.filter(p => p.available).slice(0, 8), '');
-  }
-
-  function displaySearchResults(results, query) {
-    if (results.length === 0) {
-      searchResults.innerHTML = '<div style="padding:20px;text-align:center;color:#6B7280">No products found</div>';
-      return;
+    /**
+     * Validate that all required elements exist
+     */
+    function validateElements() {
+        const required = ['searchInput', 'searchResults', 'selectedProducts', 'selectedCount'];
+        return required.every(key => elements[key] !== null);
     }
 
-    searchResults.innerHTML = results.map(product => {
-      const isSelected = selectedProducts.some(p => p.id === product.id);
-      const isDisabled = isSelected || selectedProducts.length >= CONFIG.maxProducts;
+    /**
+     * Attach all event listeners
+     */
+    function attachEventListeners() {
+        // Search input (debounced)
+        let searchTimeout;
+        elements.searchInput.addEventListener('input', function (e) {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => handleSearch(e.target.value), 300);
+        });
 
-      return `<div class="search-result-item ${isDisabled ? 'disabled' : ''}" onclick="bundleBuilderCombined.selectProduct(${product.id})">
-        <img src="${product.image}" alt="${escapeHtml(product.title)}" class="result-image">
-        <div class="result-info">
-          <h4 class="result-title">${escapeHtml(product.title)}</h4>
-          <p class="result-price">$${(product.price / 100).toFixed(2)}</p>
-          ${isSelected ? '<span class="result-badge">Selected</span>' : ''}
-          ${!product.available ? '<span class="result-badge unavailable">Out of Stock</span>' : ''}
+        // Event delegation for search results (add product)
+        elements.searchResults.addEventListener('click', function (e) {
+            const addBtn = e.target.closest('.add-product-btn');
+            if (addBtn) {
+                const productId = parseInt(addBtn.dataset.productId, 10);
+                handleAddProduct(productId);
+            }
+        });
+
+        // Event delegation for selected products (remove product)
+        elements.selectedProducts.addEventListener('click', function (e) {
+            const removeBtn = e.target.closest('.remove-product-btn');
+            if (removeBtn) {
+                const productId = parseInt(removeBtn.dataset.productId, 10);
+                handleRemoveProduct(productId);
+            }
+        });
+
+        // Commitment checkbox
+        if (elements.commitmentCheckbox) {
+            elements.commitmentCheckbox.addEventListener('change', updateSubmitButton);
+        }
+
+        // Email input validation
+        if (elements.emailInput) {
+            elements.emailInput.addEventListener('input', updateSubmitButton);
+        }
+
+        // Form submission
+        const form = document.querySelector('.bundle-proposal-form');
+        if (form) {
+            form.addEventListener('submit', handleFormSubmit);
+        }
+    }
+
+    /**
+     * Handle product search
+     */
+    function handleSearch(query) {
+        const trimmedQuery = query.trim().toLowerCase();
+
+        if (trimmedQuery.length < 2) {
+            elements.searchResults.innerHTML = '';
+            return;
+        }
+
+        // Filter products
+        const allProducts = window.BUNDLE_BUILDER_PRODUCTS || [];
+        const results = allProducts.filter(product => {
+            if (!product.available) return false;
+
+            const searchableText = [
+                product.title,
+                product.productType,
+                product.vendor
+            ].join(' ').toLowerCase();
+
+            return searchableText.includes(trimmedQuery);
+        }).slice(0, 8); // Limit to 8 results
+
+        state.searchResults = results;
+        renderSearchResults(results);
+    }
+
+    /**
+     * Render search results
+     */
+    function renderSearchResults(results) {
+        if (results.length === 0) {
+            elements.searchResults.innerHTML = `
+        <div class="search-empty">
+          <p>No products found. Try a different search term.</p>
         </div>
-        ${!isDisabled && product.available ? '<button class="result-add-btn">+</button>' : ''}
-      </div>`;
-    }).join('');
-  }
+      `;
+            return;
+        }
 
-  // URL INPUT METHOD
-  function handleUrlInput(productNumber) {
-    const input = document.getElementById(`url-input-${productNumber}`);
-    const statusEl = document.getElementById(`url-status-${productNumber}`);
+        const html = results.map(product => {
+            const isSelected = state.selectedProducts.some(p => p.id === product.id);
+            const isDisabled = isSelected || state.selectedProducts.length >= state.config.maxProducts;
 
-    if (!input || !statusEl) return;
-
-    const url = input.value.trim();
-
-    clearTimeout(urlDebounceTimers[productNumber]);
-
-    if (!url) {
-      input.classList.remove('valid', 'invalid', 'loading');
-      statusEl.textContent = '';
-      removeProductByUrlInput(productNumber);
-      return;
-    }
-
-    const urlPattern = /^https?:\/\/(www\.)?alphamedical\.shop\/products\/[a-z0-9\-]+\/?$/i;
-
-    if (!urlPattern.test(url)) {
-      input.classList.add('invalid');
-      statusEl.textContent = '❌ Invalid URL';
-      statusEl.className = 'url-label-status invalid';
-      removeProductByUrlInput(productNumber);
-      return;
-    }
-
-    input.classList.add('loading');
-    statusEl.textContent = '⏳ Checking...';
-    statusEl.className = 'url-label-status loading';
-
-    urlDebounceTimers[productNumber] = setTimeout(() => fetchProductFromUrl(url, productNumber), 500);
-  }
-
-  async function fetchProductFromUrl(url, productNumber) {
-    const input = document.getElementById(`url-input-${productNumber}`);
-    const statusEl = document.getElementById(`url-status-${productNumber}`);
-
-    try {
-      const handle = url.match(/\/products\/([a-z0-9\-]+)/i)?.[1];
-      if (!handle) throw new Error('Invalid URL');
-
-      const response = await fetch(`/products/${handle}.js`);
-      if (!response.ok) throw new Error('Not found');
-
-      const data = await response.json();
-
-      const product = {
-        id: data.id,
-        handle: data.handle,
-        title: data.title,
-        price: data.price,
-        image: data.featured_image || data.images?.[0],
-        url: `/products/${data.handle}`,
-        available: data.available,
-        urlInputNumber: productNumber
-      };
-
-      if (selectedProducts.some(p => p.id === product.id)) {
-        input.classList.add('invalid');
-        statusEl.textContent = '⚠️ Already selected';
-        statusEl.className = 'url-label-status invalid';
-        return;
-      }
-
-      if (!product.available) {
-        input.classList.add('invalid');
-        statusEl.textContent = '❌ Out of stock';
-        statusEl.className = 'url-label-status invalid';
-        return;
-      }
-
-      input.classList.remove('loading', 'invalid');
-      input.classList.add('valid');
-      statusEl.textContent = '✅ Valid';
-      statusEl.className = 'url-label-status valid';
-
-      addProductFromUrl(product, productNumber);
-    } catch (error) {
-      input.classList.add('invalid');
-      statusEl.textContent = '❌ Not found';
-      statusEl.className = 'url-label-status invalid';
-      removeProductByUrlInput(productNumber);
-    }
-  }
-
-  function addProductFromUrl(product, urlInputNumber) {
-    selectedProducts = selectedProducts.filter(p => p.urlInputNumber !== urlInputNumber);
-    selectedProducts.push(product);
-    updateSelectedProducts();
-    updatePriceSummary();
-    validateForm();
-    trackEvent('bundle_product_added', { method: 'url', product_id: product.id, bundle_size: selectedProducts.length });
-  }
-
-  function removeProductByUrlInput(urlInputNumber) {
-    selectedProducts = selectedProducts.filter(p => p.urlInputNumber !== urlInputNumber);
-    updateSelectedProducts();
-    updatePriceSummary();
-    validateForm();
-  }
-
-  // PRODUCT SELECTION
-  window.bundleBuilderCombined.selectProduct = function(productId) {
-    const product = ALL_PRODUCTS.find(p => p.id === productId);
-    if (!product || !product.available || selectedProducts.some(p => p.id === productId)) return;
-    if (selectedProducts.length >= CONFIG.maxProducts) return;
-
-    selectedProducts.push(product);
-    updateSelectedProducts();
-    updatePriceSummary();
-    validateForm();
-
-    if (searchInput) searchInput.value = '';
-    if (searchResults) searchResults.innerHTML = '';
-
-    trackEvent('bundle_product_added', { method: 'search', product_id: product.id, bundle_size: selectedProducts.length });
-  };
-
-  window.bundleBuilderCombined.removeProduct = function(productId) {
-    const productIndex = selectedProducts.findIndex(p => p.id === productId);
-    if (productIndex === -1) return;
-
-    const product = selectedProducts[productIndex];
-
-    if (product.urlInputNumber) {
-      const input = document.getElementById(`url-input-${product.urlInputNumber}`);
-      const statusEl = document.getElementById(`url-status-${product.urlInputNumber}`);
-      if (input) {
-        input.value = '';
-        input.classList.remove('valid', 'invalid', 'loading');
-      }
-      if (statusEl) {
-        statusEl.textContent = '';
-        statusEl.className = 'url-label-status';
-      }
-    }
-
-    selectedProducts.splice(productIndex, 1);
-    updateSelectedProducts();
-    updatePriceSummary();
-    validateForm();
-
-    trackEvent('bundle_product_removed', { product_id: productId, bundle_size: selectedProducts.length });
-  };
-
-  function updateSelectedProducts() {
-    if (!selectedCountEl || !selectedContainer) return;
-
-    selectedCountEl.textContent = selectedProducts.length;
-
-    if (selectedProducts.length === 0) {
-      selectedContainer.innerHTML = '<div class="empty-state"><p>Select 3-4 products</p></div>';
-      return;
-    }
-
-    selectedContainer.innerHTML = selectedProducts.map((p, i) => `
-      <div class="selected-product">
-        <div class="selected-product-number">${i + 1}</div>
-        <img src="${p.image}" alt="${escapeHtml(p.title)}" class="selected-product-image">
-        <div class="selected-product-info">
-          <h3 class="selected-product-title"><a href="${p.url}">${escapeHtml(p.title)}</a></h3>
-          <p class="selected-product-price">$${(p.price / 100).toFixed(2)}</p>
+            return `
+        <div class="search-result-item">
+          <img src="${product.image}" alt="${escapeHtml(product.title)}" class="result-image" loading="lazy">
+          <div class="result-info">
+            <h4 class="result-title">${escapeHtml(product.title)}</h4>
+            <p class="result-price">${formatPrice(product.price)}</p>
+          </div>
+          <button
+            type="button"
+            class="add-product-btn ${isSelected ? 'added' : ''}"
+            data-product-id="${product.id}"
+            ${isDisabled ? 'disabled' : ''}
+          >
+            ${isSelected ? '✓ Added' : '+ Add'}
+          </button>
         </div>
-        <button class="remove-product-btn" onclick="bundleBuilderCombined.removeProduct(${p.id})">×</button>
+      `;
+        }).join('');
+
+        elements.searchResults.innerHTML = html;
+    }
+
+    /**
+     * Handle adding a product to selection
+     */
+    function handleAddProduct(productId) {
+        // Check if already selected
+        if (state.selectedProducts.some(p => p.id === productId)) {
+            return;
+        }
+
+        // Check max products constraint
+        if (state.selectedProducts.length >= state.config.maxProducts) {
+            alert(`You can only select up to ${state.config.maxProducts} products.`);
+            return;
+        }
+
+        // Find product in all products
+        const product = (window.BUNDLE_BUILDER_PRODUCTS || []).find(p => p.id === productId);
+        if (!product) return;
+
+        // Add to selected products
+        state.selectedProducts.push(product);
+
+        // Re-render
+        renderSelectedProducts();
+        renderSearchResults(state.searchResults); // Update add buttons
+        updatePriceDisplay();
+        updateFormVisibility();
+
+        // Track event (GTM)
+        trackEvent('bundle_product_added', { product_id: productId, product_title: product.title });
+    }
+
+    /**
+     * Handle removing a product from selection
+     */
+    function handleRemoveProduct(productId) {
+        state.selectedProducts = state.selectedProducts.filter(p => p.id !== productId);
+
+        // Re-render
+        renderSelectedProducts();
+        renderSearchResults(state.searchResults); // Update add buttons
+        updatePriceDisplay();
+        updateFormVisibility();
+
+        // Track event (GTM)
+        trackEvent('bundle_product_removed', { product_id: productId });
+    }
+
+    /**
+     * Render selected products
+     */
+    function renderSelectedProducts() {
+        const count = state.selectedProducts.length;
+        elements.selectedCount.textContent = count;
+
+        if (count === 0) {
+            elements.selectedProducts.innerHTML = `
+        <div class="empty-state">
+          <svg class="empty-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M8 12L20 4L32 12M8 12L8 36L20 44M8 12L20 20M20 44L32 36L32 12M20 44L20 20M32 12L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Search and select 3-4 products to build your bundle</p>
+        </div>
+      `;
+            return;
+        }
+
+        const html = state.selectedProducts.map((product, index) => `
+      <div class="selected-product-item" style="animation: fadeIn 0.3s ease ${index * 0.1}s both">
+        <img src="${product.image}" alt="${escapeHtml(product.title)}" class="selected-image">
+        <div class="selected-info">
+          <h4 class="selected-title">${escapeHtml(product.title)}</h4>
+          <p class="selected-price">${formatPrice(product.price)}</p>
+        </div>
+        <button
+          type="button"
+          class="remove-product-btn"
+          data-product-id="${product.id}"
+          aria-label="Remove ${escapeHtml(product.title)}"
+        >
+          ✕
+        </button>
       </div>
     `).join('');
-  }
 
-  // PRICE CALCULATION
-  function updatePriceSummary() {
-    if (!priceSummaryEl) return;
-
-    if (selectedProducts.length === 0) {
-      priceSummaryEl.style.display = 'none';
-      if (formContainer) formContainer.style.display = 'none';
-      return;
+        elements.selectedProducts.innerHTML = html;
     }
 
-    const regularTotal = selectedProducts.reduce((sum, p) => sum + p.price, 0);
-    const bundleTotal = regularTotal * (1 - CONFIG.discountPercent / 100);
-    const regularPrice = regularTotal / 100;
-    const bundlePrice = bundleTotal / 100;
-    const savingsAmount = (regularTotal - bundleTotal) / 100;
+    /**
+     * Update price display
+     */
+    function updatePriceDisplay() {
+        const count = state.selectedProducts.length;
 
-    if (regularPriceEl) regularPriceEl.textContent = `$${regularPrice.toFixed(2)}`;
-    if (bundlePriceEl) bundlePriceEl.textContent = `$${bundlePrice.toFixed(2)}`;
-    if (savingsEl) savingsEl.textContent = `$${savingsAmount.toFixed(2)}`;
+        if (count === 0) {
+            if (elements.priceSummary) {
+                elements.priceSummary.style.display = 'none';
+            }
+            if (elements.maxValueWarning) {
+                elements.maxValueWarning.style.display = 'none';
+            }
+            return;
+        }
 
-    priceSummaryEl.style.display = 'block';
+        // Calculate prices
+        const regularTotal = state.selectedProducts.reduce((sum, p) => sum + p.price, 0);
+        const discountAmount = regularTotal * (state.config.discountPercent / 100);
+        const bundleTotal = regularTotal - discountAmount;
 
-    if (regularPrice > CONFIG.maxValue) {
-      if (maxValueWarning) maxValueWarning.style.display = 'flex';
-      if (formContainer) formContainer.style.display = 'none';
+        // Update DOM
+        if (elements.regularPrice) {
+            elements.regularPrice.textContent = formatPrice(regularTotal);
+        }
+        if (elements.bundlePrice) {
+            elements.bundlePrice.textContent = formatPrice(bundleTotal);
+        }
+        if (elements.savings) {
+            elements.savings.textContent = formatPrice(discountAmount);
+        }
+
+        // Show price summary
+        if (elements.priceSummary) {
+            elements.priceSummary.style.display = 'block';
+        }
+
+        // Check max value
+        const exceedsMax = regularTotal > state.config.maxValue * 100; // Price is in cents
+        if (elements.maxValueWarning) {
+            elements.maxValueWarning.style.display = exceedsMax ? 'flex' : 'none';
+        }
+
+        // Disable submit if exceeds max
+        if (exceedsMax && elements.submitButton) {
+            elements.submitButton.disabled = true;
+        }
+    }
+
+    /**
+     * Update form visibility and validation
+     */
+    function updateFormVisibility() {
+        const count = state.selectedProducts.length;
+        const meetsMinimum = count >= state.config.minProducts;
+        const regularTotal = state.selectedProducts.reduce((sum, p) => sum + p.price, 0);
+        const withinMaxValue = regularTotal <= state.config.maxValue * 100;
+
+        if (elements.submissionForm) {
+            elements.submissionForm.style.display = (meetsMinimum && withinMaxValue) ? 'block' : 'none';
+        }
+
+        updateSubmitButton();
+    }
+
+    /**
+     * Update submit button state
+     */
+    function updateSubmitButton() {
+        if (!elements.submitButton) return;
+
+        const hasEmail = elements.emailInput && elements.emailInput.value.trim().length > 0;
+        const emailValid = elements.emailInput && elements.emailInput.validity.valid;
+        const commitmentChecked = elements.commitmentCheckbox && elements.commitmentCheckbox.checked;
+        const hasProducts = state.selectedProducts.length >= state.config.minProducts;
+        const regularTotal = state.selectedProducts.reduce((sum, p) => sum + p.price, 0);
+        const withinMaxValue = regularTotal <= state.config.maxValue * 100;
+
+        elements.submitButton.disabled = !(hasEmail && emailValid && commitmentChecked && hasProducts && withinMaxValue);
+    }
+
+    /**
+     * Handle form submission
+     */
+    function handleFormSubmit(e) {
+        // Don't prevent default - let Shopify handle the form submission
+        // But prepare the bundle data JSON
+        const bundleData = {
+            products: state.selectedProducts.map(p => ({
+                id: p.id,
+                handle: p.handle,
+                title: p.title,
+                price: p.price
+            })),
+            regularPrice: state.selectedProducts.reduce((sum, p) => sum + p.price, 0),
+            discountPercent: state.config.discountPercent,
+            timestamp: new Date().toISOString()
+        };
+
+        // Set the JSON data in the hidden field
+        if (elements.bundleDataInput) {
+            elements.bundleDataInput.value = JSON.stringify(bundleData, null, 2);
+        }
+
+        // Track event (GTM)
+        trackEvent('bundle_proposal_submitted', {
+            product_count: state.selectedProducts.length,
+            bundle_value: bundleData.regularPrice / 100
+        });
+
+        console.log('[Bundle Builder] Form submitted', bundleData);
+    }
+
+    /**
+     * Utility: Format price (cents to dollars)
+     */
+    function formatPrice(cents) {
+        const dollars = cents / 100;
+        return new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        }).format(dollars);
+    }
+
+    /**
+     * Utility: Escape HTML
+     */
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    /**
+     * Utility: Track GTM event
+     */
+    function trackEvent(eventName, eventData) {
+        if (window.dataLayer) {
+            window.dataLayer.push({
+                event: eventName,
+                ...eventData
+            });
+        }
+    }
+
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
     } else {
-      if (maxValueWarning) maxValueWarning.style.display = 'none';
-      if (formContainer && selectedProducts.length >= CONFIG.minProducts) {
-        formContainer.style.display = 'block';
+        init();
+    }
+
+    // Add fadeIn animation CSS if not present
+    if (!document.getElementById('bundle-builder-animation-styles')) {
+        const style = document.createElement('style');
+        style.id = 'bundle-builder-animation-styles';
+        style.textContent = `
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
-    }
-  }
-
-  // HASH CALCULATION FOR GOOGLE SHEETS AUTO-CREATION
-  function calculateProposalHash(productIds) {
-    // Sort IDs numerically (ensures deterministic hash - same products = same hash)
-    const sorted = productIds.slice().sort((a, b) => a - b);
-
-    // Join with delimiter
-    const string = sorted.join('-');
-
-    // Simple hash function
-    let hash = 0;
-    for (let i = 0; i < string.length; i++) {
-      const char = string.charCodeAt(i);
-      hash = ((hash << 5) - hash) + char;
-      hash = hash & hash; // Convert to 32bit integer
+    `;
+        document.head.appendChild(style);
     }
 
-    // Return hash with prefix
-    return `hash_${Math.abs(hash).toString(16).substring(0, 12)}`;
-  }
-
-  // FORM VALIDATION
-  function validateForm() {
-    const isValid = selectedProducts.length >= CONFIG.minProducts &&
-                    selectedProducts.length <= CONFIG.maxProducts &&
-                    (selectedProducts.reduce((s, p) => s + p.price, 0) / 100) <= CONFIG.maxValue &&
-                    commitmentCheckbox?.checked;
-
-    if (submitButton) submitButton.disabled = !isValid;
-    if (bundleDataInput && selectedProducts.length > 0) bundleDataInput.value = createBundleDataJSON();
-    if (bundleMethodInput) bundleMethodInput.value = currentMethod;
-  }
-
-  function createBundleDataJSON() {
-    const regularTotal = selectedProducts.reduce((s, p) => s + p.price, 0) / 100;
-    const bundleTotal = regularTotal * (1 - CONFIG.discountPercent / 100);
-
-    // Extract product IDs and handles for Google Sheets processing
-    const productIds = selectedProducts.map(p => p.id);
-    const productHandles = selectedProducts.map(p => p.handle);
-
-    // Calculate hash (for proposal aggregation in Google Sheets)
-    const proposalHash = calculateProposalHash(productIds);
-
-    // Format for Google Sheets + Apps Script processing
-    // This JSON will be sent via Shopify Contact Form → Gmail → Google Sheets
-    return JSON.stringify({
-      timestamp: new Date().toISOString(),
-      method: currentMethod,
-      hash: proposalHash, // Unique hash for identical product combinations
-      product_ids: productIds, // Array of product IDs (for Apps Script)
-      product_handles: productHandles, // Array of product handles (for Apps Script)
-      products: selectedProducts.map(p => ({
-        id: p.id,
-        handle: p.handle,
-        title: p.title,
-        price: p.price / 100,
-        url: p.url
-      })),
-      pricing: {
-        regular_total: regularTotal.toFixed(2),
-        bundle_total: bundleTotal.toFixed(2),
-        discount_percent: CONFIG.discountPercent,
-        savings: (regularTotal - bundleTotal).toFixed(2)
-      }
-    }, null, 2);
-  }
-
-  // UTILITIES
-  function escapeHtml(text) {
-    return text.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'})[m]);
-  }
-
-  function handleDocumentClick(e) {
-    if (searchInput && searchResults && !searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-      searchResults.innerHTML = '';
-    }
-  }
-
-  function trackEvent(name, params) {
-    if (typeof gtag === 'function') gtag('event', name, params);
-    else if (typeof dataLayer !== 'undefined') dataLayer.push({ event: name, ...params });
-  }
-
-  // AUTO-INIT
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
 })();
