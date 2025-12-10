@@ -8,42 +8,48 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** December 09, 2025
+**Last Updated:** December 10, 2025
 
 ## Core Documentation
 
 ### SEO & Marketing
 
-- [AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026](AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md): Project documentation
+- [AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026](AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 - [AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27](archive/old-audits/AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27.md): Status: ✅ ACTIVE (80% configured) Trigger: Order paid Condition: Customer total spent >= $2,500 (Platinum tier)
 - [BRUTAL_HONEST_SITE_AUDIT_2025-11-28](BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md): URL: https://www.alphamedical.shop Domaine Shopify: azffej-as.myshopify.com Plan: Basic ($29/mo)
 - [BUNDLE_PERSONA_CRITICAL_AUDIT](archive/old-audits/BUNDLE_PERSONA_CRITICAL_AUDIT.md): Pour chaque bundle, je vérifie: 1. ✅ Persona cohérente: Une VRAIE personne existe qui aurait besoin de CES produits ensemble?
 - [BUNDLE_RECONSTRUCTION_ANALYSIS_2025](archive/old-audits/BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md): Project documentation
 - [CART_DRAWER_FORENSIC_ANALYSIS](archive/old-audits/CART_DRAWER_FORENSIC_ANALYSIS.md): <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}"> (ligne 20 du snippet)
-- [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): Project documentation
+- [CLAUDE_TASKS_MEMORY_SYSTEMS_ANALYSIS](CLAUDE_TASKS_MEMORY_SYSTEMS_ANALYSIS.md): Project documentation
+- [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 - [COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27](archive/old-audits/COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27.md): Project documentation
 - [CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025](archive/old-audits/CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025.md): Category Score Status ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-- [COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05](COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md): Project documentation
+- [COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05](COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 - [COUNTER_EVALUATION_AUDIT_SYNTHESIS](COUNTER_EVALUATION_AUDIT_SYNTHESIS.md): ✅ API Shopify 2025-10 (2025-12-05) Total produits: 100 Publiés: 95 Draft: 5
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](archive/bundles-pricing/CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](archive/old-audits/EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FACEBOOK_MARKETING_API_AUTOMATION_GUIDE](FACEBOOK_MARKETING_API_AUTOMATION_GUIDE.md): 1. Aller sur [Facebook Developers](https://developers.facebook.com/) 2. Cliquer "My Apps" → "Create App"
+- [FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09](FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md): Project documentation
+- [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
-- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Project documentation
+- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 - [KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS](archive/miscellaneous/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md): Project documentation
 - [MEMORY_SYSTEM_AUDIT_FACTUAL](archive/old-audits/MEMORY_SYSTEM_AUDIT_FACTUAL.md): Status: ✅ Executable (755 permissions) Size: 5,365 bytes Functionality: WORKING 100%
 - [POLICY_PAGES_AUDIT_REPORT_2025-11-30](POLICY_PAGES_AUDIT_REPORT_2025-11-30.md): Project documentation
 - [PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026](PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md): Project documentation
 - [RESPONSE_TO_THIRD_PARTY_ANALYSIS](archive/miscellaneous/RESPONSE_TO_THIRD_PARTY_ANALYSIS.md): "International medical equipment retailer... NOT affiliated with Hello Alpha (telemedicine) or
 - [SEO_AUDIT_RECOMMENDATIONS](archive/miscellaneous/SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
-- [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
+- [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 - [SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01](SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md): Total Workflows: 5 Active Workflows: 5/5 (100% ✅) Inactive Workflows: 0 Workflows Verified:
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](archive/session-summaries/SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
+- [SHOPIFY_MCP_FACTUAL_ANALYSIS](SHOPIFY_MCP_FACTUAL_ANALYSIS.md): Project documentation
+- [STOREFRONT_API_CRITICAL_SECURITY_ANALYSIS](STOREFRONT_API_CRITICAL_SECURITY_ANALYSIS.md): Project documentation
+- [STOREFRONT_API_SCOPES_ANALYSIS](STOREFRONT_API_SCOPES_ANALYSIS.md): Project documentation
 - [SYSTEM_ANALYSIS_COMPLETE_2025-11-22](archive/miscellaneous/SYSTEM_ANALYSIS_COMPLETE_2025-11-22.md): Project documentation
 - [TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29](TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md): Cart Recovery: None (no automation) Sales: Baseline (pre-Tidio) Conversion Rate: Baseline
 - [WHITEBOOK_VS_ALPHA_MEDICAL_GAP_ANALYSIS](WHITEBOOK_VS_ALPHA_MEDICAL_GAP_ANALYSIS.md): Project documentation
 - [marketing-context](agent_docs/marketing-context.md): Project documentation
-- [seo-strategy](agent_docs/seo-strategy.md): Project documentation
+- [seo-strategy](agent_docs/seo-strategy.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 
 ### Pricing & Product Management
 
@@ -55,19 +61,23 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [IMPLEMENTATION_REPORT_PRICING](archive/bundles-pricing/IMPLEMENTATION_REPORT_PRICING.md): Price value = [(Product Cost + Shipping Cost + Tax) × (1+ Profit %) + Fixed Profit] / (1 - Breakeven %)
 - [KLAVIYO_FLOW_OPTIMIZATION_STRATEGY_2025-12-07](KLAVIYO_FLOW_OPTIMIZATION_STRATEGY_2025-12-07.md): Project documentation
 - [MEMORY_SYSTEM_OPTIMIZATION_REPORT](archive/miscellaneous/MEMORY_SYSTEM_OPTIMIZATION_REPORT.md): .claude/ ├── memory/ ✅ 4 files (progressive disclosure) ├── hooks/ ✅ 2 files (enforcement + logging)
+- [OPTIMIZATION_COMPLETE_2025-12-09](OPTIMIZATION_COMPLETE_2025-12-09.md): Project documentation
+- [OPTIMIZATION_ELIMINATION_PLAN](OPTIMIZATION_ELIMINATION_PLAN.md): Project documentation
+- [OPTIMIZATION_ROADMAP_95_100](OPTIMIZATION_ROADMAP_95_100.md): Project documentation
 - [PRICING_QUICK_REFERENCE](archive/bundles-pricing/PRICING_QUICK_REFERENCE.md): Prix: $25 Shipping: $12 Tier: 1 (car $25 entre $10-50) Fixed Profit: $30.30
 - [PRICING_VERIFICATION](archive/bundles-pricing/PRICING_VERIFICATION.md): Price = [(Product Cost + Shipping Cost) × (1 + Profit %) + Fixed Profit] / (1 - Breakeven %)
 - [PRODUCT_OPTIMIZATION_TRACKING](archive/bundles-pricing/PRODUCT_OPTIMIZATION_TRACKING.md): Project documentation
 - [README_PRICING](archive/bundles-pricing/README_PRICING.md): Project documentation
 - [SCHEMA_MARKUP_AI_OPTIMIZATION_2025](SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md): 1. Entity Authority: 45% - Structured data quality 2. Content Relevance: 30% - Semantic matching
 - [SESSION_68_NEW_PRODUCTS_OPTIMIZATION_2025-12-01](SESSION_68_NEW_PRODUCTS_OPTIMIZATION_2025-12-01.md): 1. AirBag Massage Cushion Electric Kneading (ID: 7631747743821) 2. Professional Full Body Shiatsu Massage Chair (ID: 7631747776589)
+- [SESSION_87_OPTIMIZATION_VERIFIED_2025-12-09](SESSION_87_OPTIMIZATION_VERIFIED_2025-12-09.md): Project documentation
 - [TOP_10_HERO_PRODUCTS_MAPPING](archive/miscellaneous/TOP_10_HERO_PRODUCTS_MAPPING.md): Project documentation
 - [production-log](video-ads-assets/outputs/production-log.md): Hook: "{First 3 seconds hook}"
 
 ### Email Marketing & Automation
 
 - [ABANDONED_CART_RECOVERY_CONFIG](archive/implementation-guides/ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
-- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
+- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 - [AUTOMATION_COMPLETE_WORKFLOWS](archive/miscellaneous/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06](AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06.md): Project documentation
 - [AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06](AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06.md): Project documentation
@@ -96,7 +106,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](archive/implementation-guides/SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 - [SHOPIFY_EMAIL_MANUAL_ACTIVATION](archive/implementation-guides/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 - [SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP](archive/setup-completed/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md): 1. Shopify Admin → Marketing → Automations 2. Cliquer "Welcome new subscribers with a discount email" (Status: Inactive)
-- [automation-workflows](agent_docs/automation-workflows.md): Project documentation
+- [automation-workflows](agent_docs/automation-workflows.md): 1. POLICY VIOLATION (PAYPAL ACTIVE): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS):
 
 ### Content & Blog
 
@@ -106,6 +116,8 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [BLOG_IMAGES_ASSIGNMENT](archive/setup-completed/BLOG_IMAGES_ASSIGNMENT.md): Project documentation
 - [BUNDLE_BUILDER_DEPLOYMENT_GUIDE](archive/implementation-guides/BUNDLE_BUILDER_DEPLOYMENT_GUIDE.md): Project documentation
 - [BUNDLE_IMAGES_CREATION_GUIDE](BUNDLE_IMAGES_CREATION_GUIDE.md): 1. Go to: https://www.canva.com 2. Create free account or login 3. Click "Create a design" → "Custom size" → 2048 x 2048 px
+- [CLAUDE_SKILLS_COMPLETE_GUIDE](CLAUDE_SKILLS_COMPLETE_GUIDE.md): 1. Claude.ai - Pro/Max/Team/Enterprise (inclus par défaut) 2. Claude Code - Via plugin marketplaces
+- [CLAUDE_SKILLS_INSTALLATION_GUIDE](CLAUDE_SKILLS_INSTALLATION_GUIDE.md): Project documentation
 - [CONTENT_CALENDAR_Q1_2026](CONTENT_CALENDAR_Q1_2026.md): Project documentation
 - [CRITICAL_MANUAL_ACTIONS_GUIDE](archive/implementation-guides/CRITICAL_MANUAL_ACTIONS_GUIDE.md): 1. Go to Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings → Payments
 - [DEPLOYMENT_GUIDE_COMPLETE](archive/implementation-guides/DEPLOYMENT_GUIDE_COMPLETE.md): 1. Ouvrir Google Sheets: https://sheets.google.com 2. Cliquer: "Blank spreadsheet" (+ en haut à gauche)
@@ -130,6 +142,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [AI_DISCOVERY_IMPLEMENTATION](archive/setup-completed/AI_DISCOVERY_IMPLEMENTATION.md): Project documentation
 - [COMPLETE_MANUALLY_FINAL_40_PERCENT](archive/setup-completed/COMPLETE_MANUALLY_FINAL_40_PERCENT.md): Vous devriez voir une condition avec "Select condition" qui est déjà créée dans la branche FALSE.
 - [COMPLETE_SHOPIFY_FLOW_SETUP](archive/implementation-guides/COMPLETE_SHOPIFY_FLOW_SETUP.md): Le workflow est ouvert dans votre navigateur à cette URL: https://admin.shopify.com/store/azffej-as/apps/flow/editor/019aa2e4-81e1-798b-8beb-91d1e8...
+- [DEACTIVATE_SHOPIFY_FLOW_WORKFLOWS](scripts/manual/DEACTIVATE_SHOPIFY_FLOW_WORKFLOWS.md): 1. Go to: https://azffej-as.myshopify.com/admin/apps/flow 2. Click on "Recover abandoned cart" workflow
 - [FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION](archive/session-summaries/FINAL_REPORT_TRANSPARENCY_IMPLEMENTATION.md): Alpha Medical Care operates: Original schema reflected physical stores (Canada), not e-commerce HQ (US).
 - [GMAIL_APPS_SCRIPT_SETUP](archive/setup-completed/GMAIL_APPS_SCRIPT_SETUP.md): 1. Open your Google Sheet: "Alpha Medical - Lead Management" (The one you just created in the previous step)
 - [GOOGLE_SHEET_SETUP_INSTRUCTIONS](archive/setup-completed/GOOGLE_SHEET_SETUP_INSTRUCTIONS.md): Project documentation
@@ -164,7 +177,9 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [HOOKS_VERIFICATION_REPORT](archive/miscellaneous/HOOKS_VERIFICATION_REPORT.md): { "sessionid": "string", "toolname": "string", "toolinput": { / tool-specific / },
 - [LIVE_SITE_VERIFICATION_2025-11-29](LIVE_SITE_VERIFICATION_2025-11-29.md): grep -c "GTM-WFPH2KZP" /tmp/homepage.html 1. <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-WFPH2KZP');</script>
 - [PHASE_1.5_VERIFICATION_REPORT](archive/miscellaneous/PHASE_1.5_VERIFICATION_REPORT.md): Tenter de créer un fichier avec "product" dans le nom pour déclencher le blocage automatique.
+- [SESSION_86_PRE_LAUNCH_VERIFICATION_COMPLETE](SESSION_86_PRE_LAUNCH_VERIFICATION_COMPLETE.md): 1. Cart Abandonment - 3-WAY (Flow + Email + Klaviyo) - CRITICAL 2. Browse Abandonment - 2-WAY (Flow + Email)
 - [STATUS_REPORT_PAGES](archive/bundles-pricing/STATUS_REPORT_PAGES.md): Project documentation
+- [STOREFRONT_API_EMPIRICAL_VERIFICATION](STOREFRONT_API_EMPIRICAL_VERIFICATION.md): Project documentation
 
 ## Theme Structure
 
@@ -284,6 +299,7 @@ When assisting with this project:
 - [ANALYTICS_TRACKING_FACTUAL_STATUS](archive/old-audits/ANALYTICS_TRACKING_FACTUAL_STATUS.md): Project documentation
 - [APIFY_ACTORS_OPTIMAL_SELECTION_2025](APIFY_ACTORS_OPTIMAL_SELECTION_2025.md): ✅ clockworks/tiktok-hashtag-scraper
 - [APIFY_INTEGRATION_COMPLETE](archive/miscellaneous/APIFY_INTEGRATION_COMPLETE.md): Project documentation
+- [AVAILABLE_APIS_AND_TOOLS](AVAILABLE_APIS_AND_TOOLS.md): Project documentation
 - [BUNDLE_AUTO_CREATION_ARCHITECTURE](archive/bundles-pricing/BUNDLE_AUTO_CREATION_ARCHITECTURE.md): Project documentation
 - [BUNDLE_BUILDER_SYSTEM_DOCUMENTATION](archive/implementation-guides/BUNDLE_BUILDER_SYSTEM_DOCUMENTATION.md): The Bundle Builder enables customers to propose custom 3-4 product bundles with automatic 35% discount. When 10+ customers request the identical bu...
 - [CLAUDE](CLAUDE.md): Auto-activate via UserPromptSubmit hook (.claude/hooks/user-prompt-submit.sh):
@@ -293,6 +309,7 @@ When assisting with this project:
 - [ETAPES_MANUELLES_PRIORITAIRES](ETAPES_MANUELLES_PRIORITAIRES.md): 1. Login Shopify Admin 2. Cliquer: Online Store (menu gauche) 3. Cliquer: Navigation
 - [FINAL_ACTIVATION_STEPS](FINAL_ACTIVATION_STEPS.md): URL: https://n8n.srv1168256.hstgr.cloud/workflow/q0kyXyhCUq5gjmG2 Login with your N8N credentials
 - [FINAL_STORE_STATUS_2025-10-31](archive/session-summaries/FINAL_STORE_STATUS_2025-10-31.md): Project documentation
+- [FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL](FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL.md): 1. ✅ scripts/analysis/checks/checkgtmstatus.py - GTM verification 2. ✅ scripts/analysis/checks/checkthemepixels.py - Theme pixels verification
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](archive/setup-completed/GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
 - [GOOGLE_ADS_NEXT_STEPS](archive/setup-completed/GOOGLE_ADS_NEXT_STEPS.md): 1. Si premier container: Cliquez "Créer un compte" Formulaire: Configuration container:
@@ -353,9 +370,10 @@ When assisting with this project:
 - [UGC_VIDEO_PROMPTS_GROK_IMAGINE](UGC_VIDEO_PROMPTS_GROK_IMAGINE.md): Chaque UGC = 3 segments montés sur CapCut = 15-18s total
 - [VIDEO_ADS_CREATION_PLAYBOOK](VIDEO_ADS_CREATION_PLAYBOOK.md): /video-ads-assets/ ├── products/ # Assets organisés par produit
 - [VIDEO_ADS_INFRASTRUCTURE_COMPLETE](archive/miscellaneous/VIDEO_ADS_INFRASTRUCTURE_COMPLETE.md): Project documentation
+- [WORKFLOWS_CORE_FLYWHEEL_FACTUAL_2025-12-09](WORKFLOWS_CORE_FLYWHEEL_FACTUAL_2025-12-09.md): Project documentation
 - [YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026](YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026.md): 1. Stratégie documentée 2. Workflow automation 3. E-commerce infrastructure
 - [YOUTUBE_WORKFLOW_ENGLISH_CONVERSION](YOUTUBE_WORKFLOW_ENGLISH_CONVERSION.md): en español (es-ES) in English (en-US)
-- [apis-tools](agent_docs/apis-tools.md): Documentation file (error reading: [Errno 2] No such file or dire)
+- [apis-tools](agent_docs/apis-tools.md): Project documentation
 - [infrastructure-summary](agent_docs/infrastructure-summary.md): Project documentation
 - [personas](agent_docs/personas.md): Project documentation
 - [session_2025-11-20_summary](archive/session-summaries/session_2025-11-20_summary.md): 1. verifyenglishonlyforensic.py (V1 - 415 lines) 2. verifyenglishonlyforensicv2.py (V2 - 403 lines)
