@@ -374,6 +374,9 @@
   </script>
 {% endpaginate %}
 
+{%- comment -%} LOAD BUNDLE BUILDER CSS {%- endcomment -%}
+{{ 'bundle-builder-combined.css' | asset_url | stylesheet_tag }}
+
 {%- comment -%} LOAD BUNDLE BUILDER JAVASCRIPT {%- endcomment -%}
 <script src="{{ 'bundle-builder-combined.js' | asset_url }}" defer></script>
 
