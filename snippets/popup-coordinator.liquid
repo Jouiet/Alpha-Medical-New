@@ -1,0 +1,167 @@
+{% comment %}
+  Popup Coordinator - Prevents multiple popups from showing simultaneously
+  
+  Features:
+  - Priority queue system (welcome → exit-intent)
+  - Conflict prevention (only 1 popup at a time)
+  - Smart sequencing with delays
+  - Session management
+  
+  Usage:
+  {% render 'popup-coordinator' %}
+  Place BEFORE welcome-popup and exit-intent-popup in theme.liquid
+{% endcomment %}
+
+<script>
+  // Global Popup Coordinator
+  window.AlphaPopupManager = (function() {
+    const STORAGE_KEY_ACTIVE = 'alpha_popup_active';
+    const STORAGE_KEY_QUEUE = 'alpha_popup_queue';
+    
+    let activePopup = null;
+    let popupQueue = [];
+    let isProcessing = false;
+    
+    // Configuration
+    const POPUP_PRIORITIES = {
+      'welcome-popup': 1,        // Highest priority - first-time visitors
+      'exit-intent-popup': 2     // Lower priority - exit intent
+    };
+    
+    const MIN_DELAY_BETWEEN_POPUPS = 30000; // 30 seconds minimum between popups
+    
+    return {
+      /**
+       * Register a popup request
+       * @param {string} popupId - The popup DOM id
+       * @param {function} showCallback - Function to show the popup
+       * @param {function} shouldShowCallback - Function to check if popup should show
+       */
+      register: function(popupId, showCallback, shouldShowCallback) {
+        // Check if popup should show
+        if (!shouldShowCallback || !shouldShowCallback()) {
+          console.log('[PopupManager] Skipping', popupId, '- shouldShow returned false');
+          return false;
+        }
+        
+        // Check if another popup is currently active
+        if (activePopup) {
+          console.log('[PopupManager] Another popup is active:', activePopup, '- queueing', popupId);
+          this.queue(popupId, showCallback);
+          return false;
+        }
+        
+        // Check last popup time (prevent popup fatigue)
+        const lastPopupTime = sessionStorage.getItem('alpha_last_popup_time');
+        if (lastPopupTime) {
+          const timeSinceLastPopup = Date.now() - parseInt(lastPopupTime, 10);
+          if (timeSinceLastPopup < MIN_DELAY_BETWEEN_POPUPS) {
+            console.log('[PopupManager] Too soon since last popup - queueing', popupId);
+            this.queue(popupId, showCallback);
+            return false;
+          }
+        }
+        
+        // Show popup immediately
+        this.show(popupId, showCallback);
+        return true;
+      },
+      
+      /**
+       * Queue a popup for later display
+       */
+      queue: function(popupId, showCallback) {
+        const priority = POPUP_PRIORITIES[popupId] || 99;
+        
+        // Add to queue
+        popupQueue.push({
+          id: popupId,
+          callback: showCallback,
+          priority: priority
+        });
+        
+        // Sort by priority (lowest number = highest priority)
+        popupQueue.sort((a, b) => a.priority - b.priority);
+        
+        console.log('[PopupManager] Queued:', popupId, 'Queue length:', popupQueue.length);
+      },
+      
+      /**
+       * Show a popup
+       */
+      show: function(popupId, showCallback) {
+        activePopup = popupId;
+        sessionStorage.setItem('alpha_last_popup_time', Date.now().toString());
+        
+        console.log('[PopupManager] Showing popup:', popupId);
+        
+        if (showCallback) {
+          showCallback();
+        }
+        
+        // Listen for popup close
+        const popupElement = document.getElementById(popupId);
+        if (popupElement) {
+          popupElement.addEventListener('close', () => {
+            this.onPopupClosed(popupId);
+          }, { once: true });
+        }
+      },
+      
+      /**
+       * Handle popup close event
+       */
+      onPopupClosed: function(popupId) {
+        console.log('[PopupManager] Popup closed:', popupId);
+        activePopup = null;
+        
+        // Process queue after delay
+        if (popupQueue.length > 0 && !isProcessing) {
+          isProcessing = true;
+          setTimeout(() => {
+            this.processQueue();
+            isProcessing = false;
+          }, MIN_DELAY_BETWEEN_POPUPS);
+        }
+      },
+      
+      /**
+       * Process the next item in queue
+       */
+      processQueue: function() {
+        if (popupQueue.length === 0) {
+          console.log('[PopupManager] Queue empty');
+          return;
+        }
+        
+        const next = popupQueue.shift();
+        console.log('[PopupManager] Processing queued popup:', next.id);
+        this.register(next.id, next.callback, () => true);
+      },
+      
+      /**
+       * Check if any popup is currently active
+       */
+      isActive: function() {
+        return activePopup !== null;
+      },
+      
+      /**
+       * Get current active popup ID
+       */
+      getActivePopup: function() {
+        return activePopup;
+      },
+      
+      /**
+       * Clear the queue (use sparingly)
+       */
+      clearQueue: function() {
+        popupQueue = [];
+        console.log('[PopupManager] Queue cleared');
+      }
+    };
+  })();
+  
+  console.log('[PopupManager] Initialized');
+</script>

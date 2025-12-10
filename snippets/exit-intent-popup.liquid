@@ -323,19 +323,29 @@
       document.cookie = `${COOKIE_NAME}=true; expires=${date.toUTCString()}; path=/; SameSite=Lax`;
     }
 
-    // Show popup
+    // Show popup (via coordinator)
     function showPopup() {
       if (hasBeenShown()) return;
 
-      popup.showModal();
-      markAsShown();
-
-      // Track event (if analytics available)
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'exit_intent_popup_shown', {
-          event_category: 'engagement',
-          event_label: 'exit_intent'
-        });
+      if (window.AlphaPopupManager) {
+        window.AlphaPopupManager.register(
+          'exit-intent-popup',
+          function() {
+            popup.showModal();
+            markAsShown();
+            
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'exit_intent_popup_shown', {
+                event_category: 'engagement',
+                event_label: 'exit_intent'
+              });
+            }
+          },
+          function() { return !hasBeenShown(); }
+        );
+      } else {
+        popup.showModal();
+        markAsShown();
       }
     }
 

@@ -494,6 +494,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- comment -%} CONFETTI CELEBRATION SYSTEM {%- endcomment -%}
     <script src="{{ 'confetti-celebration.js' | asset_url }}" defer></script>
 
+    {%- comment -%}Popup Coordinator - MUST load first to prevent conflicts{%- endcomment -%}
+    {%- render 'popup-coordinator' -%}
+
     {%- comment -%}Exit Intent Popup - Capture abandoning visitors{%- endcomment -%}
     {%- render 'exit-intent-popup' -%}
 

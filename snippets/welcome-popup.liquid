@@ -417,24 +417,56 @@
       }
     }
 
-    // Show popup
+    // Show popup (now called via coordinator)
     function showPopup() {
       if (!shouldShowPopup()) return;
 
-      popup.showModal();
-      markAsShown();
-
-      // Track event (if analytics available)
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'welcome_popup_shown', {
-          event_category: 'engagement',
-          event_label: 'first_visit'
-        });
+      if (window.AlphaPopupManager) {
+        window.AlphaPopupManager.register(
+          'welcome-popup',
+          function() {
+            popup.showModal();
+            markAsShown();
+            
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'welcome_popup_shown', {
+                event_category: 'engagement',
+                event_label: 'first_visit'
+              });
+            }
+          },
+          function() { return true; }
+        );
+      } else {
+        popup.showModal();
+        markAsShown();
       }
     }
 
-    // Schedule popup display
-    setTimeout(showPopup, DELAY_MS);
+    // Schedule popup display with coordinator
+    setTimeout(function() {
+      if (window.AlphaPopupManager) {
+        window.AlphaPopupManager.register(
+          'welcome-popup',
+          function() {
+            popup.showModal();
+            markAsShown();
+            
+            // Track event
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'welcome_popup_shown', {
+                event_category: 'engagement',
+                event_label: 'first_visit'
+              });
+            }
+          },
+          shouldShowPopup
+        );
+      } else {
+        // Fallback if coordinator not loaded
+        showPopup();
+      }
+    }, DELAY_MS);
 
     // Handle close event
     popup.addEventListener('close', function() {
