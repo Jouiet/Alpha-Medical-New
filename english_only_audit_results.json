@@ -1,8 +1,8 @@
 {
   "timestamp": "2025-11-20",
   "store": "azffej-as.myshopify.com",
-  "total_items": 140,
-  "total_violations": 34,
+  "total_items": 192,
+  "total_violations": 43,
   "violations": [
     {
       "type": "PRODUCT",
@@ -391,8 +391,8 @@
     {
       "type": "PRODUCT",
       "id": 7602188550221,
-      "handle": "smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care",
-      "title": "Smart Electric Vacuum Cupping Device Body Scraping Massager ",
+      "handle": "electric-vacuum-cupping-massager",
+      "title": "Smart Cupping Device | Electric Vacuum & Scraping",
       "french_in_title": [],
       "french_in_body": [
         [
@@ -424,6 +424,276 @@
           "",
           "est",
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108802900045,
+      "handle": "investors-ai-development",
+      "title": "AI Development Partner Model",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "du",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sur",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "avec",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "tous",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "la",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108803031117,
+      "handle": "investors-analytics",
+      "title": "Analytics & Marketing Data - Alpha Medical",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sur",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108802932813,
+      "handle": "investors-automation-deployed",
+      "title": "Automation Deployed - Alpha Medical",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "par",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "des",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sur",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108802998349,
+      "handle": "investors-automation-roadmap",
+      "title": "Automation Roadmap - Alpha Medical",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "au",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "\u00e0",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "et",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sur",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "par",
           "",
           "",
           "",
@@ -546,6 +816,80 @@
     },
     {
       "type": "PAGE",
+      "id": 108803620941,
+      "handle": "investors-flywheel",
+      "title": "Growth Flywheel - Alpha Medical",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sur",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "les",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "le",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sans",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
       "id": 106935255117,
       "handle": "help-center",
       "title": "Help Center - Medical Support Product Guides | Alpha Medical",
@@ -556,6 +900,28 @@
           "",
           "est",
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108799852621,
+      "handle": "investors",
+      "title": "Investor Relations - Alpha Medical Care",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "sans",
           "",
           "",
           "",
@@ -634,6 +1000,28 @@
     },
     {
       "type": "PAGE",
+      "id": 108730056781,
+      "handle": "cancellation-policy",
+      "title": "Purchase Options Cancellation Policy",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
       "id": 106935189581,
       "handle": "product-registration",
       "title": "Register Your Product - Extended Warranty | Alpha Medical Ca",
@@ -666,6 +1054,102 @@
           "",
           "est",
           "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108428755021,
+      "handle": "shipping-policy",
+      "title": "Shipping Policy",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "est",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "PAGE",
+      "id": 108803653709,
+      "handle": "investors-technology-stack",
+      "title": "Technology Stack - Alpha Medical",
+      "french_in_title": [],
+      "french_in_body": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "par",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sur",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "la",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "sans",
           "",
           "",
           "",

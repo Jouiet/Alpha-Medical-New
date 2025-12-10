@@ -2,17 +2,10 @@
   "timestamp": "2025-10-15T04:10:00",
   "summary": {
     "total_collections": 7,
-    "published": 6,
-    "unpublished": 1
+    "published": 7,
+    "unpublished": 0
   },
   "collections": [
-    {
-      "id": "gid://shopify/Collection/295006928973",
-      "title": "Home page",
-      "handle": "frontpage",
-      "published_on_storefront": true,
-      "total_publications": 5
-    },
     {
       "id": "gid://shopify/Collection/295060439117",
       "title": "Pain Relief & Recovery",
@@ -46,14 +39,21 @@
       "title": "New Arrivals",
       "handle": "new-arrivals",
       "published_on_storefront": true,
+      "total_publications": 4
+    },
+    {
+      "id": "gid://shopify/Collection/295163035725",
+      "title": "Complete Care Kits",
+      "handle": "complete-care-kits",
+      "published_on_storefront": true,
       "total_publications": 3
     },
     {
-      "id": "gid://shopify/Collection/295136034893",
-      "title": "Special Offers",
-      "handle": "special-offers",
-      "published_on_storefront": false,
-      "total_publications": 0
+      "id": "gid://shopify/Collection/296239169613",
+      "title": "Medical Equipment Bundles",
+      "handle": "medical-equipment-bundles",
+      "published_on_storefront": true,
+      "total_publications": 3
     }
   ]
 }

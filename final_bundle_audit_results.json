@@ -1,39 +1,148 @@
 {
   "audit_date": "2025-11-16",
-  "total_bundles": 15,
+  "total_bundles": 38,
   "images": {
-    "pass": 15,
-    "fail": 0,
-    "rate": "100.0%"
+    "pass": 21,
+    "fail": 17,
+    "rate": "140.0%"
   },
   "inventory": {
-    "pass": 15,
+    "pass": 38,
     "fail": 0,
-    "rate": "100.0%"
+    "rate": "253.3%"
   },
   "weight": {
-    "pass": 15,
+    "pass": 38,
     "fail": 0,
-    "rate": "100.0%"
+    "rate": "253.3%"
   },
   "overall": {
-    "pass": 15,
-    "fail": 0,
-    "rate": "100.0%"
+    "pass": 21,
+    "fail": 17,
+    "rate": "140.0%"
   },
-  "failures": [],
+  "failures": [
+    {
+      "handle": "manual-labor-heavy-duty-2",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "office-worker-essential-kit-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "office-worker-essential-kit-2",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "office-worker-premium-workspace",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "office-worker-premium-workspace-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "post-surgery-recovery-complete",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "post-surgery-recovery-complete-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "rehab-stroke-recovery-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "rehab-stroke-recovery-2",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "senior-advanced-arthritis-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "senior-advanced-arthritis-2",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "senior-mobility-support-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "senior-mobility-support-2",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "ultimate-pain-management-system-1",
+      "issues": [
+        "No images (0)"
+      ]
+    },
+    {
+      "handle": "ultimate-pain-management-system-2",
+      "issues": [
+        "No images (0)"
+      ]
+    }
+  ],
   "all_pass": [
     "active-athlete-complete-protection",
+    "active-athlete-complete-protection-1",
     "active-athlete-knee-specialist",
+    "active-athlete-knee-specialist-1",
     "beauty-wellness-led-complete",
+    "beauty-wellness-led-complete-1",
     "chronic-pain-relief-kit",
+    "chronic-pain-relief-kit-1",
+    "chronic-pain-relief-kit-2",
     "chronic-pain-starter-kit",
+    "chronic-pain-starter-kit-1",
+    "chronic-pain-starter-kit-2",
     "chronic-pain-whole-body",
+    "chronic-pain-whole-body-1",
     "manual-labor-heavy-duty",
-    "office-worker-advanced-ergonomic",
+    "manual-labor-heavy-duty-1",
     "office-worker-essential-kit",
-    "office-worker-premium-workspace",
-    "post-surgery-recovery-complete",
     "rehab-stroke-recovery",
     "senior-advanced-arthritis",
     "senior-mobility-support",

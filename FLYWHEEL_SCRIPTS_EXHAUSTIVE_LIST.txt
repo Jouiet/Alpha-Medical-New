@@ -1,0 +1,218 @@
+SCRIPTS FLYWHEEL ACTIFS - LISTE EXHAUSTIVE
+================================================================================
+
+Total scripts à tester: 212
+Date: 1765246083.6371956
+
+  1. ./audit_english_language.py
+  2. ./audit_infrastructure.py
+  3. ./check_audit_claims.py
+  4. ./clean_and_segment_leads.py
+  5. ./deploy_theme_assets.py
+  6. ./generate_sitemap.py
+  7. ./market-analysis/check_shopify_apps.py
+  8. ./market-analysis/check_shopify_markets.py
+  9. ./market-analysis/lead_generation_scraper.py
+ 10. ./market-analysis/market_analysis_scraper.py
+ 11. ./market-analysis/test_apify_direct.py
+ 12. ./market-analysis/verify_shopify_state.py
+ 13. ./scripts/analysis/VERIFY_footer_final_state.py
+ 14. ./scripts/analysis/VERIFY_investor_pages_complete.py
+ 15. ./scripts/analysis/audit_automation_complementarity.py
+ 16. ./scripts/analysis/audit_french_language_complete.py
+ 17. ./scripts/analysis/audits/audit_all_products_metafields.py
+ 18. ./scripts/analysis/audits/audit_current_state_forensic.py
+ 19. ./scripts/analysis/audits/audit_flywheel_missing_components.py
+ 20. ./scripts/analysis/audits/audit_seo_complete.py
+ 21. ./scripts/analysis/audits/audit_store_status.py
+ 22. ./scripts/analysis/audits/audit_subscriptions.py
+ 23. ./scripts/analysis/audits/comprehensive_store_audit_session52.py
+ 24. ./scripts/analysis/audits/comprehensive_systems_audit_2025.py
+ 25. ./scripts/analysis/audits/comprehensive_validation_audit_2025.py
+ 26. ./scripts/analysis/audits/final_audit_bundle_images_display.py
+ 27. ./scripts/analysis/audits/forensic_analysis.py
+ 28. ./scripts/analysis/audits/forensic_analysis_klaviyo.py
+ 29. ./scripts/analysis/audits/forensic_analysis_shopify.py
+ 30. ./scripts/analysis/audits/forensic_analysis_tracking.py
+ 31. ./scripts/analysis/audits/forensic_drive_access.py
+ 32. ./scripts/analysis/audits/generate_forensic_report.py
+ 33. ./scripts/analysis/audits/verify_country_corrections_forensic.py
+ 34. ./scripts/analysis/audits/verify_english_only_forensic.py
+ 35. ./scripts/analysis/audits/verify_final_forensic.py
+ 36. ./scripts/analysis/audits/verify_paypal_status_forensic.py
+ 37. ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py
+ 38. ./scripts/analysis/audits/verify_transparency_forensic.py
+ 39. ./scripts/analysis/checks/check_bestsellers_special_offers_overlap.py
+ 40. ./scripts/analysis/checks/check_filter_issue.py
+ 41. ./scripts/analysis/checks/check_footer_menu.py
+ 42. ./scripts/analysis/checks/check_google_apis.py
+ 43. ./scripts/analysis/checks/check_gsc_status.py
+ 44. ./scripts/analysis/checks/check_gtm_status.py
+ 45. ./scripts/analysis/checks/check_live_theme.py
+ 46. ./scripts/analysis/checks/check_n8n_credentials.py
+ 47. ./scripts/analysis/checks/check_policies_api.py
+ 48. ./scripts/analysis/checks/check_product_template_integration.py
+ 49. ./scripts/analysis/checks/check_promotional_duplicates.py
+ 50. ./scripts/analysis/checks/check_script_tags_alpha.py
+ 51. ./scripts/analysis/checks/check_store_config.py
+ 52. ./scripts/analysis/checks/check_theme_pixels.py
+ 53. ./scripts/analysis/checks/check_uploaded_files.py
+ 54. ./scripts/analysis/checks/check_workflow_execution.py
+ 55. ./scripts/analysis/verification/verify_15_bundles_factual.py
+ 56. ./scripts/analysis/verification/verify_ai_crawlers.py
+ 57. ./scripts/analysis/verification/verify_all_sessions_deployments.py
+ 58. ./scripts/analysis/verification/verify_bestsellers_special_offers_LIVE.py
+ 59. ./scripts/analysis/verification/verify_collection_duplicates.py
+ 60. ./scripts/analysis/verification/verify_confetti_deployed.py
+ 61. ./scripts/analysis/verification/verify_critical_requirements.py
+ 62. ./scripts/analysis/verification/verify_discount_codes.py
+ 63. ./scripts/analysis/verification/verify_duplicates_simple.py
+ 64. ./scripts/analysis/verification/verify_flywheel_actual_state.py
+ 65. ./scripts/analysis/verification/verify_flywheel_diagram_factual.py
+ 66. ./scripts/analysis/verification/verify_google_tags_live.py
+ 67. ./scripts/analysis/verification/verify_infrastructure_gaps.py
+ 68. ./scripts/analysis/verification/verify_installed_apps_factual.py
+ 69. ./scripts/analysis/verification/verify_judgeme_state.py
+ 70. ./scripts/analysis/verification/verify_loyalty_discount_codes.py
+ 71. ./scripts/analysis/verification/verify_marketing_readiness.py
+ 72. ./scripts/analysis/verification/verify_metafields_all_namespaces.py
+ 73. ./scripts/analysis/verification/verify_payment_gateways.py
+ 74. ./scripts/analysis/verification/verify_platform_capabilities_comprehensive.py
+ 75. ./scripts/analysis/verification/verify_post_deletion.py
+ 76. ./scripts/analysis/verification/verify_schema_deployment.py
+ 77. ./scripts/analysis/verification/verify_schemas_complete.py
+ 78. ./scripts/analysis/verification/verify_section_deployment.py
+ 79. ./scripts/analysis/verification/verify_session51_deployments.py
+ 80. ./scripts/analysis/verification/verify_shopify_pixels.py
+ 81. ./scripts/analysis/verification/verify_smart_recommendations_deployment.py
+ 82. ./scripts/analysis/verification/verify_title_updates.py
+ 83. ./scripts/analysis/verify_draft_status.py
+ 84. ./scripts/analysis/verify_klaviyo_flows_live.py
+ 85. ./scripts/analysis/verify_prelaunch_readiness.py
+ 86. ./scripts/analysis/verify_published_items.py
+ 87. ./scripts/analysis/verify_shopify_flow_status.py
+ 88. ./scripts/analytics/analyze_automation_gaps_complete.py
+ 89. ./scripts/analytics/analyze_execution_6.py
+ 90. ./scripts/analytics/analyze_lead_snr_factual.py
+ 91. ./scripts/analytics/analyze_multi_platform_automation_gaps.py
+ 92. ./scripts/analytics/analyze_pre_launch_email_feasibility.py
+ 93. ./scripts/analytics/analyze_real_personas.py
+ 94. ./scripts/analytics/analyze_top10_hero_products.py
+ 95. ./scripts/analytics/analyze_workflow_outputs.py
+ 96. ./scripts/analytics/automate_analytics_validation.py
+ 97. ./scripts/analytics/extract_alpha_tracking_ids.py
+ 98. ./scripts/automation/creation/create_15_bundles_final.py
+ 99. ./scripts/automation/creation/create_blog_article_1.py
+100. ./scripts/automation/creation/create_blog_article_2.py
+101. ./scripts/automation/creation/create_bundle_products.py
+102. ./scripts/automation/creation/create_klaviyo_discount_codes.py
+103. ./scripts/automation/creation/create_llms_page.py
+104. ./scripts/automation/creation/create_loyalty_discount_codes.py
+105. ./scripts/automation/creation/create_missing_policy_pages.py
+106. ./scripts/automation/creation/create_pain_relief_guide_page.py
+107. ./scripts/automation/creation/create_remaining_articles.py
+108. ./scripts/automation/creation/create_selling_plans.py
+109. ./scripts/automation/creation/create_size_quiz_page.py
+110. ./scripts/automation/creation/create_social_centered_logo.py
+111. ./scripts/automation/creation/create_social_final.py
+112. ./scripts/automation/creation/create_social_share_image.py
+113. ./scripts/automation/creation/create_social_share_image_branded.py
+114. ./scripts/automation/creation/create_social_share_professional.py
+115. ./scripts/automation/creation/create_social_share_with_logo.py
+116. ./scripts/automation/creation/create_social_svg_logo.py
+117. ./scripts/automation/generation/generate_15_slides.py
+118. ./scripts/automation/generation/generate_product_matrix_complete.py
+119. ./scripts/automation/generation/generate_recommendations_matrix.py
+120. ./scripts/data/import_leads_to_sheet.py
+121. ./scripts/data/sync_typeform_to_sheet.py
+122. ./scripts/deployment/check_footer_structure.py
+123. ./scripts/deployment/deploy_all_corrected_snippets.py
+124. ./scripts/deployment/deploy_bundle_builder.py
+125. ./scripts/deployment/deploy_cart_drawer_fix.py
+126. ./scripts/deployment/deploy_confetti_celebration.py
+127. ./scripts/deployment/deploy_confetti_css_fix.py
+128. ./scripts/deployment/deploy_confetti_fix_final.py
+129. ./scripts/deployment/deploy_dynamic_merchandising.py
+130. ./scripts/deployment/deploy_email_popups.py
+131. ./scripts/deployment/deploy_loyalty_system_simplified.py
+132. ./scripts/deployment/deploy_n8n_workflows.py
+133. ./scripts/deployment/deploy_recommendations_matrix.py
+134. ./scripts/deployment/deploy_recommendations_system.py
+135. ./scripts/deployment/deploy_schema_markup.py
+136. ./scripts/deployment/deploy_smart_recommendations.py
+137. ./scripts/deployment/deploy_sticky_add_to_cart.py
+138. ./scripts/deployment/deploy_sticky_widget_optimized.py
+139. ./scripts/deployment/deploy_subscriptions_system.py
+140. ./scripts/deployment/deploy_theme_liquid.py
+141. ./scripts/deployment/deploy_transparency_updates.py
+142. ./scripts/features/bundles/add_product_images_to_bundles.py
+143. ./scripts/features/bundles/analyze_personas_bundles.py
+144. ./scripts/features/bundles/clean_bundle_documentation.py
+145. ./scripts/features/bundles/configure_fbt_bundles.py
+146. ./scripts/features/bundles/delete_bundler_css.py
+147. ./scripts/features/bundles/reconstruct_bundles_to_3_4_products.py
+148. ./scripts/features/bundles/upload_bundle_images.py
+149. ./scripts/features/loyalty/loyalty_manager.py
+150. ./scripts/features/loyalty/loyalty_metaobject_setup.py
+151. ./scripts/features/loyalty/loyalty_setup.py
+152. ./scripts/fixes/unpublish_bundles_without_images.py
+153. ./scripts/fixes/verify_corrections.py
+154. ./scripts/maintenance/fixes/fix_bundle_weights.py
+155. ./scripts/maintenance/fixes/fix_collections_descriptions.py
+156. ./scripts/maintenance/fixes/fix_country_information.py
+157. ./scripts/maintenance/fixes/fix_email_to_professional.py
+158. ./scripts/maintenance/fixes/fix_gtm_documentation.py
+159. ./scripts/maintenance/fixes/fix_missing_metafields.py
+160. ./scripts/maintenance/fixes/fix_n8n_workflow_activation.py
+161. ./scripts/maintenance/fixes/fix_product_type_coherence.py
+162. ./scripts/maintenance/updates/update_bundle_prices.py
+163. ./scripts/maintenance/updates/update_bundle_product_images.py
+164. ./scripts/maintenance/updates/update_klaviyo_templates_professional.py
+165. ./scripts/maintenance/updates/update_workflow_credentials.py
+166. ./scripts/marketing/facebook_automation_complete.py
+167. ./scripts/optimization/optimize_seo.py
+168. ./scripts/setup/configure_existing_sheet.py
+169. ./scripts/setup/configure_klaviyo.py
+170. ./scripts/setup/configure_reconvert.py
+171. ./scripts/setup/configure_shopify_email.py
+172. ./scripts/setup/install_google_ads_pixel.py
+173. ./scripts/setup/install_gtm.py
+174. ./scripts/setup/setup_google_sheet.py
+175. ./scripts/setup/setup_google_sheet_user.py
+176. ./scripts/tests/test_admin_api.py
+177. ./scripts/tests/test_drive_folder_access.py
+178. ./scripts/tests/test_flywheel_ecosystem_complete.py
+179. ./scripts/tests/test_flywheel_exhaustive.py
+180. ./scripts/tests/test_klaviyo_api.py
+181. ./scripts/tests/test_shopify_flow_customer.py
+182. ./scripts/uncategorized/activate_n8n_workflow_simple.py
+183. ./scripts/uncategorized/activate_workflow_patch.py
+184. ./scripts/uncategorized/add_schema_org_to_theme.py
+185. ./scripts/uncategorized/automate_klaviyo_email.py
+186. ./scripts/uncategorized/compare_bestsellers_specialoffers_products.py
+187. ./scripts/uncategorized/complete_flow_automation.py
+188. ./scripts/uncategorized/complete_workflow_audit.py
+189. ./scripts/uncategorized/complete_workflow_final_push.py
+190. ./scripts/uncategorized/comprehensive_seo_validation.py
+191. ./scripts/uncategorized/debug_customer_response.py
+192. ./scripts/uncategorized/get_google_ads_conversion_id.py
+193. ./scripts/uncategorized/get_klaviyo_templates.py
+194. ./scripts/uncategorized/get_latest_execution_full.py
+195. ./scripts/uncategorized/get_missing_products.py
+196. ./scripts/uncategorized/get_product_samples.py
+197. ./scripts/uncategorized/list_all_workflow_nodes.py
+198. ./scripts/uncategorized/list_collections.py
+199. ./scripts/uncategorized/list_recent_customers.py
+200. ./scripts/uncategorized/remove_filter_restore_workflow.py
+201. ./scripts/uncategorized/restart_workflow.py
+202. ./scripts/uncategorized/set_homepage_seo.py
+203. ./scripts/uncategorized/show_workflow_credential_ids.py
+204. ./scripts/uncategorized/upload_templates_to_klaviyo.py
+205. ./sync_facebook_leads_to_sheet.py
+206. ./sync_klaviyo_to_sheet.py
+207. ./upload_seo_files.py
+208. ./validate_llms_txt.py
+209. ./verify_new_shopify_token.py
+210. ./verify_store_infrastructure.py
+211. ./verify_storefront_api_scopes.py
+212. ./video-ads-assets/scripts/apify_shopify_scraper.py

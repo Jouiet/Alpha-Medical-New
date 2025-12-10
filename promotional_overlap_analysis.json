@@ -1,17 +1,22 @@
 {
   "timestamp": "2025-10-15T03:40:00",
   "summary": {
-    "bestsellers_count": 23,
-    "special_offers_count": 20,
-    "new_arrivals_count": 35,
+    "bestsellers_count": 15,
+    "special_offers_count": 0,
+    "new_arrivals_count": 20,
     "overlap_bestsellers_special": 0,
-    "overlap_bestsellers_new": 0,
+    "overlap_bestsellers_new": 1,
     "overlap_special_new": 0,
-    "total_violations": 0
+    "total_violations": 1
   },
   "overlaps": {
     "bestsellers_special_offers": [],
-    "bestsellers_new_arrivals": [],
+    "bestsellers_new_arrivals": [
+      {
+        "product_id": "gid://shopify/Product/7602188517453",
+        "product_title": "Electric Cupping Set | Medical Therapy & Massage"
+      }
+    ],
     "special_offers_new_arrivals": []
   }
 }

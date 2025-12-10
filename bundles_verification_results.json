@@ -1,13 +1,343 @@
 {
-  "timestamp": "2025-11-29T13:33:56.510636",
+  "timestamp": "2025-12-09T15:56:46.503841",
   "collection_id": 296239169613,
-  "total_bundles": 8,
+  "total_bundles": 38,
   "expected_bundles": 15,
   "verification_passed": false,
-  "total_regular_price": 4746.63,
-  "total_bundle_price": 3085.32,
-  "total_savings": 1661.31,
+  "total_regular_price": 22591.81,
+  "total_bundle_price": 14684.72,
+  "total_savings": 7907.090000000002,
   "bundles": [
+    {
+      "id": 7641724977229,
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "handle": "senior-advanced-arthritis-2",
+      "price": "458.09",
+      "compare_at_price": "704.75",
+      "savings": 246.66000000000003,
+      "discount_pct": 34.999645264278115,
+      "tags": "35-percent-off, arthritis, bundle, bunion-relief, joint-pain, senior, tier3",
+      "published": false
+    },
+    {
+      "id": 7641724944461,
+      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
+      "handle": "beauty-wellness-led-complete-1",
+      "price": "342.79",
+      "compare_at_price": "527.37",
+      "savings": 184.57999999999998,
+      "discount_pct": 35.000094810095376,
+      "tags": "35-percent-off, anti-aging, beauty, bundle, facial, led-therapy, tier2",
+      "published": false
+    },
+    {
+      "id": 7641724911693,
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "handle": "rehab-stroke-recovery-2",
+      "price": "281.58",
+      "compare_at_price": "433.20",
+      "savings": 151.62,
+      "discount_pct": 35.0,
+      "tags": "35-percent-off, bundle, rehab, robot-gloves, stroke-recovery, therapy, tier2",
+      "published": false
+    },
+    {
+      "id": 7641724846157,
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "handle": "manual-labor-heavy-duty-2",
+      "price": "602.85",
+      "compare_at_price": "927.46",
+      "savings": 324.61,
+      "discount_pct": 34.99989217863843,
+      "tags": "35-percent-off, bundle, heavy-duty, industrial, manual-labor, osha, tier4",
+      "published": false
+    },
+    {
+      "id": 7641724813389,
+      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
+      "handle": "chronic-pain-whole-body-1",
+      "price": "488.64",
+      "compare_at_price": "751.75",
+      "savings": 263.11,
+      "discount_pct": 34.99966744263386,
+      "tags": "35-percent-off, bundle, chronic-pain, led-therapy, massage, tier3, whole-body",
+      "published": false
+    },
+    {
+      "id": 7641724780621,
+      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
+      "handle": "office-worker-premium-workspace-1",
+      "price": "451.43",
+      "compare_at_price": "694.50",
+      "savings": 243.07,
+      "discount_pct": 34.99928005759539,
+      "tags": "35-percent-off, bundle, eye-fatigue, office-worker, premium, screen-relief, tier3",
+      "published": false
+    },
+    {
+      "id": 7641724747853,
+      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
+      "handle": "office-worker-advanced-ergonomic-1",
+      "price": "318.44",
+      "compare_at_price": "489.91",
+      "savings": 171.47000000000003,
+      "discount_pct": 35.00030617868589,
+      "tags": "35-percent-off, advanced, bundle, ergonomic, led-therapy, office-worker, tier2",
+      "published": false
+    },
+    {
+      "id": 7641724715085,
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "handle": "ultimate-pain-management-system-2",
+      "price": "673.56",
+      "compare_at_price": "1036.24",
+      "savings": 362.68000000000006,
+      "discount_pct": 34.99961398903729,
+      "tags": "35-percent-off, advanced-therapy, bundle, chronic-pain, massage, tier4, ultimate",
+      "published": false
+    },
+    {
+      "id": 7641724682317,
+      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
+      "handle": "post-surgery-recovery-complete-1",
+      "price": "520.82",
+      "compare_at_price": "801.26",
+      "savings": 280.43999999999994,
+      "discount_pct": 34.9998751965654,
+      "tags": "35-percent-off, bundle, comprehensive, orthopedic, post-surgery, recovery, tier3",
+      "published": false
+    },
+    {
+      "id": 7641724518477,
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "handle": "chronic-pain-relief-kit-2",
+      "price": "397.16",
+      "compare_at_price": "611.01",
+      "savings": 213.84999999999997,
+      "discount_pct": 34.999427177951254,
+      "tags": "35-percent-off, bundle, chronic-pain, electric-therapy, multi-zone, tier2",
+      "published": false
+    },
+    {
+      "id": 7641724485709,
+      "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
+      "handle": "active-athlete-complete-protection-1",
+      "price": "394.69",
+      "compare_at_price": "607.22",
+      "savings": 212.53000000000003,
+      "discount_pct": 35.00049405487303,
+      "tags": "35-percent-off, athlete, bundle, complete-protection, sports, tier2",
+      "published": true
+    },
+    {
+      "id": 7641724420173,
+      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
+      "handle": "active-athlete-knee-specialist-1",
+      "price": "197.57",
+      "compare_at_price": "303.95",
+      "savings": 106.38,
+      "discount_pct": 34.999177496298735,
+      "tags": "35-percent-off, athlete, bundle, knee-specialist, sports, tier1",
+      "published": false
+    },
+    {
+      "id": 7641724387405,
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "handle": "chronic-pain-starter-kit-2",
+      "price": "193.74",
+      "compare_at_price": "298.06",
+      "savings": 104.32,
+      "discount_pct": 34.99966449708112,
+      "tags": "35-percent-off, bundle, chronic-pain, heat-therapy, starter, tier1",
+      "published": false
+    },
+    {
+      "id": 7641724354637,
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "handle": "senior-mobility-support-2",
+      "price": "259.63",
+      "compare_at_price": "399.43",
+      "savings": 139.8,
+      "discount_pct": 34.999874821620814,
+      "tags": "35-percent-off, arthritis, bundle, fall-prevention, mobility, senior, tier1",
+      "published": false
+    },
+    {
+      "id": 7641724321869,
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "handle": "office-worker-essential-kit-2",
+      "price": "218.71",
+      "compare_at_price": "336.48",
+      "savings": 117.77000000000001,
+      "discount_pct": 35.00059438896814,
+      "tags": "35-percent-off, bundle, desk-pain, ergonomic, office-worker, posture, tier1",
+      "published": false
+    },
+    {
+      "id": 7641723043917,
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "handle": "senior-advanced-arthritis-1",
+      "price": "458.09",
+      "compare_at_price": "704.75",
+      "savings": 246.66000000000003,
+      "discount_pct": 34.999645264278115,
+      "tags": "35-percent-off, arthritis, bundle, bunion-relief, joint-pain, senior, tier3",
+      "published": false
+    },
+    {
+      "id": 7641723011149,
+      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
+      "handle": "beauty-wellness-led-complete",
+      "price": "342.79",
+      "compare_at_price": "527.37",
+      "savings": 184.57999999999998,
+      "discount_pct": 35.000094810095376,
+      "tags": "35-percent-off, anti-aging, beauty, bundle, facial, led-therapy, tier2",
+      "published": false
+    },
+    {
+      "id": 7641722978381,
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "handle": "rehab-stroke-recovery-1",
+      "price": "281.58",
+      "compare_at_price": "433.20",
+      "savings": 151.62,
+      "discount_pct": 35.0,
+      "tags": "35-percent-off, bundle, rehab, robot-gloves, stroke-recovery, therapy, tier2",
+      "published": false
+    },
+    {
+      "id": 7641722945613,
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "handle": "manual-labor-heavy-duty-1",
+      "price": "602.85",
+      "compare_at_price": "927.46",
+      "savings": 324.61,
+      "discount_pct": 34.99989217863843,
+      "tags": "35-percent-off, bundle, heavy-duty, industrial, manual-labor, osha, tier4",
+      "published": false
+    },
+    {
+      "id": 7641722912845,
+      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
+      "handle": "chronic-pain-whole-body",
+      "price": "488.64",
+      "compare_at_price": "751.75",
+      "savings": 263.11,
+      "discount_pct": 34.99966744263386,
+      "tags": "35-percent-off, bundle, chronic-pain, led-therapy, massage, tier3, whole-body",
+      "published": false
+    },
+    {
+      "id": 7641722880077,
+      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
+      "handle": "office-worker-premium-workspace",
+      "price": "451.43",
+      "compare_at_price": "694.50",
+      "savings": 243.07,
+      "discount_pct": 34.99928005759539,
+      "tags": "35-percent-off, bundle, eye-fatigue, office-worker, premium, screen-relief, tier3",
+      "published": false
+    },
+    {
+      "id": 7641722847309,
+      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
+      "handle": "office-worker-advanced-ergonomic",
+      "price": "318.44",
+      "compare_at_price": "489.91",
+      "savings": 171.47000000000003,
+      "discount_pct": 35.00030617868589,
+      "tags": "35-percent-off, advanced, bundle, ergonomic, led-therapy, office-worker, tier2",
+      "published": false
+    },
+    {
+      "id": 7641722814541,
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "handle": "ultimate-pain-management-system-1",
+      "price": "673.56",
+      "compare_at_price": "1036.24",
+      "savings": 362.68000000000006,
+      "discount_pct": 34.99961398903729,
+      "tags": "35-percent-off, advanced-therapy, bundle, chronic-pain, massage, tier4, ultimate",
+      "published": false
+    },
+    {
+      "id": 7641722781773,
+      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
+      "handle": "post-surgery-recovery-complete",
+      "price": "520.82",
+      "compare_at_price": "801.26",
+      "savings": 280.43999999999994,
+      "discount_pct": 34.9998751965654,
+      "tags": "35-percent-off, bundle, comprehensive, orthopedic, post-surgery, recovery, tier3",
+      "published": false
+    },
+    {
+      "id": 7641722716237,
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "handle": "chronic-pain-relief-kit-1",
+      "price": "397.16",
+      "compare_at_price": "611.01",
+      "savings": 213.84999999999997,
+      "discount_pct": 34.999427177951254,
+      "tags": "35-percent-off, bundle, chronic-pain, electric-therapy, multi-zone, tier2",
+      "published": false
+    },
+    {
+      "id": 7641722683469,
+      "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
+      "handle": "active-athlete-complete-protection",
+      "price": "394.69",
+      "compare_at_price": "607.22",
+      "savings": 212.53000000000003,
+      "discount_pct": 35.00049405487303,
+      "tags": "35-percent-off, athlete, bundle, complete-protection, sports, tier2",
+      "published": true
+    },
+    {
+      "id": 7641722650701,
+      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
+      "handle": "active-athlete-knee-specialist",
+      "price": "197.57",
+      "compare_at_price": "303.95",
+      "savings": 106.38,
+      "discount_pct": 34.999177496298735,
+      "tags": "35-percent-off, athlete, bundle, knee-specialist, sports, tier1",
+      "published": false
+    },
+    {
+      "id": 7641722617933,
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "handle": "chronic-pain-starter-kit-1",
+      "price": "193.74",
+      "compare_at_price": "298.06",
+      "savings": 104.32,
+      "discount_pct": 34.99966449708112,
+      "tags": "35-percent-off, bundle, chronic-pain, heat-therapy, starter, tier1",
+      "published": false
+    },
+    {
+      "id": 7641722585165,
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "handle": "senior-mobility-support-1",
+      "price": "259.63",
+      "compare_at_price": "399.43",
+      "savings": 139.8,
+      "discount_pct": 34.999874821620814,
+      "tags": "35-percent-off, arthritis, bundle, fall-prevention, mobility, senior, tier1",
+      "published": false
+    },
+    {
+      "id": 7641722552397,
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "handle": "office-worker-essential-kit-1",
+      "price": "218.71",
+      "compare_at_price": "336.48",
+      "savings": 117.77000000000001,
+      "discount_pct": 35.00059438896814,
+      "tags": "35-percent-off, bundle, desk-pain, ergonomic, office-worker, posture, tier1",
+      "published": false
+    },
     {
       "id": 7623086866509,
       "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
@@ -16,7 +346,7 @@
       "compare_at_price": "704.75",
       "savings": 246.66000000000003,
       "discount_pct": 34.999645264278115,
-      "tags": "35-percent-off, arthritis, bundle, bunion-relief, joint-pain, senior, tier3",
+      "tags": "35-percent-off, arthritis, bundle, bunion-relief, elderly-care, joint-pain, senior, tier3",
       "published": true
     },
     {
@@ -27,7 +357,7 @@
       "compare_at_price": "433.20",
       "savings": 151.62,
       "discount_pct": 35.0,
-      "tags": "35-percent-off, bundle, rehab, robot-gloves, stroke-recovery, therapy, tier2",
+      "tags": "35-percent-off, bundle, recovery-aid, rehab, robot-gloves, stroke-recovery, therapy, tier2",
       "published": true
     },
     {
@@ -38,7 +368,7 @@
       "compare_at_price": "927.46",
       "savings": 324.61,
       "discount_pct": 34.99989217863843,
-      "tags": "35-percent-off, bundle, heavy-duty, industrial, manual-labor, osha, tier4",
+      "tags": "35-percent-off, bundle, heavy-duty, industrial, manual-labor, osha, tier4, work-safety",
       "published": true
     },
     {
@@ -49,7 +379,7 @@
       "compare_at_price": "1036.24",
       "savings": 362.68000000000006,
       "discount_pct": 34.99961398903729,
-      "tags": "35-percent-off, advanced-therapy, bundle, chronic-pain, massage, tier4, ultimate",
+      "tags": "35-percent-off, advanced-therapy, bundle, chronic-pain, complete-care, massage, tier4, ultimate",
       "published": true
     },
     {
@@ -60,7 +390,7 @@
       "compare_at_price": "611.01",
       "savings": 213.84999999999997,
       "discount_pct": 34.999427177951254,
-      "tags": "35-percent-off, bundle, chronic-pain, electric-therapy, multi-zone, tier2",
+      "tags": "35-percent-off, bundle, chronic-pain, electric-therapy, multi-zone, pain-management, therapeutic-bundle, tier2",
       "published": true
     },
     {
@@ -71,7 +401,7 @@
       "compare_at_price": "298.06",
       "savings": 104.32,
       "discount_pct": 34.99966449708112,
-      "tags": "35-percent-off, bundle, chronic-pain, heat-therapy, starter, tier1",
+      "tags": "35-percent-off, bundle, chronic-pain, heat-therapy, pain-relief, starter, tier1, value-pack",
       "published": true
     },
     {
@@ -82,7 +412,7 @@
       "compare_at_price": "399.43",
       "savings": 139.8,
       "discount_pct": 34.999874821620814,
-      "tags": "35-percent-off, arthritis, bundle, fall-prevention, mobility, senior, tier1",
+      "tags": "35-percent-off, age-support, arthritis, bundle, fall-prevention, mobility, senior, tier1",
       "published": true
     },
     {
@@ -93,7 +423,7 @@
       "compare_at_price": "336.48",
       "savings": 117.77000000000001,
       "discount_pct": 35.00059438896814,
-      "tags": "35-percent-off, bundle, desk-pain, ergonomic, office-worker, posture, tier1",
+      "tags": "35-percent-off, bundle, desk-pain, ergonomic, office-worker, posture, tier1, workplace-health",
       "published": true
     }
   ]

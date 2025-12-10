@@ -1,112 +1,112 @@
 {
   "audit_date": "2025-11-16",
-  "total_bundles": 15,
+  "total_bundles": 23,
   "bundles_with_issues": 15,
   "issues": [
     {
       "handle": "active-athlete-complete-protection",
       "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
       "product_count": 6,
-      "image_count": 1,
-      "issue": "Only 1 image for 6 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
       "handle": "active-athlete-knee-specialist",
       "title": "Active Athlete Knee Specialist - Sports Support Bundle",
       "product_count": 5,
-      "image_count": 1,
-      "issue": "Only 1 image for 5 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
       "handle": "beauty-wellness-led-complete",
       "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
       "product_count": 5,
-      "image_count": 1,
-      "issue": "Only 1 image for 5 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "chronic-pain-relief-kit",
+      "handle": "chronic-pain-relief-kit-1",
       "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
       "product_count": 6,
-      "image_count": 1,
-      "issue": "Only 1 image for 6 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "chronic-pain-starter-kit",
+      "handle": "chronic-pain-starter-kit-1",
       "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
       "product_count": 4,
-      "image_count": 1,
-      "issue": "Only 1 image for 4 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
       "handle": "chronic-pain-whole-body",
       "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
       "product_count": 6,
-      "image_count": 1,
-      "issue": "Only 1 image for 6 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "manual-labor-heavy-duty",
+      "handle": "manual-labor-heavy-duty-1",
       "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
       "product_count": 7,
-      "image_count": 1,
-      "issue": "Only 1 image for 7 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
       "handle": "office-worker-advanced-ergonomic",
       "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
       "product_count": 6,
-      "image_count": 1,
-      "issue": "Only 1 image for 6 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "office-worker-essential-kit",
+      "handle": "office-worker-essential-kit-1",
       "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
       "product_count": 5,
-      "image_count": 1,
-      "issue": "Only 1 image for 5 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
       "handle": "office-worker-premium-workspace",
       "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
       "product_count": 6,
-      "image_count": 1,
-      "issue": "Only 1 image for 6 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
       "handle": "post-surgery-recovery-complete",
       "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
       "product_count": 7,
-      "image_count": 1,
-      "issue": "Only 1 image for 7 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "rehab-stroke-recovery",
+      "handle": "rehab-stroke-recovery-1",
       "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
       "product_count": 6,
-      "image_count": 1,
-      "issue": "Only 1 image for 6 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "senior-advanced-arthritis",
+      "handle": "senior-advanced-arthritis-1",
       "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
       "product_count": 5,
-      "image_count": 1,
-      "issue": "Only 1 image for 5 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "senior-mobility-support",
+      "handle": "senior-mobility-support-1",
       "title": "Senior Mobility Support - Arthritis Care Bundle",
       "product_count": 5,
-      "image_count": 1,
-      "issue": "Only 1 image for 5 products"
+      "image_count": 0,
+      "issue": "No images at all"
     },
     {
-      "handle": "ultimate-pain-management-system",
+      "handle": "ultimate-pain-management-system-1",
       "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
       "product_count": 8,
-      "image_count": 1,
-      "issue": "Only 1 image for 8 products"
+      "image_count": 0,
+      "issue": "No images at all"
     }
   ],
   "all_results": [
@@ -114,105 +114,161 @@
       "handle": "active-athlete-complete-protection",
       "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
       "product_count": 6,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "active-athlete-knee-specialist",
       "title": "Active Athlete Knee Specialist - Sports Support Bundle",
       "product_count": 5,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "beauty-wellness-led-complete",
       "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
       "product_count": 5,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "chronic-pain-relief-kit",
       "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "product_count": 4,
+      "image_count": 7,
+      "has_issue": false
+    },
+    {
+      "handle": "chronic-pain-relief-kit-1",
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
       "product_count": 6,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "chronic-pain-starter-kit",
       "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
       "product_count": 4,
-      "image_count": 1,
+      "image_count": 5,
+      "has_issue": false
+    },
+    {
+      "handle": "chronic-pain-starter-kit-1",
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "product_count": 4,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "chronic-pain-whole-body",
       "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
       "product_count": 6,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "manual-labor-heavy-duty",
       "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "product_count": 4,
+      "image_count": 8,
+      "has_issue": false
+    },
+    {
+      "handle": "manual-labor-heavy-duty-1",
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
       "product_count": 7,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "office-worker-advanced-ergonomic",
       "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
       "product_count": 6,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "office-worker-essential-kit",
       "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "product_count": 4,
+      "image_count": 6,
+      "has_issue": false
+    },
+    {
+      "handle": "office-worker-essential-kit-1",
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
       "product_count": 5,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "office-worker-premium-workspace",
       "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
       "product_count": 6,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "post-surgery-recovery-complete",
       "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
       "product_count": 7,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "rehab-stroke-recovery",
       "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "product_count": 4,
+      "image_count": 7,
+      "has_issue": false
+    },
+    {
+      "handle": "rehab-stroke-recovery-1",
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
       "product_count": 6,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "senior-advanced-arthritis",
       "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "product_count": 0,
+      "image_count": 6,
+      "has_issue": false
+    },
+    {
+      "handle": "senior-advanced-arthritis-1",
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
       "product_count": 5,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "senior-mobility-support",
       "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "product_count": 4,
+      "image_count": 6,
+      "has_issue": false
+    },
+    {
+      "handle": "senior-mobility-support-1",
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
       "product_count": 5,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     },
     {
       "handle": "ultimate-pain-management-system",
       "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "product_count": 4,
+      "image_count": 9,
+      "has_issue": false
+    },
+    {
+      "handle": "ultimate-pain-management-system-1",
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
       "product_count": 8,
-      "image_count": 1,
+      "image_count": 0,
       "has_issue": true
     }
   ]

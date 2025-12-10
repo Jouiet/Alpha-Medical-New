@@ -1,8 +1,8 @@
 {
   "timestamp": "2025-11-20",
   "store": "azffej-as.myshopify.com",
-  "total_products": 96,
-  "valid_count": 96,
+  "total_products": 115,
+  "valid_count": 115,
   "violation_count": 0,
   "violations": [],
   "valid_products": [
@@ -43,22 +43,22 @@
       "product_type": "Bundle"
     },
     {
-      "id": 7602148245581,
-      "handle": "adjustable-cervical-collar-spine-thoracic-orthosis-head-chest-neck-fixed-brace-posture-corrector-support",
-      "title": "Adjustable Cervical Collar Spine Thoracic Orthosis Head Ches",
-      "product_type": "Neck Support"
+      "id": 7641722683469,
+      "handle": "active-athlete-complete-protection",
+      "title": "Active Athlete Complete Protection - Sports Injury Preventio",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722650701,
+      "handle": "active-athlete-knee-specialist",
+      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
+      "product_type": "Medical Equipment Bundle"
     },
     {
       "id": 7585886961741,
       "handle": "adjustable-cervical-collar-neck-brace-orthosis",
       "title": "Adjustable Cervical Collar | Neck Brace Orthosis",
       "product_type": "Neck Support"
-    },
-    {
-      "id": 7602146705485,
-      "handle": "adjustable-hunchback-orthotic-brace-back-waist-posture-corrector-back-support-corset-shoulder-spine-brace-neck-stretcher",
-      "title": "Adjustable Hunchback Orthotic Brace Back Waist Posture Corre",
-      "product_type": "Back & Posture Support"
     },
     {
       "id": 7586408955981,
@@ -83,6 +83,12 @@
       "handle": "afo-drop-foot-brace-ankle-foot-orthosis-for-men-women",
       "title": "AFO Drop Foot Brace | Ankle Foot Orthosis for Men & Women",
       "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7631747743821,
+      "handle": "electric-massage-cushion-full-body",
+      "title": "Air Massage Cushion | Electric Kneading Chair Pad",
+      "product_type": "Massage Chairs"
     },
     {
       "id": 7585887420493,
@@ -115,10 +121,28 @@
       "product_type": "Bundle"
     },
     {
-      "id": 7616306806861,
-      "handle": "bunion-corrector-toe-separator-bunions-haluksy-separators-halux-toe-spreader-finger-straightener-for-toe-hallux-valgus-corrector",
-      "title": "Bunion Corrector Toe Separator Bunions Haluksy Separators Ha",
+      "id": 7641723011149,
+      "handle": "beauty-wellness-led-complete",
+      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7616306839629,
+      "handle": "airbag-bunion-corrector-orthotic",
+      "title": "Bunion Corrector Airbag | Hallux Valgus Treatment",
       "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7616306806861,
+      "handle": "bunion-corrector-toe-separator",
+      "title": "Bunion Corrector | Toe Separator & Pain Relief",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7602148245581,
+      "handle": "cervical-collar-posture-corrector",
+      "title": "Cervical Collar | Adjustable Neck & Spine Support",
+      "product_type": "Neck Support"
     },
     {
       "id": 7585887027277,
@@ -139,9 +163,27 @@
       "product_type": "Medical Equipment Bundle"
     },
     {
+      "id": 7641722716237,
+      "handle": "chronic-pain-relief-kit-1",
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
       "id": 7623056031821,
       "handle": "chronic-pain-starter-kit",
       "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722617933,
+      "handle": "chronic-pain-starter-kit-1",
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722912845,
+      "handle": "chronic-pain-whole-body",
+      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
       "product_type": "Medical Equipment Bundle"
     },
     {
@@ -169,12 +211,6 @@
       "product_type": "Joint Support"
     },
     {
-      "id": 7616306839629,
-      "handle": "effective-bunion-corrector-airbag-traction-foot-hallux-valgus-braces-toe-separator-straightener-orthotics-toe-correction",
-      "title": "Effective Bunion Corrector Airbag traction Foot Hallux Valgu",
-      "product_type": "Foot Care & Orthotics"
-    },
-    {
       "id": 7620850942029,
       "handle": "bundle-elderly-mobility-support",
       "title": "Elderly / Mobility Support - Complete Care Kit",
@@ -193,6 +229,18 @@
       "product_type": "Therapeutic Devices"
     },
     {
+      "id": 7616306774093,
+      "handle": "electric-bunion-corrector-toe-separator",
+      "title": "Electric Bunion Massager | Vibration Foot Therapy",
+      "product_type": "Foot Care & Orthotics"
+    },
+    {
+      "id": 7602188517453,
+      "handle": "medical-cupping-therapy-set-glass",
+      "title": "Electric Cupping Set | Medical Therapy & Massage",
+      "product_type": "Therapeutic Devices"
+    },
+    {
       "id": 7586410168397,
       "handle": "electric-foot-hand-massager-vibration-heat-therapy",
       "title": "Electric Foot & Hand Massager | Vibration & Heat Therapy",
@@ -206,8 +254,8 @@
     },
     {
       "id": 7593555984461,
-      "handle": "electric-heating-leg-massager-wireless-rechargeable-air-compression-leg-calf-massage-for-relief-relax-leg-muscles-health-care",
-      "title": "Electric Heating Leg Massager Wireless Rechargeable Air Comp",
+      "handle": "electric-leg-massager-air-compression",
+      "title": "Electric Leg Massager | Heat & Air Compression",
       "product_type": "Therapeutic Devices"
     },
     {
@@ -215,18 +263,6 @@
       "handle": "electric-lumbar-massager-heated-vibration-back-brace",
       "title": "Electric Lumbar Massager | Heated Vibration Back Brace",
       "product_type": "Therapeutic Devices"
-    },
-    {
-      "id": 7602188517453,
-      "handle": "electric-medical-cupping-therapy-set-beauty-massager-glass-jars-anti-cellulite-cupping-vacuum-slimming-guasha",
-      "title": "Electric Medical Cupping Therapy Set Beauty Massager Glass J",
-      "product_type": "Therapeutic Devices"
-    },
-    {
-      "id": 7616306774093,
-      "handle": "electric-vibration-massager-bunion-corrector-unisex-foot-hallux-valgus-braces-adjustable-toe-separator-finger-toe-corrector",
-      "title": "Electric Vibration Massager Bunion Corrector Unisex Foot Hal",
-      "product_type": "Foot Care & Orthotics"
     },
     {
       "id": 7586398634061,
@@ -385,6 +421,18 @@
       "product_type": "Medical Equipment Bundle"
     },
     {
+      "id": 7641722945613,
+      "handle": "manual-labor-heavy-duty-1",
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7631747809357,
+      "handle": "ergonomic-massage-recliner-chair",
+      "title": "Massage Recliner Chair | Heat & Vibration Therapy",
+      "product_type": "Massage Chairs"
+    },
+    {
       "id": 7586408890445,
       "handle": "nano-steam-eye-massager-warm-spa-acupressure-mask",
       "title": "Nano Steam Eye Massager | Warm Spa Acupressure Mask",
@@ -433,9 +481,27 @@
       "product_type": "Bundle"
     },
     {
+      "id": 7641722847309,
+      "handle": "office-worker-advanced-ergonomic",
+      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
       "id": 7623055966285,
       "handle": "office-worker-essential-kit",
       "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722552397,
+      "handle": "office-worker-essential-kit-1",
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722880077,
+      "handle": "office-worker-premium-workspace",
+      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
       "product_type": "Medical Equipment Bundle"
     },
     {
@@ -457,6 +523,18 @@
       "product_type": "Bundle"
     },
     {
+      "id": 7641722781773,
+      "handle": "post-surgery-recovery-complete",
+      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7602146705485,
+      "handle": "posture-corrector-back-support-brace",
+      "title": "Posture Corrector Brace | Back & Waist Support",
+      "product_type": "Back & Posture Support"
+    },
+    {
       "id": 7586399158349,
       "handle": "posture-corrector-adjustable-back-brace-for-women-men",
       "title": "Posture Corrector | Adjustable Back Brace for Women Men",
@@ -475,8 +553,20 @@
       "product_type": "Therapeutic Devices"
     },
     {
+      "id": 7631747776589,
+      "handle": "professional-shiatsu-massage-recliner",
+      "title": "Professional Shiatsu Massage Chair | Full Body Therapy",
+      "product_type": "Massage Chairs"
+    },
+    {
       "id": 7623086800973,
       "handle": "rehab-stroke-recovery",
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722978381,
+      "handle": "rehab-stroke-recovery-1",
       "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
       "product_type": "Medical Equipment Bundle"
     },
@@ -499,10 +589,28 @@
       "product_type": "Medical Equipment Bundle"
     },
     {
+      "id": 7641723043917,
+      "handle": "senior-advanced-arthritis-1",
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
       "id": 7623055999053,
       "handle": "senior-mobility-support",
       "title": "Senior Mobility Support - Arthritis Care Bundle",
       "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722585165,
+      "handle": "senior-mobility-support-1",
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7631747711053,
+      "handle": "shiatsu-massage-chair-full-body",
+      "title": "Shiatsu Massage Chair | Full Body Electric Therapy",
+      "product_type": "Massage Chairs"
     },
     {
       "id": 7585887354957,
@@ -518,8 +626,8 @@
     },
     {
       "id": 7602188550221,
-      "handle": "smart-electric-vacuum-cupping-device-body-scraping-massager-heating-suction-cup-device-physical-fatigue-relief-health-care",
-      "title": "Smart Electric Vacuum Cupping Device Body Scraping Massager ",
+      "handle": "electric-vacuum-cupping-massager",
+      "title": "Smart Cupping Device | Electric Vacuum & Scraping",
       "product_type": "Therapeutic Devices"
     },
     {
@@ -549,6 +657,12 @@
     {
       "id": 7623086637133,
       "handle": "ultimate-pain-management-system",
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "product_type": "Medical Equipment Bundle"
+    },
+    {
+      "id": 7641722814541,
+      "handle": "ultimate-pain-management-system-1",
       "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
       "product_type": "Medical Equipment Bundle"
     },

@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-11-24T13:34:22.196459Z",
+  "timestamp": "2025-12-09T14:55:13.238542Z",
   "criteria": {
     "Metafields Populated (Active Products)": {
       "passed": true,
-      "details": "91/91 active products have metafields (100.0%)"
+      "details": "87/87 active products have metafields (100.0%)"
     },
     "Draft Products Remain Draft": {
       "passed": true,
-      "details": "5 draft products confirmed (not published)"
+      "details": "43 draft products confirmed (not published)"
     },
     "Structured Data Schemas Present": {
       "passed": false,
@@ -39,24 +39,25 @@
     },
     "100% English Only": {
       "passed": true,
-      "details": "91/91 products English. French detected: 0"
+      "details": "87/87 products English. French detected: 0"
     },
     "Bundles Count (1 per persona)": {
       "passed": false,
-      "details": "8 bundles (expected: 14-15 for 8 personas with tiers)"
+      "details": "20 bundles (expected: 14-15 for 8 personas with tiers)"
     },
     "No Duplicate Bundles": {
-      "passed": true,
-      "details": "All bundles unique. Duplicates: 0"
+      "passed": false,
+      "details": "All bundles unique. Duplicates: 5"
     }
   },
   "failures": [
     "Structured Data Schemas Present: Found: Organization, Product, WebSite. Missing: BreadcrumbList",
-    "Bundles Count (1 per persona): 8 bundles (expected: 14-15 for 8 personas with tiers)"
+    "Bundles Count (1 per persona): 20 bundles (expected: 14-15 for 8 personas with tiers)",
+    "No Duplicate Bundles: All bundles unique. Duplicates: 5"
   ],
   "warnings": [
     "og:image tag exists but may be empty or default placeholder"
   ],
-  "score": 10,
+  "score": 9,
   "total_checks": 12
 }

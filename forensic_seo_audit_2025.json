@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-16T03:20:20.861046",
+  "timestamp": "2025-12-09T03:16:07.345101",
   "url": "https://www.alphamedical.shop",
   "criteria": {
     "title_tag": {
@@ -9,9 +9,9 @@
       "optimal_range": "50-60 characters"
     },
     "meta_description": {
-      "status": "ACCEPTABLE",
-      "content": "Professional medical support equipment & orthopedic braces. Knee braces, posture correctors, LED therapy. Free shipping $50+. FDA-compliant.",
-      "length": 140,
+      "status": "PASS",
+      "content": "Shop FDA-compliant orthopedic braces, posture correctors & therapy devices. 30-day money-back guarantee. Free shipping $150+. 10,000+ satisfied customers.",
+      "length": 154,
       "optimal_range": "150-160 characters"
     },
     "html_lang": {
@@ -22,8 +22,8 @@
       "status": "PASS",
       "tags_found": {
         "og:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
-        "og:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
-        "og:image": "http://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200",
+        "og:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials.",
+        "og:image": "http://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712",
         "og:url": "https://www.alphamedical.shop/",
         "og:type": "website",
         "og:site_name": "Alpha Medical Care"
@@ -35,8 +35,8 @@
       "tags_found": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
-        "twitter:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
-        "twitter:image": "https://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200"
+        "twitter:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials.",
+        "twitter:image": "https://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712"
       },
       "count": "4/4"
     },
@@ -93,12 +93,12 @@
     "ai_crawlers": {
       "status": "PASS",
       "crawler_status": {
-        "GPTBot": "ALLOWED",
-        "Claude-Web": "ALLOWED",
-        "Google-Extended": "ALLOWED",
-        "PerplexityBot": "ALLOWED",
-        "CCBot": "ALLOWED",
-        "Applebot-Extended": "ALLOWED"
+        "GPTBot": "IMPLICIT_ALLOW",
+        "Claude-Web": "IMPLICIT_ALLOW",
+        "Google-Extended": "IMPLICIT_ALLOW",
+        "PerplexityBot": "IMPLICIT_ALLOW",
+        "CCBot": "IMPLICIT_ALLOW",
+        "Applebot-Extended": "IMPLICIT_ALLOW"
       },
       "count": "6/6"
     },

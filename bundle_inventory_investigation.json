@@ -1,0 +1,205 @@
+{
+  "total_bundles": 10,
+  "bundles": [
+    {
+      "id": 7620850876493,
+      "title": "Active Athlete & Sports Enthusiast - Complete Care Kit",
+      "handle": "bundle-active-athlete-and-sports-enthusiast",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109693005,
+          "title": "Default Title",
+          "price": "97.93",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620851105869,
+      "title": "Active Athlete - Knee Support Kit - Complete Care Kit",
+      "handle": "bundle-active-athlete-knee-support-kit",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109922381,
+          "title": "Default Title",
+          "price": "112.01",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620851171405,
+      "title": "Beauty & Wellness - Premium Facial Therapy Kit - Complete Care Kit",
+      "handle": "bundle-beauty-and-wellness-premium-facial-therapy-kit",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109987917,
+          "title": "Default Title",
+          "price": "156.06",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620851007565,
+      "title": "Beauty & Wellness Enthusiast - Complete Care Kit",
+      "handle": "bundle-beauty-and-wellness-enthusiast",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109824077,
+          "title": "Default Title",
+          "price": "80.90",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620851040333,
+      "title": "Comprehensive Therapy User - Complete Care Kit",
+      "handle": "bundle-comprehensive-therapy-user",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109856845,
+          "title": "Default Title",
+          "price": "112.83",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620850942029,
+      "title": "Elderly / Mobility Support - Complete Care Kit",
+      "handle": "bundle-elderly-mobility-support",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109758541,
+          "title": "Default Title",
+          "price": "100.93",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620851073101,
+      "title": "Foot Care & Bunion Relief - Complete Care Kit",
+      "handle": "bundle-foot-care-and-bunion-relief",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109889613,
+          "title": "Default Title",
+          "price": "78.38",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620851138637,
+      "title": "Office Worker - Back & Neck Relief Kit - Complete Care Kit",
+      "handle": "bundle-office-worker-back-and-neck-relief-kit",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109955149,
+          "title": "Default Title",
+          "price": "83.42",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620850909261,
+      "title": "Office Worker with Chronic Pain - Complete Care Kit",
+      "handle": "bundle-office-worker-with-chronic-pain",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109725773,
+          "title": "Default Title",
+          "price": "104.65",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    },
+    {
+      "id": 7620850974797,
+      "title": "Post-Injury / Post-Surgery Recovery - Complete Care Kit",
+      "handle": "bundle-post-injury-post-surgery-recovery",
+      "status": "draft",
+      "product_type": "Bundle",
+      "total_inventory": 0,
+      "variants": [
+        {
+          "id": 42412109791309,
+          "title": "Default Title",
+          "price": "112.39",
+          "inventory_quantity": 0,
+          "inventory_management": null,
+          "inventory_policy": "deny"
+        }
+      ],
+      "metafields_count": 0,
+      "images_count": 0
+    }
+  ]
+}

@@ -36,6 +36,8 @@ response = requests.post(
 
 data = response.json()
 
+pixels = []  # Initialize to empty list
+
 if 'errors' in data:
     print(f"❌ API Error: {data['errors']}")
 elif 'data' in data:
@@ -82,10 +84,10 @@ response = requests.post(
 
 data = response.json()
 
+tracking_apps = []  # Initialize to empty list
+
 if 'data' in data:
     apps = data['data']['appInstallations']['edges']
-
-    tracking_apps = []
     for edge in apps:
         app = edge['node']['app']
         if any(keyword in app['title'].lower() for keyword in ['google', 'facebook', 'meta', 'tiktok', 'analytics', 'pixel', 'tag', 'conversion']):
@@ -113,5 +115,5 @@ print(f"  {len(pixels)} pixels configured")
 print("\n⚠️  RECOMMENDATION:")
 print("  Use Chrome DevTools to verify LIVE tracking:")
 print("  1. Open https://alphamedical.shop in Chrome")
-print("  2. F12 → Network tab → Filter: 'google\|facebook\|tiktok'")
+print("  2. F12 → Network tab → Filter: 'google|facebook|tiktok'")
 print("  3. Reload page → Check for tracking requests")

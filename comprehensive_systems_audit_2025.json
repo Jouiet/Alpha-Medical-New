@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-11-16T03:12:01.237859",
+  "timestamp": "2025-12-09T15:55:09.333485",
   "store": "azffej-as.myshopify.com",
   "checks": {
     "bundles_collection": {
       "status": "FAIL"
     },
     "bundle_products": {
-      "status": "PASS",
-      "active": 15,
-      "total": 15,
-      "discount_correct": 15
+      "status": "PARTIAL",
+      "active": 1,
+      "total": 20,
+      "discount_correct": 20
     },
     "bundle_cta_snippets": {
       "bundles-collection-cta.liquid": "EXISTS",
@@ -25,7 +25,7 @@
       "size_kb": 54.78125
     },
     "social_image_script": {
-      "status": "PASS"
+      "status": "FAIL"
     },
     "email_templates": {
       "email-welcome-1.liquid": "MISSING",
@@ -34,12 +34,12 @@
     },
     "test_customers": {
       "status": "PASS",
-      "created_today": 3,
+      "created_today": 5,
       "recent_total": 5
     },
     "loyalty_scripts": {
-      "loyalty_setup.py": "EXISTS",
-      "loyalty_manager.py": "EXISTS",
+      "loyalty_setup.py": "MISSING",
+      "loyalty_manager.py": "MISSING",
       "loyalty_webhooks.gs": "EXISTS",
       "loyalty_redemption_api.gs": "EXISTS"
     },
@@ -81,13 +81,20 @@
     },
     "robots_txt": {
       "status": "PASS",
-      "ai_crawlers_allowed": []
+      "ai_crawlers_allowed": [
+        "GPTBot",
+        "Claude-Web",
+        "Google-Extended",
+        "PerplexityBot",
+        "CCBot",
+        "Applebot-Extended"
+      ]
     },
     "documentation": {
-      "TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md": "EXISTS",
-      "LOYALTY_SYSTEM_SETUP_GUIDE.md": "EXISTS",
-      "ALPHA_MEDICAL_15_BUNDLES_FINAL.md": "EXISTS",
-      "SHOPIFY_FLOW_CONFIGURATION_GUIDE.md": "EXISTS",
+      "TOP5_PERCENT_NATIVE_IMPLEMENTATION_PLAN.md": "MISSING",
+      "LOYALTY_SYSTEM_SETUP_GUIDE.md": "MISSING",
+      "ALPHA_MEDICAL_15_BUNDLES_FINAL.md": "MISSING",
+      "SHOPIFY_FLOW_CONFIGURATION_GUIDE.md": "MISSING",
       "SEO_MARKETING_FORENSIC_ANALYSIS.md": "EXISTS"
     }
   }

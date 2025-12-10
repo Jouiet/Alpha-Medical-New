@@ -1,97 +1,43 @@
 {
-  "total_bundles": 15,
-  "bundles_to_fix": 15,
-  "success_count": 15,
+  "total_bundles": 44,
+  "bundles_to_fix": 6,
+  "success_count": 6,
   "failed_count": 0,
   "results": [
     {
-      "handle": "active-athlete-complete-protection",
-      "variant_id": 42421851684941,
+      "handle": "active-athlete-complete-protection-2",
+      "variant_id": 42500235624525,
       "weight": 1.55,
       "success": true
     },
     {
-      "handle": "active-athlete-knee-specialist",
-      "variant_id": 42421851652173,
+      "handle": "active-athlete-knee-specialist-2",
+      "variant_id": 42500235591757,
       "weight": 0.85,
       "success": true
     },
     {
-      "handle": "beauty-wellness-led-complete",
-      "variant_id": 42421937111117,
-      "weight": 3.84,
+      "handle": "chronic-pain-relief-kit-3",
+      "variant_id": 42500235657293,
+      "weight": 4.05,
       "success": true
     },
     {
-      "handle": "chronic-pain-relief-kit",
-      "variant_id": 42421851750477,
-      "weight": 4.65,
-      "success": true
-    },
-    {
-      "handle": "chronic-pain-starter-kit",
-      "variant_id": 42421851619405,
+      "handle": "chronic-pain-starter-kit-3",
+      "variant_id": 42500235558989,
       "weight": 0.94,
       "success": true
     },
     {
-      "handle": "chronic-pain-whole-body",
-      "variant_id": 42421937012813,
-      "weight": 7.35,
+      "handle": "office-worker-essential-kit-3",
+      "variant_id": 42500235493453,
+      "weight": 1.53,
       "success": true
     },
     {
-      "handle": "manual-labor-heavy-duty",
-      "variant_id": 42421937045581,
-      "weight": 3.84,
-      "success": true
-    },
-    {
-      "handle": "office-worker-advanced-ergonomic",
-      "variant_id": 42421936947277,
-      "weight": 2.53,
-      "success": true
-    },
-    {
-      "handle": "office-worker-essential-kit",
-      "variant_id": 42421851553869,
-      "weight": 1.87,
-      "success": true
-    },
-    {
-      "handle": "office-worker-premium-workspace",
-      "variant_id": 42421936980045,
-      "weight": 3.1,
-      "success": true
-    },
-    {
-      "handle": "post-surgery-recovery-complete",
-      "variant_id": 42421936881741,
-      "weight": 5.02,
-      "success": true
-    },
-    {
-      "handle": "rehab-stroke-recovery",
-      "variant_id": 42421937078349,
-      "weight": 4.1,
-      "success": true
-    },
-    {
-      "handle": "senior-advanced-arthritis",
-      "variant_id": 42421937143885,
-      "weight": 1.81,
-      "success": true
-    },
-    {
-      "handle": "senior-mobility-support",
-      "variant_id": 42421851586637,
+      "handle": "senior-mobility-support-3",
+      "variant_id": 42500235526221,
       "weight": 1.57,
-      "success": true
-    },
-    {
-      "handle": "ultimate-pain-management-system",
-      "variant_id": 42421936914509,
-      "weight": 6.67,
       "success": true
     }
   ]

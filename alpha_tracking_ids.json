@@ -2,6 +2,9 @@
   "store": "Alpha Medical",
   "url": "https://www.alphamedical.shop",
   "tracking_ids": {
+    "GTM": [
+      "GTM-WFPH2KZP"
+    ],
     "GA4_GT": [
       "GT-NC6L8G55"
     ],

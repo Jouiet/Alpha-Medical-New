@@ -1,0 +1,1226 @@
+{
+  "total_scripts": 347,
+  "duplications": [
+    {
+      "type": "verify_product",
+      "count": 10,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/audits/verify_product_matrix_forensic.py",
+          "apis": [],
+          "keywords": [
+            "forensique",
+            "product",
+            "matrix",
+            "verification",
+            "rigorous",
+            "factual",
+            "verification",
+            "verification",
+            "products",
+            "present"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "forensique",
+            "verification",
+            "verify",
+            "actually",
+            "worked",
+            "shopify",
+            "product",
+            "individually",
+            "report",
+            "compare"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_english_sample_products.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "forensique",
+            "sample",
+            "products",
+            "manual",
+            "verification",
+            "display",
+            "random",
+            "products",
+            "manual",
+            "review"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_collections_products.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verify",
+            "collections",
+            "product",
+            "counts",
+            "shopify",
+            "identify",
+            "collections",
+            "product",
+            "assignment"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_products_actual_french_content.py",
+          "apis": [],
+          "keywords": [
+            "forensic",
+            "actual",
+            "french",
+            "content",
+            "detection",
+            "detect",
+            "french",
+            "english"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_products_language_english_only.py",
+          "apis": [],
+          "keywords": [
+            "forensic",
+            "english",
+            "language",
+            "verification",
+            "verify",
+            "product",
+            "french",
+            "content",
+            "single",
+            "product"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_draft_products_status.py",
+          "apis": [],
+          "keywords": [
+            "forensic",
+            "products",
+            "security",
+            "verify",
+            "products",
+            "accessible"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_product_type_fix.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "forensique",
+            "verification",
+            "verify",
+            "factually",
+            "products",
+            "products",
+            "shopify",
+            "product",
+            "individually",
+            "report"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_products.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "script",
+            "v\u00e9rification",
+            "produits",
+            "shopify",
+            "v\u00e9rifie",
+            "produits",
+            "optimis\u00e9s"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_products_metafields_api.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verify",
+            "products",
+            "metafields",
+            "working",
+            "credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fix_bundle",
+      "count": 6,
+      "scripts": [
+        {
+          "script": "./scripts/maintenance/fixes/fix_bundle_metafields.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "metafields",
+            "bundles",
+            "bundles",
+            "without",
+            "metafields"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_bundle_weights.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "weights",
+            "calculate",
+            "realistic",
+            "weights",
+            "bundles",
+            "bundles",
+            "weight",
+            "calculate",
+            "weight"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_bundle_pricing_to_35_percent.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "pricing",
+            "medical",
+            "update",
+            "bundle",
+            "prices",
+            "fournisseur",
+            "chiffre",
+            "compare",
+            "current"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_bundle_pricing_rest_api.py",
+          "apis": [],
+          "keywords": [
+            "bundle",
+            "pricing",
+            "medical",
+            "update",
+            "bundle",
+            "prices",
+            "fournisseur",
+            "chiffre",
+            "compare",
+            "reliable"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_bundle_inventory_management.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "inventory",
+            "management",
+            "inventory",
+            "tracking",
+            "shopify",
+            "bundles",
+            "bundle",
+            "variants",
+            "script"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_bundle_images.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "images",
+            "upload",
+            "product",
+            "images",
+            "bundles",
+            "bundles",
+            "images",
+            "extract",
+            "product"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "verify_collection",
+      "count": 5,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/verification/verify_collection_fixes.py",
+          "apis": [],
+          "keywords": [
+            "verify",
+            "products",
+            "correct",
+            "collections"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_all_collections_status.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "v\u00e9rification",
+            "toutes",
+            "collections",
+            "statut",
+            "publication"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_collection_duplicates.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "v\u00e9rification",
+            "exhaustive",
+            "doublons",
+            "produits",
+            "collections"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_collections_handles.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verify",
+            "collections",
+            "handles",
+            "medical",
+            "collection",
+            "handles"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_collection_fix.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verify",
+            "collection",
+            "assignments",
+            "products"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "deploy_bundle",
+      "count": 5,
+      "scripts": [
+        {
+          "script": "./scripts/deployment/deploy_bundle_builder.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "builder",
+            "deployment",
+            "medical",
+            "native",
+            "shopify",
+            "implementation",
+            "creates",
+            "shortcuts",
+            "complete"
+          ]
+        },
+        {
+          "script": "./scripts/deployment/deploy_bundles_cta.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "deployment",
+            "bundles",
+            "banner",
+            "uploads",
+            "snippet",
+            "shopify"
+          ]
+        },
+        {
+          "script": "./scripts/deployment/deploy_bundle_combined.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "builder",
+            "combined",
+            "deployment",
+            "script",
+            "d\u00e9ploie",
+            "version",
+            "unifi\u00e9e",
+            "recherche"
+          ]
+        },
+        {
+          "script": "./scripts/deployment/deploy_bundles_page.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "medical",
+            "bundles",
+            "deployment",
+            "deploys",
+            "bundles",
+            "collection",
+            "filters",
+            "shopify"
+          ]
+        },
+        {
+          "script": "./scripts/deployment/deploy_bundler_cleanup.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "deploy",
+            "bundler",
+            "cleanup",
+            "medical",
+            "uploads",
+            "cleaned"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "audit_bundle",
+      "count": 4,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/audits/audit_bundles_missing_images.py",
+          "apis": [],
+          "keywords": [
+            "bundle",
+            "script",
+            "identifies",
+            "bundles",
+            "missing",
+            "images",
+            "critical",
+            "v\u00e9rification",
+            "factuelle",
+            "bundles"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/audits/final_audit_bundle_images_display.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "images",
+            "display",
+            "verification",
+            "v\u00e9rification",
+            "bundles",
+            "multiple",
+            "images",
+            "verify",
+            "images"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/audits/audit_bundle_pages_display.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "display",
+            "verify",
+            "product",
+            "display",
+            "bundle",
+            "probl\u00e8me",
+            "bundle",
+            "individual",
+            "product"
+          ]
+        },
+        {
+          "script": "./scripts/features/bundles/final_bundle_audit.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "bundle",
+            "comprehensive",
+            "verification",
+            "verification",
+            "bundles",
+            "bundles",
+            "bundles",
+            "weight",
+            "claude"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fix_collection",
+      "count": 4,
+      "scripts": [
+        {
+          "script": "./scripts/maintenance/fixes/fix_collection_assignments.py",
+          "apis": [],
+          "keywords": [
+            "misplaced",
+            "products",
+            "medical",
+            "shopify",
+            "collections",
+            "forensic",
+            "results"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_collections_descriptions.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "collection",
+            "descriptions",
+            "bestsellers",
+            "arrivals",
+            "content"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_collections_missing_images.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "collections",
+            "missing",
+            "images",
+            "session",
+            "programmatic",
+            "collections",
+            "without",
+            "complete",
+            "medical",
+            "equipment"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_missing_collections.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "missing",
+            "collections",
+            "specific",
+            "products",
+            "medical",
+            "products",
+            "status"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "create_bundle",
+      "count": 4,
+      "scripts": [
+        {
+          "script": "./scripts/automation/creation/create_remaining_9_bundles.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "medical",
+            "create",
+            "remaining",
+            "bundles",
+            "completes",
+            "bundles",
+            "system",
+            "discount",
+            "strategy",
+            "henderson"
+          ]
+        },
+        {
+          "script": "./scripts/automation/creation/create_bundle_creation_page.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "create",
+            "bundle",
+            "creation",
+            "medical",
+            "deploys",
+            "bundle",
+            "builder",
+            "templates",
+            "shopify",
+            "create"
+          ]
+        },
+        {
+          "script": "./scripts/automation/creation/create_optimal_bundles.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "create",
+            "optimal",
+            "native",
+            "bundles",
+            "medical",
+            "personas",
+            "identified",
+            "analysis",
+            "bundles",
+            "optimal"
+          ]
+        },
+        {
+          "script": "./scripts/automation/creation/create_15_bundles_final.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "medical",
+            "create",
+            "bundles",
+            "discount",
+            "strategy",
+            "henderson",
+            "adapted"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sync_lead",
+      "count": 3,
+      "scripts": [
+        {
+          "script": "./sync_facebook_leads_to_sheet.py",
+          "apis": [
+            "google_sheets",
+            "google_ads",
+            "facebook"
+          ],
+          "keywords": [
+            "facebook",
+            "google",
+            "facebook",
+            "google",
+            "centralis\u00e9",
+            "connect",
+            "facebook",
+            "marketing",
+            "specified",
+            "custom"
+          ]
+        },
+        {
+          "script": "./market-analysis/sync_leads_to_sheets.py",
+          "apis": [
+            "google_sheets"
+          ],
+          "keywords": [
+            "google",
+            "sheets",
+            "prevents",
+            "duplicates",
+            "automatically",
+            "maintains",
+            "header",
+            "structure",
+            "quality",
+            "install"
+          ]
+        },
+        {
+          "script": "./market-analysis/sync_leads_to_sheets_old.py",
+          "apis": [
+            "google_sheets"
+          ],
+          "keywords": [
+            "google",
+            "sheets",
+            "external",
+            "python",
+            "google",
+            "sheets",
+            "install",
+            "gspread",
+            "create",
+            "google"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "verify_klaviyo",
+      "count": 3,
+      "scripts": [
+        {
+          "script": "./market-analysis/verify_klaviyo_status.py",
+          "apis": [
+            "klaviyo"
+          ],
+          "keywords": [
+            "verify",
+            "klaviyo",
+            "integration",
+            "status",
+            "factual",
+            "verification"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verify_klaviyo_flows_live.py",
+          "apis": [
+            "klaviyo"
+          ],
+          "keywords": [
+            "klaviyo",
+            "empirical",
+            "verification",
+            "session",
+            "verify",
+            "klaviyo",
+            "actually",
+            "account",
+            "klaviyo",
+            "direct"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verify_klaviyo_flows_empirical.py",
+          "apis": [
+            "klaviyo"
+          ],
+          "keywords": [
+            "klaviyo",
+            "empirical",
+            "verification",
+            "verify",
+            "klaviyo",
+            "actions",
+            "direct",
+            "klaviyo",
+            "bullshit",
+            "verification"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "verify_flow",
+      "count": 3,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/verify_shopify_flow_status.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "shopify",
+            "status",
+            "verification",
+            "factual",
+            "v\u00e9rifie",
+            "shopify",
+            "workflows",
+            "graphql",
+            "factuelle",
+            "identifie"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_flow_execution.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verify",
+            "execution",
+            "medical",
+            "welcome",
+            "series",
+            "executed",
+            "customer"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_n8n_workflow.py",
+          "apis": [
+            "n8n"
+          ],
+          "keywords": [
+            "verify",
+            "workflow",
+            "status"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "audit_seo",
+      "count": 3,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/audits/exhaustive_seo_meta_audit_2025.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "exhaustive",
+            "factual",
+            "verification",
+            "criteria",
+            "verified",
+            "criteria",
+            "schemas",
+            "twitter",
+            "crawlers",
+            "sitemap"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/audits/forensic_seo_audit_2025.py",
+          "apis": [],
+          "keywords": [
+            "forensic",
+            "medical",
+            "verification",
+            "criteria",
+            "assumptions",
+            "verifiable"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/audits/audit_seo_complete.py",
+          "apis": [],
+          "keywords": [
+            "complet",
+            "medical",
+            "v\u00e9rification",
+            "factuelle",
+            "rigoureuse",
+            "crit\u00e8res",
+            "crit\u00e8res",
+            "description",
+            "completeness",
+            "twitter"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fix_product",
+      "count": 3,
+      "scripts": [
+        {
+          "script": "./scripts/maintenance/fixes/fix_product_seo_metafields.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "product",
+            "missing",
+            "descriptions",
+            "products",
+            "missing",
+            "descriptions"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_product_type_coherence.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "coherence",
+            "hunchback",
+            "orthotic",
+            "posture",
+            "should",
+            "posture"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_missing_product_types.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "missing",
+            "critical",
+            "google",
+            "merchant",
+            "center",
+            "products",
+            "missing"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sync_form",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./sync_shopify_forms_to_sheet.py",
+          "apis": [
+            "shopify",
+            "google_sheets",
+            "google_ads"
+          ],
+          "keywords": [
+            "shopify",
+            "google",
+            "submissions",
+            "shopify",
+            "google",
+            "centralis\u00e9",
+            "shopify",
+            "native",
+            "submissions",
+            "shopify"
+          ]
+        },
+        {
+          "script": "./scripts/data/sync_typeform_to_sheet.py",
+          "apis": [
+            "google_sheets",
+            "google_ads"
+          ],
+          "keywords": [
+            "typeform",
+            "contest",
+            "responses",
+            "google",
+            "integration",
+            "fetches",
+            "contest",
+            "responses",
+            "typeform",
+            "appends"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "audit_product",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/audits/audit_bundle_product_count.py",
+          "apis": [],
+          "keywords": [
+            "bundle",
+            "product",
+            "critical",
+            "compliance",
+            "bundles",
+            "doivent",
+            "produits",
+            "maximum",
+            "bundle",
+            "d\u00e9passer"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/audits/audit_all_products_metafields.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "complet",
+            "produits",
+            "actifs",
+            "v\u00e9rification",
+            "factuelle",
+            "rigoureuse",
+            "metafields",
+            "chaque",
+            "produit",
+            "crit\u00e8res"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "check_product",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/checks/check_special_offers_products.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "v\u00e9rification",
+            "produits",
+            "special",
+            "offers",
+            "suppression",
+            "collection",
+            "principale"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/checks/check_product_template_integration.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "product",
+            "template",
+            "integration",
+            "verify",
+            "snippet",
+            "integrated",
+            "product",
+            "template"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "verify_loyalty",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/verification/verify_loyalty_discount_codes.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verify",
+            "loyalty",
+            "discount",
+            "checks",
+            "loyalty",
+            "discount",
+            "configured",
+            "correctly"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_loyalty_snippet_deployment.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "deployment",
+            "status",
+            "verify",
+            "loyalty",
+            "snippet",
+            "deployed",
+            "shopify",
+            "integrated",
+            "account",
+            "template"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "verify_bundle",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/analysis/verification/verify_15_bundles_factual.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "verification",
+            "factuelle",
+            "bundles",
+            "shopify",
+            "rigoureux",
+            "confirmer",
+            "bundles",
+            "existent"
+          ]
+        },
+        {
+          "script": "./scripts/analysis/verification/verify_bundle_pricing.py",
+          "apis": [],
+          "keywords": [
+            "verify",
+            "bundle",
+            "pricing",
+            "medical",
+            "factual",
+            "verification",
+            "bundle",
+            "pricing",
+            "compliance",
+            "fournisseur"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "test_flow",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/tests/test_welcome_flow.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "create",
+            "customer",
+            "verify",
+            "welcome",
+            "series",
+            "shopify"
+          ]
+        },
+        {
+          "script": "./scripts/tests/test_shopify_flow_customer.py",
+          "apis": [
+            "shopify"
+          ],
+          "keywords": [
+            "create",
+            "customer",
+            "shopify",
+            "welcome",
+            "series",
+            "workflow",
+            "triggers",
+            "correctly"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fix_flow",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/maintenance/fixes/fix_n8n_workflow_activation.py",
+          "apis": [
+            "n8n"
+          ],
+          "keywords": [
+            "processing",
+            "workflow",
+            "activation",
+            "assigning",
+            "credentials"
+          ]
+        },
+        {
+          "script": "./scripts/maintenance/fixes/fix_workflow_config_dest_folder.py",
+          "apis": [
+            "n8n"
+          ],
+          "keywords": [
+            "workflow",
+            "configuration"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "analyze_email",
+      "count": 2,
+      "scripts": [
+        {
+          "script": "./scripts/analytics/analyze_pre_launch_email_feasibility.py",
+          "apis": [],
+          "keywords": [
+            "database",
+            "feasibility",
+            "analysis",
+            "factual",
+            "qualified",
+            "lancement",
+            "devons",
+            "donn\u00e9e",
+            "segment\u00e9e",
+            "minimum"
+          ]
+        },
+        {
+          "script": "./scripts/analytics/analyze_email_automation_gaps.py",
+          "apis": [],
+          "keywords": [
+            "automation",
+            "analysis",
+            "identify",
+            "missing",
+            "practices",
+            "current",
+            "shopify",
+            "automations",
+            "actives",
+            "shopify"
+          ]
+        }
+      ]
+    }
+  ],
+  "obsolete_scripts": [
+    "./audit_forensic_complete_v2.py",
+    "./market-analysis/sync_leads_to_sheets_old.py",
+    "./scripts/analysis/audits/verify_english_only_forensic_v2.py",
+    "./scripts/analysis/verification/verify_test_customer.py",
+    "./scripts/uncategorized/powerbi_connection_test.py",
+    "./scripts/uncategorized/monitor_clean_test.py",
+    "./scripts/automation/creation/create_test_customer_rest.py",
+    "./scripts/automation/creation/create_test_customer_flow.py"
+  ],
+  "total_redundant": 49
+}

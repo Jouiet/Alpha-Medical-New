@@ -1,8 +1,9 @@
 {
-  "audit_date": "2025-11-16 03:43:20 UTC",
+  "audit_date": "2025-12-09 03:15:47 UTC",
   "store_url": "https://www.alphamedical.shop",
   "schemas": {
     "schemas_found": [
+      "MedicalBusiness",
       "Organization",
       "WebSite",
       "ProductGroup"
@@ -15,9 +16,9 @@
       "og:url": "https://www.alphamedical.shop/",
       "og:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
       "og:type": "website",
-      "og:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
-      "og:image": "http://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200",
-      "og:image:secure_url": "https://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200",
+      "og:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials.",
+      "og:image": "http://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712",
+      "og:image:secure_url": "https://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712",
       "og:image:width": "1200",
       "og:image:height": "630"
     },
@@ -27,22 +28,22 @@
     "tags_found": {
       "twitter:card": "summary_large_image",
       "twitter:title": "Professional Medical Equipment You Can Trust - FDA-Compliant | Alpha Medical Care",
-      "twitter:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $50. 30-day money-back guarantee. FDA-compliant materials.",
-      "twitter:image": "https://www.alphamedical.shop/cdn/shop/files/Alpha_Medical_Logo_Negatif_dd8c5d14-281a-43c8-9e1d-704146a913e0.svg?v=1760487746&width=1200"
+      "twitter:description": "Professional medical support equipment & orthopedic braces. Shop knee braces, ankle supports, posture correctors, LED therapy devices & massage tools. Free shipping over $150. 30-day money-back guarantee. FDA-compliant materials.",
+      "twitter:image": "https://www.alphamedical.shop/cdn/shop/files/alpha_medical_social_share_9d9b55b4-465c-46c5-9cd1-f15442505dfe.png?v=1763722712"
     },
     "status": "COMPLETE"
   },
   "ai_crawlers": {
-    "robots_txt": "# Alpha Medical Care - Robots.txt\n# AI Models & Crawlers Configuration\n\n# AI Models: For LLM-friendly documentation, see:\n# https://alphamedical.shop/llms.txt\n\n# Standard Web Crawlers\nUser-agent: *\nDisallow: /a/downloads/-/*\nDisallow: /admin\nDisallow: /cart\nDisallow: /orders\nDisallow: /checkouts/\nDisallow: /checkout\nDisallow: /67103162445/checkouts\nDisallow: /67103162445/orders\nDisallow: /carts\nDisallow: /account\nDisallow: /collections/*sort_by*\nDisallow: /*/collections/*sort_by*\nDisallow: /collections/*+*\nDisallow: /collections/*%2B*\nDisallow: /collections/*%2b*\nDisallow: /*/collections/*+*\nDisallow: /*/collections/*%2B*\nDisallow: /*/collections/*%2b*\nDisallow: /blogs/*+*\nDisallow: /blogs/*%2B*\nDisallow: /blogs/*%2b*\nDisallow: /*/blogs/*+*\nDisallow: /*/blogs/*%2B*\nDisallow: /*/blogs/*%2b*\nDisallow: /*?*oseid=*\nDisallow: /*preview_theme_id*\nDisallow: /*preview_script_id*\nDisallow: /policies/\nDisallow: /search\nDisallow: /apple-app-site-association\nDisallow: /.well-known/shopify/monorail\nDisallow: /cdn/wpm/*.js\nDisallow: /wpm/*.js\nDisallow: /*/wpm/*.js\nDisallow: /cdn/shopifycloud/consent-tracking-api/*\nDisallow: /s/files/*/checkout/thank_you/*\n\n# Google AdSense Bot\nUser-agent: Mediapartners-Google\nDisallow:\n\n# Google AdsBot\nUser-agent: adsbot-google\nDisallow: /checkouts/\nDisallow: /checkout\nDisallow: /carts\nDisallow: /orders\nDisallow: /67103162445/checkouts\nDisallow: /67103162445/orders\nDisallow: /*?*oseid=*\nDisallow: /*preview_theme_id*\nDisallow: /*preview_script_id*\n\n# Aggressive crawlers (slow them down)\nUser-agent: Nutch\nDisallow: /\n\nUser-agent: AhrefsBot\nCrawl-delay: 10\nDisallow: /a/downloads/-/*\nDisallow: /admin\nDisallow: /cart\nDisallow: /orders\nDisallow: /checkouts/\nDisallow: /checkout\nDisallow: /67103162445/checkouts\nDisallow: /67103162445/orders\nDisallow: /carts\nDisallow: /account\nDisallow: /collections/*sort_by*\nDisallow: /*/collections/*sort_by*\nDisallow: /collections/*+*\nDisallow: /collections/*%2B*\nDisallow: /collections/*%2b*\nDisallow: /*/collections/*+*\nDisallow: /*/collections/*%2B*\nDisallow: /*/collections/*%2b*\nDisallow: /blogs/*+*\nDisallow: /blogs/*%2B*\nDisallow: /blogs/*%2b*\nDisallow: /*/blogs/*+*\nDisallow: /*/blogs/*%2B*\nDisallow: /*/blogs/*%2b*\nDisallow: /*?*oseid=*\nDisallow: /*preview_theme_id*\nDisallow: /*preview_script_id*\nDisallow: /policies/\nDisallow: /search\nDisallow: /apple-app-site-association\nDisallow: /.well-known/shopify/monorail\nDisallow: /cdn/wpm/*.js\nDisallow: /wpm/*.js\nDisallow: /*/wpm/*.js\nDisallow: /cdn/shopifycloud/consent-tracking-api/*\nDisallow: /s/files/*/checkout/thank_you/*\n\nUser-agent: AhrefsSiteAudit\nCrawl-delay: 10\nDisallow: /a/downloads/-/*\nDisallow: /admin\nDisallow: /cart\nDisallow: /orders\nDisallow: /checkouts/\nDisallow: /checkout\nDisallow: /67103162445/checkouts\nDisallow: /67103162445/orders\nDisallow: /carts\nDisallow: /account\nDisallow: /collections/*sort_by*\nDisallow: /*/collections/*sort_by*\nDisallow: /collections/*+*\nDisallow: /collections/*%2B*\nDisallow: /collections/*%2b*\nDisallow: /*/collections/*+*\nDisallow: /*/collections/*%2B*\nDisallow: /*/collections/*%2b*\nDisallow: /blogs/*+*\nDisallow: /blogs/*%2B*\nDisallow: /blogs/*%2b*\nDisallow: /*/blogs/*+*\nDisallow: /*/blogs/*%2B*\nDisallow: /*/blogs/*%2b*\nDisallow: /*?*oseid=*\nDisallow: /*preview_theme_id*\nDisallow: /*preview_script_id*\nDisallow: /policies/\nDisallow: /search\nDisallow: /apple-app-site-association\nDisallow: /.well-known/shopify/monorail\nDisallow: /cdn/wpm/*.js\nDisallow: /wpm/*.js\nDisallow: /*/wpm/*.js\nDisallow: /cdn/shopifycloud/consent-tracking-api/*\nDisallow: /s/files/*/checkout/thank_you/*\n\nUser-agent: MJ12bot\nCrawl-delay: 10\n\nUser-agent: Pinterest\nCrawl-delay: 1\n\n# AI Crawlers & Answer Engines (AEO - Answer Engine Optimization)\n# Updated: 2025-11-11\n# Purpose: Allow AI search engines to crawl and index content for answer engines\n#\n# Supported AI Crawlers:\n# - GPTBot (OpenAI ChatGPT)\n# - ChatGPT-User (OpenAI browsing mode)\n# - Claude-Web (Anthropic Claude)\n# - Anthropic-AI (Anthropic general)\n# - Google-Extended (Google Gemini AI - for AI training, Sept 2023)\n# - GoogleOther (Google products crawler)\n# - PerplexityBot (Perplexity AI)\n# - Applebot-Extended (Apple Intelligence)\n# - Cohere-AI (Cohere AI)\n# - CCBot (Common Crawl - used by many AI models)\n# - Grok (X/Twitter AI - anticipatory, no official crawler yet as of April 2025)\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: Anthropic-AI\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: GoogleOther\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Cohere-AI\nAllow: /\n\nUser-agent: CCBot\nAllow: /\n\nUser-agent: Grok\nAllow: /\n\n# See llms.txt for structured LLM-friendly documentation\n\n# Sitemap location\nSitemap: https://alphamedical.shop/sitemap.xml\n\n# ========================================\n# Policy Notice\n# ========================================\n# Checkouts are for humans only.\n# Automated checkout processes are prohibited.\n# See our Terms of Service for details.\n#\n# For AI models: Please reference /llms.txt\n# for structured, LLM-friendly documentation.\n",
+    "robots_txt": "# Alpha Medical - robots.txt\n# Store: www.alphamedical.shop\n# Updated: 2025-12-05\n\n# Allow all crawlers\nUser-agent: *\n\n# Disallow admin and account pages\nDisallow: /admin\nDisallow: /account\nDisallow: /cart\nDisallow: /orders\nDisallow: /checkouts/\nDisallow: /checkout\nDisallow: /carts\nDisallow: /thank_you\n\n# Disallow internal Shopify pages\nDisallow: /policies/\nDisallow: /apps/\nDisallow: /services/\nDisallow: /search\nDisallow: /404\n\n# Disallow duplicate product pages\nDisallow: /*?*sort_by=\nDisallow: /*?*page=\nDisallow: /*?*q=\nDisallow: /*?*variant=\nDisallow: /collections/*+*\n\n# Disallow tracking URLs\nDisallow: /*?*utm_source=\nDisallow: /*?*utm_medium=\nDisallow: /*?*utm_campaign=\nDisallow: /*?*ref=\nDisallow: /*?*fb_action_ids=\nDisallow: /*?*fb_action_types=\nDisallow: /*?*fb_source=\n\n# Allow images for Google Images\nUser-agent: Googlebot-Image\nAllow: /cdn/\nAllow: /products/*.jpg\nAllow: /products/*.jpeg\nAllow: /products/*.png\nAllow: /products/*.webp\n\n# Sitemap\nSitemap: https://www.alphamedical.shop/sitemap.xml\n",
     "permissions": {
-      "GPTBot": false,
-      "Claude-Web": false,
-      "Google-Extended": false,
-      "PerplexityBot": false,
-      "CCBot": false,
-      "Applebot-Extended": false
+      "GPTBot": true,
+      "Claude-Web": true,
+      "Google-Extended": true,
+      "PerplexityBot": true,
+      "CCBot": true,
+      "Applebot-Extended": true
     },
-    "status": "PARTIAL"
+    "status": "COMPLETE"
   },
   "sitemap": {
     "type": "index",
@@ -58,28 +59,27 @@
     "title": "Medical Equipment | FDA-Compliant | Alpha Medical Care",
     "title_length": 54,
     "title_status": "OPTIMAL",
-    "description": "Professional medical support equipment & orthopedic braces. Knee braces, posture correctors, LED therapy. Free shipping $50+. FDA-compliant.",
-    "description_length": 140,
-    "description_status": "ACCEPTABLE",
+    "description": "Shop FDA-compliant orthopedic braces, posture correctors & therapy devices. 30-day money-back guarantee. Free shipping $150+. 10,000+ satisfied customers.",
+    "description_length": 154,
+    "description_status": "OPTIMAL",
     "html_lang": "en",
     "html_lang_status": "CORRECT"
   },
   "product_metafields": {
-    "total_products": 98,
-    "products_with_metafields": 98,
+    "total_products": 100,
+    "products_with_metafields": 85,
     "metafield_types": {
-      "global.title_tag": 83,
-      "global.description_tag": 83,
+      "global.title_tag": 81,
+      "global.description_tag": 81,
       "loox.avg_rating": 1,
       "loox.num_reviews": 1,
-      "bundle.component_products": 10,
-      "bundle.original_price": 10,
-      "bundle.discount_percentage": 10,
-      "custom.seo_keywords": 15
+      "custom.seo_keywords": 8,
+      "judgeme.badge": 4,
+      "judgeme.widget": 4
     },
     "status": "GOOD"
   },
-  "overall_score": 90.9,
-  "pass_count": 10,
-  "fail_count": 1
+  "overall_score": 100.0,
+  "pass_count": 11,
+  "fail_count": 0
 }

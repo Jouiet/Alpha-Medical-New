@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-26T22:47:36.683623",
+  "timestamp": "2025-12-09T16:03:29.192904",
   "store_url": "https://www.alphamedical.shop",
   "api_version": "2025-10",
   "results": {
@@ -61,30 +61,12 @@
       "status": "\u26a0\ufe0f PARTIAL"
     },
     "ai_crawlers": {
-      "mentioned": {
-        "GPTBot": true,
-        "ChatGPT-User": true,
-        "Claude-Web": true,
-        "Google-Extended": true,
-        "PerplexityBot": true,
-        "CCBot": true,
-        "Applebot-Extended": true,
-        "Cohere-AI": true
-      },
-      "allowed": [
-        "GPTBot",
-        "ChatGPT-User",
-        "Claude-Web",
-        "Google-Extended",
-        "PerplexityBot",
-        "CCBot",
-        "Applebot-Extended",
-        "Cohere-AI"
-      ],
-      "count_allowed": 8,
+      "mentioned": {},
+      "allowed": [],
+      "count_allowed": 0,
       "count_total": 8,
-      "llms_txt_reference": true,
-      "status": "\u2705 PASS"
+      "llms_txt_reference": false,
+      "status": "\u26a0\ufe0f PARTIAL"
     },
     "sitemap": {
       "accessible": true,
@@ -101,9 +83,9 @@
       "status": "\u2705 PASS"
     },
     "products": {
-      "total_active": 91,
-      "with_metafields": 83,
-      "compliance_rate": 91.20879120879121,
+      "total_active": 88,
+      "with_metafields": 81,
+      "compliance_rate": 92.04545454545455,
       "status": "\u26a0\ufe0f PARTIAL"
     },
     "collections": {
@@ -119,8 +101,8 @@
         "status": "\u2705 PASS"
       },
       "robots_txt": {
-        "accessible": true,
-        "status": "\u2705 PASS"
+        "accessible": false,
+        "status": "\u274c FAIL"
       }
     },
     "summary": {
@@ -130,17 +112,17 @@
         "Open Graph Complete": true,
         "Twitter Cards Complete": true,
         "Schemas Present": false,
-        "AI Crawlers (\u22656)": true,
+        "AI Crawlers (\u22656)": false,
         "Sitemap Accessible": true,
         "SSL/HTTPS Perfect": true,
         "Products Metafields (100%)": false,
         "Collections Descriptions (\u226575%)": true,
         "llms.txt Page": true
       },
-      "passed": 9,
+      "passed": 8,
       "total": 11,
-      "score": 81.81818181818183,
-      "grade": "B"
+      "score": 72.72727272727273,
+      "grade": "C"
     }
   }
 }

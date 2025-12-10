@@ -1,7 +1,7 @@
 {
   "timestamp": "2025-11-20",
-  "total_products": 96,
-  "valid_products": 96,
+  "total_products": 130,
+  "valid_products": 130,
   "success_rate": 100.0,
   "verification_method": "Fresh API fetch + individual product audit"
 }

@@ -1,0 +1,638 @@
+{
+  "date": "2025-12-09T15:48:53.936068",
+  "current_scripts": 266,
+  "scripts_to_eliminate": 57,
+  "reduction_percentage": 21.428571428571427,
+  "keep_recommendations": [
+    {
+      "group": "verify_product",
+      "keep": "./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/verification/verify_english_sample_products.py",
+        "./scripts/analysis/verification/verify_products_actual_french_content.py",
+        "./scripts/analysis/verification/verify_draft_products_status.py",
+        "./scripts/analysis/verification/verify_product_type_fix.py",
+        "./scripts/analysis/verification/verify_products_metafields_api.py",
+        "./scripts/analysis/verification/verify_products.py",
+        "./scripts/analysis/audits/verify_product_matrix_forensic.py",
+        "./scripts/analysis/verification/verify_products_language_english_only.py",
+        "./scripts/analysis/verification/verify_collections_products.py"
+      ],
+      "eliminate_count": 9
+    },
+    {
+      "group": "fix_bundle",
+      "keep": "./scripts/maintenance/fixes/fix_bundle_weights.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/maintenance/fixes/fix_bundle_pricing_to_35_percent.py",
+        "./scripts/maintenance/fixes/fix_bundle_pricing_rest_api.py",
+        "./scripts/maintenance/fixes/fix_bundle_inventory_management.py",
+        "./scripts/maintenance/fixes/fix_bundle_metafields.py",
+        "./scripts/maintenance/fixes/fix_bundle_images.py"
+      ],
+      "eliminate_count": 5
+    },
+    {
+      "group": "verify_collection",
+      "keep": "./scripts/analysis/verification/verify_collection_duplicates.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/verification/verify_all_collections_status.py",
+        "./scripts/analysis/verification/verify_collection_fixes.py",
+        "./scripts/analysis/verification/verify_collection_fix.py",
+        "./scripts/analysis/verification/verify_collections_handles.py"
+      ],
+      "eliminate_count": 4
+    },
+    {
+      "group": "deploy_bundle",
+      "keep": "./scripts/deployment/deploy_bundle_builder.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/deployment/deploy_bundle_combined.py",
+        "./scripts/deployment/deploy_bundles_page.py",
+        "./scripts/deployment/deploy_bundles_cta.py",
+        "./scripts/deployment/deploy_bundler_cleanup.py"
+      ],
+      "eliminate_count": 4
+    },
+    {
+      "group": "audit_bundle",
+      "keep": "./scripts/analysis/audits/final_audit_bundle_images_display.py",
+      "keep_score": -25,
+      "keep_status": "CODE_ERROR",
+      "eliminate": [
+        "./scripts/features/bundles/final_bundle_audit.py",
+        "./scripts/analysis/audits/audit_bundles_missing_images.py",
+        "./scripts/analysis/audits/audit_bundle_pages_display.py"
+      ],
+      "eliminate_count": 3
+    },
+    {
+      "group": "fix_collection",
+      "keep": "./scripts/maintenance/fixes/fix_collections_descriptions.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/maintenance/fixes/fix_collections_missing_images.py",
+        "./scripts/maintenance/fixes/fix_collection_assignments.py",
+        "./scripts/maintenance/fixes/fix_missing_collections.py"
+      ],
+      "eliminate_count": 3
+    },
+    {
+      "group": "create_bundle",
+      "keep": "./scripts/automation/creation/create_15_bundles_final.py",
+      "keep_score": 125,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/automation/creation/create_remaining_9_bundles.py",
+        "./scripts/automation/creation/create_bundle_creation_page.py",
+        "./scripts/automation/creation/create_optimal_bundles.py"
+      ],
+      "eliminate_count": 3
+    },
+    {
+      "group": "sync_lead",
+      "keep": "./sync_facebook_leads_to_sheet.py",
+      "keep_score": 100,
+      "keep_status": "CLI_TOOL",
+      "eliminate": [
+        "./market-analysis/sync_leads_to_sheets.py",
+        "./market-analysis/sync_leads_to_sheets_old.py"
+      ],
+      "eliminate_count": 2
+    },
+    {
+      "group": "verify_klaviyo",
+      "keep": "./scripts/analysis/verify_klaviyo_flows_live.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./market-analysis/verify_klaviyo_status.py",
+        "./scripts/analysis/verify_klaviyo_flows_empirical.py"
+      ],
+      "eliminate_count": 2
+    },
+    {
+      "group": "verify_flow",
+      "keep": "./scripts/analysis/verify_shopify_flow_status.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/verification/verify_flow_execution.py",
+        "./scripts/analysis/verification/verify_n8n_workflow.py"
+      ],
+      "eliminate_count": 2
+    },
+    {
+      "group": "audit_seo",
+      "keep": "./scripts/analysis/audits/audit_seo_complete.py",
+      "keep_score": 120,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/audits/exhaustive_seo_meta_audit_2025.py",
+        "./scripts/analysis/audits/forensic_seo_audit_2025.py"
+      ],
+      "eliminate_count": 2
+    },
+    {
+      "group": "fix_product",
+      "keep": "./scripts/maintenance/fixes/fix_product_type_coherence.py",
+      "keep_score": 100,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/maintenance/fixes/fix_missing_product_types.py",
+        "./scripts/maintenance/fixes/fix_product_seo_metafields.py"
+      ],
+      "eliminate_count": 2
+    },
+    {
+      "group": "sync_form",
+      "keep": "./scripts/data/sync_typeform_to_sheet.py",
+      "keep_score": 100,
+      "keep_status": "CLI_TOOL",
+      "eliminate": [
+        "./sync_shopify_forms_to_sheet.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "audit_product",
+      "keep": "./scripts/analysis/audits/audit_all_products_metafields.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/audits/audit_bundle_product_count.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "check_product",
+      "keep": "./scripts/analysis/checks/check_product_template_integration.py",
+      "keep_score": 100,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/checks/check_special_offers_products.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "verify_loyalty",
+      "keep": "./scripts/analysis/verification/verify_loyalty_discount_codes.py",
+      "keep_score": 100,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/verification/verify_loyalty_snippet_deployment.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "verify_bundle",
+      "keep": "./scripts/analysis/verification/verify_15_bundles_factual.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analysis/verification/verify_bundle_pricing.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "test_flow",
+      "keep": "./scripts/tests/test_shopify_flow_customer.py",
+      "keep_score": 100,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/tests/test_welcome_flow.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "fix_flow",
+      "keep": "./scripts/maintenance/fixes/fix_n8n_workflow_activation.py",
+      "keep_score": 100,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/maintenance/fixes/fix_workflow_config_dest_folder.py"
+      ],
+      "eliminate_count": 1
+    },
+    {
+      "group": "analyze_email",
+      "keep": "./scripts/analytics/analyze_pre_launch_email_feasibility.py",
+      "keep_score": 110,
+      "keep_status": "SUCCESS",
+      "eliminate": [
+        "./scripts/analytics/analyze_email_automation_gaps.py"
+      ],
+      "eliminate_count": 1
+    }
+  ],
+  "elimination_plan": [
+    {
+      "script": "./scripts/analysis/verification/verify_english_sample_products.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_products_actual_french_content.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_draft_products_status.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_product_type_fix.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_products_metafields_api.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_products.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": 60,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/analysis/audits/verify_product_matrix_forensic.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_products_language_english_only.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": -50,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_collections_products.py",
+      "reason": "Redundant with ./scripts/analysis/audits/verify_product_type_post_fix_forensic.py",
+      "group": "verify_product",
+      "score": -100,
+      "status": "FILE_NOT_FOUND"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_bundle_pricing_to_35_percent.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_bundle_weights.py",
+      "group": "fix_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_bundle_pricing_rest_api.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_bundle_weights.py",
+      "group": "fix_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_bundle_inventory_management.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_bundle_weights.py",
+      "group": "fix_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_bundle_metafields.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_bundle_weights.py",
+      "group": "fix_bundle",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_bundle_images.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_bundle_weights.py",
+      "group": "fix_bundle",
+      "score": -20,
+      "status": "TIMEOUT"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_all_collections_status.py",
+      "reason": "Redundant with ./scripts/analysis/verification/verify_collection_duplicates.py",
+      "group": "verify_collection",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_collection_fixes.py",
+      "reason": "Redundant with ./scripts/analysis/verification/verify_collection_duplicates.py",
+      "group": "verify_collection",
+      "score": 50,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_collection_fix.py",
+      "reason": "Redundant with ./scripts/analysis/verification/verify_collection_duplicates.py",
+      "group": "verify_collection",
+      "score": 50,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_collections_handles.py",
+      "reason": "Redundant with ./scripts/analysis/verification/verify_collection_duplicates.py",
+      "group": "verify_collection",
+      "score": -50,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/deployment/deploy_bundle_combined.py",
+      "reason": "Redundant with ./scripts/deployment/deploy_bundle_builder.py",
+      "group": "deploy_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/deployment/deploy_bundles_page.py",
+      "reason": "Redundant with ./scripts/deployment/deploy_bundle_builder.py",
+      "group": "deploy_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/deployment/deploy_bundles_cta.py",
+      "reason": "Redundant with ./scripts/deployment/deploy_bundle_builder.py",
+      "group": "deploy_bundle",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/deployment/deploy_bundler_cleanup.py",
+      "reason": "Redundant with ./scripts/deployment/deploy_bundle_builder.py",
+      "group": "deploy_bundle",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/features/bundles/final_bundle_audit.py",
+      "reason": "Redundant with ./scripts/analysis/audits/final_audit_bundle_images_display.py",
+      "group": "audit_bundle",
+      "score": -25,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/audits/audit_bundles_missing_images.py",
+      "reason": "Redundant with ./scripts/analysis/audits/final_audit_bundle_images_display.py",
+      "group": "audit_bundle",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/audits/audit_bundle_pages_display.py",
+      "reason": "Redundant with ./scripts/analysis/audits/final_audit_bundle_images_display.py",
+      "group": "audit_bundle",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_collections_missing_images.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_collections_descriptions.py",
+      "group": "fix_collection",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_collection_assignments.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_collections_descriptions.py",
+      "group": "fix_collection",
+      "score": 60,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_missing_collections.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_collections_descriptions.py",
+      "group": "fix_collection",
+      "score": 60,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/automation/creation/create_remaining_9_bundles.py",
+      "reason": "Redundant with ./scripts/automation/creation/create_15_bundles_final.py",
+      "group": "create_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/automation/creation/create_bundle_creation_page.py",
+      "reason": "Redundant with ./scripts/automation/creation/create_15_bundles_final.py",
+      "group": "create_bundle",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/automation/creation/create_optimal_bundles.py",
+      "reason": "Redundant with ./scripts/automation/creation/create_15_bundles_final.py",
+      "group": "create_bundle",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./market-analysis/sync_leads_to_sheets.py",
+      "reason": "Redundant with ./sync_facebook_leads_to_sheet.py",
+      "group": "sync_lead",
+      "score": 100,
+      "status": "CLI_TOOL"
+    },
+    {
+      "script": "./market-analysis/sync_leads_to_sheets_old.py",
+      "reason": "Redundant with ./sync_facebook_leads_to_sheet.py",
+      "group": "sync_lead",
+      "score": -190,
+      "status": "UNKNOWN"
+    },
+    {
+      "script": "./market-analysis/verify_klaviyo_status.py",
+      "reason": "Redundant with ./scripts/analysis/verify_klaviyo_flows_live.py",
+      "group": "verify_klaviyo",
+      "score": 60,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/analysis/verify_klaviyo_flows_empirical.py",
+      "reason": "Redundant with ./scripts/analysis/verify_klaviyo_flows_live.py",
+      "group": "verify_klaviyo",
+      "score": 60,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_flow_execution.py",
+      "reason": "Redundant with ./scripts/analysis/verify_shopify_flow_status.py",
+      "group": "verify_flow",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_n8n_workflow.py",
+      "reason": "Redundant with ./scripts/analysis/verify_shopify_flow_status.py",
+      "group": "verify_flow",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/audits/exhaustive_seo_meta_audit_2025.py",
+      "reason": "Redundant with ./scripts/analysis/audits/audit_seo_complete.py",
+      "group": "audit_seo",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analysis/audits/forensic_seo_audit_2025.py",
+      "reason": "Redundant with ./scripts/analysis/audits/audit_seo_complete.py",
+      "group": "audit_seo",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_missing_product_types.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_product_type_coherence.py",
+      "group": "fix_product",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_product_seo_metafields.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_product_type_coherence.py",
+      "group": "fix_product",
+      "score": -20,
+      "status": "TIMEOUT"
+    },
+    {
+      "script": "./sync_shopify_forms_to_sheet.py",
+      "reason": "Redundant with ./scripts/data/sync_typeform_to_sheet.py",
+      "group": "sync_form",
+      "score": 60,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./scripts/analysis/audits/audit_bundle_product_count.py",
+      "reason": "Redundant with ./scripts/analysis/audits/audit_all_products_metafields.py",
+      "group": "audit_product",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/checks/check_special_offers_products.py",
+      "reason": "Redundant with ./scripts/analysis/checks/check_product_template_integration.py",
+      "group": "check_product",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_loyalty_snippet_deployment.py",
+      "reason": "Redundant with ./scripts/analysis/verification/verify_loyalty_discount_codes.py",
+      "group": "verify_loyalty",
+      "score": -50,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_bundle_pricing.py",
+      "reason": "Redundant with ./scripts/analysis/verification/verify_15_bundles_factual.py",
+      "group": "verify_bundle",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/tests/test_welcome_flow.py",
+      "reason": "Redundant with ./scripts/tests/test_shopify_flow_customer.py",
+      "group": "test_flow",
+      "score": -40,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/maintenance/fixes/fix_workflow_config_dest_folder.py",
+      "reason": "Redundant with ./scripts/maintenance/fixes/fix_n8n_workflow_activation.py",
+      "group": "fix_flow",
+      "score": 100,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/analytics/analyze_email_automation_gaps.py",
+      "reason": "Redundant with ./scripts/analytics/analyze_pre_launch_email_feasibility.py",
+      "group": "analyze_email",
+      "score": 110,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./audit_forensic_complete_v2.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "MISSING_CREDENTIALS"
+    },
+    {
+      "script": "./market-analysis/sync_leads_to_sheets_old.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "UNKNOWN"
+    },
+    {
+      "script": "./scripts/analysis/audits/verify_english_only_forensic_v2.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/analysis/verification/verify_test_customer.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/uncategorized/powerbi_connection_test.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/uncategorized/monitor_clean_test.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "SUCCESS"
+    },
+    {
+      "script": "./scripts/automation/creation/create_test_customer_rest.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "CODE_ERROR"
+    },
+    {
+      "script": "./scripts/automation/creation/create_test_customer_flow.py",
+      "reason": "Obsolete (has _old, _backup, _v1, _v2, _test marker)",
+      "group": "obsolete",
+      "score": -200,
+      "status": "SUCCESS"
+    }
+  ]
+}

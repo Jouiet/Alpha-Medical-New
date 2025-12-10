@@ -1,46 +1,12 @@
 {
   "audit_date": "2025-11-16",
   "rule": "ALL bundles must have 3-4 products",
-  "total_bundles": 15,
-  "compliant": 15,
-  "too_few": 0,
-  "violations": 0,
-  "compliance_rate": "100.0%",
+  "total_bundles": 23,
+  "compliant": 8,
+  "too_few": 1,
+  "violations": 14,
+  "compliance_rate": "53.3%",
   "compliant_bundles": [
-    {
-      "handle": "active-athlete-complete-protection",
-      "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
-      "id": 7623056097357,
-      "count": 4,
-      "products": [
-        "NEENCA Hinged Knee Brace Side Stabilizers Support",
-        "Drop Foot Brace AFO Inflatable Airbag Ankle Support",
-        "Adjustable Wrist Support Brace Fitness Pain Relief",
-        "Hinged ROM Elbow Brace PostOp Adjustable Stabilizer"
-      ]
-    },
-    {
-      "handle": "active-athlete-knee-specialist",
-      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
-      "id": 7623056064589,
-      "count": 3,
-      "products": [
-        "Sports Knee Pads Pressurized Elastic Support Gym",
-        "Adjustable Knee Patellar Tendon Strap Sports Support",
-        "Dynamic Knee Support with Spring Adjustable Joint Cushion"
-      ]
-    },
-    {
-      "handle": "beauty-wellness-led-complete",
-      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
-      "id": 7623086833741,
-      "count": 3,
-      "products": [
-        "7 Color LED Light Therapy Face Mask AntiAging",
-        "VLine Face Slimming EMS Lifting Microcurrent Device",
-        "Face Lifting Device Red Light Skin Rejuvenation VFace"
-      ]
-    },
     {
       "handle": "chronic-pain-relief-kit",
       "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
@@ -66,15 +32,15 @@
       ]
     },
     {
-      "handle": "chronic-pain-whole-body",
-      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
-      "id": 7623086735437,
+      "handle": "chronic-pain-starter-kit-1",
+      "title": "Chronic Pain Starter Kit - Targeted Relief Bundle",
+      "id": 7641722617933,
       "count": 4,
       "products": [
-        "Hello Face Red Light Therapy Mask Face Neck Infrared LED",
-        "Foreverlily Smart Knee Massager Vibration Air Pressure",
-        "Electric Medical Cupping Therapy Set",
-        "Vibration Shoulder Steamer Heated Belt Massager"
+        "Tourmaline Magnetic Knee Pads SelfHeating Support",
+        "Lumbar Support Belt Disc Herniation Pain Relief Brace",
+        "Electric Foot Hand Massager Vibration Heat Therapy",
+        "Stomach Massager Bian Shi Hot Compress Abdominal"
       ]
     },
     {
@@ -90,17 +56,6 @@
       ]
     },
     {
-      "handle": "office-worker-advanced-ergonomic",
-      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
-      "id": 7623086669901,
-      "count": 3,
-      "products": [
-        "Magnetic Posture Corrector Shoulder Orthopedic Brace",
-        "7 Color LED Vibrating Neck Face Massager",
-        "EMS Red Light Eye Massager Dark Circles Wrinkle Reduction"
-      ]
-    },
-    {
       "handle": "office-worker-essential-kit",
       "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
       "id": 7623055966285,
@@ -113,30 +68,6 @@
       ]
     },
     {
-      "handle": "office-worker-premium-workspace",
-      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
-      "id": 7623086702669,
-      "count": 4,
-      "products": [
-        "LED Facial Mask with Neck 7 Colors Photon AntiAging",
-        "Neck LED Lift Mask AntiWrinkle Skin Tightening",
-        "Electric Airbag Eye Massager Heated Hot Compress",
-        "Magnetic Posture Corrector Shoulder Orthopedic Brace"
-      ]
-    },
-    {
-      "handle": "post-surgery-recovery-complete",
-      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
-      "id": 7623086604365,
-      "count": 4,
-      "products": [
-        "Adjustable Cervical Collar Neck Brace Orthosis",
-        "AFO Drop Foot Brace Ankle Foot Orthosis",
-        "Lower Back Brace 6 Stays AntiSkid Lumbar Support",
-        "Hip Fixation Brace Femoral Thigh Fracture Support"
-      ]
-    },
-    {
       "handle": "rehab-stroke-recovery",
       "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
       "id": 7623086800973,
@@ -146,17 +77,6 @@
         "Posture Corrector Adjustable Back Brace for Women Men",
         "Electric Lumbar Massager Heated Vibration Back Brace",
         "Silicone Patellar Tendon Strap Knee Pain Relief"
-      ]
-    },
-    {
-      "handle": "senior-advanced-arthritis",
-      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
-      "id": 7623086866509,
-      "count": 3,
-      "products": [
-        "Electric Vibration Massager Bunion Corrector",
-        "Effective Bunion Corrector Airbag traction Foot",
-        "Cervical Spine Massager EMS Neck Lymphatic Drainage"
       ]
     },
     {
@@ -184,6 +104,224 @@
       ]
     }
   ],
-  "too_few_bundles": [],
-  "violation_bundles": []
+  "too_few_bundles": [
+    {
+      "handle": "senior-advanced-arthritis",
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "id": 7623086866509,
+      "count": 0,
+      "products": []
+    }
+  ],
+  "violation_bundles": [
+    {
+      "handle": "active-athlete-complete-protection",
+      "title": "Active Athlete Complete Protection - Sports Injury Prevention Bundle",
+      "id": 7641722683469,
+      "count": 6,
+      "products": [
+        "NEENCA Hinged Knee Brace Side Stabilizers Support",
+        "Drop Foot Brace AFO Inflatable Airbag Ankle Support",
+        "Adjustable Wrist Support Brace Fitness Pain Relief",
+        "Basketball Knee Pad Honeycomb Shock Protection",
+        "Full Leg Compression Sleeve Unisex Knee Support",
+        "Hinged ROM Elbow Brace PostOp Adjustable Stabilizer"
+      ],
+      "excess": 2
+    },
+    {
+      "handle": "active-athlete-knee-specialist",
+      "title": "Active Athlete Knee Specialist - Sports Support Bundle",
+      "id": 7641722650701,
+      "count": 5,
+      "products": [
+        "Sports Knee Pads Pressurized Elastic Support Gym",
+        "Adjustable Knee Patellar Tendon Strap Sports Support",
+        "Double Patellar Knee Support Strap Pain Relief Brace",
+        "Dynamic Knee Support with Spring Adjustable Joint Cushion",
+        "Patella Knee Tendon Strap Sports Support Stabilizer"
+      ],
+      "excess": 1
+    },
+    {
+      "handle": "beauty-wellness-led-complete",
+      "title": "Beauty & Wellness LED Complete - Anti-Aging Bundle",
+      "id": 7641723011149,
+      "count": 5,
+      "products": [
+        "7 Color LED Light Therapy Face Mask AntiAging",
+        "Professional 7Color LED Mask Facial Light Therapy",
+        "VLine Face Slimming EMS Lifting Microcurrent Device",
+        "Face Lifting Device Red Light Skin Rejuvenation VFace",
+        "Foreverlily LED Face Neck Mask 7 Colors 3D Flexible"
+      ],
+      "excess": 1
+    },
+    {
+      "handle": "chronic-pain-relief-kit-1",
+      "title": "Chronic Pain Relief Kit - Multi-Zone Management Bundle",
+      "id": 7641722716237,
+      "count": 6,
+      "products": [
+        "Adjustable Knee Brace Orthopedic Leg Support Pain Relief",
+        "Electric Lumbar Massager Heated Vibration Back Brace",
+        "Cervical Spine Massager EMS Neck Lymphatic Drainage",
+        "Electric Ankle Brace Hot Compress Vibration Massage",
+        "Intelligent Massage Gloves Hand Rehabilitation Robot",
+        "Electric Heating Leg Massager Wireless Rechargeable"
+      ],
+      "excess": 2
+    },
+    {
+      "handle": "chronic-pain-whole-body",
+      "title": "Chronic Pain Whole-Body - LED Therapy Complete Bundle",
+      "id": 7641722912845,
+      "count": 6,
+      "products": [
+        "Hello Face Red Light Therapy Mask Face Neck Infrared LED",
+        "Foreverlily Smart Knee Massager Vibration Air Pressure",
+        "Electric Medical Cupping Therapy Set",
+        "Nano Steam Eye Massager Warm Spa Acupressure Mask",
+        "Vibration Shoulder Steamer Heated Belt Massager",
+        "4in1 Cavitation Body Slimming Machine 40K Ultrasound"
+      ],
+      "excess": 2
+    },
+    {
+      "handle": "manual-labor-heavy-duty-1",
+      "title": "Manual Labor Heavy-Duty - Industrial Protection Bundle",
+      "id": 7641722945613,
+      "count": 7,
+      "products": [
+        "Posture Corrector Adjustable Back Brace for Women Men",
+        "Hip Fixation Brace Femoral Thigh Fracture Support",
+        "O/XType Leg Corrector Adjustable Leg Straightener",
+        "Silicone Patellar Tendon Strap Knee Pain Relief",
+        "Lower Back Brace 6 Stays AntiSkid Lumbar Support",
+        "Electric Vibration Massager Bunion Corrector",
+        "Effective Bunion Corrector Airbag traction Foot"
+      ],
+      "excess": 3
+    },
+    {
+      "handle": "office-worker-advanced-ergonomic",
+      "title": "Office Worker Advanced Ergonomic - LED Therapy Bundle",
+      "id": 7641722847309,
+      "count": 6,
+      "products": [
+        "Magnetic Posture Corrector Shoulder Orthopedic Brace",
+        "7 Color LED Vibrating Neck Face Massager",
+        "Adjustable Cervical Collar Spine Thoracic Orthosis",
+        "EMS Red Light Eye Massager Dark Circles Wrinkle Reduction",
+        "Electric Gua Sha Board Vibration Hot Compress Massage",
+        "Kids Posture Corrector Adjustable Back Support"
+      ],
+      "excess": 2
+    },
+    {
+      "handle": "office-worker-essential-kit-1",
+      "title": "Office Worker Essential Kit - Desk Pain Relief Bundle",
+      "id": 7641722552397,
+      "count": 5,
+      "products": [
+        "Posture Corrector Adjustable Shoulder Support Brace",
+        "Cervical Neck Traction Device Inflatable Home Relief",
+        "Wrist Brace Support Carpal Tunnel Arthritis Relief",
+        "Head Eye Massager Heat Fatigue Stress Relief",
+        "Neck Massage Machine 4Head Heating Protection"
+      ],
+      "excess": 1
+    },
+    {
+      "handle": "office-worker-premium-workspace",
+      "title": "Office Worker Premium Workspace - Eye Fatigue Relief Bundle",
+      "id": 7641722880077,
+      "count": 6,
+      "products": [
+        "LED Facial Mask with Neck 7 Colors Photon AntiAging",
+        "Neck LED Lift Mask AntiWrinkle Skin Tightening",
+        "Electric Airbag Eye Massager Heated Hot Compress",
+        "Super Relax Eye Massager Heating Vibration Sleep Aid",
+        "EMS Hip Trainer 3 Modes Buttock Lifting Massage",
+        "Smart Electric Vacuum Cupping Device"
+      ],
+      "excess": 2
+    },
+    {
+      "handle": "post-surgery-recovery-complete",
+      "title": "Post-Surgery Recovery Complete - Orthopedic Support Bundle",
+      "id": 7641722781773,
+      "count": 7,
+      "products": [
+        "Adjustable Cervical Collar Neck Brace Orthosis",
+        "AFO Drop Foot Brace Ankle Foot Orthosis",
+        "Lower Back Brace 6 Stays AntiSkid Lumbar Support",
+        "Hip Fixation Brace Femoral Thigh Fracture Support",
+        "O/XType Leg Corrector Adjustable Leg Straightener",
+        "Neck Traction Device Heating Inflatable Cervical",
+        "Electric Foot Hand Massager Vibration Heat Therapy"
+      ],
+      "excess": 3
+    },
+    {
+      "handle": "rehab-stroke-recovery-1",
+      "title": "Rehab Stroke Recovery - Robot Gloves Therapy Bundle",
+      "id": 7641722978381,
+      "count": 6,
+      "products": [
+        "Rehabilitation Robot Gloves Mirror Training Device",
+        "Rehabilitation Robot Gloves Stroke Cerebral Palsy",
+        "Posture Corrector Adjustable Back Brace for Women Men",
+        "Silicone Patellar Tendon Strap Knee Pain Relief",
+        "Bunion Corrector Toe Separator",
+        "Electric Lumbar Massager Heated Vibration Back Brace"
+      ],
+      "excess": 2
+    },
+    {
+      "handle": "senior-advanced-arthritis-1",
+      "title": "Senior Advanced Arthritis - Bunion & Joint Relief Bundle",
+      "id": 7641723043917,
+      "count": 5,
+      "products": [
+        "Electric Vibration Massager Bunion Corrector",
+        "Effective Bunion Corrector Airbag traction Foot",
+        "Electric Airbag Eye Massager Heated Hot Compress",
+        "Cervical Spine Massager EMS Neck Lymphatic Drainage",
+        "Stomach Massager Bian Shi Hot Compress Abdominal"
+      ],
+      "excess": 1
+    },
+    {
+      "handle": "senior-mobility-support-1",
+      "title": "Senior Mobility Support - Arthritis Care Bundle",
+      "id": 7641722585165,
+      "count": 5,
+      "products": [
+        "Hinged Knee Brace Patella Stabilizer for Arthritis",
+        "Ankle Support Brace Adjustable Compression Wrap",
+        "Back Brace Posture Corrector Scoliosis Hunchback Support",
+        "VELPEAU Neck Traction Spine Pressure Pain Relief",
+        "VELPEAU Wrist Splint Carpal Tunnel Pain Relief"
+      ],
+      "excess": 1
+    },
+    {
+      "handle": "ultimate-pain-management-system-1",
+      "title": "Ultimate Pain Management System - Advanced Therapy Bundle",
+      "id": 7641722814541,
+      "count": 8,
+      "products": [
+        "Adjustable Knee Brace Orthopedic Leg Support Pain Relief",
+        "Electric Lumbar Massager Heated Vibration Back Brace",
+        "Hello Face Red Light Therapy Mask Face Neck Infrared LED",
+        "Foreverlily Smart Knee Massager Vibration Air Pressure",
+        "Electric Medical Cupping Therapy Set",
+        "Nano Steam Eye Massager Warm Spa Acupressure Mask",
+        "Vibration Shoulder Steamer Heated Belt Massager",
+        "Cervical Spine Massager EMS Neck Lymphatic Drainage"
+      ],
+      "excess": 4
+    }
+  ]
 }

@@ -41,11 +41,11 @@ response = requests.get(url, headers=headers)
 if response.status_code == 200:
     customer = response.json()['customer']
     print(f"   ✅ Customer found")
-    print(f"   Email: {customer['email']}")
-    print(f"   Name: {customer['first_name']} {customer['last_name']}")
-    print(f"   Created: {customer['created_at']}")
+    print(f"   Email: {customer.get('email', 'N/A')}")
+    print(f"   Name: {customer.get('first_name', 'N/A')} {customer.get('last_name', 'N/A')}")
+    print(f"   Created: {customer.get('created_at', 'N/A')}")
     print(f"   Marketing consent: {customer.get('email_marketing_consent', {}).get('state', 'unknown')}")
-    print(f"   Orders count: {customer['orders_count']}")
+    print(f"   Orders count: {customer.get('orders_count', 0)}")
 else:
     print(f"   ❌ Failed to fetch customer: {response.status_code}")
     exit(1)
