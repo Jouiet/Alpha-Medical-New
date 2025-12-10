@@ -24,8 +24,9 @@
     
     // Configuration
     const POPUP_PRIORITIES = {
-      'welcome-popup': 1,        // Highest priority - first-time visitors
-      'exit-intent-popup': 2     // Lower priority - exit intent
+      'cookie-consent-banner': 0, // Highest - GDPR/legal requirement
+      'welcome-popup': 1,         // Second - first-time visitors  
+      'exit-intent-popup': 2      // Lowest - exit intent
     };
     
     const MIN_DELAY_BETWEEN_POPUPS = 30000; // 30 seconds minimum between popups

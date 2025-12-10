@@ -422,7 +422,17 @@
       // Check if consent already given
       var consent = this.getConsent();
       if (!consent) {
-        this.showBanner();
+        // Use popup coordinator if available
+        if (window.AlphaPopupManager) {
+          window.AlphaPopupManager.register(
+            'cookie-consent-banner',
+            this.showBanner.bind(this),
+            function() { return true; } // Always should show if no consent
+          );
+        } else {
+          // Fallback: show immediately
+          this.showBanner();
+        }
       } else {
         this.applyConsent(consent);
       }
@@ -448,6 +458,24 @@
           this.closeModal();
         }
       }.bind(this));
+      
+      // Register close event for coordinator
+      if (window.AlphaPopupManager) {
+        var banner = this.banner;
+        var checkClosed = setInterval(function() {
+          if (!banner.classList.contains('show')) {
+            clearInterval(checkClosed);
+            if (window.AlphaPopupManager.getActivePopup() === 'cookie-consent-banner') {
+              // Manually trigger close event for coordinator
+              var closeEvent = new Event('close');
+              var fakeDialog = { addEventListener: function() {} };
+              if (window.AlphaPopupManager.onPopupClosed) {
+                window.AlphaPopupManager.onPopupClosed('cookie-consent-banner');
+              }
+            }
+          }
+        }, 1000);
+      }
     },
 
     showBanner: function() {
