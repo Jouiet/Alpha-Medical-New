@@ -1,4 +1,4 @@
-// Updated: 1765392479
+// Updated: 1765392734
 /**
  * Bundle Builder - Complete Interactive Functionality
  * Handles product search, selection, price calculation, and form submission
@@ -95,6 +95,14 @@
      * Attach all event listeners
      */
     function attachEventListeners() {
+        // Method tabs - CRITICAL FOR SWITCHING BETWEEN SEARCH AND URL INPUT
+        document.querySelectorAll('.method-tab').forEach(tab => {
+            tab.addEventListener('click', function () {
+                const method = this.getAttribute('data-method');
+                if (method) switchMethod(method);
+            });
+        });
+
         // Search input (debounced)
         let searchTimeout;
         elements.searchInput.addEventListener('input', function (e) {
@@ -135,6 +143,23 @@
         if (form) {
             form.addEventListener('submit', handleFormSubmit);
         }
+    }
+
+    /**
+     * Switch between search and URL input methods
+     */
+    function switchMethod(method) {
+        // Update tab active states
+        document.querySelectorAll('.method-tab').forEach(tab => {
+            tab.classList.toggle('active', tab.dataset.method === method);
+        });
+
+        // Update panel active states
+        document.querySelectorAll('.input-method').forEach(panel => {
+            panel.classList.toggle('active', panel.dataset.method === method);
+        });
+
+        console.log('[Bundle Builder] Switched to method:', method);
     }
 
     /**
