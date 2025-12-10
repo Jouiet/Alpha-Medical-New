@@ -1,5 +1,5 @@
 
-/* Updated: 1765391869 */
+/* Updated: 1765392118 */
 /* ============================================
    BUNDLE CREATOR - ULTRA-MODERN 2025 DESIGN
    Advanced glassmorphism, vibrant gradients, fluid animations
@@ -744,9 +744,9 @@
 
 .steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
