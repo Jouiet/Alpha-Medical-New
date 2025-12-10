@@ -1,4 +1,4 @@
-// Updated: 1765393105
+// Updated: 1765393621
 /**
  * Bundle Builder - Complete Interactive Functionality
  * Handles product search, selection, price calculation, and form submission
@@ -177,6 +177,162 @@
                 }
             });
         });
+
+        // URL input listeners (Method 2)
+        for (let i = 1; i <= 4; i++) {
+            const input = document.getElementById(`url-input-${i}`);
+            const statusSpan = document.getElementById(`url-status-${i}`);
+
+            if (input) {
+                input.addEventListener('input', debounce(async function () {
+                    await handleUrlInput(this, statusSpan);
+                }, 500));
+
+                input.addEventListener('paste', async function () {
+                    setTimeout(async () => {
+                        await handleUrlInput(this, statusSpan);
+                    }, 100);
+                });
+            }
+        }
+    }
+
+    /**
+     * Debounce utility
+     */
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+
+    /**
+     * Handle URL input validation and product fetch
+     */
+    async function handleUrlInput(input, statusSpan) {
+        const url = input.value.trim();
+
+        // Clear status if empty
+        if (!url) {
+            input.classList.remove('valid', 'invalid', 'loading');
+            if (statusSpan) statusSpan.textContent = '';
+            return;
+        }
+
+        // Validate URL format
+        const urlPattern = /^https?:\/\/(www\.)?alphamedical\.shop\/products\/([a-z0-9-]+)/i;
+        const match = url.match(urlPattern);
+
+        if (!match) {
+            input.classList.remove('valid', 'loading');
+            input.classList.add('invalid');
+            if (statusSpan) {
+                statusSpan.textContent = '❌ Invalid URL';
+                statusSpan.style.color = '#ef4444';
+            }
+            return;
+        }
+
+        // Extract handle
+        const handle = match[2];
+
+        // Set loading state
+        input.classList.remove('valid', 'invalid');
+        input.classList.add('loading');
+        if (statusSpan) {
+            statusSpan.textContent = '⏳ Loading...';
+            statusSpan.style.color = '#f59e0b';
+        }
+
+        try {
+            // Fetch product data from Shopify
+            const response = await fetch(`/products/${handle}.js`);
+
+            if (!response.ok) {
+                throw new Error('Product not found');
+            }
+
+            const productData = await response.json();
+
+            // Check if product is available
+            if (!productData.available) {
+                throw new Error('Product not available');
+            }
+
+            // Format product for our system
+            const product = {
+                id: productData.id,
+                handle: productData.handle,
+                title: productData.title,
+                price: productData.price, // in cents
+                image: productData.featured_image || productData.images[0],
+                available: productData.available,
+                productType: productData.type,
+                vendor: productData.vendor
+            };
+
+            // Check if already selected
+            if (state.selectedProducts.some(p => p.id === product.id)) {
+                input.classList.remove('loading', 'invalid');
+                input.classList.add('valid');
+                if (statusSpan) {
+                    statusSpan.textContent = '✓ Already added';
+                    statusSpan.style.color = '#10B981';
+                }
+                return;
+            }
+
+            // Check max products
+            if (state.selectedProducts.length >= state.config.maxProducts) {
+                input.classList.remove('loading');
+                input.classList.add('invalid');
+                if (statusSpan) {
+                    statusSpan.textContent = `❌ Max ${state.config.maxProducts} products`;
+                    statusSpan.style.color = '#ef4444';
+                }
+                return;
+            }
+
+            // Add product to selection
+            state.selectedProducts.push(product);
+
+            // Update UI
+            renderSelectedProducts();
+            updatePriceDisplay();
+            updateFormVisibility();
+
+            // Set valid state
+            input.classList.remove('loading', 'invalid');
+            input.classList.add('valid');
+            if (statusSpan) {
+                statusSpan.textContent = '✓ Added';
+                statusSpan.style.color = '#10B981';
+            }
+
+            // Track event
+            trackEvent('bundle_product_added', {
+                product_id: product.id,
+                product_title: product.title,
+                method: 'url_paste'
+            });
+
+            console.log('[Bundle Builder] Product added from URL:', product.title);
+
+        } catch (error) {
+            console.error('[Bundle Builder] URL fetch error:', error);
+            input.classList.remove('loading', 'valid');
+            input.classList.add('invalid');
+            if (statusSpan) {
+                statusSpan.textContent = '❌ Product not found';
+                statusSpan.style.color = '#ef4444';
+            }
+        }
     }
 
     /**
