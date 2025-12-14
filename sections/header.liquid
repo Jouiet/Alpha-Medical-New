@@ -116,6 +116,59 @@
     color: #FF3131 !important;
     font-weight: 600 !important;
   }
+
+  /* ========== MOBILE DRAWER OPTIMIZATION - Session 90 ========== */
+
+  /* Big Dealz RED in mobile drawer - CRITICAL FIX */
+  .menu-drawer__menu-item[href*="bundles"],
+  .menu-drawer__menu-item[href*="bundles-and-kits"],
+  .menu-drawer a[href*="/collections/bundles"],
+  .menu-drawer .list-menu__item[href*="bundles"] {
+    color: #FF3131 !important;
+    font-weight: 600 !important;
+  }
+
+  /* Drawer background - full opacity, no transparency */
+  .menu-drawer {
+    background-color: rgb(var(--color-background)) !important;
+  }
+
+  .menu-drawer__inner-container {
+    background-color: rgb(var(--color-background)) !important;
+  }
+
+  /* Drawer width - 100% on mobile for clean look */
+  @media screen and (max-width: 749px) {
+    .menu-drawer {
+      width: 100% !important;
+    }
+  }
+
+  /* Menu item spacing - better readability */
+  .menu-drawer__menu-item {
+    padding: 1.4rem 3rem !important;
+    font-size: 1.6rem !important;
+    letter-spacing: 0.02em;
+  }
+
+  /* Hover state consistency */
+  .menu-drawer__menu-item:hover,
+  .menu-drawer__menu-item:focus {
+    background-color: rgba(var(--color-foreground), 0.06) !important;
+  }
+
+  /* Close button (X) styling */
+  .menu-drawer__close-button {
+    background-color: transparent !important;
+  }
+
+  /* Utility links (country selector) - cleaner */
+  .menu-drawer__utility-links {
+    background-color: rgba(var(--color-foreground), 0.02) !important;
+    border-top: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+
+  /* ========== END MOBILE DRAWER OPTIMIZATION ========== */
 </style>
 
 <script>
