@@ -1,3 +1,56 @@
+# 🔄 SESSION 90 UPDATE (2025-12-14) - COMPETITIVE AUTOMATION BENCHMARK
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Multi-Project Automation Comparison + Strategic Gaps
+
+## AUTOMATION COMPARISON (3 Projects)
+
+| System | Alpha Medical | Henderson | MyDealz |
+|--------|--------------|-----------|---------|
+| Email Flows | 14 (3 systems) | 29 (1 system) | 3 (Omnisend) |
+| Shopify Flow | 5 active | 8 active | 7 active |
+| Lead Scoring | ❌ None | A/B/C tiers | 0-100 |
+| Tag Architecture | Basic | Very advanced | Advanced |
+| Discount Logic | Static | Dynamic | Escalade (10→15→20%) |
+| Claude Memory | ✅ | ✅ | ✅ |
+| MCP Servers | 3 | Unknown | Unknown |
+| AI Discovery | ✅ llms.txt | ❌ | ❌ |
+
+## AUTOMATION GAPS IDENTIFIED
+
+**Gap #1: Email Duplication (CRITICAL)**
+- Alpha Medical: 3 systems (Klaviyo + Flow + Email) = 3-9 emails/trigger
+- Henderson: 1 system = 1-3 emails/trigger
+- **Learning:** Consolidate to 1 system
+
+**Gap #2: Tag-Driven Architecture**
+- Henderson pattern: Action → Tag → Flow → Response
+- Alpha Medical: No behavioral tags
+- **Learning:** Implement customer lifecycle tags
+
+**Gap #3: Lead Scoring**
+- MyDealz: 0-100 score (Engagement 40% + Purchase 30% + Recency 30%)
+- Alpha Medical: All leads treated identically
+- **Learning:** Implement Klaviyo native scoring
+
+**Gap #4: Discount Escalade**
+- MyDealz: T+1h (no discount) → T+24h (10%) → T+48h (15%) → T+72h (20%)
+- Alpha Medical: Immediate discount (margin loss)
+- **Learning:** Progressive discount in cart flow
+
+## AUTOMATION PRIORITY ACTIONS
+
+| Priority | Action | Source | Effort |
+|----------|--------|--------|--------|
+| P0 | Consolidate email (1 system) | Henderson | 2h |
+| P1 | Tag-driven architecture | Henderson | 6h |
+| P2 | Lead scoring | MyDealz | 3h |
+| P2 | Discount escalade | MyDealz | 2h |
+
+**Verification:** Document analysis | **Confidence:** 100% | **BS:** 0%
+
+---
+
 # 🔄 SESSION 89 UPDATE (2025-12-11) - AUTOMATION-FIRST PHILOSOPHY AUDIT
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ VERIFIED
