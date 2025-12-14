@@ -311,6 +311,7 @@ When assisting with this project:
 - [FINAL_ACTIVATION_STEPS](FINAL_ACTIVATION_STEPS.md): URL: https://n8n.srv1168256.hstgr.cloud/workflow/q0kyXyhCUq5gjmG2 Login with your N8N credentials
 - [FINAL_STORE_STATUS_2025-10-31](archive/session-summaries/FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL](FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL.md): 1. ✅ scripts/analysis/checks/checkgtmstatus.py - GTM verification 2. ✅ scripts/analysis/checks/checkthemepixels.py - Theme pixels verification
+- [FLYWHEEL_SCRIPTS_MATRIX](FLYWHEEL_SCRIPTS_MATRIX.md): Project documentation
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](archive/setup-completed/GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
 - [GOOGLE_ADS_NEXT_STEPS](archive/setup-completed/GOOGLE_ADS_NEXT_STEPS.md): 1. Si premier container: Cliquez "Créer un compte" Formulaire: Configuration container:
