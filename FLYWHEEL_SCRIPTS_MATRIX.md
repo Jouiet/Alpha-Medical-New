@@ -206,3 +206,36 @@ Liste scripts INFRASTRUCTURE:
 - Phase 4 (Advocacy): ❌ 0% - MANQUANT
 
 **Priorité #1:** Créer scripts ADVOCACY (reviews, referrals)
+
+---
+
+## 🏢 AGENCY VALUE (Perspective Complémentaire)
+
+> **Usage:** Les deux perspectives sont COMPLÉMENTAIRES
+> - **FLYWHEEL** (ci-dessus) → Comprendre l'architecture opérationnelle
+> - **AGENCY VALUE** (ci-dessous) → Vendre les services à des clients
+
+### Services Automatisables par Catégorie
+
+| Service | Scripts | Pitch Client |
+|---------|---------|--------------|
+| **Audit & Forensic** | 91 | "Diagnostic e-commerce 24h" |
+| **Déploiement Shopify** | 57 | "Features en heures, pas semaines" |
+| **Automation Workflows** | 45 | "N8N + Klaviyo + Shopify" |
+| **Maintenance** | 29 | "Corrections en minutes" |
+| **Features Avancées** | 10 | "Bundles + Loyalty" |
+| **Analytics & Data** | 19 | "Intelligence business" |
+| **Autres** | 25 | "Setup, tests, optimization" |
+
+### Plateformes Couvertes
+- Shopify (Admin API, GraphQL, REST)
+- Klaviyo (Email, Flows, Templates)
+- N8N (Workflows open-source)
+- GA4/GTM (Tracking)
+- Google Cloud (Drive, Sheets, Gemini)
+
+---
+
+**Last Updated:** 2025-12-14 Session 92
+**Verification:** Empirique (`find | wc -l`)
+**Bullshit Level:** 0%
