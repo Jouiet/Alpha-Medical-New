@@ -86,24 +86,32 @@ scripts/fixes/fix_long_url_handles.py                   ✅ Générique
 
 **Localisation:** `/Users/mac/Desktop/Alpha-Medical/scripts/`
 
-**Structure Répertoires (Vérifiée):**
+**Structure Répertoires (Réorganisée 2025-12-14 - PROFESSIONNEL):**
 ```
-scripts/                    # 276 total
-├── analysis/               # 82 scripts (29.7%)
-├── uncategorized/          # 48 scripts (17.4%) ⚠️ À trier
-├── deployment/             # 44 scripts (15.9%)
-├── maintenance/            # 25 scripts (9.1%)
-├── automation/             # 22 scripts (8.0%)
-├── features/               # 10 scripts (3.6%)
-├── analytics/              # 10 scripts (3.6%)
-├── setup/                  # 8 scripts (2.9%)
-├── tests/                  # 7 scripts (2.5%)
-├── fixes/                  # 5 scripts (1.8%)
-├── cleanup/                # 2 scripts
-├── optimization/           # 2 scripts
-├── data/                   # 2 scripts
-├── marketing/              # 1 script
-└── racine/                 # 8 scripts
+scripts/                    # 276 total - 100% CATÉGORISÉS ✅
+├── analysis/               # 91 scripts (33.0%) - Audits, checks, verification
+│   ├── audits/             # 27 scripts
+│   ├── checks/             # 21 scripts
+│   └── verification/       # 43 scripts
+├── deployment/             # 57 scripts (20.7%) - Theme, assets, schema
+├── automation/             # 45 scripts (16.3%)
+│   ├── creation/           # 22 scripts
+│   ├── generation/         # 5 scripts
+│   ├── n8n/                # 15 scripts ← N8N workflow management
+│   ├── klaviyo/            # 4 scripts ← Klaviyo templates/flows
+│   └── shopify/            # 4 scripts ← Shopify policies/legal
+├── maintenance/            # 29 scripts (10.5%) - Fixes, updates
+├── features/               # 10 scripts (3.6%) - Loyalty, bundles
+├── analytics/              # 10 scripts (3.6%) - Tracking, data
+├── data/                   # 9 scripts (3.3%) - Import/export
+├── setup/                  # 8 scripts (2.9%) - Configuration
+├── tests/                  # 7 scripts (2.5%) - Tests automatisés
+├── fixes/                  # 5 scripts (1.8%) - Bug fixes
+├── optimization/           # 2 scripts (0.7%)
+├── cleanup/                # 2 scripts (0.7%)
+├── marketing/              # 1 script (0.4%)
+├── uncategorized/          # 0 scripts ✅ ZÉRO
+└── racine/                 # 0 scripts ✅ ZÉRO
 ```
 
 ---
@@ -418,7 +426,7 @@ scripts/                    # 276 total
 | Processus onboarding | Inefficacité | Créer checklist | 8h |
 | Contrats/Legal | Risque | Templates contrats | 8h |
 | Portfolio visuel | Sales | Screenshots, vidéos | 12h |
-| **🆕 48 scripts uncategorized** | Désordre | Trier et documenter | 4h |
+| ~~48 scripts uncategorized~~ | ~~Désordre~~ | ✅ RÉSOLU 2025-12-14 | 0h |
 
 ### 6.3 Gaps Low (GREEN)
 
@@ -637,9 +645,9 @@ scripts/
 | Attribut | Valeur |
 |----------|--------|
 | **Créé** | 2025-12-14 Session 91 |
-| **Mis à jour** | 2025-12-14 Session 91 (Audit scripts factuel) |
+| **Mis à jour** | 2025-12-14 Session 91 (Réorganisation professionnelle scripts) |
 | **Auteur** | Claude Opus 4.5 + Owner |
-| **Version** | 1.1 |
+| **Version** | 1.2 |
 | **Status** | APPROVED - GO Decision |
 | **Review Date** | Post Alpha Medical Launch |
 | **Confidentialité** | INTERNAL |
@@ -650,6 +658,7 @@ scripts/
 |---------|------|-------------|
 | 1.0 | 2025-12-14 | Création initiale |
 | 1.1 | 2025-12-14 | Audit factuel 276 scripts: 107 génériques (38.8%), 162 hardcodés (58.7%). Gap critique ajouté. |
+| 1.2 | 2025-12-14 | Réorganisation PROFESSIONNELLE: 48 scripts uncategorized → 0. Nouvelles catégories: automation/n8n (15), automation/klaviyo (4), automation/shopify (4). |
 
 ---
 

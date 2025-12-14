@@ -1,31 +1,38 @@
 # Alpha Medical - Scripts Directory
 
-> Organized repository structure as of 2025-12-05
+> Organized repository structure as of 2025-12-14 (100% PROFESSIONNEL)
 
 ## 📁 Directory Structure
 
 ```
-scripts/
-├── analysis/
-│   ├── audits/          # Comprehensive audits and forensic analysis (30+ scripts)
-│   ├── checks/          # Quick status checks (17 scripts)
-│   └── verification/    # Verify deployments, configurations, data (44+ scripts)
-├── automation/
-│   ├── creation/        # Create products, collections, pages (24 scripts)
-│   └── generation/      # Generate assets, content, configs (5 scripts)
-├── deployment/          # Deploy changes to Shopify (23 scripts)
-├── maintenance/
-│   ├── fixes/           # Fix bugs, correct data (28 scripts)
-│   └── updates/         # Update existing resources (7 scripts)
-├── features/
-│   ├── bundles/         # Bundle product management (11 scripts)
-│   └── loyalty/         # Loyalty program scripts (3 scripts)
-├── analytics/           # Tracking, analysis, data extraction (11 scripts)
-├── optimization/        # Performance and SEO optimization (2 scripts)
-├── data/                # Data migration and import/export (2 scripts)
-├── tests/               # Test scripts (5 scripts)
-├── setup/               # Configuration and installation (8 scripts)
-└── uncategorized/       # Miscellaneous utilities (50 scripts)
+scripts/                    # 276 total - 100% CATÉGORISÉS ✅
+├── analysis/               # 91 scripts (33.0%)
+│   ├── audits/             # 27 scripts - Forensic, validation, comprehensive
+│   ├── checks/             # 21 scripts - Quick status checks
+│   └── verification/       # 43 scripts - Deployment verification
+├── deployment/             # 57 scripts (20.7%) - Theme, assets, schema
+├── automation/             # 45 scripts (16.3%)
+│   ├── creation/           # 22 scripts - Products, collections, pages
+│   ├── generation/         # 5 scripts - Assets, content, configs
+│   ├── n8n/                # 15 scripts - N8N workflow management
+│   ├── klaviyo/            # 4 scripts - Klaviyo templates, flows
+│   └── shopify/            # 4 scripts - Shopify policies, legal
+├── maintenance/            # 29 scripts (10.5%)
+│   ├── fixes/              # Fix bugs, correct data
+│   └── updates/            # Update existing resources
+├── features/               # 10 scripts (3.6%)
+│   ├── bundles/            # Bundle product management
+│   └── loyalty/            # Loyalty program
+├── analytics/              # 10 scripts (3.6%) - Tracking, data extraction
+├── data/                   # 9 scripts (3.3%) - Import/export, retrieval
+├── setup/                  # 8 scripts (2.9%) - Configuration, installation
+├── tests/                  # 7 scripts (2.5%) - Test scripts
+├── fixes/                  # 5 scripts (1.8%) - Bug fixes
+├── optimization/           # 2 scripts (0.7%) - Performance, SEO
+├── cleanup/                # 2 scripts (0.7%) - Data cleanup
+├── marketing/              # 1 script (0.4%) - Facebook automation
+├── uncategorized/          # 0 scripts ✅ ZÉRO
+└── racine/                 # 0 scripts ✅ ZÉRO
 ```
 
 ## 🚨 Critical Scripts (Root Directory)
@@ -53,13 +60,12 @@ scripts/
 - `migrate_scripts_safe.py` - Safe migration planner
 - `execute_migration.py` - Execute migration
 
-## 📊 Statistics
+## 📊 Statistics (Updated 2025-12-14)
 
-- **Total scripts organized:** 265 files
-- **Scripts in root (critical):** 15 files
-- **Obsolete scripts archived:** 5 files
-- **Original root directory:** 284 Python files
-- **New root directory:** 15 Python files (95% reduction)
+- **Total scripts:** 276 files
+- **Scripts categorized:** 276 files (100%) ✅
+- **Scripts uncategorized:** 0 files ✅
+- **New categories added:** automation/n8n (15), automation/klaviyo (4), automation/shopify (4)
 
 ## 🎯 Usage Guidelines
 
@@ -133,6 +139,9 @@ cp archive/obsolete-scripts-2025-12-05/script_name.py ./
 ### Automation
 - **creation/** - Create new resources (products, pages, collections)
 - **generation/** - Generate assets (images, configs, matrices)
+- **n8n/** - N8N workflow management (activate, diagnose, restart)
+- **klaviyo/** - Klaviyo templates and flows management
+- **shopify/** - Shopify policies and legal compliance
 
 ### Deployment
 - Deploy theme changes, snippets, sections to Shopify
@@ -151,7 +160,9 @@ cp archive/obsolete-scripts-2025-12-05/script_name.py ./
 - **data/** - Data migration, import, export, sync
 - **tests/** - Test scripts for APIs, features, deployments
 - **setup/** - Initial configuration and installation
-- **uncategorized/** - Miscellaneous utilities (to be categorized later)
+- **cleanup/** - Data cleanup utilities
+- **marketing/** - Marketing automation (Facebook)
+- **uncategorized/** - ✅ EMPTY (0 scripts - fully organized)
 
 ## ⚠️ Important Notes
 
