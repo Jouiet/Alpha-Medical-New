@@ -193,15 +193,24 @@
         <h1 class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- comment -%} Henderson Shop Custom Logo {%- endcomment -%}
-            <div class="header__heading-logo-wrapper">
-              <img src="{{ 'henderson-logo.png' | asset_url }}"
-                   alt="Henderson Shop - Premium Motorcycle Gear Since 2017"
-                   class="header__heading-logo motion-reduce"
-                   width="180"
-                   height="60"
-                   loading="eager">
-            </div>
+            {%- comment -%} Alpha Medical Logo (Settings-based) {%- endcomment -%}
+            {%- if settings.logo != blank -%}
+              {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+              {{
+                settings.logo
+                | image_url: width: settings.logo_width
+                | image_tag:
+                  class: 'header__heading-logo motion-reduce',
+                  widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  loading: 'eager'
+              }}
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
@@ -223,15 +232,24 @@
         <h1 class="header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- comment -%} Henderson Shop Custom Logo {%- endcomment -%}
-            <div class="header__heading-logo-wrapper">
-              <img src="{{ 'henderson-logo.png' | asset_url }}"
-                   alt="Henderson Shop - Premium Motorcycle Gear Since 2017"
-                   class="header__heading-logo"
-                   width="180"
-                   height="60"
-                   loading="eager">
-            </div>
+            {%- comment -%} Alpha Medical Logo (Settings-based) {%- endcomment -%}
+            {%- if settings.logo != blank -%}
+              {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+              {{
+                settings.logo
+                | image_url: width: settings.logo_width
+                | image_tag:
+                  class: 'header__heading-logo',
+                  widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  loading: 'eager'
+              }}
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
