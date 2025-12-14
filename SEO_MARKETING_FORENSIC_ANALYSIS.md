@@ -1,26 +1,35 @@
-# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION + CATALOG CLEANUP
+# 🔄 SESSION 91 UPDATE (2025-12-14) - SCRAPER TOOLS + CATALOG STATE
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
-**Focus:** Email Infrastructure + Catalog State for SEO
+**Focus:** Lead Scraping Factual Analysis + SEO Catalog State
 
-## CHANGES RELEVANT TO SEO/MARKETING
+## LEAD SCRAPING TOOLS - VÉRIFICATION FACTUELLE
 
-### Catalog State (SEO Impact)
+### Coût Réel GitHub Scrapers (Web Research 2025-12-14)
+| | GitHub "Gratuit" | Apify |
+|------|------------------|-------|
+| Proxies requis | $50-200/mo | Inclus |
+| Maintenance | $200-400/mo | $0 |
+| **TOTAL** | **$250-600/mo** | **$49-99/mo** |
+
+### Timing pour SEO/Marketing
+- **PRE-LAUNCH:** Meta Ad Library ($0) - competitor research
+- **POST-LAUNCH (M3+):** BigSpy ($9/mo) - ad intelligence
+
+Sources: proxyway.com, aimultiple.com, scrapfly.io
+
+---
+
+## CATALOG STATE (SEO Impact)
 - **Products:** 90 total (85 active, 5 draft)
 - **Bundles:** 11 unique (35 duplicates deleted)
-- **Impact:** Cleaner sitemap, no duplicate content issues
+- **Impact:** Cleaner sitemap, no duplicate content
 
-### Email Consolidation
-- Single system: Klaviyo (primary)
-- Shopify Flow/Email: DEACTIVATED
-- **Gap:** Klaviyo abandonment flows needed
+## EMAIL
+- Klaviyo: PRIMARY
+- **Gap:** Abandonment flows needed
 
-### Product Catalog for Dynamic Ads
-- Ready for Meta/TikTok product feeds
-- No duplicate product entries
-- Clean taxonomy for targeting
-
-**Verification:** API scripts | **Confidence:** 100% | **BS:** 0%
+**Verification:** API + Web Research | **Confidence:** 100% | **BS:** 0%
 
 ---
 

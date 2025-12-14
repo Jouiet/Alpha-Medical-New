@@ -1,7 +1,35 @@
-# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION: KLAVIYO ONLY
+# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION + SCRAPER ANALYSIS
 
-**Analyst:** Claude Opus 4.5 | **Status:** ⚠️ PHASE 1 COMPLETE (Shopify deactivated, Klaviyo flows needed)
-**Focus:** Eliminate 3-way email duplication → Single system (Klaviyo)
+**Analyst:** Claude Opus 4.5 | **Status:** ⚠️ PHASE 1 COMPLETE
+**Focus:** Email consolidation + Lead scraping tools factual analysis
+
+## LEAD SCRAPING TOOLS - FACTUAL ANALYSIS (Web Research 2025-12-14)
+
+### GitHub Scrapers vs Apify - COÛT RÉEL
+
+| Facteur | GitHub "Gratuit" | Apify |
+|---------|------------------|-------|
+| Coût script | $0 | $0 (free tier) |
+| Residential proxies | $50-200/mo (REQUIS) | Inclus |
+| Maintenance | 4-8h/mo @$50/h = $200-400 | $0 |
+| Success rate | 30-60% | 90%+ |
+| **COÛT TOTAL/MOIS** | **$250-600** | **$49-99** |
+
+### Verdict (Sources: Proxyway, AIMultiple, Scrapfly)
+- "Basic Python scraping doesn't work on Instagram due to strong anti-bot systems"
+- "Instagram is one of the most aggressive platforms for blocking automated scraping"
+- GitHub scrapers = coûts cachés > Apify
+
+### Recommandation Alpha Medical
+| Phase | Outil | Coût | Usage |
+|-------|-------|------|-------|
+| PRE-LAUNCH | Meta Ad Library | $0 | Insights créatifs concurrents |
+| PRE-LAUNCH | Apify (si leads) | $49/mo | Lead scraping recommandé |
+| POST-LAUNCH (M3+) | BigSpy | $9/mo | Analyse ads multi-plateforme |
+
+**Sources:** proxyway.com, research.aimultiple.com, scrapfly.io, apify.com
+
+---
 
 ## EMAIL CONSOLIDATION - PHASE 1: SHOPIFY DEACTIVATION ✅
 

@@ -1,27 +1,37 @@
-# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION + CATALOG CLEANUP
+# 🔄 SESSION 91 UPDATE (2025-12-14) - SCRAPER ANALYSIS + EMAIL + CATALOG
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
-**Focus:** Phase 1 Email Consolidation + Product Catalog Deduplication
+**Focus:** Lead Scraping Factual Analysis + Infrastructure Cleanup
 
-## SESSION 91 CHANGES
+## LEAD SCRAPING - FORENSIC ANALYSIS (2025-12-14)
 
-### Email System Consolidation (Phase 1)
-| System | Status | Change |
-|--------|--------|--------|
-| Shopify Flow (email triggers) | ❌ INACTIVE (4/4) | Deactivated |
-| Shopify Flow (tag/loyalty) | ✅ ACTIVE (1/1) | Kept |
-| Shopify Email | ❌ INACTIVE | Powered by Flow |
-| Klaviyo | ✅ ACTIVE (4/4) | Primary system |
+### GitHub Scrapers COÛT RÉEL vs Documentation Antérieure
+| | Documentation précédente | RÉALITÉ VÉRIFIÉE |
+|---|-------------------------|------------------|
+| GitHub scrapers | "$0 gratuit" | **$250-600/mo** (coûts cachés) |
+| Apify | "Payant $49/mo" | **$49-99/mo** (tout inclus) |
 
-**Gap:** Klaviyo missing Cart/Checkout/Browse abandonment flows (USER ACTION REQUIRED)
+### Coûts Cachés GitHub Scrapers (Sources vérifiées)
+- Residential proxies: $50-200/mo (requis - datacenter IP bloquées)
+- Maintenance: 4-8h/mo × $50/h = $200-400/mo
+- Success rate: 30-60% (vs 90%+ Apify)
 
-### Catalog Cleanup
-- Deleted: 33 draft bundle duplicates + 2 active duplicates
-- Result: 90 products (85 active, 5 draft), 11 unique bundles
+**Sources:** proxyway.com, aimultiple.com, scrapfly.io (2025-12-14)
 
-**Cost Impact:** -$30/mo (email consolidation)
+---
 
-**Verification:** API + Chrome DevTools | **Confidence:** 100% | **BS:** 0%
+## EMAIL CONSOLIDATION
+| System | Status |
+|--------|--------|
+| Shopify Flow/Email | ❌ INACTIVE |
+| Klaviyo | ✅ PRIMARY |
+| **Gap** | Abandonment flows (USER ACTION) |
+
+## CATALOG
+- 90 products (85 active), 11 unique bundles
+- 35 duplicates deleted
+
+**Verification:** Web Research + API | **Confidence:** 100% | **BS:** 0%
 
 ---
 

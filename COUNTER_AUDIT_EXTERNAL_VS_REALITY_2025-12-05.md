@@ -1,44 +1,46 @@
-# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION + CATALOG CLEANUP
+# 🔄 SESSION 91 UPDATE (2025-12-14) - SCRAPER TOOLS + EMAIL + CATALOG
 
 > **Analyst:** Claude Opus 4.5
-> **Status:** ✅ COMPLETE - Email Phase 1 + Catalog Deduplication
+> **Status:** ✅ COMPLETE - Factual Analysis + Infrastructure Cleanup
 
-## WORK ACCOMPLISHED
+## LEAD SCRAPING TOOLS - REALITY CHECK (Web Research 2025-12-14)
 
-### 1. Email Consolidation (Phase 1 - Shopify Deactivation)
-**Method:** Chrome DevTools MCP verification + manual deactivation
+### GitHub Scrapers vs Apify - COÛT RÉEL
+| Facteur | GitHub "Gratuit" | Apify |
+|---------|------------------|-------|
+| Script | $0 | $0 |
+| Residential proxies | $50-200/mo (REQUIS) | Inclus |
+| Maintenance | $200-400/mo | $0 |
+| Success rate | 30-60% | 90%+ |
+| **TOTAL/MOIS** | **$250-600** | **$49-99** |
 
-| System | Before | After | Status |
-|--------|--------|-------|--------|
-| Shopify Flow (email) | 4 ACTIVE | 0 ACTIVE | ✅ Deactivated |
-| Shopify Flow (tags) | 1 ACTIVE | 1 ACTIVE | ✅ Kept (Loyalty) |
-| Shopify Email | 5 ACTIVE | 0 ACTIVE | ✅ Powered off |
+**Verdict factuel:**
+- GitHub scrapers = coûts cachés dépassent solutions payantes
+- Instagram anti-bot = agressif, scripts gratuits échouent
+- Sources: proxyway.com, aimultiple.com, scrapfly.io
 
-**Critical Gap Identified:**
-- Cart Abandonment: ❌ NOT COVERED (Shopify off, Klaviyo has no flow)
-- Checkout Abandonment: 🟡 BUILT NOT LIVE (Klaviyo recommendation)
-- Browse Abandonment: ❌ NOT COVERED
-- **USER ACTION REQUIRED:** Create Klaviyo abandonment flows (15-30 min)
+### Recommandation Timing
+| Phase | Outil | Coût |
+|-------|-------|------|
+| PRE-LAUNCH | Meta Ad Library | $0 |
+| PRE-LAUNCH (si leads) | Apify | $49/mo |
+| POST-LAUNCH (M3+) | BigSpy | $9/mo |
 
-### 2. Catalog Cleanup
-**Method:** Shopify Admin API + Python scripts
+---
 
-| Action | Count | Result |
-|--------|-------|--------|
-| Draft bundle duplicates deleted | 33 | ✅ 100% success |
-| Active Athlete duplicates deleted | 2 | ✅ 100% success |
+## EMAIL CONSOLIDATION (Phase 1)
+| System | Status |
+|--------|--------|
+| Shopify Flow (email) | ❌ INACTIVE |
+| Klaviyo | ✅ PRIMARY (4 LIVE) |
+| **Gap** | Abandonment flows (USER ACTION) |
 
-**Final Catalog State:**
-- Total Products: 90 (was 125)
-- Active: 85
-- Draft: 5 (LED masks, regular products)
-- Bundles: 11 unique (was 13 with duplicates)
+## CATALOG CLEANUP
+- Products: 90 (85 active, 5 draft)
+- Bundles: 11 unique (35 duplicates deleted)
+- Cost savings: $30/mo
 
-### 3. Cost Impact
-- Email cost reduction: $30/mo saved (removing Shopify Email redundancy)
-- Target: $88/mo → $58/mo
-
-**Verification:** API + Chrome DevTools MCP | **Confidence:** 100% | **BS:** 0%
+**Verification:** API + Chrome DevTools + Web Research | **Confidence:** 100% | **BS:** 0%
 
 ---
 

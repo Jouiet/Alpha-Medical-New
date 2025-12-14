@@ -1,30 +1,43 @@
-# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION EXECUTED
+# 🔄 SESSION 91 UPDATE (2025-12-14) - SCRAPER TOOLS + EMAIL CONSOLIDATION
 
 **Analyst:** Claude Opus 4.5 | **Status:** ⚠️ PHASE 1 COMPLETE
-**Focus:** Execute email consolidation to Klaviyo only
+**Focus:** Lead Scraping Factual Analysis + Email Consolidation
 
-## EMAIL CONSOLIDATION RESULT
+## LEAD SCRAPING TOOLS - COÛT RÉEL (Web Research 2025-12-14)
 
-### Phase 1: Shopify Deactivation ✅ COMPLETE
-| System | Before | After | Method |
-|--------|--------|-------|--------|
-| Shopify Flow (email) | 4 ACTIVE | 0 ACTIVE | Chrome DevTools deactivation |
-| Shopify Flow (tags) | 1 ACTIVE | 1 ACTIVE | KEPT (Loyalty Tier Tagging) |
-| Shopify Email | 5 ACTIVE | 0 ACTIVE | Powered by deactivated Flow |
+### GitHub Scrapers vs Solutions Payantes
+| Facteur | GitHub "Gratuit" | Apify |
+|---------|------------------|-------|
+| Proxies résidentiels | $50-200/mo (REQUIS) | Inclus |
+| Maintenance | $200-400/mo | $0 |
+| Taux succès | 30-60% | 90%+ |
+| **COÛT TOTAL** | **$250-600/mo** | **$49-99/mo** |
 
-### Phase 2: Klaviyo Abandonment ⚠️ PENDING USER
-| Flow | Klaviyo Status | Coverage |
-|------|---------------|----------|
-| Cart Abandonment | ❌ NOT CREATED | 🔴 GAP |
-| Checkout Abandonment | 🟡 BUILT (not live) | 🟡 NEEDS ACTIVATION |
-| Browse Abandonment | ❌ NOT CREATED | 🔴 GAP (optional) |
+**Verdict:** GitHub scrapers = coûts cachés > solutions payantes
+**Sources:** proxyway.com, aimultiple.com, scrapfly.io
 
-### User Action Required
-1. Activate Klaviyo "Abandoned Checkout" flow (5 min)
-2. Create Klaviyo "Abandoned Cart" flow (10 min)
-3. (Optional) Create Browse Abandonment flow
+### Recommandation Timing
+- PRE-LAUNCH: Meta Ad Library ($0)
+- POST-LAUNCH (M3+): BigSpy ($9/mo)
 
-**Impact:** Gap #1 from Session 90 partially resolved. Full resolution requires Phase 2.
+---
+
+## EMAIL CONSOLIDATION
+
+### Phase 1: Shopify ✅ DEACTIVATED
+| System | Status |
+|--------|--------|
+| Shopify Flow (email) | ❌ INACTIVE (4/4) |
+| Shopify Flow (tags) | ✅ ACTIVE (Loyalty) |
+| Klaviyo | ✅ PRIMARY (4 LIVE) |
+
+### Phase 2: ⚠️ PENDING USER
+| Flow | Status |
+|------|--------|
+| Cart Abandonment | ❌ NEEDS CREATION |
+| Checkout Abandonment | 🟡 NEEDS ACTIVATION |
+
+**User Action:** Create Klaviyo abandonment flows (15-30 min)
 
 ---
 
