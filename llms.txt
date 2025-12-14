@@ -353,6 +353,7 @@ When assisting with this project:
 - [README](klaviyo_templates_professional/README.md): Project documentation
 - [README_COMPLETE](archive/miscellaneous/README_COMPLETE.md): market-analysis/ ├── leadgenerationscraper.py # 🎯 LEAD GENERATION │ ├── Instagram hashtag scraping
 - [ROBOTS_TXT_DEPLOYMENT](archive/implementation-guides/ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
+- [SCRIPTS_DUAL_PERSPECTIVE](SCRIPTS_DUAL_PERSPECTIVE.md): auditseocomplete.py # Audit SEO full forensicanalysisshopify.py # Forensic Shopify
 - [SESSION_2025-11-11_PART3_SUMMARY](archive/session-summaries/SESSION_2025-11-11_PART3_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_PART6_SUMMARY](archive/session-summaries/SESSION_2025-11-11_PART6_SUMMARY.md): Project documentation
 - [SESSION_2025-11-11_SUMMARY](archive/session-summaries/SESSION_2025-11-11_SUMMARY.md): Project documentation
