@@ -2,34 +2,6 @@
 
 > Updated by post-tool-use hook after significant changes
 
-- [2025-12-09 00:05 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/WHITEBOOK_VS_ALPHA_MEDICAL_GAP_ANALYSIS.md
-- [2025-12-09 00:28 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/WHITEBOOK_IMPLEMENTATION_COMPLETE_PLAN_GEMINI3PRO.md
-- [2025-12-09 00:40 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/GOOGLE_ECOSYSTEM_COMPLETE_OPTIMIZATION_GEMINI3PRO.md
-- [2025-12-09 00:51 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/IMPLEMENTATION_IMMEDIATE_GOOGLE_ECOSYSTEM.md
-- [2025-12-09 01:28 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_prelaunch_readiness.py
-- [2025-12-09 01:30 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/fixes/unpublish_bundles_without_images.py
-- [2025-12-09 01:33 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_shopify_flow_status.py
-- [2025-12-09 01:41 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/scripts/manual/DEACTIVATE_SHOPIFY_FLOW_WORKFLOWS.md
-- [2025-12-09 01:42 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_draft_status.py
-- [2025-12-09 01:44 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_published_items.py
-- [2025-12-09 01:47 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_86_PRE_LAUNCH_VERIFICATION_COMPLETE.md
-- [2025-12-09 01:57 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/tests/test_flywheel_ecosystem_complete.py
-- [2025-12-09 02:02 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL.md
-- [2025-12-09 02:08 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/tests/categorize_all_scripts_exhaustive.py
-- [2025-12-09 02:09 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/tests/test_flywheel_exhaustive.py
-- [2025-12-09 02:28 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md
-- [2025-12-09 14:33 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/WORKFLOWS_CORE_FLYWHEEL_FACTUAL_2025-12-09.md
-- [2025-12-09 14:44 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/detect_script_duplications.py
-- [2025-12-09 14:48 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/create_optimization_plan.py
-- [2025-12-09 14:51 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/maintenance/archive_redundant_scripts.py
-- [2025-12-09 15:00 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/OPTIMIZATION_COMPLETE_2025-12-09.md
-- [2025-12-09 16:09 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/SESSION_87_OPTIMIZATION_VERIFIED_2025-12-09.md
-- [2025-12-09 17:01 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_automation_complementarity.py
-- [2025-12-09 18:20 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_performance_n8n.py
-- [2025-12-09 19:18 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/analyze_performance_optimizations_prelaunch.py
-- [2025-12-11 12:41 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/agents/klaviyo-expert.md
-- [2025-12-11 12:43 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/agents/shopify-expert.md
-- [2025-12-11 12:46 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/setup/activate_shopify_mcp.sh
 - [2025-12-14 08:30 UTC] ✅ Session 90: Empirical verification complete (Core Web Vitals, Tracking Stack, Automation Matrix)
 - [2025-12-14 08:30 UTC] ✅ Codebase contamination check: CLEAN (no fraudulent mentions in theme.liquid)
 - [2025-12-14 08:30 UTC] ✅ Updated: INFRASTRUCTURE_AUDIT_CHECKLIST.md with Session 90 findings
@@ -59,3 +31,24 @@
   - Gap identified: Phase 4 ADVOCACY = 0 scripts (critical)
   - Principle: DUAL perspective = Flywheel (ops) + Agency Value (sales)
   - NO NEW FILES created (consolidated into existing docs)
+- [2025-12-15 UTC] ✅ Session 92: Updated WORKFLOW_DIAGRAMS_VISUAL.html
+  - Updated: Session 91 → Session 92 (hero, footer, all references)
+  - Added: Section 9 Scripts Documentation (+192 lines)
+  - Added: 276 Scripts stat in hero, Flywheel Coverage by Phase cards
+  - Alert: Critical Gap Phase 4 ADVOCACY = 0 scripts
+  - Table: DUAL Perspective (Flywheel + Agency Value)
+  - Footer: 35 Workflows, 276 Scripts, 85.7% Automation
+- [2025-12-15 UTC] ✅ Session 92: IP Audit Complete (741 lines)
+  - Created: ALPHA_MEDICAL_IP_AUDIT_FACTUAL_2025-12-15.md
+  - Methodology: Bottom-up empirique (bash commands verified)
+  - Current PI Value: $500-7,000 (copyright auto + domain)
+  - Findings:
+    - Copyright: ✅ 62,355 lines (automatic, low enforcement value)
+    - Trade Secret: ❌ IMPOSSIBLE (repo PUBLIC - gh verified)
+    - Patent: ❌ 0 algorithms (100% API wrappers)
+    - Trademark: ❌ NON ENREGISTRÉ
+  - Critical Gaps: Repo PUBLIC, 0 ML, pitch deck false claims
+  - Action Plan: 8 actions across 3 phases
+    - URGENT: TM filing ($550), LICENSE file, fix pitch deck
+    - IMPORTANT: Make repo private, NDA template
+    - LONG TERM: Data accumulation, ML algorithm, patent
