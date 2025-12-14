@@ -77,6 +77,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### Email Marketing & Automation
 
 - [ABANDONED_CART_RECOVERY_CONFIG](archive/implementation-guides/ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
+- [AI_AUTOMATION_AGENCY_BLUEPRINT_2025](AI_AUTOMATION_AGENCY_BLUEPRINT_2025.md): scripts/ ├── analysis/ # Audits, vérifications, checks │ ├── audits/ │ ├── checks/
 - [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_COMPLETE_WORKFLOWS](archive/miscellaneous/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06](AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06.md): Project documentation
