@@ -62,3 +62,9 @@
 - [2025-12-09 17:01 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_automation_complementarity.py
 - [2025-12-09 18:20 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/verify_performance_n8n.py
 - [2025-12-09 19:18 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/analysis/analyze_performance_optimizations_prelaunch.py
+- [2025-12-11 12:41 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/agents/klaviyo-expert.md
+- [2025-12-11 12:43 UTC] ✅ Created: /Users/mac/Desktop/Alpha-Medical/.claude/agents/shopify-expert.md
+- [2025-12-11 12:46 UTC] ✅ Script created: /Users/mac/Desktop/Alpha-Medical/scripts/setup/activate_shopify_mcp.sh
+- [2025-12-14 08:30 UTC] ✅ Session 90: Empirical verification complete (Core Web Vitals, Tracking Stack, Automation Matrix)
+- [2025-12-14 08:30 UTC] ✅ Codebase contamination check: CLEAN (no fraudulent mentions in theme.liquid)
+- [2025-12-14 08:30 UTC] ✅ Updated: INFRASTRUCTURE_AUDIT_CHECKLIST.md with Session 90 findings
