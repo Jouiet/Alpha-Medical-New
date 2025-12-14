@@ -14,7 +14,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 ### SEO & Marketing
 
-- [AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026](AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md): Project documentation
+- [AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026](AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md): 1. ✅ Quality vetting process (5-step) 2. ✅ AliExpress Choice (7-15 day shipping) 3. ✅ 4.5+ star suppliers only
 - [ALPHA_MEDICAL_IP_AUDIT_FACTUAL_2025-12-15](ALPHA_MEDICAL_IP_AUDIT_FACTUAL_2025-12-15.md): Alpha Medical ne possède aucune PI défendable significative au 2025-12-15. 1. Repository GitHub PUBLIC (trade secrets impossibles)
 - [AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27](archive/old-audits/AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27.md): Status: ✅ ACTIVE (80% configured) Trigger: Order paid Condition: Customer total spent >= $2,500 (Platinum tier)
 - [BRUTAL_HONEST_SITE_AUDIT_2025-11-28](BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md): URL: https://www.alphamedical.shop Domaine Shopify: azffej-as.myshopify.com Plan: Basic ($29/mo)
@@ -22,7 +22,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [BUNDLE_RECONSTRUCTION_ANALYSIS_2025](archive/old-audits/BUNDLE_RECONSTRUCTION_ANALYSIS_2025.md): Project documentation
 - [CART_DRAWER_FORENSIC_ANALYSIS](archive/old-audits/CART_DRAWER_FORENSIC_ANALYSIS.md): <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}"> (ligne 20 du snippet)
 - [CLAUDE_TASKS_MEMORY_SYSTEMS_ANALYSIS](CLAUDE_TASKS_MEMORY_SYSTEMS_ANALYSIS.md): Project documentation
-- [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): Project documentation
+- [COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27](COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md): 1. File USPTO trademark: $550 2. Add LICENSE file: $0 3. Correct pitch deck: $0 4. Consider repo private: $0
 - [COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27](archive/old-audits/COMPREHENSIVE_SEO_MARKETING_AUDIT_2025-11-27.md): Project documentation
 - [CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025](archive/old-audits/CONVERSION_OPTIMIZATION_FUNNEL_ANALYSIS_2025.md): Category Score Status ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - [COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05](COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md): Project documentation
@@ -33,14 +33,14 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09](FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
-- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): Project documentation
+- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): gh repo view --json isPrivate # {"isPrivate":false} find scripts -name '.py' | wc -l # 276
 - [KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS](archive/miscellaneous/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md): Project documentation
 - [MEMORY_SYSTEM_AUDIT_FACTUAL](archive/old-audits/MEMORY_SYSTEM_AUDIT_FACTUAL.md): Status: ✅ Executable (755 permissions) Size: 5,365 bytes Functionality: WORKING 100%
 - [POLICY_PAGES_AUDIT_REPORT_2025-11-30](POLICY_PAGES_AUDIT_REPORT_2025-11-30.md): Project documentation
 - [PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026](PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md): Project documentation
 - [RESPONSE_TO_THIRD_PARTY_ANALYSIS](archive/miscellaneous/RESPONSE_TO_THIRD_PARTY_ANALYSIS.md): "International medical equipment retailer... NOT affiliated with Hello Alpha (telemedicine) or
 - [SEO_AUDIT_RECOMMENDATIONS](archive/miscellaneous/SEO_AUDIT_RECOMMENDATIONS.md): AVANT: "FAQ – My StoreAlpha Medical Care" APRÈS: "FAQ - Alpha Medical Care | Medical Support Products"
-- [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Sources: proxyway.com, aimultiple.com, scrapfly.io
+- [SEO_MARKETING_FORENSIC_ANALYSIS](SEO_MARKETING_FORENSIC_ANALYSIS.md): Project documentation
 - [SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01](SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md): Total Workflows: 5 Active Workflows: 5/5 (100% ✅) Inactive Workflows: 0 Workflows Verified:
 - [SESSION_PART_14_COMPREHENSIVE_AUDIT](archive/session-summaries/SESSION_PART_14_COMPREHENSIVE_AUDIT.md): { "customer": { "id": "gid://shopify/Customer/8044321603661", "email": null, "firstName": null,
 - [SHOPIFY_MCP_FACTUAL_ANALYSIS](SHOPIFY_MCP_FACTUAL_ANALYSIS.md): Project documentation
