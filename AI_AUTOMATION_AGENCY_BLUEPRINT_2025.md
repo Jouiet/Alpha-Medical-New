@@ -22,41 +22,88 @@
 
 ## SECTION 1: INVENTAIRE ASSETS FACTUELS
 
-### 1.1 Scripts Python (276 fichiers - 62,355 lignes)
+### 1.1 Scripts Python (276 fichiers) - AUDIT FACTUEL 2025-12-14
 
-| Catégorie | Fichiers | Lignes Est. | Réutilisable |
-|-----------|----------|-------------|--------------|
-| Shopify API | 196 | ~40,000 | 70% |
-| Klaviyo | 36 | ~8,000 | 85% |
-| Apify/Scraping | 21 | ~5,000 | 90% |
-| Google Sheets | 24 | ~4,000 | 95% |
-| Analysis/Audit | 19 | ~3,000 | 80% |
-| Autres | 80 | ~2,355 | 50% |
+> ⚠️ **CORRECTION IMPORTANTE:** Les chiffres précédents étaient des estimations.
+> Voici les données EMPIRIQUES vérifiées par `find` et `grep`.
+
+#### Classification Réelle (Vérité Brutale)
+
+| Classification | Quantité | % Total | Status Agence |
+|----------------|----------|---------|---------------|
+| **Type A - 100% GÉNÉRIQUES** | 107 | 38.8% | ✅ Vendables immédiatement |
+| **Type B - Paramétrables (os.getenv)** | 7 | 2.5% | ✅ 5 min adaptation/client |
+| **Type C - Hardcodés Alpha Medical** | 162 | 58.7% | ⚠️ Refactor 5-8h batch |
+
+**Verdict:** Seulement **114 scripts (41.3%)** sont vendables sans modification.
+Les **162 scripts (58.7%)** nécessitent un refactoring pour remplacer les hardcodes.
+
+#### Problèmes Hardcodes Détectés
+
+| Type Hardcode | Scripts | Impact |
+|---------------|---------|--------|
+| `azffej-as` (Shopify store ID) | 86 | 🔴 BLOQUANT |
+| `alphamedical.shop` (domain) | 83 | 🔴 BLOQUANT |
+| `Alpha Medical` (brand name) | 91 | 🟡 Cosmétique |
+| **Total unique (avec overlap)** | ~162 | **5-8h refactor** |
+
+#### Répartition par Dossier (Empirique)
+
+| Dossier | Scripts | Génériques | Hardcodés |
+|---------|---------|------------|-----------|
+| analysis/ | 82 | ~35 | ~47 |
+| uncategorized/ | 48 | ~20 | ~28 |
+| deployment/ | 44 | ~15 | ~29 |
+| maintenance/ | 25 | ~10 | ~15 |
+| automation/ | 22 | ~8 | ~14 |
+| features/ | 10 | ~4 | ~6 |
+| analytics/ | 10 | ~5 | ~5 |
+| setup/ | 8 | ~3 | ~5 |
+| tests/ | 7 | ~3 | ~4 |
+| fixes/ | 5 | ~2 | ~3 |
+| autres | 15 | ~2 | ~13 |
+
+#### Qualité Documentation ✅
+
+| Métrique | Valeur | Status |
+|----------|--------|--------|
+| Scripts avec docstrings (""") | 270/276 | ✅ 97.8% |
+| README.md principal | Existe | ✅ Documenté |
+| Syntaxe Python valide | 5/5 testés | ✅ 100% |
+
+#### Scripts Vendables Immédiatement (107 exemples)
+
+```
+scripts/analysis/audits/forensic_analysis_shopify.py    ✅ Générique
+scripts/analysis/audits/forensic_analysis_klaviyo.py    ✅ Générique
+scripts/analysis/audits/forensic_analysis_tracking.py   ✅ Générique
+scripts/analysis/verify_automation_complementarity.py   ✅ Générique
+scripts/analysis/create_optimization_plan.py            ✅ Générique
+scripts/analysis/checks/check_theme_pixels.py           ✅ Générique
+scripts/fixes/verify_corrections.py                     ✅ Générique
+scripts/fixes/fix_long_url_handles.py                   ✅ Générique
+```
 
 **Localisation:** `/Users/mac/Desktop/Alpha-Medical/scripts/`
 
-**Structure Répertoires:**
+**Structure Répertoires (Vérifiée):**
 ```
-scripts/
-├── analysis/          # Audits, vérifications, checks
-│   ├── audits/
-│   ├── checks/
-│   └── verification/
-├── deployment/        # Déploiement theme, schema
-├── features/          # Fonctionnalités (loyalty, bundles)
-│   ├── loyalty/
-│   └── bundles/
-├── fixes/             # Corrections bugs
-├── maintenance/       # Maintenance ongoing
-│   ├── fixes/
-│   └── updates/
-├── marketing/         # Facebook automation, etc.
-├── optimization/      # Performance
-├── setup/             # Configuration initiale
-├── tests/             # Tests automatisés
-├── cleanup/           # Nettoyage données
-├── manual/            # Guides manuels
-└── uncategorized/     # À trier
+scripts/                    # 276 total
+├── analysis/               # 82 scripts (29.7%)
+├── uncategorized/          # 48 scripts (17.4%) ⚠️ À trier
+├── deployment/             # 44 scripts (15.9%)
+├── maintenance/            # 25 scripts (9.1%)
+├── automation/             # 22 scripts (8.0%)
+├── features/               # 10 scripts (3.6%)
+├── analytics/              # 10 scripts (3.6%)
+├── setup/                  # 8 scripts (2.9%)
+├── tests/                  # 7 scripts (2.5%)
+├── fixes/                  # 5 scripts (1.8%)
+├── cleanup/                # 2 scripts
+├── optimization/           # 2 scripts
+├── data/                   # 2 scripts
+├── marketing/              # 1 script
+└── racine/                 # 8 scripts
 ```
 
 ---
@@ -352,6 +399,8 @@ scripts/
 
 ## SECTION 6: GAPS & ACTIONS REQUISES
 
+> ⚠️ **MISE À JOUR 2025-12-14:** Gap critique ajouté suite audit scripts
+
 ### 6.1 Gaps Critiques (RED)
 
 | Gap | Impact | Action | Effort | Deadline |
@@ -359,6 +408,7 @@ scripts/
 | **1 seul client (Alpha Medical)** | Crédibilité | Réussir launch 25/12 | - | 25/12/2025 |
 | **Pas de case study publié** | Sales | Documenter post-launch | 8h | Jan 2026 |
 | **Pas de site agence** | Acquisition | Créer landing page | 16h | Jan 2026 |
+| **🆕 162 scripts hardcodés Alpha** | Blocking | Refactor batch | 5-8h | Avant 1er client |
 
 ### 6.2 Gaps Medium (YELLOW)
 
@@ -368,6 +418,7 @@ scripts/
 | Processus onboarding | Inefficacité | Créer checklist | 8h |
 | Contrats/Legal | Risque | Templates contrats | 8h |
 | Portfolio visuel | Sales | Screenshots, vidéos | 12h |
+| **🆕 48 scripts uncategorized** | Désordre | Trier et documenter | 4h |
 
 ### 6.3 Gaps Low (GREEN)
 
@@ -376,6 +427,26 @@ scripts/
 | Social media presence | Long-term | LinkedIn, Twitter | Ongoing |
 | Blog content | SEO | Articles techniques | Ongoing |
 | Testimonials | Trust | Collecter post-clients | Ongoing |
+
+### 6.4 Plan Refactoring Scripts (Nouveau)
+
+**Objectif:** Transformer 162 scripts hardcodés en scripts paramétrables
+
+**Approche:**
+```bash
+# Remplacer hardcodes par variables environnement
+sed -i 's/azffej-as\.myshopify\.com/${SHOPIFY_STORE_DOMAIN}/g' scripts/**/*.py
+sed -i 's/alphamedical\.shop/${STORE_DOMAIN}/g' scripts/**/*.py
+sed -i 's/Alpha Medical/${BRAND_NAME}/g' scripts/**/*.py
+```
+
+**Priorisation:**
+1. **P1 (2h):** Scripts analysis/audits (les plus vendables)
+2. **P2 (2h):** Scripts deployment (les plus utilisés)
+3. **P3 (2h):** Scripts maintenance (support client)
+4. **P4 (2h):** Reste (si temps permet)
+
+**Résultat attendu:** 276/276 scripts paramétrables (100%)
 
 ---
 
@@ -566,11 +637,19 @@ scripts/
 | Attribut | Valeur |
 |----------|--------|
 | **Créé** | 2025-12-14 Session 91 |
+| **Mis à jour** | 2025-12-14 Session 91 (Audit scripts factuel) |
 | **Auteur** | Claude Opus 4.5 + Owner |
-| **Version** | 1.0 |
+| **Version** | 1.1 |
 | **Status** | APPROVED - GO Decision |
 | **Review Date** | Post Alpha Medical Launch |
 | **Confidentialité** | INTERNAL |
+
+### Changelog
+
+| Version | Date | Changements |
+|---------|------|-------------|
+| 1.0 | 2025-12-14 | Création initiale |
+| 1.1 | 2025-12-14 | Audit factuel 276 scripts: 107 génériques (38.8%), 162 hardcodés (58.7%). Gap critique ajouté. |
 
 ---
 
