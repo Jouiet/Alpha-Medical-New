@@ -119,24 +119,11 @@
 
   /* ========== MOBILE DRAWER OPTIMIZATION - Session 90 ========== */
 
-  /* Big Dealz RED in mobile drawer - ULTRA SPECIFIC for color-scheme-4 override */
-  .color-scheme-4 .menu-drawer__menu-item[href*="bundles"],
-  .color-scheme-4 .menu-drawer__menu-item[href*="medical-equipment-bundles"],
-  .color-scheme-4 a.menu-drawer__menu-item[href*="bundles"],
-  .color-scheme-4 a[href*="medical-equipment-bundles"],
-  .menu-drawer.color-scheme-4 a[href*="bundles"],
-  .menu-drawer.color-scheme-4 .list-menu__item[href*="bundles"],
-  .gradient.menu-drawer.color-scheme-4 a[href*="bundles"],
-  .menu-drawer__navigation a[href*="bundles"],
-  .menu-drawer__navigation a[href*="medical-equipment-bundles"],
-  nav.menu-drawer__navigation a[href*="bundles"] {
-    color: #FF3131 !important;
-    font-weight: 600 !important;
-  }
-
-  /* Fallback - ALL bundles links anywhere in drawer */
-  [class*="menu-drawer"] a[href*="bundles"],
-  [class*="menu-drawer"] a[href*="medical-equipment-bundles"] {
+  /* Big Dealz RED - ID selector for MAXIMUM specificity */
+  #menu-drawer a[href*="bundles"],
+  #menu-drawer a[href*="medical-equipment-bundles"],
+  #menu-drawer .menu-drawer__menu-item[href*="bundles"],
+  #HeaderDrawer-our-bundles {
     color: #FF3131 !important;
     font-weight: 600 !important;
   }
