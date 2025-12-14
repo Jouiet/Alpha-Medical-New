@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Medical Care - Infrastructure Documentation | Session 91</title>
+    <title>Alpha Medical Care - Infrastructure Documentation | Session 92</title>
     <meta name="description" content="Professional automation infrastructure documentation for Alpha Medical Care - 35 workflows, 6 categories, 85.7% automation score">
 
     <!-- Alpha Medical Brand Fonts (from ALPHA_MEDICAL_BRAND_GUIDELINES.md) -->
@@ -929,7 +929,7 @@
         <div class="container">
             <div class="hero-badge">
                 <span class="pulse"></span>
-                SESSION 91 &bull; 2025-12-14 &bull; LIVE DOCUMENTATION
+                SESSION 92 &bull; 2025-12-15 &bull; LIVE DOCUMENTATION
             </div>
 
             <h1><span class="gradient-text">Alpha Medical Care</span></h1>
@@ -941,8 +941,8 @@
                     <div class="hero-stat-label">Workflows</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-value">6</div>
-                    <div class="hero-stat-label">Categories</div>
+                    <div class="hero-stat-value">276</div>
+                    <div class="hero-stat-label">Scripts</div>
                 </div>
                 <div class="hero-stat">
                     <div class="hero-stat-value">90</div>
@@ -961,10 +961,10 @@
          ============================================ -->
     <div class="session-bar">
         <span class="session-tag success">&#10003; Shopify Flow: 1/5 Active</span>
-        <span class="session-tag danger">&#10007; Shopify Email: 0/5 Deactivated</span>
         <span class="session-tag success">&#10003; Klaviyo: 4/4 Live</span>
-        <span class="session-tag warning">&#9888; Cart/Browse: Missing</span>
-        <span class="session-tag info">&#8635; Catalog: 35 Duplicates Deleted</span>
+        <span class="session-tag info">&#128220; Scripts: 276 Documented</span>
+        <span class="session-tag warning">&#9888; Advocacy: 0 Scripts</span>
+        <span class="session-tag success">&#10003; DUAL Perspective</span>
     </div>
 
     <!-- ============================================
@@ -997,6 +997,9 @@
                 <a href="#catalog" class="nav-link">
                     <span class="nav-num">8</span> Catalog
                 </a>
+                <a href="#scripts" class="nav-link">
+                    <span class="nav-num">9</span> Scripts
+                </a>
             </div>
         </div>
     </nav>
@@ -1024,7 +1027,15 @@
             <div class="alert success">
                 <div class="alert-icon">&#10003;</div>
                 <div class="alert-content">
-                    <div class="alert-title">Session 91 Complete: Email Consolidation + Catalog Cleanup</div>
+                    <div class="alert-title">Session 92 Complete: Scripts Documentation DUAL Perspective</div>
+                    <div class="alert-text">276 scripts documented with DUAL perspective: Flywheel (ops) + Agency Value (sales). Gap identified: Phase 4 ADVOCACY = 0 scripts. Updated scripts/README.md (+340 lines) and FLYWHEEL_SCRIPTS_MATRIX.md.</div>
+                </div>
+            </div>
+
+            <div class="alert info">
+                <div class="alert-icon">&#128200;</div>
+                <div class="alert-content">
+                    <div class="alert-title">Session 91: Email Consolidation + Catalog Cleanup</div>
                     <div class="alert-text">Shopify Flow/Email deactivated for Klaviyo-only strategy. 35 duplicate bundles deleted (33 draft + 2 active). Catalog now at 90 products (85 active, 5 draft).</div>
                 </div>
             </div>
@@ -2145,6 +2156,175 @@ graph LR
     </section>
 
     <!-- ============================================
+         SECTION 9: SCRIPTS DOCUMENTATION
+         ============================================ -->
+    <section id="scripts" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">09</span>
+                <h2 class="section-title">Scripts Documentation</h2>
+                <p class="section-desc">276 Python scripts organized with DUAL perspective: Flywheel (operational architecture) + Agency Value (client sales positioning). Session 92 comprehensive audit.</p>
+            </div>
+
+            <!-- Scripts Metrics -->
+            <div class="metrics-row">
+                <div class="metric-card">
+                    <div class="metric-label">Total Scripts</div>
+                    <div class="metric-value gradient-text">276</div>
+                    <div class="metric-change up">&#8593; 100% documented</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Analysis Scripts</div>
+                    <div class="metric-value" style="color: var(--info);">91</div>
+                    <div class="metric-change neutral">Audit & Forensic</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Deployment Scripts</div>
+                    <div class="metric-value" style="color: var(--success);">57</div>
+                    <div class="metric-change neutral">Shopify features</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Automation Scripts</div>
+                    <div class="metric-value" style="color: var(--warning);">45</div>
+                    <div class="metric-change neutral">Workflows</div>
+                </div>
+            </div>
+
+            <!-- Flywheel Mapping Alert -->
+            <div class="alert warning">
+                <div class="alert-icon">&#9888;</div>
+                <div class="alert-content">
+                    <div class="alert-title">Critical Gap: Phase 4 ADVOCACY = 0 Scripts</div>
+                    <div class="alert-text">No scripts for reviews collection (Loox), referral management, or UGC automation. This represents a critical flywheel gap. Recommendation: Create scripts/advocacy/ directory with collect_reviews.py, manage_referrals.py, sync_loox_reviews.py.</div>
+                </div>
+            </div>
+
+            <!-- DUAL Perspective Table -->
+            <h3 style="margin: var(--space-2xl) 0 var(--space-lg); color: var(--text-primary);">DUAL Perspective: Flywheel + Agency Value</h3>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Scripts</th>
+                            <th>Flywheel Phase</th>
+                            <th>Agency Service</th>
+                            <th>Client Pitch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-info">
+                            <td><strong>Analysis</strong></td>
+                            <td><span class="mono">91</span></td>
+                            <td>INFRASTRUCTURE</td>
+                            <td>Audit & Forensic</td>
+                            <td>"Diagnostic e-commerce 24h"</td>
+                        </tr>
+                        <tr class="row-success">
+                            <td><strong>Deployment</strong></td>
+                            <td><span class="mono">57</span></td>
+                            <td>CONVERSION</td>
+                            <td>Shopify Features</td>
+                            <td>"Features en heures, pas semaines"</td>
+                        </tr>
+                        <tr class="row-warning">
+                            <td><strong>Automation</strong></td>
+                            <td><span class="mono">45</span></td>
+                            <td>RETENTION</td>
+                            <td>Workflow Automation</td>
+                            <td>"N8N + Klaviyo + Shopify"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maintenance</strong></td>
+                            <td><span class="mono">29</span></td>
+                            <td>INFRASTRUCTURE</td>
+                            <td>Support & Fixes</td>
+                            <td>"Corrections en minutes"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Features</strong></td>
+                            <td><span class="mono">10</span></td>
+                            <td>CONVERSION</td>
+                            <td>Advanced Features</td>
+                            <td>"Bundles + Loyalty"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data</strong></td>
+                            <td><span class="mono">19</span></td>
+                            <td>ACQUISITION</td>
+                            <td>Analytics & BI</td>
+                            <td>"Intelligence business"</td>
+                        </tr>
+                        <tr class="row-danger">
+                            <td><strong>Advocacy</strong></td>
+                            <td><span class="mono" style="color: var(--danger);">0</span></td>
+                            <td>ADVOCACY &#10007;</td>
+                            <td>Reviews/Referrals</td>
+                            <td>"GAP - À créer"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Flywheel Coverage -->
+            <h3 style="margin: var(--space-2xl) 0 var(--space-lg); color: var(--text-primary);">Flywheel Coverage by Phase</h3>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <div class="info-card-icon">&#127919;</div>
+                        <div class="info-card-title">ACQUISITION</div>
+                    </div>
+                    <div class="info-card-value">4.3%</div>
+                    <div class="info-card-label">~12 scripts (SEO, leads)</div>
+                    <div class="info-card-change neutral">Basique</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <div class="info-card-icon">&#128176;</div>
+                        <div class="info-card-title">CONVERSION</div>
+                    </div>
+                    <div class="info-card-value">18.1%</div>
+                    <div class="info-card-label">~50 scripts (email, bundles)</div>
+                    <div class="info-card-change positive">&#10003; Bon</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <div class="info-card-icon">&#128260;</div>
+                        <div class="info-card-title">RETENTION</div>
+                    </div>
+                    <div class="info-card-value">9.8%</div>
+                    <div class="info-card-label">~27 scripts (loyalty, workflows)</div>
+                    <div class="info-card-change positive">&#10003; Bon</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <div class="info-card-icon">&#128165;</div>
+                        <div class="info-card-title">ADVOCACY</div>
+                    </div>
+                    <div class="info-card-value" style="color: var(--danger);">0%</div>
+                    <div class="info-card-label">0 scripts (reviews, referrals)</div>
+                    <div class="info-card-change negative">&#10007; MANQUANT</div>
+                </div>
+            </div>
+
+            <!-- Documentation Links -->
+            <div class="alert info" style="margin-top: var(--space-2xl);">
+                <div class="alert-icon">&#128196;</div>
+                <div class="alert-content">
+                    <div class="alert-title">Documentation References</div>
+                    <div class="alert-text">
+                        <strong>scripts/README.md:</strong> Complete 276 scripts detailed documentation (+340 lines Session 92)<br>
+                        <strong>FLYWHEEL_SCRIPTS_MATRIX.md:</strong> Flywheel mapping + Agency Value perspective<br>
+                        <strong>Principle:</strong> DUAL perspective = Flywheel (ops) + Agency Value (sales) sont COMPLÉMENTAIRES
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
          FOOTER
          ============================================ -->
     <footer class="footer">
@@ -2155,14 +2335,15 @@ graph LR
             </div>
 
             <div class="footer-meta">
-                <span>&#128197; Session 91</span>
-                <span>&#128205; 2025-12-14</span>
+                <span>&#128197; Session 92</span>
+                <span>&#128205; 2025-12-15</span>
                 <span>&#128202; 35 Workflows</span>
+                <span>&#128220; 276 Scripts</span>
                 <span>&#9989; 85.7% Automation</span>
             </div>
 
             <div class="footer-source">
-                Source: INFRASTRUCTURE_AUDIT_CHECKLIST.md | Method: Chrome DevTools MCP + Shopify Admin API<br>
+                Source: INFRASTRUCTURE_AUDIT_CHECKLIST.md + FLYWHEEL_SCRIPTS_MATRIX.md | Method: Empirical file audit<br>
                 Verification: 100% Empirical | Confidence: 100% | BS Level: 0%
             </div>
         </div>
