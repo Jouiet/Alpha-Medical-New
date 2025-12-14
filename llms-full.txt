@@ -3,7 +3,7 @@
 > This file contains the full content of all documentation files for Alpha Medical Care.
 > For a quick index, see llms.txt instead.
 
-**Generated:** December 14, 2025 at 16:40 UTC
+**Generated:** December 14, 2025 at 16:48 UTC
 **Project:** Alpha Medical Care (https://alphamedical.shop/)
 **Repository:** https://github.com/Jouiet/Alpha-Medical-New.git
 
@@ -112,7 +112,7 @@
 # 1. Seo Marketing Forensic Analysis
 
 **File:** `SEO_MARKETING_FORENSIC_ANALYSIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -21300,7 +21300,7 @@ NON - 85.4% fonctionnels après optimisation (amélioration +6.1 pts)
 # 2. Add Filter To Prevent Loop
 
 **File:** `ADD_FILTER_TO_PREVENT_LOOP.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -21362,7 +21362,7 @@ traité avec succès. Cela empêche aussi la boucle.
 # 3. Ai Seo Marketing Strategic Analysis 2025-2026
 
 **File:** `AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -30194,7 +30194,7 @@ Month 4-6 (Mar 22 - Jun 21):
 # 4. Aliexpress Supplier Selection 4Layer Alpha Medical 2025-12-07
 
 **File:** `ALIEXPRESS_SUPPLIER_SELECTION_4LAYER_ALPHA_MEDICAL_2025-12-07.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -31258,7 +31258,7 @@ Alert Admin + Flag Supplier for Review
 # 5. Alpha Medical Brand Guidelines
 
 **File:** `ALPHA_MEDICAL_BRAND_GUIDELINES.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -32306,7 +32306,7 @@ THEME_ID=140069830733
 # 6. Alpha Medical Real Personas Market Data
 
 **File:** `ALPHA_MEDICAL_REAL_PERSONAS_MARKET_DATA.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -33453,7 +33453,7 @@ Audit complet 7 critères
 # 7. Apify Actors Optimal Selection 2025
 
 **File:** `APIFY_ACTORS_OPTIMAL_SELECTION_2025.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -33820,13 +33820,43 @@ python3 lead_generation_scraper.py --google-maps --query "orthopedic store" --lo
 # 8. Automation Complete Workflows
 
 **File:** `AUTOMATION_COMPLETE_WORKFLOWS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
+
+---
+
+# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION EXECUTED
+
+**Analyst:** Claude Opus 4.5 | **Status:** ⚠️ PHASE 1 COMPLETE
+**Focus:** Execute email consolidation to Klaviyo only
+
+## EMAIL CONSOLIDATION RESULT
+
+### Phase 1: Shopify Deactivation ✅ COMPLETE
+| System | Before | After | Method |
+|--------|--------|-------|--------|
+| Shopify Flow (email) | 4 ACTIVE | 0 ACTIVE | Chrome DevTools deactivation |
+| Shopify Flow (tags) | 1 ACTIVE | 1 ACTIVE | KEPT (Loyalty Tier Tagging) |
+| Shopify Email | 5 ACTIVE | 0 ACTIVE | Powered by deactivated Flow |
+
+### Phase 2: Klaviyo Abandonment ⚠️ PENDING USER
+| Flow | Klaviyo Status | Coverage |
+|------|---------------|----------|
+| Cart Abandonment | ❌ NOT CREATED | 🔴 GAP |
+| Checkout Abandonment | 🟡 BUILT (not live) | 🟡 NEEDS ACTIVATION |
+| Browse Abandonment | ❌ NOT CREATED | 🔴 GAP (optional) |
+
+### User Action Required
+1. Activate Klaviyo "Abandoned Checkout" flow (5 min)
+2. Create Klaviyo "Abandoned Cart" flow (10 min)
+3. (Optional) Create Browse Abandonment flow
+
+**Impact:** Gap #1 from Session 90 partially resolved. Full resolution requires Phase 2.
 
 ---
 
 # 🔄 SESSION 90 UPDATE (2025-12-14) - COMPETITIVE AUTOMATION BENCHMARK
 
-**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE (superseded by Session 91)
 **Focus:** Multi-Project Automation Comparison + Strategic Gaps
 
 ## AUTOMATION COMPARISON (3 Projects)
@@ -41902,7 +41932,7 @@ CURRENT SCORE (Session 75 Continuation):
 # 9. Automation Duplications Factual Report 2025-12-06
 
 **File:** `AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -42507,7 +42537,7 @@ Recommendations in this report would have caused:
 # 10. Automation Duplication Resolution Plan 2025-12-06
 
 **File:** `AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -42867,7 +42897,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 # 11. Automation Empirical Verification 2025-12-06
 
 **File:** `AUTOMATION_EMPIRICAL_VERIFICATION_2025-12-06.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -43169,7 +43199,7 @@ Resolution: KEEP BOTH (A/B test recommended)
 # 12. Available Apis And Tools
 
 **File:** `AVAILABLE_APIS_AND_TOOLS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -43655,7 +43685,7 @@ Files gitignored:
 # 13. Azure Ad Setup Guide
 
 **File:** `AZURE_AD_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -44824,7 +44854,7 @@ git push --force  # ⚠️ Utiliser avec précaution
 # 14. Brutal Honest Site Audit 2025-11-28
 
 **File:** `BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -45378,7 +45408,7 @@ GET https://a.klaviyo.com/api/flows (401 Unauthorized)
 # 15. Bundle Images Creation Guide
 
 **File:** `BUNDLE_IMAGES_CREATION_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -45623,7 +45653,7 @@ Search: "product bundle images" or "product collage design"
 # 16. Claude
 
 **File:** `CLAUDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -45685,7 +45715,7 @@ Auto-activate via UserPromptSubmit hook (`.claude/hooks/user-prompt-submit.sh`):
 # 17. Claude Skills Complete Guide
 
 **File:** `CLAUDE_SKILLS_COMPLETE_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -46886,7 +46916,7 @@ NEXT_STEP_8="Document in .claude/memory/session-log.md"
 # 18. Claude Skills Installation Guide
 
 **File:** `CLAUDE_SKILLS_INSTALLATION_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -47320,7 +47350,7 @@ ls -la .claude/skills/
 # 19. Claude Tasks Memory Systems Analysis
 
 **File:** `CLAUDE_TASKS_MEMORY_SYSTEMS_ANALYSIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -48035,7 +48065,7 @@ SESSION="81"
 # 20. Clean Test Status
 
 **File:** `CLEAN_TEST_STATUS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -48134,7 +48164,7 @@ Script de monitoring en cours: `monitor_clean_test.py`
 # 21. Comprehensive Forensic Audit 2025-11-27
 
 **File:** `COMPREHENSIVE_FORENSIC_AUDIT_2025-11-27.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -51978,7 +52008,7 @@ User demands: "Exigences STRICTES NON NÉGOCIABLES: Rigueur ✅ Profondeur ✅ R
 # 22. Content Calendar Q1 2026
 
 **File:** `CONTENT_CALENDAR_Q1_2026.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -52582,7 +52612,7 @@ June:
 # 23. Counter Audit External Vs Reality 2025-12-05
 
 **File:** `COUNTER_AUDIT_EXTERNAL_VS_REALITY_2025-12-05.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -54959,7 +54989,7 @@ MINIMUM_FIXES_FOR_LAUNCH=Remove fraudulent pharmacy mention + test SEO metadata
 # 24. Counter Evaluation Audit Synthesis
 
 **File:** `COUNTER_EVALUATION_AUDIT_SYNTHESIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -55396,7 +55426,7 @@ Produits OK (handles <80 chars): 83/95 (87.4%)
 # 25. Creatify Prompts Alpha Medical
 
 **File:** `CREATIFY_PROMPTS_ALPHA_MEDICAL.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -57409,7 +57439,7 @@ Ce document est un living document - à mettre à jour après testing phase avec
 # 26. Env Files Documentation
 
 **File:** `ENV_FILES_DOCUMENTATION.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -57631,7 +57661,7 @@ SHOPIFY_GRAPHQL_URL=https://azffej-as.myshopify.com/admin/api/2025-10/graphql.js
 # 27. Etapes Manuelles Prioritaires
 
 **File:** `ETAPES_MANUELLES_PRIORITAIRES.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -58481,7 +58511,7 @@ Last updated: December 2025
 # 28. Facebook Marketing Api Automation Guide
 
 **File:** `FACEBOOK_MARKETING_API_AUTOMATION_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -59448,7 +59478,7 @@ Avant de lancer automation en production:
 # 29. Final Activation Steps
 
 **File:** `FINAL_ACTIVATION_STEPS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -59615,7 +59645,7 @@ Documentation Updated:
 # 30. Flywheel Ecosystem Exhaustive Audit 2025-12-09
 
 **File:** `FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -60099,7 +60129,7 @@ Scripts nécessitant arguments CLI - **COMPORTEMENT NORMAL**
 # 31. Flywheel Ecosystem Status Factual
 
 **File:** `FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -60416,7 +60446,7 @@ Scripts qui échouent sans détails d'erreur:
 # 32. Flywheel Optimization Blueprint 2025
 
 **File:** `FLYWHEEL_OPTIMIZATION_BLUEPRINT_2025.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -61254,7 +61284,7 @@ Transformer customers en advocates via reviews + referrals + user-generated cont
 # 33. Forensic Analysis Report
 
 **File:** `FORENSIC_ANALYSIS_REPORT.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -62753,7 +62783,7 @@ Pour toute question concernant ce rapport:
 # 34. Get Conversion Id Steps
 
 **File:** `GET_CONVERSION_ID_STEPS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -63137,7 +63167,7 @@ TOTAL: ~30 minutes de travail actif
 # 35. Google Ecosystem Complete Optimization Gemini3Pro
 
 **File:** `GOOGLE_ECOSYSTEM_COMPLETE_OPTIMIZATION_GEMINI3PRO.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -64561,7 +64591,7 @@ ROI: Targeted campaigns → +10-20% lead-to-customer conversion = +$500-2,000/mo
 # 36. Google Oauth2 Credentials Guide
 
 **File:** `GOOGLE_OAUTH2_CREDENTIALS_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -64925,7 +64955,7 @@ Une fois fait, ces credentials sont **réutilisables** pour le Workflow YouTube 
 # 37. Hostinger Dns Gsc Setup Guide
 
 **File:** `HOSTINGER_DNS_GSC_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -65301,7 +65331,7 @@ dig TXT alphamedical.shop +short
 # 38. Implementation Immediate Google Ecosystem
 
 **File:** `IMPLEMENTATION_IMMEDIATE_GOOGLE_ECOSYSTEM.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -66462,66 +66492,98 @@ function generateDescriptionWithGemini(productTitle, productType, currentDescrip
 # 39. Infrastructure Audit Checklist
 
 **File:** `INFRASTRUCTURE_AUDIT_CHECKLIST.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
 # 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION: KLAVIYO ONLY
 
-**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Analyst:** Claude Opus 4.5 | **Status:** ⚠️ PHASE 1 COMPLETE (Shopify deactivated, Klaviyo flows needed)
 **Focus:** Eliminate 3-way email duplication → Single system (Klaviyo)
 
-## EMAIL CONSOLIDATION EXECUTED
+## EMAIL CONSOLIDATION - PHASE 1: SHOPIFY DEACTIVATION ✅
 
 ### Problem (Before)
 - **3-WAY DUPLICATION:** Klaviyo + Shopify Flow + Shopify Email
 - **Customer Impact:** Up to 5 emails per cart abandonment
 - **Unsubscribe Risk:** +25-50% email fatigue
 
-### Solution Implemented
-**Strategy:** Klaviyo Only (user decision: "ultrathink: Klaviyo only!")
+### Solution Strategy
+**User Decision:** "Klaviyo only!" → All email automation via Klaviyo
 
 ### Shopify Flow Status (POST-CONSOLIDATION)
-| Workflow | Status | Reason |
-|----------|--------|--------|
-| Thank customers after purchase | ✅ INACTIVE | Klaviyo handles |
+| Workflow | Status | Verified |
+|----------|--------|----------|
+| Thank customers after purchase | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
 | Loyalty Tier Tagging | ✅ ACTIVE | KEPT (non-email, tagging only) |
-| Convert abandoned browse | ✅ INACTIVE | Klaviyo handles |
-| Recover abandoned cart | ✅ INACTIVE | Klaviyo handles |
-| Recover abandoned checkout | ✅ INACTIVE | Klaviyo handles |
+| Convert abandoned browse | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| Recover abandoned cart | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| Recover abandoned checkout | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
 
 ### Shopify Email Status (POST-CONSOLIDATION)
-| Automation | Status | Powered By |
-|------------|--------|------------|
-| Thank you! | ✅ INACTIVE | Flow workflow deactivated |
-| We're happy to see you again | ✅ INACTIVE | Flow workflow deactivated |
-| Did something catch your eye? | ✅ INACTIVE | Flow workflow deactivated |
-| You left items in your cart | ✅ INACTIVE | Flow workflow deactivated |
-| You left items at checkout | ✅ INACTIVE | Flow workflow deactivated |
+| Automation | Status | Verified |
+|------------|--------|----------|
+| Thank you! | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| We're happy to see you again | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| Did something catch your eye? | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| You left items in your cart | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| You left items at checkout | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
 
-### Klaviyo Flows (UNCHANGED - PRIMARY SYSTEM)
-| Flow | Status | ID |
-|------|--------|-----|
-| Customer Winback | 🟢 LIVE | SFmLH7 |
-| Welcome Series | 🟢 LIVE | QU8phk |
-| Repeat Purchase Nurture | 🟢 LIVE | Uu9Eev |
-| Product Review/Cross-Sell | 🟢 LIVE | TxcQgE |
+### Klaviyo Flows - CURRENT STATE (Session 83 verified)
+| Flow | Status | ID | Trigger |
+|------|--------|-----|---------|
+| Customer Winback | 🟢 LIVE | SFmLH7 | Added to Win-back list |
+| Welcome Series | 🟢 LIVE | QU8phk | Added to Email list |
+| Repeat Purchase Nurture | 🟢 LIVE | Uu9Eev | Placed Order |
+| Product Review/Cross-Sell | 🟢 LIVE | TxcQgE | Fulfilled Order |
+| Abandoned Checkout | 🟡 BUILT | N/A | ⚠️ NOT ACTIVATED (recommendation only) |
 
-### Impact
-- **Before:** 3 systems, 14 automations, email duplication
-- **After:** 1 system (Klaviyo), 4 flows, ZERO duplication
-- **Emails/customer:** 5+ → 3 max (-40%)
-- **Unsubscribe risk:** -30-40%
-- **Monthly cost saved:** ~$0 (Shopify native was free, but complexity reduced)
+## 🚨 CRITICAL GAP: ABANDONMENT FLOWS REQUIRED
 
-**Verification:** Chrome DevTools MCP (Shopify Admin) | **Confidence:** 100% | **BS:** 0%
+### Current Coverage Analysis
+| Trigger | Shopify Status | Klaviyo Status | **COVERAGE** |
+|---------|---------------|----------------|--------------|
+| Cart Abandonment | ❌ INACTIVE | ❌ NO FLOW | **🔴 NOT COVERED** |
+| Checkout Abandonment | ❌ INACTIVE | 🟡 BUILT (not live) | **🟡 NEEDS ACTIVATION** |
+| Browse Abandonment | ❌ INACTIVE | ❌ NO FLOW | **🔴 NOT COVERED** |
+| Post-Purchase | ❌ INACTIVE | ✅ Welcome + Review | **🟢 COVERED** |
+| Win-back | N/A | ✅ LIVE | **🟢 COVERED** |
+
+### ⚠️ USER ACTION REQUIRED (15-30 min in Klaviyo UI)
+
+**To complete "Klaviyo only" consolidation:**
+
+1. **Activate Abandoned Checkout Flow** (5 min)
+   - Go to Klaviyo → Flows → "Abandoned checkout" (Built for you)
+   - Click "Review" → Customize → Activate
+   - Expected recovery: 15-25%
+
+2. **Create Abandoned Cart Flow** (10 min)
+   - Klaviyo → Flows → Create Flow → "Abandoned Cart"
+   - Trigger: "Started Checkout" or "Added to Cart"
+   - 3-email series: 1h, 24h, 48h delays
+   - Expected recovery: 15-30%
+
+3. **Create Browse Abandonment Flow** (10 min - OPTIONAL)
+   - Lower priority (2-5% conversion)
+   - Trigger: "Viewed Product" without checkout
+   - Single email, 24h delay
+
+### Impact Assessment
+- **Before (Session 90):** 3 systems active, duplication
+- **After Phase 1:** Shopify deactivated ✅
+- **After Phase 2 (pending):** Klaviyo only, full coverage ⏳
+- **Current Gap:** Cart + Browse abandonment = **25-40% revenue recovery at risk**
+
+**Verification:** Chrome DevTools MCP (Shopify Admin + Flow) | **Confidence:** 100% | **BS:** 0%
 
 ---
 
-# 🔄 SESSION 90 UPDATE (2025-12-14) - EMPIRICAL VERIFICATION + COMPLEMENTARITY MATRIX
+# 🔄 SESSION 90 UPDATE (2025-12-14) - EMPIRICAL VERIFICATION (PRE-CONSOLIDATION)
 
-**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE (superseded by Session 91)
 **Focus:** Empirical verification of all systems + Automation complementarity analysis
+**Note:** This was the state BEFORE Session 91 email consolidation
 
 ## EMPIRICAL FINDINGS (Chrome DevTools MCP - 2025-12-14)
 
@@ -66532,7 +66594,7 @@ function generateDescriptionWithGemini(productTitle, productType, currentDescrip
 | CLS | 0.00 | ✅ Excellent |
 | TTFB | 99ms | ✅ Excellent |
 
-### Tracking Stack ✅ VERIFIED
+### Tracking Stack ✅ VERIFIED (UNCHANGED)
 | System | Status |
 |--------|--------|
 | GTM | ✅ ACTIVE (GTM-WFPH2KZP) |
@@ -66541,31 +66603,24 @@ function generateDescriptionWithGemini(productTitle, productType, currentDescrip
 | TikTok | ⚠️ Via GTM (not direct) |
 | dataLayer | ✅ 20 events |
 
-### Automation Complementarity Matrix (EMPIRICAL)
+### ~~Automation Complementarity Matrix~~ (SUPERSEDED BY SESSION 91)
 
-**Shopify Flow (4 ACTIVE, 1 INACTIVE):**
-| Workflow | Status | Purpose |
-|----------|--------|---------|
-| Thank customers after purchase | INACTIVE ✅ | Deactivated - Klaviyo handles |
-| Loyalty Tier Tagging | ACTIVE | Customer tagging |
-| Convert abandoned browse | ACTIVE | Browse recovery |
-| Recover abandoned cart | ACTIVE | Cart recovery |
-| Recover abandoned checkout | ACTIVE | Checkout recovery |
+**⚠️ OUTDATED - See Session 91 for current state**
 
-**Shopify Email (5/5 ACTIVE):**
-- Thank you! | We're happy to see you again | Did something catch your eye?
-- You left items in your cart | You left items at checkout
+~~Shopify Flow (4 ACTIVE, 1 INACTIVE):~~ → **NOW: 1 ACTIVE, 4 INACTIVE**
+~~Shopify Email (5/5 ACTIVE):~~ → **NOW: 0/5 ACTIVE (all powered by deactivated Flow)**
 
 **Klaviyo (4 LIVE - documented):**
 - Customer Winback | Product Review/Cross-Sell | Repeat Purchase | Welcome Series
+- ⚠️ Missing: Abandoned Cart, Abandoned Checkout, Browse Abandonment
 
-### Duplication Analysis (REVISED)
-| Trigger | Systems | Status | Action |
-|---------|---------|--------|--------|
-| Cart Abandonment | Flow + Email | 2-WAY | ✅ KEEP BOTH (no Klaviyo cart flow) |
-| Checkout Abandonment | Flow + Email | 2-WAY | ✅ KEEP BOTH (redundancy safe) |
-| Browse Abandonment | Flow + Email | 2-WAY | ✅ KEEP BOTH |
-| Post-Purchase | Email + Klaviyo | 2-WAY | ✅ Complementary (transactional + nurture) |
+### ~~Duplication Analysis~~ (RESOLVED BY SESSION 91)
+| Trigger | Pre-Session 91 | Post-Session 91 |
+|---------|----------------|-----------------|
+| Cart Abandonment | Flow + Email (2-way) | ❌ NO COVERAGE (Klaviyo flow needed) |
+| Checkout Abandonment | Flow + Email (2-way) | 🟡 Klaviyo BUILT (needs activation) |
+| Browse Abandonment | Flow + Email (2-way) | ❌ NO COVERAGE (optional) |
+| Post-Purchase | Email + Klaviyo | ✅ Klaviyo only |
 | Win-back | Email + Klaviyo | 2-WAY | ⚠️ Consider deactivating Email |
 
 ### Codebase Contamination Check ✅ CLEAN
@@ -66739,7 +66794,7 @@ Total: 85.7% AUTOMATION-FIRST ✅
 # 40. Investor Ai Automation Factual Inventory 2025-12-07
 
 **File:** `INVESTOR_AI_AUTOMATION_FACTUAL_INVENTORY_2025-12-07.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -67529,7 +67584,7 @@ TOTAL FLYWHEEL:            25/100 (foundation built, automation BLOCKED)
 # 41. Investor Ai Development Model Factual 2025-12-07
 
 **File:** `INVESTOR_AI_DEVELOPMENT_MODEL_FACTUAL_2025-12-07.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -68023,7 +68078,7 @@ cat INFRASTRUCTURE_AUDIT_CHECKLIST.md | wc -l
 # 42. Investor Metrics Auto Update System
 
 **File:** `INVESTOR_METRICS_AUTO_UPDATE_SYSTEM.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -68475,7 +68530,7 @@ EOF
 # 43. Investor Pages Setup Complete
 
 **File:** `INVESTOR_PAGES_SETUP_COMPLETE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -68765,7 +68820,7 @@ For maximum security, consider:
 # 44. Judgeme Import Step By Step
 
 **File:** `JUDGEME_IMPORT_STEP_BY_STEP.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -69089,7 +69144,7 @@ print(r.json()['data']['products']['edges'][0]['node']['handle'])
 # 45. Klaviyo Flows Deployed Via Api
 
 **File:** `KLAVIYO_FLOWS_DEPLOYED_VIA_API.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -69421,7 +69476,7 @@ r = requests.post("https://a.klaviyo.com/api/flows/",
 # 46. Klaviyo Flow Optimization Strategy 2025-12-07
 
 **File:** `KLAVIYO_FLOW_OPTIMIZATION_STRATEGY_2025-12-07.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -69973,7 +70028,7 @@ By maximizing Klaviyo flows usage, we achieve:
 # 47. Klaviyo Mcp Server Guide
 
 **File:** `KLAVIYO_MCP_SERVER_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -70315,7 +70370,7 @@ Redémarre Claude Code et commence à poser des questions sur tes flows, segment
 # 48. Klaviyo Shopify Complementarity Matrix Factual
 
 **File:** `KLAVIYO_SHOPIFY_COMPLEMENTARITY_MATRIX_FACTUAL.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -70861,7 +70916,7 @@ Return: +$28K-43K Year 1 (incremental to Shopify baseline)
 # 49. Klaviyo Templates Professional Upgrade
 
 **File:** `KLAVIYO_TEMPLATES_PROFESSIONAL_UPGRADE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -71340,7 +71395,7 @@ All templates uploaded via Klaviyo API and LIVE in flows:
 # 50. Live Site Verification 2025-11-29
 
 **File:** `LIVE_SITE_VERIFICATION_2025-11-29.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -71767,7 +71822,7 @@ grep -i "tidio\|gtm\|judge" /tmp/homepage.html
 # 51. N8N Blog Automation Setup Guide
 
 **File:** `N8N_BLOG_AUTOMATION_SETUP_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -72334,7 +72389,7 @@ return {
 # 52. N8N Credential Setup Required
 
 **File:** `N8N_CREDENTIAL_SETUP_REQUIRED.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -72638,7 +72693,7 @@ Once all credentials are configured and workflow is activated:
 # 53. N8N Workflows Deployment Final
 
 **File:** `N8N_WORKFLOWS_DEPLOYMENT_FINAL.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -73042,7 +73097,7 @@ Solution:
 # 54. N8N Workflow Success Summary
 
 **File:** `N8N_WORKFLOW_SUCCESS_SUMMARY.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -73258,7 +73313,7 @@ Total Nodes: 32
 # 55. N8N Youtube Workflow Deployment Status
 
 **File:** `N8N_YOUTUBE_WORKFLOW_DEPLOYMENT_STATUS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -73516,7 +73571,7 @@ After deployment, verify:
 # 56. Optimization Complete 2025-12-09
 
 **File:** `OPTIMIZATION_COMPLETE_2025-12-09.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -73957,7 +74012,7 @@ archive/optimization_2025-12-09/
 # 57. Optimization Elimination Plan
 
 **File:** `OPTIMIZATION_ELIMINATION_PLAN.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -73969,7 +74024,7 @@ archive/optimization_2025-12-09/
 # 58. Optimization Roadmap 95 100
 
 **File:** `OPTIMIZATION_ROADMAP_95_100.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -74710,7 +74765,7 @@ Then Phase 3 TOMORROW (20 min) → 100/100
 # 59. Option B Realtime Deployment 2025-12-07
 
 **File:** `OPTION_B_REALTIME_DEPLOYMENT_2025-12-07.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -75288,7 +75343,7 @@ URL: https://alphamedical.shop/pages/investors
 # 60. Paypal Deactivation Guide
 
 **File:** `PAYPAL_DEACTIVATION_GUIDE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -75555,7 +75610,7 @@ If you encounter issues not covered in this guide:
 # 61. Policy Pages Audit Report 2025-11-30
 
 **File:** `POLICY_PAGES_AUDIT_REPORT_2025-11-30.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -75842,7 +75897,7 @@ After completing updates, verify:
 # 62. Power Bi Learning Path
 
 **File:** `POWER_BI_LEARNING_PATH.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -76379,7 +76434,7 @@ open https://learn.microsoft.com/training/paths/get-started-power-bi/
 # 63. Pre Launch Execution Checklist 2025-12-03
 
 **File:** `PRE_LAUNCH_EXECUTION_CHECKLIST_2025-12-03.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -77585,7 +77640,7 @@ Total: 4h 40min | Impact: LOW | Risk: NONE if skipped
 # 64. Pre Launch Runbook 2025-12-25
 
 **File:** `PRE_LAUNCH_RUNBOOK_2025-12-25.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -78353,7 +78408,7 @@ git log --oneline -5
 # 65. Product Catalog Forensic Analysis Ads Strategy 2026
 
 **File:** `PRODUCT_CATALOG_FORENSIC_ANALYSIS_ADS_STRATEGY_2026.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -80345,7 +80400,7 @@ Result: Complete product-specific recommendations with web-verified seasonality
 # 66. Schema Markup Ai Optimization 2025
 
 **File:** `SCHEMA_MARKUP_AI_OPTIMIZATION_2025.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -80784,7 +80839,7 @@ Professional schema markup = **Brand authority signal for multimodal AI**
 # 67. Session 65 Factual Summary 2025-11-28
 
 **File:** `SESSION_65_FACTUAL_SUMMARY_2025-11-28.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -81296,7 +81351,7 @@ Target: 100/100 (with all optimizations)
 # 68. Session 67 Infrastructure Audit 2025-12-01
 
 **File:** `SESSION_67_INFRASTRUCTURE_AUDIT_2025-12-01.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -81661,7 +81716,7 @@ python3 audit_infrastructure.py
 # 69. Session 68 New Products Optimization 2025-12-01
 
 **File:** `SESSION_68_NEW_PRODUCTS_OPTIMIZATION_2025-12-01.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -81919,7 +81974,7 @@ python3 audit_infrastructure.py
 # 70. Session 69 Schema Deployment Summary
 
 **File:** `SESSION_69_SCHEMA_DEPLOYMENT_SUMMARY.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -82281,7 +82336,7 @@ python3 audit_infrastructure.py
 # 71. Session 73 Summary
 
 **File:** `SESSION_73_SUMMARY.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -82865,7 +82920,7 @@ SESSION_73_READY_FOR_LAUNCH="YES (22 days to go)"
 # 72. Session 76 Cookie Consent Discovery
 
 **File:** `SESSION_76_COOKIE_CONSENT_DISCOVERY.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -83127,7 +83182,7 @@ cookie-consent-banner ✅
 # 73. Session 76 Klaviyo Mcp Installation
 
 **File:** `SESSION_76_KLAVIYO_MCP_INSTALLATION.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -83283,7 +83338,7 @@ Klaviyo a lancé un MCP (Model Context Protocol) server pour connecter directeme
 # 74. Session 86 Pre Launch Verification Complete
 
 **File:** `SESSION_86_PRE_LAUNCH_VERIFICATION_COMPLETE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -83717,7 +83772,7 @@ Session 86 successfully completed ALL pre-launch verification tasks with 100% fa
 # 75. Session 87 Optimization Verified 2025-12-09
 
 **File:** `SESSION_87_OPTIMIZATION_VERIFIED_2025-12-09.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -84109,7 +84164,7 @@ Session 86 successfully completed ALL pre-launch verification tasks with 100% fa
 # 76. Shopify Flow Api Limitation 2025-12-05
 
 **File:** `SHOPIFY_FLOW_API_LIMITATION_2025-12-05.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -84311,7 +84366,7 @@ API: Shopify GraphQL Admin 2025-10
 # 77. Shopify Flow Loyalty Tier Tagging Manual Modification
 
 **File:** `SHOPIFY_FLOW_LOYALTY_TIER_TAGGING_MANUAL_MODIFICATION.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -84490,7 +84545,7 @@ Trigger: Order paid
 # 78. Shopify Mcp Factual Analysis
 
 **File:** `SHOPIFY_MCP_FACTUAL_ANALYSIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -85192,7 +85247,7 @@ BULLSHIT_LEVEL="0%"
 # 79. Storefront Api Critical Security Analysis
 
 **File:** `STOREFRONT_API_CRITICAL_SECURITY_ANALYSIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -85807,7 +85862,7 @@ BULLSHIT_LEVEL="0%"
 # 80. Storefront Api Empirical Verification
 
 **File:** `STOREFRONT_API_EMPIRICAL_VERIFICATION.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -86182,7 +86237,7 @@ API_VERIFIED="true"
 # 81. Storefront Api Scopes Analysis
 
 **File:** `STOREFRONT_API_SCOPES_ANALYSIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -86965,7 +87020,7 @@ BULLSHIT_LEVEL="0%"
 # 82. Tidio 6 Flows Final Summary
 
 **File:** `TIDIO_6_FLOWS_FINAL_SUMMARY.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -87329,7 +87384,7 @@ BULLSHIT_LEVEL="0%"
 # 83. Tidio Deduplication Matrix 2025-11-29
 
 **File:** `TIDIO_DEDUPLICATION_MATRIX_2025-11-29.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -87951,7 +88006,7 @@ Step 3: Places order
 # 84. Tidio Support Flows Final Implementation 2025-11-29
 
 **File:** `TIDIO_SUPPORT_FLOWS_FINAL_IMPLEMENTATION_2025-11-29.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -88809,7 +88864,7 @@ C) Attendre Lyro AI 30.01.2026 (1h setup) ⏳ AI automation 60-70%
 # 85. Tidio Templates Analysis Factual 2025-11-29
 
 **File:** `TIDIO_TEMPLATES_ANALYSIS_FACTUAL_2025-11-29.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -90777,7 +90832,7 @@ Solution 3: Fallback Plan
 # 86. Top 10 Urls To Index
 
 **File:** `TOP_10_URLS_TO_INDEX.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -91089,7 +91144,7 @@ Homepage (Prio 1)
 # 87. Ugc Video Prompts Grok Imagine
 
 **File:** `UGC_VIDEO_PROMPTS_GROK_IMAGINE.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -91891,7 +91946,7 @@ alphamedical.shop
 # 88. Video Ads Creation Playbook
 
 **File:** `VIDEO_ADS_CREATION_PLAYBOOK.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -93093,7 +93148,7 @@ This is a living document - update as you learn!
 # 89. Whitebook Implementation Complete Plan Gemini3Pro
 
 **File:** `WHITEBOOK_IMPLEMENTATION_COMPLETE_PLAN_GEMINI3PRO.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -94709,7 +94764,7 @@ Node 6: Update Google Sheets (Mark Published = Yes, Add Published Time = Now)
 # 90. Whitebook Vs Alpha Medical Gap Analysis
 
 **File:** `WHITEBOOK_VS_ALPHA_MEDICAL_GAP_ANALYSIS.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -95741,7 +95796,7 @@ Node 6: Update Google Sheets (Mark Published = Yes, Add Published Time = Now)
 # 91. Workflows Core Flywheel Factual 2025-12-09
 
 **File:** `WORKFLOWS_CORE_FLYWHEEL_FACTUAL_2025-12-09.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -95964,7 +96019,7 @@ Node 6: Update Google Sheets (Mark Published = Yes, Add Published Time = Now)
 # 92. Youtube Strategy Complete Roadmap 2026
 
 **File:** `YOUTUBE_STRATEGY_COMPLETE_ROADMAP_2026.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -96890,7 +96945,7 @@ TOTAL:         $0.45 per video
 # 93. Youtube Workflow English Conversion
 
 **File:** `YOUTUBE_WORKFLOW_ENGLISH_CONVERSION.md`
-**Last Modified:** 2025-12-14 16:40
+**Last Modified:** 2025-12-14 16:48
 
 ---
 
@@ -97114,7 +97169,7 @@ After making the 3 changes above, verify AI output is English:
 ## Document Information
 
 **Total Documentation Files:** 93
-**Generated:** December 14, 2025 at 16:40 UTC
+**Generated:** December 14, 2025 at 16:48 UTC
 **Format:** llms-full.txt (Complete Content Version)
 **Related:** See llms.txt for index-only version
 
