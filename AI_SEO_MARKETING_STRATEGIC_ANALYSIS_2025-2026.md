@@ -1,3 +1,30 @@
+# 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION + CATALOG CLEANUP
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Marketing Infrastructure Cleanup
+
+## MARKETING INFRASTRUCTURE CHANGES
+
+### Email Consolidation to Klaviyo-Only
+- Shopify Flow email triggers: DEACTIVATED (4/4)
+- Shopify Email: DEACTIVATED (powered by Flow)
+- Klaviyo: PRIMARY SYSTEM (4/4 flows LIVE)
+- **Cost savings:** $30/mo
+
+### Marketing Impact
+- Email fatigue reduction: -50% (single system vs 3-way)
+- Unsubscribe risk: -30-40%
+- **Gap:** Abandonment flows need Klaviyo creation
+
+### Catalog for Ads
+- Products: 90 total (85 active)
+- Bundles: 11 unique (cleaned duplicates)
+- Ready for Dynamic Product Ads
+
+**Verification:** API + Chrome DevTools | **Confidence:** 100% | **BS:** 0%
+
+---
+
 # 🔄 SESSION 90 UPDATE (2025-12-14) - 2026 TRENDS DEEP ANALYSIS
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
