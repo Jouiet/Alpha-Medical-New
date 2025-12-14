@@ -1,59 +1,91 @@
 # 🔄 SESSION 91 UPDATE (2025-12-14) - EMAIL CONSOLIDATION: KLAVIYO ONLY
 
-**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Analyst:** Claude Opus 4.5 | **Status:** ⚠️ PHASE 1 COMPLETE (Shopify deactivated, Klaviyo flows needed)
 **Focus:** Eliminate 3-way email duplication → Single system (Klaviyo)
 
-## EMAIL CONSOLIDATION EXECUTED
+## EMAIL CONSOLIDATION - PHASE 1: SHOPIFY DEACTIVATION ✅
 
 ### Problem (Before)
 - **3-WAY DUPLICATION:** Klaviyo + Shopify Flow + Shopify Email
 - **Customer Impact:** Up to 5 emails per cart abandonment
 - **Unsubscribe Risk:** +25-50% email fatigue
 
-### Solution Implemented
-**Strategy:** Klaviyo Only (user decision: "ultrathink: Klaviyo only!")
+### Solution Strategy
+**User Decision:** "Klaviyo only!" → All email automation via Klaviyo
 
 ### Shopify Flow Status (POST-CONSOLIDATION)
-| Workflow | Status | Reason |
-|----------|--------|--------|
-| Thank customers after purchase | ✅ INACTIVE | Klaviyo handles |
+| Workflow | Status | Verified |
+|----------|--------|----------|
+| Thank customers after purchase | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
 | Loyalty Tier Tagging | ✅ ACTIVE | KEPT (non-email, tagging only) |
-| Convert abandoned browse | ✅ INACTIVE | Klaviyo handles |
-| Recover abandoned cart | ✅ INACTIVE | Klaviyo handles |
-| Recover abandoned checkout | ✅ INACTIVE | Klaviyo handles |
+| Convert abandoned browse | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| Recover abandoned cart | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| Recover abandoned checkout | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
 
 ### Shopify Email Status (POST-CONSOLIDATION)
-| Automation | Status | Powered By |
-|------------|--------|------------|
-| Thank you! | ✅ INACTIVE | Flow workflow deactivated |
-| We're happy to see you again | ✅ INACTIVE | Flow workflow deactivated |
-| Did something catch your eye? | ✅ INACTIVE | Flow workflow deactivated |
-| You left items in your cart | ✅ INACTIVE | Flow workflow deactivated |
-| You left items at checkout | ✅ INACTIVE | Flow workflow deactivated |
+| Automation | Status | Verified |
+|------------|--------|----------|
+| Thank you! | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| We're happy to see you again | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| Did something catch your eye? | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| You left items in your cart | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
+| You left items at checkout | ✅ INACTIVE | Chrome DevTools 2025-12-14 |
 
-### Klaviyo Flows (UNCHANGED - PRIMARY SYSTEM)
-| Flow | Status | ID |
-|------|--------|-----|
-| Customer Winback | 🟢 LIVE | SFmLH7 |
-| Welcome Series | 🟢 LIVE | QU8phk |
-| Repeat Purchase Nurture | 🟢 LIVE | Uu9Eev |
-| Product Review/Cross-Sell | 🟢 LIVE | TxcQgE |
+### Klaviyo Flows - CURRENT STATE (Session 83 verified)
+| Flow | Status | ID | Trigger |
+|------|--------|-----|---------|
+| Customer Winback | 🟢 LIVE | SFmLH7 | Added to Win-back list |
+| Welcome Series | 🟢 LIVE | QU8phk | Added to Email list |
+| Repeat Purchase Nurture | 🟢 LIVE | Uu9Eev | Placed Order |
+| Product Review/Cross-Sell | 🟢 LIVE | TxcQgE | Fulfilled Order |
+| Abandoned Checkout | 🟡 BUILT | N/A | ⚠️ NOT ACTIVATED (recommendation only) |
 
-### Impact
-- **Before:** 3 systems, 14 automations, email duplication
-- **After:** 1 system (Klaviyo), 4 flows, ZERO duplication
-- **Emails/customer:** 5+ → 3 max (-40%)
-- **Unsubscribe risk:** -30-40%
-- **Monthly cost saved:** ~$0 (Shopify native was free, but complexity reduced)
+## 🚨 CRITICAL GAP: ABANDONMENT FLOWS REQUIRED
 
-**Verification:** Chrome DevTools MCP (Shopify Admin) | **Confidence:** 100% | **BS:** 0%
+### Current Coverage Analysis
+| Trigger | Shopify Status | Klaviyo Status | **COVERAGE** |
+|---------|---------------|----------------|--------------|
+| Cart Abandonment | ❌ INACTIVE | ❌ NO FLOW | **🔴 NOT COVERED** |
+| Checkout Abandonment | ❌ INACTIVE | 🟡 BUILT (not live) | **🟡 NEEDS ACTIVATION** |
+| Browse Abandonment | ❌ INACTIVE | ❌ NO FLOW | **🔴 NOT COVERED** |
+| Post-Purchase | ❌ INACTIVE | ✅ Welcome + Review | **🟢 COVERED** |
+| Win-back | N/A | ✅ LIVE | **🟢 COVERED** |
+
+### ⚠️ USER ACTION REQUIRED (15-30 min in Klaviyo UI)
+
+**To complete "Klaviyo only" consolidation:**
+
+1. **Activate Abandoned Checkout Flow** (5 min)
+   - Go to Klaviyo → Flows → "Abandoned checkout" (Built for you)
+   - Click "Review" → Customize → Activate
+   - Expected recovery: 15-25%
+
+2. **Create Abandoned Cart Flow** (10 min)
+   - Klaviyo → Flows → Create Flow → "Abandoned Cart"
+   - Trigger: "Started Checkout" or "Added to Cart"
+   - 3-email series: 1h, 24h, 48h delays
+   - Expected recovery: 15-30%
+
+3. **Create Browse Abandonment Flow** (10 min - OPTIONAL)
+   - Lower priority (2-5% conversion)
+   - Trigger: "Viewed Product" without checkout
+   - Single email, 24h delay
+
+### Impact Assessment
+- **Before (Session 90):** 3 systems active, duplication
+- **After Phase 1:** Shopify deactivated ✅
+- **After Phase 2 (pending):** Klaviyo only, full coverage ⏳
+- **Current Gap:** Cart + Browse abandonment = **25-40% revenue recovery at risk**
+
+**Verification:** Chrome DevTools MCP (Shopify Admin + Flow) | **Confidence:** 100% | **BS:** 0%
 
 ---
 
-# 🔄 SESSION 90 UPDATE (2025-12-14) - EMPIRICAL VERIFICATION + COMPLEMENTARITY MATRIX
+# 🔄 SESSION 90 UPDATE (2025-12-14) - EMPIRICAL VERIFICATION (PRE-CONSOLIDATION)
 
-**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE (superseded by Session 91)
 **Focus:** Empirical verification of all systems + Automation complementarity analysis
+**Note:** This was the state BEFORE Session 91 email consolidation
 
 ## EMPIRICAL FINDINGS (Chrome DevTools MCP - 2025-12-14)
 
@@ -64,7 +96,7 @@
 | CLS | 0.00 | ✅ Excellent |
 | TTFB | 99ms | ✅ Excellent |
 
-### Tracking Stack ✅ VERIFIED
+### Tracking Stack ✅ VERIFIED (UNCHANGED)
 | System | Status |
 |--------|--------|
 | GTM | ✅ ACTIVE (GTM-WFPH2KZP) |
@@ -73,31 +105,24 @@
 | TikTok | ⚠️ Via GTM (not direct) |
 | dataLayer | ✅ 20 events |
 
-### Automation Complementarity Matrix (EMPIRICAL)
+### ~~Automation Complementarity Matrix~~ (SUPERSEDED BY SESSION 91)
 
-**Shopify Flow (4 ACTIVE, 1 INACTIVE):**
-| Workflow | Status | Purpose |
-|----------|--------|---------|
-| Thank customers after purchase | INACTIVE ✅ | Deactivated - Klaviyo handles |
-| Loyalty Tier Tagging | ACTIVE | Customer tagging |
-| Convert abandoned browse | ACTIVE | Browse recovery |
-| Recover abandoned cart | ACTIVE | Cart recovery |
-| Recover abandoned checkout | ACTIVE | Checkout recovery |
+**⚠️ OUTDATED - See Session 91 for current state**
 
-**Shopify Email (5/5 ACTIVE):**
-- Thank you! | We're happy to see you again | Did something catch your eye?
-- You left items in your cart | You left items at checkout
+~~Shopify Flow (4 ACTIVE, 1 INACTIVE):~~ → **NOW: 1 ACTIVE, 4 INACTIVE**
+~~Shopify Email (5/5 ACTIVE):~~ → **NOW: 0/5 ACTIVE (all powered by deactivated Flow)**
 
 **Klaviyo (4 LIVE - documented):**
 - Customer Winback | Product Review/Cross-Sell | Repeat Purchase | Welcome Series
+- ⚠️ Missing: Abandoned Cart, Abandoned Checkout, Browse Abandonment
 
-### Duplication Analysis (REVISED)
-| Trigger | Systems | Status | Action |
-|---------|---------|--------|--------|
-| Cart Abandonment | Flow + Email | 2-WAY | ✅ KEEP BOTH (no Klaviyo cart flow) |
-| Checkout Abandonment | Flow + Email | 2-WAY | ✅ KEEP BOTH (redundancy safe) |
-| Browse Abandonment | Flow + Email | 2-WAY | ✅ KEEP BOTH |
-| Post-Purchase | Email + Klaviyo | 2-WAY | ✅ Complementary (transactional + nurture) |
+### ~~Duplication Analysis~~ (RESOLVED BY SESSION 91)
+| Trigger | Pre-Session 91 | Post-Session 91 |
+|---------|----------------|-----------------|
+| Cart Abandonment | Flow + Email (2-way) | ❌ NO COVERAGE (Klaviyo flow needed) |
+| Checkout Abandonment | Flow + Email (2-way) | 🟡 Klaviyo BUILT (needs activation) |
+| Browse Abandonment | Flow + Email (2-way) | ❌ NO COVERAGE (optional) |
+| Post-Purchase | Email + Klaviyo | ✅ Klaviyo only |
 | Win-back | Email + Klaviyo | 2-WAY | ⚠️ Consider deactivating Email |
 
 ### Codebase Contamination Check ✅ CLEAN
