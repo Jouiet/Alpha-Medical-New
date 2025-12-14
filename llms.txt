@@ -15,6 +15,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 ### SEO & Marketing
 
 - [AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026](AI_SEO_MARKETING_STRATEGIC_ANALYSIS_2025-2026.md): Project documentation
+- [ALPHA_MEDICAL_IP_AUDIT_FACTUAL_2025-12-15](ALPHA_MEDICAL_IP_AUDIT_FACTUAL_2025-12-15.md): Alpha Medical ne possède aucune PI défendable significative au 2025-12-15. 1. Repository GitHub PUBLIC (trade secrets impossibles)
 - [AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27](archive/old-audits/AUTOMATION_INFRASTRUCTURE_AUDIT_2025-11-27.md): Status: ✅ ACTIVE (80% configured) Trigger: Order paid Condition: Customer total spent >= $2,500 (Platinum tier)
 - [BRUTAL_HONEST_SITE_AUDIT_2025-11-28](BRUTAL_HONEST_SITE_AUDIT_2025-11-28.md): URL: https://www.alphamedical.shop Domaine Shopify: azffej-as.myshopify.com Plan: Basic ($29/mo)
 - [BUNDLE_PERSONA_CRITICAL_AUDIT](archive/old-audits/BUNDLE_PERSONA_CRITICAL_AUDIT.md): Pour chaque bundle, je vérifie: 1. ✅ Persona cohérente: Une VRAIE personne existe qui aurait besoin de CES produits ensemble?
