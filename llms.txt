@@ -349,7 +349,7 @@ When assisting with this project:
 - [README](video-ads-assets/products/README.md): Chaque produit a son propre dossier avec 4 sous-dossiers: {product-handle}/ ├── hero-images/ # Images fond blanc, studio
 - [README](video-ads-assets/scripts/README.md): python3 assetorganizer.py --create {product-handle} cd /Users/mac/Desktop/Alpha-Medical/video-ads-assets/scripts/
 - [README](archive/miscellaneous/README.md): Project documentation
-- [README](scripts/README.md): scripts/ # 276 total - 100% CATÉGORISÉS ✅ ├── analysis/ # 91 scripts (33.0%)
+- [README](scripts/README.md): scripts/ # 276 total - 100% CATÉGORISÉS ✅ │ ├── analysis/ # 91 scripts (33.0%) - AUDIT/ANALYSE
 - [README](klaviyo_templates_professional/README.md): Project documentation
 - [README_COMPLETE](archive/miscellaneous/README_COMPLETE.md): market-analysis/ ├── leadgenerationscraper.py # 🎯 LEAD GENERATION │ ├── Instagram hashtag scraping
 - [ROBOTS_TXT_DEPLOYMENT](archive/implementation-guides/ROBOTS_TXT_DEPLOYMENT.md): This guide explains how to deploy the custom robots.txt file with llms.txt integration to your Shopify store.
