@@ -6,10 +6,10 @@
     <title>Alpha Medical Care - Infrastructure Documentation | Session 91</title>
     <meta name="description" content="Professional automation infrastructure documentation for Alpha Medical Care - 35 workflows, 6 categories, 85.7% automation score">
 
-    <!-- Modern Fonts -->
+    <!-- Alpha Medical Brand Fonts (from ALPHA_MEDICAL_BRAND_GUIDELINES.md) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Questrial&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Mermaid.js -->
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
@@ -19,41 +19,52 @@
            CSS CUSTOM PROPERTIES (Design System)
            ============================================ */
         :root {
-            /* Brand Colors */
+            /* =============================================
+               ALPHA MEDICAL OFFICIAL BRAND COLORS
+               Source: ALPHA_MEDICAL_BRAND_GUIDELINES.md
+               Verified: 2025-12-03 (Shopify Admin API)
+               ============================================= */
+
+            /* Primary Brand Colors */
+            --brand-primary: #4770db;      /* Alpha Medical Blue - CTAs, buttons, links */
+            --brand-navy: #0e1b4d;         /* Navy Secondary - text, headings, dark bg */
+            --brand-light: #eff0f5;        /* Light Gray - backgrounds, cards */
+            --brand-white: #ffffff;        /* White - clean backgrounds */
+            --brand-red: #e32402;          /* Sale Badge Red - urgency, errors */
+
+            /* Primary Color Variations (brand-compliant) */
             --primary: #4770db;
-            --primary-light: #6b8cef;
-            --primary-dark: #3557b8;
-            --accent: #00d4aa;
-            --accent-light: #00f5c4;
+            --primary-light: #5a83e8;      /* 10% lighter */
+            --primary-dark: #3a5cc4;       /* 10% darker (hover state) */
 
-            /* Status Colors */
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --info: #3b82f6;
+            /* Status Colors (brand-aligned) */
+            --success: #10b981;            /* Green - success states */
+            --warning: #f59e0b;            /* Amber - warnings */
+            --danger: #e32402;             /* Brand Red - errors, urgency */
+            --info: #4770db;               /* Brand Primary - info states */
 
-            /* Dark Theme */
-            --bg-dark: #0a0f1c;
-            --bg-darker: #060912;
-            --bg-card: #111827;
-            --bg-card-hover: #1f2937;
-            --bg-elevated: #1e293b;
+            /* Dark Theme (Navy-based, brand compliant) */
+            --bg-dark: #0e1b4d;            /* Navy - main background */
+            --bg-darker: #0a1538;          /* Darker navy - deeper sections */
+            --bg-card: #152254;            /* Navy lightened - card backgrounds */
+            --bg-card-hover: #1a2a66;      /* Navy hover state */
+            --bg-elevated: #1e3478;        /* Elevated elements */
 
-            /* Text Colors */
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
-            --text-dim: #475569;
+            /* Text Colors (on dark navy background) */
+            --text-primary: #ffffff;       /* White - primary text */
+            --text-secondary: #eff0f5;     /* Light gray - secondary text */
+            --text-muted: #a8b4d4;         /* Muted - tertiary text */
+            --text-dim: #7a8ac4;           /* Dim - disabled/placeholder */
 
-            /* Borders */
-            --border-color: #1e293b;
-            --border-light: #334155;
+            /* Borders (navy-based) */
+            --border-color: #1e3478;
+            --border-light: #2a4094;
 
-            /* Gradients */
-            --gradient-primary: linear-gradient(135deg, #4770db 0%, #00d4aa 100%);
-            --gradient-dark: linear-gradient(180deg, #0a0f1c 0%, #111827 100%);
-            --gradient-card: linear-gradient(145deg, #111827 0%, #0f172a 100%);
-            --gradient-glow: radial-gradient(ellipse at center, rgba(71, 112, 219, 0.15) 0%, transparent 70%);
+            /* Gradients (brand colors ONLY - NO teal) */
+            --gradient-primary: linear-gradient(135deg, #4770db 0%, #3a5cc4 100%);
+            --gradient-dark: linear-gradient(180deg, #0e1b4d 0%, #152254 100%);
+            --gradient-card: linear-gradient(145deg, #152254 0%, #0e1b4d 100%);
+            --gradient-glow: radial-gradient(ellipse at center, rgba(71, 112, 219, 0.2) 0%, transparent 70%);
 
             /* Shadows */
             --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -71,8 +82,9 @@
             --space-2xl: 3rem;
             --space-3xl: 4rem;
 
-            /* Typography */
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            /* Typography (Alpha Medical Brand) */
+            --font-heading: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;  /* Headings: Archivo Bold 700 */
+            --font-body: 'Questrial', -apple-system, BlinkMacSystemFont, sans-serif;   /* Body: Questrial Regular 400 */
             --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
             /* Border Radius */
@@ -103,8 +115,8 @@
         }
 
         body {
-            font-family: var(--font-sans);
-            background: var(--bg-dark);
+            font-family: var(--font-body);  /* Questrial - Alpha Medical brand */
+            background: var(--bg-dark);     /* Navy #0e1b4d - Alpha Medical brand */
             color: var(--text-primary);
             line-height: 1.6;
             min-height: 100vh;
@@ -128,6 +140,7 @@
            TYPOGRAPHY
            ============================================ */
         h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);  /* Archivo - Alpha Medical brand */
             font-weight: 700;
             line-height: 1.2;
             letter-spacing: -0.02em;
@@ -2159,24 +2172,26 @@ graph LR
          SCRIPTS
          ============================================ -->
     <script>
-        // Initialize Mermaid with dark theme
+        // Initialize Mermaid with Alpha Medical Brand Colors
+        // Source: ALPHA_MEDICAL_BRAND_GUIDELINES.md
         mermaid.initialize({
             startOnLoad: true,
             theme: 'dark',
             themeVariables: {
-                primaryColor: '#4770db',
-                primaryTextColor: '#f8fafc',
-                primaryBorderColor: '#3b82f6',
-                lineColor: '#64748b',
-                secondaryColor: '#1e293b',
-                tertiaryColor: '#0f172a',
-                background: '#111827',
-                mainBkg: '#111827',
-                nodeBorder: '#334155',
-                clusterBkg: '#1e293b',
-                clusterBorder: '#334155',
-                titleColor: '#f8fafc',
-                edgeLabelBackground: '#1e293b'
+                // Alpha Medical Brand Colors
+                primaryColor: '#4770db',           // Brand Primary Blue
+                primaryTextColor: '#ffffff',       // Brand White
+                primaryBorderColor: '#4770db',     // Brand Primary
+                lineColor: '#a8b4d4',              // Muted (brand-derived)
+                secondaryColor: '#1e3478',         // Navy elevated
+                tertiaryColor: '#0e1b4d',          // Brand Navy
+                background: '#152254',             // Navy lightened (cards)
+                mainBkg: '#152254',                // Navy lightened
+                nodeBorder: '#2a4094',             // Border light
+                clusterBkg: '#1e3478',             // Navy elevated
+                clusterBorder: '#2a4094',          // Border light
+                titleColor: '#ffffff',             // Brand White
+                edgeLabelBackground: '#1e3478'     // Navy elevated
             },
             flowchart: {
                 useMaxWidth: true,
