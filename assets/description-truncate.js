@@ -1,96 +1,111 @@
 /**
  * Description Truncate - Click to Expand
  * Alpha Medical - Session 98
- * Web Component for truncating long descriptions
+ * Modern 2025 Web Component
  */
 
-if (!customElements.get('description-truncate')) {
-  customElements.define(
-    'description-truncate',
-    class DescriptionTruncate extends HTMLElement {
-      constructor() {
-        super();
-        this.content = this.querySelector('.description-truncate__content');
-        this.toggle = this.querySelector('.description-truncate__toggle');
-        this.labelMore = this.dataset.labelMore || 'Voir plus';
-        this.labelLess = this.dataset.labelLess || 'Voir moins';
-        this.maxLines = parseInt(this.dataset.maxLines) || 5;
-      }
+class DescriptionTruncate extends HTMLElement {
+  constructor() {
+    super();
+    this.isExpanded = false;
+  }
 
-      connectedCallback() {
-        // Check if content needs truncation
-        this.checkContentHeight();
+  connectedCallback() {
+    this.content = this.querySelector('.description-truncate__content');
+    this.toggle = this.querySelector('.description-truncate__toggle');
+    this.label = this.querySelector('.description-truncate__label');
+    this.fade = this.querySelector('.description-truncate__fade');
 
-        // Add click handler
-        if (this.toggle) {
-          this.toggle.addEventListener('click', this.handleToggle.bind(this));
+    this.labelMore = this.getAttribute('data-label-more') || 'Voir plus';
+    this.labelLess = this.getAttribute('data-label-less') || 'Voir moins';
+
+    if (!this.content || !this.toggle) return;
+
+    // Check if truncation is needed
+    requestAnimationFrame(() => {
+      this.checkNeedsTruncation();
+    });
+
+    // Listen for toggle clicks
+    this.toggle.addEventListener('click', () => this.handleToggle());
+
+    // Recheck on resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        if (!this.isExpanded) {
+          this.checkNeedsTruncation();
         }
+      }, 250);
+    });
+  }
 
-        // Recheck on window resize (content may reflow)
-        this.resizeObserver = new ResizeObserver(() => {
-          if (!this.isExpanded) {
-            this.checkContentHeight();
-          }
-        });
-        this.resizeObserver.observe(this.content);
-      }
+  checkNeedsTruncation() {
+    if (!this.content) return;
 
-      disconnectedCallback() {
-        if (this.resizeObserver) {
-          this.resizeObserver.disconnect();
-        }
-      }
+    // Temporarily expand to measure
+    const originalMaxHeight = this.content.style.maxHeight;
+    this.content.style.maxHeight = 'none';
+    this.content.classList.add('is-expanded');
 
-      checkContentHeight() {
-        if (!this.content || !this.toggle) return;
+    const scrollHeight = this.content.scrollHeight;
+    const computedStyle = getComputedStyle(this.content);
+    const lineHeight = parseFloat(computedStyle.lineHeight) || 22.4;
+    const lines = parseInt(getComputedStyle(this).getPropertyValue('--truncate-lines')) || 5;
+    const maxHeight = lineHeight * lines;
 
-        // Temporarily remove collapsed class to measure full height
-        const wasCollapsed = this.content.classList.contains('is-collapsed');
-        this.content.classList.remove('is-collapsed');
-        this.content.style.maxHeight = 'none';
+    // Restore collapsed state
+    this.content.style.maxHeight = originalMaxHeight;
+    this.content.classList.remove('is-expanded');
 
-        const fullHeight = this.content.scrollHeight;
-        const lineHeight = parseFloat(getComputedStyle(this.content).lineHeight) || 25.6;
-        const maxHeight = lineHeight * this.maxLines;
-
-        // Restore collapsed state
-        this.content.style.maxHeight = '';
-
-        // Only show toggle if content exceeds max lines
-        if (fullHeight > maxHeight + 10) { // 10px tolerance
-          this.toggle.classList.remove('is-hidden');
-          if (wasCollapsed || !this.isExpanded) {
-            this.content.classList.add('is-collapsed');
-          }
-        } else {
-          this.toggle.classList.add('is-hidden');
-          this.content.classList.remove('is-collapsed');
-        }
-      }
-
-      handleToggle() {
-        this.isExpanded = !this.isExpanded;
-
-        if (this.isExpanded) {
-          this.content.classList.remove('is-collapsed');
-          this.content.classList.add('is-expanded');
-          this.toggle.classList.add('is-expanded');
-          this.toggle.querySelector('.description-truncate__label').textContent = this.labelLess;
-          this.toggle.setAttribute('aria-expanded', 'true');
-        } else {
-          this.content.classList.add('is-collapsed');
-          this.content.classList.remove('is-expanded');
-          this.toggle.classList.remove('is-expanded');
-          this.toggle.querySelector('.description-truncate__label').textContent = this.labelMore;
-          this.toggle.setAttribute('aria-expanded', 'false');
-
-          // Scroll back to top of description if needed
-          const rect = this.getBoundingClientRect();
-          if (rect.top < 0) {
-            this.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }
-      }
+    // Show/hide toggle based on content height
+    if (scrollHeight > maxHeight + 20) {
+      this.toggle.classList.remove('is-hidden');
+      if (this.fade) this.fade.style.display = 'block';
+    } else {
+      this.toggle.classList.add('is-hidden');
+      this.content.classList.add('is-expanded');
+      if (this.fade) this.fade.style.display = 'none';
     }
-  );
+  }
+
+  handleToggle() {
+    this.isExpanded = !this.isExpanded;
+
+    if (this.isExpanded) {
+      this.expand();
+    } else {
+      this.collapse();
+    }
+  }
+
+  expand() {
+    this.content.classList.add('is-expanded');
+    this.toggle.classList.add('is-expanded');
+    this.toggle.setAttribute('aria-expanded', 'true');
+    if (this.label) this.label.textContent = this.labelLess;
+    if (this.fade) this.fade.style.opacity = '0';
+    this.classList.add('is-expanded');
+  }
+
+  collapse() {
+    this.content.classList.remove('is-expanded');
+    this.toggle.classList.remove('is-expanded');
+    this.toggle.setAttribute('aria-expanded', 'false');
+    if (this.label) this.label.textContent = this.labelMore;
+    if (this.fade) this.fade.style.opacity = '1';
+    this.classList.remove('is-expanded');
+
+    // Scroll back into view if needed
+    const rect = this.getBoundingClientRect();
+    if (rect.top < 0) {
+      this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+
+// Register the custom element
+if (!customElements.get('description-truncate')) {
+  customElements.define('description-truncate', DescriptionTruncate);
 }

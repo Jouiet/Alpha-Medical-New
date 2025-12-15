@@ -1,6 +1,6 @@
 {%- comment -%}
   Description Truncate - Click to Expand
-  Alpha Medical - Session 98
+  Alpha Medical - Session 98 - Modern 2025 Design
 
   Usage:
   {% render 'description-truncate',
@@ -10,33 +10,28 @@
     label_more: 'Voir plus',
     label_less: 'Voir moins'
   %}
-
-  Parameters:
-  - content: (required) The HTML content to truncate
-  - max_lines: (optional) Number of lines to show, default 5
-  - class: (optional) Additional CSS classes for the content wrapper
-  - label_more: (optional) Text for expand button, default 'Voir plus'
-  - label_less: (optional) Text for collapse button, default 'Voir moins'
-  - id: (optional) Unique ID for the component
 {%- endcomment -%}
 
 {%- liquid
   assign max_lines = max_lines | default: 5
   assign label_more = label_more | default: 'Voir plus'
   assign label_less = label_less | default: 'Voir moins'
-  assign truncate_id = id | default: 'desc-truncate-' | append: 'now' | date: '%N'
+  assign truncate_id = id | default: 'desc-' | append: 'now' | date: '%N'
 -%}
 
 {%- if content != blank -%}
   <description-truncate
     class="description-truncate"
-    data-max-lines="{{ max_lines }}"
     data-label-more="{{ label_more }}"
     data-label-less="{{ label_less }}"
+    style="--truncate-lines: {{ max_lines }};"
   >
-    <div class="description-truncate__content is-collapsed {{ class }}" id="{{ truncate_id }}">
+    <div class="description-truncate__content {{ class }}" id="{{ truncate_id }}">
       {{ content }}
     </div>
+
+    {%- comment -%} Gradient fade overlay {%- endcomment -%}
+    <div class="description-truncate__fade" aria-hidden="true"></div>
 
     <button
       type="button"
@@ -45,7 +40,11 @@
       aria-controls="{{ truncate_id }}"
     >
       <span class="description-truncate__label">{{ label_more }}</span>
-      <span class="description-truncate__arrow" aria-hidden="true"></span>
+      <span class="description-truncate__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
     </button>
   </description-truncate>
 {%- endif -%}
