@@ -28,10 +28,9 @@
   >
     <div class="description-truncate__content {{ class }}" id="{{ truncate_id }}">
       {{ content }}
+      {%- comment -%} Gradient fade overlay - INSIDE content for correct positioning {%- endcomment -%}
+      <div class="description-truncate__fade" aria-hidden="true"></div>
     </div>
-
-    {%- comment -%} Gradient fade overlay {%- endcomment -%}
-    <div class="description-truncate__fade" aria-hidden="true"></div>
 
     <button
       type="button"
