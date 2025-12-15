@@ -578,8 +578,8 @@
                             </tr>
                             <tr>
                                 <td>🔍 Technical SEO + AEO</td>
-                                <td><span class="badge badge-success">88/100</span></td>
-                                <td>Schema 6/6, AEO partial (llms.txt 404)</td>
+                                <td><span class="badge badge-success">90/100</span></td>
+                                <td>Schema 6/6, AEO complete (llms.txt CDN + meta)</td>
                             </tr>
                             <tr>
                                 <td>📄 Documentation</td>
@@ -609,7 +609,7 @@
                         </tbody>
                     </table>
                     <div style="margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 100%); border-radius: 12px; border-left: 4px solid var(--primary);">
-                        <strong style="color: var(--navy);">Overall Score: 89.3/100</strong>
+                        <strong style="color: var(--navy);">Overall Score: 89.5/100</strong>
                         <p style="color: #64748b; font-size: 0.85rem; margin-top: 5px;">
                             Strong technical foundation. Marketing consolidated, inventory fixed. Only 5 draft products remain for review.
                         </p>
@@ -1160,8 +1160,8 @@
                 <tbody>
                     <tr>
                         <td>llms.txt (AI Discovery File)</td>
-                        <td><span class="badge badge-warning">Local Only</span></td>
-                        <td>Generated via GitHub Action, not served on live site (404)</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td>Deployed to Shopify CDN + meta tag in theme.liquid (Session 98 fix)</td>
                     </tr>
                     <tr>
                         <td>MedicalBusiness Schema</td>
@@ -1190,9 +1190,9 @@
                     </tr>
                 </tbody>
             </table>
-            <div style="margin-top: 15px; padding: 12px 15px; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
-                <strong style="color: #92400e;">AEO Gap:</strong>
-                <span style="color: #78350f;"> llms.txt returns 404 on live site. Deploy to Shopify assets/ or configure static hosting.</span>
+            <div style="margin-top: 15px; padding: 12px 15px; background: #d1fae5; border-radius: 8px; border-left: 4px solid #10b981;">
+                <strong style="color: #065f46;">AEO Success:</strong>
+                <span style="color: #047857;"> llms.txt deployed to Shopify CDN (HTTP 200) with discovery meta tag. AI crawlers can find via &lt;link rel="llms"&gt;.</span>
             </div>
         </section>
 
@@ -1740,7 +1740,7 @@ gantt
                 This audit reflects the system state as of December 15, 2025, 10 days before launch.
                 Revenue metrics, conversion rates, and ROI calculations are NOT possible in pre-launch phase.
                 All business projections should be treated as estimates until post-launch data is available.
-                Key fixes completed: Zero inventory resolved (9 bundles), Email consolidated to Klaviyo, 100% product collection coverage verified.
+                Key fixes completed: Zero inventory resolved (9 bundles), Email consolidated to Klaviyo, 100% product collection coverage verified, AEO llms.txt deployed to CDN.
             </p>
         </div>
 
@@ -1886,7 +1886,7 @@ gantt
                         ],
                         datasets: [{
                             label: 'Alpha Medical Score',
-                            data: [95, 92, 88, 88, 85, 88, 88, 90],
+                            data: [95, 92, 90, 88, 85, 88, 88, 90],
                             fill: true,
                             backgroundColor: 'rgba(53, 88, 184, 0.2)',
                             borderColor: '#3558b8',
