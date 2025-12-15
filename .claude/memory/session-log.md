@@ -1,6 +1,30 @@
 # SESSION LOG - AUTO-GENERATED
 
-> Last updated: 2025-12-15 Session 98 (Bundle Inventory Fix + Meta API Correction)
+> Last updated: 2025-12-15 Session 98 CONTINUED (Description Truncate UX Fix)
+
+## Session 98 CONTINUED (2025-12-15) - Description Truncate UX Fix
+
+### Actions Completed
+1. ✅ Fixed button covered by gradient fade (moved fade inside content div)
+2. ✅ Fixed visible gray band at bottom (gradient color #fff → #eff0f5)
+3. ✅ Deployed fixes to live Shopify theme
+4. ✅ Verified via Chrome DevTools MCP (buttonTop > contentBottom)
+
+### Technical Details
+| Issue | Root Cause | Fix |
+|-------|-----------|-----|
+| Button obscured | Fade as sibling, absolute to wrapper | Moved fade INSIDE content div |
+| Gray band visible | Gradient white vs page #eff0f5 | Changed to rgba(239,240,245) |
+
+### Files Modified
+- `snippets/description-truncate.liquid` - Structural fix
+- `assets/description-truncate.css` - Color fix
+
+### Verification
+- buttonTop: 566px > contentBottom: 553px = 12.6px gap ✅
+- Screenshot: Clean seamless gradient ✅
+
+---
 
 ## Session 98 (2025-12-15) - Bundle Inventory Fix + Script Correction
 

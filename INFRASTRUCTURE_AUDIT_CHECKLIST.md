@@ -1,3 +1,37 @@
+# 🔄 SESSION 98 CONTINUED (2025-12-15) - DESCRIPTION TRUNCATE UX FIX
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Collection Page Description Truncate Component - 2 Critical UX Fixes
+
+## DESCRIPTION TRUNCATE FIX (Frontend UX)
+
+### Problem 1: Button Covered by Gradient Fade
+- **Finding:** "Voir plus" button obscured by gradient overlay
+- **Root Cause:** Fade div positioned as sibling of content (absolute to wrapper, not content)
+- **Fix:** Moved fade div INSIDE `.description-truncate__content` div
+- **File:** `snippets/description-truncate.liquid`
+
+### Problem 2: Visible Gray Band at Content Bottom
+- **Finding:** Dark band visible where gradient ended (color mismatch)
+- **Root Cause:** Gradient used white `rgba(255,255,255)` but page background is `#eff0f5`
+- **Fix:** Changed gradient to `rgba(239, 240, 245)` matching page background
+- **File:** `assets/description-truncate.css`
+
+### Technical Changes
+| File | Change | Impact |
+|------|--------|--------|
+| `snippets/description-truncate.liquid` | Moved fade inside content div | Button now below content |
+| `assets/description-truncate.css` | Gradient #fff → #eff0f5 | Seamless fade to background |
+
+### Verification
+- Chrome DevTools MCP: `buttonTop (566px) > contentBottom (553px)` = 12.6px gap ✅
+- Screenshot verification: Clean gradient, visible button ✅
+
+**Commits:** `e96420f` (initial) + Shopify theme push (multiple sync commits)
+**Deployed:** Live on alphamedical.shop
+
+---
+
 # 🔄 SESSION 98 UPDATE (2025-12-15) - BUNDLE INVENTORY + SCRIPT FIX
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
