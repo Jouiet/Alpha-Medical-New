@@ -2,6 +2,7 @@
 """
 KLAVIYO FLOWS EMPIRICAL VERIFICATION - SESSION 83
 Date: 2025-12-06
+Updated: 2025-12-16 (Session 100 - standardized API key)
 Purpose: Verify which Klaviyo flows actually exist in live account
 Method: Klaviyo API direct verification (REST API v2024-10-15)
 API Docs: https://developers.klaviyo.com/en/reference/get_flows
@@ -9,7 +10,9 @@ API Docs: https://developers.klaviyo.com/en/reference/get_flows
 
 import requests
 import json
+import os
 from typing import List, Dict
+from dotenv import load_dotenv
 
 def verify_klaviyo_flows() -> Dict:
     """
@@ -22,18 +25,12 @@ def verify_klaviyo_flows() -> Dict:
     print("KLAVIYO FLOWS EMPIRICAL VERIFICATION")
     print("="*70 + "\n")
 
-    # Load API key from .env.admin
-    api_key = None
-    config_file = "/Users/mac/Desktop/Alpha-Medical/.env.admin"
-
-    with open(config_file, 'r') as f:
-        for line in f:
-            if line.startswith('KLAVIYO_API_KEY='):
-                api_key = line.strip().split('=', 1)[1].strip('"')
-                break
+    # Load API key from .env (standardized to KLAVIYO_PRIVATE_API_KEY)
+    load_dotenv()
+    api_key = os.getenv('KLAVIYO_PRIVATE_API_KEY')
 
     if not api_key:
-        raise ValueError("KLAVIYO_API_KEY not found in .env.admin")
+        raise ValueError("KLAVIYO_PRIVATE_API_KEY not found in .env")
 
     print(f"✅ API Key loaded: {api_key[:10]}...{api_key[-4:]}\n")
 

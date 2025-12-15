@@ -94,12 +94,12 @@ print("    Check: https://alphamedical.shop footer for policy links")
 print("\n3. KLAVIYO EMAIL AUTOMATION")
 print("-" * 100)
 
-# Load Klaviyo credentials
-load_dotenv('.env.admin')
-KLAVIYO_API_KEY = os.getenv('KLAVIYO_API_KEY')
+# Load Klaviyo credentials (standardized to KLAVIYO_PRIVATE_API_KEY)
+load_dotenv()  # Uses .env
+KLAVIYO_API_KEY = os.getenv('KLAVIYO_PRIVATE_API_KEY')
 
 if not KLAVIYO_API_KEY:
-    print("  ❌ KLAVIYO_API_KEY not found in .env.admin")
+    print("  ❌ KLAVIYO_PRIVATE_API_KEY not found in .env")
 else:
     # Get flows
     headers = {

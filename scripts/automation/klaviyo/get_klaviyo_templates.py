@@ -5,9 +5,16 @@ Get all Klaviyo templates to find the correct IDs
 
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-# Klaviyo API configuration
-API_KEY = "pk_3055b7c6594e513a36d470d2bf8044017e"
+# Load environment variables
+load_dotenv()
+
+# Klaviyo API configuration - NEVER hardcode API keys!
+API_KEY = os.getenv('KLAVIYO_PRIVATE_API_KEY')
+if not API_KEY:
+    raise ValueError("KLAVIYO_PRIVATE_API_KEY not found in .env - see .env for configuration")
 BASE_URL = "https://a.klaviyo.com/api"
 
 HEADERS = {

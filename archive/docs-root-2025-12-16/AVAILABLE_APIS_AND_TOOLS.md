@@ -1,6 +1,6 @@
 # AVAILABLE APIs & TOOLS - ALPHA MEDICAL
-**Date:** 2025-12-06 Session 81
-**Status:** FACTUAL INVENTORY (API credentials verified)
+**Date:** 2025-12-15 Session 100
+**Status:** FACTUAL INVENTORY (API credentials verified via Klaviyo API 2025-12-15)
 **Purpose:** Direct access capabilities for efficient workflow
 
 ---
@@ -30,32 +30,41 @@ API Version: 2025-01 (latest stable)
 Status: ✅ ACTIVE (verified Session 80)
 ```
 
-### 2. KLAVIYO API (.env)
+### 2. KLAVIYO API (.env) - UPDATED SESSION 100 (2025-12-15)
 ```bash
 Type: Email marketing automation
 
 Credentials:
-  KLAVIYO_PUBLIC_API_KEY=pk_6579ec83387884b95a0ff47d0b70ebbae9
-  KLAVIYO_PRIVATE_API_KEY=pk_483cd5ceaec2562f816dcb16d71154dd35
+  KLAVIYO_PUBLIC_API_KEY=***REDACTED*** (see .env)
+  KLAVIYO_PRIVATE_API_KEY=***REDACTED*** (see .env - Updated 2025-12-15)
 
 Capabilities:
-  ✅ Flows management (4/4 LIVE verified Session 61)
+  ✅ Flows management (5/7 LIVE verified Session 100)
   ✅ Lists & segments
   ✅ Campaigns creation
   ✅ Templates management (10/10 professional deployed)
   ✅ Analytics & metrics
   ✅ Event tracking
 
-Status: ✅ WORKING (user confirmed)
+Status: ✅ WORKING (API verified 2025-12-15)
 Plan: $30/mo ACTIVE
-Flows: 4/4 LIVE (Winback, Welcome, Repeat Purchase, Cross-Sell)
+Flows: 5/7 LIVE:
+  - ✅ Welcome Series - Final Email Discount (QU8phk)
+  - ✅ Customer Winback - Standard (SFmLH7)
+  - ✅ Product Review / Cross-Sell - Standard (TxcQgE)
+  - ✅ Repeat Purchase Nurture - Order Count Split (Uu9Eev)
+  - ✅ Abandoned Checkout (VS94Z8) - LIVE 2025-12-15
+  - ❌ Essential Flow Recommendation (REgfmx) - DRAFT
+  - ❌ Essential Flow Recommendation (U5HbuD) - DRAFT
+
+⚠️ MCP CONFIG OUTDATED: ~/.config/claude-code/mcp.json uses OLD key - needs update!
 ```
 
-### 3. KLAVIYO API (Duplicate in .env.admin)
+### 3. KLAVIYO API (.env.admin)
 ```bash
-KLAVIYO_API_KEY=pk_5ea06571b22f82d09dbc157f2c3bd2f0f7
+KLAVIYO_API_KEY=***REDACTED*** (see .env.admin - Updated 2025-12-15)
 
-Note: Older key format, use .env version (private key preferred)
+Note: Single source of truth = .env.admin (unified)
 ```
 
 ### 4. N8N WORKFLOW API (.env.n8n)

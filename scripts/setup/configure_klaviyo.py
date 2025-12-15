@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-KLAVIYO_PUBLIC_KEY = os.getenv('KLAVIYO_PUBLIC_API_KEY')  # pk_b51a04697c36bd77b65c3376e1f0409621
+KLAVIYO_PUBLIC_KEY = os.getenv('KLAVIYO_PUBLIC_API_KEY')  # From .env (tracking key)
 SHOPIFY_STORE = os.getenv('SHOPIFY_STORE_DOMAIN')  # azffej-as.myshopify.com
 
 print("="*80)

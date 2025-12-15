@@ -3,6 +3,7 @@
 Automate Klaviyo Email Optimization Tasks
 - A/B Test configuration (prepare structure)
 - Create 4 customer segments
+Updated: 2025-12-16 (Session 100 - standardized API key)
 """
 
 import os
@@ -10,9 +11,12 @@ import requests
 import json
 from dotenv import load_dotenv
 
-load_dotenv('.env.admin')
+# Load from .env (standardized to KLAVIYO_PRIVATE_API_KEY)
+load_dotenv()
 
-KLAVIYO_API_KEY = os.getenv('KLAVIYO_API_KEY')
+KLAVIYO_API_KEY = os.getenv('KLAVIYO_PRIVATE_API_KEY')
+if not KLAVIYO_API_KEY:
+    raise ValueError("KLAVIYO_PRIVATE_API_KEY not found in .env")
 
 # Klaviyo API v2024-10-15
 BASE_URL = "https://a.klaviyo.com/api"
