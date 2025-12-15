@@ -33,7 +33,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09](FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
-- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): 1. Visual Modernization - 2025 glassmorphism design system 2. WCAG AA Compliance - All colors 4.5:1+ contrast ratio
+- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): ACQUISITION
 - [KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS](archive/miscellaneous/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md): Project documentation
 - [MEMORY_SYSTEM_AUDIT_FACTUAL](archive/old-audits/MEMORY_SYSTEM_AUDIT_FACTUAL.md): Status: ✅ Executable (755 permissions) Size: 5,365 bytes Functionality: WORKING 100%
 - [POLICY_PAGES_AUDIT_REPORT_2025-11-30](POLICY_PAGES_AUDIT_REPORT_2025-11-30.md): Project documentation
@@ -108,7 +108,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](archive/implementation-guides/SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 - [SHOPIFY_EMAIL_MANUAL_ACTIVATION](archive/implementation-guides/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 - [SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP](archive/setup-completed/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md): 1. Shopify Admin → Marketing → Automations 2. Cliquer "Welcome new subscribers with a discount email" (Status: Inactive)
-- [automation-workflows](agent_docs/automation-workflows.md): COVERAGE MATRIX (Updated 2025-12-15 13:04): ├── Acquisition (Welcome): Klaviyo ✅ ├── Checkout Abandonment: Klaviyo ✅ (NEW! Deactivate Shopify Email)
+- [automation-workflows](agent_docs/automation-workflows.md): COVERAGE MATRIX (Optimized 2025-12-15): ├── Acquisition (Welcome): Klaviyo ✅ ├── Checkout Abandonment: Klaviyo ✅
 
 ### Content & Blog
 
