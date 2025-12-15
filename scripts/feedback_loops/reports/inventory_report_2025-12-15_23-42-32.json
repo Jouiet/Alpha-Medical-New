@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-15T23:42:32.065360",
+  "store": "azffej-as.myshopify.com",
+  "statistics": {
+    "total_products": 90,
+    "active": 85,
+    "draft": 5,
+    "archived": 0,
+    "bundles": 9,
+    "zero_inventory": 0,
+    "low_inventory": 0,
+    "healthy": 9,
+    "tracked_products": 9,
+    "untracked_products": 81,
+    "total_variants": 555,
+    "tracked_variants": 9,
+    "untracked_variants": 546
+  },
+  "issues": {
+    "critical_count": 0,
+    "warning_count": 0,
+    "bundle_issues_count": 0,
+    "draft_review_count": 0,
+    "critical": [],
+    "bundles": [],
+    "warnings": [],
+    "draft_review": []
+  },
+  "summary": {
+    "status": "HEALTHY",
+    "action_required": false
+  }
+}

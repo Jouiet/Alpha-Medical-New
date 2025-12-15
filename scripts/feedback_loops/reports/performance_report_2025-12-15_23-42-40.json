@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-12-15T23:42:40.710381",
+  "store": "azffej-as.myshopify.com",
+  "public_url": "https://www.alphamedical.shop",
+  "results": {
+    "site": {
+      "url": "https://www.alphamedical.shop",
+      "status_code": 200,
+      "response_time_ms": 354.69,
+      "healthy": true
+    },
+    "shopify_api": {
+      "products": 90,
+      "total_orders": 0,
+      "zero_inventory_products": 0,
+      "healthy": true
+    },
+    "critical_pages": [
+      {
+        "page": "Homepage",
+        "url": "https://www.alphamedical.shop/",
+        "status": 200,
+        "response_time_ms": 244.38,
+        "healthy": true
+      },
+      {
+        "page": "All Products",
+        "url": "https://www.alphamedical.shop/collections/all",
+        "status": 200,
+        "response_time_ms": 201.87,
+        "healthy": true
+      },
+      {
+        "page": "Cart",
+        "url": "https://www.alphamedical.shop/cart",
+        "status": 200,
+        "response_time_ms": 243.05,
+        "healthy": true
+      },
+      {
+        "page": "Terms of Service",
+        "url": "https://www.alphamedical.shop/policies/terms-of-service",
+        "status": 200,
+        "response_time_ms": 359.12,
+        "healthy": true
+      }
+    ],
+    "tracking_pixels": {
+      "GTM": true,
+      "GA4": true,
+      "Meta Pixel": true,
+      "TikTok": true
+    },
+    "robots_txt": {
+      "ai_crawlers_found": 9,
+      "total": 9,
+      "details": {
+        "GPTBot": true,
+        "ClaudeBot": true,
+        "anthropic-ai": true,
+        "PerplexityBot": true,
+        "Google-Extended": true,
+        "CCBot": true,
+        "Amazonbot": true,
+        "cohere-ai": true,
+        "FacebookBot": true
+      }
+    }
+  },
+  "summary": {
+    "site_healthy": true,
+    "api_healthy": true,
+    "pages_healthy": true,
+    "tracking_complete": true,
+    "overall_health": "4/4",
+    "status": "HEALTHY"
+  }
+}
