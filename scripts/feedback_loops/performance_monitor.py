@@ -206,7 +206,18 @@ def check_robots_txt():
         r = requests.get(f"{PUBLIC_URL}/robots.txt", timeout=10)
         content = r.text
 
-        ai_crawlers = ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended"]
+        # All 9 AI crawlers configured in robots.txt (Session 98)
+        ai_crawlers = [
+            "GPTBot",           # OpenAI (ChatGPT, Bing Chat)
+            "ClaudeBot",        # Anthropic Claude
+            "anthropic-ai",     # Anthropic alternative
+            "PerplexityBot",    # Perplexity AI
+            "Google-Extended",  # Google AI training opt-out
+            "CCBot",            # Common Crawl
+            "Amazonbot",        # Amazon Alexa
+            "cohere-ai",        # Cohere AI
+            "FacebookBot",      # Meta AI
+        ]
         found = {crawler: crawler in content for crawler in ai_crawlers}
         count = sum(found.values())
 

@@ -97,6 +97,12 @@ def analyze_inventory(products):
         "zero_inventory": 0,
         "low_inventory": 0,
         "healthy": 0,
+        # NEW: Track untracked products (dropshipped via DSers)
+        "tracked_products": 0,      # Products with inventory_management="shopify"
+        "untracked_products": 0,    # Products without Shopify tracking (dropship)
+        "total_variants": 0,
+        "tracked_variants": 0,
+        "untracked_variants": 0,
     }
 
     for product in products:
@@ -119,15 +125,23 @@ def analyze_inventory(products):
         if is_bundle:
             stats["bundles"] += 1
 
+        # Track if this product has ANY Shopify-tracked variants
+        product_has_tracking = False
+
         # Analyze each variant
         for variant in variants:
             inventory_management = variant.get("inventory_management")
             inventory_quantity = variant.get("inventory_quantity", 0)
             variant_title = variant.get("title", "Default")
+            stats["total_variants"] += 1
 
-            # Skip if inventory not tracked by Shopify
-            if inventory_management != "shopify":
-                continue
+            # Track variants by management type
+            if inventory_management == "shopify":
+                stats["tracked_variants"] += 1
+                product_has_tracking = True
+            else:
+                stats["untracked_variants"] += 1
+                continue  # Skip untracked variants for inventory analysis
 
             # Check for issues
             if status == "active":
@@ -167,6 +181,12 @@ def analyze_inventory(products):
                         "suggestion": "Has inventory, consider activating",
                     })
 
+        # Count tracked vs untracked products
+        if product_has_tracking:
+            stats["tracked_products"] += 1
+        else:
+            stats["untracked_products"] += 1
+
     return issues, stats
 
 def print_issues(issues, stats):
@@ -176,7 +196,18 @@ def print_issues(issues, stats):
     print(f"  Total Products: {stats['total_products']}")
     print(f"  Active: {stats['active']} | Draft: {stats['draft']} | Archived: {stats['archived']}")
     print(f"  Bundles: {stats['bundles']}")
-    print(f"  Healthy: {stats['healthy']} | Low: {stats['low_inventory']} | Zero: {stats['zero_inventory']}")
+
+    # NEW: Clear tracking breakdown
+    print(f"\n📦 INVENTORY TRACKING:")
+    print(f"  Shopify-Tracked Products: {stats['tracked_products']} (inventory_management=shopify)")
+    print(f"  Dropship Products (DSers): {stats['untracked_products']} (no Shopify tracking)")
+    print(f"  Total Variants: {stats['total_variants']} ({stats['tracked_variants']} tracked, {stats['untracked_variants']} untracked)")
+
+    # Tracked inventory health
+    print(f"\n🏥 TRACKED INVENTORY HEALTH:")
+    print(f"  Healthy (>10 units): {stats['healthy']}")
+    print(f"  Low (<10 units): {stats['low_inventory']}")
+    print(f"  Zero (0 units): {stats['zero_inventory']}")
 
     # Critical issues
     if issues["critical"]:
