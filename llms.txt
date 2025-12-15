@@ -30,7 +30,6 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS](archive/bundles-pricing/CUSTOM_BUNDLE_BUILDER_COMPLETE_ANALYSIS.md): Project documentation
 - [EMAIL_MARKETING_AUTOMATION_AUDIT](archive/old-audits/EMAIL_MARKETING_AUTOMATION_AUDIT.md): Project documentation
 - [FACEBOOK_MARKETING_API_AUTOMATION_GUIDE](FACEBOOK_MARKETING_API_AUTOMATION_GUIDE.md): 1. Aller sur [Facebook Developers](https://developers.facebook.com/) 2. Cliquer "My Apps" → "Create App"
-- [FEEDBACK_LOOPS_GAP_ANALYSIS_2025-12-15](FEEDBACK_LOOPS_GAP_ANALYSIS_2025-12-15.md): grep -r "LOOXAPI" .env 2>/dev/null
 - [FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09](FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
@@ -80,7 +79,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 - [ABANDONED_CART_RECOVERY_CONFIG](archive/implementation-guides/ABANDONED_CART_RECOVERY_CONFIG.md): Option A: "Complete your order - {{ shop.name }}" Option B: "You left something behind at {{ shop.name }}"
 - [AI_AUTOMATION_AGENCY_BLUEPRINT_2025](AI_AUTOMATION_AGENCY_BLUEPRINT_2025.md): Les 162 scripts (58.7%) nécessitent un refactoring pour remplacer les hardcodes.
-- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): 1. Button covered by gradient overlay (CSS positioning fix) 2. Visible gray band at content bottom (color matching fix)
+- [AUTOMATION_COMPLETE_WORKFLOWS](AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_COMPLETE_WORKFLOWS](archive/miscellaneous/AUTOMATION_COMPLETE_WORKFLOWS.md): Project documentation
 - [AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06](AUTOMATION_DUPLICATIONS_FACTUAL_REPORT_2025-12-06.md): Project documentation
 - [AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06](AUTOMATION_DUPLICATION_RESOLUTION_PLAN_2025-12-06.md): Project documentation
@@ -324,7 +323,6 @@ When assisting with this project:
 - [INVESTOR_AI_DEVELOPMENT_MODEL_FACTUAL_2025-12-07](INVESTOR_AI_DEVELOPMENT_MODEL_FACTUAL_2025-12-07.md): $ git log --all --grep="Co-Authored-By: Claude" --oneline | wc -l 475
 - [INVESTOR_METRICS_AUTO_UPDATE_SYSTEM](INVESTOR_METRICS_AUTO_UPDATE_SYSTEM.md): Project documentation
 - [JUDGEME_IMPORT_STEP_BY_STEP](JUDGEME_IMPORT_STEP_BY_STEP.md): Vous avez montré ce formulaire: Import reviews Shopify product Search by product title, handle or ID
-- [LESSONS_LEARNED_MASTER](LESSONS_LEARNED_MASTER.md): Project documentation
 - [LLMS_TXT_DEPLOYMENT](archive/implementation-guides/LLMS_TXT_DEPLOYMENT.md): This guide covers 5 production-ready deployment methods for serving your llms.txt files to AI models.
 - [LLMS_TXT_README](archive/miscellaneous/LLMS_TXT_README.md): llms.txt is a proposed standard to help AI models (ChatGPT, Claude, Gemini, Perplexity, etc.) better understand and navigate your website/project a...
 - [LOYALTY_SYSTEM_ARCHITECTURE](archive/bundles-pricing/LOYALTY_SYSTEM_ARCHITECTURE.md): Project documentation
