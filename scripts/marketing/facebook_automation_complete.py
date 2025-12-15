@@ -4,7 +4,7 @@ FACEBOOK ADS COMPLETE AUTOMATION - ALPHA MEDICAL
 Date: 2025-12-06
 Purpose: Automate Facebook/Instagram ad campaigns + audiences creation
 SDK: facebook-python-business-sdk
-API: Marketing API v24.0
+API: Marketing API v22.0 (current as of Jan 2025)
 
 CAPABILITIES:
 1. Create campaigns programmatically
