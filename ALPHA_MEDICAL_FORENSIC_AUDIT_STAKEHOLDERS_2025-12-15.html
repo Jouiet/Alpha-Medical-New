@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Medical - Forensic System Audit | December 2025</title>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
         :root {
             /* ===========================================
@@ -540,6 +541,79 @@
                 <div class="status-card info">
                     <div class="value">Dec 25</div>
                     <div class="label">Launch Date</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCORE BREAKDOWN RADAR -->
+        <section class="section">
+            <h2>📊 Score Breakdown (Radar Analysis)</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center;">
+                <div class="diagram-container" style="height: 400px;">
+                    <canvas id="scoreRadar"></canvas>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--navy);">Methodology</h3>
+                    <p style="color: #64748b; margin-bottom: 15px; font-size: 0.9rem;">
+                        Scores calculated via bottom-up API verification and filesystem analysis. Each dimension weighted equally (100 points max).
+                    </p>
+                    <table style="font-size: 0.85rem;">
+                        <thead>
+                            <tr>
+                                <th>Dimension</th>
+                                <th>Score</th>
+                                <th>Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🏗️ Infrastructure</td>
+                                <td><span class="badge badge-success">95/100</span></td>
+                                <td>278 scripts, 3 MCP, 6 APIs</td>
+                            </tr>
+                            <tr>
+                                <td>📊 Analytics</td>
+                                <td><span class="badge badge-success">92/100</span></td>
+                                <td>GTM + GA4 + Meta + TikTok</td>
+                            </tr>
+                            <tr>
+                                <td>🔍 Technical SEO</td>
+                                <td><span class="badge badge-success">90/100</span></td>
+                                <td>Schema, robots.txt, sitemap</td>
+                            </tr>
+                            <tr>
+                                <td>📄 Documentation</td>
+                                <td><span class="badge badge-success">88/100</span></td>
+                                <td>Comprehensive audit docs</td>
+                            </tr>
+                            <tr>
+                                <td>🔒 Security</td>
+                                <td><span class="badge badge-info">85/100</span></td>
+                                <td>Keys secured, .env gitignored</td>
+                            </tr>
+                            <tr>
+                                <td>📧 Marketing</td>
+                                <td><span class="badge badge-warning">78/100</span></td>
+                                <td>Klaviyo 401, email duplications</td>
+                            </tr>
+                            <tr>
+                                <td>🚀 Launch Ready</td>
+                                <td><span class="badge badge-warning">75/100</span></td>
+                                <td>Blockers: API auth, inventory</td>
+                            </tr>
+                            <tr>
+                                <td>🛒 E-commerce</td>
+                                <td><span class="badge badge-warning">72/100</span></td>
+                                <td>26 zero inventory, 5 draft</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 100%); border-radius: 12px; border-left: 4px solid var(--primary);">
+                        <strong style="color: var(--navy);">Overall Score: 84.4/100</strong>
+                        <p style="color: #64748b; font-size: 0.85rem; margin-top: 5px;">
+                            Strong technical foundation. Address Marketing (Klaviyo API) and E-commerce (inventory) gaps before launch.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1730,6 +1804,129 @@ gantt
                 fontSize: 13,
                 numberSectionStyles: 4,
                 useMaxWidth: true
+            }
+        });
+
+        // ========================================
+        // CHART.JS RADAR - SCORE BREAKDOWN
+        // ========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('scoreRadar');
+            if (ctx) {
+                new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: [
+                            'Infrastructure',
+                            'Analytics',
+                            'Technical SEO',
+                            'Documentation',
+                            'Security',
+                            'Marketing',
+                            'Launch Ready',
+                            'E-commerce'
+                        ],
+                        datasets: [{
+                            label: 'Alpha Medical Score',
+                            data: [95, 92, 90, 88, 85, 78, 75, 72],
+                            fill: true,
+                            backgroundColor: 'rgba(53, 88, 184, 0.2)',
+                            borderColor: '#3558b8',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#3558b8',
+                            pointBorderColor: '#fff',
+                            pointBorderWidth: 2,
+                            pointRadius: 5,
+                            pointHoverRadius: 7,
+                            pointHoverBackgroundColor: '#2d4a9e',
+                            pointHoverBorderColor: '#fff'
+                        }, {
+                            label: 'Target (90/100)',
+                            data: [90, 90, 90, 90, 90, 90, 90, 90],
+                            fill: false,
+                            backgroundColor: 'transparent',
+                            borderColor: 'rgba(220, 38, 38, 0.5)',
+                            borderWidth: 2,
+                            borderDash: [5, 5],
+                            pointRadius: 0,
+                            pointHoverRadius: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: {
+                                        family: "'Segoe UI', system-ui, sans-serif",
+                                        size: 12
+                                    },
+                                    color: '#0e1b4d',
+                                    padding: 15,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(14, 27, 77, 0.9)',
+                                titleFont: {
+                                    family: "'Segoe UI', system-ui, sans-serif",
+                                    size: 14,
+                                    weight: 'bold'
+                                },
+                                bodyFont: {
+                                    family: "'Segoe UI', system-ui, sans-serif",
+                                    size: 13
+                                },
+                                padding: 12,
+                                cornerRadius: 8,
+                                displayColors: true,
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.dataset.label + ': ' + context.raw + '/100';
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    color: 'rgba(14, 27, 77, 0.1)',
+                                    lineWidth: 1
+                                },
+                                grid: {
+                                    color: 'rgba(14, 27, 77, 0.1)',
+                                    circular: true
+                                },
+                                pointLabels: {
+                                    font: {
+                                        family: "'Segoe UI', system-ui, sans-serif",
+                                        size: 11,
+                                        weight: '600'
+                                    },
+                                    color: '#0e1b4d',
+                                    padding: 10
+                                },
+                                ticks: {
+                                    backdropColor: 'transparent',
+                                    color: '#64748b',
+                                    font: {
+                                        size: 10
+                                    },
+                                    stepSize: 20
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 100
+                            }
+                        },
+                        elements: {
+                            line: {
+                                tension: 0.1
+                            }
+                        }
+                    }
+                });
             }
         });
     </script>
