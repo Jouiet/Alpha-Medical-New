@@ -577,9 +577,9 @@
                                 <td>GTM + GA4 + Meta + TikTok</td>
                             </tr>
                             <tr>
-                                <td>🔍 Technical SEO</td>
-                                <td><span class="badge badge-success">90/100</span></td>
-                                <td>Schema, robots.txt, sitemap</td>
+                                <td>🔍 Technical SEO + AEO</td>
+                                <td><span class="badge badge-success">88/100</span></td>
+                                <td>Schema 6/6, AEO partial (llms.txt 404)</td>
                             </tr>
                             <tr>
                                 <td>📄 Documentation</td>
@@ -609,7 +609,7 @@
                         </tbody>
                     </table>
                     <div style="margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 100%); border-radius: 12px; border-left: 4px solid var(--primary);">
-                        <strong style="color: var(--navy);">Overall Score: 89.5/100</strong>
+                        <strong style="color: var(--navy);">Overall Score: 89.3/100</strong>
                         <p style="color: #64748b; font-size: 0.85rem; margin-top: 5px;">
                             Strong technical foundation. Marketing consolidated, inventory fixed. Only 5 draft products remain for review.
                         </p>
@@ -1144,6 +1144,56 @@
                     </tr>
                 </tbody>
             </table>
+
+            <h3 style="margin: 30px 0 15px; color: var(--navy);">4.3 AEO Infrastructure (Answer Engine Optimization)</h3>
+            <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 15px;">
+                AEO optimizes for AI-powered search (ChatGPT, Perplexity, Google SGE, Claude). Critical for 2025-2026 visibility.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>AEO Component</th>
+                        <th>Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>llms.txt (AI Discovery File)</td>
+                        <td><span class="badge badge-warning">Local Only</span></td>
+                        <td>Generated via GitHub Action, not served on live site (404)</td>
+                    </tr>
+                    <tr>
+                        <td>MedicalBusiness Schema</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td>theme.liquid:51-54 - Disambiguates from other "Alpha Medical" entities</td>
+                    </tr>
+                    <tr>
+                        <td>Product Schema (JSON-LD)</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td>Auto-generated per product with price, availability, reviews</td>
+                    </tr>
+                    <tr>
+                        <td>FAQPage Schema</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td>schema-faq.liquid - Enables FAQ rich snippets + AI answers</td>
+                    </tr>
+                    <tr>
+                        <td>AI Crawler Rules (robots.txt)</td>
+                        <td><span class="badge badge-warning">Partial</span></td>
+                        <td>Missing GPTBot, ClaudeBot, PerplexityBot directives</td>
+                    </tr>
+                    <tr>
+                        <td>Structured Content (E-E-A-T)</td>
+                        <td><span class="badge badge-success">Active</span></td>
+                        <td>Author schema, Organization schema, trust signals</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 15px; padding: 12px 15px; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                <strong style="color: #92400e;">AEO Gap:</strong>
+                <span style="color: #78350f;"> llms.txt returns 404 on live site. Deploy to Shopify assets/ or configure static hosting.</span>
+            </div>
         </section>
 
         <!-- FLYWHEEL DISTRIBUTION -->
@@ -1827,7 +1877,7 @@ gantt
                         labels: [
                             'Infrastructure',
                             'Analytics',
-                            'Technical SEO',
+                            'SEO + AEO',
                             'Documentation',
                             'Security',
                             'Marketing',
@@ -1836,7 +1886,7 @@ gantt
                         ],
                         datasets: [{
                             label: 'Alpha Medical Score',
-                            data: [95, 92, 90, 88, 85, 88, 88, 90],
+                            data: [95, 92, 88, 88, 85, 88, 88, 90],
                             fill: true,
                             backgroundColor: 'rgba(53, 88, 184, 0.2)',
                             borderColor: '#3558b8',
