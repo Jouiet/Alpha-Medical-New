@@ -937,9 +937,319 @@ pie showData
             </div>
         </section>
 
+        <!-- STRATEGIC FLOWCHARTS -->
+        <section class="section">
+            <h2>6. Strategic Flowcharts</h2>
+
+            <!-- FLOWCHART 1: System Architecture -->
+            <h3 style="margin: 20px 0 15px; color: var(--navy);">6.1 System Architecture Overview</h3>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TB
+    subgraph LAYER1["🌐 FRONTEND (Customer-Facing)"]
+        WEB["www.alphamedical.shop"]
+        THEME["Shopify Theme<br/>61 sections | 78 snippets"]
+        GTM["GTM-WFPH2KZP"]
+    end
+
+    subgraph LAYER2["🛒 E-COMMERCE (Shopify)"]
+        PRODUCTS["90 Products<br/>85 active | 5 draft"]
+        COLLECTIONS["6 Collections"]
+        ORDERS["Orders API"]
+        CUSTOMERS["17 Customers"]
+    end
+
+    subgraph LAYER3["📧 MARKETING AUTOMATION"]
+        KLAVIYO["Klaviyo<br/>4 Flows LIVE"]
+        SHOPIFY_EMAIL["Shopify Email<br/>5 Automations"]
+        SHOPIFY_FLOW["Shopify Flow<br/>5 Workflows"]
+    end
+
+    subgraph LAYER4["📊 ANALYTICS & TRACKING"]
+        GA4["GA4 via GTM"]
+        META["Meta Pixel"]
+        TIKTOK["TikTok Pixel"]
+    end
+
+    subgraph LAYER5["⚙️ BACKEND AUTOMATION"]
+        SCRIPTS["278 Python Scripts"]
+        GITHUB["10 GitHub Actions"]
+        N8N["N8N Workflows"]
+        MCP["3 MCP Servers"]
+    end
+
+    WEB --> THEME
+    THEME --> GTM
+    GTM --> GA4
+    GTM --> META
+    GTM --> TIKTOK
+
+    WEB --> PRODUCTS
+    PRODUCTS --> COLLECTIONS
+    PRODUCTS --> ORDERS
+    ORDERS --> CUSTOMERS
+
+    CUSTOMERS --> KLAVIYO
+    CUSTOMERS --> SHOPIFY_EMAIL
+    ORDERS --> SHOPIFY_FLOW
+
+    SCRIPTS --> PRODUCTS
+    GITHUB --> SCRIPTS
+    N8N --> KLAVIYO
+    MCP --> SCRIPTS
+
+    style LAYER1 fill:#dbeafe,stroke:#3b82f6
+    style LAYER2 fill:#d1fae5,stroke:#10b981
+    style LAYER3 fill:#fef3c7,stroke:#f59e0b
+    style LAYER4 fill:#e0e7ff,stroke:#6366f1
+    style LAYER5 fill:#f3e8ff,stroke:#a855f7
+                </div>
+            </div>
+
+            <!-- FLOWCHART 2: Customer Journey -->
+            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.2 Customer Journey & Automation Triggers</h3>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph LR
+    subgraph ACQUISITION["Phase 1: ACQUISITION"]
+        VISIT["🌐 Website Visit"]
+        GTM2["GTM Tracking"]
+    end
+
+    subgraph CONVERSION["Phase 2: CONVERSION"]
+        BROWSE["👀 Browse Products"]
+        CART["🛒 Add to Cart"]
+        CHECKOUT["💳 Checkout"]
+        PURCHASE["✅ Purchase"]
+    end
+
+    subgraph RETENTION["Phase 3: RETENTION"]
+        WELCOME["📧 Welcome Series<br/>Klaviyo 4 emails"]
+        REVIEW["⭐ Review Request<br/>Day 14"]
+        WINBACK["🔄 Winback<br/>Day 90"]
+    end
+
+    subgraph ADVOCACY["Phase 4: ADVOCACY"]
+        LOYALTY["🏆 Loyalty Tier"]
+        REFERRAL["👥 Referral"]
+    end
+
+    VISIT --> GTM2
+    GTM2 --> BROWSE
+
+    BROWSE -->|"Abandon"| BROWSE_EMAIL["📧 Browse Abandon<br/>Shopify Email"]
+    BROWSE --> CART
+
+    CART -->|"Abandon"| CART_EMAIL["📧 Cart Abandon<br/>⚠️ 3 SYSTEMS"]
+    CART --> CHECKOUT
+
+    CHECKOUT -->|"Abandon"| CHECKOUT_EMAIL["📧 Checkout Abandon<br/>Shopify Email"]
+    CHECKOUT --> PURCHASE
+
+    PURCHASE --> WELCOME
+    PURCHASE --> THANK_YOU["📧 Thank You<br/>Shopify Email"]
+
+    WELCOME --> REVIEW
+    REVIEW --> WINBACK
+
+    PURCHASE --> LOYALTY
+    LOYALTY --> REFERRAL
+
+    style ACQUISITION fill:#dbeafe,stroke:#3b82f6
+    style CONVERSION fill:#d1fae5,stroke:#10b981
+    style RETENTION fill:#fef3c7,stroke:#f59e0b
+    style ADVOCACY fill:#fce7f3,stroke:#ec4899
+    style CART_EMAIL fill:#fee2e2,stroke:#ef4444
+                </div>
+            </div>
+
+            <!-- FLOWCHART 3: Technology Stack -->
+            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.3 Technology Stack</h3>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TB
+    subgraph PLATFORM["E-COMMERCE PLATFORM"]
+        SHOPIFY["Shopify Basic<br/>$29/mo"]
+    end
+
+    subgraph MARKETING["MARKETING STACK"]
+        KLAV["Klaviyo<br/>$30/mo"]
+        TIDIO["Tidio Chat<br/>$29/mo"]
+    end
+
+    subgraph TRACKING["TRACKING STACK"]
+        GTM3["Google Tag Manager"]
+        GA43["Google Analytics 4"]
+        METAP["Meta Pixel"]
+        TTP["TikTok Pixel"]
+    end
+
+    subgraph AUTOMATION["AUTOMATION STACK"]
+        GHA["GitHub Actions<br/>10 workflows"]
+        N8N2["N8N Cloud<br/>Hostinger"]
+        PY["Python Scripts<br/>278 files"]
+    end
+
+    subgraph AI["AI & MCP STACK"]
+        CLAUDE["Claude Code<br/>Opus 4.5"]
+        MCP2["3 MCP Servers"]
+        GMCP["n8n MCP"]
+        KMCP["Klaviyo MCP"]
+        SMCP["Shopify MCP"]
+    end
+
+    SHOPIFY --> KLAV
+    SHOPIFY --> TIDIO
+    SHOPIFY --> GTM3
+    GTM3 --> GA43
+    GTM3 --> METAP
+    GTM3 --> TTP
+
+    GHA --> PY
+    N8N2 --> KLAV
+    PY --> SHOPIFY
+
+    CLAUDE --> MCP2
+    MCP2 --> GMCP
+    MCP2 --> KMCP
+    MCP2 --> SMCP
+    GMCP --> N8N2
+    KMCP --> KLAV
+    SMCP --> SHOPIFY
+
+    style PLATFORM fill:#d1fae5,stroke:#10b981
+    style MARKETING fill:#fef3c7,stroke:#f59e0b
+    style TRACKING fill:#dbeafe,stroke:#3b82f6
+    style AUTOMATION fill:#f3e8ff,stroke:#a855f7
+    style AI fill:#fce7f3,stroke:#ec4899
+                </div>
+            </div>
+
+            <!-- FLOWCHART 4: Script Directory to Flywheel Mapping -->
+            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.4 Script Directory → Flywheel Phase Mapping</h3>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph TB
+    subgraph P0["PHASE 0: INFRASTRUCTURE (221 scripts - 79.5%)"]
+        A1["scripts/analysis/<br/>90 scripts"]
+        A2["scripts/deployment/<br/>57 scripts"]
+        A3["scripts/automation/<br/>45 scripts"]
+        A4["scripts/maintenance/<br/>29 scripts"]
+        A5["scripts/setup/<br/>8 scripts"]
+        A6["scripts/tests/<br/>7 scripts"]
+        A7["scripts/fixes/<br/>5 scripts"]
+    end
+
+    subgraph P1["PHASE 1: ACQUISITION (24 scripts - 8.6%)"]
+        B1["scripts/data/<br/>9 scripts"]
+        B2["scripts/marketing/<br/>1 script"]
+        B3["Lead Generation<br/>14 scripts"]
+    end
+
+    subgraph P2["PHASE 2: CONVERSION (20 scripts - 7.2%)"]
+        C1["Email Templates<br/>10 scripts"]
+        C2["Cart Recovery<br/>5 scripts"]
+        C3["Checkout Opt<br/>5 scripts"]
+    end
+
+    subgraph P3["PHASE 3: RETENTION (10 scripts - 3.6%)"]
+        D1["Loyalty System<br/>5 scripts"]
+        D2["Winback<br/>3 scripts"]
+        D3["Subscriptions<br/>2 scripts"]
+    end
+
+    subgraph P4["PHASE 4: ADVOCACY (3 scripts - 1.1%)"]
+        E1["scripts/advocacy/<br/>sync_loox_reviews.py"]
+        E2["manage_referrals.py"]
+        E3["collect_ugc.py"]
+    end
+
+    style P0 fill:#e0e7ff,stroke:#6366f1
+    style P1 fill:#dbeafe,stroke:#3b82f6
+    style P2 fill:#d1fae5,stroke:#10b981
+    style P3 fill:#fef3c7,stroke:#f59e0b
+    style P4 fill:#fee2e2,stroke:#ef4444
+                </div>
+            </div>
+
+            <!-- FLOWCHART 5: Data Flow -->
+            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.5 Data Flow Architecture</h3>
+            <div class="diagram-container">
+                <div class="mermaid">
+graph LR
+    subgraph INPUT["DATA SOURCES"]
+        SHOP_API["Shopify Admin API"]
+        KLAV_API["Klaviyo API"]
+        GA_API["GA4 API"]
+    end
+
+    subgraph PROCESS["PROCESSING LAYER"]
+        PY_SCRIPTS["278 Python Scripts"]
+        GH_ACTIONS["GitHub Actions"]
+        N8N_WF["N8N Workflows"]
+    end
+
+    subgraph STORAGE["DATA STORAGE"]
+        GSHEETS["Google Sheets"]
+        JSON["JSON Files"]
+        ENV[".env Credentials"]
+    end
+
+    subgraph OUTPUT["OUTPUT DESTINATIONS"]
+        SHOPIFY_STORE["Shopify Store"]
+        EMAIL_FLOWS["Email Automations"]
+        REPORTS["Audit Reports"]
+    end
+
+    SHOP_API --> PY_SCRIPTS
+    KLAV_API --> PY_SCRIPTS
+    GA_API --> PY_SCRIPTS
+
+    PY_SCRIPTS --> GH_ACTIONS
+    PY_SCRIPTS --> N8N_WF
+
+    GH_ACTIONS --> GSHEETS
+    N8N_WF --> JSON
+    ENV --> PY_SCRIPTS
+
+    PY_SCRIPTS --> SHOPIFY_STORE
+    N8N_WF --> EMAIL_FLOWS
+    PY_SCRIPTS --> REPORTS
+
+    style INPUT fill:#dbeafe,stroke:#3b82f6
+    style PROCESS fill:#f3e8ff,stroke:#a855f7
+    style STORAGE fill:#fef3c7,stroke:#f59e0b
+    style OUTPUT fill:#d1fae5,stroke:#10b981
+                </div>
+            </div>
+
+            <!-- FLOWCHART 6: Pre-Launch Timeline -->
+            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.6 Pre-Launch Timeline (10 Days)</h3>
+            <div class="diagram-container">
+                <div class="mermaid">
+gantt
+    title Alpha Medical Pre-Launch Roadmap
+    dateFormat  YYYY-MM-DD
+    section Critical Fixes
+    Fix Klaviyo API auth       :crit, 2025-12-15, 1d
+    Review zero inventory      :crit, 2025-12-16, 2d
+    Publish draft products     :2025-12-16, 1d
+    section Optimization
+    Resolve email duplications :2025-12-17, 2d
+    Final tracking verification:2025-12-19, 1d
+    section Testing
+    End-to-end order test      :2025-12-20, 2d
+    Payment gateway test       :2025-12-22, 1d
+    section Launch
+    Soft launch                :milestone, 2025-12-24, 0d
+    Official launch            :milestone, 2025-12-25, 0d
+                </div>
+            </div>
+        </section>
+
         <!-- GAPS & RISKS -->
         <section class="section">
-            <h2>6. Gaps & Risk Analysis</h2>
+            <h2>7. Gaps & Risk Analysis</h2>
 
             <h3 style="margin: 20px 0 15px; color: var(--navy);">6.1 Critical Gaps (Require Action)</h3>
             <div class="gap-analysis">
