@@ -5,9 +5,8 @@
 
 .description-truncate {
   position: relative;
-  --truncate-lines: 5;
-  --line-height: 1.6;
-  --max-height: calc(var(--truncate-lines) * var(--line-height) * 1em);
+  /* Fixed height that accommodates H2 (~70px) + 5 lines of text (~120px) + margins (~30px) */
+  --max-height: 220px;
 }
 
 /* Content wrapper */
@@ -15,8 +14,6 @@
   position: relative;
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 1.4rem;
-  line-height: var(--line-height);
 }
 
 /* Collapsed state */
@@ -121,7 +118,8 @@
 /* Mobile optimizations */
 @media screen and (max-width: 749px) {
   .description-truncate {
-    --truncate-lines: 4;
+    /* Slightly less on mobile: H2 (~60px) + 4 lines (~96px) + margins (~24px) */
+    --max-height: 180px;
   }
 
   .description-truncate__toggle {
@@ -139,13 +137,12 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .description-truncate__toggle {
-    background: linear-gradient(135deg, #2d3436 0%, #1e272e 100%);
-    border-color: rgba(255, 255, 255, 0.1);
-    color: #f8f9fa;
+    background: #4770db !important;
+    box-shadow: 0 4px 12px rgba(71, 112, 219, 0.4);
   }
 
   .description-truncate__toggle:hover {
-    background: linear-gradient(135deg, #3d4448 0%, #2d3436 100%);
+    background: #3a5cc4 !important;
   }
 
   .description-truncate__fade {
