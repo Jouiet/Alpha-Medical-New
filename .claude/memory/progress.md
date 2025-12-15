@@ -44,7 +44,7 @@
   - Verified: `find scripts/ -name "*.py" -type f | wc -l` = 279 ✅
   - Corrected: FLYWHEEL_SCRIPTS_MATRIX.md (265 → 279 scripts)
   - Updated Phase Breakdown:
-    - Phase 0 (Infrastructure): 222 scripts (79.6%)
+    - Phase 0 (Infrastructure): 222 scripts (79.4%)
     - Phase 1 (Acquisition): 24 scripts (8.6%)
     - Phase 2 (Conversion): 20 scripts (7.2%)
     - Phase 3 (Retention): 10 scripts (3.6%)

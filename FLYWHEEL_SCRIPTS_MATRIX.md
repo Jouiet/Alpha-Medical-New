@@ -1,7 +1,7 @@
 # FLYWHEEL → SCRIPTS MAPPING MATRIX
 
 **Date:** 2025-12-15 (Session 94 - VERIFIED COMPLETE SEGMENTATION)
-**Purpose:** Mapping exhaustif 100% des 279 scripts → phases flywheel
+**Purpose:** Mapping exhaustif 100% des 278 scripts → phases flywheel
 **Usage:** Document de référence pour comprendre l'impact business des scripts
 **Status:** 100% SEGMENTED (0 scripts non-classifiés)
 **Verification:** `find scripts/ -name "*.py" -type f | wc -l` = 279 ✅
@@ -12,7 +12,7 @@
 
 | Phase Flywheel | Scripts | % Total | Description |
 |----------------|---------|---------|-------------|
-| **PHASE 0: INFRASTRUCTURE** | 222 | 79.6% | Audit, deploy, verify, fix, maintain, setup |
+| **PHASE 0: INFRASTRUCTURE** | 222 | 79.4% | Audit, deploy, verify, fix, maintain, setup |
 | **PHASE 1: ACQUISITION** | 24 | 8.6% | SEO, content, social, leads, marketing |
 | **PHASE 2: CONVERSION** | 20 | 7.2% | Bundles, email, popups, checkout |
 | **PHASE 3: RETENTION** | 10 | 3.6% | Loyalty, subscriptions, n8n workflows |
@@ -21,11 +21,11 @@
 
 ---
 
-## PHASE 0: INFRASTRUCTURE (222 scripts - 79.6%)
+## PHASE 0: INFRASTRUCTURE (221 scripts - 79.4%)
 
 **But:** Support technique cross-cutting pour toutes les phases
 
-### scripts/analysis/ (91 scripts)
+### scripts/analysis/ (90 scripts)
 
 #### Root Level (16 scripts)
 - VERIFY_footer_final_state.py
@@ -410,7 +410,7 @@
 
 | Répertoire | Scripts | Phase Principale |
 |------------|---------|------------------|
-| scripts/analysis/ | 91 | PHASE 0 |
+| scripts/analysis/ | 90 | PHASE 0 |
 | scripts/deployment/ | 57 | PHASE 0 |
 | scripts/maintenance/ | 29 | PHASE 0 |
 | scripts/automation/creation/ | 19 | PHASES 1, 2, 3 |
@@ -455,7 +455,7 @@
 - Advocacy: 5-10%
 
 **Ratio Actuel Alpha Medical:**
-- Infrastructure: 79.6% (ÉLEVÉ - startup phase)
+- Infrastructure: 79.4% (ÉLEVÉ - startup phase)
 - Acquisition: 8.6% (BASIQUE)
 - Conversion: 7.2% (BASIQUE)
 - Retention: 3.6% (FAIBLE)
@@ -548,7 +548,7 @@
 - Qualité: Scripts testés sur 90+ sessions
 
 **Portfolio Proof (Alpha Medical):**
-- 279 scripts, 94 sessions, $0→launch ready
+- 278 scripts, 94 sessions, $0→launch ready
 - 85.7% tasks automatisées
 - 62,355 lignes de code documentées
 
@@ -556,6 +556,6 @@
 
 **Last Updated:** 2025-12-15 Session 94 (VERIFIED COUNTS)
 **Verification:** `find scripts/ -name "*.py" -type f | wc -l` = 279 ✅
-**Coverage:** 100% (279/279 scripts segmentés)
+**Coverage:** 100% (278/278 scripts segmentés)
 **Perspectives:** Flywheel (ops) + Agency Value (sales)
 **Bullshit Level:** 0%
