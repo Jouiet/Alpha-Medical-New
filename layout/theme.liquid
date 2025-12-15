@@ -386,6 +386,10 @@
     {%- comment -%} Bundle Builder Assets {%- endcomment -%}
     {{ 'bundle-builder.css' | asset_url | stylesheet_tag }}
     {{ 'bundle-builder.js' | asset_url | script_tag }}
+
+    {%- comment -%} Description Truncate - Click to Expand (Session 98) {%- endcomment -%}
+    {{ 'description-truncate.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'description-truncate.js' | asset_url }}" defer="defer"></script>
   
   {%- if template.name == 'product' -%}
     <script src="{{ 'product-recommendations-matrix.js' | asset_url }}" defer></script>

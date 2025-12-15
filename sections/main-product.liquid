@@ -264,8 +264,15 @@
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
+                  <div class="quick-add-hidden" {{ block.shopify_attributes }}>
+                    {%- render 'description-truncate',
+                      content: product.description,
+                      max_lines: 5,
+                      class: 'product__description rte',
+                      label_more: 'Voir plus',
+                      label_less: 'Voir moins',
+                      id: 'product-description-' | append: section.id
+                    -%}
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}

@@ -60,8 +60,15 @@
         {{- collection.title | escape -}}
       </h1>
 
-      {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {%- if section.settings.show_collection_description and collection.description != blank -%}
+        {%- render 'description-truncate',
+          content: collection.description,
+          max_lines: 5,
+          class: 'collection-hero__description rte',
+          label_more: 'Voir plus',
+          label_less: 'Voir moins',
+          id: 'collection-description-' | append: section.id
+        -%}
       {%- endif -%}
     </div>
 

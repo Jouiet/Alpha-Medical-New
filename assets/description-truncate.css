@@ -1,0 +1,92 @@
+/* Description Truncate - Click to Expand
+ * Alpha Medical - Session 98
+ * 5 lines default, smooth expand/collapse
+ */
+
+.description-truncate {
+  position: relative;
+}
+
+.description-truncate__content {
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/* Collapsed state: ~5 lines (1.6 line-height * 16px * 5 = 128px) */
+.description-truncate__content.is-collapsed {
+  max-height: 8rem; /* 128px = ~5 lines */
+}
+
+/* Expanded state */
+.description-truncate__content.is-expanded {
+  max-height: 2000px; /* Large enough for any content */
+}
+
+/* Gradient fade effect when collapsed */
+.description-truncate__content.is-collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  background: linear-gradient(to bottom, transparent, var(--gradient-base-background-1, #fff));
+  pointer-events: none;
+}
+
+/* Toggle button */
+.description-truncate__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  color: rgb(var(--color-link, 18, 18, 18));
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.description-truncate__toggle:hover {
+  opacity: 0.7;
+}
+
+.description-truncate__toggle:focus-visible {
+  outline: 2px solid rgb(var(--color-foreground));
+  outline-offset: 2px;
+}
+
+/* Arrow icon */
+.description-truncate__arrow {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.description-truncate__toggle.is-expanded .description-truncate__arrow {
+  transform: rotate(-135deg);
+}
+
+/* Hide toggle if content is short */
+.description-truncate__toggle.is-hidden {
+  display: none;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 749px) {
+  .description-truncate__content.is-collapsed {
+    max-height: 7rem; /* Slightly less on mobile */
+  }
+
+  .description-truncate__toggle {
+    font-size: 1.3rem;
+    padding: 0.75rem 0;
+  }
+}
