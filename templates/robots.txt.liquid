@@ -1,8 +1,10 @@
 # Alpha Medical - robots.txt
 # Store: www.alphamedical.shop
-# Updated: 2025-12-05
+# Updated: 2025-12-15 (Session 98 - AEO Complete)
 
-# Allow all crawlers
+# ===========================================
+# SECTION 1: Default Rules (All Crawlers)
+# ===========================================
 User-agent: *
 
 # Disallow admin and account pages
@@ -38,7 +40,49 @@ Disallow: /*?*fb_action_ids=
 Disallow: /*?*fb_action_types=
 Disallow: /*?*fb_source=
 
-# Allow images for Google Images
+# ===========================================
+# SECTION 2: AI Crawlers (AEO - Answer Engine Optimization)
+# ===========================================
+
+# OpenAI GPTBot (ChatGPT, Bing Chat)
+User-agent: GPTBot
+Allow: /
+
+# Anthropic ClaudeBot (Claude AI)
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic alternative user-agent
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini, Bard, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Amazon AI (Alexa, product searches)
+User-agent: Amazonbot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# ===========================================
+# SECTION 3: Search Engine Images
+# ===========================================
 User-agent: Googlebot-Image
 Allow: /cdn/
 Allow: /products/*.jpg
@@ -46,5 +90,7 @@ Allow: /products/*.jpeg
 Allow: /products/*.png
 Allow: /products/*.webp
 
-# Sitemap
+# ===========================================
+# SECTION 4: Sitemap
+# ===========================================
 Sitemap: https://www.alphamedical.shop/sitemap.xml
