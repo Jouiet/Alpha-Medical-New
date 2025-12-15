@@ -1,0 +1,195 @@
+name: Flywheel Feedback Loop Monitor
+
+on:
+  schedule:
+    # Run every 6 hours (0:00, 6:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+
+  # Allow manual triggering
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  SHOPIFY_STORE_DOMAIN: azffej-as.myshopify.com
+  PUBLIC_URL: https://www.alphamedical.shop
+
+jobs:
+  performance-check:
+    name: Performance & Site Health
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Create .env.admin for API access
+        env:
+          SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+        run: |
+          echo "SHOPIFY_ADMIN_ACCESS_TOKEN=$SHOPIFY_ADMIN_ACCESS_TOKEN" > .env.admin
+
+      - name: Run Performance Monitor
+        id: performance
+        run: |
+          python3 scripts/feedback_loops/performance_monitor.py
+          EXIT_CODE=$?
+          echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+          exit $EXIT_CODE
+        continue-on-error: true
+
+      - name: Upload Performance Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-report-${{ github.run_id }}
+          path: scripts/feedback_loops/reports/performance_report_*.json
+          retention-days: 30
+
+      - name: Set Performance Status
+        id: perf_status
+        run: |
+          if [ "${{ steps.performance.outputs.exit_code }}" == "0" ]; then
+            echo "status=HEALTHY" >> $GITHUB_OUTPUT
+            echo "emoji=✅" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.performance.outputs.exit_code }}" == "1" ]; then
+            echo "status=DEGRADED" >> $GITHUB_OUTPUT
+            echo "emoji=⚠️" >> $GITHUB_OUTPUT
+          else
+            echo "status=CRITICAL" >> $GITHUB_OUTPUT
+            echo "emoji=🔴" >> $GITHUB_OUTPUT
+          fi
+
+    outputs:
+      status: ${{ steps.perf_status.outputs.status }}
+      emoji: ${{ steps.perf_status.outputs.emoji }}
+
+  inventory-check:
+    name: Inventory Monitoring
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Create .env.admin for API access
+        env:
+          SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+        run: |
+          echo "SHOPIFY_ADMIN_ACCESS_TOKEN=$SHOPIFY_ADMIN_ACCESS_TOKEN" > .env.admin
+
+      - name: Run Inventory Monitor
+        id: inventory
+        run: |
+          python3 scripts/feedback_loops/inventory_monitor.py
+          EXIT_CODE=$?
+          echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+          exit $EXIT_CODE
+        continue-on-error: true
+
+      - name: Upload Inventory Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventory-report-${{ github.run_id }}
+          path: scripts/feedback_loops/reports/inventory_report_*.json
+          retention-days: 30
+
+      - name: Set Inventory Status
+        id: inv_status
+        run: |
+          if [ "${{ steps.inventory.outputs.exit_code }}" == "0" ]; then
+            echo "status=HEALTHY" >> $GITHUB_OUTPUT
+            echo "emoji=✅" >> $GITHUB_OUTPUT
+          elif [ "${{ steps.inventory.outputs.exit_code }}" == "1" ]; then
+            echo "status=WARNING" >> $GITHUB_OUTPUT
+            echo "emoji=⚠️" >> $GITHUB_OUTPUT
+          else
+            echo "status=CRITICAL" >> $GITHUB_OUTPUT
+            echo "emoji=🔴" >> $GITHUB_OUTPUT
+          fi
+
+    outputs:
+      status: ${{ steps.inv_status.outputs.status }}
+      emoji: ${{ steps.inv_status.outputs.emoji }}
+
+  summary:
+    name: Generate Summary
+    needs: [performance-check, inventory-check]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Create Flywheel Health Summary
+        run: |
+          echo "# 🔄 Flywheel Feedback Loop Monitor" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run Time:** $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "**Store:** ${{ env.PUBLIC_URL }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Health Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Site Performance | ${{ needs.performance-check.outputs.emoji }} ${{ needs.performance-check.outputs.status }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Inventory | ${{ needs.inventory-check.outputs.emoji }} ${{ needs.inventory-check.outputs.status }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "_Generated by Flywheel Feedback Loop Monitor_" >> $GITHUB_STEP_SUMMARY
+
+  alert-on-critical:
+    name: Create Alert Issue
+    needs: [performance-check, inventory-check]
+    runs-on: ubuntu-latest
+    if: |
+      always() &&
+      (needs.performance-check.outputs.status == 'CRITICAL' ||
+       needs.inventory-check.outputs.status == 'CRITICAL')
+
+    steps:
+      - name: Create Critical Alert Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const now = new Date().toISOString();
+            const perfStatus = '${{ needs.performance-check.outputs.status }}';
+            const invStatus = '${{ needs.inventory-check.outputs.status }}';
+
+            let issues = [];
+            if (perfStatus === 'CRITICAL') issues.push('- Site Performance: CRITICAL');
+            if (invStatus === 'CRITICAL') issues.push('- Inventory: CRITICAL');
+
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 FLYWHEEL ALERT: Critical Issues Detected - ${now.split('T')[0]}`,
+              body: `## Critical Flywheel Alert\n\n` +
+                    `**Time:** ${now}\n` +
+                    `**Store:** https://www.alphamedical.shop\n\n` +
+                    `### Issues Detected:\n${issues.join('\n')}\n\n` +
+                    `### Action Required:\n` +
+                    `1. Check the workflow run for details\n` +
+                    `2. Review the uploaded reports (artifacts)\n` +
+                    `3. Take immediate corrective action\n\n` +
+                    `### Reports:\n` +
+                    `[View Workflow Run](${context.payload.repository.html_url}/actions/runs/${context.runId})\n\n` +
+                    `---\n` +
+                    `_Automated alert from Flywheel Feedback Loop Monitor_`,
+              labels: ['critical', 'automated', 'flywheel-alert']
+            });
