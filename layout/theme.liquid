@@ -7,6 +7,9 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
+    {%- comment -%} AEO: llms.txt for AI crawler discovery (Answer Engine Optimization) {%- endcomment -%}
+    <link rel="llms" href="https://cdn.shopify.com/s/files/1/0671/0316/2445/files/llms.txt?v=1765825709" type="text/plain">
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
