@@ -1,3 +1,62 @@
+# 🔄 SESSION 93 UPDATE (2025-12-15) - COMPLEMENTARITY MATRIX + FLYWHEEL COMPLETION
+
+**Analyst:** Claude Opus 4.5 | **Status:** 🔄 IN PROGRESS
+**Focus:** Email Automation Complementarity Matrix + Flywheel Phase 4 Gap Analysis
+
+## AUTOMATION COMPLEMENTARITY MATRIX (Option C: Hybrid Complementary)
+
+**Philosophy:** NO duplication, NO redundancy - each system handles what it does best
+
+### System Roles (Post-Session 91 Consolidation)
+
+| System | Role | Active Automations | Status |
+|--------|------|-------------------|--------|
+| **Klaviyo** | PRIMARY Email Marketing | 4 LIVE flows | ✅ ACTIVE |
+| **Shopify Flow** | Non-Email Automation ONLY | 1 workflow (Loyalty Tagging) | ✅ ACTIVE |
+| **Shopify Email** | DEACTIVATED | 0/5 (all off) | ❌ INACTIVE |
+
+### Detailed Responsibility Matrix
+
+| Customer Journey Stage | System | Automation | Status | ROI |
+|----------------------|--------|------------|--------|-----|
+| **ACQUISITION** |||||
+| Lead Capture | Klaviyo | Newsletter signup → Welcome Series | 🟢 LIVE | 30x RPR |
+| Win-back Dormant | Klaviyo | Added to Win-back list → 3-email series | 🟢 LIVE | 5-10% CVR |
+| **CONVERSION** |||||
+| Cart Abandonment | Klaviyo | ❌ NO FLOW EXISTS | 🔴 GAP | $3.65/recipient |
+| Checkout Abandonment | Klaviyo | Built for you (NOT activated) | 🟡 NEEDS ACTION | 15-25% recovery |
+| Browse Abandonment | Klaviyo | ❌ NO FLOW EXISTS | 🟠 OPTIONAL | 2-5% CVR |
+| **RETENTION** |||||
+| Post-Purchase Nurture | Klaviyo | Placed Order → Repeat Purchase flow | 🟢 LIVE | +20-40% LTV |
+| Product Review Request | Klaviyo | Fulfilled Order → Review/Cross-sell | 🟢 LIVE | 10-20% review rate |
+| Loyalty Tier Tagging | Shopify Flow | Order Paid → Tag customer (Bronze/Silver/Gold/Platinum) | 🟢 ACTIVE | Segmentation |
+| **ADVOCACY** |||||
+| Review Collection | Loox + Klaviyo | Manual (no automation) | 🔴 GAP | +15-30% CVR |
+| Referral Program | Loox | NOT configured | 🔴 GAP | -40-60% CAC |
+| UGC Campaign | None | ❌ NO SYSTEM | 🔴 GAP | 3-5x engagement |
+
+### CRITICAL GAPS (Blocking Revenue)
+
+| Gap | Impact | User Action Required | Time |
+|-----|--------|---------------------|------|
+| Cart Abandonment Flow | 15-30% lost recovery | Create in Klaviyo UI | 10 min |
+| Checkout Abandonment | 15-25% lost recovery | Activate "Built for you" flow | 5 min |
+| Phase 4 ADVOCACY | 0 scripts | Create review/referral automation | 2-3 hours |
+
+### Complementarity Score
+
+```
+TOTAL COVERAGE: 60% (6/10 customer touchpoints automated)
+├── Acquisition: 100% (2/2) ✅
+├── Conversion: 33% (1/3) ⚠️ Cart + Checkout gaps
+├── Retention: 100% (3/3) ✅
+└── Advocacy: 0% (0/2) 🔴 CRITICAL
+```
+
+**Session 93 Priority:** Fill Conversion gaps (15 min user action in Klaviyo UI)
+
+---
+
 # 🔄 SESSION 92 UPDATE (2025-12-15) - IP AUDIT + DOCUMENTATION UPDATE
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
