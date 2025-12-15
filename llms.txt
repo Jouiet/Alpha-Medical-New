@@ -8,7 +8,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 
 **Tech Stack:** Shopify, Liquid templating, Python automation scripts, Klaviyo email flows, Loox reviews, DSers dropshipping integration
 
-**Last Updated:** December 14, 2025
+**Last Updated:** December 15, 2025
 
 ## Core Documentation
 
@@ -33,7 +33,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09](FLYWHEEL_ECOSYSTEM_EXHAUSTIVE_AUDIT_2025-12-09.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](FORENSIC_ANALYSIS_REPORT.md): Project documentation
 - [FORENSIC_ANALYSIS_REPORT](archive/old-audits/FORENSIC_ANALYSIS_REPORT.md): Project documentation
-- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): gh repo view --json isPrivate # {"isPrivate":false} find scripts -name '.py' | wc -l # 276
+- [INFRASTRUCTURE_AUDIT_CHECKLIST](INFRASTRUCTURE_AUDIT_CHECKLIST.md): TOTAL COVERAGE: 60% (6/10 customer touchpoints automated) ├── Acquisition: 100% (2/2) ✅
 - [KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS](archive/miscellaneous/KLAVIYO_FLOWS_COMPLEMENTARITY_ANALYSIS.md): Project documentation
 - [MEMORY_SYSTEM_AUDIT_FACTUAL](archive/old-audits/MEMORY_SYSTEM_AUDIT_FACTUAL.md): Status: ✅ Executable (755 permissions) Size: 5,365 bytes Functionality: WORKING 100%
 - [POLICY_PAGES_AUDIT_REPORT_2025-11-30](POLICY_PAGES_AUDIT_REPORT_2025-11-30.md): Project documentation
@@ -312,7 +312,7 @@ When assisting with this project:
 - [FINAL_ACTIVATION_STEPS](FINAL_ACTIVATION_STEPS.md): URL: https://n8n.srv1168256.hstgr.cloud/workflow/q0kyXyhCUq5gjmG2 Login with your N8N credentials
 - [FINAL_STORE_STATUS_2025-10-31](archive/session-summaries/FINAL_STORE_STATUS_2025-10-31.md): Project documentation
 - [FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL](FLYWHEEL_ECOSYSTEM_STATUS_FACTUAL.md): 1. ✅ scripts/analysis/checks/checkgtmstatus.py - GTM verification 2. ✅ scripts/analysis/checks/checkthemepixels.py - Theme pixels verification
-- [FLYWHEEL_SCRIPTS_MATRIX](FLYWHEEL_SCRIPTS_MATRIX.md): Project documentation
+- [FLYWHEEL_SCRIPTS_MATRIX](FLYWHEEL_SCRIPTS_MATRIX.md): 1. Configure LOOXAPIKEY in .env (get from Loox Admin → Settings → API) 2. Enable Loox Referrals feature in Loox Admin
 - [GET_CONVERSION_ID_STEPS](GET_CONVERSION_ID_STEPS.md): Project documentation
 - [GOOGLE_ADS_GTM_PROGRESS](archive/setup-completed/GOOGLE_ADS_GTM_PROGRESS.md): Project documentation
 - [GOOGLE_ADS_NEXT_STEPS](archive/setup-completed/GOOGLE_ADS_NEXT_STEPS.md): 1. Si premier container: Cliquez "Créer un compte" Formulaire: Configuration container:
