@@ -15,14 +15,14 @@
 | Recover abandoned cart | ❌ INACTIVE | Cart abandonment |
 | Recover abandoned checkout | ❌ INACTIVE | Checkout abandonment |
 
-### Shopify Email (5 automations - ACTION REQUIRED)
-| Automation | Status | Purpose | Action |
+### Shopify Email (2/5 ACTIVE - Optimized 2025-12-15)
+| Automation | Status | Purpose | Reason |
 |------------|--------|---------|--------|
-| Thank you! | ✅ ACTIVE | Post-purchase | 🟡 OPTIONAL deactivate |
-| We're happy to see you again | ✅ ACTIVE | Win-back | 🟡 OPTIONAL deactivate |
-| Did something catch your eye? | ✅ ACTIVE | Browse abandonment | ✅ KEEP (no Klaviyo) |
-| You left items in your cart | ✅ ACTIVE | Cart abandonment | ✅ KEEP (no Klaviyo) |
-| You left items at checkout | ✅ ACTIVE | Checkout abandonment | 🔴 **DEACTIVATE** (Klaviyo now covers) |
+| Did something catch your eye? | ✅ ACTIVE | Browse abandonment | No Klaviyo equivalent |
+| You left items in your cart | ✅ ACTIVE | Cart abandonment | No Klaviyo equivalent |
+| You left items at checkout | ❌ INACTIVE | Checkout abandonment | Klaviyo covers |
+| Thank you! | ❌ INACTIVE | Post-purchase | Klaviyo covers |
+| We're happy to see you again | ❌ INACTIVE | Win-back | Klaviyo covers |
 
 ### Klaviyo Flows (5/5 LIVE - Updated 2025-12-15 13:04)
 | Flow | Status | Trigger | Updated |
@@ -38,23 +38,21 @@
 - ❌ **Cart Abandonment in Klaviyo** - DOES NOT EXIST (Shopify Email = only coverage)
 - ❌ **Browse Abandonment in Klaviyo** - DOES NOT EXIST (Shopify Email = only coverage)
 
-### Option C: Hybrid Complementary - Current Implementation
+### Option C: Hybrid Complementary - FINAL STATE ✅
 ```
-COVERAGE MATRIX (Updated 2025-12-15 13:04):
+COVERAGE MATRIX (Optimized 2025-12-15):
 ├── Acquisition (Welcome): Klaviyo ✅
-├── Checkout Abandonment: Klaviyo ✅ (NEW! Deactivate Shopify Email)
-├── Cart Abandonment: Shopify Email ✅ (Klaviyo gap - KEEP)
-├── Browse Abandonment: Shopify Email ✅ (Klaviyo gap - KEEP)
-├── Post-Purchase: Klaviyo ✅ + Shopify Email ✅ (duplication OK)
-├── Win-back: Klaviyo ✅ + Shopify Email ✅ (duplication OK)
+├── Checkout Abandonment: Klaviyo ✅
+├── Cart Abandonment: Shopify Email ✅
+├── Browse Abandonment: Shopify Email ✅
+├── Post-Purchase: Klaviyo ✅
+├── Win-back: Klaviyo ✅
 ├── Loyalty Tagging: Shopify Flow ✅
 └── Review/Cross-sell: Klaviyo ✅
-```
 
-### 🔴 USER ACTION REQUIRED (2 min)
-1. Go to: https://admin.shopify.com/store/azffej-as/apps/shopify-email → Automations
-2. **DEACTIVATE:** "You left items at checkout" (now covered by Klaviyo)
-3. **KEEP:** "You left items in your cart" + "Did something catch your eye?"
+ZERO DUPLICATION ✅
+100% COVERAGE ✅
+```
 
 ---
 

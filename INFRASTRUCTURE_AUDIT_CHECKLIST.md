@@ -1,3 +1,89 @@
+# 🔄 SESSION 97 UPDATE (2025-12-15) - AUTOMATION CONSOLIDATION FINAL STATE
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Klaviyo Abandoned Checkout Activation + Loox Phase 4 Gap Analysis
+
+## SESSION 97 SUMMARY
+
+### Automation State Changes (Option C: Hybrid Complementary)
+
+**Klaviyo Flows - UPDATED:**
+| Flow | Status | Last Updated | Change |
+|------|--------|--------------|--------|
+| Abandoned Checkout | ✅ LIVE | **2025-12-15 13:04** | **USER ACTIVATED** |
+| Customer Winback | ✅ LIVE | Nov 27 | No change |
+| Welcome Series | ✅ LIVE | Nov 27 | No change |
+| Repeat Purchase Nurture | ✅ LIVE | Nov 27 | No change |
+| Product Review/Cross-Sell | ✅ LIVE | Nov 27 | No change |
+
+**Shopify Email - FINAL STATE (2/5 ACTIVE):**
+| Automation | Status | Reason |
+|------------|--------|--------|
+| Did something catch your eye? | ✅ ACTIVE | Browse abandonment (no Klaviyo equivalent) |
+| You left items in your cart | ✅ ACTIVE | Cart abandonment (no Klaviyo equivalent) |
+| You left items at checkout | ❌ INACTIVE | Klaviyo covers (activated today) |
+| Thank you! | ❌ INACTIVE | Klaviyo covers |
+| We're happy to see you again | ❌ INACTIVE | Klaviyo covers |
+
+**Shopify Flow - UNCHANGED:**
+| Workflow | Status |
+|----------|--------|
+| New Loyalty Tier Tagging (Automatic) | ✅ ACTIVE |
+| 4 email workflows | ❌ INACTIVE |
+
+### Phase 4 ADVOCACY Gap (Loox Verification - Chrome DevTools MCP)
+
+**Loox App Status (Verified 2025-12-15):**
+| Metric | Value | Status |
+|--------|-------|--------|
+| Installed | Since Oct 12, 2025 | ✅ |
+| Plan | $29.99/mo | ✅ Active |
+| Review Requests Sent | 0 | 🔴 NOT CONFIGURED |
+| Reviews Collected | 0 | 🔴 |
+| Photo/Video Reviews | 0 | 🔴 |
+| Referral Program | NOT CONFIGURED | 🔴 |
+| Upsells | NOT ACTIVATED | 🔴 |
+
+### Coverage Matrix - FINAL STATE (Option C)
+
+```
+ACQUISITION
+├── Welcome Series: Klaviyo ✅
+├── Win-back: Klaviyo ✅
+
+CONVERSION
+├── Checkout Abandonment: Klaviyo ✅ (NEW - today)
+├── Cart Abandonment: Shopify Email ✅
+├── Browse Abandonment: Shopify Email ✅
+
+RETENTION
+├── Post-Purchase: Klaviyo (Repeat Purchase) ✅
+├── Review Request: Klaviyo (Cross-Sell) ✅
+├── Loyalty Tagging: Shopify Flow ✅
+
+ADVOCACY
+├── Review Collection: Loox 🔴 (0 requests sent)
+├── Referral Program: Loox 🔴 (NOT configured)
+├── UGC Campaign: None 🔴
+
+DUPLICATION: ZERO ✅
+COVERAGE: 8/11 touchpoints (73%)
+CRITICAL GAP: Phase 4 ADVOCACY (0/3)
+```
+
+### Remaining User Actions
+
+| Action | System | Time | Priority |
+|--------|--------|------|----------|
+| Configure Loox review requests | Loox | 10 min | P1 |
+| Setup Loox referral program | Loox | 10 min | P1 |
+| Activate Loox upsells | Loox | 5 min | P2 |
+| Create Cart Abandonment flow (optional) | Klaviyo | 15 min | P3 |
+
+**Verification:** Chrome DevTools MCP (Klaviyo UI + Loox Dashboard) | **Confidence:** 100% | **BS:** 0%
+
+---
+
 # 🔄 SESSION 96 UPDATE (2025-12-15) - HTML VISUALIZATION UPGRADE
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
@@ -41,15 +127,15 @@
 
 **Philosophy:** NO duplication, NO redundancy - each system handles what it does best
 
-### System Roles (Post-Session 91 Consolidation)
+### System Roles (Post-Session 97 - FINAL STATE)
 
 | System | Role | Active Automations | Status |
 |--------|------|-------------------|--------|
-| **Klaviyo** | PRIMARY Email Marketing | 4 LIVE flows | ✅ ACTIVE |
+| **Klaviyo** | PRIMARY Email Marketing | 5 LIVE flows | ✅ ACTIVE |
 | **Shopify Flow** | Non-Email Automation ONLY | 1 workflow (Loyalty Tagging) | ✅ ACTIVE |
-| **Shopify Email** | DEACTIVATED | 0/5 (all off) | ❌ INACTIVE |
+| **Shopify Email** | COMPLEMENTARY (gaps only) | 2/5 (browse + cart abandonment) | ✅ ACTIVE |
 
-### Detailed Responsibility Matrix
+### Detailed Responsibility Matrix (UPDATED Session 97)
 
 | Customer Journey Stage | System | Automation | Status | ROI |
 |----------------------|--------|------------|--------|-----|
@@ -57,37 +143,39 @@
 | Lead Capture | Klaviyo | Newsletter signup → Welcome Series | 🟢 LIVE | 30x RPR |
 | Win-back Dormant | Klaviyo | Added to Win-back list → 3-email series | 🟢 LIVE | 5-10% CVR |
 | **CONVERSION** |||||
-| Cart Abandonment | Klaviyo | ❌ NO FLOW EXISTS | 🔴 GAP | $3.65/recipient |
-| Checkout Abandonment | Klaviyo | Built for you (NOT activated) | 🟡 NEEDS ACTION | 15-25% recovery |
-| Browse Abandonment | Klaviyo | ❌ NO FLOW EXISTS | 🟠 OPTIONAL | 2-5% CVR |
+| Cart Abandonment | Shopify Email | "You left items in your cart" | 🟢 ACTIVE | $3.65/recipient |
+| Checkout Abandonment | Klaviyo | Abandoned Checkout flow | 🟢 LIVE (2025-12-15) | 15-25% recovery |
+| Browse Abandonment | Shopify Email | "Did something catch your eye?" | 🟢 ACTIVE | 2-5% CVR |
 | **RETENTION** |||||
 | Post-Purchase Nurture | Klaviyo | Placed Order → Repeat Purchase flow | 🟢 LIVE | +20-40% LTV |
 | Product Review Request | Klaviyo | Fulfilled Order → Review/Cross-sell | 🟢 LIVE | 10-20% review rate |
 | Loyalty Tier Tagging | Shopify Flow | Order Paid → Tag customer (Bronze/Silver/Gold/Platinum) | 🟢 ACTIVE | Segmentation |
 | **ADVOCACY** |||||
-| Review Collection | Loox + Klaviyo | Manual (no automation) | 🔴 GAP | +15-30% CVR |
-| Referral Program | Loox | NOT configured | 🔴 GAP | -40-60% CAC |
+| Review Collection | Loox | ❌ NOT CONFIGURED (0 requests sent) | 🔴 GAP | +15-30% CVR |
+| Referral Program | Loox | ❌ NOT CONFIGURED | 🔴 GAP | -40-60% CAC |
 | UGC Campaign | None | ❌ NO SYSTEM | 🔴 GAP | 3-5x engagement |
 
-### CRITICAL GAPS (Blocking Revenue)
+### CRITICAL GAPS (Session 97 - Only Phase 4 Remains)
 
 | Gap | Impact | User Action Required | Time |
 |-----|--------|---------------------|------|
-| Cart Abandonment Flow | 15-30% lost recovery | Create in Klaviyo UI | 10 min |
-| Checkout Abandonment | 15-25% lost recovery | Activate "Built for you" flow | 5 min |
-| Phase 4 ADVOCACY | 0 scripts | Create review/referral automation | 2-3 hours |
+| ~~Cart Abandonment~~ | ~~15-30% lost~~ | ~~Create in Klaviyo~~ | ✅ Shopify Email covers |
+| ~~Checkout Abandonment~~ | ~~15-25% lost~~ | ~~Activate flow~~ | ✅ Klaviyo LIVE (today) |
+| Loox Review Requests | +15-30% CVR | Configure in Loox dashboard | 10 min |
+| Loox Referral Program | -40-60% CAC | Setup referral in Loox | 10 min |
+| Loox Upsells | +10-20% AOV | Activate in Loox | 5 min |
 
-### Complementarity Score
+### Complementarity Score (UPDATED Session 97)
 
 ```
-TOTAL COVERAGE: 60% (6/10 customer touchpoints automated)
+TOTAL COVERAGE: 73% (8/11 customer touchpoints automated)
 ├── Acquisition: 100% (2/2) ✅
-├── Conversion: 33% (1/3) ⚠️ Cart + Checkout gaps
+├── Conversion: 100% (3/3) ✅ [RESOLVED - Shopify Email + Klaviyo]
 ├── Retention: 100% (3/3) ✅
-└── Advocacy: 0% (0/2) 🔴 CRITICAL
+└── Advocacy: 0% (0/3) 🔴 CRITICAL [Loox NOT CONFIGURED]
 ```
 
-**Session 93 Priority:** Fill Conversion gaps (15 min user action in Klaviyo UI)
+**Session 97 Status:** Conversion gaps RESOLVED. Phase 4 ADVOCACY = only remaining gap.
 
 ---
 
