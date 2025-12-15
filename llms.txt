@@ -108,7 +108,7 @@ Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equip
 - [SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST](archive/implementation-guides/SHOPIFY_EMAIL_IMPLEMENTATION_CHECKLIST.md): 1. Open Shopify Admin: https://admin.shopify.com/store/azffej-as 2. Navigate to: Settings (bottom left sidebar)
 - [SHOPIFY_EMAIL_MANUAL_ACTIVATION](archive/implementation-guides/SHOPIFY_EMAIL_MANUAL_ACTIVATION.md): 1. Shopify Admin → Apps → Email → Tab "Automations" 2. Identifier les 2 duplicates (même nom, même trigger)
 - [SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP](archive/setup-completed/SHOPIFY_EMAIL_WELCOME_DISCOUNT_MANUAL_SETUP.md): 1. Shopify Admin → Marketing → Automations 2. Cliquer "Welcome new subscribers with a discount email" (Status: Inactive)
-- [automation-workflows](agent_docs/automation-workflows.md): 2. INVENTORY FAILURE (BUNDLES): 3. TECHNICAL SEO (SUCCESS): 1. ✅ "Thank customers after they purchase" (Order created)
+- [automation-workflows](agent_docs/automation-workflows.md): COVERAGE MATRIX: ├── Acquisition (Welcome): Klaviyo ✅ ├── Cart Abandonment: Shopify Email ✅ (Klaviyo gap)
 
 ### Content & Blog
 
