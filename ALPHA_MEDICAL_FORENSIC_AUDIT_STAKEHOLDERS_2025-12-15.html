@@ -8,12 +8,25 @@
     <style>
         :root {
             --primary: #4770db;
+            --primary-light: #6b8be8;
+            --primary-dark: #3558b8;
             --navy: #0e1b4d;
+            --navy-light: #1a2d6d;
             --light: #eff0f5;
             --success: #10b981;
+            --success-light: #34d399;
             --warning: #f59e0b;
+            --warning-light: #fbbf24;
             --danger: #ef4444;
+            --danger-light: #f87171;
             --info: #3b82f6;
+            --info-light: #60a5fa;
+            --purple: #8b5cf6;
+            --purple-light: #a78bfa;
+            --pink: #ec4899;
+            --pink-light: #f472b6;
+            --cyan: #06b6d4;
+            --cyan-light: #22d3ee;
         }
 
         * {
@@ -211,16 +224,132 @@
         }
 
         .diagram-container {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
+            background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(239,240,245,0.9) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 25px 0;
             overflow-x: auto;
+            box-shadow:
+                0 4px 30px rgba(14, 27, 77, 0.08),
+                0 1px 3px rgba(14, 27, 77, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(71, 112, 219, 0.1);
+            position: relative;
+        }
+
+        .diagram-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--purple) 50%, var(--pink) 100%);
+            border-radius: 20px 20px 0 0;
         }
 
         .mermaid {
             display: flex;
             justify-content: center;
+            padding: 10px 0;
+        }
+
+        /* Modern Mermaid Node Styling */
+        .mermaid .node rect,
+        .mermaid .node polygon,
+        .mermaid .node circle,
+        .mermaid .node ellipse {
+            rx: 12px;
+            ry: 12px;
+            filter: drop-shadow(0 2px 4px rgba(14, 27, 77, 0.1));
+        }
+
+        .mermaid .label {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+            font-weight: 500 !important;
+        }
+
+        .mermaid .cluster rect {
+            rx: 16px !important;
+            ry: 16px !important;
+            filter: drop-shadow(0 4px 12px rgba(14, 27, 77, 0.08));
+        }
+
+        .mermaid .edgePath path {
+            stroke-width: 2px;
+        }
+
+        .mermaid .edgeLabel {
+            background: white;
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            box-shadow: 0 2px 8px rgba(14, 27, 77, 0.1);
+        }
+
+        /* Gantt Chart Modern Styling */
+        .mermaid .section {
+            fill: var(--light) !important;
+        }
+
+        .mermaid .task {
+            rx: 6px;
+            ry: 6px;
+        }
+
+        /* Modern Flowchart Section Titles */
+        .section h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin: 35px 0 20px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, rgba(71, 112, 219, 0.08) 0%, rgba(139, 92, 246, 0.06) 100%);
+            border-radius: 12px;
+            border-left: 4px solid;
+            border-image: linear-gradient(180deg, var(--primary) 0%, var(--purple) 100%) 1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section h3::before {
+            content: '📊';
+            font-size: 1.2rem;
+        }
+
+        .section h3:nth-of-type(1)::before { content: '🏗️'; }
+        .section h3:nth-of-type(2)::before { content: '🛤️'; }
+        .section h3:nth-of-type(3)::before { content: '⚡'; }
+        .section h3:nth-of-type(4)::before { content: '📁'; }
+        .section h3:nth-of-type(5)::before { content: '🔄'; }
+        .section h3:nth-of-type(6)::before { content: '📅'; }
+
+        /* Legend/Color Guide */
+        .color-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--navy);
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
         }
 
         .gap-analysis {
@@ -942,7 +1071,7 @@ pie showData
             <h2>6. Strategic Flowcharts</h2>
 
             <!-- FLOWCHART 1: System Architecture -->
-            <h3 style="margin: 20px 0 15px; color: var(--navy);">6.1 System Architecture Overview</h3>
+            <h3>6.1 System Architecture Overview</h3>
             <div class="diagram-container">
                 <div class="mermaid">
 graph TB
@@ -998,16 +1127,16 @@ graph TB
     N8N --> KLAVIYO
     MCP --> SCRIPTS
 
-    style LAYER1 fill:#dbeafe,stroke:#3b82f6
-    style LAYER2 fill:#d1fae5,stroke:#10b981
-    style LAYER3 fill:#fef3c7,stroke:#f59e0b
-    style LAYER4 fill:#e0e7ff,stroke:#6366f1
-    style LAYER5 fill:#f3e8ff,stroke:#a855f7
+    style LAYER1 fill:#4770db15,stroke:#4770db,stroke-width:2px,color:#0e1b4d
+    style LAYER2 fill:#10b98115,stroke:#10b981,stroke-width:2px,color:#0e1b4d
+    style LAYER3 fill:#f59e0b15,stroke:#f59e0b,stroke-width:2px,color:#0e1b4d
+    style LAYER4 fill:#8b5cf615,stroke:#8b5cf6,stroke-width:2px,color:#0e1b4d
+    style LAYER5 fill:#ec489915,stroke:#ec4899,stroke-width:2px,color:#0e1b4d
                 </div>
             </div>
 
             <!-- FLOWCHART 2: Customer Journey -->
-            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.2 Customer Journey & Automation Triggers</h3>
+            <h3>6.2 Customer Journey & Automation Triggers</h3>
             <div class="diagram-container">
                 <div class="mermaid">
 graph LR
@@ -1055,16 +1184,16 @@ graph LR
     PURCHASE --> LOYALTY
     LOYALTY --> REFERRAL
 
-    style ACQUISITION fill:#dbeafe,stroke:#3b82f6
-    style CONVERSION fill:#d1fae5,stroke:#10b981
-    style RETENTION fill:#fef3c7,stroke:#f59e0b
-    style ADVOCACY fill:#fce7f3,stroke:#ec4899
-    style CART_EMAIL fill:#fee2e2,stroke:#ef4444
+    style ACQUISITION fill:#4770db18,stroke:#4770db,stroke-width:2px
+    style CONVERSION fill:#10b98118,stroke:#10b981,stroke-width:2px
+    style RETENTION fill:#f59e0b18,stroke:#f59e0b,stroke-width:2px
+    style ADVOCACY fill:#ec489918,stroke:#ec4899,stroke-width:2px
+    style CART_EMAIL fill:#ef444430,stroke:#ef4444,stroke-width:3px
                 </div>
             </div>
 
             <!-- FLOWCHART 3: Technology Stack -->
-            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.3 Technology Stack</h3>
+            <h3>6.3 Technology Stack</h3>
             <div class="diagram-container">
                 <div class="mermaid">
 graph TB
@@ -1117,16 +1246,16 @@ graph TB
     KMCP --> KLAV
     SMCP --> SHOPIFY
 
-    style PLATFORM fill:#d1fae5,stroke:#10b981
-    style MARKETING fill:#fef3c7,stroke:#f59e0b
-    style TRACKING fill:#dbeafe,stroke:#3b82f6
-    style AUTOMATION fill:#f3e8ff,stroke:#a855f7
-    style AI fill:#fce7f3,stroke:#ec4899
+    style PLATFORM fill:#10b98118,stroke:#10b981,stroke-width:2px
+    style MARKETING fill:#f59e0b18,stroke:#f59e0b,stroke-width:2px
+    style TRACKING fill:#4770db18,stroke:#4770db,stroke-width:2px
+    style AUTOMATION fill:#8b5cf618,stroke:#8b5cf6,stroke-width:2px
+    style AI fill:#ec489918,stroke:#ec4899,stroke-width:2px
                 </div>
             </div>
 
             <!-- FLOWCHART 4: Script Directory to Flywheel Mapping -->
-            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.4 Script Directory → Flywheel Phase Mapping</h3>
+            <h3>6.4 Script Directory → Flywheel Phase Mapping</h3>
             <div class="diagram-container">
                 <div class="mermaid">
 graph TB
@@ -1164,16 +1293,16 @@ graph TB
         E3["collect_ugc.py"]
     end
 
-    style P0 fill:#e0e7ff,stroke:#6366f1
-    style P1 fill:#dbeafe,stroke:#3b82f6
-    style P2 fill:#d1fae5,stroke:#10b981
-    style P3 fill:#fef3c7,stroke:#f59e0b
-    style P4 fill:#fee2e2,stroke:#ef4444
+    style P0 fill:#8b5cf618,stroke:#8b5cf6,stroke-width:2px
+    style P1 fill:#4770db18,stroke:#4770db,stroke-width:2px
+    style P2 fill:#10b98118,stroke:#10b981,stroke-width:2px
+    style P3 fill:#f59e0b18,stroke:#f59e0b,stroke-width:2px
+    style P4 fill:#ef444418,stroke:#ef4444,stroke-width:2px
                 </div>
             </div>
 
             <!-- FLOWCHART 5: Data Flow -->
-            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.5 Data Flow Architecture</h3>
+            <h3>6.5 Data Flow Architecture</h3>
             <div class="diagram-container">
                 <div class="mermaid">
 graph LR
@@ -1216,15 +1345,15 @@ graph LR
     N8N_WF --> EMAIL_FLOWS
     PY_SCRIPTS --> REPORTS
 
-    style INPUT fill:#dbeafe,stroke:#3b82f6
-    style PROCESS fill:#f3e8ff,stroke:#a855f7
-    style STORAGE fill:#fef3c7,stroke:#f59e0b
-    style OUTPUT fill:#d1fae5,stroke:#10b981
+    style INPUT fill:#4770db18,stroke:#4770db,stroke-width:2px
+    style PROCESS fill:#8b5cf618,stroke:#8b5cf6,stroke-width:2px
+    style STORAGE fill:#f59e0b18,stroke:#f59e0b,stroke-width:2px
+    style OUTPUT fill:#10b98118,stroke:#10b981,stroke-width:2px
                 </div>
             </div>
 
             <!-- FLOWCHART 6: Pre-Launch Timeline -->
-            <h3 style="margin: 30px 0 15px; color: var(--navy);">6.6 Pre-Launch Timeline (10 Days)</h3>
+            <h3>6.6 Pre-Launch Timeline (10 Days)</h3>
             <div class="diagram-container">
                 <div class="mermaid">
 gantt
@@ -1456,15 +1585,103 @@ gantt
             startOnLoad: true,
             theme: 'base',
             themeVariables: {
+                // Primary Colors - Alpha Medical Brand
                 primaryColor: '#4770db',
-                primaryTextColor: '#0e1b4d',
-                primaryBorderColor: '#4770db',
-                lineColor: '#64748b',
-                sectionBkgColor: '#eff0f5',
-                altSectionBkgColor: '#f8fafc',
-                gridColor: '#e2e8f0',
-                secondaryColor: '#0e1b4d',
-                tertiaryColor: '#eff0f5'
+                primaryTextColor: '#ffffff',
+                primaryBorderColor: '#3558b8',
+
+                // Secondary Colors
+                secondaryColor: '#8b5cf6',
+                secondaryTextColor: '#ffffff',
+                secondaryBorderColor: '#7c3aed',
+
+                // Tertiary Colors
+                tertiaryColor: '#06b6d4',
+                tertiaryTextColor: '#ffffff',
+                tertiaryBorderColor: '#0891b2',
+
+                // Background & Lines
+                background: '#ffffff',
+                mainBkg: '#f8fafc',
+                lineColor: '#94a3b8',
+                textColor: '#0e1b4d',
+
+                // Node Colors
+                nodeBkg: '#4770db',
+                nodeTextColor: '#ffffff',
+                nodeBorder: '#3558b8',
+
+                // Cluster/Subgraph Styling
+                clusterBkg: 'rgba(71, 112, 219, 0.08)',
+                clusterBorder: '#4770db',
+                titleColor: '#0e1b4d',
+
+                // Edge/Arrow Styling
+                edgeLabelBackground: '#ffffff',
+
+                // Pie Chart Colors (Modern Vibrant)
+                pie1: '#4770db',
+                pie2: '#10b981',
+                pie3: '#f59e0b',
+                pie4: '#8b5cf6',
+                pie5: '#ec4899',
+                pie6: '#06b6d4',
+                pie7: '#ef4444',
+                pieStrokeColor: '#ffffff',
+                pieStrokeWidth: '3px',
+                pieTitleTextColor: '#0e1b4d',
+                pieTitleTextSize: '18px',
+                pieSectionTextColor: '#ffffff',
+                pieSectionTextSize: '14px',
+                pieLegendTextColor: '#0e1b4d',
+                pieLegendTextSize: '14px',
+                pieOuterStrokeWidth: '0px',
+
+                // Gantt Chart Modern Colors
+                sectionBkgColor: '#f1f5f9',
+                altSectionBkgColor: '#e2e8f0',
+                sectionBkgColor2: '#dbeafe',
+                gridColor: '#cbd5e1',
+                doneTaskBkgColor: '#10b981',
+                doneTaskBorderColor: '#059669',
+                critBkgColor: '#ef4444',
+                critBorderColor: '#dc2626',
+                taskBkgColor: '#4770db',
+                taskBorderColor: '#3558b8',
+                taskTextColor: '#ffffff',
+                taskTextLightColor: '#ffffff',
+                taskTextOutsideColor: '#0e1b4d',
+                activeTaskBkgColor: '#8b5cf6',
+                activeTaskBorderColor: '#7c3aed',
+                todayLineColor: '#ec4899',
+
+                // Flowchart Specific
+                labelBackground: '#ffffff',
+                fontSize: '14px',
+                fontFamily: '"Segoe UI", system-ui, -apple-system, sans-serif'
+            },
+            flowchart: {
+                htmlLabels: true,
+                curve: 'basis',
+                nodeSpacing: 50,
+                rankSpacing: 60,
+                padding: 20,
+                useMaxWidth: true
+            },
+            pie: {
+                textPosition: 0.65,
+                useMaxWidth: true
+            },
+            gantt: {
+                titleTopMargin: 25,
+                barHeight: 30,
+                barGap: 6,
+                topPadding: 50,
+                leftPadding: 120,
+                gridLineStartPadding: 35,
+                fontSize: 13,
+                numberSectionStyles: 4,
+                useMaxWidth: true
             }
         });
     </script>
