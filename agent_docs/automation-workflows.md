@@ -1,3 +1,60 @@
+# 🔄 SESSION 97 UPDATE (2025-12-15) - AUTOMATION STATE VERIFICATION
+
+> **Auditor:** Claude Opus 4.5
+> **Status:** ✅ VERIFIED VIA CHROME DEVTOOLS MCP
+> **Confidence:** 100% | **BS:** 0%
+
+## CURRENT AUTOMATION STATE (Empirically Verified 2025-12-15)
+
+### Shopify Flow (5 workflows - 1 ACTIVE, 4 INACTIVE)
+| Workflow | Status | Purpose |
+|----------|--------|---------|
+| New Loyalty Tier Tagging (Automatic) | ✅ ACTIVE | Customer segmentation |
+| Thank customers after they purchase | ❌ INACTIVE | Post-purchase (redundant) |
+| Convert abandoned product browse | ❌ INACTIVE | Browse abandonment |
+| Recover abandoned cart | ❌ INACTIVE | Cart abandonment |
+| Recover abandoned checkout | ❌ INACTIVE | Checkout abandonment |
+
+### Shopify Email (5 automations - ALL ACTIVE)
+| Automation | Status | Purpose | Keep/Remove |
+|------------|--------|---------|-------------|
+| Thank you! | ✅ ACTIVE | Post-purchase | 🟡 OPTIONAL remove (Klaviyo covers) |
+| We're happy to see you again | ✅ ACTIVE | Win-back | 🟡 OPTIONAL remove (Klaviyo covers) |
+| Did something catch your eye? | ✅ ACTIVE | Browse abandonment | ✅ KEEP (no Klaviyo equivalent) |
+| You left items in your cart | ✅ ACTIVE | Cart abandonment | ✅ KEEP (no Klaviyo equivalent) |
+| You left items at checkout | ✅ ACTIVE | Checkout abandonment | ✅ KEEP (no Klaviyo equivalent) |
+
+### Klaviyo Flows (4 LIVE + 1 Not Activated)
+| Flow | Status | Trigger |
+|------|--------|---------|
+| Customer Winback | ✅ LIVE | Added to Win-back list |
+| Welcome Series | ✅ LIVE | Added to Email list |
+| Repeat Purchase Nurture | ✅ LIVE | Placed Order |
+| Product Review/Cross-Sell | ✅ LIVE | Fulfilled Order |
+| Abandoned Checkout | 🟡 BUILT (not live) | Needs manual activation |
+
+### ⚠️ CRITICAL GAPS (No Coverage)
+- ❌ **Cart Abandonment in Klaviyo** - DOES NOT EXIST (Shopify Email = only coverage)
+- ❌ **Checkout Abandonment in Klaviyo** - Built but NOT activated (Shopify Email = only coverage)
+- ❌ **Browse Abandonment in Klaviyo** - DOES NOT EXIST (Shopify Email = only coverage)
+
+### Option C: Hybrid Complementary - Current Implementation
+```
+COVERAGE MATRIX:
+├── Acquisition (Welcome): Klaviyo ✅
+├── Cart Abandonment: Shopify Email ✅ (Klaviyo gap)
+├── Checkout Abandonment: Shopify Email ✅ (Klaviyo gap)
+├── Browse Abandonment: Shopify Email ✅ (Klaviyo gap)
+├── Post-Purchase: Klaviyo ✅ + Shopify Email ✅ (duplication - acceptable)
+├── Win-back: Klaviyo ✅ + Shopify Email ✅ (duplication - acceptable)
+├── Loyalty Tagging: Shopify Flow ✅
+└── Review/Cross-sell: Klaviyo ✅
+```
+
+**Recommendation:** Keep Shopify Email until Klaviyo flows are created for cart/checkout/browse abandonment.
+
+---
+
 # 🔄 SESSION 83 UPDATE (2025-12-10) - FORENSIC FRONTEND AUDIT
 > **Auditor:** Antigravity (Agentic AI)
 > **Status:** 🚨 CRITICAL POLICY & INVENTORY FAILURES
