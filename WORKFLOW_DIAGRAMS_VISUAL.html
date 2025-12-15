@@ -2267,17 +2267,26 @@ graph LR
                 </table>
             </div>
 
-            <!-- Flywheel Coverage -->
-            <h3 style="margin: var(--space-2xl) 0 var(--space-lg); color: var(--text-primary);">Flywheel Coverage by Phase</h3>
+            <!-- Flywheel Coverage - VERIFIED Session 94 -->
+            <h3 style="margin: var(--space-2xl) 0 var(--space-lg); color: var(--text-primary);">Flywheel Coverage by Phase (Verified)</h3>
 
             <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <div class="info-card-icon">&#9881;</div>
+                        <div class="info-card-title">INFRASTRUCTURE</div>
+                    </div>
+                    <div class="info-card-value" style="color: var(--info);">79.6%</div>
+                    <div class="info-card-label">222 scripts (analysis, deploy, maintain)</div>
+                    <div class="info-card-change positive">&#10003; Foundation</div>
+                </div>
                 <div class="info-card">
                     <div class="info-card-header">
                         <div class="info-card-icon">&#127919;</div>
                         <div class="info-card-title">ACQUISITION</div>
                     </div>
-                    <div class="info-card-value">4.3%</div>
-                    <div class="info-card-label">~12 scripts (SEO, leads)</div>
+                    <div class="info-card-value">8.6%</div>
+                    <div class="info-card-label">24 scripts (SEO, content, leads)</div>
                     <div class="info-card-change neutral">Basique</div>
                 </div>
                 <div class="info-card">
@@ -2285,18 +2294,18 @@ graph LR
                         <div class="info-card-icon">&#128176;</div>
                         <div class="info-card-title">CONVERSION</div>
                     </div>
-                    <div class="info-card-value">18.1%</div>
-                    <div class="info-card-label">~50 scripts (email, bundles)</div>
-                    <div class="info-card-change positive">&#10003; Bon</div>
+                    <div class="info-card-value">7.2%</div>
+                    <div class="info-card-label">20 scripts (bundles, email, popups)</div>
+                    <div class="info-card-change neutral">Basique</div>
                 </div>
                 <div class="info-card">
                     <div class="info-card-header">
                         <div class="info-card-icon">&#128260;</div>
                         <div class="info-card-title">RETENTION</div>
                     </div>
-                    <div class="info-card-value">9.8%</div>
-                    <div class="info-card-label">~27 scripts (loyalty, workflows)</div>
-                    <div class="info-card-change positive">&#10003; Bon</div>
+                    <div class="info-card-value">3.6%</div>
+                    <div class="info-card-label">10 scripts (loyalty, subscriptions)</div>
+                    <div class="info-card-change warning">&#9888; Gap</div>
                 </div>
                 <div class="info-card">
                     <div class="info-card-header">
@@ -2306,6 +2315,132 @@ graph LR
                     <div class="info-card-value" style="color: var(--success);">1.1%</div>
                     <div class="info-card-label">3 scripts (reviews, referrals, UGC)</div>
                     <div class="info-card-change positive">&#10003; Opérationnel</div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 SCRIPTS SEGMENTATION FLOWCHARTS (Session 94)
+                 ============================================ -->
+            <h3 style="margin: var(--space-2xl) 0 var(--space-lg); color: var(--text-primary);">&#128202; Scripts Segmentation Visualizations</h3>
+
+            <!-- FLOWCHART 1: Flywheel Phase Distribution (Pie) -->
+            <div class="diagram-container">
+                <div class="diagram-header">
+                    <div class="diagram-title">
+                        <h3>Flywheel Phase Distribution</h3>
+                        <span class="diagram-badge">279 SCRIPTS</span>
+                    </div>
+                </div>
+                <div class="diagram-body">
+                    <div class="mermaid">
+pie showData
+    title Script Distribution by Flywheel Phase (279 total)
+    "Phase 0 - INFRASTRUCTURE (222)" : 222
+    "Phase 1 - ACQUISITION (24)" : 24
+    "Phase 2 - CONVERSION (20)" : 20
+    "Phase 3 - RETENTION (10)" : 10
+    "Phase 4 - ADVOCACY (3)" : 3
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLOWCHART 2: Directory → Phase Mapping -->
+            <div class="diagram-container">
+                <div class="diagram-header">
+                    <div class="diagram-title">
+                        <h3>Directory → Phase Mapping</h3>
+                        <span class="diagram-badge">16 DIRECTORIES</span>
+                    </div>
+                </div>
+                <div class="diagram-body xlarge">
+                    <div class="mermaid">
+graph TB
+    classDef phase0 fill:#1e3a5f,stroke:#3b82f6,stroke-width:2px,color:#fff
+    classDef phase1 fill:#052e16,stroke:#22c55e,stroke-width:2px,color:#fff
+    classDef phase2 fill:#422006,stroke:#f59e0b,stroke-width:2px,color:#fff
+    classDef phase3 fill:#3b0764,stroke:#a855f7,stroke-width:2px,color:#fff
+    classDef phase4 fill:#7c2d12,stroke:#f97316,stroke-width:2px,color:#fff
+    classDef header fill:#0e1b4d,stroke:#4770db,stroke-width:3px,color:#fff
+
+    TOTAL[279 SCRIPTS<br/>100% SEGMENTED]:::header
+
+    subgraph P0["PHASE 0: INFRASTRUCTURE (222 - 79.6%)"]
+        A1[analysis/<br/>91 scripts]:::phase0
+        A2[deployment/<br/>57 scripts]:::phase0
+        A3[maintenance/<br/>37 scripts]:::phase0
+        A4[automation/n8n/<br/>15 scripts]:::phase0
+        A5[setup/<br/>8 scripts]:::phase0
+        A6[tests/<br/>7 scripts]:::phase0
+        A7[fixes/<br/>5 scripts]:::phase0
+        A8[cleanup/<br/>2 scripts]:::phase0
+    end
+
+    subgraph P1["PHASE 1: ACQUISITION (24 - 8.6%)"]
+        B1[automation/creation/<br/>13 scripts]:::phase1
+        B2[analytics/<br/>6 scripts]:::phase1
+        B3[data/<br/>2 scripts]:::phase1
+        B4[optimization/<br/>2 scripts]:::phase1
+        B5[marketing/<br/>1 script]:::phase1
+    end
+
+    subgraph P2["PHASE 2: CONVERSION (20 - 7.2%)"]
+        C1[features/bundles/<br/>7 scripts]:::phase2
+        C2[automation/klaviyo/<br/>4 scripts]:::phase2
+        C3[automation/creation/<br/>4 scripts]:::phase2
+        C4[automation/generation/<br/>3 scripts]:::phase2
+        C5[analytics/<br/>2 scripts]:::phase2
+    end
+
+    subgraph P3["PHASE 3: RETENTION (10 - 3.6%)"]
+        D1[features/loyalty/<br/>3 scripts]:::phase3
+        D2[data/<br/>3 scripts]:::phase3
+        D3[automation/creation/<br/>2 scripts]:::phase3
+        D4[analytics/<br/>2 scripts]:::phase3
+    end
+
+    subgraph P4["PHASE 4: ADVOCACY (3 - 1.1%)"]
+        E1[advocacy/<br/>3 scripts]:::phase4
+    end
+
+    TOTAL --> P0
+    TOTAL --> P1
+    TOTAL --> P2
+    TOTAL --> P3
+    TOTAL --> P4
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLOWCHART 3: Phase Maturity Analysis -->
+            <div class="diagram-container">
+                <div class="diagram-header">
+                    <div class="diagram-title">
+                        <h3>Phase Maturity: Actual vs Optimal</h3>
+                        <span class="diagram-badge">GAP ANALYSIS</span>
+                    </div>
+                </div>
+                <div class="diagram-body">
+                    <div class="mermaid">
+xychart-beta
+    title "Flywheel Script Distribution: Actual vs Recommended"
+    x-axis ["Infrastructure", "Acquisition", "Conversion", "Retention", "Advocacy"]
+    y-axis "Percentage (%)" 0 --> 100
+    bar [79.6, 8.6, 7.2, 3.6, 1.1]
+    line [40, 20, 20, 15, 5]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Insight Alert -->
+            <div class="alert warning" style="margin-top: var(--space-xl);">
+                <div class="alert-icon">&#128200;</div>
+                <div class="alert-content">
+                    <div class="alert-title">Strategic Insight: Infrastructure-Heavy Architecture</div>
+                    <div class="alert-text">
+                        <strong>Current State:</strong> 79.6% scripts are Infrastructure (audit, deploy, verify) vs 20.4% Business (acquisition, conversion, retention, advocacy).<br>
+                        <strong>Implication:</strong> Strong foundation but under-invested in customer-facing phases. Phases 3-4 (Retention + Advocacy) = only 4.7% combined.<br>
+                        <strong>Recommendation:</strong> Next development cycle should prioritize Retention (loyalty automation) and Advocacy (review/referral scripts).
+                    </div>
                 </div>
             </div>
 
