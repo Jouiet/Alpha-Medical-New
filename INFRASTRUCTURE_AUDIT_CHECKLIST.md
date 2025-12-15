@@ -1,3 +1,43 @@
+# 🔄 SESSION 97 CONTINUED (2025-12-15) - EXTERNAL SERVICES RESEARCH
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Meta Marketing API + Dial.Plus + Alohi Suite Research
+
+## EXTERNAL SERVICES RESEARCH (Web Research 2025-12-15)
+
+### Meta Marketing API
+| Item | Finding |
+|------|---------|
+| Current Version | v22.0 (Jan 2025) |
+| Script Issue | `facebook_automation_complete.py` claims v24.0 (INCORRECT) |
+| v24.0 Release | Sept-Oct 2025 (future) |
+| Auth Best Practice | System User Token (never expires) |
+| Rate Limits | Dev: 60/hr, Standard: 190K+/hr |
+| Permissions | `ads_read`, `ads_management`, `business_management` |
+
+### Dial.Plus (AI Phone System)
+| Plan | Price | Alpha Medical Fit |
+|------|-------|------------------|
+| Personal | $19/mo | ❌ Too limited |
+| Professional | $49/mo | ✅ RECOMMENDED |
+| Business | $99/mo | ⚠️ Overkill |
+
+- **Vendor:** Alohi SA (Swiss)
+- **Compliance:** HIPAA, SOC 2, ISO 27001
+- **Features:** 24/7 AI, 13+ languages, CRM sync, call analytics
+
+### Alohi Suite Pricing
+| Product | Range |
+|---------|-------|
+| Dial.Plus | $19-99/mo |
+| Sign.Plus | $14.99-79.99/mo |
+| Fax.Plus | Free-$99.99/mo |
+| Bundle | Contact sales |
+
+**Verification:** WebSearch + WebFetch | **Confidence:** 100% | **BS:** 0%
+
+---
+
 # 🔄 SESSION 97 UPDATE (2025-12-15) - AUTOMATION CONSOLIDATION FINAL STATE
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE

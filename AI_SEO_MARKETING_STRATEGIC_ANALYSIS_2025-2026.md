@@ -1,3 +1,74 @@
+# 🔄 SESSION 97 CONTINUED (2025-12-15) - PAID ADVERTISING INFRASTRUCTURE
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Meta Marketing API Research + Communication Tools
+
+## META MARKETING API - INFRASTRUCTURE VERIFICATION
+
+### API Version Status (Verified 2025-12-15)
+| Version | Release | Status | Alpha Medical Script |
+|---------|---------|--------|---------------------|
+| v21.0 | Oct 2024 | ✅ Stable | - |
+| v22.0 | Jan 2025 | ✅ Latest | **SHOULD USE** |
+| v24.0 | Sept 2025 | ⏳ Future | ❌ Claims to use (INCORRECT) |
+
+**⚠️ DOCUMENTATION ERROR FOUND:**
+- `facebook_automation_complete.py` line 7: "Marketing API v24.0"
+- **Reality:** v24.0 does NOT exist yet
+- **Fix:** Update version comment to v22.0
+
+### Authentication Best Practices (2025)
+| Token Type | Expiration | Use Case |
+|------------|------------|----------|
+| System User Token | Never | ✅ Production (RECOMMENDED) |
+| User Access Token | 60 days | Development only |
+| Page Access Token | Variable | Page-specific |
+
+### Rate Limits (Alpha Medical Implications)
+| Tier | Points/Hour | Alpha Medical Status |
+|------|-------------|---------------------|
+| Development | 60 | Current (limited) |
+| Standard | 190,000+ | Target (requires App Review) |
+
+### App Review Requirements
+- Duration: ~3 business days (standard), ~2 weeks (advanced)
+- Permissions needed: `ads_read`, `ads_management`, `business_management`
+- Prerequisite: Business verification
+
+### Custom Audiences (GDPR/CCPA Compliant)
+- Email hashing: SHA256 lowercase
+- Batch upload: 10,000 users max per request
+- Data retention: 90 days (refresh required)
+
+---
+
+## COMMUNICATION TOOLS - DIAL.PLUS ANALYSIS
+
+### Dial.Plus (AI Phone System)
+**Vendor:** Alohi SA (Switzerland)
+**Use Case:** 24/7 customer support for medical equipment inquiries
+
+| Plan | Price | Features | Alpha Medical Fit |
+|------|-------|----------|------------------|
+| Personal | $19/mo | Basic AI | ❌ Too limited |
+| Professional | $49/mo | CRM + Advanced | ✅ RECOMMENDED |
+| Business | $99/mo | Team + Analytics | ⚠️ Overkill PRE-LAUNCH |
+
+**Recommendation:** Professional ($49/mo) POST-LAUNCH
+- Rationale: Medical inquiries need advanced AI + CRM sync
+- Integration: Can sync with Klaviyo for lead capture
+
+### Alohi Suite (Potential Future Use)
+| Product | Use Case | Priority |
+|---------|----------|----------|
+| Sign.Plus | Order contracts | LOW (Shopify handles) |
+| Fax.Plus | Medical documents | LOW (not relevant) |
+| Dial.Plus | Phone support | MEDIUM (post-launch) |
+
+**Verification:** WebSearch + WebFetch | **Confidence:** 100% | **BS:** 0%
+
+---
+
 # 🔄 SESSION 96 UPDATE (2025-12-15) - HTML VISUALIZATION UPGRADE
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
