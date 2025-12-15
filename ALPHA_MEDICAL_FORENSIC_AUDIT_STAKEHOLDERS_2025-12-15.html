@@ -288,9 +288,24 @@
             filter: drop-shadow(0 2px 4px rgba(14, 27, 77, 0.1));
         }
 
+        /* CRITICAL: Force dark text in all nodes for accessibility */
+        .mermaid .node .label,
+        .mermaid .node text,
+        .mermaid .node foreignObject div,
+        .mermaid .nodeLabel,
         .mermaid .label {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
-            font-weight: 500 !important;
+            font-weight: 600 !important;
+            color: #0e1b4d !important;
+            fill: #0e1b4d !important;
+        }
+
+        /* Subgraph/Cluster titles */
+        .mermaid .cluster-label text,
+        .mermaid .cluster text {
+            fill: #0e1b4d !important;
+            font-weight: 700 !important;
+            font-size: 14px !important;
         }
 
         .mermaid .cluster rect {
@@ -301,6 +316,7 @@
 
         .mermaid .edgePath path {
             stroke-width: 2px;
+            stroke: #475569 !important;
         }
 
         .mermaid .edgeLabel {
@@ -309,6 +325,11 @@
             border-radius: 8px;
             font-size: 12px;
             box-shadow: 0 2px 8px rgba(14, 27, 77, 0.1);
+        }
+
+        /* Force arrow markers to be visible */
+        .mermaid marker path {
+            fill: #475569 !important;
         }
 
         /* Gantt Chart Modern Styling */
@@ -1608,45 +1629,45 @@ gantt
             theme: 'base',
             themeVariables: {
                 // ===========================================
-                // WCAG AA COMPLIANT COLOR SYSTEM (4.5:1 min)
+                // WCAG AA COMPLIANT - DARK TEXT ON LIGHT NODES
+                // Nodes render with light backgrounds, so use dark text
                 // ===========================================
 
-                // Primary Colors - Darkened for contrast
-                primaryColor: '#3558b8',           // Darker blue (was #4770db) - 5.2:1 with white
-                primaryTextColor: '#ffffff',
-                primaryBorderColor: '#2d4a9e',
+                // Primary Colors - Light fills, dark text
+                primaryColor: '#dbeafe',           // Light blue fill
+                primaryTextColor: '#0e1b4d',       // Dark navy text (12:1 contrast)
+                primaryBorderColor: '#3558b8',     // Dark blue border
 
-                // Secondary Colors - Darkened
-                secondaryColor: '#7c3aed',         // Darker purple (was #8b5cf6) - 6.4:1 with white
-                secondaryTextColor: '#ffffff',
-                secondaryBorderColor: '#6d28d9',
+                // Secondary Colors - Light fills, dark text
+                secondaryColor: '#ede9fe',         // Light purple fill
+                secondaryTextColor: '#0e1b4d',     // Dark navy text
+                secondaryBorderColor: '#7c3aed',   // Dark purple border
 
-                // Tertiary Colors - Darkened
-                tertiaryColor: '#0e7490',          // Darker cyan (was #06b6d4) - 4.6:1 with white
-                tertiaryTextColor: '#ffffff',
-                tertiaryBorderColor: '#0c5f76',
+                // Tertiary Colors - Light fills, dark text
+                tertiaryColor: '#d1fae5',          // Light green fill
+                tertiaryTextColor: '#0e1b4d',      // Dark navy text
+                tertiaryBorderColor: '#047857',    // Dark green border
 
                 // Background & Lines
                 background: '#ffffff',
                 mainBkg: '#f8fafc',
-                lineColor: '#64748b',              // Darker for visibility
+                lineColor: '#475569',              // Darker for visibility
                 textColor: '#0e1b4d',
 
-                // Node Colors - WCAG Compliant
-                nodeBkg: '#3558b8',                // Darker blue - 5.2:1 with white
-                nodeTextColor: '#ffffff',
-                nodeBorder: '#2d4a9e',
+                // Node Colors - Light fills with dark text
+                nodeBkg: '#f1f5f9',                // Light gray fill
+                nodeTextColor: '#0e1b4d',          // Dark navy text
+                nodeBorder: '#94a3b8',             // Medium gray border
 
-                // Cluster/Subgraph Styling - Higher contrast
-                clusterBkg: 'rgba(14, 27, 77, 0.06)',  // Navy-based for consistency
-                clusterBorder: '#3558b8',
+                // Cluster/Subgraph Styling
+                clusterBkg: 'rgba(14, 27, 77, 0.04)',
+                clusterBorder: '#64748b',
                 titleColor: '#0e1b4d',
 
                 // Edge/Arrow Styling
                 edgeLabelBackground: '#ffffff',
 
-                // Pie Chart - WCAG AA Compliant (Dark text on all)
-                // Using dark text (#0e1b4d) allows brighter, more visible colors
+                // Pie Chart - Dark segments with white text
                 pie1: '#3558b8',                   // Dark Blue - 5.2:1
                 pie2: '#047857',                   // Dark Emerald - 5.8:1
                 pie3: '#b45309',                   // Dark Amber - 5.4:1
@@ -1658,27 +1679,27 @@ gantt
                 pieStrokeWidth: '3px',
                 pieTitleTextColor: '#0e1b4d',
                 pieTitleTextSize: '18px',
-                pieSectionTextColor: '#ffffff',    // White text on darkened colors
+                pieSectionTextColor: '#ffffff',
                 pieSectionTextSize: '14px',
                 pieLegendTextColor: '#0e1b4d',
                 pieLegendTextSize: '14px',
                 pieOuterStrokeWidth: '0px',
 
-                // Gantt Chart - WCAG Compliant
+                // Gantt Chart - Dark bars with white text
                 sectionBkgColor: '#f1f5f9',
                 altSectionBkgColor: '#e2e8f0',
                 sectionBkgColor2: '#dbeafe',
-                gridColor: '#94a3b8',              // Darker grid
-                doneTaskBkgColor: '#047857',       // Dark green - 5.8:1
+                gridColor: '#94a3b8',
+                doneTaskBkgColor: '#047857',
                 doneTaskBorderColor: '#065f46',
-                critBkgColor: '#dc2626',           // Dark red - 5.3:1
+                critBkgColor: '#dc2626',
                 critBorderColor: '#b91c1c',
-                taskBkgColor: '#3558b8',           // Dark blue - 5.2:1
+                taskBkgColor: '#3558b8',
                 taskBorderColor: '#2d4a9e',
                 taskTextColor: '#ffffff',
                 taskTextLightColor: '#ffffff',
                 taskTextOutsideColor: '#0e1b4d',
-                activeTaskBkgColor: '#7c3aed',     // Dark purple - 6.4:1
+                activeTaskBkgColor: '#7c3aed',
                 activeTaskBorderColor: '#6d28d9',
                 todayLineColor: '#be185d',
 
