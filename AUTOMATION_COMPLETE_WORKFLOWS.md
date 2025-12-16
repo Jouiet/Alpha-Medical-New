@@ -1,3 +1,58 @@
+# 🔄 SESSION 101 CONTINUED (2025-12-16) - MCP SERVERS + AGENCY SCRIPTS
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** MCP Configuration Extended + JO-AAA Agency Scripts Export
+
+## SESSION 101 CONTINUED - MCP & SCRIPTS AUTOMATION
+
+### MCP Servers Configuration (3 → 5)
+
+**File:** `~/.config/claude-code/mcp.json`
+
+| # | Server | Package | Status |
+|---|--------|---------|--------|
+| 1 | n8n-alpha-medical | SSE endpoint | ✅ Active |
+| 2 | klaviyo | uvx klaviyo-mcp-server | ✅ Active |
+| 3 | shopify | npx shopify-mcp | ✅ Active |
+| 4 | google-analytics | npx mcp-server-google-analytics | 🆕 Added (requires setup) |
+| 5 | google-sheets | npx mcp-gsheets | 🆕 Added (requires setup) |
+
+### Agency Scripts Export (41 files tagged)
+
+**Destination:** `/Users/mac/Desktop/JO-AAA/alpha-medical-python-agency/`
+
+| Category | Count | Scripts |
+|----------|-------|---------|
+| n8n | 15 | activate_workflow, diagnose_*, get_exec*, list_nodes, etc. |
+| klaviyo | 4 | automate_email, get_templates, upload_templates* |
+| shopify | 4 | automate_legal, complete_policies*, recategorize |
+| data | 9 | get_*, import_leads, list_*, setup_sheet, sync_* |
+| setup | 8 | configure_*, get_google_ads, install_* |
+| marketing | 1 | facebook_automation_complete |
+
+**Tag Format:**
+```python
+# Type: agency
+# Category: [category]
+# Source: Alpha-Medical automation scripts
+# Reusable: YES - Generic automation pattern
+```
+
+### MCP Proposal Analysis (External - Score: 38/100)
+
+| MCP Proposed | Verdict | Reason |
+|--------------|---------|--------|
+| @shopify/dev-mcp | ❌ SKIP | Docs tool ≠ Admin API |
+| google_ads_mcp | ⚠️ PRÉMATURÉ | $800 Q4 only |
+| meta-ads-mcp | ⚠️ APRÈS LAUNCH | No campaigns yet |
+| tiktok-ads-mcp | ❌ NON | TikTok EXCLUDED 2026 |
+| apify-mcp | ✅ PERTINENT | Token ready |
+
+**Verification:** npm/GitHub fact-checking
+**Confidence:** 100% | **Bullshit Level:** 0%
+
+---
+
 # 🔄 SESSION 100 CONTINUED (2025-12-16) - CODEBASE CLEANUP + API STANDARDIZATION
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE

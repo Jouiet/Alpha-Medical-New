@@ -1,6 +1,28 @@
 # INFRASTRUCTURE SUMMARY - TECHNICAL CONTEXT
 
 > **Level 2 Memory - LOADED WHEN: Technical tasks, automation, debugging**
+> **Last Updated:** 2025-12-16 Session 101 Continued
+
+---
+
+## 🔧 MCP SERVERS (5 Configured - Session 101)
+
+**File:** `~/.config/claude-code/mcp.json`
+
+| # | Server | Package | Status |
+|---|--------|---------|--------|
+| 1 | n8n-alpha-medical | SSE custom endpoint | ✅ ACTIVE |
+| 2 | klaviyo | uvx klaviyo-mcp-server | ✅ ACTIVE |
+| 3 | shopify | npx shopify-mcp | ✅ ACTIVE |
+| 4 | google-analytics | npx mcp-server-google-analytics | 🆕 REQUIRES SETUP |
+| 5 | google-sheets | npx mcp-gsheets | 🆕 REQUIRES SETUP |
+
+**Google MCP Setup Required:**
+1. Service account: `console.cloud.google.com/iam-admin/serviceaccounts?project=n8n-alpha-medical`
+2. Download JSON → `/Users/mac/.config/google/service-account.json`
+3. Enable APIs: Google Analytics Data API + Google Sheets API
+4. Get GA4 Property ID from analytics.google.com
+5. Restart Claude Code
 
 ---
 

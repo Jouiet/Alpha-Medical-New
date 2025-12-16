@@ -134,9 +134,16 @@
 
 ---
 
-**Last Updated:** 2025-12-16 Session 101 (Flywheel 100% Complete - ADVOCACY Phase)
+**Last Updated:** 2025-12-16 Session 101 Continued (MCP Configuration + Agency Scripts)
 **Recent Sessions:**
+- Session 101 Continued: MCP config extended 3→5 servers (Google Analytics + Google Sheets added), 41 agency scripts copied to JO-AAA with tags, MCP proposal analysis (38/100 score - wrong project context)
 - Session 101: Loox ADVOCACY phase 100% (Review Requests 14d+2 reminders, Referral $10/$10, Smart Upsell 30%), Bundle inventory 9/9 at 999, Flywheel 100% coverage
 - Session 100: Codebase cleanup (98→6 MD files), API security hardening (4 scripts fixed), Option C complementarity matrix
-- Session 80: Apps cleanup (Judge.me & Translate désinstallés), URLs corrigées, Security hardening
 **Token Cost:** ~550 tokens (Level 1 - always loaded)
+
+**MCP Servers (5 configured - ~/.config/claude-code/mcp.json):**
+- n8n-alpha-medical ✅ (SSE transport)
+- klaviyo ✅ (uvx)
+- shopify ✅ (npx shopify-mcp)
+- google-analytics 🆕 (npx mcp-server-google-analytics) - REQUIRES: service account JSON
+- google-sheets 🆕 (npx mcp-gsheets) - REQUIRES: service account JSON
