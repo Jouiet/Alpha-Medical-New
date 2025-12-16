@@ -19,8 +19,8 @@
   }
 
   /* ═══════════════════════════════════════════════════════════════════════════
-     ALPHA MEDICAL LOGO ANIMATION - Session 103 v2
-     CONTINUOUS LOOP animation - always visible, intensified on hover
+     ALPHA MEDICAL LOGO ANIMATION - Session 103 v3
+     PERIODIC animation every 10 seconds (subtle, premium feel)
      ═══════════════════════════════════════════════════════════════════════════ */
 
   /* Entrance Animation Keyframes */
@@ -41,32 +41,64 @@
     }
   }
 
-  /* CONTINUOUS Glow Pulse - Always Active */
-  @keyframes logoContinuousGlow {
-    0%, 100% {
-      filter: drop-shadow(0 0 8px rgba(71, 112, 219, 0.5))
-              drop-shadow(0 0 20px rgba(71, 112, 219, 0.25));
+  /* PERIODIC Glow Pulse - Every 10 seconds */
+  @keyframes logoPeriodicGlow {
+    /* Base state (0-5%: 0-0.5s) */
+    0%, 5% {
+      filter: drop-shadow(0 0 4px rgba(71, 112, 219, 0.3))
+              drop-shadow(0 0 10px rgba(71, 112, 219, 0.15));
       transform: scale(1);
     }
-    50% {
-      filter: drop-shadow(0 0 15px rgba(71, 112, 219, 0.7))
-              drop-shadow(0 0 35px rgba(71, 112, 219, 0.35));
-      transform: scale(1.03);
+    /* Glow building (10%: 1s) */
+    10% {
+      filter: drop-shadow(0 0 12px rgba(71, 112, 219, 0.6))
+              drop-shadow(0 0 25px rgba(71, 112, 219, 0.3));
+      transform: scale(1.02);
+    }
+    /* Peak glow (15%: 1.5s) */
+    15% {
+      filter: drop-shadow(0 0 18px rgba(71, 112, 219, 0.8))
+              drop-shadow(0 0 40px rgba(71, 112, 219, 0.4));
+      transform: scale(1.04);
+    }
+    /* Glow fading (20%: 2s) */
+    20% {
+      filter: drop-shadow(0 0 10px rgba(71, 112, 219, 0.5))
+              drop-shadow(0 0 20px rgba(71, 112, 219, 0.25));
+      transform: scale(1.01);
+    }
+    /* Return to base and wait (25%-100%: 2.5s-10s) */
+    25%, 100% {
+      filter: drop-shadow(0 0 4px rgba(71, 112, 219, 0.3))
+              drop-shadow(0 0 10px rgba(71, 112, 219, 0.15));
+      transform: scale(1);
     }
   }
 
-  /* CONTINUOUS Shimmer Effect - Always Running */
-  @keyframes logoShimmerContinuous {
-    0% {
+  /* PERIODIC Shimmer Effect - Every 10 seconds, synced with glow */
+  @keyframes logoShimmerPeriodic {
+    /* Hidden during rest (0-8%: 0-0.8s) */
+    0%, 8% {
       background-position: -200% center;
-      opacity: 0.6;
+      opacity: 0;
     }
-    50% {
+    /* Shimmer sweep (10%-20%: 1s-2s) */
+    10% {
+      background-position: -100% center;
+      opacity: 0.8;
+    }
+    15% {
+      background-position: 0% center;
       opacity: 1;
     }
-    100% {
-      background-position: 200% center;
+    20% {
+      background-position: 100% center;
       opacity: 0.6;
+    }
+    /* Hidden and waiting (22%-100%: 2.2s-10s) */
+    22%, 100% {
+      background-position: 200% center;
+      opacity: 0;
     }
   }
 
@@ -93,11 +125,11 @@
     perspective: 1000px;
   }
 
-  /* Logo Image - CONTINUOUS Animation */
+  /* Logo Image - PERIODIC Animation (every 10s) */
   .header__heading-logo {
-    /* Entrance then CONTINUOUS glow loop */
+    /* Entrance then PERIODIC glow every 10 seconds */
     animation: logoEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
-               logoContinuousGlow 3s ease-in-out 0.8s infinite;
+               logoPeriodicGlow 10s ease-in-out 0.8s infinite;
 
     /* Smooth Transitions for hover enhancement */
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -127,7 +159,7 @@
     border-radius: 4px;
   }
 
-  /* CONTINUOUS Shimmer Overlay - Always Visible */
+  /* PERIODIC Shimmer Overlay - Synced with glow (every 10s) */
   .header__heading-link::after {
     content: '';
     position: absolute;
@@ -139,14 +171,14 @@
       90deg,
       transparent 0%,
       rgba(255, 255, 255, 0) 35%,
-      rgba(255, 255, 255, 0.35) 50%,
+      rgba(255, 255, 255, 0.5) 50%,
       rgba(255, 255, 255, 0) 65%,
       transparent 100%
     );
     background-size: 200% 100%;
-    animation: logoShimmerContinuous 4s ease-in-out 1.5s infinite;
+    animation: logoShimmerPeriodic 10s ease-in-out 0.8s infinite;
     pointer-events: none;
-    opacity: 0.7; /* Always visible now */
+    opacity: 0; /* Starts hidden, animates periodically */
     border-radius: 8px;
   }
 
