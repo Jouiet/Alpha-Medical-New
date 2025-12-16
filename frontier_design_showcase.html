@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Medical | Frontier Design Showcase</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Questrial&display=swap');
+
+        :root {
+            --blue: #4770db;
+            --navy: #0A122F; /* Deepened Navy for more contrast */
+            --light-gray: #eff0f5;
+            --white: #ffffff;
+            
+            --font-heading: 'Archivo', sans-serif;
+            --font-body: 'Questrial', sans-serif;
+
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background-color: var(--navy);
+            color: var(--light-gray);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* --- Animated Scroll Observer --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* --- Header --- */
+        .main-header {
+            padding: 24px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, rgba(10, 18, 47, 0.8) 0%, rgba(10, 18, 47, 0) 100%);
+            backdrop-filter: blur(2px);
+        }
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 160px;
+        }
+        .main-nav a {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 32px;
+            transition: color 0.3s ease;
+        }
+        .main-nav a:hover {
+            color: var(--blue);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            background-image: radial-gradient(circle, rgba(71, 112, 219, 0.15) 0%, rgba(71, 112, 219, 0) 60%);
+            transform: translate(-50%, -50%);
+            animation: pulse 8s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 48px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            animation: slideInFromLeft 1s ease-out;
+        }
+
+        @keyframes slideInFromLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            line-height: 1.1;
+            margin: 0 0 24px 0;
+            color: var(--white);
+            font-family: var(--font-heading);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--light-gray);
+            max-width: 45ch;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: var(--radius-sm);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background-color: var(--blue);
+            color: var(--white);
+            border: 1px solid var(--blue);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(71, 112, 219, 0.3);
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; } to { opacity: 1; }
+        }
+
+        .hero-image {
+            width: 100%;
+            transform: perspective(1000px) rotateY(-15deg) rotateX(5deg) scale(1.1);
+            border-radius: var(--radius-lg);
+            box-shadow: -20px 20px 50px rgba(0,0,0,0.3);
+        }
+
+        /* --- Trust Section (Glassmorphism) --- */
+        .trust-section {
+            padding: 80px 0;
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .trust-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .trust-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .trust-card svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 16px;
+            color: var(--blue);
+        }
+        .trust-card h3 {
+            font-size: 16px;
+            color: var(--white);
+            margin: 0;
+        }
+        
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 64px;
+            color: var(--white);
+        }
+        
+        /* Products Section */
+        .products-section {
+            padding: 80px 0;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .product-card {
+            background: linear-gradient(145deg, #10193c, #0c1534);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border-color: var(--blue);
+        }
+        .product-image-wrapper {
+            background: var(--navy);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .product-card img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
+        .product-card h3 {
+            font-size: 24px;
+            color: var(--white);
+            margin: 0 0 8px 0;
+        }
+        .product-card .product-desc {
+            font-size: 14px;
+            color: var(--light-gray);
+            opacity: 0.8;
+            margin-bottom: 16px;
+            min-height: 40px;
+        }
+        .product-card .product-price {
+            font-size: 28px;
+            font-family: var(--font-heading);
+            color: var(--blue);
+            margin-bottom: 24px;
+        }
+        
+        /* Footer */
+        .main-footer {
+            padding: 80px 0 32px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 100px;
+            text-align: center;
+        }
+        .main-footer .logo {
+            margin-bottom: 24px;
+        }
+        .footer-nav a {
+            color: var(--light-gray);
+            opacity: 0.7;
+            text-decoration: none;
+            margin: 0 16px;
+            transition: all 0.3s ease;
+        }
+        .footer-nav a:hover {
+            color: var(--white);
+            opacity: 1;
+        }
+        .footer-bottom {
+            margin-top: 32px;
+            opacity: 0.5;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <img src="Alpha Medical Logo.png" alt="Alpha Medical Logo" class="logo">
+            <nav class="main-nav">
+                <a href="#">Products</a>
+                <a href="#">Our Quality</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Relief, Redefined.</h1>
+                    <p>Medical-grade orthopedic equipment, personally vetted for quality and delivered fast. Experience the Alpha Medical standard for a life with less pain and more movement.</p>
+                    <a href="#" class="btn btn-primary">Explore Products</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="https://via.placeholder.com/500x500/0A122F/FFFFFF?text=Premium+Product" alt="Premium Orthopedic Product" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-card reveal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg>
+                        <h3>ISO Certified Suppliers</h3>
+                    </div>
+                     <div class="trust-card reveal" style="transition-delay: 0.1s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.5h-3.045a3.375 3.375 0 01-3.375-3.375v-3.045a3.375 3.375 0 013.375-3.375h3.045a3.375 3.375 0 013.375 3.375v3.045a3.375 3.375 0 01-3.375 3.375z" /></svg>
+                        <h3>2-Week Personal Testing</h3>
+                    </div>
+                     <div class="trust-card reveal" style="transition-delay: 0.2s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5h10.5a1.125 1.125 0 001.125-1.125V6.75a1.125 1.125 0 00-1.125-1.125H3.375A1.125 1.125 0 002.25 6.75v10.5c0 .621.504 1.125 1.125 1.125z" /></svg>
+                        <h3>Fast 7-15 Day Delivery</h3>
+                    </div>
+                     <div class="trust-card reveal" style="transition-delay: 0.3s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>
+                        <h3>Top-Rated Products</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title reveal">Our Most Advanced Solutions</h2>
+                <div class="products-grid">
+                    <div class="product-card reveal" style="transition-delay: 0.1s;">
+                        <div class="product-image-wrapper">
+                             <img src="https://via.placeholder.com/300x300/0A122F/FFFFFF?text=Posture+Corrector" alt="Posture Corrector">
+                        </div>
+                        <h3>Smart Posture Corrector</h3>
+                        <p class="product-desc">Vibrating feedback sensor trains you to sit and stand straight.</p>
+                        <div class="product-price">$59.99</div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.2s;">
+                        <div class="product-image-wrapper">
+                             <img src="https://via.placeholder.com/300x300/0A122F/FFFFFF?text=Knee+Brace" alt="Knee Brace">
+                        </div>
+                        <h3>Graphene-Heated Knee Brace</h3>
+                        <p class="product-desc">Advanced far-infrared heating for deep, therapeutic relief.</p>
+                        <div class="product-price">$89.99</div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="product-card reveal" style="transition-delay: 0.3s;">
+                        <div class="product-image-wrapper">
+                            <img src="https://via.placeholder.com/300x300/0A122F/FFFFFF?text=Neck+Device" alt="Neck Device">
+                        </div>
+                        <h3>Cervical Traction Device</h3>
+                        <p class="product-desc">Decompresses the cervical spine to alleviate chronic neck pain.</p>
+                        <div class="product-price">$74.99</div>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <img src="Alpha Medical Logo.png" alt="Alpha Medical Logo" class="logo">
+            <nav class="footer-nav">
+                <a href="#">Products</a>
+                <a href="#">Our Quality</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+            <div class="footer-bottom">
+                © 2025 Alpha Medical. The Future of Relief.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>

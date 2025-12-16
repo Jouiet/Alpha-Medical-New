@@ -1,8 +1,8 @@
 # ALPHA MEDICAL BRAND GUIDELINES
 
 > **Official Branding Documentation**
-> **Version:** 1.0
-> **Last Updated:** 2025-12-03 (Session 74)
+> **Version:** 1.2
+> **Last Updated:** 2025-12-17 (Session 91)
 > **Data Source:** Shopify Admin API (LIVE site verification)
 > **Status:** Official Single Source of Truth
 
@@ -378,30 +378,49 @@ Caption: Questrial 400, 12px, line-height 1.4
 
 ---
 
-### 2.5 Iconography (Optional)
+### 2.5 Iconography
 
-**Status:** Not formally defined yet
+**Status:** Formally Defined (v1.1)
 
-**Guidelines (Future):**
-- Style: Line icons (2px stroke weight)
-- Color: Navy (#0e1b4d) or Primary Blue (#4770db)
-- Size: 24×24px base, scale to 16px, 32px, 48px
-- Usage: Features, benefits, navigation icons
+**Style:**
+- **Format:** SVG (Scalable Vector Graphics) for sharpness and performance.
+- **Visuals:** Minimalist, modern line icons with a consistent stroke weight.
+- **Stroke Weight:** 1.5px (as used in `frontier_design_showcase.html`).
+
+**Usage Guidelines:**
+- **Color:** Icons should typically use the primary brand blue (`--blue: #4770db`) to stand out against dark or light backgrounds.
+- **Size:** Base size of `40x40px` for feature or trust cards. Can be scaled as needed, maintaining aspect ratio.
+- **Application:** Used to visually support key features, trust signals, or benefits. They should be simple, universally understood, and enhance clarity without adding clutter.
+
+**Example Icons (from Trust Section):**
+- **ISO Certified:** Shield icon
+- **Personal Testing:** Checkmark/Clipboard icon
+- **Fast Delivery:** Truck icon
+- **Top-Rated:** Star icon
 
 ---
 
 ### 2.6 Graphic Elements
 
+**Modern UI System (v1.1 - Frontier Design)**
+
 **Border Radius:**
-- Buttons: 4px
-- Cards: 8px
-- Modals: 12px
-- Images: 8px (product cards), 0px (full-width heroes)
+- **`--radius-sm` (4px):** Buttons, inputs.
+- **`--radius-md` (8px):** Standard cards, smaller elements.
+- **`--radius-lg` (16px):** Hero images, larger containers.
 
 **Shadows:**
-- Subtle: 0 2px 4px rgba(14, 27, 77, 0.1)
-- Elevated: 0 4px 12px rgba(14, 27, 77, 0.15)
-- Prominent: 0 8px 24px rgba(14, 27, 77, 0.2)
+- **Subtle (Glassmorphism Border):** `1px solid rgba(255, 255, 255, 0.1)`
+- **Elevated (Card Hover):** `0 10px 20px rgba(0,0,0,0.2)`
+- **Prominent (Hero Image):** `-20px 20px 50px rgba(0,0,0,0.3)`
+- **Glow (Button Hover):** `0 10px 20px rgba(71, 112, 219, 0.3)`
+
+**Glassmorphism Effect:**
+- **Description:** A modern "frosted glass" effect used for UI elements like info cards to create depth and visual interest on dark backgrounds.
+- **Implementation:** 
+  - `background: rgba(255, 255, 255, 0.05);`
+  - `backdrop-filter: blur(10px);`
+  - `border: 1px solid rgba(255, 255, 255, 0.1);`
 
 **Spacing System:**
 - Base unit: 4px
@@ -596,28 +615,32 @@ Caption: Questrial 400, 12px, line-height 1.4
 
 ### 4.1 Website Branding
 
+**Primary Direction (v1.1): Dark Theme**
+- The primary website aesthetic is a sophisticated dark theme, using the deepened Navy (`#0A122F`) as the main background color. This creates a premium feel and provides high contrast for content and brand accents.
+
 **Header:**
-- Logo: 160px width, left-aligned
-- Navigation: Navy (#0e1b4d) text, Archivo 700
-- Background: Scheme 3 (#0e1b4d navy) or Scheme 1 (#eff0f5)
-- Sticky header: Logo reduces 20% on scroll
+- **Style:** `position: fixed` to remain visible on scroll.
+- **Background:** A subtle gradient (`linear-gradient(180deg, rgba(10, 18, 47, 0.8) 0%, rgba(10, 18, 47, 0) 100%)`) combined with a `backdrop-filter: blur(2px)` for a modern, layered look.
+- **Logo:** `160px` width, left-aligned.
+- **Navigation:** White (`#ffffff`) text using Archivo 700, with a hover effect changing color to Primary Blue (`#4770db`).
+
+**Hero Section (Dynamic):**
+- **Background:** Features a subtle, pulsing radial gradient (`radial-gradient(circle, rgba(71, 112, 219, 0.15) 0%, rgba(71, 112, 219, 0) 60%)`) to create a sense of life and energy.
+- **Text Animation:** Headline and paragraph text animate on load (`slideInFromLeft`) for an engaging entrance.
+- **Image Style:** The primary hero image uses a 3D perspective transform (`perspective(1000px) rotateY(-15deg) rotateX(5deg)`) and a prominent shadow to make it "pop".
+
+**On-Scroll Animations:**
+- **Implementation:** Sections and key elements use an on-scroll reveal effect. This is implemented using an `IntersectionObserver` to add a `.visible` class to elements as they enter the viewport.
+- **Effect:** Elements animate into view with a fade and upward translation (`opacity: 0 -> 1`, `translateY(40px) -> 0`).
+
+**Card Style (Glassmorphism):**
+- **Usage:** Used for "Trust Signal" cards and other secondary information containers.
+- **Effect:** A "frosted glass" look achieved with a semi-transparent background, `backdrop-filter: blur(10px)`, and a subtle border.
 
 **Footer:**
-- Background: Navy (#0e1b4d)
-- Text: White (#ffffff)
-- Links: White with Primary Blue (#4770db) hover
-- Font: Questrial 400
-
-**Product Pages:**
-- Product title: Archivo 700, 28px, Navy
-- Price: Archivo 700, 32px, Primary Blue
-- Description: Questrial 400, 16px, Navy
-- CTA button: Primary Blue (#4770db) background, white text
-
-**Collection Pages:**
-- Collection banner: Full-width, brand colors
-- Grid layout: 3-4 columns desktop, 2 mobile
-- Card style: White background, 8px border radius
+- **Background:** Deep Navy (`#0A122F`).
+- **Text:** White (`#ffffff`) or light gray, Questrial 400.
+- **Border:** A `1px` top border (`rgba(255, 255, 255, 0.1)`) separates it from the main content.
 
 ---
 
@@ -1017,6 +1040,19 @@ THEME_ID=140069830733
 ---
 
 ## VERSION HISTORY
+
+**Version 1.2 (2025-12-17):**
+- **Color Reversion:** Reverted Navy color from `#0A122F` back to the original `#0e1b4d` based on user feedback. Other "Frontier Design" elements (animations, glassmorphism, etc.) from v1.1 remain as the current standard.
+- Created by: Claude Code (Session 91)
+
+**Version 1.1 (2025-12-16):**
+- **Major Update: "Frontier Design" Integration.**
+- Adopted a dark theme as the primary design direction (`#0A122F`).
+- Formalized a modern UI system including Glassmorphism, advanced shadows, and a variable border-radius system.
+- Defined official Iconography standards (SVG, minimalist line icons).
+- Updated Website Branding guidelines to include dynamic elements: fixed/blurred header, hero animations, and on-scroll reveal effects.
+- Aligned brand guidelines with the approved `frontier_design_showcase.html` prototype.
+- Created by: Claude Code (Session 91)
 
 **Version 1.0 (2025-12-03):**
 - Initial creation from live site data (Shopify Admin API)

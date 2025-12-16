@@ -3595,3 +3595,72 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* ============================================================================ */
+/* ALPHA MEDICAL - FRONTIER DESIGN (v1.1) STYLES                             */
+/* ============================================================================ */
+
+/* --- On-Scroll Reveal Animation --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Hero Pulse Animation --- */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    background-image: radial-gradient(circle, rgba(71, 112, 219, 0.15) 0%, rgba(71, 112, 219, 0) 60%);
+    transform: translate(-50%, -50%);
+    animation: pulse 8s infinite;
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* --- Glassmorphism Card Style --- */
+.trust-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px; /* Use var(--radius-md) */
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.trust-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Advanced Shadows --- */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(71, 112, 219, 0.3);
+}
