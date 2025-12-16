@@ -18,6 +18,171 @@
     margin-left: -1.2rem;
   }
 
+  /* ═══════════════════════════════════════════════════════════════════════════
+     ALPHA MEDICAL LOGO ANIMATION - Session 103
+     Premium modern animation with entrance, hover, and ambient effects
+     ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* Entrance Animation Keyframes */
+  @keyframes logoEntrance {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.8);
+      filter: blur(10px);
+    }
+    50% {
+      opacity: 0.8;
+      filter: blur(2px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+
+  /* Subtle Ambient Pulse - "Breathing" Effect */
+  @keyframes logoPulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 0px rgba(71, 112, 219, 0));
+      transform: scale(1);
+    }
+    50% {
+      filter: drop-shadow(0 0 12px rgba(71, 112, 219, 0.4));
+      transform: scale(1.02);
+    }
+  }
+
+  /* Premium Shimmer Effect */
+  @keyframes logoShimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  /* Hover Glow Pulse */
+  @keyframes hoverGlow {
+    0%, 100% {
+      filter: drop-shadow(0 0 15px rgba(71, 112, 219, 0.6))
+              drop-shadow(0 0 30px rgba(71, 112, 219, 0.3));
+    }
+    50% {
+      filter: drop-shadow(0 0 25px rgba(71, 112, 219, 0.8))
+              drop-shadow(0 0 50px rgba(71, 112, 219, 0.4));
+    }
+  }
+
+  /* Logo Container - Base Styles */
+  .header__heading-link {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+  }
+
+  /* Logo Image - Main Animation Target */
+  .header__heading-logo {
+    /* Entrance Animation */
+    animation: logoEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+               logoPulse 4s ease-in-out 1s infinite;
+
+    /* Smooth Transitions */
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                filter 0.4s ease-out;
+
+    /* Enable GPU Acceleration */
+    will-change: transform, filter;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+
+  /* Hover State - Premium Lift & Glow */
+  .header__heading-link:hover .header__heading-logo {
+    animation: hoverGlow 1.5s ease-in-out infinite;
+    transform: translateY(-4px) scale(1.05) rotateX(5deg);
+  }
+
+  /* Active/Click State */
+  .header__heading-link:active .header__heading-logo {
+    transform: translateY(-2px) scale(1.02);
+    transition: transform 0.1s ease-out;
+  }
+
+  /* Focus State for Accessibility */
+  .header__heading-link:focus-visible .header__heading-logo {
+    outline: 2px solid #4770db;
+    outline-offset: 8px;
+    border-radius: 4px;
+  }
+
+  /* Shimmer Overlay Effect (Pseudo-element) */
+  .header__heading-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 60%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: logoShimmer 3s ease-in-out 2s infinite;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+  }
+
+  .header__heading-link:hover::after {
+    opacity: 1;
+  }
+
+  /* Scrolled State - Refined Animation */
+  .scrolled-past-header .header__heading-logo {
+    animation: logoPulse 5s ease-in-out infinite;
+  }
+
+  /* Reduced Motion Preference - Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .header__heading-logo {
+      animation: none;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+    .header__heading-link::after {
+      animation: none;
+      display: none;
+    }
+    .header__heading-link:hover .header__heading-logo {
+      animation: none;
+      transform: scale(1.03);
+    }
+  }
+
+  /* Mobile Optimization - Lighter Animations */
+  @media screen and (max-width: 749px) {
+    .header__heading-logo {
+      animation: logoEntrance 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .header__heading-link:hover .header__heading-logo {
+      transform: scale(1.03);
+    }
+    .header__heading-link::after {
+      display: none; /* Disable shimmer on mobile for performance */
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+     END LOGO ANIMATION
+     ═══════════════════════════════════════════════════════════════════════════ */
+
   /* Logo size reduction - 30% smaller - Session 106 Part 2 - INLINE FIX */
   .header__heading-logo-wrapper {
     width: 70% !important;
