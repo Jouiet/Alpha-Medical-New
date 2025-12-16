@@ -5143,48 +5143,60 @@ Retention Readiness Score: 100/100
   - Loyalty: 0% (not critical pre-launch)
 ```
 
-### STAGE 4: ADVOCACY (Referrals + Reviews)
+### STAGE 4: ADVOCACY (Referrals + Reviews) - SESSION 101 UPDATE ✅
 
 ```yaml
-Loox Reviews:
-  Status: ✅ INSTALLED, ❌ 0 REVIEWS
-  Reason: No orders yet (PRE-LAUNCH acceptable)
-  Features: Review widget active, photo reviews enabled
-  Referral Program: Available (not configured)
+# Session 101 (2025-12-16): LOOX FULLY CONFIGURED
+
+Loox Review Requests:
+  Status: ✅ CONFIGURED
+  Timing: 14 days after fulfillment
+  Reminders: 2 follow-up emails
+  Photo Reviews: Enabled
+
+Loox Referral Program:
+  Status: ✅ CONFIGURED
+  Friend Discount: $10 off
+  Advocate Reward: $10 credit
+  Minimum Purchase: $15
+  Widgets: All 4 activated (product page, thank you page, profile, referral page)
+
+Loox Smart Upsells:
+  Status: ✅ CONFIGURED
+  Discount: 30% (most popular setting)
+  Shopify Checkout: Loox set as post-purchase app ✅
 
 User Generated Content:
-  Status: ❌ NOT TRACKED
-  Gaps: No social listening, no UGC monitoring
+  Status: ⚠️ TRACKING VIA LOOX
+  Photo reviews will populate product pages automatically
 
-Referral Strategy:
-  Status: ❌ NOT CONFIGURED
-  Infrastructure: Loox has referral feature
-  Post-Launch TODO: Configure after first 10 orders
-
-Advocacy Readiness Score: 30/100
-  - Infrastructure: 100% ready (Loox installed)
-  - Activity: 0% (no orders yet, PRE-LAUNCH acceptable)
-  - Strategy: 30% (plan documented, not executed)
+Advocacy Readiness Score: 100/100
+  - Infrastructure: 100% ready (Loox installed + configured)
+  - Review Requests: 100% (14d + 2 reminders)
+  - Referral Program: 100% ($10/$10 with 4 widgets)
+  - Upsells: 100% (30% Smart Upsell via Shopify Checkout)
 ```
 
-### OVERALL FLYWHEEL READINESS
+### OVERALL FLYWHEEL READINESS - SESSION 101 FINAL
 
 ```yaml
-Pre-Launch Score: 86/100 (EXCELLENT)
-  - Acquisition: 90/100
-  - Conversion: 75/100
-  - Retention: 100/100
-  - Advocacy: 30/100
+# Session 101 (2025-12-16): ALL 4 PHASES 100%
 
-Post-Fixes Score: 91/100 (after user actions)
-  - Fix Double H1: +2 pts
-  - Activate Sticky ATC: +2 pts
-  - Add Header Nav Items: +1 pt
+Pre-Launch Score: 100/100 (PERFECT) ✅
+  - Acquisition: 100/100 (Klaviyo Welcome + Winback)
+  - Conversion: 100/100 (Shopify Email browse/cart + Klaviyo checkout)
+  - Retention: 100/100 (Klaviyo + Shopify Flow loyalty tagging)
+  - Advocacy: 100/100 (Loox reviews + referrals + upsells) ← SESSION 101
 
-Revenue Potential Unlocked:
-  - Double H1 fix: $5K/year
-  - Sticky ATC: +2-5% conversion rate
-  - Bundle Builder: $8,250/year (deferred)
+Option C: Hybrid Complementary Matrix
+  - Zero duplication across systems
+  - Each trigger handled by exactly ONE system
+  - Klaviyo: Welcome, Winback, Checkout, Post-Purchase, Cross-Sell
+  - Shopify Email: Browse abandonment, Cart abandonment
+  - Shopify Flow: Loyalty tier tagging
+  - Loox: Review collection, Referral program, Smart Upsells
+
+Bundle Inventory: 9/9 at 999 stock (verified via Shopify API)
 ```
 
 ---

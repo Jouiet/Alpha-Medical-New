@@ -62,7 +62,7 @@
 **CATEGORY 6: Contests/Giveaways (3 sources)**
 - Typeform contests: ⏳ Form ready, sync BLOCKED
 - Social media contests: ❌ NOT implemented
-- Referral program: ❌ NOT implemented
+- Referral program: ✅ CONFIGURED (Loox $10/$10, Session 101)
 
 **Volume Potential:** 1,255-2,690 leads/month (all 23 sources active)
 **Current Volume:** ~50-150 leads/month (2 sources only)
@@ -315,10 +315,11 @@ Budget minimum créatives: $500-1,000 (vidéos UGC, photos pro)
 - Welcome popup: 10% OFF first order ✅
 - Exit intent popup: 15% OFF + urgency ✅
 - Cart abandonment emails: Active ✅
-- Product reviews: Loox installed ✅
+- Product reviews: Loox CONFIGURED (14d + 2 reminders) ✅
+- Referral program: Loox CONFIGURED ($10/$10) ✅
+- Post-purchase upsells: Loox Smart Upsell 30% ✅
 
 **NOT Active:**
-- Upsell/cross-sell: Not configured ❌
 - Loyalty program: Not configured ❌
 
 **Factual Corrections (Session 61):**
