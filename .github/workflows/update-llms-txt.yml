@@ -4,8 +4,8 @@ on:
   push:
     paths:
       - '**.md'
-      - 'generate_llms_txt.py'
-      - 'generate_llms_full.py'
+      - 'scripts/root-migration-2025-12-16/generate_llms_txt.py'
+      - 'scripts/root-migration-2025-12-16/generate_llms_full.py'
   workflow_dispatch:
 
 permissions:
@@ -28,17 +28,17 @@ jobs:
 
       - name: Generate llms.txt
         run: |
-          python3 generate_llms_txt.py
+          python3 scripts/root-migration-2025-12-16/generate_llms_txt.py
           echo "✅ llms.txt generated"
 
       - name: Generate llms-full.txt
         run: |
-          python3 generate_llms_full.py
+          python3 scripts/root-migration-2025-12-16/generate_llms_full.py
           echo "✅ llms-full.txt generated"
 
       - name: Validate llms.txt files
         run: |
-          python3 validate_llms_txt.py
+          python3 scripts/root-migration-2025-12-16/validate_llms_txt.py
           echo "✅ Validation complete"
 
       - name: Check for changes
