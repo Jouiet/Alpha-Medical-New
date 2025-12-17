@@ -1,0 +1,16 @@
+# Alpha Medical Voice AI - Dependencies
+# Session 109 - xAI Voice Agent Infrastructure
+
+# Core Dependencies
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# xAI + LiveKit Voice Agent (optional - for production)
+# livekit-agents[xai]~=1.3
+
+# Note: LiveKit is optional for demo/test mode
+# Install full voice stack with:
+#   pip install 'livekit-agents[xai]~=1.3'
+#
+# For console demo only:
+#   pip install python-dotenv requests
