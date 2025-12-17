@@ -356,6 +356,45 @@ response = requests.post(
 - Up to 10 images per request
 - Free credits available for new accounts
 
+#### Voice Agent API (Session 106 Research)
+
+**Model:** Grok Voice Agent
+**Pricing:** $0.05/minute (connection time)
+**Protocol:** WebSocket (OpenAI Realtime API compatible)
+
+| Feature | Specification |
+|---------|---------------|
+| Languages | 100+ (auto-detection) |
+| Time-to-first-audio | <1 second (5× faster than competitors) |
+| Benchmark | #1 Big Bench Audio |
+| Audio Formats | PCM 8-48kHz, G.711 μ-law, G.711 A-law |
+| Tool Calling | CRMs, calendars, databases, custom APIs |
+| Telephony | Twilio, Vonage, SIP providers |
+
+**Integration via LiveKit:**
+```bash
+# Python
+uv add "livekit-agents[openai]~=1.3"
+```
+
+```python
+from livekit.plugins import openai
+
+session = AgentSession(
+    llm=openai.LLM.with_x_ai(
+        model="grok-4-1-fast-non-reasoning",
+        temperature=0.7,
+    ),
+)
+```
+
+**Status for Alpha Medical:**
+- XAI_API_KEY: ✅ Valid (configured Session 106)
+- Credits: ⏳ Pending purchase at console.x.ai
+- Use Case: Future customer support voice agent
+
+**Documentation:** https://docs.x.ai/docs/guides/voice
+
 ---
 
 ### 3.4 Leonardo AI
@@ -1205,6 +1244,7 @@ XAI_API_KEY=xai-xxx  # ✅ Added Session 106 - valid key, needs credits at conso
 | 1.3 | 2025-12-17 | Session 105: Added GOOGLE_GEMINI_API_KEY to GitHub Secrets, verified API (24 models), batch analyze tested | Claude Opus 4.5 |
 | 1.4 | 2025-12-17 | Session 105: Added xAI project instructions, updated Grok API config with OpenAI-compatible SDK, pricing table | Claude Opus 4.5 |
 | 1.5 | 2025-12-17 | Session 106: XAI_API_KEY added to .env + GitHub Secrets (7/7 100%), API tested (valid key, needs credits) | Claude Opus 4.5 |
+| 1.6 | 2025-12-17 | Session 106: Added Voice Agent API documentation - $0.05/min, WebSocket, 100+ languages, LiveKit integration | Claude Opus 4.5 |
 
 ### Review Schedule
 
