@@ -5341,7 +5341,7 @@ Loox Referral Program:
 
 Loox Smart Upsells:
   Status: ✅ CONFIGURED
-  Discount: 30% (most popular setting)
+  Discount: 22%
   Shopify Checkout: Loox set as post-purchase app ✅
 
 User Generated Content:
@@ -5352,7 +5352,7 @@ Advocacy Readiness Score: 100/100
   - Infrastructure: 100% ready (Loox installed + configured)
   - Review Requests: 100% (14d + 2 reminders)
   - Referral Program: 100% ($10/$10 with 4 widgets)
-  - Upsells: 100% (30% Smart Upsell via Shopify Checkout)
+  - Upsells: 100% (22% Smart Upsell via Shopify Checkout)
 ```
 
 ### OVERALL FLYWHEEL READINESS - SESSION 101 FINAL

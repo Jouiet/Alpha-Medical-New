@@ -65,7 +65,7 @@ These are DIFFERENT systems!
 │ ADVOCACY          │              │              │              │        │
 │ ├─ Review Collect │              │              │              │ ✅ 14d │
 │ ├─ Referral Prog  │              │              │              │ ✅ $10 │
-│ └─ Upsells        │              │              │              │ ✅ 30% │
+│ └─ Upsells        │              │              │              │ ✅ 22% │
 └───────────────────┴──────────────┴──────────────┴──────────────┴────────┘
 ```
 
@@ -118,7 +118,7 @@ These are DIFFERENT systems!
 | Setting | Value | Status |
 |---------|-------|--------|
 | Smart Upsell | Enabled (checkbox checked) | ✅ CONFIGURED |
-| Discount | 30% | ✅ CONFIGURED |
+| Discount | 22% | ✅ CONFIGURED |
 | Shopify Checkout | Loox set as post-purchase app | ✅ CONFIGURED |
 
 ### Bundle Inventory (Shopify API Verified)
@@ -203,7 +203,7 @@ These are DIFFERENT systems!
 | **ADVOCACY (Session 101)** ||||
 | Review Collection | Loox | 14d + 2 reminders | ✅ CONFIGURED |
 | Referral Program | Loox | $10/$10, min $15, 4 widgets | ✅ CONFIGURED |
-| Smart Upsells | Loox | 30% discount, Shopify Checkout | ✅ CONFIGURED |
+| Smart Upsells | Loox | 22% discount, Shopify Checkout | ✅ CONFIGURED |
 
 **DUPLICATION: ZERO ✅** (each trigger handled by 1 system only)
 **OVERALL COVERAGE: 100%** (all 4 phases complete)

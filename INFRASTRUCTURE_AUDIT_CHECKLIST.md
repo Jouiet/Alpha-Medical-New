@@ -167,7 +167,7 @@ session = AgentSession(
 |---------|-------|--------|
 | Smart Upsell | ✅ ENABLED (checkbox) | ✅ VERIFIED |
 | Discount Type | Percentage | ✅ |
-| Discount Amount | **30%** | ✅ VERIFIED |
+| Discount Amount | **22%** | ✅ VERIFIED |
 | Shipping Fee | Free shipping | ✅ |
 | Show same product | ✅ Checked | ✅ |
 | Secondary offer | ✅ Checked | ✅ |
@@ -186,7 +186,7 @@ session = AgentSession(
 All critical Loox features verified:
 - ✅ Review collection: 14d + 2 reminders
 - ✅ Referral program: $10/$10, $15 min
-- ✅ Smart Upsell: 30% discount, enabled
+- ✅ Smart Upsell: 22% discount, enabled
 - ✅ 3/4 referral widgets activated
 - ✅ 15 imported reviews (4.9 avg)
 - ✅ All email types enabled
@@ -329,7 +329,7 @@ All critical Loox features verified:
 | Setting | Value | Status |
 |---------|-------|--------|
 | Smart Upsell Checkbox | ✅ Checked | ✅ ENABLED |
-| Discount | 30% (verified Session 101) | ✅ CONFIGURED |
+| Discount | 22% (verified Session 107) | ✅ CONFIGURED |
 | Impressions | 0 | Expected (PRE-LAUNCH) |
 | Upsells | 0 | Expected (PRE-LAUNCH) |
 | Revenue | $0 | Expected (PRE-LAUNCH) |
@@ -350,7 +350,7 @@ All critical Loox features verified:
 - ✅ Loox branding: CONFIGURED (logo, colors, font)
 - ✅ Loox email settings: CONFIGURED (support@alphamedical.shop)
 - ✅ Loox referral offer: CONFIGURED ($10/$10, $15 min)
-- ✅ Loox Smart Upsell: ENABLED (30% discount)
+- ✅ Loox Smart Upsell: ENABLED (22% discount)
 - ✅ Review timing: CONFIGURED (14d + 2 reminders - verified Session 102)
 
 **Zero activity metrics are EXPECTED because store is PRE-LAUNCH with no orders processed.**
@@ -618,7 +618,7 @@ All critical Loox features verified:
 | Setting | Value | Status |
 |---------|-------|--------|
 | Smart Upsell | ENABLED | ✅ |
-| Discount | 30% (most popular) | ✅ |
+| Discount | 22% | ✅ |
 | Shopify Checkout | Loox set as post-purchase app | ✅ SAVED |
 
 ### Bundle Inventory Verification
