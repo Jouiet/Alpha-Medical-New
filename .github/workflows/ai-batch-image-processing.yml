@@ -1,0 +1,113 @@
+name: AI Batch Image Processing
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Processing mode'
+        required: true
+        default: 'analyze'
+        type: choice
+        options:
+          - analyze
+          - edit
+          - generate
+      input_folder:
+        description: 'Input folder (for analyze/edit modes)'
+        required: false
+        default: './input-images/'
+      output_folder:
+        description: 'Output folder for results'
+        required: false
+        default: './output/ai-production/'
+      prompts_file:
+        description: 'Prompts file (for generate mode)'
+        required: false
+        default: 'scripts/ai-production/sample_prompts.txt'
+      images_per_prompt:
+        description: 'Images per prompt (generate mode)'
+        required: false
+        default: '2'
+
+env:
+  GOOGLE_GEMINI_API_KEY: ${{ secrets.GOOGLE_GEMINI_API_KEY }}
+  XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+
+jobs:
+  process-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dotenv
+
+      - name: Validate environment
+        run: |
+          echo "Mode: ${{ inputs.mode }}"
+          echo "Gemini API Key: $([ -n \"$GOOGLE_GEMINI_API_KEY\" ] && echo '✅ Found' || echo '❌ Missing')"
+          echo "XAI API Key: $([ -n \"$XAI_API_KEY\" ] && echo '✅ Found' || echo '❌ Missing')"
+
+      - name: Create input directory (if needed)
+        if: inputs.mode != 'generate'
+        run: |
+          mkdir -p "${{ inputs.input_folder }}"
+          mkdir -p "${{ inputs.output_folder }}"
+
+      - name: Run batch processor (analyze)
+        if: inputs.mode == 'analyze'
+        run: |
+          python scripts/ai-production/batch_image_processor.py \
+            --mode analyze \
+            --input "${{ inputs.input_folder }}" \
+            --output "${{ inputs.output_folder }}"
+
+      - name: Run batch processor (edit)
+        if: inputs.mode == 'edit'
+        run: |
+          python scripts/ai-production/batch_image_processor.py \
+            --mode edit \
+            --input "${{ inputs.input_folder }}" \
+            --output "${{ inputs.output_folder }}"
+
+      - name: Run batch processor (generate)
+        if: inputs.mode == 'generate'
+        run: |
+          python scripts/ai-production/batch_image_processor.py \
+            --mode generate \
+            --prompts "${{ inputs.prompts_file }}" \
+            --output "${{ inputs.output_folder }}" \
+            --count "${{ inputs.images_per_prompt }}"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-processing-results-${{ github.run_id }}
+          path: ${{ inputs.output_folder }}
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Summary
+        run: |
+          echo "## AI Batch Image Processing Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode:** ${{ inputs.mode }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Output:** ${{ inputs.output_folder }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -d "${{ inputs.output_folder }}" ]; then
+            echo "### Output Files" >> $GITHUB_STEP_SUMMARY
+            find "${{ inputs.output_folder }}" -type f | head -20 | while read f; do
+              echo "- \`$f\`" >> $GITHUB_STEP_SUMMARY
+            done
+          fi

@@ -1,0 +1,20 @@
+# Alpha Medical AI Production - Sample Prompts
+# For testing batch_image_processor.py generate mode
+# Reference: prompts/templates/base-templates.md
+
+# Product Photography Prompts
+Professional product photography of medical knee brace. Clean white background, soft studio lighting. Black neoprene material, adjustable straps visible. E-commerce style, high detail, 1080x1080 square. Medical equipment aesthetic, premium quality appearance.
+
+Professional product photography of posture corrector. Clean white background, soft studio lighting. Breathable mesh material, elastic straps visible. E-commerce style, high detail, 1080x1080 square. Medical equipment aesthetic, premium quality appearance.
+
+Professional product photography of compression sleeve for knee. Clean white background, soft studio lighting. Gray fabric with reinforced zones visible. E-commerce style, high detail, 1080x1080 square. Medical equipment aesthetic, premium quality appearance.
+
+# Lifestyle Photography Prompts
+Lifestyle photography of senior person (65+) using knee brace. Home environment, natural lighting. Gardening activity, empowering mood, product visible but natural. 1080x1080 square for Instagram. Authentic, relatable, Alpha Medical brand style.
+
+Lifestyle photography of office worker (35-45) using posture corrector. Modern office environment, natural window lighting. Working at desk, comfortable and productive mood. Product visible under clothing. 1080x1080 square for social media.
+
+# Marketing Ad Prompts
+Instagram advertisement for medical knee brace targeting seniors. Professional photography, trustworthy tone. Addressing knee pain and arthritis context. Brand accent colors, text overlay space. 1080x1080 square, professional advertising quality.
+
+Facebook advertisement for posture corrector targeting office workers. Professional photography, productive and comfortable tone. Addressing back pain and posture issues. Brand colors #4770db accent. 1200x628 horizontal, professional advertising quality.
