@@ -1,0 +1,117 @@
+# ALPHA MEDICAL - VISUAL STYLE GUIDE
+
+## Photography Style
+
+### Overall Aesthetic
+- CLEAN: Uncluttered, minimal distractions
+- PROFESSIONAL: Medical-grade appearance
+- TRUSTWORTHY: Inspires confidence
+- PREMIUM: High-quality finish
+- ACCESSIBLE: Not intimidating
+
+### Lighting Requirements
+- Type: Soft, diffused studio lighting
+- Direction: Front-lit with subtle side fill
+- Shadows: Minimal, soft gradients
+- Highlights: Controlled, no harsh spots
+- Color temperature: Neutral white (5500K)
+
+### Background Standards
+- Primary: Pure white (#ffffff)
+- Alternative: Light gray gradient
+- Lifestyle: Natural environments
+- Avoid: Busy patterns, dark backgrounds
+
+### Composition Rules
+- Product centered in frame
+- Adequate negative space (20% margins)
+- 1:1 aspect ratio for e-commerce
+- Multiple angles: front, 3/4, side, detail
+- Show scale when relevant
+
+### Color Accuracy
+- Preserve true product colors
+- No heavy color grading
+- Consistent across product line
+- Brand blue (#4770db) for accents only
+
+## Product-Specific Guidelines
+
+### Wearable Products (Braces, Supports)
+- Show on model when possible
+- Demonstrate adjustability
+- Highlight comfort features
+- Show fit and coverage area
+
+### Devices (TENS, Massage Guns)
+- Display screen/controls clearly
+- Show accessories included
+- Demonstrate size/portability
+- Include human hand for scale
+
+### Compression Wear
+- Show compression zones
+- Demonstrate stretch/flexibility
+- Display on appropriate body part
+- Show material texture
+
+## Model Guidelines
+
+### Demographics
+- Seniors (65+): Active, independent, dignified
+- Office Workers (30-50): Professional, productive
+- Athletes (20-40): Fit, dynamic, confident
+
+### Expressions
+- Comfortable, not in pain
+- Confident, empowered
+- Natural, authentic
+- Approachable, relatable
+
+### Poses
+- Natural, everyday activities
+- Product clearly visible
+- Active or recovery contexts
+- Professional for office settings
+
+### Diversity
+- Include various ages
+- Multiple ethnicities
+- Different body types
+- Gender balance
+
+## Platform Specifications
+
+### Shopify Product Images
+- Size: 1200x1200px minimum
+- Format: JPEG, WebP
+- Background: White
+- Multiple angles required
+
+### Instagram Posts
+- Size: 1080x1080px (square)
+- Size: 1080x1350px (portrait)
+- High visual impact
+- Brand colors subtle
+
+### Facebook Ads
+- Size: 1200x628px (landscape)
+- Size: 1080x1080px (square)
+- Clear product visibility
+- Text overlay space
+
+### TikTok
+- Size: 1080x1920px (vertical)
+- Dynamic, energetic
+- Lifestyle focused
+- Authentic feel
+
+## Quality Checklist
+- [ ] Resolution minimum 1200px
+- [ ] Sharp focus on product
+- [ ] Clean white background
+- [ ] Accurate colors
+- [ ] No artifacts or noise
+- [ ] Proper lighting
+- [ ] Brand-appropriate style
+- [ ] E-commerce ready

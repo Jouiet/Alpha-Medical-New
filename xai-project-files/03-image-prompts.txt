@@ -1,0 +1,54 @@
+# ALPHA MEDICAL - IMAGE GENERATION PROMPTS
+
+## Product Photography Templates
+
+### Standard Product Shot
+Professional product photography of [PRODUCT], clean white background, soft studio lighting, e-commerce style, high detail, medical equipment aesthetic, premium quality appearance, 1080x1080 square format.
+
+### Lifestyle - Seniors
+Lifestyle photography of senior person (65+) using [PRODUCT]. Home environment, natural lighting. [ACTIVITY] activity, empowering mood, product visible but natural. 1080x1080 square for Instagram. Authentic, relatable.
+
+### Lifestyle - Office Workers
+Lifestyle photography of office worker (35-45) using [PRODUCT]. Modern office environment, natural window lighting. Working at desk, comfortable and productive mood. Product visible. 1080x1080 square for social media.
+
+### Lifestyle - Athletes
+Lifestyle photography of athletic person (25-35) using [PRODUCT]. Gym or outdoor environment, dynamic lighting. Training or recovery activity, confident mood. Product prominently featured. 1080x1080 square.
+
+### Ad Creative - Instagram
+Instagram advertisement for [PRODUCT] targeting [AUDIENCE]. Professional photography, trustworthy tone. Addressing [PAIN POINT] context. Brand accent color #4770db. 1080x1080 square, professional advertising quality.
+
+### Ad Creative - Facebook
+Facebook advertisement for [PRODUCT] targeting [AUDIENCE]. Professional photography, comfortable and productive tone. Addressing [PAIN POINT]. Brand colors. 1200x628 horizontal, professional advertising quality.
+
+## Example Prompts
+
+### Knee Brace - Product
+Professional product photography of medical knee brace with hinged support. Clean white background, soft studio lighting. Black neoprene material, adjustable straps clearly visible, metal hinges shown. E-commerce style, high detail, 1080x1080 square. Medical equipment aesthetic, premium quality appearance.
+
+### Posture Corrector - Lifestyle
+Lifestyle photography of office worker (35-45) wearing posture corrector. Modern office environment, natural window lighting. Working at computer desk, comfortable and productive mood, good posture visible. Product visible under professional clothing. 1080x1080 square for social media. Authentic, relatable, Alpha Medical brand style.
+
+### Compression Sleeve - Ad
+Instagram advertisement for medical compression sleeve targeting athletes. Professional photography showing athletic person wearing sleeve during workout. Dynamic pose, confident mood. Addressing muscle recovery and performance. Brand accent blue #4770db visible. 1080x1080 square, professional advertising quality.
+
+### TENS Unit - Product
+Professional product photography of TENS/EMS therapy device. Clean white background, soft studio lighting. White device with digital display, electrode pads shown separately. E-commerce style, high detail, 1080x1080 square. Medical device aesthetic, premium quality, modern design.
+
+## Style Guidelines for All Images
+- Lighting: Soft, diffused, professional studio
+- Background: Clean white or neutral gradient
+- Mood: Trustworthy, professional, empowering
+- Quality: High resolution, sharp focus
+- Composition: Product centered, balanced
+- Colors: Accurate product colors, brand blue accent when appropriate
+- People: Diverse, authentic, relatable expressions
+- Setting: Clean, uncluttered, professional
+
+## DO NOT Generate
+- Misleading medical claims
+- Before/after transformation promises
+- Extreme pain or suffering imagery
+- Competitor products or logos
+- Unrealistic body modifications
+- Medical procedures or surgery
+- Prescription medication imagery

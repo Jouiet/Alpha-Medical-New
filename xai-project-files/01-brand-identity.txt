@@ -1,0 +1,48 @@
+# ALPHA MEDICAL CARE - BRAND IDENTITY
+
+## Company Overview
+- Name: Alpha Medical Care
+- Website: alphamedical.shop
+- Industry: B2C Medical Equipment E-commerce
+- Founded: 2025
+- Location: United States
+
+## Brand Mission
+Making medical-grade recovery accessible to everyone through curated orthopedic equipment and professional-grade support devices.
+
+## Brand Values
+1. Quality First - ISO 13485 certified suppliers
+2. Accessibility - Medical-grade at consumer-friendly prices
+3. Trust - Transparent sourcing, verified suppliers
+4. Empowerment - Education-focused, solution-oriented
+5. Speed - 7-15 day guaranteed delivery
+
+## Target Audiences
+1. SENIORS (65+): Arthritis, joint pain, mobility issues
+2. OFFICE WORKERS (25-55): Posture issues, back pain, desk ergonomics
+3. ATHLETES (18-45): Injury prevention, recovery, performance
+
+## Brand Colors
+- Primary Blue: #4770db (RGB: 71, 112, 219)
+- Navy: #0e1b4d (RGB: 14, 27, 77)
+- Light Gray: #eff0f5 (RGB: 239, 240, 245)
+- White: #ffffff
+- Sale Red: #e32402 (urgency only)
+
+## Typography
+- Headings: Archivo Bold 700
+- Body: Questrial Regular 400
+
+## Brand Voice
+- Professional yet approachable
+- Clear and jargon-free
+- Empathetic and educational
+- Solution-focused
+- Empowering
+
+## Visual Style
+- Clean, professional, trustworthy
+- Medical equipment premium aesthetic
+- Soft studio lighting
+- White or neutral backgrounds
+- High detail on product features
