@@ -50,15 +50,38 @@
 | Video Generation | Grok/Kling | ⏳ Blocked/Web | Kling web |
 
 ### User Actions Required
-1. **XAI_API_KEY**: Get from x.ai/api, add to .env AND GitHub Secrets
-2. **n8n Credentials**: Complete OAuth2 setup for Google Drive/Sheets (15-20 min)
-3. **n8n Activation**: Activate workflow after credentials linked
+
+**1. XAI_API_KEY (Grok Image Generation)**
+```
+Step 1: Go to https://console.x.ai
+Step 2: Sign in with X (Twitter), Google, or Email
+Step 3: Create project "Alpha-Medical" with instructions:
+        "Alpha Medical Care - B2C Medical Equipment E-commerce
+         Products: Knee braces, posture correctors, compression wear
+         Style: Professional product photography, white backgrounds
+         Brand: Medical-grade quality, #4770db accent color"
+Step 4: Click "Create API key" → Name: "alpha-medical-production"
+Step 5: COPY KEY IMMEDIATELY (shown once only!)
+Step 6: Add to local: echo 'XAI_API_KEY=xai-xxx' >> .env
+Step 7: Add to GitHub: echo 'xai-xxx' | gh secret set XAI_API_KEY
+Step 8: Test: source .env && python3 scripts/ai-production/test_grok_aurora.py --mode test
+```
+
+**2. n8n Credentials** (15-20 min)
+- Complete OAuth2 setup for Google Drive/Sheets in n8n dashboard
+
+**3. n8n Activation**
+- Activate workflow after credentials linked
 
 ### Session 105 Accomplishments
 - ✅ Added GOOGLE_GEMINI_API_KEY to GitHub Secrets
 - ✅ Verified Gemini API connection (24 models available)
 - ✅ Tested batch_image_processor.py analyze mode
 - ✅ Confirmed AI workflow ready for image analysis
+- ✅ Researched xAI/Grok API setup (web sources verified)
+- ✅ Created Alpha-Medical project instructions for xAI console
+- ✅ Updated AI_HYBRID_PRODUCTION_SYSTEM with OpenAI-compatible SDK config
+- ✅ Added xAI pricing table (Aurora: $0.07/image)
 
 **Verification:** gh CLI + Python scripts | **Confidence:** 100% | **BS:** 0%
 

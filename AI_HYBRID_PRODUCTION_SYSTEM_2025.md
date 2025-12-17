@@ -284,32 +284,77 @@ response = client.models.generate_content(
 
 #### API Configuration
 
+**Console:** https://console.x.ai
+**Project Name:** `Alpha-Medical`
+
+**Project Instructions (for xAI Console):**
+```
+Alpha Medical Care - B2C Medical Equipment E-commerce
+Products: Knee braces, posture correctors, compression wear, therapy devices
+Target: Seniors (65+), Office workers (25-55), Athletes (18-45)
+Style: Professional product photography, clean white backgrounds, studio lighting
+Brand: Medical-grade quality, trustworthy, professional aesthetic
+Colors: Brand accent #4770db (blue), clean whites, neutral grays
+DO: Generate professional medical product photography, lifestyle images, ad creatives
+DO NOT: Generate misleading medical claims, cure/treatment promises, competitor branding
+```
+
 ```python
 # Environment Variable
-XAI_API_KEY=xai-xxx  # To be configured in .env
+XAI_API_KEY=xai-xxx  # Get from console.x.ai
 
-# Installation
-pip install xai-sdk
+# Installation (OpenAI-compatible SDK)
+pip install openai requests
 
-# Usage - Image Generation
-from xai_sdk import Client
-client = Client()  # Uses XAI_API_KEY env var
+# Usage - Image Generation (OpenAI-compatible)
+from openai import OpenAI
+import os
 
-response = client.image.sample_batch(
-    model="grok-2-image",
-    prompt="Medical posture corrector, professional product photo",
-    n=4,  # Up to 10 images
-    image_format="url"  # or "base64"
+client = OpenAI(
+    api_key=os.environ.get("XAI_API_KEY"),
+    base_url="https://api.x.ai/v1"
 )
 
-for image in response.images:
+# Generate images
+response = client.images.generate(
+    model="grok-2-image",
+    prompt="Professional product photography of medical knee brace, white background, studio lighting",
+    n=4,  # Up to 10 images per request
+)
+
+for image in response.data:
     print(image.url)
+
+# Alternative: Direct API call
+import requests
+response = requests.post(
+    "https://api.x.ai/v1/images/generations",
+    headers={
+        "Authorization": f"Bearer {os.environ['XAI_API_KEY']}",
+        "Content-Type": "application/json"
+    },
+    json={
+        "model": "grok-2-image",
+        "prompt": "Medical posture corrector, professional product photo",
+        "n": 4,
+        "response_format": "url"  # or "b64_json"
+    }
+)
 ```
+
+#### Pricing (2025)
+
+| Model | Cost | Notes |
+|-------|------|-------|
+| grok-2-image (Aurora) | $0.07/image | Image generation |
+| grok-2-vision | $2/M input, $10/M output | Image analysis |
+| grok-3-mini | $0.30/M input, $0.50/M output | Chat |
 
 #### Rate Limits
 
 - 5 requests per second
-- Free tier via X: 4-10 images/day, 10 videos/day
+- Up to 10 images per request
+- Free credits available for new accounts
 
 ---
 
@@ -1153,6 +1198,7 @@ XAI_API_KEY=xai-xxx  # Get from x.ai/api
 | 1.1 | 2025-12-17 | Session 103: Added test scripts, batch processor, prompt library paths | Claude Opus 4.5 |
 | 1.2 | 2025-12-17 | Session 103: Added GitHub Actions workflow, tested Gemini analyze mode | Claude Opus 4.5 |
 | 1.3 | 2025-12-17 | Session 105: Added GOOGLE_GEMINI_API_KEY to GitHub Secrets, verified API (24 models), batch analyze tested | Claude Opus 4.5 |
+| 1.4 | 2025-12-17 | Session 105: Added xAI project instructions, updated Grok API config with OpenAI-compatible SDK, pricing table | Claude Opus 4.5 |
 
 ### Review Schedule
 
