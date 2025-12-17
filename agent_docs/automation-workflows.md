@@ -1,3 +1,83 @@
+# 🔄 SESSION 107 (2025-12-17) - FLYWHEEL EMPIRICAL RE-AUDIT
+
+> **Auditor:** Claude Opus 4.5
+> **Status:** ✅ COMPLETE (Klaviyo API + Chrome DevTools MCP)
+> **Confidence:** 100% | **BS:** 0%
+> **Verification Date:** 2025-12-17
+
+## CRITICAL FINDING: DOCUMENTATION ERROR CORRECTED
+
+Previous documentation claimed Shopify Email had 2/5 ACTIVE automations.
+**REALITY (Empirically Verified 2025-12-17): 0/2 ACTIVE - ALL INACTIVE**
+
+### KLAVIYO FLOWS (API Verified 2025-12-17)
+| Flow | Status | Trigger |
+|------|--------|---------|
+| Welcome Series - Final Email Discount | ✅ LIVE | Added to List |
+| Customer Winback - Standard | ✅ LIVE | Added to List |
+| Product Review / Cross-Sell - Standard | ✅ LIVE | Metric (Fulfilled Order) |
+| Repeat Purchase Nurture - Order Count Split | ✅ LIVE | Metric (Placed Order) |
+| Abandoned Checkout | ✅ LIVE | Metric (Checkout Started) |
+| Essential Flow Recommendation_ (x2) | ❌ DRAFT | Unconfigured |
+
+**Total: 5 LIVE + 2 DRAFT**
+
+### SHOPIFY FLOW (Chrome DevTools Verified 2025-12-17)
+| Workflow | Status | Trigger |
+|----------|--------|---------|
+| New Loyalty Tier Tagging (Automatic) | ✅ ACTIVE | Order paid |
+| Convert abandoned product browse | ❌ INACTIVE | Customer left |
+| Recover abandoned cart | ❌ INACTIVE | Customer left |
+
+**Total: 1 ACTIVE + 2 INACTIVE**
+
+### SHOPIFY EMAIL (Chrome DevTools Verified 2025-12-17)
+| Automation | Status |
+|------------|--------|
+| Convert abandoned product browse | ❌ INACTIVE |
+| Recover abandoned cart | ❌ INACTIVE |
+
+**Total: 0 ACTIVE + 2 INACTIVE**
+
+### OPTION C MATRIX - ACTUAL STATE (2025-12-17)
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    FLYWHEEL AUTOMATION - EMPIRICAL STATE                 │
+├───────────────────┬──────────────┬──────────────┬──────────────┬────────┤
+│ CUSTOMER JOURNEY  │ KLAVIYO      │ SHOPIFY EMAIL│ SHOPIFY FLOW │ LOOX   │
+├───────────────────┼──────────────┼──────────────┼──────────────┼────────┤
+│ ACQUISITION       │              │              │              │        │
+│ ├─ Lead Capture   │ ✅ Welcome   │              │              │        │
+│ └─ Win-back       │ ✅ Winback   │              │              │        │
+├───────────────────┼──────────────┼──────────────┼──────────────┼────────┤
+│ CONVERSION        │              │              │              │        │
+│ ├─ Browse Abandon │ 🔴 NONE      │ ❌ INACTIVE  │ ❌ INACTIVE  │        │
+│ ├─ Cart Abandon   │ 🔴 NONE      │ ❌ INACTIVE  │ ❌ INACTIVE  │        │
+│ └─ Checkout Aband │ ✅ LIVE      │              │              │        │
+├───────────────────┼──────────────┼──────────────┼──────────────┼────────┤
+│ RETENTION         │              │              │              │        │
+│ ├─ Post-Purchase  │ ✅ Repeat    │              │              │        │
+│ ├─ Loyalty Tier   │              │              │ ✅ Tagging   │        │
+│ └─ Review Request │ ✅ Cross-Sel │              │              │        │
+├───────────────────┼──────────────┼──────────────┼──────────────┼────────┤
+│ ADVOCACY          │              │              │              │        │
+│ ├─ Review Collect │              │              │              │ ✅ 14d │
+│ ├─ Referral Prog  │              │              │              │ ✅ $10 │
+│ └─ Upsells        │              │              │              │ ✅ 30% │
+└───────────────────┴──────────────┴──────────────┴──────────────┴────────┘
+```
+
+### CRITICAL GAPS (User Action Required)
+| Gap | Impact | Recommended Fix |
+|-----|--------|-----------------|
+| Browse Abandonment | 🔴 NOT COVERED | Activate Shopify Email automation |
+| Cart Abandonment | 🔴 NOT COVERED | Activate Shopify Email automation |
+
+**Note:** Klaviyo handles Checkout Abandonment. Shopify Email should handle Cart + Browse to avoid duplication.
+
+---
+
 # 🔄 SESSION 101 FINAL (2025-12-16) - LOOX ADVOCACY 100% EMPIRICALLY VERIFIED
 
 > **Auditor:** Claude Opus 4.5

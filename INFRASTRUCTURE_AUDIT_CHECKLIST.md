@@ -1,3 +1,47 @@
+# 🔄 SESSION 107 (2025-12-17) - FLYWHEEL EMPIRICAL RE-AUDIT
+
+**Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
+**Focus:** Flywheel automation verification - CRITICAL DOCUMENTATION ERROR FOUND
+
+## CRITICAL FINDING: SHOPIFY EMAIL INACTIVE
+
+Previous documentation claimed Shopify Email had **2/5 ACTIVE** automations.
+**EMPIRICAL REALITY (2025-12-17): 0/2 ACTIVE - ALL INACTIVE**
+
+### Verified State (Klaviyo API + Chrome DevTools MCP)
+
+**KLAVIYO FLOWS - 5 LIVE:**
+| Flow | Status |
+|------|--------|
+| Welcome Series | ✅ LIVE |
+| Customer Winback | ✅ LIVE |
+| Product Review/Cross-Sell | ✅ LIVE |
+| Repeat Purchase Nurture | ✅ LIVE |
+| Abandoned Checkout | ✅ LIVE |
+
+**SHOPIFY FLOW - 1 ACTIVE:**
+| Workflow | Status |
+|----------|--------|
+| Loyalty Tier Tagging | ✅ ACTIVE |
+| Convert browse | ❌ INACTIVE |
+| Recover cart | ❌ INACTIVE |
+
+**SHOPIFY EMAIL - 0 ACTIVE:**
+| Automation | Status |
+|------------|--------|
+| Browse abandonment | ❌ INACTIVE |
+| Cart abandonment | ❌ INACTIVE |
+
+### GAPS IDENTIFIED
+| Gap | Impact | Fix |
+|-----|--------|-----|
+| Cart Abandonment | 🔴 NOT COVERED | User: Activate Shopify Email |
+| Browse Abandonment | 🔴 NOT COVERED | User: Activate Shopify Email |
+
+**Note:** Klaviyo handles checkout. Shopify Email should handle cart+browse (no duplication).
+
+---
+
 # 🔄 SESSION 106 CONTINUED (2025-12-17) - XAI VOICE AGENT API RESEARCH
 
 **Analyst:** Claude Opus 4.5 | **Status:** ✅ COMPLETE
