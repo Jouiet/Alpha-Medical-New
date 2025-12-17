@@ -1,11 +1,23 @@
 # PRODUCT PHOTOGRAPHY PROMPTS
 
 > **Tool:** Nano Banana (editing), Grok Aurora (generation)
-> **Use Case:** Professional product images for Shopify catalog
+> **Use Case:** Enhance supplier product images for Shopify catalog
+> **Business Model:** DROPSHIPPING - Focus on EDITING supplier photos, not generation
+> **Updated:** 2025-12-18 (Session 108 - Forensic Audit Fix)
 
 ---
 
-## 1. BACKGROUND REMOVAL & CLEANUP (Nano Banana)
+## ⚠️ DROPSHIPPING REALITY
+
+**Alpha Medical is a B2C RETAILER using DSers/AliExpress dropshipping.**
+
+- **Primary Use:** EDIT supplier photos (background removal, enhancement)
+- **Secondary Use:** Generate marketing/lifestyle images
+- **NOT Primary:** Generate product photos from scratch (suppliers provide these)
+
+---
+
+## 1. BACKGROUND REMOVAL & CLEANUP (Nano Banana) - PRIMARY USE
 
 ### Template: Clean White Background
 ```
@@ -59,6 +71,51 @@ Clean white studio background, professional lighting.
 Modern medical device aesthetic, sleek design, control panel visible.
 High-tech appearance, premium quality, sharp focus.
 E-commerce style, isolated product, no props.
+```
+
+### Template: Neck Support (NEW - Session 108)
+```
+Professional product photography of a cervical neck support collar/brace.
+Clean white background, soft studio lighting, medical aesthetic.
+Foam/fabric neck brace with adjustable closure, comfortable design visible.
+E-commerce style, centered composition, shows height and support structure.
+No human model, product only, isolated on white.
+```
+
+### Template: Foot Care & Orthotics (NEW - Session 108)
+```
+Professional product photography of orthopedic foot insoles/arch supports.
+Pure white background, even lighting, showing contour and arch support.
+Medical-grade orthotic design, cushioning visible, anatomical shape.
+Multiple angles if needed (top view showing arch, side view showing profile).
+E-commerce ready, clean isolation, no props.
+```
+
+### Template: Massage Chair (NEW - Session 108)
+```
+Professional product photography of a massage chair/recliner.
+Clean white or light gray studio background, professional lighting.
+Modern design, leather/fabric upholstery, control panel visible.
+Show full chair or key features (headrest, armrests, leg support).
+Premium quality aesthetic, high-end medical furniture style.
+```
+
+### Template: Medical Equipment (NEW - Session 108)
+```
+Professional product photography of general medical equipment.
+Clean white background, professional studio lighting.
+Medical-grade aesthetic, functional design highlighted.
+Clear visibility of controls, indicators, and features.
+E-commerce catalog style, isolated product, no distractions.
+```
+
+### Template: Medical Equipment Bundle (NEW - Session 108)
+```
+Professional product photography of medical equipment bundle/kit.
+Clean white background, all items arranged in organized composition.
+Show all bundle components clearly visible and labeled.
+Medical-grade quality appearance, cohesive product family.
+E-commerce style, balanced layout, premium kit presentation.
 ```
 
 ---
@@ -162,10 +219,45 @@ medical claims text, before/after comparison
 
 ---
 
+## Feedback & Iteration System
+
+### Quality Threshold
+**Minimum satisfaction rate: 80%** - Prompts below this threshold must be revised.
+
+### Feedback Protocol
+1. **Execute prompt** with actual tool (Nano Banana, Grok Aurora, etc.)
+2. **Evaluate output** against criteria:
+   - Background quality (clean, consistent)
+   - Product visibility (centered, focused)
+   - Professional appearance (e-commerce ready)
+   - Brand alignment (medical equipment aesthetic)
+3. **Rate satisfaction:** 1-10 scale (8+ = pass)
+4. **Document in Testing Log** below
+5. **If <80% satisfaction:** Revise prompt → Re-test → Iterate
+
+### Revision Guidelines
+- **Low background quality:** Add more specific background instructions
+- **Poor product focus:** Add "centered composition, sharp focus on product"
+- **Unprofessional look:** Add "professional e-commerce photography style"
+- **Brand mismatch:** Add brand color references (#4770db accent)
+
+---
+
 ## Testing Log
 
-| Date | Prompt | Tool | Result | Notes |
-|------|--------|------|--------|-------|
-| | | | | |
+| Date | Prompt Template | Tool | Satisfaction (1-10) | Pass/Fail | Iteration Notes |
+|------|-----------------|------|---------------------|-----------|-----------------|
+| | | | | | |
 
-*Add successful prompts here for future reference*
+### Testing Instructions
+1. Test each prompt 3x minimum before marking as validated
+2. Record average satisfaction score
+3. 8/10+ average = PASS, add to validated prompts
+4. <8/10 average = FAIL, revise and re-test
+
+### Validated Prompts (80%+ Satisfaction)
+*Move successful prompts here after testing*
+
+---
+
+*Protocol added Session 108 (2025-12-18) per forensic audit requirement*

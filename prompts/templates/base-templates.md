@@ -24,7 +24,7 @@
 ### Product Variables
 | Variable | Options | Example |
 |----------|---------|---------|
-| `{PRODUCT_TYPE}` | knee brace, posture corrector, compression sleeve, therapy device | knee brace |
+| `{PRODUCT_TYPE}` | Joint Support, Therapeutic Devices, Neck Support, Medical Equipment Bundle, Medical Equipment, Foot Care & Orthotics, Massage Chairs, Back & Posture Support, Pain Relief Devices | Joint Support |
 | `{PRODUCT_COLOR}` | black, gray, blue, navy | black |
 | `{PRODUCT_MATERIAL}` | neoprene, mesh, elastic, fabric | neoprene |
 | `{PRODUCT_FEATURE}` | adjustable straps, breathable, compression, support | adjustable straps |
