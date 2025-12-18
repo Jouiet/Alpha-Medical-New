@@ -8,12 +8,22 @@
 
 ## 🎯 System Overview
 
-Alpha Medical Voice AI is a customer support voice agent that:
-- Answers product questions (85 products, 9 categories)
-- Provides shipping and return policy information
-- Handles FAQ (10 common questions)
-- Recommends products based on customer needs
-- Escalates to human support when needed
+Alpha Medical Voice AI is a **DUAL-PURPOSE** AI assistant that combines:
+
+### 🛒 AI Shopping Assistant
+- Discovers customer needs (pain type, location, severity)
+- Recommends products with prices (85 products, 9 categories)
+- Guides size selection
+- Handles price objections
+- Cross-sells complementary products
+- Guides customers to purchase
+
+### 🎧 Customer Support
+- Order status inquiries
+- Shipping information (7-15 days standard, 6-8 expedited)
+- Returns & exchanges (30-day policy)
+- Issue resolution
+- Escalation to human support
 
 ### Architecture
 
