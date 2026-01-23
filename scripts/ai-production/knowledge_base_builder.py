@@ -59,8 +59,8 @@ except ImportError:
 SHOPIFY_STORE = os.getenv("SHOPIFY_STORE_URL", "azffej-as.myshopify.com")
 SHOPIFY_TOKEN = os.getenv("SHOPIFY_ADMIN_API_TOKEN") or os.getenv("SHOPIFY_ACCESS_TOKEN", "")
 
-# Paths
-BASE_DIR = Path(__file__).parent.parent
+# Paths (Alpha Medical: scripts/ai-production/ → go 3 levels up to root)
+BASE_DIR = Path(__file__).parent.parent.parent
 KNOWLEDGE_BASE_DIR = BASE_DIR / "knowledge_base"
 EMBEDDINGS_FILE = KNOWLEDGE_BASE_DIR / "product_embeddings.npy"
 INDEX_FILE = KNOWLEDGE_BASE_DIR / "faiss_index.bin"

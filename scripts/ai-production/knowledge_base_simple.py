@@ -44,8 +44,8 @@ SHOPIFY_STORE = os.getenv("SHOPIFY_STORE_URL", "azffej-as.myshopify.com")
 SHOPIFY_TOKEN = os.getenv("SHOPIFY_ADMIN_API_TOKEN") or os.getenv("SHOPIFY_ACCESS_TOKEN", "")
 XAI_API_KEY = os.getenv("XAI_API_KEY", "")
 
-# Paths
-BASE_DIR = Path(__file__).parent.parent
+# Paths (Alpha Medical: scripts/ai-production/ → go 3 levels up to root)
+BASE_DIR = Path(__file__).parent.parent.parent
 KNOWLEDGE_BASE_DIR = BASE_DIR / "knowledge_base"
 INDEX_FILE = KNOWLEDGE_BASE_DIR / "tfidf_index.json"
 METADATA_FILE = KNOWLEDGE_BASE_DIR / "product_metadata.json"
