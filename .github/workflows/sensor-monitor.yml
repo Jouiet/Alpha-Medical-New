@@ -65,6 +65,13 @@ jobs:
           echo "📊 Current Pressure Matrix:"
           cat data/pressure-matrix.json
 
+      - name: Sync to 3A Central GPM
+        if: inputs.sensor == 'all' || inputs.sensor == ''
+        run: |
+          echo "🔄 Syncing to 3A Central..."
+          node sensors/sync-to-3a.cjs || echo "⚠️ Sync skipped (3A GPM not accessible)"
+        continue-on-error: true
+
       - name: Commit updated pressure matrix
         run: |
           git config --local user.email "action@github.com"

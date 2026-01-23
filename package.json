@@ -8,6 +8,8 @@
     "sensor:klaviyo": "node sensors/klaviyo-sensor.cjs",
     "sensor:retention": "node sensors/retention-sensor.cjs",
     "sensor:all": "npm run sensor:shopify && npm run sensor:klaviyo && npm run sensor:retention",
+    "sensor:sync": "node sensors/sync-to-3a.cjs",
+    "sensor:all-sync": "npm run sensor:all && npm run sensor:sync",
     "sensor:health": "node sensors/shopify-sensor.cjs --health && node sensors/klaviyo-sensor.cjs --health && node sensors/retention-sensor.cjs --health",
     "theme:check": "npx @shopify/theme-check",
     "prepare": "husky || true",
