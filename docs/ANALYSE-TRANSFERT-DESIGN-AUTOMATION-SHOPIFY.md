@@ -417,7 +417,7 @@ Inspiré du modèle industriel chinois décrit par [François Jullien](https://e
 
 | Composant | Fichiers | Status | Blockers | Intégrations |
 |-----------|----------|--------|----------|--------------|
-| **MCP-Alpha-Medical** | `.mcp.json` (736B) | ✅ 3 serveurs actifs | Credentials 403/401 | → Shopify, Klaviyo, Filesystem |
+| **MCP-Alpha-Medical** | **À CRÉER** (custom server) | 🔴 NON IMPLÉMENTÉ | Spec à définir | → Bridge unifié vers tous systèmes Alpha Medical (GPM, Shopify, Klaviyo, Sensors, RAG) |
 | **UCP (Commerce)** | ❌ Pas encore | 🔴 NON IMPLÉMENTÉ | Spec à définir | → Future e-commerce abstraction |
 | **A2A Protocol** | `sync-to-3a.cjs` (3.1K) | ⚠️ Prêt non testé | 3A GPM path | → GPM Central 3A |
 | **Skills Claude** | `seo-optimizer/`, `brand-guidelines/` | ✅ 2 actifs | Aucun | → Claude Code hooks |
@@ -426,6 +426,63 @@ Inspiré du modèle industriel chinois décrit par [François Jullien](https://e
 | **RAG Knowledge** | `knowledge_base_simple.py` (TF-IDF), `knowledge_base_builder.py` (FAISS) | ⚠️ Code existe | Non intégré voice | → Future voice agent RAG |
 | **Workflows GH** | 14x `.yml` (GitHub Actions) | ⚠️ 85% échecs | Credentials secrets | → Sensors, backup, sync |
 | **AI Fallback** | `resilient-ai-fallback.cjs` (16K) | ✅ Code complet | **0 usages** | → Future multi-AI calls |
+
+**Note Infrastructure MCP Existante:**
+- `.mcp.json` (736B) configure actuellement 3 serveurs tiers: `shopify-admin`, `klaviyo`, `filesystem`
+- Ces serveurs fonctionnent mais bloqués par credentials 403/401
+- MCP-Alpha-Medical serait un **4ème serveur custom** à créer
+
+#### 8.2.1 Vision: MCP-Alpha-Medical Custom Server
+
+**Objectif:** Créer un serveur MCP unifié propre à Alpha Medical qui expose via protocole MCP:
+
+**Tools (Fonctions appelables):**
+```python
+@mcp.tool()
+async def get_store_health() -> dict:
+    """Get Global Pressure Matrix health metrics"""
+    # Retourne pressure-matrix.json parsed
+
+@mcp.tool()
+async def query_products_rag(query: str) -> list:
+    """Search products using TF-IDF RAG"""
+    # Utilise knowledge_base_simple.py
+
+@mcp.tool()
+async def sync_to_3a_central() -> bool:
+    """Trigger A2A protocol sync"""
+    # Appelle sensors/sync-to-3a.cjs
+```
+
+**Resources (Données accessibles):**
+```python
+@mcp.resource("gpm://pressure-matrix")
+async def get_pressure_matrix() -> str:
+    """Current GPM state"""
+
+@mcp.resource("sensors://status")
+async def get_sensors_status() -> str:
+    """All 5 sensors last run status"""
+```
+
+**Prompts (Templates pré-écrits):**
+```python
+@mcp.prompt()
+async def analyze_integration_health():
+    """Analyze current integration health across all frontier technologies"""
+```
+
+**Architecture Technique:**
+- **Framework:** FastMCP (Python SDK officiel)
+- **Transport:** stdio (connexion locale Claude for Desktop)
+- **Config:** Ajouté à `.mcp.json` comme 4ème serveur
+- **Dépendances:** Accès à `data/pressure-matrix.json`, sensors/*.cjs, scripts/ai-production/
+
+**Avantages:**
+1. **Unified interface** pour toutes opérations Alpha Medical via Claude Code
+2. **Simplification** des intégrations (1 serveur vs multiples scripts)
+3. **Standardisation** via protocole MCP (compatible autres outils)
+4. **Extensibilité** facile (ajouter tools/resources au besoin)
 
 ### 8.3 Flux d'Intégration OPTIMAL (Cible)
 

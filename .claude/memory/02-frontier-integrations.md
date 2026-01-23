@@ -15,12 +15,21 @@
 
 ## 📊 TECHNOLOGY STACK STATUS
 
-### MCP-Alpha-Medical (Model Context Protocol)
+### MCP-Alpha-Medical (Custom Server - À CRÉER)
+- **Status:** 🔴 NOT IMPLEMENTED (design phase)
+- **Purpose:** Unified bridge to all Alpha Medical systems (GPM, Shopify, Klaviyo, Sensors, RAG)
+- **Architecture:** FastMCP server exposing tools/resources/prompts for Alpha Medical operations
+- **Integration:** Will connect via `.mcp.json` alongside existing servers
+- **Priority:** **P2** (after credential fixes)
+
+**Note:** Separate from existing MCP infrastructure (3 servers: shopify-admin, klaviyo, filesystem)
+
+### MCP Infrastructure (Existing Servers)
 - **Status:** ✅ 3 servers configured (`.mcp.json`)
 - **Servers:** shopify-admin, klaviyo, filesystem
 - **Integration:** ✅ Claude Code active
 - **Blocker:** Credentials 403/401 prevent API access
-- **Priority:** **P0 (Critical)**
+- **Priority:** **P0 (Critical)** - Fix credentials first
 
 ### UCP (Universal Commerce Protocol)
 - **Status:** ❌ Not implemented (future concept)

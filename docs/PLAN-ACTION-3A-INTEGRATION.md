@@ -603,7 +603,8 @@ cat data/pressure-matrix.json | jq .
 
 | Technologie | Implémentation | Intégration | Blockers | Priorité |
 |-------------|----------------|-------------|----------|----------|
-| **MCP-Alpha-Medical** | ✅ 3 serveurs (.mcp.json) | ✅ Claude Code actif | Credentials 403/401 | **P0** |
+| **MCP-Alpha-Medical** | 🔴 À créer (custom server) | ❌ Spec à définir | Server architecture design | **P2** |
+| **MCP Infrastructure** | ✅ 3 serveurs (.mcp.json) | ✅ Claude Code actif | Credentials 403/401 | **P0** |
 | **UCP Protocol** | ❌ Non implémenté | - | Spec à définir | P4 |
 | **A2A Protocol** | ✅ sync-to-3a.cjs | ⚠️ Non testé | Dépend GPM valide | P1 |
 | **Claude Skills** | ✅ 2 skills actifs | ✅ Hooks configurés | Aucun | - |
