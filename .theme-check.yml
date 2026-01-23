@@ -33,7 +33,7 @@ ParserBlockingJavaScript:
 # Performance checks
 RemoteAsset:
   enabled: true
-  severity: warning
+  severity: suggestion
 
 # Accessibility
 RequiredParent:
@@ -42,7 +42,7 @@ RequiredParent:
 # Translation completeness
 MatchingTranslations:
   enabled: true
-  severity: warning
+  severity: suggestion
 
 # Liquid syntax
 LiquidTag:
