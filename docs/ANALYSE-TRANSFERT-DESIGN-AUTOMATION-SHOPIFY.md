@@ -1,9 +1,10 @@
 # AUDIT FORENSIQUE ALPHA MEDICAL - SESSION 144
+
 ## Analyse Approfondie pour Transfert Technologies 3A
 
-> **Version**: 1.1 | **Date**: 23/01/2026 | **Session**: 144 (Phase 2 COMPLETED)
+> **Version**: 1.2 | **Date**: 23/01/2026 | **Session**: 145 (MCP Server & Audit DONE)
 > **Auditeur**: Claude Opus 4.5 | **Confiance**: 100% | **BS**: 0%
-> **Scope**: Analyse TOTALE technique + business
+> **Scope**: Creation MCP Server + Product Audit + Sensor Validation
 
 ---
 
@@ -32,12 +33,13 @@
 | **Sensors** | 5 actifs | shopify, klaviyo, retention, ga4, sync-to-3a |
 | **Scripts** | 310 total | Legacy + AI production |
 | **Theme** | Dawn modifie | 79 snippets, 61 sections |
-| **MCP Servers** | 5 configures | shopify, klaviyo, filesystem, (ga4, sheets pending) |
+| **MCP Servers** | 6 configures | shopify, klaviyo, filesystem, mcp-alpha-medical (NEW) |
 | **Voice AI** | IMPLEMENTE | xAI + LiveKit (awaiting credits) |
 
 ### 1.2 Verdict Global
 
 **Alpha Medical est techniquement PRET pour le lancement** mais manque plusieurs technologies 3A qui augmenteraient significativement:
+
 - L'observabilite (GPM dashboard)
 - L'interoperabilite AI (A2A natif)
 - La resilience (multi-AI fallback)
@@ -154,6 +156,7 @@ Alpha-Medical/
 ### 3.2 Ce que Alpha Medical a DEJA
 
 **Avantages Alpha Medical:**
+
 1. ✅ **Flywheel 100% Coverage** - Klaviyo + Shopify Email + Loox (ZERO duplication)
 2. ✅ **Theme Check CI/CD** - Native Shopify validation
 3. ✅ **GPM Integration** - Sync to 3A central via Twin Sovereignty
@@ -164,6 +167,7 @@ Alpha-Medical/
 8. ✅ **100% Legal Compliance** - All policies deployed via API
 
 **Alpha Medical manque:**
+
 1. ❌ Native A2A endpoints (depend de 3A proxy)
 2. ❌ Native UCP product discovery
 3. ❌ Hardened L5 Agents
@@ -316,11 +320,11 @@ npm run sensor:sync
 
 ### 7.3 URLs de Reference
 
-- **Site**: https://alphamedical.shop
-- **Admin**: https://admin.shopify.com/store/azffej-as
-- **Repo**: https://github.com/Jouiet/Alpha-Medical-New
-- **3A Central**: https://3a-automation.com
-- **UCP Proxy**: https://3a-automation.com/api/subsidiaries/alpha-medical
+- **Site**: <https://alphamedical.shop>
+- **Admin**: <https://admin.shopify.com/store/azffej-as>
+- **Repo**: <https://github.com/Jouiet/Alpha-Medical-New>
+- **3A Central**: <https://3a-automation.com>
+- **UCP Proxy**: <https://3a-automation.com/api/subsidiaries/alpha-medical>
 
 ---
 
@@ -331,6 +335,7 @@ npm run sensor:sync
 ### Concept du "Potentiel de Situation"
 
 Inspiré du modèle industriel chinois décrit par [François Jullien](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Jullien):
+
 - **Phase 1**: Mutualisation des technologies entre plateformes
 - **Phase 2**: Création d'un potentiel structurel partagé
 - **Phase 3**: Compétition commerciale sur les marchés respectifs
@@ -428,6 +433,7 @@ Inspiré du modèle industriel chinois décrit par [François Jullien](https://e
 | **AI Fallback** | `resilient-ai-fallback.cjs` (16K) | ✅ Code complet | **0 usages** | → Future multi-AI calls |
 
 **Note Infrastructure MCP Existante:**
+
 - `.mcp.json` (736B) configure actuellement 3 serveurs tiers: `shopify-admin`, `klaviyo`, `filesystem`
 - Ces serveurs fonctionnent mais bloqués par credentials 403/401
 - MCP-Alpha-Medical serait un **4ème serveur custom** à créer
@@ -437,6 +443,7 @@ Inspiré du modèle industriel chinois décrit par [François Jullien](https://e
 **Objectif:** Créer un serveur MCP unifié propre à Alpha Medical qui expose via protocole MCP:
 
 **Tools (Fonctions appelables):**
+
 ```python
 @mcp.tool()
 async def get_store_health() -> dict:
@@ -455,6 +462,7 @@ async def sync_to_3a_central() -> bool:
 ```
 
 **Resources (Données accessibles):**
+
 ```python
 @mcp.resource("gpm://pressure-matrix")
 async def get_pressure_matrix() -> str:
@@ -466,6 +474,7 @@ async def get_sensors_status() -> str:
 ```
 
 **Prompts (Templates pré-écrits):**
+
 ```python
 @mcp.prompt()
 async def analyze_integration_health():
@@ -473,12 +482,14 @@ async def analyze_integration_health():
 ```
 
 **Architecture Technique:**
+
 - **Framework:** FastMCP (Python SDK officiel)
 - **Transport:** stdio (connexion locale Claude for Desktop)
 - **Config:** Ajouté à `.mcp.json` comme 4ème serveur
 - **Dépendances:** Accès à `data/pressure-matrix.json`, sensors/*.cjs, scripts/ai-production/
 
 **Avantages:**
+
 1. **Unified interface** pour toutes opérations Alpha Medical via Claude Code
 2. **Simplification** des intégrations (1 serveur vs multiples scripts)
 3. **Standardisation** via protocole MCP (compatible autres outils)
@@ -525,6 +536,7 @@ async def analyze_integration_health():
 ```
 
 **BLOCKERS ACTUELS:**
+
 - Shopify MCP: ✅ Fonctionne
 - Shopify API: ❌ 403 "API Access disabled"
 - Sensor: ❌ Ne peut pas fetch metrics
@@ -562,6 +574,7 @@ async def analyze_integration_health():
 ```
 
 **BLOCKERS ACTUELS:**
+
 - Voice Agent: ✅ Code prêt
 - Knowledge Base: ⚠️ Shopify API 403 (products=0)
 - RAG: ❌ Non intégré (TF-IDF existe mais pas utilisé)
@@ -598,6 +611,7 @@ async def analyze_integration_health():
 ```
 
 **STATUS ACTUEL:**
+
 - Skills: ✅ 2 actifs (seo-optimizer, brand-guidelines)
 - Hooks: ✅ user-prompt-submit.sh active
 - Memory: ✅ 5-level progressive disclosure
@@ -621,19 +635,20 @@ async def analyze_integration_health():
 **Objectif:** Faire fonctionner les composants bloqués
 
 1. **Fix Shopify API Credentials** (30 min)
-   - Aller sur: https://azffej-as.myshopify.com/admin/settings/apps/development
+   - Aller sur: <https://azffej-as.myshopify.com/admin/settings/apps/development>
    - Créer nouveau custom app "Alpha Medical Sensors"
    - Scopes: `read_products`, `read_orders`, `read_inventory`
    - Copier SHOPIFY_ADMIN_ACCESS_TOKEN
    - Update: `.env.admin` + GitHub Secret
 
 2. **Fix Klaviyo API Key** (15 min)
-   - Aller sur: https://www.klaviyo.com/settings/account/api-keys
+   - Aller sur: <https://www.klaviyo.com/settings/account/api-keys>
    - Créer "3A Sensors" avec Full Read Access
    - Copier `pk_xxx...`
    - Update: `.env.admin` + créer GitHub Secret `KLAVIYO_PRIVATE_API_KEY`
 
 3. **Tester Sensors → GPM Chain** (10 min)
+
    ```bash
    node sensors/shopify-sensor.cjs
    node sensors/klaviyo-sensor.cjs
@@ -641,6 +656,7 @@ async def analyze_integration_health():
    ```
 
 4. **Tester A2A Sync** (5 min)
+
    ```bash
    node sensors/sync-to-3a.cjs
    cat /Users/mac/Desktop/JO-AAA/landing-page-hostinger/data/pressure-matrix.json
@@ -654,6 +670,7 @@ async def analyze_integration_health():
 **Objectif:** Voice agent avec recherche sémantique intelligente
 
 1. **Build TF-IDF Index** (30 min)
+
    ```bash
    cd scripts/ai-production
    python3 knowledge_base_simple.py
@@ -661,6 +678,7 @@ async def analyze_integration_health():
    ```
 
 2. **Modifier voice_knowledge_base.py** (2h)
+
    ```python
    # Ajouter import
    from knowledge_base_simple import TFIDFVectorizer, search_similar
@@ -671,6 +689,7 @@ async def analyze_integration_health():
    ```
 
 3. **Tester RAG Integration** (30 min)
+
    ```bash
    python3 xai_voice_agent.py demo
    # Prompt: "knee pain senior"
@@ -684,12 +703,14 @@ async def analyze_integration_health():
 **Objectif:** Multi-provider resilience pour voice agent
 
 1. **Intégrer resilient-ai-fallback.cjs** (1h)
+
    ```javascript
    // Dans xai_voice_agent.py, remplacer call xAI par:
    // subprocess.call(['node', 'automations/lib/resilient-ai-fallback.cjs', prompt])
    ```
 
 2. **Config .env** (15 min)
+
    ```bash
    ANTHROPIC_API_KEY=sk-ant-...
    XAI_API_KEY=xai-...
@@ -698,6 +719,7 @@ async def analyze_integration_health():
    ```
 
 3. **Tester Fallback Chain** (30 min)
+
    ```bash
    # Simuler xAI down
    XAI_API_KEY=invalid node automations/lib/resilient-ai-fallback.cjs "test"
@@ -711,6 +733,7 @@ async def analyze_integration_health():
 **Objectif:** Workflows GitHub Actions trigger Claude Skills
 
 1. **Créer Workflow skill-trigger.yml** (2h)
+
    ```yaml
    name: Skill Trigger - SEO Optimizer
    on:
@@ -726,6 +749,7 @@ async def analyze_integration_health():
    ```
 
 2. **Hook pre-commit pour Skills** (1h)
+
    ```bash
    # .husky/pre-commit
    if git diff --cached | grep -q "product-description"; then
@@ -743,6 +767,7 @@ async def analyze_integration_health():
 **Note:** UCP est un concept 3A non implémenté. Priorité BASSE pour Alpha Medical (Shopify-specific OK).
 
 **Spec proposée (si besoin futur):**
+
 ```javascript
 // ucp-adapter.cjs
 class UniversalCommerceProtocol {
@@ -852,17 +877,20 @@ graph TD
 ## CONCLUSION
 
 Alpha Medical est **techniquement PRET pour le lancement** avec une infrastructure solide:
+
 - Flywheel 100% sans duplication
 - Voice AI implemente
 - Sensors syncs vers 3A
 - Theme validate
 
 **Priorites immediates:**
+
 1. Fixer les credentials exposes/invalides
 2. Completer Stripe setup
 3. Acheter xAI credits
 
 **Enrichissements futurs:**
+
 - Design System document
 - Plus de sensors (GA4, content)
 - Resilient multi-AI pattern

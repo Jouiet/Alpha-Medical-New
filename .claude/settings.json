@@ -34,13 +34,13 @@
       "Write(./.env.*)",
       "Edit(./.env)",
       "Edit(./.env.*)",
-      "Bash(rm -rf *)",
-      "Bash(sudo *)",
-      "Bash(chmod 777 *)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Bash(chmod 777:*)",
       "Write(./products/*)",
       "Edit(./products/*)",
-      "Bash(git push --force *)",
-      "Bash(git reset --hard *)"
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)"
     ]
   },
   "spinnerTipsEnabled": false,

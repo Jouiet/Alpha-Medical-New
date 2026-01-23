@@ -1,0 +1,41 @@
+name: Skill Connector Bridge
+
+on:
+  repository_dispatch:
+    types: [trigger-skill]
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: 'Skill to trigger (e.g. seo-optimizer)'
+        required: true
+        type: string
+      context:
+        description: 'JSON context payload'
+        required: false
+        default: '{}'
+
+jobs:
+  run-skill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Process Skill Trigger
+        run: |
+          echo "🚀 Triggering Skill: ${{ github.event.inputs.skill || github.event.client_payload.skill }}"
+          echo "Context: ${{ github.event.inputs.context || toJson(github.event.client_payload.context) }}"
+          
+          # In a real scenario, this would call the Claude Code API or execute a local script
+          # For Alpha Medical, we simulate the 'Skill Activation' by logging
+          # and potentially creating a commit that the local Claude agent watches for.
+          
+          echo "✅ Skill REQUEST received. Waiting for local agent pickup."
+          
+          # Logic: Create a trigger file that the local 'sensor-monitor' might pick up
+          # or just log for audit.

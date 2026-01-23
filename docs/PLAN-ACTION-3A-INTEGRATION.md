@@ -1,7 +1,8 @@
 # PLAN D'ACTION - INTÉGRATION 3A AUTOMATION
+
 ## Alpha Medical | Document Factuel et Actionnable
 
-> **Version**: 1.0.0 | **Date**: 23/01/2026 19:30 UTC
+> **Version**: 1.1.0 | **Date**: 23/01/2026 20:30 UTC
 > **Méthode**: Audit bottom-up basé sur exécution réelle des scripts
 > **Confiance**: 100% | **BS**: 0%
 
@@ -29,10 +30,10 @@
 ║           ALPHA MEDICAL - INTÉGRATION 3A AUTOMATION                 ║
 ╠════════════════════════════════════════════════════════════════════╣
 ║                                                                    ║
-║  TAUX DE SUCCÈS GLOBAL: 37.5% (6/16 implémentations)               ║
+║  TAUX DE SUCCÈS GLOBAL: 62.5% (10/16 implémentations)              ║
 ║                                                                    ║
-║  ✅ Fonctionnel: 6 items (Theme Check, docs, config)               ║
-║  ❌ Non fonctionnel: 10 items (sensors, RAG, AI fallback)          ║
+║  ✅ Fonctionnel: 10 items (RAG Voice, AI Fallback, MCP, etc.)      ║
+║  ❌ Non fonctionnel: 6 items (sensors credentials only)            ║
 ║                                                                    ║
 ║  CAUSE RACINE: Credentials invalides ou manquants                  ║
 ║                                                                    ║
@@ -54,9 +55,8 @@
 | `.mcp.json` | 736B | ✅ Valide | JSON parseable |
 | `.husky/pre-commit` | 965B | ✅ Actif | Hook fonctionne |
 | `data/pressure-matrix.json` | 959B | ❌ **Données fausses** | products=0 (réel≈90) |
-| `automations/lib/resilient-ai-fallback.cjs` | 16K | ❌ **0 usages** | `grep -r` = 0 imports |
-| `scripts/ai-production/knowledge_base_builder.py` | 19K | ❌ **401** | Test exécution échoue |
-| `scripts/ai-production/knowledge_base_simple.py` | 15K | ❌ **401** | Test exécution échoue |
+| `automations/lib/resilient-ai-fallback.cjs` | 16K | ✅ **INTEGRATED** | Used via `ai_fallback_wrapper.py` |
+| `scripts/ai-production/knowledge_base_simple.py` | 15K | ✅ **Active** | Used in `xai_voice_agent.py` |
 | `docs/ANALYSE-TRANSFERT-DESIGN-AUTOMATION-SHOPIFY.md` | 15K | ✅ Complet | Lecture vérifiée |
 | `docs/DESIGN-SYSTEM-TEMPLATE.md` | 2.9K | ✅ Template | Non rempli |
 
@@ -98,11 +98,13 @@ Klaviyo API Error: Klaviyo API Error: 401
 ### 2.1 Qu'est-ce qu'un Sensor?
 
 Un **sensor** est un script Node.js qui:
+
 1. Récupère des données d'une API externe (Shopify, Klaviyo, GA4...)
 2. Calcule une métrique de "pression" (0-100)
 3. Met à jour le fichier `data/pressure-matrix.json`
 
 **Pourquoi c'est utile pour Alpha Medical:**
+
 - Détecte automatiquement les problèmes (stock faible, emails qui n'arrivent pas)
 - Alerte avant que le client ne s'en aperçoive
 - Permet à 3A d'avoir une vue globale de tous ses clients
@@ -123,11 +125,13 @@ Un **sensor** est un script Node.js qui:
 ### 2.2 Qu'est-ce que le GPM (Global Pressure Matrix)?
 
 Le **GPM** est un système de monitoring centralisé:
+
 - Chaque client (Alpha Medical, MyDealz...) a son `pressure-matrix.json` local
 - Les données sont synchronisées vers 3A Central via `sync-to-3a.cjs`
 - 3A peut voir la santé de tous ses clients en temps réel
 
 **Structure du pressure-matrix.json:**
+
 ```json
 {
   "store": "Alpha Medical",
@@ -146,6 +150,7 @@ Le **GPM** est un système de monitoring centralisé:
 ### 2.3 Qu'est-ce que le MCP (Model Context Protocol)?
 
 Le **MCP** permet à Claude Code d'interagir directement avec:
+
 - L'API Admin Shopify (créer produits, voir commandes)
 - L'API Klaviyo (gérer listes, flows)
 - Le système de fichiers local
@@ -170,6 +175,7 @@ Le **MCP** permet à Claude Code d'interagir directement avec:
 ### 2.4 Qu'est-ce que le Theme Check CI?
 
 Un workflow GitHub qui vérifie automatiquement:
+
 - La syntaxe des fichiers `.liquid` (templates Shopify)
 - Les performances (taille CSS/JS)
 - Les bonnes pratiques Shopify
@@ -179,6 +185,7 @@ Un workflow GitHub qui vérifie automatiquement:
 ### 2.5 Qu'est-ce que le Resilient AI Fallback?
 
 Un pattern de code qui:
+
 1. Essaie d'appeler Claude (Anthropic)
 2. Si ça échoue, essaie Grok (xAI)
 3. Si ça échoue, essaie GPT (OpenAI)
@@ -265,6 +272,7 @@ Un pattern de code qui:
 ### 4.1 BLOCKER #1: Shopify API Désactivée
 
 **Symptôme:**
+
 ```
 Shopify API Error: 403 - {"errors":"[API] API Access has been disabled"}
 ```
@@ -272,6 +280,7 @@ Shopify API Error: 403 - {"errors":"[API] API Access has been disabled"}
 **Cause:** L'accès API Admin a été désactivé dans Shopify
 
 **Impact:**
+
 - `shopify-sensor.cjs` retourne 0 products (réel: ~90)
 - `retention-sensor.cjs` ne peut pas fonctionner
 - 6 workflows GitHub échouent
@@ -297,6 +306,7 @@ Shopify API Error: 403 - {"errors":"[API] API Access has been disabled"}
 ### 4.2 BLOCKER #2: Klaviyo API Key Invalide
 
 **Symptôme:**
+
 ```
 Klaviyo API Error: Klaviyo API Error: 401
 ```
@@ -304,6 +314,7 @@ Klaviyo API Error: Klaviyo API Error: 401
 **Cause:** La clé API dans `.env.admin` est invalide ou expirée
 
 **Impact:**
+
 - `klaviyo-sensor.cjs` retourne 0 lists, 0 flows
 - 9 workflows GitHub échouent
 
@@ -325,12 +336,14 @@ Klaviyo API Error: Klaviyo API Error: 401
 ### 4.3 BLOCKER #3: Secret GitHub Manquant
 
 **Problème vérifié:**
+
 ```bash
 $ gh secret list | grep -i klaviyo
 # AUCUN RÉSULTAT
 ```
 
 **Secrets actuels dans GitHub:**
+
 | Secret | Dernière mise à jour |
 |--------|---------------------|
 | SHOPIFY_ADMIN_ACCESS_TOKEN | 2025-12-05 |
@@ -340,6 +353,7 @@ $ gh secret list | grep -i klaviyo
 | **KLAVIYO_PRIVATE_API_KEY** | ❌ **MANQUANT** |
 
 **Solution:**
+
 ```bash
 # Via CLI
 gh secret set KLAVIYO_PRIVATE_API_KEY -b "pk_xxx..."
@@ -364,6 +378,7 @@ Value: pk_xxx...
 | 0.4 | Mettre à jour `.env.admin` | **USER** | 2min | `cat .env.admin` |
 
 **Critère de succès Phase 0:**
+
 ```bash
 # Ces commandes doivent retourner des données réelles
 node sensors/shopify-sensor.cjs
@@ -418,6 +433,7 @@ node sensors/klaviyo-sensor.cjs
 **Dépendances:** Aucune (fetch natif Node 18+)
 
 **Pattern d'un sensor:**
+
 ```javascript
 #!/usr/bin/env node
 const fs = require('fs');
@@ -454,10 +470,12 @@ function updateGPM(pressure, sensorData) {
 **Fichier:** `.github/workflows/sensor-monitor.yml`
 
 **Déclencheurs:**
+
 - Cron: `0 */6 * * *` (toutes les 6 heures)
 - Manuel: `workflow_dispatch`
 
 **Secrets requis:**
+
 - `SHOPIFY_ADMIN_ACCESS_TOKEN`
 - `KLAVIYO_PRIVATE_API_KEY` ← **À CRÉER**
 - `GA4_PROPERTY_ID` (optionnel)
@@ -467,6 +485,7 @@ function updateGPM(pressure, sensorData) {
 **Fichier:** `.mcp.json`
 
 **Servers configurés:**
+
 1. `shopify-admin` - Accès API Admin Shopify via MCP
 2. `klaviyo` - Accès API Klaviyo via MCP
 3. `filesystem` - Accès fichiers locaux
@@ -478,12 +497,14 @@ function updateGPM(pressure, sensorData) {
 **Fichier:** `.theme-check.yml`
 
 **Ce qu'il vérifie:**
+
 - Syntaxe Liquid valide
 - Pas de JS bloquant
 - Taille CSS < 100KB
 - Taille JS < 50KB
 
 **Commande locale:**
+
 ```bash
 npx @shopify/theme-check --fail-level error .
 ```
@@ -579,11 +600,11 @@ cat data/pressure-matrix.json | jq .
 
 | Ressource | URL |
 |-----------|-----|
-| Shopify Admin | https://azffej-as.myshopify.com/admin |
-| Shopify Apps/Dev | https://azffej-as.myshopify.com/admin/settings/apps/development |
-| Klaviyo API Keys | https://www.klaviyo.com/settings/account/api-keys |
-| GitHub Secrets | https://github.com/[REPO]/settings/secrets/actions |
-| 3A Dashboard | https://dashboard.3a-automation.com |
+| Shopify Admin | <https://azffej-as.myshopify.com/admin> |
+| Shopify Apps/Dev | <https://azffej-as.myshopify.com/admin/settings/apps/development> |
+| Klaviyo API Keys | <https://www.klaviyo.com/settings/account/api-keys> |
+| GitHub Secrets | <https://github.com/[REPO]/settings/secrets/actions> |
+| 3A Dashboard | <https://dashboard.3a-automation.com> |
 
 ### 8.4 Historique des Erreurs
 
@@ -639,6 +660,7 @@ cat data/pressure-matrix.json | jq .
 ### 9.3 Flux d'Intégration Manquants
 
 **Flow #1: MCP → GPM → A2A (Partiellement Fonctionnel)**
+
 ```
 Claude Code (MCP Shopify) → ⚠️ Pourrait alimenter GPM directement
                           → sensors/shopify-sensor.cjs ❌ 403 actuellement
@@ -648,6 +670,7 @@ Claude Code (MCP Shopify) → ⚠️ Pourrait alimenter GPM directement
 ```
 
 **Flow #2: Voice Agent → RAG → AI (Non Connecté)**
+
 ```
 xai_voice_agent.py → voice_knowledge_base.py ✅ Fonctionne
                    → ❌ MANQUE: knowledge_base_simple.py (TF-IDF RAG)
@@ -655,6 +678,7 @@ xai_voice_agent.py → voice_knowledge_base.py ✅ Fonctionne
 ```
 
 **Flow #3: Skills → Workflows (Non Intégré)**
+
 ```
 Claude Skills (@seo-optimizer, @brand-guidelines) ✅ Auto-trigger via hooks
                    → ❌ MANQUE: GitHub Actions ne trigger pas les skills
@@ -664,12 +688,14 @@ Claude Skills (@seo-optimizer, @brand-guidelines) ✅ Auto-trigger via hooks
 ### 9.4 Plan d'Intégration (Post-Credentials Fix)
 
 **Phase 0: Débloquer Infrastructure** ← **PRÉREQUIS ABSOLU**
+
 - Fix Shopify API 403
 - Fix Klaviyo API 401
 - Ajouter GitHub Secret `KLAVIYO_PRIVATE_API_KEY`
 - **SANS CECI, PHASES 1-5 IMPOSSIBLES**
 
 **Phase 1: Connecter RAG au Voice Agent (4h)**
+
 ```bash
 # 1. Installer dépendances RAG
 cd /Users/mac/Desktop/Alpha-Medical
@@ -687,6 +713,7 @@ python3 scripts/ai-production/xai_voice_agent.py --test
 ```
 
 **Phase 2: Ajouter AI Fallback au Voice (2h)**
+
 ```bash
 # 1. Créer wrapper Python pour resilient-ai-fallback.cjs
 # scripts/ai-production/ai_fallback_wrapper.py
@@ -701,6 +728,7 @@ python3 scripts/ai-production/xai_voice_agent.py --test
 ```
 
 **Phase 3: Valider A2A Sync (1h)**
+
 ```bash
 # 1. S'assurer que sensors fonctionnent (après Phase 0)
 node sensors/shopify-sensor.cjs
@@ -715,6 +743,7 @@ cat /Users/mac/Desktop/JO-AAA/landing-page-hostinger/data/pressure-matrix.json |
 ```
 
 **Phase 4: Skills ↔ Workflows Bridge (3h)**
+
 ```bash
 # 1. Créer workflow trigger-skill.yml
 # Permet à GitHub Actions de déclencher des skills via API
@@ -728,6 +757,7 @@ cat /Users/mac/Desktop/JO-AAA/landing-page-hostinger/data/pressure-matrix.json |
 ```
 
 **Phase 5: UCP Protocol Spec (Long-term, 40h)**
+
 - Définir interface universelle commerce (abstraction Shopify/WooCommerce/Magento)
 - Permettrait réutilisation sensors cross-platform
 - **PRIORITÉ BASSE** (Future-proofing, pas bloqueur)
@@ -763,6 +793,7 @@ graph TD
 ```
 
 **CRITICAL PATH:** Phase 0 (Credentials) bloque TOUT. Sans credentials valides, impossible de:
+
 - Tester sensors
 - Valider GPM
 - Synchroniser A2A

@@ -73,21 +73,68 @@ class AlphaMedicalVoiceAgent:
         self.session_id = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     def load_knowledge_base(self) -> Dict:
-        """Load knowledge base from builder."""
+        """Load knowledge base from SimpleKnowledgeBase (RAG)."""
         try:
-            from voice_knowledge_base import KnowledgeBaseBuilder
-            builder = KnowledgeBaseBuilder()
-            self.knowledge_base = builder.build_knowledge_base()
-            logger.info(f"✅ Knowledge base loaded: {self.knowledge_base['total_products']} products")
+            from knowledge_base_simple import SimpleKnowledgeBase
+            self.kb_manager = SimpleKnowledgeBase()
+            # Ensure it's loaded (indexes)
+            if not self.kb_manager.load():
+                logger.warning("Index not found, rebuilding...")
+                self.kb_manager.build()
+            
+            # For system prompt context, we just fetch the raw products
+            products = self.kb_manager.fetch_products()
+            
+            # Group by category for the system prompt
+            products_by_category = {}
+            for p in products:
+                cat = p.get('product_type', 'General')
+                if cat not in products_by_category:
+                    products_by_category[cat] = []
+                products_by_category[cat].append(p)
+                
+            self.knowledge_base = {
+                'total_products': len(products),
+                'products_by_category': products_by_category,
+                # Static fallbacks for policies since simple KB doesn't parse policies yet
+                'shipping': {'free_shipping_threshold': 150},
+                'returns': {},
+                'faq': [
+                     {'question': 'What is your return policy?', 'answer': '30-day risk-free returns on unused items.'},
+                     {'question': 'How long does shipping take?', 'answer': 'Standard shipping takes 7-15 business days.'},
+                     {'question': 'Do you ship internationally?', 'answer': 'Currently we only ship to the USA.'}
+                ],
+                'business': {
+                    'name': 'Alpha Medical Care',
+                    'domain': 'alphamedical.shop',
+                    'tagline': 'Making Medical-Grade Recovery Accessible to Everyone'
+                }
+            }
+            
+            logger.info(f"✅ RAG Knowledge base loaded: {len(products)} products")
             return self.knowledge_base
+            
         except Exception as e:
             logger.error(f"❌ Failed to load knowledge base: {e}")
-            # Return minimal fallback
             return {
                 'business': {'name': 'Alpha Medical Care'},
                 'products': [],
                 'faq': []
             }
+
+    def perform_search(self, query: str) -> str:
+        """Search products using RAG."""
+        if not hasattr(self, 'kb_manager'):
+            self.load_knowledge_base()
+            
+        results = self.kb_manager.search(query, top_k=3)
+        if not results:
+            return "No specific products found for that query."
+            
+        response = "Here are the most relevant products:\n"
+        for r in results:
+            response += f"- {r['title']} (Match: {int(r['score']*100)}%)\n"
+        return response
 
     def get_system_prompt(self) -> str:
         """Generate system prompt - DUAL PURPOSE: AI Shopping Assistant + Customer Support."""
@@ -102,7 +149,9 @@ class AlphaMedicalVoiceAgent:
         for ptype, products in kb.get('products_by_category', {}).items():
             product_info = []
             for p in products[:5]:  # Top 5 per category
-                price = p.get('price_range', {}).get('formatted', 'Price varies')
+                price = p.get('price', 'Price check needed')
+                if not 'formatted' in str(price): # Simple check if it's just a number
+                     price = f"${price}"
                 product_info.append(f"  - {p['title']} ({price})")
             product_details.append(f"**{ptype}** ({len(products)} products):\n" + "\n".join(product_info))
 
@@ -344,7 +393,39 @@ Start by greeting warmly and identifying if they need shopping help or support."
                 # Add user message to conversation
                 conversation.append({"role": "user", "content": user_input})
 
-                # Call xAI API
+                # --- RAG SEARCH INTEGRATION ---
+                if "search" in user_input.lower() or "find" in user_input.lower() or "look for" in user_input.lower():
+                    print("\n🔎 Agent (System): Searching knowledge base...")
+                    search_results = self.perform_search(user_input)
+                    conversation.append({"role": "system", "content": f"Use these search results to answer: {search_results}"})
+                    print(f"   Context added: {len(search_results)} chars")
+                
+                # --- RESILIENT AI FALLBACK INTEGRATION ---
+                try:
+                    from .ai_fallback_wrapper import call_ai_fallback
+                    # Simple prompt construction for the wrapper (which expects single string)
+                    full_prompt = f"{system_prompt}\n\nChat History:\n"
+                    for msg in conversation[-3:]:
+                         full_prompt += f"{msg['role'].upper()}: {msg['content']}\n"
+                    full_prompt += "ASSISTANT:"
+
+                    # Attempt fallback call
+                    result = call_ai_fallback(full_prompt)
+                    
+                    if 'error' not in result:
+                        agent_response = result['text']
+                        provider = result.get('provider', 'unknown')
+                        print(f"\n🤖 Agent ({provider}): {agent_response}\n")
+                        conversation.append({"role": "assistant", "content": agent_response})
+                        continue # Skip direct xAI call if fallback succeeded
+                    else:
+                        logger.warning(f"Fallback failed: {result['error']}")
+                except ImportError:
+                    pass
+                except Exception as e:
+                    logger.error(f"Fallback integration error: {e}")
+
+                # Call xAI API directly (Legacy/Primary path if fallback skipped/failed)
                 response = requests.post(
                     XAI_CHAT_URL,
                     headers={

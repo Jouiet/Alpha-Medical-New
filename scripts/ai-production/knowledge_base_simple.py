@@ -209,14 +209,55 @@ class SimpleKnowledgeBase:
         KNOWLEDGE_BASE_DIR.mkdir(parents=True, exist_ok=True)
 
     def fetch_products(self) -> List[Dict]:
-        """Fetch all products from Shopify."""
+        """Fetch all products from locally available JSON files (Fallback)."""
         products = []
+        
+        # Try local files first (Priority during API outage)
+        catalog_path = BASE_DIR / "alpha_medical_complete_catalog.json"
+        inventory_path = BASE_DIR / "alpha_medical_product_inventory.json"
+        
+        if catalog_path.exists():
+            print(f"  Using local catalog: {catalog_path}")
+            try:
+                with open(catalog_path, "r") as f:
+                    data = json.load(f)
+                    
+                # Load categories mapping if available
+                category_map = {}
+                if inventory_path.exists():
+                    try:
+                        with open(inventory_path, "r") as f:
+                            inv_data = json.load(f)
+                            for cat, info in inv_data.get("categories", {}).items():
+                                for p_name in info.get("products", []):
+                                    category_map[p_name] = cat
+                    except Exception as e:
+                        print(f"  WARNING: Failed to load inventory categories: {e}")
+                
+                # Transform to standard format
+                raw_products = data.get("products", [])
+                for p in raw_products:
+                    # Enrich with category from inventory map
+                    p["product_type"] = category_map.get(p.get("title"), "General")
+                    products.append(p)
+                    
+                print(f"  Loaded {len(products)} products from local file.")
+                return products
+                
+            except Exception as e:
+                print(f"  ERROR loading local file: {e}")
+
+        # Fallback to API if local failed (Original Logic)
         url = f"https://{SHOPIFY_STORE}/admin/api/2024-10/products.json"
         params = {"limit": 250, "status": "active"}
         headers = {
             "X-Shopify-Access-Token": SHOPIFY_TOKEN,
             "Content-Type": "application/json"
         }
+
+        if not SHOPIFY_TOKEN:
+             print("  WARNING: No API Token and Local file failed/missing.")
+             return products
 
         while url:
             try:

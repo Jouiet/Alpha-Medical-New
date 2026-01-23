@@ -2,14 +2,14 @@
   "store": "Alpha Medical",
   "version": "1.0.0",
   "created": "2026-01-23T10:09:00Z",
-  "last_updated": "2026-01-23T09:10:34.088Z",
-  "overall_pressure": 78,
+  "last_updated": "2026-01-23T19:26:54.967Z",
+  "overall_pressure": 51,
   "sectors": {
     "operations": {
       "shopify": {
         "pressure": 75,
-        "trend": "UP",
-        "last_check": "2026-01-23T09:10:18.737Z",
+        "trend": "DOWN",
+        "last_check": "2026-01-23T19:18:45.882Z",
         "sensor_data": {
           "products_total": 0,
           "products_active": 0,
@@ -22,19 +22,47 @@
     "marketing": {
       "klaviyo": {
         "pressure": 80,
-        "trend": "UP",
-        "last_check": "2026-01-23T09:10:34.087Z",
+        "trend": "DOWN",
+        "last_check": "2026-01-23T19:18:45.010Z",
         "sensor_data": {
           "lists_total": 0,
           "flows_total": 0,
           "flows_active": 0,
           "campaigns_last_30d": 0
         }
+      },
+      "ga4": {
+        "pressure": 50,
+        "trend": "UP",
+        "last_check": "2026-01-23T19:26:54.967Z",
+        "sensor_data": {
+          "roas": "0.00",
+          "revenue_7d": "0.00",
+          "cost_7d": "0.00",
+          "sessions_7d": 0,
+          "conversions_7d": 0
+        }
       }
     },
-    "retention": {},
+    "retention": {
+      "churn": {
+        "pressure": 0,
+        "trend": "DOWN",
+        "last_check": "2026-01-23T19:26:54.477Z",
+        "sensor_data": {
+          "totalCustomers": 0,
+          "highRisk": 0,
+          "churnRate": "Error",
+          "error": "Shopify API Error: 403"
+        }
+      }
+    },
     "acquisition": {}
   },
   "alerts": [],
-  "notes": "Alpha Medical Pressure Matrix - Initialized Session 143"
+  "notes": "Alpha Medical Pressure Matrix - Initialized Session 143",
+  "metrics": {
+    "global_roas": "0.00",
+    "total_revenue_7d": "0.00"
+  }
 }

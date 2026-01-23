@@ -1,0 +1,50 @@
+Okay, let's break down the ideal product photo for a medical knee brace, focusing on e-commerce best practices:
+
+**Overall Goals:**
+
+*   **Clarity and Accuracy:**  The photo must accurately represent the product's design, materials, and features.
+*   **High Quality:** Sharp focus, excellent color rendition, and no distractions.
+*   **Informative:** The image should showcase the brace's functionality and benefits.
+*   **Appealing:**  Even though it's a medical product, the photo should be clean, professional, and instill confidence in the buyer.
+*   **E-Commerce Optimized:**  Meets technical requirements for online platforms (size, resolution, format) and is designed to convert viewers into customers.
+
+**1. Lighting:**
+
+*   **Type:** Soft, diffused studio lighting is crucial. Avoid harsh shadows and blown-out highlights.
+*   **Setup:**
+    *   **Key Light:**  A large softbox (or umbrella) placed slightly to the side and above the product. This is the primary light source, providing the main illumination.
+    *   **Fill Light:**  Another softbox (or reflector) on the opposite side of the key light, at a lower intensity. This fills in shadows and prevents the image from being too contrasty.
+    *   **Background Light (Optional):** A separate light source (small softbox or strobe) aimed at the white background to ensure a perfectly clean white.  Be careful not to overexpose the background, which can cause light to spill onto the product.
+*   **Color Temperature:**  Aim for a neutral white balance (around 5500K-6000K). This ensures accurate color representation.
+*   **Diffusion:**  Use diffusion panels or softboxes to soften the light and minimize harsh shadows. The goal is even, consistent illumination across the entire brace.
+
+**2. Background:**
+
+*   **Material:** Seamless white paper or a white vinyl backdrop.  Paper is cheaper but more easily damaged. Vinyl is more durable and easier to clean.
+*   **Cleanliness:**  The background must be perfectly clean, free of wrinkles, smudges, or any imperfections. This is critical for a professional look.
+*   **Seamlessness:** Ensure the backdrop curves smoothly from the vertical plane to the horizontal plane (floor) to create a seamless, infinite white background.
+*   **Color:** A true, bright white (#FFFFFF or close to it).
+
+**3. Angles and Composition:**
+
+*   **Hero Shot (Main Image):**
+    *   **Angle:**  Slightly angled (around 30-45 degrees) to show depth and dimension. Avoid a completely flat, head-on shot.
+    *   **Focus:**  Sharp focus on the key features of the brace (hinges, straps, padding).
+    *   **Composition:**  Center the brace in the frame, leaving a small amount of negative space around it.
+    *   **Orientation:** Usually horizontal (landscape) is preferred, but vertical (portrait) can be used if it better highlights the brace's shape.
+*   **Detail Shots:**
+    *   **Close-ups:**  Show key features in detail (e.g., the hinge mechanism, the type of fabric used, the adjustability of the straps).
+    *   **Angles:**  Vary the angles to provide a comprehensive view of the product.
+    *   **Focus:**  Maintain sharp focus on the specific feature being highlighted.
+*   **Lifestyle/Contextual Shots (Optional but Recommended):**
+    *   **On a Mannequin or Leg:**  Show the brace being worn (on a mannequin or a real person/model). This helps customers visualize how it looks and fits.  If using a model, ensure they are appropriate for the target demographic.
+    *   **Action Shot (Subtle):**  A very subtle action shot (e.g., a model gently bending their knee with the brace on) can suggest functionality.  Avoid anything too dynamic or distracting.
+*   **Consistency:**  Maintain consistent framing and camera distance across all shots.
+
+**4. Style and Post-Processing:**
+
+*   **Clean and Minimalist:**  The overall style should be clean, simple, and professional. Avoid any unnecessary props or distractions.
+*   **Color Accuracy:**  Ensure accurate color representation. The brace should look exactly as it does in real life.
+*   **Retouching:**  Carefully retouch the images to remove any blemishes, dust, or imperfections. Pay attention to details like stray threads or minor scratches.
+*   **Shadows:** Natural-looking, subtle shadows are acceptable, as they add depth and dimension. Avoid overly harsh or artificial-looking shadows.
+*   **Highlights:**  Keep highlights under control. Avoid blown
