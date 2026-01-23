@@ -1,0 +1,39 @@
+{
+  "name": "alpha-medical-theme",
+  "version": "1.0.0",
+  "description": "Alpha Medical Shopify Theme with Automation Sensors",
+  "private": true,
+  "scripts": {
+    "sensor:shopify": "node sensors/shopify-sensor.cjs",
+    "sensor:klaviyo": "node sensors/klaviyo-sensor.cjs",
+    "sensor:retention": "node sensors/retention-sensor.cjs",
+    "sensor:all": "npm run sensor:shopify && npm run sensor:klaviyo && npm run sensor:retention",
+    "sensor:health": "node sensors/shopify-sensor.cjs --health && node sensors/klaviyo-sensor.cjs --health && node sensors/retention-sensor.cjs --health",
+    "theme:check": "npx @shopify/theme-check",
+    "prepare": "husky || true",
+    "lint": "npm run theme:check"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "**/*.liquid": [
+      "npx @shopify/theme-check --fail-level error"
+    ],
+    "locales/*.json": [
+      "npx @shopify/theme-check --fail-level error"
+    ]
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "alpha-medical",
+    "automation"
+  ],
+  "author": "Hatim JOUIET",
+  "license": "UNLICENSED"
+}

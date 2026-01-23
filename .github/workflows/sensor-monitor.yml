@@ -1,0 +1,74 @@
+# Alpha Medical - Sensor Monitor Workflow
+# Runs all sensors to update pressure-matrix.json
+# Version: 1.0.0 | Session 143 | 23/01/2026
+
+name: Sensor Monitor
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      sensor:
+        description: 'Specific sensor to run (or "all")'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - shopify
+          - klaviyo
+          - retention
+
+env:
+  SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
+  SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+  KLAVIYO_PRIVATE_API_KEY: ${{ secrets.KLAVIYO_PRIVATE_API_KEY }}
+
+jobs:
+  run-sensors:
+    name: Run Sensors
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install dotenv
+
+      - name: Run Shopify Sensor
+        if: inputs.sensor == 'all' || inputs.sensor == 'shopify'
+        run: node sensors/shopify-sensor.cjs
+        continue-on-error: true
+
+      - name: Run Klaviyo Sensor
+        if: inputs.sensor == 'all' || inputs.sensor == 'klaviyo'
+        run: node sensors/klaviyo-sensor.cjs
+        continue-on-error: true
+
+      - name: Run Retention Sensor
+        if: inputs.sensor == 'all' || inputs.sensor == 'retention'
+        run: node sensors/retention-sensor.cjs
+        continue-on-error: true
+
+      - name: Display Pressure Matrix
+        run: |
+          echo "📊 Current Pressure Matrix:"
+          cat data/pressure-matrix.json
+
+      - name: Commit updated pressure matrix
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/pressure-matrix.json
+          git diff --staged --quiet || git commit -m "chore: Update pressure matrix from sensors [skip ci]"
+          git push || echo "No changes to push"
