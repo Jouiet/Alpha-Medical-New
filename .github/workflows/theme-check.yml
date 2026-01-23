@@ -1,0 +1,93 @@
+# Alpha Medical - Shopify Theme Check CI/CD
+# Validates Liquid templates, CSS performance, and accessibility
+# Version: 1.0.0 | Session 143 | 23/01/2026
+
+name: Shopify Theme Check
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'layout/**'
+      - 'sections/**'
+      - 'snippets/**'
+      - 'templates/**'
+      - 'assets/**'
+      - 'config/**'
+      - 'locales/**'
+      - '.theme-check.yml'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'layout/**'
+      - 'sections/**'
+      - 'snippets/**'
+      - 'templates/**'
+      - 'assets/**'
+      - 'config/**'
+      - 'locales/**'
+  workflow_dispatch:
+
+jobs:
+  theme-check:
+    name: Lint Shopify Theme
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install Theme Check
+        run: gem install theme-check
+
+      - name: Run Theme Check
+        id: theme-check
+        run: |
+          echo "🔍 Running Shopify Theme Check..."
+          theme-check --fail-level error . 2>&1 | tee theme-check-output.txt
+          exit_code=${PIPESTATUS[0]}
+
+          # Count issues
+          errors=$(grep -c "error" theme-check-output.txt || echo "0")
+          warnings=$(grep -c "warning" theme-check-output.txt || echo "0")
+
+          echo "errors=$errors" >> $GITHUB_OUTPUT
+          echo "warnings=$warnings" >> $GITHUB_OUTPUT
+
+          if [ $exit_code -ne 0 ]; then
+            echo "❌ Theme check failed with $errors errors, $warnings warnings"
+            exit 1
+          else
+            echo "✅ Theme check passed with $warnings warnings"
+          fi
+
+      - name: Upload Theme Check Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: theme-check-report
+          path: theme-check-output.txt
+          retention-days: 7
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const output = fs.readFileSync('theme-check-output.txt', 'utf8');
+            const truncated = output.length > 3000 ? output.substring(0, 3000) + '\n...(truncated)' : output;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## ❌ Theme Check Failed\n\n\`\`\`\n${truncated}\n\`\`\`\n\nPlease fix the errors before merging.`
+            });

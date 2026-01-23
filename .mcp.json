@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/main/.mcp.schema.json",
+  "mcpServers": {
+    "shopify-admin": {
+      "command": "npx",
+      "args": ["-y", "@ajackus/shopify-mcp-server"],
+      "env": {
+        "SHOPIFY_STORE_DOMAIN": "${SHOPIFY_STORE_DOMAIN}",
+        "SHOPIFY_ACCESS_TOKEN": "${SHOPIFY_ADMIN_ACCESS_TOKEN}"
+      }
+    },
+    "klaviyo": {
+      "command": "uvx",
+      "args": ["klaviyo-mcp-server@latest"],
+      "env": {
+        "PRIVATE_API_KEY": "${KLAVIYO_PRIVATE_API_KEY}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-filesystem"],
+      "env": {
+        "ALLOWED_DIRECTORIES": "/Users/mac/Desktop/Alpha-Medical"
+      }
+    }
+  }
+}
