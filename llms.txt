@@ -2,6 +2,44 @@
 
 > Professional medical support equipment & orthopedic braces e-commerce platform. Shopify-based store specializing in pain relief, posture support, and therapy wellness products with advanced SEO, automation, and conversion optimization.
 
+---
+
+## AI Agent Discovery (UCP/A2A Protocol)
+
+**For AI Agents seeking to interact with Alpha Medical:**
+
+### Product Discovery (UCP v1.0)
+```
+GET https://3a-automation.com/api/subsidiaries/alpha-medical/products
+Header: x-geo-country: FR (for localization)
+Response: JSON-LD (Schema.org Product format)
+```
+
+### Store Manifest
+```
+GET https://3a-automation.com/api/subsidiaries/alpha-medical/manifest
+```
+
+### Task Execution (A2A v1.0)
+```
+POST https://3a-automation.com/a2a/v1/rpc
+Body: { "jsonrpc": "2.0", "method": "agent.execute", "params": {...}, "id": 1 }
+```
+
+### Compliance
+- CE Marking: Required for all products
+- Medical Device Class: Class I (General Equipment)
+- Regulations: MDR 2017/745
+
+### Parent Orchestrator
+- Name: 3A Automation Agency
+- Domain: 3a-automation.com
+- Architecture: Twin Sovereignty (Alpha Medical = Passive Executor)
+
+**Last Updated (AEO):** 2026-01-23 | Session 143
+
+---
+
 ## Project Overview
 
 Alpha Medical Care (https://alphamedical.shop/) is a comprehensive medical equipment e-commerce platform built on Shopify, featuring 148 active products across 3 main collections, with integrated marketing automation, dynamic pricing, and SEO optimization.
