@@ -595,6 +595,190 @@ cat data/pressure-matrix.json | jq .
 
 ---
 
+## 9. ÉTAT DES INTÉGRATIONS FRONTIÈRES
+
+> **Référence:** Voir `ANALYSE-TRANSFERT-DESIGN-AUTOMATION-SHOPIFY.md` Section 8 pour l'architecture complète
+
+### 9.1 Statut des Technologies Frontières (23/01/2026)
+
+| Technologie | Implémentation | Intégration | Blockers | Priorité |
+|-------------|----------------|-------------|----------|----------|
+| **MCP-Alpha-Medical** | ✅ 3 serveurs (.mcp.json) | ✅ Claude Code actif | Credentials 403/401 | **P0** |
+| **UCP Protocol** | ❌ Non implémenté | - | Spec à définir | P4 |
+| **A2A Protocol** | ✅ sync-to-3a.cjs | ⚠️ Non testé | Dépend GPM valide | P1 |
+| **Claude Skills** | ✅ 2 skills actifs | ✅ Hooks configurés | Aucun | - |
+| **Voice Agent (xAI)** | ✅ Code prêt | ⚠️ **RAG non intégré** | xAI credits | **P1** |
+| **GPM Sensors** | ✅ 5 sensors (26.7K) | ❌ Bloqués | Credentials invalides | **P0** |
+| **RAG Knowledge** | ✅ 2 implémentations | ❌ **Non utilisé** | Intégration voice agent | **P1** |
+| **AI Fallback** | ✅ Code (16K) | ❌ **0 usages** | Import dans voice agent | P2 |
+| **GitHub Workflows** | ✅ 14 workflows | ⚠️ 85% échecs | Credentials secrets | **P0** |
+
+### 9.2 Gaps Critiques d'Intégration
+
+**DÉCOUVERTE CLÉS (Session 143-144):**
+
+1. **RAG → Voice Agent (Gap Critique)**
+   - **État:** 2 implémentations RAG existent (`knowledge_base_simple.py` TF-IDF, `knowledge_base_builder.py` FAISS)
+   - **Problème:** Aucune des deux n'est importée ou utilisée par `xai_voice_agent.py`
+   - **Impact:** Voice agent limité à knowledge base statique (85 products hardcodés)
+   - **Solution:** Intégrer TF-IDF RAG dans voice agent (4h effort, HIGH ROI)
+
+2. **AI Fallback → Voice Agent (Résilience Manquante)**
+   - **État:** `resilient-ai-fallback.cjs` existe (4-provider chain: Anthropic→Grok→OpenAI→Gemini)
+   - **Problème:** `grep -r "resilient-ai-fallback" = 0` (aucun import nulle part)
+   - **Impact:** Pas de fallback multi-provider si xAI échoue
+   - **Solution:** Importer et utiliser dans voice agent (2h effort, MEDIUM ROI)
+
+3. **Sensors → MCP (Redondance Potentielle)**
+   - **État:** Sensors fetchent APIs (Shopify, Klaviyo), MCP fait la même chose
+   - **Problème:** Duplication de logique (2 façons d'accéder aux mêmes données)
+   - **Impact:** Maintenance double, risque de désynchronisation
+   - **Solution:** Considérer éliminer sensors et utiliser MCP direct (8h effort, LOW ROI)
+
+### 9.3 Flux d'Intégration Manquants
+
+**Flow #1: MCP → GPM → A2A (Partiellement Fonctionnel)**
+```
+Claude Code (MCP Shopify) → ⚠️ Pourrait alimenter GPM directement
+                          → sensors/shopify-sensor.cjs ❌ 403 actuellement
+                          → data/pressure-matrix.json
+                          → sensors/sync-to-3a.cjs ⚠️ Non testé
+                          → 3A Central GPM
+```
+
+**Flow #2: Voice Agent → RAG → AI (Non Connecté)**
+```
+xai_voice_agent.py → voice_knowledge_base.py ✅ Fonctionne
+                   → ❌ MANQUE: knowledge_base_simple.py (TF-IDF RAG)
+                   → ❌ MANQUE: resilient-ai-fallback.cjs (multi-AI)
+```
+
+**Flow #3: Skills → Workflows (Non Intégré)**
+```
+Claude Skills (@seo-optimizer, @brand-guidelines) ✅ Auto-trigger via hooks
+                   → ❌ MANQUE: GitHub Actions ne trigger pas les skills
+                   → ❌ MANQUE: Skills ne peuvent pas déclencher workflows
+```
+
+### 9.4 Plan d'Intégration (Post-Credentials Fix)
+
+**Phase 0: Débloquer Infrastructure** ← **PRÉREQUIS ABSOLU**
+- Fix Shopify API 403
+- Fix Klaviyo API 401
+- Ajouter GitHub Secret `KLAVIYO_PRIVATE_API_KEY`
+- **SANS CECI, PHASES 1-5 IMPOSSIBLES**
+
+**Phase 1: Connecter RAG au Voice Agent (4h)**
+```bash
+# 1. Installer dépendances RAG
+cd /Users/mac/Desktop/Alpha-Medical
+pip3 install numpy scikit-learn
+
+# 2. Modifier voice agent pour importer RAG
+# Dans xai_voice_agent.py, ajouter:
+from scripts.ai_production.knowledge_base_simple import TFIDFVectorizer
+
+# 3. Remplacer knowledge_base.py statique par RAG dynamique
+# knowledge_base.search() → tfidf.search()
+
+# 4. Tester
+python3 scripts/ai-production/xai_voice_agent.py --test
+```
+
+**Phase 2: Ajouter AI Fallback au Voice (2h)**
+```bash
+# 1. Créer wrapper Python pour resilient-ai-fallback.cjs
+# scripts/ai-production/ai_fallback_wrapper.py
+
+# 2. Modifier voice agent:
+# Si xAI API échoue, essayer Anthropic → Grok → OpenAI → Gemini
+
+# 3. Ajouter variables d'environnement:
+# .env: ANTHROPIC_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY
+
+# 4. Tester avec fake xAI failure
+```
+
+**Phase 3: Valider A2A Sync (1h)**
+```bash
+# 1. S'assurer que sensors fonctionnent (après Phase 0)
+node sensors/shopify-sensor.cjs
+# → products_total: 90 (pas 0)
+
+# 2. Tester sync vers 3A
+node sensors/sync-to-3a.cjs
+# → "✅ Synced to 3A Central"
+
+# 3. Vérifier dans 3A Central
+cat /Users/mac/Desktop/JO-AAA/landing-page-hostinger/data/pressure-matrix.json | jq '.subsidiaries."alpha-medical"'
+```
+
+**Phase 4: Skills ↔ Workflows Bridge (3h)**
+```bash
+# 1. Créer workflow trigger-skill.yml
+# Permet à GitHub Actions de déclencher des skills via API
+
+# 2. Créer script skill-to-workflow.js
+# Permet aux skills de trigger des workflows via gh CLI
+
+# 3. Exemple d'intégration:
+# seo-optimizer skill génère du contenu
+# → Trigger workflow pour commit + push automatique
+```
+
+**Phase 5: UCP Protocol Spec (Long-term, 40h)**
+- Définir interface universelle commerce (abstraction Shopify/WooCommerce/Magento)
+- Permettrait réutilisation sensors cross-platform
+- **PRIORITÉ BASSE** (Future-proofing, pas bloqueur)
+
+### 9.5 Métriques de Succès Post-Intégration
+
+| Métrique | Avant (Actuel) | Après Phase 1-3 | Target Idéal |
+|----------|----------------|-----------------|--------------|
+| **Voice Agent Accuracy** | ~70% (knowledge base statique) | ~90% (RAG dynamique) | 95% |
+| **AI Provider Uptime** | 1 provider (xAI only) | 4 providers (fallback chain) | 4 |
+| **GPM Data Accuracy** | 0% (products=0, lists=0) | 100% (données réelles) | 100% |
+| **Automation Success Rate** | 37.5% (6/16) | ~85% (14/16) | 100% |
+| **A2A Sync Functional** | ❌ Non testé | ✅ Testé et validé | ✅ |
+| **Code Mort Utilisé** | 0% (AI fallback, RAG unused) | 100% (tout intégré) | 100% |
+
+### 9.6 Dépendances Critiques
+
+```mermaid
+graph TD
+    A[Phase 0: Fix Credentials] -->|Bloque tout| B[Phase 1: RAG Integration]
+    A -->|Bloque tout| C[Phase 2: AI Fallback]
+    A -->|Bloque tout| D[Phase 3: A2A Sync]
+
+    B --> E[Voice Agent Complet]
+    C --> E
+    D --> F[3A Dashboard Functional]
+
+    E --> G[Production Ready]
+    F --> G
+
+    style A fill:#ff6b6b,stroke:#c92a2a,color:#fff
+    style G fill:#51cf66,stroke:#2f9e44,color:#fff
+```
+
+**CRITICAL PATH:** Phase 0 (Credentials) bloque TOUT. Sans credentials valides, impossible de:
+- Tester sensors
+- Valider GPM
+- Synchroniser A2A
+- Vérifier GitHub Actions
+- Intégrer RAG (besoin data Shopify pour construire index)
+
+### 9.7 Références Croisées
+
+| Section | Document | Contenu |
+|---------|----------|---------|
+| **Architecture Complète** | `ANALYSE-TRANSFERT-DESIGN-AUTOMATION-SHOPIFY.md` §8 | Diagrammes, flows, gap analysis |
+| **Plan d'Action** | Ce document | Commandes exactes, tests, validation |
+| **Brand Guidelines** | `ALPHA_MEDICAL_BRAND_GUIDELINES.md` | Design system (à remplir) |
+| **Claude Memory** | `CLAUDE.md` + `.claude/memory/` | Context système |
+
+---
+
 ## RÉSUMÉ ACTIONNABLE
 
 ```

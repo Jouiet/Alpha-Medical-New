@@ -364,6 +364,434 @@ Inspiré du modèle industriel chinois décrit par [François Jullien](https://e
 
 ---
 
+## 8. ARCHITECTURE D'INTÉGRATION - TECHNOLOGIES FRONTIÈRES
+
+> **Section ajoutée**: Session 145 (23/01/2026 19:45 UTC)
+> **Focus**: Intégration optimale MCP + UCP + A2A + Skills + Agents + GPM + RAG + Workflows
+
+### 8.1 Vue d'Ensemble - Écosystème Intégré
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     ALPHA MEDICAL - ARCHITECTURE INTÉGRÉE               │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  ┌───────────────────────────────────────────────────────────────┐     │
+│  │  CLAUDE CODE (Orchestrator)                                   │     │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐        │     │
+│  │  │  MCP Servers │  │    Skills    │  │   Memory     │        │     │
+│  │  │  (3 actifs)  │  │  (2 actifs)  │  │  (5 levels)  │        │     │
+│  │  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘        │     │
+│  └─────────┼──────────────────┼──────────────────┼───────────────┘     │
+│            │                  │                  │                     │
+│  ┌─────────▼──────────────────▼──────────────────▼───────────────┐     │
+│  │  INTEGRATION LAYER (Protocol Adapters)                        │     │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐      │     │
+│  │  │   MCP    │  │   UCP    │  │   A2A    │  │  Skills  │      │     │
+│  │  │ Protocol │  │ Protocol │  │ Protocol │  │  Engine  │      │     │
+│  │  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘      │     │
+│  └───────┼─────────────┼─────────────┼─────────────┼─────────────┘     │
+│          │             │             │             │                   │
+│  ┌───────▼─────────────▼─────────────▼─────────────▼─────────────┐     │
+│  │  DATA & INTELLIGENCE LAYER                                     │     │
+│  │  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐           │     │
+│  │  │   GPM   │  │   RAG   │  │ AI Agent│  │Workflows│           │     │
+│  │  │ Sensors │  │TF-IDF/  │  │  Voice  │  │ (14 GH) │           │     │
+│  │  │(5 sens) │  │ FAISS   │  │xAI+LK   │  │         │           │     │
+│  │  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘           │     │
+│  └───────┼────────────┼────────────┼────────────┼────────────────┘     │
+│          │            │            │            │                      │
+│  ┌───────▼────────────▼────────────▼────────────▼────────────────┐     │
+│  │  RESILIENT AI FRAMEWORK (Multi-Provider Fallback)             │     │
+│  │  Anthropic → Grok → OpenAI → Gemini                           │     │
+│  └────────────────────────────────────────────────────────────────┘     │
+│                                                                         │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │  EXTERNAL INTEGRATIONS (via MCP/A2A)                            │   │
+│  │  Shopify ⟷ Klaviyo ⟷ 3A Central GPM ⟷ Filesystem              │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### 8.2 État Factuel des Composants (23/01/2026)
+
+| Composant | Fichiers | Status | Blockers | Intégrations |
+|-----------|----------|--------|----------|--------------|
+| **MCP-Alpha-Medical** | `.mcp.json` (736B) | ✅ 3 serveurs actifs | Credentials 403/401 | → Shopify, Klaviyo, Filesystem |
+| **UCP (Commerce)** | ❌ Pas encore | 🔴 NON IMPLÉMENTÉ | Spec à définir | → Future e-commerce abstraction |
+| **A2A Protocol** | `sync-to-3a.cjs` (3.1K) | ⚠️ Prêt non testé | 3A GPM path | → GPM Central 3A |
+| **Skills Claude** | `seo-optimizer/`, `brand-guidelines/` | ✅ 2 actifs | Aucun | → Claude Code hooks |
+| **Agent AI Voice** | `xai_voice_agent.py`, `voice_knowledge_base.py` | ⚠️ Prêt | xAI credits | → Shopify API (85 products) |
+| **GPM Sensors** | 5x `.cjs` sensors (26.7K total) | ❌ Bloqués | Shopify 403, Klaviyo 401 | → pressure-matrix.json |
+| **RAG Knowledge** | `knowledge_base_simple.py` (TF-IDF), `knowledge_base_builder.py` (FAISS) | ⚠️ Code existe | Non intégré voice | → Future voice agent RAG |
+| **Workflows GH** | 14x `.yml` (GitHub Actions) | ⚠️ 85% échecs | Credentials secrets | → Sensors, backup, sync |
+| **AI Fallback** | `resilient-ai-fallback.cjs` (16K) | ✅ Code complet | **0 usages** | → Future multi-AI calls |
+
+### 8.3 Flux d'Intégration OPTIMAL (Cible)
+
+#### Flow #1: MCP → Shopify → GPM → A2A → 3A Central
+
+```
+┌─────────────┐
+│ Claude Code │ (User: "What's store health?")
+└──────┬──────┘
+       │ MCP call
+       ▼
+┌─────────────────┐
+│ MCP shopify-admin│ (shopify-mcp-server)
+└──────┬──────────┘
+       │ REST API
+       ▼
+┌─────────────────┐
+│ Shopify Admin  │ (GET /products.json, /orders.json)
+└──────┬──────────┘
+       │ metrics
+       ▼
+┌─────────────────┐
+│ shopify-sensor │ (calcule pressure 0-100)
+└──────┬──────────┘
+       │ update
+       ▼
+┌─────────────────┐
+│ pressure-matrix│ (data/pressure-matrix.json)
+└──────┬──────────┘
+       │ sync
+       ▼
+┌─────────────────┐
+│ sync-to-3a.cjs │ (A2A protocol filesystem)
+└──────┬──────────┘
+       │ write
+       ▼
+┌─────────────────┐
+│ 3A Central GPM │ (/Users/mac/Desktop/JO-AAA/...)
+└─────────────────┘
+```
+
+**BLOCKERS ACTUELS:**
+- Shopify MCP: ✅ Fonctionne
+- Shopify API: ❌ 403 "API Access disabled"
+- Sensor: ❌ Ne peut pas fetch metrics
+- GPM: ❌ Données fausses (products=0)
+- A2A sync: ⚠️ Non testé (dépend GPM valide)
+
+#### Flow #2: Voice Agent → RAG → Resilient AI → Customer
+
+```
+┌─────────────┐
+│  Customer   │ (Voice call via LiveKit)
+└──────┬──────┘
+       │ audio
+       ▼
+┌──────────────────┐
+│ xAI Voice Agent │ (xai_voice_agent.py)
+└──────┬───────────┘
+       │ query
+       ▼
+┌──────────────────┐
+│ Knowledge Base  │ (voice_knowledge_base.py → Shopify API)
+│ + RAG (FUTURE)  │ (knowledge_base_simple.py TF-IDF)
+└──────┬───────────┘
+       │ context
+       ▼
+┌──────────────────┐
+│ resilient-ai-    │ (Anthropic→Grok→OpenAI→Gemini)
+│ fallback.cjs     │
+└──────┬───────────┘
+       │ LLM response
+       ▼
+┌──────────────────┐
+│ Voice synthesis │ (back to customer)
+└──────────────────┘
+```
+
+**BLOCKERS ACTUELS:**
+- Voice Agent: ✅ Code prêt
+- Knowledge Base: ⚠️ Shopify API 403 (products=0)
+- RAG: ❌ Non intégré (TF-IDF existe mais pas utilisé)
+- AI Fallback: ❌ 0 usages (pas appelé par voice agent)
+- xAI credits: ❌ Manquants
+
+#### Flow #3: Claude Skills → Brand/SEO → Content Generation
+
+```
+┌─────────────┐
+│ Claude Code │ (User: "Optimize product description")
+└──────┬──────┘
+       │ hook trigger
+       ▼
+┌─────────────────┐
+│ Skills Engine  │ (.claude/skills/)
+└──────┬──────────┘
+       │ load
+       ▼
+┌─────────────────┐
+│ seo-optimizer/  │ (SKILL.md + guidelines)
+│ brand-guidelines│
+└──────┬──────────┘
+       │ context
+       ▼
+┌─────────────────┐
+│ Claude Memory  │ (brand colors, SEO rules)
+└──────┬──────────┘
+       │ generate
+       ▼
+┌─────────────────┐
+│ Optimized Copy │ (product description)
+└─────────────────┘
+```
+
+**STATUS ACTUEL:**
+- Skills: ✅ 2 actifs (seo-optimizer, brand-guidelines)
+- Hooks: ✅ user-prompt-submit.sh active
+- Memory: ✅ 5-level progressive disclosure
+- Usage: ✅ FONCTIONNEL (auto-activation)
+
+### 8.4 Intégrations MANQUANTES (Gaps Critiques)
+
+| Gap | Impact | Effort | ROI | Priorité |
+|-----|--------|--------|-----|----------|
+| **RAG → Voice Agent** | Voice agent limité à knowledge base statique | 4h | HIGH | P1 |
+| **AI Fallback → Voice** | Pas de résilience multi-provider | 2h | MEDIUM | P2 |
+| **Sensors → MCP** | Redondance (MCP peut fetch direct) | 8h | LOW | P3 |
+| **UCP Protocol** | Pas d'abstraction commerce universelle | 40h | MEDIUM | P4 |
+| **Skills → Workflows** | Workflows ne trigger pas skills | 6h | MEDIUM | P2 |
+| **GPM → Dashboard** | GPM invisible (CLI only) | 12h | LOW | P5 |
+
+### 8.5 Plan d'Intégration OPTIMAL
+
+#### Phase 1: Débloquer Infrastructure (P0 - URGENT)
+
+**Objectif:** Faire fonctionner les composants bloqués
+
+1. **Fix Shopify API Credentials** (30 min)
+   - Aller sur: https://azffej-as.myshopify.com/admin/settings/apps/development
+   - Créer nouveau custom app "Alpha Medical Sensors"
+   - Scopes: `read_products`, `read_orders`, `read_inventory`
+   - Copier SHOPIFY_ADMIN_ACCESS_TOKEN
+   - Update: `.env.admin` + GitHub Secret
+
+2. **Fix Klaviyo API Key** (15 min)
+   - Aller sur: https://www.klaviyo.com/settings/account/api-keys
+   - Créer "3A Sensors" avec Full Read Access
+   - Copier `pk_xxx...`
+   - Update: `.env.admin` + créer GitHub Secret `KLAVIYO_PRIVATE_API_KEY`
+
+3. **Tester Sensors → GPM Chain** (10 min)
+   ```bash
+   node sensors/shopify-sensor.cjs
+   node sensors/klaviyo-sensor.cjs
+   cat data/pressure-matrix.json  # Vérifier products ≠ 0
+   ```
+
+4. **Tester A2A Sync** (5 min)
+   ```bash
+   node sensors/sync-to-3a.cjs
+   cat /Users/mac/Desktop/JO-AAA/landing-page-hostinger/data/pressure-matrix.json
+   # Vérifier store "alpha-medical" présent
+   ```
+
+**Résultat attendu:** MCP → Shopify → GPM → A2A → 3A Central **100% FONCTIONNEL**
+
+#### Phase 2: Intégrer RAG au Voice Agent (P1 - HIGH ROI)
+
+**Objectif:** Voice agent avec recherche sémantique intelligente
+
+1. **Build TF-IDF Index** (30 min)
+   ```bash
+   cd scripts/ai-production
+   python3 knowledge_base_simple.py
+   # Output: knowledge_base.json (avec TF-IDF vectors)
+   ```
+
+2. **Modifier voice_knowledge_base.py** (2h)
+   ```python
+   # Ajouter import
+   from knowledge_base_simple import TFIDFVectorizer, search_similar
+
+   # Dans get_product_recommendations():
+   # Au lieu de filter basique, utiliser:
+   results = search_similar(query, tfidf_index, top_k=5)
+   ```
+
+3. **Tester RAG Integration** (30 min)
+   ```bash
+   python3 xai_voice_agent.py demo
+   # Prompt: "knee pain senior"
+   # Vérifier: Top 5 products pertinents (TF-IDF cosine similarity)
+   ```
+
+**Résultat attendu:** Voice Agent → RAG TF-IDF **FONCTIONNEL**
+
+#### Phase 3: Activer AI Fallback (P2 - Résilience)
+
+**Objectif:** Multi-provider resilience pour voice agent
+
+1. **Intégrer resilient-ai-fallback.cjs** (1h)
+   ```javascript
+   // Dans xai_voice_agent.py, remplacer call xAI par:
+   // subprocess.call(['node', 'automations/lib/resilient-ai-fallback.cjs', prompt])
+   ```
+
+2. **Config .env** (15 min)
+   ```bash
+   ANTHROPIC_API_KEY=sk-ant-...
+   XAI_API_KEY=xai-...
+   OPENAI_API_KEY=sk-...
+   GOOGLE_GEMINI_API_KEY=...
+   ```
+
+3. **Tester Fallback Chain** (30 min)
+   ```bash
+   # Simuler xAI down
+   XAI_API_KEY=invalid node automations/lib/resilient-ai-fallback.cjs "test"
+   # Vérifier: Fallback vers Grok/OpenAI/Gemini
+   ```
+
+**Résultat attendu:** Voice Agent → AI Fallback **RÉSILIENT 4 providers**
+
+#### Phase 4: Skills ↔ Workflows Integration (P2)
+
+**Objectif:** Workflows GitHub Actions trigger Claude Skills
+
+1. **Créer Workflow skill-trigger.yml** (2h)
+   ```yaml
+   name: Skill Trigger - SEO Optimizer
+   on:
+     schedule:
+       - cron: '0 9 * * 1'  # Lundi 9h
+   jobs:
+     optimize-seo:
+       steps:
+         - name: Trigger Claude Skill
+           run: |
+             # Webhook vers Claude Code API (future)
+             # ou: Commit message with [skill:seo-optimizer]
+   ```
+
+2. **Hook pre-commit pour Skills** (1h)
+   ```bash
+   # .husky/pre-commit
+   if git diff --cached | grep -q "product-description"; then
+     echo "[Skill Auto-trigger] SEO Optimizer"
+     # Trigger skill
+   fi
+   ```
+
+**Résultat attendu:** Workflows → Skills **AUTOMATISÉS**
+
+#### Phase 5: UCP Protocol Spec (P4 - Long-terme)
+
+**Objectif:** Universal Commerce Protocol abstraction layer
+
+**Note:** UCP est un concept 3A non implémenté. Priorité BASSE pour Alpha Medical (Shopify-specific OK).
+
+**Spec proposée (si besoin futur):**
+```javascript
+// ucp-adapter.cjs
+class UniversalCommerceProtocol {
+  constructor(platform) {
+    this.adapter = platform === 'shopify' ? new ShopifyAdapter()
+                 : platform === 'woocommerce' ? new WooCommerceAdapter()
+                 : throw new Error('Unsupported platform');
+  }
+
+  async getProducts() { return this.adapter.getProducts(); }
+  async getOrders() { return this.adapter.getOrders(); }
+  // ... interface commune
+}
+```
+
+**Résultat attendu (si implémenté):** Multi-platform commerce abstraction
+
+### 8.6 Architecture OPTIMALE Finale (Post-Intégration)
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                  ALPHA MEDICAL - FULLY INTEGRATED                       │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  ┌─────────────────────────────────────────────────────────────┐       │
+│  │  ORCHESTRATION LAYER (Claude Code)                          │       │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐    │       │
+│  │  │   MCP    │  │  Skills  │  │  Memory  │  │  Hooks   │    │       │
+│  │  │ (3 srv)  │  │    (2)   │  │ (5 lvl)  │  │ (active) │    │       │
+│  │  └────┬─────┘  └────┬─────┘  └────┬─────┘  └────┬─────┘    │       │
+│  └───────┼─────────────┼─────────────┼─────────────┼───────────┘       │
+│          │             │             │             │                   │
+│  ┌───────▼─────────────▼─────────────▼─────────────▼───────────┐       │
+│  │  PROTOCOL LAYER (MCP + A2A + UCP)                            │       │
+│  │  - MCP: Shopify/Klaviyo APIs ✅                              │       │
+│  │  - A2A: GPM sync to 3A Central ✅                            │       │
+│  │  - UCP: (Future multi-platform) ⏳                            │       │
+│  └───────────────────────────────────┬───────────────────────────┘       │
+│                                      │                                 │
+│  ┌───────────────────────────────────▼───────────────────────────┐       │
+│  │  INTELLIGENCE LAYER (AI + Data)                              │       │
+│  │                                                               │       │
+│  │  ┌────────────┐  ┌────────────┐  ┌────────────┐             │       │
+│  │  │ Voice Agent│  │  RAG       │  │  GPM       │             │       │
+│  │  │ (xAI+LK)   │◄─│  TF-IDF    │◄─│  5 Sensors │             │       │
+│  │  └─────┬──────┘  │  FAISS     │  └────┬───────┘             │       │
+│  │        │         └────────────┘       │                     │       │
+│  │        ▼                              ▼                     │       │
+│  │  ┌──────────────────────────────────────────┐              │       │
+│  │  │  Resilient AI Fallback Framework         │              │       │
+│  │  │  Anthropic → Grok → OpenAI → Gemini      │              │       │
+│  │  └──────────────────────────────────────────┘              │       │
+│  └───────────────────────────────────────────────────────────┘       │
+│                                                                       │
+│  ┌─────────────────────────────────────────────────────────────┐     │
+│  │  AUTOMATION LAYER (Workflows + Sensors)                     │     │
+│  │  - 14 GitHub Actions workflows ✅                            │     │
+│  │  - 5 GPM sensors → pressure-matrix.json ✅                   │     │
+│  │  - A2A sync to 3A Central ✅                                 │     │
+│  └─────────────────────────────────────────────────────────────┘     │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### 8.7 Métriques de Succès (KPIs)
+
+| Métrique | Avant | Après Phase 1-3 | Target |
+|----------|-------|-----------------|--------|
+| **GPM Data Accuracy** | 0% (products=0) | 100% | 100% |
+| **Voice Agent RAG** | ❌ Pas de RAG | ✅ TF-IDF active | ✅ FAISS future |
+| **AI Providers** | 1 (xAI only) | 4 (fallback chain) | 4 |
+| **A2A Sync** | ⚠️ Non testé | ✅ Fonctionnel | ✅ |
+| **Sensors Success Rate** | 0% (credentials) | 100% | 100% |
+| **Skills Auto-trigger** | ✅ 2 active | ✅ 2 + workflows | ✅ |
+| **MCP Servers** | ✅ 3 configured | ✅ 3 functional | ✅ 3-5 |
+
+### 8.8 Dépendances Critiques
+
+```mermaid
+graph TD
+    A[Fix Credentials] --> B[Sensors Functional]
+    B --> C[GPM Data Valid]
+    C --> D[A2A Sync Works]
+
+    E[Build TF-IDF Index] --> F[RAG Ready]
+    F --> G[Voice Agent Enhanced]
+
+    H[Config AI Keys] --> I[Fallback Active]
+    I --> G
+
+    C --> G
+
+    style A fill:#ff6b6b
+    style B fill:#ffd93d
+    style C fill:#95e1d3
+    style D fill:#95e1d3
+    style E fill:#ffd93d
+    style F fill:#95e1d3
+    style G fill:#6bcf7f
+    style H fill:#ffd93d
+    style I fill:#95e1d3
+```
+
+**CRITICAL PATH:** Credentials → Sensors → GPM → Voice Agent RAG → Full Integration
+
+---
+
 ## CONCLUSION
 
 Alpha Medical est **techniquement PRET pour le lancement** avec une infrastructure solide:
