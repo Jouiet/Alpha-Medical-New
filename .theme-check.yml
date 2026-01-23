@@ -1,52 +1,41 @@
 # Alpha Medical - Shopify Theme Check Configuration
-# Documentation: https://shopify.dev/docs/themes/tools/theme-check
-# Version: 1.0.0 | Session 143 | 23/01/2026
+# Documentation: https://shopify.dev/docs/storefronts/themes/tools/theme-check
+# Version: 1.1.0 | Session 143 | 23/01/2026
+# Valid checks: https://shopify.dev/docs/storefronts/themes/tools/theme-check/checks
 
 # Extend from Shopify's default theme-check config
 extends: theme-check:recommended
 
-# Custom rule severity overrides
+# Performance checks
 DeprecateLazysizes:
-  enabled: true
-  severity: error
-
-RequiredLayoutThemeObject:
   enabled: true
   severity: error
 
 AssetSizeCSS:
   enabled: true
-  threshold_in_bytes: 100000  # 100KB max per CSS file
+  threshold_in_bytes: 100000
 
 AssetSizeJavaScript:
   enabled: true
-  threshold_in_bytes: 50000   # 50KB max per JS file
-
-ImgLazyLoading:
-  enabled: true
-  severity: error
+  threshold_in_bytes: 50000
 
 ParserBlockingJavaScript:
   enabled: true
   severity: error
 
-# Performance checks
 RemoteAsset:
   enabled: true
   severity: suggestion
 
-# Accessibility
-RequiredParent:
+# Layout checks
+RequiredLayoutThemeObject:
   enabled: true
+  severity: error
 
-# Translation completeness
+# Translation checks
 MatchingTranslations:
   enabled: true
   severity: suggestion
-
-# Liquid syntax
-LiquidTag:
-  enabled: true
 
 # Schema validation
 ValidSchema:
@@ -54,11 +43,5 @@ ValidSchema:
   severity: error
 
 # Disabled checks (too noisy for current codebase)
-SpaceInsideBraces:
-  enabled: false
-
 ContentForHeaderModification:
   enabled: false
-
-# Alpha Medical specific: Forbidden patterns
-# Note: Custom checks require theme-check plugins or external validation
